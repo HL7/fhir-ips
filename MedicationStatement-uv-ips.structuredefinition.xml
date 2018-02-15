@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2018-02-14T23:09:34.838+01:00" />
+  </meta>
+  <url value="http://hl7.org/fhir/ips/StructureDefinition/medicationstatement-uv-ips" />
+  <name value="MedicationStatement-uv-ips" />
+  <title value="International Patient Summary - " />
+  <status value="draft" />
+  <date value="2018-02-14T22:57:06.512+01:00" />
+  <description value="This profile represents the constraints applied to the MedicationStatement resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR STU3. A record of a medication statement is represented in the patient summary as an instance of a MedicationStatement resource constrained by this profile." />
+  <purpose value="This profile constrains the representation of a meducation statement related to the patient, in the context of the international patient summary as specified by the IPS project of HL7 International." />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="MedicationStatement" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationStatement" />
+  <derivation value="constraint" />
+</StructureDefinition>
