@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2018-02-21T00:47:03.873+01:00" />
+    <lastUpdated value="2018-02-21T00:47:07.546+01:00" />
   </meta>
-  <url value="http://hl7.org/fhir/ips/StructureDefinition/medicationstatement-uv-ips" />
-  <name value="MedicationStatement-uv-ips" />
+  <url value="http://hl7.org/fhir/ips/StructureDefinition/medicationstatementsubordinate-uv-ips" />
+  <name value="MedicationStatementSubordinate-uv-ips" />
   <title value="International Patient Summary - " />
   <status value="draft" />
   <date value="2018-02-14T22:57:06.512+01:00" />
@@ -27,6 +27,22 @@
     </element>
     <element id="MedicationStatement.partOf">
       <path value="MedicationStatement.partOf" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/medicationstatement-uv-ips" />
+      </type>
+    </element>
+    <element id="MedicationStatement.partOf.identifier">
+      <path value="MedicationStatement.partOf.identifier" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.partOf.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="MedicationStatement.partOf.display" />
       <max value="0" />
     </element>
     <element id="MedicationStatement.context">
@@ -49,38 +65,6 @@
     </element>
     <element id="MedicationStatement.derivedFrom">
       <path value="MedicationStatement.derivedFrom" />
-      <max value="0" />
-    </element>
-    <element id="MedicationStatement.reasonNotTaken">
-      <path value="MedicationStatement.reasonNotTaken" />
-      <max value="0" />
-    </element>
-    <element id="MedicationStatement.reasonCode">
-      <path value="MedicationStatement.reasonCode" />
-      <max value="0" />
-    </element>
-    <element id="MedicationStatement.reasonReference">
-      <path value="MedicationStatement.reasonReference" />
-      <max value="0" />
-    </element>
-    <element id="MedicationStatement.dosage.additionalInstruction">
-      <path value="MedicationStatement.dosage.additionalInstruction" />
-      <max value="0" />
-    </element>
-    <element id="MedicationStatement.dosage.site.coding.userSelected">
-      <path value="MedicationStatement.dosage.site.coding.userSelected" />
-      <max value="0" />
-    </element>
-    <element id="MedicationStatement.dosage.route.coding.userSelected">
-      <path value="MedicationStatement.dosage.route.coding.userSelected" />
-      <max value="0" />
-    </element>
-    <element id="MedicationStatement.dosage.method">
-      <path value="MedicationStatement.dosage.method" />
-      <max value="0" />
-    </element>
-    <element id="MedicationStatement.dosage.maxDosePerLifetime">
-      <path value="MedicationStatement.dosage.maxDosePerLifetime" />
       <max value="0" />
     </element>
   </differential>
