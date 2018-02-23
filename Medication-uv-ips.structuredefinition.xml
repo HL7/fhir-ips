@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2018-02-23T12:48:01.344+01:00" />
+  </meta>
+  <url value="http://hl7.org/fhir/ips/StructureDefinition/medication-uv-ips" />
+  <version value="0.1" />
+  <name value="medication-uv-ips" />
+  <title value="International Patient Summary" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-02-20T22:03:08.307+01:00" />
+  <description value="This profile represents the constraints applied to the Medication resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR STU3. A medication is described in the patient summary as an instance of a Medication resource constrained by this profile." />
+  <purpose value="This profile constrains the representation of a medication, in the context of the international patient summary as specified by the IPS project of HL7 International." />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Medication" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Medication" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Medication.code.coding">
+      <path value="Medication.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <description value="One slice per system of representation of medications. Supports the various IDMP codes, as well as WHO ATC classification.&#xD;&#xA;&#xD;&#xA;This element is generally used to identify a medicinal product.&#xD;&#xA;When the IDMP identifiers will be concretely available for usage this element will be used for conveying the Medicinal Product Identifier (MPID).&#xD;&#xA;For the time being, it could be optionally used for conveying jurisdictional or agreed cross jurisdictional medicinal product code." />
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Medication.code.coding:phpid-L1">
+      <path value="Medication.code.coding" />
+      <sliceName value="phpid-L1" />
+      <short value="Pharmaceutical Product Identifier, Level 1" />
+      <definition value="IDMP PhPID Level 1: Implies ingredients.&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as ingredients and route of administration, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product." />
+      <max value="1" />
+    </element>
+    <element id="Medication.code.coding:phpid-L1.userSelected">
+      <path value="Medication.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Medication.code.coding:phpid-L2">
+      <path value="Medication.code.coding" />
+      <sliceName value="phpid-L2" />
+      <short value="Pharmaceutical Product Identifier, Level 2" />
+      <definition value="IDMP PhPID Level 2: Implies ingredients and strength&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as ingredients and route of administration, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product." />
+      <max value="1" />
+    </element>
+    <element id="Medication.code.coding:phpid-L2.userSelected">
+      <path value="Medication.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Medication.code.coding:phpid-L3">
+      <path value="Medication.code.coding" />
+      <sliceName value="phpid-L3" />
+      <short value="Pharmaceutical Product Identifier, Level 3" />
+      <definition value="IDMP PhPID Level 3: Implies ingredients and dose form.&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as ingredients and route of administration, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product." />
+      <max value="1" />
+    </element>
+    <element id="Medication.code.coding:phpid-L3.userSelected">
+      <path value="Medication.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Medication.code.coding:phpid-L4">
+      <path value="Medication.code.coding" />
+      <sliceName value="phpid-L4" />
+      <short value="Pharmaceutical Product Identifier, Level 4" />
+      <definition value="IDMP PhPID Level 4: Implies ingredients, strength, and dose form.&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as ingredients and route of administration, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product." />
+      <max value="1" />
+    </element>
+    <element id="Medication.code.coding:phpid-L4.userSelected">
+      <path value="Medication.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Medication.code.coding:mpid">
+      <path value="Medication.code.coding" />
+      <sliceName value="mpid" />
+      <short value="Medicinal Product Identifier" />
+      <definition value="IDMP Medicinal Product Identifier (MPID) - Uniquely identifies a Medicinal Product, reflecting (but not&#xD;&#xA;replacing) any other authorisation numbers allocated by a regulator.&#xD;&#xA;&#xD;&#xA;MPID implies one (set of) PhPID.&#xD;&#xA;&#xD;&#xA;The MPID shall use a common segment pattern related to a Medicinal Product, which&#xD;&#xA;when each segment is valued shall define a specific MPID concept. The pattern is:&#xD;&#xA;• a) Country code segment (ISO 3166-1 alpha-2 code elements);&#xD;&#xA;• b) Marketing Authorization Holder (Organization Identifier) code segment;&#xD;&#xA;• c) Medicinal Product code segment (Unique Medicinal Product Identifier).&#xD;&#xA;• Any change of the values related to these three code segments shall result in the&#xD;&#xA;assignment of a new MPID.&#xD;" />
+      <max value="1" />
+    </element>
+    <element id="Medication.code.coding:mpid.userSelected">
+      <path value="Medication.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Medication.code.coding:pcid">
+      <path value="Medication.code.coding" />
+      <sliceName value="pcid" />
+      <short value="Packaged Medicinal Product Identifier" />
+      <definition value="IDMP Packaged Medicinal Product Identifier. Implies MPID and package.&#xD;&#xA;&#xD;&#xA;Uniquely identifies a Medicinal Product based&#xD;&#xA;on its packaging. This implies one MPID can be associated with more than one PCID, if the same&#xD;&#xA;Medicinal Product has more than one type of package;&#xD;&#xA;&#xD;&#xA;The PCID shall use a common segment pattern related to a package of a Medicinal&#xD;&#xA;Product, which when each segment is valued, shall define a specific PCID concept. The&#xD;&#xA;pattern is:&#xD;&#xA;• a) MPID for the Medicinal Product&#xD;&#xA;• b) package description code segment, which refers to a unique identifier for each&#xD;&#xA;package." />
+      <max value="1" />
+    </element>
+    <element id="Medication.code.coding:pcid.userSelected">
+      <path value="Medication.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Medication.code.coding:class">
+      <path value="Medication.code.coding" />
+      <sliceName value="class" />
+      <definition value="ATC" />
+      <max value="1" />
+    </element>
+    <element id="Medication.code.coding:class.userSelected">
+      <path value="Medication.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Medication.code.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Medication.code.text" />
+      <definition value="This element is supposed to be valorized with the complete Medicinal Product Name as approved by the Medicines Regulatory Agency in a jurisdiction.&#xD;&#xA;The name may be applicable in one or more country/language combinations." />
+    </element>
+    <element id="Medication.status">
+      <path value="Medication.status" />
+      <max value="0" />
+    </element>
+    <element id="Medication.isBrand">
+      <path value="Medication.isBrand" />
+      <max value="0" />
+    </element>
+    <element id="Medication.isOverTheCounter">
+      <path value="Medication.isOverTheCounter" />
+      <max value="0" />
+    </element>
+    <element id="Medication.manufacturer">
+      <path value="Medication.manufacturer" />
+      <max value="0" />
+    </element>
+    <element id="Medication.form">
+      <path value="Medication.form" />
+      <definition value="Describes the form of the item.  Powder; tablets; capsule.&#xD;&#xA;&#xD;&#xA;Administrable Pharmaceutical Dose Form. &#xD;&#xA;This code represents the form of the medication (e.g. tablet, capsule, liquid)&#xD;&#xA;&#xD;&#xA;Since the EDQM Standards Terms, together with UCUM, is one of the IDMP terminologies actually available for usage, this code system has been selected  as referecne terminology for representing Pharmaceutical Dose forms;Pakages and Route of Administration.&#xD;&#xA;&#xD;&#xA;It is known that also alternative jurisdictional and international terminologies are known to be used for this concept domain, as NCI or SNOMED CT." />
+    </element>
+    <element id="Medication.form.coding">
+      <path value="Medication.form.coding" />
+      <short value="A coded concept defining the form of a medication" />
+      <max value="1" />
+      <binding>
+        <strength value="example" />
+        <description value="The value shall be drawn from value set 2.16.840.1.113883.11.22.25 Medicine Doseform" />
+      </binding>
+    </element>
+    <element id="Medication.form.coding.userSelected">
+      <path value="Medication.form.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Medication.ingredient.itemCodeableConcept:itemCodeableConcept">
+      <path value="Medication.ingredient.itemCodeableConcept" />
+      <sliceName value="itemCodeableConcept" />
+      <comment value="The IDMP ISO 11238 standard addresses the identification and exchange of regulated information on substances. &#xD;&#xA;The Global Ingredient Archival System (GInAS)  will provide a common global identifier for all of the substances used in medicinal products, providing a definition of substances globally consistent with this standard.&#xD;&#xA;Those identifiers however are yet available for concrete usage, therefore in this version of the template, SNOMED CT has been chosen as reference terminology also for the active substances.&#xD;&#xA;This choice will be revised based on the availability and the maturity of GInAS." />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Medication.ingredient.itemCodeableConcept:itemCodeableConcept.coding">
+      <path value="Medication.ingredient.itemCodeableConcept.coding" />
+      <max value="1" />
+    </element>
+    <element id="Medication.ingredient.itemCodeableConcept:itemCodeableConcept.coding.userSelected">
+      <path value="Medication.ingredient.itemCodeableConcept.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Medication.ingredient.isActive">
+      <path value="Medication.ingredient.isActive" />
+      <max value="0" />
+    </element>
+    <element id="Medication.ingredient.amount.numerator.comparator">
+      <path value="Medication.ingredient.amount.numerator.comparator" />
+      <max value="0" />
+    </element>
+    <element id="Medication.ingredient.amount.numerator.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Medication.ingredient.amount.numerator.unit" />
+      <max value="0" />
+    </element>
+    <element id="Medication.ingredient.amount.numerator.system">
+      <path value="Medication.ingredient.amount.numerator.system" />
+      <max value="0" />
+    </element>
+    <element id="Medication.ingredient.amount.numerator.code">
+      <path value="Medication.ingredient.amount.numerator.code" />
+      <binding>
+        <strength value="required" />
+        <description value="value set based on UCUM" />
+        <valueSetUri value="2.16.840.1.113883.11.22.28" />
+      </binding>
+    </element>
+    <element id="Medication.ingredient.amount.denominator.comparator">
+      <path value="Medication.ingredient.amount.denominator.comparator" />
+      <max value="0" />
+    </element>
+    <element id="Medication.ingredient.amount.denominator.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Medication.ingredient.amount.denominator.unit" />
+      <max value="0" />
+    </element>
+    <element id="Medication.ingredient.amount.denominator.system">
+      <path value="Medication.ingredient.amount.denominator.system" />
+      <max value="0" />
+    </element>
+    <element id="Medication.ingredient.amount.denominator.code">
+      <path value="Medication.ingredient.amount.denominator.code" />
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="2.16.840.1.113883.11.22.28" />
+      </binding>
+    </element>
+    <element id="Medication.package.container.coding.userSelected">
+      <path value="Medication.package.container.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Medication.package.content">
+      <path value="Medication.package.content" />
+      <max value="1" />
+    </element>
+    <element id="Medication.package.content.itemCodeableConcept:itemCodeableConcept">
+      <path value="Medication.package.content.itemCodeableConcept" />
+      <sliceName value="itemCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="Medication.package.content.itemCodeableConcept:itemCodeableConcept.coding">
+      <path value="Medication.package.content.itemCodeableConcept.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Medication.package.content.itemCodeableConcept:itemCodeableConcept.coding.userSelected">
+      <path value="Medication.package.content.itemCodeableConcept.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Medication.package.content.amount.unit">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Medication.package.content.amount.unit" />
+      <max value="0" />
+    </element>
+    <element id="Medication.package.content.amount.system">
+      <path value="Medication.package.content.amount.system" />
+      <max value="0" />
+    </element>
+    <element id="Medication.package.content.amount.code">
+      <path value="Medication.package.content.amount.code" />
+      <binding>
+        <strength value="required" />
+        <description value="value set based on UCUM" />
+        <valueSetUri value=" 2.16.840.1.113883.11.22.28" />
+      </binding>
+    </element>
+    <element id="Medication.package.batch">
+      <path value="Medication.package.batch" />
+      <max value="0" />
+    </element>
+    <element id="Medication.image">
+      <path value="Medication.image" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
