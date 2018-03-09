@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2018-03-08T12:39:56.523+01:00" />
+  </meta>
+  <url value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+  <name value="coding-uv-ips" />
+  <title value="coding with translations" />
+  <status value="draft" />
+  <date value="2018-03-08T12:36:59.57+01:00" />
+  <description value="This profile extends the capabilities of the coding data type to support multi-language designations (display).&#xD;&#xA;It relies oon the Translation extension." />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <type value="Coding" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Coding" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Coding.display.extension">
+      <path value="Coding.display.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Coding.display.extension:translation">
+      <path value="Coding.display.extension" />
+      <sliceName value="translation" />
+      <short value="Langauge Translation (Localization)" />
+      <definition value="Language translation from base language of resource to another language." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/translation" />
+      </type>
+    </element>
+    <element id="Coding.userSelected">
+      <path value="Coding.userSelected" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
