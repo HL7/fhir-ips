@@ -9,8 +9,8 @@
   <title value="International Patient Summary" />
   <status value="draft" />
   <experimental value="true" />
-  <date value="2018-02-09T22:11:33.131+01:00" />
-  <publisher value="Trillium II" />
+  <date value="2018-03-09" />
+  <publisher value="HL7 International" />
   <contact>
     <name value="François Macary - Phast" />
   </contact>
@@ -2570,7 +2570,7 @@
         </extension>
         <strength value="example" />
         <description value="Codes identifying names of simple observations." />
-        <valueSetUri value="http://trilliumbridge.eu/fhir/ValueSet/laboratory- and-vital-signs-observations" />
+        <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/laboratory-and-vital-signs-observations" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3704,8 +3704,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://trilliumbridge.eu/fhir/StructureDefinition/organization-laboratory-uv-trillium2" />
-        <aggregation value="referenced" />
+        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/organization-laboratory-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -6211,7 +6210,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Specimen" />
+        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/specimen-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -11835,7 +11834,7 @@
           <valueString value="ObservationCode" />
         </extension>
         <strength value="example" />
-        <valueSetUri value="http://trilliumbridge.eu/fhir/ValueSet/laboratory- and-vital-signs-observations" />
+        <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/laboratory-and-vital-signs-observations" />
       </binding>
     </element>
     <element id="Observation.code.coding">
@@ -11877,8 +11876,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://trilliumbridge.eu/fhir/StructureDefinition/organization-laboratory-uv-trillium2" />
-        <aggregation value="referenced" />
+        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/organization-laboratory-uv-ips" />
       </type>
     </element>
     <element id="Observation.value[x]">
@@ -11923,6 +11921,10 @@
     <element id="Observation.specimen">
       <path value="Observation.specimen" />
       <comment value="Should only be used if the specimen is not implied by the code found in `Observation.code`.  " />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/specimen-uv-ips" />
+      </type>
     </element>
     <element id="Observation.device">
       <path value="Observation.device" />
