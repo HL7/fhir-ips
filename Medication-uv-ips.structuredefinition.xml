@@ -5,7 +5,7 @@
   </meta>
   <url value="http://hl7.org/fhir/ips/StructureDefinition/medication-uv-ips" />
   <version value="0.1" />
-  <name value="medication-uv-ips" />
+  <name value="Medication-uv-ips" />
   <title value="International Patient Summary" />
   <status value="draft" />
   <experimental value="true" />
@@ -34,7 +34,7 @@
       <path value="Medication.code.coding" />
       <sliceName value="pharmaceuticalProduct-L1" />
       <short value="Pharmaceutical Product Identifier, Level 1" />
-      <definition value="IDMP PhPID Level 1: Implies ingredients.&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as ingredients and route of administration, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product." />
+      <definition value="IDMP PhPID Level 1 (Implies ingredients) or any equivalent Pharmaceutical Product identifier.&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as ingredients and route of administration, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product." />
       <max value="1" />
     </element>
     <element id="Medication.code.coding:pharmaceuticalProduct-L1.userSelected">
@@ -45,7 +45,7 @@
       <path value="Medication.code.coding" />
       <sliceName value="pharmaceuticalProduct-L2" />
       <short value="Pharmaceutical Product Identifier, Level 2" />
-      <definition value="IDMP PhPID Level 2: Implies ingredients and strength&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as ingredients and route of administration, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product." />
+      <definition value="IDMP PhPID Level 2 (Implies ingredients and strength) or any equivalent Pharmaceutical Product identifier.&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as ingredients and route of administration, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product." />
       <max value="1" />
     </element>
     <element id="Medication.code.coding:pharmaceuticalProduct-L2.userSelected">
@@ -56,7 +56,7 @@
       <path value="Medication.code.coding" />
       <sliceName value="pharmaceuticalProduct-L3" />
       <short value="Pharmaceutical Product Identifier, Level 3" />
-      <definition value="IDMP PhPID Level 3: Implies ingredients and dose form.&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as ingredients and route of administration, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product." />
+      <definition value="IDMP PhPID Level 3 (Implies ingredients and dose form) or any equivalent Pharmaceutical Product identifier.&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as ingredients and route of administration, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product." />
       <max value="1" />
     </element>
     <element id="Medication.code.coding:pharmaceuticalProduct-L3.userSelected">
@@ -67,7 +67,7 @@
       <path value="Medication.code.coding" />
       <sliceName value="pharmaceuticalProduct-L4" />
       <short value="Pharmaceutical Product Identifier, Level 4" />
-      <definition value="IDMP PhPID Level 4: Implies ingredients, strength, and dose form.&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as ingredients and route of administration, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product." />
+      <definition value="IDMP PhPID Level 4 (Implies ingredients, strength, and dose form) or any equivalent Pharmaceutical Product identifier.&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as ingredients and route of administration, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product." />
       <max value="1" />
     </element>
     <element id="Medication.code.coding:pharmaceuticalProduct-L4.userSelected">
@@ -78,7 +78,7 @@
       <path value="Medication.code.coding" />
       <sliceName value="medicinalProduct" />
       <short value="Medicinal Product Identifier" />
-      <definition value="IDMP Medicinal Product Identifier (MPID) - Uniquely identifies a Medicinal Product, reflecting (but not&#xD;&#xA;replacing) any other authorisation numbers allocated by a regulator.&#xD;&#xA;&#xD;&#xA;MPID implies one (set of) PhPID.&#xD;&#xA;&#xD;&#xA;The MPID shall use a common segment pattern related to a Medicinal Product, which&#xD;&#xA;when each segment is valued shall define a specific MPID concept. The pattern is:&#xD;&#xA;• a) Country code segment (ISO 3166-1 alpha-2 code elements);&#xD;&#xA;• b) Marketing Authorization Holder (Organization Identifier) code segment;&#xD;&#xA;• c) Medicinal Product code segment (Unique Medicinal Product Identifier).&#xD;&#xA;• Any change of the values related to these three code segments shall result in the&#xD;&#xA;assignment of a new MPID.&#xD;" />
+      <definition value="IDMP Medicinal Product Identifier (MPID) or any equivalent Medicinal Product Identifier.&#xD;&#xA;&#xD;&#xA;IDMP MPID uniquely identifies a Medicinal Product, reflecting (but not replacing) any other authorisation numbers allocated by a regulator.&#xD;&#xA;&#xD;&#xA;MPID implies one (set of) PhPID.&#xD;&#xA;The MPID shall use a common segment pattern related to a Medicinal Product, which&#xD;&#xA;when each segment is valued shall define a specific MPID concept. The pattern is:&#xD;&#xA;• a) Country code segment (ISO 3166-1 alpha-2 code elements);&#xD;&#xA;• b) Marketing Authorization Holder (Organization Identifier) code segment;&#xD;&#xA;• c) Medicinal Product code segment (Unique Medicinal Product Identifier).&#xD;&#xA;• Any change of the values related to these three code segments shall result in the&#xD;&#xA;assignment of a new MPID.&#xD;" />
       <max value="1" />
     </element>
     <element id="Medication.code.coding:medicinalProduct.userSelected">
@@ -89,7 +89,7 @@
       <path value="Medication.code.coding" />
       <sliceName value="packagedProduct" />
       <short value="Packaged Medicinal Product Identifier" />
-      <definition value="IDMP Packaged Medicinal Product Identifier. Implies MPID and package.&#xD;&#xA;&#xD;&#xA;Uniquely identifies a Medicinal Product based&#xD;&#xA;on its packaging. This implies one MPID can be associated with more than one PCID, if the same&#xD;&#xA;Medicinal Product has more than one type of package;&#xD;&#xA;&#xD;&#xA;The PCID shall use a common segment pattern related to a package of a Medicinal&#xD;&#xA;Product, which when each segment is valued, shall define a specific PCID concept. The&#xD;&#xA;pattern is:&#xD;&#xA;• a) MPID for the Medicinal Product&#xD;&#xA;• b) package description code segment, which refers to a unique identifier for each&#xD;&#xA;package." />
+      <definition value="IDMP Packaged Medicinal Product Identifier  or any equivalent Packaged Medicinal Product Identifier.&#xD;&#xA;&#xD;&#xA;Uniquely identifies a Medicinal Product based on its packaging. This implies one MPID can be associated with more than one PCID, if the same Medicinal Product has more than one type of package;&#xD;&#xA;&#xD;&#xA;The PCID shall use a common segment pattern related to a package of a Medicinal&#xD;&#xA;Product, which when each segment is valued, shall define a specific PCID concept. The&#xD;&#xA;pattern is:&#xD;&#xA;• a) MPID for the Medicinal Product&#xD;&#xA;• b) package description code segment, which refers to a unique identifier for each&#xD;&#xA;package." />
       <max value="1" />
     </element>
     <element id="Medication.code.coding:packagedProduct.userSelected">
@@ -99,6 +99,7 @@
     <element id="Medication.code.coding:class">
       <path value="Medication.code.coding" />
       <sliceName value="class" />
+      <short value="Product classification or cluster" />
       <definition value="Any classification or cluster of products such as ATC, SNOMED VMP or national classification of products" />
       <max value="1" />
     </element>

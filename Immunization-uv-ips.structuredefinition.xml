@@ -3,6 +3,16 @@
   <meta>
     <lastUpdated value="2018-03-07T18:47:01.502+01:00" />
   </meta>
+  <text>
+    <status value="generated" /><div xmlns="http://www.w3.org/1999/xhtml">This profile describes the event of a patient being administered a vaccination or a record of a vaccination as reported by a patient, a clinician or another party and may include vaccine reaction information and what vaccination protocol was followed.
+
+Its main purpose is the communication of a patient's immunization status
+
+If it describes a reported information the details about the assertion (e.g. who did the assertion, when was done) can be optionally documented in the in the statement extension.
+
+At the minimum it shall include the Vaccine for type of disease and the date of immunization. It can provide details about the administration process (dosage, route, performer,..); the target diseases and the administered product (e.g. IDMP and non-IDMP product identifiers; brand name; lot number; manufacturer).
+
+</div></text>
   <url value="http://hl7.org/fhir/ips/StructureDefinition/immunization-uv-ips" />
   <name value="Immunization-uv-ips" />
   <title value="International Patient Summary - Immunization" />
@@ -17,6 +27,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Immunization" />
   <derivation value="constraint" />
   <differential>
+    <element id="Immunization">
+      <path value="Immunization" />
+      <definition value="Describes the event of a patient being administered a vaccination or a record of a vaccination as reported by a patient, a clinician or another party and may include vaccine reaction information and what vaccination protocol was followed.&#xD;&#xA;&#xD;&#xA;If it describes a reported information the details about the assertion (e.g. who did the assertion, when was done) can be optionally documented in the in the statement extension." />
+    </element>
     <element id="Immunization.extension">
       <path value="Immunization.extension" />
       <slicing>
@@ -36,6 +50,10 @@
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/statement-uv-ips" />
       </type>
     </element>
+    <element id="Immunization.vaccineCode">
+      <path value="Immunization.vaccineCode" />
+      <definition value="Vaccine that was administered or was to be administered.&#xD;&#xA;&#xD;&#xA;Several kinds of vaccine product coding could be provided .&#xD;&#xA;The IPS requires that at least the Vaccine for type of disease is documented; other coded information that identify / classify the administered product (e.g. the medicinal prodoct or the  product class), including IDMP identifiers, can be recorded as well." />
+    </element>
     <element id="Immunization.vaccineCode.coding">
       <path value="Immunization.vaccineCode.coding" />
       <slicing>
@@ -46,51 +64,102 @@
         <description value="One slice per system of representation of vaccines. &#xD;&#xA;Supports vaccine classifications and medicinal products identifiers and classes.&#xD;&#xA;&#xD;&#xA;When the IDMP identifiers will be concretely available for usage this element will be used for conveying the Medicinal Product Identifier (MPID).&#xD;&#xA;For the time being, it could be optionally used for conveying jurisdictional or agreed cross jurisdictional product code." />
         <rules value="open" />
       </slicing>
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+      </type>
     </element>
     <element id="Immunization.vaccineCode.coding:vaccineType">
       <path value="Immunization.vaccineCode.coding" />
       <sliceName value="vaccineType" />
+      <short value="Vaccine for type of disease" />
+      <definition value="The type of vaccine for particular disease or diseases against which the patient has been immunised. " />
       <min value="1" />
       <max value="1" />
-    </element>
-    <element id="Immunization.vaccineCode.coding:vaccineType.userSelected">
-      <path value="Immunization.vaccineCode.coding.userSelected" />
-      <max value="0" />
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+      </type>
+      <mustSupport value="true" />
     </element>
     <element id="Immunization.vaccineCode.coding:pharmaceuticalProduct-L1">
       <path value="Immunization.vaccineCode.coding" />
       <sliceName value="pharmaceuticalProduct-L1" />
       <short value="Pharmaceutical Product Identifier, Level 1" />
+      <definition value="IDMP PhPID Level 1 (Implies ingredients) or any equivalent Pharmaceutical Product identifier.&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as ingredients and route of administration, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product." />
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+      </type>
     </element>
     <element id="Immunization.vaccineCode.coding:pharmaceuticalProduct-L2">
       <path value="Immunization.vaccineCode.coding" />
       <sliceName value="pharmaceuticalProduct-L2" />
+      <short value="Pharmaceutical Product Identifier, Level 2" />
+      <definition value="IDMP PhPID Level 2 (Implies ingredients and strength) or any equivalent Pharmaceutical Product identifier.&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as ingredients and route of administration, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product." />
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+      </type>
     </element>
     <element id="Immunization.vaccineCode.coding:pharmaceuticalProduct-L3">
       <path value="Immunization.vaccineCode.coding" />
       <sliceName value="pharmaceuticalProduct-L3" />
+      <short value="Pharmaceutical Product Identifier, Level 3" />
+      <definition value="IDMP PhPID Level 3 (Implies ingredients and dose form) or any equivalent Pharmaceutical Product identifier.&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as ingredients and route of administration, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product." />
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+      </type>
     </element>
     <element id="Immunization.vaccineCode.coding:pharmaceuticalProduct-L4">
       <path value="Immunization.vaccineCode.coding" />
       <sliceName value="pharmaceuticalProduct-L4" />
+      <short value="Pharmaceutical Product Identifier, Level 4" />
+      <definition value="IDMP PhPID Level 4 (Implies ingredients, strength, and dose form) or any equivalent Pharmaceutical Product identifier.&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as ingredients and route of administration, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product." />
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+      </type>
     </element>
     <element id="Immunization.vaccineCode.coding:medicinalProduct">
       <path value="Immunization.vaccineCode.coding" />
       <sliceName value="medicinalProduct" />
       <short value="Medicinal Product Identifier" />
-      <definition value="IDMP Medicinal Product Identifier (MPID) - Uniquely identifies a Medicinal Product, reflecting (but not&#xD;&#xA;replacing) any other authorisation numbers allocated by a regulator.&#xD;&#xA;MPID implies one (set of) PhPID.&#xD;&#xA;The MPID shall use a common segment pattern related to a Medicinal Product, which&#xD;&#xA;when each segment is valued shall define a specific MPID concept. The pattern is:&#xD;&#xA;• a) Country code segment (ISO 3166-1 alpha-2 code elements);&#xD;&#xA;• b) Marketing Authorization Holder (Organization Identifier) code segment;&#xD;&#xA;• c) Medicinal Product code segment (Unique Medicinal Product Identifier).&#xD;&#xA;• Any change of the values related to these three code segments shall result in the&#xD;&#xA;assignment of a new MPID.&#xD;" />
+      <definition value="IDMP Medicinal Product Identifier (MPID) or any equivalent Medicinal Product Identifier.&#xD;&#xA;&#xD;&#xA;IDMP MPID uniquely identifies a Medicinal Product, reflecting (but not replacing) any other authorisation numbers allocated by a regulator.&#xD;&#xA;&#xD;&#xA;MPID implies one (set of) PhPID.&#xD;&#xA;The MPID shall use a common segment pattern related to a Medicinal Product, which&#xD;&#xA;when each segment is valued shall define a specific MPID concept. The pattern is:&#xD;&#xA;• a) Country code segment (ISO 3166-1 alpha-2 code elements);&#xD;&#xA;• b) Marketing Authorization Holder (Organization Identifier) code segment;&#xD;&#xA;• c) Medicinal Product code segment (Unique Medicinal Product Identifier).&#xD;&#xA;• Any change of the values related to these three code segments shall result in the&#xD;&#xA;assignment of a new MPID.&#xD;" />
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+      </type>
     </element>
     <element id="Immunization.vaccineCode.coding:packagedProduct">
       <path value="Immunization.vaccineCode.coding" />
       <sliceName value="packagedProduct" />
+      <short value="Packaged Medicinal Product Identifier" />
+      <definition value="IDMP Packaged Medicinal Product Identifier  or any equivalent Packaged Medicinal Product Identifier.&#xD;&#xA;&#xD;&#xA;Uniquely identifies a Medicinal Product based on its packaging. This implies one MPID can be associated with more than one PCID, if the same Medicinal Product has more than one type of package;&#xD;&#xA;&#xD;&#xA;The PCID shall use a common segment pattern related to a package of a Medicinal&#xD;&#xA;Product, which when each segment is valued, shall define a specific PCID concept. The&#xD;&#xA;pattern is:&#xD;&#xA;• a) MPID for the Medicinal Product&#xD;&#xA;• b) package description code segment, which refers to a unique identifier for each&#xD;&#xA;package." />
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+      </type>
     </element>
     <element id="Immunization.vaccineCode.coding:class">
       <path value="Immunization.vaccineCode.coding" />
       <sliceName value="class" />
+      <short value="Product classification or cluster" />
+      <definition value="Any classification or cluster of products such as ATC, SNOMED VMP or national classification of products" />
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+      </type>
     </element>
     <element id="Immunization.encounter">
       <path value="Immunization.encounter" />
       <max value="0" />
+    </element>
+    <element id="Immunization.date">
+      <path value="Immunization.date" />
+      <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Immunization.reportOrigin">
       <path value="Immunization.reportOrigin" />
@@ -108,9 +177,19 @@
       <path value="Immunization.manufacturer.identifier" />
       <max value="0" />
     </element>
-    <element id="Immunization.expirationDate">
-      <path value="Immunization.expirationDate" />
-      <max value="0" />
+    <element id="Immunization.site.coding">
+      <path value="Immunization.site.coding" />
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+      </type>
+    </element>
+    <element id="Immunization.route.coding">
+      <path value="Immunization.route.coding" />
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+      </type>
     </element>
     <element id="Immunization.practitioner">
       <path value="Immunization.practitioner" />
@@ -132,6 +211,10 @@
       <path value="Immunization.note.time" />
       <max value="0" />
     </element>
+    <element id="Immunization.explanation">
+      <path value="Immunization.explanation" />
+      <max value="0" />
+    </element>
     <element id="Immunization.explanation.reason">
       <path value="Immunization.explanation.reason" />
       <max value="0" />
@@ -140,9 +223,16 @@
       <path value="Immunization.explanation.reasonNotGiven" />
       <max value="1" />
     </element>
+    <element id="Immunization.explanation.reasonNotGiven.coding">
+      <path value="Immunization.explanation.reasonNotGiven.coding" />
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+      </type>
+    </element>
     <element id="Immunization.reaction">
       <path value="Immunization.reaction" />
-      <max value="1" />
+      <max value="0" />
     </element>
     <element id="Immunization.reaction.date">
       <path value="Immunization.reaction.date" />
@@ -179,6 +269,20 @@
     <element id="Immunization.vaccinationProtocol.series">
       <path value="Immunization.vaccinationProtocol.series" />
       <max value="0" />
+    </element>
+    <element id="Immunization.vaccinationProtocol.targetDisease.coding">
+      <path value="Immunization.vaccinationProtocol.targetDisease.coding" />
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+      </type>
+    </element>
+    <element id="Immunization.vaccinationProtocol.doseStatus.coding">
+      <path value="Immunization.vaccinationProtocol.doseStatus.coding" />
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+      </type>
     </element>
     <element id="Immunization.vaccinationProtocol.doseStatusReason">
       <path value="Immunization.vaccinationProtocol.doseStatusReason" />
