@@ -50,6 +50,15 @@ At the minimum it shall include the Vaccine for type of disease and the date of 
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/statement-uv-ips" />
       </type>
     </element>
+    <element id="Immunization.extension:statementDetails.extension:statementNote">
+      <path value="Immunization.extension.extension" />
+      <sliceName value="statementNote" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.status">
+      <path value="Immunization.status" />
+      <fixedCode value="completed" />
+    </element>
     <element id="Immunization.vaccineCode">
       <path value="Immunization.vaccineCode" />
       <definition value="Vaccine that was administered or was to be administered.&#xD;&#xA;&#xD;&#xA;Several kinds of vaccine product coding could be provided .&#xD;&#xA;The IPS requires that at least the Vaccine for type of disease is documented; other coded information that identify / classify the administered product (e.g. the medicinal prodoct or the  product class), including IDMP identifiers, can be recorded as well." />
@@ -81,6 +90,10 @@ At the minimum it shall include the Vaccine for type of disease and the date of 
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
       </type>
       <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/vaccines-uv-ips" />
+      </binding>
     </element>
     <element id="Immunization.vaccineCode.coding:pharmaceuticalProduct-L1">
       <path value="Immunization.vaccineCode.coding" />
@@ -132,6 +145,14 @@ At the minimum it shall include the Vaccine for type of disease and the date of 
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
       </type>
     </element>
+    <element id="Immunization.vaccineCode.coding:medicinalProduct.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Immunization.vaccineCode.coding.display" />
+      <short value="Name of the Medicinal Product" />
+      <definition value="Name of the Medicinal Product, in some cases it corresponds to the brand name." />
+    </element>
     <element id="Immunization.vaccineCode.coding:packagedProduct">
       <path value="Immunization.vaccineCode.coding" />
       <sliceName value="packagedProduct" />
@@ -142,6 +163,14 @@ At the minimum it shall include the Vaccine for type of disease and the date of 
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
       </type>
     </element>
+    <element id="Immunization.vaccineCode.coding:packagedProduct.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Immunization.vaccineCode.coding.display" />
+      <short value="Name of the Packaged Medicinal Product" />
+      <definition value="Name of the Packaged Medicinal Product, in some cases it corresponds to the brand name." />
+    </element>
     <element id="Immunization.vaccineCode.coding:class">
       <path value="Immunization.vaccineCode.coding" />
       <sliceName value="class" />
@@ -151,6 +180,10 @@ At the minimum it shall include the Vaccine for type of disease and the date of 
         <code value="Coding" />
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
       </type>
+      <binding>
+        <strength value="example" />
+        <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/whoatc-uv-ips" />
+      </binding>
     </element>
     <element id="Immunization.encounter">
       <path value="Immunization.encounter" />
@@ -169,10 +202,6 @@ At the minimum it shall include the Vaccine for type of disease and the date of 
       <path value="Immunization.location" />
       <max value="0" />
     </element>
-    <element id="Immunization.manufacturer.reference">
-      <path value="Immunization.manufacturer.reference" />
-      <max value="0" />
-    </element>
     <element id="Immunization.manufacturer.identifier">
       <path value="Immunization.manufacturer.identifier" />
       <max value="0" />
@@ -183,6 +212,10 @@ At the minimum it shall include the Vaccine for type of disease and the date of 
         <code value="Coding" />
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
       </type>
+      <binding>
+        <strength value="preferred" />
+        <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/targetSite-uv-ips" />
+      </binding>
     </element>
     <element id="Immunization.route.coding">
       <path value="Immunization.route.coding" />
@@ -190,6 +223,10 @@ At the minimum it shall include the Vaccine for type of disease and the date of 
         <code value="Coding" />
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
       </type>
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/routeOfAdministration-uv-ips" />
+      </binding>
     </element>
     <element id="Immunization.practitioner">
       <path value="Immunization.practitioner" />
