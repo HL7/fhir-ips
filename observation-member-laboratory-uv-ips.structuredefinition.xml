@@ -2146,9 +2146,9 @@
     </element>
     <element id="Observation.category.coding">
       <path value="Observation.category.coding" />
-      <short value="Code defined by a terminology system" />
+      <short value="A reference to a code defined by a terminology system" />
       <definition value="A reference to a code defined by a terminology system." />
-      <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
+      <comment value="Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information." />
       <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
       <min value="1" />
       <max value="1" />
@@ -2159,6 +2159,7 @@
       </base>
       <type>
         <code value="Coding" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2458,7 +2459,7 @@
       <comment value="Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely." />
       <requirements value="This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Coding.userSelected" />
         <min value="0" />
@@ -11817,15 +11818,15 @@
       <path value="Observation.category.coding" />
       <min value="1" />
       <max value="1" />
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+      </type>
       <binding>
         <strength value="required" />
         <description value="either a laboratory result or a vital sign" />
         <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/sub-observation-category" />
       </binding>
-    </element>
-    <element id="Observation.category.coding.userSelected">
-      <path value="Observation.category.coding.userSelected" />
-      <max value="0" />
     </element>
     <element id="Observation.code">
       <path value="Observation.code" />

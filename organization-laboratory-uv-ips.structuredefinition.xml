@@ -1851,9 +1851,9 @@
     </element>
     <element id="Organization.type.coding">
       <path value="Organization.type.coding" />
-      <short value="Code defined by a terminology system" />
+      <short value="A reference to a code defined by a terminology system" />
       <definition value="A reference to a code defined by a terminology system." />
-      <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
+      <comment value="Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information." />
       <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
       <min value="1" />
       <max value="1" />
@@ -1864,6 +1864,7 @@
       </base>
       <type>
         <code value="Coding" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -6738,6 +6739,10 @@
       <path value="Organization.type.coding" />
       <min value="1" />
       <max value="1" />
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+      </type>
       <binding>
         <strength value="extensible" />
         <valueSetUri value="http://trilliumbridge.eu/fhir/ValueSet/performing-organization-type " />
