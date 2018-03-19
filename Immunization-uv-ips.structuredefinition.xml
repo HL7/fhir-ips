@@ -10,9 +10,7 @@ Its main purpose is the communication of a patient's immunization status
 
 If it describes a reported information the details about the assertion (e.g. who did the assertion, when was done) can be optionally documented in the in the statement extension.
 
-At the minimum it shall include the Vaccine for type of disease and the date of immunization. It can provide details about the administration process (dosage, route, performer,..); the target diseases and the administered product (e.g. IDMP and non-IDMP product identifiers; brand name; lot number; manufacturer).
-
-</div></text>
+At the minimum it shall include the Vaccine for type of disease and the date of immunization. It can provide details about the administration process (dosage, route, performer,..); the target diseases and the administered product (e.g. IDMP and non-IDMP product identifiers; brand name; lot number; manufacturer).</div></text>
   <url value="http://hl7.org/fhir/ips/StructureDefinition/immunization-uv-ips" />
   <name value="Immunization-uv-ips" />
   <title value="International Patient Summary - Immunization" />
@@ -44,6 +42,8 @@ At the minimum it shall include the Vaccine for type of disease and the date of 
     <element id="Immunization.extension:statementDetails">
       <path value="Immunization.extension" />
       <sliceName value="statementDetails" />
+      <short value="Immunization Statement detail" />
+      <definition value="Information about who reported this immunization and when" />
       <max value="1" />
       <type>
         <code value="Extension" />
@@ -59,9 +59,18 @@ At the minimum it shall include the Vaccine for type of disease and the date of 
       <path value="Immunization.status" />
       <fixedCode value="completed" />
     </element>
+    <element id="Immunization.notGiven">
+      <path value="Immunization.notGiven" />
+      <comment value="This element is always false for the IPS as we report immunization that happened" />
+      <type>
+        <code value="boolean" />
+        <profile value="false" />
+      </type>
+      <fixedBoolean value="true" />
+    </element>
     <element id="Immunization.vaccineCode">
       <path value="Immunization.vaccineCode" />
-      <definition value="Vaccine that was administered or was to be administered.&#xD;&#xA;&#xD;&#xA;Several kinds of vaccine product coding could be provided .&#xD;&#xA;The IPS requires that at least the Vaccine for type of disease is documented; other coded information that identify / classify the administered product (e.g. the medicinal prodoct or the  product class), including IDMP identifiers, can be recorded as well." />
+      <definition value="Vaccine that was administered or was to be administered.&#xD;&#xA;Several kinds of vaccine product coding could be provided .&#xD;&#xA;&#xD;&#xA;The IPS requires that at least the Vaccine for type of disease is documented; other coded information that identifies / classifies the administered product (e.g. the medicinal prodoct or the  product class), including IDMP identifiers, can be recorded as well." />
     </element>
     <element id="Immunization.vaccineCode.coding">
       <path value="Immunization.vaccineCode.coding" />
@@ -175,15 +184,25 @@ At the minimum it shall include the Vaccine for type of disease and the date of 
       <path value="Immunization.vaccineCode.coding" />
       <sliceName value="class" />
       <short value="Product classification or cluster" />
-      <definition value="Any classification or cluster of products such as ATC, SNOMED VMP or national classification of products" />
+      <definition value="Any classification or cluster of products such as ATC, SNOMED VMP or national/local classification of products" />
       <type>
         <code value="Coding" />
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
       </type>
       <binding>
         <strength value="example" />
-        <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/whoatc-uv-ips" />
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ips/ValueSet/whoatc-uv-ips" />
+        </valueSetReference>
       </binding>
+    </element>
+    <element id="Immunization.vaccineCode.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Immunization.vaccineCode.text" />
+      <comment value="The text should be at the displayName level and not on this level." />
+      <max value="0" />
     </element>
     <element id="Immunization.encounter">
       <path value="Immunization.encounter" />
@@ -206,6 +225,14 @@ At the minimum it shall include the Vaccine for type of disease and the date of 
       <path value="Immunization.manufacturer.identifier" />
       <max value="0" />
     </element>
+    <element id="Immunization.expirationDate">
+      <path value="Immunization.expirationDate" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.site">
+      <path value="Immunization.site" />
+      <max value="0" />
+    </element>
     <element id="Immunization.site.coding">
       <path value="Immunization.site.coding" />
       <type>
@@ -215,6 +242,18 @@ At the minimum it shall include the Vaccine for type of disease and the date of 
       <binding>
         <strength value="preferred" />
         <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/targetSite-uv-ips" />
+      </binding>
+    </element>
+    <element id="Immunization.route">
+      <path value="Immunization.route" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ImmunizationRoute" />
+        </extension>
+        <strength value="required" />
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ips/ValueSet/routeOfAdministration-uv-ips" />
+        </valueSetReference>
       </binding>
     </element>
     <element id="Immunization.route.coding">
@@ -227,6 +266,10 @@ At the minimum it shall include the Vaccine for type of disease and the date of 
         <strength value="required" />
         <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/routeOfAdministration-uv-ips" />
       </binding>
+    </element>
+    <element id="Immunization.doseQuantity">
+      <path value="Immunization.doseQuantity" />
+      <max value="0" />
     </element>
     <element id="Immunization.practitioner">
       <path value="Immunization.practitioner" />
@@ -289,7 +332,7 @@ At the minimum it shall include the Vaccine for type of disease and the date of 
     </element>
     <element id="Immunization.vaccinationProtocol">
       <path value="Immunization.vaccinationProtocol" />
-      <max value="1" />
+      <max value="0" />
     </element>
     <element id="Immunization.vaccinationProtocol.doseSequence">
       <path value="Immunization.vaccinationProtocol.doseSequence" />
