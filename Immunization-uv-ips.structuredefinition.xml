@@ -180,21 +180,32 @@ At the minimum it shall include the Vaccine for type of disease and the date of 
       <short value="Name of the Packaged Medicinal Product" />
       <definition value="Name of the Packaged Medicinal Product, in some cases it corresponds to the brand name." />
     </element>
-    <element id="Immunization.vaccineCode.coding:class">
+    <element id="Immunization.vaccineCode.coding:atcClass">
       <path value="Immunization.vaccineCode.coding" />
-      <sliceName value="class" />
-      <short value="Product classification or cluster" />
-      <definition value="Any classification or cluster of products such as ATC, SNOMED VMP or national/local classification of products" />
+      <sliceName value="atcClass" />
+      <short value="WHO ATC classification" />
+      <definition value="WHO classification or cluster of products such as ATC, SNOMED VMP or national/local classification of products" />
+      <max value="1" />
       <type>
         <code value="Coding" />
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
       </type>
       <binding>
-        <strength value="example" />
+        <strength value="required" />
         <valueSetReference>
           <reference value="http://hl7.org/fhir/ips/ValueSet/whoatc-uv-ips" />
         </valueSetReference>
       </binding>
+    </element>
+    <element id="Immunization.vaccineCode.coding:class">
+      <path value="Immunization.vaccineCode.coding" />
+      <sliceName value="class" />
+      <short value="Product class or cluster" />
+      <definition value="Any other classification or cluster of products such as  SNOMED VMP or national/local classification of products" />
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+      </type>
     </element>
     <element id="Immunization.vaccineCode.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -252,7 +263,7 @@ At the minimum it shall include the Vaccine for type of disease and the date of 
         </extension>
         <strength value="required" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/routeOfAdministration-uv-ips" />
+          <reference value="http://hl7.org/fhir/ips/ValueSet/medicine-route-of-administration" />
         </valueSetReference>
       </binding>
     </element>
