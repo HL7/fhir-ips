@@ -5,7 +5,7 @@
   </meta>
   <url value="http://hl7.org/fhir/ips/StructureDefinition/allergyintolerance-uv-ips" />
   <name value="AllergyIntolerance-uv-ips" />
-  <title value="International Patient Summary - AllergyIntolerance" />
+  <title value="International Patient Summary (core) - AllergyIntolerance" />
   <status value="draft" />
   <date value="2018-02-14T07:57:18.78-06:00" />
   <description value="This profile represents the constraints applied to the AllergyIntolerance resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an allergy or intolerance is represented in the patient summary as an instance of an AllergyIntolerance resource constrained by this profile." />
@@ -1653,7 +1653,7 @@
       <short value="active | inactive | resolved" />
       <definition value="The clinical status of the allergy or intolerance." />
       <comment value="This element is labeled as a modifier because the status contains the codes inactive and resolved that mark the AllergyIntolerance as not currently valid." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="AllergyIntolerance.clinicalStatus" />
@@ -1673,6 +1673,7 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <mustSupport value="true" />
       <isModifier value="true" />
       <isSummary value="true" />
       <binding>
@@ -1723,6 +1724,7 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <mustSupport value="true" />
       <isModifier value="true" />
       <isSummary value="true" />
       <binding>
@@ -1773,6 +1775,7 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <mustSupport value="true" />
       <isSummary value="true" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -1883,6 +1886,7 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <mustSupport value="true" />
       <isSummary value="true" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -1924,7 +1928,7 @@
       <definition value="Code for an allergy or intolerance statement (either a positive or a negated/excluded statement).  This may be a code for a substance or pharmaceutical product that is considered to be responsible for the adverse reaction risk (e.g., &quot;Latex&quot;), an allergy or intolerance condition (e.g., &quot;Latex allergy&quot;), or a negated/excluded code for a specific substance or class (e.g., &quot;No latex allergy&quot;) or a general or categorical negated statement (e.g.,  &quot;No known allergy&quot;, &quot;No known drug allergies&quot;)." />
       <comment value="It is strongly recommended that this element be populated using a terminology, where possible. For example, some terminologies used include RxNorm, SNOMED CT, DM+D, NDFRT, ICD-9, IDC-10, UNI, ATC and CPT. Plain text should only be used if there is no appropriate terminology available. Additional details can be specified in the text.&#xD;&#xD;When a substance or product code is specified for the 'code' element, the &quot;default&quot; semantic context is that this is a positive statement of an allergy or intolerance (depending on the value of the 'type' element, if present) condition to the specified substance/product.  In the corresponding SNOMED CT allergy model, the specified substance/product is the target (destination) of the &quot;Causative agent&quot; relationship.&#xD;&#xD;The 'substanceExposureRisk' extension is available as a structured and more flexible alternative to the 'code' element for making positive or negative allergy or intolerance statements.  This extension provides the capability to make &quot;no known allergy&quot; (or &quot;no risk of adverse reaction&quot;) statements regarding any coded substance/product (including cases when a pre-coordinated &quot;no allergy to x&quot; concept for that substance/product does not exist).  If the 'substanceExposureRisk' extension is present, the AllergyIntolerance.code element SHALL be omitted." />
       <alias value="Code" />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="AllergyIntolerance.code" />
@@ -1942,6 +1946,7 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <mustSupport value="true" />
       <isSummary value="true" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -3547,6 +3552,7 @@
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
       </constraint>
+      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -3762,7 +3768,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="AllergyIntolerance.onset[x]:onsetDateTime">
+    <element id="AllergyIntolerance.onsetDateTime:onsetDateTime">
       <path value="AllergyIntolerance.onsetDateTime" />
       <sliceName value="onsetDateTime" />
       <short value="When allergy or intolerance was identified" />
@@ -3785,6 +3791,7 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <mustSupport value="true" />
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -3876,7 +3883,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="AllergyIntolerance.onset[x]:onsetDateTime.extension:onsetDateAbsentReason">
+    <element id="AllergyIntolerance.onsetDateTime:onsetDateTime.extension:onsetDateAbsentReason">
       <path value="AllergyIntolerance.onsetDateTime.extension" />
       <sliceName value="onsetDateAbsentReason" />
       <short value="unknown | asked | temp | notasked | masked | unsupported | astext | error" />
@@ -4499,7 +4506,7 @@
       <definition value="Represents the date and/or time of the last known occurrence of a reaction event." />
       <comment value="This date may be replicated by one of the Onset of Reaction dates. Where a textual representation of the date of last occurrence is required e.g. 'In Childhood, '10 years ago' the Comment element should be used." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="AllergyIntolerance.lastOccurrence" />
         <min value="0" />
@@ -4531,7 +4538,7 @@
       <definition value="Additional narrative about the propensity for the Adverse Reaction, not captured in other fields." />
       <comment value="For example: including reason for flagging a seriousness of 'High Risk'; and instructions related to future exposure or administration of the substance, such as administration within an Intensive Care Unit or under corticosteroid cover. The notes should be related to an allergy or intolerance as a condition in general and not related to any particular episode of it. For episode notes and descriptions, use AllergyIntolerance.event.description and  AllergyIntolerance.event.notes." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="AllergyIntolerance.note" />
         <min value="0" />
@@ -4934,7 +4941,7 @@
       <definition value="Identification of the specific substance (or pharmaceutical product) considered to be responsible for the Adverse Reaction event. Note: the substance for a specific reaction may be different from the substance identified as the cause of the risk, but it must be consistent with it. For instance, it may be a more specific substance (e.g. a brand medication) or a composite product that includes the identified substance. It must be clinically safe to only process the 'code' and ignore the 'reaction.substance'." />
       <comment value="Coding of the specific substance (or pharmaceutical product) with a terminology capable of triggering decision support should be used wherever possible.  The 'code' element allows for the use of a specific substance or pharmaceutical product, or a group or class of substances. In the case of an allergy or intolerance to a class of substances, (for example, &quot;penicillins&quot;), the 'reaction.substance' element could be used to code the specific substance that was identifed as having caused the reaction (for example, &quot;amoxycillin&quot;). Duplication of the value in the 'code' and 'reaction.substance' elements is acceptable when a specific substance has been recorded in 'code'." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="AllergyIntolerance.reaction.substance" />
         <min value="0" />
@@ -5475,6 +5482,7 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <mustSupport value="true" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Manifestation" />
@@ -6069,6 +6077,7 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <mustSupport value="true" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="AllergyIntoleranceSeverity" />
@@ -6094,7 +6103,7 @@
       <definition value="Identification of the route by which the subject was exposed to the substance." />
       <comment value="Coding of the route of exposure with a terminology should be used wherever possible." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="AllergyIntolerance.reaction.exposureRoute" />
         <min value="0" />
@@ -6615,7 +6624,7 @@
       <definition value="Additional text about the adverse reaction event not captured in other fields." />
       <comment value="Use this field to record information indirectly related to a particular event and not captured in the description. For example: Clinical records are no longer available, recorded based on information provided to the patient by her mother and her mother is deceased." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="AllergyIntolerance.reaction.note" />
         <min value="0" />
@@ -6861,9 +6870,23 @@
     </element>
   </snapshot>
   <differential>
+    <element id="AllergyIntolerance.clinicalStatus">
+      <path value="AllergyIntolerance.clinicalStatus" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="AllergyIntolerance.verificationStatus">
       <path value="AllergyIntolerance.verificationStatus" />
       <comment value="In the scope of the IPS the entered-in-error concept is not allowed." />
+      <mustSupport value="true" />
+    </element>
+    <element id="AllergyIntolerance.type">
+      <path value="AllergyIntolerance.type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="AllergyIntolerance.criticality">
+      <path value="AllergyIntolerance.criticality" />
+      <mustSupport value="true" />
     </element>
     <element id="AllergyIntolerance.code">
       <path value="AllergyIntolerance.code" />
@@ -6874,6 +6897,8 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="AllergyIntolerance.code:absentOrUnknownAllergy">
       <path value="AllergyIntolerance.code" />
@@ -6914,12 +6939,17 @@
         </valueSetReference>
       </binding>
     </element>
-    <element id="AllergyIntolerance.onset[x]:onsetDateTime">
+    <element id="AllergyIntolerance.patient">
+      <path value="AllergyIntolerance.patient" />
+      <mustSupport value="true" />
+    </element>
+    <element id="AllergyIntolerance.onsetDateTime:onsetDateTime">
       <path value="AllergyIntolerance.onsetDateTime" />
       <sliceName value="onsetDateTime" />
       <type>
         <code value="dateTime" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="AllergyIntolerance.onset[x]:onsetDateTime.extension">
       <path value="AllergyIntolerance.onsetDateTime.extension" />
@@ -6931,13 +6961,9 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="AllergyIntolerance.onset[x]:onsetDateTime.extension:onsetDateAbsentReason">
+    <element id="AllergyIntolerance.onsetDateTime:onsetDateTime.extension:onsetDateAbsentReason">
       <path value="AllergyIntolerance.onsetDateTime.extension" />
       <sliceName value="onsetDateAbsentReason" />
-      <short value="unknown | asked | temp | notasked | masked | unsupported | astext | error" />
-      <definition value="Provides a reason why the expected value or elements in the element that is extended are missing." />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason-uv-ips" />
@@ -6951,24 +6977,13 @@
       <path value="AllergyIntolerance.asserter.identifier" />
       <max value="0" />
     </element>
-    <element id="AllergyIntolerance.lastOccurrence">
-      <path value="AllergyIntolerance.lastOccurrence" />
-      <max value="0" />
-    </element>
-    <element id="AllergyIntolerance.note">
-      <path value="AllergyIntolerance.note" />
-      <max value="0" />
-    </element>
-    <element id="AllergyIntolerance.reaction.substance">
-      <path value="AllergyIntolerance.reaction.substance" />
-      <max value="0" />
-    </element>
     <element id="AllergyIntolerance.reaction.manifestation">
       <path value="AllergyIntolerance.reaction.manifestation" />
       <type>
         <code value="CodeableConcept" />
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
+      <mustSupport value="true" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Manifestation" />
@@ -6979,13 +6994,9 @@
         </valueSetReference>
       </binding>
     </element>
-    <element id="AllergyIntolerance.reaction.exposureRoute">
-      <path value="AllergyIntolerance.reaction.exposureRoute" />
-      <max value="0" />
-    </element>
-    <element id="AllergyIntolerance.reaction.note">
-      <path value="AllergyIntolerance.reaction.note" />
-      <max value="0" />
+    <element id="AllergyIntolerance.reaction.severity">
+      <path value="AllergyIntolerance.reaction.severity" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
