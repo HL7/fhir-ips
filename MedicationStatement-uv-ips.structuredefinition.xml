@@ -55,6 +55,10 @@
       <path value="MedicationStatement.context.identifier" />
       <max value="0" />
     </element>
+    <element id="MedicationStatement.status">
+      <path value="MedicationStatement.status" />
+      <mustSupport value="true" />
+    </element>
     <element id="MedicationStatement.category">
       <path value="MedicationStatement.category" />
       <type>
@@ -82,6 +86,10 @@
         <strength value="example" />
         <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/absent-or-unknown-medication-uv-ips" />
       </binding>
+    </element>
+    <element id="MedicationStatement.effective[x]">
+      <path value="MedicationStatement.effective[x]" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.informationSource.identifier">
       <path value="MedicationStatement.informationSource.identifier" />
@@ -120,12 +128,28 @@
       <path value="MedicationStatement.reasonReference.identifier" />
       <max value="0" />
     </element>
+    <element id="MedicationStatement.dosage">
+      <path value="MedicationStatement.dosage" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.text">
+      <path value="MedicationStatement.dosage.text" />
+      <mustSupport value="true" />
+    </element>
     <element id="MedicationStatement.dosage.additionalInstruction">
       <path value="MedicationStatement.dosage.additionalInstruction" />
       <type>
         <code value="CodeableConcept" />
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
+    </element>
+    <element id="MedicationStatement.dosage.patientInstruction">
+      <path value="MedicationStatement.dosage.patientInstruction" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.timing">
+      <path value="MedicationStatement.dosage.timing" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.dosage.timing.repeat.bounds[x]">
       <path value="MedicationStatement.dosage.timing.repeat.bounds[x]" />
@@ -147,6 +171,13 @@
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
     </element>
+    <element id="MedicationStatement.dosage.timing.code.coding.system">
+      <path value="MedicationStatement.dosage.timing.code.coding.system" />
+      <binding>
+        <strength value="example" />
+        <valueSetUri value="http://hl7.org/fhir/valueset-event-timing.html" />
+      </binding>
+    </element>
     <element id="MedicationStatement.dosage.site">
       <path value="MedicationStatement.dosage.site" />
       <type>
@@ -154,12 +185,42 @@
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
     </element>
+    <element id="MedicationStatement.dosage.site.coding">
+      <path value="MedicationStatement.dosage.site.coding" />
+      <binding>
+        <strength value="preferred" />
+        <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/target-site-uv-ips" />
+      </binding>
+    </element>
+    <element id="MedicationStatement.dosage.site.coding.system">
+      <path value="MedicationStatement.dosage.site.coding.system" />
+      <binding>
+        <strength value="preferred" />
+        <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/target-site-uv-ips" />
+      </binding>
+    </element>
     <element id="MedicationStatement.dosage.route">
       <path value="MedicationStatement.dosage.route" />
       <type>
         <code value="CodeableConcept" />
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.route.coding">
+      <path value="MedicationStatement.dosage.route.coding" />
+      <binding>
+        <strength value="preferred" />
+        <description value="EDQM Standards Terms" />
+        <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/medicine-route-of-administration" />
+      </binding>
+    </element>
+    <element id="MedicationStatement.dosage.route.coding.system">
+      <path value="MedicationStatement.dosage.route.coding.system" />
+      <binding>
+        <strength value="preferred" />
+        <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/medicine-route-of-administration" />
+      </binding>
     </element>
     <element id="MedicationStatement.dosage.method">
       <path value="MedicationStatement.dosage.method" />
