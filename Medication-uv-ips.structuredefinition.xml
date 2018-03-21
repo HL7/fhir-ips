@@ -26,6 +26,18 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Medication" />
   <derivation value="constraint" />
   <differential>
+    <element id="Medication">
+      <path value="Medication" />
+      <comment value="IPS Medication" />
+    </element>
+    <element id="Medication.code">
+      <path value="Medication.code" />
+      <short value="Codes that identify this medication, sliced to support IDMP" />
+        <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+      </type>
+  </element>
     <element id="Medication.code.coding">
       <path value="Medication.code.coding" />
       <slicing>
