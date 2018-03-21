@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://hl7.org/fhir/ips/StructureDefinition/Range-uv-ips" />
+  <name value="Range-uv-ips" />
+  <title value="Range" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-03-21T14:43:39.739+01:00" />
+  <description value="Range constrained to UCUM as codesystem." />
+  <purpose value="requires UCUM as codesystem for units" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <type value="Range" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Range" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Range.low.system">
+      <path value="Range.low.system" />
+      <min value="1" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="Range.low.code">
+      <path value="Range.low.code" />
+      <min value="1" />
+    </element>
+    <element id="Range.high.system">
+      <path value="Range.high.system" />
+      <min value="1" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="Range.high.code">
+      <path value="Range.high.code" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>
