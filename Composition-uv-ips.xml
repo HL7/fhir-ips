@@ -6707,6 +6707,7 @@
       <type>
         <code value="uri" />
       </type>
+      <fixedUri value="http://hl7.org/fhir/v3/ActClass" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -6790,6 +6791,7 @@
       <type>
         <code value="code" />
       </type>
+      <fixedCode value="PCPR" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -46647,6 +46649,14 @@
       <short value="The care provisioning being documented" />
       <definition value="The provision of healthcare over a period of time this IPS is documenting." />
       <max value="1" />
+    </element>
+    <element id="Composition.event:careProvisioningEvent.code.coding.system">
+      <path value="Composition.event.code.coding.system" />
+      <fixedUri value="http://hl7.org/fhir/v3/ActClass" />
+    </element>
+    <element id="Composition.event:careProvisioningEvent.code.coding.code">
+      <path value="Composition.event.code.coding.code" />
+      <fixedCode value="PCPR" />
     </element>
     <element id="Composition.event:otherEvents">
       <path value="Composition.event" />
