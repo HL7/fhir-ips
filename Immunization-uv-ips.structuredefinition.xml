@@ -1217,6 +1217,50 @@
         <map value="N/A" />
       </mapping>
     </element>
+    <element id="Immunization.extension:targetDiseases">
+      <path value="Immunization.extension" />
+      <sliceName value="targetDiseases" />
+      <short value="Target disease" />
+      <definition value="Disease targeted by this vaccine" />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/targetdiseases-immunization-uv-ips" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
     <element id="Immunization.modifierExtension">
       <path value="Immunization.modifierExtension" />
       <slicing>
@@ -1272,7 +1316,7 @@
       <short value="Business identifier" />
       <definition value="A unique identifier assigned to this immunization record." />
       <min value="0" />
-      <max value="1" />
+      <max value="*" />
       <base>
         <path value="Immunization.identifier" />
         <min value="0" />
@@ -2627,7 +2671,7 @@
     <element id="Immunization.vaccineCode">
       <path value="Immunization.vaccineCode" />
       <short value="Vaccine product administered" />
-      <definition value="Vaccine that was administered or was to be administered.&#xD;&#xA;Several kinds of vaccine product coding could be provided .&#xD;&#xA;&#xD;&#xA;The IPS requires that at least the Vaccine for type of disease is documented; other coded information that identifies / classifies the administered product (e.g. the medicinal prodoct or the  product class), including IDMP identifiers, can be recorded as well." />
+      <definition value="Vaccine that was administered or was to be administered.&#xD;&#xA;Several kinds of vaccine product coding could be provided .&#xD;&#xA;&#xD;&#xA;The IPS requires that either the Vaccine for type of disease or the known absent / unknown code is provided.&#xD;&#xA;&#xD;&#xA;Other coded information that identifies / classifies the administered product (e.g. the medicinal prodoct or the  product class), including IDMP identifiers, can be provided as well." />
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="1" />
       <max value="1" />
@@ -3133,7 +3177,7 @@
       <definition value="The type of vaccine for particular disease or diseases against which the patient has been immunised. " />
       <comment value="Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information." />
       <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="CodeableConcept.coding" />
@@ -4887,6 +4931,7 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -5385,6 +5430,7 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -5645,6 +5691,7 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <mustSupport value="false" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -6555,6 +6602,357 @@
         <map value="fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\#true a [     fhir:source &quot;true&quot;;     fhir:target dt:CDCoding.codingRationale\#O   ]" />
       </mapping>
     </element>
+    <element id="Immunization.vaccineCode.coding:absentOrUnknownImmunization">
+      <path value="Immunization.vaccineCode.coding" />
+      <sliceName value="absentOrUnknownImmunization" />
+      <short value="Absent Unknown Immunization" />
+      <definition value="A reference to a code indicating that there there are no known immunizations or that this information is unknown." />
+      <comment value="Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information." />
+      <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="CodeableConcept.coding" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mustSupport value="true" />
+      <isSummary value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/absent-or-unknown-immunization-uv-ips" />
+      </binding>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="CE/CNE/CWE subset one of the sets of component 1-3 or 4-6" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="CV" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:Coding rdfs:subClassOf dt:CDCoding" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="C*E.1-8, C*E.10-22" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="union(., ./translation)" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" />
+      </mapping>
+    </element>
+    <element id="Immunization.vaccineCode.coding:absentOrUnknownImmunization.id">
+      <path value="Immunization.vaccineCode.coding.id" />
+      <representation value="xmlAttr" />
+      <short value="xml:id (or equivalent in JSON)" />
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." />
+      <comment value="Note that FHIR strings may not exceed 1MB in size" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Element.id" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+    </element>
+    <element id="Immunization.vaccineCode.coding:absentOrUnknownImmunization.extension">
+      <path value="Immunization.vaccineCode.coding.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url" />
+        <rules value="open" />
+      </slicing>
+      <short value="Additional Content defined by implementations" />
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="Element.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Immunization.vaccineCode.coding:absentOrUnknownImmunization.system">
+      <path value="Immunization.vaccineCode.coding.system" />
+      <short value="Identity of the terminology system" />
+      <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
+      <comment value="The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously." />
+      <requirements value="Need to be unambiguous about the source of the definition of the symbol." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Coding.system" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="uri" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="C*E.3" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="./codeSystem" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" />
+      </mapping>
+    </element>
+    <element id="Immunization.vaccineCode.coding:absentOrUnknownImmunization.version">
+      <path value="Immunization.vaccineCode.coding.version" />
+      <short value="Version of the system - if relevant" />
+      <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
+      <comment value="Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Coding.version" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="C*E.7" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="./codeSystemVersion" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" />
+      </mapping>
+    </element>
+    <element id="Immunization.vaccineCode.coding:absentOrUnknownImmunization.code">
+      <path value="Immunization.vaccineCode.coding.code" />
+      <short value="Symbol in syntax defined by the system" />
+      <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
+      <comment value="Note that FHIR strings may not exceed 1MB in size" />
+      <requirements value="Need to refer to a particular code in the system." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Coding.code" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="code" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="C*E.1" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="./code" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" />
+      </mapping>
+    </element>
+    <element id="Immunization.vaccineCode.coding:absentOrUnknownImmunization.display">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Immunization.vaccineCode.coding.display" />
+      <short value="Representation defined by the system" />
+      <definition value="A representation of the meaning of the code in the system, following the rules of the system." />
+      <comment value="Note that FHIR strings may not exceed 1MB in size" />
+      <requirements value="Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Coding.display" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="C*E.2 - but note this is not well followed" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="CV.displayName" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" />
+      </mapping>
+    </element>
+    <element id="Immunization.vaccineCode.coding:absentOrUnknownImmunization.userSelected">
+      <path value="Immunization.vaccineCode.coding.userSelected" />
+      <short value="If this coding was chosen directly by the user" />
+      <definition value="Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)." />
+      <comment value="Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely." />
+      <requirements value="This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing." />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Coding.userSelected" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="boolean" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <isSummary value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="v2" />
+        <map value="Sometimes implied by being first" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="CD.codingRationale" />
+      </mapping>
+      <mapping>
+        <identity value="orim" />
+        <map value="fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\#true a [     fhir:source &quot;true&quot;;     fhir:target dt:CDCoding.codingRationale\#O   ]" />
+      </mapping>
+    </element>
     <element id="Immunization.vaccineCode.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
@@ -6565,7 +6963,7 @@
       <comment value="The text should be at the displayName level and not on this level." />
       <requirements value="The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="CodeableConcept.text" />
         <min value="0" />
@@ -6582,6 +6980,7 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -6759,6 +7158,7 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -6775,7 +7175,7 @@
       <definition value="An identifier for the other resource. This is used when there is no way to reference the other resource directly, either because the entity is not available through a FHIR server, or because there is no way for the author of the resource to convert a known identifier to an actual location. There is no requirement that a Reference.identifier point to something that is actually exposed as a FHIR instance, but it SHALL point to a business concept that would be expected to be exposed as a FHIR instance, and that instance would need to be of a FHIR resource type allowed by the reference." />
       <comment value="When an identifier is provided in place of a reference, any system processing the reference will only be able to resolve the identifier to a reference if it understands the business context in which the identifier is used. Sometimes this is global (e.g. a national identifier) but often it is not. For this reason, none of the useful mechanisms described for working with references (e.g. chaining, includes) are possible, nor should servers be expected to be able resolve the reference. Servers may accept an identifier based reference untouched, resolve it, and/or reject it - see CapabilityStatement.rest.resource.referencePolicy. &#xA;&#xA;When both an identifier and a literal reference are provided, the literal reference is preferred. Applications processing the resource are allowed - but not required - to check that the identifier matches the literal reference&#xA;&#xA;Applications converting a logical reference to a literal reference may choose to leave the logical reference present, or remove it." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Reference.identifier" />
         <min value="0" />
@@ -6856,7 +7256,7 @@
       <definition value="The visit or admission or other contact between patient and health care provider the immunization was performed as part of." />
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Immunization.encounter" />
         <min value="0" />
@@ -7148,6 +7548,160 @@
         <map value="when.init" />
       </mapping>
     </element>
+    <element id="Immunization.date.id">
+      <path value="Immunization.date.id" />
+      <representation value="xmlAttr" />
+      <short value="xml:id (or equivalent in JSON)" />
+      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." />
+      <comment value="Note that FHIR strings may not exceed 1MB in size" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Element.id" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <code value="string" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+    </element>
+    <element id="Immunization.date.extension">
+      <path value="Immunization.date.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url" />
+        <rules value="open" />
+      </slicing>
+      <short value="Additional Content defined by implementations" />
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="*" />
+      <base>
+        <path value="Element.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+    </element>
+    <element id="Immunization.date.extension:dateAbsentReason">
+      <path value="Immunization.date.extension" />
+      <sliceName value="dateAbsentReason" />
+      <short value="unknown | asked | temp | notasked | masked | unsupported | astext | error" />
+      <definition value="Provides a reason why the expected value or elements in the element that is extended are missing." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="Element.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason-uv-ips" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="ANY.nullFlavor" />
+      </mapping>
+    </element>
+    <element id="Immunization.date.value">
+      <path value="Immunization.date.value" />
+      <representation value="xmlAttr" />
+      <short value="Primitive value for dateTime" />
+      <definition value="Primitive value for dateTime" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="dateTime.value" />
+        <min value="0" />
+        <max value="1" />
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-regex">
+          <valueString value="-?[0-9]{4}(-(0[1-9]|1[0-2])(-(0[0-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?" />
+        </extension>
+        <code>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type">
+            <valueString value="string" />
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-type">
+            <valueString value="xsd:gYear OR xsd:gYearMonth OR xsd:date OR xsd:dateTime" />
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-rdf-type">
+            <valueString value="xsd:gYear OR xsd:gYearMonth OR xsd:date OR xsd:dateTime" />
+          </extension>
+        </code>
+      </type>
+    </element>
     <element id="Immunization.primarySource">
       <path value="Immunization.primarySource" />
       <short value="Indicates context the data was recorded in" />
@@ -7194,7 +7748,7 @@
       <definition value="The source of the data when the report of the immunization event is not based on information from the person who administered the vaccine." />
       <comment value="Should not be populated if primarySource = True, will not be required even if primarySource = False." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Immunization.reportOrigin" />
         <min value="0" />
@@ -7723,7 +8277,7 @@
       <definition value="The service delivery location where the vaccine administration occurred." />
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Immunization.location" />
         <min value="0" />
@@ -8252,7 +8806,7 @@
       <short value="Vaccine expiration date" />
       <definition value="Date vaccine batch expires." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Immunization.expirationDate" />
         <min value="0" />
@@ -8288,7 +8842,7 @@
       <definition value="Body site where vaccine was administered." />
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Immunization.site" />
         <min value="0" />
@@ -9356,7 +9910,7 @@
       <definition value="The quantity of vaccine product that was administered." />
       <comment value="The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Immunization.doseQuantity" />
         <min value="0" />
@@ -9716,6 +10270,7 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -9862,7 +10417,7 @@
       <definition value="Describes the type of performance (e.g. ordering provider, administering provider, etc.)." />
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Immunization.practitioner.role" />
         <min value="0" />
@@ -10413,6 +10968,7 @@
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
       </constraint>
+      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -10537,6 +11093,7 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -10553,7 +11110,7 @@
       <definition value="An identifier for the other resource. This is used when there is no way to reference the other resource directly, either because the entity is not available through a FHIR server, or because there is no way for the author of the resource to convert a known identifier to an actual location. There is no requirement that a Reference.identifier point to something that is actually exposed as a FHIR instance, but it SHALL point to a business concept that would be expected to be exposed as a FHIR instance, and that instance would need to be of a FHIR resource type allowed by the reference." />
       <comment value="When an identifier is provided in place of a reference, any system processing the reference will only be able to resolve the identifier to a reference if it understands the business context in which the identifier is used. Sometimes this is global (e.g. a national identifier) but often it is not. For this reason, none of the useful mechanisms described for working with references (e.g. chaining, includes) are possible, nor should servers be expected to be able resolve the reference. Servers may accept an identifier based reference untouched, resolve it, and/or reject it - see CapabilityStatement.rest.resource.referencePolicy. &#xA;&#xA;When both an identifier and a literal reference are provided, the literal reference is preferred. Applications processing the resource are allowed - but not required - to check that the identifier matches the literal reference&#xA;&#xA;Applications converting a logical reference to a literal reference may choose to leave the logical reference present, or remove it." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Reference.identifier" />
         <min value="0" />
@@ -10634,7 +11191,7 @@
       <definition value="Extra information about the immunization that is not conveyed by the other attributes." />
       <comment value="For systems that do not have structured annotations, they can simply communicate a single annotation with no author or time.  This element may need to be included in narrative because of the potential for modifying information.  *Annotations SHOULD NOT* be used to communicate &quot;modifying&quot; information that could be computable. (This is a SHOULD because enforcing user behavior is nearly impossible)." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Immunization.note" />
         <min value="0" />
@@ -10757,7 +11314,7 @@
       <definition value="The individual responsible for making the annotation." />
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Annotation.author[x]" />
         <min value="0" />
@@ -10816,7 +11373,7 @@
       <short value="When the annotation was made" />
       <definition value="Indicates when this particular annotation was made." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Annotation.time" />
         <min value="0" />
@@ -10888,7 +11445,7 @@
       <short value="Administration/non-administration reasons" />
       <definition value="Reasons why a vaccine was or was not administered." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Immunization.explanation" />
         <min value="0" />
@@ -11038,7 +11595,7 @@
       <definition value="Reasons why a vaccine was administered." />
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Immunization.explanation.reason" />
         <min value="0" />
@@ -12093,7 +12650,7 @@
       <definition value="Categorical data indicating that an adverse event is associated in time to an immunization." />
       <comment value="A reaction may be an indication of an allergy or intolerance and, if this is determined to be the case,  it should be recorded as a new [AllergyIntolerance](allergyintolerance.html) resource instance as most systems will not query against  past Immunization.reaction elements." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Immunization.reaction" />
         <min value="0" />
@@ -12250,7 +12807,7 @@
       <short value="When reaction started" />
       <definition value="Date of reaction to the immunization." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Immunization.reaction.date" />
         <min value="0" />
@@ -12412,7 +12969,7 @@
       <definition value="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources." />
       <comment value="Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Reference.reference" />
         <min value="0" />
@@ -12446,7 +13003,7 @@
       <definition value="An identifier for the other resource. This is used when there is no way to reference the other resource directly, either because the entity is not available through a FHIR server, or because there is no way for the author of the resource to convert a known identifier to an actual location. There is no requirement that a Reference.identifier point to something that is actually exposed as a FHIR instance, but it SHALL point to a business concept that would be expected to be exposed as a FHIR instance, and that instance would need to be of a FHIR resource type allowed by the reference." />
       <comment value="When an identifier is provided in place of a reference, any system processing the reference will only be able to resolve the identifier to a reference if it understands the business context in which the identifier is used. Sometimes this is global (e.g. a national identifier) but often it is not. For this reason, none of the useful mechanisms described for working with references (e.g. chaining, includes) are possible, nor should servers be expected to be able resolve the reference. Servers may accept an identifier based reference untouched, resolve it, and/or reject it - see CapabilityStatement.rest.resource.referencePolicy. &#xA;&#xA;When both an identifier and a literal reference are provided, the literal reference is preferred. Applications processing the resource are allowed - but not required - to check that the identifier matches the literal reference&#xA;&#xA;Applications converting a logical reference to a literal reference may choose to leave the logical reference present, or remove it." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Reference.identifier" />
         <min value="0" />
@@ -12526,7 +13083,7 @@
       <short value="Indicates self-reported reaction" />
       <definition value="Self-reported indicator." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Immunization.reaction.reported" />
         <min value="0" />
@@ -12560,6 +13117,7 @@
       <path value="Immunization.vaccinationProtocol" />
       <short value="What protocol was followed" />
       <definition value="Contains information about the protocol(s) under which the vaccine was administered." />
+      <comment value="Preadoption of R4 " />
       <min value="0" />
       <max value="0" />
       <base>
@@ -12719,7 +13277,7 @@
       <definition value="Nominal position in a series." />
       <comment value="32 bit number; for values larger than this, use decimal" />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Immunization.vaccinationProtocol.doseSequence" />
         <min value="0" />
@@ -12751,7 +13309,7 @@
       <definition value="Contains the description about the protocol under which the vaccine was administered." />
       <comment value="Note that FHIR strings may not exceed 1MB in size" />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Immunization.vaccinationProtocol.description" />
         <min value="0" />
@@ -12783,7 +13341,7 @@
       <definition value="Indicates the authority who published the protocol.  E.g. ACIP." />
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Immunization.vaccinationProtocol.authority" />
         <min value="0" />
@@ -13020,7 +13578,7 @@
       <definition value="One possible path to achieve presumed immunity against a disease - within the context of an authority." />
       <comment value="Note that FHIR strings may not exceed 1MB in size" />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Immunization.vaccinationProtocol.series" />
         <min value="0" />
@@ -13212,9 +13770,9 @@
     </element>
     <element id="Immunization.vaccinationProtocol.targetDisease.coding">
       <path value="Immunization.vaccinationProtocol.targetDisease.coding" />
-      <short value="A reference to a code defined by a terminology system" />
+      <short value="Code defined by a terminology system" />
       <definition value="A reference to a code defined by a terminology system." />
-      <comment value="Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information." />
+      <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
       <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
       <min value="0" />
       <max value="*" />
@@ -13225,7 +13783,6 @@
       </base>
       <type>
         <code value="Coding" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -13734,9 +14291,9 @@
     </element>
     <element id="Immunization.vaccinationProtocol.doseStatus.coding">
       <path value="Immunization.vaccinationProtocol.doseStatus.coding" />
-      <short value="A reference to a code defined by a terminology system" />
+      <short value="Code defined by a terminology system" />
       <definition value="A reference to a code defined by a terminology system." />
-      <comment value="Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information." />
+      <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
       <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
       <min value="0" />
       <max value="*" />
@@ -13747,7 +14304,6 @@
       </base>
       <type>
         <code value="Coding" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -14128,7 +14684,7 @@
       <definition value="Provides an explanation as to why an immunization event should or should not count against the protocol." />
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Immunization.vaccinationProtocol.doseStatusReason" />
         <min value="0" />
@@ -14675,9 +15231,16 @@
       <sliceName value="statementNote" />
       <max value="0" />
     </element>
-    <element id="Immunization.identifier">
-      <path value="Immunization.identifier" />
-      <max value="1" />
+    <element id="Immunization.extension:targetDiseases">
+      <path value="Immunization.extension" />
+      <sliceName value="targetDiseases" />
+      <short value="Target disease" />
+      <definition value="Disease targeted by this vaccine" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/targetdiseases-immunization-uv-ips" />
+      </type>
+      <mustSupport value="true" />
     </element>
     <element id="Immunization.status">
       <path value="Immunization.status" />
@@ -14691,7 +15254,7 @@
     </element>
     <element id="Immunization.vaccineCode">
       <path value="Immunization.vaccineCode" />
-      <definition value="Vaccine that was administered or was to be administered.&#xD;&#xA;Several kinds of vaccine product coding could be provided .&#xD;&#xA;&#xD;&#xA;The IPS requires that at least the Vaccine for type of disease is documented; other coded information that identifies / classifies the administered product (e.g. the medicinal prodoct or the  product class), including IDMP identifiers, can be recorded as well." />
+      <definition value="Vaccine that was administered or was to be administered.&#xD;&#xA;Several kinds of vaccine product coding could be provided .&#xD;&#xA;&#xD;&#xA;The IPS requires that either the Vaccine for type of disease or the known absent / unknown code is provided.&#xD;&#xA;&#xD;&#xA;Other coded information that identifies / classifies the administered product (e.g. the medicinal prodoct or the  product class), including IDMP identifiers, can be provided as well." />
       <mustSupport value="true" />
     </element>
     <element id="Immunization.vaccineCode.coding">
@@ -14714,7 +15277,6 @@
       <sliceName value="vaccineType" />
       <short value="Vaccine for type of disease" />
       <definition value="The type of vaccine for particular disease or diseases against which the patient has been immunised. " />
-      <min value="1" />
       <max value="1" />
       <type>
         <code value="Coding" />
@@ -14775,6 +15337,7 @@
         <code value="Coding" />
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Immunization.vaccineCode.coding:medicinalProduct.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -14793,6 +15356,7 @@
         <code value="Coding" />
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Immunization.vaccineCode.coding:packagedProduct.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
@@ -14801,6 +15365,7 @@
       <path value="Immunization.vaccineCode.coding.display" />
       <short value="Name of the Packaged Medicinal Product" />
       <definition value="Name of the Packaged Medicinal Product, in some cases it corresponds to the brand name." />
+      <mustSupport value="false" />
     </element>
     <element id="Immunization.vaccineCode.coding:atcClass">
       <path value="Immunization.vaccineCode.coding" />
@@ -14829,20 +15394,40 @@
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
       </type>
     </element>
+    <element id="Immunization.vaccineCode.coding:absentOrUnknownImmunization">
+      <path value="Immunization.vaccineCode.coding" />
+      <sliceName value="absentOrUnknownImmunization" />
+      <short value="Absent Unknown Immunization" />
+      <definition value="A reference to a code indicating that there there are no known immunizations or that this information is unknown." />
+      <max value="1" />
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/absent-or-unknown-immunization-uv-ips" />
+      </binding>
+    </element>
     <element id="Immunization.vaccineCode.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
       <path value="Immunization.vaccineCode.text" />
       <comment value="The text should be at the displayName level and not on this level." />
-      <max value="0" />
+      <mustSupport value="true" />
     </element>
     <element id="Immunization.patient">
       <path value="Immunization.patient" />
       <mustSupport value="true" />
     </element>
-    <element id="Immunization.encounter">
-      <path value="Immunization.encounter" />
+    <element id="Immunization.patient.reference">
+      <path value="Immunization.patient.reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.patient.identifier">
+      <path value="Immunization.patient.identifier" />
       <max value="0" />
     </element>
     <element id="Immunization.date">
@@ -14850,24 +15435,26 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Immunization.reportOrigin">
-      <path value="Immunization.reportOrigin" />
-      <max value="0" />
+    <element id="Immunization.date.extension">
+      <path value="Immunization.date.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
-    <element id="Immunization.location">
-      <path value="Immunization.location" />
-      <max value="0" />
+    <element id="Immunization.date.extension:dateAbsentReason">
+      <path value="Immunization.date.extension" />
+      <sliceName value="dateAbsentReason" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason-uv-ips" />
+      </type>
     </element>
     <element id="Immunization.manufacturer.identifier">
       <path value="Immunization.manufacturer.identifier" />
-      <max value="0" />
-    </element>
-    <element id="Immunization.expirationDate">
-      <path value="Immunization.expirationDate" />
-      <max value="0" />
-    </element>
-    <element id="Immunization.site">
-      <path value="Immunization.site" />
       <max value="0" />
     </element>
     <element id="Immunization.site.coding">
@@ -14904,36 +15491,21 @@
         <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/routeOfAdministration-uv-ips" />
       </binding>
     </element>
-    <element id="Immunization.doseQuantity">
-      <path value="Immunization.doseQuantity" />
-      <max value="0" />
-    </element>
     <element id="Immunization.practitioner">
       <path value="Immunization.practitioner" />
       <max value="1" />
+      <mustSupport value="true" />
     </element>
-    <element id="Immunization.practitioner.role">
-      <path value="Immunization.practitioner.role" />
-      <max value="0" />
+    <element id="Immunization.practitioner.actor">
+      <path value="Immunization.practitioner.actor" />
+      <mustSupport value="true" />
     </element>
-    <element id="Immunization.note">
-      <path value="Immunization.note" />
-      <max value="0" />
+    <element id="Immunization.practitioner.actor.reference">
+      <path value="Immunization.practitioner.actor.reference" />
+      <mustSupport value="true" />
     </element>
-    <element id="Immunization.note.author[x]">
-      <path value="Immunization.note.author[x]" />
-      <max value="0" />
-    </element>
-    <element id="Immunization.note.time">
-      <path value="Immunization.note.time" />
-      <max value="0" />
-    </element>
-    <element id="Immunization.explanation">
-      <path value="Immunization.explanation" />
-      <max value="0" />
-    </element>
-    <element id="Immunization.explanation.reason">
-      <path value="Immunization.explanation.reason" />
+    <element id="Immunization.practitioner.actor.identifier">
+      <path value="Immunization.practitioner.actor.identifier" />
       <max value="0" />
     </element>
     <element id="Immunization.explanation.reasonNotGiven">
@@ -14947,62 +15519,9 @@
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
       </type>
     </element>
-    <element id="Immunization.reaction">
-      <path value="Immunization.reaction" />
-      <max value="0" />
-    </element>
-    <element id="Immunization.reaction.date">
-      <path value="Immunization.reaction.date" />
-      <max value="0" />
-    </element>
-    <element id="Immunization.reaction.detail.reference">
-      <path value="Immunization.reaction.detail.reference" />
-      <max value="0" />
-    </element>
-    <element id="Immunization.reaction.detail.identifier">
-      <path value="Immunization.reaction.detail.identifier" />
-      <max value="0" />
-    </element>
-    <element id="Immunization.reaction.reported">
-      <path value="Immunization.reaction.reported" />
-      <max value="0" />
-    </element>
     <element id="Immunization.vaccinationProtocol">
       <path value="Immunization.vaccinationProtocol" />
-      <max value="0" />
-    </element>
-    <element id="Immunization.vaccinationProtocol.doseSequence">
-      <path value="Immunization.vaccinationProtocol.doseSequence" />
-      <max value="0" />
-    </element>
-    <element id="Immunization.vaccinationProtocol.description">
-      <path value="Immunization.vaccinationProtocol.description" />
-      <max value="0" />
-    </element>
-    <element id="Immunization.vaccinationProtocol.authority">
-      <path value="Immunization.vaccinationProtocol.authority" />
-      <max value="0" />
-    </element>
-    <element id="Immunization.vaccinationProtocol.series">
-      <path value="Immunization.vaccinationProtocol.series" />
-      <max value="0" />
-    </element>
-    <element id="Immunization.vaccinationProtocol.targetDisease.coding">
-      <path value="Immunization.vaccinationProtocol.targetDisease.coding" />
-      <type>
-        <code value="Coding" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
-      </type>
-    </element>
-    <element id="Immunization.vaccinationProtocol.doseStatus.coding">
-      <path value="Immunization.vaccinationProtocol.doseStatus.coding" />
-      <type>
-        <code value="Coding" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
-      </type>
-    </element>
-    <element id="Immunization.vaccinationProtocol.doseStatusReason">
-      <path value="Immunization.vaccinationProtocol.doseStatusReason" />
+      <comment value="Preadoption of R4 " />
       <max value="0" />
     </element>
   </differential>
