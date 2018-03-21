@@ -342,6 +342,54 @@
         <map value="N/A" />
       </mapping>
     </element>
+    <element id="MedicationStatement.extension:dateAbsentReason">
+      <path value="MedicationStatement.extension" />
+      <sliceName value="dateAbsentReason" />
+      <short value="unknown | asked | temp | notasked | masked | unsupported | astext | error" />
+      <definition value="Provides a reason why the expected value or elements in the element that is extended are missing." />
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
+      <alias value="extensions" />
+      <alias value="user content" />
+      <min value="0" />
+      <max value="1" />
+      <base>
+        <path value="DomainResource.extension" />
+        <min value="0" />
+        <max value="*" />
+      </base>
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason-uv-ips" />
+      </type>
+      <condition value="ele-1" />
+      <constraint>
+        <key value="ele-1" />
+        <severity value="error" />
+        <human value="All FHIR elements must have a @value or children" />
+        <expression value="hasValue() | (children().count() &gt; id.count())" />
+        <xpath value="@value|f:*|h:div" />
+      </constraint>
+      <constraint>
+        <key value="ext-1" />
+        <severity value="error" />
+        <human value="Must have either extensions or value[x], not both" />
+        <expression value="extension.exists() != value.exists()" />
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
+      </constraint>
+      <mustSupport value="true" />
+      <mapping>
+        <identity value="rim" />
+        <map value="n/a" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="N/A" />
+      </mapping>
+      <mapping>
+        <identity value="rim" />
+        <map value="ANY.nullFlavor" />
+      </mapping>
+    </element>
     <element id="MedicationStatement.modifierExtension">
       <path value="MedicationStatement.modifierExtension" />
       <slicing>
@@ -1829,7 +1877,7 @@
       <definition value="An identifier for the other resource. This is used when there is no way to reference the other resource directly, either because the entity is not available through a FHIR server, or because there is no way for the author of the resource to convert a known identifier to an actual location. There is no requirement that a Reference.identifier point to something that is actually exposed as a FHIR instance, but it SHALL point to a business concept that would be expected to be exposed as a FHIR instance, and that instance would need to be of a FHIR resource type allowed by the reference." />
       <comment value="When an identifier is provided in place of a reference, any system processing the reference will only be able to resolve the identifier to a reference if it understands the business context in which the identifier is used. Sometimes this is global (e.g. a national identifier) but often it is not. For this reason, none of the useful mechanisms described for working with references (e.g. chaining, includes) are possible, nor should servers be expected to be able resolve the reference. Servers may accept an identifier based reference untouched, resolve it, and/or reject it - see CapabilityStatement.rest.resource.referencePolicy. &#xA;&#xA;When both an identifier and a literal reference are provided, the literal reference is preferred. Applications processing the resource are allowed - but not required - to check that the identifier matches the literal reference&#xA;&#xA;Applications converting a logical reference to a literal reference may choose to leave the logical reference present, or remove it." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Reference.identifier" />
         <min value="0" />
@@ -2088,7 +2136,7 @@
       <definition value="An identifier for the other resource. This is used when there is no way to reference the other resource directly, either because the entity is not available through a FHIR server, or because there is no way for the author of the resource to convert a known identifier to an actual location. There is no requirement that a Reference.identifier point to something that is actually exposed as a FHIR instance, but it SHALL point to a business concept that would be expected to be exposed as a FHIR instance, and that instance would need to be of a FHIR resource type allowed by the reference." />
       <comment value="When an identifier is provided in place of a reference, any system processing the reference will only be able to resolve the identifier to a reference if it understands the business context in which the identifier is used. Sometimes this is global (e.g. a national identifier) but often it is not. For this reason, none of the useful mechanisms described for working with references (e.g. chaining, includes) are possible, nor should servers be expected to be able resolve the reference. Servers may accept an identifier based reference untouched, resolve it, and/or reject it - see CapabilityStatement.rest.resource.referencePolicy. &#xA;&#xA;When both an identifier and a literal reference are provided, the literal reference is preferred. Applications processing the resource are allowed - but not required - to check that the identifier matches the literal reference&#xA;&#xA;Applications converting a logical reference to a literal reference may choose to leave the logical reference present, or remove it." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Reference.identifier" />
         <min value="0" />
@@ -2334,7 +2382,7 @@
       <definition value="An identifier for the other resource. This is used when there is no way to reference the other resource directly, either because the entity is not available through a FHIR server, or because there is no way for the author of the resource to convert a known identifier to an actual location. There is no requirement that a Reference.identifier point to something that is actually exposed as a FHIR instance, but it SHALL point to a business concept that would be expected to be exposed as a FHIR instance, and that instance would need to be of a FHIR resource type allowed by the reference." />
       <comment value="When an identifier is provided in place of a reference, any system processing the reference will only be able to resolve the identifier to a reference if it understands the business context in which the identifier is used. Sometimes this is global (e.g. a national identifier) but often it is not. For this reason, none of the useful mechanisms described for working with references (e.g. chaining, includes) are possible, nor should servers be expected to be able resolve the reference. Servers may accept an identifier based reference untouched, resolve it, and/or reject it - see CapabilityStatement.rest.resource.referencePolicy. &#xA;&#xA;When both an identifier and a literal reference are provided, the literal reference is preferred. Applications processing the resource are allowed - but not required - to check that the identifier matches the literal reference&#xA;&#xA;Applications converting a logical reference to a literal reference may choose to leave the logical reference present, or remove it." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Reference.identifier" />
         <min value="0" />
@@ -2432,7 +2480,6 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <mustSupport value="true" />
       <isModifier value="true" />
       <isSummary value="true" />
       <binding>
@@ -2990,8 +3037,8 @@
     </element>
     <element id="MedicationStatement.medication[x]">
       <path value="MedicationStatement.medication[x]" />
-      <short value="Medication absent or unknown" />
-      <definition value="Codes for expressing that the patient does not take any medication or to express that the patient medications are not known" />
+      <short value="What medication was taken" />
+      <definition value="Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications." />
       <comment value="If only a code is specified, then it needs to be a code for a specific product. If more information is required, then the use of the medication resource is recommended.  For example if you require form or lot number, then you must reference the Medication resource. ." />
       <min value="1" />
       <max value="1" />
@@ -3001,12 +3048,11 @@
         <max value="1" />
       </base>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/medication-uv-ips" />
+        <code value="CodeableConcept" />
       </type>
       <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3016,15 +3062,16 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <mustSupport value="true" />
       <isSummary value="true" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="MedicationCode" />
         </extension>
-        <strength value="required" />
+        <strength value="example" />
         <description value="A coded concept identifying the substance or product being taken." />
-        <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/absent-or-unknown-medication-uv-ips" />
+        <valueSetReference>
+          <reference value="http://hl7.org/fhir/ValueSet/medication-codes" />
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3060,7 +3107,7 @@
       <short value="The date/time or interval when the medication was taken" />
       <definition value="The interval of time during which it is being asserted that the patient was taking the medication (or was not taking, when the wasNotGiven element is true)." />
       <comment value="This attribute reflects the period over which the patient consumed the medication and is expected to be populated on the majority of Medication Statements. If the medication is still being taken at the time the statement is recorded, the &quot;end&quot; date will be omitted." />
-      <min value="1" />
+      <min value="0" />
       <max value="1" />
       <base>
         <path value="MedicationStatement.effective[x]" />
@@ -3081,7 +3128,6 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -3314,7 +3360,7 @@
       <definition value="An identifier for the other resource. This is used when there is no way to reference the other resource directly, either because the entity is not available through a FHIR server, or because there is no way for the author of the resource to convert a known identifier to an actual location. There is no requirement that a Reference.identifier point to something that is actually exposed as a FHIR instance, but it SHALL point to a business concept that would be expected to be exposed as a FHIR instance, and that instance would need to be of a FHIR resource type allowed by the reference." />
       <comment value="When an identifier is provided in place of a reference, any system processing the reference will only be able to resolve the identifier to a reference if it understands the business context in which the identifier is used. Sometimes this is global (e.g. a national identifier) but often it is not. For this reason, none of the useful mechanisms described for working with references (e.g. chaining, includes) are possible, nor should servers be expected to be able resolve the reference. Servers may accept an identifier based reference untouched, resolve it, and/or reject it - see CapabilityStatement.rest.resource.referencePolicy. &#xA;&#xA;When both an identifier and a literal reference are provided, the literal reference is preferred. Applications processing the resource are allowed - but not required - to check that the identifier matches the literal reference&#xA;&#xA;Applications converting a logical reference to a literal reference may choose to leave the logical reference present, or remove it." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Reference.identifier" />
         <min value="0" />
@@ -3405,6 +3451,10 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
       </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Group" />
+      </type>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -3420,7 +3470,6 @@
         <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))" />
         <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
       </constraint>
-      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -3802,7 +3851,7 @@
       <definition value="An identifier for the other resource. This is used when there is no way to reference the other resource directly, either because the entity is not available through a FHIR server, or because there is no way for the author of the resource to convert a known identifier to an actual location. There is no requirement that a Reference.identifier point to something that is actually exposed as a FHIR instance, but it SHALL point to a business concept that would be expected to be exposed as a FHIR instance, and that instance would need to be of a FHIR resource type allowed by the reference." />
       <comment value="When an identifier is provided in place of a reference, any system processing the reference will only be able to resolve the identifier to a reference if it understands the business context in which the identifier is used. Sometimes this is global (e.g. a national identifier) but often it is not. For this reason, none of the useful mechanisms described for working with references (e.g. chaining, includes) are possible, nor should servers be expected to be able resolve the reference. Servers may accept an identifier based reference untouched, resolve it, and/or reject it - see CapabilityStatement.rest.resource.referencePolicy. &#xA;&#xA;When both an identifier and a literal reference are provided, the literal reference is preferred. Applications processing the resource are allowed - but not required - to check that the identifier matches the literal reference&#xA;&#xA;Applications converting a logical reference to a literal reference may choose to leave the logical reference present, or remove it." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Reference.identifier" />
         <min value="0" />
@@ -3892,7 +3941,6 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="na" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -5151,7 +5199,7 @@
       <definition value="An identifier for the other resource. This is used when there is no way to reference the other resource directly, either because the entity is not available through a FHIR server, or because there is no way for the author of the resource to convert a known identifier to an actual location. There is no requirement that a Reference.identifier point to something that is actually exposed as a FHIR instance, but it SHALL point to a business concept that would be expected to be exposed as a FHIR instance, and that instance would need to be of a FHIR resource type allowed by the reference." />
       <comment value="When an identifier is provided in place of a reference, any system processing the reference will only be able to resolve the identifier to a reference if it understands the business context in which the identifier is used. Sometimes this is global (e.g. a national identifier) but often it is not. For this reason, none of the useful mechanisms described for working with references (e.g. chaining, includes) are possible, nor should servers be expected to be able resolve the reference. Servers may accept an identifier based reference untouched, resolve it, and/or reject it - see CapabilityStatement.rest.resource.referencePolicy. &#xA;&#xA;When both an identifier and a literal reference are provided, the literal reference is preferred. Applications processing the resource are allowed - but not required - to check that the identifier matches the literal reference&#xA;&#xA;Applications converting a logical reference to a literal reference may choose to leave the logical reference present, or remove it." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="Reference.identifier" />
         <min value="0" />
@@ -5503,7 +5551,6 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <mustSupport value="true" />
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -6243,7 +6290,6 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -7814,9 +7860,9 @@
     </element>
     <element id="MedicationStatement.dosage.site.coding">
       <path value="MedicationStatement.dosage.site.coding" />
-      <short value="A reference to a code defined by a terminology system" />
+      <short value="Code defined by a terminology system" />
       <definition value="A reference to a code defined by a terminology system." />
-      <comment value="Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information." />
+      <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
       <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
       <min value="0" />
       <max value="*" />
@@ -7827,7 +7873,6 @@
       </base>
       <type>
         <code value="Coding" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -8204,12 +8249,12 @@
     </element>
     <element id="MedicationStatement.dosage.route">
       <path value="MedicationStatement.dosage.route" />
-      <short value="Concept - reference to a terminology or just  text" />
-      <definition value="A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text." />
+      <short value="How drug should enter body" />
+      <definition value="How drug should enter body." />
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <requirements value="A code specifying the route or physiological path of administration of a therapeutic agent into or onto a patient's body." />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="Dosage.route" />
         <min value="0" />
@@ -8217,7 +8262,6 @@
       </base>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -8227,7 +8271,6 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <mustSupport value="true" />
       <isSummary value="true" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -8236,7 +8279,7 @@
         <strength value="example" />
         <description value="A coded concept describing the route or physiological path of administration of a therapeutic agent into or onto the body of a subject." />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/medicine-route-of-administration" />
+          <reference value="http://hl7.org/fhir/ValueSet/route-codes" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -10834,90 +10877,10 @@
         <map value=".rateQuantity" />
       </mapping>
     </element>
-    <element id="MedicationStatement.effective[x].extension">
-      <path value="MedicationStatement.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="MedicationStatement.effective[x].extension:dateAbsentReason">
-      <path value="MedicationStatement.extension" />
-      <sliceName value="dateAbsentReason" />
-      <short value="unknown | asked | temp | notasked | masked | unsupported | astext | error" />
-      <definition value="Provides a reason why the expected value or elements in the element that is extended are missing." />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason-uv-ips" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mustSupport value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="ANY.nullFlavor" />
-      </mapping>
-    </element>
   </snapshot>
   <differential>
-    <element id="MedicationStatement.status">
-      <path value="MedicationStatement.status" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.medication[x]">
-      <path value="MedicationStatement.medication[x]" />
-      <short value="Medication absent or unknown" />
-      <definition value="Codes for expressing that the patient does not take any medication or to express that the patient medications are not known" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/medication-uv-ips" />
-      </type>
-      <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
-      </type>
-      <mustSupport value="true" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="MedicationCode" />
-        </extension>
-        <strength value="required" />
-        <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/absent-or-unknown-medication-uv-ips" />
-      </binding>
-    </element>
-    <element id="MedicationStatement.effective[x]">
-      <path value="MedicationStatement.effective[x]" />
-      <min value="1" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.effective[x].extension">
-      <path value="MedicationStatement.effective[x].extension" />
+    <element id="MedicationStatement.extension">
+      <path value="MedicationStatement.extension" />
       <slicing>
         <discriminator>
           <type value="value" />
@@ -10926,66 +10889,42 @@
         <rules value="open" />
       </slicing>
     </element>
-    <element id="MedicationStatement.effective[x].extension:dateAbsentReason">
-      <path value="MedicationStatement.effective[x].extension" />
+    <element id="MedicationStatement.extension:dateAbsentReason">
+      <path value="MedicationStatement.extension" />
       <sliceName value="dateAbsentReason" />
-      <short value="unknown | asked | temp | notasked | masked | unsupported | astext | error" />
-      <definition value="Provides a reason why the expected value or elements in the element that is extended are missing." />
-      <min value="0" />
-      <max value="1" />
       <type>
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason-uv-ips" />
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="MedicationStatement.subject">
-      <path value="MedicationStatement.subject" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
-      </type>
-      <mustSupport value="true" />
+    <element id="MedicationStatement.basedOn.identifier">
+      <path value="MedicationStatement.basedOn.identifier" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.partOf.identifier">
+      <path value="MedicationStatement.partOf.identifier" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.context.identifier">
+      <path value="MedicationStatement.context.identifier" />
+      <max value="0" />
+    </element>
+    <element id="MedicationStatement.informationSource.identifier">
+      <path value="MedicationStatement.informationSource.identifier" />
+      <max value="0" />
     </element>
     <element id="MedicationStatement.subject.identifier">
       <path value="MedicationStatement.subject.identifier" />
       <max value="0" />
     </element>
-    <element id="MedicationStatement.taken">
-      <path value="MedicationStatement.taken" />
-      <fixedCode value="na" />
+    <element id="MedicationStatement.derivedFrom.identifier">
+      <path value="MedicationStatement.derivedFrom.identifier" />
+      <max value="0" />
     </element>
-    <element id="MedicationStatement.dosage">
-      <path value="MedicationStatement.dosage" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.dosage.timing">
-      <path value="MedicationStatement.dosage.timing" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.dosage.site.coding">
-      <path value="MedicationStatement.dosage.site.coding" />
-      <type>
-        <code value="Coding" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
-      </type>
-    </element>
-    <element id="MedicationStatement.dosage.route">
-      <path value="MedicationStatement.dosage.route" />
-      <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
-      </type>
-      <mustSupport value="true" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="RouteOfAdministration" />
-        </extension>
-        <strength value="example" />
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/medicine-route-of-administration" />
-        </valueSetReference>
-      </binding>
+    <element id="MedicationStatement.reasonReference.identifier">
+      <path value="MedicationStatement.reasonReference.identifier" />
+      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>
