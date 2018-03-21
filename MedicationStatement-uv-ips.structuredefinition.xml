@@ -58,12 +58,14 @@
     <element id="MedicationStatement.category">
       <path value="MedicationStatement.category" />
       <type>
-        <code value="Coding" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
     </element>
     <element id="MedicationStatement.medication[x]">
       <path value="MedicationStatement.medication[x]" />
+      <short value="Medication absent or unknown" />
+      <definition value="Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that gives a reason for absent or unknown Medication.." />
       <type>
         <code value="CodeableConcept" />
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
@@ -72,10 +74,25 @@
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/medication-uv-ips" />
       </type>
+      <mustSupport value="true" />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="MedicationCode" />
+        </extension>
+        <strength value="example" />
+        <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/absent-or-unknown-medication-uv-ips" />
+      </binding>
     </element>
     <element id="MedicationStatement.informationSource.identifier">
       <path value="MedicationStatement.informationSource.identifier" />
       <max value="0" />
+    </element>
+    <element id="MedicationStatement.subject">
+      <path value="MedicationStatement.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
     </element>
     <element id="MedicationStatement.subject.identifier">
       <path value="MedicationStatement.subject.identifier" />
@@ -164,6 +181,7 @@
     </element>
     <element id="MedicationStatement.dosage.maxDosePerPeriod">
       <path value="MedicationStatement.dosage.maxDosePerPeriod" />
+      <max value="0" />
       <type>
         <code value="Ratio" />
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/Ratio-uv-ips" />
@@ -179,6 +197,7 @@
     </element>
     <element id="MedicationStatement.dosage.maxDosePerAdministration">
       <path value="MedicationStatement.dosage.maxDosePerAdministration" />
+      <max value="0" />
       <type>
         <code value="Quantity" />
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/Quantity-uv-ips" />
@@ -190,6 +209,7 @@
     </element>
     <element id="MedicationStatement.dosage.maxDosePerLifetime">
       <path value="MedicationStatement.dosage.maxDosePerLifetime" />
+      <max value="0" />
       <type>
         <code value="Quantity" />
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/Quantity-uv-ips" />
@@ -201,6 +221,7 @@
     </element>
     <element id="MedicationStatement.dosage.rate[x]">
       <path value="MedicationStatement.dosage.rate[x]" />
+      <max value="0" />
       <type>
         <code value="Quantity" />
         <profile value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity" />

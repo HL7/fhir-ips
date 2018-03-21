@@ -33,11 +33,11 @@
     <element id="Medication.code">
       <path value="Medication.code" />
       <short value="Codes that identify this medication, sliced to support IDMP" />
-        <type>
+      <type>
         <code value="CodeableConcept" />
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
-  </element>
+    </element>
     <element id="Medication.code.coding">
       <path value="Medication.code.coding" />
       <slicing>
@@ -56,20 +56,12 @@
       <definition value="IDMP PhPID Level 1 (Implies ingredients) or any equivalent Pharmaceutical Product identifier.&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as ingredients and route of administration, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product." />
       <max value="1" />
     </element>
-    <element id="Medication.code.coding:pharmaceuticalProduct-L1.userSelected">
-      <path value="Medication.code.coding.userSelected" />
-      <max value="0" />
-    </element>
     <element id="Medication.code.coding:pharmaceuticalProduct-L2">
       <path value="Medication.code.coding" />
       <sliceName value="pharmaceuticalProduct-L2" />
       <short value="Pharmaceutical Product Identifier, Level 2" />
       <definition value="IDMP PhPID Level 2 (Implies ingredients and strength) or any equivalent Pharmaceutical Product identifier.&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as ingredients and route of administration, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product." />
       <max value="1" />
-    </element>
-    <element id="Medication.code.coding:pharmaceuticalProduct-L2.userSelected">
-      <path value="Medication.code.coding.userSelected" />
-      <max value="0" />
     </element>
     <element id="Medication.code.coding:pharmaceuticalProduct-L3">
       <path value="Medication.code.coding" />
@@ -78,20 +70,12 @@
       <definition value="IDMP PhPID Level 3 (Implies ingredients and dose form) or any equivalent Pharmaceutical Product identifier.&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as ingredients and route of administration, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product." />
       <max value="1" />
     </element>
-    <element id="Medication.code.coding:pharmaceuticalProduct-L3.userSelected">
-      <path value="Medication.code.coding.userSelected" />
-      <max value="0" />
-    </element>
     <element id="Medication.code.coding:pharmaceuticalProduct-L4">
       <path value="Medication.code.coding" />
       <sliceName value="pharmaceuticalProduct-L4" />
       <short value="Pharmaceutical Product Identifier, Level 4" />
       <definition value="IDMP PhPID Level 4 (Implies ingredients, strength, and dose form) or any equivalent Pharmaceutical Product identifier.&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as ingredients and route of administration, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product." />
       <max value="1" />
-    </element>
-    <element id="Medication.code.coding:pharmaceuticalProduct-L4.userSelected">
-      <path value="Medication.code.coding.userSelected" />
-      <max value="0" />
     </element>
     <element id="Medication.code.coding:medicinalProduct">
       <path value="Medication.code.coding" />
@@ -100,20 +84,12 @@
       <definition value="IDMP Medicinal Product Identifier (MPID) or any equivalent Medicinal Product Identifier.&#xD;&#xA;&#xD;&#xA;IDMP MPID uniquely identifies a Medicinal Product, reflecting (but not replacing) any other authorisation numbers allocated by a regulator.&#xD;&#xA;&#xD;&#xA;MPID implies one (set of) PhPID.&#xD;&#xA;The MPID shall use a common segment pattern related to a Medicinal Product, which&#xD;&#xA;when each segment is valued shall define a specific MPID concept. The pattern is:&#xD;&#xA;• a) Country code segment (ISO 3166-1 alpha-2 code elements);&#xD;&#xA;• b) Marketing Authorization Holder (Organization Identifier) code segment;&#xD;&#xA;• c) Medicinal Product code segment (Unique Medicinal Product Identifier).&#xD;&#xA;• Any change of the values related to these three code segments shall result in the&#xD;&#xA;assignment of a new MPID.&#xD;" />
       <max value="1" />
     </element>
-    <element id="Medication.code.coding:medicinalProduct.userSelected">
-      <path value="Medication.code.coding.userSelected" />
-      <max value="0" />
-    </element>
     <element id="Medication.code.coding:packagedProduct">
       <path value="Medication.code.coding" />
       <sliceName value="packagedProduct" />
       <short value="Packaged Medicinal Product Identifier" />
       <definition value="IDMP Packaged Medicinal Product Identifier  or any equivalent Packaged Medicinal Product Identifier.&#xD;&#xA;&#xD;&#xA;Uniquely identifies a Medicinal Product based on its packaging. This implies one MPID can be associated with more than one PCID, if the same Medicinal Product has more than one type of package;&#xD;&#xA;&#xD;&#xA;The PCID shall use a common segment pattern related to a package of a Medicinal&#xD;&#xA;Product, which when each segment is valued, shall define a specific PCID concept. The&#xD;&#xA;pattern is:&#xD;&#xA;• a) MPID for the Medicinal Product&#xD;&#xA;• b) package description code segment, which refers to a unique identifier for each&#xD;&#xA;package." />
       <max value="1" />
-    </element>
-    <element id="Medication.code.coding:packagedProduct.userSelected">
-      <path value="Medication.code.coding.userSelected" />
-      <max value="0" />
     </element>
     <element id="Medication.code.coding:atcClass">
       <path value="Medication.code.coding" />
@@ -126,10 +102,6 @@
         <description value="ATC class for the medication" />
         <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/whoatc-uv-ips" />
       </binding>
-    </element>
-    <element id="Medication.code.coding:atcClass.userSelected">
-      <path value="Medication.code.coding.userSelected" />
-      <max value="0" />
     </element>
     <element id="Medication.code.coding:class">
       <path value="Medication.code.coding" />
@@ -202,73 +174,7 @@
     </element>
     <element id="Medication.package">
       <path value="Medication.package" />
-      <max value="0" />
-    </element>
-    <element id="Medication.package.container">
-      <path value="Medication.package.container" />
-      <max value="0" />
-      <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
-      </type>
-    </element>
-    <element id="Medication.package.content">
-      <path value="Medication.package.content" />
-      <max value="1" />
-    </element>
-    <element id="Medication.package.content.itemCodeableConcept:itemCodeableConcept">
-      <path value="Medication.package.content.itemCodeableConcept" />
-      <sliceName value="itemCodeableConcept" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-    </element>
-    <element id="Medication.package.content.itemCodeableConcept:itemCodeableConcept.coding">
-      <path value="Medication.package.content.itemCodeableConcept.coding" />
-      <min value="1" />
-      <max value="1" />
-    </element>
-    <element id="Medication.package.content.itemCodeableConcept:itemCodeableConcept.coding.system">
-      <path value="Medication.package.content.itemCodeableConcept.coding.system" />
-      <max value="0" />
-    </element>
-    <element id="Medication.package.content.itemCodeableConcept:itemCodeableConcept.coding.version">
-      <path value="Medication.package.content.itemCodeableConcept.coding.version" />
-      <max value="0" />
-    </element>
-    <element id="Medication.package.content.itemCodeableConcept:itemCodeableConcept.coding.code">
-      <path value="Medication.package.content.itemCodeableConcept.coding.code" />
-      <max value="0" />
-    </element>
-    <element id="Medication.package.content.itemCodeableConcept:itemCodeableConcept.coding.userSelected">
-      <path value="Medication.package.content.itemCodeableConcept.coding.userSelected" />
-      <max value="0" />
-    </element>
-    <element id="Medication.package.content.amount.unit">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Medication.package.content.amount.unit" />
-      <max value="0" />
-    </element>
-    <element id="Medication.package.content.amount.system">
-      <path value="Medication.package.content.amount.system" />
-      <max value="0" />
-    </element>
-    <element id="Medication.package.content.amount.code">
-      <path value="Medication.package.content.amount.code" />
-      <binding>
-        <strength value="required" />
-        <description value="value set based on UCUM" />
-        <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/quantityUnits" />
-      </binding>
-    </element>
-    <element id="Medication.package.batch">
-      <path value="Medication.package.batch" />
-      <max value="0" />
-    </element>
-    <element id="Medication.image">
-      <path value="Medication.image" />
+      <definition value="Removed as pre-adoption of R4." />
       <max value="0" />
     </element>
   </differential>
