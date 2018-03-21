@@ -37,6 +37,7 @@
         <code value="CodeableConcept" />
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Medication.code.coding">
       <path value="Medication.code.coding" />
@@ -103,6 +104,14 @@
         <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/whoatc-uv-ips" />
       </binding>
     </element>
+    <element id="Medication.code.coding:atcClass.system">
+      <path value="Medication.code.coding.system" />
+      <binding>
+        <strength value="required" />
+        <description value="ATC - Anatomical-Therapeutical-Chemical Classification" />
+        <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/whoatc-uv-ips" />
+      </binding>
+    </element>
     <element id="Medication.code.coding:class">
       <path value="Medication.code.coding" />
       <sliceName value="class" />
@@ -113,6 +122,7 @@
       </extension>
       <path value="Medication.code.text" />
       <definition value="This element is supposed to be valorized with the complete Medicinal Product Name as approved by the Medicines Regulatory Agency in a jurisdiction.&#xD;&#xA;The name may be applicable in one or more country/language combinations." />
+      <mustSupport value="true" />
     </element>
     <element id="Medication.status">
       <path value="Medication.status" />
@@ -137,6 +147,7 @@
         <code value="CodeableConcept" />
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
+      <mustSupport value="true" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="MedicationForm" />
@@ -146,6 +157,18 @@
           <reference value="http://hl7.org/fhir/ips/ValueSet/medicine-doseform" />
         </valueSetReference>
       </binding>
+    </element>
+    <element id="Medication.form.coding.system">
+      <path value="Medication.form.coding.system" />
+      <binding>
+        <strength value="required" />
+        <description value="EDQM Standard Terms" />
+        <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/medicine-doseform" />
+      </binding>
+    </element>
+    <element id="Medication.ingredient">
+      <path value="Medication.ingredient" />
+      <mustSupport value="true" />
     </element>
     <element id="Medication.ingredient.itemCodeableConcept:itemCodeableConcept">
       <path value="Medication.ingredient.itemCodeableConcept" />
@@ -161,6 +184,24 @@
         <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/medicine-active-substances-uv-ips" />
       </binding>
     </element>
+    <element id="Medication.ingredient.itemCodeableConcept:itemCodeableConcept.coding">
+      <path value="Medication.ingredient.itemCodeableConcept.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.itemCodeableConcept:itemCodeableConcept.coding.system">
+      <path value="Medication.ingredient.itemCodeableConcept.coding.system" />
+      <binding>
+        <strength value="preferred" />
+        <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/medicine-active-substances-uv-ips" />
+      </binding>
+    </element>
+    <element id="Medication.ingredient.itemCodeableConcept:itemCodeableConcept.text">
+      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
+        <valueBoolean value="true" />
+      </extension>
+      <path value="Medication.ingredient.itemCodeableConcept.text" />
+      <mustSupport value="true" />
+    </element>
     <element id="Medication.ingredient.isActive">
       <path value="Medication.ingredient.isActive" />
       <max value="0" />
@@ -171,6 +212,7 @@
         <code value="Ratio" />
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/Ratio-uv-ips" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Medication.package">
       <path value="Medication.package" />
