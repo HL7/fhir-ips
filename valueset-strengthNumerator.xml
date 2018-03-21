@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><ValueSet xmlns="http://hl7.org/fhir">
+                <id value="2.16.840.1.113883.11.22.30--20170503000000"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+                </meta>
+                <url value="http://hl7.org/fhir/ips/ValueSet/strengthNumerator"/>
+                <identifier>
+                    <use value="official"/>
+                    <system value="http://art-decor.org/ns/oids/vs"/>
+                    <value value="2.16.840.1.113883.11.22.30"/>
+                </identifier>
+                <version value="2017-05-03T00:00:00"/>
+                <name value="IPSStrengthNumerator"/>
+                <title value="Medicine Strength Numerator"/>
+                <status value="draft"/>
+                <experimental value="false"/>
+                <publisher value="HL7 International"/>
+                <contact>
+                    <name value="HL7 International"/>
+                    <telecom>
+                        <system value="phone"/>
+                        <value value="+1 734 677 7777 "/>
+                    </telecom>
+                    <telecom>
+                        <system value="fax"/>
+                        <value value="+1 734 677 6622"/>
+                    </telecom>
+                    <telecom>
+                        <system value="email"/>
+                        <value value="info@hl7.org"/>
+                    </telecom>
+                </contact>
+                <description value="Medicine Strength Numerator"/>
+                <immutable value="false"/>
+                <compose>
+                    <include>
+                        <system value="http://unitsofmeasure.org"/>
+                    </include>
+                </compose>
+            </ValueSet>

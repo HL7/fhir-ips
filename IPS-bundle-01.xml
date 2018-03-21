@@ -1,0 +1,974 @@
+<Bundle xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <id value="IPS-examples-Bundle-01"/>
+    <language value="en-GB"/>
+    <identifier>
+        <system value="2.16.724.4.8.10.200.10"/>
+        <value value="175bd032-8b00-4728-b2dc-748bb1501aed"/>
+    </identifier>
+    <type value="document"/>
+    <entry>
+        <fullUrl value="Composition/IPS-examples-Composition-01"/>
+        <resource>
+            <Composition>
+                <id value="IPS-examples-Composition-01"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/ips/StructureDefinition/composition-uv-ips"
+                    />
+                </meta>
+                <identifier>
+                    <system value="urn:oid:2.16.724.4.8.10.200.10"/>
+                    <value value="3f69e0a5-2177-4540-baab-7a5d0877428f"/>
+                </identifier>
+                <status value="final"/>
+                <type>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="60591-5"/>
+                        <display value="Patient Summary"/>
+                    </coding>
+                </type>
+                <subject>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
+                </subject>
+                <date value="2017-07-20T14:30:00+01:00"/>
+                <author>
+                    <reference value="Practitioner/IPS-examples-Practitioner-01"/>
+                </author>
+                <title value="Patient Summary as of July 20, 2017 14:30"/>
+                <confidentiality value="N"/>
+                <attester>
+                    <mode value="legal"/>
+                    <time value="2017-07-20T14:30:00+01:00"/>
+                    <party>
+                        <reference value="Practitioner/IPS-examples-Practitioner-01"/>
+                    </party>
+                </attester>
+                <attester>
+                    <mode value="legal"/>
+                    <time value="2017-07-20T14:30:00+01:00"/>
+                    <party>
+                        <reference value="Organization/IPS-examples-Organization-01"/>
+                    </party>
+                </attester>
+                <custodian>
+                    <reference value="Organization/IPS-examples-Organization-01"/>
+                </custodian>
+                <relatesTo>
+                    <code value="appends"/>
+                    <targetIdentifier>
+                        <system value="urn:oid:2.16.724.4.8.10.200.10"/>
+                        <value value="c2277753-9f90-4a95-8ddb-a0b3f6e7d292"/>
+                    </targetIdentifier>
+                </relatesTo>
+                <event>
+                    <code>
+                        <coding>
+                            <system value="http://hl7.org/fhir/v3/ActClass"/>
+                            <code value="PCPR"/>
+                        </coding>
+                    </code>
+                    <period>
+                        <end value="2017-07-20T14:30:00+01:00"/>
+                    </period>
+                    <detail>
+                        <reference value="Encounter/IPS-examples-Encounter-01"/>
+                    </detail>
+                </event>
+                <section>
+                    <title value="Active Problems"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="11450-4"/>
+                            <display value="Problem list"/>
+                        </coding>
+                    </code>
+                    <text>Hot flushes</text>
+                    <entry>
+                        <reference value="Condition/IPS-examples-Condition-01"/>
+                    </entry>
+                </section>
+                <section>
+                    <title value="Medication"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="10160-0"/>
+                            <display value="Medication use"/>
+                        </coding>
+                    </code>
+                    <text>
+                        <xhtml:div>
+                            <xhtml:table>
+                                <xhtml:thead>
+                                    <xhtml:tr>
+                                        <xhtml:th>Medication</xhtml:th>
+                                        <xhtml:th>Strength</xhtml:th>
+                                        <xhtml:th>Form</xhtml:th>
+                                        <xhtml:th>Dosage</xhtml:th>
+                                        <xhtml:th>Comment</xhtml:th>
+                                    </xhtml:tr>
+                                </xhtml:thead>
+                                <xhtml:tbody>
+                                    <xhtml:tr ID="med-1">
+                                        <xhtml:td>Anastrozole</xhtml:td>
+                                        <xhtml:td>1 mg</xhtml:td>
+                                        <xhtml:td>tablet</xhtml:td>
+                                        <xhtml:td>once daily</xhtml:td>
+                                        <xhtml:td>treatment for breast cancer</xhtml:td>
+                                    </xhtml:tr>
+                                    <xhtml:tr ID="med-2">
+                                        <xhtml:td>Black Cohosh Extract</xhtml:td>
+                                        <xhtml:td> </xhtml:td>
+                                        <xhtml:td>pil</xhtml:td>
+                                        <xhtml:td> </xhtml:td>
+                                        <xhtml:td>herbal supplement</xhtml:td>
+                                    </xhtml:tr>
+                                </xhtml:tbody>
+                            </xhtml:table>
+                        </xhtml:div>
+                    </text>
+                    <entry>
+                        <reference value="MedicationStatement/IPS-examples-MedicationStatement-01"/>
+                    </entry>
+                    <entry>
+                        <reference value="MedicationStatement/IPS-examples-MedicationStatement-02"/>
+                    </entry>
+                </section>
+                <section>
+                    <title value="Allergies and Intolerances"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="48765-2"/>
+                            <display value="Allergies and/or adverse reactions"/>
+                        </coding>
+                    </code>
+                    <text>
+                        Allergy to penicillin, high criticality, active
+                    </text>
+                    <entry>
+                        <reference value="AllergyIntolerance/IPS-examples-AllergyIntolerance-01"/>
+                    </entry>
+                </section>
+                <section>
+                    <title value="History of Past Illness"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="11348-0"/>
+                            <display value="Past illness"/>
+                        </coding>
+                    </code>
+                    <text>Breast cancer Stage II with no evidence of recurrence following treatment</text>
+                    <entry>
+                        <reference value="Condition/IPS-examples-Condition-02"/>
+                    </entry>
+                </section>
+                <section>
+                    <title value="Plan of Treatment"/>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="18776-5"/>
+                            <display value="Plan of care note"/>
+                        </coding>
+                    </code>
+                    <text>Continue hormone medication with Anastrozole for total of 5 years and monitor for potential breast cancer recurrence</text>
+                 </section>
+                <section>
+                    <title value="Results"/>
+                    <text>
+                        <xhtml:div>
+                            <xhtml:table>
+                                <xhtml:tbody>
+                                    <xhtml:tr ID="lab-1">
+                                        <xhtml:td>Blood group</xhtml:td>
+                                        <xhtml:td>A+</xhtml:td>
+                                        <xhtml:td/>
+                                     </xhtml:tr>
+                                    <xhtml:tr ID="lab-2">
+                                        <xhtml:td>C Ab [Presence] in Serum or Plasma</xhtml:td>
+                                        <xhtml:td>Positive</xhtml:td>
+                                        <xhtml:td/>
+                                    </xhtml:tr>
+                                    <xhtml:tr ID="lab-3">
+                                        <xhtml:td>E Ab [Presence] in Serum or Plasma</xhtml:td>
+                                        <xhtml:td>Positive</xhtml:td>
+                                        <xhtml:td/>
+                                    </xhtml:tr>
+                                    <xhtml:tr ID="lab-2">
+                                        <xhtml:td>Little c Ab [Presence] in Serum or Plasma</xhtml:td>
+                                        <xhtml:td>Negative</xhtml:td>
+                                        <xhtml:td/>
+                                    </xhtml:tr>
+                                    <xhtml:tr ID="lab-2">
+                                        <xhtml:td>Hemoglobin A1c/Hemoglobin.total in Blood by HPLC</xhtml:td>
+                                        <xhtml:td>7.5 %</xhtml:td>
+                                        <xhtml:td/>
+                                    </xhtml:tr>
+                                </xhtml:tbody>
+                            </xhtml:table>
+                        </xhtml:div>                       
+                    </text>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org"/>
+                            <code value="30954-2"/>
+                            <display value="Results"/>
+                        </coding>
+                    </code>
+                    <entry>
+                        <reference value="Observation/IPS-examples-Observation-01-Sub0"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/IPS-examples-Observation-01-Sub1"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/IPS-examples-Observation-01-Sub2"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/IPS-examples-Observation-01-Sub3"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/IPS-examples-Observation-01-0"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/IPS-examples-Observation-01-1"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/IPS-examples-Observation-01-2"/>
+                    </entry>
+                    <entry>
+                        <reference value="Observation/IPS-examples-Observation-01-3"/>
+                    </entry>
+                </section>
+            </Composition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Patient/IPS-examples-Patient-01"/>
+        <resource>
+            <Patient>
+                <id value="IPS-examples-Patient-01"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/ips/StructureDefinition/patient-uv-ips"/>
+                </meta>
+                <identifier>
+                    <system value="urn:oid:2.16.840.1.113883.2.4.6.3"/>
+                    <value value="574687583"/>
+                </identifier>
+                <active value="true"/>
+                <name>
+                    <family value="DeLarosa"/>
+                    <given value="Martha"/>
+                </name>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="+31788700800"/>
+                    <use value="home"/>
+                </telecom>
+                <gender value="female"/>
+                <birthDate value="1972-05-01"/>
+                <address>
+                    <line value="Laan Van Europa 1600"/>
+                    <city value="Dordrecht"/>
+                    <postalCode value="3317 DB"/>
+                    <country value="Netherlands"/>
+                </address>
+                <contact>
+                    <relationship>
+                        <coding>
+                            <system value="http://hl7.org/fhir/v2/0131"/>
+                            <code value="N"/>
+                        </coding>
+                    </relationship>
+                    <name>
+                        <family value="Mum"/>
+                        <given value="Martha"/>
+                    </name>
+                    <telecom>
+                        <system value="phone"/>
+                        <value value="+33-555-20036"/>
+                        <use value="home"/>
+                    </telecom>
+                    <address>
+                        <line value="Promenade des Anglais 111"/>
+                        <city value="Lyon"/>
+                        <postalCode value="69001"/>
+                        <country value="France"/>
+                    </address>
+                </contact>
+            </Patient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Practitioner/IPS-examples-Practitioner-01"/>
+        <resource>
+            <Practitioner>
+                <id value="IPS-examples-Practitioner-01"/>
+                <identifier>
+                    <system value="urn:oid:2.16.528.1.1007.3.1"/>
+                    <value value="129854633"/>
+                    <assigner>
+                        <display value="CIBG"/>
+                    </assigner>
+                </identifier>
+                <active value="true"/>
+                <name>
+                    <family value="van Hulp"/>                   
+                    <given value="Beetje"/>
+                </name>
+                <qualification>
+                    <code>
+                        <coding>
+                            <system value="urn:oid:2.16.840.1.113883.2.9.6.2.7"/>
+                            <code value="2211"/>
+                            <display value="Generalist medical practitioners"/>
+                        </coding>
+                        <coding>
+                            <system value="urn:oid:2.16.840.1.113883.2.4.15.111"/>
+                            <code value="01.015"/>
+                            <display value="Huisarts"/>
+                        </coding>
+                    </code>
+                </qualification>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Organization/IPS-examples-Organization-01"/>
+        <resource>
+            <Organization>
+                <id value="IPS-examples-Organization-01"/>
+                <identifier>
+                    <system value="urn:oid:2.16.528.1.1007.3.3"/>
+                    <value value="564738757"/>
+                </identifier>
+                <active value="true"/>
+                <name value="Anorg Aniza Tion BV / The best custodian ever"/>
+                <telecom>
+                    <system value="phone"/>
+                    <value value="+31-51-34343400"/>
+                    <use value="work"/>
+                </telecom>
+                <address>
+                    <use value="work"/>
+                    <line value="Houttuinen 27"/>
+                    <city value="Dordrecht"/>
+                    <postalCode value="3311 CE"/>
+                    <country value="Netherlands"/>
+                </address>
+            </Organization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Encounter/IPS-examples-Encounter-01"/>
+        <resource>
+            <Encounter>
+                <id value="IPS-examples-Encounter-01"/>
+                <identifier>
+                    <system value="urn:oid:1.2.3.999"/>
+                    <value value="8e6b6d2b-2aa1-43f8-b2b2-ee21a92c07cc"/>
+                </identifier>
+                <status value="finished"/>
+                <participant>
+                    <type>
+                        <coding>
+                            <system value="PPRF"/>
+                            <code value="http://hl7.org/fhir/v3/ParticipationType"/>
+                        </coding>
+                    </type>
+                    <individual>
+                        <reference value="Practitioner/IPS-examples-Practitioner-01"/>
+                    </individual>
+                </participant>
+                <serviceProvider>
+                    <reference value="Organization/IPS-examples-Organization-01"/>
+                </serviceProvider>
+            </Encounter>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Condition/IPS-examples-Condition-01"/>
+        <resource>
+            <Condition>
+                <id value="IPS-examples-Condition-01"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/ips/StructureDefinition/condition-uv-ips"/>
+                </meta>
+                <identifier>
+                    <system value="urn:oid:1.2.3.999"/>
+                    <value value="c87bf51c-e53c-4bfe-b8b7-aa62bdd93002"/>
+                </identifier>
+                <clinicalStatus value="active"/>
+                <verificationStatus value="confirmed"/>
+                <category>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="75326-9"/>
+                        <display value="Problem"/>
+                    </coding>
+                </category>
+                <severity>
+                    <coding>
+                        <code value="LA6751-7"/>
+                        <display value="Moderate"/>
+                        <system value="http://loinc.org"/>
+                    </coding>
+                </severity>
+                <code>
+                    <coding>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                            <extension url="lang">
+                                <valueCode value="nl-NL"/>
+                            </extension>
+                            <extension url="content">
+                                <valueString value="opvliegers"/>
+                            </extension>
+                        </extension>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="198436008"/>
+                        <display value="Menopausal flushing (finding)"/>
+                    </coding>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.113883.6.3"/>
+                        <code value="N95.1"/>
+                        <display value="Menopausal and female climacteric states"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
+                </subject>
+                <onsetDateTime value="2015"/>
+                <assertedDate value="2016-10"/>
+            </Condition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="MedicationStatement/IPS-examples-MedicationStatement-01"/>
+        <resource>
+            <MedicationStatement>
+                <id value="IPS-examples-MedicationStatement-01"/>                
+                <meta>
+                    <profile value="http://hl7.org/fhir/ips/StructureDefinition/medicationstatement-uv-ips"/>
+                </meta>
+                <identifier>
+                    <system value="urn:oid:1.2.3.999"/>
+                    <value value="b75f92cb-61d4-469a-9387-df5ef70d25f0"/>
+                </identifier>
+                <status value="active"/>
+                <medicationReference>
+                    <reference value="Medication/IPS-examples-Medication-01"/>
+                </medicationReference>
+                <effectivePeriod>
+                    <start value="2015-03"/>
+                </effectivePeriod>
+                <subject>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
+                </subject>
+                <taken value="y"/>
+                <dosage>
+                    <timing>
+                        <repeat>
+                            <count value="1"/>
+                            <periodUnit value="d"/>
+                        </repeat>
+                    </timing>
+                    <route>
+                        <coding>
+                            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+                            <code value="20053000"/>
+                            <display value="Oral use"/>
+                        </coding>
+                    </route>
+                    <doseQuantity>
+                        <value value="1"/>
+                        <unit value="tablet"/>
+                        <system value="http://unitsofmeasure.org"/>
+                        <code value="tbl"/>
+                    </doseQuantity>
+                </dosage>
+            </MedicationStatement>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="MedicationStatement/IPS-examples-MedicationStatement-02"/>
+        <resource>
+            <MedicationStatement>
+                <id value="IPS-examples-MedicationStatement-02"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/ips/StructureDefinition/medicationstatement-uv-ips"/>
+                </meta>
+                <identifier>
+                    <system value="urn:oid:1.2.3.999"/>
+                    <value value="9e312d6b-c6b6-439a-a730-6efaa5dcf8bc"/>
+                </identifier>
+                <status value="active"/>
+                <medicationReference>
+                    <reference value="Medication/IPS-examples-Medication-02"/>
+                </medicationReference>
+                <effectivePeriod>
+                    <start value="2016-01"/>
+                </effectivePeriod>
+                <subject>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
+                </subject>
+                <taken value="y"/>
+                <dosage>
+                    <route>
+                        <coding>
+                            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+                            <code value="20053000"/>
+                            <display value="Oral use"/>
+                        </coding>
+                    </route>
+                </dosage>
+            </MedicationStatement>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Medication/IPS-examples-Medication-01"/>
+        <resource>
+            <Medication>
+                <id value="IPS-examples-Medication-01"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/ips/StructureDefinition/medication-uv-ips"/>
+                </meta>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="108774000"/>
+                        <display value="Anastrozole (product)"/>
+                    </coding>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.113883.2.4.4.1"/>
+                        <code value="99872"/>
+                        <display value="ANASTROZOL 1MG TABLET"/>
+                    </coding>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.113883.2.4.4.7"/>
+                        <code value="2076667"/>
+                        <display value="ANASTROZOL CF TABLET FILMOMHULD 1MG"/>
+                    </coding>
+                </code>
+            </Medication>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Medication/IPS-examples-Medication-02"/>
+        <resource>
+            <Medication>
+                <id value="IPS-examples-Medication-02"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/ips/StructureDefinition/medication-uv-ips"/>
+                </meta>
+                <code>
+                    <coding>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                            <extension url="lang">
+                                <valueCode value="nl-NL"/>
+                            </extension>
+                            <extension url="content">
+                                <valueString value="Zwarte Cohosh Extract"/>
+                            </extension>
+                        </extension>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="412588001"/>
+                        <display value="Cimicifuga racemosa extract (substance)"/>
+                    </coding>
+                    <text value="Black Cohosh Extract herbal supplement"/>
+                </code>
+            </Medication>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="AllergyIntolerance/IPS-examples-AllergyIntolerance-01"/>
+        <resource>
+            <AllergyIntolerance>
+                <id value="IPS-examples-AllergyIntolerance-01"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/ips/StructureDefinition/allergyintolerance-uv-ips"/>
+                </meta>
+                <identifier>
+                    <system value="urn:oid:1.2.3.999"/>
+                    <value value="3a462598-009c-484a-965c-d6b24a821424"/>
+                </identifier>
+                <clinicalStatus value="active"/>
+                <verificationStatus value="confirmed"/>
+                <type value="allergy"/>
+                <category value="medication"/>
+                <criticality value="high"/>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="373270004"/>
+                        <display value="Penicillin -class of antibiotic- (substance)"/>
+                    </coding>
+                </code>
+                <onsetDateTime value="2010"/>
+            </AllergyIntolerance>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Condition/IPS-examples-Condition-02"/>
+        <resource>
+            <Condition>
+                <id value="IPS-examples-Condition-02"/>
+                <meta>
+                    <profile value="http://hl7.org/fhir/ips/StructureDefinition/condition-uv-ips"/>
+                </meta>
+                <identifier>
+                    <system value="urn:oid:1.2.3.999"/>
+                    <value value="66d4a8c7-9081-43e0-a63f-489c2ae6edd6"/>
+                </identifier>
+                <clinicalStatus value="remission"/>
+                <category>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="75326-9"/>
+                        <display value="Problem"/>
+                    </coding>
+                </category>
+                <severity>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="60333009"/>
+                        <display value="Clinical stage II (finding)"/>
+                    </coding>
+                </severity>
+                <code>
+                    <coding>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+                            <extension url="lang">
+                                <valueCode value="nl-NL"/>
+                            </extension>
+                            <extension url="content">
+                                <valueString value="Borstkanker stadium II zonder aanwijzingen van recidieven na behandeling"/>
+                            </extension>
+                        </extension>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="254837009"/>
+                        <display value="Malignant neoplasm of breast (disorder)"/>
+                    </coding>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.113883.6.43"/>
+                        <code value="8500/3"/>
+                        <display value="Infiltrating duct carcinoma, NOS"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
+                </subject>
+                <onsetDateTime value="2015-01"/>
+                <abatementDateTime value="2015-03"/>
+            </Condition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Organization/IPS-examples-Organization-02"/>
+        <resource>
+            <Organization>
+                <id value="IPS-examples-Organization-02"/>
+                <active value="true"/>
+                <type>
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.113883.4.642.3.403"/>
+                        <code value="laboratory-medicine"/>
+                    </coding>
+                </type>
+                <name value="Laboratoire de charme"/>
+            </Organization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/IPS-examples-Observation-01-Sub0"/>
+        <resource>
+            <Observation>
+                <id value="IPS-examples-Observation-01-Sub0"/>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://hl7.org/fhir/observation-category"/>
+                        <code value="laboratory"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="882-1"/>
+                        <display value="ABO and Rh group [Type] in Blood"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
+                </subject>
+                <effectiveDateTime value="2015-10-10T09:15:00+01:00"/>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="278149003"/>
+                        <display value="Blood group A Rh(D) positive"/>
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/IPS-examples-Observation-01-Sub1"/>
+        <resource>
+            <Observation>
+                <id value="IPS-examples-Observation-01-Sub1"/>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://hl7.org/fhir/observation-category"/>
+                        <code value="laboratory"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="945-6"/>
+                        <display value="C Ab [Presence] in Serum or Plasma"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
+                </subject>
+                <effectiveDateTime value="2015-10-10T09:35:00+01:00"/>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="10828004"/>
+                        <display value="Positive"/>
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/IPS-examples-Observation-01-Sub2"/>
+        <resource>
+            <Observation>
+                <id value="IPS-examples-Observation-01-Sub2"/>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://hl7.org/fhir/observation-category"/>
+                        <code value="laboratory"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="1018-1"/>
+                        <display value="E Ab [Presence] in Serum or Plasma"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
+                </subject>
+                <effectiveDateTime value="2015-10-10T09:35:00+01:00"/>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="10828004"/>
+                        <display value="Positive"/>
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/IPS-examples-Observation-01-Sub3"/>
+        <resource>
+            <Observation>
+                <id value="IPS-examples-Observation-01-Sub3"/>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://hl7.org/fhir/observation-category"/>
+                        <code value="laboratory"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="1156-9"/>
+                        <display value="little c Ab [Presence] in Serum or Plasma"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
+                </subject>
+                <effectiveDateTime value="2015-10-10T09:35:00+01:00"/>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="260385009"/>
+                        <display value="Negative"/>
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/IPS-examples-Observation-01-0"/>
+        <resource>
+            <Observation>
+                <id value="IPS-examples-Observation-01-0"/>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://hl7.org/fhir/observation-category"/>
+                        <code value="laboratory"/>
+                    </coding>
+                </category>
+                <code>
+                    <text value="Blood typing"/>
+                </code>
+                <subject>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
+                </subject>
+                <effectiveDateTime value="2015-10-10"/>
+                <performer>
+                    <reference value="Organization/IPS-examples-Organization-02"/>
+                </performer>
+                <related>
+                    <type value="has-member"/>
+                    <target>
+                        <reference value="Observation/IPS-examples-Observation-01-Sub0"/>
+                    </target>
+                </related>
+                <related>
+                    <type value="has-member"/>
+                    <target>
+                        <reference value="Observation/IPS-examples-Observation-01-Sub1"/>
+                    </target>
+                </related>
+                <related>
+                    <type value="has-member"/>
+                    <target>
+                        <reference value="Observation/IPS-examples-Observation-01-Sub2"/>
+                    </target>
+                </related>
+                <related>
+                    <type value="has-member"/>
+                    <target>
+                        <reference value="Observation/IPS-examples-Observation-01-Sub3"/>
+                    </target>
+                </related>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/IPS-examples-Observation-01-1"/>
+        <resource>
+            <Observation>
+                <id value="IPS-examples-Observation-01-1"/>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://hl7.org/fhir/observation-category"/>
+                        <code value="laboratory"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="17856-6"/>
+                        <display value="Hemoglobin A1c/Hemoglobin.total in Blood by HPLC"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
+                </subject>
+                <effectiveDateTime value="2017-11-10T08:20:00+01:00"/>
+                <performer>
+                    <reference value="Organization/IPS-examples-Organization-02"/>
+                </performer>
+                <valueQuantity>
+                    <value value="7.5"/>
+                    <unit value="%"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="%"/>
+                </valueQuantity>
+                <comment value="Above stated goal of 7.0 %"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/IPS-examples-Observation-01-2"/>
+        <resource>
+            <Observation>
+                <id value="IPS-examples-Observation-01-2"/>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://hl7.org/fhir/observation-category"/>
+                        <code value="laboratory"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="17856-6"/>
+                        <display value="Hemoglobin A1c/Hemoglobin.total in Blood by HPLC"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
+                </subject>
+                <effectiveDateTime value="2017-12-10T08:20:00+01:00"/>
+                <performer>
+                    <reference value="Organization/IPS-examples-Organization-02"/>
+                </performer>
+                <valueQuantity>
+                    <value value="7"/>
+                    <unit value="%"/>
+                    <system value="http://unitsofmeasure.org"/>
+                    <code value="%"/>
+                </valueQuantity>
+                <comment value="Returned to goal of 7.0 %"/>
+            </Observation>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Observation/IPS-examples-Observation-01-3"/>
+        <resource>
+            <Observation>
+                <id value="IPS-examples-Observation-01-3"/>
+                <status value="final"/>
+                <category>
+                    <coding>
+                        <system value="http://hl7.org/fhir/observation-category"/>
+                        <code value="laboratory"/>
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org"/>
+                        <code value="42803-7"/>
+                        <display value="Bacteria identified in Isolate"/>
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
+                </subject>
+                <effectiveDateTime value="2017-12-10T08:20:00+01:00"/>
+                <performer>
+                    <reference value="Organization/IPS-examples-Organization-02"/>
+                </performer>
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="115329001"/>
+                        <display value="Methicillin resistant Staphylococcus aureus"/>
+                    </coding>
+                </valueCodeableConcept>
+                <comment value="Healthy carrier of MRSA"/>
+            </Observation>
+        </resource>
+    </entry>
+</Bundle>
