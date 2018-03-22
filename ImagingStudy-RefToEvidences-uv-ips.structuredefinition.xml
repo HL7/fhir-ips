@@ -1,17 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
-    <lastUpdated value="2018-02-20T13:32:46.724+01:00" />
+    <lastUpdated value="2018-02-20T13:37:32.268+01:00" />
   </meta>
-  <url value="http://hl7.org/fhir/ips/StructureDefinition/imagingstudy-uv-ips" />
-  <name value="ImagingStudy-uv-ips" />
+  <url value="http://hl7.org/fhir/ips/StructureDefinition/imagingstudy-reftoevidences-uv-ips" />
+  <name value="ImagingStudy-RefToEvidences-uv-ips" />
   <status value="draft" />
-  <date value="2018-02-20T13:22:59.883+01:00" />
+  <date value="2018-02-20T13:33:04.511+01:00" />
+  <description value="This is a specialization of the ImagingStudy-uv-ips used for indicating a set of evidences belonging to this study and how to access them.&#xD;&#xA;&#xD;&#xA;" />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="ImagingStudy" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ImagingStudy" />
+  <baseDefinition value="http://hl7.org/fhir/ips/StructureDefinition/imagingstudy-uv-ips" />
   <derivation value="constraint" />
   <snapshot>
     <element id="ImagingStudy">
@@ -429,7 +430,7 @@
       <definition value="Accession Number is an identifier related to some aspect of imaging workflow and data management. Usage may vary across different institutions.  See for instance [IHE Radiology Technical Framework Volume 1 Appendix A](http://www.ihe.net/uploadedFiles/Documents/Radiology/IHE_RAD_TF_Rev13.0_Vol1_FT_2014-07-30.pdf)." />
       <alias value="AccessionNumber" />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="ImagingStudy.accession" />
         <min value="0" />
@@ -2994,7 +2995,7 @@
       <comment value="Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information." />
       <alias value="ModalitiesInStudy" />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="ImagingStudy.modalityList" />
         <min value="0" />
@@ -3846,7 +3847,7 @@
       <alias value="StudyDate" />
       <alias value="StudyTime" />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="ImagingStudy.started" />
         <min value="0" />
@@ -4386,7 +4387,7 @@
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <alias value="Name of Physician(s) Reading Study" />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="ImagingStudy.interpreter" />
         <min value="0" />
@@ -5190,7 +5191,7 @@
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <alias value="ProcedureCodeSequence" />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="ImagingStudy.procedureCode" />
         <min value="0" />
@@ -5712,7 +5713,7 @@
       <definition value="Description of clinical condition indicating why the ImagingStudy was requested." />
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="ImagingStudy.reason" />
         <min value="0" />
@@ -6473,7 +6474,7 @@
       <comment value="32 bit number; for values larger than this, use decimal" />
       <alias value="SeriesNumber" />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="ImagingStudy.series.number" />
         <min value="0" />
@@ -7232,7 +7233,7 @@
       <comment value="Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information." />
       <alias value="BodyPartExamined" />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="ImagingStudy.series.bodySite" />
         <min value="0" />
@@ -7581,7 +7582,7 @@
       <definition value="The laterality of the (possibly paired) anatomic structures examined. E.g., the left knee, both lungs, or unpaired abdomen. If present, shall be consistent with any laterality information indicated in ImagingStudy.series.bodySite." />
       <comment value="Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="ImagingStudy.series.laterality" />
         <min value="0" />
@@ -7929,7 +7930,7 @@
       <short value="When the series started" />
       <definition value="The date and time the series was started." />
       <min value="0" />
-      <max value="1" />
+      <max value="0" />
       <base>
         <path value="ImagingStudy.series.started" />
         <min value="0" />
@@ -7968,7 +7969,7 @@
       <alias value="PerformingPhysicianName" />
       <alias value="OperatorName" />
       <min value="0" />
-      <max value="*" />
+      <max value="0" />
       <base>
         <path value="ImagingStudy.series.performer" />
         <min value="0" />
@@ -8522,38 +8523,51 @@
     </element>
   </snapshot>
   <differential>
-    <element id="ImagingStudy.context">
-      <path value="ImagingStudy.context" />
+    <element id="ImagingStudy.accession">
+      <path value="ImagingStudy.accession" />
       <max value="0" />
     </element>
-    <element id="ImagingStudy.basedOn">
-      <path value="ImagingStudy.basedOn" />
+    <element id="ImagingStudy.modalityList">
+      <path value="ImagingStudy.modalityList" />
       <max value="0" />
     </element>
-    <element id="ImagingStudy.referrer">
-      <path value="ImagingStudy.referrer" />
+    <element id="ImagingStudy.started">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
+        <valueString value="dicom=http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.2.html#sect_C.7.2.1" />
+      </extension>
+      <path value="ImagingStudy.started" />
       <max value="0" />
     </element>
     <element id="ImagingStudy.interpreter">
       <path value="ImagingStudy.interpreter" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/practitioner-uv-ips" />
-      </type>
-    </element>
-    <element id="ImagingStudy.interpreter.identifier">
-      <path value="ImagingStudy.interpreter.identifier" />
       <max value="0" />
     </element>
-    <element id="ImagingStudy.interpreter.display">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="ImagingStudy.interpreter.display" />
+    <element id="ImagingStudy.procedureCode">
+      <path value="ImagingStudy.procedureCode" />
       <max value="0" />
     </element>
-    <element id="ImagingStudy.procedureReference">
-      <path value="ImagingStudy.procedureReference" />
+    <element id="ImagingStudy.reason">
+      <path value="ImagingStudy.reason" />
+      <max value="0" />
+    </element>
+    <element id="ImagingStudy.series.number">
+      <path value="ImagingStudy.series.number" />
+      <max value="0" />
+    </element>
+    <element id="ImagingStudy.series.bodySite">
+      <path value="ImagingStudy.series.bodySite" />
+      <max value="0" />
+    </element>
+    <element id="ImagingStudy.series.laterality">
+      <path value="ImagingStudy.series.laterality" />
+      <max value="0" />
+    </element>
+    <element id="ImagingStudy.series.started">
+      <path value="ImagingStudy.series.started" />
+      <max value="0" />
+    </element>
+    <element id="ImagingStudy.series.performer">
+      <path value="ImagingStudy.series.performer" />
       <max value="0" />
     </element>
   </differential>
