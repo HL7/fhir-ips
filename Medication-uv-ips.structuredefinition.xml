@@ -49,6 +49,7 @@
         <description value="One slice per system of representation of medications. Supports the various IDMP codes, as well as WHO ATC classification.&#xD;&#xA;&#xD;&#xA;This element is generally used to identify a medicinal product.&#xD;&#xA;When the IDMP identifiers will be concretely available for usage this element will be used for conveying the Medicinal Product Identifier (MPID).&#xD;&#xA;For the time being, it could be optionally used for conveying jurisdictional or agreed cross jurisdictional medicinal product code." />
         <rules value="openAtEnd" />
       </slicing>
+      <mustSupport value="true" />
     </element>
     <element id="Medication.code.coding:pharmaceuticalProduct-L1">
       <path value="Medication.code.coding" />
