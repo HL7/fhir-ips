@@ -541,11 +541,11 @@
           <type value="value" />
           <path value="system" />
         </discriminator>
-        <description value="One slice per system of representation of medications. Supports the various IDMP codes, as well as WHO ATC classification.&#xD;&#xA;&#xD;&#xA;This element is generally used to identify a medicinal product.&#xD;&#xA;When the IDMP identifiers will be concretely available for usage this element will be used for conveying the Medicinal Product Identifier (MPID).&#xD;&#xA;For the time being, it could be optionally used for conveying jurisdictional or agreed cross jurisdictional medicinal product code." />
+        <description value="This slicing on the coding element of Medication.code is open, with discriminator based on the value of the Coding.system element. It supports both identifiers and categories or classes for representing the medication. &#xD;&#xA;It carries one slice for each of the IDMP identifiers, plus one slice for the ATC classification. &#xD;&#xA;Other representations of the medication (such as SNOMED CT, RxNorm, jurisdictional code systems, cross-jursisdiction code systems, or any classification) use extra slices, since the slicing is open. &#xD;&#xA;The IDMP slices are provisional, and will be usable when the IDMP identifiers become available." />
         <rules value="open" />
       </slicing>
       <short value="A reference to a code defined by a terminology system" />
-      <definition value="A reference to a code defined by a terminology system." />
+      <definition value="A representation of the medication in a code system. The representation can be granular or may also be a class or category." />
       <comment value="Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information." />
       <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
       <min value="0" />
@@ -6725,9 +6725,10 @@
           <type value="value" />
           <path value="system" />
         </discriminator>
-        <description value="One slice per system of representation of medications. Supports the various IDMP codes, as well as WHO ATC classification.&#xD;&#xA;&#xD;&#xA;This element is generally used to identify a medicinal product.&#xD;&#xA;When the IDMP identifiers will be concretely available for usage this element will be used for conveying the Medicinal Product Identifier (MPID).&#xD;&#xA;For the time being, it could be optionally used for conveying jurisdictional or agreed cross jurisdictional medicinal product code." />
+        <description value="This slicing on the coding element of Medication.code is open, with discriminator based on the value of the Coding.system element. It supports both identifiers and categories or classes for representing the medication. &#xD;&#xA;It carries one slice for each of the IDMP identifiers, plus one slice for the ATC classification. &#xD;&#xA;Other representations of the medication (such as SNOMED CT, RxNorm, jurisdictional code systems, cross-jursisdiction code systems, or any classification) use extra slices, since the slicing is open. &#xD;&#xA;The IDMP slices are provisional, and will be usable when the IDMP identifiers become available." />
         <rules value="open" />
       </slicing>
+      <definition value="A representation of the medication in a code system. The representation can be granular or may also be a class or category." />
     </element>
     <element id="Medication.code.coding:pharmaceuticalProduct-L1">
       <path value="Medication.code.coding" />
