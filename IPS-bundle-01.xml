@@ -12,8 +12,7 @@
             <Composition>
                 <id value="IPS-examples-Composition-01"/>
                 <meta>
-                    <profile value="http://hl7.org/fhir/ips/StructureDefinition/composition-uv-ips"
-                    />
+                    <profile value="http://hl7.org/fhir/ips/StructureDefinition/composition-uv-ips"/>
                 </meta>
                 <identifier>
                     <system value="urn:oid:2.16.724.4.8.10.200.10"/>
@@ -316,8 +315,8 @@
                 <contact>
                     <relationship>
                         <coding>
-                            <system value="http://hl7.org/fhir/v2/0131"/>
-                            <code value="N"/>
+                            <system value="http://hl7.org/fhir/v3/RoleCode"/>
+                            <code value="MTH"/>
                         </coding>
                     </relationship>
                     <name>
@@ -397,33 +396,6 @@
                     <country value="Netherlands"/>
                 </address>
             </Organization>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="Encounter/IPS-examples-Encounter-01"/>
-        <resource>
-            <Encounter>
-                <id value="IPS-examples-Encounter-01"/>
-                <identifier>
-                    <system value="urn:oid:1.2.3.999"/>
-                    <value value="8e6b6d2b-2aa1-43f8-b2b2-ee21a92c07cc"/>
-                </identifier>
-                <status value="finished"/>
-                <participant>
-                    <type>
-                        <coding>
-                            <system value="PPRF"/>
-                            <code value="http://hl7.org/fhir/v3/ParticipationType"/>
-                        </coding>
-                    </type>
-                    <individual>
-                        <reference value="Practitioner/IPS-examples-Practitioner-01"/>
-                    </individual>
-                </participant>
-                <serviceProvider>
-                    <reference value="Organization/IPS-examples-Organization-01"/>
-                </serviceProvider>
-            </Encounter>
         </resource>
     </entry>
     <entry>
