@@ -83,7 +83,10 @@
                             <display value="Problem list"/>
                         </coding>
                     </code>
-                    <text>Hot flushes</text>
+                    <text>
+                        <status value="generated"/>
+                        <xhtml:div>Hot flushes</xhtml:div>
+                    </text>
                     <entry>
                         <reference value="Condition/IPS-examples-Condition-01"/>
                     </entry>
@@ -98,6 +101,7 @@
                         </coding>
                     </code>
                     <text>
+                        <status value="generated"/>
                         <xhtml:div>
                             <xhtml:table>
                                 <xhtml:thead>
@@ -110,14 +114,14 @@
                                     </xhtml:tr>
                                 </xhtml:thead>
                                 <xhtml:tbody>
-                                    <xhtml:tr ID="med-1">
+                                    <xhtml:tr>
                                         <xhtml:td>Anastrozole</xhtml:td>
                                         <xhtml:td>1 mg</xhtml:td>
                                         <xhtml:td>tablet</xhtml:td>
                                         <xhtml:td>once daily</xhtml:td>
                                         <xhtml:td>treatment for breast cancer</xhtml:td>
                                     </xhtml:tr>
-                                    <xhtml:tr ID="med-2">
+                                    <xhtml:tr>
                                         <xhtml:td>Black Cohosh Extract</xhtml:td>
                                         <xhtml:td> </xhtml:td>
                                         <xhtml:td>pil</xhtml:td>
@@ -145,7 +149,8 @@
                         </coding>
                     </code>
                     <text>
-                        Allergy to penicillin, high criticality, active
+                        <status value="generated"/>
+                        <xhtml:div>Allergy to penicillin, high criticality, active</xhtml:div>    
                     </text>
                     <entry>
                         <reference value="AllergyIntolerance/IPS-examples-AllergyIntolerance-01"/>
@@ -160,7 +165,10 @@
                             <display value="Past illness"/>
                         </coding>
                     </code>
-                    <text>Breast cancer Stage II with no evidence of recurrence following treatment</text>
+                    <text>
+                        <status value="generated"/>
+                        <xhtml:div>Breast cancer Stage II with no evidence of recurrence following treatment</xhtml:div>
+                    </text>
                     <entry>
                         <reference value="Condition/IPS-examples-Condition-02"/>
                     </entry>
@@ -174,43 +182,12 @@
                             <display value="Plan of care note"/>
                         </coding>
                     </code>
-                    <text>Continue hormone medication with Anastrozole for total of 5 years and monitor for potential breast cancer recurrence</text>
+                    <text><status value="generated"/>
+                        <xhtml:div>Continue hormone medication with Anastrozole for total of 5 years and monitor for potential breast cancer recurrence</xhtml:div>
+                    </text>
                  </section>
                 <section>
                     <title value="Results"/>
-                    <text>
-                        <xhtml:div>
-                            <xhtml:table>
-                                <xhtml:tbody>
-                                    <xhtml:tr ID="lab-1">
-                                        <xhtml:td>Blood group</xhtml:td>
-                                        <xhtml:td>A+</xhtml:td>
-                                        <xhtml:td/>
-                                     </xhtml:tr>
-                                    <xhtml:tr ID="lab-2">
-                                        <xhtml:td>C Ab [Presence] in Serum or Plasma</xhtml:td>
-                                        <xhtml:td>Positive</xhtml:td>
-                                        <xhtml:td/>
-                                    </xhtml:tr>
-                                    <xhtml:tr ID="lab-3">
-                                        <xhtml:td>E Ab [Presence] in Serum or Plasma</xhtml:td>
-                                        <xhtml:td>Positive</xhtml:td>
-                                        <xhtml:td/>
-                                    </xhtml:tr>
-                                    <xhtml:tr ID="lab-2">
-                                        <xhtml:td>Little c Ab [Presence] in Serum or Plasma</xhtml:td>
-                                        <xhtml:td>Negative</xhtml:td>
-                                        <xhtml:td/>
-                                    </xhtml:tr>
-                                    <xhtml:tr ID="lab-2">
-                                        <xhtml:td>Hemoglobin A1c/Hemoglobin.total in Blood by HPLC</xhtml:td>
-                                        <xhtml:td>7.5 %</xhtml:td>
-                                        <xhtml:td/>
-                                    </xhtml:tr>
-                                </xhtml:tbody>
-                            </xhtml:table>
-                        </xhtml:div>                       
-                    </text>
                     <code>
                         <coding>
                             <system value="http://loinc.org"/>
@@ -218,6 +195,69 @@
                             <display value="Results"/>
                         </coding>
                     </code>
+                    <text>
+                        <status value="generated"/>
+                        <xhtml:div>
+                            <xhtml:table>
+                                <xhtml:thead>
+                                    <xhtml:tr>
+                                        <xhtml:th colspan="3">Blood typing</xhtml:th>
+                                    </xhtml:tr>
+                                </xhtml:thead>
+                                <xhtml:tbody>
+                                    <xhtml:tr>
+                                        <xhtml:td>Blood group</xhtml:td>
+                                        <xhtml:td>A+</xhtml:td>
+                                        <xhtml:td/>
+                                     </xhtml:tr>
+                                    <xhtml:tr>
+                                        <xhtml:td>C Ab [Presence] in Serum or Plasma</xhtml:td>
+                                        <xhtml:td>Positive</xhtml:td>
+                                        <xhtml:td/>
+                                    </xhtml:tr>
+                                    <xhtml:tr>
+                                        <xhtml:td>E Ab [Presence] in Serum or Plasma</xhtml:td>
+                                        <xhtml:td>Positive</xhtml:td>
+                                        <xhtml:td/>
+                                    </xhtml:tr>
+                                    <xhtml:tr>
+                                        <xhtml:td>Little c Ab [Presence] in Serum or Plasma</xhtml:td>
+                                        <xhtml:td>Negative</xhtml:td>
+                                        <xhtml:td/>
+                                    </xhtml:tr>
+                                </xhtml:tbody>
+                            </xhtml:table>
+                            <xhtml:table>
+                                <xhtml:thead>
+                                    <xhtml:tr>
+                                        <xhtml:th colspan="3">Hemoglobin A1c monitoring</xhtml:th>
+                                    </xhtml:tr>
+                                </xhtml:thead>
+                                <xhtml:tbody>
+                                    <xhtml:tr>
+                                        <xhtml:td>Hemoglobin A1c/Hemoglobin.total in Blood by HPLC</xhtml:td>
+                                        <xhtml:td>7.5 %</xhtml:td>
+                                        <xhtml:td/>
+                                    </xhtml:tr>
+                                </xhtml:tbody>
+                            </xhtml:table>
+                            <xhtml:table>
+                                <xhtml:thead>
+                                    <xhtml:tr>
+                                        <xhtml:th colspan="3">Bacteriology</xhtml:th>
+                                    </xhtml:tr>
+                                </xhtml:thead>
+                                <xhtml:tbody>
+                                    <xhtml:tr>
+                                        <xhtml:td colspan="3">Methicillin resistant Staphylococcus aureus</xhtml:td>
+                                    </xhtml:tr>
+                                    <xhtml:tr>
+                                        <xhtml:td colspan="3">Healthy carrier of MRSA</xhtml:td>
+                                    </xhtml:tr>
+                                </xhtml:tbody>
+                            </xhtml:table>
+                        </xhtml:div>                       
+                    </text>
                     <entry>
                         <reference value="Observation/IPS-examples-Observation-01-Sub0"/>
                     </entry>
@@ -235,9 +275,6 @@
                     </entry>
                     <entry>
                         <reference value="Observation/IPS-examples-Observation-01-1"/>
-                    </entry>
-                    <entry>
-                        <reference value="Observation/IPS-examples-Observation-01-2"/>
                     </entry>
                     <entry>
                         <reference value="Observation/IPS-examples-Observation-01-3"/>
@@ -412,9 +449,9 @@
                 </category>
                 <severity>
                     <coding>
+                        <system value="http://loinc.org"/>
                         <code value="LA6751-7"/>
                         <display value="Moderate"/>
-                        <system value="http://loinc.org"/>
                     </coding>
                 </severity>
                 <code>
@@ -606,6 +643,9 @@
                         <display value="Penicillin -class of antibiotic- (substance)"/>
                     </coding>
                 </code>
+                <patient>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
+                </patient>
                 <onsetDateTime value="2010"/>
             </AllergyIntolerance>
         </resource>
@@ -895,42 +935,6 @@
                     <code value="%"/>
                 </valueQuantity>
                 <comment value="Above stated goal of 7.0 %"/>
-            </Observation>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="Observation/IPS-examples-Observation-01-2"/>
-        <resource>
-            <Observation>
-                <id value="IPS-examples-Observation-01-2"/>
-                <status value="final"/>
-                <category>
-                    <coding>
-                        <system value="http://hl7.org/fhir/observation-category"/>
-                        <code value="laboratory"/>
-                    </coding>
-                </category>
-                <code>
-                    <coding>
-                        <system value="http://loinc.org"/>
-                        <code value="17856-6"/>
-                        <display value="Hemoglobin A1c/Hemoglobin.total in Blood by HPLC"/>
-                    </coding>
-                </code>
-                <subject>
-                    <reference value="Patient/IPS-examples-Patient-01"/>
-                </subject>
-                <effectiveDateTime value="2017-12-10T08:20:00+01:00"/>
-                <performer>
-                    <reference value="Organization/IPS-examples-Organization-02"/>
-                </performer>
-                <valueQuantity>
-                    <value value="7"/>
-                    <unit value="%"/>
-                    <system value="http://unitsofmeasure.org"/>
-                    <code value="%"/>
-                </valueQuantity>
-                <comment value="Returned to goal of 7.0 %"/>
             </Observation>
         </resource>
     </entry>
