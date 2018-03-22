@@ -3620,8 +3620,8 @@
       <definition value="A reference to a code defined by a terminology system." />
       <comment value="Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information." />
       <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
-      <min value="0" />
-      <max value="*" />
+      <min value="1" />
+      <max value="1" />
       <base>
         <path value="CodeableConcept.coding" />
         <min value="0" />
@@ -4165,7 +4165,7 @@
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <alias value="Code" />
       <min value="0" />
-      <max value="*" />
+      <max value="1" />
       <base>
         <path value="AllergyIntolerance.code" />
         <min value="0" />
@@ -7937,6 +7937,11 @@
         </valueSetReference>
       </binding>
     </element>
+    <element id="AllergyIntolerance.code:absentOrUnknownAllergy.coding">
+      <path value="AllergyIntolerance.code.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
     <element id="AllergyIntolerance.code:absentOrUnknownAllergy.coding.system">
       <path value="AllergyIntolerance.code.coding.system" />
       <fixedUri value="http://hl7.org/fhir/ips/CodeSystem/absent-unknown" />
@@ -7945,6 +7950,7 @@
       <path value="AllergyIntolerance.code" />
       <sliceName value="substanceOrCondition" />
       <definition value="Code for an allergy or intolerance statement .  This may be a code for a substance or pharmaceutical product that is considered to be responsible for the adverse reaction risk (e.g., &quot;Latex&quot;), an allergy or intolerance condition (e.g., &quot;Latex allergy&quot;)." />
+      <max value="1" />
       <type>
         <code value="CodeableConcept" />
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
