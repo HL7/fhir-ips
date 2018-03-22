@@ -609,17 +609,18 @@
                 <category value="medication"/>
                 <criticality value="high"/>
                 <code>
-                    <!--  
+                    
                     <coding>
                         <system value="http://snomed.info/sct"/>
                         <code value="373270004"/>
                         <display value="Penicillin -class of antibiotic- (substance)"/>
                     </coding>
-                    -->
+                    <!--  
                     <coding>
                         <system value="urn:oid:2.16.840.1.113883.3.1937.777.13.5.999.1"/>
                         <code value="X-NoKnownAllergy"/>
                     </coding>
+                    -->
                 </code>
                 <patient>
                     <reference value="Patient/IPS-examples-Patient-01"/>
@@ -658,7 +659,6 @@
                 </severity>
                 <code>
                     <coding>
-                        <!--  
                         <extension url="http://hl7.org/fhir/StructureDefinition/translation">
                             <extension url="lang">
                                 <valueCode value="nl-NL"/>
@@ -667,7 +667,6 @@
                                 <valueString value="Borstkanker stadium II zonder aanwijzingen van recidieven na behandeling"/>
                             </extension>
                         </extension>
-                        -->
                         <system value="http://snomed.info/sct"/>
                         <code value="254837009"/>
                         <display value="Malignant neoplasm of breast (disorder)"/>
