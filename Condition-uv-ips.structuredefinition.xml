@@ -1011,7 +1011,7 @@
         <strength value="required" />
         <description value="Absence or unknown" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir//ips/ValueSet/absent-or-unknown-conditions-uv-ips" />
+          <reference value="http://hl7.org/fhir//ips/ValueSet/absent-or-unknown-problems-uv-ips" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -1268,7 +1268,7 @@
       <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
       <comment value="The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously." />
       <requirements value="Need to be unambiguous about the source of the definition of the symbol." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Coding.system" />
@@ -1278,7 +1278,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org/fhir/ips/CodeSystem/absent-unknown" />
+      <fixedUri value="urn:oid:2.16.840.1.113883.3.1937.777.13.5.999.1" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -3366,7 +3366,7 @@
         <strength value="required" />
         <description value="Absence or unknown" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir//ips/ValueSet/absent-or-unknown-conditions-uv-ips" />
+          <reference value="http://hl7.org/fhir//ips/ValueSet/absent-or-unknown-problems-uv-ips" />
         </valueSetReference>
       </binding>
     </element>
@@ -3377,7 +3377,8 @@
     </element>
     <element id="Condition.code:absentOrUnknownProblem.coding.system">
       <path value="Condition.code.coding.system" />
-      <fixedUri value="http://hl7.org/fhir/ips/CodeSystem/absent-unknown" />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.840.1.113883.3.1937.777.13.5.999.1" />
     </element>
     <element id="Condition.code:absentOrUnknownProblem.coding.code">
       <path value="Condition.code.coding.code" />
