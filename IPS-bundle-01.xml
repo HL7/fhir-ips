@@ -426,7 +426,7 @@
                         <display value="Moderate"/>
                     </coding>
                 </severity>
-                <code>
+                <code> <!--  
                     <coding>
                         <extension url="http://hl7.org/fhir/StructureDefinition/translation">
                             <extension url="lang">
@@ -444,6 +444,11 @@
                         <system value="http://hl7.org/fhir/sid/icd-10"/>
                         <code value="N95.1"/>
                         <display value="Menopausal and female climacteric states"/>
+                    </coding>
+                    -->
+                    <coding>
+                        <system value="http://hl7.org/fhir/ips/CodeSystem/absent-unknown"/>
+                        <code value=""/>
                     </coding>
                 </code>
                 <subject>
@@ -609,10 +614,16 @@
                 <category value="medication"/>
                 <criticality value="high"/>
                 <code>
+                    <!--  
                     <coding>
                         <system value="http://snomed.info/sct"/>
                         <code value="373270004"/>
                         <display value="Penicillin -class of antibiotic- (substance)"/>
+                    </coding>
+                    -->
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.113883.3.1937.777.13.5.999.1"/>
+                        <code value="X-NoKnownAllergy"/>
                     </coding>
                 </code>
                 <patient>

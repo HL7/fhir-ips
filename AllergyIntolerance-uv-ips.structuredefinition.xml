@@ -3753,7 +3753,7 @@
       <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
       <comment value="The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously." />
       <requirements value="Need to be unambiguous about the source of the definition of the symbol." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Coding.system" />
@@ -3763,7 +3763,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org/fhir/ips/CodeSystem/absent-unknown" />
+      <fixedUri value="urn:oid:2.16.840.1.113883.3.1937.777.13.5.999.1" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -3837,7 +3837,7 @@
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
       <comment value="Note that FHIR strings may not exceed 1MB in size" />
       <requirements value="Need to refer to a particular code in the system." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Coding.code" />
@@ -3917,158 +3917,6 @@
         <identity value="orim" />
         <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" />
       </mapping>
-    </element>
-    <element id="AllergyIntolerance.code:absentOrUnknownAllergy.coding.display.id">
-      <path value="AllergyIntolerance.code.coding.display.id" />
-      <representation value="xmlAttr" />
-      <short value="xml:id (or equivalent in JSON)" />
-      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." />
-      <comment value="Note that FHIR strings may not exceed 1MB in size" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Element.id" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element id="AllergyIntolerance.code:absentOrUnknownAllergy.coding.display.extension">
-      <path value="AllergyIntolerance.code.coding.display.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url" />
-        <rules value="open" />
-      </slicing>
-      <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Element.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="AllergyIntolerance.code:absentOrUnknownAllergy.coding.display.extension:translation">
-      <path value="AllergyIntolerance.code.coding.display.extension" />
-      <sliceName value="translation" />
-      <short value="Language Translation (Localization)" />
-      <definition value="Language translation from base language of resource to another language." />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Element.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/translation" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="ST.translation" />
-      </mapping>
-    </element>
-    <element id="AllergyIntolerance.code:absentOrUnknownAllergy.coding.display.value">
-      <path value="AllergyIntolerance.code.coding.display.value" />
-      <representation value="xmlAttr" />
-      <short value="Primitive value for string" />
-      <definition value="Primitive value for string" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="string.value" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code>
-          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type">
-            <valueString value="string" />
-          </extension>
-          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-type">
-            <valueString value="xsd:string" />
-          </extension>
-          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-rdf-type">
-            <valueString value="xsd:string" />
-          </extension>
-        </code>
-      </type>
-      <maxLength value="1048576" />
     </element>
     <element id="AllergyIntolerance.code:absentOrUnknownAllergy.coding.userSelected">
       <path value="AllergyIntolerance.code.coding.userSelected" />
@@ -4157,9 +4005,9 @@
         <map value="fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" />
       </mapping>
     </element>
-    <element id="AllergyIntolerance.code:substanceOrCondition">
+    <element id="AllergyIntolerance.code:@default">
       <path value="AllergyIntolerance.code" />
-      <sliceName value="substanceOrCondition" />
+      <sliceName value="@default" />
       <short value="Concept - reference to a terminology or just  text" />
       <definition value="Code for an allergy or intolerance statement .  This may be a code for a substance or pharmaceutical product that is considered to be responsible for the adverse reaction risk (e.g., &quot;Latex&quot;), an allergy or intolerance condition (e.g., &quot;Latex allergy&quot;)." />
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
@@ -4223,7 +4071,7 @@
         <map value="what" />
       </mapping>
     </element>
-    <element id="AllergyIntolerance.code:substanceOrCondition.id">
+    <element id="AllergyIntolerance.code:@default.id">
       <path value="AllergyIntolerance.code.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -4252,7 +4100,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="AllergyIntolerance.code:substanceOrCondition.extension">
+    <element id="AllergyIntolerance.code:@default.extension">
       <path value="AllergyIntolerance.code.extension" />
       <slicing>
         <discriminator>
@@ -4301,7 +4149,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="AllergyIntolerance.code:substanceOrCondition.coding">
+    <element id="AllergyIntolerance.code:@default.coding">
       <path value="AllergyIntolerance.code.coding" />
       <short value="Code defined by a terminology system" />
       <definition value="A reference to a code defined by a terminology system." />
@@ -4355,7 +4203,7 @@
         <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" />
       </mapping>
     </element>
-    <element id="AllergyIntolerance.code:substanceOrCondition.coding.id">
+    <element id="AllergyIntolerance.code:@default.coding.id">
       <path value="AllergyIntolerance.code.coding.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -4384,7 +4232,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="AllergyIntolerance.code:substanceOrCondition.coding.extension">
+    <element id="AllergyIntolerance.code:@default.coding.extension">
       <path value="AllergyIntolerance.code.coding.extension" />
       <slicing>
         <discriminator>
@@ -4433,7 +4281,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="AllergyIntolerance.code:substanceOrCondition.coding.system">
+    <element id="AllergyIntolerance.code:@default.coding.system">
       <path value="AllergyIntolerance.code.coding.system" />
       <short value="Identity of the terminology system" />
       <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
@@ -4475,7 +4323,7 @@
         <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" />
       </mapping>
     </element>
-    <element id="AllergyIntolerance.code:substanceOrCondition.coding.version">
+    <element id="AllergyIntolerance.code:@default.coding.version">
       <path value="AllergyIntolerance.code.coding.version" />
       <short value="Version of the system - if relevant" />
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
@@ -4516,7 +4364,7 @@
         <map value="fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" />
       </mapping>
     </element>
-    <element id="AllergyIntolerance.code:substanceOrCondition.coding.code">
+    <element id="AllergyIntolerance.code:@default.coding.code">
       <path value="AllergyIntolerance.code.coding.code" />
       <short value="Symbol in syntax defined by the system" />
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
@@ -4558,7 +4406,7 @@
         <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" />
       </mapping>
     </element>
-    <element id="AllergyIntolerance.code:substanceOrCondition.coding.display">
+    <element id="AllergyIntolerance.code:@default.coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -4603,7 +4451,7 @@
         <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" />
       </mapping>
     </element>
-    <element id="AllergyIntolerance.code:substanceOrCondition.coding.userSelected">
+    <element id="AllergyIntolerance.code:@default.coding.userSelected">
       <path value="AllergyIntolerance.code.coding.userSelected" />
       <short value="If this coding was chosen directly by the user" />
       <definition value="Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)." />
@@ -4645,7 +4493,7 @@
         <map value="fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\#true a [     fhir:source &quot;true&quot;;     fhir:target dt:CDCoding.codingRationale\#O   ]" />
       </mapping>
     </element>
-    <element id="AllergyIntolerance.code:substanceOrCondition.text">
+    <element id="AllergyIntolerance.code:@default.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -7944,11 +7792,16 @@
     </element>
     <element id="AllergyIntolerance.code:absentOrUnknownAllergy.coding.system">
       <path value="AllergyIntolerance.code.coding.system" />
-      <fixedUri value="http://hl7.org/fhir/ips/CodeSystem/absent-unknown" />
+      <min value="1" />
+      <fixedUri value="urn:oid:2.16.840.1.113883.3.1937.777.13.5.999.1" />
     </element>
-    <element id="AllergyIntolerance.code:substanceOrCondition">
+    <element id="AllergyIntolerance.code:absentOrUnknownAllergy.coding.code">
+      <path value="AllergyIntolerance.code.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="AllergyIntolerance.code:@default">
       <path value="AllergyIntolerance.code" />
-      <sliceName value="substanceOrCondition" />
+      <sliceName value="@default" />
       <definition value="Code for an allergy or intolerance statement .  This may be a code for a substance or pharmaceutical product that is considered to be responsible for the adverse reaction risk (e.g., &quot;Latex&quot;), an allergy or intolerance condition (e.g., &quot;Latex allergy&quot;)." />
       <max value="1" />
       <type>
