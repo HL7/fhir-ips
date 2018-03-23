@@ -1,21 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><ValueSet xmlns="http://hl7.org/fhir">
-                <id value="2.16.840.1.113883.11.22.53--20170621000000"/>
-                <meta>
+<?xml version="1.0" encoding="UTF-8"?><ValueSet xmlns="http://hl7.org/fhir" xmlns:f="http://hl7.org/fhir"><!-- Value set exported from ART-DECOR project hl7ips (IPS) --><id value="2.16.840.1.113883.11.22.53--20170621000000"/><meta>
                     <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
-                </meta>
-                <url value="http://hl7.org/fhir/ips/ValueSet/healthcare-professional-roles-uv-ips "/>
-                <identifier>
+                </meta><url value="http://hl7.org/fhir/ips/ValueSet/healthcare-professional-roles-uv-ips "/><identifier>
                     <use value="official"/>
                     <system value="http://art-decor.org/ns/oids/vs"/>
                     <value value="2.16.840.1.113883.11.22.53"/>
-                </identifier>
-                <version value="2017-06-21T00:00:00"/>
-                <name value="IPSHealthcareProfessionalRoles"/>
-                <title value="IPS Healthcare Professional Roles"/>
-                <status value="draft"/>
-                <experimental value="false"/>
-                <publisher value="HL7 International"/>
-                <contact>
+                </identifier><version value="2017-06-21T00:00:00"/><name value="IPSHealthcareProfessionalRoles"/><title value="IPS Healthcare Professional Roles"/><status value="draft"/><experimental value="false"/><publisher value="HL7 International"/><contact>
                     <name value="HL7 International"/>
                     <telecom>
                         <system value="phone"/>
@@ -29,10 +18,7 @@
                         <system value="email"/>
                         <value value="info@hl7.org"/>
                     </telecom>
-                </contact>
-                <description value="IPS Healthcare Professional Roles"/>
-                <immutable value="false"/>
-                <compose>
+                </contact><description value="IPS Healthcare Professional Roles"/><immutable value="false"/><compose>
                     <include>
                         <system value="urn:oid:2.16.840.1.113883.2.9.6.2.7"/>
                         <concept>
@@ -192,5 +178,4 @@
                             <display value="Health associate professionals not elsewhere classified"/>
                         </concept>
                     </include>
-                </compose>
-            </ValueSet>
+                </compose></ValueSet>

@@ -1,21 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><ValueSet xmlns="http://hl7.org/fhir">
-                <id value="2.16.840.1.113883.11.22.46--20170531000000"/>
-                <meta>
+<?xml version="1.0" encoding="UTF-8"?><ValueSet xmlns="http://hl7.org/fhir" xmlns:f="http://hl7.org/fhir"><!-- Value set exported from ART-DECOR project hl7ips (IPS) --><id value="2.16.840.1.113883.11.22.46--20170531000000"/><meta>
                     <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
-                </meta>
-                <url value="http://hl7.org/fhir/ips/ValueSet/lab-result-coded-value-uv-ips"/>
-                <identifier>
+                </meta><url value="http://hl7.org/fhir/ips/ValueSet/lab-result-coded-value-uv-ips"/><identifier>
                     <use value="official"/>
                     <system value="http://art-decor.org/ns/oids/vs"/>
                     <value value="2.16.840.1.113883.11.22.46"/>
-                </identifier>
-                <version value="2017-05-31T00:00:00"/>
-                <name value="IPSLabResultsCodedValues"/>
-                <title value="IPS Results Coded Values Laboratory"/>
-                <status value="draft"/>
-                <experimental value="false"/>
-                <publisher value="HL7 International"/>
-                <contact>
+                </identifier><version value="2017-05-31T00:00:00"/><name value="IPSLabResultsCodedValues"/><title value="IPS Results Coded Values Laboratory"/><status value="draft"/><experimental value="false"/><publisher value="HL7 International"/><contact>
                     <name value="HL7 International"/>
                     <telecom>
                         <system value="phone"/>
@@ -29,10 +18,7 @@
                         <system value="email"/>
                         <value value="info@hl7.org"/>
                     </telecom>
-                </contact>
-                <description value="This Value set is defined as the union of: (a) ABO and Rh group [Type] in Blood (2.16.840.1.113883.11.22.51); (b) Presence/Absence Indicators (2.16.840.1.113883.11.22.52) (c) Microorganisms (2.16.840.1.113883.11.22.49)"/>
-                <immutable value="false"/>
-                <compose>
+                </contact><description value="This Value set is defined as the union of: (a) ABO and Rh group [Type] in Blood (2.16.840.1.113883.11.22.51); (b) Presence/Absence Indicators (2.16.840.1.113883.11.22.52) (c) Microorganisms (2.16.840.1.113883.11.22.49)"/><immutable value="false"/><compose>
                     <include>
                         <valueSet value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.11.22.52--20170531000000"/>
                     </include>
@@ -42,5 +28,4 @@
                     <include>
                         <valueSet value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.11.22.51--20170531000000"/>
                     </include>
-                </compose>
-            </ValueSet>
+                </compose></ValueSet>
