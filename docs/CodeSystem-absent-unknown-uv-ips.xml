@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="absent-unknown-uv-ips"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>IPS CodeSystem - Absent and Unknown Data</h2><div><p>International Patient Summary (IPS) codes for &quot;known absent&quot; and &quot;not known&quot; data.</p>
+</div><p>This code system http://hl7.org/fhir/ips/CodeSystem/absent-unknown-uv-ips defines the following codes:</p><table class="codes"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style="white-space:nowrap">allergic-disposition-not-known<a name="absent-unknown-uv-ips-allergic-disposition-not-known"> </a></td><td>Allergic disposition not known</td><td>There is no information available regarding the subject's allergy conditions.</td></tr><tr><td>1</td><td style="white-space:nowrap">no-known-allergy<a name="absent-unknown-uv-ips-no-known-allergy"> </a></td><td>No known allergy</td><td>The subject has no known allergy conditions.</td></tr><tr><td>2</td><td style="white-space:nowrap">  no-known-medication-allergy<a name="absent-unknown-uv-ips-no-known-medication-allergy"> </a></td><td>No known medication allergy</td><td>The subject has no known medication allergy conditions.</td></tr><tr><td>2</td><td style="white-space:nowrap">  no-known-environmental-allergy<a name="absent-unknown-uv-ips-no-known-environmental-allergy"> </a></td><td>No known environmental allergy</td><td>The subject has no known environmental allergy conditions.</td></tr><tr><td>2</td><td style="white-space:nowrap">  no-known-food-allergy<a name="absent-unknown-uv-ips-no-known-food-allergy"> </a></td><td>No known food allergy</td><td>The subject has no known food allergy conditions.</td></tr><tr><td>1</td><td style="white-space:nowrap">no-device-info<a name="absent-unknown-uv-ips-no-device-info"> </a></td><td>No information about devices</td><td>There is no information available regarding implanted or external devices for the subject.</td></tr><tr><td>1</td><td style="white-space:nowrap">no-known-device<a name="absent-unknown-uv-ips-no-known-device"> </a></td><td>No known devices in use</td><td>There are no devices known to be implanted in or used by the subject.</td></tr><tr><td>1</td><td style="white-space:nowrap">no-immunization-info<a name="absent-unknown-uv-ips-no-immunization-info"> </a></td><td>No information about immunizations</td><td>The history of previous immunizations is not known.</td></tr><tr><td>1</td><td style="white-space:nowrap">no-previous-immunizations<a name="absent-unknown-uv-ips-no-previous-immunizations"> </a></td><td>No previous immunizations</td><td>There is no history of previous immunizations.</td></tr><tr><td>1</td><td style="white-space:nowrap">no-medication-info<a name="absent-unknown-uv-ips-no-medication-info"> </a></td><td>No information about current medications</td><td>There is no information available about the subject's current medication use or administration.</td></tr><tr><td>1</td><td style="white-space:nowrap">no-current-medications<a name="absent-unknown-uv-ips-no-current-medications"> </a></td><td>No current medications</td><td>The subject is not taking or being administered any current medications.</td></tr><tr><td>1</td><td style="white-space:nowrap">no-problem-info<a name="absent-unknown-uv-ips-no-problem-info"> </a></td><td>No information about current problems</td><td>There is no information available about the subject's current health problems or disability.</td></tr><tr><td>1</td><td style="white-space:nowrap">no-current-problems<a name="absent-unknown-uv-ips-no-current-problems"> </a></td><td>No current problems</td><td>The subject is not known to have any current health problems or disability.</td></tr><tr><td>1</td><td style="white-space:nowrap">no-procedure-info<a name="absent-unknown-uv-ips-no-procedure-info"> </a></td><td>No information about past history of procedures</td><td>There is no information available about the subject's past history of procedures.</td></tr><tr><td>1</td><td style="white-space:nowrap">no-history-procedures<a name="absent-unknown-uv-ips-no-history-procedures"> </a></td><td>No history of procedures</td><td>The subject has no history of previous procedures.</td></tr></table></div>
+  </text>
+  <url value="http://hl7.org/fhir/ips/CodeSystem/absent-unknown-uv-ips"/>
+  <version value="1.0.0"/>
+  <name value="IPSCodeSystemAbsentUnknown"/>
+  <title value="IPS CodeSystem - Absent and Unknown Data"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2018-03-26T10:46:11-06:00"/>
+  <description value="International Patient Summary (IPS) codes for &quot;known absent&quot; and &quot;not known&quot; data."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <valueSet value="http://hl7.org/fhir/ips/ValueSet/absent-unknown"/>
+  <content value="complete"/>
+  <concept>
+    <code value="allergic-disposition-not-known"/>
+    <display value="Allergic disposition not known"/>
+    <definition value="There is no information available regarding the subject&#39;s allergy conditions."/>
+  </concept>
+  <concept>
+    <code value="no-known-allergy"/>
+    <display value="No known allergy"/>
+    <definition value="The subject has no known allergy conditions."/>
+    <concept>
+      <code value="no-known-medication-allergy"/>
+      <display value="No known medication allergy"/>
+      <definition value="The subject has no known medication allergy conditions."/>
+    </concept>
+    <concept>
+      <code value="no-known-environmental-allergy"/>
+      <display value="No known environmental allergy"/>
+      <definition value="The subject has no known environmental allergy conditions."/>
+    </concept>
+    <concept>
+      <code value="no-known-food-allergy"/>
+      <display value="No known food allergy"/>
+      <definition value="The subject has no known food allergy conditions."/>
+    </concept>
+  </concept>
+  <concept>
+    <code value="no-device-info"/>
+    <display value="No information about devices"/>
+    <definition value="There is no information available regarding implanted or external devices for the subject."/>
+  </concept>
+  <concept>
+    <code value="no-known-device"/>
+    <display value="No known devices in use"/>
+    <definition value="There are no devices known to be implanted in or used by the subject."/>
+  </concept>
+  <concept>
+    <code value="no-immunization-info"/>
+    <display value="No information about immunizations"/>
+    <definition value="The history of previous immunizations is not known."/>
+  </concept>
+  <concept>
+    <code value="no-previous-immunizations"/>
+    <display value="No previous immunizations"/>
+    <definition value="There is no history of previous immunizations."/>
+  </concept>
+  <concept>
+    <code value="no-medication-info"/>
+    <display value="No information about current medications"/>
+    <definition value="There is no information available about the subject&#39;s current medication use or administration."/>
+  </concept>
+  <concept>
+    <code value="no-current-medications"/>
+    <display value="No current medications"/>
+    <definition value="The subject is not taking or being administered any current medications."/>
+  </concept>
+  <concept>
+    <code value="no-problem-info"/>
+    <display value="No information about current problems"/>
+    <definition value="There is no information available about the subject&#39;s current health problems or disability."/>
+  </concept>
+  <concept>
+    <code value="no-current-problems"/>
+    <display value="No current problems"/>
+    <definition value="The subject is not known to have any current health problems or disability."/>
+  </concept>
+  <concept>
+    <code value="no-procedure-info"/>
+    <display value="No information about past history of procedures"/>
+    <definition value="There is no information available about the subject&#39;s past history of procedures."/>
+  </concept>
+  <concept>
+    <code value="no-history-procedures"/>
+    <display value="No history of procedures"/>
+    <definition value="The subject has no history of previous procedures."/>
+  </concept>
+</CodeSystem>
