@@ -285,8 +285,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
 "Condition.code","","type
-","",1,1,"Y","","Y","CodeableConcept {[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/codeableconcept-uv-ips]]} {[]}
-","Concept - reference to a terminology or just  text","Identification of the condition, problem or diagnosis or recording of ""problem absent"" or of ""problems unknown"".","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","0..1 to account for primarily narrative only resources.","","","","","","","",,"example","Identification of the condition or diagnosis.","http://hl7.org/fhir/ValueSet/condition-code","","value:coding.system}
+","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
+","Identification of the condition, problem or diagnosis","Identification of the condition, problem or diagnosis or recording of ""problem absent"" or of ""problems unknown"".","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","0..1 to account for primarily narrative only resources.","","","","","","","",,"example","Identification of the condition or diagnosis.","http://hl7.org/fhir/ValueSet/condition-code","","value:coding.system}
 ","",,"closed","Condition.code",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
@@ -300,8 +300,8 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Condition.code.coding","","","",0,0,"","","Y","Coding {[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips]]} {[]}
-","A reference to a code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.","Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
+"Condition.code.coding","","","",0,*,"","","Y","Coding {[]} {[]}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
 "Condition.code.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -330,34 +330,17 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","Note that FHIR strings may not exceed 1MB in size","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Condition.code.coding.display.id","","","",0,1,"","","","string {[]} {[]}
-","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","Note that FHIR strings may not exceed 1MB in size","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Condition.code.coding.display.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Condition.code.coding.display.extension","translation","extensions
-user content","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/translation]]} {[]}
-","Language Translation (Localization)","Language translation from base language of resource to another language.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Condition.code.coding.display.value","","","",0,1,"","","","null {[]} {[]}
-","Primitive value for string","Primitive value for string","","","","","","","","","",1048576,,,,"",,,,"string.value",0,1,"",""
 "Condition.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
 ","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Condition.code.text","","","",0,0,"","","Y","string {[]} {[]}
+"Condition.code.text","","","",0,1,"","","Y","string {[]} {[]}
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
 "Condition.code","absentOrUnknownProblem","type
-","",0,1,"Y","","Y","CodeableConcept {[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/codeableconcept-uv-ips]]} {[]}
-","Code for absent condition or for unknown condition","Code representing the statement ""absent problem"" or the statement ""problems unknown""","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","0..1 to account for primarily narrative only resources.","","","","","","","",,"required","Absence or unknown","http://hl7.org/fhir//ips/ValueSet/absent-or-unknown-problems-uv-ips","",,,,"Condition.code",0,1,"ele-1
+","",0,1,"","","Y","CodeableConcept {[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/codeableconcept-uv-ips]]} {[]}
+","Code for absent problem or for unknown problem","Code representing the statement ""absent problem"" or the statement ""problems unknown""","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","0..1 to account for primarily narrative only resources.","","","","","","","",,"required","Absent problem or unknown problem","http://hl7.org/fhir//ips/ValueSet/absent-or-unknown-problems-uv-ips","",,,,"Condition.code",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
 "Condition.code.id","","","",0,1,"","","","string {[]} {[]}
@@ -426,8 +409,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
 "Condition.code","@default","type
-","",0,1,"Y","","Y","CodeableConcept {[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/codeableconcept-uv-ips]]} {[]}
-","Concept - reference to a terminology or just  text","A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.","","","","","","","","","",,"preferred","Identification of the condition or diagnosis.","http://hl7.org/fhir/ips/ValueSet/core-problem-list-disorders-uv-ips","",,,,"Condition.code",0,1,"ele-1
+","",0,1,"","","Y","CodeableConcept {[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/codeableconcept-uv-ips]]} {[]}
+","Concept - reference to a terminology or just  text","A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","0..1 to account for primarily narrative only resources.","","","","","","","",,"preferred","Identification of the problem","http://hl7.org/fhir/ips/ValueSet/core-problem-list-disorders-uv-ips","",,,,"Condition.code",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
 "Condition.code.id","","","",0,1,"","","","string {[]} {[]}

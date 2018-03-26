@@ -918,7 +918,7 @@ can only resize using html  or css ;-(
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Identification of the condition or diagnosis.<br/>For example codes, see <a href="http://hl7.org/fhir/STU3/valueset-condition-code.html">Condition/Problem/Diagnosis Codes</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>(<a href="StructureDefinition-codeableconcept-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/codeableconcept-uv-ips]]">CodeableConcept-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>0..1 to account for primarily narrative only resources.</p>
 </td></tr>
@@ -949,11 +949,11 @@ can only resize using html  or css ;-(
   <tr><td colspan="2" class="structure"><a name="Condition.code.coding"> </a><b>Condition.code.coding</b></td></tr>
   <tr><td>Definition</td><td><p>A reference to a code defined by a terminology system.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..0 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a>(<a href="StructureDefinition-coding-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips]]">coding-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a></td></tr>
   <tr><td>Requirements</td><td><p>Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.</p>
 </td></tr>
-  <tr><td>Comments</td><td><p>Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.</p>
+  <tr><td>Comments</td><td><p>Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
@@ -1019,37 +1019,6 @@ can only resize using html  or css ;-(
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Condition.code.coding.display.id"> </a><b>Condition.code.coding.display.id</b></td></tr>
-  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Condition.code.coding.display.extension"> </a><b>Condition.code.coding.display.extension</b></td></tr>
-  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Extension">Extension</a></td></tr>
-  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
-  <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Condition.code.coding.display.extension:translation"> </a><b>Condition.code.coding.display.extension (<a href="http://hl7.org/fhir/STU3/extension-translation.html">[CanonicalType[http://hl7.org/fhir/StructureDefinition/translation]]</a>)</b></td></tr>
-  <tr><td>Definition</td><td><p>Language translation from base language of resource to another language.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>  (Extension Type: Choice of: <a href="http://hl7.org/fhir/STU3/datatypes.html#base64Binary">base64Binary</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">boolean</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#date">date</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">dateTime</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#decimal">decimal</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#id">id</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#instant">instant</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#integer">integer</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">markdown</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#oid">oid</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#positiveInt">positiveInt</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#time">time</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">unsignedInt</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Address">Address</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Age">Age</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Annotation">Annotation</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Attachment">Attachment</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#ContactPoint">ContactPoint</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Count">Count</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Distance">Distance</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Duration">Duration</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName">HumanName</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier">Identifier</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Money">Money</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Period">Period</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Quantity">Quantity</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Range">Range</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Ratio">Ratio</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#SampledData">SampledData</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Signature">Signature</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Timing">Timing</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Meta">Meta</a>)</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Condition.code.coding.display.value"> </a><b>Condition.code.coding.display.value</b></td></tr>
-  <tr><td>Definition</td><td><p>Primitive value for string</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td>Max Length</td><td>1048576</td></tr>
   <tr><td colspan="2" class="structure"><a name="Condition.code.coding.userSelected"> </a><b>Condition.code.coding.userSelected</b></td></tr>
   <tr><td>Definition</td><td><p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
 </td></tr>
@@ -1064,7 +1033,7 @@ can only resize using html  or css ;-(
   <tr><td colspan="2" class="structure"><a name="Condition.code.text"> </a><b>Condition.code.text</b></td></tr>
   <tr><td>Definition</td><td><p>A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..0 This element is affected by the following invariants: ele-1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
   <tr><td>Requirements</td><td><p>The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.</p>
 </td></tr>
@@ -1076,9 +1045,8 @@ can only resize using html  or css ;-(
   <tr><td>Definition</td><td><p>Code representing the statement &quot;absent problem&quot; or the statement &quot;problems unknown&quot;</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Absence or unknown<br/>The codes SHALL be taken from  <a href="http://hl7.org/fhir//ips/ValueSet/absent-or-unknown-problems-uv-ips">http://hl7.org/fhir//ips/ValueSet/absent-or-unknown-problems-uv-ips</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Absent problem or unknown problem<br/>The codes SHALL be taken from  <a href="http://hl7.org/fhir//ips/ValueSet/absent-or-unknown-problems-uv-ips">http://hl7.org/fhir//ips/ValueSet/absent-or-unknown-problems-uv-ips</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>(<a href="StructureDefinition-codeableconcept-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/codeableconcept-uv-ips]]">CodeableConcept-uv-ips</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>0..1 to account for primarily narrative only resources.</p>
 </td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>type</td></tr>
@@ -1236,10 +1204,13 @@ can only resize using html  or css ;-(
   <tr><td>Definition</td><td><p>A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Identification of the condition or diagnosis.<br/>The codes SHOULD be taken from  <a href="http://hl7.org/fhir/ips/ValueSet/core-problem-list-disorders-uv-ips">http://hl7.org/fhir/ips/ValueSet/core-problem-list-disorders-uv-ips</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Identification of the problem<br/>The codes SHOULD be taken from  <a href="http://hl7.org/fhir/ips/ValueSet/core-problem-list-disorders-uv-ips">http://hl7.org/fhir/ips/ValueSet/core-problem-list-disorders-uv-ips</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>(<a href="StructureDefinition-codeableconcept-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/codeableconcept-uv-ips]]">CodeableConcept-uv-ips</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>0..1 to account for primarily narrative only resources.</p>
+</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>type</td></tr>
+  <tr><td>Comments</td><td><p>Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.</p>
+</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><a name="Condition.code:@default.id"> </a><a name="Condition.code.id"> </a><b>Condition.code.id</b></td></tr>
@@ -2218,7 +2189,7 @@ Information source.</p>
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            International Patient Summary Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Mon, Mar 26, 2018 10:46-0600. |
+            International Patient Summary Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Mon, Mar 26, 2018 11:08-0600. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>
