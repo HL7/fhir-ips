@@ -2863,7 +2863,7 @@
         </discriminator>
         <rules value="closed" />
       </slicing>
-      <short value="Concept - reference to a terminology or just  text" />
+      <short value="Identification of the condition, problem or diagnosis" />
       <definition value="Identification of the condition, problem or diagnosis or recording of &quot;problem absent&quot; or of &quot;problems unknown&quot;." />
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <requirements value="0..1 to account for primarily narrative only resources." />
@@ -2877,7 +2877,6 @@
       </base>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3016,12 +3015,12 @@
     </element>
     <element id="Condition.code.coding">
       <path value="Condition.code.coding" />
-      <short value="A reference to a code defined by a terminology system" />
+      <short value="Code defined by a terminology system" />
       <definition value="A reference to a code defined by a terminology system." />
-      <comment value="Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information." />
+      <comment value="Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." />
       <requirements value="Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="CodeableConcept.coding" />
         <min value="0" />
@@ -3029,7 +3028,6 @@
       </base>
       <type>
         <code value="Coding" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3317,158 +3315,6 @@
         <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" />
       </mapping>
     </element>
-    <element id="Condition.code.coding.display.id">
-      <path value="Condition.code.coding.display.id" />
-      <representation value="xmlAttr" />
-      <short value="xml:id (or equivalent in JSON)" />
-      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." />
-      <comment value="Note that FHIR strings may not exceed 1MB in size" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Element.id" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element id="Condition.code.coding.display.extension">
-      <path value="Condition.code.coding.display.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url" />
-        <rules value="open" />
-      </slicing>
-      <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Element.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="Condition.code.coding.display.extension:translation">
-      <path value="Condition.code.coding.display.extension" />
-      <sliceName value="translation" />
-      <short value="Language Translation (Localization)" />
-      <definition value="Language translation from base language of resource to another language." />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Element.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/translation" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="ST.translation" />
-      </mapping>
-    </element>
-    <element id="Condition.code.coding.display.value">
-      <path value="Condition.code.coding.display.value" />
-      <representation value="xmlAttr" />
-      <short value="Primitive value for string" />
-      <definition value="Primitive value for string" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="string.value" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code>
-          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type">
-            <valueString value="string" />
-          </extension>
-          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-type">
-            <valueString value="xsd:string" />
-          </extension>
-          <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-rdf-type">
-            <valueString value="xsd:string" />
-          </extension>
-        </code>
-      </type>
-      <maxLength value="1048576" />
-    </element>
     <element id="Condition.code.coding.userSelected">
       <path value="Condition.code.coding.userSelected" />
       <short value="If this coding was chosen directly by the user" />
@@ -3521,7 +3367,7 @@
       <comment value="Very often the text is the same as a displayName of one of the codings." />
       <requirements value="The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="CodeableConcept.text" />
         <min value="0" />
@@ -3559,7 +3405,7 @@
     <element id="Condition.code:absentOrUnknownProblem">
       <path value="Condition.code" />
       <sliceName value="absentOrUnknownProblem" />
-      <short value="Code for absent condition or for unknown condition" />
+      <short value="Code for absent problem or for unknown problem" />
       <definition value="Code representing the statement &quot;absent problem&quot; or the statement &quot;problems unknown&quot;" />
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
       <requirements value="0..1 to account for primarily narrative only resources." />
@@ -3583,14 +3429,13 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <mustSupport value="true" />
       <isSummary value="true" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ConditionKind" />
         </extension>
         <strength value="required" />
-        <description value="Absence or unknown" />
+        <description value="Absent problem or unknown problem" />
         <valueSetReference>
           <reference value="http://hl7.org/fhir//ips/ValueSet/absent-or-unknown-problems-uv-ips" />
         </valueSetReference>
@@ -4258,8 +4103,8 @@
       <sliceName value="@default" />
       <short value="Concept - reference to a terminology or just  text" />
       <definition value="A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text." />
-      <comment value="&#xD;&#xA;" />
-      <requirements value="&#xD;&#xA;" />
+      <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
+      <requirements value="0..1 to account for primarily narrative only resources." />
       <alias value="type" />
       <min value="0" />
       <max value="1" />
@@ -4280,14 +4125,13 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
-      <mustSupport value="true" />
       <isSummary value="true" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ConditionKind" />
         </extension>
         <strength value="preferred" />
-        <description value="Identification of the condition or diagnosis." />
+        <description value="Identification of the problem" />
         <valueSetReference>
           <reference value="http://hl7.org/fhir/ips/ValueSet/core-problem-list-disorders-uv-ips" />
         </valueSetReference>
@@ -8414,40 +8258,24 @@
       <definition value="Identification of the condition, problem or diagnosis or recording of &quot;problem absent&quot; or of &quot;problems unknown&quot;." />
       <min value="1" />
       <max value="1" />
-      <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
-      </type>
       <mustSupport value="true" />
-    </element>
-    <element id="Condition.code.coding">
-      <path value="Condition.code.coding" />
-      <max value="0" />
-    </element>
-    <element id="Condition.code.text">
-      <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
-      </extension>
-      <path value="Condition.code.text" />
-      <max value="0" />
     </element>
     <element id="Condition.code:absentOrUnknownProblem">
       <path value="Condition.code" />
       <sliceName value="absentOrUnknownProblem" />
-      <short value="Code for absent condition or for unknown condition" />
+      <short value="Code for absent problem or for unknown problem" />
       <definition value="Code representing the statement &quot;absent problem&quot; or the statement &quot;problems unknown&quot;" />
       <max value="1" />
       <type>
         <code value="CodeableConcept" />
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
-      <mustSupport value="true" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ConditionKind" />
         </extension>
         <strength value="required" />
-        <description value="Absence or unknown" />
+        <description value="Absent problem or unknown problem" />
         <valueSetReference>
           <reference value="http://hl7.org/fhir//ips/ValueSet/absent-or-unknown-problems-uv-ips" />
         </valueSetReference>
@@ -8470,19 +8298,17 @@
     <element id="Condition.code:@default">
       <path value="Condition.code" />
       <sliceName value="@default" />
-      <comment value="&#xD;&#xA;" />
-      <requirements value="&#xD;&#xA;" />
       <max value="1" />
       <type>
         <code value="CodeableConcept" />
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
-      <mustSupport value="true" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="ConditionKind" />
         </extension>
         <strength value="preferred" />
+        <description value="Identification of the problem" />
         <valueSetReference>
           <reference value="http://hl7.org/fhir/ips/ValueSet/core-problem-list-disorders-uv-ips" />
         </valueSetReference>
