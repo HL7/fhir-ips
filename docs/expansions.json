@@ -1,8 +1,8 @@
 {
   "resourceType": "Bundle",
-  "id": "d1087c2b-4646-402f-a9d7-51f84586562b",
+  "id": "831b1728-2a5c-4e4f-bb46-1710faf02827",
   "meta": {
-    "lastUpdated": "2018-03-26T00:53:16.883-06:00"
+    "lastUpdated": "2018-03-26T03:03:06.466-06:00"
   },
   "type": "collection",
   "entry": [
@@ -10,6 +10,7 @@
       "fullUrl": "http://hl7.org/fhir/ips/ValueSet/condition-severity-uv-ips",
       "resource": {
         "resourceType": "ValueSet",
+        "id": "condition-severity-uv-ips",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
@@ -32,7 +33,28 @@
         "title": "Problem Severity",
         "status": "draft",
         "experimental": false,
-        "date": "2018-03-26T00:53:16-06:00",
+        "date": "2018-03-26T03:03:06-06:00",
+        "publisher": "HL7 International",
+        "contact": [
+          {
+            "name": "HL7 International",
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "+1 734 677 7777"
+              },
+              {
+                "system": "fax",
+                "value": "+1 734 677 6622"
+              },
+              {
+                "system": "email",
+                "value": "info@hl7.org"
+              }
+            ]
+          }
+        ],
+        "description": "Problem Severity",
         "jurisdiction": [
           {
             "coding": [

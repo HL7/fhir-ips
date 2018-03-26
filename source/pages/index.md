@@ -1,5 +1,5 @@
 ---
-title: Test IG HomePage
+title: International Patient Summary Implementation Guide
 layout: default
 active: home
 ---

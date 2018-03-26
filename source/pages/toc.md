@@ -8,7 +8,7 @@ active: toc
 
 <div>
   <ul>
-    <li><a href="index.html">PHCase Implementation Guide</a>    <ul>
+    <li><a href="index.html">International Patient Summary Implementation Guide</a>    <ul>
         <li><a href="index.html#cat-facts-to-show-how-the-text-wraps-around-the-contents-block" id="markdown-toc-cat-facts-to-show-how-the-text-wraps-around-the-contents-block">Cat Facts (To Show How the Text Wraps around the Contents Block)</a></li>
         <li><a href="index.html#jekyll-site-variables" id="markdown-toc-jekyll-site-variables">Jekyll Site Variables</a></li>
         <li><a href="index.html#introduction" id="markdown-toc-introduction">Introduction</a></li>
