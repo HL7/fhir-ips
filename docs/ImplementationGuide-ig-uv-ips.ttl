@@ -10,10 +10,10 @@
   fhir:Resource.id [ fhir:value "ig-uv-ips"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>International Patient Summary IG</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/ips/ImplementationGuide/ig-uv-ips</pre></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>International Patient Summary Implementation Guide</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/ips/ImplementationGuide/ig-uv-ips</pre></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "http://hl7.org/fhir/ips/ImplementationGuide/ig-uv-ips"];
-  fhir:ImplementationGuide.name [ fhir:value "International Patient Summary IG"];
+  fhir:ImplementationGuide.name [ fhir:value "International Patient Summary Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
   fhir:ImplementationGuide.publisher [ fhir:value "Health Level Seven International"];
   fhir:ImplementationGuide.fhirVersion [ fhir:value "STU3"];
@@ -38,12 +38,91 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-absent-unknown-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/CodeSystem/absent-unknown-uv-ips>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/absent-unknown-uv-ips" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
          fhir:Extension.valueUri [ fhir:value "StructureDefinition-condition-uv-ips.html" ]
        ];
        fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
        fhir:ImplementationGuide.package.resource.sourceReference [
          fhir:link <http://hl7.org/fhir/ips/StructureDefinition/condition-uv-ips>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/condition-uv-ips" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-codeableconcept-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/codeableconcept-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/codeableconcept-uv-ips" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-translation.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/translation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/translation" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-translateddiv-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/translateddiv-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/translateddiv-uv-ips" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-partof-extension.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/partof-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/partof-extension" ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/abatement-datetime>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/abatement-datetime" ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-coding-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/coding-uv-ips" ]
        ]
      ]
   ];
@@ -54,7 +133,21 @@
 
 <http://hl7.org/fhir/ips/ValueSet/condition-severity-uv-ips> a fhir:ips .
 
+<http://hl7.org/fhir/ips/CodeSystem/absent-unknown-uv-ips> a fhir:ips .
+
 <http://hl7.org/fhir/ips/StructureDefinition/condition-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/codeableconcept-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/translation> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/translateddiv-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/partof-extension> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/abatement-datetime> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips> a fhir:ips .
 
 # - ontology header ------------------------------------------------------------
 

@@ -10,5 +10,5 @@ These value sets have been defined for this implementation guide:
 
 #### Code Systems
 
-**Code systems published in this IG** - Includes US Core defined code systems and externally defined code systems
+These code systems have been defined for this implementation guide:
 {% include list-simple-codesystems.xhtml %}

@@ -5,10 +5,10 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <meta charset="UTF-8"/>
-  <title>International Patient Summary IG</title>
+  <title>International Patient Summary Implementation Guide</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="International Patient Summary IG Implemenation Guide" />
+<meta name="description" content="International Patient Summary Implementation Guide Implemenation Guide" />
 <meta name="author" content="Health Level Seven International"/>
   <link href="fhir.css" rel="stylesheet"/>
 
@@ -74,7 +74,7 @@ can only resize using html  or css ;-(
       <div id="project-status" class="project-status"> <!-- ig title text -->
 
       
-      <strong>International Patient Summary IG Implementation Guide Release 1.0.0</strong>
+      <strong>International Patient Summary Implementation Guide Implementation Guide Release 1.0.0</strong>
       
 
     </div><!-- end ig title text -->
@@ -110,13 +110,13 @@ can only resize using html  or css ;-(
        <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
 <ul class="nav navbar-nav">
   <li><a href="index.html">Home</a></li>
-  <li><a href="guidance.html">General Guidance</a></li>
+  <li><a href="general.html">General Principles and Design</a></li>
   <li><a href="profiles.html">Profiles and Logical Models</a>
 <!-- - [Mappings](structuremaps.html) --></li>
   <li><a href="extensions.html">Extensions</a>
 <!-- - [Operations](operations.html) --></li>
-  <li><a href="terminology.html">Terminology</a></li>
-  <li><a href="searchparams.html">Search Parameters</a>
+  <li><a href="terminology.html">Terminology</a>
+<!-- - [Search Parameters](searchparams.html) -->
 <!-- - [Capability Statements](capstatements.html) -->
 <!-- - [Security](security.html) --></li>
   <li><a href="examples.html">Examples</a></li>
@@ -189,7 +189,7 @@ can only resize using html  or css ;-(
 
 <nav class="breadcrumb">
   
-  <a class="breadcrumb-item btn btn-link btn-sm" href="toc.html">TOC</a><span class="breadcrumb-item active" href="index.html">Home</span>
+  <span class="breadcrumb-item active" href="index.html">Home</span>
     
     
     
@@ -205,109 +205,105 @@ can only resize using html  or css ;-(
 <!-- page source: index.md -->
 
 <p id="publish-box">
-This is the May 2018 Ballot Version <!-- Current officially released version --> of the International Patient Summary IG Implementation Guide, based on <a href="http://hl7.org/fhir/STU3">FHIR Version 3.0.1</a>. See the <a href="#">Directory of published versions <img src="external.png" /></a>
+This is the May 2018 Ballot Version <!-- Current officially released version --> of the International Patient Summary Implementation Guide Implementation Guide, based on <a href="http://hl7.org/fhir/STU3">FHIR Version 3.0.1</a>. See the <a href="#">Directory of published versions <img src="external.png" /></a>
 </p>
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
 <ul id="markdown-toc">
-  <li><a href="#cat-facts-to-show-how-the-text-wraps-around-the-contents-block" id="markdown-toc-cat-facts-to-show-how-the-text-wraps-around-the-contents-block">Cat Facts (To Show How the Text Wraps around the Contents Block)</a></li>
-  <li><a href="#jekyll-site-variables" id="markdown-toc-jekyll-site-variables">Jekyll Site Variables</a></li>
-  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
-  <li><a href="#more-stuff" id="markdown-toc-more-stuff">More Stuff</a>    <ul>
-      <li><a href="#and-more-stuff" id="markdown-toc-and-more-stuff">And More Stuff</a></li>
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a>    <ul>
+      <li><a href="#purpose" id="markdown-toc-purpose">Purpose</a></li>
+      <li><a href="#project-background" id="markdown-toc-project-background">Project Background</a></li>
+      <li><a href="#project-scope" id="markdown-toc-project-scope">Project Scope</a></li>
+      <li><a href="#relationships-with-other-projects-and-guidelines" id="markdown-toc-relationships-with-other-projects-and-guidelines">Relationships with Other Projects and Guidelines</a></li>
     </ul>
   </li>
+  <li><a href="#ballot-status" id="markdown-toc-ballot-status">Ballot Status</a></li>
 </ul>
 
 <!-- end TOC -->
 
-<h3 id="cat-facts-to-show-how-the-text-wraps-around-the-contents-block">Cat Facts (To Show How the Text Wraps around the Contents Block)</h3>
+<!-- 
+### Jekyll Site Variables
 
-<p>The domestic cat[1][5] (Latin: Felis catus) is a small, typically furry, carnivorous mammal. They are often called house cats when kept as indoor pets or simply cats when there is no need to distinguish them from other felids and felines.[6] Cats are often valued by humans for companionship and for their ability to hunt vermin. There are more than 70 cat breeds, though different associations proclaim different numbers according to their standards.</p>
+These are the site variables defined [here](http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation#Jekyll):
 
-<p>Cats are similar in anatomy to the other felids, with a strong flexible body, quick reflexes, sharp retractable claws, and teeth adapted to killing small prey. Cat senses fit a crepuscular and predatory ecological niche. Cats can hear sounds too faint or too high in frequency for human ears, such as those made by mice and other small animals. They can see in near darkness. Like most other mammals, cats have poorer color vision and a better sense of smell than humans. Cats, despite being solitary hunters, are a social species and cat communication includes the use of a variety of vocalizations (mewing, purring, trilling, hissing, growling, and grunting), as well as cat pheromones and types of cat-specific body language.[7]</p>
+- IG Business version specification (defined in ig.json)- {{site.data.fhir.ig.version}}  = 1.0.0
 
-<p>Cats have a high breeding rate.[8] Under controlled breeding, they can be bred and shown as registered pedigree pets, a hobby known as cat fancy. Failure to control the breeding of pet cats by neutering, as well as the abandonment of former household pets, has resulted in large numbers of feral cats worldwide, requiring population control.[9] In certain areas outside cats’ native range, this has contributed, along with habitat destruction and other factors, to the extinction of many bird species. Cats have been known to extirpate a bird species within specific regions and may have contributed to the extinction of isolated island populations.[10] Cats are thought to be primarily responsible for the extinction of 33 species of birds, and the presence of feral and free-ranging cats makes some otherwise suitable locations unsuitable for attempted species reintroduction.[11]</p>
+- IG status (defined in ig.xml)- {{site.data.fhir.ig.status}}  = active
 
-<p>Since cats were venerated in ancient Egypt, they were commonly believed to have been domesticated there,[12] but there may have been instances of domestication as early as the Neolithic from around 9,500 years ago (7,500 BC).[13] A genetic study in 2007 concluded that domestic cats are descended from Near Eastern wildcats, having diverged around 8,000 BC in the Middle East.[12][14] A 2016 study found that leopard cats were undergoing domestication independently in China around 5,500 BC, though this line of partially domesticated cats leaves no trace in the domesticated populations of today.[15][16]</p>
+- Whether is experimental IG (defined in ig.xml) - {{site.data.fhir.ig.experimental}}  = false
 
-<p>As of a 2007 study, cats are the second most popular pet in the US by number of pets owned, behind freshwater fish.[17] In a 2010 study they were ranked the third most popular pet in the UK, after fish and dogs, with around 8 million being owned.[18]</p>
+- IG Publisher name (defined in ig.xml) - {{site.data.fhir.ig.publisher}}  = Health Level Seven International
 
-<p>Figure 1 is a picture of a cat to show how to insert an image using markdown.</p>
+- dependency url - e.g. "uscore" : Base url of a dependency implementation Guide (defined in ig.json) -   {{site.data.fhir.uscore}} = 
 
-<!-- all this Bootstrap html for getting an image to fit nicely in text - 640 pix wide -->
+- igName : Title of the implementation Guide (defined in ig.xml) -   {{site.data.fhir.igName}} = International Patient Summary Implementation Guide
 
-<p>file:///assets/images/cat.jpg</p>
+- path : path to the main FHIR specification (defined in ig.json)-   {{site.data.fhir.path}} = http://hl7.org/fhir/STU3
 
-<div>
-<figure class="figure">
-<figcaption class="figure-caption"><strong>Figure 1: Meow.</strong></figcaption>
-  <img src="assets/images/cat.jpg" class="figure-img img-responsive img-rounded center-block" alt="cat.jpg" />
-</figure>
+- canonical : canonical path to this specification (defined in ig.json)-   {{site.data.fhir.canonical}}  = http://hl7.org/fhir/ips
 
-<p></p>
-</div>
+- errorCount : number of errors in the build file (not including HTML validation errors) -   {{site.data.fhir.errorCount}}  = 18
 
-<h3 id="jekyll-site-variables">Jekyll Site Variables</h3>
+- version : version of FHIR -   {{site.data.fhir.version}}  = 3.0.1
 
-<p>These are the site variables defined <a href="http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation#Jekyll">here</a>:</p>
+- revision : revision of FHIR -   {{site.data.fhir.revision}}  = 11917
+
+- versionFull : version-revision -   {{site.data.fhir.versionFull}}  = 3.0.1-11917
+
+- totalFiles : total number of files found by the build -   {{site.data.fhir.totalFiles}}  = 10
+
+- processedFiles : number of files genrated by the build -   {{site.data.fhir.processedFiles}}  = 117
+
+- genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Mon, Mar 26, 2018 10:46-0600
+-->
+
+<h2 id="introduction">Introduction</h2>
+
+<p>An International Patient Summary (IPS) document is an electronic health record extract containing essential healthcare information intended for use in the unscheduled, cross-border care scenario, comprising at least the required elements of the IPS dataset. The IPS dataset is <strong><em>a minimal and non-exhaustive patient summary dataset, specialty-agnostic, condition-independent, but readily usable by clinicians for the cross-border unscheduled care of a patient</em></strong>.</p>
+
+<h3 id="purpose">Purpose</h3>
+
+<p>The goal of this Implementation Guide is to identify the required clinical data, vocabulary and value sets for an international patient summary. The international patient summary is specified as a templated document using HL7 CDA R2. The primary use case is to provide support for cross-border or cross-juridictional emergency and unplanned care.</p>
+
+<p>This specification aims to support:</p>
 
 <ul>
-  <li>
-    <p>IG Business version specification (defined in ig.json)- {{site.data.fhir.ig.version}}  = 1.0.0</p>
-  </li>
-  <li>
-    <p>IG status (defined in ig.xml)- {{site.data.fhir.ig.status}}  = active</p>
-  </li>
-  <li>
-    <p>Whether is experimental IG (defined in ig.xml) - {{site.data.fhir.ig.experimental}}  = false</p>
-  </li>
-  <li>
-    <p>IG Publisher name (defined in ig.xml) - {{site.data.fhir.ig.publisher}}  = Health Level Seven International</p>
-  </li>
-  <li>
-    <p>dependency url - e.g. “uscore” : Base url of a dependency implementation Guide (defined in ig.json) -   {{site.data.fhir.uscore}} =</p>
-  </li>
-  <li>
-    <p>igName : Title of the implementation Guide (defined in ig.xml) -   {{site.data.fhir.igName}} = International Patient Summary IG</p>
-  </li>
-  <li>
-    <p>path : path to the main FHIR specification (defined in ig.json)-   {{site.data.fhir.path}} = http://hl7.org/fhir/STU3</p>
-  </li>
-  <li>
-    <p>canonical : canonical path to this specification (defined in ig.json)-   {{site.data.fhir.canonical}}  = http://hl7.org/fhir/ips</p>
-  </li>
-  <li>
-    <p>errorCount : number of errors in the build file (not including HTML validation errors) -   {{site.data.fhir.errorCount}}  = 17</p>
-  </li>
-  <li>
-    <p>version : version of FHIR -   {{site.data.fhir.version}}  = 3.0.1</p>
-  </li>
-  <li>
-    <p>revision : revision of FHIR -   {{site.data.fhir.revision}}  = 11917</p>
-  </li>
-  <li>
-    <p>versionFull : version-revision -   {{site.data.fhir.versionFull}}  = 3.0.1-11917</p>
-  </li>
-  <li>
-    <p>totalFiles : total number of files found by the build -   {{site.data.fhir.totalFiles}}  = 3</p>
-  </li>
-  <li>
-    <p>processedFiles : number of files genrated by the build -   {{site.data.fhir.processedFiles}}  = 122</p>
-  </li>
-  <li>
-    <p>genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Mon, Mar 26, 2018 03:03-0600</p>
-  </li>
+  <li>Cross-jurisdictional patient summaries (through adaptation/extension for multi-language and realm scenarios, including translation).</li>
+  <li>Emergency and unplanned care in any country, regardless of language.</li>
+  <li>Value sets based on international vocabularies that are usable and understandable in any country.</li>
+  <li>Data and metadata for document-level provenance.</li>
 </ul>
 
-<h3 id="introduction">Introduction</h3>
+<h3 id="project-background">Project Background</h3>
 
-<p>blah blah blah</p>
+<p>See further details on the project background in the IPS Wiki <a href="http://international-patient-summary.net/mediawiki/index.php?title=IPS_Introduction_1#Project_Background">here</a>.</p>
 
-<h3 id="more-stuff">More Stuff</h3>
+<h3 id="project-scope">Project Scope</h3>
 
-<h4 id="and-more-stuff">And More Stuff</h4>
+<p>As expressed in the introduction, the International Patient Summary is:</p>
+<ul>
+  <li>a minimal and non-exhaustive patient summary,</li>
+  <li>specialty-agnostic,</li>
+  <li>condition-independent,</li>
+  <li>but readily usable by clinicians for cross-border unscheduled care of a patient.
+In this context, minimal and non-exhaustive means that an IPS is not intended to reproduce (the entire) content of an Electronic Health Record (EHR).</li>
+</ul>
+
+<p>Specialty-agnostic means that an IPS is not filtered for a specialty. As an example, allergies are not filtered to the specialty of internal medicine, thus may also include food allergies, if considered to be relevant for, e.g. unplanned care.</p>
+
+<p>Condition-independent means that an IPS is not specific to particular conditions, and focuses on the patient current condition(s).</p>
+
+<p>Furthermore the scope of the IPS is global. Although this is a major challenge, this implementation guide takes various experiences and newer developments into account to address global feasibility as far as possible.</p>
+
+<h3 id="relationships-with-other-projects-and-guidelines">Relationships with Other Projects and Guidelines</h3>
+
+<p>See further details on the IPS project relationships with other projects and guidelines in the IPS Wiki <a href="http://international-patient-summary.net/mediawiki/index.php?title=IPS_implementationguide_1#Relationships_with_other_projects_and_guidelines">here</a>.</p>
+
+<h2 id="ballot-status">Ballot Status</h2>
+
+<p>This Implementation Guide is being balloted as STU with the intention to go normative in a subsequent ballot cycle.</p>
 
 
 
@@ -337,7 +333,7 @@ This is the May 2018 Ballot Version <!-- Current officially released version -->
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            International Patient Summary IG Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Mon, Mar 26, 2018 03:03-0600. |
+            International Patient Summary Implementation Guide Version: 1.0.0  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Mon, Mar 26, 2018 10:46-0600. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

@@ -1,7 +1,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
 	<id value="ig-uv-ips"/>
 	<url value="http://hl7.org/fhir/ips/ImplementationGuide/ig-uv-ips"/>
-	<name value="International Patient Summary IG"/>
+	<name value="International Patient Summary Implementation Guide"/>
 	<status value="active"/>
 	<publisher value="Health Level Seven International"/>
 	<fhirVersion value="STU3"/>
@@ -16,7 +16,49 @@
 		<resource>
 			<example value="false"/>
 			<sourceReference>
+				<reference value="CodeSystem/absent-unknown-uv-ips"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/condition-uv-ips"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/codeableconcept-uv-ips"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/translation"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/translateddiv-uv-ips"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/partof-extension"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/abatement-datetime"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/coding-uv-ips"/>
 			</sourceReference>
 		</resource>
 	</package>

@@ -2,6 +2,10 @@
   "broken-links": "warning",
   "no-inactive-codes": "false",
   "extensions": [
+    "translation",
+    "translateddiv-uv-ips",
+    "partof-extension",
+    "abatement-datetime"
   ],
   "license" :  "cc0-1.0",
   "dependencyList": [],
@@ -38,7 +42,6 @@
   "status": "active",
   "do-transforms": "false",
   "structuremaps": [],
-  "igtemplate-dir": "source/page_template_library",
   "defaults": {
     "ConceptMap": {
       "template-base": "base.html"
@@ -101,6 +104,36 @@
       "defns": "StructureDefinition-condition-uv-ips-definitions.html",
       "source": "Condition-uv-ips.structuredefinition.xml",
       "base": "StructureDefinition-condition-uv-ips.html"
+    },
+    "StructureDefinition/codeableconcept-uv-ips": {
+      "defns": "StructureDefinition-codeableconcept-uv-ips-definitions.html",
+      "source": "CodeableConcept-uv-ips.structuredefinition.xml",
+      "base": "StructureDefinition-codeableconcept-uv-ips.html"
+    },
+    "StructureDefinition/translation": {
+      "defns": "StructureDefinition-translation-definitions.html",
+      "source": "translation.xml",
+      "base": "StructureDefinition-translation.html"
+    },
+    "StructureDefinition/translateddiv-uv-ips": {
+      "defns": "StructureDefinition-translateddiv-uv-ips-definitions.html",
+      "source": "translatedDiv-uv-ips.structuredefinition.xml",
+      "base": "StructureDefinition-translateddiv-uv-ips.html"
+    },
+    "StructureDefinition/partof-extension": {
+      "defns": "StructureDefinition-partof-extension-definitions.html",
+      "source": "partOf-extension.xml",
+      "base": "StructureDefinition-partof-extension.html"
+    },
+    "StructureDefinition/abatement-datetime": {
+      "defns": "StructureDefinition-abatement-datetime-definitions.html",
+      "source": "abatement-dateTime-uv-ips.structuredefinition.xml",
+      "base": "StructureDefinition-abatement-datetime.html"
+    },
+    "StructureDefinition/coding-uv-ips": {
+      "defns": "StructureDefinition-coding-uv-ips-definitions.html",
+      "source": "coding-uv-ips.structuredefinition.xml",
+      "base": "StructureDefinition-coding-uv-ips.html"
     },
     "CodeSystem/absent-unknown-uv-ips": {
       "base": "CodeSystem-absent-unknown-uv-ips.html"
