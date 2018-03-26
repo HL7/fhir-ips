@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/ips/ImplementationGuide/ig-uv-ips> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ig-uv-ips"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>International Patient Summary IG</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/ips/ImplementationGuide/ig-uv-ips</pre></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "http://hl7.org/fhir/ips/ImplementationGuide/ig-uv-ips"];
+  fhir:ImplementationGuide.name [ fhir:value "International Patient Summary IG"];
+  fhir:ImplementationGuide.status [ fhir:value "active"];
+  fhir:ImplementationGuide.publisher [ fhir:value "Health Level Seven International"];
+  fhir:ImplementationGuide.fhirVersion [ fhir:value "STU3"];
+  fhir:ImplementationGuide.package [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "p1" ];
+     fhir:ImplementationGuide.package.name [ fhir:value "base" ];
+     fhir:ImplementationGuide.package.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-condition-severity-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/ValueSet/condition-severity-uv-ips>;
+         fhir:Reference.reference [ fhir:value "ValueSet/condition-severity-uv-ips" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-condition-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/condition-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/condition-uv-ips" ]
+       ]
+     ]
+  ];
+  fhir:ImplementationGuide.page [
+     fhir:ImplementationGuide.page.source [ fhir:value "index.md" ];
+     fhir:ImplementationGuide.page.title [ fhir:value "International Patient Summary Home" ]
+  ] .
+
+<http://hl7.org/fhir/ips/ValueSet/condition-severity-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/condition-uv-ips> a fhir:ips .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/ips/ImplementationGuide/ig-uv-ips.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/ips/ImplementationGuide/ig-uv-ips.ttl> .
+
+# -------------------------------------------------------------------------------------
+

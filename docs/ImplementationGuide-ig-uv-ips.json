@@ -1,0 +1,49 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "ig-uv-ips",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>International Patient Summary IG</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/ips/ImplementationGuide/ig-uv-ips</pre></div>"
+  },
+  "url": "http://hl7.org/fhir/ips/ImplementationGuide/ig-uv-ips",
+  "name": "International Patient Summary IG",
+  "status": "active",
+  "publisher": "Health Level Seven International",
+  "fhirVersion": "STU3",
+  "package": [
+    {
+      "id": "p1",
+      "name": "base",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "ValueSet-condition-severity-uv-ips.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "ValueSet/condition-severity-uv-ips"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-condition-uv-ips.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/condition-uv-ips"
+          }
+        }
+      ]
+    }
+  ],
+  "page": {
+    "source": "index.md",
+    "title": "International Patient Summary Home"
+  }
+}

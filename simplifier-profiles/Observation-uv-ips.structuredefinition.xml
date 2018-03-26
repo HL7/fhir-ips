@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://hl7.org/fhir/ips/StructureDefinition/observation-uv-ips" />
+  <name value="Observation-uv-ips" />
+  <title value="Observation (generic result)" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-03-21T09:24:38.624+01:00" />
+  <publisher value="HL7 International" />
+  <contact>
+    <name value="Christof Gessner" />
+  </contact>
+  <description value="This profile constrains the Observation resource to represent various results in a patient summary, if no other more specific profile applies." />
+  <purpose value="This profile constrains the Observation resource to represent clinical observations where more specific profiles are not applicable. In case of a panel of observations, the results of the panel appear as sub-observations." />
+  <fhirVersion value="3.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation.identifier">
+      <path value="Observation.identifier" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.basedOn">
+      <path value="Observation.basedOn" />
+      <max value="0" />
+    </element>
+    <element id="Observation.status">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
+        <valueString value="default: final" />
+      </extension>
+      <path value="Observation.status" />
+      <fixedCode value="final" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.category">
+      <path value="Observation.category" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+      </type>
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]">
+      <path value="Observation.effective[x]" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.performer">
+      <path value="Observation.performer" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <type>
+        <code value="string" />
+      </type>
+      <type>
+        <code value="boolean" />
+      </type>
+      <type>
+        <code value="Range" />
+      </type>
+      <type>
+        <code value="Ratio" />
+      </type>
+      <type>
+        <code value="time" />
+      </type>
+      <type>
+        <code value="dateTime" />
+      </type>
+      <type>
+        <code value="Period" />
+      </type>
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+      </type>
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/Quantity-uv-ips" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.dataAbsentReason">
+      <path value="Observation.dataAbsentReason" />
+      <max value="0" />
+    </element>
+    <element id="Observation.interpretation">
+      <path value="Observation.interpretation" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.bodySite">
+      <path value="Observation.bodySite" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.method">
+      <path value="Observation.method" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+      </type>
+    </element>
+    <element id="Observation.specimen">
+      <path value="Observation.specimen" />
+      <max value="0" />
+    </element>
+    <element id="Observation.device">
+      <path value="Observation.device" />
+      <max value="0" />
+    </element>
+    <element id="Observation.referenceRange">
+      <path value="Observation.referenceRange" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.referenceRange.type.coding">
+      <path value="Observation.referenceRange.type.coding" />
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+      </type>
+    </element>
+    <element id="Observation.referenceRange.appliesTo">
+      <path value="Observation.referenceRange.appliesTo" />
+      <max value="0" />
+    </element>
+    <element id="Observation.referenceRange.age">
+      <path value="Observation.referenceRange.age" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

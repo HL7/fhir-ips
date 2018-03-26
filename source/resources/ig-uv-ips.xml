@@ -1,0 +1,35 @@
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+	<id value="ig-uv-ips"/>
+	<url value="http://hl7.org/fhir/ips/ImplementationGuide/ig-uv-ips"/>
+	<name value="International Patient Summary IG"/>
+	<status value="active"/>
+	<publisher value="Health Level Seven International"/>
+	<fhirVersion value="STU3"/>
+	<package>
+		<name value="base"/>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/condition-severity-uv-ips"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/condition-uv-ips"/>
+			</sourceReference>
+		</resource>
+	</package>
+	<page>
+		<source value="index.md"/>
+		<title value="International Patient Summary Home"/>
+		<kind value="page"/>
+		<!--
+		<page>
+			<source value="_includes/toc.md"/>
+			<title value="International Patient Summary Table of Contents"/>
+			<kind value="page"/>
+		</page>
+        -->
+	</page>
+</ImplementationGuide>

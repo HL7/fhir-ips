@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="ig-uv-ips"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>International Patient Summary IG</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/ips/ImplementationGuide/ig-uv-ips</pre></div>
+  </text>
+  <url value="http://hl7.org/fhir/ips/ImplementationGuide/ig-uv-ips"/>
+  <name value="International Patient Summary IG"/>
+  <status value="active"/>
+  <publisher value="Health Level Seven International"/>
+  <fhirVersion value="STU3"/>
+  <package id="p1">
+    <name value="base"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-condition-severity-uv-ips.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="ValueSet/condition-severity-uv-ips"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-condition-uv-ips.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/condition-uv-ips"/>
+      </sourceReference>
+    </resource>
+  </package>
+  <page>
+    <source value="index.md"/>
+    <title value="International Patient Summary Home"/>
+  </page>
+</ImplementationGuide>

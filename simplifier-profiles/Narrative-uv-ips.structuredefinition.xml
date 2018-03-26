@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2018-03-08T14:42:45.507+01:00" />
+  </meta>
+  <url value="http://hl7.org/fhir/ips/StructureDefinition/narrative-uv-ips" />
+  <name value="Narrative-uv-ips" />
+  <status value="draft" />
+  <date value="2018-03-08T14:31:40.32+01:00" />
+  <description value="Profiled Narrative data type, designed to support the translation of the narratives" />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <type value="Narrative" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Narrative" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Narrative.extension">
+      <path value="Narrative.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Narrative.extension:translatedDiv">
+      <path value="Narrative.extension" />
+      <sliceName value="translatedDiv" />
+      <short value="Translated Narrative" />
+      <definition value="Optional Extension Element - found in all resources." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/translateddiv-uv-ips" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
