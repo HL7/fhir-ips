@@ -1,0 +1,154 @@
+{
+  "broken-links": "warning",
+  "no-inactive-codes": "false",
+  "extensions": [
+    "translation",
+    "translateddiv-uv-ips",
+    "partof-extension",
+    "abatement-datetime"
+  ],
+  "license" :  "cc0-1.0",
+  "dependencyList": [],
+  "fixed-business-version": "1",
+  "valuesets": [
+    "condition-severity-uv-ips",
+    "absent-or-unknown-problems-uv-ips",
+    "absent-or-unknown-procedures-uv-ips"
+  ],
+  "paths": {
+    "pages": [
+      "framework",
+      "source/pages"
+    ],
+    "specification": "http://hl7.org/fhir/STU3",
+    "temp": "generated_output/temp",
+    "txCache": "generated_output/txCache",
+    "output": "docs",
+    "qa": "generated_output/qa",
+    "resources": [
+      "source/resources",
+      "source/examples"
+    ]
+  },
+  "version": "3.0.1",
+  "logging": [
+    "progress"
+  ],
+  "codesystems": [
+    "absent-unknown-uv-ips"
+  ],
+  "searches": [],
+  "publisher": "Health Level Seven International",
+  "status": "active",
+  "do-transforms": "false",
+  "structuremaps": [],
+  "defaults": {
+    "ConceptMap": {
+      "template-base": "base.html"
+    },
+    "CapabilityStatement": {
+      "template-base": "base.html"
+    },
+    "StructureDefinition": {
+      "template-mappings": "sd-mappings.html",
+      "template-base": "sd.html",
+      "template-defns": "sd-definitions.html"
+    },
+    "Basic": {
+      "template-base": "ex.html"
+    },
+    "CodeSystem": {
+      "template-base": "base.html"
+    },
+    "SearchParameter": {
+      "template-base": "base.html"
+    },
+    "Any": {
+      "template-base": "base.html",
+      "template-format": "format.html"
+    },
+    "StructureMap": {
+      "profiles": false,
+      "script": false,
+      "template-base": "ex.html",
+      "content": false
+    },
+    "AllergyIntolerance": {
+      "template-base": "ex.html"
+    },
+    "Observation": {
+      "template-base": "ex.html"
+    },
+    "OperationDefinition": {
+      "template-base": "base.html"
+    },
+    "MedicationRequest": {
+      "template-base": "ex.html"
+    },
+    "ValueSet": {
+      "template-base": "base.html"
+    }
+  },
+  "source": "ig-uv-ips.xml",
+  "gen-examples": "false",
+  "title": "International Patient Summary Implementation Guide",
+  "extraTemplates": [],
+  "jurisdiction": "001",
+  "tool": "jekyll",
+  "canonicalBase": "http://hl7.org/fhir/ips",
+  "spreadsheets": [],
+  "special-urls": [],
+  "sct-edition": "http://snomed.info/sct/900000000000207008",
+  "resources": {
+    "StructureDefinition/condition-uv-ips": {
+      "defns": "StructureDefinition-condition-uv-ips-definitions.html",
+      "source": "Condition-uv-ips.structuredefinition.xml",
+      "base": "StructureDefinition-condition-uv-ips.html"
+    },
+    "StructureDefinition/codeableconcept-uv-ips": {
+      "defns": "StructureDefinition-codeableconcept-uv-ips-definitions.html",
+      "source": "CodeableConcept-uv-ips.structuredefinition.xml",
+      "base": "StructureDefinition-codeableconcept-uv-ips.html"
+    },
+    "StructureDefinition/translation": {
+      "defns": "StructureDefinition-translation-definitions.html",
+      "source": "translation.xml",
+      "base": "StructureDefinition-translation.html"
+    },
+    "StructureDefinition/translateddiv-uv-ips": {
+      "defns": "StructureDefinition-translateddiv-uv-ips-definitions.html",
+      "source": "translatedDiv-uv-ips.structuredefinition.xml",
+      "base": "StructureDefinition-translateddiv-uv-ips.html"
+    },
+    "StructureDefinition/partof-extension": {
+      "defns": "StructureDefinition-partof-extension-definitions.html",
+      "source": "partOf-extension.xml",
+      "base": "StructureDefinition-partof-extension.html"
+    },
+    "StructureDefinition/abatement-datetime": {
+      "defns": "StructureDefinition-abatement-datetime-definitions.html",
+      "source": "abatement-dateTime-uv-ips.structuredefinition.xml",
+      "base": "StructureDefinition-abatement-datetime.html"
+    },
+    "StructureDefinition/coding-uv-ips": {
+      "defns": "StructureDefinition-coding-uv-ips-definitions.html",
+      "source": "coding-uv-ips.structuredefinition.xml",
+      "base": "StructureDefinition-coding-uv-ips.html"
+    },
+    "CodeSystem/absent-unknown-uv-ips": {
+      "base": "CodeSystem-absent-unknown-uv-ips.html"
+    },
+    "ValueSet/condition-severity-uv-ips": {
+      "source": "valueset-condition-severity-uv-ips.xml",
+      "base": "ValueSet-condition-severity-uv-ips.html"
+    },
+    "ValueSet/absent-or-unknown-problems-uv-ips": {
+      "source": "valueset-absent-or-unknown-problems-uv-ips.xml",
+      "base": "ValueSet-absent-or-unknown-problems-uv-ips.html"
+    },
+    "ValueSet/absent-or-unknown-procedures-uv-ips": {
+      "source": "valueset-absent-or-unknown-procedures-uv-ips.xml",
+      "base": "ValueSet-absent-or-unknown-procedures-uv-ips.html"
+    }
+  }
+}

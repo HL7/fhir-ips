@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="3107be2f-a1e6-4b57-bedb-e880cb087096"/>
+  <meta>
+    <lastUpdated value="2018-03-27T11:49:35.560-06:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/ips/ValueSet/condition-severity-uv-ips"/>
+    <resource>
+      <ValueSet>
+        <id value="condition-severity-uv-ips"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p>All codes from system 
+              <code>http://loinc.org</code>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-LA6752-5"> </a>
+                  <a href="http://details.loinc.org/LOINC/LA6752-5.html">LA6752-5</a>
+                </td>
+                <td>Mild</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-LA6751-7"> </a>
+                  <a href="http://details.loinc.org/LOINC/LA6751-7.html">LA6751-7</a>
+                </td>
+                <td>Moderate</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-LA6750-9"> </a>
+                  <a href="http://details.loinc.org/LOINC/LA6750-9.html">LA6750-9</a>
+                </td>
+                <td>Severe</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/ips/ValueSet/condition-severity-uv-ips"/>
+        <identifier>
+          <use value="official"/>
+          <system value="http://art-decor.org/ns/oids/vs"/>
+          <value value="2.16.840.1.113883.11.22.18"/>
+        </identifier>
+        <version value="1"/>
+        <name value="IPSProblemSeverity"/>
+        <title value="Problem Severity"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2018-03-27T11:49:35-06:00"/>
+        <publisher value="HL7 International"/>
+        <contact>
+          <name value="HL7 International"/>
+          <telecom>
+            <system value="phone"/>
+            <value value="+1 734 677 7777"/>
+          </telecom>
+          <telecom>
+            <system value="fax"/>
+            <value value="+1 734 677 6622"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="info@hl7.org"/>
+          </telecom>
+        </contact>
+        <description value="Problem Severity"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <immutable value="false"/>
+        <expansion>
+          <identifier value="urn:uuid:580ceeb9-8e30-44bd-824a-572a007d365f"/>
+          <timestamp value="2018-03-26T06:53:23Z"/>
+          <parameter>
+            <name value="expansion-source"/>
+            <valueString value="ValueSet/condition-severity-uv-ips"/>
+          </parameter>
+          <parameter>
+            <name value="expansion-profile"/>
+            <valueString value="http://hl7.org/fhir/ExpansionProfile/dc8fd4bc-091a-424a-8a3b-6198ef146891"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org?version=2.63"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA6752-5"/>
+            <display value="Mild"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA6751-7"/>
+            <display value="Moderate"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA6750-9"/>
+            <display value="Severe"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

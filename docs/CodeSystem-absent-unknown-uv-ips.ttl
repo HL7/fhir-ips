@@ -1,0 +1,120 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/ips/CodeSystem/absent-unknown-uv-ips> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "absent-unknown-uv-ips"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IPS CodeSystem - Absent and Unknown Data</h2><div><p>International Patient Summary (IPS) codes for &quot;known absent&quot; and &quot;not known&quot; data.</p>\n</div><p>This code system http://hl7.org/fhir/ips/CodeSystem/absent-unknown-uv-ips defines the following codes:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">allergic-disposition-not-known<a name=\"absent-unknown-uv-ips-allergic-disposition-not-known\"> </a></td><td>Allergic disposition not known</td><td>There is no information available regarding the subject's allergy conditions.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">no-known-allergy<a name=\"absent-unknown-uv-ips-no-known-allergy\"> </a></td><td>No known allergy</td><td>The subject has no known allergy conditions.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  no-known-medication-allergy<a name=\"absent-unknown-uv-ips-no-known-medication-allergy\"> </a></td><td>No known medication allergy</td><td>The subject has no known medication allergy conditions.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  no-known-environmental-allergy<a name=\"absent-unknown-uv-ips-no-known-environmental-allergy\"> </a></td><td>No known environmental allergy</td><td>The subject has no known environmental allergy conditions.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  no-known-food-allergy<a name=\"absent-unknown-uv-ips-no-known-food-allergy\"> </a></td><td>No known food allergy</td><td>The subject has no known food allergy conditions.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">no-device-info<a name=\"absent-unknown-uv-ips-no-device-info\"> </a></td><td>No information about devices</td><td>There is no information available regarding implanted or external devices for the subject.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">no-known-device<a name=\"absent-unknown-uv-ips-no-known-device\"> </a></td><td>No known devices in use</td><td>There are no devices known to be implanted in or used by the subject.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">no-immunization-info<a name=\"absent-unknown-uv-ips-no-immunization-info\"> </a></td><td>No information about immunizations</td><td>The history of previous immunizations is not known.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">no-previous-immunizations<a name=\"absent-unknown-uv-ips-no-previous-immunizations\"> </a></td><td>No previous immunizations</td><td>There is no history of previous immunizations.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">no-medication-info<a name=\"absent-unknown-uv-ips-no-medication-info\"> </a></td><td>No information about current medications</td><td>There is no information available about the subject's current medication use or administration.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">no-current-medications<a name=\"absent-unknown-uv-ips-no-current-medications\"> </a></td><td>No current medications</td><td>The subject is not taking or being administered any current medications.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">no-problem-info<a name=\"absent-unknown-uv-ips-no-problem-info\"> </a></td><td>No information about current problems</td><td>There is no information available about the subject's current health problems or disability.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">no-current-problems<a name=\"absent-unknown-uv-ips-no-current-problems\"> </a></td><td>No current problems</td><td>The subject is not known to have any current health problems or disability.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">no-procedure-info<a name=\"absent-unknown-uv-ips-no-procedure-info\"> </a></td><td>No information about past history of procedures</td><td>There is no information available about the subject's past history of procedures.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">no-history-procedures<a name=\"absent-unknown-uv-ips-no-history-procedures\"> </a></td><td>No history of procedures</td><td>The subject has no history of previous procedures.</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.org/fhir/ips/CodeSystem/absent-unknown-uv-ips"];
+  fhir:CodeSystem.version [ fhir:value "1"];
+  fhir:CodeSystem.name [ fhir:value "IPSCodeSystemAbsentUnknown"];
+  fhir:CodeSystem.title [ fhir:value "IPS CodeSystem - Absent and Unknown Data"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:CodeSystem.date [ fhir:value "2018-03-27T11:49:35-06:00"^^xsd:dateTime];
+  fhir:CodeSystem.description [ fhir:value "International Patient Summary (IPS) codes for \"known absent\" and \"not known\" data."];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ];
+       fhir:Coding.display [ fhir:value "World" ]
+     ]
+  ];
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.valueSet [ fhir:value "http://hl7.org/fhir/ips/ValueSet/absent-unknown"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "allergic-disposition-not-known" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Allergic disposition not known" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "There is no information available regarding the subject's allergy conditions." ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "no-known-allergy" ];
+     fhir:CodeSystem.concept.display [ fhir:value "No known allergy" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The subject has no known allergy conditions." ];
+     fhir:CodeSystem.concept.concept [
+       fhir:index 0;
+       fhir:CodeSystem.concept.code [ fhir:value "no-known-medication-allergy" ];
+       fhir:CodeSystem.concept.display [ fhir:value "No known medication allergy" ];
+       fhir:CodeSystem.concept.definition [ fhir:value "The subject has no known medication allergy conditions." ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.code [ fhir:value "no-known-environmental-allergy" ];
+       fhir:CodeSystem.concept.display [ fhir:value "No known environmental allergy" ];
+       fhir:CodeSystem.concept.definition [ fhir:value "The subject has no known environmental allergy conditions." ]
+     ], [
+       fhir:index 2;
+       fhir:CodeSystem.concept.code [ fhir:value "no-known-food-allergy" ];
+       fhir:CodeSystem.concept.display [ fhir:value "No known food allergy" ];
+       fhir:CodeSystem.concept.definition [ fhir:value "The subject has no known food allergy conditions." ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "no-device-info" ];
+     fhir:CodeSystem.concept.display [ fhir:value "No information about devices" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "There is no information available regarding implanted or external devices for the subject." ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "no-known-device" ];
+     fhir:CodeSystem.concept.display [ fhir:value "No known devices in use" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "There are no devices known to be implanted in or used by the subject." ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "no-immunization-info" ];
+     fhir:CodeSystem.concept.display [ fhir:value "No information about immunizations" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The history of previous immunizations is not known." ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "no-previous-immunizations" ];
+     fhir:CodeSystem.concept.display [ fhir:value "No previous immunizations" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "There is no history of previous immunizations." ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "no-medication-info" ];
+     fhir:CodeSystem.concept.display [ fhir:value "No information about current medications" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "There is no information available about the subject's current medication use or administration." ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "no-current-medications" ];
+     fhir:CodeSystem.concept.display [ fhir:value "No current medications" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The subject is not taking or being administered any current medications." ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "no-problem-info" ];
+     fhir:CodeSystem.concept.display [ fhir:value "No information about current problems" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "There is no information available about the subject's current health problems or disability." ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "no-current-problems" ];
+     fhir:CodeSystem.concept.display [ fhir:value "No current problems" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The subject is not known to have any current health problems or disability." ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "no-procedure-info" ];
+     fhir:CodeSystem.concept.display [ fhir:value "No information about past history of procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "There is no information available about the subject's past history of procedures." ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "no-history-procedures" ];
+     fhir:CodeSystem.concept.display [ fhir:value "No history of procedures" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "The subject has no history of previous procedures." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/ips/CodeSystem/absent-unknown-uv-ips.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/ips/CodeSystem/absent-unknown-uv-ips.ttl> .
+
+# -------------------------------------------------------------------------------------
+
