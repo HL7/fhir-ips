@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
     <lastUpdated value="2018-02-27T15:32:05.203+01:00" />
@@ -1794,7 +1794,7 @@
       </base>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/codeableconcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2329,7 +2329,7 @@
       </base>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/codeableconcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3419,7 +3419,7 @@
       </base>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/codeableconcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3704,7 +3704,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="urn:oid:2.16.840.1.113883.3.1937.777.13.5.999.1" />
+      <fixedUri value="http://hl7.org/fhir/ips/CodeSystem/absent-unknown" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -4115,7 +4115,7 @@
       </base>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/codeableconcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -4654,7 +4654,7 @@
       </base>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/codeableconcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -8216,7 +8216,7 @@
       <max value="1" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/codeableconcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <mustSupport value="true" />
       <binding>
@@ -8233,7 +8233,7 @@
       <path value="Condition.severity" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/codeableconcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <mustSupport value="true" />
       <binding>
@@ -8257,7 +8257,6 @@
       </slicing>
       <definition value="Identification of the condition, problem or diagnosis or recording of &quot;problem absent&quot; or of &quot;problems unknown&quot;." />
       <min value="1" />
-      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Condition.code:absentOrUnknownProblem">
@@ -8268,7 +8267,7 @@
       <max value="1" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/codeableconcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -8289,7 +8288,7 @@
     <element id="Condition.code:absentOrUnknownProblem.coding.system">
       <path value="Condition.code.coding.system" />
       <min value="1" />
-      <fixedUri value="urn:oid:2.16.840.1.113883.3.1937.777.13.5.999.1" />
+      <fixedUri value="http://hl7.org/fhir/ips/CodeSystem/absent-unknown" />
     </element>
     <element id="Condition.code:absentOrUnknownProblem.coding.code">
       <path value="Condition.code.coding.code" />
@@ -8301,7 +8300,7 @@
       <max value="1" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/codeableconcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -8318,7 +8317,7 @@
       <path value="Condition.bodySite" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/codeableconcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
