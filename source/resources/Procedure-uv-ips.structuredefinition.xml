@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
     <lastUpdated value="2018-02-20T12:54:56.053+01:00" />
@@ -13378,6 +13378,9 @@
     </element>
   </snapshot>
   <differential>
+    <element id="Procedure">
+      <path value="Procedure" />
+    </element>
     <element id="Procedure.extension">
       <path value="Procedure.extension" />
       <slicing>
@@ -13501,6 +13504,9 @@
       <path value="Procedure.performed[x]" />
       <min value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="Procedure.performer">
+      <path value="Procedure.performer" />
     </element>
     <element id="Procedure.performer.actor">
       <path value="Procedure.performer.actor" />

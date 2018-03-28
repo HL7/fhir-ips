@@ -1,0 +1,639 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/ips/ImplementationGuide/ig-uv-ips> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ig-uv-ips"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>International Patient Summary Implementation Guide</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/ips/ImplementationGuide/ig-uv-ips</pre></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "http://hl7.org/fhir/ips/ImplementationGuide/ig-uv-ips"];
+  fhir:ImplementationGuide.name [ fhir:value "International Patient Summary Implementation Guide"];
+  fhir:ImplementationGuide.status [ fhir:value "active"];
+  fhir:ImplementationGuide.publisher [ fhir:value "Health Level Seven International"];
+  fhir:ImplementationGuide.fhirVersion [ fhir:value "STU3"];
+  fhir:ImplementationGuide.package [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "p1" ];
+     fhir:ImplementationGuide.package.name [ fhir:value "base" ];
+     fhir:ImplementationGuide.package.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "ValueSet-condition-severity-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/ValueSet/condition-severity-uv-ips>;
+         fhir:Reference.reference [ fhir:value "ValueSet/condition-severity-uv-ips" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "CodeSystem-absent-unknown-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/CodeSystem/absent-unknown-uv-ips>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/absent-unknown-uv-ips" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-condition-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/condition-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/condition-uv-ips" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-codeableconcept-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/codeableconcept-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/codeableconcept-uv-ips" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-translation.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/translation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/translation" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-translateddiv-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/translateddiv-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/translateddiv-uv-ips" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-partof-extension.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/partof-extension>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/partof-extension" ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-abatement-datetime-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/abatement-datetime-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/abatement-datetime-uv-ips" ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-coding-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/coding-uv-ips" ]
+       ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-composition-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/composition-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/composition-uv-ips" ]
+       ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-device-observer-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/device-observer-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/device-observer-uv-ips" ]
+       ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-deviceusestatement-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/deviceusestatement-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/deviceusestatement-uv-ips" ]
+       ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-device-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/device-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/device-uv-ips" ]
+       ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-imagingstudy-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/imagingstudy-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/imagingstudy-uv-ips" ]
+       ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-immunization-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/immunization-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/immunization-uv-ips" ]
+       ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-medicationstatement-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/medicationstatement-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medicationstatement-uv-ips" ]
+       ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-medication-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/medication-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/medication-uv-ips" ]
+       ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-narrative-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/narrative-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/narrative-uv-ips" ]
+       ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-observation-alcoholuse-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/observation-alcoholuse-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-alcoholuse-uv-ips" ]
+       ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-observation-attachment-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/observation-attachment-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-attachment-uv-ips" ]
+       ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-observation-imaging-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/observation-imaging-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-imaging-uv-ips" ]
+       ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-observation-laboratory-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/observation-laboratory-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-laboratory-uv-ips" ]
+       ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-observation-member-imaging-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/observation-member-imaging-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-member-imaging-uv-ips" ]
+       ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-observation-member-laboratory-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/observation-member-laboratory-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-member-laboratory-uv-ips" ]
+       ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-observation-member-pathology-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/observation-member-pathology-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-member-pathology-uv-ips" ]
+       ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-observation-pathology-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/observation-pathology-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-pathology-uv-ips" ]
+       ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-observation-pregnancy-edd-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/observation-pregnancy-edd-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-pregnancy-edd-uv-ips" ]
+       ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-observation-pregnancy-outcome-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/observation-pregnancy-outcome-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-pregnancy-outcome-uv-ips" ]
+       ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-observation-pregnancy-status-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/observation-pregnancy-status-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-pregnancy-status-uv-ips" ]
+       ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-observation-tobaccouse-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/observation-tobaccouse-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-tobaccouse-uv-ips" ]
+       ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-observation-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/observation-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/observation-uv-ips" ]
+       ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-organization-laboratory-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/organization-laboratory-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/organization-laboratory-uv-ips" ]
+       ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-organization-observation-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/organization-observation-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/organization-observation-uv-ips" ]
+       ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-participant-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/participant-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/participant-uv-ips" ]
+       ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-patient-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/patient-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/patient-uv-ips" ]
+       ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-practitioner-observation-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/practitioner-observation-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/practitioner-observation-uv-ips" ]
+       ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-procedure-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/procedure-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/procedure-uv-ips" ]
+       ]
+     ], [
+       fhir:index 37;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/quantity-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/quantity-uv-ips" ]
+       ]
+     ], [
+       fhir:index 38;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/range-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/range-uv-ips" ]
+       ]
+     ], [
+       fhir:index 39;
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/ratio-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ratio-uv-ips" ]
+       ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-specimen-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/specimen-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/specimen-uv-ips" ]
+       ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-statement-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/statement-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/statement-uv-ips" ]
+       ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-targetdiseases-immunization-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/targetdiseases-immunization-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/targetdiseases-immunization-uv-ips" ]
+       ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-allergyintolerance-uv-ips.html" ]
+       ];
+       fhir:ImplementationGuide.package.resource.example [ fhir:value "false"^^xsd:boolean ];
+       fhir:ImplementationGuide.package.resource.sourceReference [
+         fhir:link <http://hl7.org/fhir/ips/StructureDefinition/allergyintolerance-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/allergyintolerance-uv-ips" ]
+       ]
+     ]
+  ];
+  fhir:ImplementationGuide.page [
+     fhir:ImplementationGuide.page.source [ fhir:value "index.md" ];
+     fhir:ImplementationGuide.page.title [ fhir:value "International Patient Summary Home" ]
+  ] .
+
+<http://hl7.org/fhir/ips/ValueSet/condition-severity-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/CodeSystem/absent-unknown-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/condition-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/codeableconcept-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/translation> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/translateddiv-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/partof-extension> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/abatement-datetime-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/composition-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/device-observer-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/deviceusestatement-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/device-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/imagingstudy-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/immunization-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/medicationstatement-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/medication-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/narrative-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/observation-alcoholuse-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/observation-attachment-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/observation-imaging-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/observation-laboratory-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/observation-member-imaging-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/observation-member-laboratory-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/observation-member-pathology-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/observation-pathology-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/observation-pregnancy-edd-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/observation-pregnancy-outcome-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/observation-pregnancy-status-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/observation-tobaccouse-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/observation-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/organization-laboratory-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/organization-observation-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/participant-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/patient-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/practitioner-observation-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/procedure-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/quantity-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/range-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/ratio-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/specimen-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/statement-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/targetdiseases-immunization-uv-ips> a fhir:ips .
+
+<http://hl7.org/fhir/ips/StructureDefinition/allergyintolerance-uv-ips> a fhir:ips .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/ips/ImplementationGuide/ig-uv-ips.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/ips/ImplementationGuide/ig-uv-ips.ttl> .
+
+# -------------------------------------------------------------------------------------
+
