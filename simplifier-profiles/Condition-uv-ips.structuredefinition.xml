@@ -3704,7 +3704,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="urn:oid:2.16.840.1.113883.3.1937.777.13.5.999.1" />
+      <fixedUri value="http://hl7.org/fhir/ips/CodeSystem/absent-unknown" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -8257,7 +8257,6 @@
       </slicing>
       <definition value="Identification of the condition, problem or diagnosis or recording of &quot;problem absent&quot; or of &quot;problems unknown&quot;." />
       <min value="1" />
-      <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Condition.code:absentOrUnknownProblem">
@@ -8289,7 +8288,7 @@
     <element id="Condition.code:absentOrUnknownProblem.coding.system">
       <path value="Condition.code.coding.system" />
       <min value="1" />
-      <fixedUri value="urn:oid:2.16.840.1.113883.3.1937.777.13.5.999.1" />
+      <fixedUri value="http://hl7.org/fhir/ips/CodeSystem/absent-unknown" />
     </element>
     <element id="Condition.code:absentOrUnknownProblem.coding.code">
       <path value="Condition.code.coding.code" />
