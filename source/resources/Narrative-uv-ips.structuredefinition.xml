@@ -15,6 +15,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Narrative" />
   <derivation value="constraint" />
   <differential>
+    <element id="Narrative">
+      <path value="Narrative" />
+    </element>
     <element id="Narrative.extension">
       <path value="Narrative.extension" />
       <slicing>

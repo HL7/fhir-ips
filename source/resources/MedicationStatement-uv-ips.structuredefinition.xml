@@ -12411,6 +12411,9 @@
     </element>
   </snapshot>
   <differential>
+    <element id="MedicationStatement">
+      <path value="MedicationStatement" />
+    </element>
     <element id="MedicationStatement.extension">
       <path value="MedicationStatement.extension" />
       <slicing>
@@ -12430,13 +12433,22 @@
       </type>
       <mustSupport value="true" />
     </element>
+    <element id="MedicationStatement.basedOn">
+      <path value="MedicationStatement.basedOn" />
+    </element>
     <element id="MedicationStatement.basedOn.identifier">
       <path value="MedicationStatement.basedOn.identifier" />
       <max value="0" />
     </element>
+    <element id="MedicationStatement.partOf">
+      <path value="MedicationStatement.partOf" />
+    </element>
     <element id="MedicationStatement.partOf.identifier">
       <path value="MedicationStatement.partOf.identifier" />
       <max value="0" />
+    </element>
+    <element id="MedicationStatement.context">
+      <path value="MedicationStatement.context" />
     </element>
     <element id="MedicationStatement.context.identifier">
       <path value="MedicationStatement.context.identifier" />
@@ -12478,6 +12490,9 @@
       <path value="MedicationStatement.effective[x]" />
       <mustSupport value="true" />
     </element>
+    <element id="MedicationStatement.informationSource">
+      <path value="MedicationStatement.informationSource" />
+    </element>
     <element id="MedicationStatement.informationSource.identifier">
       <path value="MedicationStatement.informationSource.identifier" />
       <max value="0" />
@@ -12492,6 +12507,9 @@
     <element id="MedicationStatement.subject.identifier">
       <path value="MedicationStatement.subject.identifier" />
       <max value="0" />
+    </element>
+    <element id="MedicationStatement.derivedFrom">
+      <path value="MedicationStatement.derivedFrom" />
     </element>
     <element id="MedicationStatement.derivedFrom.identifier">
       <path value="MedicationStatement.derivedFrom.identifier" />
@@ -12510,6 +12528,9 @@
         <code value="CodeableConcept" />
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
+    </element>
+    <element id="MedicationStatement.reasonReference">
+      <path value="MedicationStatement.reasonReference" />
     </element>
     <element id="MedicationStatement.reasonReference.identifier">
       <path value="MedicationStatement.reasonReference.identifier" />
@@ -12538,6 +12559,9 @@
       <path value="MedicationStatement.dosage.timing" />
       <mustSupport value="true" />
     </element>
+    <element id="MedicationStatement.dosage.timing.repeat">
+      <path value="MedicationStatement.dosage.timing.repeat" />
+    </element>
     <element id="MedicationStatement.dosage.timing.repeat.bounds[x]">
       <path value="MedicationStatement.dosage.timing.repeat.bounds[x]" />
       <type>
@@ -12557,6 +12581,9 @@
         <code value="CodeableConcept" />
         <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
+    </element>
+    <element id="MedicationStatement.dosage.timing.code.coding">
+      <path value="MedicationStatement.dosage.timing.code.coding" />
     </element>
     <element id="MedicationStatement.dosage.timing.code.coding.system">
       <path value="MedicationStatement.dosage.timing.code.coding.system" />
