@@ -2,7 +2,8 @@
 <!-- don't remove the line above - to add or remove a menu item commeent in or out -->
 - [Home](index.html)
 - [General Principles and Design](general.html)
-- [Profiles and Logical Models](profiles.html)
+<!-- - [Profiles and Logical Models](profiles.html) -->
+- [Profiles](profiles.html)
 <!-- - [Mappings](structuremaps.html) -->
 - [Extensions](extensions.html)
 <!-- - [Operations](operations.html) -->

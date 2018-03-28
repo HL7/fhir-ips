@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://hl7.org/fhir/ips/StructureDefinition/Ratio-uv-ips" />
+  <name value="Ratio-uv-ips" />
+  <title value="Ratio" />
+  <status value="draft" />
+  <date value="2018-03-21T14:49:16.166+01:00" />
+  <contact>
+    <name value="Christof Gessner" />
+  </contact>
+  <description value="Ratio data type, constrained to use UCUM as a codesystem." />
+  <purpose value="allow only UCUM as a codesystem." />
+  <fhirVersion value="3.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <type value="Ratio" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Ratio" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Ratio.numerator.system">
+      <path value="Ratio.numerator.system" />
+      <min value="1" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="Ratio.numerator.code">
+      <path value="Ratio.numerator.code" />
+      <min value="1" />
+    </element>
+    <element id="Ratio.denominator.system">
+      <path value="Ratio.denominator.system" />
+      <min value="1" />
+      <fixedUri value="http://unitsofmeasure.org" />
+    </element>
+    <element id="Ratio.denominator.code">
+      <path value="Ratio.denominator.code" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>
