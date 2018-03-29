@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
     <lastUpdated value="2018-02-19T12:23:48.535+01:00" />
@@ -409,6 +409,7 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -1655,7 +1656,7 @@
       <comment value="Default is true.&#xA;&#xA;This active flag is not intended to be used to mark an organizations as temporarily closed or under construction. Instead the Location(s) within the Organization should have the suspended status. If further details of the reason for the suspension are required, then an extension on this element should be used.&#xA;&#xA;This element is labeled as a modifier because it may be used to mark that the resource was created in error." />
       <requirements value="Need a flag to indicate a record is no longer to be used and should generally be hidden for the user in the UI." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Organization.active" />
         <min value="0" />
@@ -2237,7 +2238,7 @@
       <definition value="A name associated with the organization." />
       <comment value="If the name of an organization changes, consider putting the old name in the alias column so that it can still be located through searches." />
       <requirements value="Need to use the name as the label of the organization." />
-      <min value="0" />
+      <min value="1" />
       <max value="1" />
       <base>
         <path value="Organization.name" />
@@ -2256,6 +2257,7 @@
         <expression value="hasValue() | (children().count() &gt; id.count())" />
         <xpath value="@value|f:*|h:div" />
       </constraint>
+      <mustSupport value="true" />
       <isSummary value="true" />
       <mapping>
         <identity value="rim" />
@@ -2281,7 +2283,7 @@
       <comment value="There are no dates associated with the alias/historic names, as this is not intended to track when names were used, but to assist in searching so that older names can still result in identifying the organization." />
       <requirements value="Over time locations and organizations go through many changes and can be known by different names.&#xA;&#xA;For searching knowing previous names that the organization was known by can be very useful." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Organization.alias" />
         <min value="0" />
@@ -2346,6 +2348,7 @@
         <expression value="where(use = 'home').empty()" />
         <xpath value="count(f:use[@value='home']) = 0" />
       </constraint>
+      <mustSupport value="true" />
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -2876,6 +2879,7 @@
         <expression value="where(use = 'home').empty()" />
         <xpath value="count(f:use[@value='home']) = 0" />
       </constraint>
+      <mustSupport value="true" />
       <mapping>
         <identity value="rim" />
         <map value="n/a" />
@@ -3652,7 +3656,7 @@
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <requirements value="Need to be able to track the hierarchy of organizations within an organization." />
       <min value="0" />
-      <max value="0" />
+      <max value="1" />
       <base>
         <path value="Organization.partOf" />
         <min value="0" />
@@ -3899,7 +3903,7 @@
       <comment value="Where multiple contacts for the same purpose are provided there is a standard extension that can be used to determine which one is the preferred contact to use." />
       <requirements value="Need to keep track of assigned contact points within bigger organization." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Organization.contact" />
         <min value="0" />
@@ -6485,7 +6489,7 @@
       <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
       <requirements value="Organizations have multiple systems that provide various services and need to be able to define the technical connection details for how to connect to them, and for what purpose." />
       <min value="0" />
-      <max value="0" />
+      <max value="*" />
       <base>
         <path value="Organization.endpoint" />
         <min value="0" />
@@ -6714,25 +6718,22 @@
     </element>
   </snapshot>
   <differential>
-    <element id="Organization.active">
-      <path value="Organization.active" />
-      <max value="0" />
+    <element id="Organization.identifier">
+      <path value="Organization.identifier" />
+      <mustSupport value="true" />
     </element>
-    <element id="Organization.alias">
-      <path value="Organization.alias" />
-      <max value="0" />
+    <element id="Organization.name">
+      <path value="Organization.name" />
+      <min value="1" />
+      <mustSupport value="true" />
     </element>
-    <element id="Organization.partOf">
-      <path value="Organization.partOf" />
-      <max value="0" />
+    <element id="Organization.telecom">
+      <path value="Organization.telecom" />
+      <mustSupport value="true" />
     </element>
-    <element id="Organization.contact">
-      <path value="Organization.contact" />
-      <max value="0" />
-    </element>
-    <element id="Organization.endpoint">
-      <path value="Organization.endpoint" />
-      <max value="0" />
+    <element id="Organization.address">
+      <path value="Organization.address" />
+      <mustSupport value="true" />
     </element>
   </differential>
 </StructureDefinition>
