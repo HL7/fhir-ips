@@ -7,14 +7,6 @@ active: home
 {% include publish-box.html %}
 
 
-<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
-
-* Do not remove this line (it will not be displayed)
-{:toc}
-
-
-<!-- end TOC -->
-
 <!-- 
 ### Jekyll Site Variables
 
@@ -51,13 +43,21 @@ These are the site variables defined [here](http://wiki.hl7.org/index.php?title=
 - genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -  {% raw %} {{site.data.fhir.genDate}} {% endraw %} = {{site.data.fhir.genDate}}
 -->
 
-## Introduction
+# Introduction
 
 An International Patient Summary (IPS) document is an electronic health record extract containing essential healthcare information intended for use in the unscheduled, cross-border care scenario, comprising at least the required elements of the IPS dataset. The IPS dataset is **_a minimal and non-exhaustive patient summary dataset, specialty-agnostic, condition-independent, but readily usable by clinicians for the cross-border unscheduled care of a patient_**.
 
-### Purpose
+<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
-The goal of this Implementation Guide is to identify the required clinical data, vocabulary and value sets for an international patient summary. The international patient summary is specified as a templated document using HL7 CDA R2. The primary use case is to provide support for cross-border or cross-juridictional emergency and unplanned care.
+* Do not remove this line (it will not be displayed)
+{:toc}
+
+
+<!-- end TOC -->
+
+## Purpose
+
+The goal of this Implementation Guide is to identify the required clinical data, vocabulary and value sets for an international patient summary. The international patient summary is specified either as templated document using HL7 CDA R2, either as HL7 FHIR composition (described in this guide). The primary use case is to provide support for cross-border or cross-juridictional emergency and unplanned care.
 
 This specification aims to support:
 
@@ -66,11 +66,11 @@ This specification aims to support:
 * Value sets based on international vocabularies that are usable and understandable in any country.
 * Data and metadata for document-level provenance.
 
-### Project Background
+## Project Background
 
 See further details on the project background in the IPS Wiki <a href="http://international-patient-summary.net/mediawiki/index.php?title=IPS_Introduction_1#Project_Background">here</a>.
 
-### Project Scope
+## Project Scope
 
 As expressed in the introduction, the International Patient Summary is:
 * a minimal and non-exhaustive patient summary,
@@ -85,10 +85,36 @@ Condition-independent means that an IPS is not specific to particular conditions
 
 Furthermore the scope of the IPS is global. Although this is a major challenge, this implementation guide takes various experiences and newer developments into account to address global feasibility as far as possible.
 
-### Relationships with Other Projects and Guidelines
+## Relationships with Other Projects and Guidelines
 
 See further details on the IPS project relationships with other projects and guidelines in the IPS Wiki <a href="http://international-patient-summary.net/mediawiki/index.php?title=IPS_implementationguide_1#Relationships_with_other_projects_and_guidelines">here</a>.
 
 ## Ballot Status
 
-This Implementation Guide is being balloted as STU with the intention to go normative in a subsequent ballot cycle.  
+This Implementation Guide is being balloted as STU with the intention to go normative in a subsequent ballot cycle.
+
+
+## Authors and Contributors
+
+| Primary Editor | Giorgio Cangioli, PhD 
+Consultant, HL7 Italy
+giorgio.cangioli@gmail.com |
+| Primary Editor | Rob Hausam
+Hausam Consulting LLC
+rob@hausamconsulting.com |
+| Primary Editor | Dr Kai U. Heitmann
+Heitmann Consulting and Services, Gefyra GmbH, HL7 Germany
+info@kheitmann.de  |
+| Primary Editor | François Macary
+Phast
+francois.macary@phast.fr |
+| Contributor | Dr Christof Geßner
+Gematik
+christof.gessner@gematik.de |
+| Contributor | Gary Dickinson
+CentriHealth
+gary.dickinson@ehr-standards.com |
+| Contributor | Catherine Chronaki
+HL7 International Foundation
+chronaki@gmail.com |
+

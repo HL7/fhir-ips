@@ -1,25 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><ValueSet xmlns="http://hl7.org/fhir">
-                <id value="absent-or-unknown-procedures-uv-ips"/>
-                <meta>
+<?xml version="1.0" encoding="UTF-8"?><ValueSet xmlns="http://hl7.org/fhir" xmlns:f="http://hl7.org/fhir">
+<!-- Value set exported from ART-DECOR project hl7ips (IPS) --><id value="absent-or-unknown-procedures-uv-ips"/><meta>
                     <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
-                </meta>
-                <url value="http://hl7.org/fhir/ips/ValueSet/absent-or-unknown-procedures-uv-ips"/>
-                <identifier>
+                </meta><url value="http://hl7.org/fhir/ips/ValueSet/absent-or-unknown-procedures-uv-ips"/><identifier>
                     <use value="official"/>
                     <system value="http://art-decor.org/ns/oids/vs"/>
                     <value value="2.16.840.1.113883.11.22.36"/>
-                </identifier>
-                <version value="2017-05-23T00:00:00"/>
-                <name value="IPSNoProceduresInfos"/>
-                <title value="Absent or Unknown Procedures"/>
-                <status value="draft"/>
-                <experimental value="false"/>
-                <publisher value="HL7 International"/>
-                <contact>
+                </identifier><version value="2017-05-23T00:00:00"/><name value="IPSNoProceduresInfos"/><title value="Absent or Unknown Procedures"/><status value="draft"/><experimental value="false"/><publisher value="HL7 International"/><contact>
                     <name value="HL7 International"/>
                     <telecom>
                         <system value="phone"/>
-                        <value value="+1 734 677 7777"/>
+                        <value value="+1 734 677 7777 "/>
                     </telecom>
                     <telecom>
                         <system value="fax"/>
@@ -29,18 +19,16 @@
                         <system value="email"/>
                         <value value="info@hl7.org"/>
                     </telecom>
-                </contact>
-                <description value="Absent or Unknown Procedures"/>
-                <immutable value="false"/>
-                <compose>
+                </contact><description value="Absent or Unknown Procedures"/><immutable value="false"/><compose>
                     <include>
-                        <system value="http://hl7.org/fhir/ips/CodeSystem/absent-unknown"/>
+                        <system value="urn:oid:2.16.840.1.113883.3.1937.777.13.5.999.1"/>
                         <concept>
-                            <code value="no-procedure-info"/>
+                            <code value="X-ProceduresNotKnown"/>
+                            <display value="History of procedures not known"/>
                         </concept>
                         <concept>
-                            <code value="no-history-procedures"/>
+                            <code value="X-HistoryOfProcedures"/>
+                            <display value="No past history of procedure (context-dependent category)"/>
                         </concept>
                     </include>
-                </compose>
-            </ValueSet>
+                </compose></ValueSet>

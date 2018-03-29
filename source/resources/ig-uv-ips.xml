@@ -7,24 +7,251 @@
 	<fhirVersion value="STU3"/>
 	<package>
 		<name value="base"/>
-		<resource>
+  <!--- ADDED BY GIORGIO -->
+  
+
+  		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/absent-or-unknown-allergies-uv-ips"/>
+        
+			</sourceReference>
+		</resource>		
+    
+
+    
+
+         
+               
+    <resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/absent-or-unknown-devices-uv-ips"/>
+			</sourceReference>
+		</resource>	
+    
+ 
+    
+                     
+
+    	<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/absent-or-unknown-immunization-uv-ips"/>
+			</sourceReference>
+    </resource>	  
+
+       
+      
+			<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/absent-or-unknown-medication-uv-ips"/>
+			</sourceReference>
+		</resource>	
+    
+    
+  
+    	<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/absent-or-unknown-procedures-uv-ips"/>
+			</sourceReference>
+		</resource>	
+    
+
+    	<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/allergy-intolerance-substance-condition-uv-ips"/>
+			</sourceReference>
+		</resource>	
+    
+    	<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="ValueSet/condition-severity-uv-ips"/>
 			</sourceReference>
+		</resource>	
+    
+    
+    <!-- it takes too long for checking the about 5000 SCt terms it will be enabled at the end -->
+
+  
+    	<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/core-problem-list-disorders-uv-ips"/>
+			</sourceReference>
+		</resource>	
+
+
+    
+    	<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/current-smoking-status-uv-ips"/>
+			</sourceReference>
+		</resource>		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/edd-method-uv-ips"/>
+			</sourceReference>
+		</resource>	
+    
+    
+
+      
+    	<resource>
+    			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/healthcare-professional-roles-uv-ips"/>
+			</sourceReference>
+		</resource>	
+
+              
+    	<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/imaging-observations-uv-ips"/>
+			</sourceReference>
+		</resource>		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/laboratory-and-vital-signs-observations"/>
+			</sourceReference>
+		</resource>	
+    
+    
+    	<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/laboratory-tests-and-panels-uv-ips"/>
+			</sourceReference>
+		</resource>	
+    
+  
+     
+    	<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/lab-result-coded-value-uv-ips"/>
+			</sourceReference>
+		</resource>		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/medical-devices-uv-ips"/>
+			</sourceReference>
+		</resource>		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/medicine-active-substances-uv-ips"/>
+			</sourceReference>
+		</resource>		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/medicine-doseform"/>
+			</sourceReference>
+		</resource>		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/medicine-route-of-administration"/>
+			</sourceReference>
+		</resource>		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/observation-codes-uv-ips"/>
+			</sourceReference>
+		</resource>		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/pathology-and-vital-signs-observations"/>
+			</sourceReference>
+		</resource>		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/pathology-result-coded-value-uv-ips"/>
+			</sourceReference>
+		</resource>	
+    
+    
+    	<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/personal-relationship-uv-ips"/>
+			</sourceReference>
+		</resource>	
+   
+    
+    	<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/problem-type-uv-ips"/>
+			</sourceReference>
+		</resource>		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/procedures-uv-ips"/>
+			</sourceReference>
+		</resource>		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/quantityunits"/>
+			</sourceReference>
+		</resource>		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/strengthdenominator"/>
+			</sourceReference>
+		</resource>		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/strengthnumerator"/>
+			</sourceReference>
+		</resource>		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/sub-observation-category-uv-ips"/>
+			</sourceReference>
+		</resource>		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/target-site-uv-ips"/>
+			</sourceReference>
+		</resource>		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/vaccines-uv-ips"/>
+			</sourceReference>
+		</resource>		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="ValueSet/whoatc-uv-ips"/>
+			</sourceReference>
 		</resource>
+
+             
+    <!-- ADDED BY GIORGIO END -->
+    
+  
+   
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="CodeSystem/absent-unknown-uv-ips"/>
 			</sourceReference>
 		</resource>
+    
+    
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/condition-uv-ips"/>
 			</sourceReference>
 		</resource>
+    
+
+    
 		<resource>
 			<example value="false"/>
 			<sourceReference>
@@ -70,18 +297,30 @@
 				<reference value="StructureDefinition/composition-uv-ips"/>
 			</sourceReference>
 		</resource>
+    
+
+    
+
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/device-observer-uv-ips"/>
 			</sourceReference>
 		</resource>
+    
+
+    
+    
+
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/deviceusestatement-uv-ips"/>
 			</sourceReference>
 		</resource>
+    
+
+    
 		<resource>
 			<example value="false"/>
 			<sourceReference>
@@ -94,30 +333,46 @@
 				<reference value="StructureDefinition/imagingstudy-uv-ips"/>
 			</sourceReference>
 		</resource>
+    
+  
+    
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/immunization-uv-ips"/>
 			</sourceReference>
 		</resource>
+    
+
+    
+  
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/medicationstatement-uv-ips"/>
 			</sourceReference>
 		</resource>
+    
+  
+    
+  
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/medication-uv-ips"/>
 			</sourceReference>
 		</resource>
+    
+  
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/narrative-uv-ips"/>
 			</sourceReference>
 		</resource>
+    
+   
+    
 		<resource>
 			<example value="false"/>
 			<sourceReference>
@@ -130,24 +385,36 @@
 				<reference value="StructureDefinition/observation-attachment-uv-ips"/>
 			</sourceReference>
 		</resource>
+    
+ 
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/observation-imaging-uv-ips"/>
 			</sourceReference>
 		</resource>
+
+    
+  
+    
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/observation-laboratory-uv-ips"/>
 			</sourceReference>
 		</resource>
+    
+
+    
+
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/observation-member-imaging-uv-ips"/>
 			</sourceReference>
 		</resource>
+  
+    
 		<resource>
 			<example value="false"/>
 			<sourceReference>
@@ -160,12 +427,16 @@
 				<reference value="StructureDefinition/observation-member-pathology-uv-ips"/>
 			</sourceReference>
 		</resource>
+  
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/observation-pathology-uv-ips"/>
 			</sourceReference>
 		</resource>
+    
+  
+    
 		<resource>
 			<example value="false"/>
 			<sourceReference>
@@ -196,18 +467,24 @@
 				<reference value="StructureDefinition/observation-uv-ips"/>
 			</sourceReference>
 		</resource>
+    
+  
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/organization-laboratory-uv-ips"/>
 			</sourceReference>
 		</resource>
-		<resource>
+    
+   		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/organization-observation-uv-ips"/>
 			</sourceReference>
 		</resource>
+    
+
+    
 		<resource>
 			<example value="false"/>
 			<sourceReference>
@@ -226,13 +503,18 @@
 				<reference value="StructureDefinition/practitioner-observation-uv-ips"/>
 			</sourceReference>
 		</resource>
+    
+  
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/procedure-uv-ips"/>
 			</sourceReference>
 		</resource>
-		<resource>
+		
+   
+    
+    <resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/quantity-uv-ips"/>
@@ -256,24 +538,32 @@
 				<reference value="StructureDefinition/specimen-uv-ips"/>
 			</sourceReference>
 		</resource>
+    
+   
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/statement-uv-ips"/>
 			</sourceReference>
 		</resource>
+    
+    
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/targetdiseases-immunization-uv-ips"/>
 			</sourceReference>
 		</resource>
+    
+  
+    
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/allergyintolerance-uv-ips"/>
 			</sourceReference>
 		</resource>
+
 
 <!-- end added by Giorgio -->
 
