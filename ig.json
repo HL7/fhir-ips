@@ -14,8 +14,39 @@
   "valuesets": [
     "condition-severity-uv-ips",
     "absent-or-unknown-problems-uv-ips",
-    "absent-or-unknown-procedures-uv-ips"
-  ],
+    "absent-or-unknown-procedures-uv-ips",
+    “absent-or-unknown-allergies-uv-ips”,
+    “absent-or-unknown-devices-uv-ips”,
+    “absent-or-unknown-immunization-uv-ips”,
+    “absent-or-unknown-medication-uv-ips”,
+    “allergy-intolerance-substance-condition-uv-ips”,
+    “condition-severity-uv-ips”,
+    “core-problem-list-disorders-uv-ips”,
+    “current-smoking-status-uv-ips”,
+    “edd-method-uv-ips”,    
+    “healthcare-professional-roles-uv-ips“,
+    “imaging-observations-uv-ips”,
+    “laboratory-and-vital-signs-observations”,
+    “laboratory-tests-and-panels-uv-ips“,
+    “lab-result-coded-value-uv-ips”,
+    “medical-devices-uv-ips”,
+    “medicine-active-substances-uv-ips”,
+    “medicine-doseform”,
+    “medicine-route-of-administration”,
+    “observation-codes-uv-ips”,
+    “pathology-and-vital-signs-observations”,
+    “pathology-result-coded-value-uv-ips”,
+    “personal-relationship-uv-ips“,
+    “problem-type-uv-ips”,
+    “procedures-uv-ips”,
+    “quantityUnits”,
+    “strengthDenominator”,
+    “strengthNumerator”,
+    “sub-observation-category-uv-ips”,
+    “target-site-uv-ips”,
+    “vaccines-uv-ips”,
+    “whoatc-uv-ips”
+      ],
   "paths": {
     "pages": [
       "framework",
@@ -239,6 +270,133 @@
       "defns": "StructureDefinition-targetdiseases-immunization-uv-ips-definitions.html",
       "source": "targetDiseases-immunization-uv-ips.structuredefinition.xml",
       "base": "StructureDefinition-targetdiseases-immunization-uv-ips.html"
+    },    "ValueSet/absent-or-unknown-allergies-uv-ips": {
+      "source": "valueset-absent-or-unknown-allergies-uv-ips.xml",
+      "base": "ValueSet-absent-or-unknown-allergies-uv-ips.html"
+    },
+    "ValueSet/absent-or-unknown-devices-uv-ips": {
+      "source": "valueset-absent-or-unknown-devices-uv-ips.xml",
+      "base": "ValueSet-absent-or-unknown-devices-uv-ips.html"
+    },
+    "ValueSet/absent-or-unknown-immunization-uv-ips": {
+      "source": "valueset-absent-or-unknown-immunization-uv-ips.xml",
+      "base": "ValueSet-absent-or-unknown-immunization-uv-ips.html"
+    },
+    "ValueSet/absent-or-unknown-medication-uv-ips": {
+      "source": "valueset-absent-or-unknown-medication-uv-ips.xml",
+      "base": "ValueSet-absent-or-unknown-medication-uv-ips.html"
+    },
+    "ValueSet/absent-or-unknown-procedures-uv-ips": {
+      "source": "valueset-absent-or-unknown-procedures-uv-ips.xml",
+      "base": "ValueSet-absent-or-unknown-procedures-uv-ips.html"
+    },
+    "ValueSet/allergy-intolerance-substance-condition-uv-ips": {
+      "source": "valueset-allergy-intolerance-substance-condition-uv-ips.xml",
+      "base": "ValueSet-allergy-intolerance-substance-condition-uv-ips.html"
+    },
+    "ValueSet/condition-severity-uv-ips": {
+      "source": "valueset-condition-severity-uv-ips.xml",
+      "base": "ValueSet-condition-severity-uv-ips.html"
+    },
+    "ValueSet/core-problem-list-disorders-uv-ips": {
+      "source": "valueset-core-problem-list-disorders-uv-ips.xml",
+      "base": "ValueSet-core-problem-list-disorders-uv-ips.html"
+    },
+    "ValueSet/current-smoking-status-uv-ips": {
+      "source": "valueset-current-smoking-status-uv-ips.xml",
+      "base": "ValueSet-current-smoking-status-uv-ips.html"
+    },
+    "ValueSet/edd-method-uv-ips": {
+      "source": "valueset-edd-method-uv-ips.xml",
+      "base": "ValueSet-edd-method-uv-ips.html"
+    },
+    "ValueSet/healthcare-professional-roles-uv-ips": {
+      "source": "valueset-healthcare-professional-roles-uv-ips.xml",
+      "base": "ValueSet-healthcare-professional-roles-uv-ips.html"
+    },
+    "ValueSet/imaging-observations-uv-ips": {
+      "source": "valueset-imaging-observations-uv-ips.xml",
+      "base": "ValueSet-imaging-observations-uv-ips.html"
+    },
+    "ValueSet/laboratory-and-vital-signs-observations": {
+      "source": "valueset-laboratory-and-vital-signs-observations.xml",
+      "base": "ValueSet-laboratory-and-vital-signs-observations.html"
+    },
+    "ValueSet/laboratory-tests-and-panels-uv-ips": {
+      "source": "valueset-laboratory-tests-and-panels-uv-ips.xml",
+      "base": "ValueSet-laboratory-tests-and-panels-uv-ips.html"
+    },
+    "ValueSet/lab-result-coded-value-uv-ips": {
+      "source": "valueset-lab-result-coded-value-uv-ips.xml",
+      "base": "ValueSet-lab-result-coded-value-uv-ips.html"
+    },
+    "ValueSet/medical-devices-uv-ips": {
+      "source": "valueset-medical-devices-uv-ips.xml",
+      "base": "ValueSet-medical-devices-uv-ips.html"
+    },
+    "ValueSet/medicine-active-substances-uv-ips": {
+      "source": "valueset-medicine-active-substances-uv-ips.xml",
+      "base": "ValueSet-medicine-active-substances-uv-ips.html"
+    },
+    "ValueSet/medicine-doseform": {
+      "source": "valueset-medicine-doseform.xml",
+      "base": "ValueSet-medicine-doseform.html"
+    },
+    "ValueSet/medicine-route-of-administration": {
+      "source": "valueset-medicine-route-of-administration.xml",
+      "base": "ValueSet-medicine-route-of-administration.html"
+    },
+    "ValueSet/observation-codes-uv-ips": {
+      "source": "valueset-observation-codes-uv-ips.xml",
+      "base": "ValueSet-observation-codes-uv-ips.html"
+    },
+    "ValueSet/pathology-and-vital-signs-observations": {
+      "source": "valueset-pathology-and-vital-signs-observations.xml",
+      "base": "ValueSet-pathology-and-vital-signs-observations.html"
+    },
+    "ValueSet/pathology-result-coded-value-uv-ips": {
+      "source": "valueset-pathology-result-coded-value-uv-ips.xml",
+      "base": "ValueSet-pathology-result-coded-value-uv-ips.html"
+    },
+    "ValueSet/personal-relationship-uv-ips": {
+      "source": "valueset-personal-relationship-uv-ips.xml",
+      "base": "ValueSet-personal-relationship-uv-ips.html"
+    },
+    "ValueSet/problem-type-uv-ips": {
+      "source": "valueset-problem-type-uv-ips.xml",
+      "base": "ValueSet-problem-type-uv-ips.html"
+    },
+    "ValueSet/procedures-uv-ips": {
+      "source": "valueset-procedures-uv-ips.xml",
+      "base": "ValueSet-procedures-uv-ips.html"
+    },
+    "ValueSet/quantityunits": {
+      "source": "valueset-quantityunits.xml",
+      "base": "ValueSet-quantityunits.html"
+    },
+    "ValueSet/strengthdenominator": {
+      "source": "valueset-strengthdenominator.xml",
+      "base": "ValueSet-strengthdenominator.html"
+    },
+    "ValueSet/strengthnumerator": {
+      "source": "valueset-strengthnumerator.xml",
+      "base": "ValueSet-strengthnumerator.html"
+    },
+    "ValueSet/sub-observation-category-uv-ips": {
+      "source": "valueset-sub-observation-category-uv-ips.xml",
+      "base": "ValueSet-sub-observation-category-uv-ips.html"
+    },
+    "ValueSet/target-site-uv-ips": {
+      "source": "valueset-target-site-uv-ips.xml",
+      "base": "ValueSet-target-site-uv-ips.html"
+    },
+    "ValueSet/vaccines-uv-ips": {
+      "source": "valueset-vaccines-uv-ips.xml",
+      "base": "ValueSet-vaccines-uv-ips.html"
+    },
+    "ValueSet/whoatc-uv-ips": {
+      "source": "valueset-whoatc-uv-ips.xml",
+      "base": "ValueSet-whoatc-uv-ips.html"
     },
           "StructureDefinition/allergyintolerance-uv-ips": {
       "defns": "StructureDefinition-allergyintolerance-uv-ips-definitions.html",
