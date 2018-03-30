@@ -274,7 +274,7 @@ can only resize using html  or css ;-(
 &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition">StructureDefinition</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.id">id</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;allergyintolerance-uv-ips&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.meta">meta</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#instant">value</a>=&quot;2018-02-14T15:58:02.283+01:00&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#instant">value</a>=&quot;2018-02-14T08:58:02.283-06:00&quot;/&gt;
   &lt;/meta&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
@@ -287,7 +287,7 @@ can only resize using html  or css ;-(
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;AllergyIntolerance-uv-ips&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.title">title</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Allergy Intolerance&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">value</a>=&quot;2018-02-14T14:57:18+01:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">value</a>=&quot;2018-02-14T07:57:18-06:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.description">description</a>
                <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;This profile represents the constraints applied to the AllergyIntolerance resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an allergy or intolerance is represented in the patient summary as an instance of an AllergyIntolerance resource constrained by this profile.&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.jurisdiction">jurisdiction</a>&gt;
@@ -3463,11 +3463,7 @@ Systems that capture a severity at the condition level are actually representing
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
                   <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;Code for an allergy or intolerance statement (either a positive or a negated/excluded statement).  This may be a code for a substance or pharmaceutical product that is considered to be responsible for the adverse reaction risk (e.g., &amp;quot;Latex&amp;quot;), an allergy or intolerance condition (e.g., &amp;quot;Latex allergy&amp;quot;), or a negated/excluded code for a specific substance or class (e.g., &amp;quot;No latex allergy&amp;quot;) or a general or categorical negated statement (e.g.,  &amp;quot;No known allergy&amp;quot;, &amp;quot;No known drug allergies&amp;quot;).&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>
-               <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;It is strongly recommended that this element be populated using a terminology, where possible. For example, some terminologies used include RxNorm, SNOMED CT, DM+D, NDFRT, ICD-9, IDC-10, UNI, ATC and CPT. Plain text should only be used if there is no appropriate terminology available. Additional details can be specified in the text.
-
-When a substance or product code is specified for the &amp;#39;code&amp;#39; element, the &amp;quot;default&amp;quot; semantic context is that this is a positive statement of an allergy or intolerance (depending on the value of the &amp;#39;type&amp;#39; element, if present) condition to the specified substance/product.  In the corresponding SNOMED CT allergy model, the specified substance/product is the target (destination) of the &amp;quot;Causative agent&amp;quot; relationship.
-
-The &amp;#39;substanceExposureRisk&amp;#39; extension is available as a structured and more flexible alternative to the &amp;#39;code&amp;#39; element for making positive or negative allergy or intolerance statements.  This extension provides the capability to make &amp;quot;no known allergy&amp;quot; (or &amp;quot;no risk of adverse reaction&amp;quot;) statements regarding any coded substance/product (including cases when a pre-coordinated &amp;quot;no allergy to x&amp;quot; concept for that substance/product does not exist).  If the &amp;#39;substanceExposureRisk&amp;#39; extension is present, the AllergyIntolerance.code element SHALL be omitted.&quot;/&gt;
+               <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;It is strongly recommended that this element be populated using a terminology, where possible. For example, some terminologies used include RxNorm, SNOMED CT, DM+D, NDFRT, ICD-9, IDC-10, UNI, ATC and CPT. Plain text should only be used if there is no appropriate terminology available. Additional details can be specified in the text.When a substance or product code is specified for the &amp;#39;code&amp;#39; element, the &amp;quot;default&amp;quot; semantic context is that this is a positive statement of an allergy or intolerance (depending on the value of the &amp;#39;type&amp;#39; element, if present) condition to the specified substance/product.  In the corresponding SNOMED CT allergy model, the specified substance/product is the target (destination) of the &amp;quot;Causative agent&amp;quot; relationship.The &amp;#39;substanceExposureRisk&amp;#39; extension is available as a structured and more flexible alternative to the &amp;#39;code&amp;#39; element for making positive or negative allergy or intolerance statements.  This extension provides the capability to make &amp;quot;no known allergy&amp;quot; (or &amp;quot;no risk of adverse reaction&amp;quot;) statements regarding any coded substance/product (including cases when a pre-coordinated &amp;quot;no allergy to x&amp;quot; concept for that substance/product does not exist).  If the &amp;#39;substanceExposureRisk&amp;#39; extension is present, the AllergyIntolerance.code element SHALL be omitted.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.alias">alias</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Code&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">value</a>=&quot;1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.max">max</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
@@ -3525,17 +3521,7 @@ The &amp;#39;substanceExposureRisk&amp;#39; extension is available as a structur
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;substance/product:
-
-.participation[typeCode=CAGNT].role[classCode=ADMM].player[classCode=MAT, determinerCode=KIND, code &amp;lt;= ExposureAgentEntityType]
-
-negated/excluded substance/product:
-
-.participation[typeCode=CAGNT, negationInd=true].role[classCode=ADMM].player[classCode=MAT, determinerCode=KIND, code &amp;lt;= ExposureAgentEntityType]
-
-positive or negated/excluded condition/situation:
-
-Observation.code=ASSERTION; Observation.value&quot;/&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;substance/product:.participation[typeCode=CAGNT].role[classCode=ADMM].player[classCode=MAT, determinerCode=KIND, code &amp;lt;= ExposureAgentEntityType]negated/excluded substance/product:.participation[typeCode=CAGNT, negationInd=true].role[classCode=ADMM].player[classCode=MAT, determinerCode=KIND, code &amp;lt;= ExposureAgentEntityType]positive or negated/excluded condition/situation:Observation.code=ASSERTION; Observation.value&quot;/&gt;
       &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;w5&quot;/&gt;
@@ -4106,17 +4092,7 @@ Observation.code=ASSERTION; Observation.value&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;substance/product:
-
-.participation[typeCode=CAGNT].role[classCode=ADMM].player[classCode=MAT, determinerCode=KIND, code &amp;lt;= ExposureAgentEntityType]
-
-negated/excluded substance/product:
-
-.participation[typeCode=CAGNT, negationInd=true].role[classCode=ADMM].player[classCode=MAT, determinerCode=KIND, code &amp;lt;= ExposureAgentEntityType]
-
-positive or negated/excluded condition/situation:
-
-Observation.code=ASSERTION; Observation.value&quot;/&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;substance/product:.participation[typeCode=CAGNT].role[classCode=ADMM].player[classCode=MAT, determinerCode=KIND, code &amp;lt;= ExposureAgentEntityType]negated/excluded substance/product:.participation[typeCode=CAGNT, negationInd=true].role[classCode=ADMM].player[classCode=MAT, determinerCode=KIND, code &amp;lt;= ExposureAgentEntityType]positive or negated/excluded condition/situation:Observation.code=ASSERTION; Observation.value&quot;/&gt;
       &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;w5&quot;/&gt;
@@ -4692,17 +4668,7 @@ Observation.code=ASSERTION; Observation.value&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;rim&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;substance/product:
-
-.participation[typeCode=CAGNT].role[classCode=ADMM].player[classCode=MAT, determinerCode=KIND, code &amp;lt;= ExposureAgentEntityType]
-
-negated/excluded substance/product:
-
-.participation[typeCode=CAGNT, negationInd=true].role[classCode=ADMM].player[classCode=MAT, determinerCode=KIND, code &amp;lt;= ExposureAgentEntityType]
-
-positive or negated/excluded condition/situation:
-
-Observation.code=ASSERTION; Observation.value&quot;/&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;substance/product:.participation[typeCode=CAGNT].role[classCode=ADMM].player[classCode=MAT, determinerCode=KIND, code &amp;lt;= ExposureAgentEntityType]negated/excluded substance/product:.participation[typeCode=CAGNT, negationInd=true].role[classCode=ADMM].player[classCode=MAT, determinerCode=KIND, code &amp;lt;= ExposureAgentEntityType]positive or negated/excluded condition/situation:Observation.code=ASSERTION; Observation.value&quot;/&gt;
       &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;w5&quot;/&gt;
@@ -8827,7 +8793,7 @@ Formats: <a href="StructureDefinition-allergyintolerance-uv-ips.html">Narrative<
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Fri, Mar 30, 2018 08:02+0200. |
+            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Fri, Mar 30, 2018 11:34-0500. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

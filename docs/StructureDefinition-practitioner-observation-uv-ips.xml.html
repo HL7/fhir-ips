@@ -274,7 +274,7 @@ can only resize using html  or css ;-(
 &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition">StructureDefinition</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.id">id</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;practitioner-observation-uv-ips&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.meta">meta</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#instant">value</a>=&quot;2018-02-15T16:53:57.291+01:00&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#instant">value</a>=&quot;2018-02-15T09:53:57.291-06:00&quot;/&gt;
   &lt;/meta&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
@@ -286,7 +286,7 @@ can only resize using html  or css ;-(
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.version">version</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Practitioner-observation-uv-ips&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">value</a>=&quot;2018-02-15T16:36:51+01:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">value</a>=&quot;2018-02-15T09:36:51-06:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.jurisdiction">jurisdiction</a>&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://unstats.un.org/unsd/methods/m49/m49.htm&quot;/&gt;
@@ -2060,9 +2060,7 @@ Applications converting a logical reference to a literal reference may choose to
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
                   <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;Whether this practitioner&amp;#39;s record is in active use.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>
-               <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;Default is true. 
-
-If the practitioner is not in use by one organization, then it should mark the period on the PractitonerRole with an end date (even if they are active) as they may be active in another role.&quot;/&gt;
+               <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;Default is true. If the practitioner is not in use by one organization, then it should mark the period on the PractitonerRole with an end date (even if they are active) as they may be active in another role.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.requirements">requirements</a>
                     <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;Need to be able to mark a practitioner record as not to be used because it was created in error.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
@@ -2103,15 +2101,7 @@ If the practitioner is not in use by one organization, then it should mark the p
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">short</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;The name(s) associated with the practitioner&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;The name(s) associated with the practitioner.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>
-               <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.
-
-In general select the value to be used in the ResourceReference.display based on this:
-
-1. There is more than 1 name
-2. Use = usual
-3. Period is current to the date of the usage
-4. Use = official
-5. Other order as decided by internal business rules.&quot;/&gt;
+               <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.In general select the value to be used in the ResourceReference.display based on this:1. There is more than 1 name2. Use = usual3. Period is current to the date of the usage4. Use = official5. Other order as decided by internal business rules.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.requirements">requirements</a>
                     <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
@@ -2746,9 +2736,7 @@ In general select the value to be used in the ResourceReference.display based on
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
                   <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;A contact detail for the practitioner, e.g. a telephone number or an email address.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>
-               <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;Person may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently, and also to help with identification
-
-These typically will have home numbers, or mobile numbers that are not role specific.&quot;/&gt;
+               <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;Person may have multiple ways to be contacted with different uses or applicable periods.  May need to have options for contacting the person urgently, and also to help with identificationThese typically will have home numbers, or mobile numbers that are not role specific.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.requirements">requirements</a>
                     <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;Need to know how to reach a practitioner independent to any roles the practitioner may have.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
@@ -3306,8 +3294,7 @@ These typically will have home numbers, or mobile numbers that are not role spec
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.short">short</a>
              <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Address(es) of the practitioner that are not role specific (typically home address)&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
-                  <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;Address(es) of the practitioner that are not role specific (typically home address). 
-Work addresses are not typically entered in this property as they are usually role dependent.&quot;/&gt;
+                  <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;Address(es) of the practitioner that are not role specific (typically home address). Work addresses are not typically entered in this property as they are usually role dependent.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>
                <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;The PractitionerRole does not have an address value on it, as it is expected that the location property be used for this purpose (which has an address).&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.requirements">requirements</a>
@@ -3919,8 +3906,8 @@ Work addresses are not typically entered in this property as they are usually ro
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.example">example</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.example.label">label</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;General&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.example.value[x]">valuePeriod</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Period#Period.start">start</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">value</a>=&quot;2010-03-23T00:00:00+01:00&quot;/&gt;
-          &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Period#Period.end">end</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">value</a>=&quot;2010-07-01T00:00:00+02:00&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Period#Period.start">start</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">value</a>=&quot;2010-03-23T00:00:00-05:00&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Period#Period.end">end</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">value</a>=&quot;2010-07-01T00:00:00-05:00&quot;/&gt;
         &lt;/valuePeriod&gt;
       &lt;/example&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
@@ -7935,7 +7922,7 @@ Formats: <a href="StructureDefinition-practitioner-observation-uv-ips.html">Narr
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Fri, Mar 30, 2018 08:02+0200. |
+            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Fri, Mar 30, 2018 11:34-0500. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

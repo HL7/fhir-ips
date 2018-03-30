@@ -16,7 +16,7 @@
   fhir:StructureDefinition.version [ fhir:value "1"];
   fhir:StructureDefinition.name [ fhir:value "Participant-uv-ips"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2017-12-14T10:54:03-07:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2017-12-14T11:54:03-06:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Lantana Consulting Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -266,6 +266,10 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/PractitionerRole" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Organization" ]
        ];
        fhir:ElementDefinition.condition [
          fhir:value "ele-1";
@@ -305,6 +309,10 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/PractitionerRole" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Organization" ]
        ]
      ]
   ] .

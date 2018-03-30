@@ -14,6 +14,15 @@
     <name value="base"/>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="IPS-examples-Bundle-01.html"/>
+      </extension>
+      <example value="true"/>
+      <sourceReference>
+        <reference value="Bundle/IPS-examples-Bundle-01"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-absent-or-unknown-allergies-uv-ips.html"/>
       </extension>
       <example value="false"/>
@@ -320,29 +329,11 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-translation.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/translation"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-translateddiv-uv-ips.html"/>
       </extension>
       <example value="false"/>
       <sourceReference>
         <reference value="StructureDefinition/translateddiv-uv-ips"/>
-      </sourceReference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="StructureDefinition-partof-extension.html"/>
-      </extension>
-      <example value="false"/>
-      <sourceReference>
-        <reference value="StructureDefinition/partof-extension"/>
       </sourceReference>
     </resource>
     <resource>

@@ -16,7 +16,7 @@
   fhir:StructureDefinition.version [ fhir:value "1"];
   fhir:StructureDefinition.name [ fhir:value "Patient-uv-ips"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-03-20T09:43:56-06:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2018-03-20T10:43:56-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.description [ fhir:value "This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide."];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
@@ -4349,8 +4349,8 @@
          fhir:index 0;
          fhir:ElementDefinition.example.label [ fhir:value "General" ];
          fhir:ElementDefinition.example.valuePeriod [
-           fhir:Period.start [ fhir:value "2010-03-23T00:00:00-06:00"^^xsd:dateTime ];
-           fhir:Period.end [ fhir:value "2010-07-01T00:00:00-06:00"^^xsd:dateTime ]
+           fhir:Period.start [ fhir:value "2010-03-23T00:00:00-05:00"^^xsd:dateTime ];
+           fhir:Period.end [ fhir:value "2010-07-01T00:00:00-05:00"^^xsd:dateTime ]
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -8807,8 +8807,8 @@
          fhir:index 0;
          fhir:ElementDefinition.example.label [ fhir:value "General" ];
          fhir:ElementDefinition.example.valuePeriod [
-           fhir:Period.start [ fhir:value "2010-03-23T00:00:00-06:00"^^xsd:dateTime ];
-           fhir:Period.end [ fhir:value "2010-07-01T00:00:00-06:00"^^xsd:dateTime ]
+           fhir:Period.start [ fhir:value "2010-03-23T00:00:00-05:00"^^xsd:dateTime ];
+           fhir:Period.end [ fhir:value "2010-07-01T00:00:00-05:00"^^xsd:dateTime ]
          ]
        ];
        fhir:ElementDefinition.condition [
@@ -12731,6 +12731,10 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Organization" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Practitioner" ]
        ];
        fhir:ElementDefinition.condition [
          fhir:value "ele-1";
@@ -13535,6 +13539,10 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Patient" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/RelatedPerson" ]
        ];
        fhir:ElementDefinition.condition [
          fhir:value "ele-1";

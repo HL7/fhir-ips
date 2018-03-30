@@ -12,11 +12,7 @@
   <sch:pattern>
     <sch:title>f:Organization</sch:title>
     <sch:rule context="f:Organization">
-      <sch:assert test="count(f:active) &lt;= 0">active: maximum cardinality of 'active' is 0</sch:assert>
-      <sch:assert test="count(f:alias) &lt;= 0">alias: maximum cardinality of 'alias' is 0</sch:assert>
-      <sch:assert test="count(f:partOf) &lt;= 0">partOf: maximum cardinality of 'partOf' is 0</sch:assert>
-      <sch:assert test="count(f:contact) &lt;= 0">contact: maximum cardinality of 'contact' is 0</sch:assert>
-      <sch:assert test="count(f:endpoint) &lt;= 0">endpoint: maximum cardinality of 'endpoint' is 0</sch:assert>
+      <sch:assert test="count(f:name) &gt;= 1">name: minimum cardinality of 'name' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

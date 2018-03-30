@@ -274,7 +274,7 @@ can only resize using html  or css ;-(
 &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition">StructureDefinition</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.id">id</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;observation-member-imaging-uv-ips&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.meta">meta</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#instant">value</a>=&quot;2018-02-20T10:43:18.600+01:00&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.lastUpdated">lastUpdated</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#instant">value</a>=&quot;2018-02-20T03:43:18.600-06:00&quot;/&gt;
   &lt;/meta&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
@@ -306,7 +306,7 @@ can only resize using html  or css ;-(
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.version">version</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Observation-member-imaging-uv-ips&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">value</a>=&quot;2018-02-14T13:42:57+01:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">value</a>=&quot;2018-02-14T06:42:57-06:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.jurisdiction">jurisdiction</a>&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://unstats.un.org/unsd/methods/m49/m49.htm&quot;/&gt;
@@ -4041,9 +4041,7 @@ Applications converting a logical reference to a literal reference may choose to
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
                   <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;The patient, or group of patients, location, or device whose characteristics (direct or indirect) are described by the observation and into whose record the observation is placed.  Comments: Indirect characteristics may be those of a specimen, fetus, donor,  other observer (for example a relative or EMT), or any observation made about the subject.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>
-               <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;One would expect this element to be a cardinality  of 1..1.  The only circumstance in which the subject can be missing is when the observation is made by a device that does not know the patient. In this case, the observation SHALL be matched to a patient through some context/channel matching technique, and at this point, the observation should be updated.
-
-If the target of the observation is different than the subject, the general extension [observation-focal-subject](extension-observation-focal-subject.html).  may be used.  However, the distinction between the patient&amp;#39;s own value for an observation versus that of the fetus, or the donor or blood product unit, etc., are often specified in the observation code.&quot;/&gt;
+               <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;One would expect this element to be a cardinality  of 1..1.  The only circumstance in which the subject can be missing is when the observation is made by a device that does not know the patient. In this case, the observation SHALL be matched to a patient through some context/channel matching technique, and at this point, the observation should be updated.If the target of the observation is different than the subject, the general extension [observation-focal-subject](extension-observation-focal-subject.html).  may be used.  However, the distinction between the patient&amp;#39;s own value for an observation versus that of the fetus, or the donor or blood product unit, etc., are often specified in the observation code.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.requirements">requirements</a>
                     <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;Observations have no value if you don&amp;#39;t know who or what they&amp;#39;re about.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">value</a>=&quot;1&quot;/&gt;
@@ -4983,10 +4981,7 @@ Applications converting a logical reference to a literal reference may choose to
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.definition">definition</a>
                   <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;The information determined as a result of making the observation, if the information has a simple value.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.comment">comment</a>
-               <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;Normally, an observation will have either a single value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and related observations (for an Apgar score, the observations from which the measure is derived). If a value is present, the datatype for this element should be determined by Observation.code. This element has a variable name depending on the type as follows: valueQuantity, valueCodeableConcept, valueString, valueBoolean, valueRange, valueRatio, valueSampledData, valueAttachment, valueTime, valueDateTime, or valuePeriod. (The name format is &amp;quot;&amp;#39;value&amp;#39; + the type name&amp;quot; with a capital on the first letter of the type).
-
-
-If the data element is usually coded or if the type associated with the Observation.value defines a coded value, use CodeableConcept instead of string datatype even if the value is uncoded text.  A value set is bound to the ValueCodeableConcept element.    For further discussion and examples see the  [notes section](observation.html#notes) below.&quot;/&gt;
+               <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;Normally, an observation will have either a single value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and related observations (for an Apgar score, the observations from which the measure is derived). If a value is present, the datatype for this element should be determined by Observation.code. This element has a variable name depending on the type as follows: valueQuantity, valueCodeableConcept, valueString, valueBoolean, valueRange, valueRatio, valueSampledData, valueAttachment, valueTime, valueDateTime, or valuePeriod. (The name format is &amp;quot;&amp;#39;value&amp;#39; + the type name&amp;quot; with a capital on the first letter of the type).If the data element is usually coded or if the type associated with the Observation.value defines a coded value, use CodeableConcept instead of string datatype even if the value is uncoded text.  A value set is bound to the ValueCodeableConcept element.    For further discussion and examples see the  [notes section](observation.html#notes) below.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.requirements">requirements</a>
                     <a href="http://hl7.org/fhir/STU3/datatypes.html#markdown">value</a>=&quot;An observation exists to have a value, though it may not if it is in error, or if it represents a group of observations.&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.min">min</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#unsignedInt">value</a>=&quot;0&quot;/&gt;
@@ -8900,13 +8895,7 @@ Applications converting a logical reference to a literal reference may choose to
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;sct-concept&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;&amp;lt; 260245000 |Findings values| OR  
-&amp;lt; 365860008 |General clinical state finding| 
-OR 
-&amp;lt; 250171008 |Clinical history or observation findings| OR  
-&amp;lt; 415229000 |Racial group| OR 
-&amp;lt; 365400002 |Finding of puberty stage| OR
-&amp;lt; 443938003 |Procedure carried out on subject|&quot;/&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;&amp;lt; 260245000 |Findings values| OR  &amp;lt; 365860008 |General clinical state finding| OR &amp;lt; 250171008 |Clinical history or observation findings| OR  &amp;lt; 415229000 |Racial group| OR &amp;lt; 365400002 |Finding of puberty stage| OR&amp;lt; 443938003 |Procedure carried out on subject|&quot;/&gt;
       &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
@@ -9474,13 +9463,7 @@ OR
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;sct-concept&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;&amp;lt; 260245000 |Findings values| OR  
-&amp;lt; 365860008 |General clinical state finding| 
-OR 
-&amp;lt; 250171008 |Clinical history or observation findings| OR  
-&amp;lt; 415229000 |Racial group| OR 
-&amp;lt; 365400002 |Finding of puberty stage| OR
-&amp;lt; 443938003 |Procedure carried out on subject|&quot;/&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;&amp;lt; 260245000 |Findings values| OR  &amp;lt; 365860008 |General clinical state finding| OR &amp;lt; 250171008 |Clinical history or observation findings| OR  &amp;lt; 415229000 |Racial group| OR &amp;lt; 365400002 |Finding of puberty stage| OR&amp;lt; 443938003 |Procedure carried out on subject|&quot;/&gt;
       &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
@@ -11611,8 +11594,7 @@ Applications converting a logical reference to a literal reference may choose to
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;sct-concept&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">map</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;&amp;lt; 363787002 |Observable entity| OR 
-&amp;lt; 386053000 |Evaluation procedure|&quot;/&gt;
+             <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;&amp;lt; 363787002 |Observable entity| OR &amp;lt; 386053000 |Evaluation procedure|&quot;/&gt;
       &lt;/mapping&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping">mapping</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">identity</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;v2&quot;/&gt;
@@ -13581,7 +13563,7 @@ Formats: <a href="StructureDefinition-observation-member-imaging-uv-ips.html">Na
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Fri, Mar 30, 2018 08:02+0200. |
+            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Fri, Mar 30, 2018 11:34-0500. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

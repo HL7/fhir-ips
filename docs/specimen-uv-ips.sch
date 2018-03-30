@@ -13,6 +13,11 @@
     <sch:title>f:Specimen</sch:title>
     <sch:rule context="f:Specimen">
       <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
+      <sch:assert test="count(f:receivedTime) &lt;= 0">receivedTime: maximum cardinality of 'receivedTime' is 0</sch:assert>
+      <sch:assert test="count(f:parent) &lt;= 0">parent: maximum cardinality of 'parent' is 0</sch:assert>
+      <sch:assert test="count(f:request) &lt;= 0">request: maximum cardinality of 'request' is 0</sch:assert>
+      <sch:assert test="count(f:processing) &lt;= 0">processing: maximum cardinality of 'processing' is 0</sch:assert>
+      <sch:assert test="count(f:container) &lt;= 0">container: maximum cardinality of 'container' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -627,7 +632,7 @@
     <sch:rule context="f:Specimen/f:subject">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:reference) &lt;= 1">reference: maximum cardinality of 'reference' is 1</sch:assert>
-      <sch:assert test="count(f:identifier) &lt;= 0">identifier: maximum cardinality of 'identifier' is 0</sch:assert>
+      <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:display) &lt;= 1">display: maximum cardinality of 'display' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -767,6 +772,13 @@
     <sch:title>Specimen.request.display</sch:title>
     <sch:rule context="f:Specimen/f:request/f:display">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Specimen/f:collection</sch:title>
+    <sch:rule context="f:Specimen/f:collection">
+      <sch:assert test="count(f:collector) &lt;= 0">collector: maximum cardinality of 'collector' is 0</sch:assert>
+      <sch:assert test="count(f:quantity) &lt;= 0">quantity: maximum cardinality of 'quantity' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

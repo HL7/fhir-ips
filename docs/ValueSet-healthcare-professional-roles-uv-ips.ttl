@@ -1,0 +1,234 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/ips/ValueSet/healthcare-professional-roles-uv-ips> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "healthcare-professional-roles-uv-ips"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/shareablevalueset";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IPSHealthcareProfessionalRoles</h2><div><p>IPS Healthcare Professional Roles</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.2.9.6.2.7</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>22</td><td>Health professionals</td><td/></tr><tr><td>221</td><td>Medical doctors</td><td/></tr><tr><td>2211</td><td>Generalist medical practitioners</td><td/></tr><tr><td>2212</td><td>Specialist medical practitioners</td><td/></tr><tr><td>222</td><td>Nursing and midwifery professionals</td><td/></tr><tr><td>2221</td><td>Nursing professionals</td><td/></tr><tr><td>2222</td><td>Midwifery professionals</td><td/></tr><tr><td>223</td><td>Traditional and complementary medicine professionals</td><td/></tr><tr><td>224</td><td>Paramedical practitioners</td><td/></tr><tr><td>225</td><td>Veterinarians</td><td/></tr><tr><td>226</td><td>Other health professionals</td><td/></tr><tr><td>2261</td><td>Dentists</td><td/></tr><tr><td>2262</td><td>Pharmacists</td><td/></tr><tr><td>2263</td><td>Environmental and occupational health and hygiene professionals</td><td/></tr><tr><td>2264</td><td>Physiotherapists</td><td/></tr><tr><td>2265</td><td>Dieticians and nutritionists</td><td/></tr><tr><td>2266</td><td>Audiologists and speech therapists</td><td/></tr><tr><td>2267</td><td>Optometrists and ophthalmic opticians</td><td/></tr><tr><td>2269</td><td>Health professionals not elsewhere classified</td><td/></tr><tr><td>32</td><td>Health associate professionals</td><td/></tr><tr><td>321</td><td>Medical and pharmaceutical technicians</td><td/></tr><tr><td>3211</td><td>Medical imaging and therapeutic equipment technicians</td><td/></tr><tr><td>3212</td><td>Medical and pathology laboratory technicians</td><td/></tr><tr><td>3213</td><td>Pharmaceutical technicians and assistants</td><td/></tr><tr><td>3214</td><td>Medical and dental prosthetic technicians</td><td/></tr><tr><td>322</td><td>Nursing and midwifery associate professionals</td><td/></tr><tr><td>3221</td><td>Nursing associate professionals</td><td/></tr><tr><td>3222</td><td>Midwifery associate professionals</td><td/></tr><tr><td>323</td><td>Traditional and complementary medicine associate professionals</td><td/></tr><tr><td>325</td><td>Other health associate professionals</td><td/></tr><tr><td>3251</td><td>Dental assistants and therapists</td><td/></tr><tr><td>3252</td><td>Medical records and health information technicians</td><td/></tr><tr><td>3253</td><td>Community health workers</td><td/></tr><tr><td>3254</td><td>Dispensing opticians</td><td/></tr><tr><td>3255</td><td>Physiotherapy technicians and assistants</td><td/></tr><tr><td>3256</td><td>Medical assistants</td><td/></tr><tr><td>3257</td><td>Environmental and occupational health inspectors and associates</td><td/></tr><tr><td>3258</td><td>Ambulance workers</td><td/></tr><tr><td>3259</td><td>Health associate professionals not elsewhere classified</td><td/></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/ips/ValueSet/healthcare-professional-roles-uv-ips"];
+  fhir:ValueSet.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "http://art-decor.org/ns/oids/vs" ];
+     fhir:Identifier.value [ fhir:value "2.16.840.1.113883.11.22.53" ]
+  ];
+  fhir:ValueSet.version [ fhir:value "1"];
+  fhir:ValueSet.name [ fhir:value "IPSHealthcareProfessionalRoles"];
+  fhir:ValueSet.title [ fhir:value "IPS Healthcare Professional Roles"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:ValueSet.date [ fhir:value "2018-03-30T11:34:46-05:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "HL7 International"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 International" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "phone" ];
+       fhir:ContactPoint.value [ fhir:value "+1 734 677 7777 " ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "fax" ];
+       fhir:ContactPoint.value [ fhir:value "+1 734 677 6622" ]
+     ], [
+       fhir:index 2;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "info@hl7.org" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "IPS Healthcare Professional Roles"];
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ];
+       fhir:Coding.display [ fhir:value "World" ]
+     ]
+  ];
+  fhir:ValueSet.immutable [ fhir:value "false"^^xsd:boolean];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:2.16.840.1.113883.2.9.6.2.7" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "22" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Health professionals" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "221" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medical doctors" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2211" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Generalist medical practitioners" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2212" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Specialist medical practitioners" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "222" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nursing and midwifery professionals" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2221" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nursing professionals" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2222" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Midwifery professionals" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "223" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Traditional and complementary medicine professionals" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "224" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Paramedical practitioners" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "225" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Veterinarians" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "226" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other health professionals" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2261" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dentists" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2262" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pharmacists" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2263" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Environmental and occupational health and hygiene professionals" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2264" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Physiotherapists" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2265" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dieticians and nutritionists" ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2266" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Audiologists and speech therapists" ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2267" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Optometrists and ophthalmic opticians" ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2269" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Health professionals not elsewhere classified" ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Health associate professionals" ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "321" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medical and pharmaceutical technicians" ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3211" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medical imaging and therapeutic equipment technicians" ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3212" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medical and pathology laboratory technicians" ]
+       ], [
+         fhir:index 23;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3213" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pharmaceutical technicians and assistants" ]
+       ], [
+         fhir:index 24;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3214" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medical and dental prosthetic technicians" ]
+       ], [
+         fhir:index 25;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "322" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nursing and midwifery associate professionals" ]
+       ], [
+         fhir:index 26;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3221" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nursing associate professionals" ]
+       ], [
+         fhir:index 27;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3222" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Midwifery associate professionals" ]
+       ], [
+         fhir:index 28;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "323" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Traditional and complementary medicine associate professionals" ]
+       ], [
+         fhir:index 29;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "325" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other health associate professionals" ]
+       ], [
+         fhir:index 30;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3251" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dental assistants and therapists" ]
+       ], [
+         fhir:index 31;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3252" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medical records and health information technicians" ]
+       ], [
+         fhir:index 32;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3253" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Community health workers" ]
+       ], [
+         fhir:index 33;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3254" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Dispensing opticians" ]
+       ], [
+         fhir:index 34;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3255" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Physiotherapy technicians and assistants" ]
+       ], [
+         fhir:index 35;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3256" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Medical assistants" ]
+       ], [
+         fhir:index 36;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3257" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Environmental and occupational health inspectors and associates" ]
+       ], [
+         fhir:index 37;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3258" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ambulance workers" ]
+       ], [
+         fhir:index 38;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3259" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Health associate professionals not elsewhere classified" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/ips/ValueSet/healthcare-professional-roles-uv-ips.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/ips/ValueSet/healthcare-professional-roles-uv-ips.ttl> .
+
+# -------------------------------------------------------------------------------------
+

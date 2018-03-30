@@ -215,8 +215,10 @@ can only resize using html  or css ;-(
   <li><a href="#general-principles" id="markdown-toc-general-principles">General Principles</a></li>
   <li><a href="#structuring-choices" id="markdown-toc-structuring-choices">Structuring Choices</a></li>
   <li><a href="#design-conventions-and-principles" id="markdown-toc-design-conventions-and-principles">Design Conventions and Principles</a>    <ul>
-      <li><a href="#representing-known-absent-and-not-known" id="markdown-toc-representing-known-absent-and-not-known">Representing “known absent” and “not known”</a></li>
-      <li><a href="#translation-of-designations-and-narratives" id="markdown-toc-translation-of-designations-and-narratives">Translation of designations and Narratives</a></li>
+      <li><a href="#representing-known-absent-and-not-known" id="markdown-toc-representing-known-absent-and-not-known">Representing “known absent” and “not known”</a>        <ul>
+          <li><a href="#translation-of-designations-and-narratives" id="markdown-toc-translation-of-designations-and-narratives">Translation of designations and Narratives</a></li>
+        </ul>
+      </li>
       <li><a href="#medicinal-product-identification" id="markdown-toc-medicinal-product-identification">Medicinal Product Identification</a></li>
       <li><a href="#provenance" id="markdown-toc-provenance">Provenance</a></li>
       <li><a href="#representation-of-names" id="markdown-toc-representation-of-names">Representation of Names</a></li>
@@ -225,18 +227,20 @@ can only resize using html  or css ;-(
   </li>
 </ul>
 
-<h2 id="general-principles">General Principles</h2>
+<h1 id="general-principles">General Principles</h1>
 
 <div class="image">
 <img src="assets/images/600px-IPS_principles.png" width="400" />
 <div>The IPS Principles</div>
 </div>
 
+<p>&lt;/br&gt;</p>
+
 <p>
 See additional documentation in the IPS Wiki <a href="http://international-patient-summary.net/mediawiki/index.php?title=IPS_implementationguide_1#General_Principles_for_this_Specification">here</a>.
 </p>
 
-<h2 id="structuring-choices">Structuring Choices</h2>
+<h1 id="structuring-choices">Structuring Choices</h1>
 
 <p>The International Patient Summary is specified as a templated document using HL7 CDA R2 and as profiles using FHIR. The expressiveness of SNOMED CT and other primary terminologies enables this specification to represent the two general categories “condition/activity unknown” and “condition/activity known absent” in a style which is more independent of the underlying syntax (CDA R2 or FHIR), as explained in further detail <a href="http://international-patient-summary.net/mediawiki/index.php?title=IPS_implementationguide_1#Representing_.22known_absent.22_and_.22not_known.22">here</a>.</p>
 
@@ -244,9 +248,9 @@ See additional documentation in the IPS Wiki <a href="http://international-patie
 
 <p>This specification (in common with the IPS CDA R2 specification) adopts <a href="https://art-decor.org">ART-DECOR®</a> as the primary source of terminologies for this Implementation Guide. terminologies.</p>
 
-<h2 id="design-conventions-and-principles">Design Conventions and Principles</h2>
+<h1 id="design-conventions-and-principles">Design Conventions and Principles</h1>
 
-<h3 id="representing-known-absent-and-not-known">Representing “known absent” and “not known”</h3>
+<h2 id="representing-known-absent-and-not-known">Representing “known absent” and “not known”</h2>
 
 <p>In line with the approach followed for the IPS CDA implementation Guide, we enforce by design that the “unknown” or “no information” expressions are explicity asserted in the resource referred in the entries and not by using the emptyReason attribute in the section.</p>
 
@@ -270,7 +274,7 @@ See additional documentation in the IPS Wiki <a href="http://international-patie
   <li>and the coding data type  (coding-uv-ips)</li>
 </ul>
 
-<h3 id="medicinal-product-identification">Medicinal Product Identification</h3>
+<h2 id="medicinal-product-identification">Medicinal Product Identification</h2>
 
 <p>A general introduction to the problem of cross-jurisdictional identification of medicinal product is provided in the <a href="http://international-patient-summary.net/mediawiki/index.php?title=IPS_Design_conventions_and_principles_1#Medicinal_Product_Identification">IPS CDA implementation guide</a></p>
 
@@ -278,7 +282,7 @@ See additional documentation in the IPS Wiki <a href="http://international-patie
 
 <p>The solution porposed for the FHIR IPS is slightly different from that adopted in the CDA and follows the current indications of the FHIR community: all the relevant product codes are represented in fact as one of the possible coding of the product codeableConcept and not mapped inot possible distcit attributes/resources. The same approach is followed for the vaccines.</p>
 
-<h3 id="provenance">Provenance</h3>
+<h2 id="provenance">Provenance</h2>
 
 <p>This guide follows the same principles described in the <a href="http://international-patient-summary.net/mediawiki/index.php?title=IPS_Design_conventions_and_principles_1#Provenance">IPS CDA implementation guide</a></p>
 
@@ -290,13 +294,13 @@ See additional documentation in the IPS Wiki <a href="http://international-patie
 
 <p>Note: Discussions with the EHR work group suggest that a possible future project should be an IPS functional profile, once there is greater clarity and operational experience of using the IPS.</p>
 
-<h3 id="representation-of-names">Representation of Names</h3>
+<h2 id="representation-of-names">Representation of Names</h2>
 <p>This specification requires that any Person Name is represented including at least the given and family components.
 Even though it is recognized that there is not in all cultures the same concept of “family name”, no evidence has been collected in analyzing the international context (e.g. Japan, Korea; China) that justifies the retirement of this requirement.
 Moreover, due to the global scope of the International Patient Summary, the case of non-alphabetic representations of the names has also been considered.
 In this case, to facilitate the global use of the IPS, at least one alphabetic representation of the name SHALL be provided.</p>
 
-<h3 id="profiling-approach-mustsupport">Profiling approach (mustSupport)</h3>
+<h2 id="profiling-approach-mustsupport">Profiling approach (mustSupport)</h2>
 
 <p>By design, the IPS dataset is a “minimal and non-exhaustive patient summary dataset, specialty-agnostic, condition-independent, but readily usable by clinicians for the cross-border unscheduled care of a patient”.</p>
 
@@ -343,7 +347,7 @@ In this case, to facilitate the global use of the IPS, at least one alphabetic r
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Fri, Mar 30, 2018 08:02+0200. |
+            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Fri, Mar 30, 2018 11:34-0500. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

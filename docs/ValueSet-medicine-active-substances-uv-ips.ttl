@@ -1,0 +1,84 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/ips/ValueSet/medicine-active-substances-uv-ips> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "medicine-active-substances-uv-ips"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/shareablevalueset";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IPSActiveSubstances</h2><div><p>Intensional definitionConsider: ISO 11238 Health informatics -- Identification of medicinal products -- Data elements and structures for the unique identification and exchange of regulated information on substances</p>\n</div><p><b>Copyright Statement:</b> Licensing note: This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.</p><p>This value set includes codes from the following code systems:</p><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from  410942007 (Drug or medicament (substance))</li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/ips/ValueSet/medicine-active-substances-uv-ips"];
+  fhir:ValueSet.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "http://art-decor.org/ns/oids/vs" ];
+     fhir:Identifier.value [ fhir:value "2.16.840.1.113883.11.22.32" ]
+  ];
+  fhir:ValueSet.version [ fhir:value "1"];
+  fhir:ValueSet.name [ fhir:value "IPSActiveSubstances"];
+  fhir:ValueSet.title [ fhir:value "Medicine Active Substances"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:ValueSet.date [ fhir:value "2018-03-30T11:34:46-05:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "HL7 International"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 International" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "phone" ];
+       fhir:ContactPoint.value [ fhir:value "+1 734 677 7777 " ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "fax" ];
+       fhir:ContactPoint.value [ fhir:value "+1 734 677 6622" ]
+     ], [
+       fhir:index 2;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "info@hl7.org" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Intensional definitionConsider: ISO 11238 Health informatics -- Identification of medicinal products -- Data elements and structures for the unique identification and exchange of regulated information on substances"];
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ];
+       fhir:Coding.display [ fhir:value "World" ]
+     ]
+  ];
+  fhir:ValueSet.immutable [ fhir:value "false"^^xsd:boolean];
+  fhir:ValueSet.copyright [ fhir:value "Licensing note: This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:ValueSet.compose.include.filter [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "concept" ];
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "descendent-of" ];
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "410942007" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/ips/ValueSet/medicine-active-substances-uv-ips.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/ips/ValueSet/medicine-active-substances-uv-ips.ttl> .
+
+# -------------------------------------------------------------------------------------
+

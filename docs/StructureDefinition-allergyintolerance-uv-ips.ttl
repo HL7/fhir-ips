@@ -9,7 +9,7 @@
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "allergyintolerance-uv-ips"];
   fhir:Resource.meta [
-     fhir:Meta.lastUpdated [ fhir:value "2018-02-14T07:58:02.283-07:00"^^xsd:dateTime ]
+     fhir:Meta.lastUpdated [ fhir:value "2018-02-14T08:58:02.283-06:00"^^xsd:dateTime ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
@@ -20,7 +20,7 @@
   fhir:StructureDefinition.name [ fhir:value "AllergyIntolerance-uv-ips"];
   fhir:StructureDefinition.title [ fhir:value "Allergy Intolerance"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-02-14T06:57:18-07:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2018-02-14T07:57:18-06:00"^^xsd:dateTime];
   fhir:StructureDefinition.description [ fhir:value "This profile represents the constraints applied to the AllergyIntolerance resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an allergy or intolerance is represented in the patient summary as an instance of an AllergyIntolerance resource constrained by this profile."];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
@@ -196,6 +196,1041 @@
        ]
      ], [
        fhir:index 3;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.meta.id" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.meta.id" ];
+       fhir:ElementDefinition.representation [
+         fhir:value "xmlAttr";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.short [ fhir:value "xml:id (or equivalent in JSON)" ];
+       fhir:ElementDefinition.definition [ fhir:value "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ];
+       fhir:ElementDefinition.comment [ fhir:value "Note that FHIR strings may not exceed 1MB in size" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.id" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.meta.extension" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.meta.extension" ];
+       fhir:ElementDefinition.slicing [
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
+         ];
+         fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
+       ];
+       fhir:ElementDefinition.short [ fhir:value "Additional Content defined by implementations" ];
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions";
+         fhir:index 0
+       ], [
+         fhir:value "user content";
+         fhir:index 1
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ]
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.meta.versionId" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.meta.versionId" ];
+       fhir:ElementDefinition.short [ fhir:value "Version specific identifier" ];
+       fhir:ElementDefinition.definition [ fhir:value "The version specific identifier, as it appears in the version portion of the URL. This values changes when the resource is created, updated, or deleted." ];
+       fhir:ElementDefinition.comment [ fhir:value "The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Resource.meta.versionId" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "id" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
+       ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.meta.lastUpdated" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.meta.lastUpdated" ];
+       fhir:ElementDefinition.short [ fhir:value "When the resource version last changed" ];
+       fhir:ElementDefinition.definition [ fhir:value "When the resource last changed - e.g. when the version changed." ];
+       fhir:ElementDefinition.comment [ fhir:value "This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Resource.meta.lastUpdated" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "instant" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
+       ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.meta.profile" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.meta.profile" ];
+       fhir:ElementDefinition.short [ fhir:value "Profiles this resource claims to conform to" ];
+       fhir:ElementDefinition.definition [ fhir:value "A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url]()." ];
+       fhir:ElementDefinition.comment [ fhir:value "It is up to the server and/or other infrastructure of policy to determine whether/how these claims are verified and/or updated over time.  The list of profile URLs is a set." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Resource.meta.profile" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "uri" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
+       ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.meta.security" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.meta.security" ];
+       fhir:ElementDefinition.short [ fhir:value "Security Labels applied to this resource" ];
+       fhir:ElementDefinition.definition [ fhir:value "Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure." ];
+       fhir:ElementDefinition.comment [ fhir:value "The security labels can be updated without changing the stated version of the resource  The list of security labels is a set. Uniqueness is based the system/code, and version and display are ignored." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Resource.meta.security" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
+       ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "SecurityLabels" ]
+         ], [
+           fhir:index 1;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding" ];
+           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+         ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "extensible" ];
+         fhir:ElementDefinition.binding.description [ fhir:value "Security Labels from the Healthcare Privacy and Security Classification System." ];
+         fhir:ElementDefinition.binding.valueSetReference [
+           fhir:link <http://hl7.org/fhir/ValueSet/security-labels>;
+           fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/ValueSet/security-labels" ]
+         ]
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "CE/CNE/CWE subset one of the sets of component 1-3 or 4-6" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "CV" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "orim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding rdfs:subClassOf dt:CDCoding" ]
+       ]
+     ], [
+       fhir:index 9;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.meta.security.id" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.meta.security.id" ];
+       fhir:ElementDefinition.representation [
+         fhir:value "xmlAttr";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.short [ fhir:value "xml:id (or equivalent in JSON)" ];
+       fhir:ElementDefinition.definition [ fhir:value "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ];
+       fhir:ElementDefinition.comment [ fhir:value "Note that FHIR strings may not exceed 1MB in size" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.id" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index 10;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.meta.security.extension" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.meta.security.extension" ];
+       fhir:ElementDefinition.slicing [
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
+         ];
+         fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
+       ];
+       fhir:ElementDefinition.short [ fhir:value "Additional Content defined by implementations" ];
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions";
+         fhir:index 0
+       ], [
+         fhir:value "user content";
+         fhir:index 1
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ]
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
+       ]
+     ], [
+       fhir:index 11;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.meta.security.system" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.meta.security.system" ];
+       fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
+       fhir:ElementDefinition.definition [ fhir:value "The identification of the code system that defines the meaning of the symbol in the code." ];
+       fhir:ElementDefinition.comment [ fhir:value "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously." ];
+       fhir:ElementDefinition.requirements [ fhir:value "Need to be unambiguous about the source of the definition of the symbol." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Coding.system" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "uri" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
+       ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "C*E.3" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "./codeSystem" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "orim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
+       ]
+     ], [
+       fhir:index 12;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.meta.security.version" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.meta.security.version" ];
+       fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
+       fhir:ElementDefinition.definition [ fhir:value "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." ];
+       fhir:ElementDefinition.comment [ fhir:value "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Coding.version" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
+       ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "C*E.7" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "./codeSystemVersion" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "orim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
+       ]
+     ], [
+       fhir:index 13;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.meta.security.code" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.meta.security.code" ];
+       fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
+       fhir:ElementDefinition.definition [ fhir:value "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." ];
+       fhir:ElementDefinition.comment [ fhir:value "Note that FHIR strings may not exceed 1MB in size" ];
+       fhir:ElementDefinition.requirements [ fhir:value "Need to refer to a particular code in the system." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Coding.code" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "code" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
+       ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "C*E.1" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "./code" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "orim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
+       ]
+     ], [
+       fhir:index 14;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.meta.security.display" ];
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable" ];
+         fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+       ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.meta.security.display" ];
+       fhir:ElementDefinition.short [ fhir:value "Representation defined by the system" ];
+       fhir:ElementDefinition.definition [ fhir:value "A representation of the meaning of the code in the system, following the rules of the system." ];
+       fhir:ElementDefinition.comment [ fhir:value "Note that FHIR strings may not exceed 1MB in size" ];
+       fhir:ElementDefinition.requirements [ fhir:value "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Coding.display" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
+       ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "C*E.2 - but note this is not well followed" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "CV.displayName" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "orim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
+       ]
+     ], [
+       fhir:index 15;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.meta.security.userSelected" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.meta.security.userSelected" ];
+       fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
+       fhir:ElementDefinition.definition [ fhir:value "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)." ];
+       fhir:ElementDefinition.comment [ fhir:value "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely." ];
+       fhir:ElementDefinition.requirements [ fhir:value "This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Coding.userSelected" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
+       ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Sometimes implied by being first" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "CD.codingRationale" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "orim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
+       ]
+     ], [
+       fhir:index 16;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.meta.tag" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.meta.tag" ];
+       fhir:ElementDefinition.short [ fhir:value "Tags applied to this resource" ];
+       fhir:ElementDefinition.definition [ fhir:value "Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource." ];
+       fhir:ElementDefinition.comment [ fhir:value "The tags can be updated without changing the stated version of the resource.  The list of tags is a set. Uniqueness is based the system/code, and version and display are ignored." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Resource.meta.tag" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
+       ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "Tags" ]
+         ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
+         fhir:ElementDefinition.binding.description [ fhir:value "Codes that represent various types of tags, commonly workflow-related; e.g. \"Needs review by Dr. Jones\"" ];
+         fhir:ElementDefinition.binding.valueSetReference [
+           fhir:link <http://hl7.org/fhir/ValueSet/common-tags>;
+           fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/ValueSet/common-tags" ]
+         ]
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "CE/CNE/CWE subset one of the sets of component 1-3 or 4-6" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "CV" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "orim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding rdfs:subClassOf dt:CDCoding" ]
+       ]
+     ], [
+       fhir:index 17;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.meta.tag.id" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.meta.tag.id" ];
+       fhir:ElementDefinition.representation [
+         fhir:value "xmlAttr";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.short [ fhir:value "xml:id (or equivalent in JSON)" ];
+       fhir:ElementDefinition.definition [ fhir:value "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ];
+       fhir:ElementDefinition.comment [ fhir:value "Note that FHIR strings may not exceed 1MB in size" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.id" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index 18;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.meta.tag.extension" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.meta.tag.extension" ];
+       fhir:ElementDefinition.slicing [
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
+         ];
+         fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
+       ];
+       fhir:ElementDefinition.short [ fhir:value "Additional Content defined by implementations" ];
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions";
+         fhir:index 0
+       ], [
+         fhir:value "user content";
+         fhir:index 1
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ]
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
+       ]
+     ], [
+       fhir:index 19;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.meta.tag.system" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.meta.tag.system" ];
+       fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
+       fhir:ElementDefinition.definition [ fhir:value "The identification of the code system that defines the meaning of the symbol in the code." ];
+       fhir:ElementDefinition.comment [ fhir:value "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously." ];
+       fhir:ElementDefinition.requirements [ fhir:value "Need to be unambiguous about the source of the definition of the symbol." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Coding.system" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "uri" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
+       ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "C*E.3" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "./codeSystem" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "orim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
+       ]
+     ], [
+       fhir:index 20;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.meta.tag.version" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.meta.tag.version" ];
+       fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
+       fhir:ElementDefinition.definition [ fhir:value "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." ];
+       fhir:ElementDefinition.comment [ fhir:value "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Coding.version" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
+       ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "C*E.7" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "./codeSystemVersion" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "orim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
+       ]
+     ], [
+       fhir:index 21;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.meta.tag.code" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.meta.tag.code" ];
+       fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
+       fhir:ElementDefinition.definition [ fhir:value "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." ];
+       fhir:ElementDefinition.comment [ fhir:value "Note that FHIR strings may not exceed 1MB in size" ];
+       fhir:ElementDefinition.requirements [ fhir:value "Need to refer to a particular code in the system." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Coding.code" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "code" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
+       ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "C*E.1" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "./code" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "orim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
+       ]
+     ], [
+       fhir:index 22;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.meta.tag.display" ];
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable" ];
+         fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+       ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.meta.tag.display" ];
+       fhir:ElementDefinition.short [ fhir:value "Representation defined by the system" ];
+       fhir:ElementDefinition.definition [ fhir:value "A representation of the meaning of the code in the system, following the rules of the system." ];
+       fhir:ElementDefinition.comment [ fhir:value "Note that FHIR strings may not exceed 1MB in size" ];
+       fhir:ElementDefinition.requirements [ fhir:value "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Coding.display" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
+       ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "C*E.2 - but note this is not well followed" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "CV.displayName" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "orim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
+       ]
+     ], [
+       fhir:index 23;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.meta.tag.userSelected" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.meta.tag.userSelected" ];
+       fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
+       fhir:ElementDefinition.definition [ fhir:value "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)." ];
+       fhir:ElementDefinition.comment [ fhir:value "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely." ];
+       fhir:ElementDefinition.requirements [ fhir:value "This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Coding.userSelected" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
+       ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Sometimes implied by being first" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "CD.codingRationale" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "orim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
+       ]
+     ], [
+       fhir:index 24;
        fhir:Element.id [ fhir:value "AllergyIntolerance.implicitRules" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.implicitRules" ];
        fhir:ElementDefinition.short [ fhir:value "A set of rules under which this content was created" ];
@@ -232,7 +1267,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 4;
+       fhir:index 25;
        fhir:Element.id [ fhir:value "AllergyIntolerance.language" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.language" ];
        fhir:ElementDefinition.short [ fhir:value "Language of the resource content" ];
@@ -291,7 +1326,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 5;
+       fhir:index 26;
        fhir:Element.id [ fhir:value "AllergyIntolerance.text" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.text" ];
        fhir:ElementDefinition.short [ fhir:value "Text summary of the resource, for human interpretation" ];
@@ -350,7 +1385,213 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Act.text?" ]
        ]
      ], [
-       fhir:index 6;
+       fhir:index 27;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.text.id" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.text.id" ];
+       fhir:ElementDefinition.representation [
+         fhir:value "xmlAttr";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.short [ fhir:value "xml:id (or equivalent in JSON)" ];
+       fhir:ElementDefinition.definition [ fhir:value "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ];
+       fhir:ElementDefinition.comment [ fhir:value "Note that FHIR strings may not exceed 1MB in size" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.id" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index 28;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.text.extension" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.text.extension" ];
+       fhir:ElementDefinition.slicing [
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
+         ];
+         fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
+       ];
+       fhir:ElementDefinition.short [ fhir:value "Additional Content defined by implementations" ];
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions";
+         fhir:index 0
+       ], [
+         fhir:value "user content";
+         fhir:index 1
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ]
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
+       ]
+     ], [
+       fhir:index 29;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.text.status" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.text.status" ];
+       fhir:ElementDefinition.short [ fhir:value "generated | extensions | additional | empty" ];
+       fhir:ElementDefinition.definition [ fhir:value "The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data." ];
+       fhir:ElementDefinition.comment [ fhir:value "Note that FHIR strings may not exceed 1MB in size" ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Narrative.status" ];
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "code" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
+       ];
+       fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "NarrativeStatus" ]
+         ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
+         fhir:ElementDefinition.binding.description [ fhir:value "The status of a resource narrative" ];
+         fhir:ElementDefinition.binding.valueSetReference [
+           fhir:link <http://hl7.org/fhir/ValueSet/narrative-status>;
+           fhir:Reference.reference [ fhir:value "http://hl7.org/fhir/ValueSet/narrative-status" ]
+         ]
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
+       ]
+     ], [
+       fhir:index 30;
+       fhir:Element.id [ fhir:value "AllergyIntolerance.text.div" ];
+       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.text.div" ];
+       fhir:ElementDefinition.short [ fhir:value "Limited xhtml content" ];
+       fhir:ElementDefinition.definition [ fhir:value "The actual narrative content, a stripped down version of XHTML." ];
+       fhir:ElementDefinition.comment [ fhir:value "The contents of the html element are an XHTML fragment containing only the basic html formatting elements described in chapters 7-11 and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained stylesheets. The XHTML content may not contain a head, a body, external stylesheet references, scripts, forms, base/link/xlink, frames, iframes and objects." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Narrative.div" ];
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "xhtml" ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "txt-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "htmlchecks()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "not(descendant-or-self::*[not(local-name(.)=('a', 'abbr', 'acronym', 'b', 'big', 'blockquote', 'br', 'caption', 'cite', 'code', 'col', 'colgroup', 'dd', 'dfn', 'div', 'dl', 'dt', 'em', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'hr', 'i', 'img', 'li', 'ol', 'p', 'pre', 'q', 'samp', 'small', 'span', 'strong', 'sub', 'sup', 'table', 'tbody', 'td', 'tfoot', 'th', 'thead', 'tr', 'tt', 'ul', 'var'))]) and not(descendant-or-self::*/@*[not(name(.)=('abbr', 'accesskey', 'align', 'alt', 'axis', 'bgcolor', 'border', 'cellhalign', 'cellpadding', 'cellspacing', 'cellvalign', 'char', 'charoff', 'charset', 'cite', 'class', 'colspan', 'compact', 'coords', 'dir', 'frame', 'headers', 'height', 'href', 'hreflang', 'hspace', 'id', 'lang', 'longdesc', 'name', 'nowrap', 'rel', 'rev', 'rowspan', 'rules', 'scope', 'shape', 'span', 'src', 'start', 'style', 'summary', 'tabindex', 'title', 'type', 'valign', 'value', 'vspace', 'width'))])" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.constraint.key [ fhir:value "txt-2" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "The narrative SHALL have some non-whitespace content" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "htmlchecks()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "descendant::text()[normalize-space(.)!=''] or descendant::h:img[@src]" ]
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
+       ]
+     ], [
+       fhir:index 31;
        fhir:Element.id [ fhir:value "AllergyIntolerance.contained" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.contained" ];
        fhir:ElementDefinition.short [ fhir:value "Contained, inline Resources" ];
@@ -387,7 +1628,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 7;
+       fhir:index 32;
        fhir:Element.id [ fhir:value "AllergyIntolerance.extension" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.extension" ];
        fhir:ElementDefinition.slicing [
@@ -449,7 +1690,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 8;
+       fhir:index 33;
        fhir:Element.id [ fhir:value "AllergyIntolerance.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.modifierExtension" ];
        fhir:ElementDefinition.slicing [
@@ -512,7 +1753,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 9;
+       fhir:index 34;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.identifier" ];
        fhir:ElementDefinition.short [ fhir:value "External ids for this item" ];
@@ -571,7 +1812,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "id" ]
        ]
      ], [
-       fhir:index 10;
+       fhir:index 35;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.id" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.identifier.id" ];
        fhir:ElementDefinition.representation [
@@ -610,7 +1851,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 11;
+       fhir:index 36;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.extension" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.identifier.extension" ];
        fhir:ElementDefinition.slicing [
@@ -672,7 +1913,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 12;
+       fhir:index 37;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.use" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.identifier.use" ];
        fhir:ElementDefinition.short [ fhir:value "usual | official | temp | secondary (If known)" ];
@@ -731,7 +1972,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 13;
+       fhir:index 38;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.type" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.identifier.type" ];
        fhir:ElementDefinition.short [ fhir:value "Description of identifier" ];
@@ -805,7 +2046,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Role.code or implied by context" ]
        ]
      ], [
-       fhir:index 14;
+       fhir:index 39;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.type.id" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.identifier.type.id" ];
        fhir:ElementDefinition.representation [
@@ -844,7 +2085,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 15;
+       fhir:index 40;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.type.extension" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.identifier.type.extension" ];
        fhir:ElementDefinition.slicing [
@@ -906,7 +2147,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 16;
+       fhir:index 41;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.type.coding" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.identifier.type.coding" ];
        fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ];
@@ -967,7 +2208,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 17;
+       fhir:index 42;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.type.coding.id" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.identifier.type.coding.id" ];
        fhir:ElementDefinition.representation [
@@ -1006,7 +2247,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 18;
+       fhir:index 43;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.type.coding.extension" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.identifier.type.coding.extension" ];
        fhir:ElementDefinition.slicing [
@@ -1068,7 +2309,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 19;
+       fhir:index 44;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.type.coding.system" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.identifier.type.coding.system" ];
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
@@ -1117,7 +2358,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 20;
+       fhir:index 45;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.type.coding.version" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.identifier.type.coding.version" ];
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
@@ -1165,7 +2406,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 21;
+       fhir:index 46;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.type.coding.code" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.identifier.type.coding.code" ];
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
@@ -1214,7 +2455,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 22;
+       fhir:index 47;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.type.coding.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -1268,7 +2509,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 23;
+       fhir:index 48;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.type.coding.userSelected" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.identifier.type.coding.userSelected" ];
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
@@ -1317,7 +2558,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 24;
+       fhir:index 49;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.type.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -1371,7 +2612,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 25;
+       fhir:index 50;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.system" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.identifier.system" ];
        fhir:ElementDefinition.short [ fhir:value "The namespace for the identifier value" ];
@@ -1425,7 +2666,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierType" ]
        ]
      ], [
-       fhir:index 26;
+       fhir:index 51;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.value" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.identifier.value" ];
        fhir:ElementDefinition.short [ fhir:value "The value that is unique" ];
@@ -1478,7 +2719,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./Value" ]
        ]
      ], [
-       fhir:index 27;
+       fhir:index 52;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.period" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.identifier.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time period when id is/was valid for use" ];
@@ -1541,7 +2782,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./StartDate and ./EndDate" ]
        ]
      ], [
-       fhir:index 28;
+       fhir:index 53;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.period.id" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.identifier.period.id" ];
        fhir:ElementDefinition.representation [
@@ -1580,7 +2821,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 29;
+       fhir:index 54;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.period.extension" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.identifier.period.extension" ];
        fhir:ElementDefinition.slicing [
@@ -1642,7 +2883,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 30;
+       fhir:index 55;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.period.start" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.identifier.period.start" ];
        fhir:ElementDefinition.short [ fhir:value "Starting time with inclusive boundary" ];
@@ -1689,7 +2930,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./low" ]
        ]
      ], [
-       fhir:index 31;
+       fhir:index 56;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.period.end" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.identifier.period.end" ];
        fhir:ElementDefinition.short [ fhir:value "End time with inclusive boundary, if not ongoing" ];
@@ -1737,7 +2978,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./high" ]
        ]
      ], [
-       fhir:index 32;
+       fhir:index 57;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.assigner" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.identifier.assigner" ];
        fhir:ElementDefinition.short [ fhir:value "Organization that issued id (may be just text)" ];
@@ -1797,7 +3038,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "./IdentifierIssuingAuthority" ]
        ]
      ], [
-       fhir:index 33;
+       fhir:index 58;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.assigner.id" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.identifier.assigner.id" ];
        fhir:ElementDefinition.representation [
@@ -1836,7 +3077,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 34;
+       fhir:index 59;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.assigner.extension" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.identifier.assigner.extension" ];
        fhir:ElementDefinition.slicing [
@@ -1898,7 +3139,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 35;
+       fhir:index 60;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.assigner.reference" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.identifier.assigner.reference" ];
        fhir:ElementDefinition.short [ fhir:value "Literal reference, Relative, internal or absolute URL" ];
@@ -1941,7 +3182,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 36;
+       fhir:index 61;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.assigner.identifier" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.identifier.assigner.identifier" ];
        fhir:ElementDefinition.short [ fhir:value "Logical reference, when literal reference is not known" ];
@@ -1993,7 +3234,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".identifier" ]
        ]
      ], [
-       fhir:index 37;
+       fhir:index 62;
        fhir:Element.id [ fhir:value "AllergyIntolerance.identifier.assigner.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -2038,7 +3279,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 38;
+       fhir:index 63;
        fhir:Element.id [ fhir:value "AllergyIntolerance.clinicalStatus" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.clinicalStatus" ];
        fhir:ElementDefinition.short [ fhir:value "active | inactive | resolved" ];
@@ -2103,7 +3344,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "status" ]
        ]
      ], [
-       fhir:index 39;
+       fhir:index 64;
        fhir:Element.id [ fhir:value "AllergyIntolerance.verificationStatus" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.verificationStatus" ];
        fhir:ElementDefinition.short [ fhir:value "unconfirmed | confirmed | refuted | entered-in-error" ];
@@ -2168,7 +3409,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "status" ]
        ]
      ], [
-       fhir:index 40;
+       fhir:index 65;
        fhir:Element.id [ fhir:value "AllergyIntolerance.type" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.type" ];
        fhir:ElementDefinition.short [ fhir:value "allergy | intolerance - Underlying mechanism (if known)" ];
@@ -2237,7 +3478,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "class" ]
        ]
      ], [
-       fhir:index 41;
+       fhir:index 66;
        fhir:Element.id [ fhir:value "AllergyIntolerance.category" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.category" ];
        fhir:ElementDefinition.short [ fhir:value "food | medication | environment | biologic" ];
@@ -2311,7 +3552,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "class" ]
        ]
      ], [
-       fhir:index 42;
+       fhir:index 67;
        fhir:Element.id [ fhir:value "AllergyIntolerance.criticality" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.criticality" ];
        fhir:ElementDefinition.short [ fhir:value "low | high | unable-to-assess" ];
@@ -2386,7 +3627,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "grade" ]
        ]
      ], [
-       fhir:index 43;
+       fhir:index 68;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code" ];
        fhir:ElementDefinition.slicing [
@@ -2472,7 +3713,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "what" ]
        ]
      ], [
-       fhir:index 44;
+       fhir:index 69;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code.id" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.id" ];
        fhir:ElementDefinition.representation [
@@ -2511,7 +3752,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 45;
+       fhir:index 70;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code.extension" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.extension" ];
        fhir:ElementDefinition.slicing [
@@ -2573,7 +3814,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 46;
+       fhir:index 71;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code.coding" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.coding" ];
        fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ];
@@ -2634,7 +3875,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 47;
+       fhir:index 72;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code.coding.id" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.coding.id" ];
        fhir:ElementDefinition.representation [
@@ -2673,7 +3914,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 48;
+       fhir:index 73;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code.coding.extension" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.coding.extension" ];
        fhir:ElementDefinition.slicing [
@@ -2735,7 +3976,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 49;
+       fhir:index 74;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code.coding.system" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.coding.system" ];
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
@@ -2784,7 +4025,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 50;
+       fhir:index 75;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code.coding.version" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.coding.version" ];
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
@@ -2832,7 +4073,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 51;
+       fhir:index 76;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code.coding.code" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.coding.code" ];
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
@@ -2881,7 +4122,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 52;
+       fhir:index 77;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code.coding.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -2935,7 +4176,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 53;
+       fhir:index 78;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code.coding.userSelected" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.coding.userSelected" ];
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
@@ -2984,7 +4225,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 54;
+       fhir:index 79;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -3038,7 +4279,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 55;
+       fhir:index 80;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code:absentOrUnknownAllergy" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code" ];
        fhir:ElementDefinition.sliceName [ fhir:value "absentOrUnknownAllergy" ];
@@ -3117,7 +4358,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "what" ]
        ]
      ], [
-       fhir:index 56;
+       fhir:index 81;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code:absentOrUnknownAllergy.id" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.id" ];
        fhir:ElementDefinition.representation [
@@ -3156,7 +4397,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 57;
+       fhir:index 82;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code:absentOrUnknownAllergy.extension" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.extension" ];
        fhir:ElementDefinition.slicing [
@@ -3218,7 +4459,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 58;
+       fhir:index 83;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code:absentOrUnknownAllergy.coding" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.coding" ];
        fhir:ElementDefinition.short [ fhir:value "A reference to a code defined by a terminology system" ];
@@ -3280,7 +4521,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 59;
+       fhir:index 84;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code:absentOrUnknownAllergy.coding.id" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.coding.id" ];
        fhir:ElementDefinition.representation [
@@ -3319,7 +4560,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 60;
+       fhir:index 85;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code:absentOrUnknownAllergy.coding.extension" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.coding.extension" ];
        fhir:ElementDefinition.slicing [
@@ -3381,7 +4622,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 61;
+       fhir:index 86;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code:absentOrUnknownAllergy.coding.system" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.coding.system" ];
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
@@ -3399,7 +4640,7 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "uri" ]
        ];
-       fhir:ElementDefinition.fixedUri [ fhir:value "http://hl7.org/fhir/ips/CodeSystem/absent-unknown" ];
+       fhir:ElementDefinition.fixedUri [ fhir:value "urn:oid:2.16.840.1.113883.3.1937.777.13.5.999.1" ];
        fhir:ElementDefinition.condition [
          fhir:value "ele-1";
          fhir:index 0
@@ -3431,7 +4672,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 62;
+       fhir:index 87;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code:absentOrUnknownAllergy.coding.version" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.coding.version" ];
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
@@ -3479,7 +4720,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 63;
+       fhir:index 88;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code:absentOrUnknownAllergy.coding.code" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.coding.code" ];
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
@@ -3528,7 +4769,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 64;
+       fhir:index 89;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code:absentOrUnknownAllergy.coding.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -3582,185 +4823,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 65;
-       fhir:Element.id [ fhir:value "AllergyIntolerance.code:absentOrUnknownAllergy.coding.display.id" ];
-       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.coding.display.id" ];
-       fhir:ElementDefinition.representation [
-         fhir:value "xmlAttr";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.short [ fhir:value "xml:id (or equivalent in JSON)" ];
-       fhir:ElementDefinition.definition [ fhir:value "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ];
-       fhir:ElementDefinition.comment [ fhir:value "Note that FHIR strings may not exceed 1MB in size" ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Element.id" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "1" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "string" ]
-       ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
-       ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ]
-     ], [
-       fhir:index 66;
-       fhir:Element.id [ fhir:value "AllergyIntolerance.code:absentOrUnknownAllergy.coding.display.extension" ];
-       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.coding.display.extension" ];
-       fhir:ElementDefinition.slicing [
-         fhir:ElementDefinition.slicing.discriminator [
-           fhir:index 0;
-           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
-           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
-         ];
-         fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
-         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
-       ];
-       fhir:ElementDefinition.short [ fhir:value "Additional Content defined by implementations" ];
-       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
-       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
-       fhir:ElementDefinition.alias [
-         fhir:value "extensions";
-         fhir:index 0
-       ], [
-         fhir:value "user content";
-         fhir:index 1
-       ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "*" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "*" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
-       ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ]
-       ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
-       ]
-     ], [
-       fhir:index 67;
-       fhir:Element.id [ fhir:value "AllergyIntolerance.code:absentOrUnknownAllergy.coding.display.extension:translation" ];
-       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.coding.display.extension" ];
-       fhir:ElementDefinition.sliceName [ fhir:value "translation" ];
-       fhir:ElementDefinition.short [ fhir:value "Language Translation (Localization)" ];
-       fhir:ElementDefinition.definition [ fhir:value "Language translation from base language of resource to another language." ];
-       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
-       fhir:ElementDefinition.alias [
-         fhir:value "extensions";
-         fhir:index 0
-       ], [
-         fhir:value "user content";
-         fhir:index 1
-       ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "*" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "*" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
-         fhir:ElementDefinition.type.profile [ fhir:value "http://hl7.org/fhir/StructureDefinition/translation" ]
-       ];
-       fhir:ElementDefinition.condition [
-         fhir:value "ele-1";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.constraint [
-         fhir:index 0;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() | (children().count() > id.count())" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ]
-       ];
-       fhir:ElementDefinition.mapping [
-         fhir:index 0;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
-       ], [
-         fhir:index 1;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
-       ], [
-         fhir:index 2;
-         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
-         fhir:ElementDefinition.mapping.map [ fhir:value "ST.translation" ]
-       ]
-     ], [
-       fhir:index 68;
-       fhir:Element.id [ fhir:value "AllergyIntolerance.code:absentOrUnknownAllergy.coding.display.value" ];
-       fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.coding.display.value" ];
-       fhir:ElementDefinition.representation [
-         fhir:value "xmlAttr";
-         fhir:index 0
-       ];
-       fhir:ElementDefinition.short [ fhir:value "Primitive value for string" ];
-       fhir:ElementDefinition.definition [ fhir:value "Primitive value for string" ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "string.value" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "1" ]
-       ];
-       fhir:ElementDefinition.maxLength [ fhir:value "1048576"^^xsd:integer ]
-     ], [
-       fhir:index 69;
+       fhir:index 90;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code:absentOrUnknownAllergy.coding.userSelected" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.coding.userSelected" ];
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
@@ -3809,7 +4872,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 70;
+       fhir:index 91;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code:absentOrUnknownAllergy.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -3863,7 +4926,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 71;
+       fhir:index 92;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code:@default" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code" ];
        fhir:ElementDefinition.sliceName [ fhir:value "@default" ];
@@ -3942,7 +5005,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "what" ]
        ]
      ], [
-       fhir:index 72;
+       fhir:index 93;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code:@default.id" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.id" ];
        fhir:ElementDefinition.representation [
@@ -3981,7 +5044,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 73;
+       fhir:index 94;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code:@default.extension" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.extension" ];
        fhir:ElementDefinition.slicing [
@@ -4043,7 +5106,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 74;
+       fhir:index 95;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code:@default.coding" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.coding" ];
        fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ];
@@ -4104,7 +5167,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 75;
+       fhir:index 96;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code:@default.coding.id" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.coding.id" ];
        fhir:ElementDefinition.representation [
@@ -4143,7 +5206,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 76;
+       fhir:index 97;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code:@default.coding.extension" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.coding.extension" ];
        fhir:ElementDefinition.slicing [
@@ -4205,7 +5268,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 77;
+       fhir:index 98;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code:@default.coding.system" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.coding.system" ];
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
@@ -4254,7 +5317,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 78;
+       fhir:index 99;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code:@default.coding.version" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.coding.version" ];
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
@@ -4302,7 +5365,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 79;
+       fhir:index 100;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code:@default.coding.code" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.coding.code" ];
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
@@ -4351,7 +5414,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 80;
+       fhir:index 101;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code:@default.coding.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -4405,7 +5468,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 81;
+       fhir:index 102;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code:@default.coding.userSelected" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.coding.userSelected" ];
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
@@ -4454,7 +5517,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 82;
+       fhir:index 103;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code:@default.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -4508,7 +5571,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 83;
+       fhir:index 104;
        fhir:Element.id [ fhir:value "AllergyIntolerance.patient" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.patient" ];
        fhir:ElementDefinition.short [ fhir:value "Who the sensitivity is for" ];
@@ -4573,7 +5636,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "who.focus" ]
        ]
      ], [
-       fhir:index 84;
+       fhir:index 105;
        fhir:Element.id [ fhir:value "AllergyIntolerance.patient.id" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.patient.id" ];
        fhir:ElementDefinition.representation [
@@ -4612,7 +5675,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 85;
+       fhir:index 106;
        fhir:Element.id [ fhir:value "AllergyIntolerance.patient.extension" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.patient.extension" ];
        fhir:ElementDefinition.slicing [
@@ -4674,7 +5737,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 86;
+       fhir:index 107;
        fhir:Element.id [ fhir:value "AllergyIntolerance.patient.reference" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.patient.reference" ];
        fhir:ElementDefinition.short [ fhir:value "Literal reference, Relative, internal or absolute URL" ];
@@ -4717,7 +5780,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 87;
+       fhir:index 108;
        fhir:Element.id [ fhir:value "AllergyIntolerance.patient.identifier" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.patient.identifier" ];
        fhir:ElementDefinition.short [ fhir:value "Logical reference, when literal reference is not known" ];
@@ -4769,7 +5832,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".identifier" ]
        ]
      ], [
-       fhir:index 88;
+       fhir:index 109;
        fhir:Element.id [ fhir:value "AllergyIntolerance.patient.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -4814,7 +5877,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 89;
+       fhir:index 110;
        fhir:Element.id [ fhir:value "AllergyIntolerance.onsetDateTime:onsetDateTime" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.onsetDateTime" ];
        fhir:ElementDefinition.sliceName [ fhir:value "onsetDateTime" ];
@@ -4858,7 +5921,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "when.init" ]
        ]
      ], [
-       fhir:index 90;
+       fhir:index 111;
        fhir:Element.id [ fhir:value "AllergyIntolerance.assertedDate" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.assertedDate" ];
        fhir:ElementDefinition.short [ fhir:value "Date record was believed accurate" ];
@@ -4904,7 +5967,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "when.recorded" ]
        ]
      ], [
-       fhir:index 91;
+       fhir:index 112;
        fhir:Element.id [ fhir:value "AllergyIntolerance.recorder" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.recorder" ];
        fhir:ElementDefinition.short [ fhir:value "Who recorded the sensitivity" ];
@@ -4925,6 +5988,10 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Practitioner" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Patient" ]
        ];
        fhir:ElementDefinition.condition [
          fhir:value "ele-1";
@@ -4963,7 +6030,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "who.author" ]
        ]
      ], [
-       fhir:index 92;
+       fhir:index 113;
        fhir:Element.id [ fhir:value "AllergyIntolerance.recorder.id" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.recorder.id" ];
        fhir:ElementDefinition.representation [
@@ -5002,7 +6069,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 93;
+       fhir:index 114;
        fhir:Element.id [ fhir:value "AllergyIntolerance.recorder.extension" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.recorder.extension" ];
        fhir:ElementDefinition.slicing [
@@ -5064,7 +6131,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 94;
+       fhir:index 115;
        fhir:Element.id [ fhir:value "AllergyIntolerance.recorder.reference" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.recorder.reference" ];
        fhir:ElementDefinition.short [ fhir:value "Literal reference, Relative, internal or absolute URL" ];
@@ -5107,7 +6174,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 95;
+       fhir:index 116;
        fhir:Element.id [ fhir:value "AllergyIntolerance.recorder.identifier" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.recorder.identifier" ];
        fhir:ElementDefinition.short [ fhir:value "Logical reference, when literal reference is not known" ];
@@ -5159,7 +6226,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".identifier" ]
        ]
      ], [
-       fhir:index 96;
+       fhir:index 117;
        fhir:Element.id [ fhir:value "AllergyIntolerance.recorder.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -5204,7 +6271,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 97;
+       fhir:index 118;
        fhir:Element.id [ fhir:value "AllergyIntolerance.asserter" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.asserter" ];
        fhir:ElementDefinition.short [ fhir:value "Source of the information about the allergy" ];
@@ -5228,6 +6295,14 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Patient" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/RelatedPerson" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Practitioner" ]
        ];
        fhir:ElementDefinition.condition [
          fhir:value "ele-1";
@@ -5271,7 +6346,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "who.source" ]
        ]
      ], [
-       fhir:index 98;
+       fhir:index 119;
        fhir:Element.id [ fhir:value "AllergyIntolerance.asserter.id" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.asserter.id" ];
        fhir:ElementDefinition.representation [
@@ -5310,7 +6385,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 99;
+       fhir:index 120;
        fhir:Element.id [ fhir:value "AllergyIntolerance.asserter.extension" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.asserter.extension" ];
        fhir:ElementDefinition.slicing [
@@ -5372,7 +6447,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 100;
+       fhir:index 121;
        fhir:Element.id [ fhir:value "AllergyIntolerance.asserter.reference" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.asserter.reference" ];
        fhir:ElementDefinition.short [ fhir:value "Literal reference, Relative, internal or absolute URL" ];
@@ -5415,7 +6490,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 101;
+       fhir:index 122;
        fhir:Element.id [ fhir:value "AllergyIntolerance.asserter.identifier" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.asserter.identifier" ];
        fhir:ElementDefinition.short [ fhir:value "Logical reference, when literal reference is not known" ];
@@ -5467,7 +6542,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".identifier" ]
        ]
      ], [
-       fhir:index 102;
+       fhir:index 123;
        fhir:Element.id [ fhir:value "AllergyIntolerance.asserter.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -5512,7 +6587,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 103;
+       fhir:index 124;
        fhir:Element.id [ fhir:value "AllergyIntolerance.lastOccurrence" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.lastOccurrence" ];
        fhir:ElementDefinition.short [ fhir:value "Date(/time) of last known occurrence of a reaction" ];
@@ -5551,7 +6626,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "outBoundRelationship[typeCode=SUBJ].target[classCode=OBS, moodCode=EVN, code <= CommonClinicalObservationType, value <= ObservationValue (Reaction Type)].effectiveTime" ]
        ]
      ], [
-       fhir:index 104;
+       fhir:index 125;
        fhir:Element.id [ fhir:value "AllergyIntolerance.note" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.note" ];
        fhir:ElementDefinition.short [ fhir:value "Additional text not captured in other fields" ];
@@ -5598,7 +6673,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "subjectOf.observationEvent[code=\"annotation\"].value" ]
        ]
      ], [
-       fhir:index 105;
+       fhir:index 126;
        fhir:Element.id [ fhir:value "AllergyIntolerance.note.id" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.note.id" ];
        fhir:ElementDefinition.representation [
@@ -5637,7 +6712,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 106;
+       fhir:index 127;
        fhir:Element.id [ fhir:value "AllergyIntolerance.note.extension" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.note.extension" ];
        fhir:ElementDefinition.slicing [
@@ -5699,7 +6774,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 107;
+       fhir:index 128;
        fhir:Element.id [ fhir:value "AllergyIntolerance.note.author[x]" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.note.author[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Individual responsible for the annotation" ];
@@ -5718,6 +6793,14 @@
          fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Practitioner" ]
        ], [
          fhir:index 1;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Patient" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/RelatedPerson" ]
+       ], [
+         fhir:index 3;
          fhir:ElementDefinition.type.code [ fhir:value "string" ]
        ];
        fhir:ElementDefinition.condition [
@@ -5758,7 +6841,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Act.participant[typeCode=AUT].role" ]
        ]
      ], [
-       fhir:index 108;
+       fhir:index 129;
        fhir:Element.id [ fhir:value "AllergyIntolerance.note.time" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.note.time" ];
        fhir:ElementDefinition.short [ fhir:value "When the annotation was made" ];
@@ -5801,7 +6884,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Act.effectiveTime" ]
        ]
      ], [
-       fhir:index 109;
+       fhir:index 130;
        fhir:Element.id [ fhir:value "AllergyIntolerance.note.text" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.note.text" ];
        fhir:ElementDefinition.short [ fhir:value "The annotation  - text content" ];
@@ -5844,7 +6927,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Act.text" ]
        ]
      ], [
-       fhir:index 110;
+       fhir:index 131;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction" ];
        fhir:ElementDefinition.short [ fhir:value "Adverse Reaction Events linked to exposure to substance" ];
@@ -5882,7 +6965,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "outBoundRelationship[typeCode=SUBJ].target[classCode=OBS, moodCode=EVN, code <= CommonClinicalObservationType, value <= ObservationValue (Reaction Type)]" ]
        ]
      ], [
-       fhir:index 111;
+       fhir:index 132;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.id" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.id" ];
        fhir:ElementDefinition.representation [
@@ -5921,7 +7004,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 112;
+       fhir:index 133;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.extension" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.extension" ];
        fhir:ElementDefinition.slicing [
@@ -5983,7 +7066,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 113;
+       fhir:index 134;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored" ];
@@ -6041,7 +7124,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 114;
+       fhir:index 135;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.substance" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.substance" ];
        fhir:ElementDefinition.short [ fhir:value "Specific substance or pharmaceutical product considered to be responsible for event" ];
@@ -6105,7 +7188,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "outBoundRelationship[typeCode=SAS].target[classCode=SBADM, code <= ExposureCode].participation[typeCode=CSM].role[classCode=ADMM].player[classCode=MAT, determinerCode=KIND, code <= ExposureAgentEntityType]" ]
        ]
      ], [
-       fhir:index 115;
+       fhir:index 136;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.substance.id" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.substance.id" ];
        fhir:ElementDefinition.representation [
@@ -6144,7 +7227,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 116;
+       fhir:index 137;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.substance.extension" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.substance.extension" ];
        fhir:ElementDefinition.slicing [
@@ -6206,7 +7289,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 117;
+       fhir:index 138;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.substance.coding" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.substance.coding" ];
        fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ];
@@ -6267,7 +7350,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 118;
+       fhir:index 139;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.substance.coding.id" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.substance.coding.id" ];
        fhir:ElementDefinition.representation [
@@ -6306,7 +7389,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 119;
+       fhir:index 140;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.substance.coding.extension" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.substance.coding.extension" ];
        fhir:ElementDefinition.slicing [
@@ -6368,7 +7451,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 120;
+       fhir:index 141;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.substance.coding.system" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.substance.coding.system" ];
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
@@ -6417,7 +7500,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 121;
+       fhir:index 142;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.substance.coding.version" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.substance.coding.version" ];
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
@@ -6465,7 +7548,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 122;
+       fhir:index 143;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.substance.coding.code" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.substance.coding.code" ];
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
@@ -6514,7 +7597,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 123;
+       fhir:index 144;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.substance.coding.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -6568,7 +7651,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 124;
+       fhir:index 145;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.substance.coding.userSelected" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.substance.coding.userSelected" ];
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
@@ -6617,7 +7700,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 125;
+       fhir:index 146;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.substance.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -6671,7 +7754,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 126;
+       fhir:index 147;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.manifestation" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.manifestation" ];
        fhir:ElementDefinition.short [ fhir:value "Concept - reference to a terminology or just  text" ];
@@ -6748,7 +7831,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "code" ]
        ]
      ], [
-       fhir:index 127;
+       fhir:index 148;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.manifestation.id" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.manifestation.id" ];
        fhir:ElementDefinition.representation [
@@ -6787,7 +7870,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 128;
+       fhir:index 149;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.manifestation.extension" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.manifestation.extension" ];
        fhir:ElementDefinition.slicing [
@@ -6849,7 +7932,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 129;
+       fhir:index 150;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.manifestation.coding" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.manifestation.coding" ];
        fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ];
@@ -6910,7 +7993,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 130;
+       fhir:index 151;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.manifestation.coding.id" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.manifestation.coding.id" ];
        fhir:ElementDefinition.representation [
@@ -6949,7 +8032,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 131;
+       fhir:index 152;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.manifestation.coding.extension" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.manifestation.coding.extension" ];
        fhir:ElementDefinition.slicing [
@@ -7011,7 +8094,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 132;
+       fhir:index 153;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.manifestation.coding.system" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.manifestation.coding.system" ];
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
@@ -7060,7 +8143,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 133;
+       fhir:index 154;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.manifestation.coding.version" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.manifestation.coding.version" ];
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
@@ -7108,7 +8191,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 134;
+       fhir:index 155;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.manifestation.coding.code" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.manifestation.coding.code" ];
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
@@ -7157,7 +8240,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 135;
+       fhir:index 156;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.manifestation.coding.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -7211,7 +8294,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 136;
+       fhir:index 157;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.manifestation.coding.userSelected" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.manifestation.coding.userSelected" ];
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
@@ -7260,7 +8343,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 137;
+       fhir:index 158;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.manifestation.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -7314,7 +8397,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 138;
+       fhir:index 159;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.description" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.description" ];
        fhir:ElementDefinition.short [ fhir:value "Description of the event as a whole" ];
@@ -7360,7 +8443,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "text" ]
        ]
      ], [
-       fhir:index 139;
+       fhir:index 160;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.onset" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.onset" ];
        fhir:ElementDefinition.short [ fhir:value "Date(/time) when manifestations showed" ];
@@ -7402,7 +8485,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "effectiveTime.low" ]
        ]
      ], [
-       fhir:index 140;
+       fhir:index 161;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.severity" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.severity" ];
        fhir:ElementDefinition.short [ fhir:value "mild | moderate | severe (of event as a whole)" ];
@@ -7455,7 +8538,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=SEV, value <= SeverityObservation (Severity Level)]" ]
        ]
      ], [
-       fhir:index 141;
+       fhir:index 162;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.exposureRoute" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.exposureRoute" ];
        fhir:ElementDefinition.short [ fhir:value "How the subject was exposed to the substance" ];
@@ -7519,7 +8602,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "outBoundRelationship[typeCode=SAS].target[classCode=SBADM, code <= ExposureCode].routeCode" ]
        ]
      ], [
-       fhir:index 142;
+       fhir:index 163;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.exposureRoute.id" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.exposureRoute.id" ];
        fhir:ElementDefinition.representation [
@@ -7558,7 +8641,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 143;
+       fhir:index 164;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.exposureRoute.extension" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.exposureRoute.extension" ];
        fhir:ElementDefinition.slicing [
@@ -7620,7 +8703,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 144;
+       fhir:index 165;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.exposureRoute.coding" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.exposureRoute.coding" ];
        fhir:ElementDefinition.short [ fhir:value "Code defined by a terminology system" ];
@@ -7681,7 +8764,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
        ]
      ], [
-       fhir:index 145;
+       fhir:index 166;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.exposureRoute.coding.id" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.exposureRoute.coding.id" ];
        fhir:ElementDefinition.representation [
@@ -7720,7 +8803,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 146;
+       fhir:index 167;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.exposureRoute.coding.extension" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.exposureRoute.coding.extension" ];
        fhir:ElementDefinition.slicing [
@@ -7782,7 +8865,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 147;
+       fhir:index 168;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.exposureRoute.coding.system" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.exposureRoute.coding.system" ];
        fhir:ElementDefinition.short [ fhir:value "Identity of the terminology system" ];
@@ -7831,7 +8914,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" ]
        ]
      ], [
-       fhir:index 148;
+       fhir:index 169;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.exposureRoute.coding.version" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.exposureRoute.coding.version" ];
        fhir:ElementDefinition.short [ fhir:value "Version of the system - if relevant" ];
@@ -7879,7 +8962,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" ]
        ]
      ], [
-       fhir:index 149;
+       fhir:index 170;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.exposureRoute.coding.code" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.exposureRoute.coding.code" ];
        fhir:ElementDefinition.short [ fhir:value "Symbol in syntax defined by the system" ];
@@ -7928,7 +9011,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" ]
        ]
      ], [
-       fhir:index 150;
+       fhir:index 171;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.exposureRoute.coding.display" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -7982,7 +9065,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" ]
        ]
      ], [
-       fhir:index 151;
+       fhir:index 172;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.exposureRoute.coding.userSelected" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.exposureRoute.coding.userSelected" ];
        fhir:ElementDefinition.short [ fhir:value "If this coding was chosen directly by the user" ];
@@ -8031,7 +9114,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]" ]
        ]
      ], [
-       fhir:index 152;
+       fhir:index 173;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.exposureRoute.text" ];
        fhir:Element.extension [
          fhir:index 0;
@@ -8085,7 +9168,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ]
      ], [
-       fhir:index 153;
+       fhir:index 174;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.note" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.note" ];
        fhir:ElementDefinition.short [ fhir:value "Text about event not captured in other fields" ];
@@ -8132,7 +9215,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "subjectOf.observationEvent[code=\"annotation\"].value" ]
        ]
      ], [
-       fhir:index 154;
+       fhir:index 175;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.note.id" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.note.id" ];
        fhir:ElementDefinition.representation [
@@ -8171,7 +9254,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 155;
+       fhir:index 176;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.note.extension" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.note.extension" ];
        fhir:ElementDefinition.slicing [
@@ -8233,7 +9316,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 156;
+       fhir:index 177;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.note.author[x]" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.note.author[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Individual responsible for the annotation" ];
@@ -8252,6 +9335,14 @@
          fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Practitioner" ]
        ], [
          fhir:index 1;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Patient" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/RelatedPerson" ]
+       ], [
+         fhir:index 3;
          fhir:ElementDefinition.type.code [ fhir:value "string" ]
        ];
        fhir:ElementDefinition.condition [
@@ -8292,7 +9383,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Act.participant[typeCode=AUT].role" ]
        ]
      ], [
-       fhir:index 157;
+       fhir:index 178;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.note.time" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.note.time" ];
        fhir:ElementDefinition.short [ fhir:value "When the annotation was made" ];
@@ -8335,7 +9426,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "Act.effectiveTime" ]
        ]
      ], [
-       fhir:index 158;
+       fhir:index 179;
        fhir:Element.id [ fhir:value "AllergyIntolerance.reaction.note.text" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.reaction.note.text" ];
        fhir:ElementDefinition.short [ fhir:value "The annotation  - text content" ];
@@ -8453,7 +9544,7 @@
        fhir:Element.id [ fhir:value "AllergyIntolerance.code:absentOrUnknownAllergy.coding.system" ];
        fhir:ElementDefinition.path [ fhir:value "AllergyIntolerance.code.coding.system" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.fixedUri [ fhir:value "http://hl7.org/fhir/ips/CodeSystem/absent-unknown" ]
+       fhir:ElementDefinition.fixedUri [ fhir:value "urn:oid:2.16.840.1.113883.3.1937.777.13.5.999.1" ]
      ], [
        fhir:index 8;
        fhir:Element.id [ fhir:value "AllergyIntolerance.code:absentOrUnknownAllergy.coding.code" ];
@@ -8545,9 +9636,15 @@
      ]
   ] .
 
+<http://hl7.org/fhir/ValueSet/security-labels> a fhir:ValueSet .
+
+<http://hl7.org/fhir/ValueSet/common-tags> a fhir:ValueSet .
+
 <http://hl7.org/fhir/ValueSet/all-languages> a fhir:ValueSet .
 
 <http://hl7.org/fhir/ValueSet/languages> a fhir:ValueSet .
+
+<http://hl7.org/fhir/ValueSet/narrative-status> a fhir:ValueSet .
 
 <http://hl7.org/fhir/ValueSet/identifier-use> a fhir:ValueSet .
 

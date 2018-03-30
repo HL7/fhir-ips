@@ -16,7 +16,7 @@
   fhir:StructureDefinition.version [ fhir:value "1"];
   fhir:StructureDefinition.name [ fhir:value "Device-observer-uv-ips"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-03-21T08:07:42-06:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2018-03-21T09:07:42-05:00"^^xsd:dateTime];
   fhir:StructureDefinition.description [ fhir:value "This profile represents the constraints applied to the Device resource by the IPS project, which specifies an international patient summary based on the FHIR standard STU3.;\r\n\r\nThis profile describes a device that plays the role of observer."];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
@@ -5265,6 +5265,14 @@
          fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Practitioner" ]
        ], [
          fhir:index 1;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Patient" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/RelatedPerson" ]
+       ], [
+         fhir:index 3;
          fhir:ElementDefinition.type.code [ fhir:value "string" ]
        ];
        fhir:ElementDefinition.condition [

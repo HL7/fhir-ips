@@ -1,0 +1,1179 @@
+{
+  "resourceType": "Bundle",
+  "id": "IPS-examples-Bundle-01",
+  "language": "en-GB",
+  "identifier": {
+    "system": "2.16.724.4.8.10.200.10",
+    "value": "175bd032-8b00-4728-b2dc-748bb1501aed"
+  },
+  "type": "document",
+  "entry": [
+    {
+      "fullUrl": "Composition/IPS-examples-Composition-01",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "IPS-examples-Composition-01",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/ips/StructureDefinition/composition-uv-ips"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: IPS-examples-Composition-01</p><p><b>meta</b>: </p><p><b>identifier</b>: 3f69e0a5-2177-4540-baab-7a5d0877428f</p><p><b>status</b>: final</p><p><b>type</b>: Patient Summary <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '60591-5' = 'Patient summary Document', given as 'Patient Summary'})</span></p><p><b>date</b>: Jul 20, 2017 2:30:00 PM</p><p><b>author</b>: <a href=\"Practitioner/IPS-examples-Practitioner-01\">Practitioner/IPS-examples-Practitioner-01</a></p><p><b>title</b>: Patient Summary as of July 20, 2017 14:30</p><p><b>confidentiality</b>: N</p><blockquote><p><b>attester</b></p><p><b>mode</b>: legal</p><p><b>time</b>: Jul 20, 2017 2:30:00 PM</p><p><b>party</b>: <a href=\"Practitioner/IPS-examples-Practitioner-01\">Practitioner/IPS-examples-Practitioner-01</a></p></blockquote><blockquote><p><b>attester</b></p><p><b>mode</b>: legal</p><p><b>time</b>: Jul 20, 2017 2:30:00 PM</p><p><b>party</b>: <a href=\"Organization/IPS-examples-Organization-01\">Organization/IPS-examples-Organization-01</a></p></blockquote><p><b>custodian</b>: <a href=\"Organization/IPS-examples-Organization-01\">Organization/IPS-examples-Organization-01</a></p><h3>RelatesTos</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Target[x]</b></td></tr><tr><td>*</td><td>appends</td><td>c2277753-9f90-4a95-8ddb-a0b3f6e7d292</td></tr></table><h3>Events</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Period</b></td></tr><tr><td>*</td><td>care provision <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/ActClass code 'PCPR' = 'care provision)</span></td><td>?? --&gt; Jul 20, 2017 8:30:00 AM</td></tr></table></div>"
+        },
+        "identifier": {
+          "system": "urn:oid:2.16.724.4.8.10.200.10",
+          "value": "3f69e0a5-2177-4540-baab-7a5d0877428f"
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "60591-5",
+              "display": "Patient Summary"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/IPS-examples-Patient-01"
+        },
+        "date": "2017-07-20T14:30:00+01:00",
+        "author": [
+          {
+            "reference": "Practitioner/IPS-examples-Practitioner-01"
+          }
+        ],
+        "title": "Patient Summary as of July 20, 2017 14:30",
+        "confidentiality": "N",
+        "attester": [
+          {
+            "mode": [
+              "legal"
+            ],
+            "time": "2017-07-20T14:30:00+01:00",
+            "party": {
+              "reference": "Practitioner/IPS-examples-Practitioner-01"
+            }
+          },
+          {
+            "mode": [
+              "legal"
+            ],
+            "time": "2017-07-20T14:30:00+01:00",
+            "party": {
+              "reference": "Organization/IPS-examples-Organization-01"
+            }
+          }
+        ],
+        "custodian": {
+          "reference": "Organization/IPS-examples-Organization-01"
+        },
+        "relatesTo": [
+          {
+            "code": "appends",
+            "targetIdentifier": {
+              "system": "urn:oid:2.16.724.4.8.10.200.10",
+              "value": "c2277753-9f90-4a95-8ddb-a0b3f6e7d292"
+            }
+          }
+        ],
+        "event": [
+          {
+            "code": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/ActClass",
+                    "code": "PCPR"
+                  }
+                ]
+              }
+            ],
+            "period": {
+              "end": "2017-07-20T14:30:00+01:00"
+            }
+          }
+        ],
+        "section": [
+          {
+            "title": "Active Problems",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11450-4",
+                  "display": "Problem list"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hot flushes</div>"
+            },
+            "entry": [
+              {
+                "reference": "Condition/IPS-examples-Condition-01"
+              }
+            ]
+          },
+          {
+            "title": "Medication",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "10160-0",
+                  "display": "Medication use"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                            <table>\n                                <thead>\n                                    <tr>\n                                        <th>Medication</th>\n                                        <th>Strength</th>\n                                        <th>Form</th>\n                                        <th>Dosage</th>\n                                        <th>Comment</th>\n                                    </tr>\n                                </thead>\n                                <tbody>\n                                    <tr>\n                                        <td>Anastrozole</td>\n                                        <td>1 mg</td>\n                                        <td>tablet</td>\n                                        <td>once daily</td>\n                                        <td>treatment for breast cancer</td>\n                                    </tr>\n                                    <tr>\n                                        <td>Black Cohosh Extract</td>\n                                        <td> </td>\n                                        <td>pil</td>\n                                        <td> </td>\n                                        <td>herbal supplement</td>\n                                    </tr>\n                                </tbody>\n                            </table>\n                        </div>"
+            },
+            "entry": [
+              {
+                "reference": "MedicationStatement/IPS-examples-MedicationStatement-01"
+              },
+              {
+                "reference": "MedicationStatement/IPS-examples-MedicationStatement-02"
+              }
+            ]
+          },
+          {
+            "title": "Allergies and Intolerances",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48765-2",
+                  "display": "Allergies and/or adverse reactions"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Allergy to penicillin, high criticality, active</div>"
+            },
+            "entry": [
+              {
+                "reference": "AllergyIntolerance/IPS-examples-AllergyIntolerance-01"
+              }
+            ]
+          },
+          {
+            "title": "History of Past Illness",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11348-0",
+                  "display": "Past illness"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Breast cancer Stage II with no evidence of recurrence following treatment</div>"
+            },
+            "entry": [
+              {
+                "reference": "Condition/IPS-examples-Condition-02"
+              }
+            ]
+          },
+          {
+            "title": "Plan of Treatment",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "18776-5",
+                  "display": "Plan of care note"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Continue hormone medication with Anastrozole for total of 5 years and monitor for potential breast cancer recurrence</div>"
+            }
+          },
+          {
+            "title": "Results",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "30954-2",
+                  "display": "Results"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n                            <table>\n                                <thead>\n                                    <tr>\n                                        <th colspan=\"3\">Blood typing</th>\n                                    </tr>\n                                </thead>\n                                <tbody>\n                                    <tr>\n                                        <td>Blood group</td>\n                                        <td>A+</td>\n                                        <td/>\n                                     </tr>\n                                    <tr>\n                                        <td>C Ab [Presence] in Serum or Plasma</td>\n                                        <td>Positive</td>\n                                        <td/>\n                                    </tr>\n                                    <tr>\n                                        <td>E Ab [Presence] in Serum or Plasma</td>\n                                        <td>Positive</td>\n                                        <td/>\n                                    </tr>\n                                    <tr>\n                                        <td>Little c Ab [Presence] in Serum or Plasma</td>\n                                        <td>Negative</td>\n                                        <td/>\n                                    </tr>\n                                </tbody>\n                            </table>\n                            <table>\n                                <thead>\n                                    <tr>\n                                        <th colspan=\"3\">Hemoglobin A1c monitoring</th>\n                                    </tr>\n                                </thead>\n                                <tbody>\n                                    <tr>\n                                        <td>Hemoglobin A1c/Hemoglobin.total in Blood by HPLC</td>\n                                        <td>7.5 %</td>\n                                        <td/>\n                                    </tr>\n                                </tbody>\n                            </table>\n                            <table>\n                                <thead>\n                                    <tr>\n                                        <th colspan=\"3\">Bacteriology</th>\n                                    </tr>\n                                </thead>\n                                <tbody>\n                                    <tr>\n                                        <td colspan=\"3\">Methicillin resistant Staphylococcus aureus</td>\n                                    </tr>\n                                    <tr>\n                                        <td colspan=\"3\">Healthy carrier of MRSA</td>\n                                    </tr>\n                                </tbody>\n                            </table>\n                        </div>"
+            },
+            "entry": [
+              {
+                "reference": "Observation/IPS-examples-Observation-01-Sub0"
+              },
+              {
+                "reference": "Observation/IPS-examples-Observation-01-Sub1"
+              },
+              {
+                "reference": "Observation/IPS-examples-Observation-01-Sub2"
+              },
+              {
+                "reference": "Observation/IPS-examples-Observation-01-Sub3"
+              },
+              {
+                "reference": "Observation/IPS-examples-Observation-01-0"
+              },
+              {
+                "reference": "Observation/IPS-examples-Observation-01-1"
+              },
+              {
+                "reference": "Observation/IPS-examples-Observation-01-3"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Patient/IPS-examples-Patient-01",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "IPS-examples-Patient-01",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/ips/StructureDefinition/patient-uv-ips"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: IPS-examples-Patient-01</p><p><b>meta</b>: </p><p><b>identifier</b>: 574687583</p><p><b>active</b>: true</p><p><b>name</b>: Martha DeLarosa </p><p><b>telecom</b>: ph: +31788700800(HOME)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: May 1, 1972</p><p><b>address</b>: Laan Van Europa 1600 Dordrecht 3317 DB Netherlands </p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td><td><b>Address</b></td></tr><tr><td>*</td><td>mother <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/v3/RoleCode code 'MTH' = 'mother)</span></td><td>Martha Mum </td><td>ph: +33-555-20036(HOME)</td><td>Promenade des Anglais 111 Lyon 69001 France </td></tr></table></div>"
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.4.6.3",
+            "value": "574687583"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "DeLarosa",
+            "given": [
+              "Martha"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+31788700800",
+            "use": "home"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1972-05-01",
+        "address": [
+          {
+            "line": [
+              "Laan Van Europa 1600"
+            ],
+            "city": "Dordrecht",
+            "postalCode": "3317 DB",
+            "country": "Netherlands"
+          }
+        ],
+        "contact": [
+          {
+            "relationship": [
+              {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/v3/RoleCode",
+                    "code": "MTH"
+                  }
+                ]
+              }
+            ],
+            "name": {
+              "family": "Mum",
+              "given": [
+                "Martha"
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "+33-555-20036",
+                "use": "home"
+              }
+            ],
+            "address": {
+              "line": [
+                "Promenade des Anglais 111"
+              ],
+              "city": "Lyon",
+              "postalCode": "69001",
+              "country": "France"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Practitioner/IPS-examples-Practitioner-01",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "IPS-examples-Practitioner-01",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: IPS-examples-Practitioner-01</p><p><b>identifier</b>: 129854633</p><p><b>active</b>: true</p><p><b>name</b>: Beetje van Hulp </p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Generalist medical practitioners <span style=\"background: LightGoldenRodYellow\">(Details : {urn:oid:2.16.840.1.113883.2.9.6.2.7 code '2211' = '2211', given as 'Generalist medical practitioners'}; {urn:oid:2.16.840.1.113883.2.4.15.111 code '01.015' = '01.015', given as 'Huisarts'})</span></td></tr></table></div>"
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.528.1.1007.3.1",
+            "value": "129854633",
+            "assigner": {
+              "display": "CIBG"
+            }
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "van Hulp",
+            "given": [
+              "Beetje"
+            ]
+          }
+        ],
+        "qualification": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "urn:oid:2.16.840.1.113883.2.9.6.2.7",
+                  "code": "2211",
+                  "display": "Generalist medical practitioners"
+                },
+                {
+                  "system": "urn:oid:2.16.840.1.113883.2.4.15.111",
+                  "code": "01.015",
+                  "display": "Huisarts"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Organization/IPS-examples-Organization-01",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "IPS-examples-Organization-01",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: IPS-examples-Organization-01</p><p><b>identifier</b>: 564738757</p><p><b>active</b>: true</p><p><b>name</b>: Anorg Aniza Tion BV / The best custodian ever</p><p><b>telecom</b>: ph: +31-51-34343400(WORK)</p><p><b>address</b>: Houttuinen 27 Dordrecht 3311 CE Netherlands (WORK)</p></div>"
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.528.1.1007.3.3",
+            "value": "564738757"
+          }
+        ],
+        "active": true,
+        "name": "Anorg Aniza Tion BV / The best custodian ever",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+31-51-34343400",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "use": "work",
+            "line": [
+              "Houttuinen 27"
+            ],
+            "city": "Dordrecht",
+            "postalCode": "3311 CE",
+            "country": "Netherlands"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Condition/IPS-examples-Condition-01",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "IPS-examples-Condition-01",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/ips/StructureDefinition/condition-uv-ips"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: IPS-examples-Condition-01</p><p><b>meta</b>: </p><p><b>identifier</b>: c87bf51c-e53c-4bfe-b8b7-aa62bdd93002</p><p><b>clinicalStatus</b>: active</p><p><b>verificationStatus</b>: confirmed</p><p><b>category</b>: Problem <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '75326-9' = 'Problem', given as 'Problem'})</span></p><p><b>severity</b>: Moderate <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code 'LA6751-7' = 'LA6751-7', given as 'Moderate'})</span></p><p><b>code</b>: Menopausal flushing (finding) <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '198436008' = 'Menopausal flushing', given as 'Menopausal flushing (finding)'})</span></p><p><b>subject</b>: <a href=\"Patient/IPS-examples-Patient-01\">Patient/IPS-examples-Patient-01</a></p><p><b>onset</b>: Jan 1, 2015</p><p><b>assertedDate</b>: Oct 1, 2016</p></div>"
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:1.2.3.999",
+            "value": "c87bf51c-e53c-4bfe-b8b7-aa62bdd93002"
+          }
+        ],
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "75326-9",
+                "display": "Problem"
+              }
+            ]
+          }
+        ],
+        "severity": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "LA6751-7",
+              "display": "Moderate"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "nl-NL"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "opvliegers"
+                    }
+                  ]
+                }
+              ],
+              "system": "http://snomed.info/sct",
+              "code": "198436008",
+              "display": "Menopausal flushing (finding)"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/IPS-examples-Patient-01"
+        },
+        "onsetDateTime": "2015",
+        "assertedDate": "2016-10"
+      }
+    },
+    {
+      "fullUrl": "MedicationStatement/IPS-examples-MedicationStatement-01",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "IPS-examples-MedicationStatement-01",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/ips/StructureDefinition/medicationstatement-uv-ips"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: IPS-examples-MedicationStatement-01</p><p><b>meta</b>: </p><p><b>identifier</b>: b75f92cb-61d4-469a-9387-df5ef70d25f0</p><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"Medication/IPS-examples-Medication-01\">Medication/IPS-examples-Medication-01</a></p><p><b>effective</b>: Mar 1, 2015 12:00:00 AM --&gt; (ongoing)</p><p><b>subject</b>: <a href=\"Patient/IPS-examples-Patient-01\">Patient/IPS-examples-Patient-01</a></p><p><b>taken</b>: y</p><p><b>dosage</b>: </p></div>"
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:1.2.3.999",
+            "value": "b75f92cb-61d4-469a-9387-df5ef70d25f0"
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/IPS-examples-Medication-01"
+        },
+        "effectivePeriod": {
+          "start": "2015-03"
+        },
+        "subject": {
+          "reference": "Patient/IPS-examples-Patient-01"
+        },
+        "taken": "y",
+        "dosage": [
+          {
+            "timing": {
+              "repeat": {
+                "count": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "urn:oid:0.4.0.127.0.16.1.1.2.1",
+                  "code": "20053000",
+                  "display": "Oral use"
+                }
+              ]
+            },
+            "doseQuantity": {
+              "value": 1,
+              "unit": "tablet",
+              "system": "http://unitsofmeasure.org",
+              "code": "tbl"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "MedicationStatement/IPS-examples-MedicationStatement-02",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "IPS-examples-MedicationStatement-02",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/ips/StructureDefinition/medicationstatement-uv-ips"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: IPS-examples-MedicationStatement-02</p><p><b>meta</b>: </p><p><b>identifier</b>: 9e312d6b-c6b6-439a-a730-6efaa5dcf8bc</p><p><b>status</b>: active</p><p><b>medication</b>: <a href=\"Medication/IPS-examples-Medication-02\">Medication/IPS-examples-Medication-02</a></p><p><b>effective</b>: Jan 1, 2016 12:00:00 AM --&gt; (ongoing)</p><p><b>subject</b>: <a href=\"Patient/IPS-examples-Patient-01\">Patient/IPS-examples-Patient-01</a></p><p><b>taken</b>: y</p><p><b>dosage</b>: </p></div>"
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:1.2.3.999",
+            "value": "9e312d6b-c6b6-439a-a730-6efaa5dcf8bc"
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/IPS-examples-Medication-02"
+        },
+        "effectivePeriod": {
+          "start": "2016-01"
+        },
+        "subject": {
+          "reference": "Patient/IPS-examples-Patient-01"
+        },
+        "taken": "y",
+        "dosage": [
+          {
+            "route": {
+              "coding": [
+                {
+                  "system": "urn:oid:0.4.0.127.0.16.1.1.2.1",
+                  "code": "20053000",
+                  "display": "Oral use"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Medication/IPS-examples-Medication-01",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "IPS-examples-Medication-01",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/ips/StructureDefinition/medication-uv-ips"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: IPS-examples-Medication-01</p><p><b>meta</b>: </p><p><b>code</b>: Anastrozole (product) <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '108774000' = 'Anastrozole', given as 'Anastrozole (product)'}; {urn:oid:2.16.840.1.113883.2.4.4.1 code '99872' = '99872', given as 'ANASTROZOL 1MG TABLET'}; {urn:oid:2.16.840.1.113883.2.4.4.7 code '2076667' = '2076667', given as 'ANASTROZOL CF TABLET FILMOMHULD 1MG'})</span></p></div>"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "108774000",
+              "display": "Anastrozole (product)"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.2.4.4.1",
+              "code": "99872",
+              "display": "ANASTROZOL 1MG TABLET"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.2.4.4.7",
+              "code": "2076667",
+              "display": "ANASTROZOL CF TABLET FILMOMHULD 1MG"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "Medication/IPS-examples-Medication-02",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "IPS-examples-Medication-02",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/ips/StructureDefinition/medication-uv-ips"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: IPS-examples-Medication-02</p><p><b>meta</b>: </p><p><b>code</b>: Black Cohosh Extract herbal supplement <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '412588001' = 'Cimicifuga racemosa extract (substance)', given as 'Cimicifuga racemosa extract (substance)'})</span></p></div>"
+        },
+        "code": {
+          "coding": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "nl-NL"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Zwarte Cohosh Extract"
+                    }
+                  ]
+                }
+              ],
+              "system": "http://snomed.info/sct",
+              "code": "412588001",
+              "display": "Cimicifuga racemosa extract (substance)"
+            }
+          ],
+          "text": "Black Cohosh Extract herbal supplement"
+        }
+      }
+    },
+    {
+      "fullUrl": "AllergyIntolerance/IPS-examples-AllergyIntolerance-01",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "IPS-examples-AllergyIntolerance-01",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/ips/StructureDefinition/allergyintolerance-uv-ips"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: IPS-examples-AllergyIntolerance-01</p><p><b>meta</b>: </p><p><b>identifier</b>: 3a462598-009c-484a-965c-d6b24a821424</p><p><b>clinicalStatus</b>: active</p><p><b>verificationStatus</b>: confirmed</p><p><b>type</b>: allergy</p><p><b>category</b>: medication</p><p><b>criticality</b>: high</p><p><b>code</b>: Penicillin -class of antibiotic- (substance) <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '373270004' = 'Penicillin -class of antibiotic- (substance)', given as 'Penicillin -class of antibiotic- (substance)'})</span></p><p><b>patient</b>: <a href=\"Patient/IPS-examples-Patient-01\">Patient/IPS-examples-Patient-01</a></p><p><b>onset</b>: Jan 1, 2010</p></div>"
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:1.2.3.999",
+            "value": "3a462598-009c-484a-965c-d6b24a821424"
+          }
+        ],
+        "clinicalStatus": "active",
+        "verificationStatus": "confirmed",
+        "type": "allergy",
+        "category": [
+          "medication"
+        ],
+        "criticality": "high",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "373270004",
+              "display": "Penicillin -class of antibiotic- (substance)"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/IPS-examples-Patient-01"
+        },
+        "onsetDateTime": "2010"
+      }
+    },
+    {
+      "fullUrl": "Condition/IPS-examples-Condition-02",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "IPS-examples-Condition-02",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/ips/StructureDefinition/condition-uv-ips"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: IPS-examples-Condition-02</p><p><b>meta</b>: </p><p><b>identifier</b>: 66d4a8c7-9081-43e0-a63f-489c2ae6edd6</p><p><b>clinicalStatus</b>: remission</p><p><b>verificationStatus</b>: confirmed</p><p><b>category</b>: Problem <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '75326-9' = 'Problem', given as 'Problem'})</span></p><p><b>severity</b>: Clinical stage II (finding) <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '60333009' = 'Clinical stage II', given as 'Clinical stage II (finding)'})</span></p><p><b>code</b>: Malignant neoplasm of breast (disorder) <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '254837009' = 'Malignant tumor of breast', given as 'Malignant neoplasm of breast (disorder)'}; {urn:oid:2.16.840.1.113883.6.43 code '8500/3' = '8500/3', given as 'Infiltrating duct carcinoma, NOS'})</span></p><p><b>subject</b>: <a href=\"Patient/IPS-examples-Patient-01\">Patient/IPS-examples-Patient-01</a></p><p><b>onset</b>: Jan 1, 2015</p><p><b>abatement</b>: Mar 1, 2015</p></div>"
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:1.2.3.999",
+            "value": "66d4a8c7-9081-43e0-a63f-489c2ae6edd6"
+          }
+        ],
+        "clinicalStatus": "remission",
+        "verificationStatus": "confirmed",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "75326-9",
+                "display": "Problem"
+              }
+            ]
+          }
+        ],
+        "severity": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "60333009",
+              "display": "Clinical stage II (finding)"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                  "extension": [
+                    {
+                      "url": "lang",
+                      "valueCode": "nl-NL"
+                    },
+                    {
+                      "url": "content",
+                      "valueString": "Borstkanker stadium II zonder aanwijzingen van recidieven na behandeling"
+                    }
+                  ]
+                }
+              ],
+              "system": "http://snomed.info/sct",
+              "code": "254837009",
+              "display": "Malignant neoplasm of breast (disorder)"
+            },
+            {
+              "system": "urn:oid:2.16.840.1.113883.6.43",
+              "code": "8500/3",
+              "display": "Infiltrating duct carcinoma, NOS"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/IPS-examples-Patient-01"
+        },
+        "onsetDateTime": "2015-01",
+        "abatementDateTime": "2015-03"
+      }
+    },
+    {
+      "fullUrl": "Organization/IPS-examples-Organization-02",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "IPS-examples-Organization-02",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: IPS-examples-Organization-02</p><p><b>active</b>: true</p><p><b>type</b>: laboratory-medicine <span style=\"background: LightGoldenRodYellow\">(Details : {urn:oid:2.16.840.1.113883.4.642.3.403 code 'laboratory-medicine' = 'laboratory-medicine)</span></p><p><b>name</b>: Laboratoire de charme</p></div>"
+        },
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.4.642.3.403",
+                "code": "laboratory-medicine"
+              }
+            ]
+          }
+        ],
+        "name": "Laboratoire de charme"
+      }
+    },
+    {
+      "fullUrl": "Observation/IPS-examples-Observation-01-Sub0",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "IPS-examples-Observation-01-Sub0",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/ips/StructureDefinition/observation-member-laboratory-uv-ips"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: IPS-examples-Observation-01-Sub0</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/observation-category code 'laboratory' = 'Laboratory)</span></p><p><b>code</b>: ABO and Rh group [Type] in Blood <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '882-1' = 'ABO and Rh group [Type] in Blood', given as 'ABO and Rh group [Type] in Blood'})</span></p><p><b>subject</b>: <a href=\"Patient/IPS-examples-Patient-01\">Patient/IPS-examples-Patient-01</a></p><p><b>effective</b>: Oct 10, 2015 9:15:00 AM</p><p><b>value</b>: Blood group A Rh(D) positive <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '278149003' = 'Blood group A Rh(D) positive', given as 'Blood group A Rh(D) positive'})</span></p></div>"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "882-1",
+              "display": "ABO and Rh group [Type] in Blood"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/IPS-examples-Patient-01"
+        },
+        "effectiveDateTime": "2015-10-10T09:15:00+01:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "278149003",
+              "display": "Blood group A Rh(D) positive"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "Observation/IPS-examples-Observation-01-Sub1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "IPS-examples-Observation-01-Sub1",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/ips/StructureDefinition/observation-member-laboratory-uv-ips"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: IPS-examples-Observation-01-Sub1</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/observation-category code 'laboratory' = 'Laboratory)</span></p><p><b>code</b>: C Ab [Presence] in Serum or Plasma <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '945-6' = 'C Ab [Presence] in Serum or Plasma', given as 'C Ab [Presence] in Serum or Plasma'})</span></p><p><b>subject</b>: <a href=\"Patient/IPS-examples-Patient-01\">Patient/IPS-examples-Patient-01</a></p><p><b>effective</b>: Oct 10, 2015 9:35:00 AM</p><p><b>value</b>: Positive <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '10828004' = 'Positive', given as 'Positive'})</span></p></div>"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "945-6",
+              "display": "C Ab [Presence] in Serum or Plasma"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/IPS-examples-Patient-01"
+        },
+        "effectiveDateTime": "2015-10-10T09:35:00+01:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "10828004",
+              "display": "Positive"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "Observation/IPS-examples-Observation-01-Sub2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "IPS-examples-Observation-01-Sub2",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/ips/StructureDefinition/observation-member-laboratory-uv-ips"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: IPS-examples-Observation-01-Sub2</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/observation-category code 'laboratory' = 'Laboratory)</span></p><p><b>code</b>: E Ab [Presence] in Serum or Plasma <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '1018-1' = 'E Ab [Presence] in Serum or Plasma', given as 'E Ab [Presence] in Serum or Plasma'})</span></p><p><b>subject</b>: <a href=\"Patient/IPS-examples-Patient-01\">Patient/IPS-examples-Patient-01</a></p><p><b>effective</b>: Oct 10, 2015 9:35:00 AM</p><p><b>value</b>: Positive <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '10828004' = 'Positive', given as 'Positive'})</span></p></div>"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1018-1",
+              "display": "E Ab [Presence] in Serum or Plasma"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/IPS-examples-Patient-01"
+        },
+        "effectiveDateTime": "2015-10-10T09:35:00+01:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "10828004",
+              "display": "Positive"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "Observation/IPS-examples-Observation-01-Sub3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "IPS-examples-Observation-01-Sub3",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/ips/StructureDefinition/observation-member-laboratory-uv-ips"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: IPS-examples-Observation-01-Sub3</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/observation-category code 'laboratory' = 'Laboratory)</span></p><p><b>code</b>: little c Ab [Presence] in Serum or Plasma <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '1156-9' = 'little c Ab [Presence] in Serum or Plasma', given as 'little c Ab [Presence] in Serum or Plasma'})</span></p><p><b>subject</b>: <a href=\"Patient/IPS-examples-Patient-01\">Patient/IPS-examples-Patient-01</a></p><p><b>effective</b>: Oct 10, 2015 9:35:00 AM</p><p><b>value</b>: Negative <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '260385009' = 'Negative', given as 'Negative'})</span></p></div>"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1156-9",
+              "display": "little c Ab [Presence] in Serum or Plasma"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/IPS-examples-Patient-01"
+        },
+        "effectiveDateTime": "2015-10-10T09:35:00+01:00",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260385009",
+              "display": "Negative"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "Observation/IPS-examples-Observation-01-0",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "IPS-examples-Observation-01-0",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/ips/StructureDefinition/observation-laboratory-uv-ips"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: IPS-examples-Observation-01-0</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/observation-category code 'laboratory' = 'Laboratory)</span></p><p><b>code</b>: Blood typing <span style=\"background: LightGoldenRodYellow\">(Details )</span></p><p><b>subject</b>: <a href=\"Patient/IPS-examples-Patient-01\">Patient/IPS-examples-Patient-01</a></p><p><b>effective</b>: Oct 10, 2015</p><p><b>performer</b>: <a href=\"Organization/IPS-examples-Organization-02\">Organization/IPS-examples-Organization-02</a></p><blockquote><p><b>related</b></p><p><b>type</b>: has-member</p><p><b>target</b>: <a href=\"Observation/IPS-examples-Observation-01-Sub0\">Observation/IPS-examples-Observation-01-Sub0</a></p></blockquote><blockquote><p><b>related</b></p><p><b>type</b>: has-member</p><p><b>target</b>: <a href=\"Observation/IPS-examples-Observation-01-Sub1\">Observation/IPS-examples-Observation-01-Sub1</a></p></blockquote><blockquote><p><b>related</b></p><p><b>type</b>: has-member</p><p><b>target</b>: <a href=\"Observation/IPS-examples-Observation-01-Sub2\">Observation/IPS-examples-Observation-01-Sub2</a></p></blockquote><blockquote><p><b>related</b></p><p><b>type</b>: has-member</p><p><b>target</b>: <a href=\"Observation/IPS-examples-Observation-01-Sub3\">Observation/IPS-examples-Observation-01-Sub3</a></p></blockquote></div>"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "text": "Blood typing"
+        },
+        "subject": {
+          "reference": "Patient/IPS-examples-Patient-01"
+        },
+        "effectiveDateTime": "2015-10-10",
+        "performer": [
+          {
+            "reference": "Organization/IPS-examples-Organization-02"
+          }
+        ],
+        "related": [
+          {
+            "type": "has-member",
+            "target": {
+              "reference": "Observation/IPS-examples-Observation-01-Sub0"
+            }
+          },
+          {
+            "type": "has-member",
+            "target": {
+              "reference": "Observation/IPS-examples-Observation-01-Sub1"
+            }
+          },
+          {
+            "type": "has-member",
+            "target": {
+              "reference": "Observation/IPS-examples-Observation-01-Sub2"
+            }
+          },
+          {
+            "type": "has-member",
+            "target": {
+              "reference": "Observation/IPS-examples-Observation-01-Sub3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "Observation/IPS-examples-Observation-01-1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "IPS-examples-Observation-01-1",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/ips/StructureDefinition/observation-laboratory-uv-ips"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: IPS-examples-Observation-01-1</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/observation-category code 'laboratory' = 'Laboratory)</span></p><p><b>code</b>: Hemoglobin A1c/Hemoglobin.total in Blood by HPLC <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '17856-6' = 'Hemoglobin A1c/Hemoglobin.total in Blood by HPLC', given as 'Hemoglobin A1c/Hemoglobin.total in Blood by HPLC'})</span></p><p><b>subject</b>: <a href=\"Patient/IPS-examples-Patient-01\">Patient/IPS-examples-Patient-01</a></p><p><b>effective</b>: Nov 10, 2017 8:20:00 AM</p><p><b>performer</b>: <a href=\"Organization/IPS-examples-Organization-02\">Organization/IPS-examples-Organization-02</a></p><p><b>value</b>: 7.5 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code % = '%')</span></p><p><b>comment</b>: Above stated goal of 7.0 %</p></div>"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "17856-6",
+              "display": "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/IPS-examples-Patient-01"
+        },
+        "effectiveDateTime": "2017-11-10T08:20:00+01:00",
+        "performer": [
+          {
+            "reference": "Organization/IPS-examples-Organization-02"
+          }
+        ],
+        "valueQuantity": {
+          "value": 7.5,
+          "unit": "%",
+          "system": "http://unitsofmeasure.org",
+          "code": "%"
+        },
+        "comment": "Above stated goal of 7.0 %"
+      }
+    },
+    {
+      "fullUrl": "Observation/IPS-examples-Observation-01-3",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "IPS-examples-Observation-01-3",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/ips/StructureDefinition/observation-laboratory-uv-ips"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: IPS-examples-Observation-01-3</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow\">(Details : {http://hl7.org/fhir/observation-category code 'laboratory' = 'Laboratory)</span></p><p><b>code</b>: Bacteria identified in Isolate <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '42803-7' = 'Bacteria identified in Isolate', given as 'Bacteria identified in Isolate'})</span></p><p><b>subject</b>: <a href=\"Patient/IPS-examples-Patient-01\">Patient/IPS-examples-Patient-01</a></p><p><b>effective</b>: Dec 10, 2017 8:20:00 AM</p><p><b>performer</b>: <a href=\"Organization/IPS-examples-Organization-02\">Organization/IPS-examples-Organization-02</a></p><p><b>value</b>: Methicillin resistant Staphylococcus aureus <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '115329001' = 'MRSA', given as 'Methicillin resistant Staphylococcus aureus'})</span></p><p><b>comment</b>: Healthy carrier of MRSA</p></div>"
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "42803-7",
+              "display": "Bacteria identified in Isolate"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/IPS-examples-Patient-01"
+        },
+        "effectiveDateTime": "2017-12-10T08:20:00+01:00",
+        "performer": [
+          {
+            "reference": "Organization/IPS-examples-Organization-02"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "115329001",
+              "display": "Methicillin resistant Staphylococcus aureus"
+            }
+          ]
+        },
+        "comment": "Healthy carrier of MRSA"
+      }
+    }
+  ]
+}

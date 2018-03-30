@@ -9,7 +9,7 @@
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "statement-uv-ips"];
   fhir:Resource.meta [
-     fhir:Meta.lastUpdated [ fhir:value "2018-03-07T04:24:00.364-07:00"^^xsd:dateTime ]
+     fhir:Meta.lastUpdated [ fhir:value "2018-03-07T05:24:00.364-06:00"^^xsd:dateTime ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
@@ -20,7 +20,7 @@
   fhir:StructureDefinition.name [ fhir:value "statement-uv-ips"];
   fhir:StructureDefinition.title [ fhir:value "Statement Details"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2018-03-07T01:32:09-07:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2018-03-07T02:32:09-06:00"^^xsd:dateTime];
   fhir:StructureDefinition.description [ fhir:value "An extension defined for the International Patient Summary to record the details about a statement, if not already covered by the base resource. \r\nA statement can refer to different resources as Immunizations; Procedures;..."];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
@@ -646,6 +646,22 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Patient" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/RelatedPerson" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Practitioner" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/PractitionerRole" ]
+       ], [
+         fhir:index 4;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Organization" ]
        ];
        fhir:ElementDefinition.condition [
          fhir:value "ele-1";
@@ -1163,6 +1179,22 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Patient" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/RelatedPerson" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Practitioner" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/PractitionerRole" ]
+       ], [
+         fhir:index 4;
+         fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
+         fhir:ElementDefinition.type.targetProfile [ fhir:value "http://hl7.org/fhir/StructureDefinition/Organization" ]
        ]
      ], [
        fhir:index 8;

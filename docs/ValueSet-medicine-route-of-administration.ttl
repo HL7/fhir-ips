@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/ips/ValueSet/medicine-route-of-administration> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "medicine-route-of-administration"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/shareablevalueset";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IPSRouteOfAdmin</h2><div><p>Value Set Definition:DrawnFromCodeSystem 0.4.0.127.0.16.1.1.2.1 (EDQM) PropertyBasedContentSet.IncludeWithProperty.Expression (              ([Concept Status] = ‘Current’)   AND  ([Concept Class] = 'route of administration')   AND  ([Domain] = 'Human and Veterinary') ) The list of values reported hereafter is provided only as example</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <code>urn:oid:0.4.0.127.0.16.1.1.2.1</code></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/ips/ValueSet/medicine-route-of-administration"];
+  fhir:ValueSet.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "http://art-decor.org/ns/oids/vs" ];
+     fhir:Identifier.value [ fhir:value "2.16.840.1.113883.11.22.33" ]
+  ];
+  fhir:ValueSet.version [ fhir:value "1"];
+  fhir:ValueSet.name [ fhir:value "IPSRouteOfAdmin"];
+  fhir:ValueSet.title [ fhir:value "Medicine Route of Administration"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:ValueSet.date [ fhir:value "2018-03-30T11:34:46-05:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "HL7 International"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 International" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "phone" ];
+       fhir:ContactPoint.value [ fhir:value "+1 734 677 7777 " ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "fax" ];
+       fhir:ContactPoint.value [ fhir:value "+1 734 677 6622" ]
+     ], [
+       fhir:index 2;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "info@hl7.org" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Value Set Definition:DrawnFromCodeSystem 0.4.0.127.0.16.1.1.2.1 (EDQM) PropertyBasedContentSet.IncludeWithProperty.Expression (              ([Concept Status] = ‘Current’)   AND  ([Concept Class] = 'route of administration')   AND  ([Domain] = 'Human and Veterinary') ) The list of values reported hereafter is provided only as example"];
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ];
+       fhir:Coding.display [ fhir:value "World" ]
+     ]
+  ];
+  fhir:ValueSet.immutable [ fhir:value "false"^^xsd:boolean];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:0.4.0.127.0.16.1.1.2.1" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/ips/ValueSet/medicine-route-of-administration.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/ips/ValueSet/medicine-route-of-administration.ttl> .
+
+# -------------------------------------------------------------------------------------
+

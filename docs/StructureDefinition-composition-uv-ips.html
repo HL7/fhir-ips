@@ -260,7 +260,7 @@ can only resize using html  or css ;-( -->
 Formats: <a href="StructureDefinition-composition-uv-ips.html">Narrative</a>, <a href="StructureDefinition-composition-uv-ips.xml.html">XML</a>, <a href="StructureDefinition-composition-uv-ips.json.html">JSON</a>, <a href="StructureDefinition-composition-uv-ips.ttl.html">Turtle</a>
 </p> -->
 
-<h2><span class="sectioncount">SD.8</span> StructureDefinition-composition-uv-ips</h2>
+<h2><span class="sectioncount">SD.6</span> StructureDefinition-composition-uv-ips</h2>
 
 
   <!-- introductiontext here -->
@@ -270,7 +270,29 @@ Formats: <a href="StructureDefinition-composition-uv-ips.html">Narrative</a>, <a
 
 <h4 id="conformance-resource-variables-defined-here">Conformance resource variables defined <a href="http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation#Jekyll">here</a></h4>
 
-<h2 id="composition-international-patient-summary">Composition International Patient Summary</h2>
+  <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc' -->
+
+<ul id="markdown-toc">
+  <li><a href="#conformance-resource-variables-defined-here" id="markdown-toc-conformance-resource-variables-defined-here">Conformance resource variables defined here</a></li>
+  <li><a href="#composition-international-patient-summary" id="markdown-toc-composition-international-patient-summary">Composition International Patient Summary</a></li>
+  <li><a href="#sections-description" id="markdown-toc-sections-description">Sections description</a>    <ul>
+      <li><a href="#medication-summary" id="markdown-toc-medication-summary">Medication Summary</a></li>
+      <li><a href="#allergies-and-intolerances" id="markdown-toc-allergies-and-intolerances">Allergies and Intolerances</a></li>
+      <li><a href="#problem-list" id="markdown-toc-problem-list">Problem List</a></li>
+      <li><a href="#immunizations" id="markdown-toc-immunizations">Immunizations</a></li>
+      <li><a href="#history-of-procedures" id="markdown-toc-history-of-procedures">History of Procedures</a></li>
+      <li><a href="#medical-devices" id="markdown-toc-medical-devices">Medical Devices</a></li>
+      <li><a href="#diagnostic-results" id="markdown-toc-diagnostic-results">Diagnostic Results</a></li>
+      <li><a href="#past-history-of-illnesses" id="markdown-toc-past-history-of-illnesses">Past history of illnesses</a></li>
+      <li><a href="#pregnancy-status-and-history-summary" id="markdown-toc-pregnancy-status-and-history-summary">Pregnancy (status and history summary)</a></li>
+      <li><a href="#plan-of-care" id="markdown-toc-plan-of-care">Plan of Care</a></li>
+      <li><a href="#functional-status" id="markdown-toc-functional-status">Functional Status</a></li>
+      <li><a href="#advance-directives" id="markdown-toc-advance-directives">Advance Directives</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="composition-international-patient-summary">Composition International Patient Summary</h1>
 
 <p>The composition contains references to</p>
 <ul>
@@ -281,7 +303,7 @@ Formats: <a href="StructureDefinition-composition-uv-ips.html">Narrative</a>, <a
   <li>the IPS sections.</li>
 </ul>
 
-<p>The IPS sections are summarized in the following list. (R) denotes a required section (i.e. must be present in an IPS), (S) denotes a recommended section, the others are truely optional. Sections containing corresponding entries.</p>
+<p>The IPS sections are summarized in the following list. (R) denotes a required section (i.e. must be present in an IPS), (S) denotes a recommended section, the others are truely optional.</p>
 <ul>
   <li>Medication Summary (R)</li>
   <li>Allergies and Intolerances (R)</li>
@@ -304,6 +326,87 @@ Formats: <a href="StructureDefinition-composition-uv-ips.html">Narrative</a>, <a
 
 <p>(Vital Signs has not yet included)</p>
 
+<h1 id="sections-description">Sections description</h1>
+
+<h2 id="medication-summary">Medication Summary</h2>
+
+<p>The medication summary section contains a description of the patient’s medications relevant for the scope of the patient summary.
+The actual content could depend on the jurisdiction, it could report:</p>
+<ul>
+  <li>the currently active medications;</li>
+  <li>the current and past medications considered relevant by the authoring GP;</li>
+  <li>the patient prescriptions or dispensations automatically extracted by a regional or a national EHR.</li>
+</ul>
+
+<p>In all those cases however medications are documented in the Patient Summary as medication statements.
+This section requires either an entry indicating the subject is known not to be on any relevant medication; either an entry indicating that no information is available about medications; or entries summarizing the subject’s relevant medications.</p>
+
+<h2 id="allergies-and-intolerances">Allergies and Intolerances</h2>
+
+<p>This section documents the relevant allergies or intolerances (conditions) for a patient, describing the kind of reaction (e.g. rash, anaphylaxis,..); preferably the agents that cause it; and optionally the criticality and the certainty of the allergy.
+At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.
+If no information about allergies is available, or if no allergies are known this should be clearly documented in the section.</p>
+
+<h2 id="problem-list">Problem List</h2>
+
+<p>The IPS problem section lists and describes clinical problems or conditions currently being monitored for the patient.</p>
+
+<h2 id="immunizations">Immunizations</h2>
+
+<p>The Immunizations Section defines a patient’s current immunization status and pertinent immunization history.
+The primary use case for the Immunization Section is to enable communication of a patient’s immunization status.
+The section includes current immunization status, and may contain the entire immunization history that is relevant to the period of time being summarized.</p>
+
+<h2 id="history-of-procedures">History of Procedures</h2>
+
+<p>The History of Procedures Section contains a description of the patient past procedures that are pertinent to the scope of the IPS.</p>
+
+<p>Procedures may refer for example to:</p>
+<ol>
+  <li>Invasive Diagnostic procedure:e.g. Cardiac catheterization; (the results of these procedure are documented in the results section)</li>
+  <li>Therapeutic procedure: e.g. dialysis;</li>
+  <li>Surgical procedure: e.g. appendectomy</li>
+</ol>
+
+<h2 id="medical-devices">Medical Devices</h2>
+<p>The medical devices section contains narrative text and coded entries describing the patient history of medical device use.</p>
+
+<h2 id="diagnostic-results">Diagnostic Results</h2>
+<p>This section assembles relevant observation results collected on the patient or produced on in-vitro biologic specimens collected from the patient. Some of these results may be laboratory results, others may be anatomic pathology results, others, radiology results, and others, clinical results.</p>
+
+<p>This version is comprised of three alternative entries to carry results from:</p>
+<ul>
+  <li>laboratory</li>
+  <li>imaging</li>
+  <li>pathology</li>
+</ul>
+
+<p>and offers also a generic result entry.</p>
+
+<h2 id="past-history-of-illnesses">Past history of illnesses</h2>
+<p>The History of Past Illness section contains a description of the conditions the patient suffered in the past</p>
+
+<h2 id="pregnancy-status-and-history-summary">Pregnancy (status and history summary)</h2>
+<p>The pregnancy status and history is comprised of</p>
+<ul>
+  <li>an entry as an Observation of the pregnancy status, and optionally, a member Observation of the Estimated Delivery Date</li>
+  <li>an entry as an Observation of the pregnancy history (summary)</li>
+  <li>*## Social History
+The social history is as of now comprised of</li>
+  <li>tobacco use</li>
+  <li>alcohol use</li>
+</ul>
+
+<h2 id="plan-of-care">Plan of Care</h2>
+<p>The plan of care section contains a narrative description of the expectations for care including proposals, goals, and order requests for monitoring, tracking, or improving the condition of the patient.</p>
+
+<h2 id="functional-status">Functional Status</h2>
+<p>The functional status section contains a narrative description of capability of the patient to perform acts of daily living, including possible needs of the patient to be continuously assessed by third parties. The invalidity status may in fact influence decisions about how to administer treatments.
+Profiles to express disabilities and functional assessments will be specified by future versions of this guide.</p>
+
+<h2 id="advance-directives">Advance Directives</h2>
+<p>The advance directives section contains a narrative description of patient’s advance directive.</p>
+
 
 
   <!-- example here -->
@@ -314,7 +417,7 @@ Formats: <a href="StructureDefinition-composition-uv-ips.html">Narrative</a>, <a
 
 
 <a name="profile"> </a>
-<h3><span class="sectioncount">SD.8.1 </span>
+<h3><span class="sectioncount">SD.6.1 </span>
 Formal Views of Profile Content</h3>
 
 <p>
@@ -326,7 +429,7 @@ The official URL for this profile is: <code>http://hl7.org/fhir/ips/StructureDef
 </p>
 
 <p>
-Published on Fri Mar 16 00:00:00 CET 2018 as a draft by HL7 International.
+Published on Fri Mar 16 00:00:00 CDT 2018 as a draft by HL7 International.
 </p>
 
 <p><strong>
@@ -1099,8 +1202,8 @@ It may contain addition summarizing information about the outcome of earlier pre
 
   <!-- search text here -->
 <a name="search"> </a>
-<h3><span class="sectioncount">SD.8.2  </span>Quick Start</h3>
-<p><a name="8758b804-495d-4092-8cb0-8d23e22add1c">​</a>Below is an overview of the required set of RESTful FHIR interactions - for example, search and read operations - for this profile.  See the <a href="capstatements.html"></a>Conformance requirements for a complete list of supported RESTful interactions for this IG.</p>
+<h3><span class="sectioncount">SD.6.2  </span>Quick Start</h3>
+<p><a name="2f586dfa-123d-422a-9c35-1819b4de2684">​</a>Below is an overview of the required set of RESTful FHIR interactions - for example, search and read operations - for this profile.  See the <a href="capstatements.html"></a>Conformance requirements for a complete list of supported RESTful interactions for this IG.</p>
 
 <h1 id="composition-uv-ips-searchmd-file">composition-uv-ips-search.md file</h1>
 
@@ -1166,7 +1269,7 @@ $( '#tabs' ).tabs({
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
     <p>
-            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Fri, Mar 30, 2018 08:02+0200. |
+            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Fri, Mar 30, 2018 11:34-0500. |
                <!-- <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/STU3license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>
         

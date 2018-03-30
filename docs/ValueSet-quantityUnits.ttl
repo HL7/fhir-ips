@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/ips/ValueSet/quantityUnits> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "quantityUnits"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/shareablevalueset";
+       fhir:index 0
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IPSQuantityUnits</h2><div><p>Quantity Units</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <a href=\"http://unitsofmeasure.org\"><code>http://unitsofmeasure.org</code></a></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.org/fhir/ips/ValueSet/quantityUnits"];
+  fhir:ValueSet.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "http://art-decor.org/ns/oids/vs" ];
+     fhir:Identifier.value [ fhir:value "2.16.840.1.113883.11.22.28" ]
+  ];
+  fhir:ValueSet.version [ fhir:value "1"];
+  fhir:ValueSet.name [ fhir:value "IPSQuantityUnits"];
+  fhir:ValueSet.title [ fhir:value "Quantity Units"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:ValueSet.date [ fhir:value "2018-03-30T11:34:46-05:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "HL7 International"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 International" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "phone" ];
+       fhir:ContactPoint.value [ fhir:value "+1 734 677 7777 " ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "fax" ];
+       fhir:ContactPoint.value [ fhir:value "+1 734 677 6622" ]
+     ], [
+       fhir:index 2;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "info@hl7.org" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Quantity Units"];
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ];
+       fhir:Coding.display [ fhir:value "World" ]
+     ]
+  ];
+  fhir:ValueSet.immutable [ fhir:value "false"^^xsd:boolean];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://unitsofmeasure.org" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.org/fhir/ips/ValueSet/quantityUnits.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl;
+  owl:versionIRI <http://build.fhir.org/ips/ValueSet/quantityUnits.ttl> .
+
+# -------------------------------------------------------------------------------------
+
