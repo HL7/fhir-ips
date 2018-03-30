@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><ValueSet xmlns="http://hl7.org/fhir" xmlns:f="http://hl7.org/fhir">
 <!-- Value set exported from ART-DECOR project hl7ips (IPS) --><id value="absent-or-unknown-devices-uv-ips"/><meta>
                     <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
-                </meta><url value="http://hl7.org/fhir/ips/ValueSet/absent-or-unknown-devices-uv-ips"/><identifier>
+                </meta>
+                <url value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-devices-uv-ips"/><identifier>
                     <use value="official"/>
                     <system value="http://art-decor.org/ns/oids/vs"/>
                     <value value="2.16.840.1.113883.11.22.61"/>
@@ -21,14 +22,12 @@
                     </telecom>
                 </contact><description value="Absent or Unknown Devices"/><immutable value="false"/><compose>
                     <include>
-                        <system value="urn:oid:2.16.840.1.113883.3.1937.777.13.5.999.1"/>
+                        <system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
                         <concept>
-                            <code value="X-DeviceNoInfos"/>
-                            <display value="No information about device"/>
+                            <code value="no-device-info"/>
                         </concept>
                         <concept>
-                            <code value="X-NotKnownDevices"/>
-                            <display value="No Known devices in use"/>
+                            <code value="no-known-devices"/>
                         </concept>
                     </include>
                 </compose></ValueSet>

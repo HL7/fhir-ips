@@ -5,7 +5,7 @@
     <meta>
         <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
     </meta>
-    <url value="http://hl7.org/fhir/ips/ValueSet/absent-or-unknown-allergies-uv-ips"/>
+    <url value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-allergies-uv-ips"/>
     <identifier>
         <use value="official"/>
         <system value="http://art-decor.org/ns/oids/vs"/>
@@ -36,26 +36,21 @@
     <immutable value="false"/>
     <compose>
         <include>
-            <system value="urn:oid:2.16.840.1.113883.3.1937.777.13.5.999.1"/>
+            <system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
             <concept>
-                <code value="X-AllergicDispositionNotKnown"/>
-                <display value="Allergic disposition not known"/>
+                <code value="no-allergy-info"/>
             </concept>
             <concept>
-                <code value="X-NoKnownAllergy"/>
-                <display value="No known allergy"/>
+                <code value="no-known-allergies"/>
             </concept>
             <concept>
-                <code value="X-NoKnownDrugAllergy"/>
-                <display value="No known drug allergy"/>
+                <code value="no-known-medication-allergies"/>
             </concept>
             <concept>
-                <code value="X-NoKnownEnvAllergy"/>
-                <display value="No known environmental allergy"/>
+                <code value="no-known-environmental-allergies"/>
             </concept>
             <concept>
-                <code value="X-NoKnownFoodAllergy"/>
-                <display value="No known food allergy"/>
+                <code value="no-known-food-allergies"/>
             </concept>
         </include>
     </compose>
