@@ -258,24 +258,16 @@
 				<reference value="StructureDefinition/codeableconcept-uv-ips"/>
 			</sourceReference>
 		</resource>
-		<resource>
-			<example value="false"/>
-			<sourceReference>
-				<reference value="StructureDefinition/translation"/>
-			</sourceReference>
-		</resource>
+
 		<resource>
 			<example value="false"/>
 			<sourceReference>
 				<reference value="StructureDefinition/translateddiv-uv-ips"/>
 			</sourceReference>
 		</resource>
-		<resource>
-			<example value="false"/>
-			<sourceReference>
-				<reference value="StructureDefinition/partof-extension"/>
-			</sourceReference>
-		</resource>
+    
+    
+
 		<resource>
 			<example value="false"/>
 			<sourceReference>
@@ -566,6 +558,23 @@
 
 
 <!-- end added by Giorgio -->
+
+               <!-- extensions not defined by IPS -->
+                                                    <!-->
+    		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/translation"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<example value="false"/>
+			<sourceReference>
+				<reference value="StructureDefinition/partof-extension"/>
+			</sourceReference>
+		</resource>
+                                                        -->
+
 
 	</package>
 	<page>
