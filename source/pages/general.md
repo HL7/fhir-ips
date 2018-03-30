@@ -18,7 +18,6 @@ active: guidance
 <div>The IPS Principles</div>
 </div>
 
-</br>
 
 <p>
 See additional documentation in the IPS Wiki <a href="http://international-patient-summary.net/mediawiki/index.php?title=IPS_implementationguide_1#General_Principles_for_this_Specification">here</a>.
