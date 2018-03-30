@@ -8,9 +8,9 @@ active: examples
 
 Examples for this IG:
 
-{% include list-simple-observations.xhtml %}
+{% include list-simple-bundles.xhtml %}
 
-`todo: generate an example list from preprocessor`
+<!-- `todo: generate an example list from preprocessor` -->
 
 
 **Examples:** all the examples that are used in this Implementation Guide available for download:

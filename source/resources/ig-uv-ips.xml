@@ -7,6 +7,19 @@
 	<fhirVersion value="STU3"/>
 	<package>
 		<name value="base"/>
+
+  		<resource>
+			<example value="true"/>
+			<sourceReference>
+				<reference value="Bundle/IPS-examples-Bundle-01"/>
+			</sourceReference>
+			<!-->
+			<exampleFor>
+				<reference value="http://hl7.org/fhir/Bundle"/>
+			</exampleFor>
+			-->
+		</resource>		
+
   <!--- ADDED BY GIORGIO -->
   
 
