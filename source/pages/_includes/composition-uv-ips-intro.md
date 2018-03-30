@@ -1,6 +1,6 @@
 {{site.data.structuredefinitions.composition-uv-ips-intro.name}}
 
-{{site.data.structuredefinitions.composition-uv-ips-intro.description}}
+{{site.data.structuredefinitions.composition-uv-ips.description}}
 
 #### Conformance resource variables defined [here](http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation#Jekyll)
 
@@ -99,7 +99,8 @@ The pregnancy status and history is comprised of
 * an entry as an Observation of the pregnancy status, and optionally, a member Observation of the Estimated Delivery Date
 * an entry as an Observation of the pregnancy history (summary)
 * 
-*## Social History
+
+## Social History
 The social history is as of now comprised of 
 * tobacco use
 * alcohol use
