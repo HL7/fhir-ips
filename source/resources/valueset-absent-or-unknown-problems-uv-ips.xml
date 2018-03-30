@@ -1,46 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?><ValueSet xmlns="http://hl7.org/fhir">
-                <id value="absent-or-unknown-problems-uv-ips"/>
-                <meta>
-                    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
-                </meta>
-                <url value="http://hl7.org/fhir/ips/ValueSet/absent-or-unknown-problems-uv-ips"/>
-                <identifier>
-                    <use value="official"/>
-                    <system value="http://art-decor.org/ns/oids/vs"/>
-                    <value value="2.16.840.1.113883.11.22.17"/>
-                </identifier>
-                <version value="2017-05-23T00:00:00"/>
-                <name value="IPSNoProceduresInfo"/>
-                <title value="Absent or Unknown Problems"/>
-                <status value="draft"/>
-                <experimental value="false"/>
-                <publisher value="HL7 International"/>
-                <contact>
-                    <name value="HL7 International"/>
-                    <telecom>
-                        <system value="phone"/>
-                        <value value="+1 734 677 7777"/>
-                    </telecom>
-                    <telecom>
-                        <system value="fax"/>
-                        <value value="+1 734 677 6622"/>
-                    </telecom>
-                    <telecom>
-                        <system value="email"/>
-                        <value value="info@hl7.org"/>
-                    </telecom>
-                </contact>
-                <description value="Absent or Unknown Probblems"/>
-                <immutable value="false"/>
-                <compose>
-                    <include>
-                        <system value="http://hl7.org/fhir/ips/CodeSystem/absent-unknown"/>
-                        <concept>
-                            <code value="no-problem-info"/>
-                        </concept>
-                        <concept>
-                            <code value="no-current-problems"/>
-                        </concept>
-                    </include>
-                </compose>
-            </ValueSet>
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="absent-or-unknown-problems-uv-ips"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    </meta>
+    <url value="http://hl7.org/fhir/ips/ValueSet/absent-or-unknown-problems-uv-ips"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="2.16.840.1.113883.11.22.17"/>
+    </identifier>
+    <version value="2017-04-07T00:00:00"/>
+    <name value="IPSNoProbsInfos"/>
+    <title value="Absent or Unknown Problems"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="HL7 International"/>
+    <contact>
+        <name value="HL7 International"/>
+        <telecom>
+            <system value="phone"/>
+            <value value="+1 734 677 7777 "/>
+        </telecom>
+        <telecom>
+            <system value="fax"/>
+            <value value="+1 734 677 6622"/>
+        </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="info@hl7.org"/>
+        </telecom>
+    </contact>
+    <description value="Absent or Unknown Problems"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown"/>
+            <concept>
+                <code value="no-problem-info"/>
+                <display value="No information about current problems"/>
+            </concept>
+            <concept>
+                <code value="no-known-problems"/>
+                <display value="No known problems"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
