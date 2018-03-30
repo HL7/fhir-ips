@@ -96,25 +96,13 @@ This Implementation Guide is being balloted as STU with the intention to go norm
 
 ## Authors and Contributors
 
-| Primary Editor | Giorgio Cangioli, PhD 
-Consultant, HL7 Italy
-giorgio.cangioli@gmail.com |
-| Primary Editor | Rob Hausam
-Hausam Consulting LLC
-rob@hausamconsulting.com |
-| Primary Editor | Dr Kai U. Heitmann
-Heitmann Consulting and Services, Gefyra GmbH, HL7 Germany
-info@kheitmann.de  |
-| Primary Editor | François Macary
-Phast
-francois.macary@phast.fr |
-| Contributor | Dr Christof Geßner
-Gematik
-christof.gessner@gematik.de |
-| Contributor | Gary Dickinson
-CentriHealth
-gary.dickinson@ehr-standards.com |
-| Contributor | Catherine Chronaki
-HL7 International Foundation
-chronaki@gmail.com |
+| Role  | Name | Organization | contact |
+| --- | --- | --- | --- |
+| **Primary Editor** | Giorgio Cangioli, PhD | Consultant, HL7 Italy | giorgio.cangioli@gmail.com |
+| **Primary Editor** | Rob Hausam | Hausam Consulting LLC | rob@hausamconsulting.com |
+| **Primary Editor** |  Dr Kai U. Heitmann | Heitmann Consulting and Services, Gefyra GmbH, HL7 Germany | info@kheitmann.de  
+| **Primary Editor** | François Macary | Phast | francois.macary@phast.fr |
+| **Contributor** | Dr Christof Geßner | Gematik | christof.gessner@gematik.de |
+| **Contributor** | Gary Dickinson | CentriHealth | gary.dickinson@ehr-standards.com |
+| **Contributor** | Catherine Chronaki | HL7 International Foundation | chronaki@gmail.com |
 

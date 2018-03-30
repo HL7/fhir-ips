@@ -4,18 +4,28 @@ layout: default
 active: profiles
 ---
 
+
+<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
+
+* Do not remove this line (it will not be displayed)
+{:toc}
+
+
+<!-- end TOC -->
+
+
 # Bundle and Composition
 
 The <b>International Patient Summary</b> is a document.
-All the profiles specified by this guide are used by the International Patient Summary Composition.
+All the profiles specified by this guide are used by the <b>International Patient Summary Composition</b>.
 
-The Bundle used for the transport or the persitence SHALL include all the resources that are referenced directly or indirectly by a International Patient Summary Composition.
+The <b>Bundle</b> used for the transport or the persitence SHALL include all the resources that are referenced directly or indirectly by a International Patient Summary Composition.
 
 The IPS includes the following sections, (R) denotes a required section (i.e. must be present in an IPS), (S) denotes a recommended section, the others are truely optional. 
 For each section the profiles that have been defined have been listed:
 * Medication Summary (R)
   * Medication-uv-ips
-  * MedicationStatement-uv-ipS
+  * MedicationStatement-uv-ips
 * Allergies and Intolerances (R)
   * AllergyIntolerance-uv-ips
 * Problem List (R)
@@ -25,7 +35,7 @@ For each section the profiles that have been defined have been listed:
 * History of Procedures (S)
 * Procedure-uv-ips
 * Medical Devices (S)
-  * DeviceUseStatement
+  * DeviceUseStatement-uv-ips
   * Device-uv-ips
 * Diagnostic Results (S)
   * Laboratory results 
@@ -35,15 +45,15 @@ For each section the profiles that have been defined have been listed:
     * Observation-laboratory-uv-ips
     * Observation-member-laboratory-uv-ips
   * Radiology results
-    * Observation-imaging-uv-ips.structuredefinition.xml
-    * Observation-member-imaging-uv-ips.structuredefinition.xml
-    * ImagingStudy-uv-ips.structuredefinition.xml
-    * Organization-observation-uv-ips.structuredefinition.xml
-    * Device-observer-uv-ips.structuredefinition.xml
-    * Practitioner-observation-uv-ips.structuredefinition.xml
+    * Observation-imaging-uv-ips.structuredefinition
+    * Observation-member-imaging-uv-ips.structuredefinition
+    * ImagingStudy-uv-ips.structuredefinition
+    * Organization-observation-uv-ips.structuredefinition
+    * Device-observer-uv-ips.structuredefinition
+    * Practitioner-observation-uv-ips.structuredefinition
   * Pathology results
-    * Observation-member-pathology-uv-ips.structuredefinition.xml
-    * Observation-pathology-uv-ips.structuredefinition.xml
+    * Observation-member-pathology-uv-ips.structuredefinition
+    * Observation-pathology-uv-ips.structuredefinition
   * Other results 
     * Observation-uv-ips
 * Past history of illnesses
@@ -61,7 +71,7 @@ For each section the profiles that have been defined have been listed:
 (Vital Signs has not yet included)
 
 # Data types
-Two classes of profiles have been defined for the data types for the IPS:
+Two classes of profiles have been defined for the IPS data types:
 * A first class designed to support multi-languages for Narratives and displays:
   * Narrative-uv-ips
   * coding-uv-ips
@@ -76,7 +86,7 @@ Two classes of profiles have been defined for the data types for the IPS:
 
 The links to the Profiles that have been defined for this implementation guide are listed hereafter.
 
-{% include list-simple-profiles.xhtml %}
+{% include list-profiles.xhtml %}
 
 
 ---
