@@ -39,7 +39,7 @@ user content","",0,*,"","Y","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","DomainResource.modifierExtension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Organization.identifier","","","",0,*,"","","Y","Identifier {[]} {[]}
+"Organization.identifier","","","",0,*,"Y","","Y","Identifier {[]} {[]}
 ","Identifies this organization  across multiple systems","Identifier for the organization that is used to identify the organization across multiple disparate systems.","","Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.","","","","","","","",,,,,"",,,,"Organization.identifier",0,*,"ele-1
 org-1","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
@@ -171,7 +171,7 @@ Applications converting a logical reference to a literal reference may choose to
 ","Text alternative for the resource","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Organization.active","","","",0,0,"","Y","Y","boolean {[]} {[]}
+"Organization.active","","","",0,1,"","Y","Y","boolean {[]} {[]}
 ","Whether the organization's record is still in active use","Whether the organization's record is still in active use.","Default is true.
 
 This active flag is not intended to be used to mark an organizations as temporarily closed or under construction. Instead the Location(s) within the Organization should have the suspended status. If further details of the reason for the suspension are required, then an extension on this element should be used.
@@ -235,17 +235,17 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Organization.name","","","",0,1,"","","Y","string {[]} {[]}
+"Organization.name","","","",1,1,"Y","","Y","string {[]} {[]}
 ","Name used for the organization","A name associated with the organization.","If the name of an organization changes, consider putting the old name in the alias column so that it can still be located through searches.","Need to use the name as the label of the organization.","","","","","","","",,,,,"",,,,"Organization.name",0,1,"ele-1
 org-1","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Organization.alias","","","",0,0,"","","","string {[]} {[]}
+"Organization.alias","","","",0,*,"","","","string {[]} {[]}
 ","A list of alternate names that the organization is known as, or was known as in the past","A list of alternate names that the organization is known as, or was known as in the past.","There are no dates associated with the alias/historic names, as this is not intended to track when names were used, but to assist in searching so that older names can still result in identifying the organization.","Over time locations and organizations go through many changes and can be known by different names.
 
 For searching knowing previous names that the organization was known by can be very useful.","","","","","","","",,,,,"",,,,"Organization.alias",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Organization.telecom","","","",0,*,"","","","ContactPoint {[]} {[]}
+"Organization.telecom","","","",0,*,"Y","","","ContactPoint {[]} {[]}
 ","A contact detail for the organization","A contact detail for the organization.","The use code home is not to be used. Note that these contacts are not the contact details of people who are employed by or represent the organization, but official contacts for the organization itself.","Human contact for the organization.","","","","","","","",,,,,"",,,,"Organization.telecom",0,*,"ele-1
 org-3","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 cpt-2:A system is required if a value is provided. {value.empty() or system.exists()}org-3:The telecom of an organization can never be of use 'home' {where(use = 'home').empty()}"
@@ -297,7 +297,7 @@ per-1","ele-1:All FHIR elements must have a @value or children {hasValue() | (ch
 ","End time with inclusive boundary, if not ongoing","The end of the period. If the end of the period is missing, it means that the period is ongoing. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.","The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has a end value of 2012-02-03.","","","If the end of the period is missing, it means that the period is ongoing","","","","","",,,,,"",,,,"Period.end",0,1,"ele-1
 per-1","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Organization.address","","","",0,*,"","","","Address {[]} {[]}
+"Organization.address","","","",0,*,"Y","","","Address {[]} {[]}
 ","An address for the organization","An address for the organization.","Organization may have multiple addresses with different uses or applicable periods. The use code home is not to be used.","May need to keep track of the organization's addresses for contacting, billing or reporting requirements.","","","","","","","",,,,,"",,,,"Organization.address",0,*,"ele-1
 org-2","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 org-2:An address of an organization can never be of use 'home' {where(use = 'home').empty()}"
@@ -353,8 +353,8 @@ Territory","",0,1,"","","Y","string {[]} {[]}
 "
 "Organization.address.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","Time period when address was/is in use","Time period when address was/is in use.","This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. ""the patient was an inpatient of the hospital for this time range"") or one value from the range applies (e.g. ""give to the patient between these two times""). If duration is required, specify the type as Interval|Duration.","Allows addresses to be placed in historical context.","","","","","<valuePeriod xmlns=""http://hl7.org/fhir"">
-  <start value=""2010-03-23T00:00:00-06:00""/>
-  <end value=""2010-07-01T00:00:00-06:00""/>
+  <start value=""2010-03-23T00:00:00+01:00""/>
+  <end value=""2010-07-01T00:00:00+02:00""/>
 </valuePeriod>","","",,,,,"",,,,"Address.period",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 per-1:If present, start SHALL have a lower value than end {start.empty() or end.empty() or (start <= end)}"
@@ -376,7 +376,7 @@ per-1","ele-1:All FHIR elements must have a @value or children {hasValue() | (ch
 ","End time with inclusive boundary, if not ongoing","The end of the period. If the end of the period is missing, it means that the period is ongoing. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.","The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has a end value of 2012-02-03.","","","If the end of the period is missing, it means that the period is ongoing","","","","","",,,,,"",,,,"Period.end",0,1,"ele-1
 per-1","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Organization.partOf","","","",0,0,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
+"Organization.partOf","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","The organization of which this organization forms a part","The organization of which this organization forms a part.","References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.","Need to be able to track the hierarchy of organizations within an organization.","","","","","","","",,,,,"",,,,"Organization.partOf",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))}"
@@ -406,7 +406,7 @@ Applications converting a logical reference to a literal reference may choose to
 ","Text alternative for the resource","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Organization.contact","","","",0,0,"","","","BackboneElement {[]} {[]}
+"Organization.contact","","","",0,*,"","","","BackboneElement {[]} {[]}
 ","Contact for the organization for a certain purpose","Contact for the organization for a certain purpose.","Where multiple contacts for the same purpose are provided there is a standard extension that can be used to determine which one is the preferred contact to use.","Need to keep track of assigned contact points within bigger organization.","","","","","","","",,,,,"",,,,"Organization.contact",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
@@ -647,8 +647,8 @@ Territory","",0,1,"","","Y","string {[]} {[]}
 "
 "Organization.contact.address.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","Time period when address was/is in use","Time period when address was/is in use.","This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. ""the patient was an inpatient of the hospital for this time range"") or one value from the range applies (e.g. ""give to the patient between these two times""). If duration is required, specify the type as Interval|Duration.","Allows addresses to be placed in historical context.","","","","","<valuePeriod xmlns=""http://hl7.org/fhir"">
-  <start value=""2010-03-23T00:00:00-06:00""/>
-  <end value=""2010-07-01T00:00:00-06:00""/>
+  <start value=""2010-03-23T00:00:00+01:00""/>
+  <end value=""2010-07-01T00:00:00+02:00""/>
 </valuePeriod>","","",,,,,"",,,,"Address.period",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 per-1:If present, start SHALL have a lower value than end {start.empty() or end.empty() or (start <= end)}"
@@ -670,7 +670,7 @@ per-1","ele-1:All FHIR elements must have a @value or children {hasValue() | (ch
 ","End time with inclusive boundary, if not ongoing","The end of the period. If the end of the period is missing, it means that the period is ongoing. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.","The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has a end value of 2012-02-03.","","","If the end of the period is missing, it means that the period is ongoing","","","","","",,,,,"",,,,"Period.end",0,1,"ele-1
 per-1","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Organization.endpoint","","","",0,0,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Endpoint]]}
+"Organization.endpoint","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Endpoint]]}
 ","Technical endpoints providing access to services operated for the organization","Technical endpoints providing access to services operated for the organization.","References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.","Organizations have multiple systems that provide various services and need to be able to define the technical connection details for how to connect to them, and for what purpose.","","","","","","","",,,,,"",,,,"Organization.endpoint",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))}"

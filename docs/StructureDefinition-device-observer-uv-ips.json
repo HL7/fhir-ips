@@ -9,7 +9,7 @@
   "version": "1",
   "name": "Device-observer-uv-ips",
   "status": "draft",
-  "date": "2018-03-21T08:07:42-06:00",
+  "date": "2018-03-21T15:07:42+01:00",
   "description": "This profile represents the constraints applied to the Device resource by the IPS project, which specifies an international patient summary based on the FHIR standard STU3.;\r\n\r\nThis profile describes a device that plays the role of observer.",
   "jurisdiction": [
     {
@@ -5382,6 +5382,14 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Practitioner"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Patient"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
           },
           {
             "code": "string"

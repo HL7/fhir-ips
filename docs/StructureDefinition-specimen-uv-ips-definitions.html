@@ -582,7 +582,7 @@ can only resize using html  or css ;-(
   <tr><td>Definition</td><td><p>Organization that issued/manages the identifier.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]">Organization</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>)</td></tr>
   <tr><td>Comments</td><td><p>The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -877,7 +877,7 @@ can only resize using html  or css ;-(
   <tr><td>Definition</td><td><p>Organization that issued/manages the identifier.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]">Organization</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>)</td></tr>
   <tr><td>Comments</td><td><p>The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -948,7 +948,6 @@ can only resize using html  or css ;-(
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The type of the specimen.<br/>The codes SHALL be taken from  <a href="http://hl7.org/ips/fhir/ValueSet/specimen-type ">http://hl7.org/ips/fhir/ValueSet/specimen-type </a>; other codes may be used where these codes are not suitable</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>The type can change the way that a specimen is handled, and drives what kind of analyses can properly be performed on the specimen. It is frequently used in diagnostic work flow decision making systems.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1071,8 +1070,7 @@ can only resize using html  or css ;-(
   <tr><td>Definition</td><td><p>Where the specimen came from. This may be from the patient(s) or from the environment or a device.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-patient-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/patient-uv-ips]]">Patient-uv-ips</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a>)</td></tr>
   <tr><td>Requirements</td><td><p>Must know the subject context.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
@@ -1103,7 +1101,6 @@ can only resize using html  or css ;-(
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1, ref-1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure &quot;/[type]/[id]&quot; then it should be assumed that the reference is to a FHIR RESTful server.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1112,7 +1109,7 @@ can only resize using html  or css ;-(
   <tr><td>Definition</td><td><p>An identifier for the other resource. This is used when there is no way to reference the other resource directly, either because the entity is not available through a FHIR server, or because there is no way for the author of the resource to convert a known identifier to an actual location. There is no requirement that a Reference.identifier point to something that is actually exposed as a FHIR instance, but it SHALL point to a business concept that would be expected to be exposed as a FHIR instance, and that instance would need to be of a FHIR resource type allowed by the reference.</p>
 </td></tr>
   <tr><td>Note</td><td>This is a business identifer, not a resource identifier (see <a href="http://hl7.org/fhir/STU3/resource.html#identifiers">discussion</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..0 This element is affected by the following invariants: ele-1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier">Identifier</a></td></tr>
   <tr><td>Comments</td><td><p>When an identifier is provided in place of a reference, any system processing the reference will only be able to resolve the identifier to a reference if it understands the business context in which the identifier is used. Sometimes this is global (e.g. a national identifier) but often it is not. For this reason, none of the useful mechanisms described for working with references (e.g. chaining, includes) are possible, nor should servers be expected to be able resolve the reference. Servers may accept an identifier based reference untouched, resolve it, and/or reject it - see CapabilityStatement.rest.resource.referencePolicy.</p>
 <p>When both an identifier and a literal reference are provided, the literal reference is preferred. Applications processing the resource are allowed - but not required - to check that the identifier matches the literal reference</p>
@@ -1132,15 +1129,15 @@ can only resize using html  or css ;-(
   <tr><td colspan="2" class="structure"><a name="Specimen.receivedTime"> </a><b>Specimen.receivedTime</b></td></tr>
   <tr><td>Definition</td><td><p>Time when specimen was received for processing or testing.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..0 This element is affected by the following invariants: ele-1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">dateTime</a></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><a name="Specimen.parent"> </a><b>Specimen.parent</b></td></tr>
   <tr><td>Definition</td><td><p>Reference to the parent (source) specimen which is used when the specimen was either derived from or a component of another specimen.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/specimen.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Specimen]]">Specimen</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..0 This element is affected by the following invariants: ele-1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/specimen.html" title="http://hl7.org/fhir/StructureDefinition/Specimen">Specimen</a>)</td></tr>
   <tr><td>Comments</td><td><p>The parent specimen could be the source from which the current specimen is derived by some processing step (e.g. an aliquot or isolate or extracted nucleic acids from clinical samples) or one of many specimens that were combined to create a pooled sample.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1197,8 +1194,8 @@ can only resize using html  or css ;-(
   <tr><td colspan="2" class="structure"><a name="Specimen.request"> </a><b>Specimen.request</b></td></tr>
   <tr><td>Definition</td><td><p>Details concerning a test or procedure request that required a specimen to be collected.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/procedurerequest.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/ProcedureRequest]]">ProcedureRequest</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..0 This element is affected by the following invariants: ele-1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/procedurerequest.html" title="http://hl7.org/fhir/StructureDefinition/ProcedureRequest">ProcedureRequest</a>)</td></tr>
   <tr><td>Comments</td><td><p>The request may be explicit or implied such with a ProcedureRequest that requires a blood draw.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1257,7 +1254,6 @@ can only resize using html  or css ;-(
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#BackboneElement">BackboneElement</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><a name="Specimen.collection.id"> </a><b>Specimen.collection.id</b></td></tr>
@@ -1293,8 +1289,8 @@ can only resize using html  or css ;-(
   <tr><td colspan="2" class="structure"><a name="Specimen.collection.collector"> </a><b>Specimen.collection.collector</b></td></tr>
   <tr><td>Definition</td><td><p>Person who collected the specimen.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/practitioner.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner]]">Practitioner</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..0 This element is affected by the following invariants: ele-1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/practitioner.html" title="http://hl7.org/fhir/StructureDefinition/Practitioner">Practitioner</a>)</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1359,7 +1355,7 @@ can only resize using html  or css ;-(
   <tr><td colspan="2" class="structure"><a name="Specimen.collection.quantity"> </a><b>Specimen.collection.quantity</b></td></tr>
   <tr><td>Definition</td><td><p>The quantity of specimen collected; for instance the volume of a blood sample, or the physical measurement of an anatomic pathology sample.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..0 This element is affected by the following invariants: ele-1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Quantity">Quantity</a>(<a href="http://hl7.org/fhir/STU3/datatypes.html#SimpleQuantity" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]]">SimpleQuantity</a>)</td></tr>
   <tr><td>Comments</td><td><p>The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator.</p>
 </td></tr>
@@ -1443,12 +1439,11 @@ can only resize using html  or css ;-(
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><a name="Specimen.collection.method"> </a><b>Specimen.collection.method</b></td></tr>
-  <tr><td>Definition</td><td><p>A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.</p>
+  <tr><td>Definition</td><td><p>A coded value specifying the technique that is used to perform the procedure.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The  technique that is used to perform the procedure<br/>For example codes, see <a href="http://hl7.org/fhir/STU3/valueset-specimen-collection-method.html">FHIR Specimen Collection Method</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>([CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips]])</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Comments</td><td><p>Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1476,10 +1471,11 @@ can only resize using html  or css ;-(
   <tr><td>Definition</td><td><p>A reference to a code defined by a terminology system.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The codes SHALL be taken from  <a href="http://trilliumbridge.eu/fhir/ValueSet/specimen-collection-method ">http://trilliumbridge.eu/fhir/ValueSet/specimen-collection-method </a>; other codes may be used where these codes are not suitable</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a>(<a href="StructureDefinition-coding-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips]]">coding-uv-ips</a>)</td></tr>
   <tr><td>Requirements</td><td><p>Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.</p>
 </td></tr>
-  <tr><td>Comments</td><td><p>Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.</p>
+  <tr><td>Comments</td><td><p>Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
@@ -1568,13 +1564,12 @@ can only resize using html  or css ;-(
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><a name="Specimen.collection.bodySite"> </a><b>Specimen.collection.bodySite</b></td></tr>
-  <tr><td>Definition</td><td><p>A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.</p>
+  <tr><td>Definition</td><td><p>Anatomical location from which the specimen was collected (if subject is a patient). This is the target site.  This element is not used for environmental specimens.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Codes describing anatomical locations. May include laterality.<br/>For example codes, see <a href="http://hl7.org/fhir/STU3/valueset-body-site.html">SNOMED CT Body Structures</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>([CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips]])</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
-  <tr><td>Comments</td><td><p>Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.</p>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td>Comments</td><td><p>If the use case requires  BodySite to be handled as a separate resource instead of an inline coded element (e.g. to identify and track separately)  then use the standard extension <a href="http://hl7.org/fhir/STU3/extension-body-site-instance.html">body-site-instance</a>.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
@@ -1601,10 +1596,11 @@ can only resize using html  or css ;-(
   <tr><td>Definition</td><td><p>A reference to a code defined by a terminology system.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://hl7.org/fhir/STU3/valueset-body-site.html">SNOMED CT Body Structures</a>; other codes may be used where these codes are not suitable</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a>(<a href="StructureDefinition-coding-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips]]">coding-uv-ips</a>)</td></tr>
   <tr><td>Requirements</td><td><p>Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.</p>
 </td></tr>
-  <tr><td>Comments</td><td><p>Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.</p>
+  <tr><td>Comments</td><td><p>Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
@@ -1695,7 +1691,7 @@ can only resize using html  or css ;-(
   <tr><td colspan="2" class="structure"><a name="Specimen.processing"> </a><b>Specimen.processing</b></td></tr>
   <tr><td>Definition</td><td><p>Details concerning processing and processing steps for the specimen.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..0 This element is affected by the following invariants: ele-1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#BackboneElement">BackboneElement</a></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
@@ -1866,7 +1862,7 @@ can only resize using html  or css ;-(
   <tr><td>Definition</td><td><p>Material used in the processing step.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/substance.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Substance]]">Substance</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/substance.html" title="http://hl7.org/fhir/StructureDefinition/Substance">Substance</a>)</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1931,7 +1927,7 @@ can only resize using html  or css ;-(
   <tr><td colspan="2" class="structure"><a name="Specimen.container"> </a><b>Specimen.container</b></td></tr>
   <tr><td>Definition</td><td><p>The container holding the specimen.  The recursive nature of containers; i.e. blood in tube in tray in rack is not addressed here.</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..0 This element is affected by the following invariants: ele-1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#BackboneElement">BackboneElement</a></td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
@@ -2207,7 +2203,7 @@ can only resize using html  or css ;-(
   <tr><td>Definition</td><td><p>Organization that issued/manages the identifier.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]">Organization</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>)</td></tr>
   <tr><td>Comments</td><td><p>The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -2571,7 +2567,7 @@ can only resize using html  or css ;-(
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Substance added to specimen container<br/>For example codes, see <a href="http://hl7.org/fhir/STU3/v2/0371/index.html">v2 Additive/Preservative</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/substance.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Substance]]">Substance</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/substance.html" title="http://hl7.org/fhir/StructureDefinition/Substance">Substance</a>)</td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/STU3/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
   <tr><td>Comments</td><td><p>Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.</p>
 </td></tr>
@@ -2609,7 +2605,7 @@ can only resize using html  or css ;-(
   <tr><td>Definition</td><td><p>The individual responsible for making the annotation.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/practitioner.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]">Practitioner</a>), <a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/practitioner.html" title="http://hl7.org/fhir/StructureDefinition/Practitioner">Practitioner</a> | <a href="http://hl7.org/fhir/STU3/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a> | <a href="http://hl7.org/fhir/STU3/relatedperson.html" title="http://hl7.org/fhir/StructureDefinition/RelatedPerson">RelatedPerson</a>), <a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/STU3/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
@@ -2665,7 +2661,7 @@ can only resize using html  or css ;-(
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, Mar 28, 2018 11:49-0600. |
+            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Fri, Mar 30, 2018 08:02+0200. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

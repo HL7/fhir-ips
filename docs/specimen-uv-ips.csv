@@ -307,7 +307,7 @@ Applications converting a logical reference to a literal reference may choose to
 ","available | unavailable | unsatisfactory | entered-in-error","The availability of the specimen.","This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.","","","","","","","","",,"required","Codes providing the status/availability of a specimen.","http://hl7.org/fhir/ValueSet/specimen-status","",,,,"Specimen.status",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Specimen.type","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
+"Specimen.type","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Kind of material that forms the specimen","The kind of material that forms the specimen.","The type can change the way that a specimen is handled, and drives what kind of analyses can properly be performed on the specimen. It is frequently used in diagnostic work flow decision making systems.","","","","","","","","",,"extensible","The type of the specimen.","http://hl7.org/ips/fhir/ValueSet/specimen-type ","",,,,"Specimen.type",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
@@ -359,7 +359,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Specimen.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/patient-uv-ips]]}
+"Specimen.subject","","","",1,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
 ","Where the specimen came from. This may be from the patient(s) or from the environment or a device","Where the specimen came from. This may be from the patient(s) or from the environment or a device.","References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.","Must know the subject context.","","","","","","","",,,,,"",,,,"Specimen.subject",1,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))}"
@@ -373,11 +373,11 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Specimen.subject.reference","","","",0,1,"Y","","Y","string {[]} {[]}
+"Specimen.subject.reference","","","",0,1,"","","Y","string {[]} {[]}
 ","Literal reference, Relative, internal or absolute URL","A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources.","Using absolute URLs provides a stable scalable approach suitable for a cloud/web context, while using relative/logical references provides a flexible approach suitable for use when trading across closed eco-system boundaries.   Absolute URLs do not need to point to a FHIR RESTful server, though this is the preferred approach. If the URL conforms to the structure ""/[type]/[id]"" then it should be assumed that the reference is to a FHIR RESTful server.","","","","","","","","",,,,,"",,,,"Reference.reference",0,1,"ele-1
 ref-1","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Specimen.subject.identifier","","","",0,0,"","","Y","Identifier {[]} {[]}
+"Specimen.subject.identifier","","","",0,1,"","","Y","Identifier {[]} {[]}
 ","Logical reference, when literal reference is not known","An identifier for the other resource. This is used when there is no way to reference the other resource directly, either because the entity is not available through a FHIR server, or because there is no way for the author of the resource to convert a known identifier to an actual location. There is no requirement that a Reference.identifier point to something that is actually exposed as a FHIR instance, but it SHALL point to a business concept that would be expected to be exposed as a FHIR instance, and that instance would need to be of a FHIR resource type allowed by the reference.","When an identifier is provided in place of a reference, any system processing the reference will only be able to resolve the identifier to a reference if it understands the business context in which the identifier is used. Sometimes this is global (e.g. a national identifier) but often it is not. For this reason, none of the useful mechanisms described for working with references (e.g. chaining, includes) are possible, nor should servers be expected to be able resolve the reference. Servers may accept an identifier based reference untouched, resolve it, and/or reject it - see CapabilityStatement.rest.resource.referencePolicy. 
 
 When both an identifier and a literal reference are provided, the literal reference is preferred. Applications processing the resource are allowed - but not required - to check that the identifier matches the literal reference
@@ -389,11 +389,11 @@ Applications converting a logical reference to a literal reference may choose to
 ","Text alternative for the resource","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Specimen.receivedTime","","","",0,1,"","","Y","dateTime {[]} {[]}
+"Specimen.receivedTime","","","",0,0,"","","Y","dateTime {[]} {[]}
 ","The time when specimen was received for processing","Time when specimen was received for processing or testing.","","","","","","","","","",,,,,"",,,,"Specimen.receivedTime",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Specimen.parent","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Specimen]]}
+"Specimen.parent","","","",0,0,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Specimen]]}
 ","Specimen from which this specimen originated","Reference to the parent (source) specimen which is used when the specimen was either derived from or a component of another specimen.","The parent specimen could be the source from which the current specimen is derived by some processing step (e.g. an aliquot or isolate or extracted nucleic acids from clinical samples) or one of many specimens that were combined to create a pooled sample.","","","","","","","","",,,,,"",,,,"Specimen.parent",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))}"
@@ -423,7 +423,7 @@ Applications converting a logical reference to a literal reference may choose to
 ","Text alternative for the resource","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Specimen.request","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/ProcedureRequest]]}
+"Specimen.request","","","",0,0,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/ProcedureRequest]]}
 ","Why the specimen was collected","Details concerning a test or procedure request that required a specimen to be collected.","The request may be explicit or implied such with a ProcedureRequest that requires a blood draw.","","","","","","","","",,,,,"",,,,"Specimen.request",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))}"
@@ -453,7 +453,7 @@ Applications converting a logical reference to a literal reference may choose to
 ","Text alternative for the resource","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Specimen.collection","","","",0,1,"Y","","","BackboneElement {[]} {[]}
+"Specimen.collection","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","Collection details","Details concerning the specimen collection.","","","","","","","","","",,,,,"",,,,"Specimen.collection",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
@@ -472,7 +472,7 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Specimen.collection.collector","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner]]}
+"Specimen.collection.collector","","","",0,0,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner]]}
 ","Who collected the specimen","Person who collected the specimen.","References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.","","","","","","","","",,,,,"",,,,"Specimen.collection.collector",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))}"
@@ -506,7 +506,7 @@ Applications converting a logical reference to a literal reference may choose to
 Period {[]} {[]}","Collection time","Time when specimen was collected from subject - the physiologically relevant time.","","","","","","","","","",,,,,"",,,,"Specimen.collection.collected[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Specimen.collection.quantity","","","",0,1,"","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]]} {[]}
+"Specimen.collection.quantity","","","",0,0,"","","","Quantity {[CanonicalType[http://hl7.org/fhir/StructureDefinition/SimpleQuantity]]} {[]}
 ","The quantity of specimen collected","The quantity of specimen collected; for instance the volume of a blood sample, or the physical measurement of an anatomic pathology sample.","The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator.","","","","","","","","",,,,,"",,,,"Specimen.collection.quantity",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 qty-3:If a code for the unit is present, the system SHALL also be present {code.empty() or system.exists()}sqty-1:The comparator is not used on a SimpleQuantity {comparator.empty()}"
@@ -540,8 +540,8 @@ qty-3","ele-1:All FHIR elements must have a @value or children {hasValue() | (ch
 ","Coded form of the unit","A computer processable form of the unit in some unit representation system.","The preferred system is UCUM, but SNOMED CT can also be used (for customary units) or ISO 4217 for currency.  The context of use may additionally require a code from a particular system.","Need a computable form of the unit that is fixed across all forms. UCUM provides this for quantities, but SNOMED CT provides many units of interest.","","","","","","","",,,,,"",,,,"Quantity.code",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Specimen.collection.method","","","",0,*,"Y","","","CodeableConcept {[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips]]} {[]}
-","Concept - reference to a terminology or just  text","A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","","","","","",,"example","The  technique that is used to perform the procedure","http://hl7.org/fhir/ValueSet/specimen-collection-method","",,,,"Specimen.collection.method",0,1,"ele-1
+"Specimen.collection.method","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Technique used to perform collection","A coded value specifying the technique that is used to perform the procedure.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","","","","","",,"example","The  technique that is used to perform the procedure","http://hl7.org/fhir/ValueSet/specimen-collection-method","",,,,"Specimen.collection.method",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
 "Specimen.collection.method.id","","","",0,1,"","","","string {[]} {[]}
@@ -554,8 +554,8 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Specimen.collection.method.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
+"Specimen.collection.method.coding","","","",0,*,"","","Y","Coding {[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips]]} {[]}
+","A reference to a code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.","Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.","","","","","","","",,"extensible","","http://trilliumbridge.eu/fhir/ValueSet/specimen-collection-method ","",,,,"CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
 "Specimen.collection.method.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -592,8 +592,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Specimen.collection.bodySite","","","",0,*,"Y","","","CodeableConcept {[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips]]} {[]}
-","Concept - reference to a terminology or just  text","A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","","","","","",,"example","Codes describing anatomical locations. May include laterality.","http://hl7.org/fhir/ValueSet/body-site","",,,,"Specimen.collection.bodySite",0,1,"ele-1
+"Specimen.collection.bodySite","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Anatomical collection site","Anatomical location from which the specimen was collected (if subject is a patient). This is the target site.  This element is not used for environmental specimens.","If the use case requires  BodySite to be handled as a separate resource instead of an inline coded element (e.g. to identify and track separately)  then use the standard extension [body-site-instance](extension-body-site-instance.html).","","","","","","","","",,"example","Codes describing anatomical locations. May include laterality.","http://hl7.org/fhir/ValueSet/body-site","",,,,"Specimen.collection.bodySite",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
 "Specimen.collection.bodySite.id","","","",0,1,"","","","string {[]} {[]}
@@ -606,8 +606,8 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Specimen.collection.bodySite.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
+"Specimen.collection.bodySite.coding","","","",0,*,"","","Y","Coding {[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips]]} {[]}
+","A reference to a code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.","Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.","","","","","","","",,"extensible","","http://hl7.org/fhir/ValueSet/body-site","",,,,"CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
 "Specimen.collection.bodySite.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -644,7 +644,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Specimen.processing","","","",0,*,"","","","BackboneElement {[]} {[]}
+"Specimen.processing","","","",0,0,"","","","BackboneElement {[]} {[]}
 ","Processing and processing step details","Details concerning processing and processing steps for the specimen.","","","","","","","","","",,,,,"",,,,"Specimen.processing",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
@@ -753,7 +753,7 @@ Applications converting a logical reference to a literal reference may choose to
 Period {[]} {[]}","Date and time of specimen processing","A record of the time or period when the specimen processing occurred.  For example the time of sample fixation or the period of time the sample was in formalin.","","","","","","","","","",,,,,"",,,,"Specimen.processing.time[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Specimen.container","","","",0,*,"","","","BackboneElement {[]} {[]}
+"Specimen.container","","","",0,0,"","","","BackboneElement {[]} {[]}
 ","Direct container of specimen (tube/slide, etc.)","The container holding the specimen.  The recursive nature of containers; i.e. blood in tube in tray in rack is not addressed here.","","","","","","","","","",,,,,"",,,,"Specimen.container",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="laboratory-and-vital-signs-observations"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>IPSLabResultsObservation</h2><div><p>This value set includes (at the end) some clinical observations, which may be relevant in a lab report (body weight, temperature ….).Value Set Definition:LOINC {  {    COMPONENT not containing the word &quot;panel&quot;    STATUS in {ACTIVE}    CLASSTYPE in {1}    ORDER_OBS in {Observation, Both}    CLASS exclude {CHALSKIN, H&amp;P.HX.LAB, H&amp;P.HX, LABORDERS, NR STATS, PATH.PROTOCOLS.*}  }  UNION  {    COMPONENT not ( containing the word &quot;panel&quot; OR starting with &quot;can pronounce&quot; )    STATUS in {ACTIVE}    CLASSTYPE in {2}    ORDER_OBS in {Observation, Both}    SYSTEM = ^Patient  }}</p>
+</div><p>This value set includes codes from the following code systems:</p><ul/></div>
+  </text>
+  <url value="http://hl7.org/fhir/ips/ValueSet/laboratory-and-vital-signs-observations"/>
+  <identifier>
+    <use value="official"/>
+    <system value="http://art-decor.org/ns/oids/vs"/>
+    <value value="2.16.840.1.113883.11.22.39"/>
+  </identifier>
+  <version value="1"/>
+  <name value="IPSLabResultsObservation"/>
+  <title value="IPS Results Observation Laboratory"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2018-03-30T08:02:21+02:00"/>
+  <publisher value="HL7 International"/>
+  <contact>
+    <name value="HL7 International"/>
+    <telecom>
+      <system value="phone"/>
+      <value value="+1 734 677 7777 "/>
+    </telecom>
+    <telecom>
+      <system value="fax"/>
+      <value value="+1 734 677 6622"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.org"/>
+    </telecom>
+  </contact>
+  <description value=" This value set includes (at the end) some clinical observations, which may be relevant in a lab report (body weight, temperature &#x2026;.).Value Set Definition:LOINC {&#xA0;&#xA0;{&#xA0;&#xA0;&#xA0;&#xA0;COMPONENT not containing the word &quot;panel&quot;&#xA0;&#xA0;&#xA0;&#xA0;STATUS in {ACTIVE}&#xA0;&#xA0;&#xA0;&#xA0;CLASSTYPE in {1}&#xA0;&#xA0;&#xA0;&#xA0;ORDER_OBS in {Observation, Both}&#xA0;&#xA0;&#xA0;&#xA0;CLASS exclude {CHALSKIN, H&amp;P.HX.LAB, H&amp;P.HX, LABORDERS, NR STATS, PATH.PROTOCOLS.*}&#xA0;&#xA0;}&#xA0;&#xA0;UNION&#xA0;&#xA0;{&#xA0;&#xA0;&#xA0;&#xA0;COMPONENT not ( containing the word &quot;panel&quot; OR starting with &quot;can pronounce&quot; )&#xA0;&#xA0;&#xA0;&#xA0;STATUS in {ACTIVE}&#xA0;&#xA0;&#xA0;&#xA0;CLASSTYPE in {2}&#xA0;&#xA0;&#xA0;&#xA0;ORDER_OBS in {Observation, Both}&#xA0;&#xA0;&#xA0;&#xA0;SYSTEM = ^Patient&#xA0;&#xA0;}}"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <immutable value="false"/>
+</ValueSet>

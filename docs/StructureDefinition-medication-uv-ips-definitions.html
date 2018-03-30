@@ -1105,7 +1105,7 @@ package.</p>
   <tr><td>Definition</td><td><p>ATC classification for medication product</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>ATC class for the medication<br/>The codes SHALL be taken from  <a href="http://hl7.org/fhir/ips/ValueSet/whoatc-uv-ips">http://hl7.org/fhir/ips/ValueSet/whoatc-uv-ips</a>; other codes may be used where these codes are not suitable</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>ATC class for the medication<br/>The codes SHALL be taken from <a href="ValueSet-whoatc-uv-ips.html">WHOATC</a>; other codes may be used where these codes are not suitable</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a>(<a href="StructureDefinition-coding-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips]]">coding-uv-ips</a>)</td></tr>
   <tr><td>Requirements</td><td><p>Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.</p>
 </td></tr>
@@ -1259,7 +1259,7 @@ The name may be applicable in one or more country/language combinations.</p>
   <tr><td>Definition</td><td><p>Describes the details of the manufacturer of the medication product.  This is not intended to represent the distributor of a medication product.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..0 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]">Organization</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>)</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1272,7 +1272,7 @@ This code represents the form of the medication (e.g. tablet, capsule, liquid)</
 <p>It is known that also alternative jurisdictional and international terminologies are known to be used for this concept domain, as NCI or SNOMED CT.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>A coded concept defining the form of a medication<br/>For example codes, see  <a href="http://hl7.org/fhir/ips/ValueSet/medicine-doseform">http://hl7.org/fhir/ips/ValueSet/medicine-doseform</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>A coded concept defining the form of a medication<br/>For example codes, see <a href="ValueSet-medicine-doseform.html">IPSDoseForm</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>([CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips]])</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.</p>
@@ -1332,7 +1332,7 @@ This code represents the form of the medication (e.g. tablet, capsule, liquid)</
   <tr><td>Definition</td><td><p>The identification of the code system that defines the meaning of the symbol in the code.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>EDQM Standard Terms<br/>The codes SHALL be taken from  <a href="http://hl7.org/fhir/ips/ValueSet/medicine-doseform">http://hl7.org/fhir/ips/ValueSet/medicine-doseform</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>EDQM Standard Terms<br/>The codes SHALL be taken from <a href="ValueSet-medicine-doseform.html">IPSDoseForm</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a></td></tr>
   <tr><td>Requirements</td><td><p>Need to be unambiguous about the source of the definition of the symbol.</p>
 </td></tr>
@@ -1469,7 +1469,7 @@ This code represents the form of the medication (e.g. tablet, capsule, liquid)</
   <tr><td>Definition</td><td><p>A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>SNOMED CT drug substances<br/>The codes SHOULD be taken from  <a href="http://hl7.org/fhir/ips/ValueSet/medicine-active-substances-uv-ips">http://hl7.org/fhir/ips/ValueSet/medicine-active-substances-uv-ips</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>SNOMED CT drug substances<br/>The codes SHOULD be taken from <a href="ValueSet-medicine-active-substances-uv-ips.html">IPSActiveSubstances</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>([CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips]])</td></tr>
   <tr><td>Comments</td><td><p>The IDMP ISO 11238 standard addresses the identification and exchange of regulated information on substances.
 The Global Ingredient Archival System (GInAS)  will provide a common global identifier for all of the substances used in medicinal products, providing a definition of substances globally consistent with this standard.
@@ -1532,7 +1532,7 @@ This choice will be revised based on the availability and the maturity of GInAS.
   <tr><td>Definition</td><td><p>The identification of the code system that defines the meaning of the symbol in the code.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The codes SHOULD be taken from  <a href="http://hl7.org/fhir/ips/ValueSet/medicine-active-substances-uv-ips">http://hl7.org/fhir/ips/ValueSet/medicine-active-substances-uv-ips</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The codes SHOULD be taken from <a href="ValueSet-medicine-active-substances-uv-ips.html">IPSActiveSubstances</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a></td></tr>
   <tr><td>Requirements</td><td><p>Need to be unambiguous about the source of the definition of the symbol.</p>
 </td></tr>
@@ -1640,7 +1640,7 @@ False indicates that the ingredient does not affect the therapeutic action of th
   <tr><td>Definition</td><td><p>A relationship of two Quantity values - expressed as a numerator and a denominator.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a name="2e268d4b-9867-438c-8887-f4b328efa6c3">​</a><a href="http://hl7.org/fhir/STU3/datatypes.html#Ratio">Ratio</a>(<a href="StructureDefinition/Ratio-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/Ratio-uv-ips]]">Ratio-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a name="dce3f808-5008-4acf-b377-09b1827ca185">​</a><a href="http://hl7.org/fhir/STU3/datatypes.html#Ratio">Ratio</a>(<a href="StructureDefinition/Ratio-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/Ratio-uv-ips]]">Ratio-uv-ips</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">rat-1</b>: Numerator and denominator SHALL both be present, or both are absent. If both are absent, there SHALL be some extension present (: (numerator.empty() xor denominator.exists()) and (numerator.exists() or extension.exists()))</td></tr>
@@ -1732,7 +1732,7 @@ False indicates that the ingredient does not affect the therapeutic action of th
   <tr><td>Definition</td><td><p>Identifies one of the items in the package.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/medication.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medication]]">Medication</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/medication.html" title="http://hl7.org/fhir/StructureDefinition/Medication">Medication</a>)</td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/STU3/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
   <tr><td>Comments</td><td><p>Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.</p>
 </td></tr>
@@ -1845,7 +1845,7 @@ False indicates that the ingredient does not affect the therapeutic action of th
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
     <p>
-            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, Mar 28, 2018 11:49-0600. |
+            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Fri, Mar 30, 2018 08:02+0200. |
                <!-- <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/STU3license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>
         

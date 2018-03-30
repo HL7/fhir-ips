@@ -12,7 +12,7 @@
   <version value="1"/>
   <name value="Patient-uv-ips"/>
   <status value="draft"/>
-  <date value="2018-03-20T09:43:56-06:00"/>
+  <date value="2018-03-20T16:43:56+01:00"/>
   <description value="This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide."/>
   <jurisdiction>
     <coding>
@@ -3579,8 +3579,8 @@
       <example>
         <label value="General"/>
         <valuePeriod>
-          <start value="2010-03-23T00:00:00-06:00"/>
-          <end value="2010-07-01T00:00:00-06:00"/>
+          <start value="2010-03-23T00:00:00+01:00"/>
+          <end value="2010-07-01T00:00:00+02:00"/>
         </valuePeriod>
       </example>
       <condition value="ele-1"/>
@@ -7251,8 +7251,8 @@
       <example>
         <label value="General"/>
         <valuePeriod>
-          <start value="2010-03-23T00:00:00-06:00"/>
-          <end value="2010-07-01T00:00:00-06:00"/>
+          <start value="2010-03-23T00:00:00+01:00"/>
+          <end value="2010-07-01T00:00:00+02:00"/>
         </valuePeriod>
       </example>
       <condition value="ele-1"/>
@@ -10473,6 +10473,10 @@
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
       </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+      </type>
       <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
@@ -11122,6 +11126,10 @@
       <type>
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
       </type>
       <condition value="ele-1"/>
       <constraint>

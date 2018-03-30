@@ -365,8 +365,8 @@ Required for cross-border exchange of IPS","","","","","","","","",,,,,"",,,,"Ad
 "
 "Patient.address.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","Time period when address was/is in use","Time period when address was/is in use.","This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. ""the patient was an inpatient of the hospital for this time range"") or one value from the range applies (e.g. ""give to the patient between these two times""). If duration is required, specify the type as Interval|Duration.","Allows addresses to be placed in historical context.","","","","","<valuePeriod xmlns=""http://hl7.org/fhir"">
-  <start value=""2010-03-23T00:00:00-06:00""/>
-  <end value=""2010-07-01T00:00:00-06:00""/>
+  <start value=""2010-03-23T00:00:00+01:00""/>
+  <end value=""2010-07-01T00:00:00+02:00""/>
 </valuePeriod>","","",,,,,"",,,,"Address.period",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 per-1:If present, start SHALL have a lower value than end {start.empty() or end.empty() or (start <= end)}"
@@ -733,8 +733,8 @@ Territory","",0,1,"Y","","Y","string {[]} {[]}
 "
 "Patient.contact.address.period","","","",0,1,"","","Y","Period {[]} {[]}
 ","Time period when address was/is in use","Time period when address was/is in use.","This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. ""the patient was an inpatient of the hospital for this time range"") or one value from the range applies (e.g. ""give to the patient between these two times""). If duration is required, specify the type as Interval|Duration.","Allows addresses to be placed in historical context.","","","","","<valuePeriod xmlns=""http://hl7.org/fhir"">
-  <start value=""2010-03-23T00:00:00-06:00""/>
-  <end value=""2010-07-01T00:00:00-06:00""/>
+  <start value=""2010-03-23T00:00:00+01:00""/>
+  <end value=""2010-07-01T00:00:00+02:00""/>
 </valuePeriod>","","",,,,,"",,,,"Address.period",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 per-1:If present, start SHALL have a lower value than end {start.empty() or end.empty() or (start <= end)}"

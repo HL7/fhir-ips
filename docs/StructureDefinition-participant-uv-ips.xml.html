@@ -282,7 +282,7 @@ can only resize using html  or css ;-(
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.version">version</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;1&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.name">name</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Participant-uv-ips&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.status">status</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">value</a>=&quot;2017-12-14T10:54:03-07:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.date">date</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">value</a>=&quot;2017-12-14T18:54:03+01:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Lantana Consulting Group&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Sarah Gaunt&quot;/&gt;
@@ -496,6 +496,11 @@ in the IPS CDA with an indirect participant in the header.&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>
                        <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/PractitionerRole&quot;/&gt;
       &lt;/type&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;Reference&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>
+                       <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Organization&quot;/&gt;
+      &lt;/type&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.condition">condition</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.constraint">constraint</a>&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">key</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;ele-1&quot;/&gt;
@@ -527,6 +532,11 @@ in the IPS CDA with an indirect participant in the header.&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;Reference&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>
                        <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/PractitionerRole&quot;/&gt;
+      &lt;/type&gt;
+      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">type</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">code</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;Reference&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">targetProfile</a>
+                       <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/StructureDefinition/Organization&quot;/&gt;
       &lt;/type&gt;
     &lt;/element&gt;
   &lt;/differential&gt;
@@ -574,7 +584,7 @@ Formats: <a href="StructureDefinition-participant-uv-ips.html">Narrative</a>, <a
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, Mar 28, 2018 11:49-0600. |
+            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Fri, Mar 30, 2018 08:02+0200. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

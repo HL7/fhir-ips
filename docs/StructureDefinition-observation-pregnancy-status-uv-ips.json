@@ -9,7 +9,7 @@
   "version": "1",
   "name": "Observation-pregnancy-status-uv-ips",
   "status": "draft",
-  "date": "2018-03-20T04:00:52-06:00",
+  "date": "2018-03-20T11:00:52+01:00",
   "description": "This profile constrains the Observation resource to represent the pregnancy status.",
   "jurisdiction": [
     {
@@ -2103,6 +2103,30 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/CarePlan"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/DeviceRequest"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/NutritionOrder"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/ProcedureRequest"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/ReferralRequest"
           }
         ],
         "condition": [
@@ -4322,6 +4346,10 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Encounter"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"
           }
         ],
         "condition": [
@@ -4747,6 +4775,18 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Practitioner"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Organization"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Patient"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
           }
         ],
         "condition": [
@@ -8142,6 +8182,10 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Device"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/DeviceMetric"
           }
         ],
         "condition": [
@@ -12176,6 +12220,14 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Observation"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Sequence"
           }
         ],
         "condition": [

@@ -1,0 +1,73 @@
+{
+  "resourceType": "ValueSet",
+  "id": "problem-type-uv-ips",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IPSProblemType</h2><div><p>This value set indicates the level of medical judgment used to determine the existence of a problem.</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/75326-9.html\">75326-9</a></td><td>Problem</td><td/></tr></table></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/ips/ValueSet/problem-type-uv-ips",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://art-decor.org/ns/oids/vs",
+      "value": "2.16.840.1.113883.11.22.16"
+    }
+  ],
+  "version": "1",
+  "name": "IPSProblemType",
+  "title": "Problem Type",
+  "status": "draft",
+  "experimental": false,
+  "date": "2018-03-30T08:02:21+02:00",
+  "publisher": "HL7 International",
+  "contact": [
+    {
+      "name": "HL7 International",
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "+1 734 677 7777 "
+        },
+        {
+          "system": "fax",
+          "value": "+1 734 677 6622"
+        },
+        {
+          "system": "email",
+          "value": "info@hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "This value set indicates the level of medical judgment used to determine the existence of a problem.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "75326-9",
+            "display": "Problem"
+          }
+        ]
+      }
+    ]
+  }
+}

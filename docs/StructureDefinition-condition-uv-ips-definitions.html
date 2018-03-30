@@ -584,7 +584,7 @@ can only resize using html  or css ;-(
   <tr><td>Definition</td><td><p>Organization that issued/manages the identifier.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]">Organization</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>)</td></tr>
   <tr><td>Comments</td><td><p>The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -668,7 +668,7 @@ can only resize using html  or css ;-(
   <tr><td>Definition</td><td><p>A category assigned to the condition. In this profile, a health problem of the patient, therefore a 'problem-list-item'.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>A category assigned to the condition.<br/>The codes SHALL be taken from  <a href="http://hl7.org/fhir/ips/ValueSet/problem-type-uv-ips">http://hl7.org/fhir/ips/ValueSet/problem-type-uv-ips</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>A category assigned to the condition.<br/>The codes SHALL be taken from <a href="ValueSet-problem-type-uv-ips.html">IPSProblemType</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>([CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips]])</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>In this profile, Condition represents a health problem of the patient. Therefore the code is fixed to the value problem-list-item.</p>
@@ -1205,7 +1205,7 @@ can only resize using html  or css ;-(
   <tr><td>Definition</td><td><p>A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Identification of the problem<br/>The codes SHOULD be taken from  <a href="http://hl7.org/fhir/ips/ValueSet/core-problem-list-disorders-uv-ips">http://hl7.org/fhir/ips/ValueSet/core-problem-list-disorders-uv-ips</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Identification of the problem<br/>The codes SHOULD be taken from <a href="ValueSet-core-problem-list-disorders-uv-ips.html">nlmcoreproblemlistdisorders</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>([CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips]])</td></tr>
   <tr><td>Requirements</td><td><p>0..1 to account for primarily narrative only resources.</p>
 </td></tr>
@@ -1456,7 +1456,7 @@ can only resize using html  or css ;-(
   <tr><td>Definition</td><td><p>Indicates the patient or group who the condition record is associated with.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/patient.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]">Patient</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Group is typically used for veterinary or public health use cases.</p>
 </td></tr>
@@ -1518,7 +1518,7 @@ can only resize using html  or css ;-(
   <tr><td>Definition</td><td><p>Encounter during which the condition was first asserted.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/encounter.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter], CanonicalType[http://hl7.org/fhir/StructureDefinition/EpisodeOfCare]]">Encounter</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/encounter.html" title="http://hl7.org/fhir/StructureDefinition/Encounter">Encounter</a> | <a href="http://hl7.org/fhir/STU3/episodeofcare.html" title="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare">EpisodeOfCare</a>)</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>encounter</td></tr>
   <tr><td>Comments</td><td><p>This record indicates the encounter this particular record is associated with.  In the case of a &quot;new&quot; diagnosis reflecting ongoing/revised information about the condition, this might be distinct from the first encounter in which the underlying condition was first &quot;known&quot;.</p>
 </td></tr>
@@ -1608,7 +1608,7 @@ can only resize using html  or css ;-(
 Information source.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/practitioner.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]">Practitioner</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/practitioner.html" title="http://hl7.org/fhir/StructureDefinition/Practitioner">Practitioner</a> | <a href="http://hl7.org/fhir/STU3/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a> | <a href="http://hl7.org/fhir/STU3/relatedperson.html" title="http://hl7.org/fhir/StructureDefinition/RelatedPerson">RelatedPerson</a>)</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1827,7 +1827,7 @@ Information source.</p>
   <tr><td>Definition</td><td><p>Reference to a formal record of the evidence on which the staging assessment is based.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1, con-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/clinicalimpression.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/ClinicalImpression], CanonicalType[http://hl7.org/fhir/StructureDefinition/DiagnosticReport], CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation]]">ClinicalImpression</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/clinicalimpression.html" title="http://hl7.org/fhir/StructureDefinition/ClinicalImpression">ClinicalImpression</a> | <a href="http://hl7.org/fhir/STU3/diagnosticreport.html" title="http://hl7.org/fhir/StructureDefinition/DiagnosticReport">DiagnosticReport</a> | <a href="http://hl7.org/fhir/STU3/observation.html" title="http://hl7.org/fhir/StructureDefinition/Observation">Observation</a>)</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -2048,7 +2048,7 @@ Information source.</p>
   <tr><td>Definition</td><td><p>Links to other relevant information, including pathology reports.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1, con-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]">Resource</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="http://hl7.org/fhir/StructureDefinition/Resource">Resource</a>)</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -2134,7 +2134,7 @@ Information source.</p>
   <tr><td>Definition</td><td><p>The individual responsible for making the annotation.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/practitioner.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]">Practitioner</a>), <a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/practitioner.html" title="http://hl7.org/fhir/StructureDefinition/Practitioner">Practitioner</a> | <a href="http://hl7.org/fhir/STU3/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a> | <a href="http://hl7.org/fhir/STU3/relatedperson.html" title="http://hl7.org/fhir/StructureDefinition/RelatedPerson">RelatedPerson</a>), <a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/STU3/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
@@ -2190,7 +2190,7 @@ Information source.</p>
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, Mar 28, 2018 11:49-0600. |
+            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Fri, Mar 30, 2018 08:02+0200. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

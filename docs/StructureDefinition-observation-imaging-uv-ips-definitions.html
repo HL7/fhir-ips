@@ -336,7 +336,7 @@ can only resize using html  or css ;-(
   <tr><td>Definition</td><td><p>A larger event of which this particular event is a component or step.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>  (Extension Type: <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]">Resource</a>))</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>  (Extension Type: <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="http://hl7.org/fhir/StructureDefinition/Resource">Resource</a>))</td></tr>
   <tr><td>Comments</td><td><p>Not to be used to link an event to an Encounter - use Event.context for that.</p>
 <p>[The allowed reference resources may be adjusted as appropriate for the event resource].</p>
 </td></tr>
@@ -685,7 +685,7 @@ can only resize using html  or css ;-(
   <tr><td>Definition</td><td><p>Organization that issued/manages the identifier.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]">Organization</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>)</td></tr>
   <tr><td>Comments</td><td><p>The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -743,7 +743,7 @@ can only resize using html  or css ;-(
   <tr><td>Definition</td><td><p>A plan, proposal or order that is fulfilled in whole or in part by this event.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/careplan.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/CarePlan], CanonicalType[http://hl7.org/fhir/StructureDefinition/DeviceRequest], CanonicalType[http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation], CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicationRequest], CanonicalType[http://hl7.org/fhir/StructureDefinition/NutritionOrder], CanonicalType[http://hl7.org/fhir/StructureDefinition/ProcedureRequest], CanonicalType[http://hl7.org/fhir/StructureDefinition/ReferralRequest]]">CarePlan</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/careplan.html" title="http://hl7.org/fhir/StructureDefinition/CarePlan">CarePlan</a> | <a href="http://hl7.org/fhir/STU3/devicerequest.html" title="http://hl7.org/fhir/StructureDefinition/DeviceRequest">DeviceRequest</a> | <a href="http://hl7.org/fhir/STU3/immunizationrecommendation.html" title="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation">ImmunizationRecommendation</a> | <a href="http://hl7.org/fhir/STU3/medicationrequest.html" title="http://hl7.org/fhir/StructureDefinition/MedicationRequest">MedicationRequest</a> | <a href="http://hl7.org/fhir/STU3/nutritionorder.html" title="http://hl7.org/fhir/StructureDefinition/NutritionOrder">NutritionOrder</a> | <a href="http://hl7.org/fhir/STU3/procedurerequest.html" title="http://hl7.org/fhir/StructureDefinition/ProcedureRequest">ProcedureRequest</a> | <a href="http://hl7.org/fhir/STU3/referralrequest.html" title="http://hl7.org/fhir/StructureDefinition/ReferralRequest">ReferralRequest</a>)</td></tr>
   <tr><td>Requirements</td><td><p>Allows tracing of authorization for the event and tracking whether proposals/recommendations were acted upon.</p>
 </td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Fulfills</td></tr>
@@ -946,7 +946,7 @@ can only resize using html  or css ;-(
 In this profile the code of the containing observation (the organizer result in the CDA implementation) may correspond to the procedure code (e.g. Chest X-Ray).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Codes identifying names of simple observations.<br/>The codes SHALL be taken from  <a href="http://hl7.org/fhir/ips/ValueSet/imaging-observations-uv-ips">http://hl7.org/fhir/ips/ValueSet/imaging-observations-uv-ips</a>; other codes may be used where these codes are not suitable</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Codes identifying names of simple observations.<br/>The codes SHALL be taken from <a href="ValueSet-imaging-observations-uv-ips.html">IPSRadResultsObservation</a>; other codes may be used where these codes are not suitable</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>([CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips]])</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Knowing what kind of observation is being made is essential to understanding the observation.</p>
@@ -1075,7 +1075,7 @@ In this profile the code of the containing observation (the organizer result in 
 <p>In this profile is constrained to the patient</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-patient-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/patient-uv-ips]]">Patient-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-patient-uv-ips.html" title="http://hl7.org/fhir/ips/StructureDefinition/patient-uv-ips">Patient-uv-ips</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Observations have no value if you don't know who or what they're about.</p>
 </td></tr>
@@ -1137,7 +1137,7 @@ In this profile the code of the containing observation (the organizer result in 
   <tr><td>Definition</td><td><p>The healthcare event  (e.g. a patient and healthcare provider interaction) during which this observation is made.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/encounter.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter], CanonicalType[http://hl7.org/fhir/StructureDefinition/EpisodeOfCare]]">Encounter</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/encounter.html" title="http://hl7.org/fhir/StructureDefinition/Encounter">Encounter</a> | <a href="http://hl7.org/fhir/STU3/episodeofcare.html" title="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare">EpisodeOfCare</a>)</td></tr>
   <tr><td>Requirements</td><td><p>For some observations it may be important to know the link between an observation and a particular encounter.</p>
 </td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Encounter</td></tr>
@@ -1221,7 +1221,7 @@ In this profile the code of the containing observation (the organizer result in 
   <tr><td>Definition</td><td><p>Who was responsible for asserting the observed value as &quot;true&quot;.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>([CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/practitioner-uv-ips], CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/organization-observation-uv-ips]])</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(http://hl7.org/fhir/ips/StructureDefinition/practitioner-uv-ips | <a href="StructureDefinition-organization-observation-uv-ips.html" title="http://hl7.org/fhir/ips/StructureDefinition/organization-observation-uv-ips">Organization-observation-uv-ips</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>May give a degree of confidence in the observation and also indicates where follow-up questions should be directed.</p>
 </td></tr>
@@ -1559,7 +1559,7 @@ In this profile the code of the containing observation (the organizer result in 
   <tr><td>Definition</td><td><p>A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Codes describing anatomical locations. May include laterality.<br/>For example codes, see  <a href="http://hl7.org/fhir/ips/ValueSet/target-site-uv-ips">http://hl7.org/fhir/ips/ValueSet/target-site-uv-ips</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Codes describing anatomical locations. May include laterality.<br/>For example codes, see <a href="ValueSet-target-site-uv-ips.html">IPSTargetSiteCode</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>([CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips]])</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.</p>
@@ -1810,7 +1810,7 @@ In this profile the code of the containing observation (the organizer result in 
   <tr><td>Definition</td><td><p>The specimen that was used when this observation was made.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/specimen.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Specimen]]">Specimen</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/specimen.html" title="http://hl7.org/fhir/StructureDefinition/Specimen">Specimen</a>)</td></tr>
   <tr><td>Comments</td><td><p>Should only be used if not implicit in code found in <code>Observation.code</code>.  Observations are not made on specimens themselves; they are made on a subject, but in many cases by the means of a specimen. Note that although specimens are often involved, they are not always tracked and reported explicitly. Also note that observation resources may be used in contexts that track the specimen explicitly (e.g. Diagnostic Report).</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1868,7 +1868,7 @@ In this profile the code of the containing observation (the organizer result in 
   <tr><td>Definition</td><td><p>The device used to generate the observation data.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-device-observer-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/device-observer-uv-ips]]">Device-observer-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-device-observer-uv-ips.html" title="http://hl7.org/fhir/ips/StructureDefinition/device-observer-uv-ips">Device-observer-uv-ips</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>An extension should be used if further typing of the device is needed.  Devices used to support obtaining an observation can be represented using either an extension or through the Observation.related element.</p>
 </td></tr>
@@ -2657,7 +2657,7 @@ In this profile the code of the containing observation (the organizer result in 
   <tr><td>Definition</td><td><p>A reference to the observation or <a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#">QuestionnaireResponse</a> resource that is related to this observation.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/observation.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation], CanonicalType[http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse], CanonicalType[http://hl7.org/fhir/StructureDefinition/Sequence]]">Observation</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/observation.html" title="http://hl7.org/fhir/StructureDefinition/Observation">Observation</a> | <a href="http://hl7.org/fhir/STU3/questionnaireresponse.html" title="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse">QuestionnaireResponse</a> | <a href="http://hl7.org/fhir/STU3/sequence.html" title="http://hl7.org/fhir/StructureDefinition/Sequence">Sequence</a>)</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -2770,7 +2770,7 @@ In this profile the code of the containing observation (the organizer result in 
   <tr><td>Definition</td><td><p>A reference to the observation or <a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#">QuestionnaireResponse</a> resource that is related to this observation.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-observation-member-imaging-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/observation-member-imaging-uv-ips]]">Observation-member-imaging-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-observation-member-imaging-uv-ips.html" title="http://hl7.org/fhir/ips/StructureDefinition/observation-member-imaging-uv-ips">Observation-member-imaging-uv-ips</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
@@ -6069,7 +6069,7 @@ In this profile the code of the containing observation (the organizer result in 
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, Mar 28, 2018 11:49-0600. |
+            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Fri, Mar 30, 2018 08:02+0200. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

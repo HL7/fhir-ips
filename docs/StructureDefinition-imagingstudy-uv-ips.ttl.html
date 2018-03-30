@@ -281,7 +281,7 @@ can only resize using html  or css ;-(
   <a href="http://hl7.org/fhir/STU3/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
   <a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#id">fhir:value</a> &quot;imagingstudy-uv-ips&quot;];
   <a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.meta">fhir:Resource.meta</a> [
-     <a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.lastUpdated">fhir:Meta.lastUpdated</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#instant">fhir:value</a> &quot;2018-02-20T05:32:46.724-07:00&quot;^^xsd:dateTime ]
+     <a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.lastUpdated">fhir:Meta.lastUpdated</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#instant">fhir:value</a> &quot;2018-02-20T13:32:46.724+01:00&quot;^^xsd:dateTime ]
   ];
   <a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
@@ -291,7 +291,7 @@ can only resize using html  or css ;-(
   <a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.version">fhir:StructureDefinition.version</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;1&quot;];
   <a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.name">fhir:StructureDefinition.name</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#string">fhir:value</a> &quot;ImagingStudy-uv-ips&quot;];
   <a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.status">fhir:StructureDefinition.status</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#code">fhir:value</a> &quot;draft&quot;];
-  <a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.date">fhir:StructureDefinition.date</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">fhir:value</a> &quot;2018-02-20T05:22:59-07:00&quot;^^xsd:dateTime];
+  <a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.date">fhir:StructureDefinition.date</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">fhir:value</a> &quot;2018-02-20T13:22:59+01:00&quot;^^xsd:dateTime];
   <a href="http://hl7.org/fhir/STU3/structuredefinition.html#StructureDefinition.jurisdiction">fhir:StructureDefinition.jurisdiction</a> [
      <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
@@ -3866,7 +3866,10 @@ can only resize using html  or css ;-(
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">fhir:ElementDefinition.type</a> [
          <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
          <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;Reference&quot; ];
-         <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">fhir:ElementDefinition.type.targetProfile</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/Encounter&quot; ]       ];
+         <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">fhir:ElementDefinition.type.targetProfile</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/Encounter&quot; ]       ], [
+         <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 1;
+         <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;Reference&quot; ];
+         <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">fhir:ElementDefinition.type.targetProfile</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/EpisodeOfCare&quot; ]       ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.condition">fhir:ElementDefinition.condition</a> [
          <a href="http://hl7.org/fhir/STU3/datatypes.html#id">fhir:value</a> &quot;ele-1&quot;;
          <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0       ];
@@ -4161,7 +4164,13 @@ can only resize using html  or css ;-(
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type">fhir:ElementDefinition.type</a> [
          <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0;
          <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;Reference&quot; ];
-         <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">fhir:ElementDefinition.type.targetProfile</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/ReferralRequest&quot; ]       ];
+         <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">fhir:ElementDefinition.type.targetProfile</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/ReferralRequest&quot; ]       ], [
+         <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 1;
+         <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;Reference&quot; ];
+         <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">fhir:ElementDefinition.type.targetProfile</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/CarePlan&quot; ]       ], [
+         <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 2;
+         <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:ElementDefinition.type.code</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;Reference&quot; ];
+         <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.type.targetProfile">fhir:ElementDefinition.type.targetProfile</a> [ <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/ProcedureRequest&quot; ]       ];
        <a href="http://hl7.org/fhir/STU3/datatypes.html#ElementDefinition#ElementDefinition.condition">fhir:ElementDefinition.condition</a> [
          <a href="http://hl7.org/fhir/STU3/datatypes.html#id">fhir:value</a> &quot;ele-1&quot;;
          <a href="http://hl7.org/fhir/STU3/rdf.html#index">fhir:index</a> 0       ];
@@ -8921,7 +8930,7 @@ Formats: <a href="StructureDefinition-imagingstudy-uv-ips.html">Narrative</a>, <
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, Mar 28, 2018 11:49-0600. |
+            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Fri, Mar 30, 2018 08:02+0200. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

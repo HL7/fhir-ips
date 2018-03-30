@@ -447,7 +447,7 @@ can only resize using html  or css ;-(
   <tr><td>Definition</td><td><p>Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/patient.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson], CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]">Patient</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a> | <a href="http://hl7.org/fhir/STU3/relatedperson.html" title="http://hl7.org/fhir/StructureDefinition/RelatedPerson">RelatedPerson</a> | <a href="http://hl7.org/fhir/STU3/practitioner.html" title="http://hl7.org/fhir/StructureDefinition/Practitioner">Practitioner</a> | <a href="http://hl7.org/fhir/STU3/practitionerrole.html" title="http://hl7.org/fhir/StructureDefinition/PractitionerRole">PractitionerRole</a> | <a href="http://hl7.org/fhir/STU3/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>)</td></tr>
   <tr><td>Comments</td><td><p>A stream of bytes, base64 encoded</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -621,79 +621,6 @@ can only resize using html  or css ;-(
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.identifier.type.coding.id"> </a><b>Immunization.identifier.type.coding.id</b></td></tr>
-  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.identifier.type.coding.extension"> </a><b>Immunization.identifier.type.coding.extension</b></td></tr>
-  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Extension">Extension</a></td></tr>
-  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
-  <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.identifier.type.coding.system"> </a><b>Immunization.identifier.type.coding.system</b></td></tr>
-  <tr><td>Definition</td><td><p>The identification of the code system that defines the meaning of the symbol in the code.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to be unambiguous about the source of the definition of the symbol.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.identifier.type.coding.version"> </a><b>Immunization.identifier.type.coding.version</b></td></tr>
-  <tr><td>Definition</td><td><p>The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.</p>
-</td></tr>
-  <tr><td>Note</td><td>This is a business versionId, not a resource version id (see <a href="http://hl7.org/fhir/STU3/resource.html#versions">discussion</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Comments</td><td><p>Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.identifier.type.coding.code"> </a><b>Immunization.identifier.type.coding.code</b></td></tr>
-  <tr><td>Definition</td><td><p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to refer to a particular code in the system.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.identifier.type.coding.display"> </a><b>Immunization.identifier.type.coding.display</b></td></tr>
-  <tr><td>Definition</td><td><p>A representation of the meaning of the code in the system, following the rules of the system.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.identifier.type.coding.userSelected"> </a><b>Immunization.identifier.type.coding.userSelected</b></td></tr>
-  <tr><td>Definition</td><td><p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">boolean</a></td></tr>
-  <tr><td>Requirements</td><td><p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><a name="Immunization.identifier.type.text"> </a><b>Immunization.identifier.type.text</b></td></tr>
   <tr><td>Definition</td><td><p>A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.</p>
 </td></tr>
@@ -780,7 +707,7 @@ can only resize using html  or css ;-(
   <tr><td>Definition</td><td><p>Organization that issued/manages the identifier.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]">Organization</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>)</td></tr>
   <tr><td>Comments</td><td><p>The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -900,79 +827,6 @@ Several kinds of vaccine product coding could be provided .</p>
   <tr><td>Requirements</td><td><p>Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccineCode.coding.id"> </a><b>Immunization.vaccineCode.coding.id</b></td></tr>
-  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccineCode.coding.extension"> </a><b>Immunization.vaccineCode.coding.extension</b></td></tr>
-  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Extension">Extension</a></td></tr>
-  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
-  <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccineCode.coding.system"> </a><b>Immunization.vaccineCode.coding.system</b></td></tr>
-  <tr><td>Definition</td><td><p>The identification of the code system that defines the meaning of the symbol in the code.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to be unambiguous about the source of the definition of the symbol.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccineCode.coding.version"> </a><b>Immunization.vaccineCode.coding.version</b></td></tr>
-  <tr><td>Definition</td><td><p>The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.</p>
-</td></tr>
-  <tr><td>Note</td><td>This is a business versionId, not a resource version id (see <a href="http://hl7.org/fhir/STU3/resource.html#versions">discussion</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Comments</td><td><p>Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccineCode.coding.code"> </a><b>Immunization.vaccineCode.coding.code</b></td></tr>
-  <tr><td>Definition</td><td><p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to refer to a particular code in the system.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccineCode.coding.display"> </a><b>Immunization.vaccineCode.coding.display</b></td></tr>
-  <tr><td>Definition</td><td><p>A representation of the meaning of the code in the system, following the rules of the system.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccineCode.coding.userSelected"> </a><b>Immunization.vaccineCode.coding.userSelected</b></td></tr>
-  <tr><td>Definition</td><td><p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">boolean</a></td></tr>
-  <tr><td>Requirements</td><td><p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
@@ -1710,7 +1564,7 @@ package.</p>
   <tr><td>Definition</td><td><p>WHO classification or cluster of products such as ATC, SNOMED VMP or national/local classification of products</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The codes SHALL be taken from  <a href="http://hl7.org/fhir/ips/ValueSet/whoatc-uv-ips">http://hl7.org/fhir/ips/ValueSet/whoatc-uv-ips</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-whoatc-uv-ips.html">WHOATC</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a>(<a href="StructureDefinition-coding-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips]]">coding-uv-ips</a>)</td></tr>
   <tr><td>Requirements</td><td><p>Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.</p>
 </td></tr>
@@ -1827,7 +1681,7 @@ package.</p>
   <tr><td>Definition</td><td><p>A reference to a code indicating that there there are no known immunizations or that this information is unknown.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The codes SHALL be taken from  <a href="http://hl7.org/fhir/ips/ValueSet/absent-or-unknown-immunization-uv-ips">http://hl7.org/fhir/ips/ValueSet/absent-or-unknown-immunization-uv-ips</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-absent-or-unknown-immunization-uv-ips.html">IPSNoImmunizationInfo</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a>(<a href="StructureDefinition-coding-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips]]">coding-uv-ips</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.</p>
@@ -1864,7 +1718,7 @@ package.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
 </td></tr>
-  <tr><td>Fixed Value</td><td>http://hl7.org/fhir/ips/CodeSystem/absent-unknown</td></tr>
+  <tr><td>Fixed Value</td><td>urn:oid:2.16.840.1.113883.3.1937.777.13.5.999.1</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><a name="Immunization.vaccineCode.coding:absentOrUnknownImmunization.version"> </a><a name="Immunization.vaccineCode.coding.version"> </a><b>Immunization.vaccineCode.coding.version</b></td></tr>
@@ -1957,7 +1811,7 @@ package.</p>
   <tr><td>Definition</td><td><p>The patient who either received or did not receive the immunization.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/patient.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]">Patient</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
@@ -2017,7 +1871,7 @@ package.</p>
   <tr><td>Definition</td><td><p>The visit or admission or other contact between patient and health care provider the immunization was performed as part of.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/encounter.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]">Encounter</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/encounter.html" title="http://hl7.org/fhir/StructureDefinition/Encounter">Encounter</a>)</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -2130,79 +1984,6 @@ package.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.reportOrigin.coding.id"> </a><b>Immunization.reportOrigin.coding.id</b></td></tr>
-  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.reportOrigin.coding.extension"> </a><b>Immunization.reportOrigin.coding.extension</b></td></tr>
-  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Extension">Extension</a></td></tr>
-  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
-  <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.reportOrigin.coding.system"> </a><b>Immunization.reportOrigin.coding.system</b></td></tr>
-  <tr><td>Definition</td><td><p>The identification of the code system that defines the meaning of the symbol in the code.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to be unambiguous about the source of the definition of the symbol.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.reportOrigin.coding.version"> </a><b>Immunization.reportOrigin.coding.version</b></td></tr>
-  <tr><td>Definition</td><td><p>The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.</p>
-</td></tr>
-  <tr><td>Note</td><td>This is a business versionId, not a resource version id (see <a href="http://hl7.org/fhir/STU3/resource.html#versions">discussion</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Comments</td><td><p>Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.reportOrigin.coding.code"> </a><b>Immunization.reportOrigin.coding.code</b></td></tr>
-  <tr><td>Definition</td><td><p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to refer to a particular code in the system.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.reportOrigin.coding.display"> </a><b>Immunization.reportOrigin.coding.display</b></td></tr>
-  <tr><td>Definition</td><td><p>A representation of the meaning of the code in the system, following the rules of the system.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.reportOrigin.coding.userSelected"> </a><b>Immunization.reportOrigin.coding.userSelected</b></td></tr>
-  <tr><td>Definition</td><td><p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">boolean</a></td></tr>
-  <tr><td>Requirements</td><td><p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><a name="Immunization.reportOrigin.text"> </a><b>Immunization.reportOrigin.text</b></td></tr>
   <tr><td>Definition</td><td><p>A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.</p>
 </td></tr>
@@ -2218,7 +1999,7 @@ package.</p>
   <tr><td>Definition</td><td><p>The service delivery location where the vaccine administration occurred.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/location.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Location]]">Location</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/location.html" title="http://hl7.org/fhir/StructureDefinition/Location">Location</a>)</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -2276,7 +2057,7 @@ package.</p>
   <tr><td>Definition</td><td><p>Name of vaccine manufacturer.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]">Organization</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>)</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -2379,84 +2160,11 @@ package.</p>
   <tr><td>Definition</td><td><p>A reference to a code defined by a terminology system.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The codes SHOULD be taken from  <a href="http://hl7.org/fhir/ips/ValueSet/target-site-uv-ips">http://hl7.org/fhir/ips/ValueSet/target-site-uv-ips</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The codes SHOULD be taken from <a href="ValueSet-target-site-uv-ips.html">IPSTargetSiteCode</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a>(<a href="StructureDefinition-coding-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips]]">coding-uv-ips</a>)</td></tr>
   <tr><td>Requirements</td><td><p>Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.site.coding.id"> </a><b>Immunization.site.coding.id</b></td></tr>
-  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.site.coding.extension"> </a><b>Immunization.site.coding.extension</b></td></tr>
-  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Extension">Extension</a></td></tr>
-  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
-  <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.site.coding.system"> </a><b>Immunization.site.coding.system</b></td></tr>
-  <tr><td>Definition</td><td><p>The identification of the code system that defines the meaning of the symbol in the code.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to be unambiguous about the source of the definition of the symbol.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.site.coding.version"> </a><b>Immunization.site.coding.version</b></td></tr>
-  <tr><td>Definition</td><td><p>The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.</p>
-</td></tr>
-  <tr><td>Note</td><td>This is a business versionId, not a resource version id (see <a href="http://hl7.org/fhir/STU3/resource.html#versions">discussion</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Comments</td><td><p>Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.site.coding.code"> </a><b>Immunization.site.coding.code</b></td></tr>
-  <tr><td>Definition</td><td><p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to refer to a particular code in the system.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.site.coding.display"> </a><b>Immunization.site.coding.display</b></td></tr>
-  <tr><td>Definition</td><td><p>A representation of the meaning of the code in the system, following the rules of the system.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.site.coding.userSelected"> </a><b>Immunization.site.coding.userSelected</b></td></tr>
-  <tr><td>Definition</td><td><p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">boolean</a></td></tr>
-  <tr><td>Requirements</td><td><p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
@@ -2475,7 +2183,7 @@ package.</p>
   <tr><td>Definition</td><td><p>The path by which the vaccine product is taken into the body.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The route by which the vaccine was administered<br/>The codes SHALL be taken from  <a href="http://hl7.org/fhir/ips/ValueSet/medicine-route-of-administration">http://hl7.org/fhir/ips/ValueSet/medicine-route-of-administration</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The route by which the vaccine was administered<br/>The codes SHALL be taken from <a href="ValueSet-medicine-route-of-administration.html">IPSRouteOfAdmin</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
   <tr><td>Comments</td><td><p>Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.</p>
 </td></tr>
@@ -2509,79 +2217,6 @@ package.</p>
   <tr><td>Requirements</td><td><p>Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.route.coding.id"> </a><b>Immunization.route.coding.id</b></td></tr>
-  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.route.coding.extension"> </a><b>Immunization.route.coding.extension</b></td></tr>
-  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Extension">Extension</a></td></tr>
-  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
-  <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.route.coding.system"> </a><b>Immunization.route.coding.system</b></td></tr>
-  <tr><td>Definition</td><td><p>The identification of the code system that defines the meaning of the symbol in the code.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to be unambiguous about the source of the definition of the symbol.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.route.coding.version"> </a><b>Immunization.route.coding.version</b></td></tr>
-  <tr><td>Definition</td><td><p>The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.</p>
-</td></tr>
-  <tr><td>Note</td><td>This is a business versionId, not a resource version id (see <a href="http://hl7.org/fhir/STU3/resource.html#versions">discussion</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Comments</td><td><p>Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.route.coding.code"> </a><b>Immunization.route.coding.code</b></td></tr>
-  <tr><td>Definition</td><td><p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to refer to a particular code in the system.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.route.coding.display"> </a><b>Immunization.route.coding.display</b></td></tr>
-  <tr><td>Definition</td><td><p>A representation of the meaning of the code in the system, following the rules of the system.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.route.coding.userSelected"> </a><b>Immunization.route.coding.userSelected</b></td></tr>
-  <tr><td>Definition</td><td><p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">boolean</a></td></tr>
-  <tr><td>Requirements</td><td><p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
@@ -2760,79 +2395,6 @@ package.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.practitioner.role.coding.id"> </a><b>Immunization.practitioner.role.coding.id</b></td></tr>
-  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.practitioner.role.coding.extension"> </a><b>Immunization.practitioner.role.coding.extension</b></td></tr>
-  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Extension">Extension</a></td></tr>
-  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
-  <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.practitioner.role.coding.system"> </a><b>Immunization.practitioner.role.coding.system</b></td></tr>
-  <tr><td>Definition</td><td><p>The identification of the code system that defines the meaning of the symbol in the code.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to be unambiguous about the source of the definition of the symbol.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.practitioner.role.coding.version"> </a><b>Immunization.practitioner.role.coding.version</b></td></tr>
-  <tr><td>Definition</td><td><p>The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.</p>
-</td></tr>
-  <tr><td>Note</td><td>This is a business versionId, not a resource version id (see <a href="http://hl7.org/fhir/STU3/resource.html#versions">discussion</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Comments</td><td><p>Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.practitioner.role.coding.code"> </a><b>Immunization.practitioner.role.coding.code</b></td></tr>
-  <tr><td>Definition</td><td><p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to refer to a particular code in the system.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.practitioner.role.coding.display"> </a><b>Immunization.practitioner.role.coding.display</b></td></tr>
-  <tr><td>Definition</td><td><p>A representation of the meaning of the code in the system, following the rules of the system.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.practitioner.role.coding.userSelected"> </a><b>Immunization.practitioner.role.coding.userSelected</b></td></tr>
-  <tr><td>Definition</td><td><p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">boolean</a></td></tr>
-  <tr><td>Requirements</td><td><p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><a name="Immunization.practitioner.role.text"> </a><b>Immunization.practitioner.role.text</b></td></tr>
   <tr><td>Definition</td><td><p>A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.</p>
 </td></tr>
@@ -2848,7 +2410,7 @@ package.</p>
   <tr><td>Definition</td><td><p>The device, practitioner, etc. who performed the action.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/practitioner.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner]]">Practitioner</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/practitioner.html" title="http://hl7.org/fhir/StructureDefinition/Practitioner">Practitioner</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
@@ -2936,7 +2498,7 @@ package.</p>
   <tr><td>Definition</td><td><p>The individual responsible for making the annotation.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/practitioner.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]">Practitioner</a>), <a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/practitioner.html" title="http://hl7.org/fhir/StructureDefinition/Practitioner">Practitioner</a> | <a href="http://hl7.org/fhir/STU3/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a> | <a href="http://hl7.org/fhir/STU3/relatedperson.html" title="http://hl7.org/fhir/StructureDefinition/RelatedPerson">RelatedPerson</a>), <a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/STU3/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
@@ -3035,79 +2597,6 @@ package.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.explanation.reason.coding.id"> </a><b>Immunization.explanation.reason.coding.id</b></td></tr>
-  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.explanation.reason.coding.extension"> </a><b>Immunization.explanation.reason.coding.extension</b></td></tr>
-  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Extension">Extension</a></td></tr>
-  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
-  <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.explanation.reason.coding.system"> </a><b>Immunization.explanation.reason.coding.system</b></td></tr>
-  <tr><td>Definition</td><td><p>The identification of the code system that defines the meaning of the symbol in the code.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to be unambiguous about the source of the definition of the symbol.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.explanation.reason.coding.version"> </a><b>Immunization.explanation.reason.coding.version</b></td></tr>
-  <tr><td>Definition</td><td><p>The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.</p>
-</td></tr>
-  <tr><td>Note</td><td>This is a business versionId, not a resource version id (see <a href="http://hl7.org/fhir/STU3/resource.html#versions">discussion</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Comments</td><td><p>Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.explanation.reason.coding.code"> </a><b>Immunization.explanation.reason.coding.code</b></td></tr>
-  <tr><td>Definition</td><td><p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to refer to a particular code in the system.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.explanation.reason.coding.display"> </a><b>Immunization.explanation.reason.coding.display</b></td></tr>
-  <tr><td>Definition</td><td><p>A representation of the meaning of the code in the system, following the rules of the system.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.explanation.reason.coding.userSelected"> </a><b>Immunization.explanation.reason.coding.userSelected</b></td></tr>
-  <tr><td>Definition</td><td><p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">boolean</a></td></tr>
-  <tr><td>Requirements</td><td><p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><a name="Immunization.explanation.reason.text"> </a><b>Immunization.explanation.reason.text</b></td></tr>
   <tr><td>Definition</td><td><p>A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.</p>
 </td></tr>
@@ -3156,79 +2645,6 @@ package.</p>
   <tr><td>Requirements</td><td><p>Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.explanation.reasonNotGiven.coding.id"> </a><b>Immunization.explanation.reasonNotGiven.coding.id</b></td></tr>
-  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.explanation.reasonNotGiven.coding.extension"> </a><b>Immunization.explanation.reasonNotGiven.coding.extension</b></td></tr>
-  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Extension">Extension</a></td></tr>
-  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
-  <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.explanation.reasonNotGiven.coding.system"> </a><b>Immunization.explanation.reasonNotGiven.coding.system</b></td></tr>
-  <tr><td>Definition</td><td><p>The identification of the code system that defines the meaning of the symbol in the code.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to be unambiguous about the source of the definition of the symbol.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.explanation.reasonNotGiven.coding.version"> </a><b>Immunization.explanation.reasonNotGiven.coding.version</b></td></tr>
-  <tr><td>Definition</td><td><p>The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.</p>
-</td></tr>
-  <tr><td>Note</td><td>This is a business versionId, not a resource version id (see <a href="http://hl7.org/fhir/STU3/resource.html#versions">discussion</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Comments</td><td><p>Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.explanation.reasonNotGiven.coding.code"> </a><b>Immunization.explanation.reasonNotGiven.coding.code</b></td></tr>
-  <tr><td>Definition</td><td><p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to refer to a particular code in the system.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.explanation.reasonNotGiven.coding.display"> </a><b>Immunization.explanation.reasonNotGiven.coding.display</b></td></tr>
-  <tr><td>Definition</td><td><p>A representation of the meaning of the code in the system, following the rules of the system.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.explanation.reasonNotGiven.coding.userSelected"> </a><b>Immunization.explanation.reasonNotGiven.coding.userSelected</b></td></tr>
-  <tr><td>Definition</td><td><p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">boolean</a></td></tr>
-  <tr><td>Requirements</td><td><p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
@@ -3293,7 +2709,7 @@ package.</p>
   <tr><td>Definition</td><td><p>Details of the reaction.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/observation.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation]]">Observation</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/observation.html" title="http://hl7.org/fhir/StructureDefinition/Observation">Observation</a>)</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -3415,7 +2831,7 @@ package.</p>
   <tr><td>Definition</td><td><p>Indicates the authority who published the protocol.  E.g. ACIP.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]">Organization</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>)</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -3527,79 +2943,6 @@ package.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccinationProtocol.targetDisease.coding.id"> </a><b>Immunization.vaccinationProtocol.targetDisease.coding.id</b></td></tr>
-  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccinationProtocol.targetDisease.coding.extension"> </a><b>Immunization.vaccinationProtocol.targetDisease.coding.extension</b></td></tr>
-  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Extension">Extension</a></td></tr>
-  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
-  <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccinationProtocol.targetDisease.coding.system"> </a><b>Immunization.vaccinationProtocol.targetDisease.coding.system</b></td></tr>
-  <tr><td>Definition</td><td><p>The identification of the code system that defines the meaning of the symbol in the code.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to be unambiguous about the source of the definition of the symbol.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccinationProtocol.targetDisease.coding.version"> </a><b>Immunization.vaccinationProtocol.targetDisease.coding.version</b></td></tr>
-  <tr><td>Definition</td><td><p>The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.</p>
-</td></tr>
-  <tr><td>Note</td><td>This is a business versionId, not a resource version id (see <a href="http://hl7.org/fhir/STU3/resource.html#versions">discussion</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Comments</td><td><p>Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccinationProtocol.targetDisease.coding.code"> </a><b>Immunization.vaccinationProtocol.targetDisease.coding.code</b></td></tr>
-  <tr><td>Definition</td><td><p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to refer to a particular code in the system.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccinationProtocol.targetDisease.coding.display"> </a><b>Immunization.vaccinationProtocol.targetDisease.coding.display</b></td></tr>
-  <tr><td>Definition</td><td><p>A representation of the meaning of the code in the system, following the rules of the system.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccinationProtocol.targetDisease.coding.userSelected"> </a><b>Immunization.vaccinationProtocol.targetDisease.coding.userSelected</b></td></tr>
-  <tr><td>Definition</td><td><p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">boolean</a></td></tr>
-  <tr><td>Requirements</td><td><p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><a name="Immunization.vaccinationProtocol.targetDisease.text"> </a><b>Immunization.vaccinationProtocol.targetDisease.text</b></td></tr>
   <tr><td>Definition</td><td><p>A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.</p>
 </td></tr>
@@ -3648,79 +2991,6 @@ package.</p>
   <tr><td>Requirements</td><td><p>Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccinationProtocol.doseStatus.coding.id"> </a><b>Immunization.vaccinationProtocol.doseStatus.coding.id</b></td></tr>
-  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccinationProtocol.doseStatus.coding.extension"> </a><b>Immunization.vaccinationProtocol.doseStatus.coding.extension</b></td></tr>
-  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Extension">Extension</a></td></tr>
-  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
-  <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccinationProtocol.doseStatus.coding.system"> </a><b>Immunization.vaccinationProtocol.doseStatus.coding.system</b></td></tr>
-  <tr><td>Definition</td><td><p>The identification of the code system that defines the meaning of the symbol in the code.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to be unambiguous about the source of the definition of the symbol.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccinationProtocol.doseStatus.coding.version"> </a><b>Immunization.vaccinationProtocol.doseStatus.coding.version</b></td></tr>
-  <tr><td>Definition</td><td><p>The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.</p>
-</td></tr>
-  <tr><td>Note</td><td>This is a business versionId, not a resource version id (see <a href="http://hl7.org/fhir/STU3/resource.html#versions">discussion</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Comments</td><td><p>Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccinationProtocol.doseStatus.coding.code"> </a><b>Immunization.vaccinationProtocol.doseStatus.coding.code</b></td></tr>
-  <tr><td>Definition</td><td><p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to refer to a particular code in the system.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccinationProtocol.doseStatus.coding.display"> </a><b>Immunization.vaccinationProtocol.doseStatus.coding.display</b></td></tr>
-  <tr><td>Definition</td><td><p>A representation of the meaning of the code in the system, following the rules of the system.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccinationProtocol.doseStatus.coding.userSelected"> </a><b>Immunization.vaccinationProtocol.doseStatus.coding.userSelected</b></td></tr>
-  <tr><td>Definition</td><td><p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">boolean</a></td></tr>
-  <tr><td>Requirements</td><td><p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
@@ -3775,79 +3045,6 @@ package.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccinationProtocol.doseStatusReason.coding.id"> </a><b>Immunization.vaccinationProtocol.doseStatusReason.coding.id</b></td></tr>
-  <tr><td>Definition</td><td><p>unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccinationProtocol.doseStatusReason.coding.extension"> </a><b>Immunization.vaccinationProtocol.doseStatusReason.coding.extension</b></td></tr>
-  <tr><td>Definition</td><td><p>May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Extension">Extension</a></td></tr>
-  <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>extensions, user content</td></tr>
-  <tr><td>Comments</td><td><p>There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccinationProtocol.doseStatusReason.coding.system"> </a><b>Immunization.vaccinationProtocol.doseStatusReason.coding.system</b></td></tr>
-  <tr><td>Definition</td><td><p>The identification of the code system that defines the meaning of the symbol in the code.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to be unambiguous about the source of the definition of the symbol.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccinationProtocol.doseStatusReason.coding.version"> </a><b>Immunization.vaccinationProtocol.doseStatusReason.coding.version</b></td></tr>
-  <tr><td>Definition</td><td><p>The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.</p>
-</td></tr>
-  <tr><td>Note</td><td>This is a business versionId, not a resource version id (see <a href="http://hl7.org/fhir/STU3/resource.html#versions">discussion</a>)</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Comments</td><td><p>Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccinationProtocol.doseStatusReason.coding.code"> </a><b>Immunization.vaccinationProtocol.doseStatusReason.coding.code</b></td></tr>
-  <tr><td>Definition</td><td><p>A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#code">code</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to refer to a particular code in the system.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccinationProtocol.doseStatusReason.coding.display"> </a><b>Immunization.vaccinationProtocol.doseStatusReason.coding.display</b></td></tr>
-  <tr><td>Definition</td><td><p>A representation of the meaning of the code in the system, following the rules of the system.</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
-  <tr><td>Requirements</td><td><p>Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Note that FHIR strings may not exceed 1MB in size</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
-  <tr><td colspan="2" class="structure"><a name="Immunization.vaccinationProtocol.doseStatusReason.coding.userSelected"> </a><b>Immunization.vaccinationProtocol.doseStatusReason.coding.userSelected</b></td></tr>
-  <tr><td>Definition</td><td><p>Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).</p>
-</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">boolean</a></td></tr>
-  <tr><td>Requirements</td><td><p>This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.</p>
-</td></tr>
-  <tr><td>Comments</td><td><p>Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.</p>
-</td></tr>
-  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
-<b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><a name="Immunization.vaccinationProtocol.doseStatusReason.text"> </a><b>Immunization.vaccinationProtocol.doseStatusReason.text</b></td></tr>
   <tr><td>Definition</td><td><p>A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.</p>
 </td></tr>
@@ -3893,7 +3090,7 @@ package.</p>
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, Mar 28, 2018 11:49-0600. |
+            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Fri, Mar 30, 2018 08:02+0200. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

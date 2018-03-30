@@ -10,6 +10,96 @@ dom-1:If the resource is contained in another resource, it SHALL NOT contain any
 ","Metadata about the resource","The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content may not always be associated with version changes to the resource.","","","","","","","","","",,,,,"",,,,"Resource.meta",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
+"AllergyIntolerance.meta.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","Note that FHIR strings may not exceed 1MB in size","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+"
+"AllergyIntolerance.meta.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"AllergyIntolerance.meta.versionId","","","",0,1,"","","Y","id {[]} {[]}
+","Version specific identifier","The version specific identifier, as it appears in the version portion of the URL. This values changes when the resource is created, updated, or deleted.","The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes.","","","","","","","","",,,,,"",,,,"Resource.meta.versionId",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+"
+"AllergyIntolerance.meta.lastUpdated","","","",0,1,"","","Y","instant {[]} {[]}
+","When the resource version last changed","When the resource last changed - e.g. when the version changed.","This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant.","","","","","","","","",,,,,"",,,,"Resource.meta.lastUpdated",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+"
+"AllergyIntolerance.meta.profile","","","",0,*,"","","Y","uri {[]} {[]}
+","Profiles this resource claims to conform to","A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url]().","It is up to the server and/or other infrastructure of policy to determine whether/how these claims are verified and/or updated over time.  The list of profile URLs is a set.","","","","","","","","",,,,,"",,,,"Resource.meta.profile",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+"
+"AllergyIntolerance.meta.security","","","",0,*,"","","Y","Coding {[]} {[]}
+","Security Labels applied to this resource","Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure.","The security labels can be updated without changing the stated version of the resource  The list of security labels is a set. Uniqueness is based the system/code, and version and display are ignored.","","","","","","","","",,"extensible","Security Labels from the Healthcare Privacy and Security Classification System.","http://hl7.org/fhir/ValueSet/security-labels","",,,,"Resource.meta.security",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+"
+"AllergyIntolerance.meta.security.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","Note that FHIR strings may not exceed 1MB in size","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+"
+"AllergyIntolerance.meta.security.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"AllergyIntolerance.meta.security.system","","","",0,1,"","","Y","uri {[]} {[]}
+","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","","","","","",,,,,"",,,,"Coding.system",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+"
+"AllergyIntolerance.meta.security.version","","","",0,1,"","","Y","string {[]} {[]}
+","Version of the system - if relevant","The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.","Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+"
+"AllergyIntolerance.meta.security.code","","","",0,1,"","","Y","code {[]} {[]}
+","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","Note that FHIR strings may not exceed 1MB in size","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+"
+"AllergyIntolerance.meta.security.display","","","",0,1,"","","Y","string {[]} {[]}
+","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","Note that FHIR strings may not exceed 1MB in size","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+"
+"AllergyIntolerance.meta.security.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
+","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+"
+"AllergyIntolerance.meta.tag","","","",0,*,"","","Y","Coding {[]} {[]}
+","Tags applied to this resource","Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource.","The tags can be updated without changing the stated version of the resource.  The list of tags is a set. Uniqueness is based the system/code, and version and display are ignored.","","","","","","","","",,"example","Codes that represent various types of tags, commonly workflow-related; e.g. ""Needs review by Dr. Jones""","http://hl7.org/fhir/ValueSet/common-tags","",,,,"Resource.meta.tag",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+"
+"AllergyIntolerance.meta.tag.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","Note that FHIR strings may not exceed 1MB in size","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+"
+"AllergyIntolerance.meta.tag.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"AllergyIntolerance.meta.tag.system","","","",0,1,"","","Y","uri {[]} {[]}
+","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","","","","","",,,,,"",,,,"Coding.system",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+"
+"AllergyIntolerance.meta.tag.version","","","",0,1,"","","Y","string {[]} {[]}
+","Version of the system - if relevant","The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.","Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+"
+"AllergyIntolerance.meta.tag.code","","","",0,1,"","","Y","code {[]} {[]}
+","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","Note that FHIR strings may not exceed 1MB in size","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+"
+"AllergyIntolerance.meta.tag.display","","","",0,1,"","","Y","string {[]} {[]}
+","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","Note that FHIR strings may not exceed 1MB in size","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+"
+"AllergyIntolerance.meta.tag.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
+","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+"
 "AllergyIntolerance.implicitRules","","","",0,1,"","Y","Y","uri {[]} {[]}
 ","A set of rules under which this content was created","A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content.","Asserting this rule set restricts the content to be only understood by a limited set of trading partners. This inherently limits the usefulness of the data in the long term. However, the existing health eco-system is highly fractured, and not yet ready to define, collect, and exchange data in a generally computable sense. Wherever possible, implementers and/or specification writers should avoid using this element. 
 
@@ -25,6 +115,24 @@ htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
 ","Text summary of the resource, for human interpretation","A human-readable narrative that contains a summary of the resource, and may be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it ""clinically safe"" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.","Contained resources do not have narrative. Resources that are not contained SHOULD have a narrative. In some cases, a resource may only have text with little or no additional discrete data (as long as all minOccurs=1 elements are satisfied).  This may be necessary for data from legacy systems where information is captured as a ""text blob"" or where text is additionally entered raw or narrated and encoded in formation is added later.","","","","","","","","",,,,,"",,,,"DomainResource.text",0,1,"ele-1
 dom-1","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
+"AllergyIntolerance.text.id","","","",0,1,"","","","string {[]} {[]}
+","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","Note that FHIR strings may not exceed 1MB in size","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+"
+"AllergyIntolerance.text.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"AllergyIntolerance.text.status","","","",1,1,"","","","code {[]} {[]}
+","generated | extensions | additional | empty","The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.","Note that FHIR strings may not exceed 1MB in size","","","","","","","","",,"required","The status of a resource narrative","http://hl7.org/fhir/ValueSet/narrative-status","",,,,"Narrative.status",1,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+"
+"AllergyIntolerance.text.div","","","",1,1,"","","","xhtml {[]} {[]}
+","Limited xhtml content","The actual narrative content, a stripped down version of XHTML.","The contents of the html element are an XHTML fragment containing only the basic html formatting elements described in chapters 7-11 and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained stylesheets. The XHTML content may not contain a head, a body, external stylesheet references, scripts, forms, base/link/xlink, frames, iframes and objects.","","","","","","","","",,,,,"",,,,"Narrative.div",1,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
+txt-1:The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes {htmlchecks()}txt-2:The narrative SHALL have some non-whitespace content {htmlchecks()}"
 "AllergyIntolerance.contained","","inline resources
 anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"",""
@@ -281,7 +389,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "AllergyIntolerance.code.coding.system","","","",1,1,"","","Y","uri {[]} {[]}
-","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/ips/CodeSystem/absent-unknown""/>","","","","",,,,,"",,,,"Coding.system",0,1,"ele-1
+","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""urn:oid:2.16.840.1.113883.3.1937.777.13.5.999.1""/>","","","","",,,,,"",,,,"Coding.system",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
 "AllergyIntolerance.code.coding.version","","","",0,1,"","","Y","string {[]} {[]}
@@ -296,23 +404,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","Note that FHIR strings may not exceed 1MB in size","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"AllergyIntolerance.code.coding.display.id","","","",0,1,"","","","string {[]} {[]}
-","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","Note that FHIR strings may not exceed 1MB in size","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"AllergyIntolerance.code.coding.display.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"AllergyIntolerance.code.coding.display.extension","translation","extensions
-user content","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/translation]]} {[]}
-","Language Translation (Localization)","Language translation from base language of resource to another language.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"AllergyIntolerance.code.coding.display.value","","","",0,1,"","","","null {[]} {[]}
-","Primitive value for string","Primitive value for string","","","","","","","","","",1048576,,,,"",,,,"string.value",0,1,"",""
 "AllergyIntolerance.code.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
 ","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}

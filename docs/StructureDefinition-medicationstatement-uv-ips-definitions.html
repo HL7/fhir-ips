@@ -584,7 +584,7 @@ Status=In Error + NotTaken=N/A = In Error.</p>
   <tr><td>Definition</td><td><p>Organization that issued/manages the identifier.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]">Organization</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>)</td></tr>
   <tr><td>Comments</td><td><p>The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -642,7 +642,7 @@ Status=In Error + NotTaken=N/A = In Error.</p>
   <tr><td>Definition</td><td><p>A plan, proposal or order that is fulfilled in whole or in part by this event.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/medicationrequest.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicationRequest], CanonicalType[http://hl7.org/fhir/StructureDefinition/CarePlan], CanonicalType[http://hl7.org/fhir/StructureDefinition/ProcedureRequest], CanonicalType[http://hl7.org/fhir/StructureDefinition/ReferralRequest]]">MedicationRequest</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/medicationrequest.html" title="http://hl7.org/fhir/StructureDefinition/MedicationRequest">MedicationRequest</a> | <a href="http://hl7.org/fhir/STU3/careplan.html" title="http://hl7.org/fhir/StructureDefinition/CarePlan">CarePlan</a> | <a href="http://hl7.org/fhir/STU3/procedurerequest.html" title="http://hl7.org/fhir/StructureDefinition/ProcedureRequest">ProcedureRequest</a> | <a href="http://hl7.org/fhir/STU3/referralrequest.html" title="http://hl7.org/fhir/StructureDefinition/ReferralRequest">ReferralRequest</a>)</td></tr>
   <tr><td>Requirements</td><td><p>Allows tracing of authorization for the event and tracking whether proposals/recommendations were acted upon.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
@@ -702,7 +702,7 @@ Status=In Error + NotTaken=N/A = In Error.</p>
   <tr><td>Definition</td><td><p>A larger event of which this particular event is a component or step.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/medicationadministration.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicationAdministration], CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicationDispense], CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicationStatement], CanonicalType[http://hl7.org/fhir/StructureDefinition/Procedure], CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation]]">MedicationAdministration</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/medicationadministration.html" title="http://hl7.org/fhir/StructureDefinition/MedicationAdministration">MedicationAdministration</a> | <a href="http://hl7.org/fhir/STU3/medicationdispense.html" title="http://hl7.org/fhir/StructureDefinition/MedicationDispense">MedicationDispense</a> | <a href="http://hl7.org/fhir/STU3/medicationstatement.html" title="http://hl7.org/fhir/StructureDefinition/MedicationStatement">MedicationStatement</a> | <a href="http://hl7.org/fhir/STU3/procedure.html" title="http://hl7.org/fhir/StructureDefinition/Procedure">Procedure</a> | <a href="http://hl7.org/fhir/STU3/observation.html" title="http://hl7.org/fhir/StructureDefinition/Observation">Observation</a>)</td></tr>
   <tr><td>Requirements</td><td><p>This should not be used when indicating which resource a MedicationStatement has been derived from.  If that is the use case, then MedicationStatement.derivedFrom should be used.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
@@ -762,7 +762,7 @@ Status=In Error + NotTaken=N/A = In Error.</p>
   <tr><td>Definition</td><td><p>The encounter or episode of care that establishes the context for this MedicationStatement.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/encounter.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter], CanonicalType[http://hl7.org/fhir/StructureDefinition/EpisodeOfCare]]">Encounter</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/encounter.html" title="http://hl7.org/fhir/StructureDefinition/Encounter">Encounter</a> | <a href="http://hl7.org/fhir/STU3/episodeofcare.html" title="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare">EpisodeOfCare</a>)</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -957,8 +957,8 @@ Status=In Error + NotTaken=N/A = In Error.</p>
   <tr><td>Definition</td><td><p>Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that gives a reason for absent or unknown Medication..</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Representation of unknown or absent medications<br/>The codes SHALL be taken from  <a href="http://hl7.org/fhir/ips/ValueSet/absent-or-unknown-medication-uv-ips">http://hl7.org/fhir/ips/ValueSet/absent-or-unknown-medication-uv-ips</a></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>([CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips]]), <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-medication-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/medication-uv-ips]]">Medication-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Representation of unknown or absent medications<br/>The codes SHALL be taken from <a href="ValueSet-absent-or-unknown-medication-uv-ips.html">IPSNoMedsInfo</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>([CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips]]), <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-medication-uv-ips.html" title="http://hl7.org/fhir/ips/StructureDefinition/medication-uv-ips">Medication-uv-ips</a>)</td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/STU3/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>If only a code is specified, then it needs to be a code for a specific product. If more information is required, then the use of the medication resource is recommended.&nbsp; For example if&nbsp;you require&nbsp;form or&nbsp;lot number, then you must&nbsp;reference the Medication resource.&nbsp;.</p>
@@ -987,7 +987,7 @@ Status=In Error + NotTaken=N/A = In Error.</p>
   <tr><td>Definition</td><td><p>The person or organization that provided the information about the taking of this medication. Note: Use derivedFrom when a MedicationStatement is derived from other resources, e.g Claim or MedicationRequest.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/patient.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]">Patient</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a> | <a href="http://hl7.org/fhir/STU3/practitioner.html" title="http://hl7.org/fhir/StructureDefinition/Practitioner">Practitioner</a> | <a href="http://hl7.org/fhir/STU3/relatedperson.html" title="http://hl7.org/fhir/StructureDefinition/RelatedPerson">RelatedPerson</a> | <a href="http://hl7.org/fhir/STU3/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>)</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1045,7 +1045,7 @@ Status=In Error + NotTaken=N/A = In Error.</p>
   <tr><td>Definition</td><td><p>The person, animal or group who is/was taking the medication.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/patient.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]">Patient</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a>)</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1103,7 +1103,7 @@ Status=In Error + NotTaken=N/A = In Error.</p>
   <tr><td>Definition</td><td><p>Allows linking the MedicationStatement to the underlying MedicationRequest, or to other information that supports or is used to derive the MedicationStatement.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]">Resource</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="http://hl7.org/fhir/StructureDefinition/Resource">Resource</a>)</td></tr>
   <tr><td>Comments</td><td><p>Likely references would be to MedicationRequest, MedicationDispense, Claim, Observation or QuestionnaireAnswers.  The most common use cases for deriving a MedicationStatement comes from creating a MedicationStatement from a MedicationRequest or from a lab observation or a claim.  it should be noted that the amount of information that is available varies from the type resource that you derive the MedicationStatement from.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1420,7 +1420,7 @@ Status=In Error + NotTaken=N/A = In Error.</p>
   <tr><td>Definition</td><td><p>Condition or observation that supports why the medication is being/was taken.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/condition.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition], CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation]]">Condition</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/condition.html" title="http://hl7.org/fhir/StructureDefinition/Condition">Condition</a> | <a href="http://hl7.org/fhir/STU3/observation.html" title="http://hl7.org/fhir/StructureDefinition/Observation">Observation</a>)</td></tr>
   <tr><td>Comments</td><td><p>This is a reference to a condition that is the reason why the medication is being/was taken.  If only a code exists, use reasonForUseCode.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1506,7 +1506,7 @@ Status=In Error + NotTaken=N/A = In Error.</p>
   <tr><td>Definition</td><td><p>The individual responsible for making the annotation.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/practitioner.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]">Practitioner</a>), <a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/practitioner.html" title="http://hl7.org/fhir/StructureDefinition/Practitioner">Practitioner</a> | <a href="http://hl7.org/fhir/STU3/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a> | <a href="http://hl7.org/fhir/STU3/relatedperson.html" title="http://hl7.org/fhir/StructureDefinition/RelatedPerson">RelatedPerson</a>), <a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a></td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/STU3/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
@@ -1788,7 +1788,7 @@ Status=In Error + NotTaken=N/A = In Error.</p>
   <tr><td>Definition</td><td><p>Either a duration for the length of the timing schedule, a range of possible length, or outer bounds for start and/or end limits of the timing schedule.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a name="f164f576-20d6-44c3-9a45-a2a06e58fccd">​</a>Choice of: <a href="http://hl7.org/fhir/STU3/datatypes.html#Duration">Duration</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Period">Period</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Range">Range</a>(<a href="StructureDefinition/Range-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/Range-uv-ips]]">Range-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a name="f2618d81-c781-4376-a5bb-4b0a594af3f6">​</a>Choice of: <a href="http://hl7.org/fhir/STU3/datatypes.html#Duration">Duration</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Period">Period</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Range">Range</a>(<a href="StructureDefinition/Range-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/Range-uv-ips]]">Range-uv-ips</a>)</td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/STU3/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
   <tr><td>Comments</td><td><p>The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator.</p>
 </td></tr>
@@ -2135,7 +2135,7 @@ Status=In Error + NotTaken=N/A = In Error.</p>
   <tr><td>Definition</td><td><p>A reference to a code defined by a terminology system.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The codes SHOULD be taken from  <a href="http://hl7.org/fhir/ips/ValueSet/target-site-uv-ips">http://hl7.org/fhir/ips/ValueSet/target-site-uv-ips</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The codes SHOULD be taken from <a href="ValueSet-target-site-uv-ips.html">IPSTargetSiteCode</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a>(<a href="StructureDefinition-coding-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips]]">coding-uv-ips</a>)</td></tr>
   <tr><td>Requirements</td><td><p>Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.</p>
 </td></tr>
@@ -2166,7 +2166,7 @@ Status=In Error + NotTaken=N/A = In Error.</p>
   <tr><td>Definition</td><td><p>The identification of the code system that defines the meaning of the symbol in the code.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The codes SHOULD be taken from  <a href="http://hl7.org/fhir/ips/ValueSet/target-site-uv-ips">http://hl7.org/fhir/ips/ValueSet/target-site-uv-ips</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The codes SHOULD be taken from <a href="ValueSet-target-site-uv-ips.html">IPSTargetSiteCode</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a></td></tr>
   <tr><td>Requirements</td><td><p>Need to be unambiguous about the source of the definition of the symbol.</p>
 </td></tr>
@@ -2295,7 +2295,7 @@ Status=In Error + NotTaken=N/A = In Error.</p>
   <tr><td>Definition</td><td><p>A reference to a code defined by a terminology system.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>EDQM Standards Terms<br/>The codes SHOULD be taken from  <a href="http://hl7.org/fhir/ips/ValueSet/medicine-route-of-administration">http://hl7.org/fhir/ips/ValueSet/medicine-route-of-administration</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>EDQM Standards Terms<br/>The codes SHOULD be taken from <a href="ValueSet-medicine-route-of-administration.html">IPSRouteOfAdmin</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Coding">Coding</a>(<a href="StructureDefinition-coding-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips]]">coding-uv-ips</a>)</td></tr>
   <tr><td>Requirements</td><td><p>Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.</p>
 </td></tr>
@@ -2326,7 +2326,7 @@ Status=In Error + NotTaken=N/A = In Error.</p>
   <tr><td>Definition</td><td><p>The identification of the code system that defines the meaning of the symbol in the code.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The codes SHOULD be taken from  <a href="http://hl7.org/fhir/ips/ValueSet/medicine-route-of-administration">http://hl7.org/fhir/ips/ValueSet/medicine-route-of-administration</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The codes SHOULD be taken from <a href="ValueSet-medicine-route-of-administration.html">IPSRouteOfAdmin</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#uri">uri</a></td></tr>
   <tr><td>Requirements</td><td><p>Need to be unambiguous about the source of the definition of the symbol.</p>
 </td></tr>
@@ -2764,7 +2764,7 @@ Status=In Error + NotTaken=N/A = In Error.</p>
 This profile imposes that the code system for unit be UCUM</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..0 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a name="23de9018-ef99-44c5-9dde-eca241e36749">​</a><a href="http://hl7.org/fhir/STU3/datatypes.html#Quantity">Quantity</a>(<a href="StructureDefinition/Quantity-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/Quantity-uv-ips]]">Quantity-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a name="e4ac678d-04a6-4d86-a2d1-caece94e1716">​</a><a href="http://hl7.org/fhir/STU3/datatypes.html#Quantity">Quantity</a>(<a href="StructureDefinition/Quantity-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/Quantity-uv-ips]]">Quantity-uv-ips</a>)</td></tr>
   <tr><td>Requirements</td><td><p>The maximum total quantity of a therapeutic substance that may be administered to a subject per administration.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator.</p>
@@ -2856,7 +2856,7 @@ This profile imposes that the code system for unit be UCUM</p>
 This profile imposes that the code system for unit be UCUM</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..0 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a name="6f7adf27-3fe8-40dc-8ce2-bba0729d6104">​</a><a href="http://hl7.org/fhir/STU3/datatypes.html#Quantity">Quantity</a>(<a href="StructureDefinition/Quantity-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/Quantity-uv-ips]]">Quantity-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a name="66c1265d-176d-4372-a9ca-66e0bc0f518f">​</a><a href="http://hl7.org/fhir/STU3/datatypes.html#Quantity">Quantity</a>(<a href="StructureDefinition/Quantity-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/Quantity-uv-ips]]">Quantity-uv-ips</a>)</td></tr>
   <tr><td>Requirements</td><td><p>The maximum total quantity of a therapeutic substance that may be administered per lifetime of the subject.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator.</p>
@@ -2988,7 +2988,7 @@ This profile imposes that the code system for unit be UCUM</p>
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
     <p>
-            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, Mar 28, 2018 11:49-0600. |
+            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Fri, Mar 30, 2018 08:02+0200. |
                <!-- <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/STU3license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>
         

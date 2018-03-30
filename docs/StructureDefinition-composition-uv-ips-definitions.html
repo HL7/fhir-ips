@@ -337,7 +337,7 @@ While a Composition defines the structure, it does not actually contain the cont
   <tr><td>Definition</td><td><p>Optional Extension Element - found in all resources.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>  (Extension Type: <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/practitionerrole.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]">PractitionerRole</a>))</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>  (Extension Type: <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/practitionerrole.html" title="http://hl7.org/fhir/StructureDefinition/PractitionerRole">PractitionerRole</a> | <a href="http://hl7.org/fhir/STU3/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>))</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
   <tr><td colspan="2" class="structure"><a name="Composition.modifierExtension"> </a><b>Composition.modifierExtension</b></td></tr>
@@ -553,7 +553,7 @@ In general a composition can be about a person, (patient or healthcare practitio
 For the IPS the subject is always the patient.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-patient-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/patient-uv-ips]]">Patient-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-patient-uv-ips.html" title="http://hl7.org/fhir/ips/StructureDefinition/patient-uv-ips">Patient-uv-ips</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Essential metadata for searching for the composition. Identifies who and/or what the composition/document is about.</p>
 </td></tr>
@@ -614,7 +614,7 @@ For the IPS the subject is always the patient.</p>
   <tr><td>Definition</td><td><p>Describes the clinical encounter or type of care this documentation is associated with.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/encounter.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]">Encounter</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/encounter.html" title="http://hl7.org/fhir/StructureDefinition/Encounter">Encounter</a>)</td></tr>
   <tr><td>Requirements</td><td><p>Provides context for the composition and supports searching.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
@@ -687,7 +687,7 @@ For the IPS the subject is always the patient.</p>
 <p>The type of author(s) contribute to determine the &quot;nature&quot;of the Patient Summary: e.g. a &quot;human-curated&quot; IPS Vs. an &quot;automatically generated&quot; IPS.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/practitioner.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]">Practitioner</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/practitioner.html" title="http://hl7.org/fhir/StructureDefinition/Practitioner">Practitioner</a> | <a href="http://hl7.org/fhir/STU3/device.html" title="http://hl7.org/fhir/StructureDefinition/Device">Device</a> | <a href="http://hl7.org/fhir/STU3/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a> | <a href="http://hl7.org/fhir/STU3/relatedperson.html" title="http://hl7.org/fhir/StructureDefinition/RelatedPerson">RelatedPerson</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Identifies who is responsible for the content.</p>
 </td></tr>
@@ -834,7 +834,7 @@ For the IPS the subject is always the patient.</p>
   <tr><td>Definition</td><td><p>Who attested the composition in the specified way.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/patient.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]">Patient</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a> | <a href="http://hl7.org/fhir/STU3/practitioner.html" title="http://hl7.org/fhir/StructureDefinition/Practitioner">Practitioner</a> | <a href="http://hl7.org/fhir/STU3/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Identifies who has taken on the responsibility for accuracy of the composition content.</p>
 </td></tr>
@@ -895,7 +895,7 @@ For the IPS the subject is always the patient.</p>
   <tr><td>Definition</td><td><p>Identifies the organization or group who is responsible for ongoing maintenance of and access to the composition/document information.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]">Organization</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Identifies where to go to find the current version, where to report issues, etc.</p>
 </td></tr>
@@ -1006,7 +1006,7 @@ For the IPS the subject is always the patient.</p>
   <tr><td>Definition</td><td><p>The target composition/document of this relationship.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier">Identifier</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/composition.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Composition], CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/composition-uv-ips]]">Composition</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td>Choice of: <a href="http://hl7.org/fhir/STU3/datatypes.html#Identifier">Identifier</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/composition.html" title="http://hl7.org/fhir/StructureDefinition/Composition">Composition</a> | <a href="StructureDefinition-composition-uv-ips.html" title="http://hl7.org/fhir/ips/StructureDefinition/composition-uv-ips">Composition-uv-ips</a>)</td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/STU3/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))</td></tr>
@@ -1192,7 +1192,7 @@ Additional data from outside this duration may also be included if it is relevan
   <tr><td>Definition</td><td><p>The description and/or reference of the event(s) being documented. For example, this could be used to document such a colonoscopy or an appendectomy.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]">Resource</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="http://hl7.org/fhir/StructureDefinition/Resource">Resource</a>)</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1377,7 +1377,7 @@ Additional data from outside this duration may also be included if it is relevan
   <tr><td>Definition</td><td><p>The description and/or reference of the event(s) being documented. For example, this could be used to document such a colonoscopy or an appendectomy.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]">Resource</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="http://hl7.org/fhir/StructureDefinition/Resource">Resource</a>)</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1446,7 +1446,7 @@ Additional data from outside this duration may also be included if it is relevan
   <tr><td>Definition</td><td><p>The description and/or reference of the event(s) being documented. For example, this could be used to document such a colonoscopy or an appendectomy.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]">Resource</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="http://hl7.org/fhir/StructureDefinition/Resource">Resource</a>)</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1551,7 +1551,7 @@ Additional data from outside this duration may also be included if it is relevan
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]">Resource</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="http://hl7.org/fhir/StructureDefinition/Resource">Resource</a>)</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1832,7 +1832,7 @@ This section requires either an entry indicating the subject is known not to be 
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]">Resource</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="http://hl7.org/fhir/StructureDefinition/Resource">Resource</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
@@ -1842,7 +1842,7 @@ This section requires either an entry indicating the subject is known not to be 
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-medicationstatement-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/medicationstatement-uv-ips]]">MedicationStatement-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-medicationstatement-uv-ips.html" title="http://hl7.org/fhir/ips/StructureDefinition/medicationstatement-uv-ips">MedicationStatement-uv-ips</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
@@ -2168,7 +2168,7 @@ If no information about allergies is available, or if no allergies are known thi
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]">Resource</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="http://hl7.org/fhir/StructureDefinition/Resource">Resource</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
@@ -2227,7 +2227,7 @@ If no information about allergies is available, or if no allergies are known thi
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-allergyintolerance-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/allergyintolerance-uv-ips]]">AllergyIntolerance-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-allergyintolerance-uv-ips.html" title="http://hl7.org/fhir/ips/StructureDefinition/allergyintolerance-uv-ips">AllergyIntolerance-uv-ips</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
@@ -2551,7 +2551,7 @@ If no information about allergies is available, or if no allergies are known thi
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/condition.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition]]">Condition</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/condition.html" title="http://hl7.org/fhir/StructureDefinition/Condition">Condition</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
@@ -2610,7 +2610,7 @@ If no information about allergies is available, or if no allergies are known thi
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-condition-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/condition-uv-ips]]">Condition-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-condition-uv-ips.html" title="http://hl7.org/fhir/ips/StructureDefinition/condition-uv-ips">Condition-uv-ips</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
@@ -2938,7 +2938,7 @@ Procedures may refer for example to:
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-procedure-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/procedure-uv-ips]]">Procedure-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-procedure-uv-ips.html" title="http://hl7.org/fhir/ips/StructureDefinition/procedure-uv-ips">Procedure-uv-ips</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
@@ -2997,7 +2997,7 @@ Procedures may refer for example to:
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-procedure-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/procedure-uv-ips]]">Procedure-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-procedure-uv-ips.html" title="http://hl7.org/fhir/ips/StructureDefinition/procedure-uv-ips">Procedure-uv-ips</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
@@ -3274,7 +3274,7 @@ The section includes current immunization status, and may contain the entire imm
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-immunization-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/immunization-uv-ips]]">Immunization-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-immunization-uv-ips.html" title="http://hl7.org/fhir/ips/StructureDefinition/immunization-uv-ips">Immunization-uv-ips</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
@@ -3333,7 +3333,7 @@ The section includes current immunization status, and may contain the entire imm
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-immunization-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/immunization-uv-ips]]">Immunization-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-immunization-uv-ips.html" title="http://hl7.org/fhir/ips/StructureDefinition/immunization-uv-ips">Immunization-uv-ips</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
@@ -3657,7 +3657,7 @@ The section includes current immunization status, and may contain the entire imm
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]">Resource</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="http://hl7.org/fhir/StructureDefinition/Resource">Resource</a>)</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -3715,7 +3715,7 @@ The section includes current immunization status, and may contain the entire imm
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>([CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/DeviceUseStatement-uv-ips]])</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(http://hl7.org/fhir/ips/StructureDefinition/DeviceUseStatement-uv-ips)</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -4038,7 +4038,7 @@ The section includes current immunization status, and may contain the entire imm
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]">Resource</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="http://hl7.org/fhir/StructureDefinition/Resource">Resource</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
@@ -4048,7 +4048,7 @@ The section includes current immunization status, and may contain the entire imm
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-observation-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/observation-uv-ips]]">Observation-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-observation-uv-ips.html" title="http://hl7.org/fhir/ips/StructureDefinition/observation-uv-ips">Observation-uv-ips</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
@@ -4107,7 +4107,7 @@ The section includes current immunization status, and may contain the entire imm
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-observation-laboratory-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/observation-laboratory-uv-ips]]">Observation-laboratory-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-observation-laboratory-uv-ips.html" title="http://hl7.org/fhir/ips/StructureDefinition/observation-laboratory-uv-ips">Observation-laboratory-uv-ips</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
@@ -4166,7 +4166,7 @@ The section includes current immunization status, and may contain the entire imm
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-observation-imaging-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/observation-imaging-uv-ips]]">Observation-imaging-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-observation-imaging-uv-ips.html" title="http://hl7.org/fhir/ips/StructureDefinition/observation-imaging-uv-ips">Observation-imaging-uv-ips</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
@@ -4225,7 +4225,7 @@ The section includes current immunization status, and may contain the entire imm
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-observation-pathology-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/observation-pathology-uv-ips]]">Observation-pathology-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-observation-pathology-uv-ips.html" title="http://hl7.org/fhir/ips/StructureDefinition/observation-pathology-uv-ips">Observation-pathology-uv-ips</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
@@ -4545,7 +4545,7 @@ The section includes current immunization status, and may contain the entire imm
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource], CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition]]">Resource</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="http://hl7.org/fhir/StructureDefinition/Resource">Resource</a> | <a href="http://hl7.org/fhir/STU3/condition.html" title="http://hl7.org/fhir/StructureDefinition/Condition">Condition</a>)</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -4554,7 +4554,7 @@ The section includes current immunization status, and may contain the entire imm
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-condition-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/condition-uv-ips]]">Condition-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-condition-uv-ips.html" title="http://hl7.org/fhir/ips/StructureDefinition/condition-uv-ips">Condition-uv-ips</a>)</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -4794,7 +4794,7 @@ Profiles to express disabilities and functional assessments will be specified by
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]">Resource</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="http://hl7.org/fhir/StructureDefinition/Resource">Resource</a>)</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -4803,7 +4803,7 @@ Profiles to express disabilities and functional assessments will be specified by
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource], CanonicalType[http://hl7.org/fhir/StructureDefinition/Condition]]">Resource</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="http://hl7.org/fhir/StructureDefinition/Resource">Resource</a> | <a href="http://hl7.org/fhir/STU3/condition.html" title="http://hl7.org/fhir/StructureDefinition/Condition">Condition</a>)</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -4812,7 +4812,7 @@ Profiles to express disabilities and functional assessments will be specified by
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource], CanonicalType[http://hl7.org/fhir/StructureDefinition/ClinicalImpression]]">Resource</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="http://hl7.org/fhir/StructureDefinition/Resource">Resource</a> | <a href="http://hl7.org/fhir/STU3/clinicalimpression.html" title="http://hl7.org/fhir/StructureDefinition/ClinicalImpression">ClinicalImpression</a>)</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -5051,7 +5051,7 @@ Profiles to express disabilities and functional assessments will be specified by
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]">Resource</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="http://hl7.org/fhir/StructureDefinition/Resource">Resource</a>)</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -5290,7 +5290,7 @@ Profiles to express disabilities and functional assessments will be specified by
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]">Resource</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="http://hl7.org/fhir/StructureDefinition/Resource">Resource</a>)</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -5299,7 +5299,7 @@ Profiles to express disabilities and functional assessments will be specified by
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-observation-tobaccouse-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/observation-tobaccouse-uv-ips]]">Observation-tobaccoUse-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-observation-tobaccouse-uv-ips.html" title="http://hl7.org/fhir/ips/StructureDefinition/observation-tobaccouse-uv-ips">Observation-tobaccoUse-uv-ips</a>)</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -5357,7 +5357,7 @@ Profiles to express disabilities and functional assessments will be specified by
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-observation-alcoholuse-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/observation-alcoholuse-uv-ips]]">Observation-alcoholUse-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-observation-alcoholuse-uv-ips.html" title="http://hl7.org/fhir/ips/StructureDefinition/observation-alcoholuse-uv-ips">Observation-alcoholUse-uv-ips</a>)</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -5597,7 +5597,7 @@ It may contain addition summarizing information about the outcome of earlier pre
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]">Resource</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="http://hl7.org/fhir/StructureDefinition/Resource">Resource</a>)</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -5606,7 +5606,7 @@ It may contain addition summarizing information about the outcome of earlier pre
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-observation-pregnancy-status-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/observation-pregnancy-status-uv-ips]]">Observation-pregnancy-status-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-observation-pregnancy-status-uv-ips.html" title="http://hl7.org/fhir/ips/StructureDefinition/observation-pregnancy-status-uv-ips">Observation-pregnancy-status-uv-ips</a>)</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -5615,7 +5615,7 @@ It may contain addition summarizing information about the outcome of earlier pre
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-observation-pregnancy-outcome-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/observation-pregnancy-outcome-uv-ips]]">Observation-pregnancy-outcome-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-observation-pregnancy-outcome-uv-ips.html" title="http://hl7.org/fhir/ips/StructureDefinition/observation-pregnancy-outcome-uv-ips">Observation-pregnancy-outcome-uv-ips</a>)</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -5854,7 +5854,7 @@ It may contain addition summarizing information about the outcome of earlier pre
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1, cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource], CanonicalType[http://hl7.org/fhir/StructureDefinition/Consent]]">Resource</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/resource.html" title="http://hl7.org/fhir/StructureDefinition/Resource">Resource</a> | <a href="http://hl7.org/fhir/STU3/consent.html" title="http://hl7.org/fhir/StructureDefinition/Consent">Consent</a>)</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -5912,7 +5912,7 @@ It may contain addition summarizing information about the outcome of earlier pre
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, Mar 28, 2018 11:49-0600. |
+            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Fri, Mar 30, 2018 08:02+0200. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

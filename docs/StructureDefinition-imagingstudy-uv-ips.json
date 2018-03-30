@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "imagingstudy-uv-ips",
   "meta": {
-    "lastUpdated": "2018-02-20T05:32:46.724-07:00"
+    "lastUpdated": "2018-02-20T13:32:46.724+01:00"
   },
   "text": {
     "status": "generated",
@@ -12,7 +12,7 @@
   "version": "1",
   "name": "ImagingStudy-uv-ips",
   "status": "draft",
-  "date": "2018-02-20T05:22:59-07:00",
+  "date": "2018-02-20T13:22:59+01:00",
   "jurisdiction": [
     {
       "coding": [
@@ -4525,6 +4525,10 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Encounter"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"
           }
         ],
         "condition": [
@@ -4897,6 +4901,14 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/ReferralRequest"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/CarePlan"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/ProcedureRequest"
           }
         ],
         "condition": [

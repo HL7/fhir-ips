@@ -1,0 +1,1898 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="medicine-doseform"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>IPSDoseForm</h2><div><p>Value Set Definition  DrawnFromCodeSystem 0.4.0.127.0.16.1.1.2.1 (EDQM)  PropertyBasedContentSet.IncludeWithProperty.Expression  (              ([Concept Status] = ‘Current’)   AND  ([Concept Class] IN (‘PDF’ ; ‘CMT’; ‘CDF’; ‘PFT')    AND  ([Domain] = 'Human and Veterinary') ) PDF = Pharmaceutical dose formCMT = Combined termsCDF = Combined pharmaceutical dose formPFT = Patient FriendlyThe list of value reported hereafter is provided only as exemplification</p>
+</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <code>urn:oid:0.4.0.127.0.16.1.1.2.1</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>10101000</td><td>Oral drops, solution</td><td/></tr><tr><td>10102000</td><td>Oral drops, suspension</td><td/></tr><tr><td>10103000</td><td>Oral drops, emulsion</td><td/></tr><tr><td>10104000</td><td>Oral liquid</td><td/></tr><tr><td>10105000</td><td>Oral solution</td><td/></tr><tr><td>10106000</td><td>Oral suspension</td><td/></tr><tr><td>10107000</td><td>Oral emulsion</td><td/></tr><tr><td>10108000</td><td>Oral gel</td><td/></tr><tr><td>10109000</td><td>Oral paste</td><td/></tr><tr><td>10110000</td><td>Powder for oral solution</td><td/></tr><tr><td>10111000</td><td>Powder for oral suspension</td><td/></tr><tr><td>10112000</td><td>Granules for oral solution</td><td/></tr><tr><td>10113000</td><td>Granules for oral suspension</td><td/></tr><tr><td>10114000</td><td>Powder and solvent for oral solution</td><td/></tr><tr><td>10115000</td><td>Powder and solvent for oral suspension</td><td/></tr><tr><td>10116000</td><td>Lyophilisate for suspension</td><td/></tr><tr><td>10117000</td><td>Syrup</td><td/></tr><tr><td>10118000</td><td>Powder for syrup</td><td/></tr><tr><td>10119000</td><td>Granules for syrup</td><td/></tr><tr><td>10120000</td><td>Soluble tablet</td><td/></tr><tr><td>10121000</td><td>Dispersible tablet</td><td/></tr><tr><td>10122000</td><td>Herbal tea</td><td/></tr><tr><td>10201000</td><td>Oral powder</td><td/></tr><tr><td>10202000</td><td>Instant herbal tea</td><td/></tr><tr><td>10203000</td><td>Effervescent powder</td><td/></tr><tr><td>10204000</td><td>Granules</td><td/></tr><tr><td>10205000</td><td>Effervescent granules</td><td/></tr><tr><td>10206000</td><td>Gastro-resistant granules</td><td/></tr><tr><td>10207000</td><td>Prolonged-release granules</td><td/></tr><tr><td>10208000</td><td>Modified-release granules</td><td/></tr><tr><td>10209000</td><td>Cachet</td><td/></tr><tr><td>10210000</td><td>Capsule, hard</td><td/></tr><tr><td>10211000</td><td>Capsule, soft</td><td/></tr><tr><td>10212000</td><td>Gastro-resistant capsule, hard</td><td/></tr><tr><td>10213000</td><td>Gastro-resistant capsule, soft</td><td/></tr><tr><td>10214000</td><td>Chewable capsule, soft</td><td/></tr><tr><td>10215000</td><td>Prolonged-release capsule, hard</td><td/></tr><tr><td>10216000</td><td>Prolonged-release capsule, soft</td><td/></tr><tr><td>10217000</td><td>Modified-release capsule, hard</td><td/></tr><tr><td>10218000</td><td>Modified-release capsule, soft</td><td/></tr><tr><td>10219000</td><td>Tablet</td><td/></tr><tr><td>10220000</td><td>Coated tablet</td><td/></tr><tr><td>10221000</td><td>Film-coated tablet</td><td/></tr><tr><td>10222000</td><td>Effervescent tablet</td><td/></tr><tr><td>10223000</td><td>Orodispersible tablet</td><td/></tr><tr><td>10224000</td><td>Oral lyophilisate</td><td/></tr><tr><td>10225000</td><td>Gastro-resistant tablet</td><td/></tr><tr><td>10226000</td><td>Prolonged-release tablet</td><td/></tr><tr><td>10227000</td><td>Modified-release tablet</td><td/></tr><tr><td>10228000</td><td>Chewable tablet</td><td/></tr><tr><td>10229000</td><td>Medicated chewing-gum</td><td/></tr><tr><td>10230000</td><td>Oral gum</td><td/></tr><tr><td>10231000</td><td>Pillules</td><td/></tr><tr><td>10236100</td><td>Orodispersible film</td><td/></tr><tr><td>10301000</td><td>Gargle</td><td/></tr><tr><td>10302000</td><td>Concentrate for gargle</td><td/></tr><tr><td>10303000</td><td>Gargle, powder for solution</td><td/></tr><tr><td>10304000</td><td>Gargle, tablet for solution</td><td/></tr><tr><td>10305000</td><td>Oromucosal solution</td><td/></tr><tr><td>10306000</td><td>Oromucosal suspension</td><td/></tr><tr><td>10307000</td><td>Oromucosal drops</td><td/></tr><tr><td>10308000</td><td>Oromucosal spray</td><td/></tr><tr><td>10309000</td><td>Sublingual spray</td><td/></tr><tr><td>10310000</td><td>Mouthwash</td><td/></tr><tr><td>10311000</td><td>Mouthwash, tablet for solution</td><td/></tr><tr><td>10312000</td><td>Gingival solution</td><td/></tr><tr><td>10313000</td><td>Oromucosal gel</td><td/></tr><tr><td>10314000</td><td>Oromucosal paste</td><td/></tr><tr><td>10314005</td><td>Oromucosal ointment</td><td/></tr><tr><td>10314010</td><td>Oromucosal cream</td><td/></tr><tr><td>10314011</td><td>Buccal film</td><td/></tr><tr><td>10315000</td><td>Gingival gel</td><td/></tr><tr><td>10316000</td><td>Gingival paste</td><td/></tr><tr><td>10317000</td><td>Oromucosal capsule</td><td/></tr><tr><td>10318000</td><td>Sublingual tablet</td><td/></tr><tr><td>10319000</td><td>Muco-adhesive buccal tablet</td><td/></tr><tr><td>10320000</td><td>Buccal tablet</td><td/></tr><tr><td>10321000</td><td>Lozenge</td><td/></tr><tr><td>10322000</td><td>Compressed lozenge</td><td/></tr><tr><td>10323000</td><td>Pastille</td><td/></tr><tr><td>10401000</td><td>Periodontal powder</td><td/></tr><tr><td>10402000</td><td>Dental gel</td><td/></tr><tr><td>10403000</td><td>Dental stick</td><td/></tr><tr><td>10404000</td><td>Dental insert</td><td/></tr><tr><td>10405000</td><td>Dental powder</td><td/></tr><tr><td>10406000</td><td>Dental solution</td><td/></tr><tr><td>10407000</td><td>Dental suspension</td><td/></tr><tr><td>10408000</td><td>Dental emulsion</td><td/></tr><tr><td>10409000</td><td>Toothpaste</td><td/></tr><tr><td>10410000</td><td>Periodontal gel</td><td/></tr><tr><td>10411000</td><td>Periodontal insert</td><td/></tr><tr><td>10501000</td><td>Bath additive</td><td/></tr><tr><td>10502000</td><td>Cream</td><td/></tr><tr><td>10503000</td><td>Gel</td><td/></tr><tr><td>10504000</td><td>Ointment</td><td/></tr><tr><td>10505000</td><td>Cutaneous paste</td><td/></tr><tr><td>10506000</td><td>Medicated plaster</td><td/></tr><tr><td>10507000</td><td>Cutaneous foam</td><td/></tr><tr><td>10508000</td><td>Shampoo</td><td/></tr><tr><td>10509000</td><td>Cutaneous spray, solution</td><td/></tr><tr><td>10510000</td><td>Cutaneous spray, suspension</td><td/></tr><tr><td>10511000</td><td>Cutaneous spray, powder</td><td/></tr><tr><td>10512000</td><td>Cutaneous liquid</td><td/></tr><tr><td>10513000</td><td>Cutaneous solution</td><td/></tr><tr><td>10514000</td><td>Concentrate for cutaneous solution</td><td/></tr><tr><td>10515000</td><td>Cutaneous suspension</td><td/></tr><tr><td>10516000</td><td>Cutaneous emulsion</td><td/></tr><tr><td>10517000</td><td>Cutaneous powder</td><td/></tr><tr><td>10517500</td><td>Cutaneous patch</td><td/></tr><tr><td>10518000</td><td>Solution for iontophoresis</td><td/></tr><tr><td>10519000</td><td>Transdermal patch</td><td/></tr><tr><td>10520000</td><td>Collodion</td><td/></tr><tr><td>10521000</td><td>Medicated nail lacquer</td><td/></tr><tr><td>10521500</td><td>Nail solution</td><td/></tr><tr><td>10522000</td><td>Poultice</td><td/></tr><tr><td>10523000</td><td>Cutaneous stick</td><td/></tr><tr><td>10524000</td><td>Cutaneous sponge</td><td/></tr><tr><td>10525000</td><td>Impregnated dressing</td><td/></tr><tr><td>10539500</td><td>Scrub</td><td/></tr><tr><td>10546500</td><td>Transdermal spray, solution</td><td/></tr><tr><td>10547000</td><td>Transdermal system</td><td/></tr><tr><td>10548000</td><td>Solution for skin-prick test</td><td/></tr><tr><td>10549000</td><td>Solution for skin-scratch test</td><td/></tr><tr><td>10550000</td><td>Plaster for provocation test</td><td/></tr><tr><td>10601000</td><td>Eye cream</td><td/></tr><tr><td>10602000</td><td>Eye gel</td><td/></tr><tr><td>10603000</td><td>Eye ointment</td><td/></tr><tr><td>10604000</td><td>Eye drops, solution</td><td/></tr><tr><td>10604500</td><td>Eye drops, emulsion</td><td/></tr><tr><td>10605000</td><td>Eye drops, suspension</td><td/></tr><tr><td>10606000</td><td>Eye drops, powder and solvent for solution</td><td/></tr><tr><td>10607000</td><td>Eye drops, powder and solvent for suspension</td><td/></tr><tr><td>10608000</td><td>Eye drops, solvent for reconstitution</td><td/></tr><tr><td>10609000</td><td>Eye drops, prolonged-release</td><td/></tr><tr><td>10610000</td><td>Eye lotion</td><td/></tr><tr><td>10611000</td><td>Eye lotion, solvent for reconstitution</td><td/></tr><tr><td>10612000</td><td>Ophthalmic insert</td><td/></tr><tr><td>10613000</td><td>Ophthalmic strip</td><td/></tr><tr><td>10701000</td><td>Ear cream</td><td/></tr><tr><td>10702000</td><td>Ear gel</td><td/></tr><tr><td>10703000</td><td>Ear ointment</td><td/></tr><tr><td>10704000</td><td>Ear drops, solution</td><td/></tr><tr><td>10705000</td><td>Ear drops, suspension</td><td/></tr><tr><td>10706000</td><td>Ear drops, emulsion</td><td/></tr><tr><td>10707000</td><td>Ear drops, powder and solvent for suspension</td><td/></tr><tr><td>10708000</td><td>Ear powder</td><td/></tr><tr><td>10709000</td><td>Ear spray, solution</td><td/></tr><tr><td>10710000</td><td>Ear spray, suspension</td><td/></tr><tr><td>10711000</td><td>Ear spray, emulsion</td><td/></tr><tr><td>10712000</td><td>Ear wash, solution</td><td/></tr><tr><td>10713000</td><td>Ear wash, emulsion</td><td/></tr><tr><td>10714000</td><td>Ear tampon</td><td/></tr><tr><td>10715000</td><td>Ear stick</td><td/></tr><tr><td>10801000</td><td>Nasal cream</td><td/></tr><tr><td>10802000</td><td>Nasal gel</td><td/></tr><tr><td>10803000</td><td>Nasal ointment</td><td/></tr><tr><td>10804000</td><td>Nasal drops, solution</td><td/></tr><tr><td>10805000</td><td>Nasal drops, suspension</td><td/></tr><tr><td>10806000</td><td>Nasal drops, emulsion</td><td/></tr><tr><td>10807000</td><td>Nasal powder</td><td/></tr><tr><td>10808000</td><td>Nasal spray, solution</td><td/></tr><tr><td>10809000</td><td>Nasal spray, suspension</td><td/></tr><tr><td>10810000</td><td>Nasal spray, emulsion</td><td/></tr><tr><td>10811000</td><td>Nasal wash</td><td/></tr><tr><td>10812000</td><td>Nasal stick</td><td/></tr><tr><td>10900500</td><td>Intravaginal ring</td><td/></tr><tr><td>10901000</td><td>Vaginal cream</td><td/></tr><tr><td>10902000</td><td>Vaginal gel</td><td/></tr><tr><td>10903000</td><td>Vaginal ointment</td><td/></tr><tr><td>10904000</td><td>Vaginal foam</td><td/></tr><tr><td>10905000</td><td>Vaginal solution</td><td/></tr><tr><td>10906000</td><td>Vaginal suspension</td><td/></tr><tr><td>10907000</td><td>Vaginal emulsion</td><td/></tr><tr><td>10908000</td><td>Tablet for vaginal solution</td><td/></tr><tr><td>10909000</td><td>Pessary</td><td/></tr><tr><td>10910000</td><td>Vaginal capsule, hard</td><td/></tr><tr><td>10911000</td><td>Vaginal capsule, soft</td><td/></tr><tr><td>10912000</td><td>Vaginal tablet</td><td/></tr><tr><td>10913000</td><td>Effervescent vaginal tablet</td><td/></tr><tr><td>10914000</td><td>Medicated vaginal tampon</td><td/></tr><tr><td>10915000</td><td>Vaginal delivery system</td><td/></tr><tr><td>10916000</td><td>Vaginal sponge</td><td/></tr><tr><td>11001000</td><td>Rectal cream</td><td/></tr><tr><td>11002000</td><td>Rectal gel</td><td/></tr><tr><td>11003000</td><td>Rectal ointment</td><td/></tr><tr><td>11004000</td><td>Rectal foam</td><td/></tr><tr><td>11005000</td><td>Rectal solution</td><td/></tr><tr><td>11006000</td><td>Rectal suspension</td><td/></tr><tr><td>11007000</td><td>Rectal emulsion</td><td/></tr><tr><td>11008000</td><td>Concentrate for rectal solution</td><td/></tr><tr><td>11009000</td><td>Powder for rectal solution</td><td/></tr><tr><td>11010</td><td>Oral drops</td><td/></tr><tr><td>11010000</td><td>Powder for rectal suspension</td><td/></tr><tr><td>11011000</td><td>Tablet for rectal solution</td><td/></tr><tr><td>11012000</td><td>Tablet for rectal suspension</td><td/></tr><tr><td>11013000</td><td>Suppository</td><td/></tr><tr><td>11014000</td><td>Rectal capsule</td><td/></tr><tr><td>11015000</td><td>Rectal tampon</td><td/></tr><tr><td>11050</td><td>Oral liquid</td><td/></tr><tr><td>11101000</td><td>Nebuliser solution</td><td/></tr><tr><td>11102000</td><td>Nebuliser suspension</td><td/></tr><tr><td>11103000</td><td>Powder for nebuliser suspension</td><td/></tr><tr><td>11104000</td><td>Powder for nebuliser solution</td><td/></tr><tr><td>11105000</td><td>Nebuliser emulsion</td><td/></tr><tr><td>11106000</td><td>Pressurised inhalation, solution</td><td/></tr><tr><td>11107000</td><td>Pressurised inhalation, suspension</td><td/></tr><tr><td>11108000</td><td>Pressurised inhalation, emulsion</td><td/></tr><tr><td>11109000</td><td>Inhalation powder</td><td/></tr><tr><td>11110000</td><td>Inhalation powder, hard capsule</td><td/></tr><tr><td>11111000</td><td>Inhalation powder, pre-dispensed</td><td/></tr><tr><td>11112000</td><td>Inhalation vapour, powder</td><td/></tr><tr><td>11113000</td><td>Inhalation vapour, capsule</td><td/></tr><tr><td>11114000</td><td>Inhalation vapour, solution</td><td/></tr><tr><td>11115000</td><td>Inhalation vapour, tablet</td><td/></tr><tr><td>11116000</td><td>Inhalation vapour, ointment</td><td/></tr><tr><td>11117000</td><td>Inhalation vapour, liquid</td><td/></tr><tr><td>11118000</td><td>Inhalation gas</td><td/></tr><tr><td>11201000</td><td>Solution for injection</td><td/></tr><tr><td>11202000</td><td>Suspension for injection</td><td/></tr><tr><td>11203000</td><td>Emulsion for injection</td><td/></tr><tr><td>11204000</td><td>Gel for injection</td><td/></tr><tr><td>11205000</td><td>Powder for solution for injection</td><td/></tr><tr><td>11206000</td><td>Powder for suspension for injection</td><td/></tr><tr><td>11207000</td><td>Powder and solvent for solution for injection</td><td/></tr><tr><td>11208000</td><td>Powder and solvent for suspension for injection</td><td/></tr><tr><td>11209000</td><td>Concentrate for solution for injection</td><td/></tr><tr><td>11210000</td><td>Solution for infusion</td><td/></tr><tr><td>11210500</td><td>Solution for infusion in administration system</td><td/></tr><tr><td>11211000</td><td>Emulsion for infusion</td><td/></tr><tr><td>11212000</td><td>Powder for solution for infusion</td><td/></tr><tr><td>11213000</td><td>Concentrate for solution for infusion</td><td/></tr><tr><td>11214000</td><td>Powder and solvent for solution for infusion</td><td/></tr><tr><td>11214500</td><td>Lyophilisate and solvent for solution for injection</td><td/></tr><tr><td>11215000</td><td>Lyophilisate for solution for infusion</td><td/></tr><tr><td>11216000</td><td>Solvent for parenteral use</td><td/></tr><tr><td>11217000</td><td>Lyophilisate for solution for injection</td><td/></tr><tr><td>11218000</td><td>Lyophilisate for suspension for injection</td><td/></tr><tr><td>11301000</td><td>Implant</td><td/></tr><tr><td>11302000</td><td>Implantation tablet</td><td/></tr><tr><td>11303000</td><td>Implantation chain</td><td/></tr><tr><td>11303500</td><td>Implantation suspension</td><td/></tr><tr><td>11304000</td><td>Powder and solvent for implantation paste</td><td/></tr><tr><td>11401000</td><td>Solution for peritoneal dialysis</td><td/></tr><tr><td>11402000</td><td>Solution for haemofiltration</td><td/></tr><tr><td>11403000</td><td>Solution for haemodiafiltration</td><td/></tr><tr><td>11404000</td><td>Solution for haemodialysis</td><td/></tr><tr><td>11405000</td><td>Concentrate for haemodialysis solution</td><td/></tr><tr><td>11501000</td><td>Solution for intravesical use</td><td/></tr><tr><td>11502000</td><td>Bladder irrigation</td><td/></tr><tr><td>11503000</td><td>Powder for bladder irrigation</td><td/></tr><tr><td>11504000</td><td>Urethral gel</td><td/></tr><tr><td>11505000</td><td>Urethral stick</td><td/></tr><tr><td>11601000</td><td>Endotracheopulmonary instillation, solution</td><td/></tr><tr><td>11602000</td><td>Endotracheopulmonary instillation, powder for solution</td><td/></tr><tr><td>11603000</td><td>Endotracheopulmonary instillation, suspension</td><td/></tr><tr><td>11604000</td><td>Endotracheopulmonary instillation, powder and solvent for solution</td><td/></tr><tr><td>11701000</td><td>Endocervical gel</td><td/></tr><tr><td>11702000</td><td>Powder and solvent for endocervical gel</td><td/></tr><tr><td>11901000</td><td>Intrauterine delivery system</td><td/></tr><tr><td>11902000</td><td>Intrauterine solution</td><td/></tr><tr><td>11903000</td><td>Intrauterine suspension</td><td/></tr><tr><td>11904000</td><td>Intrauterine emulsion</td><td/></tr><tr><td>11905000</td><td>Intrauterine tablet</td><td/></tr><tr><td>11906000</td><td>Intrauterine capsule</td><td/></tr><tr><td>12004000</td><td>Nebulisation solution</td><td/></tr><tr><td>12100</td><td>Capsule</td><td/></tr><tr><td>12100500</td><td>Absorbable coated sponge</td><td/></tr><tr><td>12101000</td><td>Denture lacquer</td><td/></tr><tr><td>12102000</td><td>Anticoagulant and preservative solution for blood</td><td/></tr><tr><td>12103000</td><td>Solution for blood fraction modification</td><td/></tr><tr><td>12104000</td><td>Wound stick</td><td/></tr><tr><td>12105000</td><td>Radiopharmaceutical precursor</td><td/></tr><tr><td>12106000</td><td>Radionuclide generator</td><td/></tr><tr><td>12107000</td><td>Kit for radiopharmaceutical preparation</td><td/></tr><tr><td>12108000</td><td>Gastroenteral solution</td><td/></tr><tr><td>12109000</td><td>Dispersion</td><td/></tr><tr><td>12109500</td><td>Fibrin sealant-powder and solvent for fibrin sealant</td><td/></tr><tr><td>12110000</td><td>Gastroenteral suspension</td><td/></tr><tr><td>12111000</td><td>Gastroenteral emulsion</td><td/></tr><tr><td>12112000</td><td>Solution for organ preservation</td><td/></tr><tr><td>12113000</td><td>Irrigation solution</td><td/></tr><tr><td>12114000</td><td>Stomach irrigation</td><td/></tr><tr><td>12115000</td><td>Sealant</td><td/></tr><tr><td>12115500</td><td>Solution of perfusion of organs</td><td/></tr><tr><td>12116000</td><td>Powder and solvent for sealant</td><td/></tr><tr><td>12117000</td><td>Impregnated pad</td><td/></tr><tr><td>12118000</td><td>Living tissue equivalent</td><td/></tr><tr><td>12119000</td><td>Medicated sponge</td><td/></tr><tr><td>12120</td><td>Gastro-resistant capsule</td><td/></tr><tr><td>12120000</td><td>Intestinal gel</td><td/></tr><tr><td>12130000</td><td>Medicated thread</td><td/></tr><tr><td>12131000</td><td>Solution for provocation test</td><td/></tr><tr><td>12150</td><td>Prolonged-release capsule</td><td/></tr><tr><td>12200</td><td>Tablet</td><td/></tr><tr><td>12301000</td><td>Medicinal gas, compressed</td><td/></tr><tr><td>12302000</td><td>Medicinal gas, cryogenic</td><td/></tr><tr><td>12303000</td><td>Medicinal gas, liquefied</td><td/></tr><tr><td>13050</td><td>Oromucosal liquid</td><td/></tr><tr><td>13220</td><td>Lozenge</td><td/></tr><tr><td>14050</td><td>Dental liquid</td><td/></tr><tr><td>15090</td><td>Cutaneous spray</td><td/></tr><tr><td>15130</td><td>Cutaneous liquid</td><td/></tr><tr><td>16040</td><td>Eye drops</td><td/></tr><tr><td>17040</td><td>Ear drops</td><td/></tr><tr><td>17090</td><td>Ear spray</td><td/></tr><tr><td>17120</td><td>Ear wash</td><td/></tr><tr><td>18040</td><td>Nasal drops</td><td/></tr><tr><td>18080</td><td>Nasal spray</td><td/></tr><tr><td>19050</td><td>Vaginal liquid</td><td/></tr><tr><td>19100</td><td>Vaginal capsule</td><td/></tr><tr><td>20050</td><td>Enema</td><td/></tr><tr><td>21010</td><td>Nebuliser liquid</td><td/></tr><tr><td>21060</td><td>Pressurised inhalation</td><td/></tr><tr><td>21100</td><td>Inhalation powder</td><td/></tr><tr><td>21140</td><td>Inhalation vapour</td><td/></tr><tr><td>22010</td><td>Injection</td><td/></tr><tr><td>22050</td><td>Powder for injection</td><td/></tr><tr><td>22090</td><td>Sterile concentrate</td><td/></tr><tr><td>22100</td><td>Infusion</td><td/></tr><tr><td>22120</td><td>Powder for infusion</td><td/></tr><tr><td>26010</td><td>Endotracheopulmonary instillation</td><td/></tr><tr><td>29020</td><td>Intrauterine liquid</td><td/></tr><tr><td>30047500</td><td>Pouch</td><td/></tr><tr><td>31030</td><td>Blood fraction modifier</td><td/></tr><tr><td>31080</td><td>Gastroenteral liquid</td><td/></tr><tr><td>50001000</td><td>Chewable/dispersible tablet</td><td/></tr><tr><td>50001250</td><td>Coated granules in sachet</td><td/></tr><tr><td>50001500</td><td>Concentrate and diluent for solution for infusion</td><td/></tr><tr><td>50002000</td><td>Concentrate and solvent for concentrate for solution for infusion</td><td/></tr><tr><td>50003000</td><td>Concentrate and solvent for cutaneous solution</td><td/></tr><tr><td>50004000</td><td>Concentrate and solvent for cutaneous use</td><td/></tr><tr><td>50005000</td><td>Concentrate and solvent for injection</td><td/></tr><tr><td>50006000</td><td>Concentrate and solvent for solution for infusion</td><td/></tr><tr><td>50007000</td><td>Concentrate and solvent for solution for injection</td><td/></tr><tr><td>50008000</td><td>Concentrate and solvent for suspension for injection</td><td/></tr><tr><td>50009000</td><td>Concentrate for cutaneous spray, emulsion</td><td/></tr><tr><td>50009300</td><td>Concentrate for dispersion for infusion</td><td/></tr><tr><td>50009500</td><td>Concentrate for emulsion for infusion</td><td/></tr><tr><td>50010000</td><td>Concentrate for oral solution</td><td/></tr><tr><td>50011000</td><td>Concentrate for oral/rectal solution</td><td/></tr><tr><td>50012000</td><td>Concentrate for peritoneal dialysis solution</td><td/></tr><tr><td>50013000</td><td>Concentrate for solution for intravesical use</td><td/></tr><tr><td>50013500</td><td>Concentrate for spray emulsion</td><td/></tr><tr><td>50014000</td><td>Concentrate for suspension for infusion</td><td/></tr><tr><td>50015000</td><td>Cutaneous and nasal ointment</td><td/></tr><tr><td>50015300</td><td>Cutaneous/oromucosal/oral solution</td><td/></tr><tr><td>50015400</td><td>Cutaneous/oromucosal spray</td><td/></tr><tr><td>50015500</td><td>Cutaneous spray, emulsion</td><td/></tr><tr><td>50016000</td><td>Cutaneous spray, ointment</td><td/></tr><tr><td>50017000</td><td>Dental paste</td><td/></tr><tr><td>50018000</td><td>Ear/eye drops, solution</td><td/></tr><tr><td>50019000</td><td>Ear/eye oinment</td><td/></tr><tr><td>50020000</td><td>Ear/eye/nose drops, solution</td><td/></tr><tr><td>50020500</td><td>Effervescent buccal tablet</td><td/></tr><tr><td>50021000</td><td>Emulsion for injection/infusion</td><td/></tr><tr><td>50021500</td><td>Emulsion and suspension for emulsion for injection</td><td/></tr><tr><td>50022000</td><td>Endosinusial wash, suspension</td><td/></tr><tr><td>50023000</td><td>Eye drops, solution in single-dose container</td><td/></tr><tr><td>50023500</td><td>Film coated gastro-resistant tablet</td><td/></tr><tr><td>50024000</td><td>Gargle/mouthwash</td><td/></tr><tr><td>50025000</td><td>Gastro-resistant coated tablet</td><td/></tr><tr><td>50026000</td><td>Gastro-resistant granules for oral suspension</td><td/></tr><tr><td>50026250</td><td>Gastro-resistant prolonged-release tablet</td><td/></tr><tr><td>50026500</td><td>Granules and solvent for oral suspension</td><td/></tr><tr><td>50027000</td><td>Granules and solvent for suspension for injection</td><td/></tr><tr><td>50028000</td><td>Granules for oral and rectal suspension</td><td/></tr><tr><td>50029000</td><td>Granules for oral drops, solution</td><td/></tr><tr><td>50029250</td><td>Granules for use in drinking water</td><td/></tr><tr><td>50029500</td><td>Granules for vaginal solution</td><td/></tr><tr><td>50029600</td><td>Hard capsule with gastro-resistant pellets</td><td/></tr><tr><td>50029700</td><td>Herbal tea in bag</td><td/></tr><tr><td>50030000</td><td>Inhalation powder, tablet</td><td/></tr><tr><td>50031000</td><td>Inhalation vapour, effervescent tablet</td><td/></tr><tr><td>50032000</td><td>Inhalation vapour, emulsion</td><td/></tr><tr><td>50033000</td><td>Inhalation vapour, impregnated pad</td><td/></tr><tr><td>50033300</td><td>Intrauterine foam</td><td/></tr><tr><td>50033500</td><td>Intravitreal implant in applicator</td><td/></tr><tr><td>50034000</td><td>Liquefied gas for dental use</td><td/></tr><tr><td>50035000</td><td>Modified-release film-coated tablet</td><td/></tr><tr><td>50036000</td><td>Modified-release granules for oral suspension</td><td/></tr><tr><td>50036100</td><td>Muco-adhesive buccal prolonged-release tablet</td><td/></tr><tr><td>50036500</td><td>Nasal/oromucosal solution</td><td/></tr><tr><td>50037000</td><td>Nasal spray and oromucosal solution</td><td/></tr><tr><td>50037250</td><td>Nasal spray, solution in single-dose container</td><td/></tr><tr><td>50037750</td><td>Oral drops, liquid</td><td/></tr><tr><td>50038000</td><td>Oral/rectal suspension</td><td/></tr><tr><td>50038500</td><td>Oral solution/concentrate for nebuliser solution</td><td/></tr><tr><td>50039000</td><td>Oromucosal patch</td><td/></tr><tr><td>50039300</td><td>Oromucosal powder in pouch</td><td/></tr><tr><td>50039500</td><td>Oromucosal/laryngopharyngeal solution</td><td/></tr><tr><td>50040000</td><td>Oromucosal/laryngopharyngeal solution/spray</td><td/></tr><tr><td>50041000</td><td>Pillules in single-dose container</td><td/></tr><tr><td>50041500</td><td>Powder and solution for solution for injection</td><td/></tr><tr><td>50042000</td><td>Powder and solvent for concentrate for solution for infusion</td><td/></tr><tr><td>50043000</td><td>Powder for concentrate for solution for infusion</td><td/></tr><tr><td>50044000</td><td>Powder and solvent for cutaneous solution</td><td/></tr><tr><td>50044500</td><td>Powder and solvent for dispersion for injection</td><td/></tr><tr><td>50045000</td><td>Powder and solvent for endosinusial solution</td><td/></tr><tr><td>50045500</td><td>Powder and solvent for epilesional solution</td><td/></tr><tr><td>50046000</td><td>Powder and solvent for gingival gel</td><td/></tr><tr><td>50047000</td><td>Powder and solvent for instillation solution for intraocular use</td><td/></tr><tr><td>50047500</td><td>Powder and solvent for intravesical solution</td><td/></tr><tr><td>50047700</td><td>Powder and solvent for nebuliser solution</td><td/></tr><tr><td>50048000</td><td>Powder and solvent for prolonged-release suspension for injection</td><td/></tr><tr><td>50048250</td><td>Powder and solvent for solution for injection in pre-filled syringe</td><td/></tr><tr><td>50048300</td><td>Powder and solvent for suspension for injection in pre-filled syringe</td><td/></tr><tr><td>50048500</td><td>Powder and suspension for suspension for injection</td><td/></tr><tr><td>50048600</td><td>Powder, dispersion and solvent for concentrate for dispersion for injection</td><td/></tr><tr><td>50048750</td><td>Powder for concentrate for dispersion for infusion</td><td/></tr><tr><td>50049000</td><td>Powder for concentrate for haemodialysis solution,</td><td/></tr><tr><td>50049100</td><td>Powder for concentrate for intravesical suspension</td><td/></tr><tr><td>50049250</td><td>Powder for concentrate for solution for injection/infusion</td><td/></tr><tr><td>50049270</td><td>Powder for dental solution</td><td/></tr><tr><td>50049300</td><td>Powder for epilesional solution</td><td/></tr><tr><td>50049500</td><td>Powder for implantation suspension</td><td/></tr><tr><td>50050000</td><td>Powder for intravesical solution</td><td/></tr><tr><td>50051000</td><td>Powder for intravesical suspension</td><td/></tr><tr><td>50051100</td><td>Powder for mouth wash</td><td/></tr><tr><td>50052000</td><td>Powder for oral/rectal suspension</td><td/></tr><tr><td>50053000</td><td>Powder for solution for injection or infusion</td><td/></tr><tr><td>50053500</td><td>Powder for solution for injection/infusion</td><td/></tr><tr><td>50054000</td><td>Powder for solution for intravesical use</td><td/></tr><tr><td>50055000</td><td>Powder for solution for nasal spray</td><td/></tr><tr><td>50055500</td><td>Prolonged-release film-coated tablet</td><td/></tr><tr><td>50056000</td><td>Prolonged-release granules for oral suspension</td><td/></tr><tr><td>50056500</td><td>Radiopharmaceutical precursor, solution</td><td/></tr><tr><td>50057000</td><td>Solution for haemodialysis/haemofiltration</td><td/></tr><tr><td>50058000</td><td>Solution for infusion and oral solution</td><td/></tr><tr><td>50059000</td><td>Solution for injection/concentrate for solution for infusion</td><td/></tr><tr><td>50060000</td><td>Solution for injection/infusion</td><td/></tr><tr><td>50060100</td><td>Solution for injection in cartridge</td><td/></tr><tr><td>50060200</td><td>Solution for injection in pre-filled pen</td><td/></tr><tr><td>50060300</td><td>Solution for injection in pre-filled syringe</td><td/></tr><tr><td>50060400</td><td>Solution for injection in pre-filled syringe with automatic needle guard</td><td/></tr><tr><td>50060500</td><td>Solution for injection/infusion in pre-filled syringe</td><td/></tr><tr><td>50061000</td><td>Solution for intraperitoneal use</td><td/></tr><tr><td>50061300</td><td>Solution for use in drinking water</td><td/></tr><tr><td>50061500</td><td>Solution for sealant</td><td/></tr><tr><td>50061600</td><td>Solvent for nasal use</td><td/></tr><tr><td>50062000</td><td>Suspension and effervescent granules for oral suspension</td><td/></tr><tr><td>50062500</td><td>Suspension and solution for spray</td><td/></tr><tr><td>50063000</td><td>Suspension for infusion</td><td/></tr><tr><td>50063100</td><td>Suspension for injection in cartridge</td><td/></tr><tr><td>50063200</td><td>Suspension for injection in pre-filled pen</td><td/></tr><tr><td>50063300</td><td>Suspension for injection in pre-filled syringe</td><td/></tr><tr><td>50063500</td><td>Suspension for use in drinking water</td><td/></tr><tr><td>50064000</td><td>Tablet and solvent for rectal suspension</td><td/></tr><tr><td>50065000</td><td>Tablet and powder for oral solution</td><td/></tr><tr><td>50066000</td><td>Tablet for oral suspension</td><td/></tr><tr><td>50070000</td><td>Oral suspension for use in drinking water</td><td/></tr><tr><td>50071000</td><td>Powder and solvent for dental gel</td><td/></tr><tr><td>50072000</td><td>Powder for use in drinking water</td><td/></tr><tr><td>50073000</td><td>Powder for solution for intraocular irrigation</td><td/></tr><tr><td>50074000</td><td>Solvent for solution for intraocular irrigation</td><td/></tr><tr><td>50076000</td><td>Solvent for solution for infusion</td><td/></tr><tr><td>50077000</td><td>Dispersion for injection</td><td/></tr><tr><td>50078000</td><td>Gas and solvent for dispersion for injection/infusion</td><td/></tr><tr><td>50079000</td><td>Concentrate for solution for injection/infusion</td><td/></tr><tr><td>50080000</td><td>Powder and solvent for solution for injection/infusion</td><td/></tr><tr><td>50081000</td><td>Inhalation solution</td><td/></tr><tr><td>50082000</td><td>Oral drops, powder for suspension</td><td/></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/ips/ValueSet/medicine-doseform"/>
+  <identifier>
+    <use value="official"/>
+    <system value="http://art-decor.org/ns/oids/vs"/>
+    <value value="2.16.840.1.113883.11.22.25"/>
+  </identifier>
+  <version value="1"/>
+  <name value="IPSDoseForm"/>
+  <title value="Medicine Doseform"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2018-03-30T08:02:21+02:00"/>
+  <publisher value="HL7 International"/>
+  <contact>
+    <name value="HL7 International"/>
+    <telecom>
+      <system value="phone"/>
+      <value value="+1 734 677 7777 "/>
+    </telecom>
+    <telecom>
+      <system value="fax"/>
+      <value value="+1 734 677 6622"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.org"/>
+    </telecom>
+  </contact>
+  <description value=" Value Set Definition &#xA0;DrawnFromCodeSystem 0.4.0.127.0.16.1.1.2.1 (EDQM) &#xA0;PropertyBasedContentSet.IncludeWithProperty.Expression &#xA0;( &#xA0;&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; ([Concept Status] = &#x2018;Current&#x2019;)&#xA0; &#xA0;AND &#xA0;([Concept Class] IN (&#x2018;PDF&#x2019; ; &#x2018;CMT&#x2019;; &#x2018;CDF&#x2019;; &#x2018;PFT&#39;) &#xA0; &#xA0;AND &#xA0;([Domain] = &#39;Human and Veterinary&#39;)&#xA0;) PDF = Pharmaceutical dose formCMT = Combined termsCDF = Combined pharmaceutical dose formPFT = Patient FriendlyThe list of value reported hereafter is provided only as exemplification"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <immutable value="false"/>
+  <compose>
+    <include>
+      <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+      <concept>
+        <code value="10101000"/>
+        <display value="Oral drops, solution"/>
+      </concept>
+      <concept>
+        <code value="10102000"/>
+        <display value="Oral drops, suspension"/>
+      </concept>
+      <concept>
+        <code value="10103000"/>
+        <display value="Oral drops, emulsion"/>
+      </concept>
+      <concept>
+        <code value="10104000"/>
+        <display value="Oral liquid"/>
+      </concept>
+      <concept>
+        <code value="10105000"/>
+        <display value="Oral solution"/>
+      </concept>
+      <concept>
+        <code value="10106000"/>
+        <display value="Oral suspension"/>
+      </concept>
+      <concept>
+        <code value="10107000"/>
+        <display value="Oral emulsion"/>
+      </concept>
+      <concept>
+        <code value="10108000"/>
+        <display value="Oral gel"/>
+      </concept>
+      <concept>
+        <code value="10109000"/>
+        <display value="Oral paste"/>
+      </concept>
+      <concept>
+        <code value="10110000"/>
+        <display value="Powder for oral solution"/>
+      </concept>
+      <concept>
+        <code value="10111000"/>
+        <display value="Powder for oral suspension"/>
+      </concept>
+      <concept>
+        <code value="10112000"/>
+        <display value="Granules for oral solution"/>
+      </concept>
+      <concept>
+        <code value="10113000"/>
+        <display value="Granules for oral suspension"/>
+      </concept>
+      <concept>
+        <code value="10114000"/>
+        <display value="Powder and solvent for oral solution"/>
+      </concept>
+      <concept>
+        <code value="10115000"/>
+        <display value="Powder and solvent for oral suspension"/>
+      </concept>
+      <concept>
+        <code value="10116000"/>
+        <display value="Lyophilisate for suspension"/>
+      </concept>
+      <concept>
+        <code value="10117000"/>
+        <display value="Syrup"/>
+      </concept>
+      <concept>
+        <code value="10118000"/>
+        <display value="Powder for syrup"/>
+      </concept>
+      <concept>
+        <code value="10119000"/>
+        <display value="Granules for syrup"/>
+      </concept>
+      <concept>
+        <code value="10120000"/>
+        <display value="Soluble tablet"/>
+      </concept>
+      <concept>
+        <code value="10121000"/>
+        <display value="Dispersible tablet"/>
+      </concept>
+      <concept>
+        <code value="10122000"/>
+        <display value="Herbal tea"/>
+      </concept>
+      <concept>
+        <code value="10201000"/>
+        <display value="Oral powder"/>
+      </concept>
+      <concept>
+        <code value="10202000"/>
+        <display value="Instant herbal tea"/>
+      </concept>
+      <concept>
+        <code value="10203000"/>
+        <display value="Effervescent powder"/>
+      </concept>
+      <concept>
+        <code value="10204000"/>
+        <display value="Granules"/>
+      </concept>
+      <concept>
+        <code value="10205000"/>
+        <display value="Effervescent granules"/>
+      </concept>
+      <concept>
+        <code value="10206000"/>
+        <display value="Gastro-resistant granules"/>
+      </concept>
+      <concept>
+        <code value="10207000"/>
+        <display value="Prolonged-release granules"/>
+      </concept>
+      <concept>
+        <code value="10208000"/>
+        <display value="Modified-release granules"/>
+      </concept>
+      <concept>
+        <code value="10209000"/>
+        <display value="Cachet"/>
+      </concept>
+      <concept>
+        <code value="10210000"/>
+        <display value="Capsule, hard"/>
+      </concept>
+      <concept>
+        <code value="10211000"/>
+        <display value="Capsule, soft"/>
+      </concept>
+      <concept>
+        <code value="10212000"/>
+        <display value="Gastro-resistant capsule, hard"/>
+      </concept>
+      <concept>
+        <code value="10213000"/>
+        <display value="Gastro-resistant capsule, soft"/>
+      </concept>
+      <concept>
+        <code value="10214000"/>
+        <display value="Chewable capsule, soft"/>
+      </concept>
+      <concept>
+        <code value="10215000"/>
+        <display value="Prolonged-release capsule, hard"/>
+      </concept>
+      <concept>
+        <code value="10216000"/>
+        <display value="Prolonged-release capsule, soft"/>
+      </concept>
+      <concept>
+        <code value="10217000"/>
+        <display value="Modified-release capsule, hard"/>
+      </concept>
+      <concept>
+        <code value="10218000"/>
+        <display value="Modified-release capsule, soft"/>
+      </concept>
+      <concept>
+        <code value="10219000"/>
+        <display value="Tablet"/>
+      </concept>
+      <concept>
+        <code value="10220000"/>
+        <display value="Coated tablet"/>
+      </concept>
+      <concept>
+        <code value="10221000"/>
+        <display value="Film-coated tablet"/>
+      </concept>
+      <concept>
+        <code value="10222000"/>
+        <display value="Effervescent tablet"/>
+      </concept>
+      <concept>
+        <code value="10223000"/>
+        <display value="Orodispersible tablet"/>
+      </concept>
+      <concept>
+        <code value="10224000"/>
+        <display value="Oral lyophilisate"/>
+      </concept>
+      <concept>
+        <code value="10225000"/>
+        <display value="Gastro-resistant tablet"/>
+      </concept>
+      <concept>
+        <code value="10226000"/>
+        <display value="Prolonged-release tablet"/>
+      </concept>
+      <concept>
+        <code value="10227000"/>
+        <display value="Modified-release tablet"/>
+      </concept>
+      <concept>
+        <code value="10228000"/>
+        <display value="Chewable tablet"/>
+      </concept>
+      <concept>
+        <code value="10229000"/>
+        <display value="Medicated chewing-gum"/>
+      </concept>
+      <concept>
+        <code value="10230000"/>
+        <display value="Oral gum"/>
+      </concept>
+      <concept>
+        <code value="10231000"/>
+        <display value="Pillules"/>
+      </concept>
+      <concept>
+        <code value="10236100"/>
+        <display value="Orodispersible film"/>
+      </concept>
+      <concept>
+        <code value="10301000"/>
+        <display value="Gargle"/>
+      </concept>
+      <concept>
+        <code value="10302000"/>
+        <display value="Concentrate for gargle"/>
+      </concept>
+      <concept>
+        <code value="10303000"/>
+        <display value="Gargle, powder for solution"/>
+      </concept>
+      <concept>
+        <code value="10304000"/>
+        <display value="Gargle, tablet for solution"/>
+      </concept>
+      <concept>
+        <code value="10305000"/>
+        <display value="Oromucosal solution"/>
+      </concept>
+      <concept>
+        <code value="10306000"/>
+        <display value="Oromucosal suspension"/>
+      </concept>
+      <concept>
+        <code value="10307000"/>
+        <display value="Oromucosal drops"/>
+      </concept>
+      <concept>
+        <code value="10308000"/>
+        <display value="Oromucosal spray"/>
+      </concept>
+      <concept>
+        <code value="10309000"/>
+        <display value="Sublingual spray"/>
+      </concept>
+      <concept>
+        <code value="10310000"/>
+        <display value="Mouthwash"/>
+      </concept>
+      <concept>
+        <code value="10311000"/>
+        <display value="Mouthwash, tablet for solution"/>
+      </concept>
+      <concept>
+        <code value="10312000"/>
+        <display value="Gingival solution"/>
+      </concept>
+      <concept>
+        <code value="10313000"/>
+        <display value="Oromucosal gel"/>
+      </concept>
+      <concept>
+        <code value="10314000"/>
+        <display value="Oromucosal paste"/>
+      </concept>
+      <concept>
+        <code value="10314005"/>
+        <display value="Oromucosal ointment"/>
+      </concept>
+      <concept>
+        <code value="10314010"/>
+        <display value="Oromucosal cream"/>
+      </concept>
+      <concept>
+        <code value="10314011"/>
+        <display value="Buccal film"/>
+      </concept>
+      <concept>
+        <code value="10315000"/>
+        <display value="Gingival gel"/>
+      </concept>
+      <concept>
+        <code value="10316000"/>
+        <display value="Gingival paste"/>
+      </concept>
+      <concept>
+        <code value="10317000"/>
+        <display value="Oromucosal capsule"/>
+      </concept>
+      <concept>
+        <code value="10318000"/>
+        <display value="Sublingual tablet"/>
+      </concept>
+      <concept>
+        <code value="10319000"/>
+        <display value="Muco-adhesive buccal tablet"/>
+      </concept>
+      <concept>
+        <code value="10320000"/>
+        <display value="Buccal tablet"/>
+      </concept>
+      <concept>
+        <code value="10321000"/>
+        <display value="Lozenge"/>
+      </concept>
+      <concept>
+        <code value="10322000"/>
+        <display value="Compressed lozenge"/>
+      </concept>
+      <concept>
+        <code value="10323000"/>
+        <display value="Pastille"/>
+      </concept>
+      <concept>
+        <code value="10401000"/>
+        <display value="Periodontal powder"/>
+      </concept>
+      <concept>
+        <code value="10402000"/>
+        <display value="Dental gel"/>
+      </concept>
+      <concept>
+        <code value="10403000"/>
+        <display value="Dental stick"/>
+      </concept>
+      <concept>
+        <code value="10404000"/>
+        <display value="Dental insert"/>
+      </concept>
+      <concept>
+        <code value="10405000"/>
+        <display value="Dental powder"/>
+      </concept>
+      <concept>
+        <code value="10406000"/>
+        <display value="Dental solution"/>
+      </concept>
+      <concept>
+        <code value="10407000"/>
+        <display value="Dental suspension"/>
+      </concept>
+      <concept>
+        <code value="10408000"/>
+        <display value="Dental emulsion"/>
+      </concept>
+      <concept>
+        <code value="10409000"/>
+        <display value="Toothpaste"/>
+      </concept>
+      <concept>
+        <code value="10410000"/>
+        <display value="Periodontal gel"/>
+      </concept>
+      <concept>
+        <code value="10411000"/>
+        <display value="Periodontal insert"/>
+      </concept>
+      <concept>
+        <code value="10501000"/>
+        <display value="Bath additive"/>
+      </concept>
+      <concept>
+        <code value="10502000"/>
+        <display value="Cream"/>
+      </concept>
+      <concept>
+        <code value="10503000"/>
+        <display value="Gel"/>
+      </concept>
+      <concept>
+        <code value="10504000"/>
+        <display value="Ointment"/>
+      </concept>
+      <concept>
+        <code value="10505000"/>
+        <display value="Cutaneous paste"/>
+      </concept>
+      <concept>
+        <code value="10506000"/>
+        <display value="Medicated plaster"/>
+      </concept>
+      <concept>
+        <code value="10507000"/>
+        <display value="Cutaneous foam"/>
+      </concept>
+      <concept>
+        <code value="10508000"/>
+        <display value="Shampoo"/>
+      </concept>
+      <concept>
+        <code value="10509000"/>
+        <display value="Cutaneous spray, solution"/>
+      </concept>
+      <concept>
+        <code value="10510000"/>
+        <display value="Cutaneous spray, suspension"/>
+      </concept>
+      <concept>
+        <code value="10511000"/>
+        <display value="Cutaneous spray, powder"/>
+      </concept>
+      <concept>
+        <code value="10512000"/>
+        <display value="Cutaneous liquid"/>
+      </concept>
+      <concept>
+        <code value="10513000"/>
+        <display value="Cutaneous solution"/>
+      </concept>
+      <concept>
+        <code value="10514000"/>
+        <display value="Concentrate for cutaneous solution"/>
+      </concept>
+      <concept>
+        <code value="10515000"/>
+        <display value="Cutaneous suspension"/>
+      </concept>
+      <concept>
+        <code value="10516000"/>
+        <display value="Cutaneous emulsion"/>
+      </concept>
+      <concept>
+        <code value="10517000"/>
+        <display value="Cutaneous powder"/>
+      </concept>
+      <concept>
+        <code value="10517500"/>
+        <display value="Cutaneous patch"/>
+      </concept>
+      <concept>
+        <code value="10518000"/>
+        <display value="Solution for iontophoresis"/>
+      </concept>
+      <concept>
+        <code value="10519000"/>
+        <display value="Transdermal patch"/>
+      </concept>
+      <concept>
+        <code value="10520000"/>
+        <display value="Collodion"/>
+      </concept>
+      <concept>
+        <code value="10521000"/>
+        <display value="Medicated nail lacquer"/>
+      </concept>
+      <concept>
+        <code value="10521500"/>
+        <display value="Nail solution"/>
+      </concept>
+      <concept>
+        <code value="10522000"/>
+        <display value="Poultice"/>
+      </concept>
+      <concept>
+        <code value="10523000"/>
+        <display value="Cutaneous stick"/>
+      </concept>
+      <concept>
+        <code value="10524000"/>
+        <display value="Cutaneous sponge"/>
+      </concept>
+      <concept>
+        <code value="10525000"/>
+        <display value="Impregnated dressing"/>
+      </concept>
+      <concept>
+        <code value="10539500"/>
+        <display value="Scrub"/>
+      </concept>
+      <concept>
+        <code value="10546500"/>
+        <display value="Transdermal spray, solution"/>
+      </concept>
+      <concept>
+        <code value="10547000"/>
+        <display value="Transdermal system"/>
+      </concept>
+      <concept>
+        <code value="10548000"/>
+        <display value="Solution for skin-prick test"/>
+      </concept>
+      <concept>
+        <code value="10549000"/>
+        <display value="Solution for skin-scratch test"/>
+      </concept>
+      <concept>
+        <code value="10550000"/>
+        <display value="Plaster for provocation test"/>
+      </concept>
+      <concept>
+        <code value="10601000"/>
+        <display value="Eye cream"/>
+      </concept>
+      <concept>
+        <code value="10602000"/>
+        <display value="Eye gel"/>
+      </concept>
+      <concept>
+        <code value="10603000"/>
+        <display value="Eye ointment"/>
+      </concept>
+      <concept>
+        <code value="10604000"/>
+        <display value="Eye drops, solution"/>
+      </concept>
+      <concept>
+        <code value="10604500"/>
+        <display value="Eye drops, emulsion"/>
+      </concept>
+      <concept>
+        <code value="10605000"/>
+        <display value="Eye drops, suspension"/>
+      </concept>
+      <concept>
+        <code value="10606000"/>
+        <display value="Eye drops, powder and solvent for solution"/>
+      </concept>
+      <concept>
+        <code value="10607000"/>
+        <display value="Eye drops, powder and solvent for suspension"/>
+      </concept>
+      <concept>
+        <code value="10608000"/>
+        <display value="Eye drops, solvent for reconstitution"/>
+      </concept>
+      <concept>
+        <code value="10609000"/>
+        <display value="Eye drops, prolonged-release"/>
+      </concept>
+      <concept>
+        <code value="10610000"/>
+        <display value="Eye lotion"/>
+      </concept>
+      <concept>
+        <code value="10611000"/>
+        <display value="Eye lotion, solvent for reconstitution"/>
+      </concept>
+      <concept>
+        <code value="10612000"/>
+        <display value="Ophthalmic insert"/>
+      </concept>
+      <concept>
+        <code value="10613000"/>
+        <display value="Ophthalmic strip"/>
+      </concept>
+      <concept>
+        <code value="10701000"/>
+        <display value="Ear cream"/>
+      </concept>
+      <concept>
+        <code value="10702000"/>
+        <display value="Ear gel"/>
+      </concept>
+      <concept>
+        <code value="10703000"/>
+        <display value="Ear ointment"/>
+      </concept>
+      <concept>
+        <code value="10704000"/>
+        <display value="Ear drops, solution"/>
+      </concept>
+      <concept>
+        <code value="10705000"/>
+        <display value="Ear drops, suspension"/>
+      </concept>
+      <concept>
+        <code value="10706000"/>
+        <display value="Ear drops, emulsion"/>
+      </concept>
+      <concept>
+        <code value="10707000"/>
+        <display value="Ear drops, powder and solvent for suspension"/>
+      </concept>
+      <concept>
+        <code value="10708000"/>
+        <display value="Ear powder"/>
+      </concept>
+      <concept>
+        <code value="10709000"/>
+        <display value="Ear spray, solution"/>
+      </concept>
+      <concept>
+        <code value="10710000"/>
+        <display value="Ear spray, suspension"/>
+      </concept>
+      <concept>
+        <code value="10711000"/>
+        <display value="Ear spray, emulsion"/>
+      </concept>
+      <concept>
+        <code value="10712000"/>
+        <display value="Ear wash, solution"/>
+      </concept>
+      <concept>
+        <code value="10713000"/>
+        <display value="Ear wash, emulsion"/>
+      </concept>
+      <concept>
+        <code value="10714000"/>
+        <display value="Ear tampon"/>
+      </concept>
+      <concept>
+        <code value="10715000"/>
+        <display value="Ear stick"/>
+      </concept>
+      <concept>
+        <code value="10801000"/>
+        <display value="Nasal cream"/>
+      </concept>
+      <concept>
+        <code value="10802000"/>
+        <display value="Nasal gel"/>
+      </concept>
+      <concept>
+        <code value="10803000"/>
+        <display value="Nasal ointment"/>
+      </concept>
+      <concept>
+        <code value="10804000"/>
+        <display value="Nasal drops, solution"/>
+      </concept>
+      <concept>
+        <code value="10805000"/>
+        <display value="Nasal drops, suspension"/>
+      </concept>
+      <concept>
+        <code value="10806000"/>
+        <display value="Nasal drops, emulsion"/>
+      </concept>
+      <concept>
+        <code value="10807000"/>
+        <display value="Nasal powder"/>
+      </concept>
+      <concept>
+        <code value="10808000"/>
+        <display value="Nasal spray, solution"/>
+      </concept>
+      <concept>
+        <code value="10809000"/>
+        <display value="Nasal spray, suspension"/>
+      </concept>
+      <concept>
+        <code value="10810000"/>
+        <display value="Nasal spray, emulsion"/>
+      </concept>
+      <concept>
+        <code value="10811000"/>
+        <display value="Nasal wash"/>
+      </concept>
+      <concept>
+        <code value="10812000"/>
+        <display value="Nasal stick"/>
+      </concept>
+      <concept>
+        <code value="10900500"/>
+        <display value="Intravaginal ring"/>
+      </concept>
+      <concept>
+        <code value="10901000"/>
+        <display value="Vaginal cream"/>
+      </concept>
+      <concept>
+        <code value="10902000"/>
+        <display value="Vaginal gel"/>
+      </concept>
+      <concept>
+        <code value="10903000"/>
+        <display value="Vaginal ointment"/>
+      </concept>
+      <concept>
+        <code value="10904000"/>
+        <display value="Vaginal foam"/>
+      </concept>
+      <concept>
+        <code value="10905000"/>
+        <display value="Vaginal solution"/>
+      </concept>
+      <concept>
+        <code value="10906000"/>
+        <display value="Vaginal suspension"/>
+      </concept>
+      <concept>
+        <code value="10907000"/>
+        <display value="Vaginal emulsion"/>
+      </concept>
+      <concept>
+        <code value="10908000"/>
+        <display value="Tablet for vaginal solution"/>
+      </concept>
+      <concept>
+        <code value="10909000"/>
+        <display value="Pessary"/>
+      </concept>
+      <concept>
+        <code value="10910000"/>
+        <display value="Vaginal capsule, hard"/>
+      </concept>
+      <concept>
+        <code value="10911000"/>
+        <display value="Vaginal capsule, soft"/>
+      </concept>
+      <concept>
+        <code value="10912000"/>
+        <display value="Vaginal tablet"/>
+      </concept>
+      <concept>
+        <code value="10913000"/>
+        <display value="Effervescent vaginal tablet"/>
+      </concept>
+      <concept>
+        <code value="10914000"/>
+        <display value="Medicated vaginal tampon"/>
+      </concept>
+      <concept>
+        <code value="10915000"/>
+        <display value="Vaginal delivery system"/>
+      </concept>
+      <concept>
+        <code value="10916000"/>
+        <display value="Vaginal sponge"/>
+      </concept>
+      <concept>
+        <code value="11001000"/>
+        <display value="Rectal cream"/>
+      </concept>
+      <concept>
+        <code value="11002000"/>
+        <display value="Rectal gel"/>
+      </concept>
+      <concept>
+        <code value="11003000"/>
+        <display value="Rectal ointment"/>
+      </concept>
+      <concept>
+        <code value="11004000"/>
+        <display value="Rectal foam"/>
+      </concept>
+      <concept>
+        <code value="11005000"/>
+        <display value="Rectal solution"/>
+      </concept>
+      <concept>
+        <code value="11006000"/>
+        <display value="Rectal suspension"/>
+      </concept>
+      <concept>
+        <code value="11007000"/>
+        <display value="Rectal emulsion"/>
+      </concept>
+      <concept>
+        <code value="11008000"/>
+        <display value="Concentrate for rectal solution"/>
+      </concept>
+      <concept>
+        <code value="11009000"/>
+        <display value="Powder for rectal solution"/>
+      </concept>
+      <concept>
+        <code value="11010"/>
+        <display value="Oral drops"/>
+      </concept>
+      <concept>
+        <code value="11010000"/>
+        <display value="Powder for rectal suspension"/>
+      </concept>
+      <concept>
+        <code value="11011000"/>
+        <display value="Tablet for rectal solution"/>
+      </concept>
+      <concept>
+        <code value="11012000"/>
+        <display value="Tablet for rectal suspension"/>
+      </concept>
+      <concept>
+        <code value="11013000"/>
+        <display value="Suppository"/>
+      </concept>
+      <concept>
+        <code value="11014000"/>
+        <display value="Rectal capsule"/>
+      </concept>
+      <concept>
+        <code value="11015000"/>
+        <display value="Rectal tampon"/>
+      </concept>
+      <concept>
+        <code value="11050"/>
+        <display value="Oral liquid"/>
+      </concept>
+      <concept>
+        <code value="11101000"/>
+        <display value="Nebuliser solution"/>
+      </concept>
+      <concept>
+        <code value="11102000"/>
+        <display value="Nebuliser suspension"/>
+      </concept>
+      <concept>
+        <code value="11103000"/>
+        <display value="Powder for nebuliser suspension"/>
+      </concept>
+      <concept>
+        <code value="11104000"/>
+        <display value="Powder for nebuliser solution"/>
+      </concept>
+      <concept>
+        <code value="11105000"/>
+        <display value="Nebuliser emulsion"/>
+      </concept>
+      <concept>
+        <code value="11106000"/>
+        <display value="Pressurised inhalation, solution"/>
+      </concept>
+      <concept>
+        <code value="11107000"/>
+        <display value="Pressurised inhalation, suspension"/>
+      </concept>
+      <concept>
+        <code value="11108000"/>
+        <display value="Pressurised inhalation, emulsion"/>
+      </concept>
+      <concept>
+        <code value="11109000"/>
+        <display value="Inhalation powder"/>
+      </concept>
+      <concept>
+        <code value="11110000"/>
+        <display value="Inhalation powder, hard capsule"/>
+      </concept>
+      <concept>
+        <code value="11111000"/>
+        <display value="Inhalation powder, pre-dispensed"/>
+      </concept>
+      <concept>
+        <code value="11112000"/>
+        <display value="Inhalation vapour, powder"/>
+      </concept>
+      <concept>
+        <code value="11113000"/>
+        <display value="Inhalation vapour, capsule"/>
+      </concept>
+      <concept>
+        <code value="11114000"/>
+        <display value="Inhalation vapour, solution"/>
+      </concept>
+      <concept>
+        <code value="11115000"/>
+        <display value="Inhalation vapour, tablet"/>
+      </concept>
+      <concept>
+        <code value="11116000"/>
+        <display value="Inhalation vapour, ointment"/>
+      </concept>
+      <concept>
+        <code value="11117000"/>
+        <display value="Inhalation vapour, liquid"/>
+      </concept>
+      <concept>
+        <code value="11118000"/>
+        <display value="Inhalation gas"/>
+      </concept>
+      <concept>
+        <code value="11201000"/>
+        <display value="Solution for injection"/>
+      </concept>
+      <concept>
+        <code value="11202000"/>
+        <display value="Suspension for injection"/>
+      </concept>
+      <concept>
+        <code value="11203000"/>
+        <display value="Emulsion for injection"/>
+      </concept>
+      <concept>
+        <code value="11204000"/>
+        <display value="Gel for injection"/>
+      </concept>
+      <concept>
+        <code value="11205000"/>
+        <display value="Powder for solution for injection"/>
+      </concept>
+      <concept>
+        <code value="11206000"/>
+        <display value="Powder for suspension for injection"/>
+      </concept>
+      <concept>
+        <code value="11207000"/>
+        <display value="Powder and solvent for solution for injection"/>
+      </concept>
+      <concept>
+        <code value="11208000"/>
+        <display value="Powder and solvent for suspension for injection"/>
+      </concept>
+      <concept>
+        <code value="11209000"/>
+        <display value="Concentrate for solution for injection"/>
+      </concept>
+      <concept>
+        <code value="11210000"/>
+        <display value="Solution for infusion"/>
+      </concept>
+      <concept>
+        <code value="11210500"/>
+        <display value="Solution for infusion in administration system"/>
+      </concept>
+      <concept>
+        <code value="11211000"/>
+        <display value="Emulsion for infusion"/>
+      </concept>
+      <concept>
+        <code value="11212000"/>
+        <display value="Powder for solution for infusion"/>
+      </concept>
+      <concept>
+        <code value="11213000"/>
+        <display value="Concentrate for solution for infusion"/>
+      </concept>
+      <concept>
+        <code value="11214000"/>
+        <display value="Powder and solvent for solution for infusion"/>
+      </concept>
+      <concept>
+        <code value="11214500"/>
+        <display value="Lyophilisate and solvent for solution for injection"/>
+      </concept>
+      <concept>
+        <code value="11215000"/>
+        <display value="Lyophilisate for solution for infusion"/>
+      </concept>
+      <concept>
+        <code value="11216000"/>
+        <display value="Solvent for parenteral use"/>
+      </concept>
+      <concept>
+        <code value="11217000"/>
+        <display value="Lyophilisate for solution for injection"/>
+      </concept>
+      <concept>
+        <code value="11218000"/>
+        <display value="Lyophilisate for suspension for injection"/>
+      </concept>
+      <concept>
+        <code value="11301000"/>
+        <display value="Implant"/>
+      </concept>
+      <concept>
+        <code value="11302000"/>
+        <display value="Implantation tablet"/>
+      </concept>
+      <concept>
+        <code value="11303000"/>
+        <display value="Implantation chain"/>
+      </concept>
+      <concept>
+        <code value="11303500"/>
+        <display value="Implantation suspension"/>
+      </concept>
+      <concept>
+        <code value="11304000"/>
+        <display value="Powder and solvent for implantation paste"/>
+      </concept>
+      <concept>
+        <code value="11401000"/>
+        <display value="Solution for peritoneal dialysis"/>
+      </concept>
+      <concept>
+        <code value="11402000"/>
+        <display value="Solution for haemofiltration"/>
+      </concept>
+      <concept>
+        <code value="11403000"/>
+        <display value="Solution for haemodiafiltration"/>
+      </concept>
+      <concept>
+        <code value="11404000"/>
+        <display value="Solution for haemodialysis"/>
+      </concept>
+      <concept>
+        <code value="11405000"/>
+        <display value="Concentrate for haemodialysis solution"/>
+      </concept>
+      <concept>
+        <code value="11501000"/>
+        <display value="Solution for intravesical use"/>
+      </concept>
+      <concept>
+        <code value="11502000"/>
+        <display value="Bladder irrigation"/>
+      </concept>
+      <concept>
+        <code value="11503000"/>
+        <display value="Powder for bladder irrigation"/>
+      </concept>
+      <concept>
+        <code value="11504000"/>
+        <display value="Urethral gel"/>
+      </concept>
+      <concept>
+        <code value="11505000"/>
+        <display value="Urethral stick"/>
+      </concept>
+      <concept>
+        <code value="11601000"/>
+        <display value="Endotracheopulmonary instillation, solution"/>
+      </concept>
+      <concept>
+        <code value="11602000"/>
+        <display value="Endotracheopulmonary instillation, powder for solution"/>
+      </concept>
+      <concept>
+        <code value="11603000"/>
+        <display value="Endotracheopulmonary instillation, suspension"/>
+      </concept>
+      <concept>
+        <code value="11604000"/>
+        <display value="Endotracheopulmonary instillation, powder and solvent for solution"/>
+      </concept>
+      <concept>
+        <code value="11701000"/>
+        <display value="Endocervical gel"/>
+      </concept>
+      <concept>
+        <code value="11702000"/>
+        <display value="Powder and solvent for endocervical gel"/>
+      </concept>
+      <concept>
+        <code value="11901000"/>
+        <display value="Intrauterine delivery system"/>
+      </concept>
+      <concept>
+        <code value="11902000"/>
+        <display value="Intrauterine solution"/>
+      </concept>
+      <concept>
+        <code value="11903000"/>
+        <display value="Intrauterine suspension"/>
+      </concept>
+      <concept>
+        <code value="11904000"/>
+        <display value="Intrauterine emulsion"/>
+      </concept>
+      <concept>
+        <code value="11905000"/>
+        <display value="Intrauterine tablet"/>
+      </concept>
+      <concept>
+        <code value="11906000"/>
+        <display value="Intrauterine capsule"/>
+      </concept>
+      <concept>
+        <code value="12004000"/>
+        <display value="Nebulisation solution"/>
+      </concept>
+      <concept>
+        <code value="12100"/>
+        <display value="Capsule"/>
+      </concept>
+      <concept>
+        <code value="12100500"/>
+        <display value="Absorbable coated sponge"/>
+      </concept>
+      <concept>
+        <code value="12101000"/>
+        <display value="Denture lacquer"/>
+      </concept>
+      <concept>
+        <code value="12102000"/>
+        <display value="Anticoagulant and preservative solution for blood"/>
+      </concept>
+      <concept>
+        <code value="12103000"/>
+        <display value="Solution for blood fraction modification"/>
+      </concept>
+      <concept>
+        <code value="12104000"/>
+        <display value="Wound stick"/>
+      </concept>
+      <concept>
+        <code value="12105000"/>
+        <display value="Radiopharmaceutical precursor"/>
+      </concept>
+      <concept>
+        <code value="12106000"/>
+        <display value="Radionuclide generator"/>
+      </concept>
+      <concept>
+        <code value="12107000"/>
+        <display value="Kit for radiopharmaceutical preparation"/>
+      </concept>
+      <concept>
+        <code value="12108000"/>
+        <display value="Gastroenteral solution"/>
+      </concept>
+      <concept>
+        <code value="12109000"/>
+        <display value="Dispersion"/>
+      </concept>
+      <concept>
+        <code value="12109500"/>
+        <display value="Fibrin sealant-powder and solvent for fibrin sealant"/>
+      </concept>
+      <concept>
+        <code value="12110000"/>
+        <display value="Gastroenteral suspension"/>
+      </concept>
+      <concept>
+        <code value="12111000"/>
+        <display value="Gastroenteral emulsion"/>
+      </concept>
+      <concept>
+        <code value="12112000"/>
+        <display value="Solution for organ preservation"/>
+      </concept>
+      <concept>
+        <code value="12113000"/>
+        <display value="Irrigation solution"/>
+      </concept>
+      <concept>
+        <code value="12114000"/>
+        <display value="Stomach irrigation"/>
+      </concept>
+      <concept>
+        <code value="12115000"/>
+        <display value="Sealant"/>
+      </concept>
+      <concept>
+        <code value="12115500"/>
+        <display value="Solution of perfusion of organs"/>
+      </concept>
+      <concept>
+        <code value="12116000"/>
+        <display value="Powder and solvent for sealant"/>
+      </concept>
+      <concept>
+        <code value="12117000"/>
+        <display value="Impregnated pad"/>
+      </concept>
+      <concept>
+        <code value="12118000"/>
+        <display value="Living tissue equivalent"/>
+      </concept>
+      <concept>
+        <code value="12119000"/>
+        <display value="Medicated sponge"/>
+      </concept>
+      <concept>
+        <code value="12120"/>
+        <display value="Gastro-resistant capsule"/>
+      </concept>
+      <concept>
+        <code value="12120000"/>
+        <display value="Intestinal gel"/>
+      </concept>
+      <concept>
+        <code value="12130000"/>
+        <display value="Medicated thread"/>
+      </concept>
+      <concept>
+        <code value="12131000"/>
+        <display value="Solution for provocation test"/>
+      </concept>
+      <concept>
+        <code value="12150"/>
+        <display value="Prolonged-release capsule"/>
+      </concept>
+      <concept>
+        <code value="12200"/>
+        <display value="Tablet"/>
+      </concept>
+      <concept>
+        <code value="12301000"/>
+        <display value="Medicinal gas, compressed"/>
+      </concept>
+      <concept>
+        <code value="12302000"/>
+        <display value="Medicinal gas, cryogenic"/>
+      </concept>
+      <concept>
+        <code value="12303000"/>
+        <display value="Medicinal gas, liquefied"/>
+      </concept>
+      <concept>
+        <code value="13050"/>
+        <display value="Oromucosal liquid"/>
+      </concept>
+      <concept>
+        <code value="13220"/>
+        <display value="Lozenge"/>
+      </concept>
+      <concept>
+        <code value="14050"/>
+        <display value="Dental liquid"/>
+      </concept>
+      <concept>
+        <code value="15090"/>
+        <display value="Cutaneous spray"/>
+      </concept>
+      <concept>
+        <code value="15130"/>
+        <display value="Cutaneous liquid"/>
+      </concept>
+      <concept>
+        <code value="16040"/>
+        <display value="Eye drops"/>
+      </concept>
+      <concept>
+        <code value="17040"/>
+        <display value="Ear drops"/>
+      </concept>
+      <concept>
+        <code value="17090"/>
+        <display value="Ear spray"/>
+      </concept>
+      <concept>
+        <code value="17120"/>
+        <display value="Ear wash"/>
+      </concept>
+      <concept>
+        <code value="18040"/>
+        <display value="Nasal drops"/>
+      </concept>
+      <concept>
+        <code value="18080"/>
+        <display value="Nasal spray"/>
+      </concept>
+      <concept>
+        <code value="19050"/>
+        <display value="Vaginal liquid"/>
+      </concept>
+      <concept>
+        <code value="19100"/>
+        <display value="Vaginal capsule"/>
+      </concept>
+      <concept>
+        <code value="20050"/>
+        <display value="Enema"/>
+      </concept>
+      <concept>
+        <code value="21010"/>
+        <display value="Nebuliser liquid"/>
+      </concept>
+      <concept>
+        <code value="21060"/>
+        <display value="Pressurised inhalation"/>
+      </concept>
+      <concept>
+        <code value="21100"/>
+        <display value="Inhalation powder"/>
+      </concept>
+      <concept>
+        <code value="21140"/>
+        <display value="Inhalation vapour"/>
+      </concept>
+      <concept>
+        <code value="22010"/>
+        <display value="Injection"/>
+      </concept>
+      <concept>
+        <code value="22050"/>
+        <display value="Powder for injection"/>
+      </concept>
+      <concept>
+        <code value="22090"/>
+        <display value="Sterile concentrate"/>
+      </concept>
+      <concept>
+        <code value="22100"/>
+        <display value="Infusion"/>
+      </concept>
+      <concept>
+        <code value="22120"/>
+        <display value="Powder for infusion"/>
+      </concept>
+      <concept>
+        <code value="26010"/>
+        <display value="Endotracheopulmonary instillation"/>
+      </concept>
+      <concept>
+        <code value="29020"/>
+        <display value="Intrauterine liquid"/>
+      </concept>
+      <concept>
+        <code value="30047500"/>
+        <display value="Pouch"/>
+      </concept>
+      <concept>
+        <code value="31030"/>
+        <display value="Blood fraction modifier"/>
+      </concept>
+      <concept>
+        <code value="31080"/>
+        <display value="Gastroenteral liquid"/>
+      </concept>
+      <concept>
+        <code value="50001000"/>
+        <display value="Chewable/dispersible tablet"/>
+      </concept>
+      <concept>
+        <code value="50001250"/>
+        <display value="Coated granules in sachet"/>
+      </concept>
+      <concept>
+        <code value="50001500"/>
+        <display value="Concentrate and diluent for solution for infusion"/>
+      </concept>
+      <concept>
+        <code value="50002000"/>
+        <display value="Concentrate and solvent for concentrate for solution for infusion"/>
+      </concept>
+      <concept>
+        <code value="50003000"/>
+        <display value="Concentrate and solvent for cutaneous solution"/>
+      </concept>
+      <concept>
+        <code value="50004000"/>
+        <display value="Concentrate and solvent for cutaneous use"/>
+      </concept>
+      <concept>
+        <code value="50005000"/>
+        <display value="Concentrate and solvent for injection"/>
+      </concept>
+      <concept>
+        <code value="50006000"/>
+        <display value="Concentrate and solvent for solution for infusion"/>
+      </concept>
+      <concept>
+        <code value="50007000"/>
+        <display value="Concentrate and solvent for solution for injection"/>
+      </concept>
+      <concept>
+        <code value="50008000"/>
+        <display value="Concentrate and solvent for suspension for injection"/>
+      </concept>
+      <concept>
+        <code value="50009000"/>
+        <display value="Concentrate for cutaneous spray, emulsion"/>
+      </concept>
+      <concept>
+        <code value="50009300"/>
+        <display value="Concentrate for dispersion for infusion"/>
+      </concept>
+      <concept>
+        <code value="50009500"/>
+        <display value="Concentrate for emulsion for infusion"/>
+      </concept>
+      <concept>
+        <code value="50010000"/>
+        <display value="Concentrate for oral solution"/>
+      </concept>
+      <concept>
+        <code value="50011000"/>
+        <display value="Concentrate for oral/rectal solution"/>
+      </concept>
+      <concept>
+        <code value="50012000"/>
+        <display value="Concentrate for peritoneal dialysis solution"/>
+      </concept>
+      <concept>
+        <code value="50013000"/>
+        <display value="Concentrate for solution for intravesical use"/>
+      </concept>
+      <concept>
+        <code value="50013500"/>
+        <display value="Concentrate for spray emulsion"/>
+      </concept>
+      <concept>
+        <code value="50014000"/>
+        <display value="Concentrate for suspension for infusion"/>
+      </concept>
+      <concept>
+        <code value="50015000"/>
+        <display value="Cutaneous and nasal ointment"/>
+      </concept>
+      <concept>
+        <code value="50015300"/>
+        <display value="Cutaneous/oromucosal/oral solution"/>
+      </concept>
+      <concept>
+        <code value="50015400"/>
+        <display value="Cutaneous/oromucosal spray"/>
+      </concept>
+      <concept>
+        <code value="50015500"/>
+        <display value="Cutaneous spray, emulsion"/>
+      </concept>
+      <concept>
+        <code value="50016000"/>
+        <display value="Cutaneous spray, ointment"/>
+      </concept>
+      <concept>
+        <code value="50017000"/>
+        <display value="Dental paste"/>
+      </concept>
+      <concept>
+        <code value="50018000"/>
+        <display value="Ear/eye drops, solution"/>
+      </concept>
+      <concept>
+        <code value="50019000"/>
+        <display value="Ear/eye oinment"/>
+      </concept>
+      <concept>
+        <code value="50020000"/>
+        <display value="Ear/eye/nose drops, solution"/>
+      </concept>
+      <concept>
+        <code value="50020500"/>
+        <display value="Effervescent buccal tablet"/>
+      </concept>
+      <concept>
+        <code value="50021000"/>
+        <display value="Emulsion for injection/infusion"/>
+      </concept>
+      <concept>
+        <code value="50021500"/>
+        <display value="Emulsion and suspension for emulsion for injection"/>
+      </concept>
+      <concept>
+        <code value="50022000"/>
+        <display value="Endosinusial wash, suspension"/>
+      </concept>
+      <concept>
+        <code value="50023000"/>
+        <display value="Eye drops, solution in single-dose container"/>
+      </concept>
+      <concept>
+        <code value="50023500"/>
+        <display value="Film coated gastro-resistant tablet"/>
+      </concept>
+      <concept>
+        <code value="50024000"/>
+        <display value="Gargle/mouthwash"/>
+      </concept>
+      <concept>
+        <code value="50025000"/>
+        <display value="Gastro-resistant coated tablet"/>
+      </concept>
+      <concept>
+        <code value="50026000"/>
+        <display value="Gastro-resistant granules for oral suspension"/>
+      </concept>
+      <concept>
+        <code value="50026250"/>
+        <display value="Gastro-resistant prolonged-release tablet"/>
+      </concept>
+      <concept>
+        <code value="50026500"/>
+        <display value="Granules and solvent for oral suspension"/>
+      </concept>
+      <concept>
+        <code value="50027000"/>
+        <display value="Granules and solvent for suspension for injection"/>
+      </concept>
+      <concept>
+        <code value="50028000"/>
+        <display value="Granules for oral and rectal suspension"/>
+      </concept>
+      <concept>
+        <code value="50029000"/>
+        <display value="Granules for oral drops, solution"/>
+      </concept>
+      <concept>
+        <code value="50029250"/>
+        <display value="Granules for use in drinking water"/>
+      </concept>
+      <concept>
+        <code value="50029500"/>
+        <display value="Granules for vaginal solution"/>
+      </concept>
+      <concept>
+        <code value="50029600"/>
+        <display value="Hard capsule with gastro-resistant pellets"/>
+      </concept>
+      <concept>
+        <code value="50029700"/>
+        <display value="Herbal tea in bag"/>
+      </concept>
+      <concept>
+        <code value="50030000"/>
+        <display value="Inhalation powder, tablet"/>
+      </concept>
+      <concept>
+        <code value="50031000"/>
+        <display value="Inhalation vapour, effervescent tablet"/>
+      </concept>
+      <concept>
+        <code value="50032000"/>
+        <display value="Inhalation vapour, emulsion"/>
+      </concept>
+      <concept>
+        <code value="50033000"/>
+        <display value="Inhalation vapour, impregnated pad"/>
+      </concept>
+      <concept>
+        <code value="50033300"/>
+        <display value="Intrauterine foam"/>
+      </concept>
+      <concept>
+        <code value="50033500"/>
+        <display value="Intravitreal implant in applicator"/>
+      </concept>
+      <concept>
+        <code value="50034000"/>
+        <display value="Liquefied gas for dental use"/>
+      </concept>
+      <concept>
+        <code value="50035000"/>
+        <display value="Modified-release film-coated tablet"/>
+      </concept>
+      <concept>
+        <code value="50036000"/>
+        <display value="Modified-release granules for oral suspension"/>
+      </concept>
+      <concept>
+        <code value="50036100"/>
+        <display value="Muco-adhesive buccal prolonged-release tablet"/>
+      </concept>
+      <concept>
+        <code value="50036500"/>
+        <display value="Nasal/oromucosal solution"/>
+      </concept>
+      <concept>
+        <code value="50037000"/>
+        <display value="Nasal spray and oromucosal solution"/>
+      </concept>
+      <concept>
+        <code value="50037250"/>
+        <display value="Nasal spray, solution in single-dose container"/>
+      </concept>
+      <concept>
+        <code value="50037750"/>
+        <display value="Oral drops, liquid"/>
+      </concept>
+      <concept>
+        <code value="50038000"/>
+        <display value="Oral/rectal suspension"/>
+      </concept>
+      <concept>
+        <code value="50038500"/>
+        <display value="Oral solution/concentrate for nebuliser solution"/>
+      </concept>
+      <concept>
+        <code value="50039000"/>
+        <display value="Oromucosal patch"/>
+      </concept>
+      <concept>
+        <code value="50039300"/>
+        <display value="Oromucosal powder in pouch"/>
+      </concept>
+      <concept>
+        <code value="50039500"/>
+        <display value="Oromucosal/laryngopharyngeal solution"/>
+      </concept>
+      <concept>
+        <code value="50040000"/>
+        <display value="Oromucosal/laryngopharyngeal solution/spray"/>
+      </concept>
+      <concept>
+        <code value="50041000"/>
+        <display value="Pillules in single-dose container"/>
+      </concept>
+      <concept>
+        <code value="50041500"/>
+        <display value="Powder and solution for solution for injection"/>
+      </concept>
+      <concept>
+        <code value="50042000"/>
+        <display value="Powder and solvent for concentrate for solution for infusion"/>
+      </concept>
+      <concept>
+        <code value="50043000"/>
+        <display value="Powder for concentrate for solution for infusion"/>
+      </concept>
+      <concept>
+        <code value="50044000"/>
+        <display value="Powder and solvent for cutaneous solution"/>
+      </concept>
+      <concept>
+        <code value="50044500"/>
+        <display value="Powder and solvent for dispersion for injection"/>
+      </concept>
+      <concept>
+        <code value="50045000"/>
+        <display value="Powder and solvent for endosinusial solution"/>
+      </concept>
+      <concept>
+        <code value="50045500"/>
+        <display value="Powder and solvent for epilesional solution"/>
+      </concept>
+      <concept>
+        <code value="50046000"/>
+        <display value="Powder and solvent for gingival gel"/>
+      </concept>
+      <concept>
+        <code value="50047000"/>
+        <display value="Powder and solvent for instillation solution for intraocular use"/>
+      </concept>
+      <concept>
+        <code value="50047500"/>
+        <display value="Powder and solvent for intravesical solution"/>
+      </concept>
+      <concept>
+        <code value="50047700"/>
+        <display value="Powder and solvent for nebuliser solution"/>
+      </concept>
+      <concept>
+        <code value="50048000"/>
+        <display value="Powder and solvent for prolonged-release suspension for injection"/>
+      </concept>
+      <concept>
+        <code value="50048250"/>
+        <display value="Powder and solvent for solution for injection in pre-filled syringe"/>
+      </concept>
+      <concept>
+        <code value="50048300"/>
+        <display value="Powder and solvent for suspension for injection in pre-filled syringe"/>
+      </concept>
+      <concept>
+        <code value="50048500"/>
+        <display value="Powder and suspension for suspension for injection"/>
+      </concept>
+      <concept>
+        <code value="50048600"/>
+        <display value="Powder, dispersion and solvent for concentrate for dispersion for injection"/>
+      </concept>
+      <concept>
+        <code value="50048750"/>
+        <display value="Powder for concentrate for dispersion for infusion"/>
+      </concept>
+      <concept>
+        <code value="50049000"/>
+        <display value="Powder for concentrate for haemodialysis solution,"/>
+      </concept>
+      <concept>
+        <code value="50049100"/>
+        <display value="Powder for concentrate for intravesical suspension"/>
+      </concept>
+      <concept>
+        <code value="50049250"/>
+        <display value="Powder for concentrate for solution for injection/infusion"/>
+      </concept>
+      <concept>
+        <code value="50049270"/>
+        <display value="Powder for dental solution"/>
+      </concept>
+      <concept>
+        <code value="50049300"/>
+        <display value="Powder for epilesional solution"/>
+      </concept>
+      <concept>
+        <code value="50049500"/>
+        <display value="Powder for implantation suspension"/>
+      </concept>
+      <concept>
+        <code value="50050000"/>
+        <display value="Powder for intravesical solution"/>
+      </concept>
+      <concept>
+        <code value="50051000"/>
+        <display value="Powder for intravesical suspension"/>
+      </concept>
+      <concept>
+        <code value="50051100"/>
+        <display value="Powder for mouth wash"/>
+      </concept>
+      <concept>
+        <code value="50052000"/>
+        <display value="Powder for oral/rectal suspension"/>
+      </concept>
+      <concept>
+        <code value="50053000"/>
+        <display value="Powder for solution for injection or infusion"/>
+      </concept>
+      <concept>
+        <code value="50053500"/>
+        <display value="Powder for solution for injection/infusion"/>
+      </concept>
+      <concept>
+        <code value="50054000"/>
+        <display value="Powder for solution for intravesical use"/>
+      </concept>
+      <concept>
+        <code value="50055000"/>
+        <display value="Powder for solution for nasal spray"/>
+      </concept>
+      <concept>
+        <code value="50055500"/>
+        <display value="Prolonged-release film-coated tablet"/>
+      </concept>
+      <concept>
+        <code value="50056000"/>
+        <display value="Prolonged-release granules for oral suspension"/>
+      </concept>
+      <concept>
+        <code value="50056500"/>
+        <display value="Radiopharmaceutical precursor, solution"/>
+      </concept>
+      <concept>
+        <code value="50057000"/>
+        <display value="Solution for haemodialysis/haemofiltration"/>
+      </concept>
+      <concept>
+        <code value="50058000"/>
+        <display value="Solution for infusion and oral solution"/>
+      </concept>
+      <concept>
+        <code value="50059000"/>
+        <display value="Solution for injection/concentrate for solution for infusion"/>
+      </concept>
+      <concept>
+        <code value="50060000"/>
+        <display value="Solution for injection/infusion"/>
+      </concept>
+      <concept>
+        <code value="50060100"/>
+        <display value="Solution for injection in cartridge"/>
+      </concept>
+      <concept>
+        <code value="50060200"/>
+        <display value="Solution for injection in pre-filled pen"/>
+      </concept>
+      <concept>
+        <code value="50060300"/>
+        <display value="Solution for injection in pre-filled syringe"/>
+      </concept>
+      <concept>
+        <code value="50060400"/>
+        <display value="Solution for injection in pre-filled syringe with automatic needle guard"/>
+      </concept>
+      <concept>
+        <code value="50060500"/>
+        <display value="Solution for injection/infusion in pre-filled syringe"/>
+      </concept>
+      <concept>
+        <code value="50061000"/>
+        <display value="Solution for intraperitoneal use"/>
+      </concept>
+      <concept>
+        <code value="50061300"/>
+        <display value="Solution for use in drinking water"/>
+      </concept>
+      <concept>
+        <code value="50061500"/>
+        <display value="Solution for sealant"/>
+      </concept>
+      <concept>
+        <code value="50061600"/>
+        <display value="Solvent for nasal use"/>
+      </concept>
+      <concept>
+        <code value="50062000"/>
+        <display value="Suspension and effervescent granules for oral suspension"/>
+      </concept>
+      <concept>
+        <code value="50062500"/>
+        <display value="Suspension and solution for spray"/>
+      </concept>
+      <concept>
+        <code value="50063000"/>
+        <display value="Suspension for infusion"/>
+      </concept>
+      <concept>
+        <code value="50063100"/>
+        <display value="Suspension for injection in cartridge"/>
+      </concept>
+      <concept>
+        <code value="50063200"/>
+        <display value="Suspension for injection in pre-filled pen"/>
+      </concept>
+      <concept>
+        <code value="50063300"/>
+        <display value="Suspension for injection in pre-filled syringe"/>
+      </concept>
+      <concept>
+        <code value="50063500"/>
+        <display value="Suspension for use in drinking water"/>
+      </concept>
+      <concept>
+        <code value="50064000"/>
+        <display value="Tablet and solvent for rectal suspension"/>
+      </concept>
+      <concept>
+        <code value="50065000"/>
+        <display value="Tablet and powder for oral solution"/>
+      </concept>
+      <concept>
+        <code value="50066000"/>
+        <display value="Tablet for oral suspension"/>
+      </concept>
+      <concept>
+        <code value="50070000"/>
+        <display value="Oral suspension for use in drinking water"/>
+      </concept>
+      <concept>
+        <code value="50071000"/>
+        <display value="Powder and solvent for dental gel"/>
+      </concept>
+      <concept>
+        <code value="50072000"/>
+        <display value="Powder for use in drinking water"/>
+      </concept>
+      <concept>
+        <code value="50073000"/>
+        <display value="Powder for solution for intraocular irrigation"/>
+      </concept>
+      <concept>
+        <code value="50074000"/>
+        <display value="Solvent for solution for intraocular irrigation"/>
+      </concept>
+      <concept>
+        <code value="50076000"/>
+        <display value="Solvent for solution for infusion"/>
+      </concept>
+      <concept>
+        <code value="50077000"/>
+        <display value="Dispersion for injection"/>
+      </concept>
+      <concept>
+        <code value="50078000"/>
+        <display value="Gas and solvent for dispersion for injection/infusion"/>
+      </concept>
+      <concept>
+        <code value="50079000"/>
+        <display value="Concentrate for solution for injection/infusion"/>
+      </concept>
+      <concept>
+        <code value="50080000"/>
+        <display value="Powder and solvent for solution for injection/infusion"/>
+      </concept>
+      <concept>
+        <code value="50081000"/>
+        <display value="Inhalation solution"/>
+      </concept>
+      <concept>
+        <code value="50082000"/>
+        <display value="Oral drops, powder for suspension"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="current-smoking-status-uv-ips"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>IPSCurrentSmokingStatus</h2><div><p>Value Set based on HL7 Vocab TC and Structured Doc consensus (per CDC submission 7/12/2012 for smoking status term)</p>
+</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://details.loinc.org/LOINC/LA18976-3.html">LA18976-3</a></td><td>Current every day smoker</td><td/></tr><tr><td><a href="http://details.loinc.org/LOINC/LA18977-1.html">LA18977-1</a></td><td>Current some day smoker</td><td/></tr><tr><td><a href="http://details.loinc.org/LOINC/LA15920-4.html">LA15920-4</a></td><td>Former smoke</td><td/></tr><tr><td><a href="http://details.loinc.org/LOINC/LA18978-9.html">LA18978-9</a></td><td>Never smoker</td><td/></tr><tr><td><a href="http://details.loinc.org/LOINC/LA18979-7.html">LA18979-7</a></td><td>Smoker, current status unknown</td><td/></tr><tr><td><a href="http://details.loinc.org/LOINC/LA18980-5.html">LA18980-5</a></td><td>Unknown if ever smoked</td><td/></tr><tr><td><a href="http://details.loinc.org/LOINC/LA18981-3.html">LA18981-3</a></td><td>Heavy tobacco smoker</td><td/></tr><tr><td><a href="http://details.loinc.org/LOINC/LA18982-1.html">LA18982-1</a></td><td>Light tobacco smoker</td><td/></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/ips/ValueSet/current-smoking-status-uv-ips"/>
+  <identifier>
+    <use value="official"/>
+    <system value="http://art-decor.org/ns/oids/vs"/>
+    <value value="2.16.840.1.113883.11.22.59"/>
+  </identifier>
+  <version value="1"/>
+  <name value="IPSCurrentSmokingStatus"/>
+  <title value="IPS Current Smoking Status"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2018-03-30T08:02:21+02:00"/>
+  <publisher value="HL7 International"/>
+  <contact>
+    <name value="HL7 International"/>
+    <telecom>
+      <system value="phone"/>
+      <value value="+1 734 677 7777 "/>
+    </telecom>
+    <telecom>
+      <system value="fax"/>
+      <value value="+1 734 677 6622"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.org"/>
+    </telecom>
+  </contact>
+  <description value="Value Set based on HL7 Vocab TC and Structured Doc consensus (per CDC submission 7/12/2012 for smoking status term)"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <immutable value="false"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue">
+          <valueDecimal value="1"/>
+        </extension>
+        <code value="LA18976-3"/>
+        <display value="Current every day smoker"/>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
+        <code value="LA18977-1"/>
+        <display value="Current some day smoker"/>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue">
+          <valueDecimal value="3"/>
+        </extension>
+        <code value="LA15920-4"/>
+        <display value="Former smoke"/>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue">
+          <valueDecimal value="4"/>
+        </extension>
+        <code value="LA18978-9"/>
+        <display value="Never smoker"/>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue">
+          <valueDecimal value="5"/>
+        </extension>
+        <code value="LA18979-7"/>
+        <display value="Smoker, current status unknown"/>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue">
+          <valueDecimal value="6"/>
+        </extension>
+        <code value="LA18980-5"/>
+        <display value="Unknown if ever smoked"/>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue">
+          <valueDecimal value="7"/>
+        </extension>
+        <code value="LA18981-3"/>
+        <display value="Heavy tobacco smoker"/>
+      </concept>
+      <concept>
+        <extension url="http://hl7.org/fhir/StructureDefinition/valueset-ordinalValue">
+          <valueDecimal value="8"/>
+        </extension>
+        <code value="LA18982-1"/>
+        <display value="Light tobacco smoker"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

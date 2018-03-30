@@ -176,36 +176,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Immunization.identifier.type.coding.id","","","",0,1,"","","","string {[]} {[]}
-","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","Note that FHIR strings may not exceed 1MB in size","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.identifier.type.coding.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Immunization.identifier.type.coding.system","","","",0,1,"","","Y","uri {[]} {[]}
-","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","","","","","",,,,,"",,,,"Coding.system",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.identifier.type.coding.version","","","",0,1,"","","Y","string {[]} {[]}
-","Version of the system - if relevant","The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.","Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.identifier.type.coding.code","","","",0,1,"","","Y","code {[]} {[]}
-","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","Note that FHIR strings may not exceed 1MB in size","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.identifier.type.coding.display","","","",0,1,"","","Y","string {[]} {[]}
-","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","Note that FHIR strings may not exceed 1MB in size","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.identifier.type.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
-","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
 "Immunization.identifier.type.text","","","",0,1,"","","Y","string {[]} {[]}
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
@@ -306,36 +276,6 @@ It carries one slice for each of the IDMP identifiers, plus one slice for the AT
 A special slice is defined to carry the absent or unknown property.
 Other representations of the vaccine (such as SNOMED CT, RxNorm, jurisdictional code systems, cross-jursisdiction code systems, or any classification) use extra slices, since the slicing is open. 
 The IDMP slices are provisional, and will be usable when the IDMP identifiers become available.",,"open","CodeableConcept.coding",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.vaccineCode.coding.id","","","",0,1,"","","","string {[]} {[]}
-","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","Note that FHIR strings may not exceed 1MB in size","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.vaccineCode.coding.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Immunization.vaccineCode.coding.system","","","",0,1,"","","Y","uri {[]} {[]}
-","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","","","","","",,,,,"",,,,"Coding.system",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.vaccineCode.coding.version","","","",0,1,"","","Y","string {[]} {[]}
-","Version of the system - if relevant","The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.","Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.vaccineCode.coding.code","","","",0,1,"","","Y","code {[]} {[]}
-","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","Note that FHIR strings may not exceed 1MB in size","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.vaccineCode.coding.display","","","",0,1,"","","Y","string {[]} {[]}
-","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","Note that FHIR strings may not exceed 1MB in size","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.vaccineCode.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
-","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
 "Immunization.vaccineCode.coding","pharmaceuticalProduct-L1","","",0,*,"","","Y","Coding {[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips]]} {[]}
@@ -750,7 +690,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Immunization.vaccineCode.coding.system","","","",1,1,"","","Y","uri {[]} {[]}
-","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://hl7.org/fhir/ips/CodeSystem/absent-unknown""/>","","","","",,,,,"",,,,"Coding.system",0,1,"ele-1
+","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""urn:oid:2.16.840.1.113883.3.1937.777.13.5.999.1""/>","","","","",,,,,"",,,,"Coding.system",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
 "Immunization.vaccineCode.coding.version","","","",0,1,"","","Y","string {[]} {[]}
@@ -876,36 +816,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Immunization.reportOrigin.coding.id","","","",0,1,"","","","string {[]} {[]}
-","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","Note that FHIR strings may not exceed 1MB in size","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.reportOrigin.coding.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Immunization.reportOrigin.coding.system","","","",0,1,"","","Y","uri {[]} {[]}
-","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","","","","","",,,,,"",,,,"Coding.system",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.reportOrigin.coding.version","","","",0,1,"","","Y","string {[]} {[]}
-","Version of the system - if relevant","The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.","Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.reportOrigin.coding.code","","","",0,1,"","","Y","code {[]} {[]}
-","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","Note that FHIR strings may not exceed 1MB in size","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.reportOrigin.coding.display","","","",0,1,"","","Y","string {[]} {[]}
-","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","Note that FHIR strings may not exceed 1MB in size","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.reportOrigin.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
-","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
 "Immunization.reportOrigin.text","","","",0,1,"","","Y","string {[]} {[]}
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
@@ -996,36 +906,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","A reference to a code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.","Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.","","","","","","","",,"preferred","","http://hl7.org/fhir/ips/ValueSet/target-site-uv-ips","",,,,"CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Immunization.site.coding.id","","","",0,1,"","","","string {[]} {[]}
-","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","Note that FHIR strings may not exceed 1MB in size","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.site.coding.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Immunization.site.coding.system","","","",0,1,"","","Y","uri {[]} {[]}
-","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","","","","","",,,,,"",,,,"Coding.system",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.site.coding.version","","","",0,1,"","","Y","string {[]} {[]}
-","Version of the system - if relevant","The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.","Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.site.coding.code","","","",0,1,"","","Y","code {[]} {[]}
-","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","Note that FHIR strings may not exceed 1MB in size","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.site.coding.display","","","",0,1,"","","Y","string {[]} {[]}
-","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","Note that FHIR strings may not exceed 1MB in size","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.site.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
-","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
 "Immunization.site.text","","","",0,1,"","","Y","string {[]} {[]}
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
@@ -1046,36 +926,6 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Immunization.route.coding","","","",0,*,"","","Y","Coding {[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips]]} {[]}
 ","A reference to a code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.","Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.","","","","","","","",,"required","","http://hl7.org/fhir/ips/ValueSet/routeOfAdministration-uv-ips","",,,,"CodeableConcept.coding",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.route.coding.id","","","",0,1,"","","","string {[]} {[]}
-","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","Note that FHIR strings may not exceed 1MB in size","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.route.coding.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Immunization.route.coding.system","","","",0,1,"","","Y","uri {[]} {[]}
-","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","","","","","",,,,,"",,,,"Coding.system",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.route.coding.version","","","",0,1,"","","Y","string {[]} {[]}
-","Version of the system - if relevant","The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.","Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.route.coding.code","","","",0,1,"","","Y","code {[]} {[]}
-","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","Note that FHIR strings may not exceed 1MB in size","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.route.coding.display","","","",0,1,"","","Y","string {[]} {[]}
-","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","Note that FHIR strings may not exceed 1MB in size","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.route.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
-","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
 "Immunization.route.text","","","",0,1,"","","Y","string {[]} {[]}
@@ -1151,36 +1001,6 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Immunization.practitioner.role.coding","","","",0,*,"","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.practitioner.role.coding.id","","","",0,1,"","","","string {[]} {[]}
-","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","Note that FHIR strings may not exceed 1MB in size","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.practitioner.role.coding.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Immunization.practitioner.role.coding.system","","","",0,1,"","","Y","uri {[]} {[]}
-","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","","","","","",,,,,"",,,,"Coding.system",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.practitioner.role.coding.version","","","",0,1,"","","Y","string {[]} {[]}
-","Version of the system - if relevant","The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.","Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.practitioner.role.coding.code","","","",0,1,"","","Y","code {[]} {[]}
-","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","Note that FHIR strings may not exceed 1MB in size","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.practitioner.role.coding.display","","","",0,1,"","","Y","string {[]} {[]}
-","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","Note that FHIR strings may not exceed 1MB in size","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.practitioner.role.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
-","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
 "Immunization.practitioner.role.text","","","",0,1,"","","Y","string {[]} {[]}
@@ -1280,36 +1100,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Immunization.explanation.reason.coding.id","","","",0,1,"","","","string {[]} {[]}
-","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","Note that FHIR strings may not exceed 1MB in size","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.explanation.reason.coding.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Immunization.explanation.reason.coding.system","","","",0,1,"","","Y","uri {[]} {[]}
-","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","","","","","",,,,,"",,,,"Coding.system",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.explanation.reason.coding.version","","","",0,1,"","","Y","string {[]} {[]}
-","Version of the system - if relevant","The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.","Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.explanation.reason.coding.code","","","",0,1,"","","Y","code {[]} {[]}
-","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","Note that FHIR strings may not exceed 1MB in size","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.explanation.reason.coding.display","","","",0,1,"","","Y","string {[]} {[]}
-","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","Note that FHIR strings may not exceed 1MB in size","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.explanation.reason.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
-","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
 "Immunization.explanation.reason.text","","","",0,1,"","","Y","string {[]} {[]}
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
@@ -1330,36 +1120,6 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Immunization.explanation.reasonNotGiven.coding","","","",0,*,"","","Y","Coding {[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips]]} {[]}
 ","A reference to a code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.","Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.explanation.reasonNotGiven.coding.id","","","",0,1,"","","","string {[]} {[]}
-","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","Note that FHIR strings may not exceed 1MB in size","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.explanation.reasonNotGiven.coding.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Immunization.explanation.reasonNotGiven.coding.system","","","",0,1,"","","Y","uri {[]} {[]}
-","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","","","","","",,,,,"",,,,"Coding.system",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.explanation.reasonNotGiven.coding.version","","","",0,1,"","","Y","string {[]} {[]}
-","Version of the system - if relevant","The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.","Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.explanation.reasonNotGiven.coding.code","","","",0,1,"","","Y","code {[]} {[]}
-","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","Note that FHIR strings may not exceed 1MB in size","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.explanation.reasonNotGiven.coding.display","","","",0,1,"","","Y","string {[]} {[]}
-","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","Note that FHIR strings may not exceed 1MB in size","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.explanation.reasonNotGiven.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
-","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
 "Immunization.explanation.reasonNotGiven.text","","","",0,1,"","","Y","string {[]} {[]}
@@ -1506,36 +1266,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Immunization.vaccinationProtocol.targetDisease.coding.id","","","",0,1,"","","","string {[]} {[]}
-","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","Note that FHIR strings may not exceed 1MB in size","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.vaccinationProtocol.targetDisease.coding.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Immunization.vaccinationProtocol.targetDisease.coding.system","","","",0,1,"","","Y","uri {[]} {[]}
-","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","","","","","",,,,,"",,,,"Coding.system",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.vaccinationProtocol.targetDisease.coding.version","","","",0,1,"","","Y","string {[]} {[]}
-","Version of the system - if relevant","The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.","Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.vaccinationProtocol.targetDisease.coding.code","","","",0,1,"","","Y","code {[]} {[]}
-","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","Note that FHIR strings may not exceed 1MB in size","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.vaccinationProtocol.targetDisease.coding.display","","","",0,1,"","","Y","string {[]} {[]}
-","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","Note that FHIR strings may not exceed 1MB in size","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.vaccinationProtocol.targetDisease.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
-","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
 "Immunization.vaccinationProtocol.targetDisease.text","","","",0,1,"","","Y","string {[]} {[]}
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
@@ -1558,36 +1288,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
-"Immunization.vaccinationProtocol.doseStatus.coding.id","","","",0,1,"","","","string {[]} {[]}
-","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","Note that FHIR strings may not exceed 1MB in size","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.vaccinationProtocol.doseStatus.coding.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Immunization.vaccinationProtocol.doseStatus.coding.system","","","",0,1,"","","Y","uri {[]} {[]}
-","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","","","","","",,,,,"",,,,"Coding.system",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.vaccinationProtocol.doseStatus.coding.version","","","",0,1,"","","Y","string {[]} {[]}
-","Version of the system - if relevant","The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.","Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.vaccinationProtocol.doseStatus.coding.code","","","",0,1,"","","Y","code {[]} {[]}
-","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","Note that FHIR strings may not exceed 1MB in size","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.vaccinationProtocol.doseStatus.coding.display","","","",0,1,"","","Y","string {[]} {[]}
-","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","Note that FHIR strings may not exceed 1MB in size","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.vaccinationProtocol.doseStatus.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
-","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
 "Immunization.vaccinationProtocol.doseStatus.text","","","",0,1,"","","Y","string {[]} {[]}
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
@@ -1608,36 +1308,6 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Immunization.vaccinationProtocol.doseStatusReason.coding","","","",0,*,"","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for translations and alternate encodings within a code system.  Also supports communication of the same instance to systems requiring different encodings.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.vaccinationProtocol.doseStatusReason.coding.id","","","",0,1,"","","","string {[]} {[]}
-","xml:id (or equivalent in JSON)","unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","Note that FHIR strings may not exceed 1MB in size","","","","","","","","",,,,,"",,,,"Element.id",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.vaccinationProtocol.doseStatusReason.coding.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional Content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Immunization.vaccinationProtocol.doseStatusReason.coding.system","","","",0,1,"","","Y","uri {[]} {[]}
-","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","","","","","",,,,,"",,,,"Coding.system",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.vaccinationProtocol.doseStatusReason.coding.version","","","",0,1,"","","Y","string {[]} {[]}
-","Version of the system - if relevant","The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.","Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.vaccinationProtocol.doseStatusReason.coding.code","","","",0,1,"","","Y","code {[]} {[]}
-","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","Note that FHIR strings may not exceed 1MB in size","Need to refer to a particular code in the system.","","","","","","","",,,,,"",,,,"Coding.code",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.vaccinationProtocol.doseStatusReason.coding.display","","","",0,1,"","","Y","string {[]} {[]}
-","Representation defined by the system","A representation of the meaning of the code in the system, following the rules of the system.","Note that FHIR strings may not exceed 1MB in size","Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.","","","","","","","",,,,,"",,,,"Coding.display",0,1,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
-"
-"Immunization.vaccinationProtocol.doseStatusReason.coding.userSelected","","","",0,1,"","","Y","boolean {[]} {[]}
-","If this coding was chosen directly by the user","Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).","Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.","This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.","","","","","","","",,,,,"",,,,"Coding.userSelected",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() | (children().count() > id.count())}
 "
 "Immunization.vaccinationProtocol.doseStatusReason.text","","","",0,1,"","","Y","string {[]} {[]}

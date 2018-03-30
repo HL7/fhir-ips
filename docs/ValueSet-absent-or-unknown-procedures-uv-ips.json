@@ -1,0 +1,77 @@
+{
+  "resourceType": "ValueSet",
+  "id": "absent-or-unknown-procedures-uv-ips",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IPSNoProceduresInfos</h2><div><p>Absent or Unknown Procedures</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.3.1937.777.13.5.999.1</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>X-ProceduresNotKnown</td><td>History of procedures not known</td><td/></tr><tr><td>X-HistoryOfProcedures</td><td>No past history of procedure (context-dependent category)</td><td/></tr></table></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/ips/ValueSet/absent-or-unknown-procedures-uv-ips",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://art-decor.org/ns/oids/vs",
+      "value": "2.16.840.1.113883.11.22.36"
+    }
+  ],
+  "version": "1",
+  "name": "IPSNoProceduresInfos",
+  "title": "Absent or Unknown Procedures",
+  "status": "draft",
+  "experimental": false,
+  "date": "2018-03-30T08:02:21+02:00",
+  "publisher": "HL7 International",
+  "contact": [
+    {
+      "name": "HL7 International",
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "+1 734 677 7777 "
+        },
+        {
+          "system": "fax",
+          "value": "+1 734 677 6622"
+        },
+        {
+          "system": "email",
+          "value": "info@hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "Absent or Unknown Procedures",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.3.1937.777.13.5.999.1",
+        "concept": [
+          {
+            "code": "X-ProceduresNotKnown",
+            "display": "History of procedures not known"
+          },
+          {
+            "code": "X-HistoryOfProcedures",
+            "display": "No past history of procedure (context-dependent category)"
+          }
+        ]
+      }
+    ]
+  }
+}

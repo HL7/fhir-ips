@@ -1,0 +1,79 @@
+{
+  "resourceType": "ValueSet",
+  "id": "lab-result-coded-value-uv-ips",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IPSLabResultsCodedValues</h2><div><p>This Value set is defined as the union of: (a) ABO and Rh group [Type] in Blood (2.16.840.1.113883.11.22.51); (b) Presence/Absence Indicators (2.16.840.1.113883.11.22.52) (c) Microorganisms (2.16.840.1.113883.11.22.49)</p>\n</div><p>This value set includes codes from the following code systems:</p><ul><li/><li>Import all the codes that are contained in http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.11.22.52--20170531000000</li><li/><li>Import all the codes that are contained in http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.11.22.49--20170531000000</li><li/><li>Import all the codes that are contained in http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.11.22.51--20170531000000</li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/ips/ValueSet/lab-result-coded-value-uv-ips",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://art-decor.org/ns/oids/vs",
+      "value": "2.16.840.1.113883.11.22.46"
+    }
+  ],
+  "version": "1",
+  "name": "IPSLabResultsCodedValues",
+  "title": "IPS Results Coded Values Laboratory",
+  "status": "draft",
+  "experimental": false,
+  "date": "2018-03-30T08:02:21+02:00",
+  "publisher": "HL7 International",
+  "contact": [
+    {
+      "name": "HL7 International",
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "+1 734 677 7777 "
+        },
+        {
+          "system": "fax",
+          "value": "+1 734 677 6622"
+        },
+        {
+          "system": "email",
+          "value": "info@hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "This Value set is defined as the union of: (a) ABO and Rh group [Type] in Blood (2.16.840.1.113883.11.22.51); (b) Presence/Absence Indicators (2.16.840.1.113883.11.22.52) (c) Microorganisms (2.16.840.1.113883.11.22.49)",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "immutable": false,
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.11.22.52--20170531000000"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.11.22.49--20170531000000"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.11.22.51--20170531000000"
+        ]
+      }
+    ]
+  }
+}

@@ -209,21 +209,6 @@ can only resize using html  or css ;-(
 This is the May 2018 Ballot Version <!-- Current officially released version --> of the International Patient Summary Implementation Guide Implementation Guide, based on <a href="http://hl7.org/fhir/STU3">FHIR Version 3.0.1</a>. See the <a href="#">Directory of published versions <img src="external.png" /></a>
 </p>
 
-<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
-
-<ul id="markdown-toc">
-  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a>    <ul>
-      <li><a href="#purpose" id="markdown-toc-purpose">Purpose</a></li>
-      <li><a href="#project-background" id="markdown-toc-project-background">Project Background</a></li>
-      <li><a href="#project-scope" id="markdown-toc-project-scope">Project Scope</a></li>
-      <li><a href="#relationships-with-other-projects-and-guidelines" id="markdown-toc-relationships-with-other-projects-and-guidelines">Relationships with Other Projects and Guidelines</a></li>
-    </ul>
-  </li>
-  <li><a href="#ballot-status" id="markdown-toc-ballot-status">Ballot Status</a></li>
-</ul>
-
-<!-- end TOC -->
-
 <!-- 
 ### Jekyll Site Variables
 
@@ -245,7 +230,7 @@ These are the site variables defined [here](http://wiki.hl7.org/index.php?title=
 
 - canonical : canonical path to this specification (defined in ig.json)-   {{site.data.fhir.canonical}}  = http://hl7.org/fhir/ips
 
-- errorCount : number of errors in the build file (not including HTML validation errors) -   {{site.data.fhir.errorCount}}  = 153
+- errorCount : number of errors in the build file (not including HTML validation errors) -   {{site.data.fhir.errorCount}}  = 133
 
 - version : version of FHIR -   {{site.data.fhir.version}}  = 3.0.1
 
@@ -253,20 +238,36 @@ These are the site variables defined [here](http://wiki.hl7.org/index.php?title=
 
 - versionFull : version-revision -   {{site.data.fhir.versionFull}}  = 3.0.1-11917
 
-- totalFiles : total number of files found by the build -   {{site.data.fhir.totalFiles}}  = 45
+- totalFiles : total number of files found by the build -   {{site.data.fhir.totalFiles}}  = 76
 
-- processedFiles : number of files genrated by the build -   {{site.data.fhir.processedFiles}}  = 257
+- processedFiles : number of files genrated by the build -   {{site.data.fhir.processedFiles}}  = 287
 
-- genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Wed, Mar 28, 2018 11:49-0600
+- genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -   {{site.data.fhir.genDate}}  = Fri, Mar 30, 2018 08:02+0200
 -->
 
-<h2 id="introduction">Introduction</h2>
+<h1 id="introduction">Introduction</h1>
 
 <p>An International Patient Summary (IPS) document is an electronic health record extract containing essential healthcare information intended for use in the unscheduled, cross-border care scenario, comprising at least the required elements of the IPS dataset. The IPS dataset is <strong><em>a minimal and non-exhaustive patient summary dataset, specialty-agnostic, condition-independent, but readily usable by clinicians for the cross-border unscheduled care of a patient</em></strong>.</p>
 
-<h3 id="purpose">Purpose</h3>
+<!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
-<p>The goal of this Implementation Guide is to identify the required clinical data, vocabulary and value sets for an international patient summary. The international patient summary is specified as a templated document using HL7 CDA R2. The primary use case is to provide support for cross-border or cross-juridictional emergency and unplanned care.</p>
+<ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a>    <ul>
+      <li><a href="#purpose" id="markdown-toc-purpose">Purpose</a></li>
+      <li><a href="#project-background" id="markdown-toc-project-background">Project Background</a></li>
+      <li><a href="#project-scope" id="markdown-toc-project-scope">Project Scope</a></li>
+      <li><a href="#relationships-with-other-projects-and-guidelines" id="markdown-toc-relationships-with-other-projects-and-guidelines">Relationships with Other Projects and Guidelines</a></li>
+      <li><a href="#ballot-status" id="markdown-toc-ballot-status">Ballot Status</a></li>
+      <li><a href="#authors-and-contributors" id="markdown-toc-authors-and-contributors">Authors and Contributors</a></li>
+    </ul>
+  </li>
+</ul>
+
+<!-- end TOC -->
+
+<h2 id="purpose">Purpose</h2>
+
+<p>The goal of this Implementation Guide is to identify the required clinical data, vocabulary and value sets for an international patient summary. The international patient summary is specified either as templated document using HL7 CDA R2, either as HL7 FHIR composition (described in this guide). The primary use case is to provide support for cross-border or cross-juridictional emergency and unplanned care.</p>
 
 <p>This specification aims to support:</p>
 
@@ -277,11 +278,11 @@ These are the site variables defined [here](http://wiki.hl7.org/index.php?title=
   <li>Data and metadata for document-level provenance.</li>
 </ul>
 
-<h3 id="project-background">Project Background</h3>
+<h2 id="project-background">Project Background</h2>
 
 <p>See further details on the project background in the IPS Wiki <a href="http://international-patient-summary.net/mediawiki/index.php?title=IPS_Introduction_1#Project_Background">here</a>.</p>
 
-<h3 id="project-scope">Project Scope</h3>
+<h2 id="project-scope">Project Scope</h2>
 
 <p>As expressed in the introduction, the International Patient Summary is:</p>
 <ul>
@@ -298,13 +299,38 @@ In this context, minimal and non-exhaustive means that an IPS is not intended to
 
 <p>Furthermore the scope of the IPS is global. Although this is a major challenge, this implementation guide takes various experiences and newer developments into account to address global feasibility as far as possible.</p>
 
-<h3 id="relationships-with-other-projects-and-guidelines">Relationships with Other Projects and Guidelines</h3>
+<h2 id="relationships-with-other-projects-and-guidelines">Relationships with Other Projects and Guidelines</h2>
 
 <p>See further details on the IPS project relationships with other projects and guidelines in the IPS Wiki <a href="http://international-patient-summary.net/mediawiki/index.php?title=IPS_implementationguide_1#Relationships_with_other_projects_and_guidelines">here</a>.</p>
 
 <h2 id="ballot-status">Ballot Status</h2>
 
 <p>This Implementation Guide is being balloted as STU with the intention to go normative in a subsequent ballot cycle.</p>
+
+<h2 id="authors-and-contributors">Authors and Contributors</h2>
+
+<p>| Primary Editor | Giorgio Cangioli, PhD 
+Consultant, HL7 Italy
+giorgio.cangioli@gmail.com |
+| Primary Editor | Rob Hausam
+Hausam Consulting LLC
+rob@hausamconsulting.com |
+| Primary Editor | Dr Kai U. Heitmann
+Heitmann Consulting and Services, Gefyra GmbH, HL7 Germany
+info@kheitmann.de  |
+| Primary Editor | François Macary
+Phast
+francois.macary@phast.fr |
+| Contributor | Dr Christof Geßner
+Gematik
+christof.gessner@gematik.de |
+| Contributor | Gary Dickinson
+CentriHealth
+gary.dickinson@ehr-standards.com |
+| Contributor | Catherine Chronaki
+HL7 International Foundation
+chronaki@gmail.com |</p>
+
 
 
 
@@ -334,7 +360,7 @@ In this context, minimal and non-exhaustive means that an IPS is not intended to
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, Mar 28, 2018 11:49-0600. |
+            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Fri, Mar 30, 2018 08:02+0200. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

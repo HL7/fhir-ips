@@ -347,7 +347,7 @@ can only resize using html  or css ;-( -->
   <tr><td>Definition</td><td><p>A plan, proposal or order that is fulfilled in whole or in part by this event.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..0 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/careplan.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/CarePlan], CanonicalType[http://hl7.org/fhir/StructureDefinition/DeviceRequest], CanonicalType[http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation], CanonicalType[http://hl7.org/fhir/StructureDefinition/MedicationRequest], CanonicalType[http://hl7.org/fhir/StructureDefinition/NutritionOrder], CanonicalType[http://hl7.org/fhir/StructureDefinition/ProcedureRequest], CanonicalType[http://hl7.org/fhir/StructureDefinition/ReferralRequest]]">CarePlan</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/careplan.html" title="http://hl7.org/fhir/StructureDefinition/CarePlan">CarePlan</a> | <a href="http://hl7.org/fhir/STU3/devicerequest.html" title="http://hl7.org/fhir/StructureDefinition/DeviceRequest">DeviceRequest</a> | <a href="http://hl7.org/fhir/STU3/immunizationrecommendation.html" title="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation">ImmunizationRecommendation</a> | <a href="http://hl7.org/fhir/STU3/medicationrequest.html" title="http://hl7.org/fhir/StructureDefinition/MedicationRequest">MedicationRequest</a> | <a href="http://hl7.org/fhir/STU3/nutritionorder.html" title="http://hl7.org/fhir/StructureDefinition/NutritionOrder">NutritionOrder</a> | <a href="http://hl7.org/fhir/STU3/procedurerequest.html" title="http://hl7.org/fhir/StructureDefinition/ProcedureRequest">ProcedureRequest</a> | <a href="http://hl7.org/fhir/STU3/referralrequest.html" title="http://hl7.org/fhir/StructureDefinition/ReferralRequest">ReferralRequest</a>)</td></tr>
   <tr><td>Requirements</td><td><p>Allows tracing of authorization for the event and tracking whether proposals/recommendations were acted upon.</p>
 </td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Fulfills</td></tr>
@@ -375,7 +375,7 @@ a) laboratory observation: "laboratory"
 b) clinical observation: "vital-signs"</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Codes for sub-observation categories<br/>The codes SHALL be taken from  <a href="http://hl7.org/fhir/ips/ValueSet/sub-observation-category-uv-ips">http://hl7.org/fhir/ips/ValueSet/sub-observation-category-uv-ips</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Codes for sub-observation categories<br/>The codes SHALL be taken from <a href="ValueSet-sub-observation-category-uv-ips.html">ObservationSubCategories</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>([CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips]])</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Used for filtering what observations are retrieved and displayed.</p>
@@ -388,7 +388,7 @@ b) clinical observation: "vital-signs"</p>
   <tr><td>Definition</td><td><p>A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Codes identifying names of simple observations.<br/>The codes SHALL be taken from  <a href="http://hl7.org/fhir/ips/ValueSet/laboratory-and-vital-signs-observations">http://hl7.org/fhir/ips/ValueSet/laboratory-and-vital-signs-observations</a>; other codes may be used where these codes are not suitable</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>Codes identifying names of simple observations.<br/>The codes SHALL be taken from <a href="ValueSet-laboratory-and-vital-signs-observations.html">IPSLabResultsObservation</a>; other codes may be used where these codes are not suitable</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>([CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips]])</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Knowing what kind of observation is being made is essential to understanding the observation.</p>
@@ -402,7 +402,7 @@ b) clinical observation: "vital-signs"</p>
   <tr><td>Definition</td><td><p>The patient, or group of patients, location, or device whose characteristics (direct or indirect) are described by the observation and into whose record the observation is placed.  Comments: Indirect characteristics may be those of a specimen, fetus, donor,  other observer (for example a relative or EMT), or any observation made about the subject.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/patient.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]">Patient</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Observations have no value if you don't know who or what they're about.</p>
 </td></tr>
@@ -464,7 +464,7 @@ b) clinical observation: "vital-signs"</p>
   <tr><td>Definition</td><td><p>The healthcare event  (e.g. a patient and healthcare provider interaction) during which this observation is made.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/encounter.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter], CanonicalType[http://hl7.org/fhir/StructureDefinition/EpisodeOfCare]]">Encounter</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/encounter.html" title="http://hl7.org/fhir/StructureDefinition/Encounter">Encounter</a> | <a href="http://hl7.org/fhir/STU3/episodeofcare.html" title="http://hl7.org/fhir/StructureDefinition/EpisodeOfCare">EpisodeOfCare</a>)</td></tr>
   <tr><td>Requirements</td><td><p>For some observations it may be important to know the link between an observation and a particular encounter.</p>
 </td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>Encounter</td></tr>
@@ -498,7 +498,7 @@ b) clinical observation: "vital-signs"</p>
   <tr><td>Definition</td><td><p>Who was responsible for asserting the observed value as "true".</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/practitioner.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/organization-laboratory-uv-ips]]">Practitioner</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/practitioner.html" title="http://hl7.org/fhir/StructureDefinition/Practitioner">Practitioner</a> | <a href="http://hl7.org/fhir/STU3/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a> | <a href="StructureDefinition-organization-laboratory-uv-ips.html" title="http://hl7.org/fhir/ips/StructureDefinition/organization-laboratory-uv-ips">organization-laboratory-uv-ips</a>)</td></tr>
   <tr><td>Requirements</td><td><p>May give a degree of confidence in the observation and also indicates where follow-up questions should be directed.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
@@ -558,8 +558,8 @@ b) clinical observation: "vital-signs"</p>
   <tr><td>Definition</td><td><p>The information determined as a result of making the observation, if the information has a simple value.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1, obs-7</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The codes SHALL be taken from  <a href="http://hl7.org/fhir/ips/ValueSet/lab-result-coded-value-uv-ips">http://hl7.org/fhir/ips/ValueSet/lab-result-coded-value-uv-ips</a>; other codes may be used where these codes are not suitable</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a name="dd5f4eba-19e9-4f24-a6d7-03119dc14afa">​</a>Choice of: <a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Range">Range</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Ratio">Ratio</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Attachment">Attachment</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">dateTime</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>([CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips]]), <a href="http://hl7.org/fhir/STU3/datatypes.html#Quantity">Quantity</a>(<a href="StructureDefinition/Quantity-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/Quantity-uv-ips]]">Quantity-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="ValueSet-lab-result-coded-value-uv-ips.html">IPSLabResultsCodedValues</a>; other codes may be used where these codes are not suitable</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a name="46af2e8e-1870-4be5-943b-3ea077ad23b1">​</a>Choice of: <a href="http://hl7.org/fhir/STU3/datatypes.html#string">string</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Range">Range</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Ratio">Ratio</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#Attachment">Attachment</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">dateTime</a>, <a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>([CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips]]), <a href="http://hl7.org/fhir/STU3/datatypes.html#Quantity">Quantity</a>(<a href="StructureDefinition/Quantity-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/Quantity-uv-ips]]">Quantity-uv-ips</a>)</td></tr>
   <tr><td>[x] Note</td><td>See <a href="http://hl7.org/fhir/STU3/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr>
   <tr><td>Requirements</td><td><p>An observation exists to have a value, though it may not if it is in error, or if it represents a group of observations.</p>
 </td></tr>
@@ -630,7 +630,7 @@ b) clinical observation: "vital-signs"</p>
   <tr><td>Definition</td><td><p>The specimen that was used when this observation was made.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-specimen-uv-ips.html" title="[CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/specimen-uv-ips]]">specimen-uv-ips</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="StructureDefinition-specimen-uv-ips.html" title="http://hl7.org/fhir/ips/StructureDefinition/specimen-uv-ips">specimen-uv-ips</a>)</td></tr>
   <tr><td>Comments</td><td><p>The specimen is often implied by the observation code.
 In the context of this Observation-member-laboratory-uv-ips profile, specimen should be provided only when it is not implied by the Observation.code, and when further information about the specimen needs to be captured (such as specimen source body site).</p>
 </td></tr>
@@ -689,7 +689,7 @@ In the context of this Observation-member-laboratory-uv-ips profile, specimen sh
   <tr><td>Definition</td><td><p>The device used to generate the observation data.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..0 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/device.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Device], CanonicalType[http://hl7.org/fhir/StructureDefinition/DeviceMetric]]">Device</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/device.html" title="http://hl7.org/fhir/StructureDefinition/Device">Device</a> | <a href="http://hl7.org/fhir/STU3/devicemetric.html" title="http://hl7.org/fhir/StructureDefinition/DeviceMetric">DeviceMetric</a>)</td></tr>
   <tr><td>Comments</td><td><p>An extension should be used if further typing of the device is needed.  Devices used to support obtaining an observation can be represented using either an extension or through the Observation.related element.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -854,7 +854,7 @@ In the context of this Observation-member-laboratory-uv-ips profile, specimen sh
   <tr><td>Definition</td><td><p>A reference to the observation or <a href="http://hl7.org/fhir/STU3/questionnaireresponse.html#">QuestionnaireResponse</a> resource that is related to this observation.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/observation.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation], CanonicalType[http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse], CanonicalType[http://hl7.org/fhir/StructureDefinition/Sequence]]">Observation</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/observation.html" title="http://hl7.org/fhir/StructureDefinition/Observation">Observation</a> | <a href="http://hl7.org/fhir/STU3/questionnaireresponse.html" title="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse">QuestionnaireResponse</a> | <a href="http://hl7.org/fhir/STU3/sequence.html" title="http://hl7.org/fhir/StructureDefinition/Sequence">Sequence</a>)</td></tr>
   <tr><td>Comments</td><td><p>References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -992,7 +992,7 @@ In the context of this Observation-member-laboratory-uv-ips profile, specimen sh
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
     <p>
-            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, Mar 28, 2018 11:49-0600. |
+            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Fri, Mar 30, 2018 08:02+0200. |
                <!-- <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/STU3license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>
         

@@ -585,7 +585,7 @@ can only resize using html  or css ;-(
   <tr><td>Definition</td><td><p>Organization that issued/manages the identifier.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]">Organization</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>)</td></tr>
   <tr><td>Comments</td><td><p>The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1112,7 +1112,7 @@ The Alphabetic representation of the name SHALL be always provided</p>
 </td></tr>
   <tr><td>Comments</td><td><p>This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;). If duration is required, specify the type as Interval|Duration.</p>
 </td></tr>
-  <tr><td>Example</td><td><br/><b>General</b>:&lt;valuePeriod&nbsp;xmlns=&quot;http://hl7.org/fhir&quot;&gt;<br/>&nbsp;&nbsp;&lt;start&nbsp;value=&quot;2010-03-23T00:00:00-06:00&quot;/&gt;<br/>&nbsp;&nbsp;&lt;end&nbsp;value=&quot;2010-07-01T00:00:00-06:00&quot;/&gt;<br/>&lt;/valuePeriod&gt;<br/>
+  <tr><td>Example</td><td><br/><b>General</b>:&lt;valuePeriod&nbsp;xmlns=&quot;http://hl7.org/fhir&quot;&gt;<br/>&nbsp;&nbsp;&lt;start&nbsp;value=&quot;2010-03-23T00:00:00+01:00&quot;/&gt;<br/>&nbsp;&nbsp;&lt;end&nbsp;value=&quot;2010-07-01T00:00:00+02:00&quot;/&gt;<br/>&lt;/valuePeriod&gt;<br/>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">per-1</b>: If present, start SHALL have a lower value than end (: start.empty() or end.empty() or (start &lt;= end))</td></tr>
@@ -1466,7 +1466,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
   <tr><td>Definition</td><td><p>A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The nature of the relationship between a patient and a contact person for that patient.<br/>The codes SHALL be taken from  <a href="http://hl7.org/fhir/ips/ValueSet/personal-relationship-uv-ips">http://hl7.org/fhir/ips/ValueSet/personal-relationship-uv-ips</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/terminologies.html">Binding</a></td><td>The nature of the relationship between a patient and a contact person for that patient.<br/>The codes SHALL be taken from <a href="ValueSet-personal-relationship-uv-ips.html">IPSPersonalRelationship</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#CodeableConcept">CodeableConcept</a>([CanonicalType[http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips]])</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Used to determine which contact person is the most relevant to approach, depending on circumstances.</p>
@@ -2006,7 +2006,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
 </td></tr>
   <tr><td>Comments</td><td><p>This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;). If duration is required, specify the type as Interval|Duration.</p>
 </td></tr>
-  <tr><td>Example</td><td><br/><b>General</b>:&lt;valuePeriod&nbsp;xmlns=&quot;http://hl7.org/fhir&quot;&gt;<br/>&nbsp;&nbsp;&lt;start&nbsp;value=&quot;2010-03-23T00:00:00-06:00&quot;/&gt;<br/>&nbsp;&nbsp;&lt;end&nbsp;value=&quot;2010-07-01T00:00:00-06:00&quot;/&gt;<br/>&lt;/valuePeriod&gt;<br/>
+  <tr><td>Example</td><td><br/><b>General</b>:&lt;valuePeriod&nbsp;xmlns=&quot;http://hl7.org/fhir&quot;&gt;<br/>&nbsp;&nbsp;&lt;start&nbsp;value=&quot;2010-03-23T00:00:00+01:00&quot;/&gt;<br/>&nbsp;&nbsp;&lt;end&nbsp;value=&quot;2010-07-01T00:00:00+02:00&quot;/&gt;<br/>&lt;/valuePeriod&gt;<br/>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() | (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">per-1</b>: If present, start SHALL have a lower value than end (: start.empty() or end.empty() or (start &lt;= end))</td></tr>
@@ -2064,7 +2064,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
   <tr><td>Definition</td><td><p>Organization on behalf of which the contact is acting or for which the contact is working.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1, pat-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]">Organization</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>For guardians or business related contacts, the organization is relevant.</p>
 </td></tr>
@@ -2772,7 +2772,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
   <tr><td>Definition</td><td><p>Patient's nominated care provider.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization], CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner]]">Organization</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a> | <a href="http://hl7.org/fhir/STU3/practitioner.html" title="http://hl7.org/fhir/StructureDefinition/Practitioner">Practitioner</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>careProvider</td></tr>
   <tr><td>Comments</td><td><p>This may be the primary care provider (in a GP context), or it may be a patient nominated care manager in a community/disablity setting, or even organization that will provide people to perform the care provider roles.</p>
@@ -2833,7 +2833,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
   <tr><td>Definition</td><td><p>Organization that is the custodian of the patient record.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]">Organization</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/organization.html" title="http://hl7.org/fhir/StructureDefinition/Organization">Organization</a>)</td></tr>
   <tr><td>Requirements</td><td><p>Need to know who recognizes this patient record, manages and updates it.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>There is only one managing organization for a specific patient record. Other organizations will have their own Patient record, and may use the Link property to join the records together (or a Person resource which can include confidence ratings for the association).</p>
@@ -2939,7 +2939,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
   <tr><td>Definition</td><td><p>The other patient resource that the link refers to.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/STU3/conformance-rules.html#conformance">Control</a></td><td>1..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/patient.html" title="[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]">Patient</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/STU3/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/STU3/datatypes.html#Reference">Reference</a>(<a href="http://hl7.org/fhir/STU3/patient.html" title="http://hl7.org/fhir/StructureDefinition/Patient">Patient</a> | <a href="http://hl7.org/fhir/STU3/relatedperson.html" title="http://hl7.org/fhir/StructureDefinition/RelatedPerson">RelatedPerson</a>)</td></tr>
   <tr><td>Comments</td><td><p>Referencing a RelatedPerson here removes the need to use a Person record to associate a Patient and RelatedPerson as the same individual.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -3037,7 +3037,7 @@ If a bool value was provided for this tripplets examle, then all 3 patient recor
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, Mar 28, 2018 11:49-0600. |
+            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Fri, Mar 30, 2018 08:02+0200. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

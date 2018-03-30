@@ -10,7 +10,7 @@
   <version value="1"/>
   <name value="Participant-uv-ips"/>
   <status value="draft"/>
-  <date value="2017-12-14T10:54:03-07:00"/>
+  <date value="2017-12-14T18:54:03+01:00"/>
   <publisher value="Lantana Consulting Group"/>
   <contact>
     <name value="Sarah Gaunt"/>
@@ -211,6 +211,10 @@
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
       </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+      </type>
       <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
@@ -240,6 +244,10 @@
       <type>
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
       </type>
     </element>
   </differential>

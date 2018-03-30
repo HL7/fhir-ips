@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "observation-attachment-uv-ips",
   "meta": {
-    "lastUpdated": "2018-02-16T10:49:19.113-07:00"
+    "lastUpdated": "2018-02-16T18:49:19.113+01:00"
   },
   "text": {
     "status": "generated",
@@ -14,7 +14,7 @@
   "title": "Observation (attachment)",
   "status": "draft",
   "experimental": true,
-  "date": "2018-03-09T00:00:00-07:00",
+  "date": "2018-03-09T00:00:00+01:00",
   "publisher": "HL7 International",
   "contact": [
     {
@@ -608,6 +608,30 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/CarePlan"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/DeviceRequest"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/MedicationRequest"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/NutritionOrder"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/ProcedureRequest"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/ReferralRequest"
           }
         ],
         "condition": [
@@ -1231,6 +1255,10 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Encounter"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/EpisodeOfCare"
           }
         ],
         "condition": [
@@ -1408,6 +1436,18 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Practitioner"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Organization"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Patient"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
           }
         ],
         "condition": [
@@ -2466,6 +2506,10 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Device"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/DeviceMetric"
           }
         ],
         "condition": [
@@ -3643,6 +3687,14 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Observation"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Sequence"
           }
         ],
         "condition": [

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="medicine-route-of-administration"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>IPSRouteOfAdmin</h2><div><p>Value Set Definition:DrawnFromCodeSystem 0.4.0.127.0.16.1.1.2.1 (EDQM) PropertyBasedContentSet.IncludeWithProperty.Expression (              ([Concept Status] = ‘Current’)   AND  ([Concept Class] = 'route of administration')   AND  ([Domain] = 'Human and Veterinary') ) The list of values reported hereafter is provided only as example</p>
+</div><p>This value set includes codes from the following code systems:</p><ul><li>Include all codes defined in <code>urn:oid:0.4.0.127.0.16.1.1.2.1</code></li></ul></div>
+  </text>
+  <url value="http://hl7.org/fhir/ips/ValueSet/medicine-route-of-administration"/>
+  <identifier>
+    <use value="official"/>
+    <system value="http://art-decor.org/ns/oids/vs"/>
+    <value value="2.16.840.1.113883.11.22.33"/>
+  </identifier>
+  <version value="1"/>
+  <name value="IPSRouteOfAdmin"/>
+  <title value="Medicine Route of Administration"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2018-03-30T08:02:21+02:00"/>
+  <publisher value="HL7 International"/>
+  <contact>
+    <name value="HL7 International"/>
+    <telecom>
+      <system value="phone"/>
+      <value value="+1 734 677 7777 "/>
+    </telecom>
+    <telecom>
+      <system value="fax"/>
+      <value value="+1 734 677 6622"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.org"/>
+    </telecom>
+  </contact>
+  <description value="Value Set Definition:DrawnFromCodeSystem 0.4.0.127.0.16.1.1.2.1 (EDQM)&#xA0;PropertyBasedContentSet.IncludeWithProperty.Expression&#xA0;( &#xA0;&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; ([Concept Status] = &#x2018;Current&#x2019;)&#xA0; &#xA0;AND &#xA0;([Concept Class] = &#39;route of administration&#39;)&#xA0; &#xA0;AND &#xA0;([Domain] = &#39;Human and Veterinary&#39;)&#xA0;)&#xA0;The list of values reported hereafter is provided only as example"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <immutable value="false"/>
+  <compose>
+    <include>
+      <system value="urn:oid:0.4.0.127.0.16.1.1.2.1"/>
+    </include>
+  </compose>
+</ValueSet>

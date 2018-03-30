@@ -193,7 +193,7 @@ can only resize using html  or css ;-(
     
       <a class="breadcrumb-item" href="index.html">Home</a>
       /
-      <span class="breadcrumb-item active">Profiles defined as part of this Guide</span>
+      <span class="breadcrumb-item active">Profiles defined as part of the IPS Guide</span>
     
     
 
@@ -203,13 +203,126 @@ can only resize using html  or css ;-(
 
   <!-- ============CONTENT CONTENT=============== -->
 
-<h1>Profiles defined as part of this Guide</h1>
+<h1>Profiles defined as part of the IPS Guide</h1>
 
 <!-- page source: profiles.md -->
 
-<h4 id="profiles">Profiles</h4>
+<h1 id="bundle-and-composition">Bundle and Composition</h1>
 
-<p>The following Profiles have been defined for this implementation guide.</p>
+<p>The <b>International Patient Summary</b> is a document.
+All the profiles specified by this guide are used by the International Patient Summary Composition.</p>
+
+<p>The Bundle used for the transport or the persitence SHALL include all the resources that are referenced directly or indirectly by a International Patient Summary Composition.</p>
+
+<p>The IPS includes the following sections, (R) denotes a required section (i.e. must be present in an IPS), (S) denotes a recommended section, the others are truely optional. 
+For each section the profiles that have been defined have been listed:</p>
+<ul>
+  <li>Medication Summary (R)
+    <ul>
+      <li>Medication-uv-ips</li>
+      <li>MedicationStatement-uv-ipS</li>
+    </ul>
+  </li>
+  <li>Allergies and Intolerances (R)
+    <ul>
+      <li>AllergyIntolerance-uv-ips</li>
+    </ul>
+  </li>
+  <li>Problem List (R)
+    <ul>
+      <li>Condition-uv-ips</li>
+    </ul>
+  </li>
+  <li>Immunizations (S)
+    <ul>
+      <li>Immunization-uv-ips</li>
+    </ul>
+  </li>
+  <li>History of Procedures (S)</li>
+  <li>Procedure-uv-ips</li>
+  <li>Medical Devices (S)
+    <ul>
+      <li>DeviceUseStatement</li>
+      <li>Device-uv-ips</li>
+    </ul>
+  </li>
+  <li>Diagnostic Results (S)
+    <ul>
+      <li>Laboratory results
+        <ul>
+          <li>Specimen-uv-ips</li>
+          <li>Organization-laboratory-uv-ips</li>
+          <li>Observation-attachment-uv-ips</li>
+          <li>Observation-laboratory-uv-ips</li>
+          <li>Observation-member-laboratory-uv-ips</li>
+        </ul>
+      </li>
+      <li>Radiology results
+        <ul>
+          <li>Observation-imaging-uv-ips.structuredefinition.xml</li>
+          <li>Observation-member-imaging-uv-ips.structuredefinition.xml</li>
+          <li>ImagingStudy-uv-ips.structuredefinition.xml</li>
+          <li>Organization-observation-uv-ips.structuredefinition.xml</li>
+          <li>Device-observer-uv-ips.structuredefinition.xml</li>
+          <li>Practitioner-observation-uv-ips.structuredefinition.xml</li>
+        </ul>
+      </li>
+      <li>Pathology results
+        <ul>
+          <li>Observation-member-pathology-uv-ips.structuredefinition.xml</li>
+          <li>Observation-pathology-uv-ips.structuredefinition.xml</li>
+        </ul>
+      </li>
+      <li>Other results
+        <ul>
+          <li>Observation-uv-ips</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Past history of illnesses</li>
+  <li>Pregnancy (status and history summary)
+    <ul>
+      <li>Observation-pregnancy-edd-uv-ips</li>
+      <li>Observation-pregnancy-outcome-uv-ips</li>
+      <li>Observation-pregnancy-status-uv-ips</li>
+    </ul>
+  </li>
+  <li>Social History
+    <ul>
+      <li>Observation-tobaccoUse-uv-ips</li>
+      <li>Observation-alcoholUse-uv-ips</li>
+    </ul>
+  </li>
+  <li>Functional Status (Autonomy / Invalidity)</li>
+  <li>Plan of care</li>
+  <li>Advance Directives</li>
+</ul>
+
+<p>(Vital Signs has not yet included)</p>
+
+<h1 id="data-types">Data types</h1>
+<p>Two classes of profiles have been defined for the data types for the IPS:</p>
+<ul>
+  <li>A first class designed to support multi-languages for Narratives and displays:
+    <ul>
+      <li>Narrative-uv-ips</li>
+      <li>coding-uv-ips</li>
+      <li>CodeableConcept-uv-ips</li>
+    </ul>
+  </li>
+  <li>A second one to restrict the usage of quantity-related data types to UCUM as system for units.
+    <ul>
+      <li>Quantity-uv-ips</li>
+      <li>Range-uv-ips</li>
+      <li>Ratio-uv-ips</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="list-of-profiles">List of Profiles</h1>
+
+<p>The links to the Profiles that have been defined for this implementation guide are listed hereafter.</p>
 
 <li><a href="StructureDefinition-allergyintolerance-uv-ips.html">AllergyIntolerance-uv-ips</a></li>
 <li><a href="StructureDefinition-composition-uv-ips.html">Composition-uv-ips</a></li>
@@ -241,10 +354,6 @@ can only resize using html  or css ;-(
 <li><a href="StructureDefinition-procedure-uv-ips.html">Procedure-uv-ips</a></li>
 <li><a href="StructureDefinition-specimen-uv-ips.html">specimen-uv-ips</a></li>
 
-<h4 id="logical-models">Logical Models</h4>
-
-<p>The following Logical Models have been defined for this implementation guide.</p>
-
 <hr />
 
 
@@ -275,7 +384,7 @@ can only resize using html  or css ;-(
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Wed, Mar 28, 2018 11:49-0600. |
+            International Patient Summary Implementation Guide Version: 1  &reg;&copy; <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3">FHIR Version: 3.0.1</a> (IG Publisher v3.0.1-11917) generated on Fri, Mar 30, 2018 08:02+0200. |
              <!--  <a style="color: #81BEF7" rel="license"  <href="../license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> -->
                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/STU3license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
         </span>

@@ -3,7 +3,7 @@
   "id": "composition-uv-ips",
   "meta": {
     "versionId": "358e932e-d23a-44a8-ae0c-11d9a8f8b347",
-    "lastUpdated": "2018-03-08T06:46:56.289-07:00",
+    "lastUpdated": "2018-03-08T14:46:56.289+01:00",
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/clinicaldocument"
     ]
@@ -18,7 +18,7 @@
   "title": "Composition (IPS)",
   "status": "draft",
   "experimental": false,
-  "date": "2018-03-16T00:00:00-06:00",
+  "date": "2018-03-16T00:00:00+01:00",
   "publisher": "HL7 International",
   "contact": [
     {
@@ -2311,6 +2311,18 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Practitioner"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Device"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Patient"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
           }
         ],
         "condition": [
@@ -3040,6 +3052,14 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Patient"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Practitioner"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Organization"
           }
         ],
         "condition": [
@@ -3922,6 +3942,10 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Composition"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/ips/StructureDefinition/composition-uv-ips"
           }
         ],
         "condition": [
@@ -22671,6 +22695,10 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Resource"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Condition"
           }
         ],
         "condition": [
@@ -24073,6 +24101,10 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Resource"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Condition"
           }
         ],
         "condition": [
@@ -24132,6 +24164,10 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Resource"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/ClinicalImpression"
           }
         ],
         "condition": [
@@ -29731,6 +29767,10 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Resource"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Consent"
           }
         ],
         "condition": [
@@ -30047,6 +30087,10 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Composition"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/ips/StructureDefinition/composition-uv-ips"
           }
         ]
       },
@@ -31115,6 +31159,10 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Resource"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Condition"
           }
         ]
       },
@@ -31205,6 +31253,10 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Resource"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Condition"
           }
         ]
       },
@@ -31216,6 +31268,10 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Resource"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/ClinicalImpression"
           }
         ]
       },
@@ -31516,6 +31572,10 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Resource"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Consent"
           }
         ]
       },

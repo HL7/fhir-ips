@@ -4,7 +4,7 @@
   <id value="composition-uv-ips"/>
   <meta>
     <versionId value="358e932e-d23a-44a8-ae0c-11d9a8f8b347"/>
-    <lastUpdated value="2018-03-08T06:46:56.289-07:00"/>
+    <lastUpdated value="2018-03-08T14:46:56.289+01:00"/>
     <profile value="http://hl7.org/fhir/StructureDefinition/clinicaldocument"/>
   </meta>
   <text>
@@ -235,7 +235,7 @@ It may contain addition summarizing information about the outcome of earlier pre
   <title value="Composition (IPS)"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2018-03-16T00:00:00-06:00"/>
+  <date value="2018-03-16T00:00:00+01:00"/>
   <publisher value="HL7 International"/>
   <contact>
     <name value="Giorgio Cangioli"/>
@@ -2080,6 +2080,18 @@ It may contain addition summarizing information about the outcome of earlier pre
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
       </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+      </type>
       <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
@@ -2659,6 +2671,14 @@ It may contain addition summarizing information about the outcome of earlier pre
       <type>
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -3359,6 +3379,10 @@ It may contain addition summarizing information about the outcome of earlier pre
       <type>
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/composition-uv-ips"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -18403,6 +18427,10 @@ It may contain addition summarizing information about the outcome of earlier pre
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
       </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+      </type>
       <condition value="ele-1"/>
       <condition value="cmp-2"/>
       <constraint>
@@ -19539,6 +19567,10 @@ It may contain addition summarizing information about the outcome of earlier pre
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
       </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+      </type>
       <condition value="ele-1"/>
       <condition value="cmp-2"/>
       <constraint>
@@ -19588,6 +19620,10 @@ It may contain addition summarizing information about the outcome of earlier pre
       <type>
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ClinicalImpression"/>
       </type>
       <condition value="ele-1"/>
       <condition value="cmp-2"/>
@@ -24110,6 +24146,10 @@ It may contain addition summarizing information about the outcome of earlier pre
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
       </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Consent"/>
+      </type>
       <condition value="ele-1"/>
       <condition value="cmp-2"/>
       <constraint>
@@ -24361,6 +24401,10 @@ It may contain addition summarizing information about the outcome of earlier pre
       <type>
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Composition"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/composition-uv-ips"/>
       </type>
     </element>
     <element id="Composition.event">
@@ -25179,6 +25223,10 @@ It may contain addition summarizing information about the outcome of earlier pre
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
       </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+      </type>
     </element>
     <element id="Composition.section:sectionPastIllnessHx.entry:pastProblem">
       <path value="Composition.section.entry"/>
@@ -25247,6 +25295,10 @@ It may contain addition summarizing information about the outcome of earlier pre
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
       </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+      </type>
     </element>
     <element id="Composition.section:sectionFunctionalStatus.entry:functionalAssessment">
       <path value="Composition.section.entry"/>
@@ -25254,6 +25306,10 @@ It may contain addition summarizing information about the outcome of earlier pre
       <type>
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ClinicalImpression"/>
       </type>
     </element>
     <element id="Composition.section:sectionFunctionalStatus.section">
@@ -25483,6 +25539,10 @@ It may contain addition summarizing information about the outcome of earlier pre
       <type>
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
+      </type>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Consent"/>
       </type>
     </element>
     <element id="Composition.section:sectionAdvanceDirectives.section">

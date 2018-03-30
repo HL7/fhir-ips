@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "allergyintolerance-uv-ips",
   "meta": {
-    "lastUpdated": "2018-02-14T07:58:02.283-07:00"
+    "lastUpdated": "2018-02-14T15:58:02.283+01:00"
   },
   "text": {
     "status": "generated",
@@ -13,7 +13,7 @@
   "name": "AllergyIntolerance-uv-ips",
   "title": "Allergy Intolerance",
   "status": "draft",
-  "date": "2018-02-14T06:57:18-07:00",
+  "date": "2018-02-14T14:57:18+01:00",
   "description": "This profile represents the constraints applied to the AllergyIntolerance resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an allergy or intolerance is represented in the patient summary as an instance of an AllergyIntolerance resource constrained by this profile.",
   "jurisdiction": [
     {
@@ -192,6 +192,1076 @@
         ]
       },
       {
+        "id": "AllergyIntolerance.meta.id",
+        "path": "AllergyIntolerance.meta.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "comment": "Note that FHIR strings may not exceed 1MB in size",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.meta.extension",
+        "path": "AllergyIntolerance.meta.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.meta.versionId",
+        "path": "AllergyIntolerance.meta.versionId",
+        "short": "Version specific identifier",
+        "definition": "The version specific identifier, as it appears in the version portion of the URL. This values changes when the resource is created, updated, or deleted.",
+        "comment": "The server assigns this value, and ignores what the client specifies, except in the case that the server is imposing version integrity on updates/deletes.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Resource.meta.versionId",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "id"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.meta.lastUpdated",
+        "path": "AllergyIntolerance.meta.lastUpdated",
+        "short": "When the resource version last changed",
+        "definition": "When the resource last changed - e.g. when the version changed.",
+        "comment": "This value is always populated except when the resource is first being created. The server / resource manager sets this value; what a client provides is irrelevant.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Resource.meta.lastUpdated",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "instant"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.meta.profile",
+        "path": "AllergyIntolerance.meta.profile",
+        "short": "Profiles this resource claims to conform to",
+        "definition": "A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url]().",
+        "comment": "It is up to the server and/or other infrastructure of policy to determine whether/how these claims are verified and/or updated over time.  The list of profile URLs is a set.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Resource.meta.profile",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.meta.security",
+        "path": "AllergyIntolerance.meta.security",
+        "short": "Security Labels applied to this resource",
+        "definition": "Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure.",
+        "comment": "The security labels can be updated without changing the stated version of the resource  The list of security labels is a set. Uniqueness is based the system/code, and version and display are ignored.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Resource.meta.security",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "isSummary": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "SecurityLabels"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "extensible",
+          "description": "Security Labels from the Healthcare Privacy and Security Classification System.",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/security-labels"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "CE/CNE/CWE subset one of the sets of component 1-3 or 4-6"
+          },
+          {
+            "identity": "rim",
+            "map": "CV"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding rdfs:subClassOf dt:CDCoding"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.meta.security.id",
+        "path": "AllergyIntolerance.meta.security.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "comment": "Note that FHIR strings may not exceed 1MB in size",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.meta.security.extension",
+        "path": "AllergyIntolerance.meta.security.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.meta.security.system",
+        "path": "AllergyIntolerance.meta.security.system",
+        "short": "Identity of the terminology system",
+        "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
+        "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
+        "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Coding.system",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "C*E.3"
+          },
+          {
+            "identity": "rim",
+            "map": "./codeSystem"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.meta.security.version",
+        "path": "AllergyIntolerance.meta.security.version",
+        "short": "Version of the system - if relevant",
+        "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
+        "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Coding.version",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "C*E.7"
+          },
+          {
+            "identity": "rim",
+            "map": "./codeSystemVersion"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.meta.security.code",
+        "path": "AllergyIntolerance.meta.security.code",
+        "short": "Symbol in syntax defined by the system",
+        "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
+        "comment": "Note that FHIR strings may not exceed 1MB in size",
+        "requirements": "Need to refer to a particular code in the system.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Coding.code",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "C*E.1"
+          },
+          {
+            "identity": "rim",
+            "map": "./code"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.meta.security.display",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "AllergyIntolerance.meta.security.display",
+        "short": "Representation defined by the system",
+        "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
+        "comment": "Note that FHIR strings may not exceed 1MB in size",
+        "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Coding.display",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "C*E.2 - but note this is not well followed"
+          },
+          {
+            "identity": "rim",
+            "map": "CV.displayName"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.meta.security.userSelected",
+        "path": "AllergyIntolerance.meta.security.userSelected",
+        "short": "If this coding was chosen directly by the user",
+        "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
+        "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
+        "requirements": "This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Coding.userSelected",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "Sometimes implied by being first"
+          },
+          {
+            "identity": "rim",
+            "map": "CD.codingRationale"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.meta.tag",
+        "path": "AllergyIntolerance.meta.tag",
+        "short": "Tags applied to this resource",
+        "definition": "Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource.",
+        "comment": "The tags can be updated without changing the stated version of the resource.  The list of tags is a set. Uniqueness is based the system/code, and version and display are ignored.",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Resource.meta.tag",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "isSummary": true,
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "Tags"
+            }
+          ],
+          "strength": "example",
+          "description": "Codes that represent various types of tags, commonly workflow-related; e.g. \"Needs review by Dr. Jones\"",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/common-tags"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "CE/CNE/CWE subset one of the sets of component 1-3 or 4-6"
+          },
+          {
+            "identity": "rim",
+            "map": "CV"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding rdfs:subClassOf dt:CDCoding"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.meta.tag.id",
+        "path": "AllergyIntolerance.meta.tag.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "comment": "Note that FHIR strings may not exceed 1MB in size",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.meta.tag.extension",
+        "path": "AllergyIntolerance.meta.tag.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.meta.tag.system",
+        "path": "AllergyIntolerance.meta.tag.system",
+        "short": "Identity of the terminology system",
+        "definition": "The identification of the code system that defines the meaning of the symbol in the code.",
+        "comment": "The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should de-reference to some definition that establish the system clearly and unambiguously.",
+        "requirements": "Need to be unambiguous about the source of the definition of the symbol.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Coding.system",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "uri"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "C*E.3"
+          },
+          {
+            "identity": "rim",
+            "map": "./codeSystem"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.meta.tag.version",
+        "path": "AllergyIntolerance.meta.tag.version",
+        "short": "Version of the system - if relevant",
+        "definition": "The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.",
+        "comment": "Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Coding.version",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "C*E.7"
+          },
+          {
+            "identity": "rim",
+            "map": "./codeSystemVersion"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.meta.tag.code",
+        "path": "AllergyIntolerance.meta.tag.code",
+        "short": "Symbol in syntax defined by the system",
+        "definition": "A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).",
+        "comment": "Note that FHIR strings may not exceed 1MB in size",
+        "requirements": "Need to refer to a particular code in the system.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Coding.code",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "C*E.1"
+          },
+          {
+            "identity": "rim",
+            "map": "./code"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.meta.tag.display",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable",
+            "valueBoolean": true
+          }
+        ],
+        "path": "AllergyIntolerance.meta.tag.display",
+        "short": "Representation defined by the system",
+        "definition": "A representation of the meaning of the code in the system, following the rules of the system.",
+        "comment": "Note that FHIR strings may not exceed 1MB in size",
+        "requirements": "Need to be able to carry a human-readable meaning of the code for readers that do not know  the system.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Coding.display",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "C*E.2 - but note this is not well followed"
+          },
+          {
+            "identity": "rim",
+            "map": "CV.displayName"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.meta.tag.userSelected",
+        "path": "AllergyIntolerance.meta.tag.userSelected",
+        "short": "If this coding was chosen directly by the user",
+        "definition": "Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays).",
+        "comment": "Amongst a set of alternatives, a directly chosen code is the most appropriate starting point for new translations. There is some ambiguity about what exactly 'directly chosen' implies, and trading partner agreement may be needed to clarify the use of this element and its consequences more completely.",
+        "requirements": "This has been identified as a clinical safety criterium - that this exact system/code pair was chosen explicitly, rather than inferred by the system based on some rules or language processing.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Coding.userSelected",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "isSummary": true,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "v2",
+            "map": "Sometimes implied by being first"
+          },
+          {
+            "identity": "rim",
+            "map": "CD.codingRationale"
+          },
+          {
+            "identity": "orim",
+            "map": "fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\\#true a [     fhir:source \"true\";     fhir:target dt:CDCoding.codingRationale\\#O   ]"
+          }
+        ]
+      },
+      {
         "id": "AllergyIntolerance.implicitRules",
         "path": "AllergyIntolerance.implicitRules",
         "short": "A set of rules under which this content was created",
@@ -339,6 +1409,217 @@
           {
             "identity": "rim",
             "map": "Act.text?"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.text.id",
+        "path": "AllergyIntolerance.text.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "xml:id (or equivalent in JSON)",
+        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "comment": "Note that FHIR strings may not exceed 1MB in size",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.text.extension",
+        "path": "AllergyIntolerance.text.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional Content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.text.status",
+        "path": "AllergyIntolerance.text.status",
+        "short": "generated | extensions | additional | empty",
+        "definition": "The status of the narrative - whether it's entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.",
+        "comment": "Note that FHIR strings may not exceed 1MB in size",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Narrative.status",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "NarrativeStatus"
+            }
+          ],
+          "strength": "required",
+          "description": "The status of a resource narrative",
+          "valueSetReference": {
+            "reference": "http://hl7.org/fhir/ValueSet/narrative-status"
+          }
+        },
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.text.div",
+        "path": "AllergyIntolerance.text.div",
+        "short": "Limited xhtml content",
+        "definition": "The actual narrative content, a stripped down version of XHTML.",
+        "comment": "The contents of the html element are an XHTML fragment containing only the basic html formatting elements described in chapters 7-11 and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained stylesheets. The XHTML content may not contain a head, a body, external stylesheet references, scripts, forms, base/link/xlink, frames, iframes and objects.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Narrative.div",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "xhtml"
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() | (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          },
+          {
+            "key": "txt-1",
+            "severity": "error",
+            "human": "The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes",
+            "expression": "htmlchecks()",
+            "xpath": "not(descendant-or-self::*[not(local-name(.)=('a', 'abbr', 'acronym', 'b', 'big', 'blockquote', 'br', 'caption', 'cite', 'code', 'col', 'colgroup', 'dd', 'dfn', 'div', 'dl', 'dt', 'em', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'hr', 'i', 'img', 'li', 'ol', 'p', 'pre', 'q', 'samp', 'small', 'span', 'strong', 'sub', 'sup', 'table', 'tbody', 'td', 'tfoot', 'th', 'thead', 'tr', 'tt', 'ul', 'var'))]) and not(descendant-or-self::*/@*[not(name(.)=('abbr', 'accesskey', 'align', 'alt', 'axis', 'bgcolor', 'border', 'cellhalign', 'cellpadding', 'cellspacing', 'cellvalign', 'char', 'charoff', 'charset', 'cite', 'class', 'colspan', 'compact', 'coords', 'dir', 'frame', 'headers', 'height', 'href', 'hreflang', 'hspace', 'id', 'lang', 'longdesc', 'name', 'nowrap', 'rel', 'rev', 'rowspan', 'rules', 'scope', 'shape', 'span', 'src', 'start', 'style', 'summary', 'tabindex', 'title', 'type', 'valign', 'value', 'vspace', 'width'))])"
+          },
+          {
+            "key": "txt-2",
+            "severity": "error",
+            "human": "The narrative SHALL have some non-whitespace content",
+            "expression": "htmlchecks()",
+            "xpath": "descendant::text()[normalize-space(.)!=''] or descendant::h:img[@src]"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
           }
         ]
       },
@@ -3441,7 +4722,7 @@
             "code": "uri"
           }
         ],
-        "fixedUri": "http://hl7.org/fhir/ips/CodeSystem/absent-unknown",
+        "fixedUri": "urn:oid:2.16.840.1.113883.3.1937.777.13.5.999.1",
         "condition": [
           "ele-1"
         ],
@@ -3631,183 +4912,6 @@
             "map": "fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName"
           }
         ]
-      },
-      {
-        "id": "AllergyIntolerance.code:absentOrUnknownAllergy.coding.display.id",
-        "path": "AllergyIntolerance.code.coding.display.id",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "xml:id (or equivalent in JSON)",
-        "definition": "unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
-        "comment": "Note that FHIR strings may not exceed 1MB in size",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "Element.id",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
-        "condition": [
-          "ele-1"
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() | (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          }
-        ]
-      },
-      {
-        "id": "AllergyIntolerance.code:absentOrUnknownAllergy.coding.display.extension",
-        "path": "AllergyIntolerance.code.coding.display.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "description": "Extensions are always sliced by (at least) url",
-          "rules": "open"
-        },
-        "short": "Additional Content defined by implementations",
-        "definition": "May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension"
-          }
-        ],
-        "condition": [
-          "ele-1"
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() | (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
-      },
-      {
-        "id": "AllergyIntolerance.code:absentOrUnknownAllergy.coding.display.extension:translation",
-        "path": "AllergyIntolerance.code.coding.display.extension",
-        "sliceName": "translation",
-        "short": "Language Translation (Localization)",
-        "definition": "Language translation from base language of resource to another language.",
-        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
-        "alias": [
-          "extensions",
-          "user content"
-        ],
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Element.extension",
-          "min": 0,
-          "max": "*"
-        },
-        "type": [
-          {
-            "code": "Extension",
-            "profile": "http://hl7.org/fhir/StructureDefinition/translation"
-          }
-        ],
-        "condition": [
-          "ele-1"
-        ],
-        "constraint": [
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() | (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div"
-          },
-          {
-            "key": "ext-1",
-            "severity": "error",
-            "human": "Must have either extensions or value[x], not both",
-            "expression": "extension.exists() != value.exists()",
-            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"
-          }
-        ],
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
-          {
-            "identity": "rim",
-            "map": "N/A"
-          },
-          {
-            "identity": "rim",
-            "map": "ST.translation"
-          }
-        ]
-      },
-      {
-        "id": "AllergyIntolerance.code:absentOrUnknownAllergy.coding.display.value",
-        "path": "AllergyIntolerance.code.coding.display.value",
-        "representation": [
-          "xmlAttr"
-        ],
-        "short": "Primitive value for string",
-        "definition": "Primitive value for string",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "string.value",
-          "min": 0,
-          "max": "1"
-        },
-        "maxLength": 1048576
       },
       {
         "id": "AllergyIntolerance.code:absentOrUnknownAllergy.coding.userSelected",
@@ -5008,6 +6112,10 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Practitioner"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Patient"
           }
         ],
         "condition": [
@@ -5316,6 +6424,14 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Patient"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Practitioner"
           }
         ],
         "condition": [
@@ -5817,6 +6933,14 @@
           {
             "code": "Reference",
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Practitioner"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Patient"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
           },
           {
             "code": "string"
@@ -8422,6 +9546,14 @@
             "targetProfile": "http://hl7.org/fhir/StructureDefinition/Practitioner"
           },
           {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/Patient"
+          },
+          {
+            "code": "Reference",
+            "targetProfile": "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+          },
+          {
             "code": "string"
           }
         ],
@@ -8632,7 +9764,7 @@
         "id": "AllergyIntolerance.code:absentOrUnknownAllergy.coding.system",
         "path": "AllergyIntolerance.code.coding.system",
         "min": 1,
-        "fixedUri": "http://hl7.org/fhir/ips/CodeSystem/absent-unknown"
+        "fixedUri": "urn:oid:2.16.840.1.113883.3.1937.777.13.5.999.1"
       },
       {
         "id": "AllergyIntolerance.code:absentOrUnknownAllergy.coding.code",
