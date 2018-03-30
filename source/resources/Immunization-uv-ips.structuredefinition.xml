@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
     <lastUpdated value="2018-03-07T18:47:01.502+01:00" />
@@ -8,7 +8,8 @@
   <title value="Immunization" />
   <status value="draft" />
   <date value="2018-03-06" />
-  <description value="This profile represents the constraints applied to the Immunization resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an immunization is represented in the patient summary as an instance of an Immunization resource constrained by this profile." />
+  <description value="This profile represents the constraints applied to the Immunization resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an immunization is represented in the patient summary as an instance of an Immunization resource constrained by this profile.&#xD;&#xA;&#xD;&#xA;It describes the event of a patient being administered a vaccination or a record of a vaccination as reported by a patient, a clinician or another party.&#xD;&#xA;&#xD;&#xA;Two extensions are optionally used by this profile:&#xD;&#xA;(1) the first one provides the details about the assertion (e.g. who did the assertion, when was done);&#xD;&#xA;(2) The second one provides the list of diseases targeted by this vaccine.&#xD;&#xA;&#xD;&#xA;The vaccinationProtocol has been removed by this version of the profile as pre-adoption of the R4." />
+  
   <purpose value="This profile constrains the representation of a record of a vaccination of the patient, in the context of the international patient summary as specified by the IPS project of HL7 International." />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />

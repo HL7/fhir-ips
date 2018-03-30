@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="absent-unknown-uv-ips"/>
-  <url value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
+  <!-- GC removed uv for allowing the build -->
+  <!-->
+    <url value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
+    -->
+    <url value="http://hl7.org/fhir/ips/CodeSystem/absent-unknown-uv-ips"/>
   <name value="IPSCodeSystemAbsentUnknown"/>
   <title value="IPS CodeSystem - Absent and Unknown Data"/>
   <status value="draft"/>

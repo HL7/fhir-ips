@@ -7,6 +7,7 @@
   <name value="Observation-member-imaging-uv-ips" />
   <status value="draft" />
   <date value="2018-02-14T13:42:57.001+01:00" />
+  <description value="This profile represents the contraints applied to the Observation resource by the IPS project, which specifies a sub-observation, member of an &quot;organizer&quot; observation, in the &quot;Imaging results&quot; entry of a patient summary." />
   <fhirVersion value="3.0.1" />
   <kind value="resource" />
   <abstract value="false" />
@@ -5508,9 +5509,9 @@
     </element>
     <element id="Observation.bodySite">
       <path value="Observation.bodySite" />
-      <short value="Concept - reference to a terminology or just  text" />
-      <definition value="A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text." />
-      <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
+      <short value="Observed body part" />
+      <definition value="Indicates the site on the subject's body where the observation was made (i.e. the target site)." />
+      <comment value="Only used if not implicit in code found in Observation.code.  In many systems, this may be represented as a related observation instead of an inline component.   If the use case requires BodySite to be handled as a separate resource (e.g. to identify and track separately) then use the standard extension[ body-site-instance](extension-body-site-instance.html)." />
       <min value="0" />
       <max value="*" />
       <base>
