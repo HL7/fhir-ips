@@ -4,7 +4,9 @@
   "extensions": [
     "translateddiv-uv-ips",
     "abatement-datetime-uv-ips",
-    "participant-uv-ips"
+    "participant-uv-ips",
+    "statement-uv-ips",
+    targetdiseases-immunization-uv-ips
   ],
   "license" :  "cc0-1.0",
   "dependencyList": [],
@@ -48,16 +50,16 @@
   "paths": {
     "pages": [
       "framework",
-      "source/pages"
+      "pages"
     ],
     "specification": "http://hl7.org/fhir",
-    "temp": "generated_output/temp",
-    "txCache": "generated_output/txCache",
-    "output": "docs",
-    "qa": "generated_output/qa",
+    "temp": "temp",
+    "txCache": "txCache",
+    "output": "output",
+    "qa": "qa",
     "resources": [
-      "source/resources",
-      "source/examples"
+      "resources",
+      "examples"
     ]
   },
   "version": "3.0.1",
@@ -299,7 +301,8 @@
       "defns": "StructureDefinition-targetdiseases-immunization-uv-ips-definitions.html",
       "source": "targetDiseases-immunization-uv-ips.structuredefinition.xml",
       "base": "StructureDefinition-targetdiseases-immunization-uv-ips.html"
-    },    "ValueSet/absent-or-unknown-allergies-uv-ips": {
+    },    
+    "ValueSet/absent-or-unknown-allergies-uv-ips": {
       "source": "valueset-absent-or-unknown-allergies-uv-ips.xml",
       "base": "ValueSet-absent-or-unknown-allergies-uv-ips.html"
     },
