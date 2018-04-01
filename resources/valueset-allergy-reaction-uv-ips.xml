@@ -1,0 +1,165 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="allergy-reaction-uv-ips"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    </meta>
+    <url value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-reaction-uv-ips"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="2.16.840.1.113883.11.22.3"/>
+    </identifier>
+    <version value="2017-02-23T00:00:00"/>
+    <name value="IPSAllergyReaction"/>
+    <title value="Allergy Reaction"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="HL7 International"/>
+    <contact>
+        <name value="HL7 International"/>
+        <telecom>
+            <system value="phone"/>
+            <value value="+1 734 677 7777 "/>
+        </telecom>
+        <telecom>
+            <system value="fax"/>
+            <value value="+1 734 677 6622"/>
+        </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="info@hl7.org"/>
+        </telecom>
+    </contact>
+    <description value="Allergy Reaction"/>
+    <immutable value="false"/>
+    <copyright value="Licensing note: This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="1985008"/>
+                <display value="Vomitus"/>
+            </concept>
+            <concept>
+                <code value="9826008"/>
+                <display value="Bronchospasm"/>
+            </concept>
+            <concept>
+                <code value="9826008"/>
+                <display value="Conjunctivitis"/>
+            </concept>
+            <concept>
+                <code value="23067006"/>
+                <display value="Toxic epidermal necrolysis"/>
+            </concept>
+            <concept>
+                <code value="23924001"/>
+                <display value="Tight chest"/>
+            </concept>
+            <concept>
+                <code value="24079001"/>
+                <display value="Atopic dermatitis"/>
+            </concept>
+            <concept>
+                <code value="31996006"/>
+                <display value="Vasculitis"/>
+            </concept>
+            <concept>
+                <code value="39579001"/>
+                <display value="Anaphylaxis"/>
+            </concept>
+            <concept>
+                <code value="41291007"/>
+                <display value="Angio-oedema"/>
+            </concept>
+            <concept>
+                <code value="43116000"/>
+                <display value="Eczema"/>
+            </concept>
+            <concept>
+                <code value="49727002"/>
+                <display value="Cough"/>
+            </concept>
+            <concept>
+                <code value="51599000"/>
+                <display value="Oedema of larynx"/>
+            </concept>
+            <concept>
+                <code value="62315008"/>
+                <display value="Diarrhoea"/>
+            </concept>
+            <concept>
+                <code value="70076002"/>
+                <display value="Rhinitis"/>
+            </concept>
+            <concept>
+                <code value="73442001"/>
+                <display value="Stevens-Johnson syndrome"/>
+            </concept>
+            <concept>
+                <code value="76067001"/>
+                <display value="Sneezing"/>
+            </concept>
+            <concept>
+                <code value="91175000"/>
+                <display value="Seizure"/>
+            </concept>
+            <concept>
+                <code value="126485001"/>
+                <display value="Urticaria"/>
+            </concept>
+            <concept>
+                <code value="162290004"/>
+                <display value="Dry eyes"/>
+            </concept>
+            <concept>
+                <code value="195967001"/>
+                <display value="Asthma"/>
+            </concept>
+            <concept>
+                <code value="247472004"/>
+                <display value="Weal"/>
+            </concept>
+            <concept>
+                <code value="267036007"/>
+                <display value="Dyspnoea"/>
+            </concept>
+            <concept>
+                <code value="271757001"/>
+                <display value="Papular eruption"/>
+            </concept>
+            <concept>
+                <code value="271759003"/>
+                <display value="Bullous eruption"/>
+            </concept>
+            <concept>
+                <code value="271807003"/>
+                <display value="Eruption of skin"/>
+            </concept>
+            <concept>
+                <code value="359610006"/>
+                <display value="Ocular hyperaemia"/>
+            </concept>
+            <concept>
+                <code value="410430005"/>
+                <display value="Cardiorespiratory arrest"/>
+            </concept>
+            <concept>
+                <code value="418363000"/>
+                <display value="Itching of skin"/>
+            </concept>
+            <concept>
+                <code value="422587007"/>
+                <display value="Nausea"/>
+            </concept>
+            <concept>
+                <code value="698247007"/>
+                <display value="Cardiac arrhythmia"/>
+            </concept>
+            <concept>
+                <code value="702809001"/>
+                <display value="Drug reaction with eosinophilia and systemic symptoms"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
