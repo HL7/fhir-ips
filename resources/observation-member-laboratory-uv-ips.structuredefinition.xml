@@ -627,7 +627,7 @@
       </base>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -644,7 +644,7 @@
         </extension>
         <strength value="required" />
         <description value="Codes for sub-observation categories" />
-        <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/sub-observation-category-uv-ips" />
+        <valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/sub-observation-category-uv-ips" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -687,7 +687,7 @@
       </base>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -706,7 +706,7 @@
         <strength value="extensible" />
         <description value="Codes identifying names of simple observations." />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/laboratory-and-vital-signs-observations" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-and-vital-signs-observations" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -1179,7 +1179,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/organization-laboratory-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-laboratory-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1445,11 +1445,11 @@
       </type>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <type>
         <code value="Quantity" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/Quantity-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips" />
       </type>
       <condition value="ele-1" />
       <condition value="obs-7" />
@@ -1471,7 +1471,7 @@
       <binding>
         <strength value="extensible" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/lab-result-coded-value-uv-ips" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/lab-result-coded-value-uv-ips" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -1587,7 +1587,7 @@
       </base>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1820,7 +1820,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/specimen-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/specimen-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3367,7 +3367,7 @@
       <max value="1" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <mustSupport value="true" />
       <binding>
@@ -3376,14 +3376,14 @@
         </extension>
         <strength value="required" />
         <description value="Codes for sub-observation categories" />
-        <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/sub-observation-category-uv-ips" />
+        <valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/sub-observation-category-uv-ips" />
       </binding>
     </element>
     <element id="Observation.code">
       <path value="Observation.code" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <mustSupport value="true" />
       <binding>
@@ -3392,7 +3392,7 @@
         </extension>
         <strength value="extensible" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/laboratory-and-vital-signs-observations" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-and-vital-signs-observations" />
         </valueSetReference>
       </binding>
     </element>
@@ -3433,7 +3433,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/organization-laboratory-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-laboratory-uv-ips" />
       </type>
     </element>
     <element id="Observation.performer.identifier">
@@ -3460,16 +3460,16 @@
       </type>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <type>
         <code value="Quantity" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/Quantity-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips" />
       </type>
       <binding>
         <strength value="extensible" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/lab-result-coded-value-uv-ips" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/lab-result-coded-value-uv-ips" />
         </valueSetReference>
       </binding>
     </element>
@@ -3481,7 +3481,7 @@
       <path value="Observation.interpretation" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
     </element>
     <element id="Observation.bodySite">
@@ -3493,7 +3493,7 @@
       <comment value="The specimen is often implied by the observation code. &#xD;&#xA;In the context of this Observation-member-laboratory-uv-ips profile, specimen should be provided only when it is not implied by the Observation.code, and when further information about the specimen needs to be captured (such as specimen source body site). " />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/specimen-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/specimen-uv-ips" />
       </type>
     </element>
     <element id="Observation.specimen.identifier">

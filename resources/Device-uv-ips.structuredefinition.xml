@@ -2288,7 +2288,7 @@
       </base>
       <type>
         <code value="Coding" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2404,7 +2404,7 @@
         <strength value="required" />
         <description value="Codes to identify medical devices" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/device-kind" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/device-kind" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -2644,7 +2644,7 @@
         <strength value="preferred" />
         <description value="Codes to identify medical devices" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/medical-devices-uv-ips" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-uv-ips" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -4930,7 +4930,7 @@
       <path value="Device.type.coding" />
       <type>
         <code value="Coding" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
       </type>
     </element>
     <element id="Device.type:absentOrUnknownDevice">
@@ -4942,7 +4942,7 @@
         </extension>
         <strength value="required" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/device-kind" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/device-kind" />
         </valueSetReference>
       </binding>
     </element>
@@ -4955,7 +4955,7 @@
         </extension>
         <strength value="preferred" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/medical-devices-uv-ips" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-uv-ips" />
         </valueSetReference>
       </binding>
     </element>

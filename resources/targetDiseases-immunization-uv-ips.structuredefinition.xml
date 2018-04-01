@@ -144,7 +144,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org/fhir/ips/StructureDefinition/targetdiseases-immunization-uv-ips" />
+      <fixedUri value="http://hl7.org/fhir/uv/ips/StructureDefinition/targetdiseases-immunization-uv-ips" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -177,7 +177,7 @@
       </base>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -212,7 +212,7 @@
   <differential>
     <element id="Extension.url">
       <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/ips/StructureDefinition/targetdiseases-immunization-uv-ips" />
+      <fixedUri value="http://hl7.org/fhir/uv/ips/StructureDefinition/targetdiseases-immunization-uv-ips" />
     </element>
     <element id="Extension.value[x]:valueCodeableConcept">
       <path value="Extension.valueCodeableConcept" />
@@ -221,7 +221,7 @@
       <definition value="Disease targeted by this vaccine" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
     </element>
   </differential>

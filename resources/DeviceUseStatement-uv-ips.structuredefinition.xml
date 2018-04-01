@@ -29,7 +29,7 @@
       <definition value="The patient using the device." />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/patient-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -50,7 +50,7 @@
       <path value="DeviceUseStatement.device" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/device-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/device-uv-ips" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -62,7 +62,7 @@
       <path value="DeviceUseStatement.indication.coding" />
       <type>
         <code value="Coding" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
       </type>
     </element>
     <element id="DeviceUseStatement.bodySite">
@@ -73,7 +73,7 @@
       <path value="DeviceUseStatement.bodySite.coding" />
       <type>
         <code value="Coding" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
       </type>
       <mustSupport value="true" />
       <binding>

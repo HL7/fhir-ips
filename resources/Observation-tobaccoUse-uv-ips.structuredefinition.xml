@@ -2540,7 +2540,7 @@
       </base>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <fixedCodeableConcept>
         <coding>
@@ -2702,7 +2702,7 @@
       </base>
       <type>
         <code value="Coding" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -4109,7 +4109,7 @@
       </base>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <condition value="ele-1" />
       <condition value="obs-7" />
@@ -4131,7 +4131,7 @@
       <isSummary value="true" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/current-smoking-status-uv-ips" />
+        <valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -4271,7 +4271,7 @@
       </base>
       <type>
         <code value="Coding" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -12413,7 +12413,7 @@
       <max value="1" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <fixedCodeableConcept>
         <coding>
@@ -12454,12 +12454,12 @@
       <sliceName value="valueCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/current-smoking-status-uv-ips" />
+        <valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips" />
       </binding>
     </element>
     <element id="Observation.valueCodeableConcept:valueCodeableConcept.coding">

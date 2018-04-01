@@ -346,7 +346,7 @@
       </base>
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/statement-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/statement-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1044,7 +1044,7 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org/fhir/ips/StructureDefinition/statement-uv-ips" />
+      <fixedUri value="http://hl7.org/fhir/uv/ips/StructureDefinition/statement-uv-ips" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -4419,7 +4419,7 @@
         <strength value="preferred" />
         <description value="A code to identify a specific procedure ." />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/procedure-code" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/procedure-code" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -4935,7 +4935,7 @@
       </base>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -4954,7 +4954,7 @@
         <strength value="required" />
         <description value="A code to identify absent or unknown procedures" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/absent-or-unknown-procedures-uv-ips" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-procedures-uv-ips" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -5470,7 +5470,7 @@
       </base>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5489,7 +5489,7 @@
         <strength value="preferred" />
         <description value="A code to identify a specific procedure ." />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/procedures-uv-ips" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -7234,15 +7234,15 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/ipsStructureDefinition/device-observer-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ipsStructureDefinition/device-observer-uv-ips" />
       </type>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/practitioner-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/practitioner-uv-ips" />
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/organization-observation-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-observation-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -7489,7 +7489,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/organization-observation-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-observation-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -8757,7 +8757,7 @@
         <strength value="example" />
         <description value="Codes describing anatomical locations. May include laterality." />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/target-site-uv-ips" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -13243,7 +13243,7 @@
       <sliceName value="statementDetail" />
       <type>
         <code value="Extension" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/statement-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/statement-uv-ips" />
       </type>
     </element>
     <element id="Procedure.extension:statementDetail.extension:statementNote">
@@ -13279,7 +13279,7 @@
         </extension>
         <strength value="preferred" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/procedure-code" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/procedure-code" />
         </valueSetReference>
       </binding>
     </element>
@@ -13288,7 +13288,7 @@
       <sliceName value="absentOrUnknownProcedure" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <mustSupport value="true" />
       <binding>
@@ -13298,7 +13298,7 @@
         <strength value="required" />
         <description value="A code to identify absent or unknown procedures" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/absent-or-unknown-procedures-uv-ips" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-procedures-uv-ips" />
         </valueSetReference>
       </binding>
     </element>
@@ -13307,7 +13307,7 @@
       <sliceName value="procedureCode" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <mustSupport value="true" />
       <binding>
@@ -13316,7 +13316,7 @@
         </extension>
         <strength value="preferred" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/procedures-uv-ips" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips" />
         </valueSetReference>
       </binding>
     </element>
@@ -13353,22 +13353,22 @@
       </type>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/ipsStructureDefinition/device-observer-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ipsStructureDefinition/device-observer-uv-ips" />
       </type>
       <type>
         <code value="Reference" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/practitioner-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/practitioner-uv-ips" />
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/organization-observation-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-observation-uv-ips" />
       </type>
     </element>
     <element id="Procedure.performer.onBehalfOf">
       <path value="Procedure.performer.onBehalfOf" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/organization-observation-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-observation-uv-ips" />
       </type>
     </element>
     <element id="Procedure.location">
@@ -13394,7 +13394,7 @@
         </extension>
         <strength value="example" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/target-site-uv-ips" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips" />
         </valueSetReference>
       </binding>
     </element>

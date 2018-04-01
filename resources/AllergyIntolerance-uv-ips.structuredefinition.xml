@@ -2471,7 +2471,7 @@
       </base>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2489,7 +2489,7 @@
         <strength value="required" />
         <description value="negation/exclusion codes for reporting no known allergies or not available data." />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/absent-or-unknown-allergies-uv-ips" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-allergies-uv-ips" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -3005,7 +3005,7 @@
       </base>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3023,7 +3023,7 @@
         <strength value="preferred" />
         <description value="Type of the substance/product, allergy or intolerance condition." />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -5320,7 +5320,7 @@
       </base>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5338,7 +5338,7 @@
         <strength value="preferred" />
         <description value="Clinical symptoms and/or signs that are observed or associated with an Adverse Reaction Event." />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/allergy-reaction-uv-ips" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-reaction-uv-ips" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -6755,7 +6755,7 @@
       <definition value="Code for an allergy or intolerance statement (either a positive or a negated/excluded statement).  This describes a categorical negated statement (e.g.,  &quot;No known allergy&quot;)." />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -6764,7 +6764,7 @@
         <strength value="required" />
         <description value="negation/exclusion codes for reporting no known allergies or not available data." />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/absent-or-unknown-allergies-uv-ips" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-allergies-uv-ips" />
         </valueSetReference>
       </binding>
     </element>
@@ -6788,7 +6788,7 @@
       <definition value="Code for an allergy or intolerance statement .  This may be a code for a substance or pharmaceutical product that is considered to be responsible for the adverse reaction risk (e.g., &quot;Latex&quot;), an allergy or intolerance condition (e.g., &quot;Latex allergy&quot;)." />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -6797,7 +6797,7 @@
         <strength value="preferred" />
         <description value="Type of the substance/product, allergy or intolerance condition." />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips" />
         </valueSetReference>
       </binding>
     </element>
@@ -6830,7 +6830,7 @@
       <path value="AllergyIntolerance.reaction.manifestation" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <mustSupport value="true" />
       <binding>
@@ -6839,7 +6839,7 @@
         </extension>
         <strength value="preferred" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/allergy-reaction-uv-ips" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-reaction-uv-ips" />
         </valueSetReference>
       </binding>
     </element>

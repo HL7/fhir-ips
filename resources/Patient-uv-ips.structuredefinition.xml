@@ -4990,7 +4990,7 @@
       </base>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5007,7 +5007,7 @@
         </extension>
         <strength value="required" />
         <description value="The nature of the relationship between a patient and a contact person for that patient." />
-        <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/personal-relationship-uv-ips" />
+        <valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/personal-relationship-uv-ips" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -11461,7 +11461,7 @@
       <path value="Patient.contact.relationship" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <mustSupport value="true" />
       <binding>
@@ -11469,7 +11469,7 @@
           <valueString value="ContactRelationship" />
         </extension>
         <strength value="required" />
-        <valueSetUri value="http://hl7.org/fhir/ips/ValueSet/personal-relationship-uv-ips" />
+        <valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/personal-relationship-uv-ips" />
       </binding>
     </element>
     <element id="Patient.contact.name">

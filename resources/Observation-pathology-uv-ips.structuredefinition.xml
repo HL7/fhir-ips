@@ -628,7 +628,7 @@
       </base>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -689,7 +689,7 @@
       </base>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -708,7 +708,7 @@
         <strength value="extensible" />
         <description value="Codes identifying names of simple observations." />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/laboratory-tests-and-panels" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-tests-and-panels" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -1377,7 +1377,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/organization-laboratory-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-laboratory-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -1647,11 +1647,11 @@
       </type>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <type>
         <code value="Quantity" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/Quantity-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips" />
       </type>
       <condition value="ele-1" />
       <condition value="obs-7" />
@@ -1681,7 +1681,7 @@
       <binding>
         <strength value="extensible" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/lab-result-coded-value-uv-ips" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/lab-result-coded-value-uv-ips" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -1942,7 +1942,7 @@
       </base>
       <type>
         <code value="Coding" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2576,7 +2576,7 @@
       </base>
       <type>
         <code value="Coding" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2965,7 +2965,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/specimen-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/specimen-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -3756,7 +3756,7 @@
       </base>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -4444,7 +4444,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/observation-member-pathology-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-member-pathology-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -4697,7 +4697,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/observation-attachment-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-attachment-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5415,7 +5415,7 @@
       <max value="1" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
     </element>
     <element id="Observation.code">
@@ -5424,7 +5424,7 @@
       <comment value="In the context of this Observation-laboratory-uv-ips profile, when the observation plays the role of a grouper of member sub-observations, the code represent the group (for instance a panel code). In case no code is available, at least a text shall be provided." />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <mustSupport value="true" />
       <binding>
@@ -5433,7 +5433,7 @@
         </extension>
         <strength value="extensible" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/laboratory-tests-and-panels" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-tests-and-panels" />
         </valueSetReference>
       </binding>
     </element>
@@ -5476,7 +5476,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/organization-laboratory-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-laboratory-uv-ips" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -5506,11 +5506,11 @@
       </type>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <type>
         <code value="Quantity" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/Quantity-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips" />
       </type>
       <condition value="value" />
       <constraint>
@@ -5523,7 +5523,7 @@
       <binding>
         <strength value="extensible" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/lab-result-coded-value-uv-ips" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/lab-result-coded-value-uv-ips" />
         </valueSetReference>
       </binding>
     </element>
@@ -5535,7 +5535,7 @@
       <path value="Observation.interpretation.coding" />
       <type>
         <code value="Coding" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
       </type>
     </element>
     <element id="Observation.bodySite">
@@ -5546,7 +5546,7 @@
       <path value="Observation.method.coding" />
       <type>
         <code value="Coding" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/coding-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
       </type>
     </element>
     <element id="Observation.specimen">
@@ -5554,7 +5554,7 @@
       <comment value="The specimen is often implied by the observation code. &#xD;&#xA;In the context of this Observation-laboratory-uv-ips profile, specimen should be provided only when it is not implied by the Observation.code, and when further information about the specimen needs to be captured (such as specimen source body site). &#xD;&#xA;In case of a laboratory panel/study using a single specimen , which needs  further description (like a CSF microbiology study), the specimen is introduced by this element.&#xD;&#xA;In case of a dynamic function test using multiple specimens, each specimen shall be further described, if needed, within the sub-observation that was produced on this specimen." />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/specimen-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/specimen-uv-ips" />
       </type>
     </element>
     <element id="Observation.specimen.identifier">
@@ -5570,7 +5570,7 @@
       <min value="1" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -5613,7 +5613,7 @@
       <path value="Observation.related.target" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/observation-member-pathology-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-member-pathology-uv-ips" />
       </type>
     </element>
     <element id="Observation.related:attachment">
@@ -5632,7 +5632,7 @@
       <path value="Observation.related.target" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/observation-attachment-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-attachment-uv-ips" />
       </type>
     </element>
     <element id="Observation.related:attachment.target.identifier">

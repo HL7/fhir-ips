@@ -2933,7 +2933,7 @@
       </base>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2952,7 +2952,7 @@
         <strength value="example" />
         <description value="Codes identifying names of simple observations." />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/imaging-observations-uv-ips" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -3478,7 +3478,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/patient-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -4077,11 +4077,11 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/practitioner-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/practitioner-uv-ips" />
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/organization-observation-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-observation-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5522,7 +5522,7 @@
       </base>
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -5539,7 +5539,7 @@
         <strength value="example" />
         <description value="Codes describing anatomical locations. May include laterality." />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/target-site-uv-ips" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -6831,7 +6831,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/device-observer-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/device-observer-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -12165,7 +12165,7 @@
       <path value="Observation.code" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <mustSupport value="true" />
       <binding>
@@ -12174,7 +12174,7 @@
         </extension>
         <strength value="example" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/imaging-observations-uv-ips" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips" />
         </valueSetReference>
       </binding>
     </element>
@@ -12183,7 +12183,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/patient-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -12199,11 +12199,11 @@
       <path value="Observation.performer" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/practitioner-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/practitioner-uv-ips" />
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/organization-observation-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-observation-uv-ips" />
       </type>
       <mustSupport value="true" />
     </element>
@@ -12241,7 +12241,7 @@
       <path value="Observation.bodySite" />
       <type>
         <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/ips/StructureDefinition/CodeableConcept-uv-ips" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -12249,7 +12249,7 @@
         </extension>
         <strength value="example" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/ips/ValueSet/target-site-uv-ips" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips" />
         </valueSetReference>
       </binding>
     </element>
@@ -12257,7 +12257,7 @@
       <path value="Observation.device" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/ips/StructureDefinition/device-observer-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/device-observer-uv-ips" />
       </type>
       <mustSupport value="true" />
     </element>
