@@ -3438,7 +3438,7 @@
         <strength value="required" />
         <description value="Absent problem or unknown problem" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir//ips/ValueSet/absent-or-unknown-problems-uv-ips" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -4099,9 +4099,9 @@
         <map value="fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" />
       </mapping>
     </element>
-    <element id="Condition.code:@default">
+    <element id="Condition.code:default">
       <path value="Condition.code" />
-      <sliceName value="@default" />
+      <sliceName value="default" />
       <short value="Concept - reference to a terminology or just  text" />
       <definition value="A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text." />
       <comment value="Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination." />
@@ -4174,7 +4174,7 @@
         <map value="what" />
       </mapping>
     </element>
-    <element id="Condition.code:@default.id">
+    <element id="Condition.code:default.id">
       <path value="Condition.code.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -4203,7 +4203,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Condition.code:@default.extension">
+    <element id="Condition.code:default.extension">
       <path value="Condition.code.extension" />
       <slicing>
         <discriminator>
@@ -4252,7 +4252,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Condition.code:@default.coding">
+    <element id="Condition.code:default.coding">
       <path value="Condition.code.coding" />
       <short value="Code defined by a terminology system" />
       <definition value="A reference to a code defined by a terminology system." />
@@ -4306,7 +4306,7 @@
         <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" />
       </mapping>
     </element>
-    <element id="Condition.code:@default.coding.id">
+    <element id="Condition.code:default.coding.id">
       <path value="Condition.code.coding.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -4335,7 +4335,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="Condition.code:@default.coding.extension">
+    <element id="Condition.code:default.coding.extension">
       <path value="Condition.code.coding.extension" />
       <slicing>
         <discriminator>
@@ -4384,7 +4384,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="Condition.code:@default.coding.system">
+    <element id="Condition.code:default.coding.system">
       <path value="Condition.code.coding.system" />
       <short value="Identity of the terminology system" />
       <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
@@ -4426,7 +4426,7 @@
         <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" />
       </mapping>
     </element>
-    <element id="Condition.code:@default.coding.version">
+    <element id="Condition.code:default.coding.version">
       <path value="Condition.code.coding.version" />
       <short value="Version of the system - if relevant" />
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
@@ -4467,7 +4467,7 @@
         <map value="fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" />
       </mapping>
     </element>
-    <element id="Condition.code:@default.coding.code">
+    <element id="Condition.code:default.coding.code">
       <path value="Condition.code.coding.code" />
       <short value="Symbol in syntax defined by the system" />
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
@@ -4509,7 +4509,7 @@
         <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" />
       </mapping>
     </element>
-    <element id="Condition.code:@default.coding.display">
+    <element id="Condition.code:default.coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -4554,7 +4554,7 @@
         <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" />
       </mapping>
     </element>
-    <element id="Condition.code:@default.coding.userSelected">
+    <element id="Condition.code:default.coding.userSelected">
       <path value="Condition.code.coding.userSelected" />
       <short value="If this coding was chosen directly by the user" />
       <definition value="Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)." />
@@ -4596,7 +4596,7 @@
         <map value="fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\#true a [     fhir:source &quot;true&quot;;     fhir:target dt:CDCoding.codingRationale\#O   ]" />
       </mapping>
     </element>
-    <element id="Condition.code:@default.text">
+    <element id="Condition.code:default.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -8277,7 +8277,7 @@
         <strength value="required" />
         <description value="Absent problem or unknown problem" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir//ips/ValueSet/absent-or-unknown-problems-uv-ips" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips" />
         </valueSetReference>
       </binding>
     </element>
@@ -8295,9 +8295,9 @@
       <path value="Condition.code.coding.code" />
       <min value="1" />
     </element>
-    <element id="Condition.code:@default">
+    <element id="Condition.code:default">
       <path value="Condition.code" />
-      <sliceName value="@default" />
+      <sliceName value="default" />
       <max value="1" />
       <type>
         <code value="CodeableConcept" />

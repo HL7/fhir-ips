@@ -617,7 +617,7 @@
       <path value="Observation.category" />
       <short value="Concept - reference to a terminology or just  text" />
       <definition value="A code that classifies the general type of observation being made. In this profile, fixed to &quot;laboratory&quot;." />
-      <comment value="&quot;laboratory&quot; includes laboratory medicine and pathology " />
+      <comment value="&quot;laboratory&quot; includes laboratory medicine and pathology" />
       <requirements value="Used for filtering what observations are retrieved and displayed." />
       <min value="1" />
       <max value="1" />
@@ -708,7 +708,7 @@
         <strength value="extensible" />
         <description value="Codes identifying names of simple observations." />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-tests-and-panels" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-tests-and-panels-uv-ips" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -3964,7 +3964,7 @@
       </slicing>
       <short value="Resource related to this observation" />
       <definition value="A  reference to another Observation profiled by observation-member-laboratory-uv-trillium2. The target observation is considered as a sub-observation of the current one, which plays the role of a grouper" />
-      <comment value="This element is used in the context of Trillium II international patient summary when there is a need to group a collection of observations, because they belong to the same panel, or because they share a common interpretation comment, or a common media attachment (illustrative image or graph). In these cases, the current observation profiled as observation-laboratory-uv-trillium2 is the grouper, and its set of sub-observations are related observations  using the type &quot;has-member&quot; and the profile observation-member-laboratory-uv-trillium2. " />
+      <comment value="This element is used in the context of Trillium II international patient summary when there is a need to group a collection of observations, because they belong to the same panel, or because they share a common interpretation comment, or a common media attachment (illustrative image or graph). In these cases, the current observation profiled as observation-laboratory-uv-trillium2 is the grouper, and its set of sub-observations are related observations  using the type &quot;has-member&quot; and the profile observation-member-laboratory-uv-trillium2." />
       <requirements value="Normally, an observation will have either a value or a set of related observations. A few observations (e.g. Apgar score) may have both a value and a set of related observations or sometimes a QuestionnaireResponse from which the measure is derived." />
       <min value="0" />
       <max value="*" />
@@ -4122,10 +4122,12 @@
     </element>
     <element id="Observation.related.type">
       <path value="Observation.related.type" />
-      <short value="has-member: the related observation is a sub-observation of the current one, which acts as a grouper " />
+      <short value="has-member: the related observation is a sub-observation of the current one, which acts as a grouper" />
       <definition value="A code specifying the kind of relationship that exists with the target resource.&#xD;&#xA;The only authorized value in this profile is &quot;has-member&quot;" />
+<!-- remove extraneous not required elements with empty text      
       <comment value="   &#xD;&#xA;" />
       <requirements value="&#xD;&#xA;" />
+-->
       <min value="1" />
       <max value="1" />
       <base>
@@ -5410,7 +5412,7 @@
     <element id="Observation.category">
       <path value="Observation.category" />
       <definition value="A code that classifies the general type of observation being made. In this profile, fixed to &quot;laboratory&quot;." />
-      <comment value="&quot;laboratory&quot; includes laboratory medicine and pathology " />
+      <comment value="&quot;laboratory&quot; includes laboratory medicine and pathology" />
       <min value="1" />
       <max value="1" />
       <type>
@@ -5433,7 +5435,7 @@
         </extension>
         <strength value="extensible" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-tests-and-panels" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-tests-and-panels-uv-ips" />
         </valueSetReference>
       </binding>
     </element>
@@ -5584,14 +5586,16 @@
         <rules value="open" />
       </slicing>
       <definition value="A  reference to another Observation profiled by observation-member-laboratory-uv-trillium2. The target observation is considered as a sub-observation of the current one, which plays the role of a grouper" />
-      <comment value="This element is used in the context of Trillium II international patient summary when there is a need to group a collection of observations, because they belong to the same panel, or because they share a common interpretation comment, or a common media attachment (illustrative image or graph). In these cases, the current observation profiled as observation-laboratory-uv-trillium2 is the grouper, and its set of sub-observations are related observations  using the type &quot;has-member&quot; and the profile observation-member-laboratory-uv-trillium2. " />
+      <comment value="This element is used in the context of Trillium II international patient summary when there is a need to group a collection of observations, because they belong to the same panel, or because they share a common interpretation comment, or a common media attachment (illustrative image or graph). In these cases, the current observation profiled as observation-laboratory-uv-trillium2 is the grouper, and its set of sub-observations are related observations  using the type &quot;has-member&quot; and the profile observation-member-laboratory-uv-trillium2." />
     </element>
     <element id="Observation.related.type">
       <path value="Observation.related.type" />
-      <short value="has-member: the related observation is a sub-observation of the current one, which acts as a grouper " />
+      <short value="has-member: the related observation is a sub-observation of the current one, which acts as a grouper" />
       <definition value="A code specifying the kind of relationship that exists with the target resource.&#xD;&#xA;The only authorized value in this profile is &quot;has-member&quot;" />
+<!-- remove extraneous not required elements with empty text      
       <comment value="   &#xD;&#xA;" />
       <requirements value="&#xD;&#xA;" />
+-->
       <min value="1" />
       <fixedCode value="has-member" />
     </element>

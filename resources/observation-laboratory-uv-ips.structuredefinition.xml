@@ -2573,7 +2573,7 @@
         <strength value="extensible" />
         <description value="Codes identifying names of simple observations." />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-tests-and-panels" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-tests-and-panels-uv-ips" />
         </valueSetReference>
       </binding>
       <mapping>
@@ -9662,8 +9662,10 @@
       <path value="Observation.related.type" />
       <short value="has-member: the related observation is a sub-observation of the current one, which acts as a grouper" />
       <definition value="A code specifying the kind of relationship that exists with the target resource.&#xD;&#xA;The only authorized value in this profile is &quot;has-member&quot;" />
+<!-- remove extraneous not required elements with empty text      
       <comment value="   &#xD;&#xA;" />
       <requirements value="&#xD;&#xA;" />
+-->
       <min value="1" />
       <max value="1" />
       <base>
@@ -12758,7 +12760,7 @@
         </extension>
         <strength value="extensible" />
         <valueSetReference>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-tests-and-panels" />
+          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-tests-and-panels-uv-ips" />
         </valueSetReference>
       </binding>
     </element>
@@ -12915,8 +12917,10 @@
       <path value="Observation.related.type" />
       <short value="has-member: the related observation is a sub-observation of the current one, which acts as a grouper" />
       <definition value="A code specifying the kind of relationship that exists with the target resource.&#xD;&#xA;The only authorized value in this profile is &quot;has-member&quot;" />
+<!-- remove extraneous not required elements with empty text      
       <comment value="   &#xD;&#xA;" />
       <requirements value="&#xD;&#xA;" />
+-->
       <min value="1" />
       <fixedCode value="has-member" />
     </element>
