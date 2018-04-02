@@ -36,7 +36,80 @@
 	<immutable value="false"/>
 	<compose>
 		<include>
-			<valueSet value="urn:oid:2.16.840.1.113883.11.22.41"/>
+			<system value="http://loinc.org"/>
+			<filter>
+				<property value="COMPONENT"/>
+				<op value="regex"/>
+				<value value="^((?!Panel).)*$"/>
+			</filter>
+			<filter>
+				<property value="COMPONENT"/>
+				<op value="regex"/>
+				<value value="^((?!panel).)*$"/>
+			</filter>
+			<filter>
+				<property value="COMPONENT"/>
+				<op value="regex"/>
+				<value value="^(?!Can pronounce.*$).*"/>
+			</filter>
+			<filter>
+				<property value="STATUS"/>
+				<op value="="/>
+				<value value="ACTIVE"/>
+			</filter>
+			<filter>
+				<property value="CLASSTYPE"/>
+				<op value="="/>
+				<value value="1"/>
+			</filter>
+			<filter>
+				<property value="ORDER_OBS"/>
+				<op value="regex"/>
+				<value value="Observation|Both"/>
+			</filter>
+			<filter>
+				<property value="CLASS"/>
+				<op value="regex"/>
+				<value value="CYTO|HEM/BC|HL7\.CYTOGEN|HL7\.GENETICS|PATH|^(?!MOLPATH.*$).*"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://loinc.org"/>
+			<filter>
+				<property value="COMPONENT"/>
+				<op value="regex"/>
+				<value value="^((?!Panel).)*$"/>
+			</filter>
+			<filter>
+				<property value="COMPONENT"/>
+				<op value="regex"/>
+				<value value="^((?!panel).)*$"/>
+			</filter>
+			<filter>
+				<property value="COMPONENT"/>
+				<op value="regex"/>
+				<value value="^(?!Can pronounce.*$).*"/>
+			</filter>
+			<filter>
+				<property value="STATUS"/>
+				<op value="="/>
+				<value value="ACTIVE"/>
+			</filter>
+			<filter>
+				<property value="CLASSTYPE"/>
+				<op value="="/>
+				<value value="2"/>
+			</filter>
+			<filter>
+				<property value="ORDER_OBS"/>
+				<op value="regex"/>
+				<value value="Observation|Both"/>
+			</filter>
+			<filter>
+				<property value="SYSTEM"/>
+				<op value="="/>
+				<value value="^Patient"/>
+			</filter>
 		</include>
 	</compose>
 </ValueSet>
