@@ -4,7 +4,6 @@
   <meta>
     <versionId value="358e932e-d23a-44a8-ae0c-11d9a8f8b347" />
     <lastUpdated value="2018-03-08T14:46:56.289+01:00" />
-    <profile value="http://hl7.org/fhir/StructureDefinition/clinicaldocument" />
   </meta>
   <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/composition-uv-ips" />
   <version value="1.0 (STU ballot)" />
@@ -43,7 +42,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Composition" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/clinicaldocument" />
   <derivation value="constraint" />
   <snapshot>
     <element id="Composition">
@@ -3736,7 +3735,6 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="PCPR" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -4172,6 +4170,12 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/v3/ActClass" />
+          <code value="PCPR" />
+        </coding>
+      </fixedCodeableConcept>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -4442,7 +4446,6 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://hl7.org/fhir/v3/ActClass" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -4526,7 +4529,6 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="PCPR" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -4738,327 +4740,6 @@
       </mapping>
     </element>
     <element id="Composition.event:careProvisioningEvent.detail">
-      <path value="Composition.event.detail" />
-      <short value="The event(s) being documented" />
-      <definition value="The description and/or reference of the event(s) being documented. For example, this could be used to document such a colonoscopy or an appendectomy." />
-      <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository." />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Composition.event.detail" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="ref-1" />
-        <severity value="error" />
-        <human value="SHALL have a contained resource if a local reference is provided" />
-        <expression value="reference.startsWith('#').not() or (reference.substring(1).trace('url') in %resource.contained.id.trace('ids'))" />
-        <xpath value="not(starts-with(f:reference/@value, '#')) or exists(ancestor::*[self::f:entry or self::f:parameter]/f:resource/f:*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')]|/*/f:contained/f:*[f:id/@value=substring-after(current()/f:reference/@value, '#')])" />
-      </constraint>
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="The target of a resource reference is a RIM entry point (Act, Role, or Entity)" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value=".outboundRelationship[typeCode=&quot;SUBJ&quot;].target" />
-      </mapping>
-      <mapping>
-        <identity value="cda" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element id="Composition.event:otherEvents">
-      <path value="Composition.event" />
-      <sliceName value="otherEvents" />
-      <short value="Other clinical service(s) being documented" />
-      <definition value="Other clinical services being documented." />
-      <comment value="The event needs to be consistent with the type element, though can provide further information if desired." />
-      <requirements value="Provides context for the composition and creates a linkage between a resource describing an event and the composition created describing the event." />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Composition.event" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="BackboneElement" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="outboundRelationship[typeCode=&quot;SUBJ&quot;].target[classCode&lt;'ACT']" />
-      </mapping>
-      <mapping>
-        <identity value="cda" />
-        <map value=".documentationOf.serviceEvent" />
-      </mapping>
-    </element>
-    <element id="Composition.event:otherEvents.id">
-      <path value="Composition.event.id" />
-      <representation value="xmlAttr" />
-      <short value="xml:id (or equivalent in JSON)" />
-      <definition value="unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." />
-      <comment value="Note that FHIR strings may not exceed 1MB in size" />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Element.id" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="string" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-    </element>
-    <element id="Composition.event:otherEvents.extension">
-      <path value="Composition.event.extension" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="url" />
-        </discriminator>
-        <description value="Extensions are always sliced by (at least) url" />
-        <rules value="open" />
-      </slicing>
-      <short value="Additional Content defined by implementations" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Element.extension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="Composition.event:otherEvents.modifierExtension">
-      <path value="Composition.event.modifierExtension" />
-      <short value="Extensions that cannot be ignored" />
-      <definition value="May be used to represent additional information that is not part of the basic definition of the element, and that modifies the understanding of the element that contains it. Usually modifier elements provide negation or qualification. In order to make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions." />
-      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." />
-      <alias value="extensions" />
-      <alias value="user content" />
-      <alias value="modifiers" />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="BackboneElement.modifierExtension" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="Extension" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="ext-1" />
-        <severity value="error" />
-        <human value="Must have either extensions or value[x], not both" />
-        <expression value="extension.exists() != value.exists()" />
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" />
-      </constraint>
-      <isModifier value="true" />
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="N/A" />
-      </mapping>
-    </element>
-    <element id="Composition.event:otherEvents.code">
-      <path value="Composition.event.code" />
-      <short value="Code(s) that apply to the event being documented" />
-      <definition value="This list of codes represents the main clinical acts, such as a colonoscopy or an appendectomy, being documented. In some cases, the event is inherent in the typeCode, such as a &quot;History and Physical Report&quot; in which the procedure being documented is necessarily a &quot;History and Physical&quot; act." />
-      <comment value="An event can further specialize the act inherent in the typeCode, such as where it is simply &quot;Procedure Report&quot; and the procedure was a &quot;colonoscopy&quot;. If one or more eventCodes are included, they SHALL NOT conflict with the values inherent in the classCode, practiceSettingCode or typeCode, as such a conflict would create an ambiguous situation. This short list of codes is provided to be used as key words for certain types of queries." />
-      <min value="0" />
-      <max value="*" />
-      <base>
-        <path value="Composition.event.code" />
-        <min value="0" />
-        <max value="*" />
-      </base>
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <isSummary value="true" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="DocumentEventType" />
-        </extension>
-        <strength value="example" />
-        <description value="This list of codes represents the main clinical acts being documented." />
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/v3-ActCode" />
-        </valueSetReference>
-      </binding>
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="CE/CNE/CWE" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="CD" />
-      </mapping>
-      <mapping>
-        <identity value="orim" />
-        <map value="fhir:CodeableConcept rdfs:subClassOf dt:CD" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value=".code" />
-      </mapping>
-      <mapping>
-        <identity value="cda" />
-        <map value=".code" />
-      </mapping>
-    </element>
-    <element id="Composition.event:otherEvents.period">
-      <path value="Composition.event.period" />
-      <short value="The period covered by the documentation" />
-      <definition value="The period of time covered by the documentation. There is no assertion that the documentation is a complete representation for this period, only that it documents events during this time." />
-      <comment value="This is not a duration - that's a measure of time (a separate type), but a duration that occurs at a fixed value of time. A Period specifies a range of time; the context of use will specify whether the entire range applies (e.g. &quot;the patient was an inpatient of the hospital for this time range&quot;) or one value from the range applies (e.g. &quot;give to the patient between these two times&quot;). If duration is required, specify the type as Interval|Duration." />
-      <min value="0" />
-      <max value="1" />
-      <base>
-        <path value="Composition.event.period" />
-        <min value="0" />
-        <max value="1" />
-      </base>
-      <type>
-        <code value="Period" />
-      </type>
-      <condition value="ele-1" />
-      <constraint>
-        <key value="ele-1" />
-        <severity value="error" />
-        <human value="All FHIR elements must have a @value or children" />
-        <expression value="hasValue() | (children().count() &gt; id.count())" />
-        <xpath value="@value|f:*|h:div" />
-      </constraint>
-      <constraint>
-        <key value="per-1" />
-        <severity value="error" />
-        <human value="If present, start SHALL have a lower value than end" />
-        <expression value="start.empty() or end.empty() or (start &lt;= end)" />
-        <xpath value="not(exists(f:start)) or not(exists(f:end)) or (f:start/@value &lt;= f:end/@value)" />
-      </constraint>
-      <isSummary value="true" />
-      <mapping>
-        <identity value="rim" />
-        <map value="n/a" />
-      </mapping>
-      <mapping>
-        <identity value="v2" />
-        <map value="DR" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value="IVL&lt;TS&gt;[lowClosed=&quot;true&quot; and highClosed=&quot;true&quot;] or URG&lt;TS&gt;[lowClosed=&quot;true&quot; and highClosed=&quot;true&quot;]" />
-      </mapping>
-      <mapping>
-        <identity value="rim" />
-        <map value=".effectiveTime" />
-      </mapping>
-      <mapping>
-        <identity value="cda" />
-        <map value=".effectiveTime" />
-      </mapping>
-    </element>
-    <element id="Composition.event:otherEvents.detail">
       <path value="Composition.event.detail" />
       <short value="The event(s) being documented" />
       <definition value="The description and/or reference of the event(s) being documented. For example, this could be used to document such a colonoscopy or an appendectomy." />
@@ -5907,6 +5588,12 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="10160-0" />
+        </coding>
+      </fixedCodeableConcept>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -6178,7 +5865,6 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://loinc.org" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -6262,7 +5948,6 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="10160-0" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -7345,6 +7030,12 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="48765-2" />
+        </coding>
+      </fixedCodeableConcept>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -7616,7 +7307,6 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://loinc.org" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -7700,7 +7390,6 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="48765-2" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -8976,6 +8665,12 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="11450-4" />
+        </coding>
+      </fixedCodeableConcept>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -9247,7 +8942,6 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://loinc.org" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -9331,7 +9025,6 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="11450-4" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -10607,6 +10300,12 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="47519-4" />
+        </coding>
+      </fixedCodeableConcept>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -10878,7 +10577,6 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://loinc.org" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -10962,7 +10660,6 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="47519-4" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -12045,6 +11742,12 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="11369-6" />
+        </coding>
+      </fixedCodeableConcept>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -12316,7 +12019,6 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://loinc.org" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -12400,7 +12102,6 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="11369-6" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -13676,6 +13377,12 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="46264-8" />
+        </coding>
+      </fixedCodeableConcept>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -13947,7 +13654,6 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://loinc.org" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -14031,7 +13737,6 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="46264-8" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -14761,7 +14466,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/deviceusestatement-uv-ips" />
       </type>
       <condition value="ele-1" />
       <condition value="cmp-2" />
@@ -15305,6 +15010,12 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="30954-2" />
+        </coding>
+      </fixedCodeableConcept>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -15576,7 +15287,6 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://loinc.org" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -15660,7 +15370,6 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="30954-2" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -17473,6 +17182,12 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="11348-0" />
+        </coding>
+      </fixedCodeableConcept>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -17743,7 +17458,6 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://loinc.org" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -17827,7 +17541,6 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="11348-0" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -18715,6 +18428,12 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="47420-5" />
+        </coding>
+      </fixedCodeableConcept>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -18851,6 +18570,7 @@
       </base>
       <type>
         <code value="Coding" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -18984,7 +18704,6 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://loinc.org" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -19068,7 +18787,6 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="47420-5" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -19859,6 +19577,12 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="18776-5" />
+        </coding>
+      </fixedCodeableConcept>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -19995,6 +19719,7 @@
       </base>
       <type>
         <code value="Coding" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -20128,7 +19853,6 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://loinc.org" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -20212,7 +19936,6 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="18776-5" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -20888,6 +20611,12 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="29762-2" />
+        </coding>
+      </fixedCodeableConcept>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -21024,6 +20753,7 @@
       </base>
       <type>
         <code value="Coding" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -21157,7 +20887,6 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://loinc.org" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -21241,7 +20970,6 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="29762-2" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -22216,6 +21944,12 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="82810-3" />
+        </coding>
+      </fixedCodeableConcept>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -22352,6 +22086,7 @@
       </base>
       <type>
         <code value="Coding" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -22485,7 +22220,6 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://loinc.org" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -22569,7 +22303,6 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="82810-3" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -23351,6 +23084,12 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="42348-3" />
+        </coding>
+      </fixedCodeableConcept>
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -23487,6 +23226,7 @@
       </base>
       <type>
         <code value="Coding" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -23620,7 +23360,6 @@
       <type>
         <code value="uri" />
       </type>
-      <fixedUri value="http://loinc.org" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -23704,7 +23443,6 @@
       <type>
         <code value="code" />
       </type>
-      <fixedCode value="42348-3" />
       <condition value="ele-1" />
       <constraint>
         <key value="ele-1" />
@@ -24299,15 +24037,11 @@
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="code" />
+          <path value="code.coding.code" />
         </discriminator>
         <rules value="open" />
       </slicing>
       <definition value="The main activity being described by a IPS is the provision of healthcare over a period of time. &#xD;&#xA;In the CDA representation of the IPS this is shown by setting the value of serviceEvent/@classCode to “PCPR” (care provision) and indicating the duration over which care was provided in serviceEvent/effectiveTime. &#xD;&#xA;In the FHIR representation at lest one event should be used to record this information.&#xD;&#xA;Additional data from outside this duration may also be included if it is relevant to care provided during that time range (e.g., reviewed during the stated time range). For example if the IPS is generated by a GP based on information recorded in his/her EHR-S, then the start value should represent the date when the treatment relationship between the patient and the GP started; and the end value the date of the latest care event." />
-    </element>
-    <element id="Composition.event.code.coding.code">
-      <path value="Composition.event.code.coding.code" />
-      <fixedCode value="PCPR" />
     </element>
     <element id="Composition.event:careProvisioningEvent">
       <path value="Composition.event" />
@@ -24316,19 +24050,14 @@
       <definition value="The provision of healthcare over a period of time this IPS is documenting." />
       <max value="1" />
     </element>
-    <element id="Composition.event:careProvisioningEvent.code.coding.system">
-      <path value="Composition.event.code.coding.system" />
-      <fixedUri value="http://hl7.org/fhir/v3/ActClass" />
-    </element>
-    <element id="Composition.event:careProvisioningEvent.code.coding.code">
-      <path value="Composition.event.code.coding.code" />
-      <fixedCode value="PCPR" />
-    </element>
-    <element id="Composition.event:otherEvents">
-      <path value="Composition.event" />
-      <sliceName value="otherEvents" />
-      <short value="Other clinical service(s) being documented" />
-      <definition value="Other clinical services being documented." />
+    <element id="Composition.event:careProvisioningEvent.code">
+      <path value="Composition.event.code" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://hl7.org/fhir/v3/ActClass" />
+          <code value="PCPR" />
+        </coding>
+      </fixedCodeableConcept>
     </element>
     <element id="Composition.section">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
@@ -24370,6 +24099,12 @@
     <element id="Composition.section:sectionMedications.code">
       <path value="Composition.section.code" />
       <min value="1" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="10160-0" />
+        </coding>
+      </fixedCodeableConcept>
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:sectionMedications.code.coding">
@@ -24378,14 +24113,6 @@
         <code value="Coding" />
         <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
       </type>
-    </element>
-    <element id="Composition.section:sectionMedications.code.coding.system">
-      <path value="Composition.section.code.coding.system" />
-      <fixedUri value="http://loinc.org" />
-    </element>
-    <element id="Composition.section:sectionMedications.code.coding.code">
-      <path value="Composition.section.code.coding.code" />
-      <fixedCode value="10160-0" />
     </element>
     <element id="Composition.section:sectionMedications.text">
       <path value="Composition.section.text" />
@@ -24465,6 +24192,12 @@
     <element id="Composition.section:sectionAllergies.code">
       <path value="Composition.section.code" />
       <min value="1" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="48765-2" />
+        </coding>
+      </fixedCodeableConcept>
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:sectionAllergies.code.coding">
@@ -24473,14 +24206,6 @@
         <code value="Coding" />
         <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
       </type>
-    </element>
-    <element id="Composition.section:sectionAllergies.code.coding.system">
-      <path value="Composition.section.code.coding.system" />
-      <fixedUri value="http://loinc.org" />
-    </element>
-    <element id="Composition.section:sectionAllergies.code.coding.code">
-      <path value="Composition.section.code.coding.code" />
-      <fixedCode value="48765-2" />
     </element>
     <element id="Composition.section:sectionAllergies.text">
       <path value="Composition.section.text" />
@@ -24571,6 +24296,12 @@
     <element id="Composition.section:sectionProblems.code">
       <path value="Composition.section.code" />
       <min value="1" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="11450-4" />
+        </coding>
+      </fixedCodeableConcept>
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:sectionProblems.code.coding">
@@ -24579,14 +24310,6 @@
         <code value="Coding" />
         <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
       </type>
-    </element>
-    <element id="Composition.section:sectionProblems.code.coding.system">
-      <path value="Composition.section.code.coding.system" />
-      <fixedUri value="http://loinc.org" />
-    </element>
-    <element id="Composition.section:sectionProblems.code.coding.code">
-      <path value="Composition.section.code.coding.code" />
-      <fixedCode value="11450-4" />
     </element>
     <element id="Composition.section:sectionProblems.text">
       <path value="Composition.section.text" />
@@ -24673,6 +24396,12 @@
     <element id="Composition.section:sectionProceduresHx.code">
       <path value="Composition.section.code" />
       <min value="1" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="47519-4" />
+        </coding>
+      </fixedCodeableConcept>
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:sectionProceduresHx.code.coding">
@@ -24681,14 +24410,6 @@
         <code value="Coding" />
         <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
       </type>
-    </element>
-    <element id="Composition.section:sectionProceduresHx.code.coding.system">
-      <path value="Composition.section.code.coding.system" />
-      <fixedUri value="http://loinc.org" />
-    </element>
-    <element id="Composition.section:sectionProceduresHx.code.coding.code">
-      <path value="Composition.section.code.coding.code" />
-      <fixedCode value="47519-4" />
     </element>
     <element id="Composition.section:sectionProceduresHx.text">
       <path value="Composition.section.text" />
@@ -24772,6 +24493,12 @@
     <element id="Composition.section:sectionImmunizations.code">
       <path value="Composition.section.code" />
       <min value="1" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="11369-6" />
+        </coding>
+      </fixedCodeableConcept>
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:sectionImmunizations.code.coding">
@@ -24780,14 +24507,6 @@
         <code value="Coding" />
         <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
       </type>
-    </element>
-    <element id="Composition.section:sectionImmunizations.code.coding.system">
-      <path value="Composition.section.code.coding.system" />
-      <fixedUri value="http://loinc.org" />
-    </element>
-    <element id="Composition.section:sectionImmunizations.code.coding.code">
-      <path value="Composition.section.code.coding.code" />
-      <fixedCode value="11369-6" />
     </element>
     <element id="Composition.section:sectionImmunizations.text">
       <path value="Composition.section.text" />
@@ -24874,6 +24593,12 @@
     <element id="Composition.section:sectionMedicalDevices.code">
       <path value="Composition.section.code" />
       <min value="1" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="46264-8" />
+        </coding>
+      </fixedCodeableConcept>
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:sectionMedicalDevices.code.coding">
@@ -24882,14 +24607,6 @@
         <code value="Coding" />
         <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
       </type>
-    </element>
-    <element id="Composition.section:sectionMedicalDevices.code.coding.system">
-      <path value="Composition.section.code.coding.system" />
-      <fixedUri value="http://loinc.org" />
-    </element>
-    <element id="Composition.section:sectionMedicalDevices.code.coding.code">
-      <path value="Composition.section.code.coding.code" />
-      <fixedCode value="46264-8" />
     </element>
     <element id="Composition.section:sectionMedicalDevices.text">
       <path value="Composition.section.text" />
@@ -24932,7 +24649,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips" />
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/deviceusestatement-uv-ips" />
       </type>
     </element>
     <element id="Composition.section:sectionMedicalDevices.entry:deviceStatement.identifier">
@@ -24966,6 +24683,12 @@
     <element id="Composition.section:sectionResults.code">
       <path value="Composition.section.code" />
       <min value="1" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="30954-2" />
+        </coding>
+      </fixedCodeableConcept>
       <mustSupport value="true" />
     </element>
     <element id="Composition.section:sectionResults.code.coding">
@@ -24974,14 +24697,6 @@
         <code value="Coding" />
         <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
       </type>
-    </element>
-    <element id="Composition.section:sectionResults.code.coding.system">
-      <path value="Composition.section.code.coding.system" />
-      <fixedUri value="http://loinc.org" />
-    </element>
-    <element id="Composition.section:sectionResults.code.coding.code">
-      <path value="Composition.section.code.coding.code" />
-      <fixedCode value="30954-2" />
     </element>
     <element id="Composition.section:sectionResults.text">
       <path value="Composition.section.text" />
@@ -25077,6 +24792,12 @@
     <element id="Composition.section:sectionPastIllnessHx.code">
       <path value="Composition.section.code" />
       <min value="1" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="11348-0" />
+        </coding>
+      </fixedCodeableConcept>
     </element>
     <element id="Composition.section:sectionPastIllnessHx.code.coding">
       <path value="Composition.section.code.coding" />
@@ -25084,14 +24805,6 @@
         <code value="Coding" />
         <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
       </type>
-    </element>
-    <element id="Composition.section:sectionPastIllnessHx.code.coding.system">
-      <path value="Composition.section.code.coding.system" />
-      <fixedUri value="http://loinc.org" />
-    </element>
-    <element id="Composition.section:sectionPastIllnessHx.code.coding.code">
-      <path value="Composition.section.code.coding.code" />
-      <fixedCode value="11348-0" />
     </element>
     <element id="Composition.section:sectionPastIllnessHx.text">
       <path value="Composition.section.text" />
@@ -25144,14 +24857,19 @@
     <element id="Composition.section:sectionFunctionalStatus.code">
       <path value="Composition.section.code" />
       <min value="1" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="47420-5" />
+        </coding>
+      </fixedCodeableConcept>
     </element>
-    <element id="Composition.section:sectionFunctionalStatus.code.coding.system">
-      <path value="Composition.section.code.coding.system" />
-      <fixedUri value="http://loinc.org" />
-    </element>
-    <element id="Composition.section:sectionFunctionalStatus.code.coding.code">
-      <path value="Composition.section.code.coding.code" />
-      <fixedCode value="47420-5" />
+    <element id="Composition.section:sectionFunctionalStatus.code.coding">
+      <path value="Composition.section.code.coding" />
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
+      </type>
     </element>
     <element id="Composition.section:sectionFunctionalStatus.text">
       <path value="Composition.section.text" />
@@ -25220,14 +24938,19 @@
     <element id="Composition.section:sectionPlanOfCare.code">
       <path value="Composition.section.code" />
       <min value="1" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="18776-5" />
+        </coding>
+      </fixedCodeableConcept>
     </element>
-    <element id="Composition.section:sectionPlanOfCare.code.coding.system">
-      <path value="Composition.section.code.coding.system" />
-      <fixedUri value="http://loinc.org" />
-    </element>
-    <element id="Composition.section:sectionPlanOfCare.code.coding.code">
-      <path value="Composition.section.code.coding.code" />
-      <fixedCode value="18776-5" />
+    <element id="Composition.section:sectionPlanOfCare.code.coding">
+      <path value="Composition.section.code.coding" />
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
+      </type>
     </element>
     <element id="Composition.section:sectionPlanOfCare.text">
       <path value="Composition.section.text" />
@@ -25266,14 +24989,19 @@
     <element id="Composition.section:sectionSocialHistory.code">
       <path value="Composition.section.code" />
       <min value="1" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="29762-2" />
+        </coding>
+      </fixedCodeableConcept>
     </element>
-    <element id="Composition.section:sectionSocialHistory.code.coding.system">
-      <path value="Composition.section.code.coding.system" />
-      <fixedUri value="http://loinc.org" />
-    </element>
-    <element id="Composition.section:sectionSocialHistory.code.coding.code">
-      <path value="Composition.section.code.coding.code" />
-      <fixedCode value="29762-2" />
+    <element id="Composition.section:sectionSocialHistory.code.coding">
+      <path value="Composition.section.code.coding" />
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
+      </type>
     </element>
     <element id="Composition.section:sectionSocialHistory.text">
       <path value="Composition.section.text" />
@@ -25336,14 +25064,19 @@
     <element id="Composition.section:sectionPregnancyHx.code">
       <path value="Composition.section.code" />
       <min value="1" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="82810-3" />
+        </coding>
+      </fixedCodeableConcept>
     </element>
-    <element id="Composition.section:sectionPregnancyHx.code.coding.system">
-      <path value="Composition.section.code.coding.system" />
-      <fixedUri value="http://loinc.org" />
-    </element>
-    <element id="Composition.section:sectionPregnancyHx.code.coding.code">
-      <path value="Composition.section.code.coding.code" />
-      <fixedCode value="82810-3" />
+    <element id="Composition.section:sectionPregnancyHx.code.coding">
+      <path value="Composition.section.code.coding" />
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
+      </type>
     </element>
     <element id="Composition.section:sectionPregnancyHx.text">
       <path value="Composition.section.text" />
@@ -25400,14 +25133,19 @@
     <element id="Composition.section:sectionAdvanceDirectives.code">
       <path value="Composition.section.code" />
       <min value="1" />
+      <fixedCodeableConcept>
+        <coding>
+          <system value="http://loinc.org" />
+          <code value="42348-3" />
+        </coding>
+      </fixedCodeableConcept>
     </element>
-    <element id="Composition.section:sectionAdvanceDirectives.code.coding.system">
-      <path value="Composition.section.code.coding.system" />
-      <fixedUri value="http://loinc.org" />
-    </element>
-    <element id="Composition.section:sectionAdvanceDirectives.code.coding.code">
-      <path value="Composition.section.code.coding.code" />
-      <fixedCode value="42348-3" />
+    <element id="Composition.section:sectionAdvanceDirectives.code.coding">
+      <path value="Composition.section.code.coding" />
+      <type>
+        <code value="Coding" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
+      </type>
     </element>
     <element id="Composition.section:sectionAdvanceDirectives.text">
       <path value="Composition.section.text" />
