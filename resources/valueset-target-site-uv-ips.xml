@@ -24,8 +24,14 @@
                         <system value="http://snomed.info/sct"/>
                         <filter>
                             <property value="concept"/>
-                            <op value="descendent-of"/>
+                            <op value="is-a"/>
                             <value value="442083009"/>
                         </filter>
                     </include>
+                    <exclude>
+                        <system value="http://snomed.info/sct"/>
+                        <concept>
+                            <code value="442083009"/>
+                        </concept>
+                    </exclude>
                 </compose></ValueSet>
