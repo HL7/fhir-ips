@@ -21,7 +21,7 @@
   </contact>
   <description value="This profile represents the constraints applied to the Device resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR STU3. A device used by or implanted on the patient is described in the patient summary as an instance of a Device resource constrained by this profile." />
   <purpose value="This profile constrains the representation of a medical device used by or impanted on the patient, in the context of the international patient summary as specified by the IPS project of HL7 International." />
-  <fhirVersion value="3.0.1" />
+  <!-- <fhirVersion value="3.0.1" /> -->
   <kind value="resource" />
   <abstract value="false" />
   <type value="Device" />
@@ -209,9 +209,9 @@
         </extension>
         <strength value="extensible" />
         <description value="A human language." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/languages" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -548,9 +548,9 @@
         </extension>
         <strength value="required" />
         <description value="Identifies the purpose for this identifier, if known ." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/identifier-use" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -599,9 +599,9 @@
         </extension>
         <strength value="extensible" />
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/identifier-type" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2065,9 +2065,9 @@
         </extension>
         <strength value="required" />
         <description value="Codes to identify how UDI data was entered" />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/udi-entry-type" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2109,9 +2109,9 @@
         </extension>
         <strength value="required" />
         <description value="The availability status of the device." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/device-status" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2162,9 +2162,9 @@
         </extension>
         <strength value="example" />
         <description value="Codes to identify medical devices" />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-uv-ips" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2403,9 +2403,9 @@
         </extension>
         <strength value="required" />
         <description value="Codes to identify medical devices" />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-uv-ips" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2643,9 +2643,9 @@
         </extension>
         <strength value="preferred" />
         <description value="Codes to identify medical devices" />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-uv-ips" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3730,9 +3730,9 @@
         </extension>
         <strength value="required" />
         <description value="Telecommunications form for contact point" />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/contact-point-system" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3825,9 +3825,9 @@
         </extension>
         <strength value="required" />
         <description value="Use of contact point" />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/contact-point-use" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -4648,9 +4648,9 @@
         </extension>
         <strength value="example" />
         <description value="Codes used to identify medical devices safety characterics. These codes are derived in part from the [United States Food and Drug Administration recommendations](http://www.fda.gov/downloads/medicaldevices/deviceregulationandguidance/guidancedocuments/ucm107708.pdf) and are provided here as a suggestive example." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/device-safety" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -4941,9 +4941,9 @@
           <valueString value="DeviceKind" />
         </extension>
         <strength value="required" />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-uv-ips" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
     </element>
     <element id="Device.type:device">
@@ -4954,9 +4954,9 @@
           <valueString value="DeviceKind" />
         </extension>
         <strength value="preferred" />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-uv-ips" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
     </element>
     <element id="Device.manufactureDate">
