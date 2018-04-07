@@ -230,9 +230,9 @@
         </extension>
         <strength value="extensible" />
         <description value="A human language." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/languages" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -535,9 +535,9 @@
         </extension>
         <strength value="required" />
         <description value="The workflow/clinical status of the composition." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/composition-status" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -588,9 +588,9 @@
         </extension>
         <strength value="preferred" />
         <description value="Type of a composition." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/doc-typecodes" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1274,9 +1274,9 @@
         </extension>
         <strength value="example" />
         <description value="High-level kind of a clinical document at a macro level." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/doc-classcodes" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2174,9 +2174,9 @@
         </extension>
         <strength value="required" />
         <description value="Codes specifying the level of confidentiality of the composition." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/v3-ConfidentialityClassification" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2383,9 +2383,9 @@
         </extension>
         <strength value="required" />
         <description value="The way in which a person authenticated a composition." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/composition-attestation-mode" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3127,9 +3127,9 @@
         </extension>
         <strength value="required" />
         <description value="The type of relationship between documents." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/document-relationship-type" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3397,9 +3397,9 @@
         </extension>
         <strength value="example" />
         <description value="This list of codes represents the main clinical acts being documented." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/v3-ActCode" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -4191,9 +4191,9 @@
         </extension>
         <strength value="example" />
         <description value="This list of codes represents the main clinical acts being documented." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/v3-ActCode" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -5041,9 +5041,9 @@
         </extension>
         <strength value="example" />
         <description value="Classification of a section of a composition/document." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/doc-section-codes" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -5143,9 +5143,9 @@
         </extension>
         <strength value="required" />
         <description value="The processing mode that applies to this section." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-mode" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -5194,9 +5194,9 @@
         </extension>
         <strength value="preferred" />
         <description value="What order applies to the items in the entry." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-order" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -5303,9 +5303,9 @@
         </extension>
         <strength value="preferred" />
         <description value="If a section is empty, why it is empty." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-empty-reason" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -5609,9 +5609,9 @@
         </extension>
         <strength value="example" />
         <description value="Classification of a section of a composition/document." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/doc-section-codes" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -6333,9 +6333,9 @@
         </extension>
         <strength value="required" />
         <description value="The processing mode that applies to this section." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-mode" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -6384,9 +6384,9 @@
         </extension>
         <strength value="preferred" />
         <description value="What order applies to the items in the entry." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-order" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -6745,9 +6745,9 @@
         </extension>
         <strength value="preferred" />
         <description value="If a section is empty, why it is empty." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-empty-reason" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -7051,9 +7051,9 @@
         </extension>
         <strength value="example" />
         <description value="Classification of a section of a composition/document." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/doc-section-codes" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -7775,9 +7775,9 @@
         </extension>
         <strength value="required" />
         <description value="The processing mode that applies to this section." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-mode" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -7826,9 +7826,9 @@
         </extension>
         <strength value="preferred" />
         <description value="What order applies to the items in the entry." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-order" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -8380,9 +8380,9 @@
         </extension>
         <strength value="preferred" />
         <description value="If a section is empty, why it is empty." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-empty-reason" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -8686,9 +8686,9 @@
         </extension>
         <strength value="example" />
         <description value="Classification of a section of a composition/document." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/doc-section-codes" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -9410,9 +9410,9 @@
         </extension>
         <strength value="required" />
         <description value="The processing mode that applies to this section." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-mode" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -9461,9 +9461,9 @@
         </extension>
         <strength value="preferred" />
         <description value="What order applies to the items in the entry." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-order" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -10015,9 +10015,9 @@
         </extension>
         <strength value="preferred" />
         <description value="If a section is empty, why it is empty." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-empty-reason" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -10321,9 +10321,9 @@
         </extension>
         <strength value="example" />
         <description value="Classification of a section of a composition/document." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/doc-section-codes" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -11045,9 +11045,9 @@
         </extension>
         <strength value="required" />
         <description value="The processing mode that applies to this section." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-mode" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -11096,9 +11096,9 @@
         </extension>
         <strength value="preferred" />
         <description value="What order applies to the items in the entry." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-order" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -11457,9 +11457,9 @@
         </extension>
         <strength value="preferred" />
         <description value="If a section is empty, why it is empty." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-empty-reason" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -11763,9 +11763,9 @@
         </extension>
         <strength value="example" />
         <description value="Classification of a section of a composition/document." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/doc-section-codes" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -12487,9 +12487,9 @@
         </extension>
         <strength value="required" />
         <description value="The processing mode that applies to this section." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-mode" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -12538,9 +12538,9 @@
         </extension>
         <strength value="preferred" />
         <description value="What order applies to the items in the entry." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-order" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -13092,9 +13092,9 @@
         </extension>
         <strength value="preferred" />
         <description value="If a section is empty, why it is empty." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-empty-reason" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -13398,9 +13398,9 @@
         </extension>
         <strength value="example" />
         <description value="Classification of a section of a composition/document." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/doc-section-codes" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -14122,9 +14122,9 @@
         </extension>
         <strength value="required" />
         <description value="The processing mode that applies to this section." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-mode" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -14173,9 +14173,9 @@
         </extension>
         <strength value="preferred" />
         <description value="What order applies to the items in the entry." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-order" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -14725,9 +14725,9 @@
         </extension>
         <strength value="preferred" />
         <description value="If a section is empty, why it is empty." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-empty-reason" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -15031,9 +15031,9 @@
         </extension>
         <strength value="example" />
         <description value="Classification of a section of a composition/document." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/doc-section-codes" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -15754,9 +15754,9 @@
         </extension>
         <strength value="required" />
         <description value="The processing mode that applies to this section." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-mode" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -15805,9 +15805,9 @@
         </extension>
         <strength value="preferred" />
         <description value="What order applies to the items in the entry." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-order" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -16898,9 +16898,9 @@
         </extension>
         <strength value="preferred" />
         <description value="If a section is empty, why it is empty." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-empty-reason" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -17202,9 +17202,9 @@
         </extension>
         <strength value="example" />
         <description value="Classification of a section of a composition/document." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/doc-section-codes" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -17924,9 +17924,9 @@
         </extension>
         <strength value="required" />
         <description value="The processing mode that applies to this section." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-mode" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -17975,9 +17975,9 @@
         </extension>
         <strength value="preferred" />
         <description value="What order applies to the items in the entry." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-order" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -18145,9 +18145,9 @@
         </extension>
         <strength value="preferred" />
         <description value="If a section is empty, why it is empty." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-empty-reason" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -18448,9 +18448,9 @@
         </extension>
         <strength value="example" />
         <description value="Classification of a section of a composition/document." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/doc-section-codes" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -19019,9 +19019,9 @@
         </extension>
         <strength value="required" />
         <description value="The processing mode that applies to this section." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-mode" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -19070,9 +19070,9 @@
         </extension>
         <strength value="preferred" />
         <description value="What order applies to the items in the entry." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-order" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -19294,9 +19294,9 @@
         </extension>
         <strength value="preferred" />
         <description value="If a section is empty, why it is empty." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-empty-reason" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -19597,9 +19597,9 @@
         </extension>
         <strength value="example" />
         <description value="Classification of a section of a composition/document." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/doc-section-codes" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -20168,9 +20168,9 @@
         </extension>
         <strength value="required" />
         <description value="The processing mode that applies to this section." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-mode" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -20219,9 +20219,9 @@
         </extension>
         <strength value="preferred" />
         <description value="What order applies to the items in the entry." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-order" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -20328,9 +20328,9 @@
         </extension>
         <strength value="preferred" />
         <description value="If a section is empty, why it is empty." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-empty-reason" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -20631,9 +20631,9 @@
         </extension>
         <strength value="example" />
         <description value="Classification of a section of a composition/document." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/doc-section-codes" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -21201,9 +21201,9 @@
         </extension>
         <strength value="required" />
         <description value="The processing mode that applies to this section." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-mode" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -21252,9 +21252,9 @@
         </extension>
         <strength value="preferred" />
         <description value="What order applies to the items in the entry." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-order" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -21661,9 +21661,9 @@
         </extension>
         <strength value="preferred" />
         <description value="If a section is empty, why it is empty." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-empty-reason" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -21964,9 +21964,9 @@
         </extension>
         <strength value="example" />
         <description value="Classification of a section of a composition/document." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/doc-section-codes" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -22534,9 +22534,9 @@
         </extension>
         <strength value="required" />
         <description value="The processing mode that applies to this section." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-mode" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -22585,9 +22585,9 @@
         </extension>
         <strength value="preferred" />
         <description value="What order applies to the items in the entry." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-order" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -22801,9 +22801,9 @@
         </extension>
         <strength value="preferred" />
         <description value="If a section is empty, why it is empty." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-empty-reason" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -23104,9 +23104,9 @@
         </extension>
         <strength value="example" />
         <description value="Classification of a section of a composition/document." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/doc-section-codes" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -23675,9 +23675,9 @@
         </extension>
         <strength value="required" />
         <description value="The processing mode that applies to this section." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-mode" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -23726,9 +23726,9 @@
         </extension>
         <strength value="preferred" />
         <description value="What order applies to the items in the entry." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-order" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -23839,9 +23839,9 @@
         </extension>
         <strength value="preferred" />
         <description value="If a section is empty, why it is empty." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/list-empty-reason" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
