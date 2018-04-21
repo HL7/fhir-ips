@@ -13,7 +13,7 @@
     <name value="Giorgio Cangioli" />
   </contact>
   <description value="This profile represents the contraints applied to the Observation resource by the IPS project, which specifies an imaging observation for the international patient summary based on the FHIR standard STU3. &#xD;&#xA;&#xD;&#xA;This observation may represent the conclusions of a diagnostic procedure such a Chest RX, or it may group the set of results produced by that single or multi modality procedure. &#xD;&#xA;&#xD;&#xA;In the latter case, the main observation (this one) carries the overall conclusion of the study and/or a global interpretation by the observer of the study as value of this observation; and may references the atomic results of the study  as &quot;child observations&quot;.&#xD;&#xA;&#xD;&#xA;It allows also to provide details about the related study using the event-partOf extension referring an ImagingStudy resource.&#xD;&#xA;" />
-  <!-- <fhirVersion value="3.0.1" /> -->
+  <fhirVersion value="3.4.0" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
