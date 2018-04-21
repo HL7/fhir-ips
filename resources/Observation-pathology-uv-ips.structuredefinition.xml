@@ -18,7 +18,7 @@
   </contact>
   <description value="This profile constrains the Observation resource to represent results produced by pathology studies in a patient summary" />
   <purpose value="This profile constrains the Observation resource to represent a pathology in vitro study. In case of a multiple-observation study, the results of the study appear as sub-observations. In this case this top-level Observation acts as a grouper of all the observations belonging to the study.  The top-level observation may carry a conclusion in the value element and or a global interpretation by the producer of the study, in the comment element." />
-  <!-- <fhirVersion value="3.0.1" /> -->
+  <fhirVersion value="3.4.0" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
