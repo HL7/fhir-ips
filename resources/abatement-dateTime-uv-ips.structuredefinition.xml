@@ -6,13 +6,11 @@
   <status value="draft" />
   <date value="2018-03-20T11:41:22.025+01:00" />
   <description value="Extension defined by the IPS project to describe the abatement date for allergies" />
-  <fhirVersion value="3.4.0" />
+  <!-- <fhirVersion value="3.0.1" /> -->
   <kind value="complex-type" />
   <abstract value="false" />
-  <context>
-    <type value="element" />
-    <expression value="AllergyIntolerance" />
-  </context>
+  <contextType value="resource" />
+  <context value="AllergyIntolerance" />
   <type value="Extension" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
   <derivation value="constraint" />
