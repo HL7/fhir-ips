@@ -5,484 +5,482 @@
 	<name value="International Patient Summary Implementation Guide"/>
 	<status value="active"/>
 	<publisher value="Health Level Seven International"/>
-	<!-- <fhirVersion value="STU3"/> -->
-	<definition>
-		<package>
-			<name value="base"/>
-		</package>
+	<fhirVersion value="STU3"/>
+	<package>
+		<name value="base"/>
 		<resource>
-			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/composition-uv-ips"/>
-			<reference>
+			<example value="true"/>
+			<sourceReference>
 				<reference value="Bundle/IPS-examples-Bundle-01"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/absent-or-unknown-allergies-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/absent-or-unknown-devices-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/absent-or-unknown-immunization-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/absent-or-unknown-medication-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/absent-or-unknown-procedures-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/absent-or-unknown-problems-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/allergy-intolerance-substance-condition-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/allergy-reaction-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/condition-severity-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/core-problem-list-disorders-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/current-smoking-status-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/edd-method-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/healthcare-professional-roles-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/imaging-observations-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/laboratory-and-vital-signs-observations"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/laboratory-tests-and-panels-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/lab-result-coded-value-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/medical-devices-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/medicine-active-substances-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/medicine-doseform"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/medicine-route-of-administration"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/observation-codes-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/pathology-and-vital-signs-observations"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/pathology-result-coded-value-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/personal-relationship-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/problem-type-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/procedures-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/quantityUnits"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/strengthDenominator"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/strengthNumerator"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/sub-observation-category-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/target-site-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/pregnancies-summary-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/vaccines-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="ValueSet/whoatc-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="CodeSystem/absent-unknown-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/condition-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/codeableconcept-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/translateddiv-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/abatement-datetime-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/coding-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/composition-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/device-observer-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/deviceusestatement-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/device-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/imagingstudy-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/immunization-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/medicationstatement-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/medication-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/narrative-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/observation-alcoholuse-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/observation-attachment-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/observation-imaging-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/observation-laboratory-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/observation-member-imaging-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/observation-member-laboratory-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/observation-member-pathology-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/observation-pathology-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/observation-pregnancy-edd-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/observation-pregnancy-outcome-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/observation-pregnancy-status-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/observation-tobaccouse-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/observation-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/organization-laboratory-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/organization-observation-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/participant-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/patient-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/practitioner-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/procedure-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/quantity-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/range-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/ratio-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/specimen-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/statement-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/targetdiseases-immunization-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
 		<resource>
-			<exampleBoolean value="false"/>
-			<reference>
+			<example value="false"/>
+			<sourceReference>
 				<reference value="StructureDefinition/allergyintolerance-uv-ips"/>
-			</reference>
+			</sourceReference>
 		</resource>
+	</package>
+	<page>
+		<source value="index.md"/>
+		<title value="International Patient Summary Home"/>
+		<kind value="page"/>
+		<!--
 		<page>
-			<nameReference value="index.md"/>
-			<title value="International Patient Summary Home"/>
-			<generation value="markdown"/>
-			<!--
-			<page>
-				<nameReference value="_includes/toc.md"/>
-				<title value="International Patient Summary Table of Contents"/>
-				<generation value="markdown"/>
-			</page>
-			-->
+			<source value="_includes/toc.md"/>
+			<title value="International Patient Summary Table of Contents"/>
+			<kind value="page"/>
 		</page>
-	</definition>
+        -->
+	</page>
 </ImplementationGuide>

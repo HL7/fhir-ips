@@ -9,7 +9,7 @@
   <status value="draft" />
   <date value="2018-02-15T16:36:51.805+01:00" />
   <description value="This profile constrains the Practictioner resource to represent a practictioner acting as observer for these imaging results. " />
-  <!-- <fhirVersion value="3.0.1" /> -->
+  <fhirVersion value="3.0.1" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Practitioner" />
@@ -205,9 +205,9 @@
         </extension>
         <strength value="extensible" />
         <description value="A human language." />
-        <valueSetCanonical>
+        <valueSetReference>
           <reference value="http://hl7.org/fhir/ValueSet/languages" />
-        </valueSetCanonical>
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -548,9 +548,9 @@
         </extension>
         <strength value="required" />
         <description value="Identifies the purpose for this identifier, if known ." />
-        <valueSetCanonical>
+        <valueSetReference>
           <reference value="http://hl7.org/fhir/ValueSet/identifier-use" />
-        </valueSetCanonical>
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -599,9 +599,9 @@
         </extension>
         <strength value="extensible" />
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." />
-        <valueSetCanonical>
+        <valueSetReference>
           <reference value="http://hl7.org/fhir/ValueSet/identifier-type" />
-        </valueSetCanonical>
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1846,9 +1846,9 @@
         </extension>
         <strength value="required" />
         <description value="The use of a human name" />
-        <valueSetCanonical>
+        <valueSetReference>
           <reference value="http://hl7.org/fhir/ValueSet/name-use" />
-        </valueSetCanonical>
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2453,9 +2453,9 @@
         </extension>
         <strength value="required" />
         <description value="Telecommunications form for contact point" />
-        <valueSetCanonical>
+        <valueSetReference>
           <reference value="http://hl7.org/fhir/ValueSet/contact-point-system" />
-        </valueSetCanonical>
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2548,9 +2548,9 @@
         </extension>
         <strength value="required" />
         <description value="Use of contact point" />
-        <valueSetCanonical>
+        <valueSetReference>
           <reference value="http://hl7.org/fhir/ValueSet/contact-point-use" />
-        </valueSetCanonical>
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2981,9 +2981,9 @@
         </extension>
         <strength value="required" />
         <description value="The use of an address" />
-        <valueSetCanonical>
+        <valueSetReference>
           <reference value="http://hl7.org/fhir/ValueSet/address-use" />
-        </valueSetCanonical>
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3036,9 +3036,9 @@
         </extension>
         <strength value="required" />
         <description value="The type of an address (physical / postal)" />
-        <valueSetCanonical>
+        <valueSetReference>
           <reference value="http://hl7.org/fhir/ValueSet/address-type" />
-        </valueSetCanonical>
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3641,9 +3641,9 @@
         </extension>
         <strength value="required" />
         <description value="The gender of a person used for administrative purposes." />
-        <valueSetCanonical>
+        <valueSetReference>
           <reference value="http://hl7.org/fhir/ValueSet/administrative-gender" />
-        </valueSetCanonical>
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3929,9 +3929,9 @@
         </extension>
         <strength value="extensible" />
         <description value="A human language." />
-        <valueSetCanonical>
+        <valueSetReference>
           <reference value="http://hl7.org/fhir/ValueSet/languages" />
-        </valueSetCanonical>
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -4478,9 +4478,9 @@
         </extension>
         <strength value="required" />
         <description value="Identifies the purpose for this identifier, if known ." />
-        <valueSetCanonical>
+        <valueSetReference>
           <reference value="http://hl7.org/fhir/ValueSet/identifier-use" />
-        </valueSetCanonical>
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -4529,9 +4529,9 @@
         </extension>
         <strength value="extensible" />
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." />
-        <valueSetCanonical>
+        <valueSetReference>
           <reference value="http://hl7.org/fhir/ValueSet/identifier-type" />
-        </valueSetCanonical>
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -5602,9 +5602,9 @@
         </extension>
         <strength value="example" />
         <description value="Specific qualification the practitioner has to provide a service" />
-        <valueSetCanonical>
+        <valueSetReference>
           <reference value="http://hl7.org/fhir/ValueSet/v2-2.7-0360" />
-        </valueSetCanonical>
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -6580,9 +6580,9 @@
         </extension>
         <strength value="extensible" />
         <description value="A human language." />
-        <valueSetCanonical>
+        <valueSetReference>
           <reference value="http://hl7.org/fhir/ValueSet/languages" />
-        </valueSetCanonical>
+        </valueSetReference>
       </binding>
       <mapping>
         <identity value="rim" />
