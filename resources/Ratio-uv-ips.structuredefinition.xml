@@ -18,6 +18,12 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Ratio" />
   <derivation value="constraint" />
   <differential>
+    <element id="Ratio">
+      <path value="Ratio" />
+    </element>
+    <element id="Ratio.numerator">
+      <path value="Ratio.numerator" />
+    </element>
     <element id="Ratio.numerator.system">
       <path value="Ratio.numerator.system" />
       <min value="1" />
@@ -26,6 +32,9 @@
     <element id="Ratio.numerator.code">
       <path value="Ratio.numerator.code" />
       <min value="1" />
+    </element>
+    <element id="Ratio.denominator">
+      <path value="Ratio.denominator" />
     </element>
     <element id="Ratio.denominator.system">
       <path value="Ratio.denominator.system" />
