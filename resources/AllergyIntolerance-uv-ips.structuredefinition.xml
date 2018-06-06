@@ -2989,7 +2989,7 @@
         <map value="fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" />
       </mapping>
     </element>
-    <element id="AllergyIntolerance.code:default">
+    <element id="AllergyIntolerance.code:@default">
       <path value="AllergyIntolerance.code" />
       <sliceName value="default" />
       <short value="Code that identifies the allergy or intolerance" />
@@ -3055,7 +3055,7 @@
         <map value="what" />
       </mapping>
     </element>
-    <element id="AllergyIntolerance.code:default.id">
+    <element id="AllergyIntolerance.code:@default.id">
       <path value="AllergyIntolerance.code.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -3084,7 +3084,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="AllergyIntolerance.code:default.extension">
+    <element id="AllergyIntolerance.code:@default.extension">
       <path value="AllergyIntolerance.code.extension" />
       <slicing>
         <discriminator>
@@ -3133,7 +3133,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="AllergyIntolerance.code:default.coding">
+    <element id="AllergyIntolerance.code:@default.coding">
       <path value="AllergyIntolerance.code.coding" />
       <short value="Code defined by a terminology system" />
       <definition value="A reference to a code defined by a terminology system." />
@@ -3187,7 +3187,7 @@
         <map value="fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" />
       </mapping>
     </element>
-    <element id="AllergyIntolerance.code:default.coding.id">
+    <element id="AllergyIntolerance.code:@default.coding.id">
       <path value="AllergyIntolerance.code.coding.id" />
       <representation value="xmlAttr" />
       <short value="xml:id (or equivalent in JSON)" />
@@ -3216,7 +3216,7 @@
         <map value="n/a" />
       </mapping>
     </element>
-    <element id="AllergyIntolerance.code:default.coding.extension">
+    <element id="AllergyIntolerance.code:@default.coding.extension">
       <path value="AllergyIntolerance.code.coding.extension" />
       <slicing>
         <discriminator>
@@ -3265,7 +3265,7 @@
         <map value="N/A" />
       </mapping>
     </element>
-    <element id="AllergyIntolerance.code:default.coding.system">
+    <element id="AllergyIntolerance.code:@default.coding.system">
       <path value="AllergyIntolerance.code.coding.system" />
       <short value="Identity of the terminology system" />
       <definition value="The identification of the code system that defines the meaning of the symbol in the code." />
@@ -3307,7 +3307,7 @@
         <map value="fhir:Coding.system rdfs:subPropertyOf dt:CDCoding.codeSystem" />
       </mapping>
     </element>
-    <element id="AllergyIntolerance.code:default.coding.version">
+    <element id="AllergyIntolerance.code:@default.coding.version">
       <path value="AllergyIntolerance.code.coding.version" />
       <short value="Version of the system - if relevant" />
       <definition value="The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured. and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged." />
@@ -3348,7 +3348,7 @@
         <map value="fhir:Coding.version rdfs:subPropertyOf dt:CDCoding.codeSystemVersion" />
       </mapping>
     </element>
-    <element id="AllergyIntolerance.code:default.coding.code">
+    <element id="AllergyIntolerance.code:@default.coding.code">
       <path value="AllergyIntolerance.code.coding.code" />
       <short value="Symbol in syntax defined by the system" />
       <definition value="A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination)." />
@@ -3390,7 +3390,7 @@
         <map value="fhir:Coding.code rdfs:subPropertyOf dt:CDCoding.code" />
       </mapping>
     </element>
-    <element id="AllergyIntolerance.code:default.coding.display">
+    <element id="AllergyIntolerance.code:@default.coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -3435,7 +3435,7 @@
         <map value="fhir:Coding.display rdfs:subPropertyOf dt:CDCoding.displayName" />
       </mapping>
     </element>
-    <element id="AllergyIntolerance.code:default.coding.userSelected">
+    <element id="AllergyIntolerance.code:@default.coding.userSelected">
       <path value="AllergyIntolerance.code.coding.userSelected" />
       <short value="If this coding was chosen directly by the user" />
       <definition value="Indicates that this coding was chosen by a user directly - i.e. off a pick list of available items (codes or displays)." />
@@ -3477,7 +3477,7 @@
         <map value="fhir:Coding.userSelected fhir:mapsTo dt:CDCoding.codingRationale. fhir:Coding.userSelected fhir:hasMap fhir:Coding.userSelected.map. fhir:Coding.userSelected.map a fhir:Map;   fhir:target dt:CDCoding.codingRationale. fhir:Coding.userSelected\#true a [     fhir:source &quot;true&quot;;     fhir:target dt:CDCoding.codingRationale\#O   ]" />
       </mapping>
     </element>
-    <element id="AllergyIntolerance.code:default.text">
+    <element id="AllergyIntolerance.code:@default.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
@@ -6782,7 +6782,7 @@
       <path value="AllergyIntolerance.code.coding.code" />
       <min value="1" />
     </element>
-    <element id="AllergyIntolerance.code:default">
+    <element id="AllergyIntolerance.code:@default">
       <path value="AllergyIntolerance.code" />
       <sliceName value="default" />
       <definition value="Code for an allergy or intolerance statement .  This may be a code for a substance or pharmaceutical product that is considered to be responsible for the adverse reaction risk (e.g., &quot;Latex&quot;), an allergy or intolerance condition (e.g., &quot;Latex allergy&quot;)." />

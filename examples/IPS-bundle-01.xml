@@ -475,7 +475,6 @@
                 <subject>
                     <reference value="Patient/IPS-examples-Patient-01"/>
                 </subject>
-                <taken value="y"/>
                 <dosage>
                     <timing>
                         <repeat>
@@ -490,12 +489,14 @@
                             <display value="Oral use"/>
                         </coding>
                     </route>
-                    <doseQuantity>
-                        <value value="1"/>
-                        <unit value="tablet"/>
-                        <system value="http://unitsofmeasure.org"/>
-                        <code value="1"/>
-                    </doseQuantity>
+                    <doseAndRate>
+                        <doseQuantity>
+                            <value value="1"/>
+                            <unit value="tablet"/>
+                            <system value="http://unitsofmeasure.org"/>
+                            <code value="1"/>
+                        </doseQuantity>
+                    </doseAndRate>
                 </dosage>
             </MedicationStatement>
         </resource>
@@ -522,7 +523,6 @@
                 <subject>
                     <reference value="Patient/IPS-examples-Patient-01"/>
                 </subject>
-                <taken value="y"/>
                 <dosage>
                     <route>
                         <coding>
@@ -870,30 +870,18 @@
                 <performer>
                     <reference value="Organization/IPS-examples-Organization-02"/>
                 </performer>
-                <related>
-                    <type value="has-member"/>
-                    <target>
-                        <reference value="Observation/IPS-examples-Observation-01-Sub0"/>
-                    </target>
-                </related>
-                <related>
-                    <type value="has-member"/>
-                    <target>
-                        <reference value="Observation/IPS-examples-Observation-01-Sub1"/>
-                    </target>
-                </related>
-                <related>
-                    <type value="has-member"/>
-                    <target>
-                        <reference value="Observation/IPS-examples-Observation-01-Sub2"/>
-                    </target>
-                </related>
-                <related>
-                    <type value="has-member"/>
-                    <target>
-                        <reference value="Observation/IPS-examples-Observation-01-Sub3"/>
-                    </target>
-                </related>
+                <hasMember>
+                    <reference value="Observation/IPS-examples-Observation-01-Sub0"/>
+                </hasMember>
+                <hasMember>
+                    <reference value="Observation/IPS-examples-Observation-01-Sub1"/>
+                </hasMember>
+                <hasMember>
+                    <reference value="Observation/IPS-examples-Observation-01-Sub2"/>
+                </hasMember>
+                <hasMember>
+                    <reference value="Observation/IPS-examples-Observation-01-Sub3"/>
+                </hasMember>
             </Observation>
         </resource>
     </entry>
