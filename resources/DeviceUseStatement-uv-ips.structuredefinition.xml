@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="deviceusestatement-uv-ips"/>
   <meta>
@@ -17,13 +17,16 @@
   </contact>
   <description value="This profile represents the constraints applied to the DeviceUseStatement resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR STU3. A statement about a device used by or implanted on the patient is described in the patient summary as an instance of a DeviceUseStatement resource constrained by this profile." />
   <purpose value="This profile constrains the representation of a statement about a medical device used by or impanted on the patient, part of the &quot;Medical Devices&quot; section of the Composition resource representing the international patient summary, as specified by the IPS project of HL7 International." />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="3.4.0" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="DeviceUseStatement" />
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/DeviceUseStatement" />
   <derivation value="constraint" />
   <differential>
+    <element id="DeviceUseStatement">
+      <path value="DeviceUseStatement" />
+    </element>    
     <element id="DeviceUseStatement.subject">
       <path value="DeviceUseStatement.subject" />
       <definition value="The patient using the device." />
@@ -37,10 +40,13 @@
       <path value="DeviceUseStatement.subject.identifier" />
       <max value="0" />
     </element>
-    <element id="DeviceUseStatement.whenUsed">
-      <path value="DeviceUseStatement.whenUsed" />
+    <element id="DeviceUseStatement.timing[x]">
+      <path value="DeviceUseStatement.timing[x]" />
       <min value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="DeviceUseStatement.source">
+      <path value="DeviceUseStatement.source" />
     </element>
     <element id="DeviceUseStatement.source.identifier">
       <path value="DeviceUseStatement.source.identifier" />
@@ -57,13 +63,6 @@
     <element id="DeviceUseStatement.device.identifier">
       <path value="DeviceUseStatement.device.identifier" />
       <max value="0" />
-    </element>
-    <element id="DeviceUseStatement.indication.coding">
-      <path value="DeviceUseStatement.indication.coding" />
-      <type>
-        <code value="Coding" />
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
-      </type>
     </element>
     <element id="DeviceUseStatement.bodySite">
       <path value="DeviceUseStatement.bodySite" />

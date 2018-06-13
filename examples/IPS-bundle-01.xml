@@ -7,7 +7,7 @@
     </identifier>
     <type value="document"/>
     <entry>
-        <fullUrl value="http://fhirtest.uhn.ca/baseDstu3/Composition/IPS-examples-Composition-01"/>
+        <fullUrl value="Composition/IPS-examples-Composition-01"/>
         <resource>
             <Composition>
                 <id value="IPS-examples-Composition-01"/>
@@ -27,11 +27,11 @@
                     </coding>
                 </type>
                 <subject>
-                    <reference value="http://fhirtest.uhn.ca/baseDstu3/Patient/IPS-examples-Patient-01"/>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
                 </subject>
                 <date value="2017-07-20T14:30:00+01:00"/>
                 <author>
-                    <reference value="http://fhirtest.uhn.ca/baseDstu3/Practitioner/IPS-examples-Practitioner-01"/>
+                    <reference value="Practitioner/IPS-examples-Practitioner-01"/>
                 </author>
                 <title value="Patient Summary as of July 20, 2017 14:30"/>
                 <confidentiality value="N"/>
@@ -39,18 +39,18 @@
                     <mode value="legal"/>
                     <time value="2017-07-20T14:30:00+01:00"/>
                     <party>
-                        <reference value="http://fhirtest.uhn.ca/baseDstu3/Practitioner/IPS-examples-Practitioner-01"/>
+                        <reference value="Practitioner/IPS-examples-Practitioner-01"/>
                     </party>
                 </attester>
                 <attester>
                     <mode value="legal"/>
                     <time value="2017-07-20T14:30:00+01:00"/>
                     <party>
-                        <reference value="http://fhirtest.uhn.ca/baseDstu3/Organization/IPS-examples-Organization-01"/>
+                        <reference value="Organization/IPS-examples-Organization-01"/>
                     </party>
                 </attester>
                 <custodian>
-                    <reference value="http://fhirtest.uhn.ca/baseDstu3/Organization/IPS-examples-Organization-01"/>
+                    <reference value="Organization/IPS-examples-Organization-01"/>
                 </custodian>
                 <relatesTo>
                     <code value="appends"/>
@@ -84,7 +84,7 @@
                         <xhtml:div>Hot flushes</xhtml:div>
                     </text>
                     <entry>
-                        <reference value="http://fhirtest.uhn.ca/baseDstu3/Condition/IPS-examples-Condition-01"/>
+                        <reference value="Condition/IPS-examples-Condition-01"/>
                     </entry>
                 </section>
                 <section>
@@ -129,10 +129,10 @@
                         </xhtml:div>
                     </text>
                     <entry>
-                        <reference value="http://fhirtest.uhn.ca/baseDstu3/MedicationStatement/IPS-examples-MedicationStatement-01"/>
+                        <reference value="MedicationStatement/IPS-examples-MedicationStatement-01"/>
                     </entry>
                     <entry>
-                        <reference value="http://fhirtest.uhn.ca/baseDstu3/MedicationStatement/IPS-examples-MedicationStatement-02"/>
+                        <reference value="MedicationStatement/IPS-examples-MedicationStatement-02"/>
                     </entry>
                 </section>
                 <section>
@@ -149,7 +149,7 @@
                         <xhtml:div>Allergy to penicillin, high criticality, active</xhtml:div>    
                     </text>
                     <entry>
-                        <reference value="http://fhirtest.uhn.ca/baseDstu3/AllergyIntolerance/IPS-examples-AllergyIntolerance-01"/>
+                        <reference value="AllergyIntolerance/IPS-examples-AllergyIntolerance-01"/>
                     </entry>
                 </section>
                 <section>
@@ -166,7 +166,7 @@
                         <xhtml:div>Breast cancer Stage II with no evidence of recurrence following treatment</xhtml:div>
                     </text>
                     <entry>
-                        <reference value="http://fhirtest.uhn.ca/baseDstu3/Condition/IPS-examples-Condition-02"/>
+                        <reference value="Condition/IPS-examples-Condition-02"/>
                     </entry>
                 </section>
                 <section>
@@ -255,32 +255,32 @@
                         </xhtml:div>                       
                     </text>
                     <entry>
-                        <reference value="http://fhirtest.uhn.ca/baseDstu3/Observation/IPS-examples-Observation-01-Sub0"/>
+                        <reference value="Observation/IPS-examples-Observation-01-Sub0"/>
                     </entry>
                     <entry>
-                        <reference value="http://fhirtest.uhn.ca/baseDstu3/Observation/IPS-examples-Observation-01-Sub1"/>
+                        <reference value="Observation/IPS-examples-Observation-01-Sub1"/>
                     </entry>
                     <entry>
-                        <reference value="http://fhirtest.uhn.ca/baseDstu3/Observation/IPS-examples-Observation-01-Sub2"/>
+                        <reference value="Observation/IPS-examples-Observation-01-Sub2"/>
                     </entry>
                     <entry>
-                        <reference value="http://fhirtest.uhn.ca/baseDstu3/Observation/IPS-examples-Observation-01-Sub3"/>
+                        <reference value="Observation/IPS-examples-Observation-01-Sub3"/>
                     </entry>
                     <entry>
-                        <reference value="http://fhirtest.uhn.ca/baseDstu3/Observation/IPS-examples-Observation-01-0"/>
+                        <reference value="Observation/IPS-examples-Observation-01-0"/>
                     </entry>
                     <entry>
-                        <reference value="http://fhirtest.uhn.ca/baseDstu3/Observation/IPS-examples-Observation-01-1"/>
+                        <reference value="Observation/IPS-examples-Observation-01-1"/>
                     </entry>
                     <entry>
-                        <reference value="http://fhirtest.uhn.ca/baseDstu3/Observation/IPS-examples-Observation-01-3"/>
+                        <reference value="Observation/IPS-examples-Observation-01-3"/>
                     </entry>
                 </section>
             </Composition>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://fhirtest.uhn.ca/baseDstu3/Patient/IPS-examples-Patient-01"/>
+        <fullUrl value="Patient/IPS-examples-Patient-01"/>
         <resource>
             <Patient>
                 <id value="IPS-examples-Patient-01"/>
@@ -307,7 +307,7 @@
                     <line value="Laan Van Europa 1600"/>
                     <city value="Dordrecht"/>
                     <postalCode value="3317 DB"/>
-                    <country value="NL"/>
+                    <country value="Netherlands"/>
                 </address>
                 <contact>
                     <relationship>
@@ -329,14 +329,14 @@
                         <line value="Promenade des Anglais 111"/>
                         <city value="Lyon"/>
                         <postalCode value="69001"/>
-                        <country value="FR"/>
+                        <country value="France"/>
                     </address>
                 </contact>
             </Patient>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://fhirtest.uhn.ca/baseDstu3/Practitioner/IPS-examples-Practitioner-01"/>
+        <fullUrl value="Practitioner/IPS-examples-Practitioner-01"/>
         <resource>
             <Practitioner>
                 <id value="IPS-examples-Practitioner-01"/>
@@ -370,7 +370,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://fhirtest.uhn.ca/baseDstu3/Organization/IPS-examples-Organization-01"/>
+        <fullUrl value="Organization/IPS-examples-Organization-01"/>
         <resource>
             <Organization>
                 <id value="IPS-examples-Organization-01"/>
@@ -390,13 +390,13 @@
                     <line value="Houttuinen 27"/>
                     <city value="Dordrecht"/>
                     <postalCode value="3311 CE"/>
-                    <country value="NL"/>
+                    <country value="Netherlands"/>
                 </address>
             </Organization>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://fhirtest.uhn.ca/baseDstu3/Condition/IPS-examples-Condition-01"/>
+        <fullUrl value="Condition/IPS-examples-Condition-01"/>
         <resource>
             <Condition>
                 <id value="IPS-examples-Condition-01"/>
@@ -437,9 +437,16 @@
                         <code value="198436008"/>
                         <display value="Menopausal flushing (finding)"/>
                     </coding>
+                    <!--  
+                    <coding>
+                        <system value="http://hl7.org/fhir/sid/icd-10"/>
+                        <code value="N95.1"/>
+                        <display value="Menopausal and female climacteric states"/>
+                    </coding>
+                    -->
                 </code>
                 <subject>
-                    <reference value="http://fhirtest.uhn.ca/baseDstu3/Patient/IPS-examples-Patient-01"/>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
                 </subject>
                 <onsetDateTime value="2015"/>
                 <assertedDate value="2016-10"/>
@@ -447,7 +454,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://fhirtest.uhn.ca/baseDstu3/MedicationStatement/IPS-examples-MedicationStatement-01"/>
+        <fullUrl value="MedicationStatement/IPS-examples-MedicationStatement-01"/>
         <resource>
             <MedicationStatement>
                 <id value="IPS-examples-MedicationStatement-01"/>                
@@ -460,15 +467,14 @@
                 </identifier>
                 <status value="active"/>
                 <medicationReference>
-                    <reference value="http://fhirtest.uhn.ca/baseDstu3/Medication/IPS-examples-Medication-01"/>
+                    <reference value="Medication/IPS-examples-Medication-01"/>
                 </medicationReference>
                 <effectivePeriod>
                     <start value="2015-03"/>
                 </effectivePeriod>
                 <subject>
-                    <reference value="http://fhirtest.uhn.ca/baseDstu3/Patient/IPS-examples-Patient-01"/>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
                 </subject>
-                <taken value="y"/>
                 <dosage>
                     <timing>
                         <repeat>
@@ -483,18 +489,20 @@
                             <display value="Oral use"/>
                         </coding>
                     </route>
-                    <doseQuantity>
-                        <value value="1"/>
-                        <unit value="tablet"/>
-                        <system value="http://unitsofmeasure.org"/>
-                        <code value="1"/>
-                    </doseQuantity>
+                    <doseAndRate>
+                        <doseQuantity>
+                            <value value="1"/>
+                            <unit value="tablet"/>
+                            <system value="http://unitsofmeasure.org"/>
+                            <code value="1"/>
+                        </doseQuantity>
+                    </doseAndRate>
                 </dosage>
             </MedicationStatement>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://fhirtest.uhn.ca/baseDstu3/MedicationStatement/IPS-examples-MedicationStatement-02"/>
+        <fullUrl value="MedicationStatement/IPS-examples-MedicationStatement-02"/>
         <resource>
             <MedicationStatement>
                 <id value="IPS-examples-MedicationStatement-02"/>
@@ -507,15 +515,14 @@
                 </identifier>
                 <status value="active"/>
                 <medicationReference>
-                    <reference value="http://fhirtest.uhn.ca/baseDstu3/Medication/IPS-examples-Medication-02"/>
+                    <reference value="Medication/IPS-examples-Medication-02"/>
                 </medicationReference>
                 <effectivePeriod>
                     <start value="2016-01"/>
                 </effectivePeriod>
                 <subject>
-                    <reference value="http://fhirtest.uhn.ca/baseDstu3/Patient/IPS-examples-Patient-01"/>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
                 </subject>
-                <taken value="y"/>
                 <dosage>
                     <route>
                         <coding>
@@ -529,7 +536,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://fhirtest.uhn.ca/baseDstu3/Medication/IPS-examples-Medication-01"/>
+        <fullUrl value="Medication/IPS-examples-Medication-01"/>
         <resource>
             <Medication>
                 <id value="IPS-examples-Medication-01"/>
@@ -557,7 +564,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://fhirtest.uhn.ca/baseDstu3/Medication/IPS-examples-Medication-02"/>
+        <fullUrl value="Medication/IPS-examples-Medication-02"/>
         <resource>
             <Medication>
                 <id value="IPS-examples-Medication-02"/>
@@ -584,7 +591,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://fhirtest.uhn.ca/baseDstu3/AllergyIntolerance/IPS-examples-AllergyIntolerance-01"/>
+        <fullUrl value="AllergyIntolerance/IPS-examples-AllergyIntolerance-01"/>
         <resource>
             <AllergyIntolerance>
                 <id value="IPS-examples-AllergyIntolerance-01"/>
@@ -606,16 +613,22 @@
                         <code value="373270004"/>
                         <display value="Penicillin -class of antibiotic- (substance)"/>
                     </coding>
+                    <!--  
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.113883.3.1937.777.13.5.999.1"/>
+                        <code value="X-NoKnownAllergy"/>
+                    </coding>
+                    -->
                 </code>
                 <patient>
-                    <reference value="http://fhirtest.uhn.ca/baseDstu3/Patient/IPS-examples-Patient-01"/>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
                 </patient>
                 <onsetDateTime value="2010"/>
             </AllergyIntolerance>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://fhirtest.uhn.ca/baseDstu3/Condition/IPS-examples-Condition-02"/>
+        <fullUrl value="Condition/IPS-examples-Condition-02"/>
         <resource>
             <Condition>
                 <id value="IPS-examples-Condition-02"/>
@@ -656,9 +669,16 @@
                         <code value="254837009"/>
                         <display value="Malignant neoplasm of breast (disorder)"/>
                     </coding>
+                    <!--  
+                    <coding>
+                        <system value="urn:oid:2.16.840.1.113883.6.43"/>
+                        <code value="8500/3"/>
+                        <display value="Infiltrating duct carcinoma, NOS"/>
+                    </coding>
+                    -->
                 </code>
                 <subject>
-                    <reference value="http://fhirtest.uhn.ca/baseDstu3/Patient/IPS-examples-Patient-01"/>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
                 </subject>
                 <onsetDateTime value="2015-01"/>
                 <abatementDateTime value="2015-03"/>
@@ -666,7 +686,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://fhirtest.uhn.ca/baseDstu3/Organization/IPS-examples-Organization-02"/>
+        <fullUrl value="Organization/IPS-examples-Organization-02"/>
         <resource>
             <Organization>
                 <id value="IPS-examples-Organization-02"/>
@@ -682,7 +702,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://fhirtest.uhn.ca/baseDstu3/Observation/IPS-examples-Observation-01-Sub0"/>
+        <fullUrl value="Observation/IPS-examples-Observation-01-Sub0"/>
         <resource>
             <Observation>
                 <id value="IPS-examples-Observation-01-Sub0"/>
@@ -704,7 +724,7 @@
                     </coding>
                 </code>
                 <subject>
-                    <reference value="http://fhirtest.uhn.ca/baseDstu3/Patient/IPS-examples-Patient-01"/>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
                 </subject>
                 <effectiveDateTime value="2015-10-10T09:15:00+01:00"/>
                 <valueCodeableConcept>
@@ -718,7 +738,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://fhirtest.uhn.ca/baseDstu3/Observation/IPS-examples-Observation-01-Sub1"/>
+        <fullUrl value="Observation/IPS-examples-Observation-01-Sub1"/>
         <resource>
             <Observation>
                 <id value="IPS-examples-Observation-01-Sub1"/>
@@ -740,7 +760,7 @@
                     </coding>
                 </code>
                 <subject>
-                    <reference value="http://fhirtest.uhn.ca/baseDstu3/Patient/IPS-examples-Patient-01"/>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
                 </subject>
                 <effectiveDateTime value="2015-10-10T09:35:00+01:00"/>
                 <valueCodeableConcept>
@@ -754,7 +774,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://fhirtest.uhn.ca/baseDstu3/Observation/IPS-examples-Observation-01-Sub2"/>
+        <fullUrl value="Observation/IPS-examples-Observation-01-Sub2"/>
         <resource>
             <Observation>
                 <id value="IPS-examples-Observation-01-Sub2"/>
@@ -776,7 +796,7 @@
                     </coding>
                 </code>
                 <subject>
-                    <reference value="http://fhirtest.uhn.ca/baseDstu3/Patient/IPS-examples-Patient-01"/>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
                 </subject>
                 <effectiveDateTime value="2015-10-10T09:35:00+01:00"/>
                 <valueCodeableConcept>
@@ -790,7 +810,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://fhirtest.uhn.ca/baseDstu3/Observation/IPS-examples-Observation-01-Sub3"/>
+        <fullUrl value="Observation/IPS-examples-Observation-01-Sub3"/>
         <resource>
             <Observation>
                 <id value="IPS-examples-Observation-01-Sub3"/>
@@ -812,7 +832,7 @@
                     </coding>
                 </code>
                 <subject>
-                    <reference value="http://fhirtest.uhn.ca/baseDstu3/Patient/IPS-examples-Patient-01"/>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
                 </subject>
                 <effectiveDateTime value="2015-10-10T09:35:00+01:00"/>
                 <valueCodeableConcept>
@@ -826,7 +846,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://fhirtest.uhn.ca/baseDstu3/Observation/IPS-examples-Observation-01-0"/>
+        <fullUrl value="Observation/IPS-examples-Observation-01-0"/>
         <resource>
             <Observation>
                 <id value="IPS-examples-Observation-01-0"/>
@@ -844,41 +864,29 @@
                     <text value="Blood typing"/>
                 </code>
                 <subject>
-                    <reference value="http://fhirtest.uhn.ca/baseDstu3/Patient/IPS-examples-Patient-01"/>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
                 </subject>
                 <effectiveDateTime value="2015-10-10"/>
                 <performer>
-                    <reference value="http://fhirtest.uhn.ca/baseDstu3/Organization/IPS-examples-Organization-02"/>
+                    <reference value="Organization/IPS-examples-Organization-02"/>
                 </performer>
-                <related>
-                    <type value="has-member"/>
-                    <target>
-                        <reference value="http://fhirtest.uhn.ca/baseDstu3/Observation/IPS-examples-Observation-01-Sub0"/>
-                    </target>
-                </related>
-                <related>
-                    <type value="has-member"/>
-                    <target>
-                        <reference value="http://fhirtest.uhn.ca/baseDstu3/Observation/IPS-examples-Observation-01-Sub1"/>
-                    </target>
-                </related>
-                <related>
-                    <type value="has-member"/>
-                    <target>
-                        <reference value="http://fhirtest.uhn.ca/baseDstu3/Observation/IPS-examples-Observation-01-Sub2"/>
-                    </target>
-                </related>
-                <related>
-                    <type value="has-member"/>
-                    <target>
-                        <reference value="http://fhirtest.uhn.ca/baseDstu3/Observation/IPS-examples-Observation-01-Sub3"/>
-                    </target>
-                </related>
+                <hasMember>
+                    <reference value="Observation/IPS-examples-Observation-01-Sub0"/>
+                </hasMember>
+                <hasMember>
+                    <reference value="Observation/IPS-examples-Observation-01-Sub1"/>
+                </hasMember>
+                <hasMember>
+                    <reference value="Observation/IPS-examples-Observation-01-Sub2"/>
+                </hasMember>
+                <hasMember>
+                    <reference value="Observation/IPS-examples-Observation-01-Sub3"/>
+                </hasMember>
             </Observation>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://fhirtest.uhn.ca/baseDstu3/Observation/IPS-examples-Observation-01-1"/>
+        <fullUrl value="Observation/IPS-examples-Observation-01-1"/>
         <resource>
             <Observation>
                 <id value="IPS-examples-Observation-01-1"/>
@@ -900,11 +908,11 @@
                     </coding>
                 </code>
                 <subject>
-                    <reference value="http://fhirtest.uhn.ca/baseDstu3/Patient/IPS-examples-Patient-01"/>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
                 </subject>
                 <effectiveDateTime value="2017-11-10T08:20:00+01:00"/>
                 <performer>
-                    <reference value="http://fhirtest.uhn.ca/baseDstu3/Organization/IPS-examples-Organization-02"/>
+                    <reference value="Organization/IPS-examples-Organization-02"/>
                 </performer>
                 <valueQuantity>
                     <value value="7.5"/>
@@ -917,7 +925,7 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="http://fhirtest.uhn.ca/baseDstu3/Observation/IPS-examples-Observation-01-3"/>
+        <fullUrl value="Observation/IPS-examples-Observation-01-3"/>
         <resource>
             <Observation>
                 <id value="IPS-examples-Observation-01-3"/>
@@ -939,11 +947,11 @@
                     </coding>
                 </code>
                 <subject>
-                    <reference value="http://fhirtest.uhn.ca/baseDstu3/Patient/IPS-examples-Patient-01"/>
+                    <reference value="Patient/IPS-examples-Patient-01"/>
                 </subject>
                 <effectiveDateTime value="2017-12-10T08:20:00+01:00"/>
                 <performer>
-                    <reference value="http://fhirtest.uhn.ca/baseDstu3/Organization/IPS-examples-Organization-02"/>
+                    <reference value="Organization/IPS-examples-Organization-02"/>
                 </performer>
                 <valueCodeableConcept>
                     <coding>

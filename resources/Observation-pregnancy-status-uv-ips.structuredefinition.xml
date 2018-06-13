@@ -6,7 +6,7 @@
   <status value="draft" />
   <date value="2018-03-20T11:00:52.49+01:00" />
   <description value="This profile constrains the Observation resource to represent the pregnancy status." />
-  <fhirVersion value="3.0.1" />
+  <fhirVersion value="3.4.0" />
   <kind value="resource" />
   <abstract value="false" />
   <type value="Observation" />
@@ -224,9 +224,9 @@
         </extension>
         <strength value="extensible" />
         <description value="A human language." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/languages" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -567,9 +567,9 @@
         </extension>
         <strength value="required" />
         <description value="Identifies the purpose for this identifier, if known ." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/identifier-use" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -618,9 +618,9 @@
         </extension>
         <strength value="extensible" />
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/identifier-type" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1969,9 +1969,9 @@
         </extension>
         <strength value="required" />
         <description value="Codes providing the status of an observation." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/observation-status" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2028,9 +2028,9 @@
         </extension>
         <strength value="preferred" />
         <description value="Codes for high level observation categories." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/observation-category" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2558,9 +2558,9 @@
         </extension>
         <strength value="example" />
         <description value="Codes identifying names of simple observations." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/observation-codes" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -4186,9 +4186,9 @@
         </extension>
         <strength value="extensible" />
         <description value="Codes specifying why the result (Observation.value[x]) is missing." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/observation-valueabsentreason" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -4717,9 +4717,9 @@
         </extension>
         <strength value="extensible" />
         <description value="Codes identifying interpretations of observations." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/observation-interpretation" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -5291,9 +5291,9 @@
         </extension>
         <strength value="example" />
         <description value="Codes describing anatomical locations. May include laterality." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/body-site" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -5825,9 +5825,9 @@
         </extension>
         <strength value="example" />
         <description value="Methods for simple observations." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/observation-methods" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -7199,9 +7199,9 @@
         </extension>
         <strength value="required" />
         <description value="How the Quantity should be understood and represented." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/quantity-comparator" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -7544,9 +7544,9 @@
         </extension>
         <strength value="required" />
         <description value="How the Quantity should be understood and represented." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/quantity-comparator" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -7709,9 +7709,9 @@
         </extension>
         <strength value="extensible" />
         <description value="Code for the meaning of a reference range." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/referencerange-meaning" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -8239,9 +8239,9 @@
         </extension>
         <strength value="example" />
         <description value="Codes identifying the population the reference range applies to." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/referencerange-appliesto" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -9076,9 +9076,9 @@
         </extension>
         <strength value="required" />
         <description value="How the Quantity should be understood and represented." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/quantity-comparator" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -9422,9 +9422,9 @@
         </extension>
         <strength value="required" />
         <description value="How the Quantity should be understood and represented." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/quantity-comparator" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -9790,9 +9790,9 @@
         </extension>
         <strength value="required" />
         <description value="Codes specifying how two observations are related." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/observation-relationshiptypes" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -10244,9 +10244,9 @@
         </extension>
         <strength value="required" />
         <description value="Codes specifying how two observations are related." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/observation-relationshiptypes" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -10689,9 +10689,9 @@
         </extension>
         <strength value="example" />
         <description value="Codes identifying names of simple observations." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/observation-codes" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -11312,9 +11312,9 @@
         </extension>
         <strength value="extensible" />
         <description value="Codes specifying why the result (Observation.value[x]) is missing." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/observation-valueabsentreason" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
@@ -11839,9 +11839,9 @@
         </extension>
         <strength value="extensible" />
         <description value="Codes identifying interpretations of observations." />
-        <valueSetReference>
+        <valueSetCanonical>
           <reference value="http://hl7.org/fhir/ValueSet/observation-interpretation" />
-        </valueSetReference>
+        </valueSetCanonical>
       </binding>
       <mapping>
         <identity value="rim" />
