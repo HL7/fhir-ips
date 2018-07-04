@@ -228,9 +228,7 @@
         </extension>
         <strength value="extensible" />
         <description value="A human language." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/languages" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/languages" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -563,9 +561,7 @@
         </extension>
         <strength value="required" />
         <description value="Identifies the purpose for this identifier, if known ." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/identifier-use" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -614,9 +610,7 @@
         </extension>
         <strength value="extensible" />
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/identifier-type" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-type" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1693,9 +1687,7 @@
         </extension>
         <strength value="required" />
         <description value="The clinical status of the condition or diagnosis." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/condition-clinical" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/condition-clinical" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1752,9 +1744,7 @@
         </extension>
         <strength value="required" />
         <description value="The verification status to support or decline the clinical status of the condition or diagnosis." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/condition-ver-status" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/condition-ver-status" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1812,9 +1802,7 @@
         </extension>
         <strength value="required" />
         <description value="A category assigned to the condition." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2347,9 +2335,7 @@
         </extension>
         <strength value="preferred" />
         <description value="A subjective assessment of the severity of the condition as evaluated by the clinician." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/condition-severity-uv-ips" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/condition-severity-uv-ips" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2895,9 +2881,7 @@
         </extension>
         <strength value="example" />
         <description value="Identification of the condition or diagnosis." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/condition-code" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/condition-code" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3437,9 +3421,7 @@
         </extension>
         <strength value="required" />
         <description value="Absent problem or unknown problem" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -4133,9 +4115,7 @@
         </extension>
         <strength value="preferred" />
         <description value="Identification of the problem" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/core-problem-list-disorders-uv-ips" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/core-problem-list-disorders-uv-ips" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -4672,9 +4652,7 @@
         </extension>
         <strength value="preferred" />
         <description value="Codes describing anatomical locations. May include laterality." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/body-site" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/body-site" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -6253,9 +6231,7 @@
         </extension>
         <strength value="example" />
         <description value="Codes describing condition stages (e.g. Cancer stages)." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/condition-stage" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/condition-stage" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -7191,9 +7167,7 @@
         </extension>
         <strength value="example" />
         <description value="Codes that describe the manifestation or symptoms of a condition." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/manifestation-or-symptom" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/manifestation-or-symptom" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -8225,9 +8199,7 @@
           <valueString value="ConditionCategory" />
         </extension>
         <strength value="required" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips" />
       </binding>
     </element>
     <element id="Condition.severity">
@@ -8242,9 +8214,7 @@
           <valueString value="ConditionSeverity" />
         </extension>
         <strength value="preferred" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/condition-severity-uv-ips" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/condition-severity-uv-ips" />
       </binding>
     </element>
     <element id="Condition.code">
@@ -8276,9 +8246,7 @@
         </extension>
         <strength value="required" />
         <description value="Absent problem or unknown problem" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips" />
       </binding>
     </element>
     <element id="Condition.code:absentOrUnknownProblem.coding">
@@ -8309,9 +8277,7 @@
         </extension>
         <strength value="preferred" />
         <description value="Identification of the problem" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/core-problem-list-disorders-uv-ips" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/core-problem-list-disorders-uv-ips" />
       </binding>
     </element>
     <element id="Condition.bodySite">

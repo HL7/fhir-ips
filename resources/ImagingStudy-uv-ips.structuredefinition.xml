@@ -200,9 +200,7 @@
         </extension>
         <strength value="extensible" />
         <description value="A human language." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/languages" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/languages" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -589,9 +587,7 @@
         </extension>
         <strength value="required" />
         <description value="Identifies the purpose for this identifier, if known ." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/identifier-use" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -640,9 +636,7 @@
         </extension>
         <strength value="extensible" />
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/identifier-type" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-type" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1847,9 +1841,7 @@
         </extension>
         <strength value="required" />
         <description value="Identifies the purpose for this identifier, if known ." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/identifier-use" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1898,9 +1890,7 @@
         </extension>
         <strength value="extensible" />
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/identifier-type" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-type" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2973,9 +2963,7 @@
         </extension>
         <strength value="required" />
         <description value="Availability of the resource" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/instance-availability" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/instance-availability" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3021,9 +3009,7 @@
         </extension>
         <strength value="extensible" />
         <description value="Type of acquired data in the instance" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/dicom-cid29" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/dicom-cid29" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -5221,9 +5207,7 @@
         </extension>
         <strength value="example" />
         <description value="The performed procedure type" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/procedure-code" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/procedure-code" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -5744,9 +5728,7 @@
         </extension>
         <strength value="example" />
         <description value="The reason for the study" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/procedure-reason" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/procedure-reason" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -6551,9 +6533,7 @@
         </extension>
         <strength value="extensible" />
         <description value="Type of acquired data in the instance" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/dicom-cid29" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/dicom-cid29" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -6981,9 +6961,7 @@
         </extension>
         <strength value="required" />
         <description value="Availability of the resource" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/instance-availability" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/instance-availability" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -7268,9 +7246,7 @@
         </extension>
         <strength value="example" />
         <description value="Codes describing anatomical locations. May include laterality." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/body-site" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/body-site" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -7617,9 +7593,7 @@
         </extension>
         <strength value="example" />
         <description value="Codes describing body site laterality (left, right, etc.)." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/bodysite-laterality" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/bodysite-laterality" />
       </binding>
       <mapping>
         <identity value="rim" />

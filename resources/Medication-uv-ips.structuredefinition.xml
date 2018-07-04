@@ -212,9 +212,7 @@
         </extension>
         <strength value="extensible" />
         <description value="A human language." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/languages" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/languages" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -420,9 +418,7 @@
         </extension>
         <strength value="example" />
         <description value="A coded concept that defines the type of a medication" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/medication-codes" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/medication-codes" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -4172,9 +4168,7 @@
         </extension>
         <strength value="required" />
         <description value="A coded concept defining if the medication is in active use" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/medication-status" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/medication-status" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -4349,9 +4343,7 @@
         </extension>
         <strength value="example" />
         <description value="A coded concept defining the form of a medication" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -6121,9 +6113,7 @@
         </extension>
         <strength value="example" />
         <description value="A coded concept defining the kind of container a medication package is packaged in" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/medication-package-form" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/medication-package-form" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -6885,9 +6875,7 @@
           <valueString value="MedicationForm" />
         </extension>
         <strength value="example" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform" />
       </binding>
     </element>
     <element id="Medication.form.coding.system">

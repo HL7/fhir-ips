@@ -217,9 +217,7 @@
         </extension>
         <strength value="extensible" />
         <description value="A human language." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/languages" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/languages" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -555,9 +553,7 @@
         </extension>
         <strength value="required" />
         <description value="Identifies the purpose for this identifier, if known ." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/identifier-use" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -606,9 +602,7 @@
         </extension>
         <strength value="extensible" />
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/identifier-type" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-type" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2442,9 +2436,7 @@
         </extension>
         <strength value="required" />
         <description value="A coded concept indicating the current status of a MedicationStatement." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/medication-statement-status" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/medication-statement-status" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2494,9 +2486,7 @@
         </extension>
         <strength value="preferred" />
         <description value="A coded concept identifying where the medication included in the medicationstatement is expected to be consumed or administered" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/medication-statement-category" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/medication-statement-category" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3909,9 +3899,7 @@
         </extension>
         <strength value="required" />
         <description value="A coded concept identifying level of certainty if patient has taken or has not taken the medication" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/medication-statement-taken" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/medication-statement-taken" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3957,9 +3945,7 @@
         </extension>
         <strength value="example" />
         <description value="A coded concept indicating the reason why the medication was not taken" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/reason-medication-not-taken-codes" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/reason-medication-not-taken-codes" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -4479,9 +4465,7 @@
         </extension>
         <strength value="example" />
         <description value="A coded concept identifying why the medication is being taken." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/condition-code" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/condition-code" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -5698,9 +5682,7 @@
         </extension>
         <strength value="example" />
         <description value="A coded concept identifying additional instructions such as &quot;take with water&quot; or &quot;avoid operating heavy machinery&quot;." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/additional-instruction-codes" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/additional-instruction-codes" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -6783,9 +6765,7 @@
         </extension>
         <strength value="required" />
         <description value="A unit of time (units from UCUM)." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/units-of-time" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/units-of-time" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -6959,9 +6939,7 @@
         </extension>
         <strength value="required" />
         <description value="A unit of time (units from UCUM)." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/units-of-time" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/units-of-time" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -7001,9 +6979,7 @@
           <valueString value="DayOfWeek" />
         </extension>
         <strength value="required" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/days-of-week" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/days-of-week" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -7070,9 +7046,7 @@
         </extension>
         <strength value="required" />
         <description value="Real world event relating to the schedule." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/event-timing" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/event-timing" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -7147,9 +7121,7 @@
         </extension>
         <strength value="preferred" />
         <description value="Code for a known / defined timing pattern." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/timing-abbreviation" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/timing-abbreviation" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -7829,9 +7801,7 @@
         </extension>
         <strength value="example" />
         <description value="A coded concept identifying the precondition that should be met or evaluated prior to consuming or administering a medication dose.  For example &quot;pain&quot;, &quot;30 minutes prior to sexual intercourse&quot;, &quot;on flare-up&quot; etc." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/medication-as-needed-reason" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/medication-as-needed-reason" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -7874,9 +7844,7 @@
         </extension>
         <strength value="example" />
         <description value="A coded concept describing the site location the medicine enters into or onto the body." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/approach-site-codes" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/approach-site-codes" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -8560,9 +8528,7 @@
         </extension>
         <strength value="example" />
         <description value="A coded concept describing the route or physiological path of administration of a therapeutic agent into or onto the body of a subject." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/route-codes" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/route-codes" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -9246,9 +9212,7 @@
         </extension>
         <strength value="example" />
         <description value="A coded concept describing the technique by which the medicine is administered." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/administration-method-codes" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/administration-method-codes" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -10115,9 +10079,7 @@
         </extension>
         <strength value="required" />
         <description value="How the Quantity should be understood and represented." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/quantity-comparator" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/quantity-comparator" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -10447,9 +10409,7 @@
         </extension>
         <strength value="required" />
         <description value="How the Quantity should be understood and represented." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/quantity-comparator" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/quantity-comparator" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -10789,9 +10749,7 @@
         </extension>
         <strength value="required" />
         <description value="How the Quantity should be understood and represented." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/quantity-comparator" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/quantity-comparator" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -11134,9 +11092,7 @@
         </extension>
         <strength value="required" />
         <description value="How the Quantity should be understood and represented." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/quantity-comparator" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/quantity-comparator" />
       </binding>
       <mapping>
         <identity value="rim" />

@@ -203,9 +203,7 @@
         </extension>
         <strength value="extensible" />
         <description value="A human language." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/languages" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/languages" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1418,9 +1416,7 @@
         </extension>
         <strength value="required" />
         <description value="Identifies the purpose for this identifier, if known ." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/identifier-use" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1469,9 +1465,7 @@
         </extension>
         <strength value="extensible" />
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/identifier-type" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-type" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3277,9 +3271,7 @@
         </extension>
         <strength value="required" />
         <description value="A code specifying the state of the procedure." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/event-status" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/event-status" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3360,9 +3352,7 @@
         </extension>
         <strength value="example" />
         <description value="A code that identifies the reason a procedure was not performed." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/procedure-not-performed-reason" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/procedure-not-performed-reason" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3882,9 +3872,7 @@
         </extension>
         <strength value="example" />
         <description value="A code that classifies a procedure for searching, sorting and display purposes." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/procedure-category" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/procedure-category" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -4418,9 +4406,7 @@
         </extension>
         <strength value="preferred" />
         <description value="A code to identify a specific procedure ." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -4953,9 +4939,7 @@
         </extension>
         <strength value="required" />
         <description value="A code to identify absent or unknown procedures" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-procedures-uv-ips" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-procedures-uv-ips" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -5488,9 +5472,7 @@
         </extension>
         <strength value="preferred" />
         <description value="A code to identify a specific procedure ." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -6715,9 +6697,7 @@
         </extension>
         <strength value="example" />
         <description value="A code that identifies the role of a performer of the procedure." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/performer-role" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/performer-role" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -8756,9 +8736,7 @@
         </extension>
         <strength value="example" />
         <description value="Codes describing anatomical locations. May include laterality." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -9282,9 +9260,7 @@
         </extension>
         <strength value="example" />
         <description value="An outcome of a procedure - whether it was resolved or otherwise." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/procedure-outcome" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/procedure-outcome" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -10040,9 +10016,7 @@
         </extension>
         <strength value="example" />
         <description value="Codes describing complications that resulted from a procedure." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/condition-code" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/condition-code" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -10799,9 +10773,7 @@
         </extension>
         <strength value="example" />
         <description value="Specific follow up required for a procedure e.g. removal of sutures." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/procedure-followup" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/procedure-followup" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -11727,9 +11699,7 @@
         </extension>
         <strength value="preferred" />
         <description value="A kind of change that happened to the device during the procedure." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/device-action" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/device-action" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -12731,9 +12701,7 @@
         </extension>
         <strength value="example" />
         <description value="Codes describing items used during a procedure" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/device-kind" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/device-kind" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -13278,9 +13246,7 @@
           <valueString value="ProcedureCode" />
         </extension>
         <strength value="preferred" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips" />
       </binding>
     </element>
     <element id="Procedure.code:absentOrUnknownProcedure">
@@ -13297,9 +13263,7 @@
         </extension>
         <strength value="required" />
         <description value="A code to identify absent or unknown procedures" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-procedures-uv-ips" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-procedures-uv-ips" />
       </binding>
     </element>
     <element id="Procedure.code:procedureCode">
@@ -13315,9 +13279,7 @@
           <valueString value="ProcedureCode" />
         </extension>
         <strength value="preferred" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips" />
       </binding>
     </element>
     <element id="Procedure.subject">
@@ -13393,9 +13355,7 @@
           <valueString value="BodySite" />
         </extension>
         <strength value="example" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips" />
       </binding>
     </element>
   </differential>

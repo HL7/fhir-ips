@@ -216,9 +216,7 @@
         </extension>
         <strength value="extensible" />
         <description value="A human language." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/languages" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/languages" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -554,9 +552,7 @@
         </extension>
         <strength value="required" />
         <description value="Identifies the purpose for this identifier, if known ." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/identifier-use" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-use" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -605,9 +601,7 @@
         </extension>
         <strength value="extensible" />
         <description value="A coded type for an identifier that can be used to determine which identifier to use for a specific purpose." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/identifier-type" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/identifier-type" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1683,9 +1677,7 @@
         </extension>
         <strength value="required" />
         <description value="The clinical status of the allergy or intolerance." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/allergy-clinical-status" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/allergy-clinical-status" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1734,9 +1726,7 @@
         </extension>
         <strength value="required" />
         <description value="Assertion about certainty associated with a propensity, or potential risk, of a reaction to the identified substance." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/allergy-verification-status" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/allergy-verification-status" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1784,9 +1774,7 @@
         </extension>
         <strength value="required" />
         <description value="Identification of the underlying physiological mechanism for a Reaction Risk." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/allergy-intolerance-type" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/allergy-intolerance-type" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1839,9 +1827,7 @@
         </extension>
         <strength value="required" />
         <description value="Category of an identified substance." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/allergy-intolerance-category" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/allergy-intolerance-category" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1895,9 +1881,7 @@
         </extension>
         <strength value="required" />
         <description value="Estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1955,9 +1939,7 @@
         </extension>
         <strength value="example" />
         <description value="Type of the substance/product, allergy or intolerance condition, or negation/exclusion codes for reporting no known allergies." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/allergyintolerance-code" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/allergyintolerance-code" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2488,9 +2470,7 @@
         </extension>
         <strength value="required" />
         <description value="negation/exclusion codes for reporting no known allergies or not available data." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-allergies-uv-ips" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-allergies-uv-ips" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3022,9 +3002,7 @@
         </extension>
         <strength value="preferred" />
         <description value="Type of the substance/product, allergy or intolerance condition." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -4812,9 +4790,7 @@
         </extension>
         <strength value="example" />
         <description value="Codes defining the type of the substance (including pharmaceutical products)." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/substance-code" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/substance-code" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -5337,9 +5313,7 @@
         </extension>
         <strength value="preferred" />
         <description value="Clinical symptoms and/or signs that are observed or associated with an Adverse Reaction Event." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-reaction-uv-ips" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-reaction-uv-ips" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -5932,9 +5906,7 @@
         </extension>
         <strength value="required" />
         <description value="Clinical assessment of the severity of a reaction event as a whole, potentially considering multiple different manifestations." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/reaction-event-severity" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/reaction-event-severity" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -5974,9 +5946,7 @@
         </extension>
         <strength value="example" />
         <description value="A coded concept describing the route or physiological path of administration of a therapeutic agent into or onto the body of a subject." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/route-codes" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/route-codes" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -6763,9 +6733,7 @@
         </extension>
         <strength value="required" />
         <description value="negation/exclusion codes for reporting no known allergies or not available data." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-allergies-uv-ips" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-allergies-uv-ips" />
       </binding>
     </element>
     <element id="AllergyIntolerance.code:absentOrUnknownAllergy.coding">
@@ -6796,9 +6764,7 @@
         </extension>
         <strength value="preferred" />
         <description value="Type of the substance/product, allergy or intolerance condition." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips" />
       </binding>
     </element>
     <element id="AllergyIntolerance.patient">
@@ -6838,9 +6804,7 @@
           <valueString value="Manifestation" />
         </extension>
         <strength value="preferred" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-reaction-uv-ips" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-reaction-uv-ips" />
       </binding>
     </element>
     <element id="AllergyIntolerance.reaction.severity">

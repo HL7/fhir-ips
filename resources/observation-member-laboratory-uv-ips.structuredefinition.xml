@@ -235,9 +235,7 @@
         </extension>
         <strength value="extensible" />
         <description value="A human language." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/languages" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/languages" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -583,9 +581,7 @@
         </extension>
         <strength value="required" />
         <description value="Codes providing the status of an observation." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/observation-status" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-status" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -705,9 +701,7 @@
         </extension>
         <strength value="extensible" />
         <description value="Codes identifying names of simple observations." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-and-vital-signs-observations" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-and-vital-signs-observations" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1470,9 +1464,7 @@
       <isSummary value="true" />
       <binding>
         <strength value="extensible" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/lab-result-coded-value-uv-ips" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/lab-result-coded-value-uv-ips" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1538,9 +1530,7 @@
         </extension>
         <strength value="extensible" />
         <description value="Codes specifying why the result (Observation.value[x]) is missing." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/observation-valueabsentreason" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-valueabsentreason" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1603,9 +1593,7 @@
         </extension>
         <strength value="extensible" />
         <description value="Codes identifying interpretations of observations." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/observation-interpretation" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-interpretation" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1710,9 +1698,7 @@
         </extension>
         <strength value="example" />
         <description value="Codes describing anatomical locations. May include laterality." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/body-site" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/body-site" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -1777,9 +1763,7 @@
         </extension>
         <strength value="example" />
         <description value="Methods for simple observations." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/observation-methods" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-methods" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2433,9 +2417,7 @@
         </extension>
         <strength value="extensible" />
         <description value="Code for the meaning of a reference range." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/referencerange-meaning" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/referencerange-meaning" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2496,9 +2478,7 @@
         </extension>
         <strength value="example" />
         <description value="Codes identifying the population the reference range applies to." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/referencerange-appliesto" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/referencerange-appliesto" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2803,9 +2783,7 @@
         </extension>
         <strength value="required" />
         <description value="Codes specifying how two observations are related." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/observation-relationshiptypes" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-relationshiptypes" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3063,9 +3041,7 @@
         </extension>
         <strength value="example" />
         <description value="Codes identifying names of simple observations." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/observation-codes" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-codes" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3219,9 +3195,7 @@
         </extension>
         <strength value="extensible" />
         <description value="Codes specifying why the result (Observation.value[x]) is missing." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/observation-valueabsentreason" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-valueabsentreason" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3279,9 +3253,7 @@
         </extension>
         <strength value="extensible" />
         <description value="Codes identifying interpretations of observations." />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/ValueSet/observation-interpretation" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/ValueSet/observation-interpretation" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -3391,9 +3363,7 @@
           <valueString value="ObservationCode" />
         </extension>
         <strength value="extensible" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-and-vital-signs-observations" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-and-vital-signs-observations" />
       </binding>
     </element>
     <element id="Observation.subject">
@@ -3468,9 +3438,7 @@
       </type>
       <binding>
         <strength value="extensible" />
-        <valueSetCanonical>
-          <reference value="http://hl7.org/fhir/uv/ips/ValueSet/lab-result-coded-value-uv-ips" />
-        </valueSetCanonical>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/lab-result-coded-value-uv-ips" />
       </binding>
     </element>
     <element id="Observation.dataAbsentReason">
