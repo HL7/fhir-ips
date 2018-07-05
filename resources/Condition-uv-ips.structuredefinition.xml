@@ -4651,7 +4651,7 @@
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="BodySite" />
         </extension>
-        <strength value="preferred" />
+        <strength value="example" />
         <description value="Codes describing anatomical locations. May include laterality." />
         <valueSet value="http://hl7.org/fhir/ValueSet/body-site" />
       </binding>
@@ -8267,13 +8267,6 @@
         <code value="CodeableConcept" />
         <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips" />
       </type>
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="BodySite" />
-        </extension>
-        <strength value="preferred" />
-        <description value="Body site codes"/>
-      </binding>
     </element>
     <element id="Condition.subject">
       <path value="Condition.subject" />
