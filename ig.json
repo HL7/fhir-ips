@@ -48,7 +48,13 @@
     "sub-observation-category-uv-ips",
     "target-site-uv-ips",
     "vaccines-uv-ips",
-    "whoatc-uv-ips"
+    "whoatc-uv-ips",
+    		"pcid-uv-ips", 
+		"mpid-uv-ips", 
+		"phpid-lvl1-uv-ips", 
+		"phpid-lvl2-uv-ips", 
+		"phpid-lvl3-uv-ips", 
+		"phpid-lvl4-uv-ips", 
       ],
   "paths": {
     "pages": [
@@ -443,6 +449,39 @@
       "source": "valueset-whoatc-uv-ips.xml",
       "base": "ValueSet-whoatc-uv-ips.html"
     },
+    
+
+		"ValueSet/pcid-uv-ips": {
+			"source": "valueset-pcid-uv-ips.xml",
+			"base": "ValueSet-pcid-uv-ips.html"
+		},
+		"ValueSet/mpid-uv-ips": {
+			"source": "valueset-mpid-uv-ips.xml",
+			"base": "ValueSet-mpid-uv-ips.html"
+		},
+			"ValueSet/phpid-lvl1-uv-ips": {
+			"source": "valueset-phpid-lvl1-uv-ips.xml",
+			"base": "ValueSet-phpid-lvl1-uv-ips.html"
+		},
+			"ValueSet/phpid-lvl2-uv-ips": {
+			"source": "valueset-phpid-lvl2-uv-ips.xml",
+			"base": "ValueSet-phpid-lvl2-uv-ips.html"
+		},
+			"ValueSet/phpid-lvl3-uv-ips": {
+			"source": "valueset-phpid-lvl3-uv-ips.xml",
+			"base": "ValueSet-phpid-lvl3-uv-ips.html"
+		},
+			"ValueSet/phpid-lvl4-uv-ips": {
+			"source": "valueset-phpid-lvl4-uv-ips.xml",
+			"base": "ValueSet-phpid-lvl4-uv-ips.html"
+		},
+      "ValueSet/vaccines-uv-ips": {
+			"source": "valueset-vaccines-uv-ips.xml",
+			"base": "ValueSet-vaccines-uv-ips.html"
+		},
+
+    
+    
     "StructureDefinition/allergyintolerance-uv-ips": {
       "defns": "StructureDefinition-allergyintolerance-uv-ips-definitions.html",
       "source": "AllergyIntolerance-uv-ips.structuredefinition.xml",
