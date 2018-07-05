@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:f="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../R4_fhir-all-xsd/valueset.xsd">
+	<id value="mpid-uv-ips"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+	</meta>
+	<url value="http://hl7.org/fhir/uv/ips/ValueSet/mpid-uv-ips"/>
+	<version value="2017-04-07T00:00:00"/>
+	<name value="Medicinal Products"/>
+	<title value="Medicinal Product"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<publisher value="HL7 International"/>
+	<contact>
+		<name value="HL7 International"/>
+		<telecom>
+			<system value="phone"/>
+			<value value="+1 734 677 7777"/>
+		</telecom>
+		<telecom>
+			<system value="fax"/>
+			<value value="+1 734 677 6622"/>
+		</telecom>
+		<telecom>
+			<system value="email"/>
+			<value value="info@hl7.org"/>
+		</telecom>
+	</contact>
+	<description value="This value set provide an example of possible codes representing  Medicinal Products. It is envisioned that IDMP MPID will be used in the next future."/>
+	<immutable value="false"/>
+	<compose>
+		<include>
+			<system value="urn:oid:2.16.840.1.113883.2.9.6.1.5"/>
+			<concept>
+				<code value="023108"/>
+				<display value="AMOXICILLINA DOC"/>
+			</concept>
+		</include>
+		<include>
+			<system value="http://hl7.org/fhir/sid/ndc"/>
+			<concept>
+				<code value="50436-3129'"/>
+				<display value="Amoxicillin and Clavulanate Potassium"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

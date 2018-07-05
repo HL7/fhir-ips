@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:f="http://hl7.org/fhir">
+	<id value="phpid-lvl4-uv-ips"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+	</meta>
+	<url value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl4-uv-ips"/>
+	<version value="2017-04-07T00:00:00"/>
+	<name value="Pharmaceutical Products (Lvl 4)"/>
+	<title value="PhPID Active Substance Stratum Level 4"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<publisher value="HL7 International"/>
+	<contact>
+		<name value="HL7 International"/>
+		<telecom>
+			<system value="phone"/>
+			<value value="+1 734 677 7777"/>
+		</telecom>
+		<telecom>
+			<system value="fax"/>
+			<value value="+1 734 677 6622"/>
+		</telecom>
+		<telecom>
+			<system value="email"/>
+			<value value="info@hl7.org"/>
+		</telecom>
+	</contact>
+	<description value="This value set provide an example of possible codes representing concepts that may be associated to PhPID Active Substance Stratum Level 4. PhPID Lvl3 identifies Substance(s) Term, Strength, Reference Strength and Administrable Dose Form in the medication product. It is envisioned that IDMP PhPIDs will be used in the next future."/>
+	<immutable value="false"/>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<concept>
+				<code value="374647008"/>
+				<display value="Amoxicillin 875 mg oral tablet"/>
+			</concept>
+		</include>
+		<include>
+			<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+			<concept>
+				<code value="392259005'"/>
+				<display value="Amoxicillin 875 mg and clavulanate potassium 125 mg oral tablet"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>
