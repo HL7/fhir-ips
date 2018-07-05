@@ -216,9 +216,7 @@
       </constraint>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
-          <valueReference>
-            <reference value="http://hl7.org/fhir/ValueSet/all-languages" />
-          </valueReference>
+          <valueCanonical value="http://hl7.org/fhir/ValueSet/all-languages" />
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
           <valueString value="Language" />
