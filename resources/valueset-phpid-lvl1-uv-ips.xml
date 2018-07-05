@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:f="http://hl7.org/fhir">
+	<id value="phpid-lvl1-uv-ips"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+	</meta>
+	<url value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl1-uv-ips"/>
+	<version value="2017-04-07T00:00:00"/>
+	<name value="Pharmaceutical Products (Lvl 1)"/>
+	<title value="PhPID Active Substance Stratum Level 1"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<publisher value="HL7 International"/>
+	<contact>
+		<name value="HL7 International"/>
+		<telecom>
+			<system value="phone"/>
+			<value value="+1 734 677 7777"/>
+		</telecom>
+		<telecom>
+			<system value="fax"/>
+			<value value="+1 734 677 6622"/>
+		</telecom>
+		<telecom>
+			<system value="email"/>
+			<value value="info@hl7.org"/>
+		</telecom>
+	</contact>
+	<description value="This value set provide an example of possible codes representing PhPID Active Substance Stratum Level 1. PhPID Lvl1 identifies the substance(s) in the medication product. It is envisioned that IDMP PhPIDs will be used in the next future."/>
+	<immutable value="false"/>
+	<compose>
+		<include>
+			<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+			<concept>
+				<code value="723"/>
+				<display value="Amoxicillin"/>
+			</concept>
+		</include>
+		<include>
+			<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+			<concept>
+				<code value="19711'"/>
+				<display value="Amoxicillin / Clavulanate"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>
