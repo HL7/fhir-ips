@@ -2,184 +2,186 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="condition-uv-ips"/>
   <meta>
-    <lastUpdated value="2018-02-27T15:32:05.203+01:00" />
+    <lastUpdated value="2018-02-27T15:32:05.203+01:00"/>
   </meta>
-  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/condition-uv-ips" />
-  <version value="1.0" />
-  <name value="Condition-uv-ips" />
-  <title value="Condition" />
-  <status value="draft" />
-  <date value="2018-03-20" />
-  <publisher value="HL7 International" />
+  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/condition-uv-ips"/>
+  <version value="1.0"/>
+  <name value="Condition-uv-ips"/>
+  <title value="Condition"/>
+  <status value="draft"/>
+  <date value="2018-03-20"/>
+  <publisher value="HL7 International"/>
   <contact>
-    <name value="François Macary - Phast" />
+    <name value="François Macary - Phast"/>
   </contact>
   <contact>
-    <name value="Christof Gessner - Gematik" />
+    <name value="Christof Gessner - Gematik"/>
   </contact>
-  <description value="This profile represents the constraints applied to the Condition resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of problem is represented in the patient summary as an instance of the Condition resource constrained by this profile." />
-  <purpose value="Representation of a problem in the international patient summary" />
-  <fhirVersion value="3.4.0" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Condition" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition" />
-  <derivation value="constraint" />
+  <description value="This profile represents the constraints applied to the Condition resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of problem is represented in the patient summary as an instance of the Condition resource constrained by this profile."/>
+  <purpose value="Representation of a problem in the international patient summary"/>
+  <fhirVersion value="3.4.0"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Condition"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+  <derivation value="constraint"/>
   <differential>
     <element id="Condition">
-      <path value="Condition" />
-      <short value="Documentation of a health problem of the patient" />
+      <path value="Condition"/>
+      <short value="Documentation of a health problem of the patient"/>
     </element>
     <element id="Condition.identifier">
-      <path value="Condition.identifier" />
-      <max value="1" />
+      <path value="Condition.identifier"/>
+      <max value="1"/>
     </element>
     <element id="Condition.clinicalStatus">
-      <path value="Condition.clinicalStatus" />
-      <min value="1" />
-      <mustSupport value="true" />
+      <path value="Condition.clinicalStatus"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Condition.verificationStatus">
-      <path value="Condition.verificationStatus" />
-      <comment value="This element is labeled as a modifier because the status contains the code refuted and entered-in-error that mark the Condition as not currently valid." />
-      <min value="1" />
-      <mustSupport value="true" />
+      <path value="Condition.verificationStatus"/>
+      <comment value="This element is labeled as a modifier because the status contains the code refuted and entered-in-error that mark the Condition as not currently valid."/>
+      <min value="1"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Condition.category">
-      <path value="Condition.category" />
-      <definition value="A category assigned to the condition. In this profile, a health problem of the patient, therefore a 'problem-list-item'.&#xD;&#xA;" />
-      <comment value="In this profile, Condition represents a health problem of the patient. Therefore the code is fixed to the value problem-list-item." />
-      <max value="1" />
+      <path value="Condition.category"/>
+      <definition value="A category assigned to the condition. In this profile, a health problem of the patient, therefore a 'problem-list-item'.&#xD;&#xA;"/>
+      <comment value="In this profile, Condition represents a health problem of the patient. Therefore the code is fixed to the value problem-list-item."/>
+      <max value="1"/>
       <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips" />
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ConditionCategory" />
+          <valueString value="ConditionCategory"/>
         </extension>
-        <strength value="required" />
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips" />
+        <strength value="required"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips"/>
       </binding>
     </element>
     <element id="Condition.severity">
-      <path value="Condition.severity" />
+      <path value="Condition.severity"/>
       <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips" />
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ConditionSeverity" />
+          <valueString value="ConditionSeverity"/>
         </extension>
-        <strength value="preferred" />
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/condition-severity-uv-ips" />
+        <strength value="preferred"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/condition-severity-uv-ips"/>
       </binding>
     </element>
     <element id="Condition.code">
-      <path value="Condition.code" />
+      <path value="Condition.code"/>
+      <definition value="Identification of the condition, problem or diagnosis or recording of &quot;problem absent&quot; or of &quot;problems unknown&quot;."/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Condition.code.coding">
+      <path value="Condition.code.coding"/>
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="coding.system" />
+          <type value="value"/>
+          <path value="Condition.code.coding.system"/>
         </discriminator>
-        <rules value="closed" />
+        <rules value="closed"/>
       </slicing>
-      <definition value="Identification of the condition, problem or diagnosis or recording of &quot;problem absent&quot; or of &quot;problems unknown&quot;." />
-      <min value="1" />
-      <mustSupport value="true" />
+      <definition value="Identification of the condition, problem or diagnosis or recording of &quot;problem absent&quot; or of &quot;problems unknown&quot;."/>
+      <min value="1"/>
+      <mustSupport value="true"/>
     </element>
-    <element id="Condition.code:absentOrUnknownProblem">
-      <path value="Condition.code" />
-      <sliceName value="absentOrUnknownProblem" />
-      <short value="Code for absent problem or for unknown problem" />
-      <definition value="Code representing the statement &quot;absent problem&quot; or the statement &quot;problems unknown&quot;" />
-      <max value="1" />
+    <element id="Condition.code.coding:absentOrUnknownProblem">
+      <path value="Condition.code.coding"/>
+      <sliceName value="absentOrUnknownProblem"/>
+      <short value="Code for absent problem or for unknown problem"/>
+      <definition value="Code representing the statement &quot;absent problem&quot; or the statement &quot;problems unknown&quot;"/>
+      <min value="1"/>
+      <max value="1"/>
       <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips" />
+        <code value="Coding"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ConditionKind" />
+          <valueString value="ConditionKind"/>
         </extension>
-        <strength value="required" />
-        <description value="Absent problem or unknown problem" />
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips" />
+        <strength value="required"/>
+        <description value="Absent problem or unknown problem"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips"/>
       </binding>
     </element>
-    <element id="Condition.code:absentOrUnknownProblem.coding">
-      <path value="Condition.code.coding" />
-      <min value="1" />
-      <max value="1" />
+    <element id="Condition.code.coding:absentOrUnknownProblem.system">
+      <path value="Condition.code.coding.system"/>
+      <min value="1"/>
+      <fixedUri value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown"/>
     </element>
-    <element id="Condition.code:absentOrUnknownProblem.coding.system">
-      <path value="Condition.code.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown" />
+    <element id="Condition.code.coding:absentOrUnknownProblem.code">
+      <path value="Condition.code.coding.code"/>
+      <min value="1"/>
     </element>
-    <element id="Condition.code:absentOrUnknownProblem.coding.code">
-      <path value="Condition.code.coding.code" />
-      <min value="1" />
-    </element>
-    <element id="Condition.code:@default">
-      <path value="Condition.code" />
-      <sliceName value="default" />
-      <max value="1" />
+    <element id="Condition.code.coding:@default">
+      <path value="Condition.code.coding"/>
+      <sliceName value="@default"/>
+      <max value="1"/>
       <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips" />
+        <code value="Coding"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
       </type>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ConditionKind" />
+          <valueString value="ConditionKind"/>
         </extension>
-        <strength value="preferred" />
-        <description value="Identification of the problem" />
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/core-problem-list-disorders-uv-ips" />
+        <strength value="preferred"/>
+        <description value="Identification of the problem"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/core-problem-list-disorders-uv-ips"/>
       </binding>
     </element>
     <element id="Condition.bodySite">
-      <path value="Condition.bodySite" />
+      <path value="Condition.bodySite"/>
       <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips" />
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
       </type>
     </element>
     <element id="Condition.subject">
-      <path value="Condition.subject" />
+      <path value="Condition.subject"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
     </element>
     <element id="Condition.subject.identifier">
-      <path value="Condition.subject.identifier" />
-      <max value="0" />
+      <path value="Condition.subject.identifier"/>
+      <max value="0"/>
     </element>
     <element id="Condition.onsetDateTime:onsetDateTime">
-      <path value="Condition.onsetDateTime" />
-      <sliceName value="onsetDateTime" />
-      <min value="1" />
+      <path value="Condition.onsetDateTime"/>
+      <sliceName value="onsetDateTime"/>
+      <min value="1"/>
       <type>
-        <code value="dateTime" />
+        <code value="dateTime"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
     </element>
     <element id="Condition.abatement[x]">
-      <path value="Condition.abatement[x]" />
-      <mustSupport value="true" />
+      <path value="Condition.abatement[x]"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Condition.asserter">
-      <path value="Condition.asserter" />
-      <definition value="Individual who is making the condition statement.&#xD;&#xA;Information source." />
+      <path value="Condition.asserter"/>
+      <definition value="Individual who is making the condition statement.&#xD;&#xA;Information source."/>
     </element>
     <element id="Condition.asserter.identifier">
-      <path value="Condition.asserter.identifier" />
-      <max value="0" />
+      <path value="Condition.asserter.identifier"/>
+      <max value="0"/>
     </element>
   </differential>
 </StructureDefinition>
