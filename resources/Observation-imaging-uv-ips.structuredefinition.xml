@@ -86,7 +86,7 @@
           <valueString value="ObservationCode" />
         </extension>
         <strength value="extensible" />
-        <valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips" />
       </binding>
     </element>
     <element id="Observation.subject">
@@ -164,47 +164,26 @@
       <path value="Observation.device.identifier" />
       <max value="0" />
     </element>
-    <element id="Observation.related">
-      <path value="Observation.related" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="type" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.related:hasMember">
-      <path value="Observation.related" />
-      <sliceName value="hasMember" />
-      <constraint>
-        <key value="hasMemberOrComponent" />
-        <severity value="error" />
-        <human value="component and hasMember are mutually exclusive" />
-        <expression value="../related[type='has-member'] or ../component" />
-      </constraint>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.related:hasMember.type">
-      <path value="Observation.related.type" />
-      <min value="1" />
-      <fixedCode value="has-member" />
-    </element>
-    <element id="Observation.related:hasMember.target">
-      <path value="Observation.related.target" />
+    <element id="Observation.hasMember">
+      <path value="Observation.hasMember" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-member-imaging-uv-ips" />
       </type>
+      <constraint>
+        <key value="hasMemberOrComponent" />
+        <severity value="error" />
+        <human value="component and hasMember are mutually exclusive" />
+        <expression value="../has-member or ../component" />
+      </constraint>
       <mustSupport value="true" />
     </element>
-    <element id="Observation.related:hasMember.target.reference">
-      <path value="Observation.related.target.reference" />
+    <element id="Observation.hasMember.reference">
+      <path value="Observation.hasMember.reference" />
       <mustSupport value="true" />
     </element>
-    <element id="Observation.related:hasMember.target.identifier">
-      <path value="Observation.related.target.identifier" />
+    <element id="Observation.hasMember.identifier">
+      <path value="Observation.hasMember.identifier" />
       <max value="0" />
     </element>
     <element id="Observation.component">
@@ -221,7 +200,7 @@
         <key value="hasMemberOrComponent" />
         <severity value="error" />
         <human value="component and hasMember are mutually exclusive" />
-        <expression value="../related[type='has-member'] or ../component" />
+        <expression value="../has-member or ../component" />
       </constraint>
       <mustSupport value="true" />
     </element>
@@ -245,7 +224,7 @@
       <path value="Observation.component.code.coding" />
       <binding>
         <strength value="extensible" />
-        <valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-txtobs-code" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-txtobs-code" />
       </binding>
     </element>
     <element id="Observation.component:observationText.valueString:valueString">
@@ -277,7 +256,7 @@
       <path value="Observation.component.code.coding" />
       <binding>
         <strength value="extensible" />
-        <valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-codedobs-code" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-codedobs-code" />
       </binding>
     </element>
     <element id="Observation.component:observationCode.valueCodeableConcept:valueCodeableConcept">
@@ -292,7 +271,7 @@
       <path value="Observation.component.valueCodeableConcept.coding" />
       <binding>
         <strength value="example" />
-        <valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-codedobs-value" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-codedobs-value" />
       </binding>
     </element>
     <element id="Observation.component:observationCode.dataAbsentReason">
@@ -320,7 +299,7 @@
         </extension>
         <strength value="extensible" />
         <description value="Codes identifying names of numeric measurements" />
-        <valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-num-measure-code" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-num-measure-code" />
       </binding>
     </element>
     <element id="Observation.component:numericMeasurement.value[x]">
@@ -355,7 +334,7 @@
           <valueString value="ObservationCode" />
         </extension>
         <strength value="extensible" />
-        <valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-linear-measure-code" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-linear-measure-code" />
       </binding>
     </element>
     <element id="Observation.component:linearMeasurement.value[x]">
@@ -428,7 +407,7 @@
           <valueString value="ObservationCode" />
         </extension>
         <strength value="extensible" />
-        <valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-volume-measure-code" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-volume-measure-code" />
       </binding>
     </element>
     <element id="Observation.component:volumeMeasurement.value[x]">

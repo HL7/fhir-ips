@@ -337,12 +337,13 @@
 			<mustSupport value="true"/>
 		</element>
 		<!--
-		<element id="Immunization.occurrence[x]">
-			<path value="Immunization.occurrence[x]"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Immunization.occurrence[x].dateTime">
-			<path value="Immunization.occurrence[x].dateTime"/>
+		<element id="Immunization.occurrenceDateTime:occurrenceDateTime">
+			<path value="Immunization.occurrenceDateTime"/>
+			<sliceName value="occurrenceDateTime"/>
+			<type>
+				<code value="dateTime"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/dateTime"/>
+			</type>
 			<mustSupport value="true"/>
 		</element>
 		-->

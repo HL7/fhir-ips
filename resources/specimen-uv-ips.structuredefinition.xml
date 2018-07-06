@@ -31,7 +31,7 @@
           <valueString value="SpecimenType" />
         </extension>
         <strength value="extensible" />
-        <valueSetUri value="http://hl7.org/ips/fhir/ValueSet/specimen-type" />
+        <valueSet value="http://hl7.org/ips/fhir/ValueSet/specimen-type" />
       </binding>
     </element>
     <element id="Specimen.type.coding">
@@ -76,7 +76,7 @@
       </type>
       <binding>
         <strength value="extensible" />
-        <valueSetUri value="http://trilliumbridge.eu/fhir/ValueSet/specimen-collection-method" />
+        <valueSet value="http://trilliumbridge.eu/fhir/ValueSet/specimen-collection-method" />
       </binding>
     </element>
     <element id="Specimen.collection.bodySite.coding">
@@ -87,7 +87,7 @@
       </type>
       <binding>
         <strength value="extensible" />
-        <valueSetUri value="http://hl7.org/fhir/ValueSet/body-site" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/body-site" />
       </binding>
     </element>
     <element id="Specimen.processing">

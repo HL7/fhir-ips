@@ -206,75 +206,30 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="Observation.related">
-      <path value="Observation.related" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="type" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <definition value="A  reference to another Observation profiled by observation-member-laboratory-uv-ips. The target observation is considered as a sub-observation of the current one, which plays the role of a grouper" />
-      <comment value="This element is used in the context of  international patient summary when there is a need to group a collection of observations, because they belong to the same panel, or because they share a common interpretation comment, or a common media attachment (illustrative image or graph). In these cases, the current observation profiled as observation-laboratory-uv-trillium2 is the grouper, and its set of sub-observations are related observations  using the type &quot;has-member&quot; and the profile observation-member-laboratory-uv-ips." />
-    </element>
-    <element id="Observation.related.type">
-      <path value="Observation.related.type" />
-      <short value="has-member: the related observation is a sub-observation of the current one, which acts as a grouper" />
-      <definition value="A code specifying the kind of relationship that exists with the target resource.&#xD;&#xA;The only authorized value in this profile is &quot;has-member&quot;" />
-<!-- remove extraneous not required elements with empty text      
-      <comment value="   &#xD;&#xA;" />
-      <requirements value="&#xD;&#xA;" />
--->
-      <min value="1" />
-      <fixedCode value="has-member" />
-    </element>
-    <element id="Observation.related:sub-observation">
-      <path value="Observation.related" />
-      <sliceName value="sub-observation" />
-      <short value="sub-observation member of this observation" />
-      <definition value="A  reference to an Observation resource playing the role of sub-observation of the current one. For instance an individial test member of a panel." />
-      <comment value="For a discussion on the ways Observations can be assembled in groups together see [Notes below](observation.html#4.20.4)." />
-    </element>
-    <element id="Observation.related:sub-observation.type">
-      <path value="Observation.related.type" />
-      <definition value="Fixed to has-member, introducing a sub-observation (observation member of the current one)" />
-      <min value="1" />
-      <fixedCode value="has-member" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.related:sub-observation.target">
-      <path value="Observation.related.target" />
+    <element id="Observation.hasMember">
+      <path value="Observation.hasMember" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-member-laboratory-uv-ips" />
       </type>
+      <definition value="A  reference to another Observation profiled by observation-member-laboratory-uv-ips. The target observation (for instance an individual test member of a panel) is considered as a sub-observation of the current one, which plays the role of a grouper." />
+      <mustSupport value="true" />
+      <comment value="This element is used in the context of  international patient summary when there is a need to group a collection of observations, because they belong to the same panel, or because they share a common interpretation comment, or a common media attachment (illustrative image or graph). In these cases, the current observation profiled as observation-laboratory-uv-trillium2 is the grouper, and its set of sub-observations are related observations using the type &quot;has-member&quot; and the profile observation-member-laboratory-uv-ips.  For a discussion on the ways Observations can be assembled in groups together see [Notes below](observation.html#4.20.4)."/>
     </element>
-    <element id="Observation.related:sub-observation.target.identifier">
-      <path value="Observation.related.target.identifier" />
+    <element id="Observation.hasMember.identifier">
+      <path value="Observation.hasMember.identifier" />
       <max value="0" />
     </element>
-    <element id="Observation.related:attachment">
-      <path value="Observation.related" />
-      <sliceName value="attachment" />
-      <short value="attachment associated to this observation" />
-      <definition value="A  reference to another Observation, which is constrained to valueAttachment, in order to convey an illustrative media content." />
-    </element>
-    <element id="Observation.related:attachment.type">
-      <path value="Observation.related.type" />
-      <definition value="fixed to derived-from, to introduce the attachment linked to the observation." />
-      <min value="1" />
-      <fixedCode value="derived-from" />
-    </element>
-    <element id="Observation.related:attachment.target">
-      <path value="Observation.related.target" />
+    <element id="Observation.derivedFrom">
+      <path value="Observation.derivedFrom" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-media-uv-ips" />
       </type>
+      <definition value="A  reference to another Observation, which is constrained to valueAttachment, in order to convey an illustrative media content." />
     </element>
-    <element id="Observation.related:attachment.target.identifier">
-      <path value="Observation.related.target.identifier" />
+    <element id="Observation.derivedFrom.identifier">
+      <path value="Observation.derivedFrom.identifier" />
       <max value="0" />
     </element>
     <element id="Observation.component">

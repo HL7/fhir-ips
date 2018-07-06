@@ -158,7 +158,7 @@
       <binding>
         <strength value="extensible" />
         <description value="ATC class for the medication" />
-        <valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips" />
       </binding>
     </element>
     <element id="Medication.code.coding:atcClass.system">
@@ -207,7 +207,7 @@
       <binding>
         <strength value="required" />
         <description value="EDQM Standard Terms" />
-        <valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform" />
       </binding>
     </element>
     <element id="Medication.ingredient">
@@ -225,7 +225,7 @@
       <binding>
         <strength value="preferred" />
         <description value="SNOMED CT drug substances" />
-        <valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-active-substances-uv-ips" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-active-substances-uv-ips" />
       </binding>
     </element>
     <element id="Medication.ingredient.itemCodeableConcept:itemCodeableConcept.coding">
@@ -236,7 +236,7 @@
       <path value="Medication.ingredient.itemCodeableConcept.coding.system" />
       <binding>
         <strength value="preferred" />
-        <valueSetUri value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-active-substances-uv-ips" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-active-substances-uv-ips" />
       </binding>
     </element>
     <element id="Medication.ingredient.itemCodeableConcept:itemCodeableConcept.text">
