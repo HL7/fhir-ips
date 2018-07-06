@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="observation-media-uv-ips"/>
+  <meta>
+    <lastUpdated value="2018-02-16T18:49:19.113+01:00" />
+  </meta>
+  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-media-uv-ips" />
+  <name value="Observation-media-uv-ips" />
+  <title value="Observation (media)" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-03-09" />
+  <publisher value="HL7 International" />
+  <contact>
+    <name value="François Macary - Phast" />
+  </contact>
+  <description value="This profile constrains the Media resource (which is a specialized observation)." />
+  <purpose value="This specialized observation is used to convey illustrative media content." />
+  <fhirVersion value="3.4.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Media" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Media">
+      <path value="Media"/>
+    </element>
+    <element id="Media.status">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
+        <valueString value="default: final" />
+      </extension>
+      <path value="Media.status" />
+      <definition value="The status of the result value. Only final observation are eligible to the international patient summary." />
+      <fixedCode value="final" />
+    </element>
+    <element id="Media.type">
+      <path value="Media.type" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips" />
+      </type>
+    </element>
+    <element id="Media.subject">
+      <path value="Media.subject" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+    </element>
+    <element id="Media.subject.identifier">
+      <path value="Media.subject.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Media.context">
+      <path value="Media.context" />
+      <max value="0" />
+    </element>
+    <element id="Media.operator">
+      <path value="Media.operator" />
+    </element>
+    <element id="Media.operator.identifier">
+      <path value="Media.operator.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Media.content">
+      <path value="Media.content" />
+      <type>
+        <code value="Attachment" />
+      </type>
+    </element>
+    <element id="Media.device">
+      <path value="Media.device" />
+    </element>
+    <element id="Media.device.identifier">
+      <path value="Media.device.identifier" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

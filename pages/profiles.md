@@ -41,7 +41,7 @@ For each section the profiles that have been defined have been listed:
   * Laboratory results 
     * Specimen-uv-ips
     * Organization-laboratory-uv-ips
-    * Observation-attachment-uv-ips
+    * observation-media-uv-ips
     * Observation-laboratory-uv-ips
     * Observation-member-laboratory-uv-ips
   * Radiology results

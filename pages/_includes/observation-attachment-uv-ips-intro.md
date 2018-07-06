@@ -1,5 +1,5 @@
-{{site.data.structuredefinitions.observation-attachment-uv-ips-intro.name}}
+{{site.data.structuredefinitions.observation-media-uv-ips-intro.name}}
 
-{{site.data.structuredefinitions.observation-attachment-uv-ips.description}}
+{{site.data.structuredefinitions.observation-media-uv-ips.description}}
 
 #### Conformance resource variables defined [here](http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation#Jekyll)
