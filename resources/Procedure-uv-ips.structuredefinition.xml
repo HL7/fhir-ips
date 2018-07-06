@@ -2,171 +2,175 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="procedure-uv-ips"/>
   <meta>
-    <lastUpdated value="2018-02-20T12:54:56.053+01:00" />
+    <lastUpdated value="2018-02-20T12:54:56.053+01:00"/>
   </meta>
-  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/procedure-uv-ips" />
-  <name value="Procedure-uv-ips" />
-  <status value="draft" />
-  <date value="2017-10-27T13:43:30.381+02:00" />
-  <description value="This profile represents the contraints applied to the Procedure resource by the IPS project, which specifies an entry of the History of Procedure for the international patient summary based on the FHIR standard STU3. " />
-  <fhirVersion value="3.4.0" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Procedure" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Procedure" />
-  <derivation value="constraint" />
+  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/procedure-uv-ips"/>
+  <name value="Procedure-uv-ips"/>
+  <status value="draft"/>
+  <date value="2017-10-27T13:43:30.381+02:00"/>
+  <description value="This profile represents the contraints applied to the Procedure resource by the IPS project, which specifies an entry of the History of Procedure for the international patient summary based on the FHIR standard STU3. "/>
+  <fhirVersion value="3.4.0"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Procedure"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Procedure"/>
+  <derivation value="constraint"/>
   <differential>
     <element id="Procedure">
-      <path value="Procedure" />
+      <path value="Procedure"/>
     </element>
     <element id="Procedure.extension">
-      <path value="Procedure.extension" />
+      <path value="Procedure.extension"/>
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="url" />
+          <type value="value"/>
+          <path value="url"/>
         </discriminator>
-        <rules value="open" />
+        <rules value="open"/>
       </slicing>
     </element>
     <element id="Procedure.extension:statementDetail">
-      <path value="Procedure.extension" />
-      <sliceName value="statementDetail" />
+      <path value="Procedure.extension"/>
+      <sliceName value="statementDetail"/>
       <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/statement-uv-ips" />
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/statement-uv-ips"/>
       </type>
     </element>
     <element id="Procedure.extension:statementDetail.extension:statementNote">
-      <path value="Procedure.extension.extension" />
-      <sliceName value="statementNote" />
-      <max value="0" />
+      <path value="Procedure.extension.extension"/>
+      <sliceName value="statementNote"/>
+      <max value="0"/>
     </element>
     <element id="Procedure.partOf">
-      <path value="Procedure.partOf" />
+      <path value="Procedure.partOf"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure" />
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure"/>
       </type>
     </element>
     <element id="Procedure.status">
-      <path value="Procedure.status" />
-      <mustSupport value="true" />
+      <path value="Procedure.status"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Procedure.code">
-      <path value="Procedure.code" />
+      <path value="Procedure.code"/>
+      <mustSupport value="true"/>
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="ProcedureCode"/>
+        </extension>
+        <strength value="preferred"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips"/>
+      </binding>
+    </element>
+    <element id="Procedure.code.coding">
+      <path value="Procedure.code.coding"/>
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="coding.system" />
+          <type value="value"/>
+          <path value="Procedure.code.coding.system"/>
         </discriminator>
-        <rules value="open" />
+        <rules value="open"/>
       </slicing>
-      <min value="1" />
-      <mustSupport value="true" />
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>
+    <element id="Procedure.code.coding:absentOrUnknownProcedure">
+      <path value="Procedure.code.coding"/>
+      <sliceName value="absentOrUnknownProcedure"/>
+      <type>
+        <code value="Coding"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+      </type>
+      <mustSupport value="true"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ProcedureCode" />
+          <valueString value="absentOrUnknownProcedure"/>
         </extension>
-        <strength value="preferred" />
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips" />
+        <strength value="required"/>
+        <description value="A code to identify absent or unknown procedures"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-procedures-uv-ips"/>
       </binding>
     </element>
-    <element id="Procedure.code:absentOrUnknownProcedure">
-      <path value="Procedure.code" />
-      <sliceName value="absentOrUnknownProcedure" />
+    <element id="Procedure.code.coding:procedureCode">
+      <path value="Procedure.code.coding"/>
+      <sliceName value="procedureCode"/>
       <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips" />
+        <code value="Coding"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ProcedureCode" />
+          <valueString value="ProcedureCode"/>
         </extension>
-        <strength value="required" />
-        <description value="A code to identify absent or unknown procedures" />
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-procedures-uv-ips" />
-      </binding>
-    </element>
-    <element id="Procedure.code:procedureCode">
-      <path value="Procedure.code" />
-      <sliceName value="procedureCode" />
-      <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips" />
-      </type>
-      <mustSupport value="true" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ProcedureCode" />
-        </extension>
-        <strength value="preferred" />
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips" />
+        <strength value="preferred"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips"/>
       </binding>
     </element>
     <element id="Procedure.subject">
-      <path value="Procedure.subject" />
-      <definition value="The person on which the procedure was performed." />
+      <path value="Procedure.subject"/>
+      <definition value="The person on which the procedure was performed."/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
     </element>
     <element id="Procedure.subject.identifier">
-      <path value="Procedure.subject.identifier" />
-      <max value="0" />
+      <path value="Procedure.subject.identifier"/>
+      <max value="0"/>
     </element>
     <element id="Procedure.performed[x]">
-      <path value="Procedure.performed[x]" />
-      <min value="1" />
-      <mustSupport value="true" />
+      <path value="Procedure.performed[x]"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Procedure.performer">
-      <path value="Procedure.performer" />
+      <path value="Procedure.performer"/>
     </element>
     <element id="Procedure.performer.actor">
-      <path value="Procedure.performer.actor" />
+      <path value="Procedure.performer.actor"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
-        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/device-observer-uv-ips" />
-        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/practitioner-uv-ips" />
-        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-observation-uv-ips" />
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/device-observer-uv-ips"/>
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/practitioner-uv-ips"/>
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-observation-uv-ips"/>
       </type>
     </element>
     <element id="Procedure.performer.onBehalfOf">
-      <path value="Procedure.performer.onBehalfOf" />
+      <path value="Procedure.performer.onBehalfOf"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-observation-uv-ips" />
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-observation-uv-ips"/>
       </type>
     </element>
     <element id="Procedure.location">
-      <path value="Procedure.location" />
-      <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.&#xD;&#xA;&#xD;&#xA;TRILLIUM II IMPLEMENTATION COMMENTS: We propose to encode it with SNOMED CT." />
+      <path value="Procedure.location"/>
+      <comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.&#xD;&#xA;&#xD;&#xA;TRILLIUM II IMPLEMENTATION COMMENTS: We propose to encode it with SNOMED CT."/>
     </element>
     <element id="Procedure.reasonCode">
-      <path value="Procedure.reasonCode" />
+      <path value="Procedure.reasonCode"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ProcedureReason" />
+          <valueString value="ProcedureReason"/>
         </extension>
-        <strength value="example" />
-        <valueSet value="http://hl7.org/fhir/ValueSet/procedure-reason" />
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/procedure-reason"/>
       </binding>
     </element>
     <element id="Procedure.bodySite">
-      <path value="Procedure.bodySite" />
-      <mustSupport value="true" />
+      <path value="Procedure.bodySite"/>
+      <mustSupport value="true"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="BodySite" />
+          <valueString value="BodySite"/>
         </extension>
-        <strength value="example" />
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips" />
+        <strength value="example"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
       </binding>
     </element>
   </differential>

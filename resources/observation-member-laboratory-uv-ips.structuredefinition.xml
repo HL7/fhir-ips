@@ -127,9 +127,6 @@
         <code value="Ratio" />
       </type>
       <type>
-        <code value="Attachment" />
-      </type>
-      <type>
         <code value="dateTime" />
       </type>
       <type>
@@ -188,8 +185,12 @@
       <path value="Observation.referenceRange.age" />
       <max value="0" />
     </element>
-    <element id="Observation.related">
-      <path value="Observation.related" />
+    <element id="Observation.hasMember">
+      <path value="Observation.hasMember" />
+      <max value="0" />
+    </element>
+    <element id="Observation.derivedFrom">
+      <path value="Observation.derivedFrom" />
       <max value="0" />
     </element>
     <element id="Observation.component">

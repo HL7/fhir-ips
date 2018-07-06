@@ -146,15 +146,8 @@
       <path value="Observation.device.identifier" />
       <max value="0" />
     </element>
-    <element id="Observation.related">
-      <path value="Observation.related" />
-    </element>
-    <element id="Observation.related.type">
-      <path value="Observation.related.type" />
-      <fixedCode value="derived-from" />
-    </element>
-    <element id="Observation.related.target">
-      <path value="Observation.related.target" />
+    <element id="Observation.derivedFrom">
+      <path value="Observation.derivedFrom"/>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImagingStudy" />

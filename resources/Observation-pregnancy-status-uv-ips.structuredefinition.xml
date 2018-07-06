@@ -13,6 +13,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
   <derivation value="constraint" />
   <differential>
+    <element id="Observation">
+      <path value="Observation" />
+    </element>
     <element id="Observation.code">
       <path value="Observation.code" />
       <min value="1" />
@@ -22,6 +25,9 @@
         <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips" />
       </type>
       <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
     </element>
     <element id="Observation.code.coding.system">
       <path value="Observation.code.coding.system" />
@@ -72,32 +78,14 @@
       <path value="Observation.referenceRange" />
       <max value="0" />
     </element>
-    <element id="Observation.related">
-      <path value="Observation.related" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="type" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-    </element>
-    <element id="Observation.related:hasMember">
-      <path value="Observation.related" />
-      <sliceName value="hasMember" />
-      <short value="Expected Delivery Date" />
-      <definition value="A  reference to the Expected Delivery Date Observation." />
-    </element>
-    <element id="Observation.related:hasMember.type">
-      <path value="Observation.related.type" />
-      <fixedCode value="has-member" />
-    </element>
-    <element id="Observation.related:hasMember.target">
-      <path value="Observation.related.target" />
+    <element id="Observation.hasMember">
+      <path value="Observation.hasMember"/>
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-pregnancy-edd-uv-ips" />
       </type>
+      <short value="Expected Delivery Date" />
+      <definition value="A  reference to the Expected Delivery Date Observation." />
     </element>
     <element id="Observation.component">
       <path value="Observation.component" />
