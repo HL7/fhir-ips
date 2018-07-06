@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
 	<id value="immunization-uv-ips"/>
 	<meta>
 		<lastUpdated value="2018-03-07T18:47:01.502+01:00"/>
@@ -64,7 +64,7 @@
 					<type value="value"/>
 					<path value="binding.valueSet"/>
 				</discriminator>
-				<description value="This slicing on the coding element of vaccineCode is open, with discriminator based on the value of the Coding.system element. It supports both identifiers and categories or classes for representing the vaccine. &#xD;&#xA;It carries one slice for each of the IDMP identifiers, plus one slice for the ATC classification. &#xD;&#xA;A special slice is defined to carry the absent or unknown property.&#xD;&#xA;Other representations of the vaccine (such as SNOMED CT, RxNorm, jurisdictional code systems, cross-jursisdiction code systems, or any classification) use extra slices, since the slicing is open. &#xD;&#xA;The IDMP slices are provisional, and will be usable when the IDMP identifiers become available."/>
+				<description value="This slicing on the coding element of vaccineCode is open, with discriminator based on the value set binding. It supports both identifiers and categories or classes for representing the vaccine. &#xD;&#xA; It carries one slice representign the vaccine type (e.g. MMR vaccine); one slice for each of the IDMP identifiers, or any equivalent representation of these concepts (e.g. medical product); plus one slice for the ATC classification. &#xD;&#xA;Other representations of the medication (such as SNOMED CT, RxNorm, jurisdictional code systems, cross-jursisdiction code systems, or any classification) use extra slices, since the slicing is open. &#xD;&#xA; A special slice is defined to carry the absent or unknown property.&#xD;&#xA;The value sets used by the IDMP slices are provisional and include few concepts for exemplification purposes, they will be updated with real IDMP identifiers when they will become available."/>
 				<rules value="openAtEnd"/>
 			</slicing>
 			<definition value="A representation of the vaccine in a code system. The representation can be granular or may also be a class or category."/>
