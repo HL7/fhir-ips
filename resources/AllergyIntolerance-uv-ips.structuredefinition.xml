@@ -71,7 +71,7 @@
         </extension>
         <strength value="required"/>
         <description value="negation/exclusion codes for reporting no known allergies or not available data."/>
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-allergies-uv-ips"/>
+        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-allergies-uv-ips"/>
       </binding>
     </element>
     <element id="AllergyIntolerance.code.coding:absentOrUnknownAllergy.system">
@@ -97,7 +97,7 @@
         </extension>
         <strength value="preferred"/>
         <description value="Type of the substance/product, allergy or intolerance condition."/>
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips"/>
+        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips"/>
       </binding>
     </element>
     <element id="AllergyIntolerance.patient">
@@ -137,7 +137,7 @@
           <valueString value="Manifestation"/>
         </extension>
         <strength value="preferred"/>
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-reaction-uv-ips"/>
+        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-reaction-uv-ips"/>
       </binding>
     </element>
     <element id="AllergyIntolerance.reaction.severity">
