@@ -93,14 +93,13 @@
     </element>
     <element id="Device.type">
       <path value="Device.type" />
-      <slicing>
-        <discriminator>
-          <type value="value" />
-          <path value="coding.system" />
-        </discriminator>
-        <rules value="open" />
-      </slicing>
-      <comment value="The FHIR-defined value set is different from the value set &quot;IPS Medical Devices&quot; defined by the IPS CDA IG: http://art-decor.org/art-decor/decor-valuesets--hl7ips-?id=2.16.840.1.113883.11.22.23&amp;effectiveDate=2017-07-19T00:00:00&amp;language=en-US&#xD;&#xA; " />
+      <binding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+          <valueString value="DeviceKind" />
+        </extension>
+        <strength value="preferred" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-uv-ips" />
+      </binding>
     </element>
     <element id="Device.type.coding">
       <path value="Device.type.coding" />
@@ -108,9 +107,17 @@
         <code value="Coding" />
         <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
       </type>
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="Device.type.coding.system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <comment value="The FHIR-defined value set is different from the value set &quot;IPS Medical Devices&quot; defined by the IPS CDA IG: http://art-decor.org/art-decor/decor-valuesets--hl7ips-?id=2.16.840.1.113883.11.22.23&amp;effectiveDate=2017-07-19T00:00:00&amp;language=en-US&#xD;&#xA; " />
     </element>
-    <element id="Device.type:absentOrUnknownDevice">
-      <path value="Device.type" />
+    <element id="Device.type.coding:absentOrUnknownDevice">
+      <path value="Device.type.coding" />
       <sliceName value="absentOrUnknownDevice" />
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -120,16 +127,14 @@
         <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-uv-ips" />
       </binding>
     </element>
-    <element id="Device.type:device">
-      <path value="Device.type" />
-      <sliceName value="device" />
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="DeviceKind" />
-        </extension>
-        <strength value="preferred" />
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-uv-ips" />
-      </binding>
+    <element id="Device.type.coding:absentOrUnknownDevice.system">
+      <path value="Device.type.coding.system"/>
+      <min value="1"/>
+      <fixedUri value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown"/>
+    </element>
+    <element id="Device.type.coding:absentOrUnknownDevice.code">
+      <path value="Device.type.coding.code"/>
+      <min value="1"/>
     </element>
     <element id="Device.manufactureDate">
       <path value="Device.manufactureDate" />

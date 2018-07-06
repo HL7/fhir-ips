@@ -182,14 +182,6 @@
       <path value="Medication.status" />
       <max value="0" />
     </element>
-    <element id="Medication.isBrand">
-      <path value="Medication.isBrand" />
-      <max value="0" />
-    </element>
-    <element id="Medication.isOverTheCounter">
-      <path value="Medication.isOverTheCounter" />
-      <max value="0" />
-    </element>
     <element id="Medication.manufacturer">
       <path value="Medication.manufacturer" />
       <max value="0" />
@@ -265,11 +257,6 @@
         <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/ratio-uv-ips" />
       </type>
       <mustSupport value="true" />
-    </element>
-    <element id="Medication.package">
-      <path value="Medication.package" />
-      <definition value="Removed as pre-adoption of R4." />
-      <max value="0" />
     </element>
   </differential>
 </StructureDefinition>

@@ -262,16 +262,12 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/pcid-uv-ips"/>
 			</binding>
 		</element>
-
-		
 		<element id="Immunization.vaccineCode.coding:packagedProduct.system">
 			<path value="Immunization.vaccineCode.coding.system"/>
-
 		</element>
 		<element id="Immunization.vaccineCode.coding:packagedProduct.code">
 			<path value="Immunization.vaccineCode.coding.code"/>
 		</element>
-		
 		<element id="Immunization.vaccineCode.coding:packagedProduct.display">
 			<path value="Immunization.vaccineCode.coding.display"/>
 			<short value="Name of the Packaged Medicinal Product"/>
@@ -340,10 +336,16 @@
 			<path value="Immunization.patient.reference"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Immunization.occurrenceDateTime">
-			<path value="Immunization.occurrenceDateTime"/>
+		<!--
+		<element id="Immunization.occurrence[x]">
+			<path value="Immunization.occurrence[x]"/>
 			<mustSupport value="true"/>
 		</element>
+		<element id="Immunization.occurrence[x].dateTime">
+			<path value="Immunization.occurrence[x].dateTime"/>
+			<mustSupport value="true"/>
+		</element>
+		-->
 		<element id="Immunization.site.coding">
 			<path value="Immunization.site.coding"/>
 			<type>

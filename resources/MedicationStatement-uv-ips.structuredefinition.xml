@@ -129,13 +129,6 @@
       <path value="MedicationStatement.derivedFrom.identifier" />
       <max value="0" />
     </element>
-    <element id="MedicationStatement.reasonNotTaken">
-      <path value="MedicationStatement.reasonNotTaken" />
-      <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips" />
-      </type>
-    </element>
     <element id="MedicationStatement.reasonCode">
       <path value="MedicationStatement.reasonCode" />
       <type>
@@ -285,8 +278,11 @@
       <path value="MedicationStatement.dosage.maxDosePerLifetime.comparator" />
       <max value="0" />
     </element>
-    <element id="MedicationStatement.dosage.rateQuantity:rateQuantity">
-      <path value="MedicationStatement.dosage.rateQuantity" />
+    <element id="MedicationStatement.dosage.doseAndRate">
+      <path value="MedicationStatement.dosage.doseAndRate" />
+    </element>
+    <element id="MedicationStatement.dosage.doseAndRate.rateQuantity:rateQuantity">
+      <path value="MedicationStatement.dosage.doseAndRate.rateQuantity" />
       <sliceName value="rateQuantity" />
       <max value="0" />
       <type>

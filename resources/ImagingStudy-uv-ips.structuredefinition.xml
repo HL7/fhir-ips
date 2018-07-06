@@ -16,26 +16,29 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ImagingStudy" />
   <derivation value="constraint" />
   <differential>
+    <element id="ImagingStudy">
+      <path value="ImagingStudy" />
+    </element>
     <element id="ImagingStudy.uid">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
         <valueString value="dicom=" />
       </extension>
-      <path value="ImagingStudy.uid" />
+      <path value="ImagingStudy.identifier" />
       <mustSupport value="true" />
     </element>
-    <element id="ImagingStudy.patient">
+    <element id="ImagingStudy.subject">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
         <valueString value="dicom=http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.2.2.html" />
       </extension>
-      <path value="ImagingStudy.patient" />
+      <path value="ImagingStudy.subject" />
       <type>
         <code value="Reference" />
         <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips" />
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="ImagingStudy.patient.identifier">
-      <path value="ImagingStudy.patient.identifier" />
+    <element id="ImagingStudy.subject.identifier">
+      <path value="ImagingStudy.subject.identifier" />
       <max value="0" />
     </element>
     <element id="ImagingStudy.started">
@@ -53,23 +56,23 @@
       </type>
       <mustSupport value="true" />
     </element>
-    <element id="ImagingStudy.reason">
-      <path value="ImagingStudy.reason" />
+    <element id="ImagingStudy.reasonCode">
+      <path value="ImagingStudy.reasonCode" />
       <mustSupport value="true" />
     </element>
-    <element id="ImagingStudy.reason.text">
+    <element id="ImagingStudy.reasonCode.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
         <valueBoolean value="true" />
       </extension>
-      <path value="ImagingStudy.reason.text" />
+      <path value="ImagingStudy.reasonCode.text" />
       <mustSupport value="true" />
     </element>
     <element id="ImagingStudy.series">
       <path value="ImagingStudy.series" />
       <mustSupport value="true" />
     </element>
-    <element id="ImagingStudy.series.uid">
-      <path value="ImagingStudy.series.uid" />
+    <element id="ImagingStudy.series.identifier">
+      <path value="ImagingStudy.series.identifier" />
       <mustSupport value="true" />
     </element>
     <element id="ImagingStudy.series.modality">
@@ -80,8 +83,8 @@
       <path value="ImagingStudy.series.instance" />
       <mustSupport value="true" />
     </element>
-    <element id="ImagingStudy.series.instance.uid">
-      <path value="ImagingStudy.series.instance.uid" />
+    <element id="ImagingStudy.series.instance.identifier">
+      <path value="ImagingStudy.series.instance.identifier" />
       <mustSupport value="true" />
     </element>
     <element id="ImagingStudy.series.instance.sopClass">
