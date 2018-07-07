@@ -1,95 +1,96 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="observation-pregnancy-status-uv-ips"/>
-  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-pregnancy-status-uv-ips" />
-  <name value="Observation-pregnancy-status-uv-ips" />
-  <status value="draft" />
-  <date value="2018-03-20T11:00:52.49+01:00" />
-  <description value="This profile constrains the Observation resource to represent the pregnancy status." />
-  <fhirVersion value="3.4.0" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Observation" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
-  <derivation value="constraint" />
-  <differential>
-    <element id="Observation">
-      <path value="Observation" />
-    </element>
-    <element id="Observation.code">
-      <path value="Observation.code" />
-      <min value="1" />
-      <max value="1" />
-      <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.code.coding">
-      <path value="Observation.code.coding" />
-    </element>
-    <element id="Observation.code.coding.system">
-      <path value="Observation.code.coding.system" />
-      <fixedUri value="http://loinc.org" />
-    </element>
-    <element id="Observation.code.coding.code">
-      <path value="Observation.code.coding.code" />
-      <fixedCode value="82810-3" />
-    </element>
-    <element id="Observation.subject">
-      <path value="Observation.subject" />
-      <min value="1" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.subject.identifier">
-      <path value="Observation.subject.identifier" />
-      <max value="0" />
-    </element>
-    <element id="Observation.effective[x]">
-      <path value="Observation.effective[x]" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.valueBoolean:valueBoolean">
-      <path value="Observation.valueBoolean" />
-      <sliceName value="valueBoolean" />
-      <type>
-        <code value="boolean" />
-      </type>
-      <mustSupport value="true" />
-    </element>
-    <element id="Observation.bodySite">
-      <path value="Observation.bodySite" />
-      <max value="0" />
-    </element>
-    <element id="Observation.specimen">
-      <path value="Observation.specimen" />
-      <max value="0" />
-    </element>
-    <element id="Observation.device">
-      <path value="Observation.device" />
-      <max value="0" />
-    </element>
-    <element id="Observation.referenceRange">
-      <path value="Observation.referenceRange" />
-      <max value="0" />
-    </element>
-    <element id="Observation.hasMember">
-      <path value="Observation.hasMember"/>
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-pregnancy-edd-uv-ips" />
-      </type>
-      <short value="Expected Delivery Date" />
-      <definition value="A  reference to the Expected Delivery Date Observation." />
-    </element>
-    <element id="Observation.component">
-      <path value="Observation.component" />
-      <max value="0" />
-    </element>
-  </differential>
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+	<id value="observation-pregnancy-status-uv-ips"/>
+	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-pregnancy-status-uv-ips"/>
+	<name value="Observation-pregnancy-status-uv-ips"/>
+	<status value="draft"/>
+	<date value="2018-03-20T11:00:52.49+01:00"/>
+	<description value="This profile constrains the Observation resource to represent the pregnancy status."/>
+	<fhirVersion value="3.4.0"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Observation"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Observation">
+			<path value="Observation"/>
+		</element>
+		<element id="Observation.code">
+			<path value="Observation.code"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.code.coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation.code.coding.system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://loinc.org"/>
+		</element>
+		<element id="Observation.code.coding.code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="82810-3"/>
+		</element>
+		<element id="Observation.subject">
+			<path value="Observation.subject"/>
+			<min value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.subject.identifier">
+			<path value="Observation.subject.identifier"/>
+			<max value="0"/>
+		</element>
+		<element id="Observation.effective[x]">
+			<path value="Observation.effective[x]"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.valueBoolean:valueBoolean">
+			<path value="Observation.valueBoolean"/>
+			<sliceName value="valueBoolean"/>
+			<type>
+				<code value="boolean"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.bodySite">
+			<path value="Observation.bodySite"/>
+			<max value="0"/>
+		</element>
+		<element id="Observation.specimen">
+			<path value="Observation.specimen"/>
+			<max value="0"/>
+		</element>
+		<element id="Observation.device">
+			<path value="Observation.device"/>
+			<max value="0"/>
+		</element>
+		<element id="Observation.referenceRange">
+			<path value="Observation.referenceRange"/>
+			<max value="0"/>
+		</element>
+		<element id="Observation.hasMember">
+			<path value="Observation.hasMember"/>
+						<short value="Expected Delivery Date"/>
+			<definition value="A  reference to the Expected Delivery Date Observation."/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-pregnancy-edd-uv-ips"/>
+			</type>
+
+		</element>
+		<element id="Observation.component">
+			<path value="Observation.component"/>
+			<max value="0"/>
+		</element>
+	</differential>
 </StructureDefinition>

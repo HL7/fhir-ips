@@ -1,450 +1,402 @@
 {
-  "broken-links": "warning",
-  "no-inactive-codes": "false",
-  "extensions": [
-    "translateddiv-uv-ips",
-    "abatement-datetime-uv-ips",
-    "participant-uv-ips",
-    "statement-uv-ips"
-  ],
-  "license" :  "CC0-1.0",
-  "npm-name" : "uv-ips",
-  "dependencyList": [],
-  "fixed-business-version": "0.1.0",
-  "valuesets": [
-    "condition-severity-uv-ips",
-    "absent-or-unknown-problems-uv-ips",
-    "absent-or-unknown-procedures-uv-ips",
-    "absent-or-unknown-allergies-uv-ips",
-    "absent-or-unknown-devices-uv-ips",
-    "absent-or-unknown-immunization-uv-ips",
-    "absent-or-unknown-medication-uv-ips",
-    "allergy-intolerance-substance-condition-uv-ips",
-    "allergy-reaction-uv-ips",
-    "condition-severity-uv-ips",
-    "core-problem-list-disorders-uv-ips",
-    "current-smoking-status-uv-ips",
-    "edd-method-uv-ips",    
-    "healthcare-professional-roles-uv-ips",
-    "imaging-observations-uv-ips",
-    "laboratory-and-vital-signs-observations",
-    "laboratory-tests-and-panels-uv-ips",
-    "lab-result-coded-value-uv-ips",
-    "medical-devices-uv-ips",
-    "medicine-active-substances-uv-ips",
-    "medicine-doseform",
-    "medicine-route-of-administration",
-    "observation-codes-uv-ips",
-    "pathology-and-vital-signs-observations",
-    "pathology-result-coded-value-uv-ips",
-    "personal-relationship-uv-ips",
-    "pregnancies-summary-uv-ips",
-    "problem-type-uv-ips",
-    "procedures-uv-ips",
-    "quantityUnits",
-    "strengthDenominator",
-    "strengthNumerator",
-    "sub-observation-category-uv-ips",
-    "target-site-uv-ips",
-    "vaccines-uv-ips",
-    "whoatc-uv-ips",
-    		"pcid-uv-ips", 
-		"mpid-uv-ips", 
-		"phpid-lvl1-uv-ips", 
-		"phpid-lvl2-uv-ips", 
-		"phpid-lvl3-uv-ips", 
-		"phpid-lvl4-uv-ips", 
-      ],
-  "paths": {
-    "pages": [
-      "framework",
-      "pages"
-    ],
-    "specification": "http://hl7.org/fhir",
-    "temp": "temp",
-    "txCache": "txCache",
-    "output": "output",
-    "qa": "qa",
-    "resources": [
-      "resources",
-      "examples"
-    ]
-  },
-  "logging": [
-    "progress"
-  ],
-  "codesystems": [
-    "absent-unknown-uv-ips"
-  ],
-  "searches": [],
-  "publisher": "Health Level Seven International",
-  "status": "active",
-  "do-transforms": "false",
-  "structuremaps": [],
-  "defaults": {
-    "ConceptMap": {
-      "template-base": "base.html"
-    },
-    "CapabilityStatement": {
-      "template-base": "base.html"
-    },
-    "StructureDefinition": {
-      "template-mappings": "sd-mappings.html",
-      "template-base": "sd.html",
-      "template-defns": "sd-definitions.html"
-    },
-    "Basic": {
-      "template-base": "ex.html"
-    },
-    "CodeSystem": {
-      "template-base": "base.html"
-    },
-    "SearchParameter": {
-      "template-base": "base.html"
-    },
-    "Any": {
-      "template-base": "base.html",
-      "template-format": "format.html"
-    },
-    "StructureMap": {
-      "profiles": false,
-      "script": false,
-      "template-base": "ex.html",
-      "content": false
-    },
-    "AllergyIntolerance": {
-      "template-base": "ex.html"
-    },
-    "Observation": {
-      "template-base": "ex.html"
-    },
-    "OperationDefinition": {
-      "template-base": "base.html"
-    },
-    "MedicationRequest": {
-      "template-base": "ex.html"
-    },
-    "ValueSet": {
-      "template-base": "base.html"
-    }
-  },
-  "source": "ig-uv-ips.xml",
-  "gen-examples": "false",
-  "title": "International Patient Summary Implementation Guide",
-  "extraTemplates": [],
-  "jurisdiction": "001",
-  "tool": "jekyll",
-  "canonicalBase": "http://hl7.org/fhir/uv/ips",
-  "spreadsheets": [],
-  "special-urls": [],
-  "sct-edition": "http://snomed.info/sct/900000000000207008",
-  "check-aggregation" : true,
-  "check-mustSupport" : true,
-  "hintAboutNonMustSupport" : true,
- "resources": {
-    "StructureDefinition/composition-uv-ips": {
-      "defns": "StructureDefinition-composition-uv-ips-definitions.html",
-      "source": "Composition-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-composition-uv-ips.html"
-    },    
-    "StructureDefinition/device-observer-uv-ips": {
-      "defns": "StructureDefinition-device-observer-uv-ips-definitions.html",
-      "source": "Device-observer-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-device-observer-uv-ips.html"
-    },    
-    "StructureDefinition/deviceusestatement-uv-ips": {
-      "defns": "StructureDefinition-deviceusestatement-uv-ips-definitions.html",
-      "source": "DeviceUseStatement-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-deviceusestatement-uv-ips.html"
-    },    
-    "StructureDefinition/device-uv-ips": {
-      "defns": "StructureDefinition-device-uv-ips-definitions.html",
-      "source": "Device-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-device-uv-ips.html"
-    },    
-    "StructureDefinition/imagingstudy-uv-ips": {
-      "defns": "StructureDefinition-imagingstudy-uv-ips-definitions.html",
-      "source": "ImagingStudy-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-imagingstudy-uv-ips.html"
-    },    
-    "StructureDefinition/immunization-uv-ips": {
-      "defns": "StructureDefinition-immunization-uv-ips-definitions.html",
-      "source": "Immunization-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-immunization-uv-ips.html"
-    },    
-    "StructureDefinition/medicationstatement-uv-ips": {
-      "defns": "StructureDefinition-medicationstatement-uv-ips-definitions.html",
-      "source": "MedicationStatement-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-medicationstatement-uv-ips.html"
-    },    
-    "StructureDefinition/medication-uv-ips": {
-      "defns": "StructureDefinition-medication-uv-ips-definitions.html",
-      "source": "Medication-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-medication-uv-ips.html"
-    },    
-    "StructureDefinition/narrative-uv-ips": {
-      "defns": "StructureDefinition-narrative-uv-ips-definitions.html",
-      "source": "Narrative-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-narrative-uv-ips.html"
-    },    
-    "StructureDefinition/observation-alcoholuse-uv-ips": {
-      "defns": "StructureDefinition-observation-alcoholuse-uv-ips-definitions.html",
-      "source": "Observation-alcoholUse-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-observation-alcoholuse-uv-ips.html"
-    },    
-    "StructureDefinition/observation-media-uv-ips": {
-      "defns": "StructureDefinition-observation-media-uv-ips-definitions.html",
-      "source": "observation-media-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-observation-media-uv-ips.html"
-    },    
-    "StructureDefinition/observation-imaging-uv-ips": {
-      "defns": "StructureDefinition-observation-imaging-uv-ips-definitions.html",
-      "source": "Observation-imaging-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-observation-imaging-uv-ips.html"
-    },    
-    "StructureDefinition/observation-laboratory-uv-ips": {
-      "defns": "StructureDefinition-observation-laboratory-uv-ips-definitions.html",
-      "source": "observation-laboratory-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-observation-laboratory-uv-ips.html"
-    },    
-    "StructureDefinition/observation-member-imaging-uv-ips": {
-      "defns": "StructureDefinition-observation-member-imaging-uv-ips-definitions.html",
-      "source": "Observation-member-imaging-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-observation-member-imaging-uv-ips.html"
-    },    
-    "StructureDefinition/observation-member-laboratory-uv-ips": {
-      "defns": "StructureDefinition-observation-member-laboratory-uv-ips-definitions.html",
-      "source": "observation-member-laboratory-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-observation-member-laboratory-uv-ips.html"
-    },    
-    "StructureDefinition/observation-member-pathology-uv-ips": {
-      "defns": "StructureDefinition-observation-member-pathology-uv-ips-definitions.html",
-      "source": "observation-member-pathology-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-observation-member-pathology-uv-ips.html"
-    },    
-    "StructureDefinition/observation-pathology-uv-ips": {
-      "defns": "StructureDefinition-observation-pathology-uv-ips-definitions.html",
-      "source": "Observation-pathology-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-observation-pathology-uv-ips.html"
-    },    
-    "StructureDefinition/observation-pregnancy-edd-uv-ips": {
-      "defns": "StructureDefinition-observation-pregnancy-edd-uv-ips-definitions.html",
-      "source": "Observation-pregnancy-edd-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-observation-pregnancy-edd-uv-ips.html"
-    },    
-    "StructureDefinition/observation-pregnancy-outcome-uv-ips": {
-      "defns": "StructureDefinition-observation-pregnancy-outcome-uv-ips-definitions.html",
-      "source": "Observation-pregnancy-outcome-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-observation-pregnancy-outcome-uv-ips.html"
-    },    
-    "StructureDefinition/observation-pregnancy-status-uv-ips": {
-      "defns": "StructureDefinition-observation-pregnancy-status-uv-ips-definitions.html",
-      "source": "Observation-pregnancy-status-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-observation-pregnancy-status-uv-ips.html"
-    },    
-    "StructureDefinition/observation-tobaccouse-uv-ips": {
-      "defns": "StructureDefinition-observation-tobaccouse-uv-ips-definitions.html",
-      "source": "Observation-tobaccoUse-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-observation-tobaccouse-uv-ips.html"
-    },    
-    "StructureDefinition/observation-uv-ips": {
-      "defns": "StructureDefinition-observation-uv-ips-definitions.html",
-      "source": "Observation-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-observation-uv-ips.html"
-    },    
-    "StructureDefinition/organization-laboratory-uv-ips": {
-      "defns": "StructureDefinition-organization-laboratory-uv-ips-definitions.html",
-      "source": "organization-laboratory-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-organization-laboratory-uv-ips.html"
-    },    
-    "StructureDefinition/organization-observation-uv-ips": {
-      "defns": "StructureDefinition-organization-observation-uv-ips-definitions.html",
-      "source": "Organization-observation-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-organization-observation-uv-ips.html"
-    },    
-    "StructureDefinition/participant-uv-ips": {
-      "defns": "StructureDefinition-participant-uv-ips-definitions.html",
-      "source": "Participant-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-participant-uv-ips.html"
-    },    
-    "StructureDefinition/patient-uv-ips": {
-      "defns": "StructureDefinition-patient-uv-ips-definitions.html",
-      "source": "Patient-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-patient-uv-ips.html"
-    },    
-    "StructureDefinition/practitioner-uv-ips": {
-      "defns": "StructureDefinition-practitioner-uv-ips-definitions.html",
-      "source": "Practitioner-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-practitioner-uv-ips.html"
-    },    
-    "StructureDefinition/procedure-uv-ips": {
-      "defns": "StructureDefinition-procedure-uv-ips-definitions.html",
-      "source": "Procedure-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-procedure-uv-ips.html"
-    },    
-    "StructureDefinition/quantity-uv-ips": {
-      "defns": "StructureDefinition-quantity-uv-ips-definitions.html",
-      "source": "Quantity-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-quantity-uv-ips.html"
-    },    
-    "StructureDefinition/range-uv-ips": {
-      "defns": "StructureDefinition-range-uv-ips-definitions.html",
-      "source": "Range-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-range-uv-ips.html"
-    },    
-    "StructureDefinition/ratio-uv-ips": {
-      "defns": "StructureDefinition-ratio-uv-ips-definitions.html",
-      "source": "Ratio-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-ratio-uv-ips.html"
-    },    
-    "StructureDefinition/specimen-uv-ips": {
-      "defns": "StructureDefinition-specimen-uv-ips-definitions.html",
-      "source": "specimen-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-specimen-uv-ips.html"
-    },    
-    "StructureDefinition/statement-uv-ips": {
-      "defns": "StructureDefinition-statement-uv-ips-definitions.html",
-      "source": "Statement-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-statement-uv-ips.html"
-    },    
-    "ValueSet/absent-or-unknown-allergies-uv-ips": {
-      "source": "valueset-absent-or-unknown-allergies-uv-ips.xml",
-      "base": "ValueSet-absent-or-unknown-allergies-uv-ips.html"
-    },
-    "ValueSet/absent-or-unknown-devices-uv-ips": {
-      "source": "valueset-absent-or-unknown-devices-uv-ips.xml",
-      "base": "ValueSet-absent-or-unknown-devices-uv-ips.html"
-    },
-    "ValueSet/absent-or-unknown-immunization-uv-ips": {
-      "source": "valueset-absent-or-unknown-immunization-uv-ips.xml",
-      "base": "ValueSet-absent-or-unknown-immunization-uv-ips.html"
-    },
-    "ValueSet/absent-or-unknown-medication-uv-ips": {
-      "source": "valueset-absent-or-unknown-medication-uv-ips.xml",
-      "base": "ValueSet-absent-or-unknown-medication-uv-ips.html"
-    },
-    "ValueSet/absent-or-unknown-procedures-uv-ips": {
-      "source": "valueset-absent-or-unknown-procedures-uv-ips.xml",
-      "base": "ValueSet-absent-or-unknown-procedures-uv-ips.html"
-    },
-    "ValueSet/allergy-intolerance-substance-condition-uv-ips": {
-      "source": "valueset-allergy-intolerance-substance-condition-uv-ips.xml",
-      "base": "ValueSet-allergy-intolerance-substance-condition-uv-ips.html"
-    },
-    "ValueSet/allergy-reaction-uv-ips": {
-      "source": "valueset-allergy-reaction-uv-ips.xml",
-      "base": "ValueSet-allergy-reaction-uv-ips.html"
-    },
-    "ValueSet/condition-severity-uv-ips": {
-      "source": "valueset-condition-severity-uv-ips.xml",
-      "base": "ValueSet-condition-severity-uv-ips.html"
-    },
-    "ValueSet/core-problem-list-disorders-uv-ips": {
-      "source": "valueset-core-problem-list-disorders-uv-ips.xml",
-      "base": "ValueSet-core-problem-list-disorders-uv-ips.html"
-    },
-    "ValueSet/current-smoking-status-uv-ips": {
-      "source": "valueset-current-smoking-status-uv-ips.xml",
-      "base": "ValueSet-current-smoking-status-uv-ips.html"
-    },
-    "ValueSet/edd-method-uv-ips": {
-      "source": "valueset-edd-method-uv-ips.xml",
-      "base": "ValueSet-edd-method-uv-ips.html"
-    },
-    "ValueSet/healthcare-professional-roles-uv-ips": {
-      "source": "valueset-healthcare-professional-roles-uv-ips.xml",
-      "base": "ValueSet-healthcare-professional-roles-uv-ips.html"
-    },
-    "ValueSet/imaging-observations-uv-ips": {
-      "source": "valueset-imaging-observations-uv-ips.xml",
-      "base": "ValueSet-imaging-observations-uv-ips.html"
-    },
-    "ValueSet/laboratory-and-vital-signs-observations": {
-      "source": "valueset-laboratory-and-vital-signs-observations.xml",
-      "base": "ValueSet-laboratory-and-vital-signs-observations.html"
-    },
-    "ValueSet/laboratory-tests-and-panels-uv-ips": {
-      "source": "valueset-laboratory-tests-and-panels-uv-ips.xml",
-      "base": "ValueSet-laboratory-tests-and-panels-uv-ips.html"
-    },
-    "ValueSet/lab-result-coded-value-uv-ips": {
-      "source": "valueset-lab-result-coded-value-uv-ips.xml",
-      "base": "ValueSet-lab-result-coded-value-uv-ips.html"
-    },
-    "ValueSet/medical-devices-uv-ips": {
-      "source": "valueset-medical-devices-uv-ips.xml",
-      "base": "ValueSet-medical-devices-uv-ips.html"
-    },
-    "ValueSet/medicine-active-substances-uv-ips": {
-      "source": "valueset-medicine-active-substances-uv-ips.xml",
-      "base": "ValueSet-medicine-active-substances-uv-ips.html"
-    },
-    "ValueSet/medicine-doseform": {
-      "source": "valueset-medicine-doseform.xml",
-      "base": "ValueSet-medicine-doseform.html"
-    },
-    "ValueSet/medicine-route-of-administration": {
-      "source": "valueset-medicine-route-of-administration.xml",
-      "base": "ValueSet-medicine-route-of-administration.html"
-    },
-    "ValueSet/observation-codes-uv-ips": {
-      "source": "valueset-observation-codes-uv-ips.xml",
-      "base": "ValueSet-observation-codes-uv-ips.html"
-    },
-    "ValueSet/pathology-and-vital-signs-observations": {
-      "source": "valueset-pathology-and-vital-signs-observations.xml",
-      "base": "ValueSet-pathology-and-vital-signs-observations.html"
-    },
-    "ValueSet/pathology-result-coded-value-uv-ips": {
-      "source": "valueset-pathology-result-coded-value-uv-ips.xml",
-      "base": "ValueSet-pathology-result-coded-value-uv-ips.html"
-    },
-    "ValueSet/personal-relationship-uv-ips": {
-      "source": "valueset-personal-relationship-uv-ips.xml",
-      "base": "ValueSet-personal-relationship-uv-ips.html"
-    },
-    "ValueSet/pregnancies-summary-uv-ips": {
-      "source": "valueset-pregnancies-summary-uv-ips.xml",
-      "base": "ValueSet-pregnancies-summary-uv-ips.html"
-    },
-    "ValueSet/problem-type-uv-ips": {
-      "source": "valueset-problem-type-uv-ips.xml",
-      "base": "ValueSet-problem-type-uv-ips.html"
-    },
-    "ValueSet/procedures-uv-ips": {
-      "source": "valueset-procedures-uv-ips.xml",
-      "base": "ValueSet-procedures-uv-ips.html"
-    },
-    "ValueSet/quantityunits": {
-      "source": "valueset-quantityunits.xml",
-      "base": "ValueSet-quantityunits.html"
-    },
-    "ValueSet/strengthdenominator": {
-      "source": "valueset-strengthdenominator.xml",
-      "base": "ValueSet-strengthdenominator.html"
-    },
-    "ValueSet/strengthnumerator": {
-      "source": "valueset-strengthnumerator.xml",
-      "base": "ValueSet-strengthnumerator.html"
-    },
-    "ValueSet/sub-observation-category-uv-ips": {
-      "source": "valueset-sub-observation-category-uv-ips.xml",
-      "base": "ValueSet-sub-observation-category-uv-ips.html"
-    },
-    "ValueSet/target-site-uv-ips": {
-      "source": "valueset-target-site-uv-ips.xml",
-      "base": "ValueSet-target-site-uv-ips.html"
-    },
-    "ValueSet/vaccines-uv-ips": {
-      "source": "valueset-vaccines-uv-ips.xml",
-      "base": "ValueSet-vaccines-uv-ips.html"
-    },
-    "ValueSet/whoatc-uv-ips": {
-      "source": "valueset-whoatc-uv-ips.xml",
-      "base": "ValueSet-whoatc-uv-ips.html"
-    },
-    
-
+	"broken-links": "warning",
+	"no-inactive-codes": "false",
+	"extensions": [
+		"translateddiv-uv-ips", "abatement-datetime-uv-ips", "participant-uv-ips", "statement-uv-ips"
+	],
+	"license": "CC0-1.0",
+	"npm-name": "uv-ips",
+	"dependencyList": [],
+	"fixed-business-version": "0.1.0",
+	"valuesets": [
+		"condition-severity-uv-ips", "absent-or-unknown-problems-uv-ips", "absent-or-unknown-procedures-uv-ips", "absent-or-unknown-allergies-uv-ips", "absent-or-unknown-devices-uv-ips", "absent-or-unknown-immunization-uv-ips", "absent-or-unknown-medication-uv-ips", "allergy-intolerance-substance-condition-uv-ips", "allergy-reaction-uv-ips", "condition-severity-uv-ips", "core-problem-list-disorders-uv-ips", "current-smoking-status-uv-ips", "edd-method-uv-ips", "healthcare-professional-roles-uv-ips", "imaging-observations-uv-ips", "laboratory-and-vital-signs-observations", "laboratory-tests-and-panels-uv-ips", "lab-result-coded-value-uv-ips", "medical-devices-uv-ips", "medicine-active-substances-uv-ips", "medicine-doseform", "medicine-route-of-administration", "observation-codes-uv-ips", "pathology-and-vital-signs-observations", "pathology-result-coded-value-uv-ips", "personal-relationship-uv-ips", "pregnancies-summary-uv-ips", "problem-type-uv-ips", "procedures-uv-ips", "quantityUnits", "strengthDenominator", "strengthNumerator", "sub-observation-category-uv-ips", "target-site-uv-ips", "vaccines-uv-ips", "whoatc-uv-ips", "pcid-uv-ips", "mpid-uv-ips", "phpid-lvl1-uv-ips", "phpid-lvl2-uv-ips", "phpid-lvl3-uv-ips", "phpid-lvl4-uv-ips", "imaging-txtobs-code-uv-ips"
+	],
+	"paths": {
+		"pages": [
+			"framework", "pages"
+		],
+		"specification": "http://hl7.org/fhir",
+		"temp": "temp",
+		"txCache": "txCache",
+		"output": "output",
+		"qa": "qa",
+		"resources": [
+			"resources", "examples"
+		]
+	},
+	"logging": [
+		"progress"
+	],
+	"codesystems": [
+		"absent-unknown-uv-ips"
+	],
+	"searches": [],
+	"publisher": "Health Level Seven International",
+	"status": "active",
+	"do-transforms": "false",
+	"structuremaps": [],
+	"defaults": {
+		"ConceptMap": {
+			"template-base": "base.html"
+		},
+		"CapabilityStatement": {
+			"template-base": "base.html"
+		},
+		"StructureDefinition": {
+			"template-mappings": "sd-mappings.html",
+			"template-base": "sd.html",
+			"template-defns": "sd-definitions.html"
+		},
+		"Basic": {
+			"template-base": "ex.html"
+		},
+		"CodeSystem": {
+			"template-base": "base.html"
+		},
+		"SearchParameter": {
+			"template-base": "base.html"
+		},
+		"Any": {
+			"template-base": "base.html",
+			"template-format": "format.html"
+		},
+		"StructureMap": {
+			"profiles": false,
+			"script": false,
+			"template-base": "ex.html",
+			"content": false
+		},
+		"AllergyIntolerance": {
+			"template-base": "ex.html"
+		},
+		"Observation": {
+			"template-base": "ex.html"
+		},
+		"OperationDefinition": {
+			"template-base": "base.html"
+		},
+		"MedicationRequest": {
+			"template-base": "ex.html"
+		},
+		"ValueSet": {
+			"template-base": "base.html"
+		}
+	},
+	"source": "ig-uv-ips.xml",
+	"gen-examples": "false",
+	"title": "International Patient Summary Implementation Guide",
+	"extraTemplates": [],
+	"jurisdiction": "001",
+	"tool": "jekyll",
+	"canonicalBase": "http://hl7.org/fhir/uv/ips",
+	"spreadsheets": [],
+	"special-urls": [],
+	"sct-edition": "http://snomed.info/sct/900000000000207008",
+	"check-aggregation": true,
+	"check-mustSupport": true,
+	"hintAboutNonMustSupport": true,
+	"resources": {
+		"StructureDefinition/composition-uv-ips": {
+			"defns": "StructureDefinition-composition-uv-ips-definitions.html",
+			"source": "Composition-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-composition-uv-ips.html"
+		},
+		"StructureDefinition/device-observer-uv-ips": {
+			"defns": "StructureDefinition-device-observer-uv-ips-definitions.html",
+			"source": "Device-observer-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-device-observer-uv-ips.html"
+		},
+		"StructureDefinition/deviceusestatement-uv-ips": {
+			"defns": "StructureDefinition-deviceusestatement-uv-ips-definitions.html",
+			"source": "DeviceUseStatement-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-deviceusestatement-uv-ips.html"
+		},
+		"StructureDefinition/device-uv-ips": {
+			"defns": "StructureDefinition-device-uv-ips-definitions.html",
+			"source": "Device-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-device-uv-ips.html"
+		},
+		"StructureDefinition/imagingstudy-uv-ips": {
+			"defns": "StructureDefinition-imagingstudy-uv-ips-definitions.html",
+			"source": "ImagingStudy-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-imagingstudy-uv-ips.html"
+		},
+		"StructureDefinition/immunization-uv-ips": {
+			"defns": "StructureDefinition-immunization-uv-ips-definitions.html",
+			"source": "Immunization-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-immunization-uv-ips.html"
+		},
+		"StructureDefinition/medicationstatement-uv-ips": {
+			"defns": "StructureDefinition-medicationstatement-uv-ips-definitions.html",
+			"source": "MedicationStatement-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-medicationstatement-uv-ips.html"
+		},
+		"StructureDefinition/medication-uv-ips": {
+			"defns": "StructureDefinition-medication-uv-ips-definitions.html",
+			"source": "Medication-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-medication-uv-ips.html"
+		},
+		"StructureDefinition/narrative-uv-ips": {
+			"defns": "StructureDefinition-narrative-uv-ips-definitions.html",
+			"source": "Narrative-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-narrative-uv-ips.html"
+		},
+		"StructureDefinition/observation-alcoholuse-uv-ips": {
+			"defns": "StructureDefinition-observation-alcoholuse-uv-ips-definitions.html",
+			"source": "Observation-alcoholUse-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-observation-alcoholuse-uv-ips.html"
+		},
+		"StructureDefinition/observation-media-uv-ips": {
+			"defns": "StructureDefinition-observation-media-uv-ips-definitions.html",
+			"source": "observation-media-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-observation-media-uv-ips.html"
+		},
+		"StructureDefinition/observation-imaging-uv-ips": {
+			"defns": "StructureDefinition-observation-imaging-uv-ips-definitions.html",
+			"source": "Observation-imaging-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-observation-imaging-uv-ips.html"
+		},
+		"StructureDefinition/observation-laboratory-uv-ips": {
+			"defns": "StructureDefinition-observation-laboratory-uv-ips-definitions.html",
+			"source": "observation-laboratory-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-observation-laboratory-uv-ips.html"
+		},
+		"StructureDefinition/observation-member-imaging-uv-ips": {
+			"defns": "StructureDefinition-observation-member-imaging-uv-ips-definitions.html",
+			"source": "Observation-member-imaging-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-observation-member-imaging-uv-ips.html"
+		},
+		"StructureDefinition/observation-member-laboratory-uv-ips": {
+			"defns": "StructureDefinition-observation-member-laboratory-uv-ips-definitions.html",
+			"source": "observation-member-laboratory-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-observation-member-laboratory-uv-ips.html"
+		},
+		"StructureDefinition/observation-member-pathology-uv-ips": {
+			"defns": "StructureDefinition-observation-member-pathology-uv-ips-definitions.html",
+			"source": "observation-member-pathology-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-observation-member-pathology-uv-ips.html"
+		},
+		"StructureDefinition/observation-pathology-uv-ips": {
+			"defns": "StructureDefinition-observation-pathology-uv-ips-definitions.html",
+			"source": "Observation-pathology-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-observation-pathology-uv-ips.html"
+		},
+		"StructureDefinition/observation-pregnancy-edd-uv-ips": {
+			"defns": "StructureDefinition-observation-pregnancy-edd-uv-ips-definitions.html",
+			"source": "Observation-pregnancy-edd-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-observation-pregnancy-edd-uv-ips.html"
+		},
+		"StructureDefinition/observation-pregnancy-outcome-uv-ips": {
+			"defns": "StructureDefinition-observation-pregnancy-outcome-uv-ips-definitions.html",
+			"source": "Observation-pregnancy-outcome-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-observation-pregnancy-outcome-uv-ips.html"
+		},
+		"StructureDefinition/observation-pregnancy-status-uv-ips": {
+			"defns": "StructureDefinition-observation-pregnancy-status-uv-ips-definitions.html",
+			"source": "Observation-pregnancy-status-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-observation-pregnancy-status-uv-ips.html"
+		},
+		"StructureDefinition/observation-tobaccouse-uv-ips": {
+			"defns": "StructureDefinition-observation-tobaccouse-uv-ips-definitions.html",
+			"source": "Observation-tobaccoUse-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-observation-tobaccouse-uv-ips.html"
+		},
+		"StructureDefinition/observation-uv-ips": {
+			"defns": "StructureDefinition-observation-uv-ips-definitions.html",
+			"source": "Observation-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-observation-uv-ips.html"
+		},
+		"StructureDefinition/organization-laboratory-uv-ips": {
+			"defns": "StructureDefinition-organization-laboratory-uv-ips-definitions.html",
+			"source": "organization-laboratory-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-organization-laboratory-uv-ips.html"
+		},
+		"StructureDefinition/organization-observation-uv-ips": {
+			"defns": "StructureDefinition-organization-observation-uv-ips-definitions.html",
+			"source": "Organization-observation-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-organization-observation-uv-ips.html"
+		},
+		"StructureDefinition/participant-uv-ips": {
+			"defns": "StructureDefinition-participant-uv-ips-definitions.html",
+			"source": "Participant-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-participant-uv-ips.html"
+		},
+		"StructureDefinition/patient-uv-ips": {
+			"defns": "StructureDefinition-patient-uv-ips-definitions.html",
+			"source": "Patient-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-patient-uv-ips.html"
+		},
+		"StructureDefinition/practitioner-uv-ips": {
+			"defns": "StructureDefinition-practitioner-uv-ips-definitions.html",
+			"source": "Practitioner-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-practitioner-uv-ips.html"
+		},
+		"StructureDefinition/procedure-uv-ips": {
+			"defns": "StructureDefinition-procedure-uv-ips-definitions.html",
+			"source": "Procedure-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-procedure-uv-ips.html"
+		},
+		"StructureDefinition/quantity-uv-ips": {
+			"defns": "StructureDefinition-quantity-uv-ips-definitions.html",
+			"source": "Quantity-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-quantity-uv-ips.html"
+		},
+		"StructureDefinition/range-uv-ips": {
+			"defns": "StructureDefinition-range-uv-ips-definitions.html",
+			"source": "Range-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-range-uv-ips.html"
+		},
+		"StructureDefinition/ratio-uv-ips": {
+			"defns": "StructureDefinition-ratio-uv-ips-definitions.html",
+			"source": "Ratio-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-ratio-uv-ips.html"
+		},
+		"StructureDefinition/specimen-uv-ips": {
+			"defns": "StructureDefinition-specimen-uv-ips-definitions.html",
+			"source": "specimen-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-specimen-uv-ips.html"
+		},
+		"StructureDefinition/statement-uv-ips": {
+			"defns": "StructureDefinition-statement-uv-ips-definitions.html",
+			"source": "Statement-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-statement-uv-ips.html"
+		},
+		"ValueSet/absent-or-unknown-allergies-uv-ips": {
+			"source": "valueset-absent-or-unknown-allergies-uv-ips.xml",
+			"base": "ValueSet-absent-or-unknown-allergies-uv-ips.html"
+		},
+		"ValueSet/absent-or-unknown-devices-uv-ips": {
+			"source": "valueset-absent-or-unknown-devices-uv-ips.xml",
+			"base": "ValueSet-absent-or-unknown-devices-uv-ips.html"
+		},
+		"ValueSet/absent-or-unknown-immunization-uv-ips": {
+			"source": "valueset-absent-or-unknown-immunization-uv-ips.xml",
+			"base": "ValueSet-absent-or-unknown-immunization-uv-ips.html"
+		},
+		"ValueSet/absent-or-unknown-medication-uv-ips": {
+			"source": "valueset-absent-or-unknown-medication-uv-ips.xml",
+			"base": "ValueSet-absent-or-unknown-medication-uv-ips.html"
+		},
+		"ValueSet/absent-or-unknown-procedures-uv-ips": {
+			"source": "valueset-absent-or-unknown-procedures-uv-ips.xml",
+			"base": "ValueSet-absent-or-unknown-procedures-uv-ips.html"
+		},
+		"ValueSet/allergy-intolerance-substance-condition-uv-ips": {
+			"source": "valueset-allergy-intolerance-substance-condition-uv-ips.xml",
+			"base": "ValueSet-allergy-intolerance-substance-condition-uv-ips.html"
+		},
+		"ValueSet/allergy-reaction-uv-ips": {
+			"source": "valueset-allergy-reaction-uv-ips.xml",
+			"base": "ValueSet-allergy-reaction-uv-ips.html"
+		},
+		"ValueSet/condition-severity-uv-ips": {
+			"source": "valueset-condition-severity-uv-ips.xml",
+			"base": "ValueSet-condition-severity-uv-ips.html"
+		},
+		"ValueSet/core-problem-list-disorders-uv-ips": {
+			"source": "valueset-core-problem-list-disorders-uv-ips.xml",
+			"base": "ValueSet-core-problem-list-disorders-uv-ips.html"
+		},
+		"ValueSet/current-smoking-status-uv-ips": {
+			"source": "valueset-current-smoking-status-uv-ips.xml",
+			"base": "ValueSet-current-smoking-status-uv-ips.html"
+		},
+		"ValueSet/edd-method-uv-ips": {
+			"source": "valueset-edd-method-uv-ips.xml",
+			"base": "ValueSet-edd-method-uv-ips.html"
+		},
+		"ValueSet/healthcare-professional-roles-uv-ips": {
+			"source": "valueset-healthcare-professional-roles-uv-ips.xml",
+			"base": "ValueSet-healthcare-professional-roles-uv-ips.html"
+		},
+		"ValueSet/imaging-observations-uv-ips": {
+			"source": "valueset-imaging-observations-uv-ips.xml",
+			"base": "ValueSet-imaging-observations-uv-ips.html"
+		},
+		"ValueSet/laboratory-and-vital-signs-observations": {
+			"source": "valueset-laboratory-and-vital-signs-observations.xml",
+			"base": "ValueSet-laboratory-and-vital-signs-observations.html"
+		},
+		"ValueSet/laboratory-tests-and-panels-uv-ips": {
+			"source": "valueset-laboratory-tests-and-panels-uv-ips.xml",
+			"base": "ValueSet-laboratory-tests-and-panels-uv-ips.html"
+		},
+		"ValueSet/lab-result-coded-value-uv-ips": {
+			"source": "valueset-lab-result-coded-value-uv-ips.xml",
+			"base": "ValueSet-lab-result-coded-value-uv-ips.html"
+		},
+		"ValueSet/medical-devices-uv-ips": {
+			"source": "valueset-medical-devices-uv-ips.xml",
+			"base": "ValueSet-medical-devices-uv-ips.html"
+		},
+		"ValueSet/medicine-active-substances-uv-ips": {
+			"source": "valueset-medicine-active-substances-uv-ips.xml",
+			"base": "ValueSet-medicine-active-substances-uv-ips.html"
+		},
+		"ValueSet/medicine-doseform": {
+			"source": "valueset-medicine-doseform.xml",
+			"base": "ValueSet-medicine-doseform.html"
+		},
+		"ValueSet/medicine-route-of-administration": {
+			"source": "valueset-medicine-route-of-administration.xml",
+			"base": "ValueSet-medicine-route-of-administration.html"
+		},
+		"ValueSet/observation-codes-uv-ips": {
+			"source": "valueset-observation-codes-uv-ips.xml",
+			"base": "ValueSet-observation-codes-uv-ips.html"
+		},
+		"ValueSet/pathology-and-vital-signs-observations": {
+			"source": "valueset-pathology-and-vital-signs-observations.xml",
+			"base": "ValueSet-pathology-and-vital-signs-observations.html"
+		},
+		"ValueSet/pathology-result-coded-value-uv-ips": {
+			"source": "valueset-pathology-result-coded-value-uv-ips.xml",
+			"base": "ValueSet-pathology-result-coded-value-uv-ips.html"
+		},
+		"ValueSet/personal-relationship-uv-ips": {
+			"source": "valueset-personal-relationship-uv-ips.xml",
+			"base": "ValueSet-personal-relationship-uv-ips.html"
+		},
+		"ValueSet/pregnancies-summary-uv-ips": {
+			"source": "valueset-pregnancies-summary-uv-ips.xml",
+			"base": "ValueSet-pregnancies-summary-uv-ips.html"
+		},
+		"ValueSet/problem-type-uv-ips": {
+			"source": "valueset-problem-type-uv-ips.xml",
+			"base": "ValueSet-problem-type-uv-ips.html"
+		},
+		"ValueSet/procedures-uv-ips": {
+			"source": "valueset-procedures-uv-ips.xml",
+			"base": "ValueSet-procedures-uv-ips.html"
+		},
+		"ValueSet/quantityunits": {
+			"source": "valueset-quantityunits.xml",
+			"base": "ValueSet-quantityunits.html"
+		},
+		"ValueSet/strengthdenominator": {
+			"source": "valueset-strengthdenominator.xml",
+			"base": "ValueSet-strengthdenominator.html"
+		},
+		"ValueSet/strengthnumerator": {
+			"source": "valueset-strengthnumerator.xml",
+			"base": "ValueSet-strengthnumerator.html"
+		},
+		"ValueSet/sub-observation-category-uv-ips": {
+			"source": "valueset-sub-observation-category-uv-ips.xml",
+			"base": "ValueSet-sub-observation-category-uv-ips.html"
+		},
+		"ValueSet/target-site-uv-ips": {
+			"source": "valueset-target-site-uv-ips.xml",
+			"base": "ValueSet-target-site-uv-ips.html"
+		},
+		"ValueSet/vaccines-uv-ips": {
+			"source": "valueset-vaccines-uv-ips.xml",
+			"base": "ValueSet-vaccines-uv-ips.html"
+		},
+		"ValueSet/whoatc-uv-ips": {
+			"source": "valueset-whoatc-uv-ips.xml",
+			"base": "ValueSet-whoatc-uv-ips.html"
+		},
 		"ValueSet/pcid-uv-ips": {
 			"source": "valueset-pcid-uv-ips.xml",
 			"base": "ValueSet-pcid-uv-ips.html"
@@ -453,87 +405,88 @@
 			"source": "valueset-mpid-uv-ips.xml",
 			"base": "ValueSet-mpid-uv-ips.html"
 		},
-			"ValueSet/phpid-lvl1-uv-ips": {
+		"ValueSet/phpid-lvl1-uv-ips": {
 			"source": "valueset-phpid-lvl1-uv-ips.xml",
 			"base": "ValueSet-phpid-lvl1-uv-ips.html"
 		},
-			"ValueSet/phpid-lvl2-uv-ips": {
+		"ValueSet/phpid-lvl2-uv-ips": {
 			"source": "valueset-phpid-lvl2-uv-ips.xml",
 			"base": "ValueSet-phpid-lvl2-uv-ips.html"
 		},
-			"ValueSet/phpid-lvl3-uv-ips": {
+		"ValueSet/phpid-lvl3-uv-ips": {
 			"source": "valueset-phpid-lvl3-uv-ips.xml",
 			"base": "ValueSet-phpid-lvl3-uv-ips.html"
 		},
-			"ValueSet/phpid-lvl4-uv-ips": {
+		"ValueSet/phpid-lvl4-uv-ips": {
 			"source": "valueset-phpid-lvl4-uv-ips.xml",
 			"base": "ValueSet-phpid-lvl4-uv-ips.html"
 		},
-      "ValueSet/vaccines-uv-ips": {
+		"ValueSet/vaccines-uv-ips": {
 			"source": "valueset-vaccines-uv-ips.xml",
 			"base": "ValueSet-vaccines-uv-ips.html"
 		},
-
-    
-    
-    "StructureDefinition/allergyintolerance-uv-ips": {
-      "defns": "StructureDefinition-allergyintolerance-uv-ips-definitions.html",
-      "source": "AllergyIntolerance-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-allergyintolerance-uv-ips.html"
-    }, 
-    "Bundle/IPS-examples-Bundle-01": {
-      "source": "IPS-bundle-01.xml",
-      "base": "IPS-examples-Bundle-01.html"
-    },                 
-    "StructureDefinition/condition-uv-ips": {
-      "defns": "StructureDefinition-condition-uv-ips-definitions.html",
-      "source": "Condition-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-condition-uv-ips.html"
-    },
-    "StructureDefinition/codeableconcept-uv-ips": {
-      "defns": "StructureDefinition-codeableconcept-uv-ips-definitions.html",
-      "source": "CodeableConcept-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-codeableconcept-uv-ips.html"
-    },
-    "StructureDefinition/translation": {
-      "defns": "StructureDefinition-translation-definitions.html",
-      "source": "translation.xml",
-      "base": "StructureDefinition-translation.html"
-    },
-    "StructureDefinition/translateddiv-uv-ips": {
-      "defns": "StructureDefinition-translateddiv-uv-ips-definitions.html",
-      "source": "translatedDiv-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-translateddiv-uv-ips.html"
-    },
-    "StructureDefinition/partof-extension": {
-      "defns": "StructureDefinition-partof-extension-definitions.html",
-      "source": "partOf-extension.xml",
-      "base": "StructureDefinition-partof-extension.html"
-    },
-    "StructureDefinition/abatement-datetime-uv-ips": {
-      "defns": "StructureDefinition-abatement-datetime-uv-ips-definitions.html",
-      "source": "abatement-dateTime-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-abatement-datetime-uv-ips.html"
-    },
-    "StructureDefinition/coding-uv-ips": {
-      "defns": "StructureDefinition-coding-uv-ips-definitions.html",
-      "source": "coding-uv-ips.structuredefinition.xml",
-      "base": "StructureDefinition-coding-uv-ips.html"
-    },
-    "CodeSystem/absent-unknown-uv-ips": {
-      "base": "CodeSystem-absent-unknown-uv-ips.html"
-    },
-    "ValueSet/condition-severity-uv-ips": {
-      "source": "valueset-condition-severity-uv-ips.xml",
-      "base": "ValueSet-condition-severity-uv-ips.html"
-    },
-    "ValueSet/absent-or-unknown-problems-uv-ips": {
-      "source": "valueset-absent-or-unknown-problems-uv-ips.xml",
-      "base": "ValueSet-absent-or-unknown-problems-uv-ips.html"
-    },
-    "ValueSet/absent-or-unknown-procedures-uv-ips": {
-      "source": "valueset-absent-or-unknown-procedures-uv-ips.xml",
-      "base": "ValueSet-absent-or-unknown-procedures-uv-ips.html"
-    }
-  }
+		"StructureDefinition/allergyintolerance-uv-ips": {
+			"defns": "StructureDefinition-allergyintolerance-uv-ips-definitions.html",
+			"source": "AllergyIntolerance-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-allergyintolerance-uv-ips.html"
+		},
+		"Bundle/IPS-examples-Bundle-01": {
+			"source": "IPS-bundle-01.xml",
+			"base": "IPS-examples-Bundle-01.html"
+		},
+		"StructureDefinition/condition-uv-ips": {
+			"defns": "StructureDefinition-condition-uv-ips-definitions.html",
+			"source": "Condition-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-condition-uv-ips.html"
+		},
+		"StructureDefinition/codeableconcept-uv-ips": {
+			"defns": "StructureDefinition-codeableconcept-uv-ips-definitions.html",
+			"source": "CodeableConcept-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-codeableconcept-uv-ips.html"
+		},
+		"StructureDefinition/translation": {
+			"defns": "StructureDefinition-translation-definitions.html",
+			"source": "translation.xml",
+			"base": "StructureDefinition-translation.html"
+		},
+		"StructureDefinition/translateddiv-uv-ips": {
+			"defns": "StructureDefinition-translateddiv-uv-ips-definitions.html",
+			"source": "translatedDiv-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-translateddiv-uv-ips.html"
+		},
+		"StructureDefinition/partof-extension": {
+			"defns": "StructureDefinition-partof-extension-definitions.html",
+			"source": "partOf-extension.xml",
+			"base": "StructureDefinition-partof-extension.html"
+		},
+		"StructureDefinition/abatement-datetime-uv-ips": {
+			"defns": "StructureDefinition-abatement-datetime-uv-ips-definitions.html",
+			"source": "abatement-dateTime-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-abatement-datetime-uv-ips.html"
+		},
+		"StructureDefinition/coding-uv-ips": {
+			"defns": "StructureDefinition-coding-uv-ips-definitions.html",
+			"source": "coding-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-coding-uv-ips.html"
+		},
+		"CodeSystem/absent-unknown-uv-ips": {
+			"base": "CodeSystem-absent-unknown-uv-ips.html"
+		},
+		"ValueSet/condition-severity-uv-ips": {
+			"source": "valueset-condition-severity-uv-ips.xml",
+			"base": "ValueSet-condition-severity-uv-ips.html"
+		},
+		"ValueSet/absent-or-unknown-problems-uv-ips": {
+			"source": "valueset-absent-or-unknown-problems-uv-ips.xml",
+			"base": "ValueSet-absent-or-unknown-problems-uv-ips.html"
+		},
+		"ValueSet/absent-or-unknown-procedures-uv-ips": {
+			"source": "valueset-absent-or-unknown-procedures-uv-ips.xml",
+			"base": "ValueSet-absent-or-unknown-procedures-uv-ips.html"
+		},
+		"ValueSet/imaging-txtobs-code-uv-ips": {
+			"source": "valueset-imaging-txtobs-code-uv-ips.xml",
+			"base": "ValueSet-imaging-txtobs-code-uv-ips.html"
+		}
+	}
 }

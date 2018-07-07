@@ -1,0 +1,85 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="imaging-txtobs-code-uv-ips"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+	</meta>
+	<url value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-txtobs-code-uv-ips"/>
+	<version value="2017-05-23T00:00:00"/>
+	<name value="IPS Results Radiology Textual Observations"/>
+	<title value="IPS Results Radiology Textual Observations"/>
+	<status value="draft"/>
+	<experimental value="false"/>
+	<publisher value="HL7 International"/>
+	<contact>
+		<name value="HL7 International"/>
+		<telecom>
+			<system value="phone"/>
+			<value value="+1 734 677 7777"/>
+		</telecom>
+		<telecom>
+			<system value="fax"/>
+			<value value="+1 734 677 6622"/>
+		</telecom>
+		<telecom>
+			<system value="email"/>
+			<value value="info@hl7.org"/>
+		</telecom>
+	</contact>
+	<description value="IPS Results Radiology Textual Observations"/>
+	<immutable value="false"/>
+	<compose>
+		<include>
+			<system value="http://dicom.nema.org/resources/ontology/DCM"/>
+			<concept>
+				<code value="121065"/>
+				<display value="Procedure Description"/>
+			</concept>
+			<concept>
+				<code value="121069"/>
+				<display value="Previous Finding"/>
+			</concept>
+			<concept>
+				<code value="121071"/>
+				<display value="Finding"/>
+			</concept>
+			<concept>
+				<code value="121073"/>
+				<display value="Impression"/>
+			</concept>
+			<concept>
+				<code value="121075"/>
+				<display value="Recommendation"/>
+			</concept>
+			<concept>
+				<code value="121077"/>
+				<display value="Conclusion"/>
+			</concept>
+			<concept>
+				<code value="121110"/>
+				<display value="Patient Presentation"/>
+			</concept>
+			<concept>
+				<code value="121111"/>
+				<display value="Summary"/>
+			</concept>
+		</include>
+		<include>
+			<system value="http://loinc.org"/>
+			<concept>
+				<code value="11329-0"/>
+				<display value="History"/>
+			</concept>
+			<concept>
+				<code value="55115-0"/>
+				<display value="Request"/>
+			</concept>
+		</include>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<concept>
+				<code value="116224001"/>
+				<display value="Complication of Procedure"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>
