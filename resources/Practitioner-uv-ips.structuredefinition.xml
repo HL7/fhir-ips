@@ -2,59 +2,59 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="practitioner-uv-ips"/>
   <meta>
-    <lastUpdated value="2018-02-15T16:53:57.291+01:00" />
+    <lastUpdated value="2018-02-15T16:53:57.291+01:00"/>
   </meta>
-  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/practitioner-uv-ips" />
-  <name value="Practitioner-uv-ips" />
-  <status value="draft" />
-  <date value="2018-02-15T16:36:51.805+01:00" />
-  <description value="This profile constrains the Practictioner resource to represent a practictioner acting as observer for these imaging results. " />
-  <fhirVersion value="3.4.0" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Practitioner" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Practitioner" />
-  <derivation value="constraint" />
+  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/practitioner-uv-ips"/>
+  <name value="Practitioner-uv-ips"/>
+  <status value="draft"/>
+  <date value="2018-02-15T16:36:51.805+01:00"/>
+  <description value="This profile constrains the Practictioner resource to represent a practictioner acting as observer for these imaging results. "/>
+  <fhirVersion value="3.4.0"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Practitioner"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
+  <derivation value="constraint"/>
   <differential>
     <element id="Practitioner.active">
-      <path value="Practitioner.active" />
-      <max value="0" />
+      <path value="Practitioner.active"/>
+      <max value="0"/>
     </element>
     <element id="Practitioner.name.text">
-      <path value="Practitioner.name.text" />
-      <max value="0" />
+      <path value="Practitioner.name.text"/>
+      <max value="0"/>
     </element>
     <element id="Practitioner.name.period">
-      <path value="Practitioner.name.period" />
-      <max value="0" />
+      <path value="Practitioner.name.period"/>
+      <max value="0"/>
     </element>
     <element id="Practitioner.telecom.period">
-      <path value="Practitioner.telecom.period" />
-      <max value="0" />
+      <path value="Practitioner.telecom.period"/>
+      <max value="0"/>
     </element>
     <element id="Practitioner.address.period">
-      <path value="Practitioner.address.period" />
-      <max value="0" />
+      <path value="Practitioner.address.period"/>
+      <max value="0"/>
     </element>
     <element id="Practitioner.gender">
-      <path value="Practitioner.gender" />
-      <max value="0" />
+      <path value="Practitioner.gender"/>
+      <max value="0"/>
     </element>
     <element id="Practitioner.birthDate">
-      <path value="Practitioner.birthDate" />
-      <max value="0" />
+      <path value="Practitioner.birthDate"/>
+      <max value="0"/>
     </element>
     <element id="Practitioner.photo">
-      <path value="Practitioner.photo" />
-      <max value="0" />
+      <path value="Practitioner.photo"/>
+      <max value="0"/>
     </element>
     <element id="Practitioner.qualification">
-      <path value="Practitioner.qualification" />
-      <max value="0" />
+      <path value="Practitioner.qualification"/>
+      <max value="0"/>
     </element>
     <element id="Practitioner.communication">
-      <path value="Practitioner.communication" />
-      <max value="0" />
+      <path value="Practitioner.communication"/>
+      <max value="0"/>
     </element>
   </differential>
 </StructureDefinition>

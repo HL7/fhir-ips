@@ -1,43 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="quantity-uv-ips"/>
-  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/quantity-uv-ips" />
-  <name value="quantity-uv-ips" />
-  <title value="Quantity" />
-  <status value="draft" />
-  <date value="2018-03-20T17:17:13.817+01:00" />
-  <publisher value="HL7 International" />
+  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/quantity-uv-ips"/>
+  <name value="quantity-uv-ips"/>
+  <title value="Quantity"/>
+  <status value="draft"/>
+  <date value="2018-03-20T17:17:13.817+01:00"/>
+  <publisher value="HL7 International"/>
   <contact>
-    <name value="François Macary - Phast" />
+    <name value="François Macary - Phast"/>
   </contact>
   <contact>
-    <name value="Christof Gessner - Gematik" />
+    <name value="Christof Gessner - Gematik"/>
   </contact>
-  <description value="Datatype Quantity constrianed to use the UCUM units" />
-  <purpose value="This profile of the Quantity datatype imposes the usage of the UCUM code system for units" />
-  <fhirVersion value="3.4.0" />
-  <kind value="complex-type" />
-  <abstract value="false" />
-  <type value="Quantity" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Quantity" />
-  <derivation value="constraint" />
+  <description value="Datatype Quantity constrianed to use the UCUM units"/>
+  <purpose value="This profile of the Quantity datatype imposes the usage of the UCUM code system for units"/>
+  <fhirVersion value="3.4.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <type value="Quantity"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Quantity"/>
+  <derivation value="constraint"/>
   <differential>
     <element id="Quantity">
-      <path value="Quantity" />
-      <short value="A measured amount using UCUM" />
-      <definition value="A measured amount (or an amount that can potentially be measured). Note that measured amounts include amounts that are not precisely quantified, including amounts involving arbitrary units and floating currencies.&#xD;&#xA;This profile imposes that the code system for unit be UCUM" />
+      <path value="Quantity"/>
+      <short value="A measured amount using UCUM"/>
+      <definition value="A measured amount (or an amount that can potentially be measured). Note that measured amounts include amounts that are not precisely quantified, including amounts involving arbitrary units and floating currencies.&#xD;&#xA;This profile imposes that the code system for unit be UCUM"/>
     </element>
     <element id="Quantity.system">
-      <path value="Quantity.system" />
-      <short value="UCUM system for units" />
-      <min value="1" />
-      <fixedUri value="http://unitsofmeasure.org" />
-      <mustSupport value="true" />
+      <path value="Quantity.system"/>
+      <short value="UCUM system for units"/>
+      <min value="1"/>
+      <fixedUri value="http://unitsofmeasure.org"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Quantity.code">
-      <path value="Quantity.code" />
-      <min value="1" />
-      <mustSupport value="true" />
+      <path value="Quantity.code"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
     </element>
   </differential>
 </StructureDefinition>

@@ -1,49 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ratio-uv-ips"/>
-  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/ratio-uv-ips" />
-  <name value="Ratio-uv-ips" />
-  <title value="Ratio" />
-  <status value="draft" />
-  <date value="2018-03-21T14:49:16.166+01:00" />
+  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/ratio-uv-ips"/>
+  <name value="Ratio-uv-ips"/>
+  <title value="Ratio"/>
+  <status value="draft"/>
+  <date value="2018-03-21T14:49:16.166+01:00"/>
   <contact>
-    <name value="Christof Gessner" />
+    <name value="Christof Gessner"/>
   </contact>
-  <description value="Ratio data type, constrained to use UCUM as a codesystem." />
-  <purpose value="allow only UCUM as a codesystem." />
-  <fhirVersion value="3.4.0" />
-  <kind value="complex-type" />
-  <abstract value="false" />
-  <type value="Ratio" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Ratio" />
-  <derivation value="constraint" />
+  <description value="Ratio data type, constrained to use UCUM as a codesystem."/>
+  <purpose value="allow only UCUM as a codesystem."/>
+  <fhirVersion value="3.4.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <type value="Ratio"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Ratio"/>
+  <derivation value="constraint"/>
   <differential>
     <element id="Ratio">
-      <path value="Ratio" />
+      <path value="Ratio"/>
     </element>
     <element id="Ratio.numerator">
-      <path value="Ratio.numerator" />
+      <path value="Ratio.numerator"/>
     </element>
     <element id="Ratio.numerator.system">
-      <path value="Ratio.numerator.system" />
-      <min value="1" />
-      <fixedUri value="http://unitsofmeasure.org" />
+      <path value="Ratio.numerator.system"/>
+      <min value="1"/>
+      <fixedUri value="http://unitsofmeasure.org"/>
     </element>
     <element id="Ratio.numerator.code">
-      <path value="Ratio.numerator.code" />
-      <min value="1" />
+      <path value="Ratio.numerator.code"/>
+      <min value="1"/>
     </element>
     <element id="Ratio.denominator">
-      <path value="Ratio.denominator" />
+      <path value="Ratio.denominator"/>
     </element>
     <element id="Ratio.denominator.system">
-      <path value="Ratio.denominator.system" />
-      <min value="1" />
-      <fixedUri value="http://unitsofmeasure.org" />
+      <path value="Ratio.denominator.system"/>
+      <min value="1"/>
+      <fixedUri value="http://unitsofmeasure.org"/>
     </element>
     <element id="Ratio.denominator.code">
-      <path value="Ratio.denominator.code" />
-      <min value="1" />
+      <path value="Ratio.denominator.code"/>
+      <min value="1"/>
     </element>
   </differential>
 </StructureDefinition>

@@ -2,36 +2,36 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="organization-observation-uv-ips"/>
   <meta>
-    <lastUpdated value="2018-02-19T12:23:48.535+01:00" />
+    <lastUpdated value="2018-02-19T12:23:48.535+01:00"/>
   </meta>
-  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-observation-uv-ips" />
-  <name value="Organization-observation-uv-ips" />
-  <status value="draft" />
-  <date value="2018-02-15T16:58:09.62+01:00" />
-  <description value="This profile constrains the Organization resource to represent an organization involved as performer or observer for these imaging results. " />
-  <fhirVersion value="3.4.0" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Organization" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
-  <derivation value="constraint" />
+  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-observation-uv-ips"/>
+  <name value="Organization-observation-uv-ips"/>
+  <status value="draft"/>
+  <date value="2018-02-15T16:58:09.62+01:00"/>
+  <description value="This profile constrains the Organization resource to represent an organization involved as performer or observer for these imaging results. "/>
+  <fhirVersion value="3.4.0"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Organization"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+  <derivation value="constraint"/>
   <differential>
     <element id="Organization.identifier">
-      <path value="Organization.identifier" />
-      <mustSupport value="true" />
+      <path value="Organization.identifier"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Organization.name">
-      <path value="Organization.name" />
-      <min value="1" />
-      <mustSupport value="true" />
+      <path value="Organization.name"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Organization.telecom">
-      <path value="Organization.telecom" />
-      <mustSupport value="true" />
+      <path value="Organization.telecom"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Organization.address">
-      <path value="Organization.address" />
-      <mustSupport value="true" />
+      <path value="Organization.address"/>
+      <mustSupport value="true"/>
     </element>
   </differential>
 </StructureDefinition>

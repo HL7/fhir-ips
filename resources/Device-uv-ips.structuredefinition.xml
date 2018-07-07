@@ -2,129 +2,129 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="device-uv-ips"/>
   <meta>
-    <lastUpdated value="2018-02-14T11:49:41.487+01:00" />
+    <lastUpdated value="2018-02-14T11:49:41.487+01:00"/>
   </meta>
-  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/device-uv-ips" />
-  <version value="0.1" />
-  <name value="device-uv-ips" />
-  <title value="Device" />
-  <status value="draft" />
-  <experimental value="true" />
-  <date value="2018-02-14" />
-  <publisher value="HL7 International" />
+  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/device-uv-ips"/>
+  <version value="0.1"/>
+  <name value="device-uv-ips"/>
+  <title value="Device"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2018-02-14"/>
+  <publisher value="HL7 International"/>
   <contact>
-    <name value="François Macary - PHAST" />
+    <name value="François Macary - PHAST"/>
     <telecom>
-      <system value="email" />
-      <value value="francois.macary@phast.fr" />
+      <system value="email"/>
+      <value value="francois.macary@phast.fr"/>
     </telecom>
   </contact>
-  <description value="This profile represents the constraints applied to the Device resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR STU3. A device used by or implanted on the patient is described in the patient summary as an instance of a Device resource constrained by this profile." />
-  <purpose value="This profile constrains the representation of a medical device used by or impanted on the patient, in the context of the international patient summary as specified by the IPS project of HL7 International." />
-  <fhirVersion value="3.4.0" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Device" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Device" />
-  <derivation value="constraint" />
+  <description value="This profile represents the constraints applied to the Device resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR STU3. A device used by or implanted on the patient is described in the patient summary as an instance of a Device resource constrained by this profile."/>
+  <purpose value="This profile constrains the representation of a medical device used by or impanted on the patient, in the context of the international patient summary as specified by the IPS project of HL7 International."/>
+  <fhirVersion value="3.4.0"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Device"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Device"/>
+  <derivation value="constraint"/>
   <differential>
     <element id="Device">
-      <path value="Device" />
-      <comment value="This profile applies the rules defined by HL7 International for representing the UDI in the FHIR standard, by the document &quot;Medical Devices and Unique Device Identification (UDI) Pattern, Release 1&quot;" />
+      <path value="Device"/>
+      <comment value="This profile applies the rules defined by HL7 International for representing the UDI in the FHIR standard, by the document &quot;Medical Devices and Unique Device Identification (UDI) Pattern, Release 1&quot;"/>
     </element>
     <element id="Device.identifier">
-      <path value="Device.identifier" />
-      <max value="1" />
+      <path value="Device.identifier"/>
+      <max value="1"/>
     </element>
     <element id="Device.identifier.use">
-      <path value="Device.identifier.use" />
-      <max value="0" />
+      <path value="Device.identifier.use"/>
+      <max value="0"/>
     </element>
     <element id="Device.identifier.type">
-      <path value="Device.identifier.type" />
-      <definition value="The type of identifier represents &quot;serial number&quot; (SNO)" />
+      <path value="Device.identifier.type"/>
+      <definition value="The type of identifier represents &quot;serial number&quot; (SNO)"/>
     </element>
     <element id="Device.identifier.type.coding.system">
-      <path value="Device.identifier.type.coding.system" />
-      <max value="0" />
+      <path value="Device.identifier.type.coding.system"/>
+      <max value="0"/>
     </element>
     <element id="Device.identifier.type.coding.version">
-      <path value="Device.identifier.type.coding.version" />
-      <max value="0" />
+      <path value="Device.identifier.type.coding.version"/>
+      <max value="0"/>
     </element>
     <element id="Device.identifier.type.coding.code">
-      <path value="Device.identifier.type.coding.code" />
-      <fixedCode value="SNO" />
+      <path value="Device.identifier.type.coding.code"/>
+      <fixedCode value="SNO"/>
     </element>
     <element id="Device.identifier.type.coding.display">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
+        <valueBoolean value="true"/>
       </extension>
-      <path value="Device.identifier.type.coding.display" />
-      <fixedString value="serial number" />
+      <path value="Device.identifier.type.coding.display"/>
+      <fixedString value="serial number"/>
     </element>
     <element id="Device.identifier.type.coding.userSelected">
-      <path value="Device.identifier.type.coding.userSelected" />
-      <max value="0" />
+      <path value="Device.identifier.type.coding.userSelected"/>
+      <max value="0"/>
     </element>
     <element id="Device.identifier.type.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
+        <valueBoolean value="true"/>
       </extension>
-      <path value="Device.identifier.type.text" />
-      <max value="0" />
+      <path value="Device.identifier.type.text"/>
+      <max value="0"/>
     </element>
     <element id="Device.identifier.system">
-      <path value="Device.identifier.system" />
-      <max value="0" />
+      <path value="Device.identifier.system"/>
+      <max value="0"/>
     </element>
     <element id="Device.identifier.value">
-      <path value="Device.identifier.value" />
-      <label value="device serial number" />
-      <definition value="The serial number of the medical device" />
+      <path value="Device.identifier.value"/>
+      <label value="device serial number"/>
+      <definition value="The serial number of the medical device"/>
     </element>
     <element id="Device.identifier.period">
-      <path value="Device.identifier.period" />
-      <max value="0" />
+      <path value="Device.identifier.period"/>
+      <max value="0"/>
     </element>
     <element id="Device.identifier.assigner">
-      <path value="Device.identifier.assigner" />
-      <max value="0" />
+      <path value="Device.identifier.assigner"/>
+      <max value="0"/>
     </element>
     <element id="Device.type">
-      <path value="Device.type" />
+      <path value="Device.type"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="DeviceKind" />
+          <valueString value="DeviceKind"/>
         </extension>
-        <strength value="preferred" />
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-uv-ips" />
+        <strength value="preferred"/>
+        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-uv-ips"/>
       </binding>
     </element>
     <element id="Device.type.coding">
-      <path value="Device.type.coding" />
+      <path value="Device.type.coding"/>
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="Device.type.coding.system" />
+          <type value="value"/>
+          <path value="Device.type.coding.system"/>
         </discriminator>
-        <rules value="open" />
+        <rules value="open"/>
       </slicing>
-      <comment value="The FHIR-defined value set is different from the value set &quot;IPS Medical Devices&quot; defined by the IPS CDA IG: http://art-decor.org/art-decor/decor-valuesets--hl7ips-?id=2.16.840.1.113883.11.22.23&amp;effectiveDate=2017-07-19T00:00:00&amp;language=en-US&#xD;&#xA; " />
+      <comment value="The FHIR-defined value set is different from the value set &quot;IPS Medical Devices&quot; defined by the IPS CDA IG: http://art-decor.org/art-decor/decor-valuesets--hl7ips-?id=2.16.840.1.113883.11.22.23&amp;effectiveDate=2017-07-19T00:00:00&amp;language=en-US&#xD;&#xA; "/>
       <type>
-        <code value="Coding" />
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
+        <code value="Coding"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
       </type>
     </element>
     <element id="Device.type.coding:absentOrUnknownDevice">
-      <path value="Device.type.coding" />
-      <sliceName value="absentOrUnknownDevice" />
+      <path value="Device.type.coding"/>
+      <sliceName value="absentOrUnknownDevice"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="DeviceKind" />
+          <valueString value="DeviceKind"/>
         </extension>
-        <strength value="required" />
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-uv-ips" />
+        <strength value="required"/>
+        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-uv-ips"/>
       </binding>
     </element>
     <element id="Device.type.coding:absentOrUnknownDevice.system">
@@ -137,40 +137,40 @@
       <min value="1"/>
     </element>
     <element id="Device.manufactureDate">
-      <path value="Device.manufactureDate" />
-      <definition value="The date and time when the device was manufactured. If hour is present, minutes and seconds should be both set to &quot;00&quot;" />
+      <path value="Device.manufactureDate"/>
+      <definition value="The date and time when the device was manufactured. If hour is present, minutes and seconds should be both set to &quot;00&quot;"/>
     </element>
     <element id="Device.expirationDate">
-      <path value="Device.expirationDate" />
-      <definition value="The date and time beyond which this device is no longer valid or should not be used (if applicable). If hour is present, minutes and seconds should be both set to &quot;00&quot;." />
+      <path value="Device.expirationDate"/>
+      <definition value="The date and time beyond which this device is no longer valid or should not be used (if applicable). If hour is present, minutes and seconds should be both set to &quot;00&quot;."/>
     </element>
     <element id="Device.patient">
-      <path value="Device.patient" />
-      <min value="1" />
+      <path value="Device.patient"/>
+      <min value="1"/>
     </element>
     <element id="Device.owner">
-      <path value="Device.owner" />
-      <max value="0" />
+      <path value="Device.owner"/>
+      <max value="0"/>
     </element>
     <element id="Device.contact">
-      <path value="Device.contact" />
-      <max value="0" />
+      <path value="Device.contact"/>
+      <max value="0"/>
     </element>
     <element id="Device.location">
-      <path value="Device.location" />
-      <max value="0" />
+      <path value="Device.location"/>
+      <max value="0"/>
     </element>
     <element id="Device.url">
-      <path value="Device.url" />
-      <max value="0" />
+      <path value="Device.url"/>
+      <max value="0"/>
     </element>
     <element id="Device.note">
-      <path value="Device.note" />
-      <max value="0" />
+      <path value="Device.note"/>
+      <max value="0"/>
     </element>
     <element id="Device.safety">
-      <path value="Device.safety" />
-      <max value="0" />
+      <path value="Device.safety"/>
+      <max value="0"/>
     </element>
   </differential>
 </StructureDefinition>

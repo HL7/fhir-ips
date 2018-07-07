@@ -2,433 +2,433 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="observation-imaging-uv-ips"/>
   <meta>
-    <lastUpdated value="2018-02-20T13:45:02.729+01:00" />
+    <lastUpdated value="2018-02-20T13:45:02.729+01:00"/>
   </meta>
-  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-imaging-uv-ips" />
-  <name value="Observation-imaging-uv-ips" />
-  <status value="draft" />
-  <experimental value="false" />
-  <date value="2018-02-06T09:53:52.315+01:00" />
+  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-imaging-uv-ips"/>
+  <name value="Observation-imaging-uv-ips"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2018-02-06T09:53:52.315+01:00"/>
   <contact>
-    <name value="Giorgio Cangioli" />
+    <name value="Giorgio Cangioli"/>
   </contact>
-  <description value="This profile represents the contraints applied to the Observation resource by the IPS project, which specifies an imaging observation for the international patient summary based on the FHIR standard STU3. &#xD;&#xA;&#xD;&#xA;This observation may represent the conclusions of a diagnostic procedure such a Chest RX, or it may group the set of results produced by that single or multi modality procedure. &#xD;&#xA;&#xD;&#xA;In the latter case, the main observation (this one) carries the overall conclusion of the study and/or a global interpretation by the observer of the study as value of this observation; and may references the atomic results of the study  as &quot;child observations&quot;.&#xD;&#xA;&#xD;&#xA;It allows also to provide details about the related study using the event-partOf extension referring an ImagingStudy resource.&#xD;&#xA;" />
-  <fhirVersion value="3.4.0" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Observation" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
-  <derivation value="constraint" />
+  <description value="This profile represents the contraints applied to the Observation resource by the IPS project, which specifies an imaging observation for the international patient summary based on the FHIR standard STU3. &#xD;&#xA;&#xD;&#xA;This observation may represent the conclusions of a diagnostic procedure such a Chest RX, or it may group the set of results produced by that single or multi modality procedure. &#xD;&#xA;&#xD;&#xA;In the latter case, the main observation (this one) carries the overall conclusion of the study and/or a global interpretation by the observer of the study as value of this observation; and may references the atomic results of the study  as &quot;child observations&quot;.&#xD;&#xA;&#xD;&#xA;It allows also to provide details about the related study using the event-partOf extension referring an ImagingStudy resource.&#xD;&#xA;"/>
+  <fhirVersion value="3.4.0"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Observation"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+  <derivation value="constraint"/>
   <differential>
     <element id="Observation">
-      <path value="Observation" />
+      <path value="Observation"/>
     </element>
     <element id="Observation.extension">
-      <path value="Observation.extension" />
+      <path value="Observation.extension"/>
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="url" />
+          <type value="value"/>
+          <path value="url"/>
         </discriminator>
-        <rules value="open" />
+        <rules value="open"/>
       </slicing>
     </element>
     <element id="Observation.extension:partOf">
-      <path value="Observation.extension" />
-      <sliceName value="partOf" />
+      <path value="Observation.extension"/>
+      <sliceName value="partOf"/>
       <type>
-        <code value="Extension" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/event-partOf" />
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/event-partOf"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
     </element>
     <element id="Observation.extension:partOf.valueReference:valueReference">
-      <path value="Observation.extension.valueReference" />
-      <sliceName value="valueReference" />
+      <path value="Observation.extension.valueReference"/>
+      <sliceName value="valueReference"/>
       <type>
-        <code value="Reference" />
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/imagingstudy-uv-ips" />
+        <code value="Reference"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/imagingstudy-uv-ips"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
     </element>
     <element id="Observation.extension:partOf.valueReference:valueReference.identifier">
-      <path value="Observation.extension.valueReference.identifier" />
-      <max value="0" />
+      <path value="Observation.extension.valueReference.identifier"/>
+      <max value="0"/>
     </element>
     <element id="Observation.category">
-      <path value="Observation.category" />
-      <min value="1" />
-      <max value="1" />
+      <path value="Observation.category"/>
+      <min value="1"/>
+      <max value="1"/>
       <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips" />
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
       </type>
       <fixedCodeableConcept>
         <coding>
-          <system value="http://hl7.org/fhir/observation-category" />
-          <code value="imaging" />
-          <display value="Imaging" />
+          <system value="http://hl7.org/fhir/observation-category"/>
+          <code value="imaging"/>
+          <display value="Imaging"/>
         </coding>
       </fixedCodeableConcept>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
     </element>
     <element id="Observation.code">
-      <path value="Observation.code" />
-      <label value="Diagnostic Procedure Code" />
-      <definition value="Describes what was observed. Sometimes this is called the observation &quot;name&quot;.&#xD;&#xA;In this profile the code of the containing observation (the organizer result in the CDA implementation) may correspond to the procedure code (e.g. Chest X-Ray)." />
+      <path value="Observation.code"/>
+      <label value="Diagnostic Procedure Code"/>
+      <definition value="Describes what was observed. Sometimes this is called the observation &quot;name&quot;.&#xD;&#xA;In this profile the code of the containing observation (the organizer result in the CDA implementation) may correspond to the procedure code (e.g. Chest X-Ray)."/>
       <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips" />
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ObservationCode" />
+          <valueString value="ObservationCode"/>
         </extension>
-        <strength value="extensible" />
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips" />
+        <strength value="extensible"/>
+        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips"/>
       </binding>
     </element>
     <element id="Observation.subject">
-      <path value="Observation.subject" />
-      <definition value="The patient, or group of patients, location, or device whose characteristics (direct or indirect) are described by the observation and into whose record the observation is placed.  Comments: Indirect characteristics may be those of a specimen, fetus, donor,  other observer (for example a relative or EMT), or any observation made about the subject.&#xD;&#xA;&#xD;&#xA;In this profile is constrained to the patient" />
-      <min value="1" />
+      <path value="Observation.subject"/>
+      <definition value="The patient, or group of patients, location, or device whose characteristics (direct or indirect) are described by the observation and into whose record the observation is placed.  Comments: Indirect characteristics may be those of a specimen, fetus, donor,  other observer (for example a relative or EMT), or any observation made about the subject.&#xD;&#xA;&#xD;&#xA;In this profile is constrained to the patient"/>
+      <min value="1"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips" />
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
     </element>
     <element id="Observation.subject.reference">
-      <path value="Observation.subject.reference" />
-      <label value="Patient ID" />
+      <path value="Observation.subject.reference"/>
+      <label value="Patient ID"/>
     </element>
     <element id="Observation.subject.identifier">
-      <path value="Observation.subject.identifier" />
-      <max value="0" />
+      <path value="Observation.subject.identifier"/>
+      <max value="0"/>
     </element>
     <element id="Observation.effective[x]">
-      <path value="Observation.effective[x]" />
-      <label value="Date/Time of the Imaging Procedure" />
-      <definition value="The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the &quot;physiologically relevant time&quot;. This is usually either the time of the procedure or of specimen collection, but very often the source of the date/time is not known, only the date/time itself.&#xD;&#xA;&#xD;&#xA;" />
-      <mustSupport value="true" />
+      <path value="Observation.effective[x]"/>
+      <label value="Date/Time of the Imaging Procedure"/>
+      <definition value="The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the &quot;physiologically relevant time&quot;. This is usually either the time of the procedure or of specimen collection, but very often the source of the date/time is not known, only the date/time itself.&#xD;&#xA;&#xD;&#xA;"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Observation.performer">
-      <path value="Observation.performer" />
-      <label value="Human Observer" />
+      <path value="Observation.performer"/>
+      <label value="Human Observer"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/practitioner-uv-ips" />
-        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-observation-uv-ips" />
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/practitioner-uv-ips"/>
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-observation-uv-ips"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
     </element>
     <element id="Observation.performer.identifier">
-      <path value="Observation.performer.identifier" />
-      <max value="0" />
+      <path value="Observation.performer.identifier"/>
+      <max value="0"/>
     </element>
     <element id="Observation.valueString:valueString">
-      <path value="Observation.valueString" />
-      <sliceName value="valueString" />
-      <label value="Overall Conclusion" />
+      <path value="Observation.valueString"/>
+      <sliceName value="valueString"/>
+      <label value="Overall Conclusion"/>
       <type>
-        <code value="string" />
+        <code value="string"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
     </element>
     <element id="Observation.bodySite">
-      <path value="Observation.bodySite" />
-      <label value="body site" />
+      <path value="Observation.bodySite"/>
+      <label value="body site"/>
       <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips" />
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="BodySite" />
+          <valueString value="BodySite"/>
         </extension>
-        <strength value="example" />
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips" />
+        <strength value="example"/>
+        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
       </binding>
     </element>
     <element id="Observation.device">
-      <path value="Observation.device" />
+      <path value="Observation.device"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/device-observer-uv-ips" />
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/device-observer-uv-ips"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
     </element>
     <element id="Observation.device.identifier">
-      <path value="Observation.device.identifier" />
-      <max value="0" />
+      <path value="Observation.device.identifier"/>
+      <max value="0"/>
     </element>
     <element id="Observation.hasMember">
-      <path value="Observation.hasMember" />
+      <path value="Observation.hasMember"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-member-imaging-uv-ips" />
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-member-imaging-uv-ips"/>
       </type>
       <constraint>
-        <key value="hasMemberOrComponent" />
-        <severity value="error" />
-        <human value="component and hasMember are mutually exclusive" />
-        <expression value="../has-member or ../component" />
+        <key value="hasMemberOrComponent"/>
+        <severity value="error"/>
+        <human value="component and hasMember are mutually exclusive"/>
+        <expression value="../has-member or ../component"/>
       </constraint>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
     </element>
     <element id="Observation.hasMember.reference">
-      <path value="Observation.hasMember.reference" />
-      <mustSupport value="true" />
+      <path value="Observation.hasMember.reference"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Observation.hasMember.identifier">
-      <path value="Observation.hasMember.identifier" />
-      <max value="0" />
+      <path value="Observation.hasMember.identifier"/>
+      <max value="0"/>
     </element>
     <element id="Observation.component">
-      <path value="Observation.component" />
+      <path value="Observation.component"/>
       <slicing>
         <discriminator>
-          <type value="type" />
-          <path value="value[x]" />
+          <type value="type"/>
+          <path value="value[x]"/>
         </discriminator>
-        <rules value="open" />
+        <rules value="open"/>
       </slicing>
-      <requirements value="Required if not(exists(Observation.valueString))" />
+      <requirements value="Required if not(exists(Observation.valueString))"/>
       <constraint>
-        <key value="hasMemberOrComponent" />
-        <severity value="error" />
-        <human value="component and hasMember are mutually exclusive" />
-        <expression value="../has-member or ../component" />
+        <key value="hasMemberOrComponent"/>
+        <severity value="error"/>
+        <human value="component and hasMember are mutually exclusive"/>
+        <expression value="../has-member or ../component"/>
       </constraint>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
     </element>
     <element id="Observation.component:observationText">
-      <path value="Observation.component" />
-      <sliceName value="observationText" />
-      <max value="1" />
-      <mustSupport value="true" />
+      <path value="Observation.component"/>
+      <sliceName value="observationText"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Observation.component:observationText.code">
-      <path value="Observation.component.code" />
+      <path value="Observation.component.code"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ObservationCode" />
+          <valueString value="ObservationCode"/>
         </extension>
-        <strength value="example" />
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips" />
+        <strength value="example"/>
+        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips"/>
       </binding>
     </element>
     <element id="Observation.component:observationText.code.coding">
-      <path value="Observation.component.code.coding" />
+      <path value="Observation.component.code.coding"/>
       <binding>
-        <strength value="extensible" />
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-txtobs-code-uv-ips" />
+        <strength value="extensible"/>
+        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-txtobs-code-uv-ips"/>
       </binding>
     </element>
     <element id="Observation.component:observationText.valueString:valueString">
-      <path value="Observation.component.valueString" />
-      <sliceName value="valueString" />
+      <path value="Observation.component.valueString"/>
+      <sliceName value="valueString"/>
       <type>
-        <code value="string" />
+        <code value="string"/>
       </type>
     </element>
     <element id="Observation.component:observationText.dataAbsentReason">
-      <path value="Observation.component.dataAbsentReason" />
-      <max value="0" />
+      <path value="Observation.component.dataAbsentReason"/>
+      <max value="0"/>
     </element>
     <element id="Observation.component:observationText.interpretation">
-      <path value="Observation.component.interpretation" />
-      <max value="0" />
+      <path value="Observation.component.interpretation"/>
+      <max value="0"/>
     </element>
     <element id="Observation.component:observationText.referenceRange">
-      <path value="Observation.component.referenceRange" />
-      <max value="0" />
+      <path value="Observation.component.referenceRange"/>
+      <max value="0"/>
     </element>
     <element id="Observation.component:observationCode">
-      <path value="Observation.component" />
-      <sliceName value="observationCode" />
-      <max value="1" />
-      <mustSupport value="true" />
+      <path value="Observation.component"/>
+      <sliceName value="observationCode"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Observation.component:observationCode.code.coding">
-      <path value="Observation.component.code.coding" />
+      <path value="Observation.component.code.coding"/>
       <binding>
-        <strength value="extensible" />
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-codedobs-code" />
+        <strength value="extensible"/>
+        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-codedobs-code"/>
       </binding>
     </element>
     <element id="Observation.component:observationCode.valueCodeableConcept:valueCodeableConcept">
-      <path value="Observation.component.valueCodeableConcept" />
-      <sliceName value="valueCodeableConcept" />
-      <min value="1" />
+      <path value="Observation.component.valueCodeableConcept"/>
+      <sliceName value="valueCodeableConcept"/>
+      <min value="1"/>
       <type>
-        <code value="CodeableConcept" />
+        <code value="CodeableConcept"/>
       </type>
     </element>
     <element id="Observation.component:observationCode.valueCodeableConcept:valueCodeableConcept.coding">
-      <path value="Observation.component.valueCodeableConcept.coding" />
+      <path value="Observation.component.valueCodeableConcept.coding"/>
       <binding>
-        <strength value="example" />
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-codedobs-value" />
+        <strength value="example"/>
+        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-codedobs-value"/>
       </binding>
     </element>
     <element id="Observation.component:observationCode.dataAbsentReason">
-      <path value="Observation.component.dataAbsentReason" />
-      <max value="0" />
+      <path value="Observation.component.dataAbsentReason"/>
+      <max value="0"/>
     </element>
     <element id="Observation.component:observationCode.interpretation">
-      <path value="Observation.component.interpretation" />
-      <max value="0" />
+      <path value="Observation.component.interpretation"/>
+      <max value="0"/>
     </element>
     <element id="Observation.component:observationCode.referenceRange">
-      <path value="Observation.component.referenceRange" />
-      <max value="0" />
+      <path value="Observation.component.referenceRange"/>
+      <max value="0"/>
     </element>
     <element id="Observation.component:numericMeasurement">
-      <path value="Observation.component" />
-      <sliceName value="numericMeasurement" />
-      <mustSupport value="true" />
+      <path value="Observation.component"/>
+      <sliceName value="numericMeasurement"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Observation.component:numericMeasurement.code">
-      <path value="Observation.component.code" />
+      <path value="Observation.component.code"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ObservationCode" />
+          <valueString value="ObservationCode"/>
         </extension>
-        <strength value="extensible" />
-        <description value="Codes identifying names of numeric measurements" />
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-num-measure-code" />
+        <strength value="extensible"/>
+        <description value="Codes identifying names of numeric measurements"/>
+        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-num-measure-code"/>
       </binding>
     </element>
     <element id="Observation.component:numericMeasurement.value[x]">
-      <path value="Observation.component.value[x]" />
+      <path value="Observation.component.value[x]"/>
       <type>
-        <code value="Quantity" />
+        <code value="Quantity"/>
       </type>
       <type>
-        <code value="Range" />
+        <code value="Range"/>
       </type>
       <type>
-        <code value="Ratio" />
+        <code value="Ratio"/>
       </type>
     </element>
     <element id="Observation.component:numericMeasurement.dataAbsentReason">
-      <path value="Observation.component.dataAbsentReason" />
-      <max value="0" />
+      <path value="Observation.component.dataAbsentReason"/>
+      <max value="0"/>
     </element>
     <element id="Observation.component:numericMeasurement.interpretation">
-      <path value="Observation.component.interpretation" />
-      <max value="0" />
+      <path value="Observation.component.interpretation"/>
+      <max value="0"/>
     </element>
     <element id="Observation.component:linearMeasurement">
-      <path value="Observation.component" />
-      <sliceName value="linearMeasurement" />
-      <mustSupport value="true" />
+      <path value="Observation.component"/>
+      <sliceName value="linearMeasurement"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Observation.component:linearMeasurement.code">
-      <path value="Observation.component.code" />
+      <path value="Observation.component.code"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ObservationCode" />
+          <valueString value="ObservationCode"/>
         </extension>
-        <strength value="extensible" />
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-linear-measure-code" />
+        <strength value="extensible"/>
+        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-linear-measure-code"/>
       </binding>
     </element>
     <element id="Observation.component:linearMeasurement.value[x]">
-      <path value="Observation.component.value[x]" />
+      <path value="Observation.component.value[x]"/>
       <type>
-        <code value="Quantity" />
+        <code value="Quantity"/>
       </type>
       <type>
-        <code value="Range" />
+        <code value="Range"/>
       </type>
       <type>
-        <code value="Ratio" />
+        <code value="Ratio"/>
       </type>
       <type>
-        <code value="SampledData" />
+        <code value="SampledData"/>
       </type>
     </element>
     <element id="Observation.component:linearMeasurement.dataAbsentReason">
-      <path value="Observation.component.dataAbsentReason" />
-      <max value="0" />
+      <path value="Observation.component.dataAbsentReason"/>
+      <max value="0"/>
     </element>
     <element id="Observation.component:linearMeasurement.interpretation">
-      <path value="Observation.component.interpretation" />
-      <max value="0" />
+      <path value="Observation.component.interpretation"/>
+      <max value="0"/>
     </element>
     <element id="Observation.component:areaMeasurement">
-      <path value="Observation.component" />
-      <sliceName value="areaMeasurement" />
-      <mustSupport value="true" />
+      <path value="Observation.component"/>
+      <sliceName value="areaMeasurement"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Observation.component:areaMeasurement.code">
-      <path value="Observation.component.code" />
+      <path value="Observation.component.code"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ObservationCode" />
+          <valueString value="ObservationCode"/>
         </extension>
-        <strength value="extensible" />
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips" />
+        <strength value="extensible"/>
+        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips"/>
       </binding>
     </element>
     <element id="Observation.component:areaMeasurement.value[x]">
-      <path value="Observation.component.value[x]" />
+      <path value="Observation.component.value[x]"/>
       <type>
-        <code value="Quantity" />
+        <code value="Quantity"/>
       </type>
       <type>
-        <code value="Range" />
+        <code value="Range"/>
       </type>
       <type>
-        <code value="Ratio" />
+        <code value="Ratio"/>
       </type>
     </element>
     <element id="Observation.component:areaMeasurement.dataAbsentReason">
-      <path value="Observation.component.dataAbsentReason" />
-      <max value="0" />
+      <path value="Observation.component.dataAbsentReason"/>
+      <max value="0"/>
     </element>
     <element id="Observation.component:areaMeasurement.interpretation">
-      <path value="Observation.component.interpretation" />
-      <max value="0" />
+      <path value="Observation.component.interpretation"/>
+      <max value="0"/>
     </element>
     <element id="Observation.component:volumeMeasurement">
-      <path value="Observation.component" />
-      <sliceName value="volumeMeasurement" />
-      <mustSupport value="true" />
+      <path value="Observation.component"/>
+      <sliceName value="volumeMeasurement"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Observation.component:volumeMeasurement.code">
-      <path value="Observation.component.code" />
+      <path value="Observation.component.code"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ObservationCode" />
+          <valueString value="ObservationCode"/>
         </extension>
-        <strength value="extensible" />
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-volume-measure-code" />
+        <strength value="extensible"/>
+        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-volume-measure-code"/>
       </binding>
     </element>
     <element id="Observation.component:volumeMeasurement.value[x]">
-      <path value="Observation.component.value[x]" />
+      <path value="Observation.component.value[x]"/>
       <type>
-        <code value="Quantity" />
+        <code value="Quantity"/>
       </type>
       <type>
-        <code value="Range" />
+        <code value="Range"/>
       </type>
       <type>
-        <code value="Ratio" />
+        <code value="Ratio"/>
       </type>
     </element>
     <element id="Observation.component:volumeMeasurement.dataAbsentReason">
-      <path value="Observation.component.dataAbsentReason" />
-      <max value="0" />
+      <path value="Observation.component.dataAbsentReason"/>
+      <max value="0"/>
     </element>
     <element id="Observation.component:volumeMeasurement.interpretation">
-      <path value="Observation.component.interpretation" />
-      <max value="0" />
+      <path value="Observation.component.interpretation"/>
+      <max value="0"/>
     </element>
   </differential>
 </StructureDefinition>

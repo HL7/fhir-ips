@@ -1,79 +1,79 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="observation-pregnancy-outcome-uv-ips"/>
-  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-pregnancy-outcome-uv-ips" />
-  <name value="Observation-pregnancy-outcome-uv-ips" />
-  <status value="draft" />
-  <date value="2018-03-20T11:00:52.49+01:00" />
-  <description value="This profile constrains the Observation resource to represent the history of pregnancy outcomes (summary)." />
-  <fhirVersion value="3.4.0" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Observation" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
-  <derivation value="constraint" />
+  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-pregnancy-outcome-uv-ips"/>
+  <name value="Observation-pregnancy-outcome-uv-ips"/>
+  <status value="draft"/>
+  <date value="2018-03-20T11:00:52.49+01:00"/>
+  <description value="This profile constrains the Observation resource to represent the history of pregnancy outcomes (summary)."/>
+  <fhirVersion value="3.4.0"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Observation"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+  <derivation value="constraint"/>
   <differential>
     <element id="Observation.code">
-      <path value="Observation.code" />
-      <min value="1" />
-      <max value="1" />
+      <path value="Observation.code"/>
+      <min value="1"/>
+      <max value="1"/>
       <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips" />
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ObservationCode" />
+          <valueString value="ObservationCode"/>
         </extension>
-        <strength value="required" />
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/pregnancies-summary-uv-ips" />
+        <strength value="required"/>
+        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/pregnancies-summary-uv-ips"/>
       </binding>
     </element>
     <element id="Observation.subject">
-      <path value="Observation.subject" />
-      <min value="1" />
+      <path value="Observation.subject"/>
+      <min value="1"/>
       <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips" />
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
     </element>
     <element id="Observation.subject.identifier">
-      <path value="Observation.subject.identifier" />
-      <max value="0" />
+      <path value="Observation.subject.identifier"/>
+      <max value="0"/>
     </element>
     <element id="Observation.effective[x]">
-      <path value="Observation.effective[x]" />
-      <mustSupport value="false" />
+      <path value="Observation.effective[x]"/>
+      <mustSupport value="false"/>
     </element>
     <element id="Observation.value[x]:valueQuantity">
-      <path value="Observation.valueQuantity" />
-      <sliceName value="valueQuantity" />
+      <path value="Observation.valueQuantity"/>
+      <sliceName value="valueQuantity"/>
       <type>
-        <code value="Quantity" />
+        <code value="Quantity"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
     </element>
     <element id="Observation.bodySite">
-      <path value="Observation.bodySite" />
-      <max value="0" />
+      <path value="Observation.bodySite"/>
+      <max value="0"/>
     </element>
     <element id="Observation.specimen">
-      <path value="Observation.specimen" />
-      <max value="0" />
+      <path value="Observation.specimen"/>
+      <max value="0"/>
     </element>
     <element id="Observation.device">
-      <path value="Observation.device" />
-      <max value="0" />
+      <path value="Observation.device"/>
+      <max value="0"/>
     </element>
     <element id="Observation.referenceRange">
-      <path value="Observation.referenceRange" />
-      <max value="0" />
+      <path value="Observation.referenceRange"/>
+      <max value="0"/>
     </element>
     <element id="Observation.component">
-      <path value="Observation.component" />
-      <max value="0" />
+      <path value="Observation.component"/>
+      <max value="0"/>
     </element>
   </differential>
 </StructureDefinition>

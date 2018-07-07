@@ -2,44 +2,44 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="medication-uv-ips"/>
   <meta>
-    <lastUpdated value="2018-03-07T19:02:56.499+01:00" />
+    <lastUpdated value="2018-03-07T19:02:56.499+01:00"/>
   </meta>
-  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/medication-uv-ips" />
-  <version value="0.1" />
-  <name value="Medication-uv-ips" />
-  <title value="Medication" />
-  <status value="draft" />
-  <experimental value="true" />
-  <date value="2018-02-20T22:03:08.307+01:00" />
-  <publisher value="HL7 International" />
+  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/medication-uv-ips"/>
+  <version value="0.1"/>
+  <name value="Medication-uv-ips"/>
+  <title value="Medication"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2018-02-20T22:03:08.307+01:00"/>
+  <publisher value="HL7 International"/>
   <contact>
-    <name value="Chritof Gessner" />
+    <name value="Chritof Gessner"/>
   </contact>
   <contact>
-    <name value="François Macary" />
+    <name value="François Macary"/>
   </contact>
-  <description value="This profile represents the constraints applied to the Medication resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR STU3. A medication is described in the patient summary as an instance of a Medication resource constrained by this profile." />
-  <purpose value="This profile constrains the representation of a medication, in the context of the international patient summary as specified by the IPS project of HL7 International." />
-  <fhirVersion value="3.4.0" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Medication" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Medication" />
-  <derivation value="constraint" />
+  <description value="This profile represents the constraints applied to the Medication resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR STU3. A medication is described in the patient summary as an instance of a Medication resource constrained by this profile."/>
+  <purpose value="This profile constrains the representation of a medication, in the context of the international patient summary as specified by the IPS project of HL7 International."/>
+  <fhirVersion value="3.4.0"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Medication"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Medication"/>
+  <derivation value="constraint"/>
   <differential>
     <element id="Medication">
-      <path value="Medication" />
-      <comment value="IPS Medication" />
+      <path value="Medication"/>
+      <comment value="IPS Medication"/>
     </element>
     <element id="Medication.code">
-      <path value="Medication.code" />
-      <short value="Codes that identify this medication, sliced to support IDMP" />
-      <max value="1" />
+      <path value="Medication.code"/>
+      <short value="Codes that identify this medication, sliced to support IDMP"/>
+      <max value="1"/>
       <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips" />
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
     </element>
     
     
@@ -263,89 +263,89 @@
 		</element>
 	
     <element id="Medication.code.text">
-      <path value="Medication.code.text" />
-      <definition value="This element is supposed to be valorized with the complete Medicinal Product Name as approved by the Medicines Regulatory Agency in a jurisdiction.&#xD;&#xA;The name may be applicable in one or more country/language combinations." />
-      <mustSupport value="true" />
+      <path value="Medication.code.text"/>
+      <definition value="This element is supposed to be valorized with the complete Medicinal Product Name as approved by the Medicines Regulatory Agency in a jurisdiction.&#xD;&#xA;The name may be applicable in one or more country/language combinations."/>
+      <mustSupport value="true"/>
     </element>
     <element id="Medication.status">
-      <path value="Medication.status" />
-      <max value="0" />
+      <path value="Medication.status"/>
+      <max value="0"/>
     </element>
     <element id="Medication.manufacturer">
-      <path value="Medication.manufacturer" />
-      <max value="0" />
+      <path value="Medication.manufacturer"/>
+      <max value="0"/>
     </element>
     <element id="Medication.form">
-      <path value="Medication.form" />
-      <definition value="Describes the form of the item.  Powder; tablets; capsule.&#xD;&#xA;&#xD;&#xA;Administrable Pharmaceutical Dose Form. &#xD;&#xA;This code represents the form of the medication (e.g. tablet, capsule, liquid)&#xD;&#xA;&#xD;&#xA;Since the EDQM Standards Terms, together with UCUM, is one of the IDMP terminologies actually available for usage, this code system has been selected  as referecne terminology for representing Pharmaceutical Dose forms;Pakages and Route of Administration.&#xD;&#xA;&#xD;&#xA;It is known that also alternative jurisdictional and international terminologies are known to be used for this concept domain, as NCI or SNOMED CT." />
+      <path value="Medication.form"/>
+      <definition value="Describes the form of the item.  Powder; tablets; capsule.&#xD;&#xA;&#xD;&#xA;Administrable Pharmaceutical Dose Form. &#xD;&#xA;This code represents the form of the medication (e.g. tablet, capsule, liquid)&#xD;&#xA;&#xD;&#xA;Since the EDQM Standards Terms, together with UCUM, is one of the IDMP terminologies actually available for usage, this code system has been selected  as referecne terminology for representing Pharmaceutical Dose forms;Pakages and Route of Administration.&#xD;&#xA;&#xD;&#xA;It is known that also alternative jurisdictional and international terminologies are known to be used for this concept domain, as NCI or SNOMED CT."/>
       <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips" />
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="MedicationForm" />
+          <valueString value="MedicationForm"/>
         </extension>
-        <strength value="example" />
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform" />
+        <strength value="example"/>
+        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform"/>
       </binding>
     </element>
     <element id="Medication.form.coding.system">
-      <path value="Medication.form.coding.system" />
+      <path value="Medication.form.coding.system"/>
       <binding>
-        <strength value="required" />
-        <description value="EDQM Standard Terms" />
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform" />
+        <strength value="required"/>
+        <description value="EDQM Standard Terms"/>
+        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform"/>
       </binding>
     </element>
     <element id="Medication.ingredient">
-      <path value="Medication.ingredient" />
-      <mustSupport value="true" />
+      <path value="Medication.ingredient"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Medication.ingredient.itemCodeableConcept:itemCodeableConcept">
-      <path value="Medication.ingredient.itemCodeableConcept" />
-      <sliceName value="itemCodeableConcept" />
-      <comment value="The IDMP ISO 11238 standard addresses the identification and exchange of regulated information on substances. &#xD;&#xA;The Global Ingredient Archival System (GInAS)  will provide a common global identifier for all of the substances used in medicinal products, providing a definition of substances globally consistent with this standard.&#xD;&#xA;Those identifiers however are yet available for concrete usage, therefore in this version of the template, SNOMED CT has been chosen as reference terminology also for the active substances.&#xD;&#xA;This choice will be revised based on the availability and the maturity of GInAS." />
+      <path value="Medication.ingredient.itemCodeableConcept"/>
+      <sliceName value="itemCodeableConcept"/>
+      <comment value="The IDMP ISO 11238 standard addresses the identification and exchange of regulated information on substances. &#xD;&#xA;The Global Ingredient Archival System (GInAS)  will provide a common global identifier for all of the substances used in medicinal products, providing a definition of substances globally consistent with this standard.&#xD;&#xA;Those identifiers however are yet available for concrete usage, therefore in this version of the template, SNOMED CT has been chosen as reference terminology also for the active substances.&#xD;&#xA;This choice will be revised based on the availability and the maturity of GInAS."/>
       <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips" />
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
       </type>
       <binding>
-        <strength value="preferred" />
-        <description value="SNOMED CT drug substances" />
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-active-substances-uv-ips" />
+        <strength value="preferred"/>
+        <description value="SNOMED CT drug substances"/>
+        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-active-substances-uv-ips"/>
       </binding>
     </element>
     <element id="Medication.ingredient.itemCodeableConcept:itemCodeableConcept.coding">
-      <path value="Medication.ingredient.itemCodeableConcept.coding" />
-      <mustSupport value="true" />
+      <path value="Medication.ingredient.itemCodeableConcept.coding"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Medication.ingredient.itemCodeableConcept:itemCodeableConcept.coding.system">
-      <path value="Medication.ingredient.itemCodeableConcept.coding.system" />
+      <path value="Medication.ingredient.itemCodeableConcept.coding.system"/>
       <binding>
-        <strength value="preferred" />
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-active-substances-uv-ips" />
+        <strength value="preferred"/>
+        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-active-substances-uv-ips"/>
       </binding>
     </element>
     <element id="Medication.ingredient.itemCodeableConcept:itemCodeableConcept.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-        <valueBoolean value="true" />
+        <valueBoolean value="true"/>
       </extension>
-      <path value="Medication.ingredient.itemCodeableConcept.text" />
-      <mustSupport value="true" />
+      <path value="Medication.ingredient.itemCodeableConcept.text"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Medication.ingredient.isActive">
-      <path value="Medication.ingredient.isActive" />
-      <max value="0" />
+      <path value="Medication.ingredient.isActive"/>
+      <max value="0"/>
     </element>
     <element id="Medication.ingredient.amount">
-      <path value="Medication.ingredient.amount" />
+      <path value="Medication.ingredient.amount"/>
       <type>
-        <code value="Ratio" />
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/ratio-uv-ips" />
+        <code value="Ratio"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/ratio-uv-ips"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
     </element>
   </differential>
 </StructureDefinition>

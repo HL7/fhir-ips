@@ -1,157 +1,157 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="patient-uv-ips"/>
-  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips" />
-  <name value="Patient-uv-ips" />
-  <status value="draft" />
-  <date value="2018-03-20T16:43:56.519+01:00" />
-  <description value="This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources." />
-  <fhirVersion value="3.4.0" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Patient" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Patient" />
-  <derivation value="constraint" />
+  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips"/>
+  <name value="Patient-uv-ips"/>
+  <status value="draft"/>
+  <date value="2018-03-20T16:43:56.519+01:00"/>
+  <description value="This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources."/>
+  <fhirVersion value="3.4.0"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Patient"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+  <derivation value="constraint"/>
   <differential>
     <element id="Patient">
-      <path value="Patient" />
+      <path value="Patient"/>
     </element>
     <element id="Patient.name">
-      <path value="Patient.name" />
-      <requirements value="Need to be able to track the patient by multiple names. Examples are your official name and a partner name.&#xD;&#xA;The Alphabetic representation of the name SHALL be always provided" />
-      <mustSupport value="true" />
+      <path value="Patient.name"/>
+      <requirements value="Need to be able to track the patient by multiple names. Examples are your official name and a partner name.&#xD;&#xA;The Alphabetic representation of the name SHALL be always provided"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.name.family">
-      <path value="Patient.name.family" />
-      <min value="1" />
-      <mustSupport value="true" />
+      <path value="Patient.name.family"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.name.given">
-      <path value="Patient.name.given" />
-      <min value="1" />
-      <max value="1" />
-      <mustSupport value="true" />
+      <path value="Patient.name.given"/>
+      <min value="1"/>
+      <max value="1"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.telecom">
-      <path value="Patient.telecom" />
-      <mustSupport value="true" />
+      <path value="Patient.telecom"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.gender">
-      <path value="Patient.gender" />
-      <min value="1" />
-      <mustSupport value="true" />
+      <path value="Patient.gender"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.birthDate">
-      <path value="Patient.birthDate" />
-      <min value="1" />
-      <mustSupport value="true" />
+      <path value="Patient.birthDate"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.address">
-      <path value="Patient.address" />
-      <mustSupport value="true" />
+      <path value="Patient.address"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.address.line">
-      <path value="Patient.address.line" />
-      <mustSupport value="true" />
+      <path value="Patient.address.line"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.address.city">
-      <path value="Patient.address.city" />
-      <mustSupport value="true" />
+      <path value="Patient.address.city"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.address.state">
-      <path value="Patient.address.state" />
-      <mustSupport value="true" />
+      <path value="Patient.address.state"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.address.postalCode">
-      <path value="Patient.address.postalCode" />
-      <mustSupport value="true" />
+      <path value="Patient.address.postalCode"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.address.country">
-      <path value="Patient.address.country" />
-      <comment value="ISO 3166 3 letter codes can be used in place of a full country name.&#xD;&#xA;&#xD;&#xA;Required for cross-border exchange of IPS" />
-      <mustSupport value="true" />
+      <path value="Patient.address.country"/>
+      <comment value="ISO 3166 3 letter codes can be used in place of a full country name.&#xD;&#xA;&#xD;&#xA;Required for cross-border exchange of IPS"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.contact">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-        <valueString value="Contact" />
+        <valueString value="Contact"/>
       </extension>
-      <path value="Patient.contact" />
-      <mustSupport value="true" />
+      <path value="Patient.contact"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.contact.relationship">
-      <path value="Patient.contact.relationship" />
+      <path value="Patient.contact.relationship"/>
       <type>
-        <code value="CodeableConcept" />
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips" />
+        <code value="CodeableConcept"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
       <binding>
         <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ContactRelationship" />
+          <valueString value="ContactRelationship"/>
         </extension>
-        <strength value="required" />
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/personal-relationship-uv-ips" />
+        <strength value="required"/>
+        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/personal-relationship-uv-ips"/>
       </binding>
     </element>
     <element id="Patient.contact.name">
-      <path value="Patient.contact.name" />
-      <mustSupport value="true" />
+      <path value="Patient.contact.name"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.contact.name.family">
-      <path value="Patient.contact.name.family" />
-      <mustSupport value="true" />
+      <path value="Patient.contact.name.family"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.contact.name.given">
-      <path value="Patient.contact.name.given" />
-      <mustSupport value="true" />
+      <path value="Patient.contact.name.given"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.contact.telecom">
-      <path value="Patient.contact.telecom" />
-      <mustSupport value="true" />
+      <path value="Patient.contact.telecom"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.contact.address">
-      <path value="Patient.contact.address" />
-      <mustSupport value="true" />
+      <path value="Patient.contact.address"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.contact.address.line">
-      <path value="Patient.contact.address.line" />
-      <mustSupport value="true" />
+      <path value="Patient.contact.address.line"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.contact.address.city">
-      <path value="Patient.contact.address.city" />
-      <mustSupport value="true" />
+      <path value="Patient.contact.address.city"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.contact.address.state">
-      <path value="Patient.contact.address.state" />
-      <mustSupport value="true" />
+      <path value="Patient.contact.address.state"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.contact.address.country">
-      <path value="Patient.contact.address.country" />
-      <mustSupport value="true" />
+      <path value="Patient.contact.address.country"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.contact.organization">
-      <path value="Patient.contact.organization" />
-      <mustSupport value="true" />
+      <path value="Patient.contact.organization"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.contact.organization.identifier">
-      <path value="Patient.contact.organization.identifier" />
-      <max value="0" />
+      <path value="Patient.contact.organization.identifier"/>
+      <max value="0"/>
     </element>
     <element id="Patient.communication">
-      <path value="Patient.communication" />
-      <mustSupport value="true" />
+      <path value="Patient.communication"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.communication.language">
-      <path value="Patient.communication.language" />
-      <mustSupport value="true" />
+      <path value="Patient.communication.language"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.generalPractitioner">
-      <path value="Patient.generalPractitioner" />
-      <mustSupport value="true" />
+      <path value="Patient.generalPractitioner"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Patient.generalPractitioner.identifier">
-      <path value="Patient.generalPractitioner.identifier" />
-      <max value="0" />
+      <path value="Patient.generalPractitioner.identifier"/>
+      <max value="0"/>
     </element>
   </differential>
 </StructureDefinition>

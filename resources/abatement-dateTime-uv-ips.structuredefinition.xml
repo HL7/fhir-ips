@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="abatement-datetime-uv-ips"/>  
-  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/abatement-datetime-uv-ips" />
-  <name value="abatement-dateTime-uv-ips" />
-  <status value="draft" />
-  <date value="2018-03-20T11:41:22.025+01:00" />
-  <description value="Extension defined by the IPS project to describe the abatement date for allergies" />
-  <fhirVersion value="3.4.0" />
-  <kind value="complex-type" />
-  <abstract value="false" />
+  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/abatement-datetime-uv-ips"/>
+  <name value="abatement-dateTime-uv-ips"/>
+  <status value="draft"/>
+  <date value="2018-03-20T11:41:22.025+01:00"/>
+  <description value="Extension defined by the IPS project to describe the abatement date for allergies"/>
+  <fhirVersion value="3.4.0"/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
   <context>
-    <type value="element" />
-    <expression value="AllergyIntolerance" />
+    <type value="element"/>
+    <expression value="AllergyIntolerance"/>
   </context>
-  <type value="Extension" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
-  <derivation value="constraint" />
+  <type value="Extension"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+  <derivation value="constraint"/>
   <differential>
     <element id="Extension.url">
-      <path value="Extension.url" />
-      <fixedUri value="http://hl7.org/fhir/uv/ips/StructureDefinition/abatement-datetime-uv-ips" />
+      <path value="Extension.url"/>
+      <fixedUri value="http://hl7.org/fhir/uv/ips/StructureDefinition/abatement-datetime-uv-ips"/>
     </element>
     <element id="Extension.value[x]:valueDateTime">
-      <path value="Extension.valueDateTime" />
-      <sliceName value="valueDateTime" />
+      <path value="Extension.valueDateTime"/>
+      <sliceName value="valueDateTime"/>
       <type>
-        <code value="dateTime" />
+        <code value="dateTime"/>
       </type>
     </element>
   </differential>

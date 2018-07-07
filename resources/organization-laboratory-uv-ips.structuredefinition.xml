@@ -2,63 +2,63 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="organization-laboratory-uv-ips"/>
   <meta>
-    <lastUpdated value="2018-02-16T18:38:21.486+01:00" />
+    <lastUpdated value="2018-02-16T18:38:21.486+01:00"/>
   </meta>
-  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-laboratory-uv-ips" />
-  <version value="0.2" />
-  <name value="organization-laboratory-uv-ips" />
-  <title value="Organization (laboratory)" />
-  <status value="draft" />
-  <date value="2018-03-09" />
-  <publisher value="HL7 International" />
+  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-laboratory-uv-ips"/>
+  <version value="0.2"/>
+  <name value="organization-laboratory-uv-ips"/>
+  <title value="Organization (laboratory)"/>
+  <status value="draft"/>
+  <date value="2018-03-09"/>
+  <publisher value="HL7 International"/>
   <contact>
-    <name value="François Macary - Phast" />
+    <name value="François Macary - Phast"/>
   </contact>
-  <description value="This profile constrains the Organization resource to represent an organization having produced laboratory results for a patient summary.&#xD;&#xA;Examples of such organizations include laboratory medicine, public health laboratory, healthcare institution ..." />
-  <fhirVersion value="3.4.0" />
-  <kind value="resource" />
-  <abstract value="false" />
-  <type value="Organization" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization" />
-  <derivation value="constraint" />
+  <description value="This profile constrains the Organization resource to represent an organization having produced laboratory results for a patient summary.&#xD;&#xA;Examples of such organizations include laboratory medicine, public health laboratory, healthcare institution ..."/>
+  <fhirVersion value="3.4.0"/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Organization"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+  <derivation value="constraint"/>
   <differential>
     <element id="Organization.active">
-      <path value="Organization.active" />
-      <max value="0" />
+      <path value="Organization.active"/>
+      <max value="0"/>
     </element>
     <element id="Organization.type">
-      <path value="Organization.type" />
-      <min value="1" />
-      <max value="1" />
+      <path value="Organization.type"/>
+      <min value="1"/>
+      <max value="1"/>
     </element>
     <element id="Organization.type.coding">
-      <path value="Organization.type.coding" />
-      <min value="1" />
-      <max value="1" />
+      <path value="Organization.type.coding"/>
+      <min value="1"/>
+      <max value="1"/>
       <type>
-        <code value="Coding" />
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips" />
+        <code value="Coding"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
       </type>
       <binding>
-        <strength value="extensible" />
-        <valueSetCanonical value="http://trilliumbridge.eu/fhir/ValueSet/performing-organization-type" />
+        <strength value="extensible"/>
+        <valueSetCanonical value="http://trilliumbridge.eu/fhir/ValueSet/performing-organization-type"/>
       </binding>
     </element>
     <element id="Organization.name">
-      <path value="Organization.name" />
-      <min value="1" />
+      <path value="Organization.name"/>
+      <min value="1"/>
     </element>
     <element id="Organization.alias">
-      <path value="Organization.alias" />
-      <max value="0" />
+      <path value="Organization.alias"/>
+      <max value="0"/>
     </element>
     <element id="Organization.partOf">
-      <path value="Organization.partOf" />
-      <max value="0" />
+      <path value="Organization.partOf"/>
+      <max value="0"/>
     </element>
     <element id="Organization.endpoint">
-      <path value="Organization.endpoint" />
-      <max value="0" />
+      <path value="Organization.endpoint"/>
+      <max value="0"/>
     </element>
   </differential>
 </StructureDefinition>
