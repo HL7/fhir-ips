@@ -41,10 +41,6 @@
 		<element id="Observation.extension:partOf.valueReference">
 			<path value="Observation.extension.valueReference"/>
 		</element>
-		<element id="Observation.extension:partOf.valueReference.identifier">
-			<path value="Observation.extension.valueReference.identifier"/>
-			<max value="0"/>
-		</element>
 		<element id="Observation.code">
 			<path value="Observation.code"/>
 			<type>
@@ -69,10 +65,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Observation.subject.identifier">
-			<path value="Observation.subject.identifier"/>
-			<max value="0"/>
-		</element>
 		<element id="Observation.effective[x]">
 			<path value="Observation.effective[x]"/>
 			<mustSupport value="true"/>
@@ -89,10 +81,6 @@
 		<element id="Observation.performer.reference">
 			<path value="Observation.performer.reference"/>
 			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.performer.identifier">
-			<path value="Observation.performer.identifier"/>
-			<max value="0"/>
 		</element>
 		<element id="Observation.value[x]">
 			<path value="Observation.value[x]"/>
@@ -142,10 +130,7 @@
 			<path value="Observation.device.reference"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Observation.device.identifier">
-			<path value="Observation.device.identifier"/>
-			<max value="0"/>
-		</element>
+
 		<element id="Observation.derivedFrom">
 			<path value="Observation.derivedFrom"/>
 			<type>
