@@ -88,7 +88,7 @@
 					<valueString value="VaccineType"/>
 				</extension>
 				<strength value="preferred"/>
-				<valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Immunization.vaccineCode.coding:vaccineType.system">
@@ -116,7 +116,7 @@
 					<valueString value="PhPIDLvl1"/>
 				</extension>
 				<strength value="example"/>
-				<valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl1-uv-ips"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl1-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Immunization.vaccineCode.coding:pharmaceuticalProduct-L1.system">
@@ -144,7 +144,7 @@
 					<valueString value="PhPIDLvl2"/>
 				</extension>
 				<strength value="example"/>
-				<valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl2-uv-ips"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl2-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Immunization.vaccineCode.coding:pharmaceuticalProduct-L2.system">
@@ -172,7 +172,7 @@
 					<valueString value="PhPIDLvl3"/>
 				</extension>
 				<strength value="example"/>
-				<valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl3-uv-ips"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl3-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Immunization.vaccineCode.coding:pharmaceuticalProduct-L3.system">
@@ -200,7 +200,7 @@
 					<valueString value="PhPIDLvl4"/>
 				</extension>
 				<strength value="example"/>
-				<valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl4-uv-ips"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl4-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Immunization.vaccineCode.coding:pharmaceuticalProduct-L4.system">
@@ -230,7 +230,7 @@
 					<valueString value="MPID"/>
 				</extension>
 				<strength value="example"/>
-				<valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/mpid-uv-ips"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/mpid-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Immunization.vaccineCode.coding:medicinalProduct.system">
@@ -259,7 +259,7 @@
 					<valueString value="PCID"/>
 				</extension>
 				<strength value="example"/>
-				<valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/pcid-uv-ips"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/pcid-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Immunization.vaccineCode.coding:packagedProduct.system">
@@ -289,7 +289,7 @@
 					<valueString value="WHO ATC"/>
 				</extension>
 				<strength value="required"/>
-				<valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Immunization.vaccineCode.coding:atcClass.system">
@@ -317,7 +317,7 @@
 					<valueString value="Absent Unknown Immunization"/>
 				</extension>
 				<strength value="required"/>
-				<valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-immunization-uv-ips"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-immunization-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Immunization.vaccineCode.text">
@@ -355,7 +355,7 @@
 			</type>
 			<binding>
 				<strength value="preferred"/>
-				<valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Immunization.route">
@@ -372,7 +372,7 @@
 					<valueString value="ImmunizationRoute"/>
 				</extension>
 				<strength value="required"/>
-				<valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration"/>
 			</binding>
 		</element>
 		<element id="Immunization.performer">

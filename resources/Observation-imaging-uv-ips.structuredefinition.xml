@@ -86,7 +86,7 @@
           <valueString value="ObservationCode"/>
         </extension>
         <strength value="extensible"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips"/>
       </binding>
     </element>
     <element id="Observation.subject">
@@ -149,7 +149,7 @@
           <valueString value="BodySite"/>
         </extension>
         <strength value="example"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
       </binding>
     </element>
     <element id="Observation.device">
@@ -217,14 +217,14 @@
           <valueString value="ObservationCode"/>
         </extension>
         <strength value="example"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips"/>
       </binding>
     </element>
     <element id="Observation.component:observationText.code.coding">
       <path value="Observation.component.code.coding"/>
       <binding>
         <strength value="extensible"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-txtobs-code-uv-ips"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-txtobs-code-uv-ips"/>
       </binding>
     </element>
     <element id="Observation.component:observationText.valueString:valueString">
@@ -256,7 +256,7 @@
       <path value="Observation.component.code.coding"/>
       <binding>
         <strength value="extensible"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-codedobs-code"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-codedobs-code"/>
       </binding>
     </element>
     <element id="Observation.component:observationCode.valueCodeableConcept:valueCodeableConcept">
@@ -271,7 +271,7 @@
       <path value="Observation.component.valueCodeableConcept.coding"/>
       <binding>
         <strength value="example"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-codedobs-value"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-codedobs-value"/>
       </binding>
     </element>
     <element id="Observation.component:observationCode.dataAbsentReason">
@@ -299,7 +299,7 @@
         </extension>
         <strength value="extensible"/>
         <description value="Codes identifying names of numeric measurements"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-num-measure-code"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-num-measure-code"/>
       </binding>
     </element>
     <element id="Observation.component:numericMeasurement.value[x]">
@@ -334,7 +334,7 @@
           <valueString value="ObservationCode"/>
         </extension>
         <strength value="extensible"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-linear-measure-code"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-linear-measure-code"/>
       </binding>
     </element>
     <element id="Observation.component:linearMeasurement.value[x]">
@@ -372,7 +372,7 @@
           <valueString value="ObservationCode"/>
         </extension>
         <strength value="extensible"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips"/>
       </binding>
     </element>
     <element id="Observation.component:areaMeasurement.value[x]">
@@ -407,7 +407,7 @@
           <valueString value="ObservationCode"/>
         </extension>
         <strength value="extensible"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-volume-measure-code"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-volume-measure-code"/>
       </binding>
     </element>
     <element id="Observation.component:volumeMeasurement.value[x]">

@@ -61,7 +61,7 @@
           <valueString value="ProcedureCode"/>
         </extension>
         <strength value="preferred"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips"/>
       </binding>
     </element>
     <element id="Procedure.code.coding">
@@ -90,7 +90,7 @@
         </extension>
         <strength value="required"/>
         <description value="A code to identify absent or unknown procedures"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-procedures-uv-ips"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-procedures-uv-ips"/>
       </binding>
     </element>
     <element id="Procedure.code.coding:procedureCode">
@@ -106,7 +106,7 @@
           <valueString value="ProcedureCode"/>
         </extension>
         <strength value="preferred"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips"/>
       </binding>
     </element>
     <element id="Procedure.subject">
@@ -159,7 +159,7 @@
           <valueString value="ProcedureReason"/>
         </extension>
         <strength value="example"/>
-        <valueSetCanonical value="http://hl7.org/fhir/ValueSet/procedure-reason"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/procedure-reason"/>
       </binding>
     </element>
     <element id="Procedure.bodySite">
@@ -170,7 +170,7 @@
           <valueString value="BodySite"/>
         </extension>
         <strength value="example"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
       </binding>
     </element>
   </differential>

@@ -97,7 +97,7 @@
         </extension>
         <strength value="required"/>
         <description value="Representation of unknown or absent medications"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medication-uv-ips"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medication-uv-ips"/>
       </binding>
     </element>
     <element id="MedicationStatement.effective[x]">
@@ -196,7 +196,7 @@
       <path value="MedicationStatement.dosage.timing.code.coding.system"/>
       <binding>
         <strength value="example"/>
-        <valueSetCanonical value="http://hl7.org/fhir/valueset-event-timing.html"/>
+        <valueSet value="http://hl7.org/fhir/valueset-event-timing.html"/>
       </binding>
     </element>
     <element id="MedicationStatement.dosage.site">
@@ -210,14 +210,14 @@
       <path value="MedicationStatement.dosage.site.coding"/>
       <binding>
         <strength value="preferred"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
       </binding>
     </element>
     <element id="MedicationStatement.dosage.site.coding.system">
       <path value="MedicationStatement.dosage.site.coding.system"/>
       <binding>
         <strength value="preferred"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
       </binding>
     </element>
     <element id="MedicationStatement.dosage.route">
@@ -233,14 +233,14 @@
       <binding>
         <strength value="preferred"/>
         <description value="EDQM Standards Terms"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration"/>
       </binding>
     </element>
     <element id="MedicationStatement.dosage.route.coding.system">
       <path value="MedicationStatement.dosage.route.coding.system"/>
       <binding>
         <strength value="preferred"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration"/>
       </binding>
     </element>
     <element id="MedicationStatement.dosage.method">

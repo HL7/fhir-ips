@@ -98,7 +98,7 @@
           <valueString value="DeviceKind"/>
         </extension>
         <strength value="preferred"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-uv-ips"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-uv-ips"/>
       </binding>
     </element>
     <element id="Device.type.coding">
@@ -124,7 +124,7 @@
           <valueString value="DeviceKind"/>
         </extension>
         <strength value="required"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-uv-ips"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-uv-ips"/>
       </binding>
     </element>
     <element id="Device.type.coding:absentOrUnknownDevice.system">

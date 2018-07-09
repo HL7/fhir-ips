@@ -59,7 +59,7 @@
         </extension>
         <strength value="required"/>
         <description value="Codes for sub-observation categories"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/sub-observation-category-uv-ips"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/sub-observation-category-uv-ips"/>
       </binding>
     </element>
     <element id="Observation.code">
@@ -74,7 +74,7 @@
           <valueString value="ObservationCode"/>
         </extension>
         <strength value="extensible"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-and-vital-signs-observations"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-and-vital-signs-observations"/>
       </binding>
     </element>
     <element id="Observation.subject">
@@ -139,7 +139,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/lab-result-coded-value-uv-ips"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/lab-result-coded-value-uv-ips"/>
       </binding>
     </element>
     <element id="Observation.dataAbsentReason">

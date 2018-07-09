@@ -68,7 +68,7 @@
           <valueString value="ObservationCode"/>
         </extension>
         <strength value="extensible"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-tests-and-panels-uv-ips"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-tests-and-panels-uv-ips"/>
       </binding>
     </element>
     <element id="Observation.subject">
@@ -149,7 +149,7 @@
       <mustSupport value="true"/>
       <binding>
         <strength value="extensible"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/lab-result-coded-value-uv-ips"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/lab-result-coded-value-uv-ips"/>
       </binding>
     </element>
     <element id="Observation.dataAbsentReason">

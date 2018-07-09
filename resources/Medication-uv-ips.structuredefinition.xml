@@ -76,7 +76,7 @@
 					<valueString value="PhPIDLvl1"/>
 				</extension>
 				<strength value="example"/>
-				<valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl1-uv-ips"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl1-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Medication.code.coding:pharmaceuticalProduct-L1.system">
@@ -104,7 +104,7 @@
 					<valueString value="PhPIDLvl2"/>
 				</extension>
 				<strength value="example"/>
-				<valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl2-uv-ips"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl2-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Medication.code.coding:pharmaceuticalProduct-L2.system">
@@ -132,7 +132,7 @@
 					<valueString value="PhPIDLvl3"/>
 				</extension>
 				<strength value="example"/>
-				<valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl3-uv-ips"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl3-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Medication.code.coding:pharmaceuticalProduct-L3.system">
@@ -160,7 +160,7 @@
 					<valueString value="PhPIDLvl4"/>
 				</extension>
 				<strength value="example"/>
-				<valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl4-uv-ips"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl4-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Medication.code.coding:pharmaceuticalProduct-L4.system">
@@ -190,7 +190,7 @@
 					<valueString value="MPID"/>
 				</extension>
 				<strength value="example"/>
-				<valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/mpid-uv-ips"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/mpid-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Medication.code.coding:medicinalProduct.system">
@@ -219,7 +219,7 @@
 					<valueString value="PCID"/>
 				</extension>
 				<strength value="example"/>
-				<valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/pcid-uv-ips"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/pcid-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Medication.code.coding:packagedProduct.system">
@@ -249,7 +249,7 @@
 					<valueString value="WHO ATC"/>
 				</extension>
 				<strength value="required"/>
-				<valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Medication.code.coding:atcClass.system">
@@ -288,7 +288,7 @@
           <valueString value="MedicationForm"/>
         </extension>
         <strength value="example"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform"/>
       </binding>
     </element>
     <element id="Medication.form.coding.system">
@@ -296,7 +296,7 @@
       <binding>
         <strength value="required"/>
         <description value="EDQM Standard Terms"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform"/>
       </binding>
     </element>
     <element id="Medication.ingredient">
@@ -314,7 +314,7 @@
       <binding>
         <strength value="preferred"/>
         <description value="SNOMED CT drug substances"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-active-substances-uv-ips"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-active-substances-uv-ips"/>
       </binding>
     </element>
     <element id="Medication.ingredient.itemCodeableConcept:itemCodeableConcept.coding">
@@ -325,7 +325,7 @@
       <path value="Medication.ingredient.itemCodeableConcept.coding.system"/>
       <binding>
         <strength value="preferred"/>
-        <valueSetCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-active-substances-uv-ips"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-active-substances-uv-ips"/>
       </binding>
     </element>
     <element id="Medication.ingredient.itemCodeableConcept:itemCodeableConcept.text">
