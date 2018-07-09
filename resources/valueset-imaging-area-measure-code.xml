@@ -1,0 +1,43 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="imaging-area-measure-code-uv-ips"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+	</meta>
+	<url value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-area-measure-code-uv-ips"/>
+	<version value="2017-05-23T00:00:00"/>
+	<name value="IPS Results Radiology Area Measurements Observations"/>
+	<title value="IPS Results Radiology Area Measurements Observations"/>
+	<status value="draft"/>
+	<experimental value="false"/>
+	<publisher value="HL7 International"/>
+	<contact>
+		<name value="HL7 International"/>
+		<telecom>
+			<system value="phone"/>
+			<value value="+1 734 677 7777"/>
+		</telecom>
+		<telecom>
+			<system value="fax"/>
+			<value value="+1 734 677 6622"/>
+		</telecom>
+		<telecom>
+			<system value="email"/>
+			<value value="info@hl7.org"/>
+		</telecom>
+	</contact>
+	<description value="IPS Results Radiology Area Measurements Observations"/>
+	<immutable value="false"/>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<concept>
+				<code value="42798000"/>
+				<display value="Area"/>
+			</concept>
+			<concept>
+				<code value="131184002"/>
+				<display value="Area of defined region"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>
