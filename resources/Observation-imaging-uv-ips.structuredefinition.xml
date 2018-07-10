@@ -242,7 +242,7 @@
 			<mustSupport value="true"/>
 			<binding>
 				<strength value="extensible"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-codedobs-code"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Observation.component:observationCode.valueCodeableConcept:valueCodeableConcept">
@@ -268,7 +268,7 @@
 				</extension>
 				<strength value="extensible"/>
 				<description value="Codes identifying names of numeric measurements"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-codedobs-code"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Observation.component:numericMeasurement.value[x]">

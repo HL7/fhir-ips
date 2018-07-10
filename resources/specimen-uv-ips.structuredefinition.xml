@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="specimen-uv-ips"/>
   <meta>
@@ -31,7 +31,7 @@
           <valueString value="SpecimenType"/>
         </extension>
         <strength value="extensible"/>
-        <valueSet value="http://hl7.org/ips/fhir/ValueSet/specimen-type"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/specimen-type-uv-ips"/>
       </binding>
     </element>
     <element id="Specimen.type.coding">
@@ -76,7 +76,7 @@
       </type>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="http://trilliumbridge.eu/fhir/ValueSet/specimen-collection-method"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/specimen-collection-method-uv-ips"/>
       </binding>
     </element>
     <element id="Specimen.collection.bodySite.coding">
