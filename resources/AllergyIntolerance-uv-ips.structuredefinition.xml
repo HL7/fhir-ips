@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="allergyintolerance-uv-ips"/>
   <meta>
@@ -23,7 +23,6 @@
     </element>
     <element id="AllergyIntolerance.clinicalStatus">
       <path value="AllergyIntolerance.clinicalStatus"/>
-      <min value="1"/>
       <mustSupport value="true"/>
     </element>
     <element id="AllergyIntolerance.verificationStatus">
@@ -49,7 +48,7 @@
       <slicing>
         <discriminator>
           <type value="value"/>
-          <path value="AllergyIntolerance.code.coding.system"/>
+          <path value="system"/>
         </discriminator>
         <rules value="closed"/>
       </slicing>

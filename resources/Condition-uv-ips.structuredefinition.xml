@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="condition-uv-ips"/>
   <meta>
@@ -89,7 +89,7 @@
       <slicing>
         <discriminator>
           <type value="value"/>
-          <path value="Condition.code.coding.system"/>
+          <path value="binding.valueSet"/>
         </discriminator>
         <rules value="closed"/>
       </slicing>
@@ -116,15 +116,6 @@
         <description value="Absent problem or unknown problem"/>
         <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips"/>
       </binding>
-    </element>
-    <element id="Condition.code.coding:absentOrUnknownProblem.system">
-      <path value="Condition.code.coding.system"/>
-      <min value="1"/>
-      <fixedUri value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown"/>
-    </element>
-    <element id="Condition.code.coding:absentOrUnknownProblem.code">
-      <path value="Condition.code.coding.code"/>
-      <min value="1"/>
     </element>
     <element id="Condition.code.coding:@default">
       <path value="Condition.code.coding"/>
