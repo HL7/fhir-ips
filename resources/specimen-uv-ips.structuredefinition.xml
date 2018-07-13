@@ -1,102 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="specimen-uv-ips"/>
-  <meta>
-    <lastUpdated value="2018-02-09T21:49:57.382+01:00"/>
-  </meta>
-  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/specimen-uv-ips"/>
-  <version value="0.2"/>
-  <name value="specimen-uv-ips"/>
-  <title value="Specimen"/>
-  <status value="draft"/>
-  <date value="2018-03-09"/>
-  <publisher value="HL7 International"/>
-  <contact>
-    <name value="François Macary - Phast"/>
-  </contact>
-  <description value="This profile constrains the Specimen resource to represent the characteristics of a biological specimens in the context of laboratory results integrated to a patient summary"/>
-  <purpose value="Minimal specimen attributes, usable for the laboratory results section and entry of a patient summary"/>
-  <fhirVersion value="3.4.0"/>
-  <kind value="resource"/>
-  <abstract value="false"/>
-  <type value="Specimen"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Specimen"/>
-  <derivation value="constraint"/>
-  <differential>
-    <element id="Specimen.type">
-      <path value="Specimen.type"/>
-      <min value="1"/>
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="SpecimenType"/>
-        </extension>
-        <strength value="extensible"/>
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/specimen-type-uv-ips"/>
-      </binding>
-    </element>
-    <element id="Specimen.type.coding">
-      <path value="Specimen.type.coding"/>
-      <type>
-        <code value="Coding"/>
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
-      </type>
-    </element>
-    <element id="Specimen.subject">
-      <path value="Specimen.subject"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
-      </type>
-    </element>
-    <element id="Specimen.receivedTime">
-      <path value="Specimen.receivedTime"/>
-      <max value="0"/>
-    </element>
-    <element id="Specimen.parent">
-      <path value="Specimen.parent"/>
-      <max value="0"/>
-    </element>
-    <element id="Specimen.request">
-      <path value="Specimen.request"/>
-      <max value="0"/>
-    </element>
-    <element id="Specimen.collection.collector">
-      <path value="Specimen.collection.collector"/>
-      <max value="0"/>
-    </element>
-    <element id="Specimen.collection.quantity">
-      <path value="Specimen.collection.quantity"/>
-      <max value="0"/>
-    </element>
-    <element id="Specimen.collection.method.coding">
-      <path value="Specimen.collection.method.coding"/>
-      <type>
-        <code value="Coding"/>
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
-      </type>
-      <binding>
-        <strength value="extensible"/>
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/specimen-collection-method-uv-ips"/>
-      </binding>
-    </element>
-    <element id="Specimen.collection.bodySite.coding">
-      <path value="Specimen.collection.bodySite.coding"/>
-      <type>
-        <code value="Coding"/>
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
-      </type>
-      <binding>
-        <strength value="extensible"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/body-site"/>
-      </binding>
-    </element>
-    <element id="Specimen.processing">
-      <path value="Specimen.processing"/>
-      <max value="0"/>
-    </element>
-    <element id="Specimen.container">
-      <path value="Specimen.container"/>
-      <max value="0"/>
-    </element>
-  </differential>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../R4_fhir-all-xsd/structuredefinition.xsd">
+	<id value="specimen-uv-ips"/>
+	<meta>
+		<lastUpdated value="2018-02-09T21:49:57.382+01:00"/>
+	</meta>
+	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/specimen-uv-ips"/>
+	<version value="0.2"/>
+	<name value="specimen-uv-ips"/>
+	<title value="Specimen"/>
+	<status value="draft"/>
+	<date value="2018-03-09"/>
+	<publisher value="HL7 International"/>
+	<contact>
+		<name value="François Macary - Phast"/>
+	</contact>
+	<description value="This profile constrains the Specimen resource to represent the characteristics of a biological specimens in the context of laboratory results integrated to a patient summary"/>
+	<purpose value="Minimal specimen attributes, usable for the laboratory results section and entry of a patient summary"/>
+	<fhirVersion value="3.4.0"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Specimen"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Specimen"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Specimen.type">
+			<path value="Specimen.type"/>
+			<min value="1"/>
+				<mustSupport value="true"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="SpecimenType"/>
+				</extension>			
+				<strength value="extensible"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/specimen-type-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Specimen.type.coding">
+			<path value="Specimen.type.coding"/>
+			
+			<type>
+				<code value="Coding"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+			</type>
+				<mustSupport value="true"/>
+		</element>
+		<element id="Specimen.subject">
+			<path value="Specimen.subject"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+			</type>
+		</element>
+		<element id="Specimen.receivedTime">
+			<path value="Specimen.receivedTime"/>
+			<max value="0"/>
+		</element>
+		<element id="Specimen.parent">
+			<path value="Specimen.parent"/>
+			<max value="0"/>
+		</element>
+		<element id="Specimen.request">
+			<path value="Specimen.request"/>
+			<max value="0"/>
+		</element>
+		<element id="Specimen.collection.collector">
+			<path value="Specimen.collection.collector"/>
+			<max value="0"/>
+		</element>
+		<element id="Specimen.collection.quantity">
+			<path value="Specimen.collection.quantity"/>
+			<max value="0"/>
+		</element>
+		<element id="Specimen.collection.method.coding">
+			<path value="Specimen.collection.method.coding"/>
+				
+			<type>
+				<code value="Coding"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+			<binding>
+				<strength value="extensible"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/specimen-collection-method-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Specimen.collection.bodySite.coding">
+			<path value="Specimen.collection.bodySite.coding"/>
+				
+			<type>
+				<code value="Coding"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+			<binding>
+				<strength value="extensible"/>
+				<valueSet value="http://hl7.org/fhir/ValueSet/body-site"/>
+			</binding>
+		</element>
+		<element id="Specimen.processing">
+			<path value="Specimen.processing"/>
+			<max value="0"/>
+		</element>
+		<element id="Specimen.container">
+			<path value="Specimen.container"/>
+			<max value="0"/>
+		</element>
+	</differential>
 </StructureDefinition>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="organization-laboratory-uv-ips"/>
   <meta>
@@ -22,10 +22,6 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization"/>
   <derivation value="constraint"/>
   <differential>
-    <element id="Organization.active">
-      <path value="Organization.active"/>
-      <max value="0"/>
-    </element>
     <element id="Organization.type">
       <path value="Organization.type"/>
       <min value="1"/>
@@ -47,18 +43,6 @@
     <element id="Organization.name">
       <path value="Organization.name"/>
       <min value="1"/>
-    </element>
-    <element id="Organization.alias">
-      <path value="Organization.alias"/>
-      <max value="0"/>
-    </element>
-    <element id="Organization.partOf">
-      <path value="Organization.partOf"/>
-      <max value="0"/>
-    </element>
-    <element id="Organization.endpoint">
-      <path value="Organization.endpoint"/>
-      <max value="0"/>
     </element>
   </differential>
 </StructureDefinition>
