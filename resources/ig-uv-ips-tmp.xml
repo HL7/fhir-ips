@@ -1,0 +1,31 @@
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+	<id value="ig-uv-ips"/>
+	<url value="http://hl7.org/fhir/uv/ips/ImplementationGuide/ig-uv-ips"/>
+	<version value="0.1.0"/>
+	<name value="International Patient Summary Implementation Guide"/>
+	<status value="active"/>
+	<publisher value="Health Level Seven International"/>
+	<definition>
+		<package>
+			<name value="base"/>
+		</package>
+		<resource>
+			<exampleBoolean value="false"/>
+			<reference>
+				<reference value="StructureDefinition/device-observer-uv-ips"/>
+			</reference>
+		</resource>	
+		<page>
+			<nameUrl value="index.md"/>
+			<title value="International Patient Summary Home"/>
+			<generation value="markdown"/>
+			<!--
+			<page>
+				<nameReference value="_includes/toc.md"/>
+				<title value="International Patient Summary Table of Contents"/>
+				<generation value="markdown"/>
+			</page>
+			-->
+		</page>
+	</definition>
+</ImplementationGuide>

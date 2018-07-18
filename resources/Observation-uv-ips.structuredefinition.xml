@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="observation-uv-ips"/>
   <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-uv-ips"/>
@@ -20,6 +20,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
   <derivation value="constraint"/>
   <differential>
+  <element id="Observation">
+      <path value="Observation"/>
+      </element>
     <element id="Observation.identifier">
       <path value="Observation.identifier"/>
       <mustSupport value="true"/>

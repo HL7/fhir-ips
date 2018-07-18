@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+<StructureDefinition xmlns="http://hl7.org/fhir">
 	<id value="practitioner-uv-ips"/>
 	<meta>
 		<lastUpdated value="2018-02-15T16:53:57.291+01:00"/>
@@ -18,8 +18,8 @@
 	<differential>
 		<element id="Practitioner.name">
 			<path value="Practitioner.name"/>
+						<min value="1"/>
 			<mustSupport value="true"/>
-			<min value="1"/>
 		</element>
 		<element id="Practitioner.name.family">
 			<path value="Practitioner.name.family"/>

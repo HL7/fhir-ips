@@ -23,26 +23,28 @@
 	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Specimen"/>
 	<derivation value="constraint"/>
 	<differential>
+		<element id="Specimen">
+			<path value="Specimen"/>
+		</element>
 		<element id="Specimen.type">
 			<path value="Specimen.type"/>
 			<min value="1"/>
-				<mustSupport value="true"/>
+			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="SpecimenType"/>
-				</extension>			
+				</extension>
 				<strength value="extensible"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/specimen-type-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Specimen.type.coding">
 			<path value="Specimen.type.coding"/>
-			
 			<type>
 				<code value="Coding"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
 			</type>
-				<mustSupport value="true"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Specimen.subject">
 			<path value="Specimen.subject"/>
@@ -63,6 +65,9 @@
 			<path value="Specimen.request"/>
 			<max value="0"/>
 		</element>
+		<element id="Specimen.collection">
+			<path value="Specimen.collection"/>
+		</element>
 		<element id="Specimen.collection.collector">
 			<path value="Specimen.collection.collector"/>
 			<max value="0"/>
@@ -71,9 +76,12 @@
 			<path value="Specimen.collection.quantity"/>
 			<max value="0"/>
 		</element>
+		<element id="Specimen.collection.method">
+			<path value="Specimen.collection.method"/>
+			<mustSupport value="true"/>
+		</element>
 		<element id="Specimen.collection.method.coding">
 			<path value="Specimen.collection.method.coding"/>
-				
 			<type>
 				<code value="Coding"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
@@ -84,9 +92,12 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/specimen-collection-method-uv-ips"/>
 			</binding>
 		</element>
+				<element id="Specimen.collection.bodySite">
+			<path value="Specimen.collection.bodySite"/>
+			<mustSupport value="true"/>
+		</element>
 		<element id="Specimen.collection.bodySite.coding">
 			<path value="Specimen.collection.bodySite.coding"/>
-				
 			<type>
 				<code value="Coding"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="observation-pregnancy-edd-uv-ips"/>
   <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-pregnancy-edd-uv-ips"/>
@@ -13,6 +13,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
   <derivation value="constraint"/>
   <differential>
+  <element id="Observation">
+      <path value="Observation"/>
+      </element>
     <element id="Observation.code">
       <path value="Observation.code"/>
       <min value="1"/>

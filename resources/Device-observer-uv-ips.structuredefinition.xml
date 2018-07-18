@@ -4,7 +4,6 @@
   <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/device-observer-uv-ips"/>
   <name value="Device-observer-uv-ips"/>
   <status value="draft"/>
-  <date value="2018-03-21T15:07:42.626+01:00"/>
   <description value="This profile represents the constraints applied to the Device resource by the IPS project, which specifies an international patient summary based on the FHIR standard R4.;&#xD;&#xA;&#xD;&#xA;This profile describes a device that plays the role of observer."/>
   <purpose value="This profile constrains the representation of a device acting as observer in the international patient summary as specified by the IPS project."/>
   <fhirVersion value="3.4.0"/>
@@ -14,6 +13,9 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Device"/>
   <derivation value="constraint"/>
   <differential>
+     <element id="Device">
+      <path value="Device"/>
+      </element>
     <element id="Device.identifier">
       <path value="Device.identifier"/>
       <mustSupport value="true"/>
@@ -24,7 +26,6 @@
     </element>
     <element id="Device.model">
       <path value="Device.model"/>
-      <min value="1"/>
       <mustSupport value="true"/>
     </element>
   </differential>
