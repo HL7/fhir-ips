@@ -1,0 +1,99 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/observation-category",
+  "code" : "laboratory"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system http://hl7.org/fhir/observation-category"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/observation-category",
+      "concept" : [{
+        "code" : "laboratory",
+        "display" : "observation produced by laboratory"
+      },
+      {
+        "code" : "vital-signs",
+        "display" : "observation of vital-signs"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "Error unmarshalling resource: Unable to provide support for code system http://hl7.org/fhir/observation-category"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://hl7.org/fhir/observation-category",
+    "code" : "laboratory"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/observation-category",
+      "concept" : [{
+        "code" : "laboratory",
+        "display" : "observation produced by laboratory"
+      },
+      {
+        "code" : "vital-signs",
+        "display" : "observation of vital-signs"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system http://hl7.org/fhir/observation-category"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://hl7.org/fhir/observation-category",
+    "code" : "laboratory"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to provide support for code system http://hl7.org/fhir/observation-category"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/observation-category",
+      "concept" : [{
+        "code" : "laboratory",
+        "display" : "observation produced by laboratory"
+      },
+      {
+        "code" : "vital-signs",
+        "display" : "observation of vital-signs"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "Error unmarshalling resource: Unable to provide support for code system http://hl7.org/fhir/observation-category"
+}
+-------------------------------------------------------------------------------------

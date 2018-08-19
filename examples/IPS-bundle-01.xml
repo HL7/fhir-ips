@@ -1,5 +1,8 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <id value="IPS-examples-Bundle-01"/>
+    <meta> 
+        <lastUpdated value="2017-07-20T14:30:00+01:00"/> 
+    </meta> 
     <language value="en-GB"/>
     <identifier>
         <system value="urn:oid:2.16.724.4.8.10.200.10"/>
@@ -62,7 +65,7 @@
                 <event>
                     <code>
                         <coding>
-                            <system value="http://hl7.org/fhir/v3/ActClass"/>
+                            <system value="http://terminology.hl7.org/CodeSystem/v3-ActClass"/>
                             <code value="PCPR"/>
                         </coding>
                     </code>
@@ -407,8 +410,18 @@
                     <system value="urn:oid:1.2.3.999"/>
                     <value value="c87bf51c-e53c-4bfe-b8b7-aa62bdd93002"/>
                 </identifier>
-                <clinicalStatus value="active"/>
-                <verificationStatus value="confirmed"/>
+                <clinicalStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+                        <code value="active"/>
+                    </coding>
+                </clinicalStatus>
+                <verificationStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+                        <code value="confirmed"/>
+                    </coding>
+                </verificationStatus>
                 <category>
                     <coding>
                         <system value="http://loinc.org"/>
@@ -492,7 +505,7 @@
                     <doseAndRate>
                     <type>
                        <coding>
-                               <system value="http://hl7.org/fhir/dose-rate-type"/>
+                               <system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
                             <code value="ordered"/>
                             <display value="Ordered"/>
                                </coding>
@@ -609,8 +622,18 @@
                     <system value="urn:oid:1.2.3.999"/>
                     <value value="3a462598-009c-484a-965c-d6b24a821424"/>
                 </identifier>
-                <clinicalStatus value="active"/>
-                <verificationStatus value="confirmed"/>
+                <clinicalStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+                        <code value="active"/>
+                    </coding>
+                </clinicalStatus>
+                <verificationStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+                        <code value="confirmed"/>
+                    </coding>
+                </verificationStatus>
                 <type value="allergy"/>
                 <category value="medication"/>
                 <criticality value="high"/>
@@ -646,8 +669,18 @@
                     <system value="urn:oid:1.2.3.999"/>
                     <value value="66d4a8c7-9081-43e0-a63f-489c2ae6edd6"/>
                 </identifier>
-                <clinicalStatus value="remission"/>
-                <verificationStatus value="confirmed"/>
+                <clinicalStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+                        <code value="remission"/>
+                    </coding>
+                </clinicalStatus>
+                <verificationStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+                        <code value="confirmed"/>
+                    </coding>
+                </verificationStatus>
                 <category>
                     <coding>
                         <system value="http://loinc.org"/>
@@ -719,7 +752,7 @@
                 <status value="final"/>
                 <category>
                     <coding>
-                        <system value="http://hl7.org/fhir/observation-category"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
                         <code value="laboratory"/>
                     </coding>
                 </category>
@@ -755,7 +788,7 @@
                 <status value="final"/>
                 <category>
                     <coding>
-                        <system value="http://hl7.org/fhir/observation-category"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
                         <code value="laboratory"/>
                     </coding>
                 </category>
@@ -791,7 +824,7 @@
                 <status value="final"/>
                 <category>
                     <coding>
-                        <system value="http://hl7.org/fhir/observation-category"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
                         <code value="laboratory"/>
                     </coding>
                 </category>
@@ -827,7 +860,7 @@
                 <status value="final"/>
                 <category>
                     <coding>
-                        <system value="http://hl7.org/fhir/observation-category"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
                         <code value="laboratory"/>
                     </coding>
                 </category>
@@ -863,7 +896,7 @@
                 <status value="final"/>
                 <category>
                     <coding>
-                        <system value="http://hl7.org/fhir/observation-category"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
                         <code value="laboratory"/>
                     </coding>
                 </category>
@@ -903,7 +936,7 @@
                 <status value="final"/>
                 <category>
                     <coding>
-                        <system value="http://hl7.org/fhir/observation-category"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
                         <code value="laboratory"/>
                     </coding>
                 </category>
@@ -942,7 +975,7 @@
                 <status value="final"/>
                 <category>
                     <coding>
-                        <system value="http://hl7.org/fhir/observation-category"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
                         <code value="laboratory"/>
                     </coding>
                 </category>

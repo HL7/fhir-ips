@@ -203,7 +203,7 @@
       <path value="Composition.event.code"/>
       <fixedCodeableConcept>
         <coding>
-          <system value="http://hl7.org/fhir/v3/ActClass"/>
+          <system value="http://terminology.hl7.org/CodeSystem/v3-ActClass"/>
           <code value="PCPR"/>
         </coding>
       </fixedCodeableConcept>
@@ -281,7 +281,7 @@
       <slicing>
         <discriminator>
           <type value="profile"/>
-          <path value="reference.resolve()"/>
+          <path value="resolve()"/>
         </discriminator>
         <rules value="openAtEnd"/>
       </slicing>
@@ -375,7 +375,7 @@
         <discriminator>
           <type value="profile"/>
           
-          <path value="reference.resolve()"/>
+          <path value="resolve()"/>
         </discriminator>
         <rules value="openAtEnd"/>
       </slicing>
@@ -479,7 +479,7 @@
       <slicing>
         <discriminator>
           <type value="profile"/>
-          <path value="reference.resolve()"/>
+          <path value="resolve()"/>
         </discriminator>
         <rules value="openAtEnd"/>
       </slicing>
@@ -579,7 +579,7 @@
       <slicing>
         <discriminator>
           <type value="profile"/>
-          <path value="reference.resolve()"/>
+          <path value="resolve()"/>
         </discriminator>
         <rules value="openAtEnd"/>
       </slicing>
@@ -676,7 +676,7 @@
       <slicing>
         <discriminator>
           <type value="profile"/>
-          <path value="reference.resolve()"/>
+          <path value="resolve()"/>
         </discriminator>
         <rules value="open"/>
       </slicing>
@@ -776,7 +776,7 @@
       <slicing>
         <discriminator>
           <type value="profile"/>
-          <path value="reference.resolve()"/>
+          <path value="resolve()"/>
         </discriminator>
         <rules value="openAtEnd"/>
       </slicing>
@@ -862,7 +862,7 @@
       <slicing>
         <discriminator>
           <type value="profile"/>
-          <path value="reference.resolve()"/>
+          <path value="resolve()"/>
         </discriminator>
         <rules value="openAtEnd"/>
       </slicing>
@@ -965,7 +965,7 @@
       <slicing>
         <discriminator>
           <type value="profile"/>
-          <path value="reference.resolve()"/>
+          <path value="resolve()"/>
         </discriminator>
         <rules value="openAtEnd"/>
       </slicing>
@@ -1035,7 +1035,7 @@
       <slicing>
         <discriminator>
           <type value="profile"/>
-          <path value="reference.resolve()"/>
+          <path value="resolve()"/>
         </discriminator>
         <rules value="open"/>
       </slicing>
@@ -1157,7 +1157,7 @@
       <slicing>
         <discriminator>
           <type value="profile"/>
-          <path value="reference.resolve()"/>
+          <path value="resolve()"/>
         </discriminator>
         <rules value="openAtEnd"/>
       </slicing>
@@ -1232,7 +1232,7 @@
       <slicing>
         <discriminator>
           <type value="profile"/>
-          <path value="reference.resolve()"/>
+          <path value="resolve()"/>
         </discriminator>
         <rules value="openAtEnd"/>
       </slicing>

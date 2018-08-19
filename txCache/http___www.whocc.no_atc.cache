@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.whocc.no/atc"
+    }]
+  }
+}}
+####
+e: {
+  "error" : "Error unmarshalling resource: Unable to provide support for code system http://www.whocc.no/atc"
+}
+-------------------------------------------------------------------------------------
