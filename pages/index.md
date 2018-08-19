@@ -3,10 +3,6 @@ title: International Patient Summary Implementation Guide
 layout: default
 active: home
 ---
-
-{% include publish-box.html %}
-
-
 <!-- 
 ### Jekyll Site Variables
 
@@ -42,6 +38,14 @@ These are the site variables defined [here](http://wiki.hl7.org/index.php?title=
 
 - genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -  {% raw %} {{site.data.fhir.genDate}} {% endraw %} = {{site.data.fhir.genDate}}
 -->
+<blockquote class="stu-note">
+<p>
+This is the September 2018 Ballot Version <!-- Current officially released version --> of the {{site.data.fhir.igName}}, based on <a href="{{ site.data.fhir.path }}">FHIR Version {{ site.data.fhir.version }}</a>. See the <a href="#">Directory of published versions<img src="external.png"/></a>.  This specification is currently undergoing ballot and connectathon testing.  It is subject to change, which may be significant, as part of that process.
+</p>
+<p>
+Feedback is welcome and may be submitted through the <a href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">FHIR gForge tracker</a> indicating "International Patient Summary" as the specification.  If balloting on this IG, please, if possible, submit your comments via the tracker and then reference the tracker ids in your ballot submission spreadsheet.
+</p>
+</blockquote>
 
 # Introduction
 
@@ -57,7 +61,7 @@ An International Patient Summary (IPS) document is an electronic health record e
 
 ## Purpose
 
-The goal of this Implementation Guide is to identify the required clinical data, vocabulary and value sets for an international patient summary. The international patient summary is specified either as templated document using HL7 CDA R2, either as HL7 FHIR composition (described in this guide). The primary use case is to provide support for cross-border or cross-juridictional emergency and unplanned care.
+The goal of this Implementation Guide is to identify the required clinical data, vocabulary and value sets for an international patient summary. The international patient summary is specified either as a templated document using HL7 CDA R2 (see the IPS Wiki [here](http://international-patient-summary.net/mediawiki/index.php?title=IPS_implementationguide_1) or as an HL7 FHIR Composition (as described in this implementation guide). The primary use case is to provide support for cross-border or cross-juridictional emergency and unplanned care.
 
 This specification aims to support:
 
@@ -69,6 +73,12 @@ This specification aims to support:
 ## Project Background
 
 See further details on the project background in the IPS Wiki <a href="http://international-patient-summary.net/mediawiki/index.php?title=IPS_Introduction_1#Project_Background">here</a>.
+
+<blockquote class="stu-note">
+<p>
+Note for balloters: The link to the IPS Wiki is intended to provide additional background information that may be useful to readers, but the content on the Wiki pages is not included in the ballot materials and is not subject to ballot comments.
+</p>
+</blockquote>
 
 ## Project Scope
 
