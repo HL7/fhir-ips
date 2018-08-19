@@ -88,7 +88,7 @@ By design, the IPS dataset is a "minimal and non-exhaustive patient summary data
 
 Two options were therefore available for the IPS profiles:
 * constraining the resources to this dataset
-* flag the items that has to be supported to comply with the minimal data set, unconstraining all the others.
+* flag the items that have to be supported to comply with the minimal data set, unconstraining all the others.
  
 The second has been finally chosen for the following reasons:
 * facilitate the reuse of the IPS profiles in sibiling use cases.
