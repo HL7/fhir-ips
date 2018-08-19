@@ -19,7 +19,7 @@ active: profiles
 The <b>International Patient Summary</b> is a document.
 All the profiles specified by this guide are used by the <b>International Patient Summary Composition</b>.
 
-The <b>Bundle</b> used for the transport or the persitence SHALL include all the resources that are referenced directly or indirectly by a International Patient Summary Composition.
+The <b>Bundle</b> used for the transport or the persitence SHALL include all the resources that are referenced directly or indirectly by an International Patient Summary Composition.
 
 The IPS includes the following sections, (R) denotes a required section (i.e. must be present in an IPS), (S) denotes a recommended section, the others are truely optional. 
 For each section the profiles that have been defined have been listed:
@@ -45,15 +45,15 @@ For each section the profiles that have been defined have been listed:
     * Observation-laboratory-uv-ips
     * Observation-member-laboratory-uv-ips
   * Radiology results
-    * Observation-imaging-uv-ips.structuredefinition
-    * Observation-member-imaging-uv-ips.structuredefinition
-    * ImagingStudy-uv-ips.structuredefinition
-    * Organization-observation-uv-ips.structuredefinition
-    * Device-observer-uv-ips.structuredefinition
-    * Practitioner-observation-uv-ips.structuredefinition
+    * Observation-imaging-uv-ips
+    * Observation-member-imaging-uv-ips
+    * ImagingStudy-uv-ips
+    * Organization-observation-uv-ips
+    * Device-observer-uv-ips
+    * Practitioner-observation-uv-ips
   * Pathology results
-    * Observation-member-pathology-uv-ips.structuredefinition
-    * Observation-pathology-uv-ips.structuredefinition
+    * Observation-member-pathology-uv-ips
+    * Observation-pathology-uv-ips
   * Other results 
     * Observation-uv-ips
 * Past history of illnesses
