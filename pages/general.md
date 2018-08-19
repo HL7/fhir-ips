@@ -50,7 +50,7 @@ The following sections are recommended (not required), and for these sections in
 
 All of the other sections are expected to be omitted in the case of absence of information.
 
-### Translation of designations and Narratives
+## Translation of designations and Narratives
 
 The functional requirement of supporting the translation of the narratives and of the designations has been addressed in this guide extending:
 * the section text attribute (narrative-uv-ips)
