@@ -36,17 +36,19 @@ This specification (in common with the IPS CDA R2 specification) adopts <a href=
 
 ## Representing "known absent" and "not known"
 
-In line with the approach followed for the IPS CDA implementation Guide, we enforce by design that the “unknown” or “no information” expressions are explicity asserted in the resource referred in the entries and not by using the emptyReason attribute in the section.
+In line with the approach followed for the IPS CDA implementation Guide, we enforce by design that for required sections the expressions of “unknown” or “no information” are explicity asserted in the resource referred to in the entries and not by using the emptyReason attribute in the section.
 
-This rule is applied for the following sections: 
+This rule is applied for the following required sections: 
 * Allergies and Intolerances
 * Medication Summary
 * Problems
+
+The following sections are recommended (not required), and for these sections in the case of “unknown” or “no information” this may either be asserted explicity (as above) or the section itself may be omitted:
 * History of Procedures
 * Medical devices
 * Immunizations
 
-All the other sections are expected to be omitted in case the absence of information.
+All of the other sections are expected to be omitted in the case of absence of information.
 
 ### Translation of designations and Narratives
 
