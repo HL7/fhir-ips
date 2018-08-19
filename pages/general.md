@@ -60,7 +60,7 @@ A general introduction to the problem of cross-jurisdictional identification of 
 
 As for the CDA implementation guide, this guide describes how the relevant IDMP identifiers and attributes, namely the Pharmaceutical Product Identifiers (PhPIDs), the Medicinal Product Identifier (MPID), and the Medicinal Product Package Identifier (PCID) are represented in the IPS.
 
-The solution porposed for the FHIR IPS is slightly different from that adopted in the CDA and follows the current indications of the FHIR community: all the relevant product codes are represented in fact as one of the possible coding of the product codeableConcept and not mapped inot possible distcit attributes/resources. The same approach is followed for the vaccines.
+The solution proposed for the FHIR IPS is slightly different from that adopted in the CDA and follows the current indications of the FHIR community: all the relevant product codes are represented in fact as one of the possible Codings of the product CodeableConcept and are not mapped into distinct attributes/resources (which is a possible approach). The same approach is followed for the vaccines.
 
 ## Provenance
 
