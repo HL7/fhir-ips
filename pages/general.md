@@ -66,7 +66,7 @@ The solution proposed for the FHIR IPS is slightly different from that adopted i
 
 ## Provenance
 
-This guide follows the same principles described in the [IPS CDA implementation guide](http://international-patient-summary.net/mediawiki/index.php?title=IPS_Design_conventions_and_principles_1#Provenance)
+This guide follows the principles described in the [IPS CDA implementation guide](http://international-patient-summary.net/mediawiki/index.php?title=IPS_Design_conventions_and_principles_1#Provenance)
 
 In that sense it allow to determine whether the IPS document is constructed by a human or an automated process, regardless of whether the IPS contains some content of both kinds.
 
@@ -74,7 +74,7 @@ The distinction between the two types of IPS, human-curated or software-assemble
 
 In the case of a software-assembled IPS that is then verified by a human, the document provenance type shall be "software-assembled" and the author shall be the device or system that constructed the IPS document, but an additional attester identity shall name the human who performed this check.
 
-Note: Discussions with the EHR work group suggest that a possible future project should be an IPS functional profile, once there is greater clarity and operational experience of using the IPS. 
+Note: Discussions with the EHR work group suggest that a possible future project should be an IPS functional profile, once there is greater clarity and operational experience with usage of the IPS. 
 
 ## Representation of Names
 This specification requires that any Person Name is represented including at least the given and family components.
