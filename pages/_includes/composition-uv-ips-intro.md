@@ -37,7 +37,7 @@ And the following text only sections:
 * Plan of care
 * Advance Directives
 
-(Vital Signs has not yet included)
+(Vital Signs is not yet included)
 
 # Sections description
 
@@ -98,7 +98,6 @@ The History of Past Illness section contains a description of the conditions the
 The pregnancy status and history is comprised of 
 * an entry as an Observation of the pregnancy status, and optionally, a member Observation of the Estimated Delivery Date
 * an entry as an Observation of the pregnancy history (summary)
-* 
 
 ## Social History
 The social history is as of now comprised of 
