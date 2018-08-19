@@ -17,7 +17,7 @@ The composition contains references to
 * the subject
 * the author
 * the attester
-* the custiondian
+* the custodian
 * the IPS sections.
 
 The IPS sections are summarized in the following list. (R) denotes a required section (i.e. must be present in an IPS), (S) denotes a recommended section, the others are truely optional. 
