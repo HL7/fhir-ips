@@ -37,7 +37,7 @@ And the following text only sections:
 * Plan of care
 * Advance Directives
 
-(Vital Signs is not yet included)
+(Vital Signs section is not yet included)
 
 # Sections description
 

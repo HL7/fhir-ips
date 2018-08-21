@@ -76,7 +76,7 @@ See further details on the project background in the IPS Wiki <a href="http://in
 
 <blockquote class="stu-note">
 <p>
-Note for balloters: The link to the IPS Wiki is intended to provide additional background information that may be useful to readers, but the content on the Wiki pages is not included in the ballot materials and is not subject to ballot comments.
+Note for balloters: The link to the IPS Wiki is intended to provide additional background information that may be useful to readers, but the content on the Wiki pages is not included in the ballot and is not subject to ballot comments.
 </p>
 </blockquote>
 
