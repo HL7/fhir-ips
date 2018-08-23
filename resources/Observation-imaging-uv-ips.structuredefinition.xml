@@ -51,10 +51,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Observation.extension:partOf.valueReference:valueReference.identifier">
-			<path value="Observation.extension.valueReference.identifier"/>
-			<max value="0"/>
-		</element>
 		<element id="Observation.category">
 			<path value="Observation.category"/>
 			<min value="1"/>
@@ -103,10 +99,6 @@
 			<path value="Observation.subject.reference"/>
 			<label value="Patient ID"/>
 		</element>
-		<element id="Observation.subject.identifier">
-			<path value="Observation.subject.identifier"/>
-			<max value="0"/>
-		</element>
 		<element id="Observation.effective[x]">
 			<path value="Observation.effective[x]"/>
 			<label value="Date/Time of the Imaging Procedure"/>
@@ -122,10 +114,6 @@
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-observation-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.performer.identifier">
-			<path value="Observation.performer.identifier"/>
-			<max value="0"/>
 		</element>
 		<element id="Observation.valueString:valueString">
 			<path value="Observation.valueString"/>
@@ -160,10 +148,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Observation.device.identifier">
-			<path value="Observation.device.identifier"/>
-			<max value="0"/>
-		</element>
 		<element id="Observation.hasMember">
 			<path value="Observation.hasMember"/>
 			<type>
@@ -181,10 +165,6 @@
 		<element id="Observation.hasMember.reference">
 			<path value="Observation.hasMember.reference"/>
 			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.hasMember.identifier">
-			<path value="Observation.hasMember.identifier"/>
-			<max value="0"/>
 		</element>
 		<element id="Observation.component">
 			<path value="Observation.component"/>
