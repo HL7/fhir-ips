@@ -21,30 +21,6 @@ v: {
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
-  "id" : "quantityUnits",
-  "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
-  },
-  "url" : "http://hl7.org/fhir/uv/ips/ValueSet/quantityUnits",
-  "identifier" : [{
-    "use" : "official",
-    "system" : "http://art-decor.org/ns/oids/vs",
-    "value" : "2.16.840.1.113883.11.22.28"
-  }],
-  "version" : "0.1.0",
-  "name" : "IPSQuantityUnits",
-  "title" : "Quantity Units",
-  "status" : "draft",
-  "experimental" : false,
-  "date" : "2018-08-15T11:55:09-05:00",
-  "jurisdiction" : [{
-    "coding" : [{
-      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
-      "code" : "001",
-      "display" : "World"
-    }]
-  }],
-  "immutable" : false,
   "expansion" : {
     "extension" : [{
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
@@ -54,13 +30,9 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:fde633b4-d4f2-4235-b09a-d681a55c9d6c",
-    "timestamp" : "2018-08-15T17:30:56.409Z",
+    "identifier" : "urn:uuid:26da9f19-92ca-4425-b114-1ff66007455d",
+    "timestamp" : "2018-08-28T16:21:37.815Z",
     "parameter" : [{
-      "name" : "expansion-source",
-      "valueString" : "ValueSet/quantityUnits"
-    },
-    {
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
