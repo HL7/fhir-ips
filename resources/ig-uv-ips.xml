@@ -6,15 +6,17 @@
 	<status value="active"/>
 	<publisher value="Health Level Seven International"/>
 	<definition>
-		<package>
+		<grouping>
 			<name value="base"/>
-		</package>
+		</grouping>
+		<!-- commenting out temporarily due to error: Unable to determine type for  /Users/rhausam/git-repo/fhir-ips/examples/IPS-bundle-01: com.google.gson.JsonPrimitive cannot be cast to com.google.gson.JsonObject
 		<resource>
 			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/composition-uv-ips"/>
 			<reference>
 				<reference value="Bundle/IPS-examples-Bundle-01"/>
 			</reference>
 		</resource>
+		-->
 		<resource>
 			<exampleBoolean value="false"/>
 			<reference>
