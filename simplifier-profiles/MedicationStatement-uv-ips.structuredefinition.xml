@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <meta>
     <lastUpdated value="2018-02-21T00:47:03.873+01:00" />
@@ -3190,7 +3190,7 @@
       </mapping>
       <mapping>
         <identity value="rim" />
-        <map value=".participation[typeCode=INF].role[classCode=PAT, or codes for Practioner or Related Person (if PAT is the informer, then syntax for self-reported =true)" />
+        <map value=".participation[typeCode=INF].role[classCode=PAT, or codes for practitioner or Related Person (if PAT is the informer, then syntax for self-reported =true)" />
       </mapping>
       <mapping>
         <identity value="w5" />

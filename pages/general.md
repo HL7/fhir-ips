@@ -68,7 +68,7 @@ The solution proposed for the FHIR IPS is slightly different from that adopted i
 
 This guide follows the principles described in the [IPS CDA implementation guide](http://international-patient-summary.net/mediawiki/index.php?title=IPS_Design_conventions_and_principles_1#Provenance)
 
-In that sense it allow to determine whether the IPS document is constructed by a human or an automated process, regardless of whether the IPS contains some content of both kinds.
+In that sense it allows to determine whether the IPS document is constructed by a human or an automated process, regardless of whether the IPS contains some content of both kinds.
 
 The distinction between the two types of IPS, human-curated or software-assembled, is based on the authors recorded in the composition: the author shall be a human (e.g. Practitioner), if the IPS provenance type is "human-curated", or a device if the IPS provenance type is "software-assembled".
 

@@ -19,9 +19,9 @@ active: profiles
 The <b>International Patient Summary</b> is a document.
 All the profiles specified by this guide are used by the <b>International Patient Summary Composition</b>.
 
-The <b>Bundle</b> used for the transport or the persitence SHALL include all the resources that are referenced directly or indirectly by an International Patient Summary Composition.
+The <b>Bundle</b> used for the transport or the persistence SHALL include all the resources that are referenced directly or indirectly by an International Patient Summary Composition.
 
-The IPS includes the following sections, (R) denotes a required section (i.e. must be present in an IPS), (S) denotes a recommended section, the others are truely optional. 
+The IPS includes the following sections, (R) denotes a required section (i.e. must be present in an IPS), (S) denotes a recommended section, the others are truly optional. 
 For each section the profiles that have been defined have been listed:
 * Medication Summary (R)
   * Medication-uv-ips
