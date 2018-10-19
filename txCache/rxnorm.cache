@@ -1,4 +1,5 @@
 -------------------------------------------------------------------------------------
+
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -40,6 +41,7 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -81,6 +83,7 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -122,6 +125,7 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -163,6 +167,7 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -204,6 +209,7 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -245,6 +251,7 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -282,6 +289,7 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -319,6 +327,7 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -350,6 +359,129 @@ e: {
       "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
       "code" : "1152901",
       "display" : "Amoxicillin Pill"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept" : [{
+        "code" : "19711",
+        "display" : "Amoxicillin / Clavulanate"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:e16015b8-057f-47c6-b51a-53b660cac3a0",
+    "timestamp" : "2018-10-19T15:53:23.349Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://www.nlm.nih.gov/research/umls/rxnorm?version=??"
+    }],
+    "contains" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "19711",
+      "display" : "Amoxicillin / Clavulanate"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept" : [{
+        "code" : "1152874",
+        "display" : "Amoxicillin / Clavulanate Oral Product"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:1b127f13-7349-4912-a039-8eb92b8fc0ab",
+    "timestamp" : "2018-10-19T15:53:23.677Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://www.nlm.nih.gov/research/umls/rxnorm?version=??"
+    }],
+    "contains" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "1152874",
+      "display" : "Amoxicillin / Clavulanate Oral Product"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept" : [{
+        "code" : "392259005",
+        "display" : "Amoxicillin 875 mg and clavulanate potassium 125 mg oral tablet"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:4ee053d7-9f09-4178-8628-43ad2445811a",
+    "timestamp" : "2018-10-19T15:53:24.005Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://www.nlm.nih.gov/research/umls/rxnorm?version=??"
+    }],
+    "contains" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "392259005",
+      "display" : "Amoxicillin 875 mg and clavulanate potassium 125 mg oral tablet"
     }]
   }
 },

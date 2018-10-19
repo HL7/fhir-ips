@@ -36,14 +36,14 @@ This specification (in common with the IPS CDA R2 specification) adopts <a href=
 
 ## Representing "known absent" and "not known"
 
-In line with the approach followed for the IPS CDA implementation Guide, we enforce by design that for required sections the expressions of “unknown” or “no information” are explicity asserted in the resource referred to in the entries and not by using the emptyReason attribute in the section.
+In line with the approach followed for the IPS CDA implementation Guide, we enforce by design that for required sections the expressions of “unknown” or “no information” are explicitly asserted in the resource referred to in the entries and not by using the emptyReason attribute in the section.
 
 This rule is applied for the following required sections: 
 * Allergies and Intolerances
 * Medication Summary
 * Problems
 
-The following sections are recommended (not required), and for these sections in the case of “unknown” or “no information” this may either be asserted explicity (as above) or the section itself may be omitted:
+The following sections are recommended (not required), and for these sections in the case of “unknown” or “no information” this may either be asserted explicitly (as above) or the section itself may be omitted:
 * History of Procedures
 * Medical devices
 * Immunizations
@@ -91,7 +91,7 @@ Two options were therefore available for the IPS profiles:
 * flag the items that have to be supported to comply with the minimal data set, unconstraining all the others.
  
 The second has been finally chosen for the following reasons:
-* facilitate the reuse of the IPS profiles in sibiling use cases.
+* facilitate the reuse of the IPS profiles in sibling  use cases.
 * enable a progressive access to additional information beyond the minimal one, if available and relevant for the care provisioning.
 
 The items that are part of this minimal set have been marked with the mustSupport attribute.

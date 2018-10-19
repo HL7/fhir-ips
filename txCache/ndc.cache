@@ -1,4 +1,5 @@
 -------------------------------------------------------------------------------------
+
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -16,6 +17,7 @@ e: {
   "error" : "Error from server: Unable to provide support for code system http://hl7.org/fhir/sid/ndc"
 }
 -------------------------------------------------------------------------------------
+
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -23,6 +25,40 @@ e: {
       "system" : "http://hl7.org/fhir/sid/ndc",
       "concept" : [{
         "code" : "50436-3129'",
+        "display" : "Amoxicillin and Clavulanate Potassium"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "Error from server: Unable to provide support for code system http://hl7.org/fhir/sid/ndc"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/sid/ndc",
+      "concept" : [{
+        "code" : "50436-3129-1",
+        "display" : "Amoxicillin and Clavulanate Potassium 875 mg/1, 125 mg/1 20 TABLET, FILM COATED in 1 BOTTLE"
+      }]
+    }]
+  }
+}}
+####
+e: {
+  "error" : "Error from server: Unable to provide support for code system http://hl7.org/fhir/sid/ndc"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/sid/ndc",
+      "concept" : [{
+        "code" : "50436-3129",
         "display" : "Amoxicillin and Clavulanate Potassium"
       }]
     }]

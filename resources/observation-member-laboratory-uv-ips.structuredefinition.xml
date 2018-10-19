@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="observation-member-laboratory-uv-ips"/>
   <meta>
@@ -137,6 +137,7 @@
         <code value="Quantity"/>
         <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/quantity-uv-ips"/>
       </type>
+          <mustSupport value="true"/>
       <binding>
         <strength value="extensible"/>
         <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/lab-result-coded-value-uv-ips"/>
