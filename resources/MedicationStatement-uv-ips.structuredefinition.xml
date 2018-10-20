@@ -41,15 +41,6 @@
 				<rules value="open"/>
 			</slicing>
 		</element>
-		<element id="MedicationStatement.extension:dateAbsentReason">
-			<path value="MedicationStatement.extension"/>
-			<sliceName value="dateAbsentReason"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
 		<element id="MedicationStatement.partOf">
 			<path value="MedicationStatement.partOf"/>
 		</element>
@@ -90,17 +81,28 @@
 		</element>
 		<element id="MedicationStatement.effective[x]">
 			<path value="MedicationStatement.effective[x]"/>
+			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
-
+		<!-- builder java exception returned when this element is added 
+		<element id="MedicationStatement.effective[x].extension:dateAbsentReason">
+			<path value="MedicationStatement.effective[x].extension"/>
+			<sliceName value="dateAbsentReason"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+-->
+	
 		<element id="MedicationStatement.subject">
 			<path value="MedicationStatement.subject"/>
-		
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
 			</type>
-				<mustSupport value="true"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="MedicationStatement.informationSource">
 			<path value="MedicationStatement.informationSource"/>
@@ -178,16 +180,6 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
 			</type>
-		</element>
-		<element id="MedicationStatement.dosage.site.coding">
-			<path value="MedicationStatement.dosage.site.coding"/>
-			<binding>
-				<strength value="preferred"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
-			</binding>
-		</element>
-		<element id="MedicationStatement.dosage.site.coding.system">
-			<path value="MedicationStatement.dosage.site.coding.system"/>
 			<binding>
 				<strength value="preferred"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
@@ -200,68 +192,11 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
-		</element>
-		<element id="MedicationStatement.dosage.route.coding">
-			<path value="MedicationStatement.dosage.route.coding"/>
 			<binding>
-				<strength value="preferred"/>
+				<strength value="required"/>
 				<description value="EDQM Standards Terms"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration"/>
 			</binding>
-		</element>
-		<element id="MedicationStatement.dosage.route.coding.system">
-			<path value="MedicationStatement.dosage.route.coding.system"/>
-			<binding>
-				<strength value="preferred"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration"/>
-			</binding>
-		</element>
-		<element id="MedicationStatement.dosage.method">
-			<path value="MedicationStatement.dosage.method"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
-			</type>
-		</element>
-		<element id="MedicationStatement.dosage.maxDosePerPeriod">
-			<path value="MedicationStatement.dosage.maxDosePerPeriod"/>
-			<max value="0"/>
-		</element>
-		<element id="MedicationStatement.dosage.maxDosePerAdministration">
-			<path value="MedicationStatement.dosage.maxDosePerAdministration"/>
-			<max value="0"/>
-			<type>
-				<code value="Quantity"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/quantity-uv-ips"/>
-			</type>
-		</element>
-		<element id="MedicationStatement.dosage.maxDosePerAdministration.comparator">
-			<path value="MedicationStatement.dosage.maxDosePerAdministration.comparator"/>
-			<max value="0"/>
-		</element>
-		<element id="MedicationStatement.dosage.maxDosePerLifetime">
-			<path value="MedicationStatement.dosage.maxDosePerLifetime"/>
-			<max value="0"/>
-			<type>
-				<code value="Quantity"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/quantity-uv-ips"/>
-			</type>
-		</element>
-		<element id="MedicationStatement.dosage.maxDosePerLifetime.comparator">
-			<path value="MedicationStatement.dosage.maxDosePerLifetime.comparator"/>
-			<max value="0"/>
-		</element>
-		<element id="MedicationStatement.dosage.doseAndRate">
-			<path value="MedicationStatement.dosage.doseAndRate"/>
-		</element>
-		<element id="MedicationStatement.dosage.doseAndRate.rateQuantity:rateQuantity">
-			<path value="MedicationStatement.dosage.doseAndRate.rateQuantity"/>
-			<sliceName value="rateQuantity"/>
-			<max value="0"/>
-			<type>
-				<code value="Quantity"/>
-				<profile value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity"/>
-			</type>
 		</element>
 	</differential>
 </StructureDefinition>
