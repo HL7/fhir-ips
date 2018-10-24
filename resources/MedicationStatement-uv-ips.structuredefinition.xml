@@ -6,7 +6,7 @@
 	</meta>
 	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/medicationstatement-uv-ips"/>
 	<name value="MedicationStatement-uv-ips"/>
-	<title value="Medication Statement"/>
+	<title value="Medication Statement (IPS)"/>
 	<status value="draft"/>
 	<date value="2018-02-14T22:57:06.512+01:00"/>
 	<publisher value="HL7 International"/>
@@ -100,8 +100,13 @@
 			<path value="MedicationStatement.subject"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
+		</element>
+    		<element id="MedicationStatement.subject.reference">
+			<path value="MedicationStatement.subject.reference"/>
+      <min value="1"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="MedicationStatement.informationSource">

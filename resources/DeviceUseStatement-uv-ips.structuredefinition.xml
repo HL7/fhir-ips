@@ -36,10 +36,13 @@
       </type>
       <mustSupport value="true"/>
     </element>
-    <element id="DeviceUseStatement.subject.identifier">
-      <path value="DeviceUseStatement.subject.identifier"/>
-      <max value="0"/>
-    </element>
+    
+    <element id="DeviceUseStatement.subject.reference">
+    <path value="DeviceUseStatement.subject.reference"/>
+      <min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+    
     <element id="DeviceUseStatement.timing[x]">
       <path value="DeviceUseStatement.timing[x]"/>
       <min value="1"/>
@@ -48,10 +51,6 @@
     <element id="DeviceUseStatement.source">
       <path value="DeviceUseStatement.source"/>
     </element>
-    <element id="DeviceUseStatement.source.identifier">
-      <path value="DeviceUseStatement.source.identifier"/>
-      <max value="0"/>
-    </element>
     <element id="DeviceUseStatement.device">
       <path value="DeviceUseStatement.device"/>
       <type>
@@ -59,10 +58,6 @@
         <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/device-uv-ips"/>
       </type>
       <mustSupport value="true"/>
-    </element>
-    <element id="DeviceUseStatement.device.identifier">
-      <path value="DeviceUseStatement.device.identifier"/>
-      <max value="0"/>
     </element>
     <element id="DeviceUseStatement.bodySite">
       <path value="DeviceUseStatement.bodySite"/>

@@ -46,8 +46,13 @@
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips"/>
 			</type>
+		</element>
+    		<element id="Media.subject.reference">
+			<path value="Media.subject.reference"/>
+      <min value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Media.subject.identifier">
 			<path value="Media.subject.identifier"/>

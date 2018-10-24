@@ -37,10 +37,11 @@
       </type>
       <mustSupport value="true"/>
     </element>
-    <element id="ImagingStudy.subject.identifier">
-      <path value="ImagingStudy.subject.identifier"/>
-      <max value="0"/>
-    </element>
+    		<element id="ImagingStudy.subject.reference">
+			<path value="ImagingStudy.subject.reference"/>
+      <min value="1"/>
+			<mustSupport value="true"/>
+		</element>
     <element id="ImagingStudy.started">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
         <valueString value="dicom=http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.2.html#sect_C.7.2.1"/>
@@ -89,7 +90,7 @@
     </element>
     <element id="ImagingStudy.series.instance.sopClass">
       <path value="ImagingStudy.series.instance.sopClass"/>
-      <mustSupport value="false"/>
+      <mustSupport value="true"/>
     </element>
   </differential>
 </StructureDefinition>

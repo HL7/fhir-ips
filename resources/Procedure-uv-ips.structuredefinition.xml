@@ -114,14 +114,15 @@
       <definition value="The person on which the procedure was performed."/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips"/>
       </type>
       <mustSupport value="true"/>
     </element>
-    <element id="Procedure.subject.identifier">
-      <path value="Procedure.subject.identifier"/>
-      <max value="0"/>
-    </element>
+		<element id="Procedure.subject.reference">
+			<path value="Procedure.subject.reference"/>
+      <min value="1"/>
+			<mustSupport value="true"/>
+		</element>
     <element id="Procedure.performed[x]">
       <path value="Procedure.performed[x]"/>
       <min value="1"/>

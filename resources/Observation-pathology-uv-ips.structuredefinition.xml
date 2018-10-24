@@ -76,19 +76,16 @@
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips"/>
         <aggregation value="referenced"/>
       </type>
       <mustSupport value="true"/>
     </element>
-    <element id="Observation.subject.identifier">
-      <path value="Observation.subject.identifier"/>
-      <max value="0"/>
-    </element>
-    <element id="Observation.encounter.identifier">
-      <path value="Observation.encounter.identifier"/>
-      <max value="0"/>
-    </element>
+    <element id="Observation.subject.reference">
+			<path value="Observation.subject.reference"/>
+      <min value="1"/>
+			<mustSupport value="true"/>
+		</element>
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]"/>
       <min value="1"/>

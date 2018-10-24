@@ -330,10 +330,15 @@
 		</element>
 		<element id="Immunization.patient">
 			<path value="Immunization.patient"/>
+      <type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips"/>
+			</type>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Immunization.patient.reference">
 			<path value="Immunization.patient.reference"/>
+      <min value="1"/>
 			<mustSupport value="true"/>
 		</element>
 		<!--

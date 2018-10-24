@@ -145,7 +145,16 @@
 		</element>
 		<element id="Device.patient">
 			<path value="Device.patient"/>
+      <type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips"/>
+			</type>
 			<min value="1"/>
+		</element>
+    <element id="Device.patient.reference">
+			<path value="Device.patient.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
 		</element>
 	</differential>
 </StructureDefinition>

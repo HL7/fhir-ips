@@ -50,8 +50,13 @@
 			<path value="Specimen.subject"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips"/>
 			</type>
+		</element>
+    		<element id="Specimen.subject.reference">
+			<path value="Specimen.subject.reference"/>
+      <min value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Specimen.receivedTime">
 			<path value="Specimen.receivedTime"/>
