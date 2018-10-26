@@ -2,7 +2,7 @@
 
 {{site.data.structuredefinitions.composition-uv-ips.description}}
 
-#### Conformance resource variables defined [here](http://wiki.hl7.org/index.php?title=IG_Publisher_Documentation#Jekyll)
+
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
