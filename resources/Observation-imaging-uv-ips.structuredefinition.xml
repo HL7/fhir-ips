@@ -23,22 +23,16 @@
 		<element id="Observation">
 			<path value="Observation"/>
 		</element>
-		<element id="Observation.extension">
-			<path value="Observation.extension"/>
-			<slicing>
-				<discriminator>
-					<type value="value"/>
-					<path value="url"/>
-				</discriminator>
-				<rules value="open"/>
-			</slicing>
-		</element>
 		<element id="Observation.extension:partOf">
 			<path value="Observation.extension"/>
 			<sliceName value="partOf"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/StructureDefinition/event-partOf"/>
+        
+         <!--
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/event-partOf-uv-ips"/>
+        -->
+        <profile value="http://hl7.org/fhir/StructureDefinition/event-partOf"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>

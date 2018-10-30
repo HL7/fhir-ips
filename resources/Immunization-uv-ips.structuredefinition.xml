@@ -6,7 +6,7 @@
 	</meta>
 	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/immunization-uv-ips"/>
 	<name value="Immunization-uv-ips"/>
-	<title value="Immunization"/>
+	<title value="Immunization (IPS)"/>
 	<status value="draft"/>
 	<date value="2018-03-06"/>
 	<description value="This profile represents the constraints applied to the Immunization resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an immunization is represented in the patient summary as an instance of an Immunization resource constrained by this profile.&#xD;&#xA;&#xD;&#xA;It describes the event of a patient being administered a vaccination or a record of a vaccination as reported by a patient, a clinician or another party.&#xD;&#xA;&#xD;&#xA; Information about that statement (e.g. who did the assertion, when was done) are optionally provided by the statement-uv-ips extension"/>
@@ -22,16 +22,6 @@
 			<path value="Immunization"/>
 			<definition value="Describes the event of a patient being administered a vaccination or a record of a vaccination as reported by a patient, a clinician or another party and may include vaccine reaction information and what vaccination protocol was followed.&#xD;&#xA;&#xD;&#xA;If it describes a reported information the details about the assertion (e.g. who did the assertion, when was done) can be optionally documented in the statement extension."/>
 		</element>
-		<element id="Immunization.extension">
-			<path value="Immunization.extension"/>
-			<slicing>
-				<discriminator>
-					<type value="value"/>
-					<path value="url"/>
-				</discriminator>
-				<rules value="open"/>
-			</slicing>
-		</element>
 		<element id="Immunization.extension:statementDetails">
 			<path value="Immunization.extension"/>
 			<sliceName value="statementDetails"/>
@@ -43,11 +33,17 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/statement-uv-ips"/>
 			</type>
 		</element>
+    
+    <!-- the way the exclsuion is represented is not clear to users, is worth to ignore this element in the profile
+    
 		<element id="Immunization.extension:statementDetails.extension:statementNote">
 			<path value="Immunization.extension.extension"/>
 			<sliceName value="statementNote"/>
 			<max value="0"/>
 		</element>
+    
+    END -->
+    
 		<element id="Immunization.status">
 			<path value="Immunization.status"/>
 			<mustSupport value="true"/>

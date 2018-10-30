@@ -61,7 +61,7 @@ An International Patient Summary (IPS) document is an electronic health record e
 
 ## Purpose
 
-The goal of this Implementation Guide is to identify the required clinical data, vocabulary and value sets for an international patient summary. The international patient summary is specified either as a templated document using HL7 CDA R2 (see the IPS Wiki [here](http://international-patient-summary.net/mediawiki/index.php?title=IPS_implementationguide_1) or as an HL7 FHIR Composition (as described in this implementation guide). The primary use case is to provide support for cross-border or cross-juridictional emergency and unplanned care.
+The goal of this Implementation Guide is to identify the required clinical data, vocabulary and value sets for an international patient summary. The international patient summary is specified either as a templated document using HL7 CDA R2 (see the IPS Wiki [here](http://international-patient-summary.net/mediawiki/index.php?title=IPS_implementationguide_1) or as an HL7 FHIR Composition (as described in this implementation guide). The primary use case is to provide support for cross-border or cross-jurisdictional emergency and unplanned care.
 
 This specification aims to support:
 
