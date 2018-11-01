@@ -7,7 +7,7 @@
   <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-member-laboratory-uv-ips"/>
   <version value="0.2"/>
   <name value="Observation-member-laboratory-uv-ips"/>
-  <title value="Observation (member)"/>
+  <title value="Observation (member laboratory)"/>
   <status value="draft"/>
   <experimental value="true"/>
   <date value="2018-03-09"/>
@@ -108,12 +108,7 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
         <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-laboratory-uv-ips"/>
-        <aggregation value="referenced"/>
       </type>
-    </element>
-    <element id="Observation.performer.identifier">
-      <path value="Observation.performer.identifier"/>
-      <max value="0"/>
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]"/>
@@ -166,10 +161,6 @@
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/specimen-uv-ips"/>
       </type>
-    </element>
-    <element id="Observation.specimen.identifier">
-      <path value="Observation.specimen.identifier"/>
-      <max value="0"/>
     </element>
     <element id="Observation.device">
       <path value="Observation.device"/>

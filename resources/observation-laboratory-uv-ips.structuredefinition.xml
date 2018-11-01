@@ -77,7 +77,6 @@
       <type>
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips"/>
-        <aggregation value="referenced"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -88,10 +87,6 @@
 		</element>
     <element id="Observation.encounter">
       <path value="Observation.encounter"/>
-    </element>
-    <element id="Observation.encounter.identifier">
-      <path value="Observation.encounter.identifier"/>
-      <max value="0"/>
     </element>
     <element id="Observation.effective[x]">
       <path value="Observation.effective[x]"/>
@@ -107,13 +102,8 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
         <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-laboratory-uv-ips"/>
-        <aggregation value="referenced"/>
       </type>
       <mustSupport value="true"/>
-    </element>
-    <element id="Observation.performer.identifier">
-      <path value="Observation.performer.identifier"/>
-      <max value="0"/>
     </element>
     <element id="Observation.value[x]">
       <path value="Observation.value[x]"/>
@@ -186,14 +176,6 @@
         <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/specimen-uv-ips"/>
       </type>
     </element>
-    <element id="Observation.specimen.identifier">
-      <path value="Observation.specimen.identifier"/>
-      <max value="0"/>
-    </element>
-    <element id="Observation.device.identifier">
-      <path value="Observation.device.identifier"/>
-      <max value="0"/>
-    </element>
     <element id="Observation.referenceRange.type">
       <path value="Observation.referenceRange.type"/>
       <min value="1"/>
@@ -213,10 +195,6 @@
       </type>
       <mustSupport value="true"/>
     </element>
-    <element id="Observation.hasMember.identifier">
-      <path value="Observation.hasMember.identifier"/>
-      <max value="0"/>
-    </element>
     <element id="Observation.derivedFrom">
       <path value="Observation.derivedFrom"/>
       <definition value="A  reference to another Observation, which is constrained to valueAttachment, in order to convey an illustrative media content."/>
@@ -224,10 +202,6 @@
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-media-uv-ips"/>
       </type>
-    </element>
-    <element id="Observation.derivedFrom.identifier">
-      <path value="Observation.derivedFrom.identifier"/>
-      <max value="0"/>
     </element>
     <element id="Observation.component">
       <path value="Observation.component"/>

@@ -36,7 +36,7 @@ This specification (in common with the IPS CDA R2 specification) adopts <a href=
 
 ## Representing "known absent" and "not known"
 
-In line with the approach followed for the IPS CDA implementation Guide, we enforce by design that for required sections the expressions of “unknown” or “no information” are explicitly asserted in the resource referred to in the entries and not by using the emptyReason attribute in the section.
+In line with the approach followed for the IPS CDA implementation Guide, we enforce by design that for required sections the expressions of "known absent" and "not known" are explicitly asserted in the resource referred to in the entries and not by using the emptyReason attribute in the section.
 
 This rule is applied for the following required sections: 
 * Allergies and Intolerances
