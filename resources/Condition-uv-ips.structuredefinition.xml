@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir" >
+<StructureDefinition xmlns="http://hl7.org/fhir">
 	<id value="condition-uv-ips"/>
 	<meta>
 		<lastUpdated value="2018-02-27T15:32:05.203+01:00"/>
@@ -7,7 +7,7 @@
 	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/condition-uv-ips"/>
 	<version value="0.2.0"/>
 	<name value="Condition-uv-ips"/>
-	<title value="Condition"/>
+	<title value="Condition (IPS)"/>
 	<status value="draft"/>
 	<date value="2018-03-20"/>
 	<publisher value="HL7 International"/>
@@ -32,9 +32,8 @@
 		</element>
 		<element id="Condition.clinicalStatus">
 			<path value="Condition.clinicalStatus"/>
-		
 			<min value="1"/>
-							<type>
+			<type>
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
 			</type>
@@ -44,7 +43,7 @@
 			<path value="Condition.verificationStatus"/>
 			<comment value="This element is labeled as a modifier because the status contains the code refuted and entered-in-error that mark the Condition as not currently valid."/>
 			<min value="1"/>
-							<type>
+			<type>
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
 			</type>
@@ -146,13 +145,13 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
 			</type>
-			 <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="BodySite"/>
-        </extension>
-        <strength value="example"/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/body-site"/>
-      </binding>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="BodySite"/>
+				</extension>
+				<strength value="example"/>
+				<valueSet value="http://hl7.org/fhir/ValueSet/body-site"/>
+			</binding>
 		</element>
 		<element id="Condition.subject">
 			<path value="Condition.subject"/>
@@ -197,5 +196,5 @@
 			<definition value="Individual who is making the condition statement.&#xD;&#xA;Information source."/>
 			<mustSupport value="true"/>
 		</element>
-		</differential>
+	</differential>
 </StructureDefinition>
