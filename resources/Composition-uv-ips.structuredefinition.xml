@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
 	<id value="composition-uv-ips"/>
 	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/composition-uv-ips"/>
 	<version value="0.2.0"/>
@@ -73,10 +73,12 @@
 		</element>
 		<element id="Composition.type.coding.system">
 			<path value="Composition.type.coding.system"/>
+			<min value="1"/>
 			<fixedUri value="http://loinc.org"/>
 		</element>
 		<element id="Composition.type.coding.code">
 			<path value="Composition.type.coding.code"/>
+			<min value="1"/>
 			<fixedCode value="60591-5"/>
 		</element>
 		<element id="Composition.subject">
@@ -90,7 +92,7 @@
 		</element>
 		<element id="Composition.subject.reference">
 			<path value="Composition.subject.reference"/>
-      <min value="1"/>
+			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.encounter.reference">
@@ -172,6 +174,7 @@
 		</element>
 		<element id="Composition.event:careProvisioningEvent.code">
 			<path value="Composition.event.code"/>
+			<min value="1"/>
 			<fixedCodeableConcept>
 				<coding>
 					<system value="http://terminology.hl7.org/CodeSystem/v3-ActClass"/>
@@ -233,6 +236,14 @@
 				<code value="Coding"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
 			</type>
+		</element>
+		<element id="Composition.section:sectionMedications.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:sectionMedications.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
 		</element>
 		<element id="Composition.section:sectionMedications.text">
 			<path value="Composition.section.text"/>
@@ -311,6 +322,17 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
 			</type>
 		</element>
+	
+
+	<element id="Composition.section:sectionAllergies.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:sectionAllergies.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>			
+		
 		<element id="Composition.section:sectionAllergies.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
@@ -389,6 +411,16 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
 			</type>
 		</element>
+		
+				<element id="Composition.section:sectionProblems.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:sectionProblems.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>	
+		
 		<element id="Composition.section:sectionProblems.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
@@ -470,6 +502,15 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
 			</type>
 		</element>
+				<element id="Composition.section:sectionProceduresHx.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:sectionProceduresHx.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>	
+		
 		<element id="Composition.section:sectionProceduresHx.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
@@ -552,6 +593,14 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
 			</type>
 		</element>
+				<element id="Composition.section:sectionImmunizations.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:sectionImmunizations.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>	
 		<element id="Composition.section:sectionImmunizations.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
@@ -632,6 +681,14 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
 			</type>
 		</element>
+				<element id="Composition.section:sectionMedicalDevices.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:sectionMedicalDevices.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>	
 		<element id="Composition.section:sectionMedicalDevices.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
@@ -702,13 +759,21 @@
 		</element>
 		<element id="Composition.section:sectionResults.code.coding">
 			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
 			<type>
 				<code value="Coding"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
 			</type>
-			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+				<element id="Composition.section:sectionResults.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:sectionResults.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>	
 		<element id="Composition.section:sectionResults.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
@@ -821,6 +886,14 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
 			</type>
 		</element>
+				<element id="Composition.section:sectionPastIllnessHx.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:sectionPastIllnessHx.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>	
 		<element id="Composition.section:sectionPastIllnessHx.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
@@ -883,6 +956,14 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
 			</type>
 		</element>
+				<element id="Composition.section:sectionFunctionalStatus.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:sectionFunctionalStatus.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>	
 		<element id="Composition.section:sectionFunctionalStatus.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
@@ -961,6 +1042,14 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
 			</type>
 		</element>
+				<element id="Composition.section:sectionPlanOfCare.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:sectionPlanOfCare.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>	
 		<element id="Composition.section:sectionPlanOfCare.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
@@ -999,6 +1088,14 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
 			</type>
 		</element>
+				<element id="Composition.section:sectionSocialHistory.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:sectionSocialHistory.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>	
 		<element id="Composition.section:sectionSocialHistory.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
@@ -1065,7 +1162,7 @@
 			<fixedCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
-					<code value="82810-3"/>
+					<code value="10162-6"/>
 				</coding>
 			</fixedCodeableConcept>
 		</element>
@@ -1076,6 +1173,14 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
 			</type>
 		</element>
+				<element id="Composition.section:sectionPregnancyHx.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:sectionPregnancyHx.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>	
 		<element id="Composition.section:sectionPregnancyHx.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
@@ -1149,6 +1254,14 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
 			</type>
 		</element>
+				<element id="Composition.section:sectionAdvanceDirectives.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+		</element>
+		<element id="Composition.section:sectionAdvanceDirectives.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+		</element>	
 		<element id="Composition.section:sectionAdvanceDirectives.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
