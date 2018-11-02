@@ -2,7 +2,7 @@
 	"broken-links": "warning",
 	"no-inactive-codes": "false",
 	"extensions": [
-		"translateddiv-uv-ips", "abatement-datetime-uv-ips", "participant-uv-ips", "statement-uv-ips"
+		"translatedDiv-uv-ips", "abatement-dateTime-uv-ips", "participant-uv-ips", "statement-uv-ips"
 	],
 	"license": "CC0-1.0",
 	"npm-name": "hl7.fhir.uv.ips",
@@ -96,169 +96,169 @@
 	"check-mustSupport": true,
 	"hintAboutNonMustSupport": true,
 	"resources": {
-		"StructureDefinition/composition-uv-ips": {
-			"defns": "StructureDefinition-composition-uv-ips-definitions.html",
+		"StructureDefinition/Composition-uv-ips": {
+			"defns": "StructureDefinition-Composition-uv-ips-definitions.html",
 			"source": "Composition-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-composition-uv-ips.html"
+			"base": "StructureDefinition-Composition-uv-ips.html"
 		},
-		"StructureDefinition/device-observer-uv-ips": {
-			"defns": "StructureDefinition-device-observer-uv-ips-definitions.html",
+		"StructureDefinition/Device-observer-uv-ips": {
+			"defns": "StructureDefinition-Device-observer-uv-ips-definitions.html",
 			"source": "Device-observer-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-device-observer-uv-ips.html"
+			"base": "StructureDefinition-Device-observer-uv-ips.html"
 		},
-		"StructureDefinition/deviceusestatement-uv-ips": {
-			"defns": "StructureDefinition-deviceusestatement-uv-ips-definitions.html",
+		"StructureDefinition/DeviceUseStatement-uv-ips": {
+			"defns": "StructureDefinition-DeviceUseStatement-uv-ips-definitions.html",
 			"source": "DeviceUseStatement-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-deviceusestatement-uv-ips.html"
+			"base": "StructureDefinition-DeviceUseStatement-uv-ips.html"
 		},
-		"StructureDefinition/device-uv-ips": {
-			"defns": "StructureDefinition-device-uv-ips-definitions.html",
+		"StructureDefinition/Device-uv-ips": {
+			"defns": "StructureDefinition-Device-uv-ips-definitions.html",
 			"source": "Device-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-device-uv-ips.html"
+			"base": "StructureDefinition-Device-uv-ips.html"
 		},
-		"StructureDefinition/imagingstudy-uv-ips": {
-			"defns": "StructureDefinition-imagingstudy-uv-ips-definitions.html",
+		"StructureDefinition/ImagingStudy-uv-ips": {
+			"defns": "StructureDefinition-ImagingStudy-uv-ips-definitions.html",
 			"source": "ImagingStudy-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-imagingstudy-uv-ips.html"
+			"base": "StructureDefinition-ImagingStudy-uv-ips.html"
 		},
-		"StructureDefinition/immunization-uv-ips": {
-			"defns": "StructureDefinition-immunization-uv-ips-definitions.html",
+		"StructureDefinition/Immunization-uv-ips": {
+			"defns": "StructureDefinition-Immunization-uv-ips-definitions.html",
 			"source": "Immunization-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-immunization-uv-ips.html"
+			"base": "StructureDefinition-Immunization-uv-ips.html"
 		},
-		"StructureDefinition/medicationstatement-uv-ips": {
-			"defns": "StructureDefinition-medicationstatement-uv-ips-definitions.html",
+		"StructureDefinition/MedicationStatement-uv-ips": {
+			"defns": "StructureDefinition-MedicationStatement-uv-ips-definitions.html",
 			"source": "MedicationStatement-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-medicationstatement-uv-ips.html"
+			"base": "StructureDefinition-MedicationStatement-uv-ips.html"
 		},
-		"StructureDefinition/medication-uv-ips": {
-			"defns": "StructureDefinition-medication-uv-ips-definitions.html",
+		"StructureDefinition/Medication-uv-ips": {
+			"defns": "StructureDefinition-Medication-uv-ips-definitions.html",
 			"source": "Medication-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-medication-uv-ips.html"
+			"base": "StructureDefinition-Medication-uv-ips.html"
 		},
-		"StructureDefinition/narrative-uv-ips": {
-			"defns": "StructureDefinition-narrative-uv-ips-definitions.html",
+		"StructureDefinition/Narrative-uv-ips": {
+			"defns": "StructureDefinition-Narrative-uv-ips-definitions.html",
 			"source": "Narrative-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-narrative-uv-ips.html"
+			"base": "StructureDefinition-Narrative-uv-ips.html"
 		},
-		"StructureDefinition/observation-alcoholuse-uv-ips": {
-			"defns": "StructureDefinition-observation-alcoholuse-uv-ips-definitions.html",
+		"StructureDefinition/Observation-alcoholuse-uv-ips": {
+			"defns": "StructureDefinition-Observation-alcoholuse-uv-ips-definitions.html",
 			"source": "Observation-alcoholUse-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-observation-alcoholuse-uv-ips.html"
+			"base": "StructureDefinition-Observation-alcoholuse-uv-ips.html"
 		},
-		"StructureDefinition/observation-media-uv-ips": {
-			"defns": "StructureDefinition-observation-media-uv-ips-definitions.html",
-			"source": "observation-media-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-observation-media-uv-ips.html"
+		"StructureDefinition/Observation-media-uv-ips": {
+			"defns": "StructureDefinition-Observation-media-uv-ips-definitions.html",
+			"source": "Observation-media-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-Observation-media-uv-ips.html"
 		},
-		"StructureDefinition/observation-imaging-uv-ips": {
-			"defns": "StructureDefinition-observation-imaging-uv-ips-definitions.html",
+		"StructureDefinition/Observation-imaging-uv-ips": {
+			"defns": "StructureDefinition-Observation-imaging-uv-ips-definitions.html",
 			"source": "Observation-imaging-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-observation-imaging-uv-ips.html"
+			"base": "StructureDefinition-Observation-imaging-uv-ips.html"
 		},
-		"StructureDefinition/observation-laboratory-uv-ips": {
-			"defns": "StructureDefinition-observation-laboratory-uv-ips-definitions.html",
-			"source": "observation-laboratory-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-observation-laboratory-uv-ips.html"
+		"StructureDefinition/Observation-laboratory-uv-ips": {
+			"defns": "StructureDefinition-Observation-laboratory-uv-ips-definitions.html",
+			"source": "Observation-laboratory-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-Observation-laboratory-uv-ips.html"
 		},
-		"StructureDefinition/observation-member-imaging-uv-ips": {
-			"defns": "StructureDefinition-observation-member-imaging-uv-ips-definitions.html",
+		"StructureDefinition/Observation-member-imaging-uv-ips": {
+			"defns": "StructureDefinition-Observation-member-imaging-uv-ips-definitions.html",
 			"source": "Observation-member-imaging-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-observation-member-imaging-uv-ips.html"
+			"base": "StructureDefinition-Observation-member-imaging-uv-ips.html"
 		},
-		"StructureDefinition/observation-member-laboratory-uv-ips": {
-			"defns": "StructureDefinition-observation-member-laboratory-uv-ips-definitions.html",
-			"source": "observation-member-laboratory-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-observation-member-laboratory-uv-ips.html"
+		"StructureDefinition/Observation-member-laboratory-uv-ips": {
+			"defns": "StructureDefinition-Observation-member-laboratory-uv-ips-definitions.html",
+			"source": "Observation-member-laboratory-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-Observation-member-laboratory-uv-ips.html"
 		},
-		"StructureDefinition/observation-member-pathology-uv-ips": {
-			"defns": "StructureDefinition-observation-member-pathology-uv-ips-definitions.html",
-			"source": "observation-member-pathology-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-observation-member-pathology-uv-ips.html"
+		"StructureDefinition/Observation-member-pathology-uv-ips": {
+			"defns": "StructureDefinition-Observation-member-pathology-uv-ips-definitions.html",
+			"source": "Observation-member-pathology-uv-ips.structuredefinition.xml",
+			"base": "StructureDefinition-Observation-member-pathology-uv-ips.html"
 		},
-		"StructureDefinition/observation-pathology-uv-ips": {
-			"defns": "StructureDefinition-observation-pathology-uv-ips-definitions.html",
+		"StructureDefinition/Observation-pathology-uv-ips": {
+			"defns": "StructureDefinition-Observation-pathology-uv-ips-definitions.html",
 			"source": "Observation-pathology-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-observation-pathology-uv-ips.html"
+			"base": "StructureDefinition-Observation-pathology-uv-ips.html"
 		},
-		"StructureDefinition/observation-pregnancy-edd-uv-ips": {
-			"defns": "StructureDefinition-observation-pregnancy-edd-uv-ips-definitions.html",
+		"StructureDefinition/Observation-pregnancy-edd-uv-ips": {
+			"defns": "StructureDefinition-Observation-pregnancy-edd-uv-ips-definitions.html",
 			"source": "Observation-pregnancy-edd-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-observation-pregnancy-edd-uv-ips.html"
+			"base": "StructureDefinition-Observation-pregnancy-edd-uv-ips.html"
 		},
-		"StructureDefinition/observation-pregnancy-outcome-uv-ips": {
-			"defns": "StructureDefinition-observation-pregnancy-outcome-uv-ips-definitions.html",
+		"StructureDefinition/Observation-pregnancy-outcome-uv-ips": {
+			"defns": "StructureDefinition-Observation-pregnancy-outcome-uv-ips-definitions.html",
 			"source": "Observation-pregnancy-outcome-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-observation-pregnancy-outcome-uv-ips.html"
+			"base": "StructureDefinition-Observation-pregnancy-outcome-uv-ips.html"
 		},
-		"StructureDefinition/observation-pregnancy-status-uv-ips": {
-			"defns": "StructureDefinition-observation-pregnancy-status-uv-ips-definitions.html",
+		"StructureDefinition/Observation-pregnancy-status-uv-ips": {
+			"defns": "StructureDefinition-Observation-pregnancy-status-uv-ips-definitions.html",
 			"source": "Observation-pregnancy-status-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-observation-pregnancy-status-uv-ips.html"
+			"base": "StructureDefinition-Observation-pregnancy-status-uv-ips.html"
 		},
-		"StructureDefinition/observation-tobaccouse-uv-ips": {
-			"defns": "StructureDefinition-observation-tobaccouse-uv-ips-definitions.html",
+		"StructureDefinition/Observation-tobaccouse-uv-ips": {
+			"defns": "StructureDefinition-Observation-tobaccouse-uv-ips-definitions.html",
 			"source": "Observation-tobaccoUse-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-observation-tobaccouse-uv-ips.html"
+			"base": "StructureDefinition-Observation-tobaccouse-uv-ips.html"
 		},
-		"StructureDefinition/observation-uv-ips": {
-			"defns": "StructureDefinition-observation-uv-ips-definitions.html",
+		"StructureDefinition/Observation-uv-ips": {
+			"defns": "StructureDefinition-Observation-uv-ips-definitions.html",
 			"source": "Observation-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-observation-uv-ips.html"
+			"base": "StructureDefinition-Observation-uv-ips.html"
 		},
-		"StructureDefinition/organization-laboratory-uv-ips": {
-			"defns": "StructureDefinition-organization-laboratory-uv-ips-definitions.html",
+		"StructureDefinition/Organization-laboratory-uv-ips": {
+			"defns": "StructureDefinition-Organization-laboratory-uv-ips-definitions.html",
 			"source": "Organization-laboratory-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-organization-laboratory-uv-ips.html"
+			"base": "StructureDefinition-Organization-laboratory-uv-ips.html"
 		},
-		"StructureDefinition/organization-observation-uv-ips": {
-			"defns": "StructureDefinition-organization-observation-uv-ips-definitions.html",
+		"StructureDefinition/Organization-observation-uv-ips": {
+			"defns": "StructureDefinition-Organization-observation-uv-ips-definitions.html",
 			"source": "Organization-observation-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-organization-observation-uv-ips.html"
+			"base": "StructureDefinition-Organization-observation-uv-ips.html"
 		},
 		"StructureDefinition/participant-uv-ips": {
 			"defns": "StructureDefinition-participant-uv-ips-definitions.html",
-			"source": "Participant-uv-ips.structuredefinition.xml",
+			"source": "participant-uv-ips.structuredefinition.xml",
 			"base": "StructureDefinition-participant-uv-ips.html"
 		},
-		"StructureDefinition/patient-uv-ips": {
-			"defns": "StructureDefinition-patient-uv-ips-definitions.html",
+		"StructureDefinition/Patient-uv-ips": {
+			"defns": "StructureDefinition-Patient-uv-ips-definitions.html",
 			"source": "Patient-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-patient-uv-ips.html"
+			"base": "StructureDefinition-Patient-uv-ips.html"
 		},
-		"StructureDefinition/practitioner-uv-ips": {
-			"defns": "StructureDefinition-practitioner-uv-ips-definitions.html",
+		"StructureDefinition/Practitioner-uv-ips": {
+			"defns": "StructureDefinition-Practitioner-uv-ips-definitions.html",
 			"source": "Practitioner-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-practitioner-uv-ips.html"
+			"base": "StructureDefinition-Practitioner-uv-ips.html"
 		},
-		"StructureDefinition/procedure-uv-ips": {
-			"defns": "StructureDefinition-procedure-uv-ips-definitions.html",
+		"StructureDefinition/Procedure-uv-ips": {
+			"defns": "StructureDefinition-Procedure-uv-ips-definitions.html",
 			"source": "Procedure-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-procedure-uv-ips.html"
+			"base": "StructureDefinition-Procedure-uv-ips.html"
 		},
-		"StructureDefinition/quantity-uv-ips": {
-			"defns": "StructureDefinition-quantity-uv-ips-definitions.html",
+		"StructureDefinition/Quantity-uv-ips": {
+			"defns": "StructureDefinition-Quantity-uv-ips-definitions.html",
 			"source": "Quantity-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-quantity-uv-ips.html"
+			"base": "StructureDefinition-Quantity-uv-ips.html"
 		},
-		"StructureDefinition/range-uv-ips": {
-			"defns": "StructureDefinition-range-uv-ips-definitions.html",
+		"StructureDefinition/Range-uv-ips": {
+			"defns": "StructureDefinition-Range-uv-ips-definitions.html",
 			"source": "Range-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-range-uv-ips.html"
+			"base": "StructureDefinition-Range-uv-ips.html"
 		},
-		"StructureDefinition/ratio-uv-ips": {
-			"defns": "StructureDefinition-ratio-uv-ips-definitions.html",
+		"StructureDefinition/Ratio-uv-ips": {
+			"defns": "StructureDefinition-Ratio-uv-ips-definitions.html",
 			"source": "Ratio-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-ratio-uv-ips.html"
+			"base": "StructureDefinition-Ratio-uv-ips.html"
 		},
-		"StructureDefinition/specimen-uv-ips": {
-			"defns": "StructureDefinition-specimen-uv-ips-definitions.html",
+		"StructureDefinition/Specimen-uv-ips": {
+			"defns": "StructureDefinition-Specimen-uv-ips-definitions.html",
 			"source": "Specimen-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-specimen-uv-ips.html"
+			"base": "StructureDefinition-Specimen-uv-ips.html"
 		},
 		"StructureDefinition/statement-uv-ips": {
 			"defns": "StructureDefinition-statement-uv-ips-definitions.html",
-			"source": "Statement-uv-ips.structuredefinition.xml",
+			"source": "statement-uv-ips.structuredefinition.xml",
 			"base": "StructureDefinition-statement-uv-ips.html"
 		},
 		"ValueSet/absent-or-unknown-allergies-uv-ips": {
@@ -425,49 +425,49 @@
 			"source": "valueset-vaccines-uv-ips.xml",
 			"base": "ValueSet-vaccines-uv-ips.html"
 		},
-		"StructureDefinition/allergyintolerance-uv-ips": {
-			"defns": "StructureDefinition-allergyintolerance-uv-ips-definitions.html",
+		"StructureDefinition/AllergyIntolerance-uv-ips": {
+			"defns": "StructureDefinition-AllergyIntolerance-uv-ips-definitions.html",
 			"source": "AllergyIntolerance-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-allergyintolerance-uv-ips.html"
+			"base": "StructureDefinition-AllergyIntolerance-uv-ips.html"
 		},
 		"Bundle/IPS-examples-Bundle-01": {
 			"source": "IPS-bundle-01.xml",
 			"base": "IPS-examples-Bundle-01.html"
 		},
-		"StructureDefinition/condition-uv-ips": {
-			"defns": "StructureDefinition-condition-uv-ips-definitions.html",
+		"StructureDefinition/Condition-uv-ips": {
+			"defns": "StructureDefinition-Condition-uv-ips-definitions.html",
 			"source": "Condition-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-condition-uv-ips.html"
+			"base": "StructureDefinition-Condition-uv-ips.html"
 		},
-		"StructureDefinition/codeableconcept-uv-ips": {
-			"defns": "StructureDefinition-codeableconcept-uv-ips-definitions.html",
+		"StructureDefinition/CodeableConcept-uv-ips": {
+			"defns": "StructureDefinition-CodeableConcept-uv-ips-definitions.html",
 			"source": "CodeableConcept-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-codeableconcept-uv-ips.html"
+			"base": "StructureDefinition-CodeableConcept-uv-ips.html"
 		},
 		"StructureDefinition/translation": {
 			"defns": "StructureDefinition-translation-definitions.html",
 			"source": "translation.xml",
 			"base": "StructureDefinition-translation.html"
 		},
-		"StructureDefinition/translateddiv-uv-ips": {
-			"defns": "StructureDefinition-translateddiv-uv-ips-definitions.html",
+		"StructureDefinition/translatedDiv-uv-ips": {
+			"defns": "StructureDefinition-translatedDiv-uv-ips-definitions.html",
 			"source": "translatedDiv-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-translateddiv-uv-ips.html"
+			"base": "StructureDefinition-translatedDiv-uv-ips.html"
 		},
 		"StructureDefinition/partof-extension": {
 			"defns": "StructureDefinition-partof-extension-definitions.html",
 			"source": "partOf-extension.xml",
 			"base": "StructureDefinition-partof-extension.html"
 		},
-		"StructureDefinition/abatement-datetime-uv-ips": {
-			"defns": "StructureDefinition-abatement-datetime-uv-ips-definitions.html",
+		"StructureDefinition/abatement-dateTime-uv-ips": {
+			"defns": "StructureDefinition-abatement-dateTime-uv-ips-definitions.html",
 			"source": "abatement-dateTime-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-abatement-datetime-uv-ips.html"
+			"base": "StructureDefinition-abatement-dateTime-uv-ips.html"
 		},
-		"StructureDefinition/coding-uv-ips": {
-			"defns": "StructureDefinition-coding-uv-ips-definitions.html",
+		"StructureDefinition/Coding-uv-ips": {
+			"defns": "StructureDefinition-Coding-uv-ips-definitions.html",
 			"source": "Coding-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-coding-uv-ips.html"
+			"base": "StructureDefinition-Coding-uv-ips.html"
 		},
 		"CodeSystem/absent-unknown-uv-ips": {
 			"base": "CodeSystem-absent-unknown-uv-ips.html"

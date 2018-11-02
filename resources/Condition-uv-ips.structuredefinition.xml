@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="condition-uv-ips"/>
+	<id value="Condition-uv-ips"/>
 	<meta>
 		<lastUpdated value="2018-02-27T15:32:05.203+01:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/condition-uv-ips"/>
+	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"/>
 	<version value="0.2.0"/>
 	<name value="Condition-uv-ips"/>
 	<title value="Condition (IPS)"/>
@@ -19,7 +19,7 @@
 	</contact>
 	<description value="This profile represents the constraints applied to the Condition resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of problem is represented in the patient summary as an instance of the Condition resource constrained by this profile."/>
 	<purpose value="Representation of a problem in the international patient summary"/>
-	<fhirVersion value="3.5.0"/>
+	<fhirVersion value="3.6.0"/>
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="Condition"/>
@@ -35,7 +35,7 @@
 			<min value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -45,7 +45,7 @@
 			<min value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -56,7 +56,7 @@
 			<max value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -71,7 +71,7 @@
 			<path value="Condition.severity"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -109,7 +109,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -127,7 +127,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -143,7 +143,7 @@
 			<path value="Condition.bodySite"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -157,7 +157,7 @@
 			<path value="Condition.subject"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>

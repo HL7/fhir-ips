@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<id value="observation-member-imaging-uv-ips"/>
+	<id value="Observation-member-imaging-uv-ips"/>
 	<meta>
 		<lastUpdated value="2018-02-20T10:43:18.6+01:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-member-imaging-uv-ips"/>
+	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-member-imaging-uv-ips"/>
 	<name value="Observation-member-imaging-uv-ips"/>
 	<status value="draft"/>
 	<date value="2018-02-14T13:42:57.001+01:00"/>
 	<description value="This profile represents the constraints applied to the Observation resource by the IPS project, which specifies a sub-observation, member of an &quot;organizer&quot; observation, in the &quot;Imaging results&quot; entry of a patient summary."/>
-	<fhirVersion value="3.5.0"/>
+	<fhirVersion value="3.6.0"/>
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="Observation"/>
@@ -45,7 +45,7 @@
 			<path value="Observation.code"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -61,7 +61,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -78,7 +78,7 @@
 			<path value="Observation.performer"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/practitioner-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-observation-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
@@ -113,7 +113,7 @@
 			<path value="Observation.bodySite"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -127,7 +127,7 @@
 			<path value="Observation.device"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/device-observer-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Device-observer-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="observation-uv-ips"/>
-  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-uv-ips"/>
+  <id value="Observation-uv-ips"/>
+  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-uv-ips"/>
   <name value="Observation-uv-ips"/>
   <title value="Observation (generic result)"/>
   <status value="draft"/>
@@ -13,7 +13,7 @@
   </contact>
   <description value="This profile constrains the Observation resource to represent various results in a patient summary, if no other more specific profile applies."/>
   <purpose value="This profile constrains the Observation resource to represent clinical observations where more specific profiles are not applicable. In case of a panel of observations, the results of the panel appear as sub-observations."/>
-  <fhirVersion value="3.5.0"/>
+  <fhirVersion value="3.6.0"/>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Observation"/>
@@ -45,14 +45,14 @@
       <max value="1"/>
       <type>
         <code value="CodeableConcept"/>
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
       </type>
     </element>
     <element id="Observation.code">
       <path value="Observation.code"/>
       <type>
         <code value="CodeableConcept"/>
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -102,11 +102,11 @@
       </type>
       <type>
         <code value="CodeableConcept"/>
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
       </type>
       <type>
         <code value="Quantity"/>
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/quantity-uv-ips"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -118,7 +118,7 @@
       <path value="Observation.interpretation"/>
       <type>
         <code value="CodeableConcept"/>
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -126,7 +126,7 @@
       <path value="Observation.bodySite"/>
       <type>
         <code value="CodeableConcept"/>
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -134,7 +134,7 @@
       <path value="Observation.method"/>
       <type>
         <code value="CodeableConcept"/>
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
       </type>
     </element>
     <element id="Observation.specimen">
@@ -153,7 +153,7 @@
       <path value="Observation.referenceRange.type.coding"/>
       <type>
         <code value="Coding"/>
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
       </type>
     </element>
     <element id="Observation.referenceRange.appliesTo">

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
-	<id value="composition-uv-ips"/>
-	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/composition-uv-ips"/>
+	<id value="Composition-uv-ips"/>
+	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips"/>
 	<version value="0.2.0"/>
 	<name value="Composition-uv-ips"/>
 	<title value="Composition (IPS)"/>
@@ -18,7 +18,7 @@
 	<description value="Clinical document used to represent the International Patient Summary (IPS) data set. The IPS dataset is a minimal and non-exhaustive patient summary dataset, specialty-agnostic, condition-independent, but readily usable by clinicians for the cross-border unscheduled care of a patient.&#xD;&#xA;&#xD;&#xA;This profile is based on the ClinicalDocument profile"/>
 	<purpose value="An International Patient Summary (IPS) document is an electronic health record extract containing essential healthcare information intended for use in the unscheduled, cross-border care scenario, comprising at least the required elements of the IPS dataset. The IPS dataset is a minimal and non-exhaustive patient summary dataset, specialty-agnostic, condition-independent, but readily usable by clinicians for the cross-border unscheduled care of a patient."/>
 	<copyright value="HL7 International"/>
-	<fhirVersion value="3.5.0"/>
+	<fhirVersion value="3.6.0"/>
 	<mapping>
 		<identity value="rim"/>
 		<uri value="http://hl7.org/v3"/>
@@ -68,7 +68,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 		</element>
 		<element id="Composition.type.coding.system">
@@ -86,7 +86,7 @@
 			<definition value="Who or what the composition is about. &#xD;&#xA;In general a composition can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of livestock, or a set of patients that share a common exposure).&#xD;&#xA;For the IPS the subject is always the patient."/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -151,7 +151,7 @@
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Composition"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/composition-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips"/>
 			</type>
 		</element>
 		<element id="Composition.event">
@@ -234,7 +234,7 @@
 			<path value="Composition.section.code.coding"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 		</element>
 		<element id="Composition.section:sectionMedications.code.coding.system">
@@ -271,7 +271,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/medicationstatement-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Medicationstatement-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -319,7 +319,7 @@
 			<path value="Composition.section.code.coding"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 		</element>
 	
@@ -359,7 +359,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/allergyintolerance-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Allergyintolerance-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -408,7 +408,7 @@
 			<path value="Composition.section.code.coding"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 		</element>
 		
@@ -451,7 +451,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/condition-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -499,7 +499,7 @@
 			<path value="Composition.section.code.coding"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 		</element>
 				<element id="Composition.section:sectionProceduresHx.code.coding.system">
@@ -532,7 +532,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/procedure-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -542,7 +542,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/procedure-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -590,7 +590,7 @@
 			<path value="Composition.section.code.coding"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 		</element>
 				<element id="Composition.section:sectionImmunizations.code.coding.system">
@@ -621,7 +621,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/immunization-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -631,7 +631,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/immunization-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -678,7 +678,7 @@
 			<path value="Composition.section.code.coding"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 		</element>
 				<element id="Composition.section:sectionMedicalDevices.code.coding.system">
@@ -714,7 +714,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/deviceusestatement-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips"/>
 			</type>
 		</element>
 		<element id="Composition.section:sectionMedicalDevices.entry:deviceStatement.reference">
@@ -762,7 +762,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -795,7 +795,7 @@
 			<sliceName value="genericResult"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -809,7 +809,7 @@
 			<sliceName value="laboratoryResult"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-laboratory-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -823,7 +823,7 @@
 			<sliceName value="imagingResult"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-imaging-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-imaging-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -837,7 +837,7 @@
 			<sliceName value="pathologyResult"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-pathology-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pathology-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -883,7 +883,7 @@
 			<path value="Composition.section.code.coding"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 		</element>
 				<element id="Composition.section:sectionPastIllnessHx.code.coding.system">
@@ -918,7 +918,7 @@
 			<sliceName value="pastProblem"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/condition-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"/>
 			</type>
 		</element>
 		<element id="Composition.section:sectionPastIllnessHx.section">
@@ -953,7 +953,7 @@
 			<path value="Composition.section.code.coding"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 		</element>
 				<element id="Composition.section:sectionFunctionalStatus.code.coding.system">
@@ -1039,7 +1039,7 @@
 			<path value="Composition.section.code.coding"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 		</element>
 				<element id="Composition.section:sectionPlanOfCare.code.coding.system">
@@ -1085,7 +1085,7 @@
 			<path value="Composition.section.code.coding"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 		</element>
 				<element id="Composition.section:sectionSocialHistory.code.coding.system">
@@ -1116,7 +1116,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-tobaccouse-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips"/>
 			</type>
 		</element>
 		<element id="Composition.section:sectionSocialHistory.entry:smokingTobaccoUse.reference">
@@ -1130,7 +1130,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-alcoholuse-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips"/>
 			</type>
 		</element>
 		<element id="Composition.section:sectionSocialHistory.entry:alcoholUse.reference">
@@ -1170,7 +1170,7 @@
 			<path value="Composition.section.code.coding"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 		</element>
 				<element id="Composition.section:sectionPregnancyHx.code.coding.system">
@@ -1200,7 +1200,7 @@
 			<sliceName value="pregnancyStatus"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-pregnancy-status-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips"/>
 			</type>
 		</element>
 		<element id="Composition.section:sectionPregnancyHx.entry:pregnancyStatus.reference">
@@ -1212,7 +1212,7 @@
 			<sliceName value="pregnancyOutcomeSummary"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-pregnancy-outcome-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-outcome-uv-ips"/>
 			</type>
 		</element>
 		<element id="Composition.section:sectionPregnancyHx.entry:pregnancyOutcomeSummary.reference">
@@ -1251,7 +1251,7 @@
 			<path value="Composition.section.code.coding"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 		</element>
 				<element id="Composition.section:sectionAdvanceDirectives.code.coding.system">

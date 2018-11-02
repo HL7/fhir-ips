@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
-	<id value="observation-media-uv-ips"/>
+	<id value="Observation-media-uv-ips"/>
 	<meta>
 		<lastUpdated value="2018-02-16T18:49:19.113+01:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-media-uv-ips"/>
+	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-media-uv-ips"/>
 	<name value="Observation-media-uv-ips"/>
 	<title value="Observation (media)"/>
 	<status value="draft"/>
@@ -16,7 +16,7 @@
 	</contact>
 	<description value="This profile constrains the Media resource (which is a specialized observation)."/>
 	<purpose value="This specialized observation is used to convey illustrative media content."/>
-	<fhirVersion value="3.5.0"/>
+	<fhirVersion value="3.6.0"/>
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="Media"/>
@@ -38,7 +38,7 @@
 			<path value="Media.type"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 		</element>
 		<element id="Media.subject">
@@ -46,7 +46,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
 			</type>
 		</element>
     		<element id="Media.subject.reference">

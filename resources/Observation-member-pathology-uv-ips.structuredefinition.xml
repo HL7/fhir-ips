@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="observation-member-pathology-uv-ips"/>
+	<id value="Observation-member-pathology-uv-ips"/>
 	<meta>
 		<lastUpdated value="2018-02-16T18:38:24.701+01:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-member-pathology-uv-ips"/>
+	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-member-pathology-uv-ips"/>
 	<version value="0.2"/>
 	<name value="Observation-member-pathology-uv-ips"/>
 	<title value="Observation (member pathology)"/>
@@ -17,7 +17,7 @@
 	</contact>
 	<description value="This profile constrains the Observation resource to represent a sub-observation, member of an &quot;organizer&quot; observation, in the &quot;pathology results entry of a patient summary"/>
 	<purpose value="This profile constrains the Observation resource to represent a sub-observation member of a grouping observation (for instance a panel). It can be either a the result of a laboratory observation or a vital sign observation, which helps to interpret the set of results of the grouping observation"/>
-	<fhirVersion value="3.5.0"/>
+	<fhirVersion value="3.6.0"/>
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="Observation"/>
@@ -50,7 +50,7 @@
 			<max value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -66,7 +66,7 @@
 			<path value="Observation.code"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -82,7 +82,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -107,7 +107,7 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-laboratory-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-laboratory-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -128,11 +128,11 @@
 			</type>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<type>
 				<code value="Quantity"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/quantity-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -148,7 +148,7 @@
 			<path value="Observation.interpretation"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 		</element>
 		<element id="Observation.bodySite">
@@ -160,7 +160,7 @@
 			<comment value="The specimen is often implied by the observation code. &#xD;&#xA;In the context of this Observation-member-laboratory-uv-ips profile, specimen should be provided only when it is not implied by the Observation.code, and when further information about the specimen needs to be captured (such as specimen source body site). "/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/specimen-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips"/>
 			</type>
 		</element>
 		<element id="Observation.device">

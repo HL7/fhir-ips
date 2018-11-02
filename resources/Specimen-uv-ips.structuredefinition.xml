@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../R4_fhir-all-xsd/structuredefinition.xsd">
-	<id value="specimen-uv-ips"/>
+	<id value="Specimen-uv-ips"/>
 	<meta>
 		<lastUpdated value="2018-02-09T21:49:57.382+01:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/specimen-uv-ips"/>
+	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips"/>
 	<version value="0.2"/>
 	<name value="Specimen-uv-ips"/>
 	<title value="Specimen"/>
@@ -16,7 +16,7 @@
 	</contact>
 	<description value="This profile constrains the Specimen resource to represent the characteristics of a biological specimens in the context of laboratory results integrated to a patient summary"/>
 	<purpose value="Minimal specimen attributes, usable for the laboratory results section and entry of a patient summary"/>
-	<fhirVersion value="3.5.0"/>
+	<fhirVersion value="3.6.0"/>
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="Specimen"/>
@@ -42,7 +42,7 @@
 			<path value="Specimen.type.coding"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -50,7 +50,7 @@
 			<path value="Specimen.subject"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
 			</type>
 		</element>
     		<element id="Specimen.subject.reference">
@@ -89,7 +89,7 @@
 			<path value="Specimen.collection.method.coding"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -105,7 +105,7 @@
 			<path value="Specimen.collection.bodySite.coding"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>

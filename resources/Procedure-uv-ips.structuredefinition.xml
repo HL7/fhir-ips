@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="procedure-uv-ips"/>
+	<id value="Procedure-uv-ips"/>
 	<meta>
 		<lastUpdated value="2018-02-20T12:54:56.053+01:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/procedure-uv-ips"/>
+	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"/>
 	<name value="Procedure-uv-ips"/>
 	<title value="Procedure (IPS)"/>
 	<status value="draft"/>
 	<date value="2017-10-27T13:43:30.381+02:00"/>
 	<description value="This profile represents the constraints applied to the Procedure resource by the IPS project, which specifies an entry of the History of Procedure for the international patient summary based on the FHIR standard R4. "/>
-	<fhirVersion value="3.5.0"/>
+	<fhirVersion value="3.6.0"/>
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="Procedure"/>
@@ -66,7 +66,7 @@
 			<sliceName value="absentOrUnknownProcedure"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -83,7 +83,7 @@
 			<sliceName value="procedureCode"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -99,7 +99,7 @@
 			<definition value="The person on which the procedure was performed."/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -122,16 +122,16 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/device-observer-uv-ips"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/practitioner-uv-ips"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-observation-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Device-observer-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-observation-uv-ips"/>
 			</type>
 		</element>
 		<element id="Procedure.performer.onBehalfOf">
 			<path value="Procedure.performer.onBehalfOf"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-observation-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-observation-uv-ips"/>
 			</type>
 		</element>
 		<element id="Procedure.location">

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
-	<id value="device-uv-ips"/>
+	<id value="Device-uv-ips"/>
 	<meta>
 		<lastUpdated value="2018-02-14T11:49:41.487+01:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/device-uv-ips"/>
+	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips"/>
 	<version value="0.1"/>
 	<name value="Device-uv-ips"/>
 	<title value="Device"/>
@@ -21,7 +21,7 @@
 	</contact>
 	<description value="This profile represents the constraints applied to the Device resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A device used by or implanted on the patient is described in the patient summary as an instance of a Device resource constrained by this profile."/>
 	<purpose value="This profile constrains the representation of a medical device used by or impanted on the patient, in the context of the international patient summary as specified by the IPS project of HL7 International."/>
-	<fhirVersion value="3.5.0"/>
+	<fhirVersion value="3.6.0"/>
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="Device"/>
@@ -106,7 +106,7 @@
 			<comment value="The FHIR-defined value set is different from the value set &quot;IPS Medical Devices&quot; defined by the IPS CDA IG: http://art-decor.org/art-decor/decor-valuesets--hl7ips-?id=2.16.840.1.113883.11.22.23&amp;effectiveDate=2017-07-19T00:00:00&amp;language=en-US&#xD;&#xA; "/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 		</element>
 		<element id="Device.type.coding:absentOrUnknownDevice">
@@ -147,7 +147,7 @@
 			<path value="Device.patient"/>
       <type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
 			</type>
 			<min value="1"/>
 		</element>

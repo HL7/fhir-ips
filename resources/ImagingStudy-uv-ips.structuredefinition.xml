@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="imagingstudy-uv-ips"/>
+  <id value="ImagingStudy-uv-ips"/>
   <meta>
     <lastUpdated value="2018-02-20T13:32:46.724+01:00"/>
   </meta>
-  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/imagingstudy-uv-ips"/>
+  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/ImagingStudy-uv-ips"/>
   <name value="ImagingStudy-uv-ips"/>
   <status value="draft"/>
   <date value="2018-02-20T13:22:59.883+01:00"/>
   <description value="This profile represents the constraints applied to the ImagingStudy resource by the IPS project, which specifies the information on a DICOM imaging study this imaging result is part of.&#xD;&#xA;"/>
-  <fhirVersion value="3.5.0"/>
+  <fhirVersion value="3.6.0"/>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="ImagingStudy"/>
@@ -33,7 +33,7 @@
       <path value="ImagingStudy.subject"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips"/>
+        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -53,7 +53,7 @@
       <path value="ImagingStudy.procedureCode"/>
       <type>
         <code value="CodeableConcept"/>
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
       </type>
       <mustSupport value="true"/>
     </element>

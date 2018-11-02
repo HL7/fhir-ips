@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="observation-pathology-uv-ips"/>
+	<id value="Observation-pathology-uv-ips"/>
 	<meta>
 		<versionId value="1"/>
 		<lastUpdated value="2018-03-08T16:05:00.196+00:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-pathology-uv-ips"/>
+	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pathology-uv-ips"/>
 	<version value="0.2"/>
 	<name value="Observation-pathology-uv-ips"/>
 	<title value="Observation (pathology result)"/>
@@ -18,7 +18,7 @@
 	</contact>
 	<description value="This profile constrains the Observation resource to represent results produced by pathology studies in a patient summary"/>
 	<purpose value="This profile constrains the Observation resource to represent a pathology in vitro study. In case of a multiple-observation study, the results of the study appear as sub-observations. In this case this top-level Observation acts as a grouper of all the observations belonging to the study.  The top-level observation may carry a conclusion in the value element and or a global interpretation by the producer of the study, in the comment element."/>
-	<fhirVersion value="3.5.0"/>
+	<fhirVersion value="3.6.0"/>
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="Observation"/>
@@ -51,7 +51,7 @@
 			<max value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 		</element>
 		<element id="Observation.code">
@@ -60,7 +60,7 @@
 			<comment value="In the context of this Observation-laboratory-uv-ips profile, when the observation plays the role of a grouper of member sub-observations, the code represent the group (for instance a panel code). In case no code is available, at least a text shall be provided."/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -76,7 +76,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -98,7 +98,7 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-laboratory-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-laboratory-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -124,11 +124,11 @@
 			</type>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<type>
 				<code value="Quantity"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/quantity-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips"/>
 			</type>
 			<condition value="value"/>
 			<constraint>
@@ -151,7 +151,7 @@
 			<path value="Observation.interpretation.coding"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 		</element>
 		<element id="Observation.bodySite">
@@ -162,7 +162,7 @@
 			<path value="Observation.method.coding"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 		</element>
 		<element id="Observation.specimen">
@@ -170,7 +170,7 @@
 			<comment value="The specimen is often implied by the observation code. &#xD;&#xA;In the context of this Observation-laboratory-uv-ips profile, specimen should be provided only when it is not implied by the Observation.code, and when further information about the specimen needs to be captured (such as specimen source body site). &#xD;&#xA;In case of a laboratory panel/study using a single specimen , which needs  further description (like a CSF microbiology study), the specimen is introduced by this element.&#xD;&#xA;In case of a dynamic function test using multiple specimens, each specimen shall be further described, if needed, within the sub-observation that was produced on this specimen."/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/specimen-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips"/>
 			</type>
 		</element>
 		<element id="Observation.referenceRange.type">
@@ -178,7 +178,7 @@
 			<min value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -188,7 +188,7 @@
 			<comment value="This element is used in the context of Trillium II international patient summary when there is a need to group a collection of observations, because they belong to the same panel, or because they share a common interpretation comment, or a common media attachment (illustrative image or graph). In these cases, the current observation profiled as observation-laboratory-uv-trillium2 is the grouper, and its set of sub-observations are related observations  using the type &quot;has-member&quot; and the profile observation-member-laboratory-uv-trillium2."/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-member-pathology-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-member-pathology-uv-ips"/>
 			</type>
 		</element>
 		<element id="Observation.derivedFrom">
@@ -196,7 +196,7 @@
 			<definition value="A  reference to another Observation, which is constrained to valueAttachment, in order to convey an illustrative media content."/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-media-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-media-uv-ips"/>
 			</type>
 		</element>
 		<element id="Observation.component">

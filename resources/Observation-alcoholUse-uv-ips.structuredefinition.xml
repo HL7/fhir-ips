@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="observation-alcoholuse-uv-ips"/>
-	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/observation-alcoholuse-uv-ips"/>
+	<id value="Observation-alcoholuse-uv-ips"/>
+	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips"/>
 	<name value="Observation-alcoholUse-uv-ips"/>
 	<status value="draft"/>
 	<date value="2018-03-20T11:00:52.49+01:00"/>
 	<description value="This profile constrains the Observation resource to represent alcohol use assessment in a patient summary"/>
-	<fhirVersion value="3.5.0"/>
+	<fhirVersion value="3.6.0"/>
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="Observation"/>
@@ -29,7 +29,7 @@
 			<max value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -50,7 +50,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>

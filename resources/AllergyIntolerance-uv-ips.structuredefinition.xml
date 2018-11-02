@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
-	<id value="allergyintolerance-uv-ips"/>
+	<id value="AllergyIntolerance-uv-ips"/>
 	<meta>
 		<lastUpdated value="2018-02-14T08:58:02.283-06:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/allergyintolerance-uv-ips"/>
+	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"/>
 	<name value="AllergyIntolerance-uv-ips"/>
 	<title value="Allergy Intolerance"/>
 	<status value="draft"/>
 	<date value="2018-02-14T07:57:18.78-06:00"/>
 	<description value="This profile represents the constraints applied to the AllergyIntolerance resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an allergy or intolerance is represented in the patient summary as an instance of an AllergyIntolerance resource constrained by this profile.&#xD;&#xA;&#xD;&#xA;It documents the relevant allergies or intolerances (conditions) for a patient, describing the kind of reaction (e.g. rash, anaphylaxis,..); preferably the agents that cause it; and optionally the criticality and the certainty of the allergy."/>
 	<purpose value="This profile constrains the representation of a record of an allergy or intolerance of the patient, in the context of the international patient summary as specified by the IPS project of HL7 International."/>
-	<fhirVersion value="3.5.0"/>
+	<fhirVersion value="3.6.0"/>
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="AllergyIntolerance"/>
@@ -29,7 +29,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/abatement-datetime-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/abatement-dateTime-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -75,7 +75,7 @@
 			<max value="1"/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -103,7 +103,7 @@
 			<definition value="Code for an allergy or intolerance statement .  This may be a code for a substance or pharmaceutical product that is considered to be responsible for the adverse reaction risk (e.g., &quot;Latex&quot;), an allergy or intolerance condition (e.g., &quot;Latex allergy&quot;)."/>
 			<type>
 				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/coding-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -119,7 +119,7 @@
 			<path value="AllergyIntolerance.patient"/>
 						<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -161,7 +161,7 @@
 			<path value="AllergyIntolerance.reaction.manifestation"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>

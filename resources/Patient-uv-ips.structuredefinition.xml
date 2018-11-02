@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="patient-uv-ips"/>
-  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips"/>
+  <id value="Patient-uv-ips"/>
+  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
   <name value="Patient-uv-ips"/>
   <status value="draft"/>
   <date value="2018-03-20T16:43:56.519+01:00"/>
   <description value="This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources."/>
-  <fhirVersion value="3.5.0"/>
+  <fhirVersion value="3.6.0"/>
   <kind value="resource"/>
   <abstract value="false"/>
   <type value="Patient"/>
@@ -82,7 +82,7 @@
       <path value="Patient.contact.relationship"/>
       <type>
         <code value="CodeableConcept"/>
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
       </type>
       <mustSupport value="true"/>
       <binding>

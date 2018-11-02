@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
-	<id value="medicationstatement-uv-ips"/>
+	<id value="MedicationStatement-uv-ips"/>
 	<meta>
 		<lastUpdated value="2018-02-21T00:47:03.873+01:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/medicationstatement-uv-ips"/>
+	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"/>
 	<name value="MedicationStatement-uv-ips"/>
 	<title value="Medication Statement (IPS)"/>
 	<status value="draft"/>
@@ -18,7 +18,7 @@
 	</contact>
 	<description value="This profile represents the constraints applied to the MedicationStatement resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A record of a medication statement is represented in the patient summary as an instance of a MedicationStatement resource constrained by this profile."/>
 	<purpose value="This profile constrains the representation of a medication statement related to the patient, in the context of the international patient summary as specified by the IPS project of HL7 International."/>
-	<fhirVersion value="3.5.0"/>
+	<fhirVersion value="3.6.0"/>
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="MedicationStatement"/>
@@ -55,7 +55,7 @@
 			<path value="MedicationStatement.category"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 		</element>
 		<element id="MedicationStatement.medication[x]">
@@ -63,11 +63,11 @@
 			<definition value="Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that gives a reason for absent or unknown Medication.."/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/medication-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -100,7 +100,7 @@
 			<path value="MedicationStatement.subject"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/patient-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -117,7 +117,7 @@
 			<path value="MedicationStatement.reasonCode"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 		</element>
 		<element id="MedicationStatement.reasonReference">
@@ -135,7 +135,7 @@
 			<path value="MedicationStatement.dosage.additionalInstruction"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 		</element>
 		<element id="MedicationStatement.dosage.patientInstruction">
@@ -159,14 +159,14 @@
 			</type>
 			<type>
 				<code value="Range"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/range-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Range-uv-ips"/>
 			</type>
 		</element>
 		<element id="MedicationStatement.dosage.timing.code">
 			<path value="MedicationStatement.dosage.timing.code"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 		</element>
 		<element id="MedicationStatement.dosage.timing.code.coding">
@@ -183,7 +183,7 @@
 			<path value="MedicationStatement.dosage.site"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<binding>
 				<strength value="preferred"/>
@@ -194,7 +194,7 @@
 			<path value="MedicationStatement.dosage.route"/>
 			<type>
 				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/codeableconcept-uv-ips"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
