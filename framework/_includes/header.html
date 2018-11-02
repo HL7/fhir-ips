@@ -17,15 +17,19 @@
 
   <link href="assets/css/bootstrap.css" rel="stylesheet"/>
   <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
-  <link href="assets/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-glyphicons.css" rel="stylesheet"/>
 
   <!-- Project extras -->
   <link href="assets/css/project.css" rel="stylesheet"/>
   <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
 	<link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+{% if page.sectionnumbering %}
+<link href="assets/css/section-numbering.css" rel="stylesheet"/>
+{% endif %}
 {% if page.mycss %}
 <link href="assets/css/{{page.mycss}}" rel="stylesheet"/>
 {% endif %}
+
 
   <!-- Favicons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
@@ -55,7 +59,11 @@
 
       <div id="project-status" class="project-status"> <!-- ig title text -->
 
-      <strong>{{site.data.fhir.igName}}: STU Release 1 Ballot 2</strong>
+      {% if {{site.data.fhir.ig.status}} == 'draft' %}
+      <strong>{{site.data.fhir.igName}} Implementation Guide CI Build</strong>
+      {% else %}
+      <strong>{{site.data.fhir.igName}} Implementation Guide Release {{site.data.fhir.ig.version}}</strong>
+      {% endif %}
 
     </div><!-- end ig title text -->
 
