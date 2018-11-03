@@ -3,16 +3,16 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig-uv-ips"/>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/rhausam/git-repo/fhir-ips/resources"/>
+    <valueString value="C:\msys64\home\Giorgio\_github\test\resources"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
-    <valueString value="/Users/rhausam/git-repo/fhir-ips/examples"/>
+    <valueString value="C:\msys64\home\Giorgio\_github\test\examples"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="/Users/rhausam/git-repo/fhir-ips/framework"/>
+    <valueString value="C:\msys64\home\Giorgio\_github\test\framework"/>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
-    <valueString value="/Users/rhausam/git-repo/fhir-ips/pages"/>
+    <valueString value="C:\msys64\home\Giorgio\_github\test\pages"/>
   </extension>
   <url value="http://hl7.org/fhir/uv/ips/ImplementationGuide/ig-uv-ips"/>
   <version value="0.2.0"/>
@@ -335,12 +335,6 @@
     </resource>
     <resource>
       <reference>
-        <reference value="StructureDefinition/translatedDiv-uv-ips"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
         <reference value="StructureDefinition/abatement-dateTime-uv-ips"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -396,12 +390,6 @@
     <resource>
       <reference>
         <reference value="StructureDefinition/Medication-uv-ips"/>
-      </reference>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="StructureDefinition/Narrative-uv-ips"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>

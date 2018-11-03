@@ -52,9 +52,9 @@ All of the other sections are expected to be omitted in the case of absence of i
 
 ## Translation of designations and narratives
 
-The functional requirement of supporting the translation of the narratives and of the designations has been addressed in this guide extending:
-* the section text attribute (narrative-uv-ips)
-* and the coding data type  (coding-uv-ips)
+The functional requirement of supporting the translation of the designations has been addressed in this guide extending the coding data type  (coding-uv-ips).
+
+For details about the support of narrative translations please refer to the [Multi-Language support in FHIR](http://build.fhir.org/languages.html) section.
 
 ## Medicinal Product Identification
 

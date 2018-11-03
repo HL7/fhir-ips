@@ -72,8 +72,7 @@ For each section the profiles that have been defined have been listed:
 
 # IPS Data types
 Two classes of data types profiles have been defined for the IPS:
-* A first class designed to support multi-languages for Narratives and displays:
-  * Narrative-uv-ips
+* A first class designed to support multi-languages:
   * Coding-uv-ips
   * CodeableConcept-uv-ips
 * A second one defined to restrict the usage of quantity-related data types to UCUM as system for units.
