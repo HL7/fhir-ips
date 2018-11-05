@@ -173,6 +173,10 @@
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips"/>
 			</type>
 		</element>
+		<element id="Observation.specimen.reference">
+			<path value="Observation.specimen.reference"/>
+			<min value="1"/>
+		</element>
 		<element id="Observation.referenceRange.type">
 			<path value="Observation.referenceRange.type"/>
 			<min value="1"/>
@@ -190,6 +194,12 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-member-pathology-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.hasMember.reference">
+			<path value="Observation.hasMember.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.derivedFrom">
 			<path value="Observation.derivedFrom"/>
@@ -198,6 +208,10 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-media-uv-ips"/>
 			</type>
+		</element>
+		<element id="Observation.derivedFrom.reference">
+			<path value="Observation.derivedFrom.reference"/>
+			<min value="1"/>
 		</element>
 		<element id="Observation.component">
 			<path value="Observation.component"/>
