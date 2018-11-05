@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
 	<id value="Medication-uv-ips"/>
 	<meta>
 		<lastUpdated value="2018-03-07T19:02:56.499+01:00"/>
@@ -7,7 +7,7 @@
 	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"/>
 	<version value="0.1"/>
 	<name value="Medication-uv-ips"/>
-	<title value="Medication"/>
+	<title value="Medication (IPS)"/>
 	<status value="draft"/>
 	<experimental value="true"/>
 	<date value="2018-02-20T22:03:08.307+01:00"/>
@@ -261,14 +261,6 @@
 			<definition value="This element is supposed to be valorized with the complete Medicinal Product Name as approved by the Medicines Regulatory Agency in a jurisdiction.&#xD;&#xA;The name may be applicable in one or more country/language combinations."/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Medication.status">
-			<path value="Medication.status"/>
-			<max value="0"/>
-		</element>
-		<element id="Medication.manufacturer">
-			<path value="Medication.manufacturer"/>
-			<max value="0"/>
-		</element>
 		<element id="Medication.form">
 			<path value="Medication.form"/>
 			<definition value="Describes the form of the item.  Powder; tablets; capsule.&#xD;&#xA;&#xD;&#xA;Administrable Pharmaceutical Dose Form. &#xD;&#xA;This code represents the form of the medication (e.g. tablet, capsule, liquid)&#xD;&#xA;&#xD;&#xA;Since the EDQM Standards Terms, together with UCUM, is one of the IDMP terminologies actually available for usage, this code system has been selected  as referecne terminology for representing Pharmaceutical Dose forms;Pakages and Route of Administration.&#xD;&#xA;&#xD;&#xA;It is known that also alternative jurisdictional and international terminologies are known to be used for this concept domain, as NCI or SNOMED CT."/>
@@ -313,6 +305,7 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
 			<binding>
 				<strength value="preferred"/>
 				<description value="SNOMED CT drug substances"/>
@@ -323,23 +316,12 @@
 			<path value="Medication.ingredient.itemCodeableConcept.coding"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Medication.ingredient.itemCodeableConcept:itemCodeableConcept.coding.system">
-			<path value="Medication.ingredient.itemCodeableConcept.coding.system"/>
-			<binding>
-				<strength value="preferred"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-active-substances-uv-ips"/>
-			</binding>
-		</element>
 		<element id="Medication.ingredient.itemCodeableConcept:itemCodeableConcept.text">
 			<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
 				<valueBoolean value="true"/>
 			</extension>
 			<path value="Medication.ingredient.itemCodeableConcept.text"/>
 			<mustSupport value="true"/>
-		</element>
-		<element id="Medication.ingredient.isActive">
-			<path value="Medication.ingredient.isActive"/>
-			<max value="0"/>
 		</element>
 	</differential>
 </StructureDefinition>

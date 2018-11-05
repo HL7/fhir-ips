@@ -32,18 +32,7 @@
 				<code value="Extension"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/statement-uv-ips"/>
 			</type>
-		</element>
-    
-    <!-- the way the exclsuion is represented is not clear to users, is worth to ignore this element in the profile
-    
-		<element id="Immunization.extension:statementDetails.extension:statementNote">
-			<path value="Immunization.extension.extension"/>
-			<sliceName value="statementNote"/>
-			<max value="0"/>
-		</element>
-    
-    END -->
-    
+		</element>  
 		<element id="Immunization.status">
 			<path value="Immunization.status"/>
 			<mustSupport value="true"/>
