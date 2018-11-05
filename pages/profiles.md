@@ -33,7 +33,7 @@ For each section the profiles that have been defined have been listed:
 * Immunizations (S)
   * Immunization-uv-ips
 * History of Procedures (S)
-* Procedure-uv-ips
+  * Procedure-uv-ips
 * Medical Devices (S)
   * DeviceUseStatement-uv-ips
   * Device-uv-ips
