@@ -110,7 +110,110 @@
 		</element>
 		<element id="Procedure.performed[x]">
 			<path value="Procedure.performed[x]"/>
+			<slicing>
+				<discriminator>
+					<type value="type"/>
+					<path value="$this"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
 			<min value="1"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Procedure.performed[x]:performedDateTime">
+			<path value="Procedure.performed[x]"/>
+			<sliceName value="performedDateTime"/>
+			<type>
+				<code value="dateTime"/>
+			</type>
+		</element>
+		<element id="Procedure.performed[x]:performedDateTime:data-absent-reason">
+			<path value="Procedure.performed[x].extension"/>
+			<sliceName value="data-absent-reason"/>
+			<short value="performed Absent Reason"/>
+			<definition value="Provides a reason why the performed is missing."/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Procedure.performed[x]:performedPeriod">
+			<path value="Procedure.performed[x]"/>
+			<sliceName value="performedPeriod"/>
+			<type>
+				<code value="Period"/>
+			</type>
+		</element>
+		<element id="Procedure.performed[x]:performedPeriod:data-absent-reason">
+			<path value="Procedure.performed[x].extension"/>
+			<sliceName value="data-absent-reason"/>
+			<short value="performed Absent Reason"/>
+			<definition value="Provides a reason why the performed is missing."/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Procedure.performed[x]:string">
+			<path value="Procedure.performed[x]"/>
+			<sliceName value="performedString"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Procedure.performed[x]:string:data-absent-reason">
+			<path value="Procedure.performed[x].extension"/>
+			<sliceName value="data-absent-reason"/>
+			<short value="performed Absent Reason"/>
+			<definition value="Provides a reason why the performed is missing."/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Procedure.performed[x]:Age">
+			<path value="Procedure.performed[x]"/>
+			<sliceName value="performedAge"/>
+			<type>
+				<code value="Age"/>
+			</type>
+		</element>
+		<element id="Procedure.performed[x]:Age:data-absent-reason">
+			<path value="Procedure.performed[x].extension"/>
+			<sliceName value="data-absent-reason"/>
+			<short value="performed Absent Reason"/>
+			<definition value="Provides a reason why the performed is missing."/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Procedure.performed[x]:Range">
+			<path value="Procedure.performed[x]"/>
+			<sliceName value="performedRange"/>
+			<type>
+				<code value="Range"/>
+			</type>
+		</element>
+		<element id="Procedure.performed[x]:Range:data-absent-reason">
+			<path value="Procedure.performed[x].extension"/>
+			<sliceName value="data-absent-reason"/>
+			<short value="performed Absent Reason"/>
+			<definition value="Provides a reason why the performed is missing."/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Procedure.performer">

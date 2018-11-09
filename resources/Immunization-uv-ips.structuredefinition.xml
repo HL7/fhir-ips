@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<id value="Immunization-uv-ips"/>
 	<meta>
 		<lastUpdated value="2018-03-07T18:47:01.502+01:00"/>
@@ -32,7 +32,7 @@
 				<code value="Extension"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/statement-uv-ips"/>
 			</type>
-		</element>  
+		</element>
 		<element id="Immunization.status">
 			<path value="Immunization.status"/>
 			<mustSupport value="true"/>
@@ -315,7 +315,7 @@
 		</element>
 		<element id="Immunization.patient">
 			<path value="Immunization.patient"/>
-      <type>
+			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
 			</type>
@@ -323,20 +323,60 @@
 		</element>
 		<element id="Immunization.patient.reference">
 			<path value="Immunization.patient.reference"/>
-      <min value="1"/>
+			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
-		<!--
-		<element id="Immunization.occurrenceDateTime:occurrenceDateTime">
-			<path value="Immunization.occurrenceDateTime"/>
-			<sliceName value="occurrenceDateTime"/>
+		<element id="Immunization.occurrence[x]">
+			<path value="Immunization.occurrence[x]"/>
+			<slicing>
+				<discriminator>
+					<type value="type"/>
+					<path value="$this"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+			<min value="1"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Immunization.occurrence[x]:occurrencedateTime">
+			<path value="Immunization.occurrence[x]"/>
+			<sliceName value="occurrencedateTime"/>
 			<type>
 				<code value="dateTime"/>
-				<profile value="http://hl7.org/fhir/StructureDefinition/dateTime"/>
+			</type>
+		</element>
+		<element id="Immunization.occurrence[x]:occurrencedateTime:data-absent-reason">
+			<path value="Immunization.occurrence[x].extension"/>
+			<sliceName value="data-absent-reason"/>
+			<short value="occurrence Absent Reason"/>
+			<definition value="Provides a reason why the occurrence is missing."/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		-->
+		<element id="Immunization.occurrence[x]:string">
+			<path value="Immunization.occurrence[x]"/>
+			<sliceName value="string"/>
+			<type>
+				<code value="string"/>
+			</type>
+		</element>
+		<element id="Immunization.occurrence[x]:string:data-absent-reason">
+			<path value="Immunization.occurrence[x].extension"/>
+			<sliceName value="data-absent-reason"/>
+			<short value="occurrence Absent Reason"/>
+			<definition value="Provides a reason why the occurrence is missing."/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
 		<element id="Immunization.site.coding">
 			<path value="Immunization.site.coding"/>
 			<type>

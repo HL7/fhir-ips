@@ -881,6 +881,75 @@
 			<path value="Composition.section.section"/>
 			<max value="0"/>
 		</element>
+		
+		
+
+		<element id="Composition.section:sectionVitalSigns">
+			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
+				<valueString value="Vital Signs Section"/>
+			</extension>
+			<path value="Composition.section"/>
+			<label value="Vital signs"/>
+			<sliceName value="sectionVitalSigns"/>
+			<short value="IPS Vital Signs Section"/>
+			<definition value="The Vital signs section includes blood pressure, body temperature, heart rate, and respiratory rate. It may also include other clinical findings, such as height, weight, body mass index, head circumference, and pulse oximetry. In particular, notable vital signs or physical findings such as the most recent, maximum and/or minimum, baseline, or relevant trends may be included"/>
+			<max value="1"/>
+		</element>
+		<element id="Composition.section:sectionVitalSigns.title">
+			<path value="Composition.section.title"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:sectionVitalSigns.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<fixedCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="8716-3"/>
+				</coding>
+			</fixedCodeableConcept>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:sectionVitalSigns.code.coding">
+			<path value="Composition.section.code.coding"/>
+			<min value="1"/>
+			<type>
+				<code value="Coding"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:sectionVitalSigns.code.coding.system">
+			<path value="Composition.section.code.coding.system"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:sectionVitalSigns.code.coding.code">
+			<path value="Composition.section.code.coding.code"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:sectionVitalSigns.text">
+			<path value="Composition.section.text"/>
+			<min value="1"/>
+			<type>
+				<code value="Narrative"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:sectionVitalSigns.entry">
+			<path value="Composition.section.entry"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
+			</type>
+		</element>
+		<element id="Composition.section:sectionVitalSigns.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+		</element>			
+			
 		<element id="Composition.section:sectionPastIllnessHx">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
 				<valueString value="Section"/>
@@ -1288,7 +1357,7 @@
 		<element id="Composition.section:sectionPregnancyHx.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
-		</element>
+		</element>		
 		<element id="Composition.section:sectionAdvanceDirectives">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
 				<valueString value="Section"/>

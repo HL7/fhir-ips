@@ -3,7 +3,7 @@
 	<id value="Observation-alcoholuse-uv-ips"/>
 	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips"/>
 	<name value="Observation-alcoholUse-uv-ips"/>
-  <title value="Observation (SH: alcohol use)"/>
+	<title value="Observation (SH: alcohol use)"/>
 	<status value="draft"/>
 	<date value="2018-03-20T11:00:52.49+01:00"/>
 	<description value="This profile constrains the Observation resource to represent alcohol use assessment in a patient summary"/>
@@ -34,9 +34,8 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-				<element id="Observation.code.coding">
+		<element id="Observation.code.coding">
 			<path value="Observation.code.coding"/>
-
 		</element>
 		<element id="Observation.code.coding.system">
 			<path value="Observation.code.coding.system"/>
@@ -55,14 +54,98 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-    <element id="Observation.subject.reference">
+		<element id="Observation.subject.reference">
 			<path value="Observation.subject.reference"/>
-      <min value="1"/>
+			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.effective[x]">
 			<path value="Observation.effective[x]"/>
+			<slicing>
+				<discriminator>
+					<type value="type"/>
+					<path value="$this"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
 			<min value="1"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]:effectivedateTime">
+			<path value="Observation.effective[x]"/>
+			<sliceName value="effectivedateTime"/>
+			<type>
+				<code value="dateTime"/>
+			</type>
+		</element>
+		<element id="Observation.effective[x]:effectivedateTime:data-absent-reason">
+			<path value="Observation.effective[x].extension"/>
+			<sliceName value="data-absent-reason"/>
+			<short value="effective Absent Reason"/>
+			<definition value="Provides a reason why the effective is missing."/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]:effectivePeriod">
+			<path value="Observation.effective[x]"/>
+			<sliceName value="effectivePeriod"/>
+			<type>
+				<code value="Period"/>
+			</type>
+		</element>
+		<element id="Observation.effective[x]:effectivePeriod:data-absent-reason">
+			<path value="Observation.effective[x].extension"/>
+			<sliceName value="data-absent-reason"/>
+			<short value="effective Absent Reason"/>
+			<definition value="Provides a reason why the effective is missing."/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]:instant">
+			<path value="Observation.effective[x]"/>
+			<sliceName value="effectiveinstant"/>
+			<type>
+				<code value="instant"/>
+			</type>
+		</element>
+		<element id="Observation.effective[x]:instant:data-absent-reason">
+			<path value="Observation.effective[x].extension"/>
+			<sliceName value="data-absent-reason"/>
+			<short value="effective Absent Reason"/>
+			<definition value="Provides a reason why the effective is missing."/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]:Timing">
+			<path value="Observation.effective[x]"/>
+			<sliceName value="effectiveTiming"/>
+			<type>
+				<code value="Timing"/>
+			</type>
+		</element>
+		<element id="Observation.effective[x]:Timing:data-absent-reason">
+			<path value="Observation.effective[x].extension"/>
+			<sliceName value="data-absent-reason"/>
+			<short value="effective Absent Reason"/>
+			<definition value="Provides a reason why the effective is missing."/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.value[x]:valueQuantity">

@@ -6,7 +6,7 @@
 	</meta>
 	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-imaging-uv-ips"/>
 	<name value="Observation-imaging-uv-ips"/>
-  <title value="Observation (Results: imaging)"/>
+	<title value="Observation (Results: imaging)"/>
 	<status value="draft"/>
 	<experimental value="false"/>
 	<date value="2018-02-06T09:53:52.306+01:00"/>
@@ -29,7 +29,7 @@
 			<sliceName value="partOf"/>
 			<type>
 				<code value="Extension"/>
-        		<profile value="http://hl7.org/fhir/StructureDefinition/event-partOf"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/event-partOf"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -88,13 +88,98 @@
 		</element>
 		<element id="Observation.subject.reference">
 			<path value="Observation.subject.reference"/>
-      <min value="1"/>
+			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.effective[x]">
 			<path value="Observation.effective[x]"/>
 			<label value="Date/Time of the Imaging Procedure"/>
+			<slicing>
+				<discriminator>
+					<type value="type"/>
+					<path value="$this"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
 			<definition value="The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the &quot;physiologically relevant time&quot;. This is usually either the time of the procedure or of specimen collection, but very often the source of the date/time is not known, only the date/time itself.&#xD;&#xA;&#xD;&#xA;"/>
+			<min value="1"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]:effectivedateTime">
+			<path value="Observation.effective[x]"/>
+			<sliceName value="effectivedateTime"/>
+			<type>
+				<code value="dateTime"/>
+			</type>
+		</element>
+		<element id="Observation.effective[x]:effectivedateTime:data-absent-reason">
+			<path value="Observation.effective[x].extension"/>
+			<sliceName value="data-absent-reason"/>
+			<short value="effective Absent Reason"/>
+			<definition value="Provides a reason why the effective is missing."/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]:effectivePeriod">
+			<path value="Observation.effective[x]"/>
+			<sliceName value="effectivePeriod"/>
+			<type>
+				<code value="Period"/>
+			</type>
+		</element>
+		<element id="Observation.effective[x]:effectivePeriod:data-absent-reason">
+			<path value="Observation.effective[x].extension"/>
+			<sliceName value="data-absent-reason"/>
+			<short value="effective Absent Reason"/>
+			<definition value="Provides a reason why the effective is missing."/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]:instant">
+			<path value="Observation.effective[x]"/>
+			<sliceName value="effectiveinstant"/>
+			<type>
+				<code value="instant"/>
+			</type>
+		</element>
+		<element id="Observation.effective[x]:instant:data-absent-reason">
+			<path value="Observation.effective[x].extension"/>
+			<sliceName value="data-absent-reason"/>
+			<short value="effective Absent Reason"/>
+			<definition value="Provides a reason why the effective is missing."/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]:Timing">
+			<path value="Observation.effective[x]"/>
+			<sliceName value="effectiveTiming"/>
+			<type>
+				<code value="Timing"/>
+			</type>
+		</element>
+		<element id="Observation.effective[x]:Timing:data-absent-reason">
+			<path value="Observation.effective[x].extension"/>
+			<sliceName value="data-absent-reason"/>
+			<short value="effective Absent Reason"/>
+			<definition value="Provides a reason why the effective is missing."/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.performer">
