@@ -26,21 +26,26 @@
 			<value value="info@hl7.org"/>
 		</telecom>
 	</contact>
-	<description value="This value set provide an example of possible codes representing PhPID Active Substance Stratum Level 1. PhPID Lvl1 identifies the substance(s) in the medication product. It is envisioned that IDMP PhPIDs will be used in the next future."/>
+	<description value="This value set provides an example of possible codes representing PhPID Active Substance Stratum Level 1. PhPID Lvl1 identifies medicinal products based on their generic composition of active substance(s). It is envisioned that IDMP PhPIDs will be used in the next future."/>
 	<immutable value="false"/>
 	<compose>
 		<include>
-			<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+			<system value="http://snomed.info/sct"/>
 			<concept>
-				<code value="723"/>
-				<display value="Amoxicillin"/>
+				<code value="777067000"/>
+				<display value="Acetaminophen only product"/>
 			</concept>
-		</include>
-		<include>
-			<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
 			<concept>
-				<code value="19711"/>
-				<display value="Amoxicillin / Clavulanate"/>
+				<code value="774587000"/>
+				<display value="Amoxicillin and clavulanic acid only product"/>
+			</concept>
+			<concept>
+				<code value="776556004"/>
+				<display value="Lithium citrate only product"/>
+			</concept>
+			<concept>
+				<code value="774409003"/>
+				<display value="Acenocoumarol only product"/>
 			</concept>
 		</include>
 	</compose>

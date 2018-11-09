@@ -26,7 +26,8 @@
 			<value value="info@hl7.org"/>
 		</telecom>
 	</contact>
-	<description value="This value set provide an example of possible codes representing concepts that may be associated to PhPID Active Substance Stratum Level 2. PhPID Lvl2 identifies Substance Term(s), Strength and Reference Strength in the medication product. It is envisioned that IDMP PhPIDs will be used in the next future."/>
+	<description
+		value="This value set provides an example of possible codes representing concepts that may be associated to PhPID Active Substance Stratum Level 2. PhPID Lvl2 identifies medicinal products based on their generic composition of active substance(s) with strength. It is envisioned that IDMP PhPIDs will be used in the next future."/>
 	<immutable value="false"/>
 	<compose>
 		<include>
@@ -34,6 +35,14 @@
 			<concept>
 				<code value="331055"/>
 				<display value="Amoxicillin 1000 MG"/>
+			</concept>
+			<concept>
+				<code value="437158"/>
+				<display value="Acetaminophen 100 MG"/>
+			</concept>
+			<concept>
+				<code value="332122"/>
+				<display value="lithium citrate 60 MG/ML"/>
 			</concept>
 		</include>
 	</compose>

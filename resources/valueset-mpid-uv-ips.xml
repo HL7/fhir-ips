@@ -26,7 +26,7 @@
 			<value value="info@hl7.org"/>
 		</telecom>
 	</contact>
-	<description value="This value set provide an example of possible codes representing  Medicinal Products. It is envisioned that IDMP MPID will be used in the next future."/>
+	<description value="This value set provides an example of possible codes representing  Medicinal Products. It is envisioned that IDMP MPID will be used in the next future."/>
 	<immutable value="false"/>
 	<compose>
 		<include>
@@ -41,6 +41,13 @@
 			<concept>
 				<code value="50436-3129"/>
 				<display value="Amoxicillin and Clavulanate Potassium"/>
+			</concept>
+		</include>
+		<include>
+			<system value="urn:oid:1.2.250.1.213.2.3.1"/>
+			<concept>
+				<code value="63672890"/>
+				<display value="LITHIUM OLIGOSOL, solution buvable en ampoule ou en récipient unidose"/>
 			</concept>
 		</include>
 	</compose>

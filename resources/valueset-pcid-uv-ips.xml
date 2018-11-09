@@ -26,7 +26,7 @@
 			<value value="info@hl7.org"/>
 		</telecom>
 	</contact>
-	<description value="This value set provide an example of possible codes representing concepts that may be associated to Packaged Medicinal Products. It is envisioned that IDMP PCID will be used in the next future."/>
+	<description value="This value set provides an example of possible codes representing concepts that may be associated to Packaged Medicinal Products. It is envisioned that IDMP PCID will be used in the next future."/>
 	<immutable value="false"/>
 	<compose>
 		<include>
@@ -41,6 +41,13 @@
 			<concept>
 				<code value="50436-3129-1"/>
 				<display value="Amoxicillin and Clavulanate Potassium 875 mg/1, 125 mg/1 20 TABLET, FILM COATED in 1 BOTTLE"/>
+			</concept>
+		</include>
+		<include>
+			<system value="urn:oid:1.2.250.1.213.2.3.3"/>
+			<concept>
+				<code value="3400937546621"/>
+				<display value="LITHIUM OLIGOSOL, solution buvable en ampoule ou en récipient unidose, 28 ampoules en verre de 2 ml"/>
 			</concept>
 		</include>
 	</compose>
