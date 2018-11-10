@@ -28,6 +28,7 @@ The IPS sections are summarized in the following list. (R) denotes a required se
 * History of Procedures (S)
 * Medical Devices (S)
 * Diagnostic Results (S)
+* Vital Signs
 * Past history of illnesses
 * Pregnancy (status and history summary)
 * Social History
@@ -37,7 +38,6 @@ And the following text only sections:
 * Plan of care
 * Advance Directives
 
-(Vital Signs section is not yet included)
 
 # Sections description
 
@@ -90,6 +90,9 @@ This version is comprised of three alternative entries to carry results from:
 * pathology
 
 and offers also a generic result entry.
+
+## Vital Signs
+The Vital signs section includes blood pressure, body temperature, heart rate, and respiratory rate. It may also include other clinical findings, such as height, weight, body mass index, head circumference, and pulse oximetry. In particular, notable vital signs or physical findings such as the most recent, maximum and/or minimum, baseline, or relevant trends may be included
 
 ## Past history of illnesses
 The History of Past Illness section contains a description of the conditions the patient suffered in the past
