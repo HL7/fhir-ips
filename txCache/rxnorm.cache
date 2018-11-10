@@ -1,5 +1,4 @@
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -11,8 +10,7 @@
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
@@ -41,7 +39,6 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -53,8 +50,7 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
@@ -83,7 +79,6 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -95,8 +90,7 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
@@ -125,7 +119,6 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -137,8 +130,7 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
@@ -167,7 +159,6 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -179,8 +170,7 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
@@ -209,7 +199,6 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -221,8 +210,7 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
@@ -251,7 +239,6 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -263,8 +250,7 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
@@ -289,7 +275,6 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -301,8 +286,7 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
@@ -327,7 +311,6 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
-
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -339,8 +322,7 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
@@ -376,8 +358,7 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
@@ -417,8 +398,7 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
@@ -458,8 +438,7 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
@@ -482,6 +461,118 @@ e: {
       "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
       "code" : "392259005",
       "display" : "Amoxicillin 875 mg and clavulanate potassium 125 mg oral tablet"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept" : [{
+        "code" : "331055",
+        "display" : "Amoxicillin 1000 MG"
+      },
+      {
+        "code" : "437158",
+        "display" : "Acetaminophen 100 MG"
+      },
+      {
+        "code" : "332122",
+        "display" : "lithium citrate 60 MG/ML"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:4d9a0843-5c08-4163-95b7-a3839f129b59",
+    "timestamp" : "2018-11-09T16:54:09.836Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://www.nlm.nih.gov/research/umls/rxnorm?version=??"
+    }],
+    "contains" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "331055",
+      "display" : "Amoxicillin 1000 MG"
+    },
+    {
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "437158",
+      "display" : "Acetaminophen 100 MG"
+    },
+    {
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "332122",
+      "display" : "lithium citrate 60 MG/ML"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept" : [{
+        "code" : "331055",
+        "display" : "Amoxicillin 1000 MG"
+      },
+      {
+        "code" : "437158",
+        "display" : "Acetaminophen 100 MG"
+      },
+      {
+        "code" : "332122",
+        "display" : "lithium citrate 60 MG/ML"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:4cf5c7de-6fb9-4cb1-a75e-b35cfb189e84",
+    "timestamp" : "2018-11-09T16:59:07.132Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://www.nlm.nih.gov/research/umls/rxnorm?version=??"
+    }],
+    "contains" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "331055",
+      "display" : "Amoxicillin 1000 MG"
+    },
+    {
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "437158",
+      "display" : "Acetaminophen 100 MG"
+    },
+    {
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "332122",
+      "display" : "lithium citrate 60 MG/ML"
     }]
   }
 },

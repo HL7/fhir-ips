@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+<StructureDefinition xmlns="http://hl7.org/fhir" >
 	<id value="Composition-uv-ips"/>
 	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips"/>
 	<version value="0.2.0"/>
@@ -757,7 +757,7 @@
 		</element>
 		<element id="Composition.section:sectionResults">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
-				<valueString value="Section"/>
+				<valueString value="Results Section"/>
 			</extension>
 			<path value="Composition.section"/>
 			<sliceName value="sectionResults"/>
@@ -881,16 +881,12 @@
 			<path value="Composition.section.section"/>
 			<max value="0"/>
 		</element>
-		
-		
-
 		<element id="Composition.section:sectionVitalSigns">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
 				<valueString value="Vital Signs Section"/>
 			</extension>
 			<path value="Composition.section"/>
 			<label value="Vital signs"/>
-			<sliceName value="sectionVitalSigns"/>
 			<short value="IPS Vital Signs Section"/>
 			<definition value="The Vital signs section includes blood pressure, body temperature, heart rate, and respiratory rate. It may also include other clinical findings, such as height, weight, body mass index, head circumference, and pulse oximetry. In particular, notable vital signs or physical findings such as the most recent, maximum and/or minimum, baseline, or relevant trends may be included"/>
 			<max value="1"/>
@@ -940,6 +936,21 @@
 		</element>
 		<element id="Composition.section:sectionVitalSigns.entry">
 			<path value="Composition.section.entry"/>
+			<slicing>
+				<discriminator>
+					<type value="profile"/>
+					<path value="resolve()"/>
+				</discriminator>
+				<rules value="openAtEnd"/>
+			</slicing>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+			</type>
+		</element>
+		<element id="Composition.section:sectionVitalSigns.entry:vitalSign">
+			<path value="Composition.section.entry"/>
+			<sliceName value="vitalSign"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
@@ -948,8 +959,7 @@
 		<element id="Composition.section:sectionVitalSigns.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
-		</element>			
-			
+		</element>
 		<element id="Composition.section:sectionPastIllnessHx">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
 				<valueString value="Section"/>
@@ -1357,7 +1367,7 @@
 		<element id="Composition.section:sectionPregnancyHx.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
-		</element>		
+		</element>
 		<element id="Composition.section:sectionAdvanceDirectives">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
 				<valueString value="Section"/>
