@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+<StructureDefinition xmlns="http://hl7.org/fhir" >
 	<id value="Patient-uv-ips"/>
 	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
 	<name value="Patient-uv-ips"/>
@@ -76,6 +76,7 @@
 				<human value="The content of this element SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, IF the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2."/>
 				<expression value="IF country NOT IN http://hl7.org/fhir/ValueSet/iso3166-1-2 THEN country IN http://hl7.org/fhir/ValueSet/iso3166-1-3"/>
 			</constraint>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Patient.contact">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
@@ -139,10 +140,6 @@
 			<path value="Patient.contact.organization"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Patient.contact.organization.identifier">
-			<path value="Patient.contact.organization.identifier"/>
-			<max value="0"/>
-		</element>
 		<element id="Patient.communication">
 			<path value="Patient.communication"/>
 			<mustSupport value="true"/>
@@ -163,10 +160,6 @@
 		<element id="Patient.generalPractitioner">
 			<path value="Patient.generalPractitioner"/>
 			<mustSupport value="true"/>
-		</element>
-		<element id="Patient.generalPractitioner.identifier">
-			<path value="Patient.generalPractitioner.identifier"/>
-			<max value="0"/>
 		</element>
 	</differential>
 </StructureDefinition>

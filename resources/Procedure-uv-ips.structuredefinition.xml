@@ -27,13 +27,7 @@
 				<code value="Extension"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/statement-uv-ips"/>
 			</type>
-		</element>
-		<element id="Procedure.partOf">
-			<path value="Procedure.partOf"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure"/>
-			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Procedure.status">
 			<path value="Procedure.status"/>
@@ -131,7 +125,7 @@
 		<element id="Procedure.performed[x]:performedDateTime:data-absent-reason">
 			<path value="Procedure.performed[x].extension"/>
 			<sliceName value="data-absent-reason"/>
-			<short value="performed Absent Reason"/>
+			<short value="performed[x] absence reason"/>
 			<definition value="Provides a reason why the performed is missing."/>
 			<max value="1"/>
 			<type>
@@ -150,7 +144,7 @@
 		<element id="Procedure.performed[x]:performedPeriod:data-absent-reason">
 			<path value="Procedure.performed[x].extension"/>
 			<sliceName value="data-absent-reason"/>
-			<short value="performed Absent Reason"/>
+			<short value="performed[x] absence reason"/>
 			<definition value="Provides a reason why the performed is missing."/>
 			<max value="1"/>
 			<type>
@@ -169,7 +163,7 @@
 		<element id="Procedure.performed[x]:string:data-absent-reason">
 			<path value="Procedure.performed[x].extension"/>
 			<sliceName value="data-absent-reason"/>
-			<short value="performed Absent Reason"/>
+			<short value="performed[x] absence reason"/>
 			<definition value="Provides a reason why the performed is missing."/>
 			<max value="1"/>
 			<type>
@@ -188,7 +182,7 @@
 		<element id="Procedure.performed[x]:Age:data-absent-reason">
 			<path value="Procedure.performed[x].extension"/>
 			<sliceName value="data-absent-reason"/>
-			<short value="performed Absent Reason"/>
+			<short value="performed[x] absence reason"/>
 			<definition value="Provides a reason why the performed is missing."/>
 			<max value="1"/>
 			<type>
@@ -207,7 +201,7 @@
 		<element id="Procedure.performed[x]:Range:data-absent-reason">
 			<path value="Procedure.performed[x].extension"/>
 			<sliceName value="data-absent-reason"/>
-			<short value="performed Absent Reason"/>
+			<short value="performed[x] absence reason"/>
 			<definition value="Provides a reason why the performed is missing."/>
 			<max value="1"/>
 			<type>
@@ -218,6 +212,7 @@
 		</element>
 		<element id="Procedure.performer">
 			<path value="Procedure.performer"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Procedure.performer.actor">
 			<path value="Procedure.performer.actor"/>
@@ -229,6 +224,7 @@
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-observation-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Procedure.performer.onBehalfOf">
 			<path value="Procedure.performer.onBehalfOf"/>
@@ -236,23 +232,14 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-observation-uv-ips"/>
 			</type>
-		</element>
-		<element id="Procedure.location">
-			<path value="Procedure.location"/>
-			<comment value="References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.&#xD;&#xA;&#xD;&#xA;TRILLIUM II IMPLEMENTATION COMMENTS: We propose to encode it with SNOMED CT."/>
-		</element>
-		<element id="Procedure.reasonCode">
-			<path value="Procedure.reasonCode"/>
-			<binding>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="ProcedureReason"/>
-				</extension>
-				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/ValueSet/procedure-reason"/>
-			</binding>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Procedure.bodySite">
 			<path value="Procedure.bodySite"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
 			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
