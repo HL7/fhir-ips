@@ -42,6 +42,7 @@
 			<path value="Observation.status"/>
 			<definition value="The status of the result value. Only final results feed patient summaries."/>
 			<fixedCode value="final"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.category">
 			<path value="Observation.category"/>
@@ -53,6 +54,7 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.code">
 			<path value="Observation.code"/>
@@ -172,10 +174,12 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.specimen.reference">
 			<path value="Observation.specimen.reference"/>
 			<min value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.referenceRange.type">
 			<path value="Observation.referenceRange.type"/>
@@ -208,10 +212,12 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-media-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.derivedFrom.reference">
 			<path value="Observation.derivedFrom.reference"/>
 			<min value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component">
 			<path value="Observation.component"/>

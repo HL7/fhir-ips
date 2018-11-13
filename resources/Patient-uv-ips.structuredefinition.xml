@@ -147,11 +147,6 @@
 		<element id="Patient.communication.language">
 			<path value="Patient.communication.language"/>
 			<mustSupport value="true"/>
-		</element>
-		<element id="Patient.communication.language.code">
-			<path value="Patient.communication.language.code"/>
-			<min value="1"/>
-			<mustSupport value="true"/>
 			<binding>
 				<strength value="required"/>
 				<valueSet value="http://hl7.org/fhir/ValueSet/all-languages"/>

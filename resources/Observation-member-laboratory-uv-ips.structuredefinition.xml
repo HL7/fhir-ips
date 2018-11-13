@@ -41,6 +41,7 @@
 			<path value="Observation.status"/>
 			<definition value="The status of the result value.  Only final results feed patient summaries."/>
 			<fixedCode value="final"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.category">
 			<path value="Observation.category"/>
@@ -142,13 +143,6 @@
 		<element id="Observation.dataAbsentReason">
 			<path value="Observation.dataAbsentReason"/>
 			<max value="0"/>
-		</element>
-		<element id="Observation.interpretation">
-			<path value="Observation.interpretation"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
 		</element>
 		<element id="Observation.bodySite">
 			<path value="Observation.bodySite"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../__FHIRr4Tools/fhir-all-xsd/composition.xsd">
 	<id value="Observation-tobaccouse-uv-ips"/>
 	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips"/>
 	<name value="Observation-tobaccoUse-uv-ips"/>
@@ -33,12 +33,22 @@
 			</fixedCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
+		<element id="Observation.code.coding">
+			<path value="Observation.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
 		<element id="Observation.code.coding.system">
 			<path value="Observation.code.coding.system"/>
+			<min value="1"/>
+			<max value="1"/>
 			<fixedUri value="http://loinc.org"/>
 		</element>
 		<element id="Observation.code.coding.code">
 			<path value="Observation.code.coding.code"/>
+			<min value="1"/>
+			<max value="1"/>
 			<fixedCode value="72166-2"/>
 		</element>
 		<element id="Observation.subject">
@@ -78,7 +88,7 @@
 		<element id="Observation.effective[x]:effectivedateTime:data-absent-reason">
 			<path value="Observation.effective[x].extension"/>
 			<sliceName value="data-absent-reason"/>
-			<short value="effective Absent Reason"/>
+			<short value="effective[x] absence reason"/>
 			<definition value="Provides a reason why the effective is missing."/>
 			<max value="1"/>
 			<type>
@@ -97,7 +107,7 @@
 		<element id="Observation.effective[x]:effectivePeriod:data-absent-reason">
 			<path value="Observation.effective[x].extension"/>
 			<sliceName value="data-absent-reason"/>
-			<short value="effective Absent Reason"/>
+			<short value="effective[x] absence reason"/>
 			<definition value="Provides a reason why the effective is missing."/>
 			<max value="1"/>
 			<type>
@@ -116,7 +126,7 @@
 		<element id="Observation.effective[x]:instant:data-absent-reason">
 			<path value="Observation.effective[x].extension"/>
 			<sliceName value="data-absent-reason"/>
-			<short value="effective Absent Reason"/>
+			<short value="effective[x] absence reason"/>
 			<definition value="Provides a reason why the effective is missing."/>
 			<max value="1"/>
 			<type>
@@ -135,7 +145,7 @@
 		<element id="Observation.effective[x]:Timing:data-absent-reason">
 			<path value="Observation.effective[x].extension"/>
 			<sliceName value="data-absent-reason"/>
-			<short value="effective Absent Reason"/>
+			<short value="effective[x] absence reason"/>
 			<definition value="Provides a reason why the effective is missing."/>
 			<max value="1"/>
 			<type>
