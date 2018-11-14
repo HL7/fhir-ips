@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir" >
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../__FHIRr4Tools/fhir-all-xsd/composition.xsd">
 	<id value="MedicationStatement-uv-ips"/>
 	<meta>
 		<lastUpdated value="2018-02-21T00:47:03.873+01:00"/>
@@ -67,6 +67,46 @@
 			<max value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		<element id="MedicationStatement.effectiveDateTime">
+			<path value="MedicationStatement.effectiveDateTime"/>
+			<sliceName value="effectiveDateTime"/>
+			<type>
+				<code value="dateTime"/>
+			</type>
+		</element>
+		<element id="MedicationStatement.effectiveDateTime:data-absent-reason">
+			<path value="MedicationStatement.effectiveDateTime.extension"/>
+			<sliceName value="data-absent-reason"/>
+			<short value="effective[x] absence reason"/>
+			<definition value="Provides a reason why the effective is missing."/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="MedicationStatement.effectivePeriod">
+			<path value="MedicationStatement.effectivePeriod"/>
+			<sliceName value="effectivePeriod"/>
+			<type>
+				<code value="Period"/>
+			</type>
+		</element>
+		<element id="MedicationStatement.effectivePeriod:data-absent-reason">
+			<path value="MedicationStatement.effectivePeriod.extension"/>
+			<sliceName value="data-absent-reason"/>
+			<short value="effective[x] absence reason"/>
+			<definition value="Provides a reason why the effective is missing."/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<!--
+
 		<element id="MedicationStatement.effective[x]:effectivedateTime">
 			<path value="MedicationStatement.effective[x]"/>
 			<sliceName value="effectivedateTime"/>
@@ -105,6 +145,8 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+
+-->
 		<element id="MedicationStatement.subject">
 			<path value="MedicationStatement.subject"/>
 			<type>

@@ -56,6 +56,8 @@ For each section the profiles that have been defined have been listed:
     * Observation-pathology-uv-ips
   * Other results 
     * Observation-uv-ips
+* Vital Signs
+  * vitalsigns
 * Past history of illnesses
 * Pregnancy (status and history summary)
   * Observation-pregnancy-edd-uv-ips
@@ -68,10 +70,9 @@ For each section the profiles that have been defined have been listed:
 * Plan of care
 * Advance Directives
 
-(Vital Signs has not yet included)
 
 # IPS Data types
-Two classes of data types profiles have been defined for the IPS:
+Two classes of datatype profiles have been defined for the IPS:
 * A first class designed to support multi-languages:
   * Coding-uv-ips
   * CodeableConcept-uv-ips
