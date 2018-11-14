@@ -30,7 +30,7 @@
 		<element id="Observation.code.coding">
 			<path value="Observation.code.coding"/>
 			<min value="1"/>
-			<maxLength value="1"/>
+			<max value="1"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.code.coding.system">
@@ -153,6 +153,7 @@
 			<sliceName value="pregnancyStatus"/>
 			<type>
 				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 			<binding>
@@ -186,6 +187,13 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+
+	<element id="Observation.hasMember.reference">
+			<path value="Observation.hasMember.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>		
+		
 		<element id="Observation.component">
 			<path value="Observation.component"/>
 			<max value="0"/>

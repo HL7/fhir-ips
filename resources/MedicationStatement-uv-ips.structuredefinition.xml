@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../__FHIRr4Tools/fhir-all-xsd/composition.xsd">
+<StructureDefinition xmlns="http://hl7.org/fhir" >
 	<id value="MedicationStatement-uv-ips"/>
 	<meta>
 		<lastUpdated value="2018-02-21T00:47:03.873+01:00"/>
@@ -28,35 +28,10 @@
 		<element id="MedicationStatement">
 			<path value="MedicationStatement"/>
 		</element>
-		<element id="MedicationStatement.basedOn">
-			<path value="MedicationStatement.basedOn"/>
-		</element>
-		<element id="MedicationStatement.extension">
-			<path value="MedicationStatement.extension"/>
-			<slicing>
-				<discriminator>
-					<type value="value"/>
-					<path value="url"/>
-				</discriminator>
-				<rules value="open"/>
-			</slicing>
-		</element>
-		<element id="MedicationStatement.partOf">
-			<path value="MedicationStatement.partOf"/>
-		</element>
-		<element id="MedicationStatement.context">
-			<path value="MedicationStatement.context"/>
-		</element>
 		<element id="MedicationStatement.status">
 			<path value="MedicationStatement.status"/>
+			<comment value="In the scope of the IPS the entered-in-error concept is not allowed."/>
 			<mustSupport value="true"/>
-		</element>
-		<element id="MedicationStatement.category">
-			<path value="MedicationStatement.category"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
 		</element>
 		<element id="MedicationStatement.medication[x]">
 			<path value="MedicationStatement.medication[x]"/>
@@ -165,13 +140,6 @@
 			<path value="MedicationStatement.dosage.text"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="MedicationStatement.dosage.additionalInstruction">
-			<path value="MedicationStatement.dosage.additionalInstruction"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
-		</element>
 		<element id="MedicationStatement.dosage.patientInstruction">
 			<path value="MedicationStatement.dosage.patientInstruction"/>
 			<mustSupport value="true"/>
@@ -195,23 +163,6 @@
 				<code value="Range"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Range-uv-ips"/>
 			</type>
-		</element>
-		<element id="MedicationStatement.dosage.timing.code">
-			<path value="MedicationStatement.dosage.timing.code"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
-		</element>
-		<element id="MedicationStatement.dosage.timing.code.coding">
-			<path value="MedicationStatement.dosage.timing.code.coding"/>
-		</element>
-		<element id="MedicationStatement.dosage.timing.code.coding.system">
-			<path value="MedicationStatement.dosage.timing.code.coding.system"/>
-			<binding>
-				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/ValueSet/event-timing"/>
-			</binding>
 		</element>
 		<element id="MedicationStatement.dosage.site">
 			<path value="MedicationStatement.dosage.site"/>

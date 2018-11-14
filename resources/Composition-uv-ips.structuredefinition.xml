@@ -156,6 +156,7 @@
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Composition"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.event">
 			<path value="Composition.event"/>
@@ -279,7 +280,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Medicationstatement-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -369,7 +370,7 @@
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Allergyintolerance-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -451,10 +452,6 @@
 				<rules value="openAtEnd"/>
 			</slicing>
 			<min value="1"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
-			</type>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionProblems.entry:problem">
@@ -545,10 +542,6 @@
 			</slicing>
 			<min value="1"/>
 			<max value="1"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"/>
-			</type>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionProceduresHx.entry:procedure">
@@ -638,10 +631,6 @@
 				<rules value="openAtEnd"/>
 			</slicing>
 			<min value="1"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"/>
-			</type>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionImmunizations.entry:immunization">
@@ -873,10 +862,6 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionResults.emptyReason">
-			<path value="Composition.section.emptyReason"/>
-			<max value="0"/>
-		</element>
 		<element id="Composition.section:sectionResults.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
@@ -943,10 +928,6 @@
 				</discriminator>
 				<rules value="openAtEnd"/>
 			</slicing>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
-			</type>
 		</element>
 		<element id="Composition.section:sectionVitalSigns.entry:vitalSign">
 			<path value="Composition.section.entry"/>
@@ -955,6 +936,12 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
 			</type>
+			<mustSupport value="true" />
+		</element>
+		<element id="Composition.section:sectionVitalSigns.entry:vitalSign.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionVitalSigns.section">
 			<path value="Composition.section.section"/>
@@ -1034,6 +1021,11 @@
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"/>
 			</type>
 		</element>
+		<element id="Composition.section:sectionPastIllnessHx:pastProblem.entry.reference">
+			<path value="Composition.section.entry.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
 		<element id="Composition.section:sectionPastIllnessHx.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
@@ -1100,6 +1092,7 @@
 				</discriminator>
 				<rules value="openAtEnd"/>
 			</slicing>
+			<mustSupport value="true" />
 		</element>
 		<element id="Composition.section:sectionFunctionalStatus.entry:disability">
 			<path value="Composition.section.entry"/>
@@ -1245,6 +1238,7 @@
 				</discriminator>
 				<rules value="openAtEnd"/>
 			</slicing>
+			<mustSupport value="true" />
 		</element>
 		<element id="Composition.section:sectionSocialHistory.entry:smokingTobaccoUse">
 			<path value="Composition.section.entry"/>

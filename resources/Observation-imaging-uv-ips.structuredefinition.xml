@@ -192,6 +192,10 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+				<element id="Observation.performer.reference">
+			<path value="Observation.performer.reference"/>
+			<mustSupport value="true"/>
+		</element>
 		<element id="Observation.valueString:valueString">
 			<path value="Observation.valueString"/>
 			<sliceName value="valueString"/>
@@ -273,6 +277,7 @@
 		</element>
 		<element id="Observation.component:observationText.code">
 			<path value="Observation.component.code"/>
+			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="ObservationCode"/>
@@ -287,6 +292,7 @@
 			<type>
 				<code value="string"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component:observationCode">
 			<path value="Observation.component"/>
@@ -339,6 +345,7 @@
 			<type>
 				<code value="Ratio"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component:linearMeasurement">
 			<path value="Observation.component"/>
@@ -347,6 +354,7 @@
 		</element>
 		<element id="Observation.component:linearMeasurement.code">
 			<path value="Observation.component.code"/>
+			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="ObservationCode"/>
@@ -369,6 +377,7 @@
 			<type>
 				<code value="SampledData"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component:areaMeasurement">
 			<path value="Observation.component"/>
@@ -377,6 +386,7 @@
 		</element>
 		<element id="Observation.component:areaMeasurement.code">
 			<path value="Observation.component.code"/>
+			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="ObservationCode"/>
@@ -396,6 +406,7 @@
 			<type>
 				<code value="Ratio"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component:volumeMeasurement">
 			<path value="Observation.component"/>
@@ -404,6 +415,7 @@
 		</element>
 		<element id="Observation.component:volumeMeasurement.code">
 			<path value="Observation.component.code"/>
+			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="ObservationCode"/>
@@ -423,6 +435,7 @@
 			<type>
 				<code value="Ratio"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 	</differential>
 </StructureDefinition>

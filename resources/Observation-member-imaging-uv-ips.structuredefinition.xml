@@ -6,7 +6,7 @@
 	</meta>
 	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-member-imaging-uv-ips"/>
 	<name value="Observation-member-imaging-uv-ips"/>
-  <title value="Observation (Results: imaging, member)"/>
+	<title value="Observation (Results: imaging, member)"/>
 	<status value="draft"/>
 	<date value="2018-02-14T13:42:57.001+01:00"/>
 	<description value="This profile represents the constraints applied to the Observation resource by the IPS project, which specifies a sub-observation, member of an &quot;organizer&quot; observation, in the &quot;Imaging results&quot; entry of a patient summary."/>
@@ -20,16 +20,6 @@
 		<element id="Observation">
 			<path value="Observation"/>
 		</element>
-		<element id="Observation.extension">
-			<path value="Observation.extension"/>
-			<slicing>
-				<discriminator>
-					<type value="value"/>
-					<path value="url"/>
-				</discriminator>
-				<rules value="open"/>
-			</slicing>
-		</element>
 		<element id="Observation.extension:partOf">
 			<path value="Observation.extension"/>
 			<sliceName value="partOf"/>
@@ -39,8 +29,14 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Observation.extension:partOf.valueReference">
+		<element id="Observation.extension:partOf.valueReference:valueReference">
 			<path value="Observation.extension.valueReference"/>
+			<sliceName value="valueReference"/>
+			<type>
+				<code value="Reference"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Imagingstudy-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.code">
 			<path value="Observation.code"/>
@@ -66,9 +62,9 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-    <element id="Observation.subject.reference">
+		<element id="Observation.subject.reference">
 			<path value="Observation.subject.reference"/>
-      <min value="1"/>
+			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.effective[x]">
@@ -80,7 +76,7 @@
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/organization-observation-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-observation-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -134,15 +130,20 @@
 		</element>
 		<element id="Observation.device.reference">
 			<path value="Observation.device.reference"/>
+			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
-
 		<element id="Observation.derivedFrom">
 			<path value="Observation.derivedFrom"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/ImagingStudy"/>
 			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.derivedFrom.reference">
+			<path value="Observation.derivedFrom.reference"/>
+			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component">

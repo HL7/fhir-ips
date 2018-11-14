@@ -1,88 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Observation-pregnancy-edd-uv-ips"/>
-  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-edd-uv-ips"/>
-  <name value="Observation-pregnancy-edd-uv-ips"/>
-  <title value="Observation (Pregnancy: EDD)"/>
-  <status value="draft"/>
-  <date value="2018-03-20T11:00:52.49+01:00"/>
-  <description value="This profile constrains the Observation resource to represent the pregnancy expected delivery date."/>
-  <fhirVersion value="3.6.0"/>
-  <kind value="resource"/>
-  <abstract value="false"/>
-  <type value="Observation"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
-  <derivation value="constraint"/>
-  <differential>
-  <element id="Observation">
-      <path value="Observation"/>
-      </element>
-    <element id="Observation.code">
-      <path value="Observation.code"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="CodeableConcept"/>
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-      </type>
-      <mustSupport value="true"/>
-      <binding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-          <valueString value="ObservationCode"/>
-        </extension>
-        <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/edd-method-uv-ips"/>
-      </binding>
-    </element>
-    <element id="Observation.subject">
-      <path value="Observation.subject"/>
-      <min value="1"/>
-      <type>
-        <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
-      </type>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Observation.subject.reference">
-			<path value="Observation.subject.reference"/>
-      <min value="1"/>
+	<id value="Observation-pregnancy-edd-uv-ips"/>
+	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-edd-uv-ips"/>
+	<name value="Observation-pregnancy-edd-uv-ips"/>
+	<title value="Observation (Pregnancy: EDD)"/>
+	<status value="draft"/>
+	<date value="2018-03-20T11:00:52.49+01:00"/>
+	<description value="This profile constrains the Observation resource to represent the pregnancy expected delivery date."/>
+	<fhirVersion value="3.6.0"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Observation"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Observation">
+			<path value="Observation"/>
+		</element>
+		<element id="Observation.code">
+			<path value="Observation.code"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="ObservationCode"/>
+				</extension>
+				<strength value="required"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/edd-method-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Observation.subject">
+			<path value="Observation.subject"/>
+			<min value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
+			</type>
 			<mustSupport value="true"/>
 		</element>
-    <element id="Observation.effective[x]">
-      <path value="Observation.effective[x]"/>
-      <mustSupport value="false"/>
-    </element>
-    <element id="Observation.value[x]:valueDateTime">
-      <path value="Observation.valueDateTime"/>
-      <sliceName value="valueDateTime"/>
-      <type>
-        <code value="dateTime"/>
-      </type>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Observation.bodySite">
-      <path value="Observation.bodySite"/>
-      <max value="0"/>
-    </element>
-    <element id="Observation.method">
-      <path value="Observation.method"/>
-      <max value="0"/>
-    </element>
-    <element id="Observation.specimen">
-      <path value="Observation.specimen"/>
-      <max value="0"/>
-    </element>
-    <element id="Observation.device">
-      <path value="Observation.device"/>
-      <max value="0"/>
-    </element>
-    <element id="Observation.referenceRange">
-      <path value="Observation.referenceRange"/>
-      <max value="0"/>
-    </element>
-    <element id="Observation.component">
-      <path value="Observation.component"/>
-      <max value="0"/>
-    </element>
-  </differential>
+		<element id="Observation.subject.reference">
+			<path value="Observation.subject.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]">
+			<path value="Observation.effective[x]"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.value[x]:valueDateTime">
+			<path value="Observation.valueDateTime"/>
+			<sliceName value="valueDateTime"/>
+			<type>
+				<code value="dateTime"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.bodySite">
+			<path value="Observation.bodySite"/>
+			<max value="0"/>
+		</element>
+		<element id="Observation.method">
+			<path value="Observation.method"/>
+			<max value="0"/>
+		</element>
+		<element id="Observation.specimen">
+			<path value="Observation.specimen"/>
+			<max value="0"/>
+		</element>
+		<element id="Observation.device">
+			<path value="Observation.device"/>
+			<max value="0"/>
+		</element>
+		<element id="Observation.referenceRange">
+			<path value="Observation.referenceRange"/>
+			<max value="0"/>
+		</element>
+		<element id="Observation.component">
+			<path value="Observation.component"/>
+			<max value="0"/>
+		</element>
+	</differential>
 </StructureDefinition>

@@ -156,10 +156,12 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.specimen.reference">
 			<path value="Observation.specimen.reference"/>
 			<min value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.device">
 			<path value="Observation.device"/>
