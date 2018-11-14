@@ -162,8 +162,7 @@
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.2.9.6.2.7"
 }
@@ -331,9 +330,18 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.2.9.6.2.7"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "urn:oid:2.16.840.1.113883.2.9.6.2.7",
+  "code" : "2211"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"urn:oid:2.16.840.1.113883.2.9.6.2.7\" is not known; The code provided (urn:oid:2.16.840.1.113883.2.9.6.2.7#2211) is not  valid in the value set All codes known to the system"
 }
 -------------------------------------------------------------------------------------

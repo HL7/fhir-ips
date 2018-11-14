@@ -16533,3 +16533,388 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "60591-5"
+}, "valueSet" :null}####
+v: {
+  "display" : "Patient summary Document",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "75326-9"
+}, "valueSet" :null}####
+v: {
+  "display" : "Problem",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA6751-7"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "882-1"
+}, "valueSet" :null}####
+v: {
+  "display" : "ABO and Rh group [Type] in Blood",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "945-6"
+}, "valueSet" :null}####
+v: {
+  "display" : "C Ab [Presence] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "1018-1"
+}, "valueSet" :null}####
+v: {
+  "display" : "E Ab [Presence] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "1156-9"
+}, "valueSet" :null}####
+v: {
+  "display" : "little c Ab [Presence] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "17856-6"
+}, "valueSet" :null}####
+v: {
+  "display" : "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "42803-7"
+}, "valueSet" :null}####
+v: {
+  "display" : "Bacteria identified in Isolate",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "60591-5",
+    "display" : "Patient Summary"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "SCALE_TYP",
+        "op" : "=",
+        "value" : "Doc"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Access violation at address 0000000000C1CFC7 in module 'FHIRServer.exe'. Read of address 000000000000734E"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "60591-5",
+  "display" : "Patient Summary"
+}, "valueSet" :null}####
+v: {
+  "display" : "Patient summary Document",
+  "severity" : "warning",
+  "error" : "The display \"Patient Summary\" is not a valid display for the code {http://loinc.org}60591-5 - should be one of [\"Patient summary Document\",\"Patient summary Doc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "11450-4",
+  "display" : "Problem list"
+}, "valueSet" :null}####
+v: {
+  "display" : "Problem list - Reported",
+  "severity" : "warning",
+  "error" : "The display \"Problem list\" is not a valid display for the code {http://loinc.org}11450-4 - should be one of [\"Problem list - Reported\",\"Problem list Reported\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "10160-0",
+  "display" : "Medication use"
+}, "valueSet" :null}####
+v: {
+  "display" : "History of Medication use Narrative",
+  "severity" : "warning",
+  "error" : "The display \"Medication use\" is not a valid display for the code {http://loinc.org}10160-0 - should be one of [\"History of Medication use Narrative\",\"Hx of Medication use\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "48765-2",
+  "display" : "Allergies and/or adverse reactions"
+}, "valueSet" :null}####
+v: {
+  "display" : "Allergies and adverse reactions Document",
+  "severity" : "warning",
+  "error" : "The display \"Allergies and/or adverse reactions\" is not a valid display for the code {http://loinc.org}48765-2 - should be one of [\"Allergies and adverse reactions Document\",\"Allergies &or adverse reactions Doc\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "11348-0",
+  "display" : "Past illness"
+}, "valueSet" :null}####
+v: {
+  "display" : "History of Past illness Narrative",
+  "severity" : "warning",
+  "error" : "The display \"Past illness\" is not a valid display for the code {http://loinc.org}11348-0 - should be one of [\"History of Past illness Narrative\",\"Hx of Past illness\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "18776-5",
+  "display" : "Plan of care note"
+}, "valueSet" :null}####
+v: {
+  "display" : "Plan of care note",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "30954-2",
+  "display" : "Results"
+}, "valueSet" :null}####
+v: {
+  "display" : "Relevant diagnostic tests/laboratory data Narrative",
+  "severity" : "warning",
+  "error" : "The display \"Results\" is not a valid display for the code {http://loinc.org}30954-2 - should be one of [\"Relevant diagnostic tests/laboratory data Narrative\",\"Relevant Dx tests/lab data\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "75326-9",
+    "display" : "Problem"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://loinc.org#75326-9) is not  valid in the value set ConditionCategoryCodes"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "75326-9",
+  "display" : "Problem"
+}, "valueSet" :null}####
+v: {
+  "display" : "Problem",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "LA6751-7",
+    "display" : "Moderate"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "24484000"
+      },
+      {
+        "code" : "6736007"
+      },
+      {
+        "code" : "255604002"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The display \"Moderate\" is not a valid display for the code ,{http://loinc.org}LA6751-7 - should be one of []; The code provided (http://loinc.org#LA6751-7) is not  valid in the value set Condition/DiagnosisSeverity"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA6751-7",
+  "display" : "Moderate"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "warning",
+  "error" : "The display \"Moderate\" is not a valid display for the code {http://loinc.org}LA6751-7 - should be one of []"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "882-1",
+  "display" : "ABO and Rh group [Type] in Blood"
+}, "valueSet" :null}####
+v: {
+  "display" : "ABO and Rh group [Type] in Blood",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "945-6",
+  "display" : "C Ab [Presence] in Serum or Plasma"
+}, "valueSet" :null}####
+v: {
+  "display" : "C Ab [Presence] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "1018-1",
+  "display" : "E Ab [Presence] in Serum or Plasma"
+}, "valueSet" :null}####
+v: {
+  "display" : "E Ab [Presence] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "1156-9",
+  "display" : "little c Ab [Presence] in Serum or Plasma"
+}, "valueSet" :null}####
+v: {
+  "display" : "little c Ab [Presence] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "17856-6",
+  "display" : "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC"
+}, "valueSet" :null}####
+v: {
+  "display" : "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "42803-7",
+  "display" : "Bacteria identified in Isolate"
+}, "valueSet" :null}####
+v: {
+  "display" : "Bacteria identified in Isolate",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "75326-9",
+    "display" : "Problem"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "75326-9",
+        "display" : "Problem"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "Problem",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "LA6751-7",
+    "display" : "Moderate"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA6752-5",
+        "display" : "Mild"
+      },
+      {
+        "code" : "LA6751-7",
+        "display" : "Moderate"
+      },
+      {
+        "code" : "LA6750-9",
+        "display" : "Severe"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "warning",
+  "error" : "The display \"Moderate\" is not a valid display for the code {http://loinc.org}LA6751-7 - should be one of []"
+}
+-------------------------------------------------------------------------------------

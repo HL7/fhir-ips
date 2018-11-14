@@ -11,15 +11,13 @@
 		<grouping>
 			<name value="base"/>
 		</grouping>
-		<!-- commenting out temporarily due to error: Unable to determine type for  /Users/rhausam/git-repo/fhir-ips/examples/IPS-bundle-01: com.google.gson.JsonPrimitive cannot be cast to com.google.gson.JsonObject
 		<resource>
-			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/composition-uv-ips"/>
+			<exampleBoolean value="true"/>
 			<reference>
 				<reference value="Bundle/IPS-examples-Bundle-01"/>
 			</reference>
 		</resource>  
-		-->
-    <resource>
+    	<resource>
 			<exampleBoolean value="false"/>
 			<reference>
 				<reference value="ValueSet/pregnancy-status-uv-ips"/>

@@ -315,7 +315,7 @@
                 <contact>
                     <relationship>
                         <coding>
-                            <system value="http://hl7.org/fhir/v3/RoleCode"/>
+                            <system value="http://terminology.hl7.org/CodeSystem/RoleCode"/>
                             <code value="MTH"/>
                         </coding>
                     </relationship>
@@ -482,12 +482,12 @@
                 <medicationReference>
                     <reference value="http://hapi.fhir.org/baseR4/Medication/IPS-examples-Medication-01"/>
                 </medicationReference>
-                <effectivePeriod>
-                    <start value="2015-03"/>
-                </effectivePeriod>
                 <subject>
                     <reference value="http://hapi.fhir.org/baseR4/Patient/IPS-examples-Patient-01"/>
                 </subject>
+                <effectivePeriod>
+                    <start value="2015-03"/>
+                </effectivePeriod>
                 <dosage>
                     <timing>
                         <repeat>
@@ -537,12 +537,12 @@
                 <medicationReference>
                     <reference value="http://hapi.fhir.org/baseR4/Medication/IPS-examples-Medication-02"/>
                 </medicationReference>
-                <effectivePeriod>
-                    <start value="2016-01"/>
-                </effectivePeriod>
                 <subject>
                     <reference value="http://hapi.fhir.org/baseR4/Patient/IPS-examples-Patient-01"/>
                 </subject>
+                <effectivePeriod>
+                    <start value="2016-01"/>
+                </effectivePeriod>
                 <dosage>
                     <route>
                         <coding>
@@ -624,13 +624,13 @@
                 </identifier>
                 <clinicalStatus>
                     <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
                         <code value="active"/>
                     </coding>
                 </clinicalStatus>
                 <verificationStatus>
                     <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+                        <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
                         <code value="confirmed"/>
                     </coding>
                 </verificationStatus>
@@ -960,7 +960,9 @@
                     <system value="http://unitsofmeasure.org"/>
                     <code value="%"/>
                 </valueQuantity>
-                <comment value="Above stated goal of 7.0 %"/>
+                <note>
+                    <text value="Above stated goal of 7.0 %"/>
+                </note> 
             </Observation>
         </resource>
     </entry>
@@ -1000,7 +1002,9 @@
                         <display value="Methicillin resistant Staphylococcus aureus"/>
                     </coding>
                 </valueCodeableConcept>
-                <comment value="Healthy carrier of MRSA"/>
+                <note>
+                    <text value="Healthy carrier of MRSA"/>
+                </note> 
             </Observation>
         </resource>
     </entry>
