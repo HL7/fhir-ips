@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<id value="Observation-media-uv-ips"/>
 	<meta>
 		<lastUpdated value="2018-02-16T18:49:19.113+01:00"/>
@@ -49,14 +49,10 @@
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
 			</type>
 		</element>
-    		<element id="Media.subject.reference">
+		<element id="Media.subject.reference">
 			<path value="Media.subject.reference"/>
-      <min value="1"/>
+			<min value="1"/>
 			<mustSupport value="true"/>
-		</element>
-		<element id="Media.subject.identifier">
-			<path value="Media.subject.identifier"/>
-			<max value="0"/>
 		</element>
 		<element id="Media.context">
 			<path value="Media.context"/>
@@ -64,10 +60,6 @@
 		</element>
 		<element id="Media.operator">
 			<path value="Media.operator"/>
-		</element>
-		<element id="Media.operator.identifier">
-			<path value="Media.operator.identifier"/>
-			<max value="0"/>
 		</element>
 		<element id="Media.content">
 			<path value="Media.content"/>
@@ -77,10 +69,6 @@
 		</element>
 		<element id="Media.device">
 			<path value="Media.device"/>
-		</element>
-		<element id="Media.device.identifier">
-			<path value="Media.device.identifier"/>
-			<max value="0"/>
 		</element>
 	</differential>
 </StructureDefinition>

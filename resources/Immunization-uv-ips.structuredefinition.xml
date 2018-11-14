@@ -340,17 +340,17 @@
 			<max value="1"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Immunization.occurrence[x]:occurrencedateTime">
-			<path value="Immunization.occurrence[x]"/>
-			<sliceName value="occurrencedateTime"/>
+		<element id="Immunization.occurrenceDateTime">
+			<path value="Immunization.occurrenceDateTime"/>
+			<sliceName value="occurrenceDateTime"/>
 			<type>
 				<code value="dateTime"/>
 			</type>
 		</element>
-		<element id="Immunization.occurrence[x]:occurrencedateTime:data-absent-reason">
-			<path value="Immunization.occurrence[x].extension"/>
+		<element id="Immunization.occurrenceDateTime:data-absent-reason">
+			<path value="Immunization.occurrenceDateTime.extension"/>
 			<sliceName value="data-absent-reason"/>
-			<short value="occurrence Absent Reason"/>
+			<short value="occurrence[x] absence reason"/>
 			<definition value="Provides a reason why the occurrence is missing."/>
 			<max value="1"/>
 			<type>
@@ -359,17 +359,17 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Immunization.occurrence[x]:string">
-			<path value="Immunization.occurrence[x]"/>
+		<element id="Immunization.occurrenceString">
+			<path value="Immunization.occurrenceString"/>
 			<sliceName value="string"/>
 			<type>
 				<code value="string"/>
 			</type>
 		</element>
-		<element id="Immunization.occurrence[x]:string:data-absent-reason">
-			<path value="Immunization.occurrence[x].extension"/>
+		<element id="Immunization.occurrenceString:data-absent-reason">
+			<path value="Immunization.occurrenceString.extension"/>
 			<sliceName value="data-absent-reason"/>
-			<short value="occurrence Absent Reason"/>
+			<short value="occurrence[x] absence reason"/>
 			<definition value="Provides a reason why the occurrence is missing."/>
 			<max value="1"/>
 			<type>

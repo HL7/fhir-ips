@@ -78,15 +78,15 @@
 			<max value="1"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Observation.effective[x]:effectivedateTime">
-			<path value="Observation.effective[x]"/>
-			<sliceName value="effectivedateTime"/>
+		<element id="Observation.effectiveDateTime">
+			<path value="Observation.effectiveDateTime"/>
+			<sliceName value="effectiveDateTime"/>
 			<type>
 				<code value="dateTime"/>
 			</type>
 		</element>
-		<element id="Observation.effective[x]:effectivedateTime:data-absent-reason">
-			<path value="Observation.effective[x].extension"/>
+		<element id="Observation.effectiveDateTime:data-absent-reason">
+			<path value="Observation.effectiveDateTime.extension"/>
 			<sliceName value="data-absent-reason"/>
 			<short value="effective[x] absence reason"/>
 			<definition value="Provides a reason why the effective is missing."/>
@@ -97,15 +97,15 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Observation.effective[x]:effectivePeriod">
-			<path value="Observation.effective[x]"/>
+		<element id="Observation.effectivePeriod">
+			<path value="Observation.effectivePeriod"/>
 			<sliceName value="effectivePeriod"/>
 			<type>
 				<code value="Period"/>
 			</type>
 		</element>
-		<element id="Observation.effective[x]:effectivePeriod:data-absent-reason">
-			<path value="Observation.effective[x].extension"/>
+		<element id="Observation.effectivePeriod:data-absent-reason">
+			<path value="Observation.effectivePeriod.extension"/>
 			<sliceName value="data-absent-reason"/>
 			<short value="effective[x] absence reason"/>
 			<definition value="Provides a reason why the effective is missing."/>
@@ -116,15 +116,15 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Observation.effective[x]:instant">
-			<path value="Observation.effective[x]"/>
-			<sliceName value="effectiveinstant"/>
+		<element id="Observation.effectiveInstant">
+			<path value="Observation.effectiveInstant"/>
+			<sliceName value="Observation.effectiveInstant"/>
 			<type>
 				<code value="instant"/>
 			</type>
 		</element>
-		<element id="Observation.effective[x]:instant:data-absent-reason">
-			<path value="Observation.effective[x].extension"/>
+		<element id="Observation.effectiveInstant:data-absent-reason">
+			<path value="Observation.effectiveInstant.extension"/>
 			<sliceName value="data-absent-reason"/>
 			<short value="effective[x] absence reason"/>
 			<definition value="Provides a reason why the effective is missing."/>
@@ -135,15 +135,15 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Observation.effective[x]:Timing">
-			<path value="Observation.effective[x]"/>
+		<element id="Observation.effectiveTiming">
+			<path value="Observation.effectiveTiming"/>
 			<sliceName value="effectiveTiming"/>
 			<type>
 				<code value="Timing"/>
 			</type>
 		</element>
-		<element id="Observation.effective[x]:Timing:data-absent-reason">
-			<path value="Observation.effective[x].extension"/>
+		<element id="Observation.effectiveTiming:data-absent-reason">
+			<path value="Observation.effectiveTiming.extension"/>
 			<sliceName value="data-absent-reason"/>
 			<short value="effective[x] absence reason"/>
 			<definition value="Provides a reason why the effective is missing."/>
