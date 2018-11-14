@@ -24,7 +24,7 @@
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
 				<valueString value="dicom="/>
 			</extension>
-			<path value="ImagingStudy.identifier"/>
+			<path value="ImagingStudy.uid"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="ImagingStudy.subject">
@@ -77,8 +77,8 @@
 			<path value="ImagingStudy.series"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="ImagingStudy.series.identifier">
-			<path value="ImagingStudy.series.identifier"/>
+		<element id="ImagingStudy.series.uid">
+			<path value="ImagingStudy.series.uid"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="ImagingStudy.series.modality">
@@ -89,8 +89,8 @@
 			<path value="ImagingStudy.series.instance"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="ImagingStudy.series.instance.identifier">
-			<path value="ImagingStudy.series.instance.identifier"/>
+		<element id="ImagingStudy.series.instance.uid">
+			<path value="ImagingStudy.series.instance.uid"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="ImagingStudy.series.instance.sopClass">

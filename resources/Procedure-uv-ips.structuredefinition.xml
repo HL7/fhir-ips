@@ -115,15 +115,15 @@
 			<max value="1"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Procedure.performed[x]:performedDateTime">
-			<path value="Procedure.performed[x]"/>
+		<element id="Procedure.performedDateTime">
+			<path value="Procedure.performedDateTime"/>
 			<sliceName value="performedDateTime"/>
 			<type>
 				<code value="dateTime"/>
 			</type>
 		</element>
-		<element id="Procedure.performed[x]:performedDateTime:data-absent-reason">
-			<path value="Procedure.performed[x].extension"/>
+		<element id="Procedure.performedDateTime:data-absent-reason">
+			<path value="Procedure.performedDateTime.extension"/>
 			<sliceName value="data-absent-reason"/>
 			<short value="performed[x] absence reason"/>
 			<definition value="Provides a reason why the performed is missing."/>
@@ -134,15 +134,15 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Procedure.performed[x]:performedPeriod">
-			<path value="Procedure.performed[x]"/>
+		<element id="Procedure.performedPeriod">
+			<path value="Procedure.performedPeriod"/>
 			<sliceName value="performedPeriod"/>
 			<type>
 				<code value="Period"/>
 			</type>
 		</element>
-		<element id="Procedure.performed[x]:performedPeriod:data-absent-reason">
-			<path value="Procedure.performed[x].extension"/>
+		<element id="Procedure.performedPeriod:data-absent-reason">
+			<path value="Procedure.performedPeriod.extension"/>
 			<sliceName value="data-absent-reason"/>
 			<short value="performed[x] absence reason"/>
 			<definition value="Provides a reason why the performed is missing."/>
@@ -153,15 +153,15 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Procedure.performed[x]:string">
-			<path value="Procedure.performed[x]"/>
+		<element id="Procedure.performedString">
+			<path value="Procedure.performedString"/>
 			<sliceName value="performedString"/>
 			<type>
 				<code value="string"/>
 			</type>
 		</element>
-		<element id="Procedure.performed[x]:string:data-absent-reason">
-			<path value="Procedure.performed[x].extension"/>
+		<element id="Procedure.performedString:data-absent-reason">
+			<path value="Procedure.performedString.extension"/>
 			<sliceName value="data-absent-reason"/>
 			<short value="performed[x] absence reason"/>
 			<definition value="Provides a reason why the performed is missing."/>
@@ -172,15 +172,15 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Procedure.performed[x]:Age">
-			<path value="Procedure.performed[x]"/>
+		<element id="Procedure.performedAge">
+			<path value="Procedure.performedAge"/>
 			<sliceName value="performedAge"/>
 			<type>
 				<code value="Age"/>
 			</type>
 		</element>
-		<element id="Procedure.performed[x]:Age:data-absent-reason">
-			<path value="Procedure.performed[x].extension"/>
+		<element id="Procedure.performedAge:data-absent-reason">
+			<path value="Procedure.performedAge.extension"/>
 			<sliceName value="data-absent-reason"/>
 			<short value="performed[x] absence reason"/>
 			<definition value="Provides a reason why the performed is missing."/>
@@ -191,15 +191,15 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Procedure.performed[x]:Range">
-			<path value="Procedure.performed[x]"/>
+		<element id="Procedure.performedRange">
+			<path value="Procedure.performedRange"/>
 			<sliceName value="performedRange"/>
 			<type>
 				<code value="Range"/>
 			</type>
 		</element>
-		<element id="Procedure.performed[x]:Range:data-absent-reason">
-			<path value="Procedure.performed[x].extension"/>
+		<element id="Procedure.performedRange:data-absent-reason">
+			<path value="Procedure.performedRange.extension"/>
 			<sliceName value="data-absent-reason"/>
 			<short value="performed[x] absence reason"/>
 			<definition value="Provides a reason why the performed is missing."/>
