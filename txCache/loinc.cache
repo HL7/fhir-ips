@@ -614,6 +614,10 @@ e: {
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p>All codes from system <code>http://loinc.org</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA6752-5\"> </a><a href=\"http://details.loinc.org/LOINC/LA6752-5.html\">LA6752-5</a></td><td>Mild</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA6751-7\"> </a><a href=\"http://details.loinc.org/LOINC/LA6751-7.html\">LA6751-7</a></td><td>Moderate</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA6750-9\"> </a><a href=\"http://details.loinc.org/LOINC/LA6750-9.html\">LA6750-9</a></td><td>Severe</td></tr></table></div>"
+  },
   "expansion" : {
     "identifier" : "urn:uuid:1842404c-a570-4c2c-af20-03cdbc89c059",
     "timestamp" : "2018-10-17T20:03:00.942Z",
@@ -16492,6 +16496,10 @@ e: {
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p>All codes from system <code>http://loinc.org</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA15173-0\"> </a><a href=\"http://details.loinc.org/LOINC/LA15173-0.html\">LA15173-0</a></td><td>Pregnant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA26683-5\"> </a><a href=\"http://details.loinc.org/LOINC/LA26683-5.html\">LA26683-5</a></td><td>Not pregnant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA4489-6\"> </a><a href=\"http://details.loinc.org/LOINC/LA4489-6.html\">LA4489-6</a></td><td>Unknown</td></tr></table></div>"
+  },
   "expansion" : {
     "identifier" : "urn:uuid:b99a9e15-2d6e-492d-9006-5ada954070d1",
     "timestamp" : "2018-11-05T14:46:36.348Z",
@@ -16916,5 +16924,271 @@ v: {
   "display" : "",
   "severity" : "warning",
   "error" : "The display \"Moderate\" is not a valid display for the code {http://loinc.org}LA6751-7 - should be one of []"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
+        "code" : "LA18976-3",
+        "display" : "Current every day smoker"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
+        "code" : "LA18977-1",
+        "display" : "Current some day smoker"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
+        "code" : "LA15920-4",
+        "display" : "Former smoke"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
+        "code" : "LA18978-9",
+        "display" : "Never smoker"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
+        "code" : "LA18979-7",
+        "display" : "Smoker, current status unknown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 6
+        }],
+        "code" : "LA18980-5",
+        "display" : "Unknown if ever smoked"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 7
+        }],
+        "code" : "LA18981-3",
+        "display" : "Heavy tobacco smoker"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 8
+        }],
+        "code" : "LA18982-1",
+        "display" : "Light tobacco smoker"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:637ea2b6-dc26-47b0-897a-15ba831c0436",
+    "timestamp" : "2018-11-15T11:08:48.708Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org?version=2.64"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "LA18976-3",
+      "display" : "Current every day smoker"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA18977-1",
+      "display" : "Current some day smoker"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA15920-4",
+      "display" : "Former smoke"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA18978-9",
+      "display" : "Never smoker"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA18979-7",
+      "display" : "Smoker, current status unknown"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA18980-5",
+      "display" : "Unknown if ever smoked"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA18981-3",
+      "display" : "Heavy tobacco smoker"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA18982-1",
+      "display" : "Light tobacco smoker"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
+        "code" : "LA18976-3",
+        "display" : "Current every day smoker"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
+        "code" : "LA18977-1",
+        "display" : "Current some day smoker"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
+        "code" : "LA15920-4",
+        "display" : "Former smoke"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
+        "code" : "LA18978-9",
+        "display" : "Never smoker"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
+        "code" : "LA18979-7",
+        "display" : "Smoker, current status unknown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 6
+        }],
+        "code" : "LA18980-5",
+        "display" : "Unknown if ever smoked"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 7
+        }],
+        "code" : "LA18981-3",
+        "display" : "Heavy tobacco smoker"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 8
+        }],
+        "code" : "LA18982-1",
+        "display" : "Light tobacco smoker"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:a9848e7c-81fc-484f-9668-88d1019a52f9",
+    "timestamp" : "2018-11-15T11:09:10.131Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org?version=2.64"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "LA18976-3",
+      "display" : "Current every day smoker"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA18977-1",
+      "display" : "Current some day smoker"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA15920-4",
+      "display" : "Former smoke"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA18978-9",
+      "display" : "Never smoker"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA18979-7",
+      "display" : "Smoker, current status unknown"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA18980-5",
+      "display" : "Unknown if ever smoked"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA18981-3",
+      "display" : "Heavy tobacco smoker"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA18982-1",
+      "display" : "Light tobacco smoker"
+    }]
+  }
+},
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
