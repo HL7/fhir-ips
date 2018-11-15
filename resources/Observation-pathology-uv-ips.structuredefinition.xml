@@ -13,9 +13,7 @@
 	<experimental value="true"/>
 	<date value="2018-03-21"/>
 	<publisher value="HL7 International"/>
-	<contact>
-		<name value="François Macary - Phast"/>
-	</contact>
+
 	<description value="This profile constrains the Observation resource to represent results produced by pathology studies in a patient summary"/>
 	<purpose value="This profile constrains the Observation resource to represent a pathology in vitro study. In case of a multiple-observation study, the results of the study appear as sub-observations. In this case this top-level Observation acts as a grouper of all the observations belonging to the study.  The top-level observation may carry a conclusion in the value element and or a global interpretation by the producer of the study, in the comment element."/>
 	<fhirVersion value="3.6.0"/>

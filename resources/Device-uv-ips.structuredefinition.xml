@@ -5,20 +5,14 @@
 		<lastUpdated value="2018-02-14T11:49:41.487+01:00"/>
 	</meta>
 	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips"/>
-	<version value="0.1"/>
+	<version value="0.2"/>
 	<name value="Device-uv-ips"/>
 	<title value="Device (IPS)"/>
 	<status value="draft"/>
 	<experimental value="true"/>
 	<date value="2018-02-14"/>
 	<publisher value="HL7 International"/>
-	<contact>
-		<name value="François Macary - PHAST"/>
-		<telecom>
-			<system value="email"/>
-			<value value="francois.macary@phast.fr"/>
-		</telecom>
-	</contact>
+
 	<description value="This profile represents the constraints applied to the Device resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A device used by or implanted on the patient is described in the patient summary as an instance of a Device resource constrained by this profile."/>
 	<purpose value="This profile constrains the representation of a medical device used by or impanted on the patient, in the context of the international patient summary as specified by the IPS project of HL7 International."/>
 	<fhirVersion value="3.6.0"/>
@@ -31,65 +25,6 @@
 		<element id="Device">
 			<path value="Device"/>
 			<comment value="This profile applies the rules defined by HL7 International for representing the UDI in the FHIR standard, by the document &quot;Medical Devices and Unique Device Identification (UDI) Pattern, Release 1&quot;"/>
-		</element>
-		<element id="Device.identifier">
-			<path value="Device.identifier"/>
-			<max value="1"/>
-		</element>
-		<element id="Device.identifier.use">
-			<path value="Device.identifier.use"/>
-			<max value="0"/>
-		</element>
-		<element id="Device.identifier.type">
-			<path value="Device.identifier.type"/>
-			<definition value="The type of identifier represents &quot;serial number&quot; (SNO)"/>
-		</element>
-		<element id="Device.identifier.type.coding.system">
-			<path value="Device.identifier.type.coding.system"/>
-			<max value="0"/>
-		</element>
-		<element id="Device.identifier.type.coding.version">
-			<path value="Device.identifier.type.coding.version"/>
-			<max value="0"/>
-		</element>
-		<element id="Device.identifier.type.coding.code">
-			<path value="Device.identifier.type.coding.code"/>
-			<fixedCode value="SNO"/>
-		</element>
-		<element id="Device.identifier.type.coding.display">
-			<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-				<valueBoolean value="true"/>
-			</extension>
-			<path value="Device.identifier.type.coding.display"/>
-			<fixedString value="serial number"/>
-		</element>
-		<element id="Device.identifier.type.coding.userSelected">
-			<path value="Device.identifier.type.coding.userSelected"/>
-			<max value="0"/>
-		</element>
-		<element id="Device.identifier.type.text">
-			<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-				<valueBoolean value="true"/>
-			</extension>
-			<path value="Device.identifier.type.text"/>
-			<max value="0"/>
-		</element>
-		<element id="Device.identifier.system">
-			<path value="Device.identifier.system"/>
-			<max value="0"/>
-		</element>
-		<element id="Device.identifier.value">
-			<path value="Device.identifier.value"/>
-			<label value="device serial number"/>
-			<definition value="The serial number of the medical device"/>
-		</element>
-		<element id="Device.identifier.period">
-			<path value="Device.identifier.period"/>
-			<max value="0"/>
-		</element>
-		<element id="Device.identifier.assigner">
-			<path value="Device.identifier.assigner"/>
-			<max value="0"/>
 		</element>
 		<element id="Device.type">
 			<path value="Device.type"/>
@@ -134,14 +69,6 @@
 				<strength value="preferred"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-uv-ips"/>
 			</binding>
-		</element>
-		<element id="Device.manufactureDate">
-			<path value="Device.manufactureDate"/>
-			<definition value="The date and time when the device was manufactured. If hour is present, minutes and seconds should be both set to &quot;00&quot;"/>
-		</element>
-		<element id="Device.expirationDate">
-			<path value="Device.expirationDate"/>
-			<definition value="The date and time beyond which this device is no longer valid or should not be used (if applicable). If hour is present, minutes and seconds should be both set to &quot;00&quot;."/>
 		</element>
 		<element id="Device.patient">
 			<path value="Device.patient"/>
