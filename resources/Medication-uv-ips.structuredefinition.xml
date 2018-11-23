@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir" >
+<StructureDefinition xmlns="http://hl7.org/fhir">
 	<id value="Medication-uv-ips"/>
 	<meta>
 		<lastUpdated value="2018-03-07T19:02:56.499+01:00"/>
@@ -50,10 +50,8 @@
 				<code value="Coding"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
-			<mustSupport value="true" />
+			<mustSupport value="true"/>
 		</element>
-    
-    
 		<element id="Medication.code.coding:pharmaceuticalProduct-L1">
 			<path value="Medication.code.coding"/>
 			<sliceName value="pharmaceuticalProduct-L1"/>
@@ -71,7 +69,6 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl1-uv-ips"/>
 			</binding>
 		</element>
-
 		<element id="Medication.code.coding:pharmaceuticalProduct-L2">
 			<path value="Medication.code.coding"/>
 			<sliceName value="pharmaceuticalProduct-L2"/>
@@ -89,7 +86,6 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl2-uv-ips"/>
 			</binding>
 		</element>
-
 		<element id="Medication.code.coding:pharmaceuticalProduct-L3">
 			<path value="Medication.code.coding"/>
 			<sliceName value="pharmaceuticalProduct-L3"/>
@@ -107,7 +103,6 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl3-uv-ips"/>
 			</binding>
 		</element>
-
 		<element id="Medication.code.coding:pharmaceuticalProduct-L4">
 			<path value="Medication.code.coding"/>
 			<sliceName value="pharmaceuticalProduct-L4"/>
@@ -125,7 +120,6 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl4-uv-ips"/>
 			</binding>
 		</element>
-
 		<element id="Medication.code.coding:medicinalProduct">
 			<path value="Medication.code.coding"/>
 			<sliceName value="medicinalProduct"/>
@@ -144,7 +138,6 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/mpid-uv-ips"/>
 			</binding>
 		</element>
-
 		<element id="Medication.code.coding:packagedProduct">
 			<path value="Medication.code.coding"/>
 			<sliceName value="packagedProduct"/>
@@ -163,7 +156,6 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/pcid-uv-ips"/>
 			</binding>
 		</element>
-
 		<element id="Medication.code.coding:atcClass">
 			<path value="Medication.code.coding"/>
 			<sliceName value="atcClass"/>
@@ -182,7 +174,6 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips"/>
 			</binding>
 		</element>
-
 		<element id="Medication.code.text">
 			<path value="Medication.code.text"/>
 			<definition value="This element is supposed to be valorized with the complete Medicinal Product Name as approved by the Medicines Regulatory Agency in a jurisdiction.&#xD;&#xA;The name may be applicable in one or more country/language combinations."/>

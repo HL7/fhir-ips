@@ -63,7 +63,7 @@
 			<path value="Immunization.vaccineCode.coding"/>
 			<sliceName value="vaccineType"/>
 			<short value="Type of the Vaccine"/>
-			<definition value="Type of the Vaccine"/>
+			<definition value="The type of vaccine for particular disease or diseases against which the patient has been immunised. "/>
 			<type>
 				<code value="Coding"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
@@ -163,7 +163,6 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/mpid-uv-ips"/>
 			</binding>
 		</element>
-
 		<element id="Immunization.vaccineCode.coding:packagedProduct">
 			<path value="Immunization.vaccineCode.coding"/>
 			<sliceName value="packagedProduct"/>
