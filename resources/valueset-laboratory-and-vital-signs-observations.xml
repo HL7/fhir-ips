@@ -5,6 +5,10 @@
 	<meta>
 		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
 	</meta>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">This value set includes (at the end) some clinical observations, which may be relevant in a lab report (body weight, temperature ….).Value Set Definition:LOINC {  {    COMPONENT not containing the word &#34;panel&#34;    STATUS in {ACTIVE}    CLASSTYPE in {1}    ORDER_OBS in {Observation, Both}    CLASS exclude {CHALSKIN, H&amp;P.HX.LAB, H&amp;P.HX, LABORDERS, NR STATS, PATH.PROTOCOLS.*}  }  UNION  {    COMPONENT not ( containing the word &#34;panel&#34; OR starting with &#34;can pronounce&#34; )    STATUS in {ACTIVE}    CLASSTYPE in {2}    ORDER_OBS in {Observation, Both}    SYSTEM = ^Patient  }}</div>
+	</text>
 	<url value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-and-vital-signs-observations"/>
 	<identifier>
 		<use value="official"/>

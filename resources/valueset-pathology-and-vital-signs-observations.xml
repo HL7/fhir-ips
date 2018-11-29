@@ -5,6 +5,10 @@
 	<meta>
 		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
 	</meta>
+          <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">&#xA;    Value Set Definition:&#xA;    &#xA;     LOINC {   {      COMPONENT not ( containing the word &#34;panel&#34; OR starting with &#34;can pronounce&#34; )      CLASS in {CYTO, HEM/BC, HL7.CYTOGEN, HL7.GENETICS, MOLPATH, MOLPATH.*, PATH}      STATUS in {ACTIVE}         CLASSTYPE in {1}                   ORDER_OBS in&#xA;                    {Observation, Both}   }  UNION  {    COMPONENT not ( containing the word &#34;panel&#34; OR starting with &#34;can pronounce&#34; )    STATUS in {ACTIVE}    CLASSTYPE in {2}    ORDER_OBS in {Observation, Both}    SYSTEM = ^Patient  }}&#xA;</div>
+  </text>
 	<url value="http://hl7.org/fhir/uv/ips/ValueSet/pathology-and-vital-signs-observations"/>
 	<identifier>
 		<use value="official"/>
