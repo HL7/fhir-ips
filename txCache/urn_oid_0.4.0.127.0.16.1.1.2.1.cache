@@ -1850,8 +1850,7 @@
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "Error from server: Unable to provide support for code system urn:oid:0.4.0.127.0.16.1.1.2.1"
 }
@@ -3707,8 +3706,7 @@ e: {
       }]
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "Error from server: Unable to provide support for code system urn:oid:0.4.0.127.0.16.1.1.2.1"
 }
@@ -3720,9 +3718,28 @@ e: {
       "system" : "urn:oid:0.4.0.127.0.16.1.1.2.1"
     }]
   }
-}}
-####
+}}####
 e: {
   "error" : "Error from server: Unable to provide support for code system urn:oid:0.4.0.127.0.16.1.1.2.1"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "urn:oid:0.4.0.127.0.16.1.1.2.1",
+    "code" : "20053000",
+    "display" : "Oral use"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:0.4.0.127.0.16.1.1.2.1"
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"urn:oid:0.4.0.127.0.16.1.1.2.1\" is not known; The code provided (urn:oid:0.4.0.127.0.16.1.1.2.1#20053000) is not  valid in the value set IPSRouteOfAdmin"
 }
 -------------------------------------------------------------------------------------
