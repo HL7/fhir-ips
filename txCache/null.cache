@@ -3,44 +3,17 @@
   "resourceType" : "ValueSet",
   "compose" : {
     "include" : [{
-      "valueSet" : ["http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.11.22.10--20170329000000"]
+      "valueSet" : ["http://hl7.org/fhir/uv/ips/ValueSet/lab-blood-abo-rh-grp-uv-ips"]
     },
     {
-      "valueSet" : ["http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.11.22.11--20170329000000"]
+      "valueSet" : ["http://hl7.org/fhir/uv/ips/ValueSet/lab-absence-presence-uv-ips"]
+    },
+    {
+      "valueSet" : ["http://hl7.org/fhir/uv/ips/ValueSet/microorganism-uv-ips"]
     }]
   }
 }}####
 e: {
-  "error" : "Error from server: Unable to find value set \"http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.11.22.10--20170329000000\""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "valueSet" : ["http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.11.22.52--20170531000000"]
-    },
-    {
-      "valueSet" : ["http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.11.22.49--20170531000000"]
-    },
-    {
-      "valueSet" : ["http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.11.22.51--20170531000000"]
-    }]
-  }
-}}####
-e: {
-  "error" : "Error from server: Unable to find value set \"http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.11.22.52--20170531000000\""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "valueSet" : ["http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.11.22.52--20170531000000"]
-    }]
-  }
-}}####
-e: {
-  "error" : "Error from server: Unable to find value set \"http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.11.22.52--20170531000000\""
+  "error" : "Error from server: Unable to find value set \"http://hl7.org/fhir/uv/ips/ValueSet/lab-blood-abo-rh-grp-uv-ips\""
 }
 -------------------------------------------------------------------------------------
