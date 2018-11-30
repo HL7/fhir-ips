@@ -1,0 +1,73 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="lab-blood-abo-rh-grp-uv-ips"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/3.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <url value="http://hl7.org/fhir/uv/ips/ValueSet/lab-blood-abo-rh-grp-uv-ips"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="2.16.840.1.113883.11.22.51"/>
+    </identifier>
+    <version value="2017-05-31T00:00:00"/>
+    <name value="IPSABO_RHGroup"/>
+    <title value="IPS Results ABO+RH GROUP"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="HL7 International"/>
+    <contact>
+        <name value="HL7 International"/>
+        <telecom>
+            <system value="phone"/>
+            <value value="+1 734 677 7777"/>
+        </telecom>
+        <telecom>
+            <system value="fax"/>
+            <value value="+1 734 677 6622"/>
+        </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="info@hl7.org"/>
+        </telecom>
+    </contact>
+    <description value="ABO and Rh group [Type] in Blood"/>
+    <immutable value="false"/>
+    <copyright value="Licensing note: This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
+    <compose>
+        <include>
+            <system value="http://snomed.info/sct"/>
+            <concept>
+                <code value="278152006"/>
+                <display value="Blood group A Rh(D) negative (finding)"/>
+            </concept>
+            <concept>
+                <code value="278149003"/>
+                <display value="Blood group A Rh(D) positive (finding)"/>
+            </concept>
+            <concept>
+                <code value="278154007"/>
+                <display value="Blood group AB Rh(D) negative (finding)"/>
+            </concept>
+            <concept>
+                <code value="278151004"/>
+                <display value="Blood group AB Rh(D) positive (finding)"/>
+            </concept>
+            <concept>
+                <code value="278153001"/>
+                <display value="Blood group B Rh(D) negative (finding)"/>
+            </concept>
+            <concept>
+                <code value="278150003"/>
+                <display value="Blood group B Rh(D) positive (finding)"/>
+            </concept>
+            <concept>
+                <code value="278148006"/>
+                <display value="Blood group O Rh(D) negative (finding)"/>
+            </concept>
+            <concept>
+                <code value="278147001"/>
+                <display value="Blood group O Rh(D) positive (finding)"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
