@@ -46,12 +46,13 @@
                     <include>
                         <valueSet value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.11.22.11-20170329000000"/>
                     </include>
-
+   -->
+   
 		<include>
 			<system value="http://snomed.info/sct"/>
 			<filter>
 				<property value="concept"/>
-				<op value="descendent-of"/>
+				<op value="is-a"/>
 				<value value="410942007"/>
 			</filter>
 		</include>
@@ -59,7 +60,7 @@
 			<system value="http://snomed.info/sct"/>
 			<filter>
 				<property value="concept"/>
-				<op value="descendent-of"/>
+				<op value="is-a"/>
 				<value value="116273005"/>
 			</filter>
 		</include>
@@ -67,7 +68,7 @@
 			<system value="http://snomed.info/sct"/>
 			<filter>
 				<property value="concept"/>
-				<op value="descendent-of"/>
+				<op value="is-a"/>
 				<value value="406455002"/>
 			</filter>
 		</include>
@@ -75,16 +76,15 @@
 			<system value="http://snomed.info/sct"/>
 			<filter>
 				<property value="concept"/>
-				<op value="descendent-of"/>
+				<op value="is-a"/>
 				<value value="420111002"/>
 			</filter>
 		</include>
-    --> 
 		<include>
 			<system value="http://snomed.info/sct"/>
 			<filter>
 				<property value="concept"/>
-				<op value="descendent-of"/>
+				<op value="is-a"/>
 				<value value="373873005"/>
 			</filter>
 		</include>
