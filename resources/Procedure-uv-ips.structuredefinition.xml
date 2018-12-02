@@ -47,10 +47,6 @@
 		<element id="Procedure.code.coding">
 			<path value="Procedure.code.coding"/>
 			<slicing>
-				<discriminator>
-					<type value="value"/>
-					<path value="binding.valueSet"/>
-				</discriminator>
 				<rules value="open"/>
 			</slicing>
 			<mustSupport value="true"/>

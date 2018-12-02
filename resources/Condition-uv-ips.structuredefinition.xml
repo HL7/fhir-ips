@@ -85,10 +85,6 @@
 		<element id="Condition.code.coding">
 			<path value="Condition.code.coding"/>
 			<slicing>
-				<discriminator>
-					<type value="value"/>
-					<path value="binding.valueSet"/>
-				</discriminator>
 				<rules value="open"/>
 			</slicing>
 			<definition value="Identification of the condition, problem or diagnosis or recording of &quot;problem absent&quot; or of &quot;problems unknown&quot;."/>

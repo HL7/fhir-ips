@@ -66,10 +66,6 @@
 		<element id="AllergyIntolerance.code.coding">
 			<path value="AllergyIntolerance.code.coding"/>
 			<slicing>
-				<discriminator>
-					<type value="value"/>
-					<path value="binding.valueSet"/>
-				</discriminator>
 				<rules value="open"/>
 			</slicing>
 			<min value="1"/>

@@ -247,10 +247,6 @@
 			<path value="Observation.component"/>
 			<slicing>
 				<discriminator>
-					<type value="value"/>
-					<path value="code.binding.valueSet"/>
-				</discriminator>
-				<discriminator>
 					<type value="type"/>
 					<path value="value[x]"/>
 				</discriminator>

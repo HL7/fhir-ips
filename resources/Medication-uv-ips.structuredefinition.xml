@@ -38,10 +38,6 @@
 		<element id="Medication.code.coding">
 			<path value="Medication.code.coding"/>
 			<slicing>
-				<discriminator>
-					<type value="value"/>
-					<path value="binding.valueSet"/>
-				</discriminator>
 				<description value="This slicing on the coding element of code is open, with discriminator based on the value set binding. It carries one slice for each of the IDMP identifiers, or any equivalent representation of these concepts (e.g. medical product); plus one slice for the ATC classification. &#xD;&#xA;Other representations of the medication (such as SNOMED CT, RxNorm, jurisdictional code systems, cross-jursisdiction code systems, or any classification) use extra slices, since the slicing is open. &#xD;&#xA; A special slice is defined to carry the absent or unknown property.&#xD;&#xA;The value sets used by the IDMP slices are provisional and include few concepts for exemplification purposes, they will be updated with real IDMP identifiers when they will become available."/>
 				<rules value="openAtEnd"/>
 			</slicing>
