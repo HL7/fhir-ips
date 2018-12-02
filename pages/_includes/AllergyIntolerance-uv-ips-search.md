@@ -1,1 +1,1 @@
-# allergyintolerance-uv-ips-search.md  file
+# AllergyIntolerance-uv-ips-search.md  file

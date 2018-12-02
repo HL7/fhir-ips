@@ -1,5 +1,5 @@
-{{site.data.structuredefinitions.allergyintolerance-uv-ips-intro.name}}
+{{site.data.structuredefinitions.AllergyIntolerance-uv-ips-intro.name}}
 
-{{site.data.structuredefinitions.allergyintolerance-uv-ips.description}}
+{{site.data.structuredefinitions.AllergyIntolerance-uv-ips.description}}
 
 

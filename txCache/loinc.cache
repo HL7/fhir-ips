@@ -17825,3 +17825,56 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA6750-9"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "LA6750-9",
+    "display" : "Severe"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA6752-5",
+        "display" : "Mild"
+      },
+      {
+        "code" : "LA6751-7",
+        "display" : "Moderate"
+      },
+      {
+        "code" : "LA6750-9",
+        "display" : "Severe"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "warning",
+  "error" : "The display \"Severe\" is not a valid display for the code {http://loinc.org}LA6750-9 - should be one of []"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA6750-9",
+  "display" : "Severe"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "warning",
+  "error" : "The display \"Severe\" is not a valid display for the code {http://loinc.org}LA6750-9 - should be one of []"
+}
+-------------------------------------------------------------------------------------
