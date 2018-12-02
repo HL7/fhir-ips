@@ -12,7 +12,6 @@
 	<experimental value="true"/>
 	<date value="2018-02-14"/>
 	<publisher value="HL7 International"/>
-
 	<description value="This profile represents the constraints applied to the Device resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A device used by or implanted on the patient is described in the patient summary as an instance of a Device resource constrained by this profile."/>
 	<purpose value="This profile constrains the representation of a medical device used by or impanted on the patient, in the context of the international patient summary as specified by the IPS project of HL7 International."/>
 	<fhirVersion value="3.6.0"/>
@@ -34,6 +33,7 @@
 		<element id="Device.type.coding">
 			<path value="Device.type.coding"/>
 			<slicing>
+				<description value="Discriminated by value set biding"/>
 				<rules value="openAtEnd"/>
 			</slicing>
 			<comment value="The FHIR-defined value set is different from the value set &quot;IPS Medical Devices&quot; defined by the IPS CDA IG: http://art-decor.org/art-decor/decor-valuesets--hl7ips-?id=2.16.840.1.113883.11.22.23&amp;effectiveDate=2017-07-19T00:00:00&amp;language=en-US&#xD;&#xA; "/>
