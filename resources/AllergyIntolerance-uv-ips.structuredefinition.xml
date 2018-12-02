@@ -36,8 +36,8 @@
 		<element id="AllergyIntolerance.clinicalStatus">
 			<path value="AllergyIntolerance.clinicalStatus"/>
 			<type>
-				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -45,8 +45,8 @@
 			<path value="AllergyIntolerance.verificationStatus"/>
 			<comment value="In the scope of the IPS the entered-in-error concept is not allowed."/>
 			<type>
-				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
