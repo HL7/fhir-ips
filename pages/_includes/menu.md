@@ -5,7 +5,7 @@
 <!-- - [Profiles and Logical Models](profiles.html) -->
 - [Profiles](profiles.html)
 <!-- - [Mappings](structuremaps.html) -->
-- [Extensions](extensions.html)
+- [Extensions and Datatypes](extensions.html)
 <!-- - [Operations](operations.html) -->
 - [Terminology](terminology.html)
 <!-- - [Search Parameters](searchparams.html) -->
