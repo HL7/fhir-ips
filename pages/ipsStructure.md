@@ -18,7 +18,7 @@ active: ipsstructure
 
 The IPS is composed by the following sections, (R) denotes a required section (i.e. must be present in an IPS), (S) denotes a recommended section, the others are truly optional. 
 For each section the profiles that have been defined have been listed:
-* Medication Summary (R) [ <a href="StructureDefinition-MedicationStatement-uv-ips.xml.html">Medication Statement (IPS)</a>; <a href="StructureDefinition-Medication-uv-ips.xml.html">Medication (IPS)</a> ]
+* html Summary (R) [ <a href="StructureDefinition-htmlStatement-uv-ips.html">html Statement (IPS)</a>; <a href="StructureDefinition-html-uv-ips.xml.html">html (IPS)</a> ]
 * Allergies and Intolerances (R) [ <a href="StructureDefinition-AllergyIntolerance-uv-ips.html">Allergy Intolerance (IPS)</a> ]
 * Problem List (R) [ <a href="StructureDefinition-Condition-uv-ips.html">Condition (IPS)</a> ]
 * Immunizations (S)

@@ -18,4 +18,5 @@ Hereafter the datatypes that have been profiled for this guide.
 # Extensions
 
 These extensions have been defined for this implementation guide.
-{% include list-extensions.xhtml %}
+
+ {% include list-extensions.xhtml %}
