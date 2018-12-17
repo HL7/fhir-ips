@@ -1,4 +1,14 @@
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://unitsofmeasure.org",
+  "code" : "%"
+}, "valueSet" :null}####
+v: {
+  "display" : "%",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -19,8 +29,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:6a3428c1-5cf4-4b48-8565-dff8cdfd39f3",
-    "timestamp" : "2018-10-17T20:03:30.035Z",
+    "identifier" : "urn:uuid:75bd321c-da49-4211-8d1b-5f7ca29073a0",
+    "timestamp" : "2018-12-15T04:41:54.643Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -294,12 +304,12 @@ e: {
     },
     {
       "system" : "http://unitsofmeasure.org",
-      "code" : "/{hpf}",
+      "code" : "/[HPF]",
       "display" : "per hpf"
     },
     {
       "system" : "http://unitsofmeasure.org",
-      "code" : "/{LPF}",
+      "code" : "/[LPF]",
       "display" : "per LPF"
     },
     {
@@ -589,7 +599,7 @@ e: {
     },
     {
       "system" : "http://unitsofmeasure.org",
-      "code" : "[drp]/{HPF}",
+      "code" : "[drp]/[HPF]",
       "display" : "drop / HPF"
     },
     {
@@ -3114,7 +3124,7 @@ e: {
     },
     {
       "system" : "http://unitsofmeasure.org",
-      "code" : "mmol/kg{H20}",
+      "code" : "mmol/kg{H2O}",
       "display" : "millimole per kilogram of water"
     },
     {
@@ -5039,16 +5049,6 @@ e: {
     }]
   }
 },
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://unitsofmeasure.org",
-  "code" : "%"
-}, "valueSet" :null}####
-v: {
-  "display" : "%",
-  "severity" : null,
   "error" : ""
 }
 -------------------------------------------------------------------------------------

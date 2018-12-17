@@ -71,6 +71,16 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://loinc.org",
+  "code" : "8716-3"
+}, "valueSet" :null}####
+v: {
+  "display" : "Vital signs",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
   "code" : "11348-0"
 }, "valueSet" :null}####
 v: {
@@ -111,10 +121,10 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://loinc.org",
-  "code" : "82810-3"
+  "code" : "10162-6"
 }, "valueSet" :null}####
 v: {
-  "display" : "Pregnancy status",
+  "display" : "History of pregnancies Narrative",
   "severity" : null,
   "error" : ""
 }
@@ -139,6 +149,991 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "60591-5"
+}, "valueSet" :null}####
+v: {
+  "display" : "Patient summary Document",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "75326-9"
+}, "valueSet" :null}####
+v: {
+  "display" : "Problem",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA6751-7"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA6750-9"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "882-1"
+}, "valueSet" :null}####
+v: {
+  "display" : "ABO and Rh group [Type] in Blood",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "945-6"
+}, "valueSet" :null}####
+v: {
+  "display" : "C Ab [Presence] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "1018-1"
+}, "valueSet" :null}####
+v: {
+  "display" : "E Ab [Presence] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "1156-9"
+}, "valueSet" :null}####
+v: {
+  "display" : "little c Ab [Presence] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "17856-6"
+}, "valueSet" :null}####
+v: {
+  "display" : "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "42803-7"
+}, "valueSet" :null}####
+v: {
+  "display" : "Bacteria identified in Isolate",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "60591-5",
+    "display" : "Patient summary Document"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "SCALE_TYP",
+        "op" : "=",
+        "value" : "Doc"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Access violation at address 0000000000C35192 in module 'FHIRServer.exe'. Read of address FFFFFFFFFFFFFFFF"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "60591-5",
+  "display" : "Patient summary Document"
+}, "valueSet" :null}####
+v: {
+  "display" : "Patient summary Document",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "75326-9",
+    "display" : "Problem"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "75326-9",
+        "display" : "Problem"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "Problem",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "75326-9",
+  "display" : "Problem"
+}, "valueSet" :null}####
+v: {
+  "display" : "Problem",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "LA6751-7",
+    "display" : "Moderate"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA6752-5",
+        "display" : "Mild"
+      },
+      {
+        "code" : "LA6751-7",
+        "display" : "Moderate"
+      },
+      {
+        "code" : "LA6750-9",
+        "display" : "Severe"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "warning",
+  "error" : "The display \"Moderate\" is not a valid display for the code {http://loinc.org}LA6751-7 - should be one of []"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA6751-7",
+  "display" : "Moderate"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "warning",
+  "error" : "The display \"Moderate\" is not a valid display for the code {http://loinc.org}LA6751-7 - should be one of []"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "11450-4",
+  "display" : "Problem list Reported"
+}, "valueSet" :null}####
+v: {
+  "display" : "Problem list - Reported",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "10160-0",
+  "display" : "History of Medication use Narrative"
+}, "valueSet" :null}####
+v: {
+  "display" : "History of Medication use Narrative",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "48765-2",
+  "display" : "Allergies and adverse reactions Document"
+}, "valueSet" :null}####
+v: {
+  "display" : "Allergies and adverse reactions Document",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "LA6750-9",
+    "display" : "Severe"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA6752-5",
+        "display" : "Mild"
+      },
+      {
+        "code" : "LA6751-7",
+        "display" : "Moderate"
+      },
+      {
+        "code" : "LA6750-9",
+        "display" : "Severe"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "warning",
+  "error" : "The display \"Severe\" is not a valid display for the code {http://loinc.org}LA6750-9 - should be one of []"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA6750-9",
+  "display" : "Severe"
+}, "valueSet" :null}####
+v: {
+  "display" : "",
+  "severity" : "warning",
+  "error" : "The display \"Severe\" is not a valid display for the code {http://loinc.org}LA6750-9 - should be one of []"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "11348-0",
+  "display" : "Hx of Past illness"
+}, "valueSet" :null}####
+v: {
+  "display" : "History of Past illness Narrative",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "18776-5",
+  "display" : "Plan of care note"
+}, "valueSet" :null}####
+v: {
+  "display" : "Plan of care note",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "882-1",
+    "display" : "ABO and Rh group [Type] in Blood"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!Panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!panel).)*$"
+      },
+      {
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "1"
+      },
+      {
+        "property" : "ORDER_OBS",
+        "op" : "regex",
+        "value" : "Observation|Both"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!NR STATS.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!H&P\\.HX.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!CHALSKIN.*$).*"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!Panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^(?!Can pronounce.*$).*"
+      },
+      {
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "2"
+      },
+      {
+        "property" : "ORDER_OBS",
+        "op" : "regex",
+        "value" : "Observation|Both"
+      },
+      {
+        "property" : "SYSTEM",
+        "op" : "=",
+        "value" : "^Patient"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unsupported operator type regex"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "882-1",
+  "display" : "ABO and Rh group [Type] in Blood"
+}, "valueSet" :null}####
+v: {
+  "display" : "ABO and Rh group [Type] in Blood",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "945-6",
+    "display" : "C Ab [Presence] in Serum or Plasma"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!Panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!panel).)*$"
+      },
+      {
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "1"
+      },
+      {
+        "property" : "ORDER_OBS",
+        "op" : "regex",
+        "value" : "Observation|Both"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!NR STATS.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!H&P\\.HX.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!CHALSKIN.*$).*"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!Panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^(?!Can pronounce.*$).*"
+      },
+      {
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "2"
+      },
+      {
+        "property" : "ORDER_OBS",
+        "op" : "regex",
+        "value" : "Observation|Both"
+      },
+      {
+        "property" : "SYSTEM",
+        "op" : "=",
+        "value" : "^Patient"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unsupported operator type regex"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "945-6",
+  "display" : "C Ab [Presence] in Serum or Plasma"
+}, "valueSet" :null}####
+v: {
+  "display" : "C Ab [Presence] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "1018-1",
+    "display" : "E Ab [Presence] in Serum or Plasma"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!Panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!panel).)*$"
+      },
+      {
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "1"
+      },
+      {
+        "property" : "ORDER_OBS",
+        "op" : "regex",
+        "value" : "Observation|Both"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!NR STATS.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!H&P\\.HX.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!CHALSKIN.*$).*"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!Panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^(?!Can pronounce.*$).*"
+      },
+      {
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "2"
+      },
+      {
+        "property" : "ORDER_OBS",
+        "op" : "regex",
+        "value" : "Observation|Both"
+      },
+      {
+        "property" : "SYSTEM",
+        "op" : "=",
+        "value" : "^Patient"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unsupported operator type regex"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "1018-1",
+  "display" : "E Ab [Presence] in Serum or Plasma"
+}, "valueSet" :null}####
+v: {
+  "display" : "E Ab [Presence] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "1156-9",
+    "display" : "little c Ab [Presence] in Serum or Plasma"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!Panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!panel).)*$"
+      },
+      {
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "1"
+      },
+      {
+        "property" : "ORDER_OBS",
+        "op" : "regex",
+        "value" : "Observation|Both"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!NR STATS.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!H&P\\.HX.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!CHALSKIN.*$).*"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!Panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^(?!Can pronounce.*$).*"
+      },
+      {
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "2"
+      },
+      {
+        "property" : "ORDER_OBS",
+        "op" : "regex",
+        "value" : "Observation|Both"
+      },
+      {
+        "property" : "SYSTEM",
+        "op" : "=",
+        "value" : "^Patient"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unsupported operator type regex"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "1156-9",
+  "display" : "little c Ab [Presence] in Serum or Plasma"
+}, "valueSet" :null}####
+v: {
+  "display" : "little c Ab [Presence] in Serum or Plasma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "17856-6",
+    "display" : "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "1"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!NR STATS.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!H&P\\.HX.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!CHALSKIN.*$).*"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://loinc.org#17856-6) is not  valid in the value set Laboratory_tests_and_panels_uv_ips"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "17856-6",
+  "display" : "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC"
+}, "valueSet" :null}####
+v: {
+  "display" : "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "42803-7",
+    "display" : "Bacteria identified in Isolate"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "1"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!NR STATS.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!H&P\\.HX.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!CHALSKIN.*$).*"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "Bacteria identified in Isolate",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "42803-7",
+  "display" : "Bacteria identified in Isolate"
+}, "valueSet" :null}####
+v: {
+  "display" : "Bacteria identified in Isolate",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "30954-2",
+  "display" : "Relevant diagnostic tests/laboratory data Narrative"
+}, "valueSet" :null}####
+v: {
+  "display" : "Relevant diagnostic tests/laboratory data Narrative",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA15173-0",
+        "display" : "Pregnant"
+      },
+      {
+        "code" : "LA26683-5",
+        "display" : "Not pregnant"
+      },
+      {
+        "code" : "LA4489-6",
+        "display" : "Unknown"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:a9427f62-a4e4-4837-b51e-68ac70760ba0",
+    "timestamp" : "2018-12-15T04:31:59.768Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://loinc.org?version=2.64"
+    }],
+    "contains" : [{
+      "system" : "http://loinc.org",
+      "code" : "LA15173-0",
+      "display" : "Pregnant"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA26683-5",
+      "display" : "Not pregnant"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "LA4489-6",
+      "display" : "Unknown"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -159,8 +1154,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:aaef8805-1dfc-42cc-bace-8082397d8bfa",
-    "timestamp" : "2018-10-17T19:58:08.411Z",
+    "identifier" : "urn:uuid:a8a88e74-fcd1-41ce-9110-0005087682e2",
+    "timestamp" : "2018-12-15T04:32:05.455Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -188,409 +1183,6 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
-{"hierarchical" : false, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "LA6752-5",
-        "display" : "Mild"
-      },
-      {
-        "code" : "LA6751-7",
-        "display" : "Moderate"
-      },
-      {
-        "code" : "LA6750-9",
-        "display" : "Severe"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:48eb760f-0b05-4d78-bc24-6d5e56dbe8b0",
-    "timestamp" : "2018-10-17T19:58:10.396Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "excludeNested",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.64"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "LA6752-5",
-      "display" : "Mild"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA6751-7",
-      "display" : "Moderate"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA6750-9",
-      "display" : "Severe"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : false, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ordinal-value",
-          "valueDecimal" : 1
-        }],
-        "code" : "LA18976-3",
-        "display" : "Current every day smoker"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ordinal-value",
-          "valueDecimal" : 2
-        }],
-        "code" : "LA18977-1",
-        "display" : "Current some day smoker"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ordinal-value",
-          "valueDecimal" : 3
-        }],
-        "code" : "LA15920-4",
-        "display" : "Former smoke"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ordinal-value",
-          "valueDecimal" : 4
-        }],
-        "code" : "LA18978-9",
-        "display" : "Never smoker"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ordinal-value",
-          "valueDecimal" : 5
-        }],
-        "code" : "LA18979-7",
-        "display" : "Smoker, current status unknown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ordinal-value",
-          "valueDecimal" : 6
-        }],
-        "code" : "LA18980-5",
-        "display" : "Unknown if ever smoked"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ordinal-value",
-          "valueDecimal" : 7
-        }],
-        "code" : "LA18981-3",
-        "display" : "Heavy tobacco smoker"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ordinal-value",
-          "valueDecimal" : 8
-        }],
-        "code" : "LA18982-1",
-        "display" : "Light tobacco smoker"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:00bceb38-6a3b-4f8f-a009-3112f95b4071",
-    "timestamp" : "2018-10-17T20:02:37.395Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "excludeNested",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.64"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "LA18976-3",
-      "display" : "Current every day smoker"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA18977-1",
-      "display" : "Current some day smoker"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA15920-4",
-      "display" : "Former smoke"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA18978-9",
-      "display" : "Never smoker"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA18979-7",
-      "display" : "Smoker, current status unknown"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA18980-5",
-      "display" : "Unknown if ever smoked"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA18981-3",
-      "display" : "Heavy tobacco smoker"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA18982-1",
-      "display" : "Light tobacco smoker"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : false, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "11778-8",
-        "display" : "Delivery date Estimated"
-      },
-      {
-        "code" : "11779-6",
-        "display" : "Delivery date Estimated from last menstrual period"
-      },
-      {
-        "code" : "11780-4",
-        "display" : "Delivery date Estimated from ovulation date"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:bc39f73f-321b-414a-8ff4-4649aea69ed1",
-    "timestamp" : "2018-10-17T20:02:37.707Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "excludeNested",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.64"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "11778-8",
-      "display" : "Delivery date Estimated"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "11779-6",
-      "display" : "Delivery date Estimated from last menstrual period"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "11780-4",
-      "display" : "Delivery date Estimated from ovulation date"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : false, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "75326-9",
-        "display" : "Problem"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:4095a7ec-b8aa-47cd-b095-d6e47339347b",
-    "timestamp" : "2018-10-17T20:02:41.832Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "excludeNested",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.64"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "75326-9",
-      "display" : "Problem"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : false, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "11636-8",
-        "display" : "[#] Births.live"
-      },
-      {
-        "code" : "11637-6",
-        "display" : "[#] Births.preterm"
-      },
-      {
-        "code" : "11638-4",
-        "display" : "[#] Births.still living"
-      },
-      {
-        "code" : "11639-2",
-        "display" : "[#] Births.term"
-      },
-      {
-        "code" : "11640-0",
-        "display" : "[#] Births total"
-      },
-      {
-        "code" : "11612-9",
-        "display" : "[#] Abortions"
-      },
-      {
-        "code" : "11613-7",
-        "display" : "[#] Abortions.induced"
-      },
-      {
-        "code" : "11614-5",
-        "display" : "[#] Abortions.spontaneous"
-      },
-      {
-        "code" : "33065-4",
-        "display" : "[#] Ectopic pregnancy"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:634d0b74-b957-4346-9146-8a1f536d8c81",
-    "timestamp" : "2018-10-17T20:02:42.614Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "excludeNested",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.64"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "11636-8",
-      "display" : "[#] Births.live"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "11637-6",
-      "display" : "[#] Births.preterm"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "11638-4",
-      "display" : "[#] Births.still living"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "11639-2",
-      "display" : "[#] Births.term"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "11640-0",
-      "display" : "[#] Births total"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "11612-9",
-      "display" : "[#] Abortions"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "11613-7",
-      "display" : "[#] Abortions.induced"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "11614-5",
-      "display" : "[#] Abortions.spontaneous"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "33065-4",
-      "display" : "[#] Ectopic pregnancy"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -614,13 +1206,9 @@ e: {
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
-  "text" : {
-    "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p>All codes from system <code>http://loinc.org</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA6752-5\"> </a><a href=\"http://details.loinc.org/LOINC/LA6752-5.html\">LA6752-5</a></td><td>Mild</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA6751-7\"> </a><a href=\"http://details.loinc.org/LOINC/LA6751-7.html\">LA6751-7</a></td><td>Moderate</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA6750-9\"> </a><a href=\"http://details.loinc.org/LOINC/LA6750-9.html\">LA6750-9</a></td><td>Severe</td></tr></table></div>"
-  },
   "expansion" : {
-    "identifier" : "urn:uuid:1842404c-a570-4c2c-af20-03cdbc89c059",
-    "timestamp" : "2018-10-17T20:03:00.942Z",
+    "identifier" : "urn:uuid:1f88f4e8-25a3-481b-9d05-fe725d556220",
+    "timestamp" : "2018-12-15T04:35:10.518Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -656,7 +1244,7 @@ e: {
       "system" : "http://loinc.org",
       "concept" : [{
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ordinal-value",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 1
         }],
         "code" : "LA18976-3",
@@ -664,7 +1252,7 @@ e: {
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ordinal-value",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 2
         }],
         "code" : "LA18977-1",
@@ -672,7 +1260,7 @@ e: {
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ordinal-value",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 3
         }],
         "code" : "LA15920-4",
@@ -680,7 +1268,7 @@ e: {
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ordinal-value",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 4
         }],
         "code" : "LA18978-9",
@@ -688,7 +1276,7 @@ e: {
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ordinal-value",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 5
         }],
         "code" : "LA18979-7",
@@ -696,7 +1284,7 @@ e: {
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ordinal-value",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 6
         }],
         "code" : "LA18980-5",
@@ -704,7 +1292,7 @@ e: {
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ordinal-value",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 7
         }],
         "code" : "LA18981-3",
@@ -712,7 +1300,7 @@ e: {
       },
       {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ordinal-value",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 8
         }],
         "code" : "LA18982-1",
@@ -725,8 +1313,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:2806eb5e-c312-4afe-a4e5-b113cadd0f66",
-    "timestamp" : "2018-10-17T20:03:10.723Z",
+    "identifier" : "urn:uuid:8cf0b918-ab32-4629-8ff0-f2f2ad348c09",
+    "timestamp" : "2018-12-15T04:35:19.299Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -804,8 +1392,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:823b483e-dd7f-4ee9-83c5-f443c2a38455",
-    "timestamp" : "2018-10-17T20:03:11.098Z",
+    "identifier" : "urn:uuid:cdcb98da-2d90-45f2-8a36-d05b1dd3e5bf",
+    "timestamp" : "2018-12-15T04:35:19.908Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -855,8 +1443,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:e88c910d-71c9-48cb-8130-f585d84ba0f1",
-    "timestamp" : "2018-10-17T20:03:13.192Z",
+    "identifier" : "urn:uuid:ba3ffb14-08a8-461c-8257-c306da7568a0",
+    "timestamp" : "2018-12-15T04:35:22.252Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6083,8 +6671,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:1ebce21c-4382-42b7-9113-fa01bbf957ef",
-    "timestamp" : "2018-10-17T20:03:17.535Z",
+    "identifier" : "urn:uuid:51afe7f1-22fe-432b-b064-e7db2771d215",
+    "timestamp" : "2018-12-15T04:35:26.221Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -11114,8 +11702,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:4c1e4991-4d9b-4e4c-ab0d-39a0bafaa368",
-    "timestamp" : "2018-10-17T20:03:23.770Z",
+    "identifier" : "urn:uuid:aaa998e3-6d3c-4821-af32-193dcab5aef5",
+    "timestamp" : "2018-12-15T04:38:49.924Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -16277,8 +16865,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:e134c90d-ebaa-47a4-809d-41a54a1138d3",
-    "timestamp" : "2018-10-17T20:03:29.582Z",
+    "identifier" : "urn:uuid:410e37b6-d02e-41ed-ad21-c4fa1f516dcc",
+    "timestamp" : "2018-12-15T04:38:55.815Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -16345,8 +16933,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:4ec74dc9-8c9f-4cd7-8894-bb4e3a705105",
-    "timestamp" : "2018-10-17T20:03:32.285Z",
+    "identifier" : "urn:uuid:1b070992-2ebe-4581-bedb-6fe44a016d48",
+    "timestamp" : "2018-12-15T04:42:41.127Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -16403,1478 +16991,5 @@ e: {
   }
 },
   "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "10162-6"
-}, "valueSet" :null}####
-v: {
-  "display" : "History of pregnancies Narrative",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : false, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "LA15173-0",
-        "display" : "Pregnant"
-      },
-      {
-        "code" : "LA26683-5",
-        "display" : "Not pregnant"
-      },
-      {
-        "code" : "LA4489-6",
-        "display" : "Unknown"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:c688deb7-9c4c-4b7c-bbe8-c0368992de46",
-    "timestamp" : "2018-11-05T14:40:18.957Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "excludeNested",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.64"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "LA15173-0",
-      "display" : "Pregnant"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA26683-5",
-      "display" : "Not pregnant"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA4489-6",
-      "display" : "Unknown"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "LA15173-0",
-        "display" : "Pregnant"
-      },
-      {
-        "code" : "LA26683-5",
-        "display" : "Not pregnant"
-      },
-      {
-        "code" : "LA4489-6",
-        "display" : "Unknown"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "text" : {
-    "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p>All codes from system <code>http://loinc.org</code></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA15173-0\"> </a><a href=\"http://details.loinc.org/LOINC/LA15173-0.html\">LA15173-0</a></td><td>Pregnant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA26683-5\"> </a><a href=\"http://details.loinc.org/LOINC/LA26683-5.html\">LA26683-5</a></td><td>Not pregnant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA4489-6\"> </a><a href=\"http://details.loinc.org/LOINC/LA4489-6.html\">LA4489-6</a></td><td>Unknown</td></tr></table></div>"
-  },
-  "expansion" : {
-    "identifier" : "urn:uuid:b99a9e15-2d6e-492d-9006-5ada954070d1",
-    "timestamp" : "2018-11-05T14:46:36.348Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.64"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "LA15173-0",
-      "display" : "Pregnant"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA26683-5",
-      "display" : "Not pregnant"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA4489-6",
-      "display" : "Unknown"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "8716-3"
-}, "valueSet" :null}####
-v: {
-  "display" : "Vital signs",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "60591-5"
-}, "valueSet" :null}####
-v: {
-  "display" : "Patient summary Document",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "75326-9"
-}, "valueSet" :null}####
-v: {
-  "display" : "Problem",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "LA6751-7"
-}, "valueSet" :null}####
-v: {
-  "display" : "",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "882-1"
-}, "valueSet" :null}####
-v: {
-  "display" : "ABO and Rh group [Type] in Blood",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "945-6"
-}, "valueSet" :null}####
-v: {
-  "display" : "C Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "1018-1"
-}, "valueSet" :null}####
-v: {
-  "display" : "E Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "1156-9"
-}, "valueSet" :null}####
-v: {
-  "display" : "little c Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "17856-6"
-}, "valueSet" :null}####
-v: {
-  "display" : "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "42803-7"
-}, "valueSet" :null}####
-v: {
-  "display" : "Bacteria identified in Isolate",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "60591-5",
-    "display" : "Patient Summary"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "SCALE_TYP",
-        "op" : "=",
-        "value" : "Doc"
-      }]
-    }]
-  }
-}}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Access violation at address 0000000000C1CFC7 in module 'FHIRServer.exe'. Read of address 000000000000734E"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "60591-5",
-  "display" : "Patient Summary"
-}, "valueSet" :null}####
-v: {
-  "display" : "Patient summary Document",
-  "severity" : "warning",
-  "error" : "The display \"Patient Summary\" is not a valid display for the code {http://loinc.org}60591-5 - should be one of [\"Patient summary Document\",\"Patient summary Doc\"]"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "11450-4",
-  "display" : "Problem list"
-}, "valueSet" :null}####
-v: {
-  "display" : "Problem list - Reported",
-  "severity" : "warning",
-  "error" : "The display \"Problem list\" is not a valid display for the code {http://loinc.org}11450-4 - should be one of [\"Problem list - Reported\",\"Problem list Reported\"]"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "10160-0",
-  "display" : "Medication use"
-}, "valueSet" :null}####
-v: {
-  "display" : "History of Medication use Narrative",
-  "severity" : "warning",
-  "error" : "The display \"Medication use\" is not a valid display for the code {http://loinc.org}10160-0 - should be one of [\"History of Medication use Narrative\",\"Hx of Medication use\"]"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "48765-2",
-  "display" : "Allergies and/or adverse reactions"
-}, "valueSet" :null}####
-v: {
-  "display" : "Allergies and adverse reactions Document",
-  "severity" : "warning",
-  "error" : "The display \"Allergies and/or adverse reactions\" is not a valid display for the code {http://loinc.org}48765-2 - should be one of [\"Allergies and adverse reactions Document\",\"Allergies &or adverse reactions Doc\"]"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "11348-0",
-  "display" : "Past illness"
-}, "valueSet" :null}####
-v: {
-  "display" : "History of Past illness Narrative",
-  "severity" : "warning",
-  "error" : "The display \"Past illness\" is not a valid display for the code {http://loinc.org}11348-0 - should be one of [\"History of Past illness Narrative\",\"Hx of Past illness\"]"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "18776-5",
-  "display" : "Plan of care note"
-}, "valueSet" :null}####
-v: {
-  "display" : "Plan of care note",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "30954-2",
-  "display" : "Results"
-}, "valueSet" :null}####
-v: {
-  "display" : "Relevant diagnostic tests/laboratory data Narrative",
-  "severity" : "warning",
-  "error" : "The display \"Results\" is not a valid display for the code {http://loinc.org}30954-2 - should be one of [\"Relevant diagnostic tests/laboratory data Narrative\",\"Relevant Dx tests/lab data\"]"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "75326-9",
-    "display" : "Problem"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://terminology.hl7.org/CodeSystem/condition-category"
-    }]
-  }
-}}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://loinc.org#75326-9) is not  valid in the value set ConditionCategoryCodes"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "75326-9",
-  "display" : "Problem"
-}, "valueSet" :null}####
-v: {
-  "display" : "Problem",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "LA6751-7",
-    "display" : "Moderate"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "concept" : [{
-        "code" : "24484000"
-      },
-      {
-        "code" : "6736007"
-      },
-      {
-        "code" : "255604002"
-      }]
-    }]
-  }
-}}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The display \"Moderate\" is not a valid display for the code ,{http://loinc.org}LA6751-7 - should be one of []; The code provided (http://loinc.org#LA6751-7) is not  valid in the value set Condition/DiagnosisSeverity"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "LA6751-7",
-  "display" : "Moderate"
-}, "valueSet" :null}####
-v: {
-  "display" : "",
-  "severity" : "warning",
-  "error" : "The display \"Moderate\" is not a valid display for the code {http://loinc.org}LA6751-7 - should be one of []"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "882-1",
-  "display" : "ABO and Rh group [Type] in Blood"
-}, "valueSet" :null}####
-v: {
-  "display" : "ABO and Rh group [Type] in Blood",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "945-6",
-  "display" : "C Ab [Presence] in Serum or Plasma"
-}, "valueSet" :null}####
-v: {
-  "display" : "C Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "1018-1",
-  "display" : "E Ab [Presence] in Serum or Plasma"
-}, "valueSet" :null}####
-v: {
-  "display" : "E Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "1156-9",
-  "display" : "little c Ab [Presence] in Serum or Plasma"
-}, "valueSet" :null}####
-v: {
-  "display" : "little c Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "17856-6",
-  "display" : "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC"
-}, "valueSet" :null}####
-v: {
-  "display" : "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "42803-7",
-  "display" : "Bacteria identified in Isolate"
-}, "valueSet" :null}####
-v: {
-  "display" : "Bacteria identified in Isolate",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "75326-9",
-    "display" : "Problem"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "75326-9",
-        "display" : "Problem"
-      }]
-    }]
-  }
-}}####
-v: {
-  "display" : "Problem",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "LA6751-7",
-    "display" : "Moderate"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "LA6752-5",
-        "display" : "Mild"
-      },
-      {
-        "code" : "LA6751-7",
-        "display" : "Moderate"
-      },
-      {
-        "code" : "LA6750-9",
-        "display" : "Severe"
-      }]
-    }]
-  }
-}}####
-v: {
-  "display" : "",
-  "severity" : "warning",
-  "error" : "The display \"Moderate\" is not a valid display for the code {http://loinc.org}LA6751-7 - should be one of []"
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : false, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-          "valueDecimal" : 1
-        }],
-        "code" : "LA18976-3",
-        "display" : "Current every day smoker"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-          "valueDecimal" : 2
-        }],
-        "code" : "LA18977-1",
-        "display" : "Current some day smoker"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-          "valueDecimal" : 3
-        }],
-        "code" : "LA15920-4",
-        "display" : "Former smoke"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-          "valueDecimal" : 4
-        }],
-        "code" : "LA18978-9",
-        "display" : "Never smoker"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-          "valueDecimal" : 5
-        }],
-        "code" : "LA18979-7",
-        "display" : "Smoker, current status unknown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-          "valueDecimal" : 6
-        }],
-        "code" : "LA18980-5",
-        "display" : "Unknown if ever smoked"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-          "valueDecimal" : 7
-        }],
-        "code" : "LA18981-3",
-        "display" : "Heavy tobacco smoker"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-          "valueDecimal" : 8
-        }],
-        "code" : "LA18982-1",
-        "display" : "Light tobacco smoker"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:637ea2b6-dc26-47b0-897a-15ba831c0436",
-    "timestamp" : "2018-11-15T11:08:48.708Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "excludeNested",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.64"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "LA18976-3",
-      "display" : "Current every day smoker"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA18977-1",
-      "display" : "Current some day smoker"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA15920-4",
-      "display" : "Former smoke"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA18978-9",
-      "display" : "Never smoker"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA18979-7",
-      "display" : "Smoker, current status unknown"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA18980-5",
-      "display" : "Unknown if ever smoked"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA18981-3",
-      "display" : "Heavy tobacco smoker"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA18982-1",
-      "display" : "Light tobacco smoker"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-          "valueDecimal" : 1
-        }],
-        "code" : "LA18976-3",
-        "display" : "Current every day smoker"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-          "valueDecimal" : 2
-        }],
-        "code" : "LA18977-1",
-        "display" : "Current some day smoker"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-          "valueDecimal" : 3
-        }],
-        "code" : "LA15920-4",
-        "display" : "Former smoke"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-          "valueDecimal" : 4
-        }],
-        "code" : "LA18978-9",
-        "display" : "Never smoker"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-          "valueDecimal" : 5
-        }],
-        "code" : "LA18979-7",
-        "display" : "Smoker, current status unknown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-          "valueDecimal" : 6
-        }],
-        "code" : "LA18980-5",
-        "display" : "Unknown if ever smoked"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-          "valueDecimal" : 7
-        }],
-        "code" : "LA18981-3",
-        "display" : "Heavy tobacco smoker"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-          "valueDecimal" : 8
-        }],
-        "code" : "LA18982-1",
-        "display" : "Light tobacco smoker"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:a9848e7c-81fc-484f-9668-88d1019a52f9",
-    "timestamp" : "2018-11-15T11:09:10.131Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://loinc.org?version=2.64"
-    }],
-    "contains" : [{
-      "system" : "http://loinc.org",
-      "code" : "LA18976-3",
-      "display" : "Current every day smoker"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA18977-1",
-      "display" : "Current some day smoker"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA15920-4",
-      "display" : "Former smoke"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA18978-9",
-      "display" : "Never smoker"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA18979-7",
-      "display" : "Smoker, current status unknown"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA18980-5",
-      "display" : "Unknown if ever smoked"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA18981-3",
-      "display" : "Heavy tobacco smoker"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "LA18982-1",
-      "display" : "Light tobacco smoker"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "60591-5",
-    "display" : "Patient summary Document"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "SCALE_TYP",
-        "op" : "=",
-        "value" : "Doc"
-      }]
-    }]
-  }
-}}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://loinc.org#60591-5) is not  valid in the value set FHIRDocumentTypeCodes"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "60591-5",
-  "display" : "Patient summary Document"
-}, "valueSet" :null}####
-v: {
-  "display" : "Patient summary Document",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "11450-4",
-  "display" : "Problem list Reported"
-}, "valueSet" :null}####
-v: {
-  "display" : "Problem list - Reported",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "10160-0",
-  "display" : "History of Medication use Narrative"
-}, "valueSet" :null}####
-v: {
-  "display" : "History of Medication use Narrative",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "48765-2",
-  "display" : "Allergies and adverse reactions Document"
-}, "valueSet" :null}####
-v: {
-  "display" : "Allergies and adverse reactions Document",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "11348-0",
-  "display" : "Hx of Past illness"
-}, "valueSet" :null}####
-v: {
-  "display" : "History of Past illness Narrative",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "882-1",
-    "display" : "ABO and Rh group [Type] in Blood"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "COMPONENT",
-        "op" : "regex",
-        "value" : "^((?!Panel).)*$"
-      },
-      {
-        "property" : "COMPONENT",
-        "op" : "regex",
-        "value" : "^((?!panel).)*$"
-      },
-      {
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      },
-      {
-        "property" : "ORDER_OBS",
-        "op" : "regex",
-        "value" : "Observation|Both"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!NR STATS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!CHALSKIN.*$).*"
-      }]
-    },
-    {
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "COMPONENT",
-        "op" : "regex",
-        "value" : "^((?!Panel).)*$"
-      },
-      {
-        "property" : "COMPONENT",
-        "op" : "regex",
-        "value" : "^((?!panel).)*$"
-      },
-      {
-        "property" : "COMPONENT",
-        "op" : "regex",
-        "value" : "^(?!Can pronounce.*$).*"
-      },
-      {
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "2"
-      },
-      {
-        "property" : "ORDER_OBS",
-        "op" : "regex",
-        "value" : "Observation|Both"
-      },
-      {
-        "property" : "SYSTEM",
-        "op" : "=",
-        "value" : "^Patient"
-      }]
-    }]
-  }
-}}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unsupported operator type regex"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "945-6",
-    "display" : "C Ab [Presence] in Serum or Plasma"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "COMPONENT",
-        "op" : "regex",
-        "value" : "^((?!Panel).)*$"
-      },
-      {
-        "property" : "COMPONENT",
-        "op" : "regex",
-        "value" : "^((?!panel).)*$"
-      },
-      {
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      },
-      {
-        "property" : "ORDER_OBS",
-        "op" : "regex",
-        "value" : "Observation|Both"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!NR STATS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!CHALSKIN.*$).*"
-      }]
-    },
-    {
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "COMPONENT",
-        "op" : "regex",
-        "value" : "^((?!Panel).)*$"
-      },
-      {
-        "property" : "COMPONENT",
-        "op" : "regex",
-        "value" : "^((?!panel).)*$"
-      },
-      {
-        "property" : "COMPONENT",
-        "op" : "regex",
-        "value" : "^(?!Can pronounce.*$).*"
-      },
-      {
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "2"
-      },
-      {
-        "property" : "ORDER_OBS",
-        "op" : "regex",
-        "value" : "Observation|Both"
-      },
-      {
-        "property" : "SYSTEM",
-        "op" : "=",
-        "value" : "^Patient"
-      }]
-    }]
-  }
-}}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unsupported operator type regex"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "1018-1",
-    "display" : "E Ab [Presence] in Serum or Plasma"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "COMPONENT",
-        "op" : "regex",
-        "value" : "^((?!Panel).)*$"
-      },
-      {
-        "property" : "COMPONENT",
-        "op" : "regex",
-        "value" : "^((?!panel).)*$"
-      },
-      {
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      },
-      {
-        "property" : "ORDER_OBS",
-        "op" : "regex",
-        "value" : "Observation|Both"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!NR STATS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!CHALSKIN.*$).*"
-      }]
-    },
-    {
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "COMPONENT",
-        "op" : "regex",
-        "value" : "^((?!Panel).)*$"
-      },
-      {
-        "property" : "COMPONENT",
-        "op" : "regex",
-        "value" : "^((?!panel).)*$"
-      },
-      {
-        "property" : "COMPONENT",
-        "op" : "regex",
-        "value" : "^(?!Can pronounce.*$).*"
-      },
-      {
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "2"
-      },
-      {
-        "property" : "ORDER_OBS",
-        "op" : "regex",
-        "value" : "Observation|Both"
-      },
-      {
-        "property" : "SYSTEM",
-        "op" : "=",
-        "value" : "^Patient"
-      }]
-    }]
-  }
-}}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unsupported operator type regex"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "1156-9",
-    "display" : "little c Ab [Presence] in Serum or Plasma"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "COMPONENT",
-        "op" : "regex",
-        "value" : "^((?!Panel).)*$"
-      },
-      {
-        "property" : "COMPONENT",
-        "op" : "regex",
-        "value" : "^((?!panel).)*$"
-      },
-      {
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      },
-      {
-        "property" : "ORDER_OBS",
-        "op" : "regex",
-        "value" : "Observation|Both"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!NR STATS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!CHALSKIN.*$).*"
-      }]
-    },
-    {
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "COMPONENT",
-        "op" : "regex",
-        "value" : "^((?!Panel).)*$"
-      },
-      {
-        "property" : "COMPONENT",
-        "op" : "regex",
-        "value" : "^((?!panel).)*$"
-      },
-      {
-        "property" : "COMPONENT",
-        "op" : "regex",
-        "value" : "^(?!Can pronounce.*$).*"
-      },
-      {
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "2"
-      },
-      {
-        "property" : "ORDER_OBS",
-        "op" : "regex",
-        "value" : "Observation|Both"
-      },
-      {
-        "property" : "SYSTEM",
-        "op" : "=",
-        "value" : "^Patient"
-      }]
-    }]
-  }
-}}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "Unsupported operator type regex"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "17856-6",
-    "display" : "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!NR STATS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!CHALSKIN.*$).*"
-      }]
-    }]
-  }
-}}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://loinc.org#17856-6) is not  valid in the value set ips-laboratory-tests-and-panels"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "42803-7",
-    "display" : "Bacteria identified in Isolate"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!NR STATS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!CHALSKIN.*$).*"
-      }]
-    }]
-  }
-}}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://loinc.org#42803-7) is not  valid in the value set ips-laboratory-tests-and-panels"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "30954-2",
-  "display" : "Relevant diagnostic tests/laboratory data Narrative"
-}, "valueSet" :null}####
-v: {
-  "display" : "Relevant diagnostic tests/laboratory data Narrative",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "LA6750-9"
-}, "valueSet" :null}####
-v: {
-  "display" : "",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "LA6750-9",
-    "display" : "Severe"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "LA6752-5",
-        "display" : "Mild"
-      },
-      {
-        "code" : "LA6751-7",
-        "display" : "Moderate"
-      },
-      {
-        "code" : "LA6750-9",
-        "display" : "Severe"
-      }]
-    }]
-  }
-}}####
-v: {
-  "display" : "",
-  "severity" : "warning",
-  "error" : "The display \"Severe\" is not a valid display for the code {http://loinc.org}LA6750-9 - should be one of []"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "LA6750-9",
-  "display" : "Severe"
-}, "valueSet" :null}####
-v: {
-  "display" : "",
-  "severity" : "warning",
-  "error" : "The display \"Severe\" is not a valid display for the code {http://loinc.org}LA6750-9 - should be one of []"
 }
 -------------------------------------------------------------------------------------

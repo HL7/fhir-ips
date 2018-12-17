@@ -10,10 +10,8 @@
 	<status value="draft"/>
 	<date value="2018-02-14T22:57:06.512+01:00"/>
 	<publisher value="HL7 International"/>
-
 	<description value="This profile represents the constraints applied to the MedicationStatement resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A record of a medication statement is represented in the patient summary as an instance of a MedicationStatement resource constrained by this profile."/>
 	<purpose value="This profile constrains the representation of a medication statement related to the patient, in the context of the international patient summary as specified by the IPS project of HL7 International."/>
-	<fhirVersion value="3.6.0"/>
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="MedicationStatement"/>
@@ -101,7 +99,6 @@
 			<mustSupport value="true"/>
 		</element>
 		<!--
-
 		<element id="MedicationStatement.effective[x]:effectivedateTime">
 			<path value="MedicationStatement.effective[x]"/>
 			<sliceName value="effectivedateTime"/>
@@ -140,7 +137,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-
 -->
 		<element id="MedicationStatement.subject">
 			<path value="MedicationStatement.subject"/>
