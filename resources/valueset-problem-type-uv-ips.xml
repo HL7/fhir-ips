@@ -1,35 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?><ValueSet xmlns="http://hl7.org/fhir" xmlns:f="http://hl7.org/fhir">
-<!-- Value set exported from ART-DECOR project hl7ips (IPS) --><id value="problem-type-uv-ips"/><meta>
-                    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
-                </meta>
-                        <text>
-    <status value="generated"/>
-    <div xmlns="http://www.w3.org/1999/xhtml">This value set indicates the level of medical judgment used to determine the existence of a problem.</div>
-  </text>
-                <url value="http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips"/><identifier>
-                    <use value="official"/>
-                    <system value="http://art-decor.org/ns/oids/vs"/>
-                    <value value="2.16.840.1.113883.11.22.16"/>
-                </identifier><version value="2017-04-07T00:00:00"/><name value="IPSProblemType"/><title value="Problem Type"/><status value="draft"/><experimental value="false"/><publisher value="HL7 International"/><contact>
-                    <name value="HL7 International"/>
-                    <telecom>
-                        <system value="phone"/>
-                        <value value="+1 734 677 7777"/>
-                    </telecom>
-                    <telecom>
-                        <system value="fax"/>
-                        <value value="+1 734 677 6622"/>
-                    </telecom>
-                    <telecom>
-                        <system value="email"/>
-                        <value value="info@hl7.org"/>
-                    </telecom>
-                </contact><description value="This value set indicates the level of medical judgment used to determine the existence of a problem."/><immutable value="false"/><compose>
-                    <include>
-                        <system value="http://loinc.org"/>
-                        <concept>
-                            <code value="75326-9"/>
-                            <display value="Problem"/>
-                        </concept>
-                    </include>
-                </compose></ValueSet>
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir" 
+    xmlns:f="http://hl7.org/fhir">
+    <!-- Value set exported from ART-DECOR project hl7ips (IPS) -->
+    <id value="problem-type-uv-ips"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">This value set indicates the level of medical judgment used to determine the existence of a problem.</div>
+    </text>
+    <url value="http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="2.16.840.1.113883.11.22.16"/>
+    </identifier>
+    <version value="2017-04-07T00:00:00"/>
+    <name value="IPSProblemType"/>
+    <title value="Problem Type"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <publisher value="HL7 International"/>
+    <contact>
+        <name value="HL7 International"/>
+        <telecom>
+            <system value="phone"/>
+            <value value="+1 734 677 7777"/>
+        </telecom>
+        <telecom>
+            <system value="fax"/>
+            <value value="+1 734 677 6622"/>
+        </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="info@hl7.org"/>
+        </telecom>
+    </contact>
+    <description value="This value set indicates the level of medical judgment used to determine the existence of a problem."/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="http://loinc.org"/>
+            <concept>
+                <code value="75326-9"/>
+                <display value="Problem"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
