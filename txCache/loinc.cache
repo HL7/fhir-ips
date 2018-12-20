@@ -16993,3 +16993,931 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "882-1",
+    "display" : "ABO and Rh group [Type] in Blood"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "1"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!NR STATS.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!H&P\\.HX.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!CHALSKIN.*$).*"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Access violation at address 0000000000C351BF in module 'FHIRServer.exe'. Read of address 000000007D370000"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "945-6",
+    "display" : "C Ab [Presence] in Serum or Plasma"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "1"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!NR STATS.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!H&P\\.HX.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!CHALSKIN.*$).*"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Access violation at address 0000000000C351BF in module 'FHIRServer.exe'. Read of address 000000007DAB0000"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "1018-1",
+    "display" : "E Ab [Presence] in Serum or Plasma"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "1"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!NR STATS.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!H&P\\.HX.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!CHALSKIN.*$).*"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Access violation at address 0000000000C351BF in module 'FHIRServer.exe'. Read of address 000000007BFB0000"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "1156-9",
+    "display" : "little c Ab [Presence] in Serum or Plasma"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "1"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!NR STATS.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!H&P\\.HX.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!CHALSKIN.*$).*"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Access violation at address 0000000000C351BF in module 'FHIRServer.exe'. Read of address 000000007DAB0000"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "882-1",
+    "display" : "ABO and Rh group [Type] in Blood"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "CLASS",
+        "op" : "=",
+        "value" : "RAD"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://loinc.org#882-1) is not  valid in the value set IPSRadResultsObservation"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "945-6",
+    "display" : "C Ab [Presence] in Serum or Plasma"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "CLASS",
+        "op" : "=",
+        "value" : "RAD"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Access violation at address 0000000000C35192 in module 'FHIRServer.exe'. Read of address FFFFFFFFFFFFFFFF"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "1018-1",
+    "display" : "E Ab [Presence] in Serum or Plasma"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "CLASS",
+        "op" : "=",
+        "value" : "RAD"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Access violation at address 0000000000C35192 in module 'FHIRServer.exe'. Read of address FFFFFFFFFFFFFFFF"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "1156-9",
+    "display" : "little c Ab [Presence] in Serum or Plasma"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "CLASS",
+        "op" : "=",
+        "value" : "RAD"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Access violation at address 0000000000C35192 in module 'FHIRServer.exe'. Read of address FFFFFFFFFFFFFFFF"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "17856-6",
+    "display" : "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "CLASS",
+        "op" : "=",
+        "value" : "RAD"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Access violation at address 0000000000C35192 in module 'FHIRServer.exe'. Read of address FFFFFFFFFFFFFFFF"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "42803-7",
+    "display" : "Bacteria identified in Isolate"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "CLASS",
+        "op" : "=",
+        "value" : "RAD"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "Bacteria identified in Isolate",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "882-1",
+    "display" : "ABO and Rh group [Type] in Blood"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!Panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^(?!Can pronounce.*$).*"
+      },
+      {
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "1"
+      },
+      {
+        "property" : "ORDER_OBS",
+        "op" : "regex",
+        "value" : "Observation|Both"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "CYTO|HEM/BC|HL7\\.CYTOGEN|HL7\\.GENETICS|PATH|^(?!MOLPATH.*$).*"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!Panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^(?!Can pronounce.*$).*"
+      },
+      {
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "2"
+      },
+      {
+        "property" : "ORDER_OBS",
+        "op" : "regex",
+        "value" : "Observation|Both"
+      },
+      {
+        "property" : "SYSTEM",
+        "op" : "=",
+        "value" : "^Patient"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unsupported operator type regex"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "945-6",
+    "display" : "C Ab [Presence] in Serum or Plasma"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!Panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^(?!Can pronounce.*$).*"
+      },
+      {
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "1"
+      },
+      {
+        "property" : "ORDER_OBS",
+        "op" : "regex",
+        "value" : "Observation|Both"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "CYTO|HEM/BC|HL7\\.CYTOGEN|HL7\\.GENETICS|PATH|^(?!MOLPATH.*$).*"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!Panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^(?!Can pronounce.*$).*"
+      },
+      {
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "2"
+      },
+      {
+        "property" : "ORDER_OBS",
+        "op" : "regex",
+        "value" : "Observation|Both"
+      },
+      {
+        "property" : "SYSTEM",
+        "op" : "=",
+        "value" : "^Patient"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unsupported operator type regex"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "1018-1",
+    "display" : "E Ab [Presence] in Serum or Plasma"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!Panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^(?!Can pronounce.*$).*"
+      },
+      {
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "1"
+      },
+      {
+        "property" : "ORDER_OBS",
+        "op" : "regex",
+        "value" : "Observation|Both"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "CYTO|HEM/BC|HL7\\.CYTOGEN|HL7\\.GENETICS|PATH|^(?!MOLPATH.*$).*"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!Panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^(?!Can pronounce.*$).*"
+      },
+      {
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "2"
+      },
+      {
+        "property" : "ORDER_OBS",
+        "op" : "regex",
+        "value" : "Observation|Both"
+      },
+      {
+        "property" : "SYSTEM",
+        "op" : "=",
+        "value" : "^Patient"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unsupported operator type regex"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "1156-9",
+    "display" : "little c Ab [Presence] in Serum or Plasma"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!Panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^(?!Can pronounce.*$).*"
+      },
+      {
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "1"
+      },
+      {
+        "property" : "ORDER_OBS",
+        "op" : "regex",
+        "value" : "Observation|Both"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "CYTO|HEM/BC|HL7\\.CYTOGEN|HL7\\.GENETICS|PATH|^(?!MOLPATH.*$).*"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!Panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^(?!Can pronounce.*$).*"
+      },
+      {
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "2"
+      },
+      {
+        "property" : "ORDER_OBS",
+        "op" : "regex",
+        "value" : "Observation|Both"
+      },
+      {
+        "property" : "SYSTEM",
+        "op" : "=",
+        "value" : "^Patient"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unsupported operator type regex"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "17856-6",
+    "display" : "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!Panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^(?!Can pronounce.*$).*"
+      },
+      {
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "1"
+      },
+      {
+        "property" : "ORDER_OBS",
+        "op" : "regex",
+        "value" : "Observation|Both"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "CYTO|HEM/BC|HL7\\.CYTOGEN|HL7\\.GENETICS|PATH|^(?!MOLPATH.*$).*"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!Panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^(?!Can pronounce.*$).*"
+      },
+      {
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "2"
+      },
+      {
+        "property" : "ORDER_OBS",
+        "op" : "regex",
+        "value" : "Observation|Both"
+      },
+      {
+        "property" : "SYSTEM",
+        "op" : "=",
+        "value" : "^Patient"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unsupported operator type regex"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "42803-7",
+    "display" : "Bacteria identified in Isolate"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!Panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^(?!Can pronounce.*$).*"
+      },
+      {
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "1"
+      },
+      {
+        "property" : "ORDER_OBS",
+        "op" : "regex",
+        "value" : "Observation|Both"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "CYTO|HEM/BC|HL7\\.CYTOGEN|HL7\\.GENETICS|PATH|^(?!MOLPATH.*$).*"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!Panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^((?!panel).)*$"
+      },
+      {
+        "property" : "COMPONENT",
+        "op" : "regex",
+        "value" : "^(?!Can pronounce.*$).*"
+      },
+      {
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "2"
+      },
+      {
+        "property" : "ORDER_OBS",
+        "op" : "regex",
+        "value" : "Observation|Both"
+      },
+      {
+        "property" : "SYSTEM",
+        "op" : "=",
+        "value" : "^Patient"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unsupported operator type regex"
+}
+-------------------------------------------------------------------------------------
