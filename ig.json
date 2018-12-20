@@ -28,7 +28,8 @@
 		"progress"
 	],
 	"codesystems": [
-		"absent-unknown-uv-ips"
+		"absent-unknown-uv-ips",
+		"edqm-uv-ips"
 	],
 	"searches": [],
 	"publisher": "Health Level Seven International",
@@ -461,6 +462,9 @@
 		},
 		"CodeSystem/absent-unknown-uv-ips": {
 			"base": "CodeSystem-absent-unknown-uv-ips.html"
+		},
+		"CodeSystem/edqm-uv-ips": {
+			"base": "CodeSystem-edqm-uv-ips.html"
 		},
 		"ValueSet/condition-severity-uv-ips": {
 			"source": "valueset-condition-severity-uv-ips.xml",
