@@ -5711,3 +5711,64 @@ e: {
   "error" : "Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.2.9.6.1.5"
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "373270004",
+    "display" : "Penicillin -class of antibiotic- (substance)"
+  },
+  {
+    "system" : "urn:oid:2.16.840.1.113883.3.1937.777.13.5.999.1",
+    "code" : "X-NoKnownAllergy"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "410942007"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "116273005"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "406455002"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "420111002"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "373873005"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "Penicillin -class of antibiotic- (substance)",
+  "severity" : "warning",
+  "error" : "The code system \"urn:oid:2.16.840.1.113883.3.1937.777.13.5.999.1\" is not known"
+}
+-------------------------------------------------------------------------------------

@@ -233,7 +233,7 @@
 				<key value="hasMemberOrComponent"/>
 				<severity value="error"/>
 				<human value="component and hasMember are mutually exclusive"/>
-				<expression value="../has-member or ../component"/>
+				<expression value="has-member.empty() or component.empty()"/>
 			</constraint>
 			<mustSupport value="true"/>
 		</element>
@@ -255,7 +255,7 @@
 				<key value="hasMemberOrComponent"/>
 				<severity value="error"/>
 				<human value="component and hasMember are mutually exclusive"/>
-				<expression value="../has-member or ../component"/>
+				<expression value="has-member.empty() or component.empty()"/>
 			</constraint>
 			<mustSupport value="true"/>
 		</element>

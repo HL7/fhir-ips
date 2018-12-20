@@ -150,10 +150,15 @@
 					</code>
 					<text>
 						<status value="generated"/>
-						<xhtml:div>Allergy to penicillin, high criticality, active</xhtml:div>
+						<xhtml:div>Allergy to penicillin, high criticality, active
+							No known food allergies
+						</xhtml:div>
 					</text>
 					<entry>
 						<reference value="http://hapi.fhir.org/baseR4/AllergyIntolerance/IPS-examples-AllergyIntolerance-01"/>
+					</entry>
+					<entry>
+						<reference value="http://hapi.fhir.org/baseR4/AllergyIntolerance/IPS-examples-AllergyIntolerance-02"/>
 					</entry>
 				</section>
 				<section>
@@ -650,10 +655,6 @@
 						<code value="373270004"/>
 						<display value="Penicillin -class of antibiotic- (substance)"/>
 					</coding>
-                    <coding>
-                        <system value="urn:oid:2.16.840.1.113883.3.1937.777.13.5.999.1"/>
-                        <code value="X-NoKnownAllergy"/>
-                    </coding>
 				</code>
 				<patient>
 					<reference value="http://hapi.fhir.org/baseR4/Patient/IPS-examples-Patient-01"/>
@@ -728,7 +729,8 @@
 			</Condition>
 		</resource>
 	</entry>
-	<!--e12--><entry>
+	<!--e12-->
+	<entry>
 		<fullUrl value="http://hapi.fhir.org/baseR4/Organization/IPS-examples-Organization-02"/>
 		<resource>
 			<Organization>
@@ -744,6 +746,7 @@
 			</Organization>
 		</resource>
 	</entry>
+	<!--e13-->
 	<entry>
 		<fullUrl value="http://hapi.fhir.org/baseR4/Observation/IPS-examples-Observation-01-Sub0"/>
 		<resource>
@@ -780,6 +783,7 @@
 			</Observation>
 		</resource>
 	</entry>
+	<!--e14-->
 	<entry>
 		<fullUrl value="http://hapi.fhir.org/baseR4/Observation/IPS-examples-Observation-01-Sub1"/>
 		<resource>
@@ -816,6 +820,7 @@
 			</Observation>
 		</resource>
 	</entry>
+	<!--e15-->
 	<entry>
 		<fullUrl value="http://hapi.fhir.org/baseR4/Observation/IPS-examples-Observation-01-Sub2"/>
 		<resource>
@@ -852,6 +857,7 @@
 			</Observation>
 		</resource>
 	</entry>
+	<!--e16-->
 	<entry>
 		<fullUrl value="http://hapi.fhir.org/baseR4/Observation/IPS-examples-Observation-01-Sub3"/>
 		<resource>
@@ -888,6 +894,7 @@
 			</Observation>
 		</resource>
 	</entry>
+	<!--e17-->
 	<entry>
 		<fullUrl value="http://hapi.fhir.org/baseR4/Observation/IPS-examples-Observation-01-0"/>
 		<resource>
@@ -928,6 +935,7 @@
 			</Observation>
 		</resource>
 	</entry>
+	<!--e18-->
 	<entry>
 		<fullUrl value="http://hapi.fhir.org/baseR4/Observation/IPS-examples-Observation-01-1"/>
 		<resource>
@@ -969,6 +977,7 @@
 			</Observation>
 		</resource>
 	</entry>
+	<!--e19-->
 	<entry>
 		<fullUrl value="http://hapi.fhir.org/baseR4/Observation/IPS-examples-Observation-01-3"/>
 		<resource>
@@ -1009,6 +1018,47 @@
 					<text value="Healthy carrier of MRSA"/>
 				</note>
 			</Observation>
+		</resource>
+	</entry>
+	<!--e20-->
+	<entry>
+		<fullUrl value="http://hapi.fhir.org/baseR4/AllergyIntolerance/IPS-examples-AllergyIntolerance-02"/>
+		<resource>
+			<AllergyIntolerance>
+				<id value="IPS-examples-AllergyIntolerance-02"/>
+				<meta>
+					<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"/>
+				</meta>
+				<identifier>
+					<system value="urn:oid:1.2.3.999"/>
+					<value value="3a462598-009c-484a-965c-d6b24a821424"/>
+				</identifier>
+				<clinicalStatus>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+						<code value="active"/>
+					</coding>
+				</clinicalStatus>
+				<verificationStatus>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+						<code value="confirmed"/>
+					</coding>
+				</verificationStatus>
+				<type value="allergy"/>
+				<category value="medication"/>
+				<criticality value="high"/>
+				<code>
+                    <coding>
+                        <system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
+                        <code value="no-known-food-allergies"/>
+                    </coding>
+				</code>
+				<patient>
+					<reference value="http://hapi.fhir.org/baseR4/Patient/IPS-examples-Patient-01"/>
+				</patient>
+				<onsetDateTime value="2010"/>
+			</AllergyIntolerance>
 		</resource>
 	</entry>
 </Bundle>
