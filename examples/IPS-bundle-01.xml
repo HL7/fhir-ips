@@ -31,11 +31,11 @@
 					</coding>
 				</type>
 				<subject>
-					<reference value="http://hapi.fhir.org/baseR4/Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/IPS-examples-Patient-01"/>
 				</subject>
 				<date value="2017-07-20T14:30:00+01:00"/>
 				<author>
-					<reference value="http://hapi.fhir.org/baseR4/Practitioner/IPS-examples-Practitioner-01"/>
+					<reference value="Practitioner/IPS-examples-Practitioner-01"/>
 				</author>
 				<title value="Patient Summary as of July 20, 2017 14:30"/>
 				<confidentiality value="N"/>
@@ -43,18 +43,18 @@
 					<mode value="legal"/>
 					<time value="2017-07-20T14:30:00+01:00"/>
 					<party>
-						<reference value="http://hapi.fhir.org/baseR4/Practitioner/IPS-examples-Practitioner-01"/>
+						<reference value="Practitioner/IPS-examples-Practitioner-01"/>
 					</party>
 				</attester>
 				<attester>
 					<mode value="legal"/>
 					<time value="2017-07-20T14:30:00+01:00"/>
 					<party>
-						<reference value="http://hapi.fhir.org/baseR4/Organization/IPS-examples-Organization-01"/>
+						<reference value="Organization/IPS-examples-Organization-01"/>
 					</party>
 				</attester>
 				<custodian>
-					<reference value="http://hapi.fhir.org/baseR4/Organization/IPS-examples-Organization-01"/>
+					<reference value="Organization/IPS-examples-Organization-01"/>
 				</custodian>
 				<relatesTo>
 					<code value="appends"/>
@@ -88,7 +88,7 @@
 						<xhtml:div>Hot flushes</xhtml:div>
 					</text>
 					<entry>
-						<reference value="http://hapi.fhir.org/baseR4/Condition/IPS-examples-Condition-01"/>
+						<reference value="Condition/IPS-examples-Condition-01"/>
 					</entry>
 				</section>
 				<section>
@@ -133,10 +133,10 @@
 						</xhtml:div>
 					</text>
 					<entry>
-						<reference value="http://hapi.fhir.org/baseR4/MedicationStatement/IPS-examples-MedicationStatement-01"/>
+						<reference value="MedicationStatement/IPS-examples-MedicationStatement-01"/>
 					</entry>
 					<entry>
-						<reference value="http://hapi.fhir.org/baseR4/MedicationStatement/IPS-examples-MedicationStatement-02"/>
+						<reference value="MedicationStatement/IPS-examples-MedicationStatement-02"/>
 					</entry>
 				</section>
 				<section>
@@ -155,10 +155,10 @@
 						</xhtml:div>
 					</text>
 					<entry>
-						<reference value="http://hapi.fhir.org/baseR4/AllergyIntolerance/IPS-examples-AllergyIntolerance-01"/>
+						<reference value="AllergyIntolerance/IPS-examples-AllergyIntolerance-01"/>
 					</entry>
 					<entry>
-						<reference value="http://hapi.fhir.org/baseR4/AllergyIntolerance/IPS-examples-AllergyIntolerance-02"/>
+						<reference value="AllergyIntolerance/IPS-examples-AllergyIntolerance-02"/>
 					</entry>
 				</section>
 				<section>
@@ -175,7 +175,7 @@
 						<xhtml:div>Breast cancer Stage II with no evidence of recurrence following treatment</xhtml:div>
 					</text>
 					<entry>
-						<reference value="http://hapi.fhir.org/baseR4/Condition/IPS-examples-Condition-02"/>
+						<reference value="Condition/IPS-examples-Condition-02"/>
 					</entry>
 				</section>
 				<section>
@@ -265,25 +265,25 @@
 						</xhtml:div>
 					</text>
 					<entry>
-						<reference value="http://hapi.fhir.org/baseR4/Observation/IPS-examples-Observation-01-Sub0"/>
+						<reference value="Observation/IPS-examples-Observation-01-Sub0"/>
 					</entry>
 					<entry>
-						<reference value="http://hapi.fhir.org/baseR4/Observation/IPS-examples-Observation-01-Sub1"/>
+						<reference value="Observation/IPS-examples-Observation-01-Sub1"/>
 					</entry>
 					<entry>
-						<reference value="http://hapi.fhir.org/baseR4/Observation/IPS-examples-Observation-01-Sub2"/>
+						<reference value="Observation/IPS-examples-Observation-01-Sub2"/>
 					</entry>
 					<entry>
-						<reference value="http://hapi.fhir.org/baseR4/Observation/IPS-examples-Observation-01-Sub3"/>
+						<reference value="Observation/IPS-examples-Observation-01-Sub3"/>
 					</entry>
 					<entry>
-						<reference value="http://hapi.fhir.org/baseR4/Observation/IPS-examples-Observation-01-0"/>
+						<reference value="Observation/IPS-examples-Observation-01-0"/>
 					</entry>
 					<entry>
-						<reference value="http://hapi.fhir.org/baseR4/Observation/IPS-examples-Observation-01-1"/>
+						<reference value="Observation/IPS-examples-Observation-01-1"/>
 					</entry>
 					<entry>
-						<reference value="http://hapi.fhir.org/baseR4/Observation/IPS-examples-Observation-01-3"/>
+						<reference value="Observation/IPS-examples-Observation-01-3"/>
 					</entry>
 				</section>
 			</Composition>
@@ -468,7 +468,7 @@
                     </coding>
 				</code>
 				<subject>
-					<reference value="http://hapi.fhir.org/baseR4/Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/IPS-examples-Patient-01"/>
 				</subject>
 				<onsetDateTime value="2015"/>
 				<recordedDate value="2016-10"/>
@@ -490,10 +490,10 @@
 				</identifier>
 				<status value="active"/>
 				<medicationReference>
-					<reference value="http://hapi.fhir.org/baseR4/Medication/IPS-examples-Medication-01"/>
+					<reference value="Medication/IPS-examples-Medication-01"/>
 				</medicationReference>
 				<subject>
-					<reference value="http://hapi.fhir.org/baseR4/Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/IPS-examples-Patient-01"/>
 				</subject>
 				<effectivePeriod>
 					<start value="2015-03"/>
@@ -546,10 +546,10 @@
 				</identifier>
 				<status value="active"/>
 				<medicationReference>
-					<reference value="http://hapi.fhir.org/baseR4/Medication/IPS-examples-Medication-02"/>
+					<reference value="Medication/IPS-examples-Medication-02"/>
 				</medicationReference>
 				<subject>
-					<reference value="http://hapi.fhir.org/baseR4/Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/IPS-examples-Patient-01"/>
 				</subject>
 				<effectivePeriod>
 					<start value="2016-01"/>
@@ -657,7 +657,7 @@
 					</coding>
 				</code>
 				<patient>
-					<reference value="http://hapi.fhir.org/baseR4/Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/IPS-examples-Patient-01"/>
 				</patient>
 				<onsetDateTime value="2010"/>
 			</AllergyIntolerance>
@@ -722,7 +722,7 @@
                     </coding>
 				</code>
 				<subject>
-					<reference value="http://hapi.fhir.org/baseR4/Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/IPS-examples-Patient-01"/>
 				</subject>
 				<onsetDateTime value="2015-01"/>
 				<abatementDateTime value="2015-03"/>
@@ -770,7 +770,7 @@
 					</coding>
 				</code>
 				<subject>
-					<reference value="http://hapi.fhir.org/baseR4/Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/IPS-examples-Patient-01"/>
 				</subject>
 				<effectiveDateTime value="2015-10-10T09:15:00+01:00"/>
 				<valueCodeableConcept>
@@ -807,7 +807,7 @@
 					</coding>
 				</code>
 				<subject>
-					<reference value="http://hapi.fhir.org/baseR4/Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/IPS-examples-Patient-01"/>
 				</subject>
 				<effectiveDateTime value="2015-10-10T09:35:00+01:00"/>
 				<valueCodeableConcept>
@@ -844,7 +844,7 @@
 					</coding>
 				</code>
 				<subject>
-					<reference value="http://hapi.fhir.org/baseR4/Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/IPS-examples-Patient-01"/>
 				</subject>
 				<effectiveDateTime value="2015-10-10T09:35:00+01:00"/>
 				<valueCodeableConcept>
@@ -881,7 +881,7 @@
 					</coding>
 				</code>
 				<subject>
-					<reference value="http://hapi.fhir.org/baseR4/Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/IPS-examples-Patient-01"/>
 				</subject>
 				<effectiveDateTime value="2015-10-10T09:35:00+01:00"/>
 				<valueCodeableConcept>
@@ -914,23 +914,23 @@
 					<text value="Blood typing"/>
 				</code>
 				<subject>
-					<reference value="http://hapi.fhir.org/baseR4/Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/IPS-examples-Patient-01"/>
 				</subject>
 				<effectiveDateTime value="2015-10-10"/>
 				<performer>
-					<reference value="http://hapi.fhir.org/baseR4/Organization/IPS-examples-Organization-02"/>
+					<reference value="Organization/IPS-examples-Organization-02"/>
 				</performer>
 				<hasMember>
-					<reference value="http://hapi.fhir.org/baseR4/Observation/IPS-examples-Observation-01-Sub0"/>
+					<reference value="Observation/IPS-examples-Observation-01-Sub0"/>
 				</hasMember>
 				<hasMember>
-					<reference value="http://hapi.fhir.org/baseR4/Observation/IPS-examples-Observation-01-Sub1"/>
+					<reference value="Observation/IPS-examples-Observation-01-Sub1"/>
 				</hasMember>
 				<hasMember>
-					<reference value="http://hapi.fhir.org/baseR4/Observation/IPS-examples-Observation-01-Sub2"/>
+					<reference value="Observation/IPS-examples-Observation-01-Sub2"/>
 				</hasMember>
 				<hasMember>
-					<reference value="http://hapi.fhir.org/baseR4/Observation/IPS-examples-Observation-01-Sub3"/>
+					<reference value="Observation/IPS-examples-Observation-01-Sub3"/>
 				</hasMember>
 			</Observation>
 		</resource>
@@ -959,11 +959,11 @@
 					</coding>
 				</code>
 				<subject>
-					<reference value="http://hapi.fhir.org/baseR4/Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/IPS-examples-Patient-01"/>
 				</subject>
 				<effectiveDateTime value="2017-11-10T08:20:00+01:00"/>
 				<performer>
-					<reference value="http://hapi.fhir.org/baseR4/Organization/IPS-examples-Organization-02"/>
+					<reference value="Organization/IPS-examples-Organization-02"/>
 				</performer>
 				<valueQuantity>
 					<value value="7.5"/>
@@ -1001,11 +1001,11 @@
 					</coding>
 				</code>
 				<subject>
-					<reference value="http://hapi.fhir.org/baseR4/Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/IPS-examples-Patient-01"/>
 				</subject>
 				<effectiveDateTime value="2017-12-10T08:20:00+01:00"/>
 				<performer>
-					<reference value="http://hapi.fhir.org/baseR4/Organization/IPS-examples-Organization-02"/>
+					<reference value="Organization/IPS-examples-Organization-02"/>
 				</performer>
 				<valueCodeableConcept>
 					<coding>
@@ -1055,7 +1055,7 @@
                     </coding>
 				</code>
 				<patient>
-					<reference value="http://hapi.fhir.org/baseR4/Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/IPS-examples-Patient-01"/>
 				</patient>
 				<onsetDateTime value="2010"/>
 			</AllergyIntolerance>
