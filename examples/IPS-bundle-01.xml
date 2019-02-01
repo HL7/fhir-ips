@@ -289,7 +289,7 @@
 			</Composition>
 		</resource>
 	</entry>
-	<!--e2-->	
+	<!--e2-->
 	<entry>
 		<fullUrl value="http://hapi.fhir.org/baseR4/Patient/IPS-examples-Patient-01"/>
 		<resource>
@@ -346,8 +346,8 @@
 			</Patient>
 		</resource>
 	</entry>
-		<!--e3-->
-		<entry>
+	<!--e3-->
+	<entry>
 		<fullUrl value="http://hapi.fhir.org/baseR4/Practitioner/IPS-examples-Practitioner-01"/>
 		<resource>
 			<Practitioner>
@@ -381,8 +381,8 @@
 			</Practitioner>
 		</resource>
 	</entry>
-		<!--e4-->
-		<entry>
+	<!--e4-->
+	<entry>
 		<fullUrl value="http://hapi.fhir.org/baseR4/Organization/IPS-examples-Organization-01"/>
 		<resource>
 			<Organization>
@@ -408,8 +408,8 @@
 			</Organization>
 		</resource>
 	</entry>
-		<!--e5-->
-		<entry>
+	<!--e5-->
+	<entry>
 		<fullUrl value="http://hapi.fhir.org/baseR4/Condition/IPS-examples-Condition-01"/>
 		<resource>
 			<Condition>
@@ -449,23 +449,24 @@
 				</severity>
 				<code>
 					<coding>
-						<extension url="http://hl7.org/fhir/StructureDefinition/translation">
-							<extension url="lang">
-								<valueCode value="nl-NL"/>
-							</extension>
-							<extension url="content">
-								<valueString value="opvliegers"/>
-							</extension>
-						</extension>
 						<system value="http://snomed.info/sct"/>
 						<code value="198436008"/>
-						<display value="Menopausal flushing (finding)"/>
+						<display value="Menopausal flushing (finding)">
+							<extension url="http://hl7.org/fhir/StructureDefinition/translation">
+								<extension url="lang">
+									<valueCode value="nl-NL"/>
+								</extension>
+								<extension url="content">
+									<valueString value="opvliegers"/>
+								</extension>
+							</extension>
+						</display>
 					</coding>
-                    <coding>
-                        <system value="http://hl7.org/fhir/sid/icd-10"/>
-                        <code value="N95.1"/>
-                        <display value="Menopausal and female climacteric states"/>
-                    </coding>
+					<coding>
+						<system value="http://hl7.org/fhir/sid/icd-10"/>
+						<code value="N95.1"/>
+						<display value="Menopausal and female climacteric states"/>
+					</coding>
 				</code>
 				<subject>
 					<reference value="Patient/IPS-examples-Patient-01"/>
@@ -566,8 +567,8 @@
 			</MedicationStatement>
 		</resource>
 	</entry>
-<!--e8-->	
-<entry>
+	<!--e8-->
+	<entry>
 		<fullUrl value="http://hapi.fhir.org/baseR4/Medication/IPS-examples-Medication-01"/>
 		<resource>
 			<Medication>
@@ -595,7 +596,8 @@
 			</Medication>
 		</resource>
 	</entry>
-<!--e9-->	<entry>
+	<!--e9-->
+	<entry>
 		<fullUrl value="http://hapi.fhir.org/baseR4/Medication/IPS-examples-Medication-02"/>
 		<resource>
 			<Medication>
@@ -605,24 +607,26 @@
 				</meta>
 				<code>
 					<coding>
-						<extension url="http://hl7.org/fhir/StructureDefinition/translation">
-							<extension url="lang">
-								<valueCode value="nl-NL"/>
-							</extension>
-							<extension url="content">
-								<valueString value="Zwarte Cohosh Extract"/>
-							</extension>
-						</extension>
 						<system value="http://snomed.info/sct"/>
 						<code value="412588001"/>
-						<display value="Cimicifuga racemosa extract (substance)"/>
+						<display value="Cimicifuga racemosa extract (substance)">
+							<extension url="http://hl7.org/fhir/StructureDefinition/translation">
+								<extension url="lang">
+									<valueCode value="nl-NL"/>
+								</extension>
+								<extension url="content">
+									<valueString value="Zwarte Cohosh Extract"/>
+								</extension>
+							</extension>
+						</display>
 					</coding>
 					<text value="Black Cohosh Extract herbal supplement"/>
 				</code>
 			</Medication>
 		</resource>
 	</entry>
-	<!--e10--><entry>
+	<!--e10-->
+	<entry>
 		<fullUrl value="http://hapi.fhir.org/baseR4/AllergyIntolerance/IPS-examples-AllergyIntolerance-01"/>
 		<resource>
 			<AllergyIntolerance>
@@ -663,7 +667,8 @@
 			</AllergyIntolerance>
 		</resource>
 	</entry>
-<!--e11-->	<entry>
+	<!--e11-->
+	<entry>
 		<fullUrl value="http://hapi.fhir.org/baseR4/Condition/IPS-examples-Condition-02"/>
 		<resource>
 			<Condition>
@@ -703,23 +708,24 @@
 				</severity>
 				<code>
 					<coding>
-						<extension url="http://hl7.org/fhir/StructureDefinition/translation">
-							<extension url="lang">
-								<valueCode value="nl-NL"/>
-							</extension>
-							<extension url="content">
-								<valueString value="Borstkanker stadium II zonder aanwijzingen van recidieven na behandeling"/>
-							</extension>
-						</extension>
 						<system value="http://snomed.info/sct"/>
 						<code value="254837009"/>
-						<display value="Malignant tumor of breast"/>
+						<display value="Malignant tumor of breast">
+							<extension url="http://hl7.org/fhir/StructureDefinition/translation">
+								<extension url="lang">
+									<valueCode value="nl-NL"/>
+								</extension>
+								<extension url="content">
+									<valueString value="Borstkanker stadium II zonder aanwijzingen van recidieven na behandeling"/>
+								</extension>
+							</extension>
+						</display>
 					</coding>
-                    <coding>
-                        <system value="urn:oid:2.16.840.1.113883.6.43"/>
-                        <code value="8500/3"/>
-                        <display value="Infiltrating duct carcinoma, NOS"/>
-                    </coding>
+					<coding>
+						<system value="urn:oid:2.16.840.1.113883.6.43"/>
+						<code value="8500/3"/>
+						<display value="Infiltrating duct carcinoma, NOS"/>
+					</coding>
 				</code>
 				<subject>
 					<reference value="Patient/IPS-examples-Patient-01"/>
@@ -1049,10 +1055,10 @@
 				<category value="medication"/>
 				<criticality value="high"/>
 				<code>
-                    <coding>
-                        <system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
-                        <code value="no-known-food-allergies"/>
-                    </coding>
+					<coding>
+						<system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
+						<code value="no-known-food-allergies"/>
+					</coding>
 				</code>
 				<patient>
 					<reference value="Patient/IPS-examples-Patient-01"/>

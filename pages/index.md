@@ -95,6 +95,14 @@ Condition-independent means that an IPS is not specific to particular conditions
 
 Furthermore the scope of the IPS is global. Although this is a major challenge, this implementation guide takes various experiences and newer developments into account to address global feasibility as far as possible.
 
+The following picture provides an overview of the current IPS content.
+
+<div class="image">
+<img src="assets/images/IPS_composition.png" width="400" />
+<div>The IPS Composition</div>
+<p></p>
+</div>
+
 ## Relationships with Other Projects and Guidelines
 
 See further details on the IPS project relationships with other projects and guidelines in the IPS Wiki <a href="http://international-patient-summary.net/mediawiki/index.php?title=IPS_implementationguide_1#Relationships_with_other_projects_and_guidelines">here</a>.
