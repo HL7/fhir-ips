@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../__FHIRr4Tools/fhir-all-xsd/structuredefinition.xsd">
 	<id value="Immunization-uv-ips"/>
 	<meta>
 		<lastUpdated value="2018-03-07T18:47:01.502+01:00"/>
@@ -42,9 +42,14 @@
 			<short value="Vaccine that was administered or was to be administered.Several kinds of vaccine product coding could be provided.&#xD;&#xA;&#xD;&#xA;
 				The IPS assumes that either the type of the vaccine for particular disease or diseases (e.g. MMR vaccine) against which the patient has been immunised is provided; or the known absent / unknown code.&#xD;&#xA;&#xD;&#xA;
 				Other coded information can be provided as well as: the IDMP Pharmaceutical Product Identifiers (PhPID), Medicinal Product Identifier (MPID), Packaged Medicinal Product Identifier (PCID), when available, or equivalent coded concepts; the WHO AC codes; or any other kind of code that that identifies, classifies or cluster the administered product."/>
-			<definition value="Vaccine that was administered or was to be administered.Several kinds of vaccine product coding could be provided.&#xD;&#xA;&#xD;&#xA;The IPS assumes that either the type of the vaccine for particular disease or diseases (e.g. MMR vaccine) against which the patient has been immunized is provided; or the known absent / unknown.&#xD;&#xA;&#xD;&#xA;Other coded information can be provided as well as:&#xD;&#xA;&#xD;&#xA;1. The IDMP Pharmaceutical Product Identifier (PhPID), Level 1, [Substance(s)]. Example: Amoxicillin and Clavulanate Potassium; or any other equivalent coded concept;&#xD;&#xA;2. The IDMP Pharmaceutical Product Identifier (PhPID), Level 2 [Substance(s) + Strength + reference strength]. Example: Amoxicillin 875 mg and Clavulanate Potassium 125 mg; or any other equivalent coded concept;&#xD;&#xA;3. The IDMP Pharmaceutical Product Identifier (PhPID), Level 3 [Substance(s) + administrable dose form]. Example:  Amoxicillin and Clavulanate Potassium, Oral Tablet; or any other equivalent coded concept;&#xD;&#xA;4. The IDMP Pharmaceutical Product Identifier (PhPID), Level 4 [Substance(s) + strength + reference strength + administrable dose form]. Example: Amoxicillin 875 mg and clavulanate potassium 125 mg, oral tablet; or any other equivalent coded concept
+			<definition value="Vaccine that was administered or was to be administered. Several kinds of vaccine product coding could be provided.&#xD;&#xA;&#xD;&#xA;The IPS assumes that either the type of the vaccine for particular disease or diseases (e.g. MMR vaccine) against which the patient has been immunized is provided; or the known absent / unknown.&#xD;&#xA;&#xD;&#xA;Other coded information can be provided as well as:&#xD;&#xA;&#xD;&#xA;1. The IDMP Pharmaceutical Product Identifier (PhPID), Level 1, [Substance(s)]. Example: Amoxicillin and Clavulanate Potassium; or any other equivalent coded concept;&#xD;&#xA;2. The IDMP Pharmaceutical Product Identifier (PhPID), Level 2 [Substance(s) + Strength + reference strength]. Example: Amoxicillin 875 mg and Clavulanate Potassium 125 mg; or any other equivalent coded concept;&#xD;&#xA;3. The IDMP Pharmaceutical Product Identifier (PhPID), Level 3 [Substance(s) + administrable dose form]. Example:  Amoxicillin and Clavulanate Potassium, Oral Tablet; or any other equivalent coded concept;&#xD;&#xA;4. The IDMP Pharmaceutical Product Identifier (PhPID), Level 4 [Substance(s) + strength + reference strength + administrable dose form]. Example: Amoxicillin 875 mg and clavulanate potassium 125 mg, oral tablet; or any other equivalent coded concept
 5. The IDMP Medicinal Product Identifier (MPID) or any equivalent Medicinal Product Identifier. IDMP MPID uniquely identifies a Medicinal Product, reflecting (but not replacing) any other authorization numbers allocated by a regulator. MPID implies one (set of) PhPID. The MPID shall use a common segment pattern related to a Medicinal Product, which, when each segment is valued shall define a specific MPID concept.&#xD;&#xA;6. The IDMP Packaged Medicinal Product Identifier (PCID) or any equivalent Packaged Medicinal Product Identifier. Uniquely identifies a Medicinal Product based on its packaging. This implies one MPID can be associated with more than one PCID, if the same Medicinal Product has more than one type of package.&#xD;&#xA;7. Any other kind of code that that identifies, classifies or cluster the administered product (e.g. the medicinal product or the  product class)&#xD;&#xA;&#xD;&#xA;The value sets used for the PhPID, MPID and PCID identifiers are provisional and include only few equivalent concepts used for exemplification purposes, they will be updated with real IDMP identifiers when they will become available."/>
 			<mustSupport value="true"/>
+			<binding>
+				<strength value="preferred"/>
+				<description value="The type of vaccine for particular disease or diseases against which the patient has been immunised."/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips"/>
+			</binding>
 		</element>
 		<element id="Immunization.vaccineCode.coding">
 			<path value="Immunization.vaccineCode.coding"/>
@@ -62,11 +67,6 @@
 				<code value="Coding"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
-			<binding>
-				<strength value="preferred"/>
-				<description value="The type of vaccine for particular disease or diseases against which the patient has been immunised."/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips"/>
-			</binding>
 		</element>
 		<!-- 
 		<element id="Immunization.vaccineCode.coding:vaccineType">
@@ -259,45 +259,12 @@
 		</element>
 		<element id="Immunization.occurrence[x]">
 			<path value="Immunization.occurrence[x]"/>
-			<slicing>
-				<discriminator>
-					<type value="type"/>
-					<path value="$this"/>
-				</discriminator>
-				<rules value="open"/>
-			</slicing>
 			<min value="1"/>
 			<max value="1"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Immunization.occurrenceDateTime">
-			<path value="Immunization.occurrenceDateTime"/>
-			<sliceName value="occurrenceDateTime"/>
-			<type>
-				<code value="dateTime"/>
-			</type>
-		</element>
-		<element id="Immunization.occurrenceDateTime:data-absent-reason">
-			<path value="Immunization.occurrenceDateTime.extension"/>
-			<sliceName value="data-absent-reason"/>
-			<short value="occurrence[x] absence reason"/>
-			<definition value="Provides a reason why the occurrence is missing."/>
-			<max value="1"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Immunization.occurrenceString">
-			<path value="Immunization.occurrenceString"/>
-			<sliceName value="string"/>
-			<type>
-				<code value="string"/>
-			</type>
-		</element>
-		<element id="Immunization.occurrenceString:data-absent-reason">
-			<path value="Immunization.occurrenceString.extension"/>
+		<element id="Immunization.occurrence[x]:data-absent-reason">
+			<path value="Immunization.occurrence[x].extension"/>
 			<sliceName value="data-absent-reason"/>
 			<short value="occurrence[x] absence reason"/>
 			<definition value="Provides a reason why the occurrence is missing."/>

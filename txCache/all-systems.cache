@@ -5711,3 +5711,255 @@ e: {
   "error" : "Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.2.9.6.1.5"
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "777067000",
+        "display" : "Acetaminophen only product"
+      },
+      {
+        "code" : "774587000",
+        "display" : "Amoxicillin and clavulanic acid only product"
+      },
+      {
+        "code" : "776556004",
+        "display" : "Lithium citrate only product"
+      },
+      {
+        "code" : "774409003",
+        "display" : "Acenocoumarol only product"
+      },
+      {
+        "code" : "780130002",
+        "display" : "Acetaminophen only product in rectal dose form"
+      },
+      {
+        "code" : "778315007",
+        "display" : "Amoxicillin and clavulanic acid only product in oral dose form"
+      },
+      {
+        "code" : "779725005",
+        "display" : "Lithium citrate only product in oral dose form"
+      },
+      {
+        "code" : "778207007",
+        "display" : "Acenocoumarol only product in oral dose form"
+      },
+      {
+        "code" : "322257001",
+        "display" : "Paracetamol 250 mg rectal suppository"
+      },
+      {
+        "code" : "392259005",
+        "display" : "Amoxicillin 875 mg and clavulanic acid (as clavulanate potassium) 125 mg oral tablet"
+      },
+      {
+        "code" : "766489003",
+        "display" : "Lithium citrate 104 mg/mL oral solution"
+      },
+      {
+        "code" : "319740004",
+        "display" : "Acenocoumarol 1 mg oral tablet"
+      }]
+    },
+    {
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept" : [{
+        "code" : "331055",
+        "display" : "Amoxicillin 1000 MG"
+      },
+      {
+        "code" : "437158",
+        "display" : "Acetaminophen 100 MG"
+      },
+      {
+        "code" : "332122",
+        "display" : "lithium citrate 60 MG/ML"
+      }]
+    },
+    {
+      "system" : "urn:oid:2.16.840.1.113883.2.9.6.1.5",
+      "concept" : [{
+        "code" : "023108",
+        "display" : "AMOXICILLINA DOC"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/ndc",
+      "concept" : [{
+        "code" : "50436-3129",
+        "display" : "Amoxicillin and Clavulanate Potassium"
+      }]
+    },
+    {
+      "system" : "urn:oid:1.2.250.1.213.2.3.1",
+      "concept" : [{
+        "code" : "63672890",
+        "display" : "LITHIUM OLIGOSOL, solution buvable en ampoule ou en récipient unidose"
+      }]
+    },
+    {
+      "system" : "urn:oid:2.16.840.1.113883.2.9.6.1.5",
+      "concept" : [{
+        "code" : "023108184",
+        "display" : "AMOXICILLINA DOC '1000 MG COMPRESSE' 12 COMPRESSE"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/ndc",
+      "concept" : [{
+        "code" : "50436-3129-1",
+        "display" : "Amoxicillin and Clavulanate Potassium 875 mg/1, 125 mg/1 20 TABLET, FILM COATED in 1 BOTTLE"
+      }]
+    },
+    {
+      "system" : "urn:oid:1.2.250.1.213.2.3.3",
+      "concept" : [{
+        "code" : "3400937546621",
+        "display" : "LITHIUM OLIGOSOL, solution buvable en ampoule ou en récipient unidose, 28 ampoules en verre de 2 ml"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.2.9.6.1.5"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "108774000",
+    "display" : "Anastrozole (product)"
+  },
+  {
+    "system" : "urn:oid:2.16.840.1.113883.2.4.4.1",
+    "code" : "99872",
+    "display" : "ANASTROZOL 1MG TABLET"
+  },
+  {
+    "system" : "urn:oid:2.16.840.1.113883.2.4.4.7",
+    "code" : "2076667",
+    "display" : "ANASTROZOL CF TABLET FILMOMHULD 1MG"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "777067000",
+        "display" : "Acetaminophen only product"
+      },
+      {
+        "code" : "774587000",
+        "display" : "Amoxicillin and clavulanic acid only product"
+      },
+      {
+        "code" : "776556004",
+        "display" : "Lithium citrate only product"
+      },
+      {
+        "code" : "774409003",
+        "display" : "Acenocoumarol only product"
+      },
+      {
+        "code" : "780130002",
+        "display" : "Acetaminophen only product in rectal dose form"
+      },
+      {
+        "code" : "778315007",
+        "display" : "Amoxicillin and clavulanic acid only product in oral dose form"
+      },
+      {
+        "code" : "779725005",
+        "display" : "Lithium citrate only product in oral dose form"
+      },
+      {
+        "code" : "778207007",
+        "display" : "Acenocoumarol only product in oral dose form"
+      },
+      {
+        "code" : "322257001",
+        "display" : "Paracetamol 250 mg rectal suppository"
+      },
+      {
+        "code" : "392259005",
+        "display" : "Amoxicillin 875 mg and clavulanic acid (as clavulanate potassium) 125 mg oral tablet"
+      },
+      {
+        "code" : "766489003",
+        "display" : "Lithium citrate 104 mg/mL oral solution"
+      },
+      {
+        "code" : "319740004",
+        "display" : "Acenocoumarol 1 mg oral tablet"
+      }]
+    },
+    {
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept" : [{
+        "code" : "331055",
+        "display" : "Amoxicillin 1000 MG"
+      },
+      {
+        "code" : "437158",
+        "display" : "Acetaminophen 100 MG"
+      },
+      {
+        "code" : "332122",
+        "display" : "lithium citrate 60 MG/ML"
+      }]
+    },
+    {
+      "system" : "urn:oid:2.16.840.1.113883.2.9.6.1.5",
+      "concept" : [{
+        "code" : "023108",
+        "display" : "AMOXICILLINA DOC"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/ndc",
+      "concept" : [{
+        "code" : "50436-3129",
+        "display" : "Amoxicillin and Clavulanate Potassium"
+      }]
+    },
+    {
+      "system" : "urn:oid:1.2.250.1.213.2.3.1",
+      "concept" : [{
+        "code" : "63672890",
+        "display" : "LITHIUM OLIGOSOL, solution buvable en ampoule ou en récipient unidose"
+      }]
+    },
+    {
+      "system" : "urn:oid:2.16.840.1.113883.2.9.6.1.5",
+      "concept" : [{
+        "code" : "023108184",
+        "display" : "AMOXICILLINA DOC '1000 MG COMPRESSE' 12 COMPRESSE"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/ndc",
+      "concept" : [{
+        "code" : "50436-3129-1",
+        "display" : "Amoxicillin and Clavulanate Potassium 875 mg/1, 125 mg/1 20 TABLET, FILM COATED in 1 BOTTLE"
+      }]
+    },
+    {
+      "system" : "urn:oid:1.2.250.1.213.2.3.3",
+      "concept" : [{
+        "code" : "3400937546621",
+        "display" : "LITHIUM OLIGOSOL, solution buvable en ampoule ou en récipient unidose, 28 ampoules en verre de 2 ml"
+      }]
+    }]
+  }
+}}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"urn:oid:2.16.840.1.113883.2.4.4.1\" is not known; The code system \"urn:oid:2.16.840.1.113883.2.4.4.7\" is not known; None of the codes provided (http://snomed.info/sct#108774000, urn:oid:2.16.840.1.113883.2.4.4.1#99872, urn:oid:2.16.840.1.113883.2.4.4.7#2076667) are  valid in the value set med_uv_ips"
+}
+-------------------------------------------------------------------------------------

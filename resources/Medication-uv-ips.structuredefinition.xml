@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../__FHIRr4Tools/fhir-all-xsd/structuredefinition.xsd">
 	<id value="Medication-uv-ips"/>
 	<meta>
 		<lastUpdated value="2018-03-07T19:02:56.499+01:00"/>
@@ -26,27 +26,38 @@
 		</element>
 		<element id="Medication.code">
 			<path value="Medication.code"/>
-			<short value="Codes that identify this medication, sliced to support IDMP"/>
+			<short value="Medication that was administered or was to be administered. Several kinds of product coding could be provided as: the IDMP Pharmaceutical Product Identifiers (PhPID), the IDMP Medicinal Product Identifier (MPID), the IDMP Packaged Medicinal Product Identifier (PCID), when they will be available; the WHO ATC code; or any other kind of code that identifies, classifies or clusters the administered product (such as SNOMED CT, RxNorm, jurisdictional code systems, cross-jurisdiction code systems, or any other classification)."/>
+			<definition value="Medication that was administered or was to be administered. &#xD;&#xA;&#xD;&#xA;Several kinds of medication coding could be provided as:&#xD;&#xA;&#xD;&#xA;1. The IDMP Pharmaceutical Product Identifier (PhPID), Level 1, [Substance(s)]. Example: Amoxicillin and Clavulanate Potassium; or any other equivalent coded concept;&#xD;&#xA;2. The IDMP Pharmaceutical Product Identifier (PhPID), Level 2 [Substance(s) + Strength + reference strength]. Example: Amoxicillin 875 mg and Clavulanate Potassium 125 mg; or any other equivalent coded concept;&#xD;&#xA;3. The IDMP Pharmaceutical Product Identifier (PhPID), Level 3 [Substance(s) + administrable dose form]. Example:  Amoxicillin and Clavulanate Potassium, Oral Tablet; or any other equivalent coded concept;&#xD;&#xA;4. The IDMP Pharmaceutical Product Identifier (PhPID), Level 4 [Substance(s) + strength + reference strength + administrable dose form]. Example: Amoxicillin 875 mg and clavulanate potassium 125 mg, oral tablet; or any other equivalent coded concept
+5. The IDMP Medicinal Product Identifier (MPID) or any equivalent Medicinal Product Identifier. IDMP MPID uniquely identifies a Medicinal Product, reflecting (but not replacing) any other authorization numbers allocated by a regulator. MPID implies one (set of) PhPID. The MPID shall use a common segment pattern related to a Medicinal Product, which, when each segment is valued shall define a specific MPID concept.&#xD;&#xA;6. The IDMP Packaged Medicinal Product Identifier (PCID) or any equivalent Packaged Medicinal Product Identifier. Uniquely identifies a Medicinal Product based on its packaging. This implies one MPID can be associated with more than one PCID, if the same Medicinal Product has more than one type of package.&#xD;&#xA;7. Any other kind of code that that identifies, classifies or cluster the administered product (e.g. the medicinal product or the  product class)&#xD;&#xA;&#xD;&#xA;The value sets used for the PhPID, MPID and PCID identifiers are provisional and include only few equivalent concepts used for exemplification purposes, they will be updated with real IDMP identifiers when they will become available."/>
 			<max value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
+			<binding>
+				<strength value="preferred"/>
+				<description value="The type of device"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/med-uv-ips"/>
+			</binding>
 		</element>
 		<element id="Medication.code.coding">
 			<path value="Medication.code.coding"/>
 			<slicing>
-				<description value="This slicing on the coding element of code is open, with discriminator based on the value set binding. It carries one slice for each of the IDMP identifiers, or any equivalent representation of these concepts (e.g. medical product); plus one slice for the ATC classification. &#xD;&#xA;Other representations of the medication (such as SNOMED CT, RxNorm, jurisdictional code systems, cross-jursisdiction code systems, or any classification) use extra slices, since the slicing is open. &#xD;&#xA; A special slice is defined to carry the absent or unknown property.&#xD;&#xA;The value sets used by the IDMP slices are provisional and include few concepts for exemplification purposes, they will be updated with real IDMP identifiers when they will become available."/>
-				<rules value="openAtEnd"/>
+				<discriminator>
+					<type value="value"/>
+					<path value="$this"/>
+				</discriminator>
+				<description value="Discriminated by value set binding"/>
+				<rules value="open"/>
 			</slicing>
-			<definition value="A representation of the vaccine in a code system. The representation can be granular or may also be a class or category."/>
 			<type>
 				<code value="Coding"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Medication.code.coding:pharmaceuticalProduct-L1">
 			<path value="Medication.code.coding"/>
 			<sliceName value="pharmaceuticalProduct-L1"/>
@@ -151,6 +162,7 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/pcid-uv-ips"/>
 			</binding>
 		</element>
+-->
 		<element id="Medication.code.coding:atcClass">
 			<path value="Medication.code.coding"/>
 			<sliceName value="atcClass"/>
@@ -186,15 +198,7 @@
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="MedicationForm"/>
 				</extension>
-				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform"/>
-			</binding>
-		</element>
-		<element id="Medication.form.coding.system">
-			<path value="Medication.form.coding.system"/>
-			<binding>
-				<strength value="required"/>
-				<description value="EDQM Standard Terms"/>
+				<strength value="preferred"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform"/>
 			</binding>
 		</element>

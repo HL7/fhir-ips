@@ -39,67 +39,14 @@
 		</element>
 		<element id="DeviceUseStatement.timing[x]">
 			<path value="DeviceUseStatement.timing[x]"/>
-			<slicing>
-				<discriminator>
-					<type value="type"/>
-					<path value="$this"/>
-				</discriminator>
-				<rules value="open"/>
-			</slicing>
 			<min value="1"/>
 			<max value="1"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="DeviceUseStatement.timingDateTime">
-			<path value="DeviceUseStatement.timingDateTime"/>
-			<sliceName value="timingDateTime"/>
-			<type>
-				<code value="dateTime"/>
-			</type>
-		</element>
-		<element id="DeviceUseStatement.timingDateTime:data-absent-reason">
-			<path value="DeviceUseStatement.timingDateTime.extension"/>
+		<element id="DeviceUseStatement.timing[x]:data-absent-reason">
+			<path value="DeviceUseStatement.timing[x].extension"/>
 			<sliceName value="data-absent-reason"/>
-			<short value="effective[x] absence reason"/>
-			<definition value="Provides a reason why the effective is missing."/>
-			<max value="1"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="DeviceUseStatement.timingPeriod">
-			<path value="DeviceUseStatement.timingPeriod"/>
-			<sliceName value="timingPeriod"/>
-			<type>
-				<code value="Period"/>
-			</type>
-		</element>
-		<element id="DeviceUseStatement.timingPeriod:data-absent-reason">
-			<path value="DeviceUseStatement.timingPeriod.extension"/>
-			<sliceName value="data-absent-reason"/>
-			<short value="effective[x] absence reason"/>
-			<definition value="Provides a reason why the effective is missing."/>
-			<max value="1"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="DeviceUseStatement.timingTiming">
-			<path value="DeviceUseStatement.timingTiming"/>
-			<sliceName value="timingTiming"/>
-			<type>
-				<code value="Timing"/>
-			</type>
-		</element>
-		<element id="DeviceUseStatement.timingTiming:data-absent-reason">
-			<path value="DeviceUseStatement.timingTiming.extension"/>
-			<sliceName value="data-absent-reason"/>
-			<short value="effective[x] absence reason"/>
-			<definition value="Provides a reason why the effective is missing."/>
+			<definition value="Provides a reason why the timing is missing."/>
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
