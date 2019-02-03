@@ -21,6 +21,7 @@
 	<differential>
 		<element id="Specimen">
 			<path value="Specimen"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Specimen.type">
 			<path value="Specimen.type"/>
@@ -48,34 +49,41 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
-    		<element id="Specimen.subject.reference">
+    	<element id="Specimen.subject.reference">
 			<path value="Specimen.subject.reference"/>
-      <min value="1"/>
+      		<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Specimen.receivedTime">
 			<path value="Specimen.receivedTime"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Specimen.parent">
 			<path value="Specimen.parent"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Specimen.request">
 			<path value="Specimen.request"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Specimen.collection">
 			<path value="Specimen.collection"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Specimen.collection.collector">
 			<path value="Specimen.collection.collector"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Specimen.collection.quantity">
 			<path value="Specimen.collection.quantity"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Specimen.collection.method">
 			<path value="Specimen.collection.method"/>
@@ -112,10 +120,12 @@
 		<element id="Specimen.processing">
 			<path value="Specimen.processing"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Specimen.container">
 			<path value="Specimen.container"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 	</differential>
 </StructureDefinition>

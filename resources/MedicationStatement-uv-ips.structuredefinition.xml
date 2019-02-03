@@ -20,6 +20,7 @@
 	<differential>
 		<element id="MedicationStatement">
 			<path value="MedicationStatement"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="MedicationStatement.status">
 			<path value="MedicationStatement.status"/>
@@ -49,6 +50,9 @@
 		</element>
 		<element id="MedicationStatement.effective[x]">
 			<path value="MedicationStatement.effective[x]"/>
+			<min value="1"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="MedicationStatement.effective[x]:data-absent-reason">
 			<path value="MedicationStatement.effective[x].extension"/>
@@ -84,9 +88,11 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="MedicationStatement.reasonReference">
 			<path value="MedicationStatement.reasonReference"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="MedicationStatement.dosage">
 			<path value="MedicationStatement.dosage"/>
@@ -106,6 +112,7 @@
 		</element>
 		<element id="MedicationStatement.dosage.timing.repeat">
 			<path value="MedicationStatement.dosage.timing.repeat"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="MedicationStatement.dosage.timing.repeat.bounds[x]">
 			<path value="MedicationStatement.dosage.timing.repeat.bounds[x]"/>
@@ -119,6 +126,7 @@
 				<code value="Range"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Range-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="MedicationStatement.dosage.site">
 			<path value="MedicationStatement.dosage.site"/>
@@ -126,6 +134,7 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
 			<binding>
 				<strength value="preferred"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>

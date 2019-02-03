@@ -15,6 +15,7 @@
 	<differential>
 		<element id="Observation">
 			<path value="Observation"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.code">
 			<path value="Observation.code"/>
@@ -62,22 +63,27 @@
 		<element id="Observation.bodySite">
 			<path value="Observation.bodySite"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Observation.specimen">
 			<path value="Observation.specimen"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Observation.device">
 			<path value="Observation.device"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Observation.referenceRange">
 			<path value="Observation.referenceRange"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Observation.component">
 			<path value="Observation.component"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 	</differential>
 </StructureDefinition>

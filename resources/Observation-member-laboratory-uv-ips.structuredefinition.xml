@@ -25,10 +25,12 @@
 			<short value="simple observation"/>
 			<definition value="Either a laboratory simple observation member of a laboratory panel or study,  or a clinical observation associated with this study, in order to enable the interpretation of this set of observations"/>
 			<comment value="This observation is a member of a multiple observations panel or study."/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.basedOn">
 			<path value="Observation.basedOn"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Observation.status">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
@@ -106,6 +108,7 @@
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-laboratory-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.value[x]">
 			<path value="Observation.value[x]"/>
@@ -139,10 +142,12 @@
 		<element id="Observation.dataAbsentReason">
 			<path value="Observation.dataAbsentReason"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Observation.bodySite">
 			<path value="Observation.bodySite"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Observation.specimen">
 			<path value="Observation.specimen"/>
@@ -161,30 +166,37 @@
 		<element id="Observation.device">
 			<path value="Observation.device"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Observation.referenceRange.type">
 			<path value="Observation.referenceRange.type"/>
 			<min value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.referenceRange.appliesTo">
 			<path value="Observation.referenceRange.appliesTo"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Observation.referenceRange.age">
 			<path value="Observation.referenceRange.age"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Observation.hasMember">
 			<path value="Observation.hasMember"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Observation.derivedFrom">
 			<path value="Observation.derivedFrom"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Observation.component">
 			<path value="Observation.component"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 	</differential>
 </StructureDefinition>

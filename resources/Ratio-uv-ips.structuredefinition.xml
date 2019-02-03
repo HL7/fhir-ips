@@ -16,30 +16,37 @@
   <differential>
     <element id="Ratio">
       <path value="Ratio"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Ratio.numerator">
       <path value="Ratio.numerator"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Ratio.numerator.system">
       <path value="Ratio.numerator.system"/>
       <min value="1"/>
       <fixedUri value="http://unitsofmeasure.org"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Ratio.numerator.code">
       <path value="Ratio.numerator.code"/>
       <min value="1"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Ratio.denominator">
       <path value="Ratio.denominator"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Ratio.denominator.system">
       <path value="Ratio.denominator.system"/>
       <min value="1"/>
       <fixedUri value="http://unitsofmeasure.org"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Ratio.denominator.code">
       <path value="Ratio.denominator.code"/>
       <min value="1"/>
+      <mustSupport value="true"/>
     </element>
   </differential>
 </StructureDefinition>

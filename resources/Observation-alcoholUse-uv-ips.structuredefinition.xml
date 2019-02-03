@@ -15,6 +15,7 @@
 	<differential>
 		<element id="Observation">
 			<path value="Observation"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.status">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
@@ -44,12 +45,14 @@
 			<min value="1"/>
 			<max value="1"/>
 			<fixedUri value="http://loinc.org"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.code.coding.code">
 			<path value="Observation.code.coding.code"/>
 			<min value="1"/>
 			<max value="1"/>
 			<fixedCode value="74013-4"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.subject">
 			<path value="Observation.subject"/>
@@ -84,6 +87,7 @@
 			<type>
 				<code value="dateTime"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.effectiveDateTime:data-absent-reason">
 			<path value="Observation.effectiveDateTime.extension"/>
@@ -103,6 +107,7 @@
 			<type>
 				<code value="Period"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.effectivePeriod:data-absent-reason">
 			<path value="Observation.effectivePeriod.extension"/>
@@ -122,6 +127,7 @@
 			<type>
 				<code value="instant"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.effectiveInstant:data-absent-reason">
 			<path value="Observation.effectiveInstant.extension"/>
@@ -141,6 +147,7 @@
 			<type>
 				<code value="Timing"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.effectiveTiming:data-absent-reason">
 			<path value="Observation.effectiveTiming.extension"/>
@@ -170,6 +177,7 @@
 		<element id="Observation.value[x]:valueQuantity.comparator">
 			<path value="Observation.valueQuantity.comparator"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Observation.value[x]:valueQuantity.system">
 			<path value="Observation.valueQuantity.system"/>

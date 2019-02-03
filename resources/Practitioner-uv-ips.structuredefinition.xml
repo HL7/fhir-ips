@@ -18,6 +18,7 @@
 	<differential>
 		<element id="Practitioner">
 			<path value="Practitioner"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Practitioner.name">
 			<path value="Practitioner.name"/>
@@ -35,6 +36,7 @@
 		<element id="Practitioner.name.text">
 			<path value="Practitioner.name.text"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Practitioner.telecom">
 			<path value="Practitioner.telecom"/>

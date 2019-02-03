@@ -22,6 +22,7 @@
 		<element id="Condition">
 			<path value="Condition"/>
 			<short value="Documentation of a health problem of the patient"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Condition.clinicalStatus">
 			<path value="Condition.clinicalStatus"/>
@@ -187,6 +188,7 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="BodySite"/>

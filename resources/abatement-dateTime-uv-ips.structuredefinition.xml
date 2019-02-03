@@ -20,6 +20,7 @@
     <element id="Extension.url">
       <path value="Extension.url"/>
       <fixedUri value="http://hl7.org/fhir/uv/ips/StructureDefinition/abatement-dateTime-uv-ips"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Extension.value[x]:valueDateTime">
       <path value="Extension.valueDateTime"/>
@@ -27,6 +28,7 @@
       <type>
         <code value="dateTime"/>
       </type>
+      <mustSupport value="true"/>
     </element>
   </differential>
 </StructureDefinition>

@@ -18,14 +18,15 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization"/>
   <derivation value="constraint"/>
   <differential>
-<element id="Organization">
+    <element id="Organization">
       <path value="Organization"/>
-      </element>
+      <mustSupport value="true"/>
+    </element>
     <element id="Organization.type">
       <path value="Organization.type"/>
       <min value="1"/>
       <max value="1"/>
- <mustSupport value="true"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Organization.type.coding">
       <path value="Organization.type.coding"/>
@@ -41,11 +42,12 @@
         <valueSet value="http://trilliumbridge.eu/fhir/ValueSet/performing-organization-type"/>
       </binding>
       -->
+      <mustSupport value="true"/>
     </element>
     <element id="Organization.name">
       <path value="Organization.name"/>
       <min value="1"/>
-   <mustSupport value="true"/>
+      <mustSupport value="true"/>
     </element>
   </differential>
 </StructureDefinition>

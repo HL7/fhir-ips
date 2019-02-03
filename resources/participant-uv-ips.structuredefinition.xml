@@ -26,6 +26,7 @@
 		<element id="Extension.url">
 			<path value="Extension.url"/>
 			<fixedUri value="http://hl7.org/fhir/uv/ips/StructureDefinition/participant-uv-ips"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Extension.value[x]:valueReference">
 			<path value="Extension.valueReference"/>
@@ -35,6 +36,7 @@
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 	</differential>
 </StructureDefinition>

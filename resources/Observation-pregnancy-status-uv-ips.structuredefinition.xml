@@ -15,6 +15,7 @@
 	<differential>
 		<element id="Observation">
 			<path value="Observation"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.code">
 			<path value="Observation.code"/>
@@ -77,6 +78,7 @@
 			<type>
 				<code value="dateTime"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.effectiveDateTime:data-absent-reason">
 			<path value="Observation.effectiveDateTime.extension"/>
@@ -96,6 +98,7 @@
 			<type>
 				<code value="Period"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.effectivePeriod:data-absent-reason">
 			<path value="Observation.effectivePeriod.extension"/>
@@ -115,6 +118,7 @@
 			<type>
 				<code value="instant"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.effectiveInstant:data-absent-reason">
 			<path value="Observation.effectiveInstant.extension"/>
@@ -134,6 +138,7 @@
 			<type>
 				<code value="Timing"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.effectiveTiming:data-absent-reason">
 			<path value="Observation.effectiveTiming.extension"/>
@@ -163,18 +168,22 @@
 		<element id="Observation.bodySite">
 			<path value="Observation.bodySite"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Observation.specimen">
 			<path value="Observation.specimen"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Observation.device">
 			<path value="Observation.device"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Observation.referenceRange">
 			<path value="Observation.referenceRange"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Observation.hasMember">
 			<path value="Observation.hasMember"/>
@@ -194,6 +203,7 @@
 		<element id="Observation.component">
 			<path value="Observation.component"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 	</differential>
 </StructureDefinition>

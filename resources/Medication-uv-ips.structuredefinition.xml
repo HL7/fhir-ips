@@ -23,6 +23,7 @@
 		<element id="Medication">
 			<path value="Medication"/>
 			<comment value="IPS Medication"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Medication.code">
 			<path value="Medication.code"/>
@@ -173,6 +174,7 @@
 				<code value="Coding"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="WHO ATC"/>

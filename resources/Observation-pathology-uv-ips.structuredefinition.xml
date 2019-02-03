@@ -26,10 +26,12 @@
 			<short value="Laboratory result for a simple test or for a panel/study"/>
 			<definition value="This observation may represent the result of a simple laboratory test such as hematocrit or it may group the set of results produced by a multi-test study or panel such as a complete blood count, a dynamic function test, a urine specimen study. In the latter case, the observation carries the overall conclusion of the study and references the atomic results of the study  as &quot;has-member&quot; child observations"/>
 			<comment value="Represents either a lab simple observation or the group of observations produced by a laboratory study."/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.basedOn">
 			<path value="Observation.basedOn"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Observation.status">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
@@ -144,6 +146,7 @@
 		<element id="Observation.dataAbsentReason">
 			<path value="Observation.dataAbsentReason"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Observation.interpretation.coding">
 			<path value="Observation.interpretation.coding"/>
@@ -151,10 +154,12 @@
 				<code value="Coding"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.bodySite">
 			<path value="Observation.bodySite"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Observation.method.coding">
 			<path value="Observation.method.coding"/>
@@ -162,6 +167,7 @@
 				<code value="Coding"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.specimen">
 			<path value="Observation.specimen"/>
@@ -218,6 +224,7 @@
 		<element id="Observation.component">
 			<path value="Observation.component"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 	</differential>
 </StructureDefinition>

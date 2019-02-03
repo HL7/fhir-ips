@@ -19,6 +19,7 @@
 	<differential>
 		<element id="Observation">
 			<path value="Observation"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.extension:partOf">
 			<path value="Observation.extension"/>
@@ -106,6 +107,7 @@
 			<type>
 				<code value="dateTime"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.effectiveDateTime:data-absent-reason">
 			<path value="Observation.effectiveDateTime.extension"/>
@@ -125,6 +127,7 @@
 			<type>
 				<code value="Period"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.effectivePeriod:data-absent-reason">
 			<path value="Observation.effectivePeriod.extension"/>
@@ -144,6 +147,7 @@
 			<type>
 				<code value="instant"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.effectiveInstant:data-absent-reason">
 			<path value="Observation.effectiveInstant.extension"/>
@@ -163,6 +167,7 @@
 			<type>
 				<code value="Timing"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.effectiveTiming:data-absent-reason">
 			<path value="Observation.effectiveTiming.extension"/>

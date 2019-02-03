@@ -17,30 +17,37 @@
   <differential>
     <element id="Range">
       <path value="Range"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Range.low">
       <path value="Range.low"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Range.low.system">
       <path value="Range.low.system"/>
       <min value="1"/>
       <fixedUri value="http://unitsofmeasure.org"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Range.low.code">
       <path value="Range.low.code"/>
       <min value="1"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Range.high">
       <path value="Range.high"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Range.high.system">
       <path value="Range.high.system"/>
       <min value="1"/>
       <fixedUri value="http://unitsofmeasure.org"/>
+      <mustSupport value="true"/>
     </element>
     <element id="Range.high.code">
       <path value="Range.high.code"/>
       <min value="1"/>
+      <mustSupport value="true"/>
     </element>
   </differential>
 </StructureDefinition>

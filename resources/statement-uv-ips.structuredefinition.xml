@@ -27,6 +27,7 @@
 	<differential>
 		<element id="Extension">
 			<path value="Extension"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Extension.extension">
 			<path value="Extension.extension"/>
@@ -37,16 +38,19 @@
 				</discriminator>
 				<rules value="open"/>
 			</slicing>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Extension.extension:assertionDate">
 			<path value="Extension.extension"/>
 			<sliceName value="assertionDate"/>
 			<short value="Assertion date and time of the statement"/>
 			<max value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Extension.extension:assertionDate.url">
 			<path value="Extension.extension.url"/>
 			<fixedUri value="assertionDate"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Extension.extension:assertionDate.valueDateTime:valueDateTime">
 			<path value="Extension.extension.valueDateTime"/>
@@ -54,6 +58,7 @@
 			<type>
 				<code value="dateTime"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Extension.extension:informationSource">
 			<path value="Extension.extension"/>
@@ -61,10 +66,12 @@
 			<short value="Information source"/>
 			<definition value="Practitioner, patient, related person or organization acting as information source."/>
 			<max value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Extension.extension:informationSource.url">
 			<path value="Extension.extension.url"/>
 			<fixedUri value="informationSource"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Extension.extension:informationSource.value[x]:valueReference">
 			<path value="Extension.extension.valueReference"/>
@@ -77,16 +84,19 @@
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Extension.extension:statementNote">
 			<path value="Extension.extension"/>
 			<sliceName value="statementNote"/>
 			<short value="Statement note"/>
 			<max value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Extension.extension:statementNote.url">
 			<path value="Extension.extension.url"/>
 			<fixedUri value="statementNote"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Extension.extension:statementNote.value[x]:valueString">
 			<path value="Extension.extension.valueString"/>
@@ -94,10 +104,12 @@
 			<type>
 				<code value="string"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Extension.url">
 			<path value="Extension.url"/>
 			<fixedUri value="http://hl7.org/fhir/uv/ips/StructureDefinition/statement-uv-ips"/>
+			<mustSupport value="true"/>
 		</element>
 	</differential>
 </StructureDefinition>

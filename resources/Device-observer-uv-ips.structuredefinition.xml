@@ -13,9 +13,10 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Device"/>
   <derivation value="constraint"/>
   <differential>
-     <element id="Device">
+    <element id="Device">
       <path value="Device"/>
-      </element>
+      <mustSupport value="true"/>
+    </element>
     <element id="Device.identifier">
       <path value="Device.identifier"/>
       <mustSupport value="true"/>

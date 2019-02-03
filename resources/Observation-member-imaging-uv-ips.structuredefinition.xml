@@ -18,6 +18,7 @@
 	<differential>
 		<element id="Observation">
 			<path value="Observation"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.extension:partOf">
 			<path value="Observation.extension"/>
@@ -111,6 +112,7 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="BodySite"/>
@@ -147,6 +149,7 @@
 		</element>
 		<element id="Observation.component">
 			<path value="Observation.component"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component.value[x]">
 			<path value="Observation.component.value[x]"/>
@@ -159,6 +162,7 @@
 			<type>
 				<code value="Ratio"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 	</differential>
 </StructureDefinition>

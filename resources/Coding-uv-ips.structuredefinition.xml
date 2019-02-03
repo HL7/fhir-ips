@@ -17,10 +17,12 @@
 	<derivation value="constraint"/>
 	<differential>
         <element id="Coding">
-            <path value="Coding"/>        
+            <path value="Coding"/>
+			<mustSupport value="true"/>
         </element>
         <element id="Coding.display">
-            <path value="Coding.display"/>        
+            <path value="Coding.display"/>
+			<mustSupport value="true"/>
         </element>
 		<element id="Coding.display.extension">
 			<path value="Coding.display.extension"/>
@@ -31,6 +33,7 @@
 				</discriminator>
 				<rules value="open"/>
 			</slicing>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Coding.display.extension:translation">
 			<path value="Coding.display.extension"/>
@@ -40,6 +43,7 @@
 				<code value="Extension"/>
 				<profile value="http://hl7.org/fhir/StructureDefinition/translation"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 	</differential>
 </StructureDefinition>

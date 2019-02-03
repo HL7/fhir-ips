@@ -20,6 +20,7 @@
 		<element id="Immunization">
 			<path value="Immunization"/>
 			<definition value="Describes the event of a patient being administered a vaccination or a record of a vaccination as reported by a patient, a clinician or another party and may include vaccine reaction information and what vaccination protocol was followed.&#xD;&#xA;&#xD;&#xA;If it describes a reported information the details about the assertion (e.g. who did the assertion, when was done) can be optionally documented in the statement extension."/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Immunization.extension:statementDetails">
 			<path value="Immunization.extension"/>
