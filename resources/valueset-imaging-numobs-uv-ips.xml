@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:f="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+	<id value="imaging-numobs-uv-ips"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+	</meta>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">Extensible value set including:
+    <ul>
+				<li>DICOM CID 7470 for ”Linear Measurement”</li>
+				<li>DICOM CID 7471 for ”Area Measurement”</li>
+				<li>DICOM CID 7472 for ”Volume Measurement”</li>
+			</ul>
+		</div>
+	</text>
+	<url value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-numobs-uv-ips"/>
+	<version value="2019-02-04T00:00:00"/>
+	<name value="IPSMeasuresRadResultsObservation"/>
+	<title value="IPS Results Radiology Measurements"/>
+	<status value="draft"/>
+	<experimental value="false"/>
+	<publisher value="HL7 International"/>
+	<contact>
+		<name value="HL7 International"/>
+		<telecom>
+			<system value="phone"/>
+			<value value="+1 734 677 7777"/>
+		</telecom>
+		<telecom>
+			<system value="fax"/>
+			<value value="+1 734 677 6622"/>
+		</telecom>
+		<telecom>
+			<system value="email"/>
+			<value value="info@hl7.org"/>
+		</telecom>
+	</contact>
+	<description value="Extensible value set including DICOM CIDs for Linear, Area and Volume Measurements"/>
+	<immutable value="false"/>
+	<compose>
+		<include>
+			<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-linear-measure-code-uv-ips"/>
+			<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-area-measure-code-uv-ips"/>
+			<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-volume-measure-code-uv-ips"/>
+		</include>
+	</compose>
+</ValueSet>
