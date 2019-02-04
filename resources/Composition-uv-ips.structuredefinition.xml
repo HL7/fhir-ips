@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir" >
 	<id value="Composition-uv-ips"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">This profile represents the constraints applied to the Composition resource by the International Patient Summary (IPS) FHIR Implementation Guide.</div>
+	</text>
 	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips"/>
 	<version value="0.2.0"/>
 	<name value="Composition_uv_ips"/>
@@ -38,6 +42,18 @@
 			<definition value="International Patient Summary composition. &#xD;&#xA;A composition is a set of healthcare-related information that is assembled together into a single logical document that provides a single coherent statement of meaning, establishes its own context and that has clinical attestation with regard to who is making the statement. &#xD;&#xA;While a Composition defines the structure, it does not actually contain the content: rather the full content of a document is contained in a Bundle, of which the Composition is the first resource contained."/>
 			<mustSupport value="true"/>
 		</element>
+		<element id="Composition.id">
+			<path value="Composition.id"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.meta">
+			<path value="Composition.meta"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.text">
+			<path value="Composition.text"/>
+			<mustSupport value="true"/>
+		</element>
 		<element id="Composition.extension:healthcareProviderParticipant">
 			<path value="Composition.extension"/>
 			<sliceName value="healthcareProviderParticipant"/>
@@ -48,6 +64,14 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/participant-uv-ips"/>
 			</type>
 			<mustSupport value="false"/>
+		</element>
+		<element id="Composition.identifier">
+			<path value="Composition.identifier"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.status">
+			<path value="Composition.status"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.type">
 			<path value="Composition.type"/>
@@ -115,8 +139,20 @@
 			<definition value="Official human-readable label for the composition.&#xD;&#xA;&#xD;&#xA;For this document should be &quot;International Patient Summary&quot; or any equivalent translation"/>
 			<mustSupport value="true"/>
 		</element>
+		<element id="Composition.confidentiality">
+			<path value="Composition.confidentiality"/>
+			<mustSupport value="true"/>
+		</element>
 		<element id="Composition.attester">
 			<path value="Composition.attester"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.attester.mode">
+			<path value="Composition.attester.mode"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.attester.time">
+			<path value="Composition.attester.time"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.attester.party">
@@ -137,6 +173,10 @@
 		</element>
 		<element id="Composition.relatesTo">
 			<path value="Composition.relatesTo"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.relatesTo.code">
+			<path value="Composition.relatesTo.code"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.relatesTo.target[x]">
@@ -180,6 +220,10 @@
 					<code value="PCPR"/>
 				</coding>
 			</fixedCodeableConcept>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.event:careProvisioningEvent.period">
+			<path value="Composition.event.period"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section">
@@ -883,7 +927,7 @@
 			<short value="IPS Vital Signs Section"/>
 			<definition value="The Vital signs section includes blood pressure, body temperature, heart rate, and respiratory rate. It may also include other clinical findings, such as height, weight, body mass index, head circumference, and pulse oximetry. In particular, notable vital signs or physical findings such as the most recent, maximum and/or minimum, baseline, or relevant trends may be included"/>
 			<max value="1"/>
-			<mustSupport value="false"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionVitalSigns.title">
 			<path value="Composition.section.title"/>
@@ -967,7 +1011,7 @@
 			<short value="IPS History of Past Illness Section"/>
 			<definition value="The History of Past Illness section contains a description of the conditions the patient suffered in the past."/>
 			<max value="1"/>
-			<mustSupport value="false"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionPastIllnessHx.title">
 			<path value="Composition.section.title"/>
@@ -1053,7 +1097,7 @@
 			<short value="IPS Functional Status"/>
 			<definition value="The functional status section shall contain a narrative description of capability of the patient to perform acts of daily living, including possible needs of the patient to be continuously assessed by third parties. The invalidity status may in fact influence decisions about how to administer treatments.&#xD;&#xA;Profiles to express disabilities and functional assessments will be specified by future versions of this guide."/>
 			<max value="1"/>
-			<mustSupport value="false"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionFunctionalStatus.title">
 			<path value="Composition.section.title"/>
@@ -1153,7 +1197,7 @@
 			<short value="IPS Plan of Care Section"/>
 			<definition value="The plan of care section contains a narrative description of the expectations for care including proposals, goals, and order requests for monitoring, tracking, or improving the condition of the patient."/>
 			<max value="1"/>
-			<mustSupport value="false"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionPlanOfCare.title">
 			<path value="Composition.section.title"/>
@@ -1207,7 +1251,7 @@
 			<short value="IPS Social History Section"/>
 			<definition value="The social history section contains a description of the person’s Health related “lifestyle factors&quot; or &quot;lifestyle observations&quot; (e.g. smoke habits; alcohol consumption; diets, risky habits.)"/>
 			<max value="1"/>
-			<mustSupport value="false"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionSocialHistory.title">
 			<path value="Composition.section.title"/>
@@ -1304,7 +1348,7 @@
 			<short value="IPS History of Pregnancy Section"/>
 			<definition value="The history of pregnancy section shall contain information about whether the patient is currently pregnant or not.&#xD;&#xA;It may contain addition summarizing information about the outcome of earlier pregnancies."/>
 			<max value="1"/>
-			<mustSupport value="false"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionPregnancyHx.title">
 			<path value="Composition.section.title"/>
@@ -1399,7 +1443,7 @@
 			<short value="IPS Advance Directives Section"/>
 			<definition value="The advance directives section contains a narrative description of patient's advance directive."/>
 			<max value="1"/>
-			<mustSupport value="false"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionAdvanceDirectives.title">
 			<path value="Composition.section.title"/>

@@ -5,6 +5,10 @@
 		<versionId value="1"/>
 		<lastUpdated value="2018-03-08T16:05:00.196+00:00"/>
 	</meta>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">This profile constrains the Observation resource to represent results produced by laboratory tests or panels/studies in a patient summary.&#xD;&#xA;&#xD;&#xA;This observation may represent the result of a simple laboratory test such as hematocrit or it may group the set of results produced by a multi-test study or panel such as a complete blood count, a dynamic function test, a urine specimen study. In the latter case, the observation carries the overall conclusion of the study and or a global interpretation by the producer of the study, in the comment element; and references the atomic results of the study  as &quot;has-member&quot; child observations.&#xD;&#xA;</div>
+	</text>
 	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-uv-ips"/>
 	<version value="0.2"/>
 	<name value="Observation_laboratory_uv_ips"/>
