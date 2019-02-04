@@ -13,31 +13,15 @@
 
 # Composition International Patient Summary
 
-The composition contains references to
-* the subject
-* the author
-* the attester
-* the custodian
-* the IPS sections.
+The following picture provides an onverview of the IPS Composition content 
 
-The IPS sections are summarized in the following list. (R) denotes a required section (i.e. must be present in an IPS), (S) denotes a recommended section, the others are truly optional. 
-* Medication Summary (R)
-* Allergies and Intolerances (R)
-* Problem List (R)
-* Immunizations (S)
-* History of Procedures (S)
-* Medical Devices (S)
-* Diagnostic Results (S)
-* Vital Signs
-* Past history of illnesses
-* Pregnancy (status and history summary)
-* Social History
+<div class="image">
+<img src="assets/images/IPS_composition.png" width="400" />
+<div>The IPS Composition</div>
+<p></p>
+</div>
 
-And the following text only sections:
-* Functional Status (Autonomy / Invalidity)
-* Plan of care
-* Advance Directives
-
+A complete list of the sections and of the used profiles is available in the <a href="ipsStructure.html">International Patient Summary Structure </a> page.
 
 # Sections description
 

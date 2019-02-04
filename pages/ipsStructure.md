@@ -16,8 +16,15 @@ active: ipsstructure
 
 # International Patient Summary Structure
 
-The IPS is composed by the following sections, (R) denotes a required section (i.e. must be present in an IPS), (S) denotes a recommended section, the others are truly optional. 
-For each section the profiles that have been defined have been listed:
+The IPS is composed by the following sections
+<div class="image">
+<img src="assets/images/IPS_composition.png" width="400" />
+<div>The IPS Composition</div>
+<p></p>
+</div>
+
+For each section the profiles defined are listed below.
+(R) denotes a required section (i.e. must be present in an IPS), (S) denotes a recommended section, the others are optional:
 * Medication Summary (R) [ <a href="StructureDefinition-MedicationStatement-uv-ips.html">Medication Statement (IPS)</a>; <a href="StructureDefinition-Medication-uv-ips.html">Medication (IPS)</a> ]
 * Allergies and Intolerances (R) [ <a href="StructureDefinition-AllergyIntolerance-uv-ips.html">Allergy Intolerance (IPS)</a> ]
 * Problem List (R) [ <a href="StructureDefinition-Condition-uv-ips.html">Condition (IPS)</a> ]

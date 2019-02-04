@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ValueSet xmlns="http://hl7.org/fhir" xmlns:f="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../__FHIRr4Tools/fhir-all-xsd/structuredefinition.xsd">
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:f="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
 	<id value="med-uv-ips"/>
 	<meta>
 		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
@@ -10,9 +10,8 @@
 		<ul>
 				<li>medicinal products;</li>
 				<li>packaged medicinal products; </li>
-				<li>or medications based on:</li>
-				<li>
-					<ul>
+				<li>or medications based on:
+							<ul>
 						<li>their generic composition of active substance(s) This is what usually identifies IDMP PhPID Active Substance Stratum Level 1);</li>
 						<li>their generic composition of active substance(s) with strength. This is what usually identifies IDMP PhPID Active Substance Stratum Level 2.</li>
 						<li>their generic composition of active substance(s) with administrable dose form. This is what usually identifies  PhPID Active Substance Stratum Level 3.</li>
@@ -25,7 +24,7 @@
 	<url value="http://hl7.org/fhir/uv/ips/ValueSet/med-uv-ips"/>
 	<version value="2019-02-01T00:00:00"/>
 	<name value="Medication_codes_uv_ips"/>
-	<title value="Medication codes (example)"/>
+	<title value="Medications (example)"/>
 	<status value="draft"/>
 	<experimental value="true"/>
 	<publisher value="HL7 International"/>
@@ -44,7 +43,7 @@
 			<value value="info@hl7.org"/>
 		</telecom>
 	</contact>
-	<description value="This value set provides an example of possible coded concepts representing medicinal products based on their generic composition of active substance(s). This is what usually identifies PhPID Active Substance Stratum Level 1. Please note that this Value set is not representing the IDMP PhPIDs. It is envisioned that future version will be based on the IDMP PhPIDs when available for actual use."/>
+	<description value="This value set provides an example of possible coded concepts representing medicinal products, packaged medicinal products, or medications based on their generic composition of active substance(s); active substance(s) with strength; active substance(s) with administrable dose form; active substance(s) with strength and administrable dose form."/>
 	<immutable value="false"/>
 	<compose>
 		<include>
