@@ -94,88 +94,12 @@
 		</element>
 		<element id="Observation.effective[x]">
 			<path value="Observation.effective[x]"/>
-			<slicing>
-				<discriminator>
-					<type value="type"/>
-					<path value="$this"/>
-				</discriminator>
-				<rules value="open"/>
-			</slicing>
 			<min value="1"/>
 			<max value="1"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Observation.effectiveDateTime">
-			<path value="Observation.effectiveDateTime"/>
-			<sliceName value="effectiveDateTime"/>
-			<type>
-				<code value="dateTime"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.effectiveDateTime:data-absent-reason">
-			<path value="Observation.effectiveDateTime.extension"/>
-			<sliceName value="data-absent-reason"/>
-			<short value="effective[x] absence reason"/>
-			<definition value="Provides a reason why the effective is missing."/>
-			<max value="1"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.effectivePeriod">
-			<path value="Observation.effectivePeriod"/>
-			<sliceName value="effectivePeriod"/>
-			<type>
-				<code value="Period"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.effectivePeriod:data-absent-reason">
-			<path value="Observation.effectivePeriod.extension"/>
-			<sliceName value="data-absent-reason"/>
-			<short value="effective[x] absence reason"/>
-			<definition value="Provides a reason why the effective is missing."/>
-			<max value="1"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.effectiveInstant">
-			<path value="Observation.effectiveInstant"/>
-			<sliceName value="effectiveInstant"/>
-			<type>
-				<code value="instant"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.effectiveInstant:data-absent-reason">
-			<path value="Observation.effectiveInstant.extension"/>
-			<sliceName value="data-absent-reason"/>
-			<short value="effective[x] absence reason"/>
-			<definition value="Provides a reason why the effective is missing."/>
-			<max value="1"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.effectiveTiming">
-			<path value="Observation.effectiveTiming"/>
-			<sliceName value="effectiveTiming"/>
-			<type>
-				<code value="Timing"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.effectiveTiming:data-absent-reason">
-			<path value="Observation.effectiveTiming.extension"/>
-			<sliceName value="data-absent-reason"/>
+		<element id="Observation.effective[x]:data-absent-reason">
+			<path value="Observation.effective[x].extension"/>
 			<short value="effective[x] absence reason"/>
 			<definition value="Provides a reason why the effective is missing."/>
 			<max value="1"/>
