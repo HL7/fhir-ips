@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../__FHIRr4Tools/fhir-all-xsd/structuredefinition.xsd">
 	<id value="Observation-imaging-uv-ips"/>
 	<meta>
 		<lastUpdated value="2018-02-20T13:45:02.729+01:00"/>
@@ -39,7 +39,7 @@
 			<sliceName value="valueReference"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile  value="http://hl7.org/fhir/uv/ips/StructureDefinition/ImagingStudy-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/ImagingStudy-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -184,6 +184,8 @@
 				<rules value="open"/>
 			</slicing>
 			<requirements value="Required if not(exists(Observation.valueString))"/>
+			<min value="0"/>
+			<max value="*"/>
 			<constraint>
 				<key value="hasMemberOrComponent"/>
 				<severity value="error"/>
@@ -195,6 +197,7 @@
 		<element id="Observation.component:observationText">
 			<path value="Observation.component"/>
 			<sliceName value="observationText"/>
+			<short value="Observation Text"/>
 			<max value="1"/>
 			<mustSupport value="true"/>
 		</element>
@@ -220,6 +223,7 @@
 		<element id="Observation.component:observationCode">
 			<path value="Observation.component"/>
 			<sliceName value="observationCode"/>
+			<short value="Observation Code"/>
 			<max value="1"/>
 			<mustSupport value="true"/>
 		</element>
@@ -243,6 +247,7 @@
 		<element id="Observation.component:numericMeasurement">
 			<path value="Observation.component"/>
 			<sliceName value="numericMeasurement"/>
+			<short value="Observation Mesurement, including linear, area and volume measurements"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component:numericMeasurement.code">
@@ -250,11 +255,11 @@
 			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="ObservationCode"/>
+					<valueString value="ObservationMeasurements"/>
 				</extension>
 				<strength value="extensible"/>
-				<description value="Codes identifying names of numeric measurements"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips"/>
+				<description value="Codes identifying numeric measurements"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-numobs-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Observation.component:numericMeasurement.value[x]">
@@ -268,8 +273,12 @@
 			<type>
 				<code value="Ratio"/>
 			</type>
+			<type>
+				<code value="SampledData"/>
+			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Observation.component:linearMeasurement">
 			<path value="Observation.component"/>
 			<sliceName value="linearMeasurement"/>
@@ -360,5 +369,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+-->
 	</differential>
 </StructureDefinition>
