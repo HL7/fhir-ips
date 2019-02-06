@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns="http://hl7.org/fhir" >
 	<id value="Procedure-uv-ips"/>
 	<meta>
 		<lastUpdated value="2018-02-20T12:54:56.053+01:00"/>
@@ -39,6 +39,18 @@
 		</element>
 		<element id="Procedure.code">
 			<path value="Procedure.code"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="$this"/>
+				</discriminator>
+				<description value="Discriminated by value set binding"/>
+				<rules value="open"/>
+			</slicing>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
 			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -48,21 +60,9 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips"/>
 			</binding>
 		</element>
-		<element id="Procedure.code.coding">
-			<path value="Procedure.code.coding"/>
-			<slicing>
-				<description value="Discriminated by value set binding"/>
-				<rules value="open"/>
-			</slicing>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Procedure.code.coding:absentOrUnknownProcedure">
-			<path value="Procedure.code.coding"/>
+		<element id="Procedure.code:absentOrUnknownProcedure">
+			<path value="Procedure.code"/>
 			<sliceName value="absentOrUnknownProcedure"/>
-			<type>
-				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
-			</type>
 			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -71,22 +71,6 @@
 				<strength value="required"/>
 				<description value="A code to identify absent or unknown procedures"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-procedures-uv-ips"/>
-			</binding>
-		</element>
-		<element id="Procedure.code.coding:procedureCode">
-			<path value="Procedure.code.coding"/>
-			<sliceName value="procedureCode"/>
-			<type>
-				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-			<binding>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="ProcedureCode"/>
-				</extension>
-				<strength value="preferred"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Procedure.subject">
@@ -105,107 +89,12 @@
 		</element>
 		<element id="Procedure.performed[x]">
 			<path value="Procedure.performed[x]"/>
-			<slicing>
-				<discriminator>
-					<type value="type"/>
-					<path value="$this"/>
-				</discriminator>
-				<rules value="open"/>
-			</slicing>
 			<min value="1"/>
 			<max value="1"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Procedure.performedDateTime">
-			<path value="Procedure.performedDateTime"/>
-			<sliceName value="performedDateTime"/>
-			<type>
-				<code value="dateTime"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Procedure.performedDateTime:data-absent-reason">
-			<path value="Procedure.performedDateTime.extension"/>
-			<sliceName value="data-absent-reason"/>
-			<short value="performed[x] absence reason"/>
-			<definition value="Provides a reason why the performed is missing."/>
-			<max value="1"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Procedure.performedPeriod">
-			<path value="Procedure.performedPeriod"/>
-			<sliceName value="performedPeriod"/>
-			<type>
-				<code value="Period"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Procedure.performedPeriod:data-absent-reason">
-			<path value="Procedure.performedPeriod.extension"/>
-			<sliceName value="data-absent-reason"/>
-			<short value="performed[x] absence reason"/>
-			<definition value="Provides a reason why the performed is missing."/>
-			<max value="1"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Procedure.performedString">
-			<path value="Procedure.performedString"/>
-			<sliceName value="performedString"/>
-			<type>
-				<code value="string"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Procedure.performedString:data-absent-reason">
-			<path value="Procedure.performedString.extension"/>
-			<sliceName value="data-absent-reason"/>
-			<short value="performed[x] absence reason"/>
-			<definition value="Provides a reason why the performed is missing."/>
-			<max value="1"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Procedure.performedAge">
-			<path value="Procedure.performedAge"/>
-			<sliceName value="performedAge"/>
-			<type>
-				<code value="Age"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Procedure.performedAge:data-absent-reason">
-			<path value="Procedure.performedAge.extension"/>
-			<sliceName value="data-absent-reason"/>
-			<short value="performed[x] absence reason"/>
-			<definition value="Provides a reason why the performed is missing."/>
-			<max value="1"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Procedure.performedRange">
-			<path value="Procedure.performedRange"/>
-			<sliceName value="performedRange"/>
-			<type>
-				<code value="Range"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Procedure.performedRange:data-absent-reason">
-			<path value="Procedure.performedRange.extension"/>
+		<element id="Procedure.performed[x]:data-absent-reason">
+			<path value="Procedure.performed[x].extension"/>
 			<sliceName value="data-absent-reason"/>
 			<short value="performed[x] absence reason"/>
 			<definition value="Provides a reason why the performed is missing."/>
