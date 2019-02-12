@@ -28,6 +28,14 @@
 			<path value="DeviceUseStatement"/>
 			<mustSupport value="true"/>
 		</element>
+		<element id="DeviceUseStatement.id">
+			<path value="DeviceUseStatement.id"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DeviceUseStatement.meta">
+			<path value="DeviceUseStatement.meta"/>
+			<mustSupport value="true"/>
+		</element>
 		<element id="DeviceUseStatement.subject">
 			<path value="DeviceUseStatement.subject"/>
 			<definition value="The patient using the device."/>
@@ -73,15 +81,11 @@
 		</element>
 		<element id="DeviceUseStatement.bodySite">
 			<path value="DeviceUseStatement.bodySite"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="DeviceUseStatement.bodySite.coding">
-			<path value="DeviceUseStatement.bodySite.coding"/>
 			<type>
-				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
+			<mustSupport value="false"/>
 			<binding>
 				<strength value="example"/>
 				<valueSet value="http://hl7.org/fhir/ValueSet/body-site"/>

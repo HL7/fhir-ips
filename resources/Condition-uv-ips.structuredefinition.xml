@@ -133,6 +133,7 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips"/>
 			</binding>
 		</element>
+		<!--
 		<element id="Condition.code:absentOrUnknownProblem.coding">
 			<path value="Condition.code.coding"/>
 			<min value="1"/>
@@ -143,7 +144,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<!--
+		
 		<element id="Condition.code.coding">
 			<path value="Condition.code.coding"/>
 			<slicing>
@@ -192,7 +193,7 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/core-problem-list-disorders-uv-ips"/>
 			</binding>
 		</element>
-		-->
+	
 		<element id="Condition.bodySite">
 			<path value="Condition.bodySite"/>
 			<type>
@@ -208,6 +209,7 @@
 				<valueSet value="http://hl7.org/fhir/ValueSet/body-site"/>
 			</binding>
 		</element>
+	-->
 		<element id="Condition.subject">
 			<path value="Condition.subject"/>
 			<type>
