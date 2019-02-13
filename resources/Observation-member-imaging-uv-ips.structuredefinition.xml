@@ -24,6 +24,14 @@
 			<path value="Observation"/>
 			<mustSupport value="true"/>
 		</element>
+		<element id="Observation.id">
+			<path value="Observation.id"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.meta">
+			<path value="Observation.meta"/>
+			<mustSupport value="true"/>
+		</element>
 		<element id="Observation.extension:partOf">
 			<path value="Observation.extension"/>
 			<sliceName value="partOf"/>
@@ -151,6 +159,8 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		<!-- Removed for alignement with the parent imaging obseravtion; this is an "extension" added by Trillium II -->
+		<!-- 
 		<element id="Observation.derivedFrom">
 			<path value="Observation.derivedFrom"/>
 			<type>
@@ -164,6 +174,9 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+-->
+<!-- removed beacuse there is no need for being profiled or be tagged as mustSupport -->
+<!--
 		<element id="Observation.component">
 			<path value="Observation.component"/>
 			<mustSupport value="true"/>
@@ -181,5 +194,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+-->
 	</differential>
 </StructureDefinition>

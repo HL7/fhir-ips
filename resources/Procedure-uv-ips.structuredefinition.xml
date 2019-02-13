@@ -24,6 +24,14 @@
 			<path value="Procedure"/>
 			<mustSupport value="true"/>
 		</element>
+			<element id="Procedure.id">
+			<path value="Procedure.id"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Procedure.meta">
+			<path value="Procedure.meta"/>
+			<mustSupport value="true"/>
+		</element>
 		<element id="Procedure.extension:statementDetail">
 			<path value="Procedure.extension"/>
 			<sliceName value="statementDetail"/>
@@ -107,7 +115,7 @@
 		</element>
 		<element id="Procedure.performer">
 			<path value="Procedure.performer"/>
-			<mustSupport value="true"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Procedure.performer.actor">
 			<path value="Procedure.performer.actor"/>
@@ -119,7 +127,7 @@
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-observation-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
+			<mustSupport value="flase"/>
 		</element>
 		<element id="Procedure.performer.onBehalfOf">
 			<path value="Procedure.performer.onBehalfOf"/>
@@ -127,7 +135,7 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-observation-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Procedure.bodySite">
 			<path value="Procedure.bodySite"/>

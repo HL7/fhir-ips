@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<id value="Medication-uv-ips"/>
 	<meta>
 		<lastUpdated value="2018-03-07T19:02:56.499+01:00"/>
@@ -27,6 +27,14 @@
 		<element id="Medication">
 			<path value="Medication"/>
 			<comment value="IPS Medication"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Medication.id">
+			<path value="Medication.id"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Medication.meta">
+			<path value="Medication.meta"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Medication.code">
@@ -246,5 +254,7 @@
 			<path value="Medication.ingredient.itemCodeableConcept.text"/>
 			<mustSupport value="true"/>
 		</element>
+
+-
 	</differential>
 </StructureDefinition>
