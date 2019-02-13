@@ -52,7 +52,8 @@
 				<rules value="open"/>
 			</slicing>
 			<short value="Type of device.&#xD;&#xA;Preferably valued by using SNOMED CT.&#xD;&#xA;The absence of information, or of devices relevant for purpose of this IPS, shall be explicitly stated by using the codes included in the absent-or-unknown-devices-uv-ips value set."/>
-			<min value="1"/>
+			<min value="0"/>
+			<max value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>

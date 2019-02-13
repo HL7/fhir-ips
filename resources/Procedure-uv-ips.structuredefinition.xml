@@ -47,6 +47,8 @@
 				<description value="Discriminated by value set binding"/>
 				<rules value="open"/>
 			</slicing>
+			<min value="0"/>
+			<max value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
