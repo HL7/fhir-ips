@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+<StructureDefinition xmlns="http://hl7.org/fhir" >
 	<id value="Observation-imaging-uv-ips"/>
 	<meta>
 		<lastUpdated value="2018-02-20T13:45:02.729+01:00"/>
@@ -23,6 +23,14 @@
 	<differential>
 		<element id="Observation">
 			<path value="Observation"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.id">
+			<path value="Observation.id"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.meta">
+			<path value="Observation.meta"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.extension:partOf">
@@ -181,7 +189,7 @@
 					<type value="type"/>
 					<path value="value[x]"/>
 				</discriminator>
-				<rules value="open"/>
+				<rules value="closed"/>
 			</slicing>
 			<requirements value="Required if not(exists(Observation.valueString))"/>
 			<min value="0"/>
