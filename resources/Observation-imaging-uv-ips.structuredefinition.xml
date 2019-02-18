@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir" >
+<StructureDefinition xmlns="http://hl7.org/fhir">
 	<id value="Observation-imaging-uv-ips"/>
 	<meta>
 		<lastUpdated value="2018-02-20T13:45:02.729+01:00"/>
@@ -31,6 +31,10 @@
 		</element>
 		<element id="Observation.meta">
 			<path value="Observation.meta"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.meta.profile">
+			<path value="Observation.meta.profile"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.extension:partOf">

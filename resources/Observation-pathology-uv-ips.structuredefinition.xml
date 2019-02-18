@@ -32,6 +32,18 @@
 			<comment value="Represents either a lab simple observation or the group of observations produced by a laboratory study."/>
 			<mustSupport value="true"/>
 		</element>
+			<element id="Observation.id">
+			<path value="Observation.id"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.meta">
+			<path value="Observation.meta"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.meta.profile">
+			<path value="Observation.meta.profile"/>
+			<mustSupport value="true"/>
+		</element>
 		<element id="Observation.basedOn">
 			<path value="Observation.basedOn"/>
 			<max value="0"/>

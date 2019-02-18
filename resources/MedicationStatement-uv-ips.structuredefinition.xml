@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<StructureDefinition xmlns="http://hl7.org/fhir">
 	<id value="MedicationStatement-uv-ips"/>
 	<meta>
 		<lastUpdated value="2018-02-21T00:47:03.873+01:00"/>
@@ -32,6 +32,10 @@
 		</element>
 		<element id="MedicationStatement.meta">
 			<path value="MedicationStatement.meta"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="MedicationStatement.meta.profile">
+			<path value="MedicationStatement.meta.profile"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="MedicationStatement.status">
@@ -114,14 +118,17 @@
 			<path value="MedicationStatement.dosage.text"/>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="MedicationStatement.dosage.patientInstruction">
 			<path value="MedicationStatement.dosage.patientInstruction"/>
 			<mustSupport value="true"/>
 		</element>
+-->
 		<element id="MedicationStatement.dosage.timing">
 			<path value="MedicationStatement.dosage.timing"/>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="MedicationStatement.dosage.timing.repeat">
 			<path value="MedicationStatement.dosage.timing.repeat"/>
 			<mustSupport value="true"/>
@@ -140,6 +147,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+-->
 		<element id="MedicationStatement.dosage.site">
 			<path value="MedicationStatement.dosage.site"/>
 			<type>
