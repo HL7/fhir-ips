@@ -266,6 +266,10 @@
 		<element id="Composition.section:sectionMedications.code">
 			<path value="Composition.section.code"/>
 			<min value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
 			<fixedCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
@@ -274,6 +278,7 @@
 			</fixedCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionMedications.code.coding">
 			<path value="Composition.section.code.coding"/>
 			<min value="1"/>
@@ -283,7 +288,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<!--
 		<element id="Composition.section:sectionMedications.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -365,6 +369,10 @@
 		<element id="Composition.section:sectionAllergies.code">
 			<path value="Composition.section.code"/>
 			<min value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
 			<fixedCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
@@ -373,6 +381,7 @@
 			</fixedCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionAllergies.code.coding">
 			<path value="Composition.section.code.coding"/>
 			<min value="1"/>
@@ -382,7 +391,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<!--
 		<element id="Composition.section:sectionAllergies.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -464,6 +472,10 @@
 		<element id="Composition.section:sectionProblems.code">
 			<path value="Composition.section.code"/>
 			<min value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
 			<fixedCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
@@ -472,6 +484,7 @@
 			</fixedCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionProblems.code.coding">
 			<path value="Composition.section.code.coding"/>
 			<min value="1"/>
@@ -481,7 +494,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<!--
 		<element id="Composition.section:sectionProblems.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -562,6 +574,10 @@
 		<element id="Composition.section:sectionProceduresHx.code">
 			<path value="Composition.section.code"/>
 			<min value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
 			<fixedCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
@@ -570,6 +586,7 @@
 			</fixedCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionProceduresHx.code.coding">
 			<path value="Composition.section.code.coding"/>
 			<min value="1"/>
@@ -579,7 +596,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<!--
 		<element id="Composition.section:sectionProceduresHx.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -662,6 +678,10 @@
 		<element id="Composition.section:sectionImmunizations.code">
 			<path value="Composition.section.code"/>
 			<min value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
 			<fixedCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
@@ -670,6 +690,7 @@
 			</fixedCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionImmunizations.code.coding">
 			<path value="Composition.section.code.coding"/>
 			<min value="1"/>
@@ -679,7 +700,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<!--
 		<element id="Composition.section:sectionImmunizations.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -759,6 +779,10 @@
 		<element id="Composition.section:sectionMedicalDevices.code">
 			<path value="Composition.section.code"/>
 			<min value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
 			<fixedCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
@@ -767,6 +791,7 @@
 			</fixedCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionMedicalDevices.code.coding">
 			<path value="Composition.section.code.coding"/>
 			<min value="1"/>
@@ -776,7 +801,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<!--
 		<element id="Composition.section:sectionMedicalDevices.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -857,6 +881,10 @@
 		<element id="Composition.section:sectionResults.code">
 			<path value="Composition.section.code"/>
 			<min value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
 			<fixedCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
@@ -865,6 +893,7 @@
 			</fixedCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionResults.code.coding">
 			<path value="Composition.section.code.coding"/>
 			<min value="1"/>
@@ -874,7 +903,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<!--
 		<element id="Composition.section:sectionResults.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -990,6 +1018,10 @@
 		<element id="Composition.section:sectionVitalSigns.code">
 			<path value="Composition.section.code"/>
 			<min value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
 			<fixedCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
@@ -998,6 +1030,7 @@
 			</fixedCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionVitalSigns.code.coding">
 			<path value="Composition.section.code.coding"/>
 			<min value="1"/>
@@ -1007,7 +1040,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<!--
 		<element id="Composition.section:sectionVitalSigns.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -1081,6 +1113,10 @@
 		<element id="Composition.section:sectionPastIllnessHx.code">
 			<path value="Composition.section.code"/>
 			<min value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
 			<fixedCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
@@ -1089,6 +1125,7 @@
 			</fixedCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionPastIllnessHx.code.coding">
 			<path value="Composition.section.code.coding"/>
 			<min value="1"/>
@@ -1098,7 +1135,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<!--
 		<element id="Composition.section:sectionPastIllnessHx.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -1174,6 +1210,10 @@
 		<element id="Composition.section:sectionFunctionalStatus.code">
 			<path value="Composition.section.code"/>
 			<min value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
 			<fixedCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
@@ -1182,6 +1222,7 @@
 			</fixedCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionFunctionalStatus.code.coding">
 			<path value="Composition.section.code.coding"/>
 			<min value="1"/>
@@ -1191,7 +1232,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<!--
 		<element id="Composition.section:sectionFunctionalStatus.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -1287,6 +1327,10 @@
 		<element id="Composition.section:sectionPlanOfCare.code">
 			<path value="Composition.section.code"/>
 			<min value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
 			<fixedCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
@@ -1295,6 +1339,7 @@
 			</fixedCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionPlanOfCare.code.coding">
 			<path value="Composition.section.code.coding"/>
 			<min value="1"/>
@@ -1304,7 +1349,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<!--
 		<element id="Composition.section:sectionPlanOfCare.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -1343,6 +1387,10 @@
 		<element id="Composition.section:sectionSocialHistory.code">
 			<path value="Composition.section.code"/>
 			<min value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
 			<fixedCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
@@ -1351,6 +1399,7 @@
 			</fixedCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionSocialHistory.code.coding">
 			<path value="Composition.section.code.coding"/>
 			<min value="1"/>
@@ -1360,7 +1409,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<!--
 		<element id="Composition.section:sectionSocialHistory.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -1448,6 +1496,10 @@
 		<element id="Composition.section:sectionPregnancyHx.code">
 			<path value="Composition.section.code"/>
 			<min value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
 			<fixedCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
@@ -1456,6 +1508,7 @@
 			</fixedCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionPregnancyHx.code.coding">
 			<path value="Composition.section.code.coding"/>
 			<min value="1"/>
@@ -1465,7 +1518,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<!--
 		<element id="Composition.section:sectionPregnancyHx.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -1551,6 +1603,10 @@
 		<element id="Composition.section:sectionAdvanceDirectives.code">
 			<path value="Composition.section.code"/>
 			<min value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
 			<fixedCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
@@ -1559,6 +1615,7 @@
 			</fixedCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionAdvanceDirectives.code.coding">
 			<path value="Composition.section.code.coding"/>
 			<min value="1"/>
@@ -1568,7 +1625,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<!--
 		<element id="Composition.section:sectionAdvanceDirectives.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
