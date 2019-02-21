@@ -283,6 +283,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionMedications.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -293,6 +294,7 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="Composition.section:sectionMedications.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
@@ -303,6 +305,7 @@
 		</element>
 		<element id="Composition.section:sectionMedications.entry">
 			<path value="Composition.section.entry"/>
+			<!-->
 			<slicing>
 				<discriminator>
 					<type value="profile"/>
@@ -316,18 +319,22 @@
 		<element id="Composition.section:sectionMedications.entry:medicationStatement">
 			<path value="Composition.section.entry"/>
 			<sliceName value="medicationStatement"/>
+			-->
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!-->
 		<element id="Composition.section:sectionMedications.entry:medicationStatement.reference">
 			<path value="Composition.section.entry.reference"/>
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="Composition.section:sectionMedications.emptyReason">
 			<path value="Composition.section.emptyReason"/>
 			<max value="0"/>
@@ -375,6 +382,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionAllergies.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -385,6 +393,7 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="Composition.section:sectionAllergies.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
@@ -395,6 +404,7 @@
 		</element>
 		<element id="Composition.section:sectionAllergies.entry">
 			<path value="Composition.section.entry"/>
+			<!--
 			<slicing>
 				<discriminator>
 					<type value="profile"/>
@@ -408,18 +418,22 @@
 		<element id="Composition.section:sectionAllergies.entry:allergyOrIntolerance">
 			<path value="Composition.section.entry"/>
 			<sliceName value="allergyOrIntolerance"/>
+			-->
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionAllergies.entry:allergyOrIntolerance.reference">
 			<path value="Composition.section.entry.reference"/>
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="Composition.section:sectionAllergies.emptyReason">
 			<path value="Composition.section.emptyReason"/>
 			<max value="0"/>
@@ -467,6 +481,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionProblems.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -477,6 +492,7 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="Composition.section:sectionProblems.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
@@ -487,6 +503,7 @@
 		</element>
 		<element id="Composition.section:sectionProblems.entry">
 			<path value="Composition.section.entry"/>
+			<!-->
 			<slicing>
 				<discriminator>
 					<type value="profile"/>
@@ -500,18 +517,22 @@
 		<element id="Composition.section:sectionProblems.entry:problem">
 			<path value="Composition.section.entry"/>
 			<sliceName value="problem"/>
+			-->
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!-->
 		<element id="Composition.section:sectionProblems.entry:problem.reference">
 			<path value="Composition.section.entry.reference"/>
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="Composition.section:sectionProblems.emptyReason">
 			<path value="Composition.section.emptyReason"/>
 			<max value="0"/>
@@ -558,6 +579,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionProceduresHx.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -568,6 +590,7 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="Composition.section:sectionProceduresHx.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
@@ -578,6 +601,7 @@
 		</element>
 		<element id="Composition.section:sectionProceduresHx.entry">
 			<path value="Composition.section.entry"/>
+			<!--
 			<slicing>
 				<discriminator>
 					<type value="profile"/>
@@ -592,18 +616,23 @@
 		<element id="Composition.section:sectionProceduresHx.entry:procedure">
 			<path value="Composition.section.entry"/>
 			<sliceName value="procedure"/>
+			-->
 			<min value="1"/>
+			<max value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionProceduresHx.entry:procedure.reference">
 			<path value="Composition.section.entry.reference"/>
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="Composition.section:sectionProceduresHx.emptyReason">
 			<path value="Composition.section.emptyReason"/>
 			<max value="0"/>
@@ -650,6 +679,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionImmunizations.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -660,6 +690,7 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="Composition.section:sectionImmunizations.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
@@ -670,6 +701,7 @@
 		</element>
 		<element id="Composition.section:sectionImmunizations.entry">
 			<path value="Composition.section.entry"/>
+			<!--
 			<slicing>
 				<discriminator>
 					<type value="profile"/>
@@ -683,17 +715,21 @@
 		<element id="Composition.section:sectionImmunizations.entry:immunization">
 			<path value="Composition.section.entry"/>
 			<sliceName value="immunization"/>
+			-->
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionImmunizations.entry:immunization.reference">
 			<path value="Composition.section.entry.reference"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="Composition.section:sectionImmunizations.emptyReason">
 			<path value="Composition.section.emptyReason"/>
 			<max value="0"/>
@@ -740,6 +776,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionMedicalDevices.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -750,6 +787,7 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="Composition.section:sectionMedicalDevices.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
@@ -760,6 +798,7 @@
 		</element>
 		<element id="Composition.section:sectionMedicalDevices.entry">
 			<path value="Composition.section.entry"/>
+			<!--
 			<slicing>
 				<discriminator>
 					<type value="profile"/>
@@ -773,18 +812,22 @@
 		<element id="Composition.section:sectionMedicalDevices.entry:deviceStatement">
 			<path value="Composition.section.entry"/>
 			<sliceName value="deviceStatement"/>
+			-->
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionMedicalDevices.entry:deviceStatement.reference">
 			<path value="Composition.section.entry.reference"/>
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="Composition.section:sectionMedicalDevices.emptyReason">
 			<path value="Composition.section.emptyReason"/>
 			<max value="0"/>
@@ -831,6 +874,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionResults.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -841,6 +885,7 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="Composition.section:sectionResults.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
@@ -848,6 +893,7 @@
 		</element>
 		<element id="Composition.section:sectionResults.entry">
 			<path value="Composition.section.entry"/>
+			<!--
 			<slicing>
 				<discriminator>
 					<type value="profile"/>
@@ -860,12 +906,18 @@
 		<element id="Composition.section:sectionResults.entry:genericResult">
 			<path value="Composition.section.entry"/>
 			<sliceName value="genericResult"/>
+			-->
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-imaging-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pathology-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionResults.entry:genericResult.reference">
 			<path value="Composition.section.entry.reference"/>
 			<min value="1"/>
@@ -913,6 +965,7 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="Composition.section:sectionResults.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
@@ -954,6 +1007,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionVitalSigns.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -964,6 +1018,7 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="Composition.section:sectionVitalSigns.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
@@ -974,6 +1029,7 @@
 		</element>
 		<element id="Composition.section:sectionVitalSigns.entry">
 			<path value="Composition.section.entry"/>
+			<!--
 			<slicing>
 				<discriminator>
 					<type value="profile"/>
@@ -986,17 +1042,21 @@
 		<element id="Composition.section:sectionVitalSigns.entry:vitalSign">
 			<path value="Composition.section.entry"/>
 			<sliceName value="vitalSign"/>
+			-->
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
 			</type>
 			<mustSupport value="true" />
 		</element>
+		<!--
 		<element id="Composition.section:sectionVitalSigns.entry:vitalSign.reference">
 			<path value="Composition.section.entry.reference"/>
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="Composition.section:sectionVitalSigns.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
@@ -1038,6 +1098,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionPastIllnessHx.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -1048,6 +1109,7 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="Composition.section:sectionPastIllnessHx.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
@@ -1055,6 +1117,7 @@
 		</element>
 		<element id="Composition.section:sectionPastIllnessHx.entry">
 			<path value="Composition.section.entry"/>
+			<!--
 			<slicing>
 				<discriminator>
 					<type value="profile"/>
@@ -1072,17 +1135,21 @@
 		<element id="Composition.section:sectionPastIllnessHx.entry:pastProblem">
 			<path value="Composition.section.entry"/>
 			<sliceName value="pastProblem"/>
+			-->
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionPastIllnessHx:pastProblem.entry.reference">
 			<path value="Composition.section.entry.reference"/>
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="Composition.section:sectionPastIllnessHx.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
@@ -1124,6 +1191,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionFunctionalStatus.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -1134,6 +1202,7 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="Composition.section:sectionFunctionalStatus.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
@@ -1144,6 +1213,7 @@
 		</element>
 		<element id="Composition.section:sectionFunctionalStatus.entry">
 			<path value="Composition.section.entry"/>
+			<!--
 			<slicing>
 				<discriminator>
 					<type value="profile"/>
@@ -1156,14 +1226,19 @@
 		<element id="Composition.section:sectionFunctionalStatus.entry:disability">
 			<path value="Composition.section.entry"/>
 			<sliceName value="disability"/>
+			-->
 			<type>
 				<code value="Reference"/>
 				<!-- repeated in both slices -->
 <!--				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/> -->
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
+<!--				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/> -->
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/ClinicalImpression"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionFunctionalStatus.entry:disability.reference">
 			<path value="Composition.section.entry.reference"/>
 			<min value="1"/>
@@ -1174,8 +1249,10 @@
 			<sliceName value="functionalAssessment"/>
 			<type>
 				<code value="Reference"/>
+		-->
 				<!-- repeated in both slices -->
 <!--				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/> -->
+				<!--
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/ClinicalImpression"/>
 			</type>
 			<mustSupport value="true"/>
@@ -1185,6 +1262,7 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="Composition.section:sectionFunctionalStatus.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
@@ -1226,6 +1304,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionPlanOfCare.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -1236,6 +1315,7 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="Composition.section:sectionPlanOfCare.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
@@ -1280,6 +1360,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionSocialHistory.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -1290,6 +1371,7 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="Composition.section:sectionSocialHistory.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
@@ -1297,6 +1379,7 @@
 		</element>
 		<element id="Composition.section:sectionSocialHistory.entry">
 			<path value="Composition.section.entry"/>
+			<!--
 			<slicing>
 				<discriminator>
 					<type value="profile"/>
@@ -1309,13 +1392,17 @@
 		<element id="Composition.section:sectionSocialHistory.entry:smokingTobaccoUse">
 			<path value="Composition.section.entry"/>
 			<sliceName value="smokingTobaccoUse"/>
+			-->
 			<max value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionSocialHistory.entry:smokingTobaccoUse.reference">
 			<path value="Composition.section.entry.reference"/>
 			<min value="1"/>
@@ -1336,6 +1423,7 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="Composition.section:sectionSocialHistory.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
@@ -1377,6 +1465,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionPregnancyHx.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -1387,6 +1476,7 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="Composition.section:sectionPregnancyHx.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
@@ -1394,6 +1484,7 @@
 		</element>
 		<element id="Composition.section:sectionPregnancyHx.entry">
 			<path value="Composition.section.entry"/>
+			<!--
 			<slicing>
 				<discriminator>
 					<type value="profile"/>
@@ -1406,12 +1497,16 @@
 		<element id="Composition.section:sectionPregnancyHx.entry:pregnancyStatus">
 			<path value="Composition.section.entry"/>
 			<sliceName value="pregnancyStatus"/>
+			-->
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-outcome-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionPregnancyHx.entry:pregnancyStatus.reference">
 			<path value="Composition.section.entry.reference"/>
 			<min value="1"/>
@@ -1431,6 +1526,7 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="Composition.section:sectionPregnancyHx.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
@@ -1472,6 +1568,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionAdvanceDirectives.code.coding.system">
 			<path value="Composition.section.code.coding.system"/>
 			<min value="1"/>
@@ -1482,6 +1579,7 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="Composition.section:sectionAdvanceDirectives.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
@@ -1494,8 +1592,8 @@
 			<path value="Composition.section.entry"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Consent"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
