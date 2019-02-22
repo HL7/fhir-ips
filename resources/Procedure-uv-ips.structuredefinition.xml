@@ -54,9 +54,9 @@
 			<slicing>
 				<discriminator>
 					<type value="value"/>
-					<path value="$this"/>
+					<path value="coding.system"/>
 				</discriminator>
-				<description value="Discriminated by value set binding"/>
+				<description value="Discriminated by code system"/>
 				<rules value="open"/>
 			</slicing>
 			<min value="1"/>
@@ -77,6 +77,12 @@
 		<element id="Procedure.code:absentOrUnknownProcedure">
 			<path value="Procedure.code"/>
 			<sliceName value="absentOrUnknownProcedure"/>
+			<short value="Code for absent problem or for unknown procedure"/>
+			<definition value="Code representing the statement &quot;absent problem&quot; or the statement &quot;procedures unknown&quot;"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
 			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -86,6 +92,19 @@
 				<description value="A code to identify absent or unknown procedures"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-procedures-uv-ips"/>
 			</binding>
+		</element>
+		<element id="Procedure.code:absentOrUnknownProcedure.coding">
+			<path value="Procedure.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Procedure.code:absentOrUnknownProcedure.coding.system">
+			<path value="Procedure.code.coding.system"/>
+			<min value="1"/>
+			<max value="1"/>
+			<fixedUri value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Procedure.subject">
 			<path value="Procedure.subject"/>

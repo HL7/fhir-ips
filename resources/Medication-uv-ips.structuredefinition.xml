@@ -39,9 +39,18 @@
 		</element>
 		<element id="Medication.code">
 			<path value="Medication.code"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="coding.system"/>
+				</discriminator>
+				<description value="Discriminated by code system"/>
+				<rules value="open"/>
+			</slicing>
 			<short value="Medication that was administered or was to be administered. Several kinds of product coding could be provided as: the IDMP Pharmaceutical Product Identifiers (PhPID), the IDMP Medicinal Product Identifier (MPID), the IDMP Packaged Medicinal Product Identifier (PCID), when they will be available; the WHO ATC code; or any other kind of code that identifies, classifies or clusters the administered product (such as SNOMED CT, RxNorm, jurisdictional code systems, cross-jurisdiction code systems, or any other classification)."/>
 			<definition value="Medication that was administered or was to be administered. &#xD;&#xA;&#xD;&#xA;Several kinds of medication coding could be provided as:&#xD;&#xA;&#xD;&#xA;1. The IDMP Pharmaceutical Product Identifier (PhPID), Level 1, [Substance(s)]. Example: Amoxicillin and Clavulanate Potassium; or any other equivalent coded concept;&#xD;&#xA;2. The IDMP Pharmaceutical Product Identifier (PhPID), Level 2 [Substance(s) + Strength + reference strength]. Example: Amoxicillin 875 mg and Clavulanate Potassium 125 mg; or any other equivalent coded concept;&#xD;&#xA;3. The IDMP Pharmaceutical Product Identifier (PhPID), Level 3 [Substance(s) + administrable dose form]. Example:  Amoxicillin and Clavulanate Potassium, Oral Tablet; or any other equivalent coded concept;&#xD;&#xA;4. The IDMP Pharmaceutical Product Identifier (PhPID), Level 4 [Substance(s) + strength + reference strength + administrable dose form]. Example: Amoxicillin 875 mg and clavulanate potassium 125 mg, oral tablet; or any other equivalent coded concept
 5. The IDMP Medicinal Product Identifier (MPID) or any equivalent Medicinal Product Identifier. IDMP MPID uniquely identifies a Medicinal Product, reflecting (but not replacing) any other authorization numbers allocated by a regulator. MPID implies one (set of) PhPID. The MPID shall use a common segment pattern related to a Medicinal Product, which, when each segment is valued shall define a specific MPID concept.&#xD;&#xA;6. The IDMP Packaged Medicinal Product Identifier (PCID) or any equivalent Packaged Medicinal Product Identifier. Uniquely identifies a Medicinal Product based on its packaging. This implies one MPID can be associated with more than one PCID, if the same Medicinal Product has more than one type of package.&#xD;&#xA;7. Any other kind of code that that identifies, classifies or cluster the administered product (e.g. the medicinal product or the  product class)&#xD;&#xA;&#xD;&#xA;The value sets used for the PhPID, MPID and PCID identifiers are provisional and include only few equivalent concepts used for exemplification purposes, they will be updated with real IDMP identifiers when they will become available."/>
+			<min value="1"/>
 			<max value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
@@ -50,7 +59,7 @@
 			<mustSupport value="true"/>
 			<binding>
 				<strength value="example"/>
-				<description value="The type of device"/>
+				<description value="The type of medication"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/med-uv-ips"/>
 			</binding>
 		</element>
@@ -59,15 +68,18 @@
 			<slicing>
 				<discriminator>
 					<type value="value"/>
-					<path value="$this"/>
+					<path value="system"/>
 				</discriminator>
-				<description value="Discriminated by value set binding"/>
+				<description value="Discriminated by code system"/>
 				<rules value="open"/>
 			</slicing>
+			<min value="1"/>
+			<!--
 			<type>
 				<code value="Coding"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
+			-->
 			<mustSupport value="true"/>
 		</element>
 		<!--
@@ -182,10 +194,12 @@
 			<short value="WHO ATC classification"/>
 			<definition value="WHO ATC classification"/>
 			<max value="1"/>
+			<!--
 			<type>
 				<code value="Coding"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
+			-->
 			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -194,6 +208,46 @@
 				<strength value="required"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips"/>
 			</binding>
+		</element>
+		<element id="Medication.code.coding:atcClass.system">
+			<path value="Medication.code.coding.system"/>
+			<min value="1"/>
+			<max value="1"/>
+			<fixedUri value="http://www.whocc.no/atc"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Medication.code:absentOrUnknownMedication">
+			<path value="Medication.code"/>
+			<sliceName value="absentOrUnknownMedication"/>
+			<short value="Code for absent or unknown medication"/>
+			<definition value="Code representing the statement &quot;absent problem&quot; or the statement &quot;medications unknown&quot;"/>
+			<max value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="absentOrUnknownMedication"/>
+				</extension>
+				<strength value="required"/>
+				<description value="Absent problem or unknown medication"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Medication.code:absentOrUnknownMedication.coding">
+			<path value="Medication.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Medication.code:absentOrUnknownMedication.coding.system">
+			<path value="Medication.code.coding.system"/>
+			<min value="1"/>
+			<max value="1"/>
+			<fixedUri value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Medication.code.text">
 			<path value="Medication.code.text"/>

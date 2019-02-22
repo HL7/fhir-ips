@@ -79,9 +79,9 @@
 			<slicing>
 				<discriminator>
 					<type value="value"/>
-					<path value="$this"/>
+					<path value="coding.system"/>
 				</discriminator>
-				<description value="Discriminated by value set binding"/>
+				<description value="Discriminated by code system"/>
 				<rules value="open"/>
 			</slicing>
 			<min value="1"/>
@@ -119,18 +119,26 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-allergies-uv-ips"/>
 			</binding>
 		</element>
-		<!--
 		<element id="AllergyIntolerance.code:absentOrUnknownAllergy.coding">
 			<path value="AllergyIntolerance.code.coding"/>
 			<min value="1"/>
 			<max value="1"/>
+			<!--
 			<type>
 				<code value="Coding"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
+			-->
 			<mustSupport value="true"/>
 		</element>
-		
+		<element id="AllergyIntolerance.code:absentOrUnknownAllergy.coding.system">
+			<path value="AllergyIntolerance.code.coding.system"/>
+			<min value="1"/>
+			<max value="1"/>
+			<fixedUri value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
+			<mustSupport value="true"/>
+		</element>
+		<!--		
 		<element id="AllergyIntolerance.code.coding">
 			<path value="AllergyIntolerance.code.coding"/>
 			<slicing>

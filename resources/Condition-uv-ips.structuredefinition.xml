@@ -96,9 +96,9 @@
 			<slicing>
 				<discriminator>
 					<type value="value"/>
-					<path value="$this"/>
+					<path value="coding.system"/>
 				</discriminator>
-				<description value="Discriminated by value set binding"/>
+				<description value="Discriminated by code system"/>
 				<rules value="open"/>
 			</slicing>
 			<definition value="Identification of the condition, problem or diagnosis or recording of &quot;problem absent&quot; or of &quot;problems unknown&quot;."/>
@@ -123,6 +123,7 @@
 			<sliceName value="absentOrUnknownProblem"/>
 			<short value="Code for absent problem or for unknown problem"/>
 			<definition value="Code representing the statement &quot;absent problem&quot; or the statement &quot;problems unknown&quot;"/>
+			<max value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
@@ -137,18 +138,28 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips"/>
 			</binding>
 		</element>
-		<!--
+		<!-- -->
 		<element id="Condition.code:absentOrUnknownProblem.coding">
 			<path value="Condition.code.coding"/>
 			<min value="1"/>
 			<max value="1"/>
+			<!--
 			<type>
 				<code value="Coding"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
+			-->
 			<mustSupport value="true"/>
 		</element>
-		
+		<element id="Condition.code:absentOrUnknownProblem.coding.system">
+			<path value="Condition.code.coding.system"/>
+			<min value="1"/>
+			<max value="1"/>
+			<fixedUri value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
+			<mustSupport value="true"/>
+		</element>
+		<!-- -->
+		<!--		
 		<element id="Condition.code.coding">
 			<path value="Condition.code.coding"/>
 			<slicing>
