@@ -1,58 +1,4 @@
 -------------------------------------------------------------------------------------
-{"hierarchical" : true, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "concept" : [{
-        "code" : "331055",
-        "display" : "Amoxicillin 1000 MG"
-      },
-      {
-        "code" : "437158",
-        "display" : "Acetaminophen 100 MG"
-      },
-      {
-        "code" : "332122",
-        "display" : "lithium citrate 60 MG/ML"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "expansion" : {
-    "identifier" : "urn:uuid:89210827-d601-4051-a091-e48463eb5aa4",
-    "timestamp" : "2018-12-21T02:47:34.002Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueString" : "-1"
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://www.nlm.nih.gov/research/umls/rxnorm?version=??"
-    }],
-    "contains" : [{
-      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "code" : "331055",
-      "display" : "Amoxicillin 1000 MG"
-    },
-    {
-      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "code" : "437158",
-      "display" : "Acetaminophen 100 MG"
-    },
-    {
-      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "code" : "332122",
-      "display" : "lithium citrate 60 MG/ML"
-    }]
-  }
-},
-  "error" : ""
-}
--------------------------------------------------------------------------------------
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -77,8 +23,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:99369c31-9394-44b1-a35b-4c59711aeb47",
-    "timestamp" : "2019-02-01T16:03:39.777Z",
+    "identifier" : "urn:uuid:69573e52-1635-4230-b99e-adc8ac449817",
+    "timestamp" : "2019-03-06T18:50:09.515Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
