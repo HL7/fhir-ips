@@ -25,6 +25,15 @@ id: {{[id]}}
   {% include {{[type]}}-{{[id]}}-expansion.xhtml %}
 <!-- ============VAlUESET CONTENT CONTENT=============== -->
 
+{% when 'CodeSystem' %}
+<!-- ============CodeSystem CONTENT CONTENT=============== -->
+
+  {% include {{[type]}}-{{[id]}}-summary.xhtml %}
+  {% include {{[type]}}-{{[id]}}-xref.xhtml %}
+  {% include {{[type]}}-{{[id]}}-content.xhtml %}
+  
+ <!-- ============CodeSystem CONTENT CONTENT=============== --> 
+
 <!-- ( % when 'StructureMap' % }
 ============StructureMap CONTENT CONTENT===============
   ( % include nav-tabs.html type="{{[type]}}" id="{{[id]}}" active="content" % }
