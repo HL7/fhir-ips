@@ -8,11 +8,12 @@ active: extensions and datatypes
 
 Hereafter the datatypes that have been profiled for this guide.
 
- * [Codeable Concept (IPS)](StructureDefinition-CodeableConcept-uv-ips.html)
- * [Coding with translations](StructureDefinition-Coding-uv-ips.html)
- * [Quantity](StructureDefinition-Quantity-uv-ips.html)
- * [Range](StructureDefinition-Range-uv-ips.html)
- * [Ratio](StructureDefinition-Ratio-uv-ips.html)
+{% for sd_hash in site.data.structuredefinitions -%}
+  {%- assign sd = sd_hash[1] -%}
+  {%- if sd.kind  == "complex-type" and sd.type != "Extension" -%}
+   <li> <a href="{{sd.path}}">{{sd.name}}</a>{{sd.title}}. {{sd.description}} </li>
+  {%- endif -%}
+{%- endfor -%}
  
  
 # Extensions

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../__FHIRr4Tools/fhir-all-xsd/structuredefinition.xsd">
 	<id value="Observation-uv-ips"/>
 	<text>
 		<status value="generated"/>
@@ -24,7 +23,7 @@
 			<path value="Observation"/>
 			<mustSupport value="true"/>
 		</element>
-			<element id="Observation.id">
+		<element id="Observation.id">
 			<path value="Observation.id"/>
 			<mustSupport value="true"/>
 		</element>
@@ -65,6 +64,10 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
+			<binding>
+				<strength value="extensible"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/observation-codes-uv-ips"/>
+			</binding>
 		</element>
 		<element id="Observation.subject">
 			<path value="Observation.subject"/>
@@ -97,7 +100,7 @@
 			<path value="Observation.performer"/>
 			<mustSupport value="true"/>
 		</element>
-				<element id="Observation.performer.reference">
+		<element id="Observation.performer.reference">
 			<path value="Observation.performer.reference"/>
 			<min value="1"/>
 			<mustSupport value="true"/>
