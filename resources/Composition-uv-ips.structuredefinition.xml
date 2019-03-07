@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir" >
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../__FHIRr4Tools/fhir-all-xsd/structuredefinition.xsd">
 	<id value="Composition-uv-ips"/>
 	<text>
 		<status value="generated"/>
@@ -309,7 +309,9 @@
 		</element>
 		<element id="Composition.section:sectionMedications.entry">
 			<path value="Composition.section.entry"/>
-			<!-->
+			<short value="Medications relevant for the scope of the patient summary"/>
+			<definition value="This list the medications relevant for the scope of the patient summary or it is used to indicate that the subject is known not to be on any relevant medication; either that no information is available about medications."/>
+			<!--
 			<slicing>
 				<discriminator>
 					<type value="profile"/>
@@ -412,6 +414,8 @@
 		</element>
 		<element id="Composition.section:sectionAllergies.entry">
 			<path value="Composition.section.entry"/>
+			<short value="Relevant allergies or intolerances (conditions) for that patient."/>
+			<definition value="It lists the relevant allergies or intolerances (conditions) for that patient, describing the kind of reaction (e.g. rash, anaphylaxis,..); preferably the agents that cause it; and optionally the criticality and the certainty of the allergy.&#xD;&#xA;At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.&#xD;&#xA; This entry shall be used to document that no information about allergies is available, or that no allergies are known ."/>
 			<!--
 			<slicing>
 				<discriminator>
@@ -515,6 +519,8 @@
 		</element>
 		<element id="Composition.section:sectionProblems.entry">
 			<path value="Composition.section.entry"/>
+			<short value="Clinical problems or conditions currently being monitored for the patient."/>
+			<definition value="It lists and describes clinical problems or conditions currently being monitored for the patient.  This entry shall be used to document that no information about problems is available, or that no relevant problems are known."/>
 			<!-->
 			<slicing>
 				<discriminator>
@@ -617,6 +623,8 @@
 		</element>
 		<element id="Composition.section:sectionProceduresHx.entry">
 			<path value="Composition.section.entry"/>
+			<short value="Patient past procedures pertinent to the scope of this document."/>
+			<definition value="It lists the patient past procedures that are pertinent to the scope of this document.&#xD;&#xA;Procedures may refer for example to:&#xD;&#xA;1. Invasive Diagnostic procedure:e.g. Cardiac catheterization; (the results of these procedure are documented in the results section)&#xD;&#xA;2. Therapeutic procedure: e.g. dialysis;&#xD;&#xA;3. Surgical procedure: e.g. appendectomy. This entry shall be used to document that no information about past procedures is available, or that no relevant past procedures are known."/>
 			<!--
 			<slicing>
 				<discriminator>
@@ -721,6 +729,8 @@
 		</element>
 		<element id="Composition.section:sectionImmunizations.entry">
 			<path value="Composition.section.entry"/>
+			<short value="Patient's immunization status and pertinent history."/>
+			<definition value="It defines the patient's current immunization status and pertinent immunization history.&#xD;&#xA;The primary use case for the Immunization Section is to enable communication of a patient's immunization status.&#xD;&#xA;It may contain the entire immunization history that is relevant to the period of time being summarized. This entry shall be used to document that no information about immunizations is available, or that no immunizations are known."/>
 			<!--
 			<slicing>
 				<discriminator>
@@ -822,6 +832,8 @@
 		</element>
 		<element id="Composition.section:sectionMedicalDevices.entry">
 			<path value="Composition.section.entry"/>
+			<short value="Patient history of medical device use."/>
+			<definition value="It describes the patient history of medical device use. This entry shall be used to document that no information about medical device use is available, or that no relevant medical device use is known."/>
 			<!--
 			<slicing>
 				<discriminator>
@@ -921,6 +933,8 @@
 		</element>
 		<element id="Composition.section:sectionResults.entry">
 			<path value="Composition.section.entry"/>
+			<short value="Relevant observation results collected on the patient or produced on in-vitro biologic specimens collected from the patient."/>
+			<definition value="Relevant observation results collected on the patient or produced on in-vitro biologic specimens collected from the patient. Some of these results may be laboratory results, others may be anatomic pathology results, others, radiology results, and others, clinical results."/>
 			<!--
 			<slicing>
 				<discriminator>
@@ -994,6 +1008,11 @@
 			<mustSupport value="true"/>
 		</element>
 		-->
+		<element id="Composition.section:sectionResults.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+			<mustSupport value="false"/>
+		</element>
 		<element id="Composition.section:sectionResults.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
@@ -1061,6 +1080,8 @@
 		</element>
 		<element id="Composition.section:sectionVitalSigns.entry">
 			<path value="Composition.section.entry"/>
+			<short value="Notable vital signs or physical findings."/>
+			<definition value="Notable vital signs or physical findings as: blood pressure, body temperature, heart rate, and respiratory rate. It may also include other clinical findings, such as height, weight, body mass index, head circumference, and pulse oximetry. In particular, notable vital signs or physical findings such as the most recent, maximum and/or minimum, baseline, or relevant trends may be included"/>
 			<!--
 			<slicing>
 				<discriminator>
@@ -1080,7 +1101,7 @@
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
 			</type>
-			<mustSupport value="true" />
+			<mustSupport value="true"/>
 		</element>
 		<!--
 		<element id="Composition.section:sectionVitalSigns.entry:vitalSign.reference">
@@ -1089,6 +1110,11 @@
 			<mustSupport value="true"/>
 		</element>
 		-->
+		<element id="Composition.section:sectionVitalSigns.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+			<mustSupport value="false"/>
+		</element>
 		<element id="Composition.section:sectionVitalSigns.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
@@ -1153,6 +1179,8 @@
 		</element>
 		<element id="Composition.section:sectionPastIllnessHx.entry">
 			<path value="Composition.section.entry"/>
+			<short value="Conditions the patient suffered in the past."/>
+			<definition value="It contains a description of the conditions the patient suffered in the past."/>
 			<!--
 			<slicing>
 				<discriminator>
@@ -1172,6 +1200,7 @@
 			<path value="Composition.section.entry"/>
 			<sliceName value="pastProblem"/>
 			-->
+			<min value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"/>
@@ -1186,6 +1215,11 @@
 			<mustSupport value="true"/>
 		</element>
 		-->
+		<element id="Composition.section:sectionPastIllnessHx.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+			<mustSupport value="false"/>
+		</element>
 		<element id="Composition.section:sectionPastIllnessHx.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
@@ -1253,6 +1287,8 @@
 		</element>
 		<element id="Composition.section:sectionFunctionalStatus.entry">
 			<path value="Composition.section.entry"/>
+			<short value="Optional entry used to represent disabilities and functional assessments"/>
+			<definition value="It describes capabilities of the patient to perform acts of daily living, including possible needs of the patient to be continuously assessed by third parties. The invalidity status may in fact influence decisions about how to administer treatments.&#xD;&#xA;Profiles to express disabilities and functional assessments will be specified by future versions of this guide."/>
 			<!--
 			<slicing>
 				<discriminator>
@@ -1270,8 +1306,8 @@
 			<type>
 				<code value="Reference"/>
 				<!-- repeated in both slices -->
-<!--				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/> -->
-<!--				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/> -->
+				<!--				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/> -->
+				<!--				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/> -->
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/ClinicalImpression"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
@@ -1290,9 +1326,9 @@
 			<type>
 				<code value="Reference"/>
 		-->
-				<!-- repeated in both slices -->
-<!--				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/> -->
-				<!--
+		<!-- repeated in both slices -->
+		<!--				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/> -->
+		<!--
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/ClinicalImpression"/>
 			</type>
 			<mustSupport value="true"/>
@@ -1303,6 +1339,11 @@
 			<mustSupport value="true"/>
 		</element>
 		-->
+		<element id="Composition.section:sectionFunctionalStatus.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+			<mustSupport value="false"/>
+		</element>
 		<element id="Composition.section:sectionFunctionalStatus.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
@@ -1368,6 +1409,16 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+				<element id="Composition.section:sectionPlanOfCare.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+			<mustSupport value="false"/>
+		</element>
+		<element id="Composition.section:sectionPlanOfCare.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+			<mustSupport value="false"/>
+		</element>
 		<element id="Composition.section:sectionSocialHistory">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
 				<valueString value="Section"/>
@@ -1375,7 +1426,7 @@
 			<path value="Composition.section"/>
 			<sliceName value="sectionSocialHistory"/>
 			<short value="IPS Social History Section"/>
-			<definition value="The social history section contains a description of the person’s Health related “lifestyle factors&quot; or &quot;lifestyle observations&quot; (e.g. smoke habits; alcohol consumption; diets, risky habits.)"/>
+			<definition value="The social history section contains a description of the person’s Health related &quot;lifestyle factors&quot; or &quot;lifestyle observations&quot; (e.g. smoke habits; alcohol consumption; diets, risky habits.)"/>
 			<max value="1"/>
 			<mustSupport value="true"/>
 		</element>
@@ -1427,6 +1478,8 @@
 		</element>
 		<element id="Composition.section:sectionSocialHistory.entry">
 			<path value="Composition.section.entry"/>
+			<short value="Health related &quot;lifestyle factors&quot; or &quot;lifestyle observations&quot; (e.g. smoke habits; alcohol consumption; diets, risky habits.)"/>
+			<definition value="Description of the person’s Health related “lifestyle factors&quot; or &quot;lifestyle observations&quot; (e.g. smoke habits; alcohol consumption; diets, risky habits.)"/>
 			<!--
 			<slicing>
 				<discriminator>
@@ -1472,6 +1525,11 @@
 			<mustSupport value="true"/>
 		</element>
 		-->
+		<element id="Composition.section:sectionSocialHistory.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+			<mustSupport value="false"/>
+		</element>
 		<element id="Composition.section:sectionSocialHistory.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
@@ -1536,6 +1594,8 @@
 		</element>
 		<element id="Composition.section:sectionPregnancyHx.entry">
 			<path value="Composition.section.entry"/>
+			<short value="Current pregnancy status and, optionally, information about the outcome of earlier pregnancies."/>
+			<definition value="It contains information about whether the patient is currently pregnant or not.&#xD;&#xA;It may contain addition summarizing information about the outcome of earlier pregnancies."/>
 			<!--
 			<slicing>
 				<discriminator>
@@ -1579,6 +1639,11 @@
 			<mustSupport value="true"/>
 		</element>
 		-->
+		<element id="Composition.section:sectionPregnancyHx.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+			<mustSupport value="false"/>
+		</element>
 		<element id="Composition.section:sectionPregnancyHx.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
@@ -1652,6 +1717,11 @@
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Resource"/>
 			</type>
 			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:sectionAdvanceDirectives.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Composition.section:sectionAdvanceDirectives.section">
 			<path value="Composition.section.section"/>
