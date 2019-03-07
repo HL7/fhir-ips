@@ -84,7 +84,14 @@
 		}
 	},
 	"source": "ig-uv-ips.xml",
-	"gen-examples": "false",
+	"topofpage": "true",
+	"swagger": [
+	  {
+		"mode": "single",
+		"capabilities": "server"
+	  }
+	],
+	  "gen-examples": "false",
 	"title": "International Patient Summary Implementation Guide",
 	"extraTemplates": [],
 	"jurisdiction": "001",
@@ -92,6 +99,7 @@
 	"canonicalBase": "http://hl7.org/fhir/uv/ips",
 	"spreadsheets": [],
 	"special-urls": [],
+	"allviews": "true",
 	"sct-edition": "http://snomed.info/sct/900000000000207008",
 	"check-aggregation": true,
 	"check-mustSupport": true,
