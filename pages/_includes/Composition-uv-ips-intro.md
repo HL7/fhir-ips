@@ -16,7 +16,7 @@
 The following picture provides an onverview of the IPS Composition content 
 
 <div class="image">
-<img src="assets/images/IPS_composition.png" width="400" />
+<img src="assets/images/IPS_composition.png" width="600" />
 <div>The IPS Composition</div>
 <p></p>
 </div>
