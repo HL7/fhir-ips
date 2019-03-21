@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<id value="DiagnosticReport-uv-ips"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">This profile constrains the DiagnosticReport resource to represent diagnostic test and procedure reports in a patient summary.</div>
+	</text>
+	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips"/>
+	<name value="DiagnosticReport_uv_ips"/>
+	<title value="DiagnosticReport (IPS)"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2018-03-21T09:24:38.624+01:00"/>
+	<publisher value="HL7 International"/>
+	<description value="This profile constrains the DiagnosticReport resource to represent diagnostic test and procedure reports in a patient summary."/>
+	<purpose value="This profile constrains the DiagnosticReport resource to use the specific IPS profiles for observations and coded data types."/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="DiagnosticReport"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/DiagnosticReport"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="DiagnosticReport">
+			<path value="DiagnosticReport"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DiagnosticReport.id">
+			<path value="DiagnosticReport.id"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DiagnosticReport.meta">
+			<path value="DiagnosticReport.meta"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DiagnosticReport.meta.profile">
+			<path value="DiagnosticReport.meta.profile"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DiagnosticReport.identifier">
+			<path value="DiagnosticReport.identifier"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DiagnosticReport.status">
+			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
+				<valueString value="default: final"/>
+			</extension>
+			<path value="DiagnosticReport.status"/>
+			<fixedCode value="final"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DiagnosticReport.category">
+			<path value="DiagnosticReport.category"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DiagnosticReport.code">
+			<path value="DiagnosticReport.code"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DiagnosticReport.subject">
+			<path value="DiagnosticReport.subject"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DiagnosticReport.subject.reference">
+			<path value="DiagnosticReport.subject.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DiagnosticReport.effective[x]">
+			<path value="DiagnosticReport.effective[x]"/>
+			<min value="1"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DiagnosticReport.effective[x]:data-absent-reason">
+			<path value="DiagnosticReport.effective[x].extension"/>
+			<short value="effective[x] absence reason"/>
+			<definition value="Provides a reason why the effective is missing."/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DiagnosticReport.performer">
+			<path value="DiagnosticReport.performer"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DiagnosticReport.performer.reference">
+			<path value="DiagnosticReport.performer.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DiagnosticReport.result">
+			<path value="DiagnosticReport.result"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-imaging-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pathology-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DiagnosticReport.result.reference">
+			<path value="DiagnosticReport.result.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+	</differential>
+</StructureDefinition>
