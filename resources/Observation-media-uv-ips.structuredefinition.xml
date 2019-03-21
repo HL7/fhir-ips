@@ -58,24 +58,28 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Media.context">
 			<path value="Media.context"/>
 			<max value="0"/>
 			<mustSupport value="false"/>
 		</element>
+		-->
 		<element id="Media.operator">
 			<path value="Media.operator"/>
 			<mustSupport value="true"/>
 		</element>
+		<element id="Media.device">
+			<path value="Media.device"/>
+			<mustSupport value="true"/>
+		</element>
 		<element id="Media.content">
 			<path value="Media.content"/>
+			<!--
 			<type>
 				<code value="Attachment"/>
 			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Media.device">
-			<path value="Media.device"/>
+			-->
 			<mustSupport value="true"/>
 		</element>
 	</differential>
