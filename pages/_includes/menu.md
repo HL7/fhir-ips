@@ -13,4 +13,3 @@
 <!-- - [Security](security.html) -->
 - [Examples](examples.html)
 - [Downloads](downloads.html)
-- [History](history.html)
