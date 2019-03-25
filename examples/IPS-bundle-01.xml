@@ -12,10 +12,10 @@
 	<type value="document"/>
 	<!--e1-->
 	<entry>
-		<fullUrl value="http://hapi.fhir.org/baseR4/Composition/IPS-examples-Composition-01"/>
+		<fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad4d"/>
 		<resource>
 			<Composition>
-				<id value="IPS-examples-Composition-01"/>
+				<id value="30551ce1-5a28-4356-b684-1e639094ad4d"/>
 				<meta>
 					<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips"/>
 				</meta>
@@ -32,11 +32,11 @@
 					</coding>
 				</type>
 				<subject>
-					<reference value="Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
 				</subject>
 				<date value="2017-07-20T14:30:00+01:00"/>
 				<author>
-					<reference value="Practitioner/IPS-examples-Practitioner-01"/>
+					<reference value="Practitioner/1c616b24-3895-48c4-9a02-9a64110351ef"/>
 				</author>
 				<title value="Patient Summary as of July 20, 2017 14:30"/>
 				<confidentiality value="N"/>
@@ -44,18 +44,18 @@
 					<mode value="legal"/>
 					<time value="2017-07-20T14:30:00+01:00"/>
 					<party>
-						<reference value="Practitioner/IPS-examples-Practitioner-01"/>
+						<reference value="Practitioner/1c616b24-3895-48c4-9a02-9a64110351ef"/>
 					</party>
 				</attester>
 				<attester>
 					<mode value="legal"/>
 					<time value="2017-07-20T14:30:00+01:00"/>
 					<party>
-						<reference value="Organization/IPS-examples-Organization-01"/>
+						<reference value="Organization/890751f4-2924-4636-bab7-efffc7f3cf15"/>
 					</party>
 				</attester>
 				<custodian>
-					<reference value="Organization/IPS-examples-Organization-01"/>
+					<reference value="Organization/890751f4-2924-4636-bab7-efffc7f3cf15"/>
 				</custodian>
 				<relatesTo>
 					<code value="appends"/>
@@ -89,7 +89,7 @@
 						<xhtml:div>Hot flushes</xhtml:div>
 					</text>
 					<entry>
-						<reference value="Condition/IPS-examples-Condition-01"/>
+						<reference value="Condition/c64139e7-f02d-409c-bf34-75e8bf23bc80"/>
 					</entry>
 				</section>
 				<section>
@@ -134,10 +134,10 @@
 						</xhtml:div>
 					</text>
 					<entry>
-						<reference value="MedicationStatement/IPS-examples-MedicationStatement-01"/>
+						<reference value="MedicationStatement/c220e36c-eb67-4fc4-9ba1-2fabc52acec6"/>
 					</entry>
 					<entry>
-						<reference value="MedicationStatement/IPS-examples-MedicationStatement-02"/>
+						<reference value="MedicationStatement/47524493-846a-4a26-bae2-4ab03e60f02e"/>
 					</entry>
 				</section>
 				<section>
@@ -156,10 +156,10 @@
 						</xhtml:div>
 					</text>
 					<entry>
-						<reference value="AllergyIntolerance/IPS-examples-AllergyIntolerance-01"/>
+						<reference value="AllergyIntolerance/72884cad-ebe6-4f43-a51a-2f978275f132"/>
 					</entry>
 					<entry>
-						<reference value="AllergyIntolerance/IPS-examples-AllergyIntolerance-02"/>
+						<reference value="AllergyIntolerance/c7781f44-6df8-4a8b-9e06-0b34263a47c5"/>
 					</entry>
 				</section>
 				<section>
@@ -176,7 +176,7 @@
 						<xhtml:div>Breast cancer Stage II with no evidence of recurrence following treatment</xhtml:div>
 					</text>
 					<entry>
-						<reference value="Condition/IPS-examples-Condition-02"/>
+						<reference value="Condition/c4597aa2-688a-401b-a658-70acc6de28c6"/>
 					</entry>
 				</section>
 				<section>
@@ -266,25 +266,25 @@
 						</xhtml:div>
 					</text>
 					<entry>
-						<reference value="Observation/IPS-examples-Observation-01-Sub0"/>
+						<reference value="Observation/aa11a2be-3e36-4be7-b58a-6fc3dace2741"/>
 					</entry>
 					<entry>
-						<reference value="Observation/IPS-examples-Observation-01-Sub1"/>
+						<reference value="Observation/6e39ccf3-f997-4a2b-8f28-b4b71c778c70"/>
 					</entry>
 					<entry>
-						<reference value="Observation/IPS-examples-Observation-01-Sub2"/>
+						<reference value="Observation/b4916505-a06b-460c-9be8-011609282457"/>
 					</entry>
 					<entry>
-						<reference value="Observation/IPS-examples-Observation-01-Sub3"/>
+						<reference value="Observation/a6a5a1d5-c896-4c7e-b922-888fcc7e6ae4"/>
 					</entry>
 					<entry>
-						<reference value="Observation/IPS-examples-Observation-01-0"/>
+						<reference value="Observation/2639657a-c19a-48e2-82cc-471e13b8ad94"/>
 					</entry>
 					<entry>
-						<reference value="Observation/IPS-examples-Observation-01-1"/>
+						<reference value="Observation/cc354e00-a419-47ea-8b6c-1768b2a01646"/>
 					</entry>
 					<entry>
-						<reference value="Observation/IPS-examples-Observation-01-3"/>
+						<reference value="Observation/26bee0a9-5997-4557-ab9d-c6adbb05b572"/>
 					</entry>
 				</section>
 			</Composition>
@@ -292,10 +292,10 @@
 	</entry>
 	<!--e2-->
 	<entry>
-		<fullUrl value="http://hapi.fhir.org/baseR4/Patient/IPS-examples-Patient-01"/>
+		<fullUrl value="urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
 		<resource>
 			<Patient>
-				<id value="IPS-examples-Patient-01"/>
+				<id value="2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
 				<meta>
 					<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
 				</meta>
@@ -349,10 +349,10 @@
 	</entry>
 	<!--e3-->
 	<entry>
-		<fullUrl value="http://hapi.fhir.org/baseR4/Practitioner/IPS-examples-Practitioner-01"/>
+		<fullUrl value="urn:uuid:1c616b24-3895-48c4-9a02-9a64110351ef"/>
 		<resource>
 			<Practitioner>
-				<id value="IPS-examples-Practitioner-01"/>
+				<id value="1c616b24-3895-48c4-9a02-9a64110351ef"/>
 				<identifier>
 					<system value="urn:oid:2.16.528.1.1007.3.1"/>
 					<value value="129854633"/>
@@ -379,10 +379,10 @@
 	</entry>
 	<!--e4-->
 	<entry>
-		<fullUrl value="http://hapi.fhir.org/baseR4/Organization/IPS-examples-Organization-01"/>
+		<fullUrl value="urn:uuid:890751f4-2924-4636-bab7-efffc7f3cf15"/>
 		<resource>
 			<Organization>
-				<id value="IPS-examples-Organization-01"/>
+				<id value="890751f4-2924-4636-bab7-efffc7f3cf15"/>
 				<identifier>
 					<system value="urn:oid:2.16.528.1.1007.3.3"/>
 					<value value="564738757"/>
@@ -406,10 +406,10 @@
 	</entry>
 	<!--e5-->
 	<entry>
-		<fullUrl value="http://hapi.fhir.org/baseR4/Condition/IPS-examples-Condition-01"/>
+		<fullUrl value="urn:uuid:c64139e7-f02d-409c-bf34-75e8bf23bc80"/>
 		<resource>
 			<Condition>
-				<id value="IPS-examples-Condition-01"/>
+				<id value="c64139e7-f02d-409c-bf34-75e8bf23bc80"/>
 				<meta>
 					<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"/>
 				</meta>
@@ -465,7 +465,7 @@
 					</coding>
 				</code>
 				<subject>
-					<reference value="Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
 				</subject>
 				<onsetDateTime value="2015"/>
 				<recordedDate value="2016-10"/>
@@ -474,10 +474,10 @@
 	</entry>
 	<!--e6-->
 	<entry>
-		<fullUrl value="http://hapi.fhir.org/baseR4/MedicationStatement/IPS-examples-MedicationStatement-01"/>
+		<fullUrl value="urn:uuid:c220e36c-eb67-4fc4-9ba1-2fabc52acec6"/>
 		<resource>
 			<MedicationStatement>
-				<id value="IPS-examples-MedicationStatement-01"/>
+				<id value="c220e36c-eb67-4fc4-9ba1-2fabc52acec6"/>
 				<meta>
 					<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"/>
 				</meta>
@@ -487,10 +487,10 @@
 				</identifier>
 				<status value="active"/>
 				<medicationReference>
-					<reference value="Medication/IPS-examples-Medication-01"/>
+					<reference value="Medication/976d0804-cae0-45ae-afe3-a19f3ceba6bc"/>
 				</medicationReference>
 				<subject>
-					<reference value="Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
 				</subject>
 				<effectivePeriod>
 					<start value="2015-03"/>
@@ -530,10 +530,10 @@
 	</entry>
 	<!--e7-->
 	<entry>
-		<fullUrl value="http://hapi.fhir.org/baseR4/MedicationStatement/IPS-examples-MedicationStatement-02"/>
+		<fullUrl value="urn:uuid:47524493-846a-4a26-bae2-4ab03e60f02e"/>
 		<resource>
 			<MedicationStatement>
-				<id value="IPS-examples-MedicationStatement-02"/>
+				<id value="47524493-846a-4a26-bae2-4ab03e60f02e"/>
 				<meta>
 					<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"/>
 				</meta>
@@ -543,10 +543,10 @@
 				</identifier>
 				<status value="active"/>
 				<medicationReference>
-					<reference value="Medication/IPS-examples-Medication-02"/>
+					<reference value="Medication/8adc0999-9468-4ac9-9557-680fa133d626"/>
 				</medicationReference>
 				<subject>
-					<reference value="Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
 				</subject>
 				<effectivePeriod>
 					<start value="2016-01"/>
@@ -565,10 +565,10 @@
 	</entry>
 	<!--e8-->
 	<entry>
-		<fullUrl value="http://hapi.fhir.org/baseR4/Medication/IPS-examples-Medication-01"/>
+		<fullUrl value="urn:uuid:976d0804-cae0-45ae-afe3-a19f3ceba6bc"/>
 		<resource>
 			<Medication>
-				<id value="IPS-examples-Medication-01"/>
+				<id value="976d0804-cae0-45ae-afe3-a19f3ceba6bc"/>
 				<meta>
 					<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"/>
 				</meta>
@@ -599,10 +599,10 @@
 	</entry>
 	<!--e9-->
 	<entry>
-		<fullUrl value="http://hapi.fhir.org/baseR4/Medication/IPS-examples-Medication-02"/>
+		<fullUrl value="urn:uuid:8adc0999-9468-4ac9-9557-680fa133d626"/>
 		<resource>
 			<Medication>
-				<id value="IPS-examples-Medication-02"/>
+				<id value="8adc0999-9468-4ac9-9557-680fa133d626"/>
 				<meta>
 					<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"/>
 				</meta>
@@ -633,10 +633,10 @@
 	</entry>
 	<!--e10-->
 	<entry>
-		<fullUrl value="http://hapi.fhir.org/baseR4/AllergyIntolerance/IPS-examples-AllergyIntolerance-01"/>
+		<fullUrl value="urn:uuid:72884cad-ebe6-4f43-a51a-2f978275f132"/>
 		<resource>
 			<AllergyIntolerance>
-				<id value="IPS-examples-AllergyIntolerance-01"/>
+				<id value="72884cad-ebe6-4f43-a51a-2f978275f132"/>
 				<meta>
 					<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"/>
 				</meta>
@@ -667,7 +667,7 @@
 					</coding>
 				</code>
 				<patient>
-					<reference value="Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
 				</patient>
 				<onsetDateTime value="2010"/>
 			</AllergyIntolerance>
@@ -675,10 +675,10 @@
 	</entry>
 	<!--e11-->
 	<entry>
-		<fullUrl value="http://hapi.fhir.org/baseR4/Condition/IPS-examples-Condition-02"/>
+		<fullUrl value="urn:uuid:c4597aa2-688a-401b-a658-70acc6de28c6"/>
 		<resource>
 			<Condition>
-				<id value="IPS-examples-Condition-02"/>
+				<id value="c4597aa2-688a-401b-a658-70acc6de28c6"/>
 				<meta>
 					<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"/>
 				</meta>
@@ -734,7 +734,7 @@
 					</coding>
 				</code>
 				<subject>
-					<reference value="Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
 				</subject>
 				<onsetDateTime value="2015-01"/>
 				<abatementDateTime value="2015-03"/>
@@ -743,10 +743,10 @@
 	</entry>
 	<!--e12-->
 	<entry>
-		<fullUrl value="http://hapi.fhir.org/baseR4/Organization/IPS-examples-Organization-02"/>
+		<fullUrl value="urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7"/>
 		<resource>
 			<Organization>
-				<id value="IPS-examples-Organization-02"/>
+				<id value="45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7"/>
 				<active value="true"/>
 				<type>
 					<coding>
@@ -760,10 +760,10 @@
 	</entry>
 	<!--e13-->
 	<entry>
-		<fullUrl value="http://hapi.fhir.org/baseR4/Observation/IPS-examples-Observation-01-Sub0"/>
+		<fullUrl value="urn:uuid:aa11a2be-3e36-4be7-b58a-6fc3dace2741"/>
 		<resource>
 			<Observation>
-				<id value="IPS-examples-Observation-01-Sub0"/>
+				<id value="aa11a2be-3e36-4be7-b58a-6fc3dace2741"/>
 				<meta>
 					<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-member-laboratory-uv-ips"/>
 				</meta>
@@ -782,7 +782,7 @@
 					</coding>
 				</code>
 				<subject>
-					<reference value="Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
 				</subject>
 				<effectiveDateTime value="2015-10-10T09:15:00+01:00"/>
 				<valueCodeableConcept>
@@ -797,10 +797,10 @@
 	</entry>
 	<!--e14-->
 	<entry>
-		<fullUrl value="http://hapi.fhir.org/baseR4/Observation/IPS-examples-Observation-01-Sub1"/>
+		<fullUrl value="urn:uuid:6e39ccf3-f997-4a2b-8f28-b4b71c778c70"/>
 		<resource>
 			<Observation>
-				<id value="IPS-examples-Observation-01-Sub1"/>
+				<id value="6e39ccf3-f997-4a2b-8f28-b4b71c778c70"/>
 				<meta>
 					<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-member-laboratory-uv-ips"/>
 				</meta>
@@ -819,7 +819,7 @@
 					</coding>
 				</code>
 				<subject>
-					<reference value="Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
 				</subject>
 				<effectiveDateTime value="2015-10-10T09:35:00+01:00"/>
 				<valueCodeableConcept>
@@ -834,10 +834,10 @@
 	</entry>
 	<!--e15-->
 	<entry>
-		<fullUrl value="http://hapi.fhir.org/baseR4/Observation/IPS-examples-Observation-01-Sub2"/>
+		<fullUrl value="urn:uuid:b4916505-a06b-460c-9be8-011609282457"/>
 		<resource>
 			<Observation>
-				<id value="IPS-examples-Observation-01-Sub2"/>
+				<id value="b4916505-a06b-460c-9be8-011609282457"/>
 				<meta>
 					<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-member-laboratory-uv-ips"/>
 				</meta>
@@ -856,7 +856,7 @@
 					</coding>
 				</code>
 				<subject>
-					<reference value="Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
 				</subject>
 				<effectiveDateTime value="2015-10-10T09:35:00+01:00"/>
 				<valueCodeableConcept>
@@ -871,10 +871,10 @@
 	</entry>
 	<!--e16-->
 	<entry>
-		<fullUrl value="http://hapi.fhir.org/baseR4/Observation/IPS-examples-Observation-01-Sub3"/>
+		<fullUrl value="urn:uuid:a6a5a1d5-c896-4c7e-b922-888fcc7e6ae4"/>
 		<resource>
 			<Observation>
-				<id value="IPS-examples-Observation-01-Sub3"/>
+				<id value="a6a5a1d5-c896-4c7e-b922-888fcc7e6ae4"/>
 				<meta>
 					<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-member-laboratory-uv-ips"/>
 				</meta>
@@ -893,7 +893,7 @@
 					</coding>
 				</code>
 				<subject>
-					<reference value="Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
 				</subject>
 				<effectiveDateTime value="2015-10-10T09:35:00+01:00"/>
 				<valueCodeableConcept>
@@ -908,10 +908,10 @@
 	</entry>
 	<!--e17-->
 	<entry>
-		<fullUrl value="http://hapi.fhir.org/baseR4/Observation/IPS-examples-Observation-01-0"/>
+		<fullUrl value="urn:uuid:2639657a-c19a-48e2-82cc-471e13b8ad94"/>
 		<resource>
 			<Observation>
-				<id value="IPS-examples-Observation-01-0"/>
+				<id value="2639657a-c19a-48e2-82cc-471e13b8ad94"/>
 				<meta>
 					<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-uv-ips"/>
 				</meta>
@@ -926,33 +926,33 @@
 					<text value="Blood typing"/>
 				</code>
 				<subject>
-					<reference value="Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
 				</subject>
 				<effectiveDateTime value="2015-10-10"/>
 				<performer>
-					<reference value="Organization/IPS-examples-Organization-02"/>
+					<reference value="Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7"/>
 				</performer>
 				<hasMember>
-					<reference value="Observation/IPS-examples-Observation-01-Sub0"/>
+					<reference value="Observation/aa11a2be-3e36-4be7-b58a-6fc3dace2741"/>
 				</hasMember>
 				<hasMember>
-					<reference value="Observation/IPS-examples-Observation-01-Sub1"/>
+					<reference value="Observation/6e39ccf3-f997-4a2b-8f28-b4b71c778c70"/>
 				</hasMember>
 				<hasMember>
-					<reference value="Observation/IPS-examples-Observation-01-Sub2"/>
+					<reference value="Observation/b4916505-a06b-460c-9be8-011609282457"/>
 				</hasMember>
 				<hasMember>
-					<reference value="Observation/IPS-examples-Observation-01-Sub3"/>
+					<reference value="Observation/a6a5a1d5-c896-4c7e-b922-888fcc7e6ae4"/>
 				</hasMember>
 			</Observation>
 		</resource>
 	</entry>
 	<!--e18-->
 	<entry>
-		<fullUrl value="http://hapi.fhir.org/baseR4/Observation/IPS-examples-Observation-01-1"/>
+		<fullUrl value="urn:uuid:cc354e00-a419-47ea-8b6c-1768b2a01646"/>
 		<resource>
 			<Observation>
-				<id value="IPS-examples-Observation-01-1"/>
+				<id value="cc354e00-a419-47ea-8b6c-1768b2a01646"/>
 				<meta>
 					<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-uv-ips"/>
 				</meta>
@@ -971,11 +971,11 @@
 					</coding>
 				</code>
 				<subject>
-					<reference value="Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
 				</subject>
 				<effectiveDateTime value="2017-11-10T08:20:00+01:00"/>
 				<performer>
-					<reference value="Organization/IPS-examples-Organization-02"/>
+					<reference value="Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7"/>
 				</performer>
 				<valueQuantity>
 					<value value="7.5"/>
@@ -991,10 +991,10 @@
 	</entry>
 	<!--e19-->
 	<entry>
-		<fullUrl value="http://hapi.fhir.org/baseR4/Observation/IPS-examples-Observation-01-3"/>
+		<fullUrl value="urn:uuid:26bee0a9-5997-4557-ab9d-c6adbb05b572"/>
 		<resource>
 			<Observation>
-				<id value="IPS-examples-Observation-01-3"/>
+				<id value="26bee0a9-5997-4557-ab9d-c6adbb05b572"/>
 				<meta>
 					<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-uv-ips"/>
 				</meta>
@@ -1013,11 +1013,11 @@
 					</coding>
 				</code>
 				<subject>
-					<reference value="Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
 				</subject>
 				<effectiveDateTime value="2017-12-10T08:20:00+01:00"/>
 				<performer>
-					<reference value="Organization/IPS-examples-Organization-02"/>
+					<reference value="Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7"/>
 				</performer>
 				<valueCodeableConcept>
 					<coding>
@@ -1034,10 +1034,10 @@
 	</entry>
 	<!--e20-->
 	<entry>
-		<fullUrl value="http://hapi.fhir.org/baseR4/AllergyIntolerance/IPS-examples-AllergyIntolerance-02"/>
+		<fullUrl value="urn:uuid:c7781f44-6df8-4a8b-9e06-0b34263a47c5"/>
 		<resource>
 			<AllergyIntolerance>
-				<id value="IPS-examples-AllergyIntolerance-02"/>
+				<id value="c7781f44-6df8-4a8b-9e06-0b34263a47c5"/>
 				<meta>
 					<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"/>
 				</meta>
@@ -1067,7 +1067,7 @@
 					</coding>
 				</code>
 				<patient>
-					<reference value="Patient/IPS-examples-Patient-01"/>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
 				</patient>
 				<onsetDateTime value="2010"/>
 			</AllergyIntolerance>
