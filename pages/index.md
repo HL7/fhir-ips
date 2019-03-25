@@ -90,7 +90,7 @@ Furthermore the scope of the IPS is global. Although this is a major challenge, 
 The following picture provides an overview of the current IPS content.
 
 <div class="image">
-<img src="assets/images/IPS_composition.png" width="400" />
+<img src="assets/images/IPS_composition.png" width="600" />
 <div>The IPS Composition</div>
 <p></p>
 </div>
