@@ -38,14 +38,6 @@ These are the site variables defined [here](http://wiki.hl7.org/index.php?title=
 
 - genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -  {% raw %} {{site.data.fhir.genDate}} {% endraw %} = {{site.data.fhir.genDate}}
 -->
-<blockquote class="stu-note">
-<p>
-This is the September 2018 Ballot Version <!-- Current officially released version --> of the {{site.data.fhir.igName}}, based on <a href="{{ site.data.fhir.path }}">FHIR Version {{ site.data.fhir.version }}</a>. See the <a href="history.html">Directory of published versions<img src="external.png"/></a>.  This specification is currently undergoing ballot and connectathon testing.  It is subject to change, which may be significant, as part of that process.
-</p>
-<p>
-Feedback is welcome and may be submitted through the <a href="http://gforge.hl7.org/gf/project/fhir/tracker/?action=TrackerItemAdd&amp;tracker_id=677">FHIR gForge tracker</a> indicating "International Patient Summary" as the specification.  If balloting on this IG, please, if possible, submit your comments via the tracker and then reference the tracker ids in your ballot submission spreadsheet.
-</p>
-</blockquote>
 
 # Introduction
 
