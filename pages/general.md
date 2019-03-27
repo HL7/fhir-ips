@@ -13,14 +13,15 @@ active: guidance
 
 # General Principles
 
+<p>
+With the formal agreement signed on April 2017, HL7 International and CEN/TC 251 expressed their intent to collaborate under a set of principles for the IPS.
 <div class="image">
 <img src="assets/images/600px-IPS_principles.png" width="400" />
 <div>The IPS Principles</div>
 </div>
 
-
-<p>
-See additional documentation in the IPS Wiki <a href="http://international-patient-summary.net/mediawiki/index.php?title=IPS_implementationguide_1#General_Principles_for_this_Specification">here</a>.
+The standards specification for the IPS will be (a) implementable (b) applicable for global use (c) extensible and open to future use cases and solutions. The standards specification and their implementation must be moreover sustainable. 
+See additional documentation in the <a href="http://international-patient-summary.net/mediawiki/index.php?title=IPS_implementationguide_1#General_Principles_for_this_Specification">IPS Wiki</a>.
 </p>
 
 
@@ -52,7 +53,7 @@ All of the other sections are expected to be omitted in the case of absence of i
 
 ## Translation of designations and narratives
 
-The functional requirement of supporting the translation of the designations has been addressed in this guide extending the coding data type  (coding-uv-ips).
+The functional requirement of supporting the translation of the designations has been addressed in this guide extending the coding data type (coding-uv-ips).
 
 For details about the support of narrative translations please refer to the [Multi-Language support in FHIR](http://build.fhir.org/languages.html) section.
 
@@ -91,10 +92,12 @@ Two options were therefore available for the IPS profiles:
 * flag the items that have to be supported to comply with the minimal data set, unconstraining all the others.
  
 The second has been finally chosen for the following reasons:
-* facilitate the reuse of the IPS profiles in sibling  use cases.
+* facilitate the reuse of the IPS profiles in sibling use cases.
 * enable a progressive access to additional information beyond the minimal one, if available and relevant for the care provisioning.
 
 The items that are part of this minimal set have been marked with the mustSupport attribute.
 
+# Publishing or accessing the IPS
+As described also in the [IPS CDA implementation guide](http://international-patient-summary.net/mediawiki/index.php?title=IPS_implementationguide_1#Functional_requirements_and_high-level_use_cases) it is not in the scope of this version of this Implementation Guide to provide any indication about solutions and strategies for the creation, sharing, syntactical and semantic mapping, translation, and use of the IPS.
 
-
+Future versions of this HL7 FHIR IPS Implementation Guide will address how to send/get IPS documents or resources by using FHIR APIs.

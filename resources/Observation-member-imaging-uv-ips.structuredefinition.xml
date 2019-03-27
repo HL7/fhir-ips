@@ -50,6 +50,15 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+				<element id="Observation.status">
+			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
+				<valueString value="default: final"/>
+			</extension>
+			<path value="Observation.status"/>
+			<definition value="The status of the result value. Only final results feed patient summaries."/>
+			<fixedCode value="final"/>
+			<mustSupport value="true"/>
+		</element>
 		<element id="Observation.code">
 			<path value="Observation.code"/>
 			<type>

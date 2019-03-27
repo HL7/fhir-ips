@@ -43,21 +43,70 @@
 			<comment value="In the scope of the IPS the entered-in-error concept is not allowed."/>
 			<mustSupport value="true"/>
 		</element>
+	
 		<element id="MedicationStatement.medication[x]">
 			<path value="MedicationStatement.medication[x]"/>
-			<definition value="Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that gives a reason for absent or unknown Medication.."/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
+				
+			<slicing>
+				<discriminator>
+					<type value="type"/>
+					<path value="medication[x]"/>
+				</discriminator>
+				<rules value="closed"/>
+			</slicing>
+
+			<definition value="Identifies the medication being administered or the reason for absent or unknown Medication. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code. To improve global interoperability is strongly encouraged that the reference to a medication resource is used, limiting the usage of the medicationCodeableConcept only to the cases in which no other information than a simple code is available."/>
+			<min value="1"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+
+		<element id="MedicationStatement.medicationReference">
+			<path value="MedicationStatement.medicationReference"/>
+			<sliceName value="medicationReference"/>
+			<min value="0"/>
+			<max value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
+		</element>
+		<element id="MedicationStatement.medicationCodeableConcept">
+			<path value="MedicationStatement.medicationCodeableConcept"/>
+			<sliceName value="medicationCodeableConcept"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="coding.system"/>
+				</discriminator>
+				<description value="Discriminated by code system"/>
+				<rules value="open"/>
+			</slicing>
+			<definition value="Identifies the medication being administered, if only a code is available, or a simple attribute carrying a code that gives a reason for absent or unknown medication.."/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="MedicationStatement.medicationCodeableConcept:absentOrUnknownMedication">
+			<path value="MedicationStatement.medicationCodeableConcept"/>
+			<sliceName value="absentOrUnknownMedication"/>
+			<short value="Code for absent or unknown medication"/>
+			<definition value="Code for  medication statement (either a positive or a negated/excluded statement).  This describes a categorical negated statement (e.g.,  &quot;No known allergy&quot;)."/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="MedicationCode"/>
+					<valueString value="UnknownMedicationCode"/>
 				</extension>
 				<strength value="required"/>
 				<description value="Representation of unknown or absent medications"/>

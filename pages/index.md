@@ -66,12 +66,6 @@ This specification aims to support:
 
 See further details on the project background in the IPS Wiki <a href="http://international-patient-summary.net/mediawiki/index.php?title=IPS_Introduction_1#Project_Background">here</a>.
 
-<blockquote class="stu-note">
-<p>
-Note for balloters: The link to the IPS Wiki is intended to provide additional background information that may be useful to readers, but the content on the Wiki pages is not included in the ballot and is not subject to ballot comments.
-</p>
-</blockquote>
-
 ## Project Scope
 
 As expressed in the introduction, the International Patient Summary is:
