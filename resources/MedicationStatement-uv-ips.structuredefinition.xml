@@ -43,24 +43,20 @@
 			<comment value="In the scope of the IPS the entered-in-error concept is not allowed."/>
 			<mustSupport value="true"/>
 		</element>
-	
 		<element id="MedicationStatement.medication[x]">
 			<path value="MedicationStatement.medication[x]"/>
-				
 			<slicing>
 				<discriminator>
 					<type value="type"/>
-					<path value="medication[x]"/>
+					<path value="$this"/>
 				</discriminator>
 				<rules value="closed"/>
 			</slicing>
-
 			<definition value="Identifies the medication being administered or the reason for absent or unknown Medication. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code. To improve global interoperability is strongly encouraged that the reference to a medication resource is used, limiting the usage of the medicationCodeableConcept only to the cases in which no other information than a simple code is available."/>
 			<min value="1"/>
 			<max value="1"/>
 			<mustSupport value="true"/>
 		</element>
-
 		<element id="MedicationStatement.medicationReference">
 			<path value="MedicationStatement.medicationReference"/>
 			<sliceName value="medicationReference"/>
