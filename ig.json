@@ -2,12 +2,12 @@
 	"broken-links": "warning",
 	"no-inactive-codes": "false",
 	"extensions": [
-		"abatement-dateTime-uv-ips", "participant-uv-ips", "statement-uv-ips"
+		"abatement-dateTime-uv-ips", "participant-uv-ips"
 	],
 	"license": "CC0-1.0",
 	"npm-name": "hl7.fhir.uv.ips",
 	"dependencyList": [],
-	"version" : "4.0.0",
+	"version": "4.0.0",
 	"fixed-business-version": "0.2.0",
 	"valuesets": [
 		"pregnancy-status-uv-ips", "condition-severity-uv-ips", "absent-or-unknown-problems-uv-ips", "absent-or-unknown-procedures-uv-ips", "absent-or-unknown-allergies-uv-ips", "absent-or-unknown-devices-uv-ips", "absent-or-unknown-immunization-uv-ips", "absent-or-unknown-medication-uv-ips", "allergy-intolerance-substance-condition-uv-ips", "allergy-reaction-uv-ips", "condition-severity-uv-ips", "core-problem-list-disorders-uv-ips", "current-smoking-status-uv-ips", "edd-method-uv-ips", "imaging-observations-uv-ips", "laboratory-and-vital-signs-observations", "laboratory-tests-and-panels-uv-ips", "lab-result-coded-value-uv-ips", "medical-devices-uv-ips", "medicine-active-substances-uv-ips", "medicine-doseform", "medicine-route-of-administration", "observation-codes-uv-ips", "pathology-and-vital-signs-observations", "pathology-result-coded-value-uv-ips", "personal-relationship-uv-ips", "pregnancies-summary-uv-ips", "problem-type-uv-ips", "procedures-uv-ips", "sub-observation-category-uv-ips", "target-site-uv-ips", "vaccines-uv-ips", "whoatc-uv-ips", "imaging-txtobs-code-uv-ips", "imaging-volume-measure-code-uv-ips", "imaging-area-measure-code-uv-ips", "imaging-linear-measure-code-uv-ips", "specimen-type-uv-ips", "specimen-collection-method-uv-ips", "lab-blood-abo-rh-grp-uv-ips", "lab-absence-presence-uv-ips", "microorganism-uv-ips", "med-uv-ips", "imaging-numobs-uv-ips"
@@ -87,12 +87,12 @@
 	"source": "ig-uv-ips.xml",
 	"topofpage": "true",
 	"swagger": [
-	  {
-		"mode": "single",
-		"capabilities": "server"
-	  }
+		{
+			"mode": "single",
+			"capabilities": "server"
+		}
 	],
-	  "gen-examples": "false",
+	"gen-examples": "false",
 	"title": "International Patient Summary Implementation Guide",
 	"extraTemplates": [],
 	"jurisdiction": "001",
@@ -266,11 +266,6 @@
 			"source": "Specimen-uv-ips.structuredefinition.xml",
 			"base": "StructureDefinition-Specimen-uv-ips.html"
 		},
-		"StructureDefinition/statement-uv-ips": {
-			"defns": "StructureDefinition-statement-uv-ips-definitions.html",
-			"source": "statement-uv-ips.structuredefinition.xml",
-			"base": "StructureDefinition-statement-uv-ips.html"
-		},
 		"ValueSet/absent-or-unknown-allergies-uv-ips": {
 			"source": "valueset-absent-or-unknown-allergies-uv-ips.xml",
 			"base": "ValueSet-absent-or-unknown-allergies-uv-ips.html"
@@ -311,7 +306,7 @@
 			"source": "valueset-edd-method-uv-ips.xml",
 			"base": "ValueSet-edd-method-uv-ips.html"
 		},
-			"ValueSet/imaging-observations-uv-ips": {
+		"ValueSet/imaging-observations-uv-ips": {
 			"source": "valueset-imaging-observations-uv-ips.xml",
 			"base": "ValueSet-imaging-observations-uv-ips.html"
 		},
@@ -438,7 +433,7 @@
 		"ValueSet/imaging-txtobs-code-uv-ips": {
 			"source": "valueset-imaging-txtobs-code-uv-ips.xml",
 			"base": "ValueSet-imaging-txtobs-code-uv-ips.html"
-		}	,
+		},
 		"ValueSet/imaging-numobs-uv-ips": {
 			"source": "valueset-imaging-numobs-uv-ips.xml",
 			"base": "ValueSet-imaging-numobs-uv-ips.html"
@@ -463,25 +458,25 @@
 			"source": "valueset-specimen-collection-method-uv-ips.xml",
 			"base": "ValueSet-specimen-collection-method-uv-ips.html"
 		},
-    	"ValueSet/pregnancy-status-uv-ips": {
+		"ValueSet/pregnancy-status-uv-ips": {
 			"source": "valueset-pregnancy-status-uv-ips.xml",
 			"base": "ValueSet-pregnancy-status-uv-ips.html"
 		},
-       	"ValueSet/lab-blood-abo-rh-grp-uv-ips": {
+		"ValueSet/lab-blood-abo-rh-grp-uv-ips": {
 			"source": "valueset-lab-blood-abo-rh-grp-uv-ips.xml",
 			"base": "ValueSet-lab-blood-abo-rh-grp-uv-ips.html"
 		},
-       	"ValueSet/microorganism-uv-ips": {
+		"ValueSet/microorganism-uv-ips": {
 			"source": "valueset-microorganism-uv-ips.xml",
-			"base": "ValueSet-microorganism-uv-ips.html"  
+			"base": "ValueSet-microorganism-uv-ips.html"
 		},
-       	"ValueSet/lab-absence-presence-uv-ips": {
+		"ValueSet/lab-absence-presence-uv-ips": {
 			"source": "valueset-lab-absence-presence-uv-ips.xml",
 			"base": "ValueSet-lab-absence-presence-uv-ips.html"
 		},
-       	"ValueSet/med-uv-ips": {
+		"ValueSet/med-uv-ips": {
 			"source": "valueset-med-uv-ips.xml",
 			"base": "ValueSet-med-uv-ips.html"
 		}
-  }
+	}
 }

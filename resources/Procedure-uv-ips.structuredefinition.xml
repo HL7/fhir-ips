@@ -36,15 +36,6 @@
 			<path value="Procedure.meta.profile"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Procedure.extension:statementDetail">
-			<path value="Procedure.extension"/>
-			<sliceName value="statementDetail"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/statement-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
 		<element id="Procedure.status">
 			<path value="Procedure.status"/>
 			<mustSupport value="true"/>
@@ -137,6 +128,10 @@
 				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
 			</type>
 			<mustSupport value="true"/>
+		</element>
+		<element id="Procedure.asserter">
+			<path value="Procedure.asserter"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Procedure.performer">
 			<path value="Procedure.performer"/>
