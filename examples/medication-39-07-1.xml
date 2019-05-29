@@ -1,0 +1,46 @@
+<Medication xmlns="http://hl7.org/fhir">
+	<id value="eumfh-39-07-1"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"/>
+	</meta>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<p>Simvastatin 40 MG Disintegrating Oral Tablet</p>
+		</div>
+	</text>
+	<code>
+		<coding>
+			<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+			<code value="757704"/>
+			<display value="Simvastatin 40 MG Disintegrating Oral Tablet"/>
+		</coding>
+		<coding>
+			<system value="http://www.whocc.no/atc"/>
+			<code value="C10AA01"/>
+			<display value="simvastatin"/>
+		</coding>
+		<text value="Fluspiral 50 mcg"/>
+	</code>
+	<form>
+		<coding>
+			<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+			<code value="1294713"/>
+			<display value="Disintegrating Oral Product"/>
+		</coding>
+		<coding>
+			<system value="http://standardterms.edqm.eu"/>
+			<code value="10219000"/>
+			<display value="Tablet"/>
+		</coding>
+	</form>
+	<ingredient>
+		<itemCodeableConcept>
+			<coding>
+				<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+				<code value="36567"/>
+				<display value="Simvastatin"/>
+			</coding>
+		</itemCodeableConcept>
+	</ingredient>
+</Medication>

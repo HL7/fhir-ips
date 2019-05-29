@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Condition xmlns="http://hl7.org/fhir">
+	<id value="eumfh-39-07-1"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"/>
+	</meta>
+	<clinicalStatus>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+			<code value="active"/>
+		</coding>
+	</clinicalStatus>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="54329005"/>
+			<display value="Acute myocardial infarction of anterior wall"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/eumfh-39-07"/>
+		<display value="Alexander Heig (inject 39-07)"/>
+	</subject>
+	<onsetDateTime value="2014"/>
+	<asserter>
+		<reference value="Practitioner/eumfh-39-07"/>
+		<display value="Dr. Mark Antonio"/>
+	</asserter>
+</Condition>

@@ -1,17 +1,11 @@
 {
 	"broken-links": "warning",
 	"no-inactive-codes": "false",
-	"extensions": [
-		"abatement-dateTime-uv-ips", "participant-uv-ips"
-	],
 	"license": "CC0-1.0",
 	"npm-name": "hl7.fhir.uv.ips",
 	"dependencyList": [],
 	"version": "4.0.0",
 	"fixed-business-version": "0.2.0",
-	"valuesets": [
-		"pregnancy-status-uv-ips", "condition-severity-uv-ips", "absent-or-unknown-problems-uv-ips", "absent-or-unknown-procedures-uv-ips", "absent-or-unknown-allergies-uv-ips", "absent-or-unknown-devices-uv-ips", "absent-or-unknown-immunizations-uv-ips", "absent-or-unknown-medications-uv-ips", "allergy-intolerance-substance-condition-uv-ips", "allergy-reaction-uv-ips", "condition-severity-uv-ips", "core-problem-list-disorders-uv-ips", "current-smoking-status-uv-ips", "edd-method-uv-ips", "imaging-observations-uv-ips", "laboratory-and-vital-signs-observations", "laboratory-tests-and-panels-uv-ips", "lab-result-coded-value-uv-ips", "medical-devices-uv-ips", "medicine-active-substances-uv-ips", "medicine-doseform", "medicine-route-of-administration", "observation-codes-uv-ips", "pathology-and-vital-signs-observations", "pathology-result-coded-value-uv-ips", "personal-relationship-uv-ips", "pregnancies-summary-uv-ips", "problem-type-uv-ips", "procedures-uv-ips", "sub-observation-category-uv-ips", "target-site-uv-ips", "vaccines-uv-ips", "whoatc-uv-ips", "imaging-txtobs-code-uv-ips", "imaging-volume-measure-code-uv-ips", "imaging-area-measure-code-uv-ips", "imaging-linear-measure-code-uv-ips", "specimen-type-uv-ips", "specimen-collection-method-uv-ips", "lab-blood-abo-rh-grp-uv-ips", "lab-absence-presence-uv-ips", "microorganism-uv-ips", "med-uv-ips", "imaging-numobs-uv-ips"
-	],
 	"paths": {
 		"pages": [
 			"framework", "pages"
@@ -28,9 +22,6 @@
 	},
 	"logging": [
 		"progress"
-	],
-	"codesystems": [
-		"absent-unknown-uv-ips"
 	],
 	"searches": [],
 	"publisher": "Health Level Seven International",
@@ -387,10 +378,6 @@
 			"source": "AllergyIntolerance-uv-ips.structuredefinition.xml",
 			"base": "StructureDefinition-AllergyIntolerance-uv-ips.html"
 		},
-		"Bundle/IPS-examples-Bundle-01": {
-			"source": "IPS-bundle-01.xml",
-			"base": "Bundle-IPS-examples-Bundle-01.html"
-		},
 		"StructureDefinition/Condition-uv-ips": {
 			"defns": "StructureDefinition-Condition-uv-ips-definitions.html",
 			"source": "Condition-uv-ips.structuredefinition.xml",
@@ -477,6 +464,46 @@
 		"ValueSet/med-uv-ips": {
 			"source": "valueset-med-uv-ips.xml",
 			"base": "ValueSet-med-uv-ips.html"
-		}
+		},
+		"Bundle/IPS-examples-Bundle-01": {
+			"source": "IPS-bundle-01.xml",
+			"base": "Bundle-IPS-examples-Bundle-01.html"
+		},
+		"Practitioner/eumfh-39-07": {
+			"source": "practictioner-39-07-1.xml",
+			"base": "Practitioner-eumfh-39-07.html"
+		},
+		"Patient/eumfh-39-07": {
+			"source": "patient-39-07-1.xml",
+			"base": "Patient-eumfh-39-07.html"
+		},
+		"Procedure/eumfh-39-07-1": {
+			"source": "procedure-39-07-1.xml",
+			"base": "Procedure-eumfh-39-07-1.html"
+		},
+		"AllergyIntolerance/eumfh-39-07-1": {
+			"source": "allergyIntolerance-39-07-1.xml",
+			"base": "AllergyIntolerance-eumfh-39-07-1.html"
+		},
+		"Condition/eumfh-39-07-1": {
+			"source": "condition-39-07-1.xml",
+			"base": "Condition-eumfh-39-07-1.html"
+		},
+		"MedicationStatement/eumfh-39-07-1": {
+			"source": "medicationStatement-39-07-1.xml",
+			"base": "MedicationStatement-eumfh-39-07-1.html"
+		},
+		"Medication/eumfh-39-07-1": {
+			"source": "medication-39-07-1.xml",
+			"base": "Medication-eumfh-39-07-1.html"
+		},
+		"Patient/66033": {
+			"source": "Patient-66033.xml",
+			"base": "Patient-66033.html"
+		},
+		"Immunization/75680": {
+			"source": "Immunization-75680.xml",
+			"base": "Immunization-75680.html"
+		}		
 	}
 }

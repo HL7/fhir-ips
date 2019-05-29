@@ -39,28 +39,32 @@ These are the site variables defined [here](http://wiki.hl7.org/index.php?title=
 - genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -  {% raw %} {{site.data.fhir.genDate}} {% endraw %} = {{site.data.fhir.genDate}}
 -->
 
-# Introduction
-
-An International Patient Summary (IPS) document is an electronic health record extract containing essential healthcare information intended for use in the unscheduled, cross-border care scenario, comprising at least the required elements of the IPS dataset. The IPS dataset is **_a minimal and non-exhaustive patient summary dataset, specialty-agnostic, condition-independent, but readily usable by clinicians for the cross-border unscheduled care of a patient_**.
-
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
-* Do not remove this line (it will not be displayed)
-{:toc}
+<!-- * Do not remove this line (it will not be displayed) -->
+<!--  {:toc} --> 
 
 
 <!-- end TOC -->
 
+An **International Patient Summary (IPS) document** is an electronic health record extract containing essential healthcare information about a subject of care.
+It is specifically aimed at supporting the use case scenario for ‘unplanned, cross border care’, but it is not limited to it.
+It is intended to be international, i.e., to provide generic solutions for global application beyond a particular region or country.
+
+The IPS dataset is **minimal and non-exhaustive; specialty-agnostic and condition-independent; but still clinically relevant**.
+
+
+The IPS is composed by a set of robust, well-defined and reusable core set of data items, i.e., HL7 FHIR IPS profiles, in the case of this guide. 
+Its tight focus on unplanned care is not a limitation, but, on the contrary, enables the IPS profiles to be used as common minimal 'core' set beyond its initial scope.
+
+
+{% include img-small.html img="IPS_doc_library.png" caption="Figure 1: The IPS products" %}
+
 ## Purpose
 
-The goal of this Implementation Guide is to identify the required clinical data, vocabulary and value sets for an international patient summary. The international patient summary is specified either as a templated document using HL7 CDA R2 (see the IPS Wiki [here](http://international-patient-summary.net/mediawiki/index.php?title=IPS_implementationguide_1) or as an HL7 FHIR Composition (as described in this implementation guide). The primary use case is to provide support for cross-border or cross-jurisdictional emergency and unplanned care.
+The goal of this Implementation Guide is to specify how to represent in HL7 FHIR the International Patient Summary (IPS). An alternative representation as templated HL7 CDA R2 is also available provided ( see the [hl7.org site](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=483) or [ART DECOR](https://art-decor.org/art-decor/decor-project--hl7ips-).
+The initial focus of the International Patient Summary (IPS) was the unplanned care across national borders. Starting from this focus, the specification is intended to be used and be useful in local applications and also to be supportive of planned care. 
 
-This specification aims to support:
-
-* Cross-jurisdictional patient summaries (through adaptation/extension for multi-language and realm scenarios, including translation).
-* Emergency and unplanned care in any country, regardless of language.
-* Value sets based on international vocabularies that are usable and understandable in any country.
-* Data and metadata for document-level provenance.
 
 ## Project Background
 
@@ -83,11 +87,7 @@ Furthermore the scope of the IPS is global. Although this is a major challenge, 
 
 The following picture provides an overview of the current IPS content.
 
-<div class="image">
-<img src="assets/images/IPS_composition.png" width="600" />
-<div>The IPS Composition</div>
-<p></p>
-</div>
+{% include img.html img="IPS_composition.png" caption="Figure 2: The IPS composition" %}
 
 ## Relationships with Other Projects and Guidelines
 
@@ -104,9 +104,10 @@ This Implementation Guide is being balloted as STU with the intention to go norm
 | --- | --- | --- | --- |
 | **Primary Editor** | Giorgio Cangioli, PhD | Consultant, HL7 Italy | giorgio.cangioli@gmail.com |
 | **Primary Editor** | Rob Hausam | Hausam Consulting LLC | rob@hausamconsulting.com |
-| **Primary Editor** |  Dr Kai U. Heitmann | Heitmann Consulting and Services, Gefyra GmbH, HL7 Germany | info@kheitmann.de  
 | **Primary Editor** | François Macary | Phast | francois.macary@phast.fr |
 | **Contributor** | Dr Christof Geßner | Gematik | christof.gessner@gematik.de |
 | **Contributor** | Gary Dickinson | CentriHealth | gary.dickinson@ehr-standards.com |
+| **Contributor** |  Dr Kai U. Heitmann | Heitmann Consulting and Services, Gefyra GmbH, HL7 Germany | info@kheitmann.de  |
 | **Contributor** | Catherine Chronaki | HL7 International Foundation | chronaki@gmail.com |
+
 

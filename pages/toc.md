@@ -10,7 +10,7 @@ active: toc
   <ul>
     <li><a href="index.html">International Patient Summary Implementation Guide</a>
       <ul>
-        <li><a href="index.html#introduction" id="markdown-toc-introduction">Introduction</a></li>
+   <!--     <li><a href="index.html#introduction" id="markdown-toc-introduction">Introduction</a></li> -->
         <li><a href="index.html#purpose" id="markdown-toc-purpose">Purpose</a></li>
         <li><a href="index.html#project-background" id="markdown-toc-project-background">Project Background</a></li>
         <li><a href="index.html#project-scope" id="markdown-toc-project-scope">Project Scope</a></li>

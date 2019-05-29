@@ -8,7 +8,7 @@
 	<status value="active"/>
 	<publisher value="Health Level Seven International"/>
 	<packageId value="hl7.fhir.uv.ips"/>
-  	<fhirVersion value="4.0.0"/>
+	<fhirVersion value="4.0.0"/>
 	<definition>
 		<grouping>
 			<name value="base"/>
@@ -18,8 +18,62 @@
 			<reference>
 				<reference value="Bundle/IPS-examples-Bundle-01"/>
 			</reference>
-		</resource>  
-    	<resource>
+		</resource>
+		<resource>
+			<exampleBoolean value="true"/>
+			<reference>
+				<reference value="Medication/eumfh-39-07-1"/>
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="true"/>
+			<reference>
+				<reference value="MedicationStatement/eumfh-39-07-1"/>
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="true"/>
+			<reference>
+				<reference value="Immunization/75680"/>
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="true"/>
+			<reference>
+				<reference value="AllergyIntolerance/eumfh-39-07-1"/>
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="true"/>
+			<reference>
+				<reference value="Condition/eumfh-39-07-1"/>
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="true"/>
+			<reference>
+				<reference value="Procedure/eumfh-39-07-1"/>
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="true"/>
+			<reference>
+				<reference value="Practitioner/eumfh-39-07"/>
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="true"/>
+			<reference>
+				<reference value="Patient/eumfh-39-07"/>
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="true"/>
+			<reference>
+				<reference value="Patient/66033"/>
+			</reference>
+		</resource>
+		<resource>
 			<exampleBoolean value="false"/>
 			<reference>
 				<reference value="ValueSet/pregnancy-status-uv-ips"/>
@@ -561,29 +615,24 @@
 				<reference value="StructureDefinition/AllergyIntolerance-uv-ips"/>
 			</reference>
 		</resource>
-    
- 		<resource>
+		<resource>
 			<exampleBoolean value="false"/>
 			<reference>
 				<reference value="ValueSet/lab-blood-abo-rh-grp-uv-ips"/>
 			</reference>
 		</resource>
-    
-    		<resource>
+		<resource>
 			<exampleBoolean value="false"/>
 			<reference>
 				<reference value="ValueSet/microorganism-uv-ips"/>
 			</reference>
 		</resource>
-    
-    		<resource>
+		<resource>
 			<exampleBoolean value="false"/>
 			<reference>
 				<reference value="ValueSet/lab-absence-presence-uv-ips"/>
 			</reference>
 		</resource>
-    
-    
 		<page>
 			<nameUrl value="index.md"/>
 			<title value="International Patient Summary Home"/>
