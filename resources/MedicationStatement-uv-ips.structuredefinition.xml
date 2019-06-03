@@ -1,167 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="MedicationStatement-uv-ips"/>
-	<meta>
-		<lastUpdated value="2018-02-21T00:47:03.873+01:00"/>
-	</meta>
-	<text>
-		<status value="generated"/>
-		<div xmlns="http://www.w3.org/1999/xhtml">This profile represents the constraints applied to the MedicationStatement resource by the International Patient Summary (IPS) FHIR Implementation Guide.</div>
-	</text>
-	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"/>
-	<name value="MedicationStatement_uv_ips"/>
-	<title value="Medication Statement (IPS)"/>
-	<status value="draft"/>
-	<date value="2018-02-14T22:57:06.512+01:00"/>
-	<publisher value="HL7 International"/>
-	<description value="This profile represents the constraints applied to the MedicationStatement resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A record of a medication statement is represented in the patient summary as an instance of a MedicationStatement resource constrained by this profile."/>
-	<purpose value="This profile constrains the representation of a medication statement related to the patient, in the context of the international patient summary as specified by the IPS project of HL7 International."/>
-	<kind value="resource"/>
-	<abstract value="false"/>
-	<type value="MedicationStatement"/>
-	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationStatement"/>
-	<derivation value="constraint"/>
-	<differential>
-		<element id="MedicationStatement">
-			<path value="MedicationStatement"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="MedicationStatement.id">
-			<path value="MedicationStatement.id"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="MedicationStatement.meta">
-			<path value="MedicationStatement.meta"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="MedicationStatement.meta.profile">
-			<path value="MedicationStatement.meta.profile"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="MedicationStatement.status">
-			<path value="MedicationStatement.status"/>
-			<comment value="In the scope of the IPS the entered-in-error concept is not allowed."/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="MedicationStatement.medication[x]">
-			<path value="MedicationStatement.medication[x]"/>
-			<slicing>
-				<discriminator>
-					<type value="type"/>
-					<path value="$this"/>
-				</discriminator>
-				<rules value="closed"/>
-			</slicing>
-			<definition value="Identifies the medication being administered or the reason for absent or unknown Medication. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code. To improve global interoperability is strongly encouraged that the reference to a medication resource is used, limiting the usage of the medicationCodeableConcept only to the cases in which no other information than a simple code is available."/>
-			<min value="1"/>
-			<max value="1"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="MedicationStatement.medicationReference">
-			<path value="MedicationStatement.medicationReference"/>
-			<sliceName value="medicationReference"/>
-			<min value="0"/>
-			<max value="1"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="MedicationStatement.medicationCodeableConcept">
-			<path value="MedicationStatement.medicationCodeableConcept"/>
-			<sliceName value="medicationCodeableConcept"/>
-			<slicing>
-				<discriminator>
-					<type value="value"/>
-					<path value="coding.system"/>
-				</discriminator>
-				<description value="Discriminated by code system"/>
-				<rules value="open"/>
-			</slicing>
-			<definition value="Identifies the medication being administered, if only a code is available, or a simple attribute carrying a code that gives a reason for absent or unknown medication.."/>
-			<min value="0"/>
-			<max value="1"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="MedicationStatement.medicationCodeableConcept:absentOrUnknownMedication">
-			<path value="MedicationStatement.medicationCodeableConcept"/>
-			<sliceName value="absentOrUnknownMedication"/>
-			<short value="Code for absent or unknown medication"/>
-			<definition value="Code for  medication statement (either a positive or a negated/excluded statement).  This describes a categorical negated statement (e.g.,  &quot;No known allergy&quot;)."/>
-			<min value="0"/>
-			<max value="1"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-			<binding>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="UnknownMedicationCode"/>
-				</extension>
-				<strength value="required"/>
-				<description value="Representation of unknown or absent medications"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips"/>
-			</binding>
-		</element>
-		<element id="MedicationStatement.effective[x]">
-			<path value="MedicationStatement.effective[x]"/>
-			<min value="1"/>
-			<max value="1"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="MedicationStatement.effective[x]:data-absent-reason">
-			<path value="MedicationStatement.effective[x].extension"/>
-			<short value="effective[x] absence reason"/>
-			<definition value="Provides a reason why the effective is missing."/>
-			<max value="1"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="MedicationStatement.subject">
-			<path value="MedicationStatement.subject"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="MedicationStatement.subject.reference">
-			<path value="MedicationStatement.subject.reference"/>
-			<min value="1"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="MedicationStatement.informationSource">
-			<path value="MedicationStatement.informationSource"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="MedicationStatement.reasonCode">
-			<path value="MedicationStatement.reasonCode"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="MedicationStatement.reasonReference">
-			<path value="MedicationStatement.reasonReference"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="MedicationStatement.dosage">
-			<path value="MedicationStatement.dosage"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="MedicationStatement.dosage.text">
-			<path value="MedicationStatement.dosage.text"/>
-			<mustSupport value="true"/>
+<StructureDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://hl7.org/fhir http://hl7.org/fhir/R4/fhir-all.xsd" xmlns="http://hl7.org/fhir">
+    <id value="MedicationStatement-uv-ips"/>
+    <meta>
+        <lastUpdated value="2018-02-21T00:47:03.873+01:00"/>
+    </meta>
+    <text>
+        <status value="generated"/>
+        <div xmlns="http://www.w3.org/1999/xhtml">This profile represents the constraints applied to the MedicationStatement resource by the International Patient Summary (IPS) FHIR Implementation Guide.</div>
+    </text>
+    <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"/>
+    <name value="MedicationStatementUvIPS"/>
+    <title value="Medication Statement (IPS)"/>
+    <status value="draft"/>
+    <date value="2018-02-14T22:57:06.512+01:00"/>
+    <publisher value="HL7 International"/>
+    <description value="This profile represents the constraints applied to the MedicationStatement resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A record of a medication statement is represented in the patient summary as an instance of a MedicationStatement resource constrained by this profile."/>
+    <purpose value="This profile constrains the representation of a medication statement related to the patient, in the context of the international patient summary as specified by the IPS project of HL7 International."/>
+    <kind value="resource"/>
+    <abstract value="false"/>
+    <type value="MedicationStatement"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationStatement"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="MedicationStatement">
+            <path value="MedicationStatement"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicationStatement.id">
+            <path value="MedicationStatement.id"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicationStatement.meta">
+            <path value="MedicationStatement.meta"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicationStatement.meta.profile">
+            <path value="MedicationStatement.meta.profile"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicationStatement.status">
+            <path value="MedicationStatement.status"/>
+            <comment value="In the scope of the IPS the entered-in-error concept is not allowed."/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicationStatement.medication[x]">
+            <path value="MedicationStatement.medication[x]"/>
+            <slicing>
+                <discriminator>
+                    <type value="type"/>
+                    <path value="$this"/>
+                </discriminator>
+                <rules value="closed"/>
+            </slicing>
+            <definition value="Identifies the medication being administered or the reason for absent or unknown Medication. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code. To improve global interoperability is strongly encouraged that the reference to a medication resource is used, limiting the usage of the medicationCodeableConcept only to the cases in which no other information than a simple code is available."/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicationStatement.medication[x]:medicationReference">
+            <path value="MedicationStatement.medicationReference"/>
+            <sliceName value="medicationReference"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicationStatement.medication[x]:medicationCodeableConcept">
+            <path value="MedicationStatement.medicationCodeableConcept"/>
+            <sliceName value="medicationCodeableConcept"/>
+            <definition value="Identifies the medication being administered, if only a code is available, or a simple attribute carrying a code that gives a reason for absent or unknown medication."/>
+            <type>
+                <code value="CodeableConcept"/>
+                <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding">
+            <path value="MedicationStatement.medicationCodeableConcept.coding"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="system"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="MedicationStatement.medication[x]:medicationCodeableConcept.coding:absentOrUnknownMedication">
+            <path value="MedicationStatement.medicationCodeableConcept.coding"/>
+            <sliceName value="absentOrUnknownMedication"/>
+            <max value="1"/>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <description value="Representation of unknown or absent medications"/>
+                <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips"/>
+            </binding>
+        </element>
+        <element id="MedicationStatement.subject">
+            <path value="MedicationStatement.subject"/>
+            <type>
+                <code value="Reference"/>
+                <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicationStatement.subject.reference">
+            <path value="MedicationStatement.subject.reference"/>
+            <min value="1"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicationStatement.effective[x]">
+            <path value="MedicationStatement.effective[x]"/>
+            <min value="1"/>
+            <max value="1"/>
+            <type>
+                <code value="dateTime"/>
+            </type>
+            <type>
+                <code value="Period"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicationStatement.effective[x].extension">
+            <path value="MedicationStatement.effective[x].extension"/>
+            <slicing>
+                <discriminator>
+                    <type value="value"/>
+                    <path value="url"/>
+                </discriminator>
+                <rules value="open"/>
+            </slicing>
+        </element>
+        <element id="MedicationStatement.effective[x].extension:absentOrUnknownEffective">
+            <path value="MedicationStatement.effective[x].extension"/>
+            <sliceName value="absentOrUnknownEffective"/>
+            <short value="effective[x] absence reason"/>
+            <definition value="Provides a reason why the effective is missing."/>
+            <max value="1"/>
+            <type>
+                <code value="Extension"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicationStatement.informationSource">
+            <path value="MedicationStatement.informationSource"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicationStatement.reasonCode">
+            <path value="MedicationStatement.reasonCode"/>
+            <type>
+                <code value="CodeableConcept"/>
+                <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+            </type>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicationStatement.reasonReference">
+            <path value="MedicationStatement.reasonReference"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicationStatement.dosage">
+            <path value="MedicationStatement.dosage"/>
+            <mustSupport value="true"/>
+        </element>
+        <element id="MedicationStatement.dosage.text">
+            <path value="MedicationStatement.dosage.text"/>
+            <mustSupport value="true"/>
 		</element>
 		<!--
 		<element id="MedicationStatement.dosage.patientInstruction">
@@ -195,28 +199,28 @@
 -->
 		<element id="MedicationStatement.dosage.site">
 			<path value="MedicationStatement.dosage.site"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-			<binding>
-				<strength value="preferred"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
-			</binding>
-		</element>
-		<element id="MedicationStatement.dosage.route">
-			<path value="MedicationStatement.dosage.route"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-			<binding>
-				<strength value="required"/>
-				<description value="EDQM Standards Terms"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration"/>
-			</binding>
-		</element>
-	</differential>
+            <type>
+                <code value="CodeableConcept"/>
+                <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+            </type>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="preferred"/>
+                <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
+            </binding>
+        </element>
+        <element id="MedicationStatement.dosage.route">
+            <path value="MedicationStatement.dosage.route"/>
+            <type>
+                <code value="CodeableConcept"/>
+                <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+            </type>
+            <mustSupport value="true"/>
+            <binding>
+                <strength value="required"/>
+                <description value="EDQM Standards Terms"/>
+                <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration"/>
+            </binding>
+        </element>
+    </differential>
 </StructureDefinition>
