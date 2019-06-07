@@ -203,13 +203,14 @@
 		<element id="AllergyIntolerance.onsetDateTime:onsetDateTime">
 			<path value="AllergyIntolerance.onsetDateTime"/>
 			<sliceName value="onsetDateTime"/>
-			<min value="1"/>
+	<!--		<min value="1"/> -->
 			<type>
 				<code value="dateTime"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="AllergyIntolerance.onsetDateTime.extension:data-absent-reason">
+		<!--
+<element id="AllergyIntolerance.onsetDateTime.extension:data-absent-reason">
 			<path value="AllergyIntolerance.onsetDateTime.extension"/>
 			<sliceName value="data-absent-reason"/>
 			<short value="onsetDateTime Absent Reason"/>
@@ -221,6 +222,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+-->
 		<element id="AllergyIntolerance.asserter">
 			<path value="AllergyIntolerance.asserter"/>
 			<mustSupport value="true"/>

@@ -241,12 +241,13 @@
 		<element id="Condition.onsetDateTime:onsetDateTime">
 			<path value="Condition.onsetDateTime"/>
 			<sliceName value="onsetDateTime"/>
-			<min value="1"/>
+			<!-- 			<min value="1"/> -->
 			<type>
 				<code value="dateTime"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Condition.onsetDateTime.extension:data-absent-reason">
 			<path value="Condition.onsetDateTime.extension"/>
 			<sliceName value="data-absent-reason"/>
@@ -259,6 +260,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+-->
 		<element id="Condition.abatement[x]">
 			<path value="Condition.abatement[x]"/>
 			<mustSupport value="true"/>
