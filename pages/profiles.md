@@ -26,7 +26,7 @@ A complete list of the sections and of the used profiles is available in the <a 
 
 The links to the Profiles that have been defined for this implementation guide are listed hereafter.
 
-{% include list-profiles.xhtml %}
+{% include table-profiles.xhtml %}
 
 
 ---
