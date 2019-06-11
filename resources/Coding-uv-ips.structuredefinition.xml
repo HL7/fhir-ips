@@ -1,65 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="Coding-uv-ips"/>
-	<meta>
-		<lastUpdated value="2018-03-08T12:39:56.523+01:00"/>
-	</meta>
-	<text>
-		<status value="generated"/>
-		<div xmlns="http://www.w3.org/1999/xhtml">This profile represents the constraints and extensions applied to the Coding data type by the International Patient Summary (IPS) FHIR Implementation Guide.</div>
-	</text>
-	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
-	<name value="Coding_uv_ips"/>
-	<title value="Coding with translations"/>
-	<status value="draft"/>
-	<date value="2018-03-08T12:36:59.57+01:00"/>
-	<description value="This profile extends the capabilities of the coding data type to support multi-language designations (display).&#xD;&#xA;It relies oon the Translation extension."/>
-	<kind value="complex-type"/>
-	<abstract value="false"/>
-	<type value="Coding"/>
-	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Coding"/>
-	<derivation value="constraint"/>
-	<differential>
-        <element id="Coding">
-            <path value="Coding"/>
-			<mustSupport value="true"/>
-        </element>
-        <element id="Coding.system">
-            <path value="Coding.system"/>
-			<mustSupport value="true"/>
-        </element>
-        <element id="Coding.version">
-            <path value="Coding.version"/>
-			<mustSupport value="true"/>
-        </element>
-        <element id="Coding.code">
-            <path value="Coding.code"/>
-			<mustSupport value="true"/>
-        </element>
-        <element id="Coding.display">
-            <path value="Coding.display"/>
-			<mustSupport value="true"/>
-        </element>
-		<element id="Coding.display.extension">
-			<path value="Coding.display.extension"/>
-			<slicing>
-				<discriminator>
-					<type value="value"/>
-					<path value="url"/>
-				</discriminator>
-				<rules value="open"/>
-			</slicing>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Coding.display.extension:translation">
-			<path value="Coding.display.extension"/>
-			<sliceName value="translation"/>
-			<short value="Language Translation (Localization)"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/StructureDefinition/translation"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-	</differential>
+  <id value="Coding-uv-ips" />
+  <meta>
+    <lastUpdated value="2018-03-08T12:39:56.523+01:00" />
+  </meta>
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">This profile represents the constraints and extensions applied to the Coding data type by the International Patient Summary (IPS) FHIR Implementation Guide.</div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips" />
+  <name value="CodingIPS" />
+  <title value="Coding with translations" />
+  <status value="draft" />
+  <date value="2018-03-08T12:36:59.57+01:00" />
+  <description value="This profile extends the capabilities of the coding data type to support multi-language designations (display).&#xD;&#xA;It relies oon the Translation extension." />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <type value="Coding" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Coding" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Coding">
+      <path value="Coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Coding.system">
+      <path value="Coding.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Coding.version">
+      <path value="Coding.version" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Coding.code">
+      <path value="Coding.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Coding.display">
+      <path value="Coding.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Coding.display.extension">
+      <path value="Coding.display.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Coding.display.extension:translation">
+      <path value="Coding.display.extension" />
+      <sliceName value="translation" />
+      <short value="Language Translation (Localization)" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/translation" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+  </differential>
 </StructureDefinition>

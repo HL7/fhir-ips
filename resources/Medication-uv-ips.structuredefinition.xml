@@ -1,312 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir" >
-	<id value="Medication-uv-ips"/>
-	<meta>
-		<lastUpdated value="2018-03-07T19:02:56.499+01:00"/>
-	</meta>
-	<text>
-		<status value="generated"/>
-		<div xmlns="http://www.w3.org/1999/xhtml">This profile represents the constraints applied to the Medication resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A medication is described in the patient summary as an instance of a Medication resource constrained by this profile.</div>
-	</text>
-	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"/>
-	<version value="0.1"/>
-	<name value="Medication_uv_ips"/>
-	<title value="Medication (IPS)"/>
-	<status value="draft"/>
-	<experimental value="true"/>
-	<date value="2018-02-20T22:03:08.307+01:00"/>
-	<publisher value="HL7 International"/>
-	<description value="This profile represents the constraints applied to the Medication resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A medication is described in the patient summary as an instance of a Medication resource constrained by this profile."/>
-	<purpose value="This profile constrains the representation of a medication, in the context of the international patient summary as specified by the IPS project of HL7 International."/>
-	<kind value="resource"/>
-	<abstract value="false"/>
-	<type value="Medication"/>
-	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Medication"/>
-	<derivation value="constraint"/>
-	<differential>
-		<element id="Medication">
-			<path value="Medication"/>
-			<comment value="IPS Medication"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Medication.id">
-			<path value="Medication.id"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Medication.meta">
-			<path value="Medication.meta"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Medication.code">
-			<path value="Medication.code"/>
-			<slicing>
-				<discriminator>
-					<type value="value"/>
-					<path value="coding.system"/>
-				</discriminator>
-				<description value="Discriminated by code system"/>
-				<rules value="open"/>
-			</slicing>
-			<short value="Medication that was administered or was to be administered. Several kinds of product coding could be provided as: the IDMP Pharmaceutical Product Identifiers (PhPID), the IDMP Medicinal Product Identifier (MPID), the IDMP Packaged Medicinal Product Identifier (PCID), when they will be available; the WHO ATC code; or any other kind of code that identifies, classifies or clusters the administered product (such as SNOMED CT, RxNorm, jurisdictional code systems, cross-jurisdiction code systems, or any other classification)."/>
-			<definition value="Medication that was administered or was to be administered. &#xD;&#xA;&#xD;&#xA;Several kinds of medication coding could be provided as:&#xD;&#xA;&#xD;&#xA;1. The IDMP Pharmaceutical Product Identifier (PhPID), Level 1, [Substance(s)]. Example: Amoxicillin and Clavulanate Potassium; or any other equivalent coded concept;&#xD;&#xA;2. The IDMP Pharmaceutical Product Identifier (PhPID), Level 2 [Substance(s) + Strength + reference strength]. Example: Amoxicillin 875 mg and Clavulanate Potassium 125 mg; or any other equivalent coded concept;&#xD;&#xA;3. The IDMP Pharmaceutical Product Identifier (PhPID), Level 3 [Substance(s) + administrable dose form]. Example:  Amoxicillin and Clavulanate Potassium, Oral Tablet; or any other equivalent coded concept;&#xD;&#xA;4. The IDMP Pharmaceutical Product Identifier (PhPID), Level 4 [Substance(s) + strength + reference strength + administrable dose form]. Example: Amoxicillin 875 mg and clavulanate potassium 125 mg, oral tablet; or any other equivalent coded concept
-5. The IDMP Medicinal Product Identifier (MPID) or any equivalent Medicinal Product Identifier. IDMP MPID uniquely identifies a Medicinal Product, reflecting (but not replacing) any other authorization numbers allocated by a regulator. MPID implies one (set of) PhPID. The MPID shall use a common segment pattern related to a Medicinal Product, which, when each segment is valued shall define a specific MPID concept.&#xD;&#xA;6. The IDMP Packaged Medicinal Product Identifier (PCID) or any equivalent Packaged Medicinal Product Identifier. Uniquely identifies a Medicinal Product based on its packaging. This implies one MPID can be associated with more than one PCID, if the same Medicinal Product has more than one type of package.&#xD;&#xA;7. Any other kind of code that that identifies, classifies or cluster the administered product (e.g. the medicinal product or the  product class)&#xD;&#xA;&#xD;&#xA;The value sets used for the PhPID, MPID and PCID identifiers are provisional and include only few equivalent concepts used for exemplification purposes, they will be updated with real IDMP identifiers when they will become available."/>
-			<min value="1"/>
-			<max value="1"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-			<binding>
-				<strength value="example"/>
-				<description value="The type of medication"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/med-uv-ips"/>
-			</binding>
-		</element>
-		<element id="Medication.code.coding">
-			<path value="Medication.code.coding"/>
-			<slicing>
-				<discriminator>
-					<type value="value"/>
-					<path value="system"/>
-				</discriminator>
-				<description value="Discriminated by code system"/>
-				<rules value="open"/>
-			</slicing>
-			<min value="1"/>
-			<!--
-			<type>
-				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
-			</type>
-			-->
-			<mustSupport value="true"/>
-		</element>
-		<!--
-		<element id="Medication.code.coding:pharmaceuticalProduct-L1">
-			<path value="Medication.code.coding"/>
-			<sliceName value="pharmaceuticalProduct-L1"/>
-			<short value="Pharmaceutical Product Identifier, Level 1 [Substance(s)]. Example:  Amoxicillin and Clavulanate Potassium"/>
-			<definition value="IDMP PhPID Level 1 (Implies substances) or any equivalent Pharmaceutical Product identifier.&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as s and route of administration, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product."/>
-			<type>
-				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
-			</type>
-			<binding>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="PhPIDLvl1"/>
-				</extension>
-				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl1-uv-ips"/>
-			</binding>
-		</element>
-		<element id="Medication.code.coding:pharmaceuticalProduct-L2">
-			<path value="Medication.code.coding"/>
-			<sliceName value="pharmaceuticalProduct-L2"/>
-			<short value="Pharmaceutical Product Identifier, Level 2 [Substance(s) + Strength + reference strength]. Example: Amoxicillin 875 mg and Clavulanate Potassium 125 mg."/>
-			<definition value="IDMP PhPID Level 2 (Implies substances and strength) or any equivalent Pharmaceutical Product identifier.&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as substances and route of administration, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product."/>
-			<type>
-				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
-			</type>
-			<binding>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="PhPIDLvl2"/>
-				</extension>
-				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl2-uv-ips"/>
-			</binding>
-		</element>
-		<element id="Medication.code.coding:pharmaceuticalProduct-L3">
-			<path value="Medication.code.coding"/>
-			<sliceName value="pharmaceuticalProduct-L3"/>
-			<short value="Pharmaceutical Product Identifier, Level 3 [Substance(s) + administrable dose form]. Example:  Amoxicillin and Clavulanate Potassium, Oral Tablet."/>
-			<definition value="IDMP PhPID Level 3 (Implies substances and dose form) or any equivalent Pharmaceutical Product identifier.&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as substances and administrable dose form, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product."/>
-			<type>
-				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
-			</type>
-			<binding>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="PhPIDLvl3"/>
-				</extension>
-				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl3-uv-ips"/>
-			</binding>
-		</element>
-		<element id="Medication.code.coding:pharmaceuticalProduct-L4">
-			<path value="Medication.code.coding"/>
-			<sliceName value="pharmaceuticalProduct-L4"/>
-			<short value="Pharmaceutical Product Identifier, Level 4 [Substance(s) + strength + reference strength + administrable dose form]. Example: Amoxicillin 875 mg and clavulanate potassium 125 mg, oral tablet."/>
-			<definition value="IDMP PhPID Level 4 (Implies substances, strength, and dose form) or any equivalent Pharmaceutical Product identifier.&#xD;&#xA;&#xD;&#xA;Pharmaceutical Product Identifier (PhPID): Uniquely identifies medicinal product based on the&#xD;&#xA;generic composition, such as substances and administrable dose form, separate from any other&#xD;&#xA;details such as regulatory authorisation, organisation, packaging or naming. The PhPID can be&#xD;&#xA;specified at various levels of detail for a given Pharmaceutical Product."/>
-			<type>
-				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
-			</type>
-			<binding>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="PhPIDLvl4"/>
-				</extension>
-				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/phpid-lvl4-uv-ips"/>
-			</binding>
-		</element>
-		<element id="Medication.code.coding:medicinalProduct">
-			<path value="Medication.code.coding"/>
-			<sliceName value="medicinalProduct"/>
-			<short value="Medicinal Product"/>
-			<definition value="IDMP Medicinal Product Identifier (MPID) or any equivalent Medicinal Product Identifier.&#xD;&#xA;&#xD;&#xA;IDMP MPID uniquely identifies a Medicinal Product, reflecting (but not replacing) any other authorisation numbers allocated by a regulator.&#xD;&#xA;&#xD;&#xA;MPID implies one (set of) PhPID.&#xD;&#xA;The MPID shall use a common segment pattern related to a Medicinal Product, which&#xD;&#xA;when each segment is valued shall define a specific MPID concept. The pattern is:&#xD;&#xA; a) Country code segment (ISO 3166-1 alpha-2 code elements);&#xD;&#xA; b) Marketing Authorization Holder (Organization Identifier) code segment;&#xD;&#xA; c) Medicinal Product code segment (Unique Medicinal Product Identifier).&#xD;&#xA; Any change of the values related to these three code segments shall result in the&#xD;&#xA;assignment of a new MPID.&#xD;"/>
-			<type>
-				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-			<binding>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="MPID"/>
-				</extension>
-				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/mpid-uv-ips"/>
-			</binding>
-		</element>
-		<element id="Medication.code.coding:packagedProduct">
-			<path value="Medication.code.coding"/>
-			<sliceName value="packagedProduct"/>
-			<short value="Packaged Medicinal Product"/>
-			<definition value="IDMP Packaged Medicinal Product Identifier  or any equivalent Packaged Medicinal Product Identifier.&#xD;&#xA;&#xD;&#xA;Uniquely identifies a Medicinal Product based on its packaging. This implies one MPID can be associated with more than one PCID, if the same Medicinal Product has more than one type of package;&#xD;&#xA;&#xD;&#xA;The PCID shall use a common segment pattern related to a package of a Medicinal&#xD;&#xA;Product, which when each segment is valued, shall define a specific PCID concept. The&#xD;&#xA;pattern is:&#xD;&#xA; a) MPID for the Medicinal Product&#xD;&#xA; b) package description code segment, which refers to a unique identifier for each&#xD;&#xA;package."/>
-			<type>
-				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-			<binding>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="PCID"/>
-				</extension>
-				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/pcid-uv-ips"/>
-			</binding>
-		</element>
--->
-		<element id="Medication.code.coding:atcClass">
-			<path value="Medication.code.coding"/>
-			<sliceName value="atcClass"/>
-			<short value="WHO ATC classification"/>
-			<definition value="WHO ATC classification"/>
-			<max value="1"/>
-			<!--
-			<type>
-				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
-			</type>
-			-->
-			<mustSupport value="true"/>
-			<binding>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="WHO ATC"/>
-				</extension>
-				<strength value="required"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips"/>
-			</binding>
-		</element>
-		<element id="Medication.code.coding:atcClass.system">
-			<path value="Medication.code.coding.system"/>
-			<min value="1"/>
-			<max value="1"/>
-			<fixedUri value="http://www.whocc.no/atc"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Medication.code:absentOrUnknownMedication">
-			<path value="Medication.code"/>
-			<sliceName value="absentOrUnknownMedication"/>
-			<short value="Code for absent or unknown medication"/>
-			<definition value="Code representing the statement &quot;absent problem&quot; or the statement &quot;medications unknown&quot;"/>
-			<max value="1"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-			<binding>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="absentOrUnknownMedication"/>
-				</extension>
-				<strength value="required"/>
-				<description value="Absent problem or unknown medication"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips"/>
-			</binding>
-		</element>
-		<element id="Medication.code:absentOrUnknownMedication.coding">
-			<path value="Medication.code.coding"/>
-			<min value="1"/>
-			<max value="1"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Medication.code:absentOrUnknownMedication.coding.system">
-			<path value="Medication.code.coding.system"/>
-			<min value="1"/>
-			<max value="1"/>
-			<fixedUri value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Medication.code.text">
-			<path value="Medication.code.text"/>
-			<definition value="This element is supposed to be valorized with the complete Medicinal Product Name as approved by the Medicines Regulatory Agency in a jurisdiction.&#xD;&#xA;The name may be applicable in one or more country/language combinations."/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Medication.form">
-			<path value="Medication.form"/>
-			<definition value="Describes the form of the item.  Powder; tablets; capsule.&#xD;&#xA;&#xD;&#xA;Administrable Pharmaceutical Dose Form. &#xD;&#xA;This code represents the form of the medication (e.g. tablet, capsule, liquid)&#xD;&#xA;&#xD;&#xA;Since the EDQM Standards Terms, together with UCUM, is one of the IDMP terminologies actually available for usage, this code system has been selected  as referecne terminology for representing Pharmaceutical Dose forms;Pakages and Route of Administration.&#xD;&#xA;&#xD;&#xA;It is known that also alternative jurisdictional and international terminologies are known to be used for this concept domain, as NCI or SNOMED CT."/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-			<binding>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="MedicationForm"/>
-				</extension>
-				<strength value="preferred"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform"/>
-			</binding>
-		</element>
-		<element id="Medication.amount">
-			<path value="Medication.amount"/>
-			<type>
-				<code value="Ratio"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Ratio-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Medication.ingredient">
-			<path value="Medication.ingredient"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Medication.ingredient.itemCodeableConcept:itemCodeableConcept">
-			<path value="Medication.ingredient.itemCodeableConcept"/>
-			<sliceName value="itemCodeableConcept"/>
-			<comment value="The IDMP ISO 11238 standard addresses the identification and exchange of regulated information on substances. &#xD;&#xA;The Global Ingredient Archival System (GInAS)  will provide a common global identifier for all of the substances used in medicinal products, providing a definition of substances globally consistent with this standard.&#xD;&#xA;Those identifiers however are yet available for concrete usage, therefore in this version of the template, SNOMED CT has been chosen as reference terminology also for the active substances.&#xD;&#xA;This choice will be revised based on the availability and the maturity of GInAS."/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-			<binding>
-				<strength value="preferred"/>
-				<description value="SNOMED CT drug substances"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-active-substances-uv-ips"/>
-			</binding>
-		</element>
-		<element id="Medication.ingredient.itemCodeableConcept:itemCodeableConcept.coding">
-			<path value="Medication.ingredient.itemCodeableConcept.coding"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Medication.ingredient.itemCodeableConcept:itemCodeableConcept.text">
-			<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
-				<valueBoolean value="true"/>
-			</extension>
-			<path value="Medication.ingredient.itemCodeableConcept.text"/>
-			<mustSupport value="true"/>
-		</element>
-	</differential>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Medication-uv-ips" />
+  <meta>
+    <lastUpdated value="2018-03-07T19:02:56.499+01:00" />
+  </meta>
+  <text>
+    <status value="generated" />
+    <div xmlns="http://www.w3.org/1999/xhtml">This profile represents the constraints applied to the Medication resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A medication is described in the patient summary as an instance of a Medication resource constrained by this profile.</div>
+  </text>
+  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips" />
+  <version value="0.1" />
+  <name value="MedicationIPS" />
+  <title value="Medication (IPS)" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2018-02-20T22:03:08.307+01:00" />
+  <publisher value="HL7 International" />
+  <description value="This profile represents the constraints applied to the Medication resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A medication is described in the patient summary as an instance of a Medication resource constrained by this profile." />
+  <purpose value="This profile constrains the representation of a medication, in the context of the international patient summary as specified by the IPS project of HL7 International." />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Medication" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Medication" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Medication">
+      <path value="Medication" />
+      <comment value="IPS Medication" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.id">
+      <path value="Medication.id" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.meta">
+      <path value="Medication.meta" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.code">
+      <path value="Medication.code" />
+      <short value="Medication that was administered or was to be administered. Several kinds of product coding could be provided as: the IDMP Pharmaceutical Product Identifiers (PhPID), the IDMP Medicinal Product Identifier (MPID), the IDMP Packaged Medicinal Product Identifier (PCID), when they will be available; the WHO ATC code; or any other kind of code that identifies, classifies or clusters the administered product (such as SNOMED CT, RxNorm, jurisdictional code systems, cross-jurisdiction code systems, or any other classification)." />
+      <definition value="Medication that was administered or was to be administered. &#xD;&#xA;&#xD;&#xA;Several kinds of medication coding could be provided as:&#xD;&#xA;&#xD;&#xA;1. The IDMP Pharmaceutical Product Identifier (PhPID), Level 1, [Substance(s)]. Example: Amoxicillin and Clavulanate Potassium; or any other equivalent coded concept;&#xD;&#xA;2. The IDMP Pharmaceutical Product Identifier (PhPID), Level 2 [Substance(s) + Strength + reference strength]. Example: Amoxicillin 875 mg and Clavulanate Potassium 125 mg; or any other equivalent coded concept;&#xD;&#xA;3. The IDMP Pharmaceutical Product Identifier (PhPID), Level 3 [Substance(s) + administrable dose form]. Example:  Amoxicillin and Clavulanate Potassium, Oral Tablet; or any other equivalent coded concept;&#xD;&#xA;4. The IDMP Pharmaceutical Product Identifier (PhPID), Level 4 [Substance(s) + strength + reference strength + administrable dose form]. Example: Amoxicillin 875 mg and clavulanate potassium 125 mg, oral tablet; or any other equivalent coded concept 5. The IDMP Medicinal Product Identifier (MPID) or any equivalent Medicinal Product Identifier. IDMP MPID uniquely identifies a Medicinal Product, reflecting (but not replacing) any other authorization numbers allocated by a regulator. MPID implies one (set of) PhPID. The MPID shall use a common segment pattern related to a Medicinal Product, which, when each segment is valued shall define a specific MPID concept.&#xD;&#xA;6. The IDMP Packaged Medicinal Product Identifier (PCID) or any equivalent Packaged Medicinal Product Identifier. Uniquely identifies a Medicinal Product based on its packaging. This implies one MPID can be associated with more than one PCID, if the same Medicinal Product has more than one type of package.&#xD;&#xA;7. Any other kind of code that that identifies, classifies or cluster the administered product (e.g. the medicinal product or the  product class)&#xD;&#xA;&#xD;&#xA;The value sets used for the PhPID, MPID and PCID identifiers are provisional and include only few equivalent concepts used for exemplification purposes, they will be updated with real IDMP identifiers when they will become available." />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="example" />
+        <description value="The type of medication" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/med-uv-ips" />
+      </binding>
+    </element>
+    <element id="Medication.code.coding">
+      <path value="Medication.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <description value="Discriminated by code system" />
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Medication.code.coding:atcClass">
+      <path value="Medication.code.coding" />
+      <sliceName value="atcClass" />
+      <short value="WHO ATC classification" />
+      <definition value="WHO ATC classification" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips" />
+      </binding>
+    </element>
+    <element id="Medication.code.coding:atcClass.system">
+      <path value="Medication.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://www.whocc.no/atc" />
+    </element>
+    <element id="Medication.form">
+      <path value="Medication.form" />
+      <definition value="Describes the form of the item.  Powder; tablets; capsule.&#xD;&#xA;&#xD;&#xA;Administrable Pharmaceutical Dose Form. &#xD;&#xA;This code represents the form of the medication (e.g. tablet, capsule, liquid)&#xD;&#xA;&#xD;&#xA;Since the EDQM Standards Terms, together with UCUM, is one of the IDMP terminologies actually available for usage, this code system has been selected  as referecne terminology for representing Pharmaceutical Dose forms;Pakages and Route of Administration.&#xD;&#xA;&#xD;&#xA;It is known that also alternative jurisdictional and international terminologies are known to be used for this concept domain, as NCI or SNOMED CT." />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform" />
+      </binding>
+    </element>
+    <element id="Medication.amount">
+      <path value="Medication.amount" />
+      <type>
+        <code value="Ratio" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Ratio-uv-ips" />
+      </type>
+    </element>
+    <element id="Medication.ingredient">
+      <path value="Medication.ingredient" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept">
+      <path value="Medication.ingredient.itemCodeableConcept" />
+      <sliceName value="itemCodeableConcept" />
+      <comment value="The IDMP ISO 11238 standard addresses the identification and exchange of regulated information on substances. &#xD;&#xA;The Global Ingredient Archival System (GInAS)  will provide a common global identifier for all of the substances used in medicinal products, providing a definition of substances globally consistent with this standard.&#xD;&#xA;Those identifiers however are yet available for concrete usage, therefore in this version of the template, SNOMED CT has been chosen as reference terminology also for the active substances.&#xD;&#xA;This choice will be revised based on the availability and the maturity of GInAS." />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <description value="SNOMED CT drug substances" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-active-substances-uv-ips" />
+      </binding>
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.text">
+      <path value="Medication.ingredient.itemCodeableConcept.text" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
 </StructureDefinition>
