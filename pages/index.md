@@ -62,7 +62,7 @@ Its tight focus on unplanned care is not a limitation, but, on the contrary, ena
 
 ## Purpose
 
-The goal of this Implementation Guide is to specify how to represent in HL7 FHIR the International Patient Summary (IPS). An alternative representation as templated HL7 CDA R2 is also available provided ( see the [hl7.org site](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=483) or [ART DECOR](https://art-decor.org/art-decor/decor-project--hl7ips-).
+The goal of this Implementation Guide is to specify how to represent in HL7 FHIR the International Patient Summary (IPS). An alternative representation as templated HL7 CDA R2 is also provided ( see the [hl7.org site](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=483) or [ART DECOR](https://art-decor.org/art-decor/decor-project--hl7ips-).
 The initial focus of the International Patient Summary (IPS) was the unplanned care across national borders. Starting from this focus, the specification is intended to be used and be useful in local applications and also to be supportive of planned care. 
 
 

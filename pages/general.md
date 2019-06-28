@@ -83,7 +83,7 @@ Even though it is recognized that there is not in all cultures the same concept 
 Moreover, due to the global scope of the International Patient Summary, the case of non-alphabetic representations of the names has also been considered.
 In this case, to facilitate the global use of the IPS, at least one alphabetic representation of the name SHALL be provided. 
 
-## Profiling approach (mustSupport)
+## Profiling approach
 
 By design, the IPS dataset is a "minimal and non-exhaustive patient summary dataset, specialty-agnostic, condition-independent, but readily usable by clinicians for the cross-border unscheduled care of a patient".
 
@@ -95,7 +95,16 @@ The second has been finally chosen for the following reasons:
 * facilitate the reuse of the IPS profiles in sibling use cases.
 * enable a progressive access to additional information beyond the minimal one, if available and relevant for the care provisioning.
 
-The items that are part of this minimal set have been marked with the mustSupport attribute.
+<!-- The items that are part of this minimal set have been marked with the mustSupport attribute. -->
+
+# Must Support
+In the context of the IPS, Must Support on any data element SHALL be interpreted as follows:
+* Implementers conforming to the IPS Implementation Guide, when creating IPS content
+  * SHALL be capable of including mustSupport data element if pertinent with the scope of that IPS.
+* Implementers conforming to the IPS Implementation Guide, when receiving IPS content
+  * SHOULD be capable of displaying the mustSupport data elements for human use, or processing (e.g. storing) them for other purposes.
+  * SHALL be able to process resource instances containing data elements asserting missing information.
+
 
 # Publishing or accessing the IPS
 As described also in the [IPS CDA implementation guide](http://international-patient-summary.net/mediawiki/index.php?title=IPS_implementationguide_1#Functional_requirements_and_high-level_use_cases) it is not in the scope of this version of this Implementation Guide to provide any indication about solutions and strategies for the creation, sharing, syntactical and semantic mapping, translation, and use of the IPS.

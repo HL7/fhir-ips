@@ -2,7 +2,7 @@
 {"code" : {
   "system" : "http://www.whocc.no/atc",
   "code" : "L02BG03"
-}, "valueSet" :null}####
+}, "valueSet" :null, "lang":"null"}####
 v: {
   "display" : "anastrozole",
   "severity" : null,
@@ -12,7 +12,7 @@ v: {
 {"code" : {
   "system" : "http://www.whocc.no/atc",
   "code" : "G02CX04"
-}, "valueSet" :null}####
+}, "valueSet" :null, "lang":"null"}####
 v: {
   "display" : "Cimicifugae rhizoma",
   "severity" : null,
@@ -21,9 +21,19 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
+  "code" : "J07CA02"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code \"J07CA02\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#J07CA02) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
   "code" : "L02BG03",
   "display" : "anastrozole"
-}, "valueSet" :null}####
+}, "valueSet" :null, "lang":"en-GB"}####
 v: {
   "display" : "anastrozole",
   "severity" : null,
@@ -41,7 +51,7 @@ v: {
       "system" : "http://www.whocc.no/atc"
     }]
   }
-}}####
+}, "lang":"en-GB"}####
 v: {
   "display" : "anastrozole",
   "severity" : null,
@@ -52,7 +62,7 @@ v: {
   "system" : "http://www.whocc.no/atc",
   "code" : "G02CX04",
   "display" : "Cimicifugae rhizoma"
-}, "valueSet" :null}####
+}, "valueSet" :null, "lang":"en-GB"}####
 v: {
   "display" : "Cimicifugae rhizoma",
   "severity" : null,
@@ -70,11 +80,32 @@ v: {
       "system" : "http://www.whocc.no/atc"
     }]
   }
-}}####
+}, "lang":"en-GB"}####
 v: {
   "display" : "Cimicifugae rhizoma",
   "severity" : null,
   "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "C10AA01",
+  "display" : "simvastatin"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code \"C10AA01\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#C10AA01) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "J07CA02"
+}, "valueSet" :null, "lang":"fr-LU"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code \"J07CA02\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#J07CA02) is not  valid in the value set All codes known to the system"
 }
 -------------------------------------------------------------------------------------
 {"hierarchical" : true, "valueSet" :{
@@ -89,8 +120,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:64876490-2d42-438b-b044-f06a7a0e5fb6",
-    "timestamp" : "2019-03-21T04:17:10.143Z",
+    "identifier" : "urn:uuid:d4d9e9bc-e1d4-4e2f-8934-e1cdabce22fb",
+    "timestamp" : "2019-06-26T12:36:57.136Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1467,37 +1498,5 @@ e: {
   }
 },
   "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "J07CA02"
-}, "valueSet" :null}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code \"J07CA02\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#J07CA02) is not  valid in the value set All codes known to the system"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "C10AA01",
-  "display" : "simvastatin"
-}, "valueSet" :null}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code \"C10AA01\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#C10AA01) is not  valid in the value set All codes known to the system"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "J07CA02",
-  "display" : "DIPHTERIE - COQUELUCHE - POLIOMYELITE - TETANOS"
-}, "valueSet" :null}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code \"J07CA02\" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#J07CA02) is not  valid in the value set All codes known to the system"
 }
 -------------------------------------------------------------------------------------
