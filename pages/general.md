@@ -15,10 +15,14 @@ active: guidance
 
 <p>
 With the formal agreement signed on April 2017, HL7 International and CEN/TC 251 expressed their intent to collaborate under a set of principles for the IPS.
+<!--
 <div class="image">
 <img src="assets/images/600px-IPS_principles.png" width="400" />
 <div>The IPS Principles</div>
 </div>
+-->
+
+{% include img-small.html img="600px-IPS_principles.png" caption="Figure 1: The IPS principles" %}
 
 The standards specification for the IPS will be (a) implementable (b) applicable for global use (c) extensible and open to future use cases and solutions. The standards specification and their implementation must be moreover sustainable. 
 See additional documentation in the <a href="http://international-patient-summary.net/mediawiki/index.php?title=IPS_implementationguide_1#General_Principles_for_this_Specification">IPS Wiki</a>.

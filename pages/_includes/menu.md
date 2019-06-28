@@ -7,14 +7,17 @@
     <li>
       <a href="general.html">General Principles and Design</a>
     </li>
-           <li>
+        <li>
           <a href="ipsStructure.html">The "IPS"</a>
         </li>
     <li class="dropdown">
       <a href="#" data-toggle="dropdown" class="dropdown-toggle">Artefacts</a>
       <ul class="dropdown-menu">
         <li>
-          <a href="StructureDefinition-Composition-uv-ips.html">IPS Composition</a>
+          <a href="StructureDefinition-Composition-uv-ips.html">The IPS Composition</a>
+        </li>
+            <li>
+          <a href="profiles.html">IPS library</a>
         </li>
         <li>
           <a href="datatypes.html">Datatypes</a>
@@ -25,9 +28,7 @@
           <li>
       <a href="terminology.html">Terminology</a>
     </li>  
-    <li>
-          <a href="profiles.html">All profiles</a>
-        </li>
+
       </ul>
     </li>
         <li>

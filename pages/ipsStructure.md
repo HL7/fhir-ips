@@ -24,6 +24,8 @@ The IPS is composed by the following sections described below.
 <p></p>
 </div>
 
+{% include img-portrait-med.html img="IPS_composition.png" caption="Figure 1: The IPS Composition" %}
+
 # Sections description
 
 ## Medication Summary

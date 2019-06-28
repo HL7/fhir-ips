@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../__FHIRr4Tools/R4_fhir-all-xsd/structuredefinition.xsd">
+<StructureDefinition xmlns="http://hl7.org/fhir">
 	<id value="Composition-uv-ips"/>
 	<text>
 		<status value="generated"/>
@@ -917,9 +917,23 @@
 			</slicing>
 			<short value="Relevant observation results collected on the patient or produced on in-vitro biologic specimens collected from the patient."/>
 			<definition value="Relevant observation results collected on the patient or produced on in-vitro biologic specimens collected from the patient. Some of these results may be laboratory results, others may be anatomic pathology results, others, radiology results, and others, clinical results."/>
+			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
 		<!--
+		<element id="Composition.section:sectionResults.entry:observationResult">
+			<path value="Composition.section.entry"/>
+			<sliceName value="observationResult"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-imaging-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pathology-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+-->
 		<element id="Composition.section:sectionResults.entry:genericResult">
 			<path value="Composition.section.entry"/>
 			<sliceName value="genericResult"/>
@@ -929,7 +943,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
--->
 		<element id="Composition.section:sectionResults.entry:laboratoryResult">
 			<path value="Composition.section.entry"/>
 			<sliceName value="laboratoryResult"/>
@@ -939,29 +952,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<!--
-		<element id="Composition.section:sectionResults.entry:laboratoryResult.reference">
-			<path value="Composition.section.entry.reference"/>
-			<min value="1"/>
-			<mustSupport value="true"/>
-		</element>
--->
-		<element id="Composition.section:sectionResults.entry:imagingResult">
-			<path value="Composition.section.entry"/>
-			<sliceName value="imagingResult"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-imaging-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<!--
-		<element id="Composition.section:sectionResults.entry:imagingResult.reference">
-			<path value="Composition.section.entry.reference"/>
-			<min value="1"/>
-			<mustSupport value="true"/>
-		</element>
--->
 		<element id="Composition.section:sectionResults.entry:pathologyResult">
 			<path value="Composition.section.entry"/>
 			<sliceName value="pathologyResult"/>
@@ -971,13 +961,15 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<!--
-		<element id="Composition.section:sectionResults.entry:pathologyResult.reference">
-			<path value="Composition.section.entry.reference"/>
-			<min value="1"/>
+		<element id="Composition.section:sectionResults.entry:imagingResult">
+			<path value="Composition.section.entry"/>
+			<sliceName value="imagingResult"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-imaging-uv-ips"/>
+			</type>
 			<mustSupport value="true"/>
 		</element>
-		-->
 		<element id="Composition.section:sectionResults.entry:diagnosticReport">
 			<path value="Composition.section.entry"/>
 			<sliceName value="diagnosticReport"/>
