@@ -9,7 +9,7 @@
 		<div xmlns="http://www.w3.org/1999/xhtml">This profile represents the constraints applied to the MedicationStatement resource by the International Patient Summary (IPS) FHIR Implementation Guide.</div>
 	</text>
 	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"/>
-	<name value="MedicationStatement_uv_ips"/>
+	<name value="MedicationStatementIPS"/>
 	<title value="Medication Statement (IPS)"/>
 	<status value="draft"/>
 	<date value="2018-02-14T22:57:06.512+01:00"/>
@@ -45,6 +45,7 @@
 		</element>
 		<element id="MedicationStatement.medication[x]">
 			<path value="MedicationStatement.medication[x]"/>
+			<!--
 			<slicing>
 				<discriminator>
 					<type value="type"/>
@@ -52,11 +53,32 @@
 				</discriminator>
 				<rules value="closed"/>
 			</slicing>
+-->
 			<definition value="Identifies the medication being administered or the reason for absent or unknown Medication. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code. To improve global interoperability is strongly encouraged that the reference to a medication resource is used, limiting the usage of the medicationCodeableConcept only to the cases in which no other information than a simple code is available."/>
+			<!--
 			<min value="1"/>
 			<max value="1"/>
+-->
+			<!--======= new begin ======= -->
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"/>
+			</type>
+			<!-- ======= new end ======= -->
 			<mustSupport value="true"/>
+			<!--======= new begin ======= -->
+			<binding>
+				<strength value="preferred"/>
+				<description value="Representation of unknown or absent medications"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips"/>
+			</binding>
+			<!-- ======= new end ======= -->
 		</element>
+		<!--
 		<element id="MedicationStatement.medicationReference">
 			<path value="MedicationStatement.medicationReference"/>
 			<sliceName value="medicationReference"/>
@@ -109,6 +131,7 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips"/>
 			</binding>
 		</element>
+	-->
 		<element id="MedicationStatement.effective[x]">
 			<path value="MedicationStatement.effective[x]"/>
 			<min value="1"/>
@@ -126,6 +149,32 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--======= new begin ======= 
+			= added to try to overcome to resolve the unable to rsolve the slice issue, but when added the 
+			= error "minimum required = 1, but only found 0" occurs again (known problem with polymorphic elements)
+			= Commented for the time being 
+
+		<element id="MedicationStatement.effectiveDateTime">
+			<path value="MedicationStatement.effectiveDateTime"/>
+			<sliceName value="effectiveDateTime"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="dateTime"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="MedicationStatement.effectivePeriod">
+			<path value="MedicationStatement.effectivePeriod"/>
+			<sliceName value="effectivePeriod"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Period"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		======= new end ======= -->
 		<element id="MedicationStatement.subject">
 			<path value="MedicationStatement.subject"/>
 			<type>
