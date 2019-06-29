@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir" >
+<StructureDefinition xmlns="http://hl7.org/fhir">
 	<id value="Patient-uv-ips"/>
 	<text>
 		<status value="generated"/>
@@ -24,17 +24,24 @@
 		<element id="Patient.name">
 			<path value="Patient.name"/>
 			<requirements value="Need to be able to track the patient by multiple names. Examples are your official name and a partner name.&#xD;&#xA;The Alphabetic representation of the name SHALL be always provided"/>
+			<constraint>
+				<key value="ips-pat-1"/>
+				<severity value="error"/>
+				<human value="Patient.name.given  or Patient.name.family or both SHALL be present"/>
+				<expression value="family.exists() or given.exists()"/>
+				<xpath value="f:given or f:family"/>
+			</constraint>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Patient.name.family">
 			<path value="Patient.name.family"/>
-			<min value="1"/>
+			<min value="0"/>
+			<max value="1"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Patient.name.given">
 			<path value="Patient.name.given"/>
-			<min value="1"/>
-			<max value="1"/>
+			<min value="0"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Patient.telecom">

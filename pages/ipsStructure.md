@@ -18,13 +18,15 @@ active: ipsstructure
 
 The IPS is composed by the following sections described below.
 
+<!--
 <div class="image">
 <img src="assets/images/IPS_composition.png" width="400" />
 <div>The IPS Composition</div>
 <p></p>
 </div>
+-->
 
-{% include img-portrait-med.html img="IPS_composition.png" caption="Figure 1: The IPS Composition" %}
+{% include img-narrow.html img="IPS_composition.png" caption="Figure 1: The IPS Composition" %}
 
 # Sections description
 

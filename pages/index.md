@@ -39,6 +39,12 @@ These are the site variables defined [here](http://wiki.hl7.org/index.php?title=
 - genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -  {% raw %} {{site.data.fhir.genDate}} {% endraw %} = {{site.data.fhir.genDate}}
 -->
 
+  <blockquote class="stu-note">
+<p>Note for balloters</p>
+<p><i>Add here some texts</i> </p>
+</blockquote>
+
+
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
 <!-- * Do not remove this line (it will not be displayed) -->
