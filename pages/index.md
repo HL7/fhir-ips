@@ -39,9 +39,15 @@ These are the site variables defined [here](http://wiki.hl7.org/index.php?title=
 - genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -  {% raw %} {{site.data.fhir.genDate}} {% endraw %} = {{site.data.fhir.genDate}}
 -->
 
-  <blockquote class="stu-note">
-<p>Note for balloters</p>
-<p><i>Add here some texts</i> </p>
+<blockquote class="stu-note">
+<p><b>Note for balloters</b></p>
+<p>Balloters are invited to focus their attention on the parts that have been changed since last ballot, that can be roughly summarized into:</p>
+<ul class="stu-note">
+<li>Scope slightly revised, extended beyond the cross border case.</li>
+<li>Better alignment with jurisdictional requirements / profiles (e.g.Argonaut/US Core).</li>
+<li>Harmonization with the latest changes of the EN 17269 IPS dataset.</li>
+ </ul>
+<p> Dedicated "note for balloters" have been added in this Implementation Guide to focus the attention of the balloters to specific issues/topics</p>
 </blockquote>
 
 

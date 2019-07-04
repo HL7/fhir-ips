@@ -77,52 +77,44 @@ The second has been finally chosen for the following reasons:
 # Must Support
 In the context of the IPS, Must Support on any data element SHALL be interpreted as follows:
 * Implementers conforming to the IPS Implementation Guide, when creating IPS content
-  * SHALL be capable of including mustSupport data element.
+  * SHALL be capable of including mustSupport data elements.
 * Implementers conforming to the IPS Implementation Guide, when receiving IPS content
-  * SHALL be capable of processing resource instances containing the mustSupport data elements without generating an error or causing the application to fail.
-  * SHOULD be capable of displaying the mustSupport data elements for human use, or processing (e.g. storing) them for other purposes.
-  * SHALL be able to process resource instances containing data elements asserting missing information.
+  * SHALL be capable of processing resource instances containing  mustSupport data elements without generating an error or causing the application to fail.
+  * SHOULD be capable of displaying mustSupport data elements for human use, or processing (e.g. storing) them for other purposes.
+  * SHALL be able to process resource instances containing mustSupport data elements asserting missing information.
 
-# Missing Data
-<p>If an IPS creator (a system generating the IPS contents) does not have data for an optional mustSupport data element, the data element is omitted. The same applies for data not pertinent with the scope of the IPS.</p> 
-<p>If an IPS creator does not have data for a required data element (in other words, where the minimum cardinality is > 0), the reason for the absence has to be specified as follows:</p>
+## Missing Data
+{:.no_toc}
 
-1.  For *non-coded* data elements, use the [DataAbsentReason Extension] in the data type
-  - Use the code `unsupported` - The source system wasn't capable of supporting this element.
+<b>Optional mustSupport data elements</b>
+<p>If an IPS creator (a system generating the IPS contents) does not have data to be included in the IPS, the data element is omitted.</p>
+<p>Note: an IPS creator may have no data to be included in the IPS either because there are no data; either beacuse data available are not pertinent with the scope of the IPS.</p>
 
+<b>Required mustSupport data elements</b>
+<p>If an IPS creator does not have data to be included in the IPS, the reason for the absence has to be specified as follows:</p>
 
-  <blockquote class="stu-note">
-<p>Note: not clear why it shall be always unsupported (e.g. also when unknown) </p>
-<p>To be discussed by the IPS team</p>
-</blockquote>
+1.  For *non-coded* data elements, use the [DataAbsentReason Extension] in the data type.
 
-    Example: Patient resource where the patient name is not available.
+    Example: Patient resource where the patient birthDate is not known.
 
     ~~~
     {
       "resourceType" : "Patient",
            ...
-           "name":[
+           "birthDate":[
              "extension" : [
              "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-             "valueCode" : "unsupported"
-              }]
+             "valueCode" : "unknown"
               ]
-            "telecom" :
-            ...
+            ]
          }
     ~~~
 
 1. For *coded* data elements:
    - *example*, *preferred*, or *extensible* binding strengths (CodeableConcept datatypes):
       - if the source systems has text but no coded data, only the text element is used.
-      - if there is neither text or coded data:
-        - use the appropriate "unknown" concept code from the value set if available
-        - use `unknown` from the [DataAbsentReason Code System] if the value set does not have the appropriate concept.
+      - if there is neither text or codes representing actual (i.e non-exceptional) concepts:
+        - use the appropriate exceptional concept code from the value set if available
+        - use the appropriate concept code from the [DataAbsentReason Code System] if the value set does not have it.
    - *required* binding strength (CodeableConcept or code datatypes):
-      - use the appropriate "known absent/unknown" concept code from the value set if available
-      - For the data elements where no appropriate "known absent/unknown" concept code is available, therefore the element must be populated:
-
-  <blockquote class="stu-note">
-<p>Last item to be discussed by the IPS team</p>
-</blockquote>
+      - use the appropriate exceptional concept code from the value set
