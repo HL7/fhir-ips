@@ -23,6 +23,8 @@
 		</element>
 		<element id="Patient.name">
 			<path value="Patient.name"/>
+			<min value="1"/>
+			<max value="*"/>			
 			<requirements value="Need to be able to track the patient by multiple names. Examples are your official name and a partner name.&#xD;&#xA;The Alphabetic representation of the name SHALL be always provided"/>
 			<constraint>
 				<key value="ips-pat-1"/>
