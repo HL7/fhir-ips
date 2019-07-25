@@ -144,9 +144,8 @@
 			<path value="Observation.performer.reference"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Observation.valueString:valueString">
+		<element id="Observation.valueString">
 			<path value="Observation.valueString"/>
-			<sliceName value="valueString"/>
 			<label value="Overall Conclusion"/>
 			<type>
 				<code value="string"/>
@@ -213,13 +212,19 @@
 				<human value="component and hasMember are mutually exclusive"/>
 				<expression value="has-member.empty() or component.empty()"/>
 			</constraint>
+			<constraint>
+					<key value="hasComponentifValueStringEmpty"/>
+					<severity value="error"/>
+					<human value="component is required if valueString is empty"/>
+					<expression value="(component.exists() and valueString.empty()) or valueString.exists()"/>
+			</constraint>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component:observationText">
 			<path value="Observation.component"/>
 			<sliceName value="observationText"/>
 			<short value="Observation Text"/>
-			<max value="1"/>
+			<!-- <max value="1"/> -->
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component:observationText.code">
@@ -233,9 +238,9 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-txtobs-code-uv-ips"/>
 			</binding>
 		</element>
-		<element id="Observation.component:observationText.valueString:valueString">
+		<element id="Observation.component:observationText.valueString">
 			<path value="Observation.component.valueString"/>
-			<sliceName value="valueString"/>
+			<min value="1"/>
 			<type>
 				<code value="string"/>
 			</type>
@@ -245,7 +250,7 @@
 			<path value="Observation.component"/>
 			<sliceName value="observationCode"/>
 			<short value="Observation Code"/>
-			<max value="1"/>
+			<!-- <max value="1"/> -->
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component:observationCode.code">
@@ -256,9 +261,8 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips"/>
 			</binding>
 		</element>
-		<element id="Observation.component:observationCode.valueCodeableConcept:valueCodeableConcept">
+		<element id="Observation.component:observationCode.valueCodeableConcept">
 			<path value="Observation.component.valueCodeableConcept"/>
-			<sliceName value="valueCodeableConcept"/>
 			<min value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
@@ -285,6 +289,7 @@
 		</element>
 		<element id="Observation.component:numericMeasurement.value[x]">
 			<path value="Observation.component.value[x]"/>
+			<min value="1"/>
 			<type>
 				<code value="Quantity"/>
 			</type>
