@@ -65,6 +65,7 @@
         <rules value="open" />
       </slicing>
       <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="Medication.code.coding:atcClass">
       <path value="Medication.code.coding" />
@@ -72,6 +73,7 @@
       <short value="WHO ATC classification" />
       <definition value="WHO ATC classification" />
       <max value="1" />
+      <mustSupport value="true" />
       <binding>
         <strength value="required" />
         <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips" />
@@ -81,6 +83,7 @@
       <path value="Medication.code.coding.system" />
       <min value="1" />
       <fixedUri value="http://www.whocc.no/atc" />
+      <mustSupport value="true" />
     </element>
     <element id="Medication.form">
       <path value="Medication.form" />
@@ -101,6 +104,7 @@
         <code value="Ratio" />
         <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Ratio-uv-ips" />
       </type>
+      <mustSupport value="true" />
     </element>
     <element id="Medication.ingredient">
       <path value="Medication.ingredient" />

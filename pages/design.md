@@ -75,7 +75,7 @@ The second has been finally chosen for the following reasons:
 <!-- The items that are part of this minimal set have been marked with the mustSupport attribute. -->
 
 # Must Support
-In the context of the IPS, Must Support on any data element SHALL be interpreted as follows:
+In the context of the IPS, mustSupport on any data element SHALL be interpreted as follows:
 * Implementers conforming to the IPS Implementation Guide, when creating IPS content
   * SHALL be capable of including mustSupport data elements.
 * Implementers conforming to the IPS Implementation Guide, when receiving IPS content
