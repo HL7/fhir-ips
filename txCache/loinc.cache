@@ -71,6 +71,16 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://loinc.org",
+  "code" : "8716-3"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Vital signs",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
   "code" : "11348-0"
 }, "valueSet" :null, "lang":"null"}####
 v: {
@@ -134,7 +144,7 @@ v: {
   "code" : "72166-2"
 }, "valueSet" :null, "lang":"null"}####
 v: {
-  "display" : "Tobacco smoking status NHIS",
+  "display" : "Tobacco smoking status",
   "severity" : null,
   "error" : ""
 }
@@ -275,6 +285,62 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "75326-9",
+    "display" : "Problem"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "75326-9",
+        "display" : "Problem"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Problem",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "LA6751-7",
+    "display" : "Moderate"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA6752-5",
+        "display" : "Mild"
+      },
+      {
+        "code" : "LA6751-7",
+        "display" : "Moderate"
+      },
+      {
+        "code" : "LA6750-9",
+        "display" : "Severe"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Moderate",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
   "system" : "http://loinc.org",
   "code" : "11450-4",
   "display" : "Problem list Reported"
@@ -303,6 +369,38 @@ v: {
 }, "valueSet" :null, "lang":"en-GB"}####
 v: {
   "display" : "Allergies and adverse reactions Document",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "LA6750-9",
+    "display" : "Severe"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA6752-5",
+        "display" : "Mild"
+      },
+      {
+        "code" : "LA6751-7",
+        "display" : "Moderate"
+      },
+      {
+        "code" : "LA6750-9",
+        "display" : "Severe"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Severe",
   "severity" : null,
   "error" : ""
 }
@@ -844,15 +942,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:219e69d3-36d9-4993-8722-89cfb65db4be",
-    "timestamp" : "2019-06-26T12:28:03.214Z",
+    "identifier" : "urn:uuid:99efc284-b11d-438b-b50b-c116011236b3",
+    "timestamp" : "2019-07-29T22:59:56.223Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://loinc.org?version=2.65"
+      "valueString" : "http://loinc.org?version=2.66"
     }],
     "contains" : [{
       "system" : "http://loinc.org",
@@ -894,8 +992,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:8726036c-57c9-49ac-94d7-1bf4c7f2e9ae",
-    "timestamp" : "2019-06-26T12:28:05.901Z",
+    "identifier" : "urn:uuid:5a1ca67f-8fdf-46b2-98b5-6e928ce97197",
+    "timestamp" : "2019-07-29T22:59:56.926Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -906,7 +1004,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://loinc.org?version=2.65"
+      "valueString" : "http://loinc.org?version=2.66"
     }],
     "contains" : [{
       "system" : "http://loinc.org",
@@ -947,15 +1045,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:af9f6977-f5d0-4083-9cd0-6a58fdff6f4f",
-    "timestamp" : "2019-06-26T12:31:15.401Z",
+    "identifier" : "urn:uuid:d5f15b5f-c297-4509-8c23-c55fabff457b",
+    "timestamp" : "2019-07-29T23:02:10.301Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://loinc.org?version=2.65"
+      "valueString" : "http://loinc.org?version=2.66"
     }],
     "contains" : [{
       "system" : "http://loinc.org",
@@ -1053,15 +1151,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:a922a96f-2a09-4e47-b4dc-7d0ff078e9c0",
-    "timestamp" : "2019-06-26T12:31:24.542Z",
+    "identifier" : "urn:uuid:4ccf91cc-b44c-4f6d-8101-7b7d62725e05",
+    "timestamp" : "2019-07-29T23:02:12.551Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://loinc.org?version=2.65"
+      "valueString" : "http://loinc.org?version=2.66"
     }],
     "contains" : [{
       "system" : "http://loinc.org",
@@ -1132,15 +1230,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:aad026d7-5bff-44bf-813f-dcc7d14aa5ce",
-    "timestamp" : "2019-06-26T12:31:25.042Z",
+    "identifier" : "urn:uuid:9794fa12-7528-4e03-b2e3-7875454d259c",
+    "timestamp" : "2019-07-29T23:02:12.817Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://loinc.org?version=2.65"
+      "valueString" : "http://loinc.org?version=2.66"
     }],
     "contains" : [{
       "system" : "http://loinc.org",
@@ -1183,15 +1281,15 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:35aeec96-95e2-41c7-8d3a-cd34ae62f2de",
-    "timestamp" : "2019-06-26T12:31:25.964Z",
+    "identifier" : "urn:uuid:4223db17-d705-4573-90aa-6c1423495db1",
+    "timestamp" : "2019-07-29T23:02:13.113Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://loinc.org?version=2.65"
+      "valueString" : "http://loinc.org?version=2.66"
     }],
     "contains" : [{
       "system" : "http://loinc.org",
@@ -1341,7 +1439,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "24559-7",
-      "display" : "US Guidance for drainage of Abdomen"
+      "display" : "US Guidance for drainage and placement of drainage catheter of Abdomen"
     },
     {
       "system" : "http://loinc.org",
@@ -1631,7 +1729,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "24621-5",
-      "display" : "RF Guidance for percutaneous drainage of Unspecified body region"
+      "display" : "RF Guidance for percutaneous drainage and placement of drainage catheter of Unspecified body region"
     },
     {
       "system" : "http://loinc.org",
@@ -1981,7 +2079,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "24692-6",
-      "display" : "US Guidance for drainage of Extremity"
+      "display" : "US Guidance for drainage and placement of drainage catheter of Extremity"
     },
     {
       "system" : "http://loinc.org",
@@ -2306,7 +2404,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "24771-8",
-      "display" : "RF Guidance for fluid aspiration of Joint space"
+      "display" : "RF Guidance for arthrocentesis of Joint space"
     },
     {
       "system" : "http://loinc.org",
@@ -2355,11 +2453,6 @@ e: {
     },
     {
       "system" : "http://loinc.org",
-      "code" : "24788-2",
-      "display" : "XR Kidney - bilateral Views W contrast IV"
-    },
-    {
-      "system" : "http://loinc.org",
       "code" : "24781-7",
       "display" : "RF Guidance for exchange of nephrostomy tube of Kidney - bilateral-- W contrast"
     },
@@ -2372,11 +2465,6 @@ e: {
       "system" : "http://loinc.org",
       "code" : "24783-3",
       "display" : "RF Kidney - bilateral Views for urodynamics"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "24789-0",
-      "display" : "XR tomography Kidney - bilateral"
     },
     {
       "system" : "http://loinc.org",
@@ -2397,6 +2485,16 @@ e: {
       "system" : "http://loinc.org",
       "code" : "24787-4",
       "display" : "XR tomography Kidney - bilateral WO contrast and 10M post contrast IV"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "24788-2",
+      "display" : "XR Kidney - bilateral Views W contrast IV"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "24789-0",
+      "display" : "XR tomography Kidney - bilateral"
     },
     {
       "system" : "http://loinc.org",
@@ -2585,11 +2683,6 @@ e: {
     },
     {
       "system" : "http://loinc.org",
-      "code" : "24837-7",
-      "display" : "CT Guidance for fluid aspiration of Neck"
-    },
-    {
-      "system" : "http://loinc.org",
       "code" : "24828-6",
       "display" : "XR tomography Mandible Panoramic"
     },
@@ -2610,11 +2703,6 @@ e: {
     },
     {
       "system" : "http://loinc.org",
-      "code" : "24836-9",
-      "display" : "CT Nasopharynx and Neck W contrast IV"
-    },
-    {
-      "system" : "http://loinc.org",
       "code" : "24832-8",
       "display" : "RFA Guidance for angioplasty of Mesenteric artery-- W contrast IA"
     },
@@ -2632,6 +2720,16 @@ e: {
       "system" : "http://loinc.org",
       "code" : "24835-1",
       "display" : "CT Nasopharynx and Neck"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "24836-9",
+      "display" : "CT Nasopharynx and Neck W contrast IV"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "24837-7",
+      "display" : "CT Guidance for fluid aspiration of Neck"
     },
     {
       "system" : "http://loinc.org",
@@ -2776,7 +2874,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "24868-2",
-      "display" : "US Guidance for drainage of Pelvis"
+      "display" : "US Guidance for drainage and placement of drainage catheter of Pelvis"
     },
     {
       "system" : "http://loinc.org",
@@ -2815,11 +2913,6 @@ e: {
     },
     {
       "system" : "http://loinc.org",
-      "code" : "24880-7",
-      "display" : "MR Pituitary and Sella turcica"
-    },
-    {
-      "system" : "http://loinc.org",
       "code" : "24876-5",
       "display" : "NM Head to Pelvis Views for shunt patency W Tc-99m DTPA IT"
     },
@@ -2837,6 +2930,11 @@ e: {
       "system" : "http://loinc.org",
       "code" : "24879-9",
       "display" : "MR Pituitary and Sella turcica WO and W contrast IV"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "24880-7",
+      "display" : "MR Pituitary and Sella turcica"
     },
     {
       "system" : "http://loinc.org",
@@ -2911,7 +3009,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "24896-3",
-      "display" : "US Guidance for drainage of Kidney"
+      "display" : "US Guidance for drainage and placement of drainage catheter of Kidney"
     },
     {
       "system" : "http://loinc.org",
@@ -3216,7 +3314,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "24973-0",
-      "display" : "RF Guidance for fluid aspiration of Spine.lumbar space"
+      "display" : "RF Guidance for fluid aspiration of Lumbar spine space"
     },
     {
       "system" : "http://loinc.org",
@@ -3750,11 +3848,6 @@ e: {
     },
     {
       "system" : "http://loinc.org",
-      "code" : "26087-7",
-      "display" : "XR Knee - right Views W standing"
-    },
-    {
-      "system" : "http://loinc.org",
       "code" : "26067-9",
       "display" : "RF Salivary gland - bilateral Views W contrast intra salivary duct"
     },
@@ -3852,6 +3945,11 @@ e: {
       "system" : "http://loinc.org",
       "code" : "26086-9",
       "display" : "XR Knee - left Views W standing"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "26087-7",
+      "display" : "XR Knee - right Views W standing"
     },
     {
       "system" : "http://loinc.org",
@@ -4320,16 +4418,6 @@ e: {
     },
     {
       "system" : "http://loinc.org",
-      "code" : "26184-2",
-      "display" : "CT Extremity - bilateral W contrast IV"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "26185-9",
-      "display" : "CT Extremity - left W contrast IV"
-    },
-    {
-      "system" : "http://loinc.org",
       "code" : "26181-8",
       "display" : "MRA Thoracic inlet vessels - bilateral W contrast IV"
     },
@@ -4342,6 +4430,16 @@ e: {
       "system" : "http://loinc.org",
       "code" : "26183-4",
       "display" : "MRA Thoracic inlet vessels - right W contrast IV"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "26184-2",
+      "display" : "CT Extremity - bilateral W contrast IV"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "26185-9",
+      "display" : "CT Extremity - left W contrast IV"
     },
     {
       "system" : "http://loinc.org",
@@ -4405,16 +4503,6 @@ e: {
     },
     {
       "system" : "http://loinc.org",
-      "code" : "26215-4",
-      "display" : "US Breast - left"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "26216-2",
-      "display" : "US Breast - right"
-    },
-    {
-      "system" : "http://loinc.org",
       "code" : "26198-2",
       "display" : "MR Thigh - right WO and W contrast IV"
     },
@@ -4427,11 +4515,6 @@ e: {
       "system" : "http://loinc.org",
       "code" : "26200-6",
       "display" : "MR Knee - left WO and W contrast IV"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "26217-0",
-      "display" : "US Carotid arteries - bilateral"
     },
     {
       "system" : "http://loinc.org",
@@ -4462,11 +4545,6 @@ e: {
       "system" : "http://loinc.org",
       "code" : "26206-3",
       "display" : "MR Wrist - left WO and W contrast IV"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "26218-8",
-      "display" : "US Carotid arteries - left"
     },
     {
       "system" : "http://loinc.org",
@@ -4507,6 +4585,26 @@ e: {
       "system" : "http://loinc.org",
       "code" : "26214-7",
       "display" : "US Breast - bilateral"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "26215-4",
+      "display" : "US Breast - left"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "26216-2",
+      "display" : "US Breast - right"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "26217-0",
+      "display" : "US Carotid arteries - bilateral"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "26218-8",
+      "display" : "US Carotid arteries - left"
     },
     {
       "system" : "http://loinc.org",
@@ -4900,11 +4998,6 @@ e: {
     },
     {
       "system" : "http://loinc.org",
-      "code" : "26319-4",
-      "display" : "CT Guidance for injection of Sacroiliac joint - bilateral"
-    },
-    {
-      "system" : "http://loinc.org",
       "code" : "26297-2",
       "display" : "RFA Guidance for reposition of CV catheter in Vein - right-- W contrast IV"
     },
@@ -4917,11 +5010,6 @@ e: {
       "system" : "http://loinc.org",
       "code" : "26299-8",
       "display" : "RFA Guidance for atherectomy of Vein - left-- W contrast IV"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "26320-2",
-      "display" : "CT Guidance for injection of Sacroiliac joint - left"
     },
     {
       "system" : "http://loinc.org",
@@ -4952,16 +5040,6 @@ e: {
       "system" : "http://loinc.org",
       "code" : "26305-3",
       "display" : "RFA Guidance for placement of peripherally-inserted central venous catheter in Vein - left"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "26317-8",
-      "display" : "MG Guidance for needle localization of mass of Breast - right"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "26318-6",
-      "display" : "US Guidance for needle localization of Breast - right"
     },
     {
       "system" : "http://loinc.org",
@@ -5020,6 +5098,26 @@ e: {
     },
     {
       "system" : "http://loinc.org",
+      "code" : "26317-8",
+      "display" : "MG Guidance for needle localization of mass of Breast - right"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "26318-6",
+      "display" : "US Guidance for needle localization of Breast - right"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "26319-4",
+      "display" : "CT Guidance for injection of Sacroiliac joint - bilateral"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "26320-2",
+      "display" : "CT Guidance for injection of Sacroiliac joint - left"
+    },
+    {
+      "system" : "http://loinc.org",
       "code" : "26321-0",
       "display" : "CT Guidance for injection of Sacroiliac joint - right"
     },
@@ -5041,32 +5139,32 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "26325-1",
-      "display" : "US Guidance for drainage of Extremity - bilateral"
+      "display" : "US Guidance for drainage and placement of drainage catheter of Extremity - bilateral"
     },
     {
       "system" : "http://loinc.org",
       "code" : "26326-9",
-      "display" : "US Guidance for drainage of Extremity - left"
+      "display" : "US Guidance for drainage and placement of drainage catheter of Extremity - left"
     },
     {
       "system" : "http://loinc.org",
       "code" : "26327-7",
-      "display" : "US Guidance for drainage of Extremity - right"
+      "display" : "US Guidance for drainage and placement of drainage catheter of Extremity - right"
     },
     {
       "system" : "http://loinc.org",
       "code" : "26328-5",
-      "display" : "US Guidance for drainage of Kidney - bilateral"
+      "display" : "US Guidance for drainage and placement of drainage catheter of Kidney - bilateral"
     },
     {
       "system" : "http://loinc.org",
       "code" : "26329-3",
-      "display" : "US Guidance for drainage of Kidney - left"
+      "display" : "US Guidance for drainage and placement of drainage catheter of Kidney - left"
     },
     {
       "system" : "http://loinc.org",
       "code" : "26330-1",
-      "display" : "US Guidance for drainage of Kidney - right"
+      "display" : "US Guidance for drainage and placement of drainage catheter of Kidney - right"
     },
     {
       "system" : "http://loinc.org",
@@ -5466,7 +5564,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "30578-9",
-      "display" : "CT Guidance for drainage of abscess of Unspecified body region"
+      "display" : "CT Guidance for drainage of abscess and placement of drainage catheter of Unspecified body region"
     },
     {
       "system" : "http://loinc.org",
@@ -5805,11 +5903,6 @@ e: {
     },
     {
       "system" : "http://loinc.org",
-      "code" : "30653-0",
-      "display" : "US Guidance for aspiration of cyst of Breast"
-    },
-    {
-      "system" : "http://loinc.org",
       "code" : "30646-4",
       "display" : "RF Guidance for change of tube in Sinus tract-- W contrast"
     },
@@ -5822,11 +5915,6 @@ e: {
       "system" : "http://loinc.org",
       "code" : "30648-0",
       "display" : "RFA Peripheral artery Views for angioplasty W contrast IA"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "30662-1",
-      "display" : "MR Sinuses WO contrast"
     },
     {
       "system" : "http://loinc.org",
@@ -5847,6 +5935,11 @@ e: {
       "system" : "http://loinc.org",
       "code" : "30652-2",
       "display" : "US Guidance for fine needle biopsy of Breast"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "30653-0",
+      "display" : "US Guidance for aspiration of cyst of Breast"
     },
     {
       "system" : "http://loinc.org",
@@ -5887,6 +5980,11 @@ e: {
       "system" : "http://loinc.org",
       "code" : "30661-3",
       "display" : "MR Orbit - bilateral WO contrast"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "30662-1",
+      "display" : "MR Sinuses WO contrast"
     },
     {
       "system" : "http://loinc.org",
@@ -6071,7 +6169,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "30699-3",
-      "display" : "US Guidance for drainage of Unspecified body region"
+      "display" : "US Guidance for drainage and placement of drainage catheter of Unspecified body region"
     },
     {
       "system" : "http://loinc.org",
@@ -6117,16 +6215,6 @@ e: {
       "system" : "http://loinc.org",
       "code" : "30710-8",
       "display" : "US Upper extremity"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "30731-4",
-      "display" : "Portable XR Zygomatic arch Views"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "30732-2",
-      "display" : "Deprecated Chest X-ray R-oblique & L-oblique upright"
     },
     {
       "system" : "http://loinc.org",
@@ -6192,6 +6280,16 @@ e: {
       "system" : "http://loinc.org",
       "code" : "30723-1",
       "display" : "Portable XR Skull Views"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "30724-9",
+      "display" : "Portable XR Cervical spine Single view"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "30725-6",
+      "display" : "XR Cervical spine AP"
     }]
   }
 },
@@ -6224,15 +6322,15 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:b2a70144-96bf-46fe-8cac-d91272bb5f41",
-    "timestamp" : "2019-06-26T12:31:27.073Z",
+    "identifier" : "urn:uuid:8c18efff-3e53-4519-9e13-a2c437fd90df",
+    "timestamp" : "2019-07-29T23:02:13.785Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://loinc.org?version=2.65"
+      "valueString" : "http://loinc.org?version=2.66"
     }],
     "contains" : [{
       "system" : "http://loinc.org",
@@ -7652,7 +7750,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "10547-8",
-      "display" : "Primidone+Phenobarbital [Mass/volume] in Serum or Plasma"
+      "display" : "Primidone+PHENobarbital [Mass/volume] in Serum or Plasma"
     },
     {
       "system" : "http://loinc.org",
@@ -9107,7 +9205,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "10841-5",
-      "display" : "Methazolamide [Mass/volume] in Serum or Plasma"
+      "display" : "methazolAMIDE [Mass/volume] in Serum or Plasma"
     },
     {
       "system" : "http://loinc.org",
@@ -9342,7 +9440,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "10895-1",
-      "display" : "Clostridium difficile toxin B [Presence] in Stool"
+      "display" : "Clostridioides difficile toxin B [Presence] in Stool"
     },
     {
       "system" : "http://loinc.org",
@@ -9782,7 +9880,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "10977-7",
-      "display" : "Alprazolam [Mass/volume] in Blood"
+      "display" : "ALPRAZolam [Mass/volume] in Blood"
     },
     {
       "system" : "http://loinc.org",
@@ -9807,7 +9905,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "10981-9",
-      "display" : "Clonidine [Mass/volume] in Urine"
+      "display" : "cloNIDine [Mass/volume] in Urine"
     },
     {
       "system" : "http://loinc.org",
@@ -9842,7 +9940,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "10988-4",
-      "display" : "Fluvoxamine [Mass/volume] in Serum or Plasma"
+      "display" : "fluvoxaMINE [Mass/volume] in Serum or Plasma"
     },
     {
       "system" : "http://loinc.org",
@@ -9862,7 +9960,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "10991-8",
-      "display" : "Metronidazole [Mass/volume] in Serum or Plasma"
+      "display" : "metroNIDAZOLE [Mass/volume] in Serum or Plasma"
     },
     {
       "system" : "http://loinc.org",
@@ -9897,7 +9995,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "10998-3",
-      "display" : "Oxycodone [Presence] in Urine"
+      "display" : "oxyCODONE [Presence] in Urine"
     },
     {
       "system" : "http://loinc.org",
@@ -10142,7 +10240,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "11046-0",
-      "display" : "Epinephrine [Mass/volume] in Urine"
+      "display" : "EPINEPHrine [Mass/volume] in Urine"
     },
     {
       "system" : "http://loinc.org",
@@ -10427,7 +10525,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "111-5",
-      "display" : "Cefotetan [Susceptibility] by Minimum lethal concentration (MLC)"
+      "display" : "cefoTEtan [Susceptibility] by Minimum lethal concentration (MLC)"
     },
     {
       "system" : "http://loinc.org",
@@ -10942,7 +11040,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "112-3",
-      "display" : "Cefotetan [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      "display" : "cefoTEtan [Susceptibility] by Minimum inhibitory concentration (MIC)"
     },
     {
       "system" : "http://loinc.org",
@@ -11117,7 +11215,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "11235-9",
-      "display" : "Fentanyl [Presence] in Urine"
+      "display" : "fentaNYL [Presence] in Urine"
     },
     {
       "system" : "http://loinc.org",
@@ -11127,7 +11225,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "11237-5",
-      "display" : "Hydralazine [Mass/volume] in Serum or Plasma"
+      "display" : "hydrALAZINE [Mass/volume] in Serum or Plasma"
     },
     {
       "system" : "http://loinc.org",
@@ -11142,7 +11240,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "11240-9",
-      "display" : "Hydroxyzine [Mass/volume] in Urine"
+      "display" : "hydrOXYzine [Mass/volume] in Urine"
     },
     {
       "system" : "http://loinc.org",
@@ -11167,12 +11265,12 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "11246-6",
-      "display" : "Oxycodone [Mass/volume] in Urine"
+      "display" : "oxyCODONE [Mass/volume] in Urine"
     },
     {
       "system" : "http://loinc.org",
       "code" : "11247-4",
-      "display" : "Oxymorphone [Presence] in Urine"
+      "display" : "oxyMORphone [Presence] in Urine"
     },
     {
       "system" : "http://loinc.org",
@@ -11270,8 +11368,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:a3430f0b-0e4a-478e-a304-775b5bc0a730",
-    "timestamp" : "2019-06-26T12:31:28.230Z",
+    "identifier" : "urn:uuid:a0459246-a7ee-46ef-a871-b2cb4d220e07",
+    "timestamp" : "2019-07-29T23:02:14.410Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -11282,7 +11380,7 @@ e: {
     },
     {
       "name" : "version",
-      "valueString" : "http://loinc.org?version=2.65"
+      "valueString" : "http://loinc.org?version=2.66"
     }],
     "contains" : [{
       "system" : "http://loinc.org",
@@ -11483,6 +11581,11 @@ e: {
       "system" : "http://loinc.org",
       "code" : "11301-9",
       "display" : "ED diagnosis type"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "11302-7",
+      "display" : "ED discharge disposition"
     },
     {
       "system" : "http://loinc.org",
@@ -11742,7 +11845,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "11449-6",
-      "display" : "Pregnancy status [Interpretation] - Reported"
+      "display" : "Pregnancy status - Reported"
     },
     {
       "system" : "http://loinc.org",
@@ -11778,6 +11881,46 @@ e: {
       "system" : "http://loinc.org",
       "code" : "11493-4",
       "display" : "Hospital discharge studies summary Narrative"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "11514-7",
+      "display" : "Chiropractic Episode of care medical records"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "11515-4",
+      "display" : "Physical therapy Episode of care medical records"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "11516-2",
+      "display" : "Physician Episode of care medical records"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "11517-0",
+      "display" : "Podiatry Episode of care medical records"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "11518-8",
+      "display" : "Psychology Episode of care medical records"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "11519-6",
+      "display" : "Social service Episode of care medical records"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "11520-4",
+      "display" : "Speech therapy Episode of care medical records"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "11521-2",
+      "display" : "Occupational therapy Episode of care medical records"
     },
     {
       "system" : "http://loinc.org",
@@ -11902,12 +12045,12 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "12131-9",
-      "display" : "US Study observation general [Interpretation]"
+      "display" : "[Interpretation] Study observation general US"
     },
     {
       "system" : "http://loinc.org",
       "code" : "12132-7",
-      "display" : "US Study observation general [Interpretation] Narrative"
+      "display" : "Narrative [Interpretation] Study observation general US"
     },
     {
       "system" : "http://loinc.org",
@@ -12027,7 +12170,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "21840-4",
-      "display" : "Sex NAACCR v.11"
+      "display" : "Sex [NAACCR v.11]"
     },
     {
       "system" : "http://loinc.org",
@@ -13157,7 +13300,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "42077-8",
-      "display" : "Patient telephone"
+      "display" : "Patient phone number"
     },
     {
       "system" : "http://loinc.org",
@@ -13702,7 +13845,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "45401-7",
-      "display" : "ZIP Code [Location]"
+      "display" : "Postal code [Location]"
     },
     {
       "system" : "http://loinc.org",
@@ -13952,7 +14095,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "49089-6",
-      "display" : "[Identifier] Sonographer"
+      "display" : "Sonographer [Identifier]"
     },
     {
       "system" : "http://loinc.org",
@@ -14007,7 +14150,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "52539-4",
-      "display" : "Prior zip code [Location]"
+      "display" : "Prior postal code [Location]"
     },
     {
       "system" : "http://loinc.org",
@@ -14591,11 +14734,6 @@ e: {
     },
     {
       "system" : "http://loinc.org",
-      "code" : "56796-6",
-      "display" : "Emergency contact information"
-    },
-    {
-      "system" : "http://loinc.org",
       "code" : "56797-4",
       "display" : "Episode unique identifier"
     },
@@ -14717,7 +14855,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "56832-9",
-      "display" : "Abused substance"
+      "display" : "Type of substance abused"
     },
     {
       "system" : "http://loinc.org",
@@ -14947,7 +15085,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "57073-9",
-      "display" : "Prenatal events Narrative"
+      "display" : "Prenatal records"
     },
     {
       "system" : "http://loinc.org",
@@ -15092,7 +15230,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "59576-9",
-      "display" : "Body mass index (BMI) [Percentile] Per age and gender"
+      "display" : "Body mass index (BMI) [Percentile] Per age and sex"
     },
     {
       "system" : "http://loinc.org",
@@ -15897,7 +16035,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "63691-0",
-      "display" : "Problem when you stopped, cut down or went without marijuana for 2D or longer [SSAGA II]"
+      "display" : "Problem when you stopped, cut down or went without marijuana for 2 days or longer [SSAGA II]"
     },
     {
       "system" : "http://loinc.org",
@@ -16062,12 +16200,12 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "63726-4",
-      "display" : "From what date did you live in the residence [PEG]"
+      "display" : "From what date did you live in the residence"
     },
     {
       "system" : "http://loinc.org",
       "code" : "63727-2",
-      "display" : "To what date did you live in the residence [PEG]"
+      "display" : "To what date did you live in the residence"
     },
     {
       "system" : "http://loinc.org",
@@ -16243,46 +16381,6 @@ e: {
       "system" : "http://loinc.org",
       "code" : "63763-7",
       "display" : "What kinds of tools and equipment did you use [NHANES]"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "63764-5",
-      "display" : "Hobby [LIBCSP]"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "63765-2",
-      "display" : "Have you participated for 6 months or longer in this hobby [LIBCSP]"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "63766-0",
-      "display" : "In what year were you first involved in this hobby [LIBCSP]"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "63767-8",
-      "display" : "In what year were you last involved in in this hobby [LIBCSP]"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "63768-6",
-      "display" : "Overall, for how many years were you involved in this hobby [LIBCSP]"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "63769-4",
-      "display" : "On average, about how many hours per week, month, or year have you participated in this hobby [LIBCSP]"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "63770-2",
-      "display" : "Other activities involving use of chemicals [LIBCSP]"
-    },
-    {
-      "system" : "http://loinc.org",
-      "code" : "63771-0",
-      "display" : "Does anyone who lives here smoke cigarettes, cigars, or pipes anywhere inside this home [NHANES]"
     }]
   }
 },
@@ -16340,15 +16438,15 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:804ca04c-922c-491d-8d6f-7f1d1f7e0532",
-    "timestamp" : "2019-06-26T12:31:31.917Z",
+    "identifier" : "urn:uuid:877b4903-0601-47ca-9c44-2a695da96625",
+    "timestamp" : "2019-07-29T23:02:17.410Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://loinc.org?version=2.65"
+      "valueString" : "http://loinc.org?version=2.66"
     }],
     "contains" : [{
       "system" : "http://loinc.org",
@@ -17768,7 +17866,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "10547-8",
-      "display" : "Primidone+Phenobarbital [Mass/volume] in Serum or Plasma"
+      "display" : "Primidone+PHENobarbital [Mass/volume] in Serum or Plasma"
     },
     {
       "system" : "http://loinc.org",
@@ -19223,7 +19321,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "10841-5",
-      "display" : "Methazolamide [Mass/volume] in Serum or Plasma"
+      "display" : "methazolAMIDE [Mass/volume] in Serum or Plasma"
     },
     {
       "system" : "http://loinc.org",
@@ -19458,7 +19556,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "10895-1",
-      "display" : "Clostridium difficile toxin B [Presence] in Stool"
+      "display" : "Clostridioides difficile toxin B [Presence] in Stool"
     },
     {
       "system" : "http://loinc.org",
@@ -19898,7 +19996,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "10977-7",
-      "display" : "Alprazolam [Mass/volume] in Blood"
+      "display" : "ALPRAZolam [Mass/volume] in Blood"
     },
     {
       "system" : "http://loinc.org",
@@ -19923,7 +20021,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "10981-9",
-      "display" : "Clonidine [Mass/volume] in Urine"
+      "display" : "cloNIDine [Mass/volume] in Urine"
     },
     {
       "system" : "http://loinc.org",
@@ -19958,7 +20056,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "10988-4",
-      "display" : "Fluvoxamine [Mass/volume] in Serum or Plasma"
+      "display" : "fluvoxaMINE [Mass/volume] in Serum or Plasma"
     },
     {
       "system" : "http://loinc.org",
@@ -19978,7 +20076,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "10991-8",
-      "display" : "Metronidazole [Mass/volume] in Serum or Plasma"
+      "display" : "metroNIDAZOLE [Mass/volume] in Serum or Plasma"
     },
     {
       "system" : "http://loinc.org",
@@ -20013,7 +20111,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "10998-3",
-      "display" : "Oxycodone [Presence] in Urine"
+      "display" : "oxyCODONE [Presence] in Urine"
     },
     {
       "system" : "http://loinc.org",
@@ -20258,7 +20356,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "11046-0",
-      "display" : "Epinephrine [Mass/volume] in Urine"
+      "display" : "EPINEPHrine [Mass/volume] in Urine"
     },
     {
       "system" : "http://loinc.org",
@@ -20543,7 +20641,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "111-5",
-      "display" : "Cefotetan [Susceptibility] by Minimum lethal concentration (MLC)"
+      "display" : "cefoTEtan [Susceptibility] by Minimum lethal concentration (MLC)"
     },
     {
       "system" : "http://loinc.org",
@@ -21058,7 +21156,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "112-3",
-      "display" : "Cefotetan [Susceptibility] by Minimum inhibitory concentration (MIC)"
+      "display" : "cefoTEtan [Susceptibility] by Minimum inhibitory concentration (MIC)"
     },
     {
       "system" : "http://loinc.org",
@@ -21233,7 +21331,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "11235-9",
-      "display" : "Fentanyl [Presence] in Urine"
+      "display" : "fentaNYL [Presence] in Urine"
     },
     {
       "system" : "http://loinc.org",
@@ -21243,7 +21341,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "11237-5",
-      "display" : "Hydralazine [Mass/volume] in Serum or Plasma"
+      "display" : "hydrALAZINE [Mass/volume] in Serum or Plasma"
     },
     {
       "system" : "http://loinc.org",
@@ -21258,7 +21356,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "11240-9",
-      "display" : "Hydroxyzine [Mass/volume] in Urine"
+      "display" : "hydrOXYzine [Mass/volume] in Urine"
     },
     {
       "system" : "http://loinc.org",
@@ -21283,12 +21381,12 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "11246-6",
-      "display" : "Oxycodone [Mass/volume] in Urine"
+      "display" : "oxyCODONE [Mass/volume] in Urine"
     },
     {
       "system" : "http://loinc.org",
       "code" : "11247-4",
-      "display" : "Oxymorphone [Presence] in Urine"
+      "display" : "oxyMORphone [Presence] in Urine"
     },
     {
       "system" : "http://loinc.org",
@@ -21371,15 +21469,15 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:43fe5043-bae3-4258-9441-7ef9ad8cae37",
-    "timestamp" : "2019-06-26T12:33:56.636Z",
+    "identifier" : "urn:uuid:84c7f410-73ba-4a42-9b7a-3492286eb4d2",
+    "timestamp" : "2019-07-29T23:04:31.004Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://loinc.org?version=2.65"
+      "valueString" : "http://loinc.org?version=2.66"
     }],
     "contains" : [{
       "system" : "http://loinc.org",
@@ -24434,7 +24532,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "10547-8",
-      "display" : "Primidone+Phenobarbital [Mass/volume] in Serum or Plasma"
+      "display" : "Primidone+PHENobarbital [Mass/volume] in Serum or Plasma"
     },
     {
       "system" : "http://loinc.org",
@@ -26069,7 +26167,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "10841-5",
-      "display" : "Methazolamide [Mass/volume] in Serum or Plasma"
+      "display" : "methazolAMIDE [Mass/volume] in Serum or Plasma"
     },
     {
       "system" : "http://loinc.org",
@@ -26364,7 +26462,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "10895-1",
-      "display" : "Clostridium difficile toxin B [Presence] in Stool"
+      "display" : "Clostridioides difficile toxin B [Presence] in Stool"
     },
     {
       "system" : "http://loinc.org",
@@ -26402,15 +26500,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:b41b226c-0458-4f32-97fc-02dd0ecedc37",
-    "timestamp" : "2019-06-26T12:33:58.761Z",
+    "identifier" : "urn:uuid:eec74daa-29fe-45f6-a872-345b6862c6c4",
+    "timestamp" : "2019-07-29T23:04:31.957Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://loinc.org?version=2.65"
+      "valueString" : "http://loinc.org?version=2.66"
     }],
     "contains" : [{
       "system" : "http://loinc.org",
@@ -26470,15 +26568,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:a7b65571-1171-4558-9b1e-ff65d4292bef",
-    "timestamp" : "2019-06-26T12:36:35.886Z",
+    "identifier" : "urn:uuid:cd117657-a45b-41a6-99be-1f7f3bb68b31",
+    "timestamp" : "2019-07-29T23:07:01.754Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://loinc.org?version=2.65"
+      "valueString" : "http://loinc.org?version=2.66"
     }],
     "contains" : [{
       "system" : "http://loinc.org",
@@ -26528,1301 +26626,5 @@ e: {
   }
 },
   "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "8716-3"
-}, "valueSet" :null, "lang":"null"}####
-v: {
-  "display" : "Vital signs",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "75326-9",
-    "display" : "Problem"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "75326-9",
-        "display" : "Problem"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "Problem",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "LA6751-7",
-    "display" : "Moderate"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "LA6752-5",
-        "display" : "Mild"
-      },
-      {
-        "code" : "LA6751-7",
-        "display" : "Moderate"
-      },
-      {
-        "code" : "LA6750-9",
-        "display" : "Severe"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "Moderate",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "LA6750-9",
-    "display" : "Severe"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "LA6752-5",
-        "display" : "Mild"
-      },
-      {
-        "code" : "LA6751-7",
-        "display" : "Moderate"
-      },
-      {
-        "code" : "LA6750-9",
-        "display" : "Severe"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "Severe",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "882-1",
-    "display" : "ABO and Rh group [Type] in Blood"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      }]
-    },
-    {
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "2"
-      },
-      {
-        "property" : "SYSTEM",
-        "op" : "=",
-        "value" : "^Patient"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "ABO and Rh group [Type] in Blood",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "945-6",
-    "display" : "C Ab [Presence] in Serum or Plasma"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      }]
-    },
-    {
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "2"
-      },
-      {
-        "property" : "SYSTEM",
-        "op" : "=",
-        "value" : "^Patient"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "C Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "1018-1",
-    "display" : "E Ab [Presence] in Serum or Plasma"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      }]
-    },
-    {
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "2"
-      },
-      {
-        "property" : "SYSTEM",
-        "op" : "=",
-        "value" : "^Patient"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "E Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "1156-9",
-    "display" : "little c Ab [Presence] in Serum or Plasma"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      }]
-    },
-    {
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "2"
-      },
-      {
-        "property" : "SYSTEM",
-        "op" : "=",
-        "value" : "^Patient"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "little c Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "17856-6",
-    "display" : "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!NR STATS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!CHALSKIN.*$).*"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "42803-7",
-    "display" : "Bacteria identified in Isolate"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!NR STATS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!CHALSKIN.*$).*"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "Bacteria identified in Isolate",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "882-1",
-    "display" : "ABO and Rh group [Type] in Blood"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org"
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "ABO and Rh group [Type] in Blood",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "945-6",
-    "display" : "C Ab [Presence] in Serum or Plasma"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org"
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "C Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "1018-1",
-    "display" : "E Ab [Presence] in Serum or Plasma"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org"
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "E Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "1156-9",
-    "display" : "little c Ab [Presence] in Serum or Plasma"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org"
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "little c Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "17856-6",
-    "display" : "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org"
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "42803-7",
-    "display" : "Bacteria identified in Isolate"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org"
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "Bacteria identified in Isolate",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "882-1",
-    "display" : "ABO and Rh group [Type] in Blood"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!NR STATS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!CHALSKIN.*$).*"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "ABO and Rh group [Type] in Blood",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "945-6",
-    "display" : "C Ab [Presence] in Serum or Plasma"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!NR STATS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!CHALSKIN.*$).*"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "C Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "1018-1",
-    "display" : "E Ab [Presence] in Serum or Plasma"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!NR STATS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!CHALSKIN.*$).*"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "E Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "1156-9",
-    "display" : "little c Ab [Presence] in Serum or Plasma"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!NR STATS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!CHALSKIN.*$).*"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "little c Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "882-1",
-    "display" : "ABO and Rh group [Type] in Blood"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "CLASS",
-        "op" : "=",
-        "value" : "RAD"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://loinc.org#882-1) is not  valid in the value set IPSRadResultsObservation"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "945-6",
-    "display" : "C Ab [Presence] in Serum or Plasma"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "CLASS",
-        "op" : "=",
-        "value" : "RAD"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://loinc.org#945-6) is not  valid in the value set IPSRadResultsObservation"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "1018-1",
-    "display" : "E Ab [Presence] in Serum or Plasma"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "CLASS",
-        "op" : "=",
-        "value" : "RAD"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://loinc.org#1018-1) is not  valid in the value set IPSRadResultsObservation"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "1156-9",
-    "display" : "little c Ab [Presence] in Serum or Plasma"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "CLASS",
-        "op" : "=",
-        "value" : "RAD"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://loinc.org#1156-9) is not  valid in the value set IPSRadResultsObservation"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "17856-6",
-    "display" : "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "CLASS",
-        "op" : "=",
-        "value" : "RAD"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://loinc.org#17856-6) is not  valid in the value set IPSRadResultsObservation"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "42803-7",
-    "display" : "Bacteria identified in Isolate"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "CLASS",
-        "op" : "=",
-        "value" : "RAD"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://loinc.org#42803-7) is not  valid in the value set IPSRadResultsObservation"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "17856-6",
-    "display" : "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      }]
-    },
-    {
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "2"
-      },
-      {
-        "property" : "SYSTEM",
-        "op" : "=",
-        "value" : "^Patient"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "42803-7",
-    "display" : "Bacteria identified in Isolate"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      }]
-    },
-    {
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "2"
-      },
-      {
-        "property" : "SYSTEM",
-        "op" : "=",
-        "value" : "^Patient"
-      }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "Bacteria identified in Isolate",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "882-1",
-    "display" : "ABO and Rh group [Type] in Blood"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org"
-    }]
-  }
-}, "lang":"en-GB"}####
-v: {
-  "display" : "ABO and Rh group [Type] in Blood",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "945-6",
-    "display" : "C Ab [Presence] in Serum or Plasma"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org"
-    }]
-  }
-}, "lang":"en-GB"}####
-v: {
-  "display" : "C Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "1018-1",
-    "display" : "E Ab [Presence] in Serum or Plasma"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org"
-    }]
-  }
-}, "lang":"en-GB"}####
-v: {
-  "display" : "E Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "1156-9",
-    "display" : "little c Ab [Presence] in Serum or Plasma"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org"
-    }]
-  }
-}, "lang":"en-GB"}####
-v: {
-  "display" : "little c Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "17856-6",
-    "display" : "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org"
-    }]
-  }
-}, "lang":"en-GB"}####
-v: {
-  "display" : "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "42803-7",
-    "display" : "Bacteria identified in Isolate"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org"
-    }]
-  }
-}, "lang":"en-GB"}####
-v: {
-  "display" : "Bacteria identified in Isolate",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "882-1",
-  "display" : "ABO and Rh group [Type] in Blood"
-}, "valueSet" :null, "lang":"en-GB"}####
-v: {
-  "display" : "ABO and Rh group [Type] in Blood",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "945-6",
-  "display" : "C Ab [Presence] in Serum or Plasma"
-}, "valueSet" :null, "lang":"en-GB"}####
-v: {
-  "display" : "C Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "1018-1",
-  "display" : "E Ab [Presence] in Serum or Plasma"
-}, "valueSet" :null, "lang":"en-GB"}####
-v: {
-  "display" : "E Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "1156-9",
-  "display" : "little c Ab [Presence] in Serum or Plasma"
-}, "valueSet" :null, "lang":"en-GB"}####
-v: {
-  "display" : "little c Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "17856-6",
-    "display" : "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      }]
-    },
-    {
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "2"
-      },
-      {
-        "property" : "SYSTEM",
-        "op" : "=",
-        "value" : "^Patient"
-      }]
-    }]
-  }
-}, "lang":"en-GB"}####
-v: {
-  "display" : "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "17856-6",
-    "display" : "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "CLASS",
-        "op" : "=",
-        "value" : "RAD"
-      }]
-    }]
-  }
-}, "lang":"en-GB"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://loinc.org#17856-6) is not  valid in the value set IPSRadResultsObservation"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "42803-7",
-    "display" : "Bacteria identified in Isolate"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      }]
-    },
-    {
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "2"
-      },
-      {
-        "property" : "SYSTEM",
-        "op" : "=",
-        "value" : "^Patient"
-      }]
-    }]
-  }
-}, "lang":"en-GB"}####
-v: {
-  "display" : "Bacteria identified in Isolate",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "42803-7",
-    "display" : "Bacteria identified in Isolate"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "CLASS",
-        "op" : "=",
-        "value" : "RAD"
-      }]
-    }]
-  }
-}, "lang":"en-GB"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://loinc.org#42803-7) is not  valid in the value set IPSRadResultsObservation"
 }
 -------------------------------------------------------------------------------------
