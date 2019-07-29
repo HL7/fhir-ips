@@ -190,7 +190,7 @@
 			<path value="Composition.event"/>
 			<slicing>
 				<discriminator>
-					<type value="value"/>
+					<type value="pattern"/>
 					<path value="code"/>
 				</discriminator>
 				<rules value="open"/>
@@ -209,12 +209,12 @@
 		<element id="Composition.event:careProvisioningEvent.code">
 			<path value="Composition.event.code"/>
 			<min value="1"/>
-			<fixedCodeableConcept>
+			<patternCodeableConcept>
 				<coding>
 					<system value="http://terminology.hl7.org/CodeSystem/v3-ActClass"/>
 					<code value="PCPR"/>
 				</coding>
-			</fixedCodeableConcept>
+			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.event:careProvisioningEvent.period">
@@ -228,7 +228,7 @@
 			<path value="Composition.section"/>
 			<slicing>
 				<discriminator>
-					<type value="value"/>
+					<type value="pattern"/>
 					<path value="code"/>
 				</discriminator>
 				<ordered value="false"/>
@@ -265,12 +265,12 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<fixedCodeableConcept>
+			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="10160-0"/>
 				</coding>
-			</fixedCodeableConcept>
+			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
 		<!--
@@ -367,12 +367,12 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<fixedCodeableConcept>
+			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="48765-2"/>
 				</coding>
-			</fixedCodeableConcept>
+			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
 		<!--
@@ -469,12 +469,12 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<fixedCodeableConcept>
+			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="11450-4"/>
 				</coding>
-			</fixedCodeableConcept>
+			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
 		<!--
@@ -570,12 +570,12 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<fixedCodeableConcept>
+			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="47519-4"/>
 				</coding>
-			</fixedCodeableConcept>
+			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
 		<!--
@@ -671,12 +671,12 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<fixedCodeableConcept>
+			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="11369-6"/>
 				</coding>
-			</fixedCodeableConcept>
+			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
 		<!--
@@ -771,12 +771,12 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<fixedCodeableConcept>
+			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="46264-8"/>
 				</coding>
-			</fixedCodeableConcept>
+			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
 		<!--
@@ -872,12 +872,12 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<fixedCodeableConcept>
+			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="30954-2"/>
 				</coding>
-			</fixedCodeableConcept>
+			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
 		<!--
@@ -1013,12 +1013,12 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<fixedCodeableConcept>
+			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="8716-3"/>
 				</coding>
-			</fixedCodeableConcept>
+			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
 		<!--
@@ -1112,12 +1112,12 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<fixedCodeableConcept>
+			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="11348-0"/>
 				</coding>
-			</fixedCodeableConcept>
+			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
 		<!--
@@ -1218,12 +1218,12 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<fixedCodeableConcept>
+			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="47420-5"/>
 				</coding>
-			</fixedCodeableConcept>
+			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
 		<!--
@@ -1336,12 +1336,12 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<fixedCodeableConcept>
+			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="18776-5"/>
 				</coding>
-			</fixedCodeableConcept>
+			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
 		<!--
@@ -1406,12 +1406,12 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<fixedCodeableConcept>
+			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="29762-2"/>
 				</coding>
-			</fixedCodeableConcept>
+			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
 		<!--
@@ -1520,12 +1520,12 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<fixedCodeableConcept>
+			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="10162-6"/>
 				</coding>
-			</fixedCodeableConcept>
+			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
 		<!--
@@ -1632,12 +1632,12 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<fixedCodeableConcept>
+			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="42348-3"/>
 				</coding>
-			</fixedCodeableConcept>
+			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
 		<!--
