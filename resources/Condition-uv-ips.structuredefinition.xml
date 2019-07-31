@@ -38,6 +38,7 @@
 		</element>
 		<element id="Condition.meta.profile">
 			<path value="Condition.meta.profile"/>
+			<fixedCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Condition.clinicalStatus">
@@ -96,9 +97,9 @@
 			<slicing>
 				<discriminator>
 					<type value="value"/>
-					<path value="coding.system"/>
+					<path value="$this"/>
 				</discriminator>
-				<description value="Discriminated by code system"/>
+				<description value="Discriminated by the bound value set"/>
 				<rules value="open"/>
 			</slicing>
 			<definition value="Identification of the condition, problem or diagnosis or recording of &quot;problem absent&quot; or of &quot;problems unknown&quot;."/>
@@ -123,11 +124,8 @@
 			<sliceName value="absentOrUnknownProblem"/>
 			<short value="Code for absent problem or for unknown problem"/>
 			<definition value="Code representing the statement &quot;absent problem&quot; or the statement &quot;problems unknown&quot;"/>
+			<min value="0"/>
 			<max value="1"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
 			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -138,17 +136,15 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips"/>
 			</binding>
 		</element>
-		<!-- -->
+		<!--
 		<element id="Condition.code:absentOrUnknownProblem.coding">
 			<path value="Condition.code.coding"/>
 			<min value="1"/>
 			<max value="1"/>
-			<!--
 			<type>
 				<code value="Coding"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
-			-->
 			<mustSupport value="true"/>
 		</element>
 		<element id="Condition.code:absentOrUnknownProblem.coding.system">
@@ -158,7 +154,7 @@
 			<fixedUri value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
 			<mustSupport value="true"/>
 		</element>
-		<!-- -->
+	-->
 		<!--		
 		<element id="Condition.code.coding">
 			<path value="Condition.code.coding"/>
@@ -190,25 +186,7 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips"/>
 			</binding>
 		</element>
-		<element id="Condition.code.coding:ProblemCode">
-			<path value="Condition.code.coding"/>
-			<sliceName value="ProblemCode"/>
-			<max value="1"/>
-			<type>
-				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-			<binding>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="ProblemCode"/>
-				</extension>
-				<strength value="preferred"/>
-				<description value="Identification of the problem"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/core-problem-list-disorders-uv-ips"/>
-			</binding>
-		</element>
-	
+	-->
 		<element id="Condition.bodySite">
 			<path value="Condition.bodySite"/>
 			<type>
@@ -224,7 +202,6 @@
 				<valueSet value="http://hl7.org/fhir/ValueSet/body-site"/>
 			</binding>
 		</element>
-	-->
 		<element id="Condition.subject">
 			<path value="Condition.subject"/>
 			<type>

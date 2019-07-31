@@ -102290,3 +102290,106 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "198436008",
+  "display" : "Menopausal flushing (finding)"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Hot flush",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "254837009",
+  "display" : "Malignant tumor of breast"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Malignant neoplasm of breast (disorder)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "198436008",
+  "display" : "Menopausal flushing (finding)"
+}, "valueSet" :null, "lang":"en-GB"}####
+v: {
+  "display" : "Hot flush",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "254837009",
+  "display" : "Malignant tumor of breast"
+}, "valueSet" :null, "lang":"en-GB"}####
+v: {
+  "display" : "Malignant neoplasm of breast (disorder)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "54329005",
+  "display" : "Acute myocardial infarction of anterior wall"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "Acute anterior myocardial infarction",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "108774000",
+  "display" : "Product containing anastrozole (medicinal product)"
+}, "valueSet" :null, "lang":"en-GB"}####
+v: {
+  "display" : "Product containing anastrozole (medicinal product)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "115329001",
+    "display" : "Methicillin resistant Staphylococcus aureus"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://hl7.org/fhir/uv/ips/ValueSet/lab-blood-abo-rh-grp-uv-ips"]
+    },
+    {
+      "valueSet" : ["http://hl7.org/fhir/uv/ips/ValueSet/lab-absence-presence-uv-ips"]
+    },
+    {
+      "valueSet" : ["http://hl7.org/fhir/uv/ips/ValueSet/microorganism-uv-ips"]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "Unable to find value set http://hl7.org/fhir/uv/ips/ValueSet/lab-blood-abo-rh-grp-uv-ips"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://snomed.info/sct",
+  "code" : "115329001",
+  "display" : "Methicillin resistant Staphylococcus aureus"
+}, "valueSet" :null, "lang":"null"}####
+v: {
+  "display" : "MRSA",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
