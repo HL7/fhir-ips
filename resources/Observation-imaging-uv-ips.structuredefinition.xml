@@ -73,13 +73,13 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<fixedCodeableConcept>
+			<patternCodeableConcept>
 				<coding>
 					<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
 					<code value="imaging"/>
 					<display value="Imaging"/>
 				</coding>
-			</fixedCodeableConcept>
+			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.code">

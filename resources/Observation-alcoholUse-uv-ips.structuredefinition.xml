@@ -49,8 +49,15 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://loinc.org"/>
+					<code value="74013-4"/>
+				</coding>
+			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Observation.code.coding">
 			<path value="Observation.code.coding"/>
 			<min value="1"/>
@@ -71,6 +78,7 @@
 			<fixedCode value="74013-4"/>
 			<mustSupport value="true"/>
 		</element>
+	-->
 		<element id="Observation.subject">
 			<path value="Observation.subject"/>
 			<min value="1"/>
