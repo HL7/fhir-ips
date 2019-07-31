@@ -30,3 +30,21 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "757704",
+  "display" : "Simvastatin 40 MG Disintegrating Oral Tablet"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.whocc.no/atc"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://www.nlm.nih.gov/research/umls/rxnorm#757704) is not  valid in the value set WHOATC"
+}
+-------------------------------------------------------------------------------------

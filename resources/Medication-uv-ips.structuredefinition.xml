@@ -58,10 +58,10 @@
       <path value="Medication.code.coding" />
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="system" />
+          <type value="pattern" />
+          <path value="$this" />
         </discriminator>
-        <description value="Discriminated by code system" />
+        <description value="Discriminated by value set" />
         <rules value="open" />
       </slicing>
       <min value="1" />
@@ -79,12 +79,14 @@
         <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips" />
       </binding>
     </element>
+    <!--
     <element id="Medication.code.coding:atcClass.system">
       <path value="Medication.code.coding.system" />
       <min value="1" />
       <fixedUri value="http://www.whocc.no/atc" />
       <mustSupport value="true" />
     </element>
+  -->
     <element id="Medication.form">
       <path value="Medication.form" />
       <definition value="Describes the form of the item.  Powder; tablets; capsule.&#xD;&#xA;&#xD;&#xA;Administrable Pharmaceutical Dose Form. &#xD;&#xA;This code represents the form of the medication (e.g. tablet, capsule, liquid)&#xD;&#xA;&#xD;&#xA;Since the EDQM Standards Terms, together with UCUM, is one of the IDMP terminologies actually available for usage, this code system has been selected  as referecne terminology for representing Pharmaceutical Dose forms;Pakages and Route of Administration.&#xD;&#xA;&#xD;&#xA;It is known that also alternative jurisdictional and international terminologies are known to be used for this concept domain, as NCI or SNOMED CT." />

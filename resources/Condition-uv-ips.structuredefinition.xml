@@ -96,7 +96,7 @@
 			<path value="Condition.code"/>
 			<slicing>
 				<discriminator>
-					<type value="value"/>
+					<type value="pattern"/>
 					<path value="$this"/>
 				</discriminator>
 				<description value="Discriminated by the bound value set"/>
