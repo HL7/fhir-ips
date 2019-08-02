@@ -239,8 +239,8 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-txtobs-code-uv-ips"/>
 			</binding>
 		</element>
-		<element id="Observation.component:observationText.valueString">
-			<path value="Observation.component.valueString"/>
+		<element id="Observation.component:observationText.value[x]">
+			<path value="Observation.component.value[x]"/>
 			<min value="1"/>
 			<type>
 				<code value="string"/>
@@ -262,8 +262,8 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips"/>
 			</binding>
 		</element>
-		<element id="Observation.component:observationCode.valueCodeableConcept">
-			<path value="Observation.component.valueCodeableConcept"/>
+		<element id="Observation.component:observationCode.value[x]">
+			<path value="Observation.component.value[x]"/>
 			<min value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
