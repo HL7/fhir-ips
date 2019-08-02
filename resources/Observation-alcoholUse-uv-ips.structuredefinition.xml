@@ -110,30 +110,31 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Observation.value[x]:valueQuantity">
+		<element id="Observation.valueQuantity">
 			<path value="Observation.valueQuantity"/>
-			<sliceName value="valueQuantity"/>
+			<!-- <sliceName value="valueQuantity"/> -->
 			<type>
 				<code value="Quantity"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Observation.value[x]:valueQuantity.value">
+		<element id="Observation.valueQuantity.value">
 			<path value="Observation.valueQuantity.value"/>
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Observation.value[x]:valueQuantity.comparator">
+		<element id="Observation.valueQuantity.comparator">
 			<path value="Observation.valueQuantity.comparator"/>
 			<max value="0"/>
 			<mustSupport value="false"/>
 		</element>
-		<element id="Observation.value[x]:valueQuantity.system">
+		<element id="Observation.valueQuantity.system">
 			<path value="Observation.valueQuantity.system"/>
+			<min value="1"/>
 			<fixedUri value="http://unitsofmeasure.org"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Observation.value[x]:valueQuantity.code">
+		<element id="Observation.valueQuantity.code">
 			<path value="Observation.valueQuantity.code"/>
 			<min value="1"/>
 			<mustSupport value="true"/>
