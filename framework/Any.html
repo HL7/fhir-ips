@@ -14,8 +14,7 @@
         <title>Page Redirection</title>
     </head>
     <body>
-        <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
-        <!--status-bar--> <!-- needed to pass qa -->
+{% include publish-box.html %}
         <!-- Note: don't tell people to `click` the link, just tell them that it is a link. -->
         If you are not redirected automatically, follow this <a href='{{site.data.fhir.path}}resourcelist.html'>link to Resource Index</a>.
         <div igtool="footer" /><!-- needed to pass qa -->
