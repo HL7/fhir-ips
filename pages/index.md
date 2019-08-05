@@ -70,7 +70,7 @@ The IPS is composed by a set of robust, well-defined and reusable core set of da
 Its tight focus on unplanned care is not a limitation, but, on the contrary, enables the IPS profiles to be used as common minimal 'core' set beyond its initial scope.
 
 
-{% include img-small.html img="IPS_doc_library.png" caption="Figure 1: The IPS products" %}
+{% include img.html img="IPS_doc_library.png" caption="Figure 1: The IPS products" %}
 
 ## Purpose
 

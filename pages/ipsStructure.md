@@ -26,7 +26,7 @@ The IPS is composed by the following sections described below.
 </div>
 -->
 
-{% include img-narrow.html img="IPS_composition.png" caption="Figure 1: The IPS Composition" %}
+{% include img.html img="IPS_composition.png" caption="Figure 1: The IPS Composition" %}
 
 # Sections description
 

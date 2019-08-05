@@ -8,6 +8,6 @@
 {:toc}
 
 
-{% include img-narrow.html img="IPS_composition.png" caption="Figure 1: The IPS Composition" %}
+{% include img.html img="IPS_composition.png" caption="Figure 1: The IPS Composition" %}
 
 A complete list of the IPS sections, with description and  used profiles is available in the <a href="ipsStructure.html">International Patient Summary Structure </a> page.
