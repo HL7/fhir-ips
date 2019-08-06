@@ -19,7 +19,7 @@
     <a href="ipsStructure.html">The "IPS"</a>
   </li>
   <li class="dropdown">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Artefacts</a>
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Artifacts</a>
     <ul class="dropdown-menu">
       <li>
         <a href="StructureDefinition-Composition-uv-ips.html">The IPS Composition</a>
