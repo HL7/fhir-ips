@@ -41,15 +41,14 @@ These are the site variables defined [here](http://wiki.hl7.org/index.php?title=
 
 <blockquote class="stu-note">
 <p><b>Note for balloters</b></p>
-<p>Balloters are invited to focus their attention on the parts that have been changed since last ballot, that can be roughly summarized into:</p>
+<p>Balloters are invited to focus their attention on the parts that have been changed since the last ballot, which can be roughly summarized as:</p>
 <ul class="stu-note">
 <li>Scope slightly revised, extended beyond the cross border case.</li>
 <li>Better alignment with jurisdictional requirements / profiles (e.g.Argonaut/US Core).</li>
 <li>Harmonization with the latest changes of the EN 17269 IPS dataset.</li>
  </ul>
-<p> Dedicated "note for balloters" have been added in this Implementation Guide to focus the attention of the balloters to specific issues/topics</p>
+<p> Dedicated "Note for balloters" blocks have been added in this Implementation Guide to focus the attention of the balloters on specific issues/topics.</p>
 </blockquote>
-
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
