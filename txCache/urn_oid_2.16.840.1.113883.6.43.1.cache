@@ -19,3 +19,29 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "urn:oid:2.16.840.1.113883.6.43.1",
+  "code" : "8500/3",
+  "display" : "Infiltrating duct carcinoma, NOS"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
+      "concept" : [{
+        "code" : "no-problem-info",
+        "display" : "No information about current problems"
+      },
+      {
+        "code" : "no-known-problems",
+        "display" : "No known problems"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (urn:oid:2.16.840.1.113883.6.43.1#8500/3) is not  valid in the value set IPSNoProbsInfos"
+}
+-------------------------------------------------------------------------------------

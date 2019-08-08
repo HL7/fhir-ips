@@ -19,3 +19,29 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/sid/icd-10",
+  "code" : "N95.1",
+  "display" : "Menopausal and female climacteric states"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
+      "concept" : [{
+        "code" : "no-problem-info",
+        "display" : "No information about current problems"
+      },
+      {
+        "code" : "no-known-problems",
+        "display" : "No known problems"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://hl7.org/fhir/sid/icd-10#N95.1) is not  valid in the value set IPSNoProbsInfos"
+}
+-------------------------------------------------------------------------------------

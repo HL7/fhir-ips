@@ -102866,3 +102866,70 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
+    "code" : "no-known-allergies",
+    "display" : "No known allergies"
+  },
+  {
+    "system" : "http://snomed.info/sct",
+    "code" : "1476002",
+    "display" : "Codeine sulfate"
+  },
+  {
+    "system" : "http://snomed.info/sct",
+    "code" : "27658006",
+    "display" : "Amoxicillin-containing product"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "410942007"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "762766007"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "406455002"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "425620007"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "373873005"
+      }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Product containing amoxicillin (medicinal product)",
+  "severity" : "warning",
+  "error" : "The code system \"http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips\" is not known for the code \"no-known-allergies\""
+}
+-------------------------------------------------------------------------------------
