@@ -56,7 +56,7 @@ The IPS problem section lists and describes clinical problems or conditions curr
 
 The Immunizations Section defines a patient's current immunization status and pertinent immunization history.
 The primary use case for the Immunization Section is to enable communication of a patient's immunization status.
-The section includes current immunization status, and may contain the entire immunization history that is relevant to the period of time being summarized.
+The section includes current immunization status and the entire clinically pertinent immunization history that is known.
 
 ## History of Procedures
 
@@ -78,7 +78,7 @@ This version is comprised of three alternative entries to carry results from:
 * imaging
 * pathology
 
-and offers also a generic result entry.
+A generic result entry is also supported.
 
 ## Vital Signs
 The Vital signs section includes blood pressure, body temperature, heart rate, and respiratory rate. It may also include other clinical findings, such as height, weight, body mass index, head circumference, and pulse oximetry. In particular, notable vital signs or physical findings such as the most recent, maximum and/or minimum, baseline, or relevant trends may be included
