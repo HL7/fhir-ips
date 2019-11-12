@@ -32,7 +32,7 @@
 			<comment value="Represents either a lab simple observation or the group of observations produced by a laboratory study."/>
 			<mustSupport value="true"/>
 		</element>
-			<element id="Observation.id">
+		<element id="Observation.id">
 			<path value="Observation.id"/>
 			<mustSupport value="true"/>
 		</element>
@@ -44,11 +44,6 @@
 			<path value="Observation.meta.profile"/>
 			<fixedCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pathology-uv-ips"/>
 			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.basedOn">
-			<path value="Observation.basedOn"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
 		</element>
 		<element id="Observation.status">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
@@ -129,6 +124,10 @@
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-laboratory-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.performer.reference">
+			<path value="Observation.performer.reference"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.value[x]">

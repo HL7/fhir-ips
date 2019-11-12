@@ -31,11 +31,6 @@
 			<comment value="This observation is a member of a multiple observations pathology study."/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Observation.basedOn">
-			<path value="Observation.basedOn"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
 		<element id="Observation.status">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
 				<valueString value="default: final"/>
@@ -120,6 +115,10 @@
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-laboratory-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.performer.reference">
+			<path value="Observation.performer.reference"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.value[x]">

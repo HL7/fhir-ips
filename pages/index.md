@@ -88,7 +88,8 @@ As expressed in the introduction, the International Patient Summary is:
 * specialty-agnostic,
 * condition-independent,
 * but readily usable by clinicians for cross-border unscheduled care of a patient.
-In this context, minimal and non-exhaustive means that an IPS is not intended to reproduce (the entire) content of an Electronic Health Record (EHR).
+
+In this context, minimal and non-exhaustive means that an IPS is not intended to reproduce the entire content of an Electronic Health Record (EHR).
 
 Specialty-agnostic means that an IPS is not filtered for a specialty. As an example, allergies are not filtered to the specialty of internal medicine, thus may also include food allergies, if considered to be relevant for, e.g. unplanned care.
 
