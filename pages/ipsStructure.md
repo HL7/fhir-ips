@@ -104,7 +104,7 @@ The functional status section contains a narrative description of capability of 
 Profiles to express disabilities and functional assessments will be specified by future versions of this guide.
 
 ## Advance Directives
-The advance directives section contains a narrative description of patient's advance directive.
+The advance directives section contains a narrative description of patient's advance directives.
 
 # List of Profiles
 

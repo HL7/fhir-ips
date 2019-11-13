@@ -45,12 +45,13 @@
 			<path value="Procedure.code"/>
 			<slicing>
 				<discriminator>
-					<type value="value"/>
-					<path value="coding.system"/>
+					<type value="pattern"/>
+					<path value="$this"/>
 				</discriminator>
-				<description value="Discriminated by code system"/>
+				<description value="Discriminated by the bound value set"/>
 				<rules value="open"/>
 			</slicing>
+					<definition value="Identification of the procedure or recording of &quot;absence of relevant procedures&quot; or of &quot;procedures unknown&quot;."/>
 			<min value="1"/>
 			<max value="1"/>
 			<type>
@@ -75,6 +76,8 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
+					<min value="0"/>
+			<max value="1"/>
 			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -85,6 +88,7 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-procedures-uv-ips"/>
 			</binding>
 		</element>
+		<!--
 		<element id="Procedure.code:absentOrUnknownProcedure.coding">
 			<path value="Procedure.code.coding"/>
 			<min value="1"/>
@@ -98,6 +102,7 @@
 			<fixedUri value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
 			<mustSupport value="true"/>
 		</element>
+-->
 		<element id="Procedure.subject">
 			<path value="Procedure.subject"/>
 			<definition value="The person on which the procedure was performed."/>
