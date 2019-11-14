@@ -41,6 +41,24 @@ v: {
       "system" : "http://www.whocc.no/atc"
     }]
   }
+}, "lang":"null"}####
+v: {
+  "display" : "anastrozole",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L02BG03",
+  "display" : "anastrozole"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.whocc.no/atc"
+    }]
+  }
 }, "lang":"en-GB"}####
 v: {
   "display" : "anastrozole",
@@ -53,6 +71,24 @@ v: {
   "code" : "G02CX04",
   "display" : "Cimicifugae rhizoma"
 }, "valueSet" :null, "lang":"en-GB"}####
+v: {
+  "display" : "Cimicifugae rhizoma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "G02CX04",
+  "display" : "Cimicifugae rhizoma"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.whocc.no/atc"
+    }]
+  }
+}, "lang":"null"}####
 v: {
   "display" : "Cimicifugae rhizoma",
   "severity" : null,
@@ -146,15 +182,15 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:f98841f7-abf9-4b4b-b66e-8357c0aba31b",
-    "timestamp" : "2019-07-30T19:24:39.908Z",
+    "identifier" : "urn:uuid:a7e40618-8ad1-423d-8b51-351dd54984e4",
+    "timestamp" : "2019-11-14T16:08:01.421Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
     },
     {
       "name" : "version",
-      "valueString" : "http://www.whocc.no/atc?version=January 2019"
+      "valueString" : "http://www.whocc.no/atc|January 2019"
     }],
     "contains" : [{
       "system" : "http://www.whocc.no/atc",
@@ -1533,42 +1569,6 @@ e: {
     }]
   }
 },
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "L02BG03",
-  "display" : "anastrozole"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://www.whocc.no/atc"
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "anastrozole",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "G02CX04",
-  "display" : "Cimicifugae rhizoma"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://www.whocc.no/atc"
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "Cimicifugae rhizoma",
-  "severity" : null,
   "error" : ""
 }
 -------------------------------------------------------------------------------------
