@@ -45,10 +45,10 @@
 			<path value="Device.type"/>
 			<slicing>
 				<discriminator>
-					<type value="value"/>
-					<path value="coding.system"/>
+					<type value="pattern"/>
+					<path value="$this"/>
 				</discriminator>
-				<description value="Discriminated by code system"/>
+				<description value="Discriminated by the bound value set"/>
 				<rules value="open"/>
 			</slicing>
 			<short value="Type of device.&#xD;&#xA;Preferably valued by using SNOMED CT.&#xD;&#xA;The absence of information, or of devices relevant for purpose of this IPS, shall be explicitly stated by using the codes included in the absent-or-unknown-devices-uv-ips value set."/>
@@ -84,6 +84,7 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-devices-uv-ips"/>
 			</binding>
 		</element>
+		<!--
 		<element id="Device.type:absentOrUnknownDevice.coding">
 			<path value="Device.type.coding"/>
 			<min value="1"/>
@@ -97,6 +98,7 @@
 			<fixedUri value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
 			<mustSupport value="true"/>
 		</element>
+-->
 		<element id="Device.patient">
 			<path value="Device.patient"/>
 			<min value="1"/>

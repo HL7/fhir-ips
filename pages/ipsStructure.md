@@ -32,14 +32,21 @@ The IPS is composed by the following sections described below.
 
 ## Medication Summary
 
+
 The medication summary section contains a description of the patient's medications relevant for the scope of the patient summary.
+
 The actual content could depend on the jurisdiction, it could report:
-- the currently active medications; 
-- the current and past medications considered relevant by the authoring GP; 
+- the currently active medications;
+- the current and past medications considered relevant by the authoring GP;
 - the patient prescriptions or dispensations automatically extracted by a regional or a national EHR.
 
 In all those cases however medications are documented in the Patient Summary as medication statements.
-This section requires either an entry indicating the subject is known not to be on any relevant medication; either an entry indicating that no information is available about medications; or entries summarizing the subject's relevant medications.
+
+The entries of this section must be one of the choices below:
+- an entry stating that the patient is known not to be under any relevant medication+;+
+- an entry stating that no information is available about the patient's potential medications;
+- one or more entries enumerating the patient's relevant medication (one entry per medication).
+
 
 ## Allergies and Intolerances
 

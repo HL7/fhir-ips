@@ -39,6 +39,7 @@ These are the site variables defined [here](http://wiki.hl7.org/index.php?title=
 - genDate : date of generation (so date stamps in the pages can match those in the conformance resources) -  {% raw %} {{site.data.fhir.genDate}} {% endraw %} = {{site.data.fhir.genDate}}
 -->
 
+<!--
 <blockquote class="stu-note">
 <p><b>Note for balloters</b></p>
 <p>Balloters are invited to focus their attention on the parts that have been changed since the last ballot, which can be roughly summarized as:</p>
@@ -49,7 +50,9 @@ These are the site variables defined [here](http://wiki.hl7.org/index.php?title=
  </ul>
 <p> Dedicated "Note for balloters" blocks have been added in this Implementation Guide to focus the attention of the balloters on specific issues/topics.</p>
 </blockquote>
-
+ -->
+ 
+ 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 
 <!-- * Do not remove this line (it will not be displayed) -->
@@ -65,11 +68,10 @@ It is intended to be international, i.e., to provide generic solutions for globa
 The IPS dataset is **minimal and non-exhaustive; specialty-agnostic and condition-independent; but still clinically relevant**.
 
 
-The IPS is composed by a set of robust, well-defined and reusable core set of data items, i.e., HL7 FHIR IPS profiles, in the case of this guide. 
-Its tight focus on unplanned care is not a limitation, but, on the contrary, enables the IPS profiles to be used as common minimal 'core' set beyond its initial scope.
+The IPS document is composed by a set of robust, well-defined and potentially reusable core sets of data items (indicated as IPS library in the figure below). The tight focus of the IPS on unplanned care is in this case not a limitation, but, on the contrary, facilitates their potential re-use beyond the IPS scope.
 
 
-{% include img.html img="IPS_doc_library.png" caption="Figure 1: The IPS products" %}
+{% include img.html img="IPS_doc_library.png" caption="Figure 1: The IPS product and by-products" %}
 
 ## Purpose
 

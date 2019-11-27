@@ -108418,3 +108418,45 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://snomed.info/sct",
+    "code" : "414005006",
+    "display" : "Vaccin anti diphtÃ©rie-coqueluche-tÃ©tanos-poliomyÃ©lite"
+  },
+  {
+    "system" : "http://www.whocc.no/atc",
+    "code" : "J07CA02",
+    "display" : "DIPHTERIE - COQUELUCHE - POLIOMYELITE - TETANOS"
+  },
+  {
+    "system" : "urn:oid:1.3.182.4.11.22",
+    "code" : "2374429",
+    "display" : "BOOSTRIX-POLIO"
+  }],
+  "text" : "Vaccin anti diphtÃ©rie-coqueluche-tÃ©tanos-poliomyÃ©lite"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "71181003"
+      }]
+    }],
+    "exclude" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "71181003"
+      }]
+    }]
+  }
+}, "lang":"fr-LU"}####
+v: {
+  "display" : "Diphtheria + tetanus + pertussis + poliomyelitis vaccine (product)",
+  "severity" : "warning",
+  "error" : "The display \"Vaccin anti diphtérie-coqueluche-tétanos-poliomyélite\" is not a valid display for the code {http://snomed.info/sct}414005006 - should be one of [\"Diphtheria + tetanus + pertussis + poliomyelitis vaccine (product)\",\"Diphtheria + Pertussis + Poliomyelitis + Tetanus vaccine\",\"Diphtheria + tetanus + pertussis + poliomyelitis vaccine\",\"Diphtheria / tetanus / pertussis / poliomyelitis vaccine\"]; The display \"DIPHTERIE - COQUELUCHE - POLIOMYELITE - TETANOS\" is not a valid display for the code ,{http://www.whocc.no/atc}J07CA02 - should be one of [diphtheria-pertussis-poliomyelitis-tetanus]; The code system \"urn:oid:1.3.182.4.11.22\" is not known for the code \"2374429\""
+}
+-------------------------------------------------------------------------------------
