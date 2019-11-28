@@ -102,6 +102,13 @@
 			<min value="1"/>
 			<max value="1"/>
 			<mustSupport value="true"/>
+			<constraint>
+				<key value="ips-1"/>
+				<severity value="error"/>
+				<human value="Datetime must be at least to day."/>
+				<expression value="($this as dateTime).toString().length() &gt;= 8"/>
+				<xpath value="f:matches(effectiveDateTime,/\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d([+-][0-2]\d:[0-5]\d|Z)/)"/>
+			</constraint>
 		</element>
 		<element id="Observation.effective[x]:data-absent-reason">
 			<path value="Observation.effective[x].extension"/>
@@ -160,7 +167,7 @@
 			</type>
 			<condition value="value"/>
 			<constraint>
-				<key value="val-1"/>
+				<key value="ips-2"/>
 				<severity value="error"/>
 				<human value="if no &quot;related&quot; element is present then Observation must have a&quot; value&quot;"/>
 				<expression value="hasValue() or related.exists"/>

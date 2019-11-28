@@ -270,16 +270,6 @@ v: {
 }
 -------------------------------------------------------------------------------------
 {"code" : {
-  "system" : "http://loinc.org",
-  "code" : "4548-4"
-}, "valueSet" :null, "lang":"null"}####
-v: {
-  "display" : "Hemoglobin A1c/Hemoglobin.total in Blood",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
   "coding" : [{
     "system" : "http://loinc.org",
     "code" : "60591-5",
@@ -467,42 +457,7 @@ v: {
   "resourceType" : "ValueSet",
   "compose" : {
     "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!NR STATS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!CHALSKIN.*$).*"
-      }]
+      "system" : "http://loinc.org"
     }]
   }
 }, "lang":"null"}####
@@ -522,12 +477,67 @@ v: {
   "resourceType" : "ValueSet",
   "compose" : {
     "include" : [{
-      "system" : "http://loinc.org"
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "1"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!NR STATS.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!H&P\\.HX.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!CHALSKIN.*$).*"
+      }]
     }]
   }
 }, "lang":"null"}####
 v: {
   "display" : "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "42803-7",
+    "display" : "Bacteria identified in Isolate"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Bacteria identified in Isolate",
   "severity" : null,
   "error" : ""
 }
@@ -578,26 +588,6 @@ v: {
         "op" : "regex",
         "value" : "^(?!CHALSKIN.*$).*"
       }]
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "Bacteria identified in Isolate",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "42803-7",
-    "display" : "Bacteria identified in Isolate"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org"
     }]
   }
 }, "lang":"null"}####
@@ -1268,8 +1258,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:963f4a5b-88be-4439-bbe3-519b8ca1f4c9",
-    "timestamp" : "2019-11-14T15:59:03.264Z",
+    "identifier" : "urn:uuid:b388ceb5-1215-4455-ad85-d3e39ba1a318",
+    "timestamp" : "2019-11-28T09:26:01.864Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1318,8 +1308,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:f97e5c5e-2172-4b7d-93bf-b199319d90ca",
-    "timestamp" : "2019-11-14T15:59:03.951Z",
+    "identifier" : "urn:uuid:f7945cc7-5c7c-4497-ac12-4f2f6c9cb69b",
+    "timestamp" : "2019-11-28T09:26:08.114Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1371,8 +1361,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:466dc41a-545a-4abe-abd1-53212f29f0b4",
-    "timestamp" : "2019-11-14T16:00:47.404Z",
+    "identifier" : "urn:uuid:b7f8aafd-1858-4618-88df-980c222afa15",
+    "timestamp" : "2019-11-28T09:30:05.879Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1477,8 +1467,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:4efd5d3c-9711-46a1-a287-ba78d3731873",
-    "timestamp" : "2019-11-14T16:00:51.451Z",
+    "identifier" : "urn:uuid:9d6ccbd7-eb35-441c-859a-2cc0b3008776",
+    "timestamp" : "2019-11-28T09:30:31.754Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1556,8 +1546,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:6dae0789-e64e-44bf-969e-1cfd558a2cde",
-    "timestamp" : "2019-11-14T16:00:51.795Z",
+    "identifier" : "urn:uuid:3e481662-2c9f-47fb-ae65-e20ce773751a",
+    "timestamp" : "2019-11-28T09:30:32.504Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1607,8 +1597,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:5f1340e8-371a-4cde-866b-6e2c5ceaf449",
-    "timestamp" : "2019-11-14T16:00:52.139Z",
+    "identifier" : "urn:uuid:6bf4af8b-7289-4418-b764-ea3400610dc1",
+    "timestamp" : "2019-11-28T09:30:33.301Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6648,8 +6638,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:8ceb490c-4297-46cd-ba39-5557c0908f91",
-    "timestamp" : "2019-11-14T16:00:52.779Z",
+    "identifier" : "urn:uuid:62a8edf8-f663-482c-aa1e-2b08d46c8d5d",
+    "timestamp" : "2019-11-28T09:30:35.786Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -11694,8 +11684,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:d3a3f37b-289f-415d-a1c8-17828e74f47c",
-    "timestamp" : "2019-11-14T16:00:53.420Z",
+    "identifier" : "urn:uuid:3194a905-d42a-4807-8d62-13ec4c6f7a1b",
+    "timestamp" : "2019-11-28T09:30:37.629Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -16764,8 +16754,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:bf04ab55-befb-411b-ab57-ba82466e5ab4",
-    "timestamp" : "2019-11-14T16:00:56.748Z",
+    "identifier" : "urn:uuid:b8c7f428-53f6-4f3c-8d0b-ef7f3c9da6a0",
+    "timestamp" : "2019-11-28T09:30:42.145Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -21795,8 +21785,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:6b326735-223a-4520-9678-ee8d440667da",
-    "timestamp" : "2019-11-14T16:04:23.999Z",
+    "identifier" : "urn:uuid:b7f16f94-ed12-428b-805c-d15a6442faaf",
+    "timestamp" : "2019-11-28T09:32:43.083Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -26826,8 +26816,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:036a8c6d-5687-4222-b833-da3a97c146e3",
-    "timestamp" : "2019-11-14T16:04:25.046Z",
+    "identifier" : "urn:uuid:621f984d-faa3-4ab4-b8bd-71191e3167c7",
+    "timestamp" : "2019-11-28T09:32:47.286Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -26894,8 +26884,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:dce4cde1-0c88-4428-8260-1e891597096e",
-    "timestamp" : "2019-11-14T16:07:48.343Z",
+    "identifier" : "urn:uuid:c5a1c3ab-ef11-41dd-ab9c-f5ecefacc106",
+    "timestamp" : "2019-11-28T09:36:09.864Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"

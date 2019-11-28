@@ -26,6 +26,7 @@
 			<definition value="Describes the event of a patient being administered a vaccination or a record of a vaccination as reported by a patient, a clinician or another party and may include vaccine reaction information and what vaccination protocol was followed"/>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Immunization.id">
 			<path value="Immunization.id"/>
 			<mustSupport value="true"/>
@@ -39,6 +40,7 @@
 			<fixedCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"/>
 			<mustSupport value="true"/>
 		</element>
+-->
 		<element id="Immunization.status">
 			<path value="Immunization.status"/>
 			<mustSupport value="true"/>
@@ -322,27 +324,25 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<!-- Check if they have to be mustSupport or Not Begin -->
-		<element id="Immunization.recorded">
+	<element id="Immunization.recorded">
 			<path value="Immunization.recorded"/>
-			<mustSupport value="true"/>
+	<!--		<mustSupport value="true"/> -->
 		</element>
 		<element id="Immunization.primarySource">
 			<path value="Immunization.primarySource"/>
-			<mustSupport value="true"/>
+		<!--	<mustSupport value="true"/> -->
 		</element>
 		<element id="Immunization.reportOrigin">
 			<path value="Immunization.reportOrigin"/>
-			<mustSupport value="true"/>
+		<!--	<mustSupport value="true"/> -->
 		</element>
-		<!-- Check if they have to be mustSupport END-->
 		<element id="Immunization.site">
 			<path value="Immunization.site"/>
 			<type>
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
+<!--			<mustSupport value="true"/> -->
 			<binding>
 				<strength value="preferred"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
