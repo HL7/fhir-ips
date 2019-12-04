@@ -457,7 +457,42 @@ v: {
   "resourceType" : "ValueSet",
   "compose" : {
     "include" : [{
-      "system" : "http://loinc.org"
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "1"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!NR STATS.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!H&P\\.HX.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!CHALSKIN.*$).*"
+      }]
     }]
   }
 }, "lang":"null"}####
@@ -477,42 +512,7 @@ v: {
   "resourceType" : "ValueSet",
   "compose" : {
     "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!NR STATS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!CHALSKIN.*$).*"
-      }]
+      "system" : "http://loinc.org"
     }]
   }
 }, "lang":"null"}####
@@ -532,26 +532,6 @@ v: {
   "resourceType" : "ValueSet",
   "compose" : {
     "include" : [{
-      "system" : "http://loinc.org"
-    }]
-  }
-}, "lang":"null"}####
-v: {
-  "display" : "Bacteria identified in Isolate",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "coding" : [{
-    "system" : "http://loinc.org",
-    "code" : "42803-7",
-    "display" : "Bacteria identified in Isolate"
-  }]
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
       "system" : "http://loinc.org",
       "filter" : [{
         "property" : "STATUS",
@@ -588,6 +568,26 @@ v: {
         "op" : "regex",
         "value" : "^(?!CHALSKIN.*$).*"
       }]
+    }]
+  }
+}, "lang":"null"}####
+v: {
+  "display" : "Bacteria identified in Isolate",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "coding" : [{
+    "system" : "http://loinc.org",
+    "code" : "42803-7",
+    "display" : "Bacteria identified in Isolate"
+  }]
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org"
     }]
   }
 }, "lang":"null"}####
@@ -1258,8 +1258,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:b388ceb5-1215-4455-ad85-d3e39ba1a318",
-    "timestamp" : "2019-11-28T09:26:01.864Z",
+    "identifier" : "urn:uuid:1afc1a7c-d463-42c0-907c-064a0871bf49",
+    "timestamp" : "2019-12-04T14:38:34.291Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1308,8 +1308,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:f7945cc7-5c7c-4497-ac12-4f2f6c9cb69b",
-    "timestamp" : "2019-11-28T09:26:08.114Z",
+    "identifier" : "urn:uuid:3213e688-2ec6-4f85-97d2-a6ec83e772c2",
+    "timestamp" : "2019-12-04T14:38:34.744Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1361,8 +1361,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:b7f8aafd-1858-4618-88df-980c222afa15",
-    "timestamp" : "2019-11-28T09:30:05.879Z",
+    "identifier" : "urn:uuid:351c0397-df77-499e-846f-031adff38e2c",
+    "timestamp" : "2019-12-04T14:40:59.259Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1467,8 +1467,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:9d6ccbd7-eb35-441c-859a-2cc0b3008776",
-    "timestamp" : "2019-11-28T09:30:31.754Z",
+    "identifier" : "urn:uuid:8e594ff0-a45f-494f-be58-e3a558a65850",
+    "timestamp" : "2019-12-04T14:41:01.181Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1546,8 +1546,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:3e481662-2c9f-47fb-ae65-e20ce773751a",
-    "timestamp" : "2019-11-28T09:30:32.504Z",
+    "identifier" : "urn:uuid:8d275ee9-1879-49e4-b7fd-c0577bea8436",
+    "timestamp" : "2019-12-04T14:41:01.369Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1597,8 +1597,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:6bf4af8b-7289-4418-b764-ea3400610dc1",
-    "timestamp" : "2019-11-28T09:30:33.301Z",
+    "identifier" : "urn:uuid:a8811be3-45ad-48a4-9a81-57b5cd270af6",
+    "timestamp" : "2019-12-04T14:41:01.541Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6638,8 +6638,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:62a8edf8-f663-482c-aa1e-2b08d46c8d5d",
-    "timestamp" : "2019-11-28T09:30:35.786Z",
+    "identifier" : "urn:uuid:9f9e1bcb-7d6d-48e2-bfd6-76d7f0bb1d8d",
+    "timestamp" : "2019-12-04T14:41:02.056Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -11684,8 +11684,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:3194a905-d42a-4807-8d62-13ec4c6f7a1b",
-    "timestamp" : "2019-11-28T09:30:37.629Z",
+    "identifier" : "urn:uuid:cf713456-a139-4e91-9824-f2c4a8e441c2",
+    "timestamp" : "2019-12-04T14:41:02.619Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -16754,8 +16754,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:b8c7f428-53f6-4f3c-8d0b-ef7f3c9da6a0",
-    "timestamp" : "2019-11-28T09:30:42.145Z",
+    "identifier" : "urn:uuid:52de44d5-15e1-49af-9432-ab3431cf666f",
+    "timestamp" : "2019-12-04T14:41:05.275Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -21785,8 +21785,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:b7f16f94-ed12-428b-805c-d15a6442faaf",
-    "timestamp" : "2019-11-28T09:32:43.083Z",
+    "identifier" : "urn:uuid:4db95994-b243-47c0-a524-78655effdc7f",
+    "timestamp" : "2019-12-04T14:42:20.275Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -26816,8 +26816,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:621f984d-faa3-4ab4-b8bd-71191e3167c7",
-    "timestamp" : "2019-11-28T09:32:47.286Z",
+    "identifier" : "urn:uuid:5b842083-5109-4761-a9c7-8e36a630055b",
+    "timestamp" : "2019-12-04T14:42:20.978Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -26884,8 +26884,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:c5a1c3ab-ef11-41dd-ab9c-f5ecefacc106",
-    "timestamp" : "2019-11-28T09:36:09.864Z",
+    "identifier" : "urn:uuid:9a81f318-9976-49ae-bea2-c078f67a434f",
+    "timestamp" : "2019-12-04T14:44:21.447Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
