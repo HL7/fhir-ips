@@ -87,7 +87,15 @@
 				<key value="pat-cnt-2or3-char"/>
 				<severity value="warning"/>
 				<human value="The content of this element SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, IF the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2."/>
+				<!-- original constraint expression string - not a valid FHIRpath expression
 				<expression value="IF country NOT IN http://hl7.org/fhir/ValueSet/iso3166-1-2 THEN country IN http://hl7.org/fhir/ValueSet/iso3166-1-3"/>
+				-->
+				<!-- updated constraint expression string (but incomplete, because we should allow 3-char codes only when there IS NOT a corresponding 2-char code)
+					this should be a valid FHIRpath expression (needs to be verified), but IG Publisher reports: 
+						Exception in thread "main" java.lang.Error: not Implemented yet
+							at org.hl7.fhir.r5.utils.FHIRPathEngine.funcMemberOf(FHIRPathEngine.java:2863)
+				<expression value="Patient.address.country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-2') or Patient.address.country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-3')"/>
+				-->
 			</constraint>
 			<mustSupport value="true"/>
 		</element>
