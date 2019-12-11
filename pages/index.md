@@ -91,7 +91,7 @@ As specified in the CEN EN 17269 and ISO/CD 27269, the IPS dataset is a <b><i>"m
 The IPS Document or IPS can be extended by non-IPS standard condition-specific data.
 ‘Non-exhaustive’ recognizes that the ideal data set is not closed, and is likely to be extended, not just in terms of requirement evolution, but also pragmatically in instances of use. </i> [EN 17269; ISO/CD 27269].
 
-Furthermore the scope of the IPS is global. Although this is a major challenge, this implementation guide takes various experiences and newer developments into account to address global feasibility as far as possible.
+Furthermore the scope of the IPS is global. Although this is a major challenge, this implementation guide takes various experiences and newer developments (e.g. <a href="http://hl7.org/fhir/us/core/history.html">US Core Implementation Guide (FHIR IG)</a>) into account to address global feasibility as far as possible.
 
 The following picture provides an overview of the current IPS content.
 
@@ -117,5 +117,7 @@ This Implementation Guide is being balloted as STU with the intention to go norm
 | **Contributor** | Gary Dickinson | CentriHealth | gary.dickinson@ehr-standards.com |
 | **Contributor** |  Dr Kai U. Heitmann | Heitmann Consulting and Services, Gefyra GmbH, HL7 Germany | info@kheitmann.de  |
 | **Contributor** | Catherine Chronaki | HL7 International Foundation | chronaki@gmail.com |
+| **Contributor** | George Dixon | Allscripts LLC | george.dixon@allscripts.com |
+| **Contributor** | Kenneth Sinn  | eHealth Ontario | ken.sinn@ehealthontario.on.ca |
 
 
