@@ -28,6 +28,7 @@
 			<path value="DeviceUseStatement"/>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="DeviceUseStatement.id">
 			<path value="DeviceUseStatement.id"/>
 			<mustSupport value="true"/>
@@ -41,6 +42,7 @@
 			<fixedCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips"/>
 			<mustSupport value="true"/>
 		</element>
+-->
 		<element id="DeviceUseStatement.subject">
 			<path value="DeviceUseStatement.subject"/>
 			<definition value="The patient using the device."/>
@@ -91,7 +93,9 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
+			<!--
 			<mustSupport value="false"/>
+-->
 			<binding>
 				<strength value="example"/>
 				<valueSet value="http://hl7.org/fhir/ValueSet/body-site"/>
