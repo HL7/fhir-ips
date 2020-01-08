@@ -27,3 +27,31 @@ v: {
   "error" : "The code system \"urn:oid:2.16.840.1.113883.2.4.4.7\" is not known (encountered paired with code = \"2076667\"); The code provided (urn:oid:2.16.840.1.113883.2.4.4.7#2076667) is not  valid in the value set WHOATC"
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "urn:oid:2.16.840.1.113883.2.4.4.7",
+  "code" : "2076667"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"urn:oid:2.16.840.1.113883.2.4.4.7\" is not known (encountered paired with code = \"2076667\"); The code provided (urn:oid:2.16.840.1.113883.2.4.4.7#2076667) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "urn:oid:2.16.840.1.113883.2.4.4.7",
+  "code" : "2076667",
+  "display" : "ANASTROZOL CF TABLET FILMOMHULD 1MG"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.whocc.no/atc"
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"urn:oid:2.16.840.1.113883.2.4.4.7\" is not known (encountered paired with code = \"2076667\"); The code provided (urn:oid:2.16.840.1.113883.2.4.4.7#2076667) is not  valid in the value set WHOATC"
+}
+-------------------------------------------------------------------------------------
