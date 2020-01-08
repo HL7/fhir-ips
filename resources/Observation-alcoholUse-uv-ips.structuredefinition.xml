@@ -25,15 +25,6 @@
 			<path value="Observation.id"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Observation.meta">
-			<path value="Observation.meta"/>
-			<fixedCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.meta.profile">
-			<path value="Observation.meta.profile"/>
-			<mustSupport value="true"/>
-		</element>
 		<element id="Observation.status">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
 				<valueString value="default: final"/>
