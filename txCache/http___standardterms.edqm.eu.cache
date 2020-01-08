@@ -8949,3 +8949,25 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "10219000",
+  "display" : "Tablet"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+v: {
+  "display" : "Tablet",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20035000",
+  "display" : "Voie intramusculaire"
+}, "valueSet" :null, "lang":"fr-LU", "useServer":"true", "useClient":"true", "guessSystem":"false"}####
+v: {
+  "display" : "Intramuscular use",
+  "severity" : "warning",
+  "error" : "The display \"Voie intramusculaire\" is not a valid display for the code {http://standardterms.edqm.eu}20035000 - should be one of [\"Intramuscular use\"]"
+}
+-------------------------------------------------------------------------------------
