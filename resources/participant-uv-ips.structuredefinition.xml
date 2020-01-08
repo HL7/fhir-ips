@@ -27,14 +27,17 @@
 	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
 	<derivation value="constraint"/>
 	<differential>
-		<element id="Extension.url">
+		<element id="Extension:participant-uv-ips">
+			<path value="Extension"/>
+      		<mustSupport value="true"/>
+		</element>
+		<element id="Extension:participant-uv-ips.url">
 			<path value="Extension.url"/>
 			<fixedUri value="http://hl7.org/fhir/uv/ips/StructureDefinition/participant-uv-ips"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Extension.value[x]:valueReference">
+		<element id="Extension:participant-uv-ips.valueReference">
 			<path value="Extension.valueReference"/>
-			<sliceName value="valueReference"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>

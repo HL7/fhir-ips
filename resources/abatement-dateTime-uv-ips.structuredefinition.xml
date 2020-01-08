@@ -21,14 +21,17 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <derivation value="constraint"/>
   <differential>
-    <element id="Extension.url">
+		<element id="Extension:abatement-dateTime-uv-ips">
+			<path value="Extension"/>
+      <mustSupport value="true"/>
+		</element>
+    <element id="Extension:abatement-dateTime-uv-ips.url">
       <path value="Extension.url"/>
       <fixedUri value="http://hl7.org/fhir/uv/ips/StructureDefinition/abatement-dateTime-uv-ips"/>
       <mustSupport value="true"/>
     </element>
-    <element id="Extension.value[x]:valueDateTime">
+    <element id="Extension:abatement-dateTime-uv-ips.valueDateTime">
       <path value="Extension.valueDateTime"/>
-      <sliceName value="valueDateTime"/>
       <type>
         <code value="dateTime"/>
       </type>
