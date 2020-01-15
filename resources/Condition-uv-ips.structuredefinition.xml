@@ -54,8 +54,27 @@
 		</element>
 		<element id="Condition.category">
 			<path value="Condition.category"/>
+			<slicing>
+				<discriminator>
+					<type value="pattern"/>
+					<path value="$this"/>
+				</discriminator>
+				<description value="Discriminated by the bound value set"/>
+				<rules value="open"/>
+			</slicing>
 			<definition value="A category assigned to the condition. In this profile, a health problem of the patient, therefore a 'problem-list-item'.&#xD;&#xA;"/>
-			<comment value="In this profile, Condition represents a health problem of the patient. Therefore the code is fixed to the value problem-list-item."/>
+			<comment value="In this profile, Condition represents a health problem of the patient. Therefore one of the category value(s) must be problem-list-item."/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Condition.category:problem">
+			<path value="Condition.category"/>
+			<sliceName value="problemCategory"/>
+			<comment value="The category value problem-list-item is required."/>
+			<min value="1"/>
 			<max value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
