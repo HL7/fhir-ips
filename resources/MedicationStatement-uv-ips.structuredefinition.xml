@@ -184,6 +184,7 @@
 			<path value="MedicationStatement.informationSource"/>
 			<mustSupport value="true"/>
 		</element>
+		<!-- they are not mustSupport based on the resolution https://jira.hl7.org/browse/FHIR-23897
 		<element id="MedicationStatement.reasonCode">
 			<path value="MedicationStatement.reasonCode"/>
 			<type>
@@ -196,6 +197,7 @@
 			<path value="MedicationStatement.reasonReference"/>
 			<mustSupport value="true"/>
 		</element>
+-->
 		<element id="MedicationStatement.dosage">
 			<path value="MedicationStatement.dosage"/>
 			<mustSupport value="true"/>
@@ -234,6 +236,7 @@
 			<mustSupport value="true"/>
 		</element>
 -->
+<!-- they are not mustSupport based on the resolution https://jira.hl7.org/browse/FHIR-23897
 		<element id="MedicationStatement.dosage.site">
 			<path value="MedicationStatement.dosage.site"/>
 			<type>
@@ -246,6 +249,7 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
 			</binding>
 		</element>
+-->
 		<element id="MedicationStatement.dosage.route">
 			<path value="MedicationStatement.dosage.route"/>
 			<type>

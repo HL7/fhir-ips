@@ -21,11 +21,15 @@
 			<path value="Patient"/>
 			<mustSupport value="true"/>
 		</element>
+		<element id="Patient.identifier">
+			<path value="Patient.identifier"/>
+			<mustSupport value="true"/>
+		</element>
 		<element id="Patient.name">
 			<path value="Patient.name"/>
 			<requirements value="Need to be able to track the patient by multiple names. Examples are your official name and a partner name.&#xD;&#xA;The Alphabetic representation of the name SHALL be always provided"/>
 			<min value="1"/>
-			<max value="*"/>			
+			<max value="*"/>
 			<constraint>
 				<key value="ips-pat-1"/>
 				<severity value="error"/>
