@@ -1,0 +1,33 @@
+<AllergyIntolerance xmlns="http://hl7.org/fhir" >
+	<id value="allergyintolerance-with-abatement"/>
+    <extension url="http://hl7.org/fhir/uv/ips/StructureDefinition/abatement-dateTime-uv-ips">
+        <valueDateTime value="2010"/>
+    </extension>
+	<clinicalStatus>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+			<code value="resolved"/>
+		</coding>
+	</clinicalStatus>
+	<verificationStatus>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+			<code value="confirmed"/>
+		</coding>
+	</verificationStatus>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="256303006"/>
+			<display value="Ragweed pollen"/>
+		</coding>
+	</code>
+	<patient>
+		<reference value="Patient/66033"/>
+	</patient>
+	<onsetDateTime>
+		<extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+			<valueCode value="unknown"/>
+		</extension>
+	</onsetDateTime>
+</AllergyIntolerance>
