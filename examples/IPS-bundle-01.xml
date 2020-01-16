@@ -993,25 +993,6 @@
 		<resource>
 			<AllergyIntolerance>
 				<id value="c7781f44-6df8-4a8b-9e06-0b34263a47c5"/>
-				<identifier>
-					<system value="urn:oid:1.2.3.999"/>
-					<value value="3a462598-009c-484a-965c-d6b24a821424"/>
-				</identifier>
-				<clinicalStatus>
-					<coding>
-						<system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
-						<code value="active"/>
-					</coding>
-				</clinicalStatus>
-				<verificationStatus>
-					<coding>
-						<system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
-						<code value="confirmed"/>
-					</coding>
-				</verificationStatus>
-				<type value="allergy"/>
-				<category value="medication"/>
-				<criticality value="high"/>
 				<code>
 					<coding>
 						<system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
@@ -1021,7 +1002,6 @@
 				<patient>
 					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
 				</patient>
-				<onsetDateTime value="2010"/>
 			</AllergyIntolerance>
 		</resource>
 	</entry>
