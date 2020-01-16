@@ -27,7 +27,7 @@
 			<path value="Specimen"/>
 			<mustSupport value="true"/>
 		</element>
-				<element id="Specimen.id">
+		<element id="Specimen.id">
 			<path value="Specimen.id"/>
 			<mustSupport value="true"/>
 		</element>
@@ -68,34 +68,9 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Specimen.receivedTime">
-			<path value="Specimen.receivedTime"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
-		<element id="Specimen.parent">
-			<path value="Specimen.parent"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
-		<element id="Specimen.request">
-			<path value="Specimen.request"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
 		<element id="Specimen.collection">
 			<path value="Specimen.collection"/>
 			<mustSupport value="true"/>
-		</element>
-		<element id="Specimen.collection.collector">
-			<path value="Specimen.collection.collector"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
-		<element id="Specimen.collection.quantity">
-			<path value="Specimen.collection.quantity"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
 		</element>
 		<element id="Specimen.collection.method">
 			<path value="Specimen.collection.method"/>
@@ -109,20 +84,6 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/specimen-collection-method-uv-ips"/>
 			</binding>
 		</element>
-		<!--
-		<element id="Specimen.collection.method.coding">
-			<path value="Specimen.collection.method.coding"/>
-			<type>
-				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-			<binding>
-				<strength value="extensible"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/specimen-collection-method-uv-ips"/>
-			</binding>
-		</element>
--->
 		<element id="Specimen.collection.bodySite">
 			<path value="Specimen.collection.bodySite"/>
 			<type>
@@ -134,30 +95,6 @@
 				<strength value="extensible"/>
 				<valueSet value="http://hl7.org/fhir/ValueSet/body-site"/>
 			</binding>
-		</element>
-		<!--
-		<element id="Specimen.collection.bodySite.coding">
-			<path value="Specimen.collection.bodySite.coding"/>
-			<type>
-				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-			<binding>
-				<strength value="extensible"/>
-				<valueSet value="http://hl7.org/fhir/ValueSet/body-site"/>
-			</binding>
-		</element>
--->
-		<element id="Specimen.processing">
-			<path value="Specimen.processing"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
-		<element id="Specimen.container">
-			<path value="Specimen.container"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
 		</element>
 	</differential>
 </StructureDefinition>
