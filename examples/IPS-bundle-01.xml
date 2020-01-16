@@ -993,6 +993,15 @@
 		<resource>
 			<AllergyIntolerance>
 				<id value="c7781f44-6df8-4a8b-9e06-0b34263a47c5"/>
+				<!-- the clinicalStatus element (regardless of the element value) is not clinically relevant in the case of 
+					"no known allergies", but it is required to be present currently by the FHIR specification and the 
+					validation tooling - this is likely to be addressed in R5 -->
+				<clinicalStatus>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+						<code value="active"/>
+					</coding>
+				</clinicalStatus>
 				<code>
 					<coding>
 						<system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
