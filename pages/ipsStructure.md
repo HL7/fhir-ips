@@ -115,7 +115,7 @@ The advance directives section contains a narrative description of patient's adv
 
 # List of Profiles
 
-The list of the Profiles that have been defined for this implementation guide are listed <a href="profiles.html">here</a> 
+The profiles that have been defined for this implementation guide are listed <a href="profiles.html">here</a>. 
 
 Hereafter the profiles that have been defined for each section. (R) denotes a required section (i.e. must be present in an IPS), (S) denotes a recommended section, the others are optional:
 * Medication Summary (R) [ <a href="StructureDefinition-MedicationStatement-uv-ips.html">Medication Statement (IPS)</a>; <a href="StructureDefinition-Medication-uv-ips.html">Medication (IPS)</a> ]

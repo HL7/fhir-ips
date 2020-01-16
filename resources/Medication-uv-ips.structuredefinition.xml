@@ -100,15 +100,6 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform"/>
 			</binding>
 		</element>
-
-		<element id="Medication.amount">
-			<path value="Medication.amount"/>
-			<type>
-				<code value="Ratio"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Ratio-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
 		<element id="Medication.ingredient">
 			<path value="Medication.ingredient"/>
 			<mustSupport value="true"/>

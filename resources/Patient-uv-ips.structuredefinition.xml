@@ -86,7 +86,7 @@
 		</element>
 		<element id="Patient.address.country">
 			<path value="Patient.address.country"/>
-			<comment value="ISO 3166 2 or 3 letter codes shall be used in place of a full country name.&#xD;&#xA;&#xD;&#xA;Required for cross-border exchange of IPS"/>
+			<comment value="ISO 3166 2 or 3 letter codes shall be used in place of a full country name.&#xD;&#xA;&#xD;&#xA;Required for cross-border exchange of IPS. ISO 3166 country codes can be used or free in «lists» (e.g. value sets) or software."/>
 			<constraint>
 				<key value="pat-cnt-2or3-char"/>
 				<severity value="warning"/>
