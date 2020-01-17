@@ -9,8 +9,8 @@
 	<publisher value="Health Level Seven International - Patient Care Work Group"/>
 	<contact>
 		<telecom>
-		  <system value="other"/>
-		  <value value="http://www.hl7.org/Special/committees/patientcare/index.cfm"/>
+			<system value="other"/>
+			<value value="http://www.hl7.org/Special/committees/patientcare/index.cfm"/>
 		</telecom>
 	</contact>
 	<packageId value="hl7.fhir.uv.ips"/>
@@ -19,6 +19,7 @@
 		<grouping>
 			<name value="base"/>
 		</grouping>
+		<!-- ======== EXAMPLES ========== -->
 		<resource>
 			<reference>
 				<reference value="Bundle/IPS-examples-Bundle-01"/>
@@ -86,6 +87,50 @@
 			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
 		</resource>
 		<resource>
+			<exampleBoolean value="true"/>
+			<reference>
+				<reference value="DeviceUseStatement/eumfh-70-275-1"/>
+			</reference>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="true"/>
+			<reference>
+				<reference value="Device/eumfh-70-275-1"/>
+			</reference>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="true"/>
+			<reference>
+				<reference value="Observation/trilliumII-example-imaging-1"/>
+			</reference>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-imaging-uv-ips"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="true"/>
+			<reference>
+				<reference value="Observation/trilliumII-example-imaging-4"/>
+			</reference>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-imaging-uv-ips"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="true"/>
+			<reference>
+				<reference value="ImagingStudy/TII-ImagingStudy-5-1"/>
+			</reference>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/ImagingStudy-uv-ips"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="true"/>
+			<reference>
+				<reference value="Composition/IPS-examples-Composition-01"/>
+			</reference>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips"/>
+		</resource>
+		<!-- ======== EXAMPLES END ========== -->
+		<resource>
+			<exampleBoolean value="false"/>
 			<reference>
 				<reference value="ValueSet/pregnancy-status-uv-ips"/>
 			</reference>
