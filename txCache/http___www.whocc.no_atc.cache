@@ -23,7 +23,25 @@ v: {
   "system" : "http://www.whocc.no/atc",
   "code" : "L02BG03",
   "display" : "anastrozole"
-}, "valueSet" :null, "lang":"en-GB", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "anastrozole",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "L02BG03",
+  "display" : "anastrozole"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.whocc.no/atc"
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "anastrozole",
   "severity" : null,
@@ -34,7 +52,25 @@ v: {
   "system" : "http://www.whocc.no/atc",
   "code" : "G02CX04",
   "display" : "Cimicifugae rhizoma"
-}, "valueSet" :null, "lang":"en-GB", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Cimicifugae rhizoma",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "G02CX04",
+  "display" : "Cimicifugae rhizoma"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.whocc.no/atc"
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "Cimicifugae rhizoma",
   "severity" : null,
@@ -54,9 +90,73 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.whocc.no/atc",
+  "code" : "C10AA01",
+  "display" : "simvastatin"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.whocc.no/atc"
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "simvastatin",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
   "code" : "J07CA02",
   "display" : "diphtheria-pertussis-poliomyelitis-tetanus"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "71181003"
+      }]
+    }],
+    "exclude" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "71181003"
+      }]
+    }]
+  }
+}, "lang":"fr-LU", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "diphtheria-pertussis-poliomyelitis-tetanus",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "J07CA02"
 }, "valueSet" :null, "lang":"fr-LU", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "diphtheria-pertussis-poliomyelitis-tetanus",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "J07CA02",
+  "display" : "diphtheria-pertussis-poliomyelitis-tetanus"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.whocc.no/atc"
+    }]
+  }
+}, "lang":"fr-LU", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "diphtheria-pertussis-poliomyelitis-tetanus",
   "severity" : null,
@@ -75,8 +175,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:ce2e2aa7-2f84-455f-95e5-4739c21c5d8c",
-    "timestamp" : "2020-01-14T14:18:55.505Z",
+    "identifier" : "urn:uuid:b9d41682-c6fe-4af2-a249-5abcffb9c7fa",
+    "timestamp" : "2020-01-17T06:12:58.223Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
