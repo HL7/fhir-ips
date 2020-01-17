@@ -27277,3 +27277,269 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "11778-8"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Delivery date Estimated",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA15173-0"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Pregnant",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "11778-8"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "11778-8",
+        "display" : "Delivery date Estimated"
+      },
+      {
+        "code" : "11779-6",
+        "display" : "Delivery date Estimated from last menstrual period"
+      },
+      {
+        "code" : "11780-4",
+        "display" : "Delivery date Estimated from ovulation date"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Delivery date Estimated",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "11778-8",
+  "display" : "Delivery date Estimated"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "11778-8",
+        "display" : "Delivery date Estimated"
+      },
+      {
+        "code" : "11779-6",
+        "display" : "Delivery date Estimated from last menstrual period"
+      },
+      {
+        "code" : "11780-4",
+        "display" : "Delivery date Estimated from ovulation date"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "Delivery date Estimated",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "82810-3",
+  "display" : "Pregnancy status"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Pregnancy status",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA15173-0"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA15173-0",
+        "display" : "Pregnant"
+      },
+      {
+        "code" : "LA26683-5",
+        "display" : "Not pregnant"
+      },
+      {
+        "code" : "LA4489-6",
+        "display" : "Unknown"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Pregnant",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA15173-0",
+  "display" : "Pregnant"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA15173-0",
+        "display" : "Pregnant"
+      },
+      {
+        "code" : "LA26683-5",
+        "display" : "Not pregnant"
+      },
+      {
+        "code" : "LA4489-6",
+        "display" : "Unknown"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "Pregnant",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "11640-0"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "[#] Births total",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "11640-0"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "11636-8",
+        "display" : "[#] Births.live"
+      },
+      {
+        "code" : "11637-6",
+        "display" : "[#] Births.preterm"
+      },
+      {
+        "code" : "11638-4",
+        "display" : "[#] Births.still living"
+      },
+      {
+        "code" : "11639-2",
+        "display" : "[#] Births.term"
+      },
+      {
+        "code" : "11640-0",
+        "display" : "[#] Births total"
+      },
+      {
+        "code" : "11612-9",
+        "display" : "[#] Abortions"
+      },
+      {
+        "code" : "11613-7",
+        "display" : "[#] Abortions.induced"
+      },
+      {
+        "code" : "11614-5",
+        "display" : "[#] Abortions.spontaneous"
+      },
+      {
+        "code" : "33065-4",
+        "display" : "[#] Ectopic pregnancy"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "[#] Births total",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "11640-0",
+  "display" : "[#] Births total"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "11636-8",
+        "display" : "[#] Births.live"
+      },
+      {
+        "code" : "11637-6",
+        "display" : "[#] Births.preterm"
+      },
+      {
+        "code" : "11638-4",
+        "display" : "[#] Births.still living"
+      },
+      {
+        "code" : "11639-2",
+        "display" : "[#] Births.term"
+      },
+      {
+        "code" : "11640-0",
+        "display" : "[#] Births total"
+      },
+      {
+        "code" : "11612-9",
+        "display" : "[#] Abortions"
+      },
+      {
+        "code" : "11613-7",
+        "display" : "[#] Abortions.induced"
+      },
+      {
+        "code" : "11614-5",
+        "display" : "[#] Abortions.spontaneous"
+      },
+      {
+        "code" : "33065-4",
+        "display" : "[#] Ectopic pregnancy"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "[#] Births total",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

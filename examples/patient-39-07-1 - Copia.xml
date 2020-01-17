@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir">
+	<id value="eumfh-39-07"/>
+	<extension url="http://hl7.org/fhir/StructureDefinition/patient-citizenship">
+		<extension url="code">
+			<valueCodeableConcept>
+				<coding>
+					<system value="urn:iso:std:iso:3166"/>
+					<code value="US"/>
+					<display value="United States of America"/>
+				</coding>
+			</valueCodeableConcept>
+		</extension>
+	</extension>
+	<identifier>
+		<system value="http://trilliumbridge.eu/fhir/demos/eumfh/inject"/>
+		<value value="39-07"/>
+	</identifier>
+	<identifier>
+		<system value="http://trilliumbridge.eu/fhir/demos/eumfh/patient_id"/>
+		<value value="EUR01P0001"/>
+	</identifier>
+	<active value="true"/>
+	<name>
+		<family value="Heig"/>
+		<given value="Alexander"/>
+	</name>
+	<gender value="male"/>
+	<birthDate value="1957"/>
+</Patient>

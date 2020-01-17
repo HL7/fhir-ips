@@ -19,6 +19,15 @@ active: examples
 {% include list-simple-conditions.xhtml %}
 
 
+## DeviceUseStatement
+
+{% include list-simple-deviceusestatements.xhtml %}
+
+## Device
+
+{% include list-simple-devices.xhtml %}
+
+
 ## Immunization
 
 {% include list-simple-immunizations.xhtml %}
@@ -30,6 +39,15 @@ active: examples
 ## MedicationStatement
 
 {% include list-simple-medicationstatements.xhtml %}
+
+## Observation
+
+{% include list-simple-observations.xhtml %}
+
+
+## Organization
+
+{% include list-simple-organizations.xhtml %}
 
 ## Patient
 

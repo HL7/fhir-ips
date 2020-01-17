@@ -136,8 +136,42 @@
 				<reference value="Organization/TII-Organization1"/>
 			</reference>
 			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-observation-uv-ips"/>
-		</resource>		
-		
+		</resource>
+		<resource>
+			<exampleBoolean value="true"/>
+			<reference>
+				<reference value="Device/trilliumII-example-imaging-1"/>
+			</reference>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Device-observer-uv-ips"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="true"/>
+			<reference>
+				<reference value="Observation/pregnancy-eed-example"/>
+			</reference>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-edd-uv-ips"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="true"/>
+			<reference>
+				<reference value="Observation/pregnancy-status-example"/>
+			</reference>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="true"/>
+			<reference>
+				<reference value="Observation/pregnancy-outcome-example"/>
+			</reference>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-outcome-uv-ips"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="true"/>
+			<reference>
+				<reference value="Patient/patient-example-female"/>
+			</reference>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
+		</resource>
 		<!-- ======== EXAMPLES END ========== -->
 		<resource>
 			<exampleBoolean value="false"/>
