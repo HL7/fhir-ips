@@ -198,7 +198,7 @@
 			<slicing>
 				<discriminator>
 					<type value="type"/>
-					<path value="value[x]"/>
+					<path value="$this.value[x]"/>
 				</discriminator>
 				<rules value="closed"/>
 			</slicing>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	<!--        TRILLIUM II Project
+		Example of imaging observation including the information of example 2 (some essential and contextual data ) plus:
+	- reason For Study (example 3)
+	- target region (example 3)
+	- acquisition device (example 3)
+	- list of evidence references  (example 3)
+	- reference to the report 
+
+	Only textual results including overall result and findings
+    -->
+	<id value="trilliumII-example-imaging-4"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<p>
+				<b>date</b>: 1995-06-08
+            </p>
+			<p>
+				<b>subject</b>: <a>Patient/eumfh-39-07</a>
+			</p>
+			<p>
+				<b>CT Abdomen W contrast IV</b>
+			</p>
+			<p>
+				<b>Procedure Description:</b>Serial imaging was obtained in the upper abdomen with the administration of oral and intravenous contrast.</p>
+			<p>
+				<b>Finding:</b>The examination demonstrates a well circumscribed 3 cm lesion present within the medial aspect of the inferior right liver lobe. Initial evaluation demonstrates lack of contrast enhancement. Subsequent imaging (not shown) demonstrated typical contrast enhancement pattern of a benign hemangioma of the liver. The remaining contrast enhancement pattern in the liver is normal. There is normal appearance of the adrenal glands, spleen, kidneys, and pancreas. There is no evidence of liver metastasis.</p>
+			<p>
+				<b>Conclusion:</b>3 cm nodule present in the inferior medial aspect of right liver lobe. Contrast enhancement pattern consistent with the diagnosis of hemangioma.
+            </p>
+		</div>
+	</text>
+	<extension url="http://hl7.org/fhir/StructureDefinition/event-partOf">
+		<valueReference>
+			<!-- check all the URL used for references and update them as needed -->
+			<reference value="ImagingStudy/TII-ImagingStudy-5-1"/>
+		</valueReference>
+	</extension>
+	<status value="final"/>
+	<category>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+			<code value="imaging"/>
+			<display value="Imaging"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="79103-8"/>
+			<display value="CT Abdomen W contrast IV"/>
+		</coding>
+		<text value="Upper abdomen with the administration of oral and intravenous contrast (example-4)"/>
+	</code>
+	<!-- in the profile effectiveTime is 0...1 -->
+	<subject>
+		<!-- revise the URL if needed -->
+		<reference value="Patient/eumfh-39-07"/>
+	</subject>
+	<effectiveDateTime value="1995-06-08"/>
+	<performer>
+		<!-- revise the URL if needed ; -->
+		<reference value="Practitioner/eumfh-39-07"/>
+	</performer>
+	<performer>
+		<!-- revise the URL if needed -->
+		<reference value="Organization/TII-Organization1"/>
+	</performer>
+	<valueString value="3 cm nodule present in the inferior medial aspect of right liver lobe. Contrast enhancement pattern consistent with the diagnosis of hemangioma."/>
+	<component>
+		<code>
+			<coding>
+				<system value="http://dicom.nema.org/resources/ontology/DCM"/>
+				<code value="121065"/>
+				<display value="Procedure Description"/>
+			</coding>
+		</code>
+		<valueString value="Serial imaging was obtained in the upper abdomen with the administration of oral and intravenous contrast."/>
+	</component>
+	<component>
+		<code>
+			<coding>
+				<system value="http://dicom.nema.org/resources/ontology/DCM"/>
+				<code value="121071"/>
+				<display value="Finding"/>
+			</coding>
+		</code>
+		<valueString value="The examination demonstrates a well circumscribed 3 cm lesion present within the medial aspect of the inferior right liver lobe. Initial evaluation demonstrates lack of contrast enhancement. Subsequent imaging (not shown) demonstrated typical contrast enhancement pattern of a benign hemangioma of the liver. The remaining contrast enhancement pattern in the liver is normal. There is normal appearance of the adrenal glands, spleen, kidneys, and pancreas. There is no evidence of liver metastasis."/>
+	</component>
+</Observation>
