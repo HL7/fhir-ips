@@ -40,10 +40,13 @@
 			<path value="Immunization.vaccineCode"/>
 			<slicing>
 				<discriminator>
-					<type value="value"/>
-					<path value="coding.system"/>
+					<!-- <type value="value"/>
+					<path value="coding.system"/> -->
+					<type value="pattern"/>
+					<path value="$this"/>
 				</discriminator>
-				<description value="Discriminated by code system"/>
+				<!-- <description value="Discriminated by code system"/> -->
+				<description value="Discriminated by bound value set"/>
 				<rules value="open"/>
 			</slicing>
 			<short value="Vaccine that was administered or was to be administered.Several kinds of vaccine product coding could be provided.&#xD;&#xA;&#xD;&#xA;
@@ -64,6 +67,7 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips"/>
 			</binding>
 		</element>
+		<!--
 		<element id="Immunization.vaccineCode.coding">
 			<path value="Immunization.vaccineCode.coding"/>
 			<slicing>
@@ -76,19 +80,23 @@
 			</slicing>
 			<definition value="A representation of the vaccine in a code system. The representation can be granular or may also be a class or category."/>
 			<min value="1"/>
-			<!--
+		--> <!--
 			<type>
 				<code value="Coding"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
 			</type>
-			-->
+			--> <!--
 			<mustSupport value="true"/>
 		</element>
-		<element id="Immunization.vaccineCode.coding:atcClass">
-			<path value="Immunization.vaccineCode.coding"/>
+		-->
+		<!-- <element id="Immunization.vaccineCode.coding:atcClass">
+			<path value="Immunization.vaccineCode.coding"/> -->
+		<element id="Immunization.vaccineCode:atcClass">
+			<path value="Immunization.vaccineCode"/>
 			<sliceName value="atcClass"/>
 			<short value="WHO ATC classification"/>
 			<definition value="WHO ATC classification"/>
+			<min value="0"/>
 			<max value="1"/>
 			<!--
 			<type>
@@ -105,13 +113,13 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips"/>
 			</binding>
 		</element>
-		<element id="Immunization.vaccineCode.coding:atcClass.system">
+		<!-- <element id="Immunization.vaccineCode.coding:atcClass.system">
 			<path value="Immunization.vaccineCode.coding.system"/>
 			<min value="1"/>
 			<max value="1"/>
 			<fixedUri value="http://www.whocc.no/atc"/>
 			<mustSupport value="true"/>
-		</element>
+		</element> -->
 		<element id="Immunization.vaccineCode:absentOrUnknownImmunization">
 			<path value="Immunization.vaccineCode"/>
 			<sliceName value="absentOrUnknownImmunization"/>
@@ -119,10 +127,10 @@
 			<definition value="A reference to a code indicating that there there are no known immunizations or that this information is unknown."/>
 			<min value="0"/>
 			<max value="1"/>
-			<type>
+			<!-- <type>
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
+			</type> -->
 			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -132,7 +140,7 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-immunizations-uv-ips"/>
 			</binding>
 		</element>
-		<element id="Immunization.vaccineCode:absentOrUnknownMedication.coding">
+		<!-- <element id="Immunization.vaccineCode:absentOrUnknownMedication.coding">
 			<path value="Immunization.vaccineCode.coding"/>
 			<min value="1"/>
 			<max value="1"/>
@@ -144,15 +152,15 @@
 			<max value="1"/>
 			<fixedUri value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
 			<mustSupport value="true"/>
-		</element>
-		<element id="Immunization.vaccineCode.text">
+		</element> -->
+		<!-- <element id="Immunization.vaccineCode.text">
 			<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable">
 				<valueBoolean value="true"/>
 			</extension>
 			<path value="Immunization.vaccineCode.text"/>
 			<comment value="The text should be at the displayName level and not on this level."/>
 			<mustSupport value="true"/>
-		</element>
+		</element> -->
 		<!-- 
 		<element id="Immunization.vaccineCode.coding:vaccineType">
 			<path value="Immunization.vaccineCode.coding"/>
