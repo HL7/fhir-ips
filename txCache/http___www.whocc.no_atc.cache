@@ -110,6 +110,34 @@ v: {
   "system" : "http://www.whocc.no/atc",
   "code" : "J07CA02",
   "display" : "diphtheria-pertussis-poliomyelitis-tetanus"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "diphtheria-pertussis-poliomyelitis-tetanus",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "J07CA02"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.whocc.no/atc"
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "diphtheria-pertussis-poliomyelitis-tetanus",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.whocc.no/atc",
+  "code" : "J07CA02",
+  "display" : "diphtheria-pertussis-poliomyelitis-tetanus"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -145,24 +173,6 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "J07CA02",
-  "display" : "diphtheria-pertussis-poliomyelitis-tetanus"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://www.whocc.no/atc"
-    }]
-  }
-}, "lang":"fr-LU", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "diphtheria-pertussis-poliomyelitis-tetanus",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -175,8 +185,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:b9d41682-c6fe-4af2-a249-5abcffb9c7fa",
-    "timestamp" : "2020-01-17T06:12:58.223Z",
+    "identifier" : "urn:uuid:175d78ef-81dd-47e3-9d20-363b949bea2a",
+    "timestamp" : "2020-01-20T16:49:29.594Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1562,34 +1572,6 @@ e: {
     }]
   }
 },
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "J07CA02",
-  "display" : "diphtheria-pertussis-poliomyelitis-tetanus"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "diphtheria-pertussis-poliomyelitis-tetanus",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "J07CA02"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://www.whocc.no/atc"
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "diphtheria-pertussis-poliomyelitis-tetanus",
-  "severity" : null,
   "error" : ""
 }
 -------------------------------------------------------------------------------------
