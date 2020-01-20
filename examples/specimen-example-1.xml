@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Specimen xmlns="http://hl7.org/fhir">
+	<id value="specimen-example-1"/>
+	<type>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="122575003"/>
+			<display value="Urine specimen"/>
+		</coding>
+	</type>
+	<subject>
+		<reference value="Patient/66033"/>
+	</subject>
+	<collection>
+		<method>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="73416001"/>
+				<display value="Urine specimen collection, clean catch"/>
+			</coding>
+		</method>
+	</collection>
+</Specimen>

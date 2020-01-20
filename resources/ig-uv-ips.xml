@@ -168,9 +168,29 @@
 		<resource>
 			<exampleBoolean value="true"/>
 			<reference>
+				<reference value="Observation/tobaccouse-example"/>
+			</reference>
+			<exampleCanonical value="StructureDefinition/Observation-tobaccouse-uv-ips"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="true"/>
+			<reference>
+				<reference value="Observation/alcoholuse-example"/>
+			</reference>
+			<exampleCanonical value="StructureDefinition/Observation-alcoholuse-uv-ips"/>
+		</resource>
+		<resource>
+			<exampleBoolean value="true"/>
+			<reference>
 				<reference value="Patient/patient-example-female"/>
 			</reference>
 			<exampleCanonical value="StructureDefinition/Patient-uv-ips"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Specimen/specimen-example-1"/>
+			</reference>
+			<exampleCanonical value="StructureDefinition/Specimen-uv-ips"/>
 		</resource>
 		<!-- ======== EXAMPLES END ========== -->
 		<resource>

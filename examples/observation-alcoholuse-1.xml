@@ -1,0 +1,20 @@
+<Observation xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../fhir-all-xsd/deviceusestatement.xsd">
+	<id value="alcoholuse-example"/>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="74013-4"/>
+			<display value="Alcoholic drinks per day"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/patient-example-female"/>
+	</subject>
+	<effectiveDateTime value="2019-07-15"/>
+	<valueQuantity>
+		<value value="2"/>
+		<system value="http://unitsofmeasure.org"/>
+		<code value="{wine glasses}/d"/>
+	</valueQuantity>
+</Observation>

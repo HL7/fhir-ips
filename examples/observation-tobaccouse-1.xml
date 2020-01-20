@@ -1,0 +1,22 @@
+<Observation xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../fhir-all-xsd/deviceusestatement.xsd">
+	<id value="tobaccouse-example"/>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="72166-2"/>
+			<display value="Tobacco smoking status"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/patient-example-female"/>
+	</subject>
+	<effectiveDateTime value="2019-07-15"/>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="LA15920-4"/>
+			<display value="Former smoke"/>
+		</coding>
+	</valueCodeableConcept>
+</Observation>

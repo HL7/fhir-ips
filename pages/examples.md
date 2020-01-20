@@ -44,7 +44,6 @@ active: examples
 
 {% include list-simple-observations.xhtml %}
 
-
 ## Organization
 
 {% include list-simple-organizations.xhtml %}
@@ -60,6 +59,10 @@ active: examples
 ## Procedure
 
 {% include list-simple-procedures.xhtml %}
+
+## Specimen
+
+{% include list-simple-specimen.xhtml %}
 
 <!-- `todo: generate an example list from preprocessor` -->
 

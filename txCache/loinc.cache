@@ -271,6 +271,56 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://loinc.org",
+  "code" : "49569-7"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "SPECT Heart perfusion and wall motion at rest and W stress and W Tl-201 IV and W Tc-99m Sestamibi IV",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "11778-8"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Delivery date Estimated",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA15173-0"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Pregnant",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "11640-0"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "[#] Births total",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA15920-4"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Former smoker",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
   "code" : "60591-5"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
@@ -1380,6 +1430,493 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "79103-8"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "CLASS",
+        "op" : "=",
+        "value" : "RAD"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "CT Abdomen W contrast IV",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "79103-8",
+  "display" : "CT Abdomen W contrast IV"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "CLASS",
+        "op" : "=",
+        "value" : "RAD"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "CT Abdomen W contrast IV",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "79103-8"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "CT Abdomen W contrast IV",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "49569-7",
+  "display" : "SPECT Heart perfusion and wall motion at rest and W stress and W Tl-201 IV and W Tc-99m Sestamibi IV"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "SPECT Heart perfusion and wall motion at rest and W stress and W Tl-201 IV and W Tc-99m Sestamibi IV",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "11778-8"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "11778-8",
+        "display" : "Delivery date Estimated"
+      },
+      {
+        "code" : "11779-6",
+        "display" : "Delivery date Estimated from last menstrual period"
+      },
+      {
+        "code" : "11780-4",
+        "display" : "Delivery date Estimated from ovulation date"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Delivery date Estimated",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "11778-8",
+  "display" : "Delivery date Estimated"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "11778-8",
+        "display" : "Delivery date Estimated"
+      },
+      {
+        "code" : "11779-6",
+        "display" : "Delivery date Estimated from last menstrual period"
+      },
+      {
+        "code" : "11780-4",
+        "display" : "Delivery date Estimated from ovulation date"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "Delivery date Estimated",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "82810-3",
+  "display" : "Pregnancy status"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Pregnancy status",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA15173-0"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA15173-0",
+        "display" : "Pregnant"
+      },
+      {
+        "code" : "LA26683-5",
+        "display" : "Not pregnant"
+      },
+      {
+        "code" : "LA4489-6",
+        "display" : "Unknown"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Pregnant",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA15173-0",
+  "display" : "Pregnant"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA15173-0",
+        "display" : "Pregnant"
+      },
+      {
+        "code" : "LA26683-5",
+        "display" : "Not pregnant"
+      },
+      {
+        "code" : "LA4489-6",
+        "display" : "Unknown"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "Pregnant",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "11640-0"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "11636-8",
+        "display" : "[#] Births.live"
+      },
+      {
+        "code" : "11637-6",
+        "display" : "[#] Births.preterm"
+      },
+      {
+        "code" : "11638-4",
+        "display" : "[#] Births.still living"
+      },
+      {
+        "code" : "11639-2",
+        "display" : "[#] Births.term"
+      },
+      {
+        "code" : "11640-0",
+        "display" : "[#] Births total"
+      },
+      {
+        "code" : "11612-9",
+        "display" : "[#] Abortions"
+      },
+      {
+        "code" : "11613-7",
+        "display" : "[#] Abortions.induced"
+      },
+      {
+        "code" : "11614-5",
+        "display" : "[#] Abortions.spontaneous"
+      },
+      {
+        "code" : "33065-4",
+        "display" : "[#] Ectopic pregnancy"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "[#] Births total",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "11640-0",
+  "display" : "[#] Births total"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "11636-8",
+        "display" : "[#] Births.live"
+      },
+      {
+        "code" : "11637-6",
+        "display" : "[#] Births.preterm"
+      },
+      {
+        "code" : "11638-4",
+        "display" : "[#] Births.still living"
+      },
+      {
+        "code" : "11639-2",
+        "display" : "[#] Births.term"
+      },
+      {
+        "code" : "11640-0",
+        "display" : "[#] Births total"
+      },
+      {
+        "code" : "11612-9",
+        "display" : "[#] Abortions"
+      },
+      {
+        "code" : "11613-7",
+        "display" : "[#] Abortions.induced"
+      },
+      {
+        "code" : "11614-5",
+        "display" : "[#] Abortions.spontaneous"
+      },
+      {
+        "code" : "33065-4",
+        "display" : "[#] Ectopic pregnancy"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "[#] Births total",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "72166-2",
+  "display" : "Tobacco smoking status"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Tobacco smoking status",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA15920-4"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
+        "code" : "LA18976-3",
+        "display" : "Current every day smoker"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
+        "code" : "LA18977-1",
+        "display" : "Current some day smoker"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
+        "code" : "LA15920-4",
+        "display" : "Former smoke"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
+        "code" : "LA18978-9",
+        "display" : "Never smoker"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
+        "code" : "LA18979-7",
+        "display" : "Smoker, current status unknown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 6
+        }],
+        "code" : "LA18980-5",
+        "display" : "Unknown if ever smoked"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 7
+        }],
+        "code" : "LA18981-3",
+        "display" : "Heavy tobacco smoker"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 8
+        }],
+        "code" : "LA18982-1",
+        "display" : "Light tobacco smoker"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Former smoker",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "LA15920-4",
+  "display" : "Former smoke"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
+        "code" : "LA18976-3",
+        "display" : "Current every day smoker"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
+        "code" : "LA18977-1",
+        "display" : "Current some day smoker"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
+        "code" : "LA15920-4",
+        "display" : "Former smoke"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
+        "code" : "LA18978-9",
+        "display" : "Never smoker"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
+        "code" : "LA18979-7",
+        "display" : "Smoker, current status unknown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 6
+        }],
+        "code" : "LA18980-5",
+        "display" : "Unknown if ever smoked"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 7
+        }],
+        "code" : "LA18981-3",
+        "display" : "Heavy tobacco smoker"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 8
+        }],
+        "code" : "LA18982-1",
+        "display" : "Light tobacco smoker"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "Former smoker",
+  "severity" : "warning",
+  "error" : "The display \"Former smoke\" is not a valid display for the code {http://loinc.org}LA15920-4 - should be one of [\"Former smoker\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "74013-4",
+  "display" : "Alcoholic drinks per day"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Alcoholic drinks per day",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1404,8 +1941,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:a4dd31e1-1970-4a09-8d34-c918b494f257",
-    "timestamp" : "2020-01-17T06:03:28.425Z",
+    "identifier" : "urn:uuid:209ded6e-510f-44ec-8709-efc463796f7e",
+    "timestamp" : "2020-01-20T17:10:09.501Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1454,8 +1991,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:97456e10-9947-4822-a457-3ccfb4a7787f",
-    "timestamp" : "2020-01-17T06:03:29.018Z",
+    "identifier" : "urn:uuid:28829ea5-3bfd-462c-9500-afe98f4ffbbb",
+    "timestamp" : "2020-01-20T17:10:11.657Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1507,8 +2044,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:ab84713d-f003-44c7-82e9-ac99874936b8",
-    "timestamp" : "2020-01-17T06:07:30.035Z",
+    "identifier" : "urn:uuid:696c8864-f2ef-4ae2-b9bb-13861ef735ff",
+    "timestamp" : "2020-01-20T17:13:40.658Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1613,8 +2150,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:acf9f19f-657b-41b9-ae4e-bc1b1efafdfd",
-    "timestamp" : "2020-01-17T06:07:32.285Z",
+    "identifier" : "urn:uuid:651f3ea0-1545-405e-92e5-4c574156c45c",
+    "timestamp" : "2020-01-20T17:13:50.908Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1692,8 +2229,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:b991a667-c3f4-43dd-aa3d-4fd94fedc8d7",
-    "timestamp" : "2020-01-17T06:07:32.519Z",
+    "identifier" : "urn:uuid:05c67417-2d85-467c-96b3-aa722a8c9a48",
+    "timestamp" : "2020-01-20T17:13:51.658Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1743,8 +2280,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:a6554631-5750-4557-967d-894fc348f0f4",
-    "timestamp" : "2020-01-17T06:07:32.738Z",
+    "identifier" : "urn:uuid:b2f64e2d-8dad-445c-8caf-a3f01b142e38",
+    "timestamp" : "2020-01-20T17:13:52.220Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -6784,8 +7321,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:b1e07cc4-1aa5-4d2f-b9d5-d835ba40dff8",
-    "timestamp" : "2020-01-17T06:07:33.363Z",
+    "identifier" : "urn:uuid:c1de40a0-b35c-41fb-bb05-e76acc5987b5",
+    "timestamp" : "2020-01-20T17:13:53.689Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -11830,8 +12367,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:bd20497b-a94b-470d-a4f4-06d11dc4c3eb",
-    "timestamp" : "2020-01-17T06:07:33.988Z",
+    "identifier" : "urn:uuid:87324b7c-8eb3-4293-a865-bcdad3f13ba7",
+    "timestamp" : "2020-01-20T17:13:54.876Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -16900,8 +17437,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:00100cd1-1062-48b5-8a85-e67cc962308b",
-    "timestamp" : "2020-01-17T06:07:37.160Z",
+    "identifier" : "urn:uuid:0dea8b35-c8df-4b7e-b228-f616c767cd80",
+    "timestamp" : "2020-01-20T17:13:58.736Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -21931,8 +22468,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:ad0dd611-535f-4c98-a83f-a2bee11a8cbe",
-    "timestamp" : "2020-01-17T06:09:37.238Z",
+    "identifier" : "urn:uuid:b0cd5eaa-65cf-49dc-9168-6ab6a8a6ee96",
+    "timestamp" : "2020-01-20T17:15:47.001Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -26962,8 +27499,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:b492aae1-7b24-4b9d-8d64-de3233f66ef8",
-    "timestamp" : "2020-01-17T06:09:37.941Z",
+    "identifier" : "urn:uuid:15715928-d222-4601-949d-30c9ad1ccd1c",
+    "timestamp" : "2020-01-20T17:15:49.783Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -27030,8 +27567,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:c386eea3-d2a8-4059-b400-e3a6e18fb2fc",
-    "timestamp" : "2020-01-17T06:12:46.145Z",
+    "identifier" : "urn:uuid:08140f8c-4ad6-4202-8e98-721046403e78",
+    "timestamp" : "2020-01-20T17:18:37.314Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -27087,459 +27624,6 @@ e: {
     }]
   }
 },
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "60591-5"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "SCALE_TYP",
-        "op" : "=",
-        "value" : "Doc"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Patient summary Document",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "60591-5",
-  "display" : "Patient summary Document"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "SCALE_TYP",
-        "op" : "=",
-        "value" : "Doc"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "Patient summary Document",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "11450-4",
-  "display" : "Problem list Reported"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Problem list - Reported",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "10160-0",
-  "display" : "History of Medication use Narrative"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "History of Medication use Narrative",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "48765-2",
-  "display" : "Allergies and adverse reactions Document"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Allergies and adverse reactions Document",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "11348-0",
-  "display" : "Hx of Past illness"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "History of Past illness Narrative",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "18776-5",
-  "display" : "Plan of care note"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Plan of care note",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "30954-2",
-  "display" : "Relevant diagnostic tests/laboratory data Narrative"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Relevant diagnostic tests/laboratory data Narrative",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "49569-7"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "SPECT Heart perfusion and wall motion at rest and W stress and W Tl-201 IV and W Tc-99m Sestamibi IV",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "79103-8"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "CLASS",
-        "op" : "=",
-        "value" : "RAD"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "CT Abdomen W contrast IV",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "79103-8",
-  "display" : "CT Abdomen W contrast IV"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "CLASS",
-        "op" : "=",
-        "value" : "RAD"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "CT Abdomen W contrast IV",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "79103-8"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "CT Abdomen W contrast IV",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "49569-7",
-  "display" : "SPECT Heart perfusion and wall motion at rest and W stress and W Tl-201 IV and W Tc-99m Sestamibi IV"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "SPECT Heart perfusion and wall motion at rest and W stress and W Tl-201 IV and W Tc-99m Sestamibi IV",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "11778-8"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Delivery date Estimated",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "LA15173-0"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Pregnant",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "11778-8"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "11778-8",
-        "display" : "Delivery date Estimated"
-      },
-      {
-        "code" : "11779-6",
-        "display" : "Delivery date Estimated from last menstrual period"
-      },
-      {
-        "code" : "11780-4",
-        "display" : "Delivery date Estimated from ovulation date"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Delivery date Estimated",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "11778-8",
-  "display" : "Delivery date Estimated"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "11778-8",
-        "display" : "Delivery date Estimated"
-      },
-      {
-        "code" : "11779-6",
-        "display" : "Delivery date Estimated from last menstrual period"
-      },
-      {
-        "code" : "11780-4",
-        "display" : "Delivery date Estimated from ovulation date"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "Delivery date Estimated",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "82810-3",
-  "display" : "Pregnancy status"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Pregnancy status",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "LA15173-0"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "LA15173-0",
-        "display" : "Pregnant"
-      },
-      {
-        "code" : "LA26683-5",
-        "display" : "Not pregnant"
-      },
-      {
-        "code" : "LA4489-6",
-        "display" : "Unknown"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Pregnant",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "LA15173-0",
-  "display" : "Pregnant"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "LA15173-0",
-        "display" : "Pregnant"
-      },
-      {
-        "code" : "LA26683-5",
-        "display" : "Not pregnant"
-      },
-      {
-        "code" : "LA4489-6",
-        "display" : "Unknown"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "Pregnant",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "11640-0"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "[#] Births total",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "11640-0"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "11636-8",
-        "display" : "[#] Births.live"
-      },
-      {
-        "code" : "11637-6",
-        "display" : "[#] Births.preterm"
-      },
-      {
-        "code" : "11638-4",
-        "display" : "[#] Births.still living"
-      },
-      {
-        "code" : "11639-2",
-        "display" : "[#] Births.term"
-      },
-      {
-        "code" : "11640-0",
-        "display" : "[#] Births total"
-      },
-      {
-        "code" : "11612-9",
-        "display" : "[#] Abortions"
-      },
-      {
-        "code" : "11613-7",
-        "display" : "[#] Abortions.induced"
-      },
-      {
-        "code" : "11614-5",
-        "display" : "[#] Abortions.spontaneous"
-      },
-      {
-        "code" : "33065-4",
-        "display" : "[#] Ectopic pregnancy"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "[#] Births total",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "11640-0",
-  "display" : "[#] Births total"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "concept" : [{
-        "code" : "11636-8",
-        "display" : "[#] Births.live"
-      },
-      {
-        "code" : "11637-6",
-        "display" : "[#] Births.preterm"
-      },
-      {
-        "code" : "11638-4",
-        "display" : "[#] Births.still living"
-      },
-      {
-        "code" : "11639-2",
-        "display" : "[#] Births.term"
-      },
-      {
-        "code" : "11640-0",
-        "display" : "[#] Births total"
-      },
-      {
-        "code" : "11612-9",
-        "display" : "[#] Abortions"
-      },
-      {
-        "code" : "11613-7",
-        "display" : "[#] Abortions.induced"
-      },
-      {
-        "code" : "11614-5",
-        "display" : "[#] Abortions.spontaneous"
-      },
-      {
-        "code" : "33065-4",
-        "display" : "[#] Ectopic pregnancy"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "[#] Births total",
-  "severity" : null,
   "error" : ""
 }
 -------------------------------------------------------------------------------------
