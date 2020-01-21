@@ -1773,7 +1773,7 @@ v: {
           "valueDecimal" : 3
         }],
         "code" : "LA15920-4",
-        "display" : "Former smoke"
+        "display" : "Former smoker"
       },
       {
         "extension" : [{
@@ -1827,7 +1827,7 @@ v: {
 {"code" : {
   "system" : "http://loinc.org",
   "code" : "LA15920-4",
-  "display" : "Former smoke"
+  "display" : "Former smoker"
 }, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1855,7 +1855,7 @@ v: {
           "valueDecimal" : 3
         }],
         "code" : "LA15920-4",
-        "display" : "Former smoke"
+        "display" : "Former smoker"
       },
       {
         "extension" : [{
@@ -1902,8 +1902,8 @@ v: {
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
   "display" : "Former smoker",
-  "severity" : "warning",
-  "error" : "The display \"Former smoke\" is not a valid display for the code {http://loinc.org}LA15920-4 - should be one of [\"Former smoker\"]"
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1941,8 +1941,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:209ded6e-510f-44ec-8709-efc463796f7e",
-    "timestamp" : "2020-01-20T17:10:09.501Z",
+    "identifier" : "urn:uuid:9b58b1b2-88ba-42ed-a27b-6b6d8efde5f6",
+    "timestamp" : "2020-01-21T08:33:45.894Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -1991,8 +1991,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:28829ea5-3bfd-462c-9500-afe98f4ffbbb",
-    "timestamp" : "2020-01-20T17:10:11.657Z",
+    "identifier" : "urn:uuid:85825df8-d1d7-46d9-a867-7d24b864551a",
+    "timestamp" : "2020-01-21T08:33:46.284Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -2044,8 +2044,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:696c8864-f2ef-4ae2-b9bb-13861ef735ff",
-    "timestamp" : "2020-01-20T17:13:40.658Z",
+    "identifier" : "urn:uuid:86f39841-4aed-4a1e-b610-59d51f60fadf",
+    "timestamp" : "2020-01-21T08:33:47.097Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -2101,7 +2101,7 @@ e: {
           "valueDecimal" : 3
         }],
         "code" : "LA15920-4",
-        "display" : "Former smoke"
+        "display" : "Former smoker"
       },
       {
         "extension" : [{
@@ -2150,8 +2150,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:651f3ea0-1545-405e-92e5-4c574156c45c",
-    "timestamp" : "2020-01-20T17:13:50.908Z",
+    "identifier" : "urn:uuid:e6a773b4-1dff-4499-ab63-48c378d229c1",
+    "timestamp" : "2020-01-21T08:33:47.800Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -2173,7 +2173,7 @@ e: {
     {
       "system" : "http://loinc.org",
       "code" : "LA15920-4",
-      "display" : "Former smoke"
+      "display" : "Former smoker"
     },
     {
       "system" : "http://loinc.org",
@@ -2229,8 +2229,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:05c67417-2d85-467c-96b3-aa722a8c9a48",
-    "timestamp" : "2020-01-20T17:13:51.658Z",
+    "identifier" : "urn:uuid:515070c2-acac-4e56-964c-f648771fc3d9",
+    "timestamp" : "2020-01-21T08:33:48.050Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -2280,8 +2280,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:b2f64e2d-8dad-445c-8caf-a3f01b142e38",
-    "timestamp" : "2020-01-20T17:13:52.220Z",
+    "identifier" : "urn:uuid:5f078a1c-a581-4f16-8471-bbf6e5245fb4",
+    "timestamp" : "2020-01-21T08:33:48.347Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -7321,8 +7321,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:c1de40a0-b35c-41fb-bb05-e76acc5987b5",
-    "timestamp" : "2020-01-20T17:13:53.689Z",
+    "identifier" : "urn:uuid:63492a58-1e15-4e05-9df1-786be4593169",
+    "timestamp" : "2020-01-21T08:33:48.956Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -12367,8 +12367,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:87324b7c-8eb3-4293-a865-bcdad3f13ba7",
-    "timestamp" : "2020-01-20T17:13:54.876Z",
+    "identifier" : "urn:uuid:f2a834d0-311e-40a5-afe0-8d6158df24ef",
+    "timestamp" : "2020-01-21T08:33:49.597Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -17437,8 +17437,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:0dea8b35-c8df-4b7e-b228-f616c767cd80",
-    "timestamp" : "2020-01-20T17:13:58.736Z",
+    "identifier" : "urn:uuid:fe625cab-0e21-480e-a36d-a35a55d07313",
+    "timestamp" : "2020-01-21T08:33:52.816Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -22468,8 +22468,8 @@ e: {
       "url" : "http://hl7.org/fhir/StructureDefinition/valueset-toocostly",
       "valueBoolean" : true
     }],
-    "identifier" : "urn:uuid:b0cd5eaa-65cf-49dc-9168-6ab6a8a6ee96",
-    "timestamp" : "2020-01-20T17:15:47.001Z",
+    "identifier" : "urn:uuid:6d87258e-0a4a-4ab2-a244-c3efb09c393e",
+    "timestamp" : "2020-01-21T08:33:55.097Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -27499,8 +27499,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:15715928-d222-4601-949d-30c9ad1ccd1c",
-    "timestamp" : "2020-01-20T17:15:49.783Z",
+    "identifier" : "urn:uuid:38ed683f-4113-4f9d-af30-4f7b2e2c61b5",
+    "timestamp" : "2020-01-21T08:33:55.909Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -27567,8 +27567,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:08140f8c-4ad6-4202-8e98-721046403e78",
-    "timestamp" : "2020-01-20T17:18:37.314Z",
+    "identifier" : "urn:uuid:6d734a7a-f198-49b0-bb0c-d88bd2826c1d",
+    "timestamp" : "2020-01-21T08:33:56.331Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
@@ -27625,653 +27625,5 @@ e: {
   }
 },
   "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "882-1"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org"
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "ABO and Rh group [Type] in Blood",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "882-1",
-  "display" : "ABO and Rh group [Type] in Blood"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org"
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "ABO and Rh group [Type] in Blood",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "945-6"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org"
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "C Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "945-6",
-  "display" : "C Ab [Presence] in Serum or Plasma"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org"
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "C Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "1018-1"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org"
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "E Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "1018-1",
-  "display" : "E Ab [Presence] in Serum or Plasma"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org"
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "E Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "1156-9"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org"
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "little c Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "1156-9",
-  "display" : "little c Ab [Presence] in Serum or Plasma"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org"
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "little c Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "882-1"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!NR STATS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!CHALSKIN.*$).*"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "ABO and Rh group [Type] in Blood",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "882-1",
-  "display" : "ABO and Rh group [Type] in Blood"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!NR STATS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!CHALSKIN.*$).*"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "ABO and Rh group [Type] in Blood",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "882-1"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "CLASS",
-        "op" : "=",
-        "value" : "RAD"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://loinc.org#882-1) is not  valid"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "945-6"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!NR STATS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!CHALSKIN.*$).*"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "C Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "945-6",
-  "display" : "C Ab [Presence] in Serum or Plasma"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!NR STATS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!CHALSKIN.*$).*"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "C Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "945-6"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "CLASS",
-        "op" : "=",
-        "value" : "RAD"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://loinc.org#945-6) is not  valid"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "1018-1"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!NR STATS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!CHALSKIN.*$).*"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "E Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "1018-1",
-  "display" : "E Ab [Presence] in Serum or Plasma"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!NR STATS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!CHALSKIN.*$).*"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "E Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "1018-1"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "CLASS",
-        "op" : "=",
-        "value" : "RAD"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://loinc.org#1018-1) is not  valid"
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "1156-9"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!NR STATS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!CHALSKIN.*$).*"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "little c Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "1156-9",
-  "display" : "little c Ab [Presence] in Serum or Plasma"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "STATUS",
-        "op" : "=",
-        "value" : "ACTIVE"
-      },
-      {
-        "property" : "CLASSTYPE",
-        "op" : "=",
-        "value" : "1"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!NR STATS.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
-      },
-      {
-        "property" : "CLASS",
-        "op" : "regex",
-        "value" : "^(?!CHALSKIN.*$).*"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "little c Ab [Presence] in Serum or Plasma",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://loinc.org",
-  "code" : "1156-9"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://loinc.org",
-      "filter" : [{
-        "property" : "CLASS",
-        "op" : "=",
-        "value" : "RAD"
-      }]
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://loinc.org#1156-9) is not  valid"
 }
 -------------------------------------------------------------------------------------
