@@ -32,12 +32,16 @@
             </p>
 		</div>
 	</text>
-	<extension url="http://hl7.org/fhir/StructureDefinition/event-partOf">
-		<valueReference>
+	<!-- <extension url="http://hl7.org/fhir/StructureDefinition/event-partOf">
+		<valueReference> -->
 			<!-- check all the URL used for references and update them as needed -->
-			<reference value="ImagingStudy/TII-ImagingStudy-5-1"/>
+			<!-- <reference value="ImagingStudy/TII-ImagingStudy-5-1"/>
 		</valueReference>
-	</extension>
+	</extension> -->
+	<partOf>
+		<!-- check all the URL used for references and update them as needed -->
+		<reference value="ImagingStudy/TII-ImagingStudy-5-1"/>
+	</partOf>
 	<status value="final"/>
 	<category>
 		<coding>
