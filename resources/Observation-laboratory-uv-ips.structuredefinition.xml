@@ -160,8 +160,8 @@
 			<constraint>
 				<key value="ips-2"/>
 				<severity value="error"/>
-				<human value="if no &quot;related&quot; element is present then Observation must have a&quot; value&quot;"/>
-				<expression value="hasValue() or related.exists"/>
+				<human value="if no &quot;hasMember&quot; element is present then Observation must have a&quot; value&quot;"/>
+				<expression value="hasValue() or hasMember.exists"/>
 			</constraint>
 			<mustSupport value="true"/>
 			<binding>
