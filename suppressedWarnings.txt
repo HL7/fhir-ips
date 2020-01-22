@@ -6,3 +6,15 @@ Code System URI 'urn:oid:2.16.840.1.113883.2.4.4.7' is unknown so the code canno
 Code System URI 'urn:oid:1.3.182.4.11.22' is unknown so the code cannot be validated
 // These messages are incorrect, or irrelevant in the cases of Composition inside a Bundle or data type profiles and extensions
 The Implementation Guide contains no explicitly linked examples for this profile
+// These information messages are occurring in cases of open slicing where the instance data only conforms to the profiled
+// element definition and not any of the explicit slices - so this is the expected and desired behavior
+INFORMATION: Immunization/75680: Immunization.vaccineCode: This element does not match any known slice for the profile http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips
+INFORMATION: AllergyIntolerance/allergyintolerance-with-abatement: AllergyIntolerance.code: This element does not match any known slice for the profile http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips
+INFORMATION: Condition/eumfh-39-07-1: Condition.code: This element does not match any known slice for the profile http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips
+INFORMATION: Procedure/eumfh-39-07-1: Procedure.code: This element does not match any known slice for the profile http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips
+// This is an additional RxNorm coding (US realm) that is not included or expected to be in the bound value sets for the element
+// or a specific slice (e.g. ATC)
+None of the codes provided are in the value set http://hl7.org/fhir/uv/ips/ValueSet/medicine-active-substances-uv-ips (http://hl7.org/fhir/uv/ips/ValueSet/medicine-active-substances-uv-ips, and a code is recommended to come from this value set) (codes = http://www.nlm.nih.gov/research/umls/rxnorm#36567)
+// These warnings are generated for the bindings in the FHIR core ImagingStudy resource, not the ImagingStudy-uv-ips profile
+WARNING: ImagingStudy/TII-ImagingStudy-5-1: ImagingStudy.procedureCode[0]: ValueSet http://www.rsna.org/RadLex_Playbook.aspx not found by validator
+WARNING: ImagingStudy/TII-ImagingStudy-5-1: ImagingStudy.series[0].modality: ValueSet http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html not found by validator
