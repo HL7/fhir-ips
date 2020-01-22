@@ -1,0 +1,31 @@
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="hemoglobin"/> 
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+      <code value="LAB"/>
+      <display value="Laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11502-2"/>
+      <display value="Laboratory report"/>
+    </coding>
+  </code>
+	<subject>
+		<reference value="Patient/eumfh-39-07"/>
+	</subject>
+  <effectiveDateTime value="2017-11-10"/>
+  <issued value="2017-11-10T08:20:00+01:00"/>
+  <performer>
+    <reference value="Organization/TII-Organization1"/>
+    <display value="Someplace General Hospital"/>
+  </performer>
+  <result>
+    <reference value="Observation/hemoglobin"/>
+    <display value="Above stated goal of 7.0 %"/>
+ </result>
+</DiagnosticReport>

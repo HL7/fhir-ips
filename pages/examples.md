@@ -13,7 +13,6 @@ active: examples
 {% include list-simple-bundles.xhtml %}
 
 
-
 ## Condition
 
 {% include list-simple-conditions.xhtml %}
@@ -27,6 +26,9 @@ active: examples
 
 {% include list-simple-devices.xhtml %}
 
+## DiagnosticReports
+
+{% include list-simple-diagnosticreports.xhtml %}
 
 ## Immunization
 
@@ -35,6 +37,10 @@ active: examples
 ## Medication
 
 {% include list-simple-medications.xhtml %}
+
+## Media
+
+{% include list-simple-media.xhtml %}
 
 ## MedicationStatement
 
