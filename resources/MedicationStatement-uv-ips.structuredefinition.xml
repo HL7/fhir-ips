@@ -37,7 +37,7 @@
 		</element>
 		<element id="MedicationStatement.medication[x]">
 			<path value="MedicationStatement.medication[x]"/>
-			<!--
+			<!-- -->
 			<slicing>
 				<discriminator>
 					<type value="type"/>
@@ -45,13 +45,14 @@
 				</discriminator>
 				<rules value="closed"/>
 			</slicing>
--->
+			<!-- -->
 			<definition value="Identifies the medication being administered or the reason for absent or unknown Medication. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code. To improve global interoperability is strongly encouraged that the reference to a medication resource is used, limiting the usage of the medicationCodeableConcept only to the cases in which no other information than a simple code is available."/>
 			<!--
 			<min value="1"/>
 			<max value="1"/>
 -->
 			<!--======= new begin ======= -->
+			<!--
 			<type>
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
@@ -60,17 +61,20 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"/>
 			</type>
+			-->
 			<!-- ======= new end ======= -->
 			<mustSupport value="true"/>
 			<!--======= new begin ======= -->
+			<!--
 			<binding>
 				<strength value="preferred"/>
 				<description value="Representation of unknown or absent medications"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips"/>
 			</binding>
+			-->
 			<!-- ======= new end ======= -->
 		</element>
-		<!--
+		<!-- -->
 		<element id="MedicationStatement.medicationReference">
 			<path value="MedicationStatement.medicationReference"/>
 			<sliceName value="medicationReference"/>
@@ -85,14 +89,15 @@
 		<element id="MedicationStatement.medicationCodeableConcept">
 			<path value="MedicationStatement.medicationCodeableConcept"/>
 			<sliceName value="medicationCodeableConcept"/>
+			<!-- -->
 			<slicing>
 				<discriminator>
-					<type value="value"/>
-					<path value="coding.system"/>
+					<type value="pattern"/>
+					<path value="$this"/>
 				</discriminator>
-				<description value="Discriminated by code system"/>
+				<description value="Discriminated by value set"/>
 				<rules value="open"/>
-			</slicing>
+			</slicing> <!-- -->
 			<definition value="Identifies the medication being administered, if only a code is available, or a simple attribute carrying a code that gives a reason for absent or unknown medication.."/>
 			<min value="0"/>
 			<max value="1"/>
@@ -102,9 +107,10 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="MedicationStatement.medicationCodeableConcept:absentOrUnknownMedication">
 			<path value="MedicationStatement.medicationCodeableConcept"/>
-			<sliceName value="absentOrUnknownMedication"/>
+			<sliceName value="medicationCodeableConcept/absentOrUnknownMedication"/>
 			<short value="Code for absent or unknown medication"/>
 			<definition value="Code for  medication statement (either a positive or a negated/excluded statement).  This describes a categorical negated statement (e.g.,  &quot;No known allergy&quot;)."/>
 			<min value="0"/>
@@ -122,8 +128,8 @@
 				<description value="Representation of unknown or absent medications"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips"/>
 			</binding>
-		</element>
-	-->
+		</element> -->
+		<!-- -->
 		<element id="MedicationStatement.subject">
 			<path value="MedicationStatement.subject"/>
 			<type>
@@ -132,11 +138,13 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="MedicationStatement.subject.reference">
 			<path value="MedicationStatement.subject.reference"/>
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		-->
 		<element id="MedicationStatement.effective[x]">
 			<path value="MedicationStatement.effective[x]"/>
 			<min value="1"/>
@@ -157,7 +165,7 @@
 		<!--======= new begin ======= 
 			= added to try to overcome to resolve the unable to rsolve the slice issue, but when added the 
 			= error "minimum required = 1, but only found 0" occurs again (known problem with polymorphic elements)
-			= Commented for the time being 
+			= Commented for the time being -->
 
 		<element id="MedicationStatement.effectiveDateTime">
 			<path value="MedicationStatement.effectiveDateTime"/>
@@ -179,7 +187,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		======= new end ======= -->
+		<!-- ======= new end ======= -->
 		<element id="MedicationStatement.informationSource">
 			<path value="MedicationStatement.informationSource"/>
 			<mustSupport value="true"/>
