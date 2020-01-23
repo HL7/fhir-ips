@@ -37,7 +37,8 @@
 		</element>
 		<element id="MedicationStatement.medication[x]">
 			<path value="MedicationStatement.medication[x]"/>
-			<!-- -->
+			<!-- The slicing below is expected to be replaced in R5 by a 'medication' element of the new CodeableReference 
+				data type with the appropriate constraints. -->
 			<slicing>
 				<discriminator>
 					<type value="type"/>
@@ -45,7 +46,6 @@
 				</discriminator>
 				<rules value="closed"/>
 			</slicing>
-			<!-- -->
 			<definition value="Identifies the medication being administered or the reason for absent or unknown Medication. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code. To improve global interoperability is strongly encouraged that the reference to a medication resource is used, limiting the usage of the medicationCodeableConcept only to the cases in which no other information than a simple code is available."/>
 			<!--
 			<min value="1"/>
@@ -71,13 +71,23 @@
 				<description value="Representation of unknown or absent medications"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips"/>
 			</binding>
+			<binding>
+				<strength value="example"/>
+				<description value="The type of medication"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/med-uv-ips"/>
+			</binding>
 			-->
+			<binding>
+				<strength value="example"/>
+				<description value="The type of medication"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/med-uv-ips"/>
+			</binding>
 			<!-- ======= new end ======= -->
 		</element>
-		<!-- -->
-		<element id="MedicationStatement.medicationReference">
-			<path value="MedicationStatement.medicationReference"/>
+		<element id="MedicationStatement.medication[x]:medicationReference">
+			<path value="MedicationStatement.medication[x]"/>
 			<sliceName value="medicationReference"/>
+			<definition value="Identifies the medication being administered or the reason for absent or unknown Medication. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code. To improve global interoperability is strongly encouraged that the reference to a medication resource is used, limiting the usage of the medicationCodeableConcept only to the cases in which no other information than a simple code is available."/>
 			<min value="0"/>
 			<max value="1"/>
 			<type>
@@ -86,33 +96,11 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="MedicationStatement.medicationCodeableConcept">
-			<path value="MedicationStatement.medicationCodeableConcept"/>
+		<element id="MedicationStatement.medication[x]:medicationCodeableConcept">
+			<path value="MedicationStatement.medication[x]"/>
 			<sliceName value="medicationCodeableConcept"/>
-			<!-- -->
-			<slicing>
-				<discriminator>
-					<type value="pattern"/>
-					<path value="$this"/>
-				</discriminator>
-				<description value="Discriminated by value set"/>
-				<rules value="open"/>
-			</slicing> <!-- -->
-			<definition value="Identifies the medication being administered, if only a code is available, or a simple attribute carrying a code that gives a reason for absent or unknown medication.."/>
-			<min value="0"/>
-			<max value="1"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<!--
-		<element id="MedicationStatement.medicationCodeableConcept:absentOrUnknownMedication">
-			<path value="MedicationStatement.medicationCodeableConcept"/>
-			<sliceName value="medicationCodeableConcept/absentOrUnknownMedication"/>
 			<short value="Code for absent or unknown medication"/>
-			<definition value="Code for  medication statement (either a positive or a negated/excluded statement).  This describes a categorical negated statement (e.g.,  &quot;No known allergy&quot;)."/>
+			<definition value="Code for a negated/excluded medication statement.  This describes a categorical negated statement (e.g.,  &quot;No known allergy&quot;)."/>
 			<min value="0"/>
 			<max value="1"/>
 			<type>
@@ -120,16 +108,18 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
+			<!-- The extensible binding requires the specified codes for absent and unknown medications, but also allows
+				any code to be used for a statement of an administered medication.  This will be replaced in R5 with
+				with appropriate bindings and constraints with the new CodeableReference data type. -->
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="UnknownMedicationCode"/>
 				</extension>
-				<strength value="required"/>
+				<strength value="extensible"/>
 				<description value="Representation of unknown or absent medications"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips"/>
 			</binding>
-		</element> -->
-		<!-- -->
+		</element>
 		<element id="MedicationStatement.subject">
 			<path value="MedicationStatement.subject"/>
 			<type>
@@ -167,8 +157,8 @@
 			= error "minimum required = 1, but only found 0" occurs again (known problem with polymorphic elements)
 			= Commented for the time being -->
 
-		<element id="MedicationStatement.effectiveDateTime">
-			<path value="MedicationStatement.effectiveDateTime"/>
+		<element id="MedicationStatement.effective[x]:effectiveDateTime">
+			<path value="MedicationStatement.effective[x]"/>
 			<sliceName value="effectiveDateTime"/>
 			<min value="0"/>
 			<max value="1"/>
@@ -177,8 +167,8 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="MedicationStatement.effectivePeriod">
-			<path value="MedicationStatement.effectivePeriod"/>
+		<element id="MedicationStatement.effective[x]:effectivePeriod">
+			<path value="MedicationStatement.effective[x]"/>
 			<sliceName value="effectivePeriod"/>
 			<min value="0"/>
 			<max value="1"/>
