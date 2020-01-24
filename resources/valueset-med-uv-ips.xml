@@ -24,7 +24,7 @@
 	<url value="http://hl7.org/fhir/uv/ips/ValueSet/med-uv-ips"/>
 	<version value="2019-02-01T00:00:00"/>
 	<name value="MedicationCodesUvIps"/>
-	<title value="Medications (example)"/>
+	<title value="Medications - example"/>
 	<status value="draft"/>
 	<experimental value="true"/>
 	<publisher value="HL7 International"/>
@@ -97,7 +97,7 @@
 				<display value="Acenocoumarol 1 mg oral tablet"/>
 			</concept>
 		</include>
-		<!--
+		<!-- -->
 		<include>
 			<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
 			<concept>
@@ -113,6 +113,7 @@
 				<display value="lithium citrate 60 MG/ML"/>
 			</concept>
 		</include>
+		<!--
 		<include>
 			<system value="urn:oid:2.16.840.1.113883.2.9.6.1.5"/>
 			<concept>
@@ -120,6 +121,7 @@
 				<display value="AMOXICILLINA DOC"/>
 			</concept>
 		</include>
+	-->
 		<include>
 			<system value="http://hl7.org/fhir/sid/ndc"/>
 			<concept>
@@ -127,6 +129,7 @@
 				<display value="Amoxicillin and Clavulanate Potassium 875 mg/1 125 mg/1 TABLET, FILM COATED"/>
 			</concept>
 		</include>
+		<!--
 		<include>
 			<system value="urn:oid:1.2.250.1.213.2.3.1"/>
 			<concept>
@@ -141,6 +144,7 @@
 				<display value="AMOXICILLINA DOC '1000 MG COMPRESSE' 12 COMPRESSE"/>
 			</concept>
 		</include>
+	-->
 		<include>
 			<system value="http://hl7.org/fhir/sid/ndc"/>
 			<concept>
@@ -148,6 +152,7 @@
 				<display value="Amoxicillin and Clavulanate Potassium 875 mg/1 125 mg/1 20 TABLET, FILM COATED in 1 BOTTLE (50436-3129-1)"/>
 			</concept>
 		</include>
+		<!--
 		<include>
 			<system value="urn:oid:1.2.250.1.213.2.3.3"/>
 			<concept>
@@ -155,6 +160,6 @@
 				<display value="LITHIUM OLIGOSOL, solution buvable en ampoule ou en récipient unidose, 28 ampoules en verre de 2 ml"/>
 			</concept>
 		</include>
-		-->
+	-->
 	</compose>
 </ValueSet>
