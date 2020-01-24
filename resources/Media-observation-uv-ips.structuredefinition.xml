@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<id value="Media-observation-uv-ips"/>
+	<meta>
+		<lastUpdated value="2018-02-16T18:49:19.113+01:00"/>
+	</meta>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">This profile constrains the Media resource (which is a specialized observation).</div>
+	</text>
+	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Media-observation-uv-ips"/>
+	<name value="ObservationMediaUvIps"/>
+	<title value="Observation (Results: laboratory, media)"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2018-03-09"/>
+	<publisher value="HL7 International"/>
+	<description value="This profile constrains the Media resource (which is a specialized observation)."/>
+	<purpose value="This specialized observation is used to convey illustrative media content."/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Media"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Media"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Media">
+			<path value="Media"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Media.status">
+			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
+				<valueString value="default: final"/>
+			</extension>
+			<path value="Media.status"/>
+			<definition value="The status of the result value. Only final observation are eligible to the international patient summary."/>
+			<fixedCode value="completed"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Media.type">
+			<path value="Media.type"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Media.subject">
+			<path value="Media.subject"/>
+			<min value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Media.subject.reference">
+			<path value="Media.subject.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<!--
+		<element id="Media.context">
+			<path value="Media.context"/>
+			<max value="0"/>
+			<mustSupport value="false"/>
+		</element>
+		-->
+		<element id="Media.operator">
+			<path value="Media.operator"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Media.device">
+			<path value="Media.device"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Media.content">
+			<path value="Media.content"/>
+			<!--
+			<type>
+				<code value="Attachment"/>
+			</type>
+			-->
+			<mustSupport value="true"/>
+		</element>
+	</differential>
+</StructureDefinition>

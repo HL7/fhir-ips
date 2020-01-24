@@ -103,12 +103,13 @@
 		</element>
 		<element id="Observation.valueQuantity">
 			<path value="Observation.valueQuantity"/>
-			<!-- <sliceName value="valueQuantity"/> -->
 			<type>
 				<code value="Quantity"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Observation.valueQuantity.value">
 			<path value="Observation.valueQuantity.value"/>
 			<min value="1"/>
@@ -130,5 +131,6 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+-->
 	</differential>
 </StructureDefinition>

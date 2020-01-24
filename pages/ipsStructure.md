@@ -135,7 +135,7 @@ Hereafter the profiles that have been defined for each section. (R) denotes a re
    <a href="StructureDefinition-Observation-member-laboratory-uv-ips.html">Observation (Results: laboratory, member)</a> ;
    <a href="StructureDefinition-Specimen-uv-ips.html">Specimen (IPS)</a> ;
    <a href="StructureDefinition-Organization-laboratory-uv-ips.html">Organization (laboratory)</a> ;
-   <a href="StructureDefinition-Observation-media-uv-ips.html">Observation (Results: laboratory, media)</a> ]
+   <a href="StructureDefinition-Media-observation-uv-ips.html">Observation (Results: laboratory, media)</a> ]
   * Radiology results
    [ <a href="StructureDefinition-Observation-imaging-uv-ips.html">Observation (Results: imaging)</a> ;
    <a href="StructureDefinition-Observation-member-imaging-uv-ips.html">Observation (Results: imaging, member)</a> ;
@@ -148,7 +148,7 @@ Hereafter the profiles that have been defined for each section. (R) denotes a re
    <a href="StructureDefinition-Observation-member-pathology-uv-ips.html">Observation (Results: pathology, member)</a> ;
    <a href="StructureDefinition-Specimen-uv-ips.html">Specimen (IPS)</a> ;
    <a href="StructureDefinition-Organization-laboratory-uv-ips.html">Organization (laboratory)</a> ;
-   [ <a href="StructureDefinition-Observation-media-uv-ips.html">Observation (Results: laboratory, media)</a> ]
+   [ <a href="StructureDefinition-Media-observation-uv-ips.html">Observation (Results: laboratory, media)</a> ]
   * Other results 
    [ <a href="StructureDefinition-Observation-uv-ips.html">Observation (Results: generic)</a> ]
 * Vital Signs 
