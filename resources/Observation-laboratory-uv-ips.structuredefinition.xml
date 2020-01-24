@@ -211,12 +211,24 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		<element id="Observation.referenceRange">
+			<path value="Observation.referenceRange"/>
+			<mustSupport value="true"/>
+		</element>
 		<element id="Observation.referenceRange.type">
 			<path value="Observation.referenceRange.type"/>
 			<min value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.referenceRange.age">
+			<path value="Observation.referenceRange.age"/>
+			<type>
+				<code value="Range"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Range-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
