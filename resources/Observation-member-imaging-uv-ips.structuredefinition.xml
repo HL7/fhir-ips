@@ -32,6 +32,7 @@
 			<path value="Observation.meta"/>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Observation.extension:partOf">
 			<path value="Observation.extension"/>
 			<sliceName value="partOf"/>
@@ -44,6 +45,15 @@
 		<element id="Observation.extension:partOf.valueReference:valueReference">
 			<path value="Observation.extension.valueReference"/>
 			<sliceName value="valueReference"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/ImagingStudy-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+	-->
+		<element id="Observation.partOf">
+			<path value="Observation.partOf"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/ImagingStudy-uv-ips"/>
