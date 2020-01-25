@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Quantity-uv-ips"/>
+  <id value="SimpleQuantity-uv-ips"/>
 	<text>
 		<status value="generated"/>
-		<div xmlns="http://www.w3.org/1999/xhtml">This profile of the Quantity data type imposes the usage of the UCUM code system for units</div>
+		<div xmlns="http://www.w3.org/1999/xhtml">This profile of the SimpleQuantity data type profile imposes the usage of the UCUM code system for units</div>
 	</text>
-  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips"/>
-  <name value="QuantityIPS"/>
-  <title value="Quantity (IPS)"/>
+  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/SimpleQuantity-uv-ips"/>
+  <name value="SimpleQuantityIPS"/>
+  <title value="SimpleQuantity (IPS)"/>
   <status value="draft"/>
   <date value="2018-03-20T17:17:13.817+01:00"/>
   <publisher value="HL7 International"/>
-  <description value="Data type Quantity constrained to use the UCUM units"/>
-  <purpose value="This profile of the Quantity data type imposes the usage of the UCUM code system for units"/>
+  <description value="Data type profile SimpleQuantity constrained to use the UCUM units"/>
+  <purpose value="This profile of the SimpleQuantity data type profile imposes the usage of the UCUM code system for units"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
   <type value="Quantity"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Quantity"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/SimpleQuantity"/>
   <derivation value="constraint"/>
   <differential>
     <element id="Quantity">

@@ -81,12 +81,15 @@
 			<path value="Observation.effective[x]"/>
 			<min value="1"/>
 			<max value="1"/>
+			<type>
+				<code value="dateTime"/>
+			</type>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.effective[x]:data-absent-reason">
 			<path value="Observation.effective[x].extension"/>
 			<short value="effective[x] absence reason"/>
-			<definition value="Provides a reason why the effective is missing."/>
+			<definition value="Provides a reason why the effectiveTime is missing."/>
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>

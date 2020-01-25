@@ -6,13 +6,13 @@
 		<div xmlns="http://www.w3.org/1999/xhtml">Range constrained to UCUM as codesystem.</div>
 	</text>
   <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Range-uv-ips"/>
-  <name value="RangeUvIps"/>
-  <title value="Range"/>
+  <name value="RangeIPS"/>
+  <title value="Range (IPS)"/>
   <status value="draft"/>
   <experimental value="true"/>
   <date value="2018-03-21T14:43:39.739+01:00"/>
   <description value="Range constrained to UCUM as codesystem."/>
-  <purpose value="requires UCUM as codesystem for units"/>
+  <purpose value="Requires UCUM as codesystem for units"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
   <type value="Range"/>
@@ -25,8 +25,13 @@
     </element>
     <element id="Range.low">
       <path value="Range.low"/>
+			<type>
+				<code value="Quantity"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/SimpleQuantity-uv-ips"/>
+			</type>
       <mustSupport value="true"/>
     </element>
+    <!--
     <element id="Range.low.system">
       <path value="Range.low.system"/>
       <min value="1"/>
@@ -38,10 +43,16 @@
       <min value="1"/>
       <mustSupport value="true"/>
     </element>
+  -->
     <element id="Range.high">
       <path value="Range.high"/>
+			<type>
+				<code value="Quantity"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/SimpleQuantity-uv-ips"/>
+			</type>
       <mustSupport value="true"/>
     </element>
+    <!--
     <element id="Range.high.system">
       <path value="Range.high.system"/>
       <min value="1"/>
@@ -53,5 +64,6 @@
       <min value="1"/>
       <mustSupport value="true"/>
     </element>
+  -->
   </differential>
 </StructureDefinition>

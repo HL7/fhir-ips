@@ -6,7 +6,7 @@
 	</meta>
 	<text>
 		<status value="generated"/>
-		<div xmlns="http://www.w3.org/1999/xhtml">This profile represents the constraints applied to the Observation resource by the IPS project, which specifies an imaging observation for the international patient summary based on the FHIR standard R4. &#xD;&#xA;&#xD;&#xA;This observation may represent the conclusions of a diagnostic procedure such a Chest RX, or it may group the set of results produced by that single or multi-modality procedure. &#xD;&#xA;&#xD;&#xA;In the latter case, the main observation (this one) carries the overall conclusion of the study and/or a global interpretation by the observer of the study as value of this observation; and may references the atomic results of the study  as &quot;child observations&quot;.&#xD;&#xA;&#xD;&#xA;It allows also providing details about the related study using the event-partOf extension referring an ImagingStudy resource.&#xD;&#xA;</div>
+		<div xmlns="http://www.w3.org/1999/xhtml">This profile represents the constraints applied to the Observation resource by the IPS project, which specifies an imaging observation for the international patient summary based on the FHIR standard R4. &#xD;&#xA;&#xD;&#xA;This observation may represent the conclusions of a diagnostic procedure such a Chest RX, or it may group the set of results produced by that single or multi-modality procedure. &#xD;&#xA;&#xD;&#xA;In the latter case, the main observation (this one) carries the overall conclusion of the study and/or a global interpretation by the observer of the study as value of this observation; and may references the atomic results of the study  as &quot;child observations&quot;.&#xD;&#xA;&#xD;&#xA;It allows also providing details about the related study using the partOf element referring to an ImagingStudy resource.&#xD;&#xA;</div>
 	</text>
 	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-imaging-uv-ips"/>
 	<name value="ObservationImagingUvIps"/>
@@ -14,7 +14,7 @@
 	<status value="draft"/>
 	<experimental value="false"/>
 	<date value="2018-02-06T09:53:52.306+01:00"/>
-	<description value="This profile represents the constraints applied to the Observation resource by the IPS project, which specifies an imaging observation for the international patient summary based on the FHIR standard R4. &#xD;&#xA;&#xD;&#xA;This observation may represent the conclusions of a diagnostic procedure such a Chest RX, or it may group the set of results produced by that single or multi-modality procedure. &#xD;&#xA;&#xD;&#xA;In the latter case, the main observation (this one) carries the overall conclusion of the study and/or a global interpretation by the observer of the study as value of this observation; and may references the atomic results of the study  as &quot;child observations&quot;.&#xD;&#xA;&#xD;&#xA;It allows also providing details about the related study using the event-partOf extension referring an ImagingStudy resource.&#xD;&#xA;"/>
+	<description value="This profile represents the constraints applied to the Observation resource by the IPS project, which specifies an imaging observation for the international patient summary based on the FHIR standard R4. &#xD;&#xA;&#xD;&#xA;This observation may represent the conclusions of a diagnostic procedure such a Chest RX, or it may group the set of results produced by that single or multi-modality procedure. &#xD;&#xA;&#xD;&#xA;In the latter case, the main observation (this one) carries the overall conclusion of the study and/or a global interpretation by the observer of the study as value of this observation; and may references the atomic results of the study  as &quot;child observations&quot;.&#xD;&#xA;&#xD;&#xA;It allows also providing details about the related study using the partOf element referring to an ImagingStudy resource.&#xD;&#xA;"/>
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="Observation"/>
@@ -68,18 +68,14 @@
 		</element>
 		<element id="Observation.category">
 			<path value="Observation.category"/>
+			<!--
 			<min value="1"/>
 			<max value="1"/>
+			-->
 			<type>
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<patternCodeableConcept>
-				<coding>
-					<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-					<code value="imaging"/>
-				</coding>
-			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.code">
@@ -122,19 +118,59 @@
 				<key value="ips-1"/>
 				<severity value="error"/>
 				<human value="Datetime must be at least to day."/>
-				<expression value="($this as dateTime).toString().length() &gt;= 8"/>
-				<xpath value="f:matches(effectiveDateTime,/\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d([+-][0-2]\d:[0-5]\d|Z)/)"/>
+				<expression value="$this.ofType(dateTime).empty() or ($this as dateTime).toString().length() &gt;= 8"/>
+				<xpath value="not(boolean(effectiveDateTime)) or f:matches(effectiveDateTime,/\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d([+-][0-2]\d:[0-5]\d|Z)/)"/>
 			</constraint>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.effective[x]:data-absent-reason">
 			<path value="Observation.effective[x].extension"/>
 			<short value="effective[x] absence reason"/>
-			<definition value="Provides a reason why the effective is missing."/>
+			<definition value="Provides a reason why the effectiveTime is missing."/>
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>
 				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]:effectiveDateTime">
+			<path value="Observation.effective[x]"/>
+			<sliceName value="effectiveDateTime"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="dateTime"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]:effectivePeriod">
+			<path value="Observation.effective[x]"/>
+			<sliceName value="effectivePeriod"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Period"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]:effectiveTiming">
+			<path value="Observation.effective[x]"/>
+			<sliceName value="effectiveTiming"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Timing"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]:effectiveInstant">
+			<path value="Observation.effective[x]"/>
+			<sliceName value="effectiveInstant"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="instant"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -188,7 +224,7 @@
 			<path value="Observation.hasMember"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-member-imaging-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-imaging-uv-ips"/>
 			</type>
 			<constraint>
 				<key value="hasMemberOrComponent"/>
@@ -276,6 +312,7 @@
 			<min value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>

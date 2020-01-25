@@ -6,12 +6,12 @@
 		<div xmlns="http://www.w3.org/1999/xhtml">Ratio data type, constrained to use UCUM as a codesystem.</div>
 	</text>
   <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Ratio-uv-ips"/>
-  <name value="RatioUvIps"/>
-  <title value="Ratio"/>
+  <name value="RatioIPS"/>
+  <title value="Ratio (IPS)"/>
   <status value="draft"/>
   <date value="2018-03-21T14:49:16.166+01:00"/>
   <description value="Ratio data type, constrained to use UCUM as a codesystem."/>
-  <purpose value="allow only UCUM as a codesystem."/>
+  <purpose value="Allow only UCUM as a codesystem."/>
   <kind value="complex-type"/>
   <abstract value="false"/>
   <type value="Ratio"/>
@@ -24,8 +24,13 @@
     </element>
     <element id="Ratio.numerator">
       <path value="Ratio.numerator"/>
+			<type>
+				<code value="Quantity"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips"/>
+			</type>
       <mustSupport value="true"/>
     </element>
+    <!--
     <element id="Ratio.numerator.system">
       <path value="Ratio.numerator.system"/>
       <min value="1"/>
@@ -37,10 +42,16 @@
       <min value="1"/>
       <mustSupport value="true"/>
     </element>
+  -->
     <element id="Ratio.denominator">
       <path value="Ratio.denominator"/>
+			<type>
+				<code value="Quantity"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips"/>
+			</type>
       <mustSupport value="true"/>
     </element>
+    <!--
     <element id="Ratio.denominator.system">
       <path value="Ratio.denominator.system"/>
       <min value="1"/>
@@ -52,5 +63,6 @@
       <min value="1"/>
       <mustSupport value="true"/>
     </element>
+  -->
   </differential>
 </StructureDefinition>
