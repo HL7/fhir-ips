@@ -47,8 +47,6 @@
 		</element>
 		<element id="Observation.category">
 			<path value="Observation.category"/>
-			<definition value="A code that classifies the general type of observation being made. In this profile, fixed to &quot;laboratory&quot;."/>
-			<comment value="&quot;laboratory&quot; includes laboratory medicine and pathology"/>
 			<slicing>
 				<discriminator>
 					<type value="pattern"/>
@@ -56,6 +54,8 @@
 				</discriminator>
 				<rules value="open"/>
 			</slicing>
+			<definition value="A code that classifies the general type of observation being made. In this profile, fixed to &quot;laboratory&quot;."/>
+			<comment value="&quot;laboratory&quot; includes laboratory medicine and pathology"/>
 			<min value="1"/>
 			<!-- <max value="1"/> -->
 			<type>
