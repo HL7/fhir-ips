@@ -34,11 +34,25 @@
 			<path value="Device.id"/>
 			<mustSupport value="true"/>
 		</element>
+	-->
 		<element id="Device.meta">
 			<path value="Device.meta"/>
-			<mustSupport value="true"/>
+			<mustSupport value="false"/>
 		</element>
-			<element id="Device.identifier">
+		<!-- Meta.profile is specified in order to provide a mechanism for downstream disambiguation of the profile used for 
+			resource creation in cases where there is overlap between the profile constraints (e.g., the profiles differ only by 
+			extensible value set bindings).  The 'meta' and 'meta.profile' elements are not required and are not designated as 
+			mustSupport (this information is not required to be sent, and if received it can be ignored by the receiving system
+			unless it is deemed to be useful).  Generally it is best to avoid relying on a declared profile. but it is available
+			if and when it is needed.
+		-->
+		<element id="Device.meta.profile">
+			<path value="Device.meta.profile"/>
+			<fixedCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips"/>
+			<mustSupport value="false"/>
+		</element>
+			<!--
+		<element id="Device.identifier">
 			<path value="Device.identifier"/>
 			<mustSupport value="true"/>
 		</element>

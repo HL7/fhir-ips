@@ -28,6 +28,22 @@
 			<path value="Observation.id"/>
 			<mustSupport value="true"/>
 		</element>
+		<element id="Observation.meta">
+			<path value="Observation.meta"/>
+			<mustSupport value="false"/>
+		</element>
+		<!-- Meta.profile is specified in order to provide a mechanism for downstream disambiguation of the profile used for 
+			resource creation in cases where there is overlap between the profile constraints (e.g., the profiles differ only by 
+			extensible value set bindings).  The 'meta' and 'meta.profile' elements are not required and are not designated as 
+			mustSupport (this information is not required to be sent, and if received it can be ignored by the receiving system
+			unless it is deemed to be useful).  Generally it is best to avoid relying on a declared profile. but it is available
+			if and when it is needed.
+		-->
+		<element id="Observation.meta.profile">
+			<path value="Observation.meta.profile"/>
+			<fixedCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-uv-ips"/>
+			<mustSupport value="false"/>
+		</element>
 		<element id="Observation.identifier">
 			<path value="Observation.identifier"/>
 			<mustSupport value="true"/>
