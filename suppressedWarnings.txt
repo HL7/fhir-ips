@@ -18,3 +18,9 @@ None of the codes provided are in the value set http://hl7.org/fhir/uv/ips/Value
 // These warnings are generated for the bindings in the FHIR core ImagingStudy resource, not the ImagingStudy-uv-ips profile
 WARNING: ImagingStudy/TII-ImagingStudy-5-1: ImagingStudy.procedureCode[0]: ValueSet http://www.rsna.org/RadLex_Playbook.aspx not found by validator
 WARNING: ImagingStudy/TII-ImagingStudy-5-1: ImagingStudy.series[0].modality: ValueSet http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html not found by validator
+// These two instances should be able to match with at least one (or several) of the profiles (particularly 
+Observation-laboratory-uv-ips) - this appears likely to be a validator issue - possibly related to not reliably being able to
+discriminate by profile for Observation resource instances containing nested has-member observations?
+(not certain why Bundle.entry[0].resource.section[5].entry[1] doesn't also show the same issue?)
+INFORMATION: Bundle/IPS-examples-Bundle-01: Bundle.entry[0].resource.section[5].entry[0]: This element does not match any known slice for the profile http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips
+INFORMATION: Bundle/IPS-examples-Bundle-01: Bundle.entry[0].resource.section[5].entry[2]: This element does not match any known slice for the profile http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips
