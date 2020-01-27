@@ -116,6 +116,16 @@
 		</element>
 		<element id="DiagnosticReport.result">
 			<path value="DiagnosticReport.result"/>
+			<slicing>
+				<discriminator>
+					<type value="profile"/>
+					<path value="$this.resolve()"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+			<short value="Observation results included in the diagnostic report."/>
+			<definition value="Observation results included in the diagnostic report."/>
+			<!--
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-uv-ips"/>
@@ -124,12 +134,51 @@
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pathology-uv-ips"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
 			</type>
+		-->
 			<mustSupport value="true"/>
 		</element>
+		<element id="DiagnosticReport.result:observation-laboratory">
+			<path value="DiagnosticReport.result"/>
+			<sliceName value="observation-laboratory"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DiagnosticReport.result:observation-pathology">
+			<path value="DiagnosticReport.result"/>
+			<sliceName value="observation-pathology"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pathology-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DiagnosticReport.result:observation-imaging">
+			<path value="DiagnosticReport.result"/>
+			<sliceName value="observation-imaging"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-imaging-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DiagnosticReport.result:observation">
+			<path value="DiagnosticReport.result"/>
+			<sliceName value="observation"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<!--
 		<element id="DiagnosticReport.result.reference">
 			<path value="DiagnosticReport.result.reference"/>
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+	-->
 	</differential>
 </StructureDefinition>

@@ -722,15 +722,44 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		<element id="Composition.section:sectionResults.entry:observation-laboratory">
+			<path value="Composition.section.entry"/>
+			<sliceName value="observation-laboratory"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:sectionResults.entry:observation-pathology">
+			<path value="Composition.section.entry"/>
+			<sliceName value="observation-pathology"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pathology-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:sectionResults.entry:observation-imaging">
+			<path value="Composition.section.entry"/>
+			<sliceName value="observation-imaging"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-imaging-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
 		<element id="Composition.section:sectionResults.entry:observation">
 			<path value="Composition.section.entry"/>
 			<sliceName value="observation"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-uv-ips"/>
+				<!--
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-uv-ips"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pathology-uv-ips"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-imaging-uv-ips"/>
+				-->
 			</type>
 			<mustSupport value="true"/>
 		</element>
