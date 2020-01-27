@@ -40,6 +40,10 @@
 		<element id="Specimen.type">
 			<path value="Specimen.type"/>
 			<min value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
 			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -49,6 +53,7 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/specimen-type-uv-ips"/>
 			</binding>
 		</element>
+		<!--
 		<element id="Specimen.type.coding">
 			<path value="Specimen.type.coding"/>
 			<type>
@@ -57,6 +62,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+	-->
 		<element id="Specimen.subject">
 			<path value="Specimen.subject"/>
 			<type>
