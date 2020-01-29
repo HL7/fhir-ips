@@ -155,7 +155,7 @@
 		<!--======= new begin ======= 
 			= added to try to overcome to resolve the unable to rsolve the slice issue, but when added the 
 			= error "minimum required = 1, but only found 0" occurs again (known problem with polymorphic elements)
-			= Commented for the time being -->
+			= Commented for the time being -!->
 
 		<element id="MedicationStatement.effective[x]:effectiveDateTime">
 			<path value="MedicationStatement.effective[x]"/>
@@ -177,7 +177,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<!-- ======= new end ======= -->
+		<!-!- ======= new end ======= -->
 		<element id="MedicationStatement.informationSource">
 			<path value="MedicationStatement.informationSource"/>
 			<mustSupport value="true"/>
