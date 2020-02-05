@@ -39,6 +39,12 @@
 			</constraint>
 			<mustSupport value="true"/>
 		</element>
+		<element id="Patient.name.text">
+			<path value="Patient.name.text"/>
+			<definition value="Text representation of the full name. Due to the cultural variance around the world a consuming system may not know how to present the name correctly; moreover not all the parts of the name go in given or family. Creators are therefore strongly encouraged to provide through this element a presented version of the name. Future versions of this guide may require this element"/>
+			<min value="0"/>
+			<mustSupport value="true"/>
+		</element>
 		<element id="Patient.name.family">
 			<path value="Patient.name.family"/>
 			<min value="0"/>

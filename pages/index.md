@@ -72,7 +72,7 @@ See further details on the project background in the IPS Wiki <a href="http://in
 
 ## Project Scope
 
-As specified in the CEN EN 17269 and ISO/CD 27269, the IPS dataset is a <b><i>"minimal, non-exhaustive set of data elements required for the international patient summary"</i></b>.
+As specified in the CEN EN 17269 and ISO/CD 27269, the IPS dataset is a <b><i>"minimal, non-exhaustive set of data elements required for the international patient summary"</i></b>. A Patient Summary is defined by ISO/TR 12773 1:2009 as a "Health record extract comprising a standardized collection of clinical and contextual information (retrospective, concurrent, prospective) that provides a snapshot in time of a subject of care’s health information and healthcare."
 
 <i>‘Minimal’ reflects the ideas of ‘summary’ and the need to be concise, but also alludes to the existence of a core set of data elements that all health care professionals can use; it is intended to be a speciality agnostic and condition independent set. It does not imply that all the items in the data set will be used in every summary. It is also possible to refine the extract from a record such that the content of the summary is more relevant to a particular condition (e.g. asthma) but no asthma-specific elements will be specified in this standard.
 The IPS Document or IPS can be extended by non-IPS standard condition-specific data.
