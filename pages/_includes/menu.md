@@ -22,7 +22,7 @@
 		<a href="ipsStructure.html">The "IPS"</a>
 	</li>
 	<li class="dropdown">
-		<a href="#" data-toggle="dropdown" class="dropdown-toggle">Artifacts</a>
+		<a href="#" data-toggle="dropdown" class="dropdown-toggle">FHIR Artifacts</a>
 		<ul class="dropdown-menu">
 			<li>
 				<a href="StructureDefinition-Composition-uv-ips.html">The IPS Composition</a>
@@ -39,12 +39,16 @@
 			<li>
 				<a href="terminology.html">Terminology</a>
 			</li>
+            <li>
+		      <a href="examples.html">Examples</a>
+	       </li>
 		</ul>
 	</li>
-	<li>
-		<a href="examples.html">Examples</a>
-	</li>
+
 	<li>
 		<a href="downloads.html">Downloads</a>
 	</li>
+    <li>
+         <a href="copyrights.html">Copyrights</a>
+    </li>
 </ul>
