@@ -54,6 +54,7 @@
 		</element>
 		<element id="Condition.category">
 			<path value="Condition.category"/>
+			<!--
 			<slicing>
 				<discriminator>
 					<type value="pattern"/>
@@ -62,6 +63,7 @@
 				<description value="Discriminated by the bound value set"/>
 				<rules value="open"/>
 			</slicing>
+-->
 			<definition value="A category assigned to the condition. In this profile, a health problem of the patient, therefore a 'problem-list-item'.&#xD;&#xA;"/>
 			<comment value="In this profile, Condition represents a health problem of the patient. Therefore one of the category value(s) must be problem-list-item."/>
 			<type>
@@ -70,6 +72,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Condition.category:problem">
 			<path value="Condition.category"/>
 			<sliceName value="problemCategory"/>
@@ -89,6 +92,7 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips"/>
 			</binding>
 		</element>
+-->
 		<element id="Condition.severity">
 			<path value="Condition.severity"/>
 			<type>
