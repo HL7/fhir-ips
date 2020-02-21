@@ -16,4 +16,9 @@ These code systems have been defined for this implementation guide:
 These value sets have been defined for this implementation guide:
 {% include list-simple-valuesets.xhtml %}
 
+# Concept Maps
+
+These concept maps have been defined for this implementation guide:
+{% include list-simple-conceptmaps.xhtml %}
+
 
