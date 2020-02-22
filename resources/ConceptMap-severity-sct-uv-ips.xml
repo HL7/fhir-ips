@@ -1,9 +1,9 @@
 <ConceptMap xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<id value="severity-lnc-uv-ips"/>
-	<url value="http://hl7.org/fhir/uv/ips/ConceptMap/severity-lnc-uv-ips"/>
+	<id value="severity-sct-uv-ips"/>
+	<url value="http://hl7.org/fhir/uv/ips/ConceptMap/severity-sct-uv-ips"/>
 	<version value="4.0.1"/>
-	<name value="ConceptMapSeverityIPSLoinc"/>
-	<title value="Mapping Severity Value Sets (Loinc to FHIR)"/>
+	<name value="ConceptMapSeverityIPSSnomed"/>
+	<title value="Mapping Severity Value Sets (SNOMED CT to FHIR)"/>
 	<status value="draft"/>
 	<experimental value="true"/>
 	<date value="2012-06-13"/>
@@ -23,13 +23,13 @@
 			<value value="info@hl7.org"/>
 		</telecom>
 	</contact>
-	<sourceUri value="http://hl7.org/fhir/uv/ips/ValueSet/condition-severity-uv-ips"/>
+	<sourceUri value="http://hl7.org/fhir/ValueSet/condition-severity"/>
 	<targetUri value="http://hl7.org/fhir/ValueSet/reaction-event-severity"/>
 	<group>
-		<source value="http://loinc.org"/>
+		<source value="http://snomed.info/sct"/>
 		<target value="http://hl7.org/fhir/reaction-event-severity"/>
 		<element>
-			<code value="LA6752-5"/>
+			<code value="255604002"/>
 			<display value="Mild"/>
 			<target>
 				<code value="mild"/>
@@ -38,7 +38,7 @@
 			</target>
 		</element>
 		<element>
-			<code value="LA6751-7"/>
+			<code value="6736007"/>
 			<display value="Moderate"/>
 			<target>
 				<code value="moderate"/>
@@ -47,7 +47,7 @@
 			</target>
 		</element>
 		<element>
-			<code value="LA6750-9"/>
+			<code value="24484000"/>
 			<display value="Severe"/>
 			<target>
 				<code value="severe"/>
