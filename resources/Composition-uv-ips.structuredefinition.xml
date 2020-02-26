@@ -1042,6 +1042,28 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<element id="Composition.section:sectionPlanOfCare.entry">
+			<path value="Composition.section.entry"/>
+			<slicing>
+				<discriminator>
+					<type value="profile"/>
+					<path value="$this.resolve()"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+			<short value="Optional entry used to represent structured care plans"/>
+			<definition value="Dynamic, personalized plan including identified needed healthcare activity, health objectives and healthcare goals, relating to one or more specified health issues in a healthcare process [Source EN ISO 13940]"/>
+			<mustSupport value="false"/>
+		</element>
+		<element id="Composition.section:sectionPlanOfCare.entry:carePlan">
+			<path value="Composition.section.entry"/>
+			<sliceName value="carePlan"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan"/>
+			</type>
+			<mustSupport value="false"/>
+		</element>
 		<element id="Composition.section:sectionPlanOfCare.emptyReason">
 			<path value="Composition.section.emptyReason"/>
 			<max value="0"/>
