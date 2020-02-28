@@ -1,15 +1,20 @@
 ---
-title: ValueSets and CodeSystems defined as part of the IPS Implementation Guide
+title: Terminology artefacts defined as part of the IPS Implementation Guide
 layout: default
 active: terminology
 ---
-All the terminologies specified by this guide are also published in the [Art Decor IPS repository](https://art-decor.org/art-decor/decor-valuesets--hl7ips-)
+Most terminologies specified by this guide are also published in the [Art Decor IPS repository](https://art-decor.org/art-decor/decor-valuesets--hl7ips-)
 
 
 # Code Systems
 
 These code systems have been defined for this implementation guide:
 {% include list-simple-codesystems.xhtml %}
+
+# Global Patient Set Value Set
+
+A value set representing the SNOMED CT Global Patient Set (https://www.snomed.org/snomed-international/learn-more/global-patient-set) is available here.
+
 
 # Value Sets
 
