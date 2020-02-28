@@ -97,9 +97,30 @@
 			</binding>
 		</element>
 		<!-- -->
-		<element id="AllergyIntolerance.code:absentOrUnknownAllergy">
+		<element id="AllergyIntolerance.code:allergyIntoleranceGPSCode">
 			<path value="AllergyIntolerance.code"/>
-			<sliceName value="absentOrUnknownAllergy"/>
+			<sliceName value="allergyIntoleranceGPSCode"/>
+			<short value="Code for allergy or intolerance from the SNOMED CT GPS code set"/>
+			<definition value="Code for an allergy or intolerance statement that is selected from the SNOMED CT GPS code set."/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+				<min value="0"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="GPS"/>
+				</extension>
+				<strength value="required"/>
+				<description value="Codes for allergy or intolerance from the SNOMED CT GPS code set"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-gps-uv-ips"/>
+			</binding>
+		</element>
+		<element id="AllergyIntolerance.code:absentOrUnknownAllergyIntolerance">
+			<path value="AllergyIntolerance.code"/>
+			<sliceName value="absentOrUnknownAllergyIntolerance"/>
 			<short value="Code for absent or unknown allergy or intolerance"/>
 			<definition value="Code for an allergy or intolerance statement (either a positive or a negated/excluded statement).  This describes a categorical negated statement (e.g.,  &quot;No known allergy&quot;)."/>
 			<type>
