@@ -72,7 +72,7 @@
 			<path value="AllergyIntolerance.code"/>
 			<!-- -->
 			<slicing>
-			<discriminator>
+				<discriminator>
 					<type value="pattern"/>
 					<path value="$this"/>
 				</discriminator>
@@ -106,7 +106,7 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-				<min value="0"/>
+			<min value="0"/>
 			<max value="1"/>
 			<mustSupport value="true"/>
 			<binding>
@@ -263,16 +263,37 @@
 		</element>
 		<element id="AllergyIntolerance.reaction.manifestation">
 			<path value="AllergyIntolerance.reaction.manifestation"/>
+			<slicing>
+				<discriminator>
+					<type value="pattern"/>
+					<path value="$this"/>
+				</discriminator>
+				<description value="Discriminated by the bound value set"/>
+				<rules value="open"/>
+			</slicing>
 			<type>
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
+		</element>
+		<element id="AllergyIntolerance.reaction.manifestation:reactionManifestationGPSCode">
+			<path value="AllergyIntolerance.reaction.manifestation"/>
+			<sliceName value="allergyIntoleranceReactionManifestationGPSCode"/>
+			<short value="Code for the allergy or intolerance reaction manifestation from the SNOMED CT GPS code set"/>
+			<definition value="Code for an allergy or intolerance reaction manifestation statement that is selected from the SNOMED CT GPS code set."/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+				<min value="0"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="Manifestation"/>
+					<valueString value="ReactionManifestationGPS"/>
 				</extension>
-				<strength value="preferred"/>
+				<strength value="required"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-reaction-uv-ips"/>
 			</binding>
 		</element>
