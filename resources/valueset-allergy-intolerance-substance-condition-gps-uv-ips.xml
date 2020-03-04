@@ -33,11 +33,15 @@
     </contact>
     <description value="IPS Allergy intolerance substance condition. This value set includes the codes from the SNOMED International Global Patient Set (GPS) subset of SNOMED CT that are included in:  all descendants of 762766007 | Edible substance (substance);  all descendants of 406455002 | Allergen class (substance); all descendants of 425620007 | Metal (substance); all descendants of 373873005 | Pharmaceutical / biologic product (product); all descendants of 410942007 |Drug or medicament (substance)" />
     <immutable value="false" />
-    <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the of the SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org." />
+    <copyright value="The GPS is produced by SNOMED International under the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/)&#10;&#10;Additional information about this license specific to SNOMED International&#8217;s release of the GPS:&#10;* SNOMED CT is &#169; and &#174; SNOMED International. The right to maintain the GPS remains vested exclusively in SNOMED International.&#10;* The Licensee can redistribute the GPS.&#10;* The Licensee can create derivatives or implementation-related products and services based on the GPS.&#10;* The Licensee cannot claim that SNOMED International or any of its Members endorses the Licensee&#8217;s derivative because it uses content from the GPS.&#10;* Neither SNOMED International nor any of the contributors accept any liability for the Licensee&#8217;s use or redistribution of the GPS.&#10;* SNOMED CT&#174; was originally created by the College of American Pathologists.&#10;&#10;Without obtaining prior written permission from SNOMED International, you are expressly prohibited from using, distributing or reproducing the SNOMED International, SNOMED CT or SNOMED GPS logo, service mark or trademark. Please review all [terms and conditions of use](http://www.snomed.org/terms-and-conditions)." />
     <compose>
         <include>
-            <system value="http://snomed.info/sct"/>
-            <version value="http://snomed.info/sct/900000000000207008/version/20190731"/>
+            <system value="http://snomed.info/sct" />
+            <version value="http://snomed.info/sct/900000000000207008/version/20190731" />
+            <concept>
+                <code value="346755004" />
+                <display value="Treemix allergy maintenance kit (product)" />
+            </concept>
             <concept>
                 <code value="346469000" />
                 <display value="House mite allergy vaccine (product)" />
@@ -49,50 +53,6 @@
             <concept>
                 <code value="333569009" />
                 <display value="Hepatitis B vaccine 10micrograms/mL injection suspension 1mL prefilled syringe (product)" />
-            </concept>
-            <concept>
-                <code value="412373007" />
-                <display value="Diphtheria + pertussis + tetanus + Haemophilus influenzae type b vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="346697001" />
-                <display value="Typhoid whole cell vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="376997008" />
-                <display value="Mumps virus vaccine live injection solution 0.5mL vial (product)" />
-            </concept>
-            <concept>
-                <code value="333641007" />
-                <display value="Adsorbed tetanus vaccine injection solution prefilled syringe (product)" />
-            </concept>
-            <concept>
-                <code value="409290009" />
-                <display value="Echocardiographic contrast media (product)" />
-            </concept>
-            <concept>
-                <code value="73949004" />
-                <display value="Product containing atropine (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="387560008" />
-                <display value="Alfentanil (substance)" />
-            </concept>
-            <concept>
-                <code value="421148003" />
-                <display value="Substance with acetylcholine receptor agonist mechanism of action (substance)" />
-            </concept>
-            <concept>
-                <code value="64296005" />
-                <display value="Product containing Staphylococcus toxoid vaccine (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="135642004" />
-                <display value="Pneumococcal polysaccharide vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="400287005" />
-                <display value="Polyvalent pneumococcal vaccine injection solution 0.5mL syringe (product)" />
             </concept>
             <concept>
                 <code value="46233009" />
@@ -107,12 +67,32 @@
                 <display value="Pertussis vaccine (product)" />
             </concept>
             <concept>
+                <code value="412373007" />
+                <display value="Diphtheria + pertussis + tetanus + Haemophilus influenzae type b vaccine (product)" />
+            </concept>
+            <concept>
                 <code value="427682002" />
                 <display value="Diphtheria toxoid 30 iu/tetanus toxoid 40 iu/acellular pertussis toxoid 25micrograms injection solution 0.5mL prefilled syringe (product)" />
             </concept>
             <concept>
+                <code value="64296005" />
+                <display value="Product containing Staphylococcus toxoid vaccine (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="346697001" />
+                <display value="Typhoid whole cell vaccine (product)" />
+            </concept>
+            <concept>
                 <code value="90043005" />
                 <display value="Mumps live virus vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="376997008" />
+                <display value="Mumps virus vaccine live injection solution 0.5mL vial (product)" />
+            </concept>
+            <concept>
+                <code value="419771007" />
+                <display value="Measles/mumps/rubella/varicella vaccine powder and solvent for injection solution vial (product)" />
             </concept>
             <concept>
                 <code value="105949007" />
@@ -123,6 +103,10 @@
                 <display value="Live poliovirus vaccine (product)" />
             </concept>
             <concept>
+                <code value="135642004" />
+                <display value="Pneumococcal polysaccharide vaccine (product)" />
+            </concept>
+            <concept>
                 <code value="70447008" />
                 <display value="Polyvalent pneumococcal vaccine (product)" />
             </concept>
@@ -131,24 +115,16 @@
                 <display value="Pneumococcal 13-valent conjugate vaccine (product)" />
             </concept>
             <concept>
-                <code value="449019003" />
-                <display value="Acellular pertussis vaccine (product)" />
-            </concept>
-            <concept>
                 <code value="3526007" />
                 <display value="Rabies vaccine, human (product)" />
             </concept>
             <concept>
-                <code value="420538001" />
-                <display value="Tuberculosis vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="108972005" />
-                <display value="Medicinal product acting as antiplatelet agent (product)" />
-            </concept>
-            <concept>
                 <code value="58098008" />
                 <display value="Product containing tetanus toxoid adsorbed (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="333641007" />
+                <display value="Adsorbed tetanus vaccine injection solution prefilled syringe (product)" />
             </concept>
             <concept>
                 <code value="350327004" />
@@ -161,6 +137,10 @@
             <concept>
                 <code value="766203003" />
                 <display value="Haemophilus b polysaccharide 10micrograms/tetanus toxoid 30micrograms powder for conventional release solution for injection vial (product)" />
+            </concept>
+            <concept>
+                <code value="420538001" />
+                <display value="Tuberculosis vaccine (product)" />
             </concept>
             <concept>
                 <code value="55745002" />
@@ -179,12 +159,20 @@
                 <display value="Medicinal product acting as astringent (product)" />
             </concept>
             <concept>
+                <code value="108972005" />
+                <display value="Medicinal product acting as antiplatelet agent (product)" />
+            </concept>
+            <concept>
                 <code value="116532005" />
                 <display value="Prokinetic Agent (product)" />
             </concept>
             <concept>
                 <code value="312064005" />
                 <display value="Hypoglycemic agent (product)" />
+            </concept>
+            <concept>
+                <code value="409290009" />
+                <display value="Echocardiographic contrast media (product)" />
             </concept>
             <concept>
                 <code value="796001" />
@@ -211,6 +199,10 @@
                 <display value="Product containing sodium iodide (124-I) (medicinal product)" />
             </concept>
             <concept>
+                <code value="73949004" />
+                <display value="Product containing atropine (medicinal product)" />
+            </concept>
+            <concept>
                 <code value="423546004" />
                 <display value="Product containing fluorobenzothiazole (18-F) (medicinal product)" />
             </concept>
@@ -223,28 +215,20 @@
                 <display value="Product containing amlodipine (medicinal product)" />
             </concept>
             <concept>
-                <code value="108530004" />
-                <display value="Product containing bepridil (medicinal product)" />
+                <code value="55830003" />
+                <display value="Product containing human menopausal gonadotropin (medicinal product)" />
             </concept>
             <concept>
                 <code value="7947003" />
                 <display value="Product containing aspirin (medicinal product)" />
             </concept>
             <concept>
-                <code value="412145001" />
-                <display value="Hair dye (substance)" />
-            </concept>
-            <concept>
-                <code value="55830003" />
-                <display value="Product containing human menopausal gonadotropin (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="55814006" />
-                <display value="Iodinated (131-I) aggregated albumin (substance)" />
-            </concept>
-            <concept>
                 <code value="31306009" />
                 <display value="Product containing quinidine (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="108530004" />
+                <display value="Product containing bepridil (medicinal product)" />
             </concept>
             <concept>
                 <code value="406472009" />
@@ -253,6 +237,10 @@
             <concept>
                 <code value="427811002" />
                 <display value="Polymethyl methacrylate (substance)" />
+            </concept>
+            <concept>
+                <code value="412145001" />
+                <display value="Hair dye (substance)" />
             </concept>
             <concept>
                 <code value="87853006" />
@@ -285,6 +273,10 @@
             <concept>
                 <code value="387056004" />
                 <display value="Linezolid (substance)" />
+            </concept>
+            <concept>
+                <code value="387560008" />
+                <display value="Alfentanil (substance)" />
             </concept>
             <concept>
                 <code value="412357001" />
@@ -335,16 +327,16 @@
                 <display value="Iodine-123 (substance)" />
             </concept>
             <concept>
-                <code value="69839009" />
-                <display value="Povidone iodine (125-I) (substance)" />
-            </concept>
-            <concept>
-                <code value="96229001" />
-                <display value="Azaperone (substance)" />
-            </concept>
-            <concept>
                 <code value="40937006" />
                 <display value="Iodine-124 (substance)" />
+            </concept>
+            <concept>
+                <code value="55814006" />
+                <display value="Iodinated (131-I) aggregated albumin (substance)" />
+            </concept>
+            <concept>
+                <code value="69839009" />
+                <display value="Povidone iodine (125-I) (substance)" />
             </concept>
             <concept>
                 <code value="87708000" />
@@ -359,12 +351,16 @@
                 <display value="Succinylcholine (substance)" />
             </concept>
             <concept>
-                <code value="372693007" />
-                <display value="Class IV antiarrhythmic agent (substance)" />
+                <code value="96229001" />
+                <display value="Azaperone (substance)" />
             </concept>
             <concept>
                 <code value="15698006" />
                 <display value="Lysergic acid diethylamide (substance)" />
+            </concept>
+            <concept>
+                <code value="372693007" />
+                <display value="Class IV antiarrhythmic agent (substance)" />
             </concept>
             <concept>
                 <code value="373260001" />
@@ -375,10 +371,6 @@
                 <display value="Class II antiarrhythmic agent (substance)" />
             </concept>
             <concept>
-                <code value="373297006" />
-                <display value="Substance with beta-lactam structure and antibacterial mechanism of action (substance)" />
-            </concept>
-            <concept>
                 <code value="372872006" />
                 <display value="Bile acid sequestrant antilipemic agent (substance)" />
             </concept>
@@ -387,16 +379,32 @@
                 <display value="Substance with macrolide structure and antibacterial mechanism of action (substance)" />
             </concept>
             <concept>
+                <code value="373297006" />
+                <display value="Substance with beta-lactam structure and antibacterial mechanism of action (substance)" />
+            </concept>
+            <concept>
                 <code value="873008" />
                 <display value="Urethan (substance)" />
+            </concept>
+            <concept>
+                <code value="421148003" />
+                <display value="Substance with acetylcholine receptor agonist mechanism of action (substance)" />
             </concept>
             <concept>
                 <code value="88488004" />
                 <display value="Lead (substance)" />
             </concept>
             <concept>
+                <code value="227395004" />
+                <display value="Curry powder (substance)" />
+            </concept>
+            <concept>
                 <code value="51905005" />
                 <display value="Mustard (substance)" />
+            </concept>
+            <concept>
+                <code value="227425007" />
+                <display value="Figs (substance)" />
             </concept>
             <concept>
                 <code value="256313003" />
@@ -407,68 +415,32 @@
                 <display value="Drug diluent (product)" />
             </concept>
             <concept>
+                <code value="346754000" />
+                <display value="Timothy grass allergy maintenance kit (product)" />
+            </concept>
+            <concept>
+                <code value="346728008" />
+                <display value="Cat allergy initial kit (product)" />
+            </concept>
+            <concept>
                 <code value="424570009" />
                 <display value="Product containing indium (111-In) oxine (medicinal product)" />
             </concept>
             <concept>
-                <code value="333708002" />
-                <display value="Hepatitis A 1440u//typhoid 25mcg vaccine injection solution 1mL prefilled syringe (product)" />
-            </concept>
-            <concept>
-                <code value="227395004" />
-                <display value="Curry powder (substance)" />
-            </concept>
-            <concept>
-                <code value="227425007" />
-                <display value="Figs (substance)" />
+                <code value="10332002" />
+                <display value="Vaccine - bacterin - toxoid (product)" />
             </concept>
             <concept>
                 <code value="11185009" />
                 <display value="Autogenous vaccine - autogenous bacterin (product)" />
             </concept>
             <concept>
-                <code value="333696001" />
-                <display value="Haemophilus influenzae Type b (Hib)/diphtheria/tetanus/pertussis vaccine vial (product)" />
+                <code value="333708002" />
+                <display value="Hepatitis A 1440u//typhoid 25mcg vaccine injection solution 1mL prefilled syringe (product)" />
             </concept>
             <concept>
                 <code value="427048007" />
                 <display value="Haemophilus influenzae type b 10micrograms/diphtheria toxoid 30 iu/tetanus toxoid 40 iu/pertussis 25micrograms/recombinant hepatitis B virus surface antigen 10micrograms/inactivated poliomyelitis injection solution 0.5mL prefilled syringe (product)" />
-            </concept>
-            <concept>
-                <code value="449240007" />
-                <display value="Diphtheria + acellular pertussis adsorbed + inactivated polio + tetanus toxoids vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="89428009" />
-                <display value="Typhoid vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="406470001" />
-                <display value="Insect allergen (substance)" />
-            </concept>
-            <concept>
-                <code value="412071004" />
-                <display value="Wheat (substance)" />
-            </concept>
-            <concept>
-                <code value="227408005" />
-                <display value="Paprika (substance)" />
-            </concept>
-            <concept>
-                <code value="333568001" />
-                <display value="Hepatitis B vaccine 10micrograms/mL injection suspension 1mL vial (product)" />
-            </concept>
-            <concept>
-                <code value="407746005" />
-                <display value="Varicella-zoster live attenuated vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="125688000" />
-                <display value="Inactivated poliovirus vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="422069000" />
-                <display value="Meningococcal group C vaccine (product)" />
             </concept>
             <concept>
                 <code value="346525009" />
@@ -483,60 +455,44 @@
                 <display value="Diphtheria + pertussis + tetanus vaccine (product)" />
             </concept>
             <concept>
+                <code value="333696001" />
+                <display value="Haemophilus influenzae Type b (Hib)/diphtheria/tetanus/pertussis vaccine vial (product)" />
+            </concept>
+            <concept>
+                <code value="449240007" />
+                <display value="Diphtheria + acellular pertussis adsorbed + inactivated polio + tetanus toxoids vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="449019003" />
+                <display value="Acellular pertussis vaccine (product)" />
+            </concept>
+            <concept>
                 <code value="62354009" />
                 <display value="Bronchitis vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="89428009" />
+                <display value="Typhoid vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="400287005" />
+                <display value="Polyvalent pneumococcal vaccine injection solution 0.5mL syringe (product)" />
             </concept>
             <concept>
                 <code value="427806004" />
                 <display value="Diphtheria + tetanus + haemophilus influenzae type b vaccine (product)" />
             </concept>
             <concept>
-                <code value="372881000" />
-                <display value="Vasoconstrictor (substance)" />
-            </concept>
-            <concept>
-                <code value="102264005" />
-                <display value="Cheese (substance)" />
-            </concept>
-            <concept>
-                <code value="387085005" />
-                <display value="Cocaine (substance)" />
-            </concept>
-            <concept>
-                <code value="227388008" />
-                <display value="Cinnamon (substance)" />
-            </concept>
-            <concept>
-                <code value="102259006" />
-                <display value="Citrus fruit (substance)" />
-            </concept>
-            <concept>
-                <code value="264331002" />
-                <display value="Grain (substance)" />
-            </concept>
-            <concept>
-                <code value="125715001" />
-                <display value="Rabies vaccine, adsorbed (product)" />
-            </concept>
-            <concept>
-                <code value="771538003" />
-                <display value="Product containing technetium (99m-Tc) tetrofosmin in parenteral dose form (medicinal product form)" />
-            </concept>
-            <concept>
-                <code value="353962003" />
-                <display value="Product containing iodixanol (medicinal product)" />
-            </concept>
-            <concept>
                 <code value="68113000" />
                 <display value="Haemophilus b oligosaccharide conjugate(diphtheria CRM&gt;197&lt; protein conjugate) vaccine (product)" />
             </concept>
             <concept>
-                <code value="420261000" />
-                <display value="Meningococcal groups A+C+W135+Y vaccine (product)" />
+                <code value="347653005" />
+                <display value="Rubella live vaccine powder and solvent for injection solution vial (product)" />
             </concept>
             <concept>
-                <code value="423543007" />
-                <display value="Product containing flumazenil C-11 (medicinal product)" />
+                <code value="420261000" />
+                <display value="Meningococcal groups A+C+W135+Y vaccine (product)" />
             </concept>
             <concept>
                 <code value="376197009" />
@@ -547,40 +503,16 @@
                 <display value="Product containing precisely thyroid hormone 180 milligram/1 each conventional release oral tablet (clinical drug)" />
             </concept>
             <concept>
-                <code value="96328007" />
-                <display value="Medicinal product acting as decongestant (product)" />
-            </concept>
-            <concept>
-                <code value="12335007" />
-                <display value="Product containing diatrizoate (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="422598008" />
-                <display value="Product containing fluoromisonidazole (18-F) (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="71759000" />
-                <display value="Product containing glyceryl trinitrate (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="76759004" />
-                <display value="Product containing disopyramide (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="422855001" />
-                <display value="Product containing copper (64-Cu) diacetyl-bis N-(4)-methylthiosemicarbazone (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="47898004" />
-                <display value="Product containing verapamil (medicinal product)" />
-            </concept>
-            <concept>
                 <code value="771606000" />
                 <display value="Product containing technetium (99m-Tc) sestamibi in parenteral dose form (medicinal product form)" />
             </concept>
             <concept>
                 <code value="784487008" />
                 <display value="Product containing precisely follitropin alfa 75 unit/1 vial powder for conventional release solution for injection (clinical drug)" />
+            </concept>
+            <concept>
+                <code value="3361000" />
+                <display value="Anti-heparin agent (product)" />
             </concept>
             <concept>
                 <code value="67507000" />
@@ -591,8 +523,20 @@
                 <display value="Medicinal product acting as anticoagulant agent (product)" />
             </concept>
             <concept>
+                <code value="96328007" />
+                <display value="Medicinal product acting as decongestant (product)" />
+            </concept>
+            <concept>
                 <code value="111139005" />
                 <display value="Inotropic agent (product)" />
+            </concept>
+            <concept>
+                <code value="226315007" />
+                <display value="Water soluble vitamin supplementation (product)" />
+            </concept>
+            <concept>
+                <code value="226317004" />
+                <display value="Fat soluble vitamin supplementation (product)" />
             </concept>
             <concept>
                 <code value="17600005" />
@@ -607,6 +551,10 @@
                 <display value="Product containing fish derived omega 3 fatty acid (medicinal product)" />
             </concept>
             <concept>
+                <code value="12335007" />
+                <display value="Product containing diatrizoate (medicinal product)" />
+            </concept>
+            <concept>
                 <code value="73212002" />
                 <display value="Product containing iodipamide (medicinal product)" />
             </concept>
@@ -619,12 +567,36 @@
                 <display value="Product containing amiodarone (medicinal product)" />
             </concept>
             <concept>
+                <code value="422598008" />
+                <display value="Product containing fluoromisonidazole (18-F) (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="71759000" />
+                <display value="Product containing glyceryl trinitrate (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="76759004" />
+                <display value="Product containing disopyramide (medicinal product)" />
+            </concept>
+            <concept>
                 <code value="776025002" />
                 <display value="Product containing only follitropin alfa and lutropin alfa (medicinal product)" />
             </concept>
             <concept>
                 <code value="22696000" />
                 <display value="Product containing hydralazine (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="422855001" />
+                <display value="Product containing copper (64-Cu) diacetyl-bis N-(4)-methylthiosemicarbazone (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="404846007" />
+                <display value="Product containing gadopentetate dimeglumine (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="47898004" />
+                <display value="Product containing verapamil (medicinal product)" />
             </concept>
             <concept>
                 <code value="116101001" />
@@ -641,6 +613,14 @@
             <concept>
                 <code value="11496005" />
                 <display value="Mercuric chloride (substance)" />
+            </concept>
+            <concept>
+                <code value="406470001" />
+                <display value="Insect allergen (substance)" />
+            </concept>
+            <concept>
+                <code value="288328004" />
+                <display value="Bee venom (substance)" />
             </concept>
             <concept>
                 <code value="2799001" />
@@ -663,6 +643,10 @@
                 <display value="Prednisone (substance)" />
             </concept>
             <concept>
+                <code value="372881000" />
+                <display value="Vasoconstrictor (substance)" />
+            </concept>
+            <concept>
                 <code value="387286002" />
                 <display value="Methadone (substance)" />
             </concept>
@@ -683,24 +667,24 @@
                 <display value="Chlorpromazine (substance)" />
             </concept>
             <concept>
-                <code value="373488009" />
-                <display value="Methohexital (substance)" />
-            </concept>
-            <concept>
-                <code value="288328004" />
-                <display value="Bee venom (substance)" />
-            </concept>
-            <concept>
                 <code value="373508009" />
                 <display value="Aminophylline (substance)" />
             </concept>
             <concept>
-                <code value="33785000" />
-                <display value="Iodine (125-I) liothyronine (substance)" />
+                <code value="102264005" />
+                <display value="Cheese (substance)" />
             </concept>
             <concept>
                 <code value="260176001" />
                 <display value="Kiwi fruit (substance)" />
+            </concept>
+            <concept>
+                <code value="412071004" />
+                <display value="Wheat (substance)" />
+            </concept>
+            <concept>
+                <code value="33785000" />
+                <display value="Iodine (125-I) liothyronine (substance)" />
             </concept>
             <concept>
                 <code value="35884005" />
@@ -719,32 +703,20 @@
                 <display value="Cochineal stain (substance)" />
             </concept>
             <concept>
-                <code value="56844000" />
-                <display value="Yellow fever vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="75959001" />
-                <display value="Product containing tamoxifen (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="422540000" />
-                <display value="Product containing oxygen (15-O) butanol (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="422975006" />
-                <display value="Product containing flumazenil (18-F) (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="447126009" />
-                <display value="Technetium (99m-Tc) N-pyridoxyl-5-methyltryptophan (substance)" />
-            </concept>
-            <concept>
                 <code value="372901004" />
                 <display value="Secbutabarbital (substance)" />
             </concept>
             <concept>
+                <code value="387085005" />
+                <display value="Cocaine (substance)" />
+            </concept>
+            <concept>
                 <code value="373464007" />
                 <display value="Ketamine (substance)" />
+            </concept>
+            <concept>
+                <code value="373488009" />
+                <display value="Methohexital (substance)" />
             </concept>
             <concept>
                 <code value="387150008" />
@@ -767,10 +739,6 @@
                 <display value="Shellfish (substance)" />
             </concept>
             <concept>
-                <code value="735047000" />
-                <display value="Onion (substance)" />
-            </concept>
-            <concept>
                 <code value="227150003" />
                 <display value="Mussels (substance)" />
             </concept>
@@ -779,8 +747,28 @@
                 <display value="Broad bean (substance)" />
             </concept>
             <concept>
+                <code value="735047000" />
+                <display value="Onion (substance)" />
+            </concept>
+            <concept>
+                <code value="227388008" />
+                <display value="Cinnamon (substance)" />
+            </concept>
+            <concept>
+                <code value="227408005" />
+                <display value="Paprika (substance)" />
+            </concept>
+            <concept>
+                <code value="102259006" />
+                <display value="Citrus fruit (substance)" />
+            </concept>
+            <concept>
                 <code value="227538001" />
                 <display value="Pickle (substance)" />
+            </concept>
+            <concept>
+                <code value="264331002" />
+                <display value="Grain (substance)" />
             </concept>
             <concept>
                 <code value="320917000" />
@@ -791,12 +779,20 @@
                 <display value="Pollen allergy preparations (product)" />
             </concept>
             <concept>
+                <code value="346751008" />
+                <display value="Horse allergy maintenance kit (product)" />
+            </concept>
+            <concept>
                 <code value="669007" />
                 <display value="Vaccinia virus vaccine (product)" />
             </concept>
             <concept>
                 <code value="7230005" />
                 <display value="Brucella vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="333568001" />
+                <display value="Hepatitis B vaccine 10micrograms/mL injection suspension 1mL vial (product)" />
             </concept>
             <concept>
                 <code value="396457007" />
@@ -807,6 +803,10 @@
                 <display value="Cholera vaccine (product)" />
             </concept>
             <concept>
+                <code value="56844000" />
+                <display value="Yellow fever vaccine (product)" />
+            </concept>
+            <concept>
                 <code value="426361005" />
                 <display value="Diphtheria toxoid 30 iu/tetanus toxoid 40 iu/acellular pertussis 25micrograms/recombinant hepatitis B virus surface antigen 10micrograms/inactivated poliomyelitis injection solution 0.5mL prefilled syringe (product)" />
             </concept>
@@ -815,12 +815,32 @@
                 <display value="Typhoid VI polysaccharide vaccine (product)" />
             </concept>
             <concept>
+                <code value="347649008" />
+                <display value="Measles/mumps/rubella vaccine powder and solvent for injection solution vial (product)" />
+            </concept>
+            <concept>
                 <code value="409568008" />
                 <display value="Pentavalent botulinum toxoid vaccine (product)" />
             </concept>
             <concept>
+                <code value="407746005" />
+                <display value="Varicella-zoster live attenuated vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="125688000" />
+                <display value="Inactivated poliovirus vaccine (product)" />
+            </concept>
+            <concept>
                 <code value="414006007" />
                 <display value="Diphtheria + tetanus + poliomyelitis vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="333607004" />
+                <display value="Rabies inactivated vaccine powder and solvent for injection solution vial (product)" />
+            </concept>
+            <concept>
+                <code value="125715001" />
+                <display value="Rabies vaccine, adsorbed (product)" />
             </concept>
             <concept>
                 <code value="48028008" />
@@ -833,6 +853,10 @@
             <concept>
                 <code value="386013003" />
                 <display value="Rubella vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="422069000" />
+                <display value="Meningococcal group C vaccine (product)" />
             </concept>
             <concept>
                 <code value="428214002" />
@@ -851,48 +875,40 @@
                 <display value="Product containing homatropine (medicinal product)" />
             </concept>
             <concept>
+                <code value="771538003" />
+                <display value="Product containing technetium (99m-Tc) tetrofosmin in parenteral dose form (medicinal product form)" />
+            </concept>
+            <concept>
                 <code value="255631004" />
                 <display value="Antibiotic (product)" />
+            </concept>
+            <concept>
+                <code value="75959001" />
+                <display value="Product containing tamoxifen (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="422540000" />
+                <display value="Product containing oxygen (15-O) butanol (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="353962003" />
+                <display value="Product containing iodixanol (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="423543007" />
+                <display value="Product containing flumazenil C-11 (medicinal product)" />
             </concept>
             <concept>
                 <code value="108971003" />
                 <display value="Product containing ticlopidine (medicinal product)" />
             </concept>
             <concept>
-                <code value="75969007" />
-                <display value="Product containing gonadotropin releasing factor (product)" />
-            </concept>
-            <concept>
-                <code value="51908007" />
-                <display value="Product containing prenylamine (medicinal product)" />
+                <code value="422975006" />
+                <display value="Product containing flumazenil (18-F) (medicinal product)" />
             </concept>
             <concept>
                 <code value="424708001" />
                 <display value="Product containing fluorethyltyrosine (18-F) (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="26523005" />
-                <display value="Product containing dobutamine (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="26458009" />
-                <display value="Product containing diphenhydramine (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="108502004" />
-                <display value="Product containing adenosine (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="422789008" />
-                <display value="Product containing copper (62-Cu) pyruvaldehyde-bis N-(4)-methyl-thiosemicarbazone (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="61020000" />
-                <display value="Product containing thyroid hormone (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="406452004" />
-                <display value="Ferric hexacyanoferrate-II (substance)" />
             </concept>
             <concept>
                 <code value="66859009" />
@@ -903,12 +919,40 @@
                 <display value="Product containing procainamide (medicinal product)" />
             </concept>
             <concept>
+                <code value="26523005" />
+                <display value="Product containing dobutamine (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="26458009" />
+                <display value="Product containing diphenhydramine (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="75969007" />
+                <display value="Product containing gonadotropin releasing factor (product)" />
+            </concept>
+            <concept>
+                <code value="108502004" />
+                <display value="Product containing adenosine (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="422789008" />
+                <display value="Product containing copper (62-Cu) pyruvaldehyde-bis N-(4)-methyl-thiosemicarbazone (medicinal product)" />
+            </concept>
+            <concept>
                 <code value="354088005" />
                 <display value="Product containing gadodiamide (medicinal product)" />
             </concept>
             <concept>
                 <code value="48698004" />
                 <display value="Product containing calcium channel blocker (product)" />
+            </concept>
+            <concept>
+                <code value="51908007" />
+                <display value="Product containing prenylamine (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="61020000" />
+                <display value="Product containing thyroid hormone (medicinal product)" />
             </concept>
             <concept>
                 <code value="41549009" />
@@ -935,8 +979,20 @@
                 <display value="Metanil yellow stain (substance)" />
             </concept>
             <concept>
+                <code value="22931006" />
+                <display value="Evans blue stain (substance)" />
+            </concept>
+            <concept>
+                <code value="387358007" />
+                <display value="Ephedrine (substance)" />
+            </concept>
+            <concept>
                 <code value="55494003" />
                 <display value="Technetium (99m-Tc) albumin microspheres (substance)" />
+            </concept>
+            <concept>
+                <code value="85596006" />
+                <display value="Fluorescein stain (substance)" />
             </concept>
             <concept>
                 <code value="85693008" />
@@ -947,120 +1003,16 @@
                 <display value="Technetium (99m-Tc) medronate (substance)" />
             </concept>
             <concept>
-                <code value="412068007" />
-                <display value="Rye (substance)" />
-            </concept>
-            <concept>
-                <code value="447134003" />
-                <display value="Iodofiltic acid (123-I) (substance)" />
-            </concept>
-            <concept>
-                <code value="372695000" />
-                <display value="Diuretic (substance)" />
-            </concept>
-            <concept>
-                <code value="372682005" />
-                <display value="Diphenhydramine (substance)" />
-            </concept>
-            <concept>
-                <code value="372665008" />
-                <display value="Non-steroidal anti-inflammatory agent (substance)" />
-            </concept>
-            <concept>
-                <code value="735045008" />
-                <display value="Mushroom (substance)" />
-            </concept>
-            <concept>
-                <code value="735053000" />
-                <display value="Potato (substance)" />
-            </concept>
-            <concept>
-                <code value="409580000" />
-                <display value="CVD 103-HgR live attenuated oral cholera vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="333522004" />
-                <display value="Anthrax vaccine injection solution 0.5mL ampule (product)" />
-            </concept>
-            <concept>
-                <code value="125714002" />
-                <display value="Pneumococcal 7-valent conjugate vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="333549004" />
-                <display value="Adsorbed diphtheria+tetanus vaccine injection suspension 0.5mL prefilled syringe (product)" />
-            </concept>
-            <concept>
-                <code value="96308008" />
-                <display value="Product containing angiotensin II receptor antagonist (product)" />
-            </concept>
-            <concept>
-                <code value="372877000" />
-                <display value="Heparin (substance)" />
-            </concept>
-            <concept>
-                <code value="373529000" />
-                <display value="Morphine (substance)" />
-            </concept>
-            <concept>
-                <code value="372788003" />
-                <display value="Substance with sulfonamide structure and antibacterial mechanism of action (substance)" />
-            </concept>
-            <concept>
-                <code value="387341002" />
-                <display value="Diamorphine (substance)" />
-            </concept>
-            <concept>
-                <code value="373288007" />
-                <display value="General anesthetic (substance)" />
-            </concept>
-            <concept>
-                <code value="22931006" />
-                <display value="Evans blue stain (substance)" />
-            </concept>
-            <concept>
-                <code value="387358007" />
-                <display value="Ephedrine (substance)" />
-            </concept>
-            <concept>
-                <code value="85596006" />
-                <display value="Fluorescein stain (substance)" />
+                <code value="447126009" />
+                <display value="Technetium (99m-Tc) N-pyridoxyl-5-methyltryptophan (substance)" />
             </concept>
             <concept>
                 <code value="3829006" />
                 <display value="Iron (substance)" />
             </concept>
             <concept>
-                <code value="227444000" />
-                <display value="Raspberries (substance)" />
-            </concept>
-            <concept>
-                <code value="333620001" />
-                <display value="Smallpox vaccine injection solution vial (product)" />
-            </concept>
-            <concept>
-                <code value="412530002" />
-                <display value="Varicella virus live vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="354094002" />
-                <display value="Product containing metrizoate (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="373246003" />
-                <display value="Substance with acetylcholine receptor antagonist mechanism of action (substance)" />
-            </concept>
-            <concept>
-                <code value="372906009" />
-                <display value="Substance with benzodiazepine receptor antagonist mechanism of action (substance)" />
-            </concept>
-            <concept>
-                <code value="227493005" />
-                <display value="Cashew nut (substance)" />
-            </concept>
-            <concept>
-                <code value="373304005" />
-                <display value="Substance with calcium channel blocker mechanism of action (substance)" />
+                <code value="406452004" />
+                <display value="Ferric hexacyanoferrate-II (substance)" />
             </concept>
             <concept>
                 <code value="31192007" />
@@ -1087,16 +1039,16 @@
                 <display value="Chloral hydrate (substance)" />
             </concept>
             <concept>
-                <code value="22979004" />
-                <display value="Oleic acid (125-I) (substance)" />
-            </concept>
-            <concept>
                 <code value="28230009" />
                 <display value="Poultry (substance)" />
             </concept>
             <concept>
                 <code value="762952008" />
                 <display value="Peanut (substance)" />
+            </concept>
+            <concept>
+                <code value="412068007" />
+                <display value="Rye (substance)" />
             </concept>
             <concept>
                 <code value="735971005" />
@@ -1107,8 +1059,8 @@
                 <display value="Iodine (substance)" />
             </concept>
             <concept>
-                <code value="22968009" />
-                <display value="Sunset yellow FCF stain (substance)" />
+                <code value="22979004" />
+                <display value="Oleic acid (125-I) (substance)" />
             </concept>
             <concept>
                 <code value="33271006" />
@@ -1127,6 +1079,10 @@
                 <display value="Sodium iodide (125-I) (substance)" />
             </concept>
             <concept>
+                <code value="447134003" />
+                <display value="Iodofiltic acid (123-I) (substance)" />
+            </concept>
+            <concept>
                 <code value="407060002" />
                 <display value="Pro-brain natriuretic peptide (substance)" />
             </concept>
@@ -1139,6 +1095,14 @@
                 <display value="Interferon gamma (substance)" />
             </concept>
             <concept>
+                <code value="372695000" />
+                <display value="Diuretic (substance)" />
+            </concept>
+            <concept>
+                <code value="372682005" />
+                <display value="Diphenhydramine (substance)" />
+            </concept>
+            <concept>
                 <code value="373206009" />
                 <display value="Substance with tetracycline structure and antibacterial mechanism of action (substance)" />
             </concept>
@@ -1147,8 +1111,8 @@
                 <display value="Vancomycin (substance)" />
             </concept>
             <concept>
-                <code value="372733002" />
-                <display value="Substance with angiotensin-converting enzyme inhibitor mechanism of action (substance)" />
+                <code value="372665008" />
+                <display value="Non-steroidal anti-inflammatory agent (substance)" />
             </concept>
             <concept>
                 <code value="80237000" />
@@ -1159,20 +1123,28 @@
                 <display value="Indium (111-In) transferrin (substance)" />
             </concept>
             <concept>
-                <code value="260167008" />
-                <display value="Sesame seed (substance)" />
-            </concept>
-            <concept>
-                <code value="346405008" />
-                <display value="Dog allergy vaccine (product)" />
-            </concept>
-            <concept>
                 <code value="410937004" />
                 <display value="Oxytocic agent (substance)" />
             </concept>
             <concept>
                 <code value="59533004" />
                 <display value="Food additive (substance)" />
+            </concept>
+            <concept>
+                <code value="735045008" />
+                <display value="Mushroom (substance)" />
+            </concept>
+            <concept>
+                <code value="735053000" />
+                <display value="Potato (substance)" />
+            </concept>
+            <concept>
+                <code value="227444000" />
+                <display value="Raspberries (substance)" />
+            </concept>
+            <concept>
+                <code value="260167008" />
+                <display value="Sesame seed (substance)" />
             </concept>
             <concept>
                 <code value="417696007" />
@@ -1187,8 +1159,40 @@
                 <display value="Allergen extract vaccine (product)" />
             </concept>
             <concept>
+                <code value="346730005" />
+                <display value="Grass allergy initial kit (product)" />
+            </concept>
+            <concept>
+                <code value="346734001" />
+                <display value="Timothy grass allergy initial kit (product)" />
+            </concept>
+            <concept>
+                <code value="358640003" />
+                <display value="Silver birch allergy initial kit (product)" />
+            </concept>
+            <concept>
+                <code value="358641004" />
+                <display value="Silver birch allergy maintenance kit (product)" />
+            </concept>
+            <concept>
+                <code value="346405008" />
+                <display value="Dog allergy vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="346729000" />
+                <display value="Dog allergy initial kit (product)" />
+            </concept>
+            <concept>
                 <code value="406324009" />
                 <display value="Hepatitis A vaccine injection suspension 0.5 mL prefilled syringe (product)" />
+            </concept>
+            <concept>
+                <code value="333620001" />
+                <display value="Smallpox vaccine injection solution vial (product)" />
+            </concept>
+            <concept>
+                <code value="409580000" />
+                <display value="CVD 103-HgR live attenuated oral cholera vaccine (product)" />
             </concept>
             <concept>
                 <code value="408752008" />
@@ -1199,6 +1203,10 @@
                 <display value="Influenza A virus subtype H1N1 vaccine (product)" />
             </concept>
             <concept>
+                <code value="412530002" />
+                <display value="Varicella virus live vaccine (product)" />
+            </concept>
+            <concept>
                 <code value="111164008" />
                 <display value="Poliovirus vaccine (product)" />
             </concept>
@@ -1207,8 +1215,24 @@
                 <display value="Lactobacill acidophil vaccine (product)" />
             </concept>
             <concept>
+                <code value="333522004" />
+                <display value="Anthrax vaccine injection solution 0.5mL ampule (product)" />
+            </concept>
+            <concept>
+                <code value="125714002" />
+                <display value="Pneumococcal 7-valent conjugate vaccine (product)" />
+            </concept>
+            <concept>
                 <code value="68208009" />
                 <display value="Product containing diphtheria toxoid and tetanus toxoid adsorbed (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="333549004" />
+                <display value="Adsorbed diphtheria+tetanus vaccine injection suspension 0.5mL prefilled syringe (product)" />
+            </concept>
+            <concept>
+                <code value="347647005" />
+                <display value="Haemophilus influenzae Type b vaccine injection (pdr for recon)+diluent (product)" />
             </concept>
             <concept>
                 <code value="424519000" />
@@ -1219,20 +1243,12 @@
                 <display value="Product containing beta adrenergic receptor antagonist (product)" />
             </concept>
             <concept>
-                <code value="771928002" />
-                <display value="Product containing atropine in ocular dose form (medicinal product form)" />
-            </concept>
-            <concept>
-                <code value="76155001" />
-                <display value="Product containing iopanoic acid (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="55673009" />
-                <display value="Product containing sodium iothalamate (125-I) (medicinal product)" />
-            </concept>
-            <concept>
                 <code value="86308005" />
                 <display value="Product containing sympathomimetic (product)" />
+            </concept>
+            <concept>
+                <code value="771928002" />
+                <display value="Product containing atropine in ocular dose form (medicinal product form)" />
             </concept>
             <concept>
                 <code value="350162003" />
@@ -1251,6 +1267,22 @@
                 <display value="Product containing fluorescein stain (medicinal product)" />
             </concept>
             <concept>
+                <code value="24891006" />
+                <display value="Product containing sodium diatrizoate (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="76155001" />
+                <display value="Product containing iopanoic acid (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="55673009" />
+                <display value="Product containing sodium iothalamate (125-I) (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="354094002" />
+                <display value="Product containing metrizoate (medicinal product)" />
+            </concept>
+            <concept>
                 <code value="414428000" />
                 <display value="Product containing hydromorphone (medicinal product)" />
             </concept>
@@ -1259,12 +1291,12 @@
                 <display value="Product containing midazolam (medicinal product)" />
             </concept>
             <concept>
-                <code value="776210008" />
-                <display value="Product containing only human menopausal gonadotropin (medicinal product)" />
-            </concept>
-            <concept>
                 <code value="87233003" />
                 <display value="Product containing low molecular weight heparin (product)" />
+            </concept>
+            <concept>
+                <code value="776210008" />
+                <display value="Product containing only human menopausal gonadotropin (medicinal product)" />
             </concept>
             <concept>
                 <code value="409477004" />
@@ -1279,8 +1311,16 @@
                 <display value="Product containing histamine receptor antagonist (product)" />
             </concept>
             <concept>
+                <code value="87582004" />
+                <display value="Product containing desiccated animal thyroid (product)" />
+            </concept>
+            <concept>
                 <code value="421776000" />
                 <display value="Product containing perhexiline (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="96308008" />
+                <display value="Product containing angiotensin II receptor antagonist (product)" />
             </concept>
             <concept>
                 <code value="19893005" />
@@ -1311,12 +1351,12 @@
                 <display value="Technetium (99m-Tc) oxidronate (substance)" />
             </concept>
             <concept>
-                <code value="81761004" />
-                <display value="Technetium (99m-Tc) microaggregated albumin (substance)" />
-            </concept>
-            <concept>
                 <code value="72454006" />
                 <display value="Technetium-99m (substance)" />
+            </concept>
+            <concept>
+                <code value="81761004" />
+                <display value="Technetium (99m-Tc) microaggregated albumin (substance)" />
             </concept>
             <concept>
                 <code value="109029006" />
@@ -1335,8 +1375,24 @@
                 <display value="Streptokinase (substance)" />
             </concept>
             <concept>
+                <code value="372877000" />
+                <display value="Heparin (substance)" />
+            </concept>
+            <concept>
+                <code value="373246003" />
+                <display value="Substance with acetylcholine receptor antagonist mechanism of action (substance)" />
+            </concept>
+            <concept>
+                <code value="373529000" />
+                <display value="Morphine (substance)" />
+            </concept>
+            <concept>
                 <code value="23172004" />
                 <display value="Bismuth (substance)" />
+            </concept>
+            <concept>
+                <code value="372788003" />
+                <display value="Substance with sulfonamide structure and antibacterial mechanism of action (substance)" />
             </concept>
             <concept>
                 <code value="7434003" />
@@ -1345,6 +1401,14 @@
             <concept>
                 <code value="256353000" />
                 <display value="Hazelnut (substance)" />
+            </concept>
+            <concept>
+                <code value="227493005" />
+                <display value="Cashew nut (substance)" />
+            </concept>
+            <concept>
+                <code value="22968009" />
+                <display value="Sunset yellow FCF stain (substance)" />
             </concept>
             <concept>
                 <code value="303300008" />
@@ -1371,108 +1435,8 @@
                 <display value="Iodine-125 (substance)" />
             </concept>
             <concept>
-                <code value="735049002" />
-                <display value="Peach (substance)" />
-            </concept>
-            <concept>
-                <code value="333702001" />
-                <display value="Hepatitis A+B vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="406325005" />
-                <display value="Hepatitis A vaccine injection suspension 1 mL prefilled syringe (product)" />
-            </concept>
-            <concept>
-                <code value="412403009" />
-                <display value="Hepatitis B virus recombinant vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="409579003" />
-                <display value="Inactivated whole-cell/recombinant-B-subunit cholera vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="135643009" />
-                <display value="Pneumococcal polysaccharide conjugated vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="333697005" />
-                <display value="Japanese B encephalitis vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="386012008" />
-                <display value="Measles vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="333668007" />
-                <display value="Meningococcal C conjugate vaccine injection solution prefilled syringe (product)" />
-            </concept>
-            <concept>
-                <code value="412161004" />
-                <display value="Wool (substance)" />
-            </concept>
-            <concept>
-                <code value="111162007" />
-                <display value="Technetium (99m-Tc) stannous etidronate (substance)" />
-            </concept>
-            <concept>
-                <code value="372700007" />
-                <display value="Nitrate-based vasodilating agent (substance)" />
-            </concept>
-            <concept>
-                <code value="387239001" />
-                <display value="Methylrosanilinium chloride (substance)" />
-            </concept>
-            <concept>
-                <code value="447128005" />
-                <display value="Technetium (99m-Tc) stannous colloid (substance)" />
-            </concept>
-            <concept>
-                <code value="256443002" />
-                <display value="Egg white (substance)" />
-            </concept>
-            <concept>
-                <code value="256307007" />
-                <display value="Banana (substance)" />
-            </concept>
-            <concept>
-                <code value="111159009" />
-                <display value="Rose bengal (131-I) sodium (substance)" />
-            </concept>
-            <concept>
-                <code value="96230006" />
-                <display value="Xylazine hydrochloride (substance)" />
-            </concept>
-            <concept>
-                <code value="386839004" />
-                <display value="Remifentanil (substance)" />
-            </concept>
-            <concept>
-                <code value="373263004" />
-                <display value="Cardiac adrenergic blocking agent (substance)" />
-            </concept>
-            <concept>
-                <code value="373265006" />
-                <display value="Analgesic (substance)" />
-            </concept>
-            <concept>
-                <code value="735006003" />
-                <display value="Squid (substance)" />
-            </concept>
-            <concept>
-                <code value="23182003" />
-                <display value="Cereal (substance)" />
-            </concept>
-            <concept>
-                <code value="227389000" />
-                <display value="Clove (substance)" />
-            </concept>
-            <concept>
-                <code value="260177005" />
-                <display value="Melon (substance)" />
-            </concept>
-            <concept>
-                <code value="346524008" />
-                <display value="Influenza split virion vaccine (product)" />
+                <code value="387341002" />
+                <display value="Diamorphine (substance)" />
             </concept>
             <concept>
                 <code value="9721008" />
@@ -1483,68 +1447,20 @@
                 <display value="Cannabis (substance)" />
             </concept>
             <concept>
-                <code value="735979007" />
-                <display value="Octopus (substance)" />
+                <code value="372906009" />
+                <display value="Substance with benzodiazepine receptor antagonist mechanism of action (substance)" />
             </concept>
             <concept>
-                <code value="256319004" />
-                <display value="Carrot (substance)" />
+                <code value="372733002" />
+                <display value="Substance with angiotensin-converting enzyme inhibitor mechanism of action (substance)" />
             </concept>
             <concept>
-                <code value="414002009" />
-                <display value="Diphtheria + tetanus + inactivated poliovirus vaccine (product)" />
+                <code value="373304005" />
+                <display value="Substance with calcium channel blocker mechanism of action (substance)" />
             </concept>
             <concept>
-                <code value="346402006" />
-                <display value="Diphtheria single antigen vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="350163008" />
-                <display value="Product containing amoxicillin in parenteral dose form (medicinal product form)" />
-            </concept>
-            <concept>
-                <code value="409291008" />
-                <display value="Product containing perflutren (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="409484007" />
-                <display value="Product containing ioxilan (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="387368002" />
-                <display value="Isoflurane (substance)" />
-            </concept>
-            <concept>
-                <code value="116593003" />
-                <display value="Methylprednisolone (substance)" />
-            </concept>
-            <concept>
-                <code value="764170006" />
-                <display value="Fibrinolysin (substance)" />
-            </concept>
-            <concept>
-                <code value="227144008" />
-                <display value="Tuna fish (substance)" />
-            </concept>
-            <concept>
-                <code value="412228003" />
-                <display value="Ioxaglate meglumine (substance)" />
-            </concept>
-            <concept>
-                <code value="427036009" />
-                <display value="Influenza virus H5N1 vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="414004005" />
-                <display value="Diphtheria + tetanus + pertussis + poliomyelitis + haemophilus influenzae b vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="333603000" />
-                <display value="Poliomyelitis inactivated vaccine injection (product)" />
-            </concept>
-            <concept>
-                <code value="372578001" />
-                <display value="Plasma expander (substance)" />
+                <code value="373288007" />
+                <display value="General anesthetic (substance)" />
             </concept>
             <concept>
                 <code value="387423006" />
@@ -1555,40 +1471,52 @@
                 <display value="Bronchodilator (substance)" />
             </concept>
             <concept>
-                <code value="372614000" />
-                <display value="Sedative (substance)" />
+                <code value="47703008" />
+                <display value="Lactose (substance)" />
+            </concept>
+            <concept>
+                <code value="735979007" />
+                <display value="Octopus (substance)" />
             </concept>
             <concept>
                 <code value="63766005" />
                 <display value="Flour (substance)" />
             </concept>
             <concept>
-                <code value="11866009" />
-                <display value="Plague vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="47703008" />
-                <display value="Lactose (substance)" />
-            </concept>
-            <concept>
                 <code value="391737006" />
                 <display value="Almond oil (substance)" />
+            </concept>
+            <concept>
+                <code value="256319004" />
+                <display value="Carrot (substance)" />
+            </concept>
+            <concept>
+                <code value="735049002" />
+                <display value="Peach (substance)" />
             </concept>
             <concept>
                 <code value="735211005" />
                 <display value="Coconut (substance)" />
             </concept>
             <concept>
-                <code value="735245003" />
-                <display value="Cod (substance)" />
-            </concept>
-            <concept>
                 <code value="63338004" />
                 <display value="Drug flavoring (product)" />
             </concept>
             <concept>
+                <code value="346731009" />
+                <display value="Horse allergy initial kit (product)" />
+            </concept>
+            <concept>
+                <code value="346753006" />
+                <display value="House mite allergy maintenance kit (product)" />
+            </concept>
+            <concept>
                 <code value="443312008" />
                 <display value="Product containing prasugrel (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="11866009" />
+                <display value="Plague vaccine (product)" />
             </concept>
             <concept>
                 <code value="37146000" />
@@ -1599,8 +1527,24 @@
                 <display value="Hepatitis A virus vaccine (product)" />
             </concept>
             <concept>
+                <code value="333702001" />
+                <display value="Hepatitis A+B vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="406325005" />
+                <display value="Hepatitis A vaccine injection suspension 1 mL prefilled syringe (product)" />
+            </concept>
+            <concept>
+                <code value="428688001" />
+                <display value="Live smallpox vaccine powder 3mL vial + diluent (product)" />
+            </concept>
+            <concept>
                 <code value="34689006" />
                 <display value="Hepatitis B virus vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="412403009" />
+                <display value="Hepatitis B virus recombinant vaccine (product)" />
             </concept>
             <concept>
                 <code value="426842004" />
@@ -1611,8 +1555,8 @@
                 <display value="Diphtheria + tetanus + pertussis + poliomyelitis + recombinant hepatitis B virus vaccine (product)" />
             </concept>
             <concept>
-                <code value="427533008" />
-                <display value="Q fever vaccine (product)" />
+                <code value="409579003" />
+                <display value="Inactivated whole-cell/recombinant-B-subunit cholera vaccine (product)" />
             </concept>
             <concept>
                 <code value="451022006" />
@@ -1623,12 +1567,16 @@
                 <display value="Typhoid polysaccharide vaccine 25micrograms injection suspension 0.5mL prefilled syringe (product)" />
             </concept>
             <concept>
-                <code value="348046004" />
-                <display value="Influenza (split virion) vaccine injection suspension 0.5mL prefilled syringe (product)" />
-            </concept>
-            <concept>
                 <code value="61153008" />
                 <display value="Measles, mumps and rubella vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="407933006" />
+                <display value="Varicella-zoster live attenuated vaccine injection (pdr for recon)+solvent (product)" />
+            </concept>
+            <concept>
+                <code value="414002009" />
+                <display value="Diphtheria + tetanus + inactivated poliovirus vaccine (product)" />
             </concept>
             <concept>
                 <code value="116077000" />
@@ -1639,20 +1587,52 @@
                 <display value="Rotavirus live vaccine powder for conventional release oral suspension 1mL (product)" />
             </concept>
             <concept>
+                <code value="135643009" />
+                <display value="Pneumococcal polysaccharide conjugated vaccine (product)" />
+            </concept>
+            <concept>
                 <code value="425555004" />
                 <display value="Haemophilus influenzae Type b + tetanus vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="333697005" />
+                <display value="Japanese B encephalitis vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="333698000" />
+                <display value="Japanese B encephalitis vaccine powder and solvent for injection solution vial (product)" />
+            </concept>
+            <concept>
+                <code value="386012008" />
+                <display value="Measles vaccine (product)" />
             </concept>
             <concept>
                 <code value="440075005" />
                 <display value="Live measles + rubella vaccine injection dose form (product)" />
             </concept>
             <concept>
+                <code value="333668007" />
+                <display value="Meningococcal C conjugate vaccine injection solution prefilled syringe (product)" />
+            </concept>
+            <concept>
+                <code value="427533008" />
+                <display value="Q fever vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="346402006" />
+                <display value="Diphtheria single antigen vaccine (product)" />
+            </concept>
+            <concept>
                 <code value="67440007" />
                 <display value="Product containing alpha adrenergic receptor antagonist (product)" />
             </concept>
             <concept>
-                <code value="439007" />
-                <display value="Therapeutic radioisotope (product)" />
+                <code value="350163008" />
+                <display value="Product containing amoxicillin in parenteral dose form (medicinal product form)" />
+            </concept>
+            <concept>
+                <code value="318641000" />
+                <display value="Vasodilator antihypertensive drugs (product)" />
             </concept>
             <concept>
                 <code value="26370007" />
@@ -1667,12 +1647,28 @@
                 <display value="Medicinal product acting as thrombolytic (product)" />
             </concept>
             <concept>
+                <code value="439007" />
+                <display value="Therapeutic radioisotope (product)" />
+            </concept>
+            <concept>
                 <code value="356671000" />
                 <display value="Product containing iomeprol (medicinal product)" />
             </concept>
             <concept>
                 <code value="66493003" />
                 <display value="Product containing theophylline (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="392658005" />
+                <display value="Product containing dofetilide (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="409291008" />
+                <display value="Product containing perflutren (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="346553009" />
+                <display value="Product containing lidocaine and prilocaine (medicinal product)" />
             </concept>
             <concept>
                 <code value="82573000" />
@@ -1683,16 +1679,12 @@
                 <display value="Product containing nifedipine (medicinal product)" />
             </concept>
             <concept>
-                <code value="392658005" />
-                <display value="Product containing dofetilide (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="346553009" />
-                <display value="Product containing lidocaine and prilocaine (medicinal product)" />
-            </concept>
-            <concept>
                 <code value="439624003" />
                 <display value="Product containing clevidipine (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="409484007" />
+                <display value="Product containing ioxilan (medicinal product)" />
             </concept>
             <concept>
                 <code value="325781003" />
@@ -1703,12 +1695,12 @@
                 <display value="Product containing progesterone (medicinal product)" />
             </concept>
             <concept>
-                <code value="46576005" />
-                <display value="Product containing flecainide (medicinal product)" />
-            </concept>
-            <concept>
                 <code value="777553004" />
                 <display value="Product containing only sodium chloride (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="46576005" />
+                <display value="Product containing flecainide (medicinal product)" />
             </concept>
             <concept>
                 <code value="330888007" />
@@ -1731,12 +1723,20 @@
                 <display value="Lidocaine hydrochloride (substance)" />
             </concept>
             <concept>
+                <code value="412161004" />
+                <display value="Wool (substance)" />
+            </concept>
+            <concept>
                 <code value="3040004" />
                 <display value="Technetium (99m-Tc) disofenin (substance)" />
             </concept>
             <concept>
                 <code value="11136004" />
                 <display value="Methoxyflurane (substance)" />
+            </concept>
+            <concept>
+                <code value="387368002" />
+                <display value="Isoflurane (substance)" />
             </concept>
             <concept>
                 <code value="72164009" />
@@ -1747,32 +1747,92 @@
                 <display value="Ethanol (substance)" />
             </concept>
             <concept>
+                <code value="111162007" />
+                <display value="Technetium (99m-Tc) stannous etidronate (substance)" />
+            </concept>
+            <concept>
                 <code value="109066000" />
                 <display value="Hydrocortisone sodium succinate (substance)" />
+            </concept>
+            <concept>
+                <code value="116593003" />
+                <display value="Methylprednisolone (substance)" />
+            </concept>
+            <concept>
+                <code value="372700007" />
+                <display value="Nitrate-based vasodilating agent (substance)" />
+            </concept>
+            <concept>
+                <code value="764170006" />
+                <display value="Fibrinolysin (substance)" />
             </concept>
             <concept>
                 <code value="373337007" />
                 <display value="Methylphenidate (substance)" />
             </concept>
             <concept>
-                <code value="446536001" />
-                <display value="Technetium (99m-Tc) tiatide (substance)" />
-            </concept>
-            <concept>
-                <code value="767235005" />
-                <display value="Gadolinium compound (substance)" />
+                <code value="387239001" />
+                <display value="Methylrosanilinium chloride (substance)" />
             </concept>
             <concept>
                 <code value="703842006" />
                 <display value="Amfetamine (substance)" />
             </concept>
             <concept>
+                <code value="446536001" />
+                <display value="Technetium (99m-Tc) tiatide (substance)" />
+            </concept>
+            <concept>
+                <code value="447128005" />
+                <display value="Technetium (99m-Tc) stannous colloid (substance)" />
+            </concept>
+            <concept>
+                <code value="767235005" />
+                <display value="Gadolinium compound (substance)" />
+            </concept>
+            <concept>
                 <code value="10944007" />
                 <display value="Taurine (substance)" />
             </concept>
             <concept>
+                <code value="84217005" />
+                <display value="Titan yellow stain (substance)" />
+            </concept>
+            <concept>
+                <code value="256443002" />
+                <display value="Egg white (substance)" />
+            </concept>
+            <concept>
+                <code value="406774009" />
+                <display value="Fish derived omega 3 fatty acid (substance)" />
+            </concept>
+            <concept>
+                <code value="256307007" />
+                <display value="Banana (substance)" />
+            </concept>
+            <concept>
+                <code value="735245003" />
+                <display value="Cod (substance)" />
+            </concept>
+            <concept>
+                <code value="227144008" />
+                <display value="Tuna fish (substance)" />
+            </concept>
+            <concept>
+                <code value="90733003" />
+                <display value="Metrizamide (substance)" />
+            </concept>
+            <concept>
+                <code value="412228003" />
+                <display value="Ioxaglate meglumine (substance)" />
+            </concept>
+            <concept>
                 <code value="78481003" />
                 <display value="Iofetamine (123-I) hydrochloride (substance)" />
+            </concept>
+            <concept>
+                <code value="111159009" />
+                <display value="Rose bengal (131-I) sodium (substance)" />
             </concept>
             <concept>
                 <code value="395787009" />
@@ -1783,120 +1843,52 @@
                 <display value="Iobenguane (131-I) (substance)" />
             </concept>
             <concept>
-                <code value="84217005" />
-                <display value="Titan yellow stain (substance)" />
-            </concept>
-            <concept>
-                <code value="406774009" />
-                <display value="Fish derived omega 3 fatty acid (substance)" />
-            </concept>
-            <concept>
-                <code value="90733003" />
-                <display value="Metrizamide (substance)" />
-            </concept>
-            <concept>
                 <code value="12597001" />
                 <display value="Tin (substance)" />
-            </concept>
-            <concept>
-                <code value="372560006" />
-                <display value="Antiplatelet agent (substance)" />
-            </concept>
-            <concept>
-                <code value="426081003" />
-                <display value="Diphtheria + tetanus + pertussis + recombinant hepatitis B virus vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="108729007" />
-                <display value="Varicella virus vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="333598008" />
-                <display value="Pneumococcal vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="333606008" />
-                <display value="Rabies vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="333680004" />
-                <display value="Haemophilus influenzae Type b vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="333700009" />
-                <display value="Tick-borne encephalitis vaccine injection solution prefilled syringe (product)" />
-            </concept>
-            <concept>
-                <code value="96301002" />
-                <display value="Product containing sotalol (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="375876000" />
-                <display value="Product containing precisely thyroid hormone 60 milligram/1 each conventional release oral tablet (clinical drug)" />
-            </concept>
-            <concept>
-                <code value="109222009" />
-                <display value="Product containing ioversol (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="443310000" />
-                <display value="Product containing dronedarone (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="412156001" />
-                <display value="Silk (substance)" />
-            </concept>
-            <concept>
-                <code value="387293003" />
-                <display value="Dithranol (substance)" />
-            </concept>
-            <concept>
-                <code value="372602008" />
-                <display value="Metronidazole (substance)" />
-            </concept>
-            <concept>
-                <code value="387264003" />
-                <display value="Diazepam (substance)" />
-            </concept>
-            <concept>
-                <code value="387362001" />
-                <display value="Epinephrine (substance)" />
-            </concept>
-            <concept>
-                <code value="446534003" />
-                <display value="Technetium (99m-Tc) galactosyl human serum albumin diethylenetriamine pentaacetic acid (substance)" />
-            </concept>
-            <concept>
-                <code value="111160004" />
-                <display value="Sodium iodide (131-I) (substance)" />
-            </concept>
-            <concept>
-                <code value="373250005" />
-                <display value="Depolarizing agent (substance)" />
-            </concept>
-            <concept>
-                <code value="372913009" />
-                <display value="Substance with angiotensin II receptor antagonist mechanism of action (substance)" />
-            </concept>
-            <concept>
-                <code value="373746004" />
-                <display value="Coagulant (substance)" />
-            </concept>
-            <concept>
-                <code value="414010005" />
-                <display value="Substance with direct thrombin inhibitor mechanism of action (substance)" />
-            </concept>
-            <concept>
-                <code value="256306003" />
-                <display value="Orange - fruit (substance)" />
             </concept>
             <concept>
                 <code value="72717003" />
                 <display value="Magnesium (substance)" />
             </concept>
             <concept>
+                <code value="372614000" />
+                <display value="Sedative (substance)" />
+            </concept>
+            <concept>
+                <code value="96230006" />
+                <display value="Xylazine hydrochloride (substance)" />
+            </concept>
+            <concept>
+                <code value="386839004" />
+                <display value="Remifentanil (substance)" />
+            </concept>
+            <concept>
+                <code value="372560006" />
+                <display value="Antiplatelet agent (substance)" />
+            </concept>
+            <concept>
+                <code value="373263004" />
+                <display value="Cardiac adrenergic blocking agent (substance)" />
+            </concept>
+            <concept>
+                <code value="373265006" />
+                <display value="Analgesic (substance)" />
+            </concept>
+            <concept>
                 <code value="418760000" />
                 <display value="Respiratory stimulant (substance)" />
+            </concept>
+            <concept>
+                <code value="372578001" />
+                <display value="Plasma expander (substance)" />
+            </concept>
+            <concept>
+                <code value="735006003" />
+                <display value="Squid (substance)" />
+            </concept>
+            <concept>
+                <code value="23182003" />
+                <display value="Cereal (substance)" />
             </concept>
             <concept>
                 <code value="227313005" />
@@ -1907,16 +1899,60 @@
                 <display value="Lupine seed (substance)" />
             </concept>
             <concept>
+                <code value="227389000" />
+                <display value="Clove (substance)" />
+            </concept>
+            <concept>
                 <code value="72511004" />
                 <display value="Fruit (substance)" />
+            </concept>
+            <concept>
+                <code value="260177005" />
+                <display value="Melon (substance)" />
             </concept>
             <concept>
                 <code value="411191007" />
                 <display value="Drug eluting stent (product)" />
             </concept>
             <concept>
+                <code value="346735000" />
+                <display value="Treemix allergy initial kit (product)" />
+            </concept>
+            <concept>
+                <code value="346747006" />
+                <display value="Cat allergy maintenance kit (product)" />
+            </concept>
+            <concept>
+                <code value="346748001" />
+                <display value="Dog allergy maintenance kit (product)" />
+            </concept>
+            <concept>
+                <code value="346733007" />
+                <display value="House mite allergy initial kit (product)" />
+            </concept>
+            <concept>
+                <code value="426081003" />
+                <display value="Diphtheria + tetanus + pertussis + recombinant hepatitis B virus vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="346524008" />
+                <display value="Influenza split virion vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="348046004" />
+                <display value="Influenza (split virion) vaccine injection suspension 0.5mL prefilled syringe (product)" />
+            </concept>
+            <concept>
                 <code value="400564003" />
                 <display value="Influenza virus vaccine trivalent 45mcg/0.5mL injection solution 5mL vial (product)" />
+            </concept>
+            <concept>
+                <code value="427036009" />
+                <display value="Influenza virus H5N1 vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="414004005" />
+                <display value="Diphtheria + tetanus + pertussis + poliomyelitis + haemophilus influenzae b vaccine (product)" />
             </concept>
             <concept>
                 <code value="52628005" />
@@ -1927,8 +1963,100 @@
                 <display value="Typhoid polysaccharide vaccine (product)" />
             </concept>
             <concept>
+                <code value="108729007" />
+                <display value="Varicella virus vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="333603000" />
+                <display value="Poliomyelitis inactivated vaccine injection (product)" />
+            </concept>
+            <concept>
+                <code value="377089008" />
+                <display value="Lyme disease vaccine recombi 60mcg/mL injection solution 0.5mL ampule (product)" />
+            </concept>
+            <concept>
+                <code value="123686003" />
+                <display value="Mixed bacterial vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="125696005" />
+                <display value="Mixed respiratory vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="333598008" />
+                <display value="Pneumococcal vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="333606008" />
+                <display value="Rabies vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="125580002" />
+                <display value="Product containing antigen of whole cell pertussis and diphtheria toxoid and tetanus toxoid adsorbed (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="333680004" />
+                <display value="Haemophilus influenzae Type b vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="333700009" />
+                <display value="Tick-borne encephalitis vaccine injection solution prefilled syringe (product)" />
+            </concept>
+            <concept>
+                <code value="400449000" />
+                <display value="Measles virus vaccine, live, 0.5mL/vial powder for injection (product)" />
+            </concept>
+            <concept>
+                <code value="333669004" />
+                <display value="Meningococcal C conjugate vaccine powder and solvent for injection solution vial (product)" />
+            </concept>
+            <concept>
+                <code value="96301002" />
+                <display value="Product containing sotalol (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="386693003" />
+                <display value="Product containing phenylephrine in ocular dose form (medicinal product form)" />
+            </concept>
+            <concept>
+                <code value="375876000" />
+                <display value="Product containing precisely thyroid hormone 60 milligram/1 each conventional release oral tablet (clinical drug)" />
+            </concept>
+            <concept>
+                <code value="108899006" />
+                <display value="Medicinal product acting as contraceptive (product)" />
+            </concept>
+            <concept>
+                <code value="226314006" />
+                <display value="Medicinal product acting as vitamin supplement (product)" />
+            </concept>
+            <concept>
+                <code value="416688007" />
+                <display value="Product containing meglumine diatrizoate and sodium diatrizoate (medicinal product)" />
+            </concept>
+            <concept>
                 <code value="109219007" />
                 <display value="Product containing iopamidol (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="109222009" />
+                <display value="Product containing ioversol (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="55867006" />
+                <display value="Product containing aminophylline (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="59941008" />
+                <display value="Product containing diltiazem (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="443310000" />
+                <display value="Product containing dronedarone (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="425236000" />
+                <display value="Product containing fluorouracil (18-F) (medicinal product)" />
             </concept>
             <concept>
                 <code value="108524004" />
@@ -1943,64 +2071,12 @@
                 <display value="Product containing metformin (medicinal product)" />
             </concept>
             <concept>
-                <code value="387480006" />
-                <display value="Lidocaine (substance)" />
-            </concept>
-            <concept>
-                <code value="373219008" />
-                <display value="Substance with antifungal mechanism of action (substance)" />
-            </concept>
-            <concept>
-                <code value="256326004" />
-                <display value="Celery (substance)" />
-            </concept>
-            <concept>
-                <code value="33234009" />
-                <display value="Smallpox vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="125580002" />
-                <display value="Product containing antigen of whole cell pertussis and diphtheria toxoid and tetanus toxoid adsorbed (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="55867006" />
-                <display value="Product containing aminophylline (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="59941008" />
-                <display value="Product containing diltiazem (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="425236000" />
-                <display value="Product containing fluorouracil (18-F) (medicinal product)" />
+                <code value="356862006" />
+                <display value="Product containing lercanidipine (medicinal product)" />
             </concept>
             <concept>
                 <code value="84812008" />
                 <display value="Product containing heparin (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="377089008" />
-                <display value="Lyme disease vaccine recombi 60mcg/mL injection solution 0.5mL ampule (product)" />
-            </concept>
-            <concept>
-                <code value="400449000" />
-                <display value="Measles virus vaccine, live, 0.5mL/vial powder for injection (product)" />
-            </concept>
-            <concept>
-                <code value="386693003" />
-                <display value="Product containing phenylephrine in ocular dose form (medicinal product form)" />
-            </concept>
-            <concept>
-                <code value="108899006" />
-                <display value="Medicinal product acting as contraceptive (product)" />
-            </concept>
-            <concept>
-                <code value="226314006" />
-                <display value="Medicinal product acting as vitamin supplement (product)" />
-            </concept>
-            <concept>
-                <code value="356862006" />
-                <display value="Product containing lercanidipine (medicinal product)" />
             </concept>
             <concept>
                 <code value="423498000" />
@@ -2015,8 +2091,8 @@
                 <display value="Product containing bivalirudin (medicinal product)" />
             </concept>
             <concept>
-                <code value="386936005" />
-                <display value="Azelaic acid (substance)" />
+                <code value="412156001" />
+                <display value="Silk (substance)" />
             </concept>
             <concept>
                 <code value="71128006" />
@@ -2025,6 +2101,14 @@
             <concept>
                 <code value="91598004" />
                 <display value="Benzoyl peroxide (substance)" />
+            </concept>
+            <concept>
+                <code value="386936005" />
+                <display value="Azelaic acid (substance)" />
+            </concept>
+            <concept>
+                <code value="387293003" />
+                <display value="Dithranol (substance)" />
             </concept>
             <concept>
                 <code value="259170003" />
@@ -2051,6 +2135,22 @@
                 <display value="Indigo carmine stain (substance)" />
             </concept>
             <concept>
+                <code value="83619009" />
+                <display value="Polyvinyl alcohol (substance)" />
+            </concept>
+            <concept>
+                <code value="372602008" />
+                <display value="Metronidazole (substance)" />
+            </concept>
+            <concept>
+                <code value="387264003" />
+                <display value="Diazepam (substance)" />
+            </concept>
+            <concept>
+                <code value="387362001" />
+                <display value="Epinephrine (substance)" />
+            </concept>
+            <concept>
                 <code value="415704007" />
                 <display value="Technetium (99m-Tc) depreotide (substance)" />
             </concept>
@@ -2059,8 +2159,8 @@
                 <display value="Technetium (99m-Tc) sestamibi (substance)" />
             </concept>
             <concept>
-                <code value="83619009" />
-                <display value="Polyvinyl alcohol (substance)" />
+                <code value="446534003" />
+                <display value="Technetium (99m-Tc) galactosyl human serum albumin diethylenetriamine pentaacetic acid (substance)" />
             </concept>
             <concept>
                 <code value="70544003" />
@@ -2079,104 +2179,16 @@
                 <display value="Ferrous (59-Fe) citrate (substance)" />
             </concept>
             <concept>
-                <code value="255641001" />
-                <display value="Caffeine (substance)" />
-            </concept>
-            <concept>
-                <code value="67690002" />
-                <display value="Sodium iodide (123-I) (substance)" />
-            </concept>
-            <concept>
-                <code value="68967007" />
-                <display value="Iodocholesterol (131-I) (substance)" />
-            </concept>
-            <concept>
-                <code value="1166006" />
-                <display value="Titanium (substance)" />
-            </concept>
-            <concept>
-                <code value="333573007" />
-                <display value="Hepatitis B vaccine 40micrograms/mL injection suspension 1ml vial (product)" />
-            </concept>
-            <concept>
-                <code value="409269001" />
-                <display value="Intranasal influenza live virus vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="346696005" />
-                <display value="Typhoid live oral vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="116083002" />
-                <display value="Lyme disease vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="400563009" />
-                <display value="Anthrax vaccine, adsorbed injection solution 5mL vial (product)" />
-            </concept>
-            <concept>
-                <code value="333621002" />
-                <display value="Tetanus vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="333699008" />
-                <display value="Tick-borne encephalitis vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="96300001" />
-                <display value="Product containing propafenone (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="422763008" />
-                <display value="Product containing fluoromethane (18-F) (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="108535009" />
-                <display value="Product containing felodipine (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="406466009" />
-                <display value="House dust allergen (substance)" />
-            </concept>
-            <concept>
-                <code value="372603003" />
-                <display value="Substance with aldosterone receptor antagonist mechanism of action (substance)" />
-            </concept>
-            <concept>
-                <code value="406465008" />
-                <display value="Food allergen (substance)" />
-            </concept>
-            <concept>
-                <code value="256350002" />
-                <display value="Almond (substance)" />
-            </concept>
-            <concept>
-                <code value="256352005" />
-                <display value="Walnut - nut (substance)" />
-            </concept>
-            <concept>
-                <code value="227400003" />
-                <display value="Ginger (substance)" />
-            </concept>
-            <concept>
-                <code value="372722000" />
-                <display value="Substance with quinolone structure and antibacterial mechanism of action (substance)" />
-            </concept>
-            <concept>
-                <code value="255632006" />
-                <display value="Anticonvulsant (substance)" />
-            </concept>
-            <concept>
-                <code value="387448009" />
-                <display value="Thiopental sodium (substance)" />
-            </concept>
-            <concept>
                 <code value="40342009" />
                 <display value="Thiamylal sodium (substance)" />
             </concept>
             <concept>
                 <code value="61068006" />
                 <display value="Thioflavine T stain (substance)" />
+            </concept>
+            <concept>
+                <code value="255641001" />
+                <display value="Caffeine (substance)" />
             </concept>
             <concept>
                 <code value="925002" />
@@ -2187,8 +2199,36 @@
                 <display value="Meglumine iodipamide (substance)" />
             </concept>
             <concept>
+                <code value="67690002" />
+                <display value="Sodium iodide (123-I) (substance)" />
+            </concept>
+            <concept>
+                <code value="68967007" />
+                <display value="Iodocholesterol (131-I) (substance)" />
+            </concept>
+            <concept>
+                <code value="111160004" />
+                <display value="Sodium iodide (131-I) (substance)" />
+            </concept>
+            <concept>
                 <code value="35609001" />
                 <display value="Azophloxin stain (substance)" />
+            </concept>
+            <concept>
+                <code value="373250005" />
+                <display value="Depolarizing agent (substance)" />
+            </concept>
+            <concept>
+                <code value="372913009" />
+                <display value="Substance with angiotensin II receptor antagonist mechanism of action (substance)" />
+            </concept>
+            <concept>
+                <code value="387480006" />
+                <display value="Lidocaine (substance)" />
+            </concept>
+            <concept>
+                <code value="373219008" />
+                <display value="Substance with antifungal mechanism of action (substance)" />
             </concept>
             <concept>
                 <code value="431510009" />
@@ -2201,6 +2241,18 @@
             <concept>
                 <code value="84386009" />
                 <display value="Tribromoethanol (substance)" />
+            </concept>
+            <concept>
+                <code value="373746004" />
+                <display value="Coagulant (substance)" />
+            </concept>
+            <concept>
+                <code value="414010005" />
+                <display value="Substance with direct thrombin inhibitor mechanism of action (substance)" />
+            </concept>
+            <concept>
+                <code value="1166006" />
+                <display value="Titanium (substance)" />
             </concept>
             <concept>
                 <code value="63754004" />
@@ -2227,40 +2279,32 @@
                 <display value="Gluten (substance)" />
             </concept>
             <concept>
+                <code value="256326004" />
+                <display value="Celery (substance)" />
+            </concept>
+            <concept>
+                <code value="256306003" />
+                <display value="Orange - fruit (substance)" />
+            </concept>
+            <concept>
                 <code value="230034002" />
                 <display value="Nuts and seeds (substance)" />
+            </concept>
+            <concept>
+                <code value="346750009" />
+                <display value="Grass allergy maintenance kit (product)" />
             </concept>
             <concept>
                 <code value="13178004" />
                 <display value="Rickettsial vaccine (product)" />
             </concept>
             <concept>
-                <code value="319299000" />
-                <display value="Product containing lacidipine (medicinal product)" />
+                <code value="33234009" />
+                <display value="Smallpox vaccine (product)" />
             </concept>
             <concept>
-                <code value="412126005" />
-                <display value="Product containing human chorionic gonadotropin (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="11894001" />
-                <display value="Clostridium botulinum toxin (substance)" />
-            </concept>
-            <concept>
-                <code value="116637007" />
-                <display value="Fungal antigen (substance)" />
-            </concept>
-            <concept>
-                <code value="406473004" />
-                <display value="Contact allergen (substance)" />
-            </concept>
-            <concept>
-                <code value="102263004" />
-                <display value="Eggs (edible) (substance)" />
-            </concept>
-            <concept>
-                <code value="256355007" />
-                <display value="Soya bean (substance)" />
+                <code value="333573007" />
+                <display value="Hepatitis B vaccine 40micrograms/mL injection suspension 1ml vial (product)" />
             </concept>
             <concept>
                 <code value="426971004" />
@@ -2283,44 +2327,60 @@
                 <display value="Inactivated Influenza surface antigen virosome vaccine prefilled syringe (product)" />
             </concept>
             <concept>
-                <code value="376208003" />
-                <display value="Lyme disease vaccine recombi 6mcg/mL injection solution 5mL ampule (product)" />
-            </concept>
-            <concept>
-                <code value="418268006" />
-                <display value="Product containing attenuated Bacillus Calmette Guerin (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="421281005" />
-                <display value="Meningococcal A+C vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="395236007" />
-                <display value="Product containing fondaparinux (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="353903006" />
-                <display value="Product containing iopromide (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="48603004" />
-                <display value="Product containing warfarin (medicinal product)" />
-            </concept>
-            <concept>
-                <code value="109123009" />
-                <display value="Product containing sildenafil (medicinal product)" />
+                <code value="409269001" />
+                <display value="Intranasal influenza live virus vaccine (product)" />
             </concept>
             <concept>
                 <code value="443161002" />
                 <display value="Influenza A virus subtype H1N1 monovalent vaccine 0.5mL injection solution (product)" />
             </concept>
             <concept>
+                <code value="333691006" />
+                <display value="Haemophilus influenzae Type b (Hib)/diphtheria/tetanus/pertussis vaccine vial+prefilled syringe (product)" />
+            </concept>
+            <concept>
+                <code value="346696005" />
+                <display value="Typhoid live oral vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="116083002" />
+                <display value="Lyme disease vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="376208003" />
+                <display value="Lyme disease vaccine recombi 6mcg/mL injection solution 5mL ampule (product)" />
+            </concept>
+            <concept>
+                <code value="400563009" />
+                <display value="Anthrax vaccine, adsorbed injection solution 5mL vial (product)" />
+            </concept>
+            <concept>
+                <code value="333621002" />
+                <display value="Tetanus vaccine (product)" />
+            </concept>
+            <concept>
                 <code value="347664008" />
                 <display value="Adsorbed tetanus vaccine injection solution ampule (product)" />
             </concept>
             <concept>
+                <code value="333699008" />
+                <display value="Tick-borne encephalitis vaccine (product)" />
+            </concept>
+            <concept>
                 <code value="370459009" />
                 <display value="West Nile virus vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="418268006" />
+                <display value="Product containing attenuated Bacillus Calmette Guerin (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="347659009" />
+                <display value="Meningococcal polysaccharide vaccine powder and solvent for injection solution vial (product)" />
+            </concept>
+            <concept>
+                <code value="421281005" />
+                <display value="Meningococcal A+C vaccine (product)" />
             </concept>
             <concept>
                 <code value="359068008" />
@@ -2335,8 +2395,40 @@
                 <display value="Product containing methylene blue stain (medicinal product)" />
             </concept>
             <concept>
+                <code value="395236007" />
+                <display value="Product containing fondaparinux (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="353903006" />
+                <display value="Product containing iopromide (medicinal product)" />
+            </concept>
+            <concept>
                 <code value="424789007" />
                 <display value="Product containing mespiperone C-11 (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="48603004" />
+                <display value="Product containing warfarin (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="109123009" />
+                <display value="Product containing sildenafil (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="96300001" />
+                <display value="Product containing propafenone (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="422763008" />
+                <display value="Product containing fluoromethane (18-F) (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="108535009" />
+                <display value="Product containing felodipine (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="319299000" />
+                <display value="Product containing lacidipine (medicinal product)" />
             </concept>
             <concept>
                 <code value="7292004" />
@@ -2345,6 +2437,10 @@
             <concept>
                 <code value="27658006" />
                 <display value="Product containing amoxicillin (medicinal product)" />
+            </concept>
+            <concept>
+                <code value="412126005" />
+                <display value="Product containing human chorionic gonadotropin (medicinal product)" />
             </concept>
             <concept>
                 <code value="8348002" />
@@ -2359,16 +2455,36 @@
                 <display value="Product containing barium sulfate (medicinal product)" />
             </concept>
             <concept>
+                <code value="414307008" />
+                <display value="Product containing gadobenate dimeglumine (medicinal product)" />
+            </concept>
+            <concept>
                 <code value="415151000" />
                 <display value="Product containing potassium channel blocker (product)" />
             </concept>
             <concept>
-                <code value="79610008" />
-                <display value="Technetium (99m-Tc) albumin (substance)" />
+                <code value="11894001" />
+                <display value="Clostridium botulinum toxin (substance)" />
+            </concept>
+            <concept>
+                <code value="116637007" />
+                <display value="Fungal antigen (substance)" />
             </concept>
             <concept>
                 <code value="280939008" />
                 <display value="Insect venom (substance)" />
+            </concept>
+            <concept>
+                <code value="406473004" />
+                <display value="Contact allergen (substance)" />
+            </concept>
+            <concept>
+                <code value="406466009" />
+                <display value="House dust allergen (substance)" />
+            </concept>
+            <concept>
+                <code value="79610008" />
+                <display value="Technetium (99m-Tc) albumin (substance)" />
             </concept>
             <concept>
                 <code value="87445005" />
@@ -2377,6 +2493,10 @@
             <concept>
                 <code value="14443002" />
                 <display value="Substance with aminoglycoside structure and antibacterial mechanism of action (substance)" />
+            </concept>
+            <concept>
+                <code value="372603003" />
+                <display value="Substance with aldosterone receptor antagonist mechanism of action (substance)" />
             </concept>
             <concept>
                 <code value="387218008" />
@@ -2395,24 +2515,76 @@
                 <display value="Ferrous (59-Fe) sulfate (substance)" />
             </concept>
             <concept>
+                <code value="406465008" />
+                <display value="Food allergen (substance)" />
+            </concept>
+            <concept>
                 <code value="11526002" />
                 <display value="Aspartame (substance)" />
+            </concept>
+            <concept>
+                <code value="256350002" />
+                <display value="Almond (substance)" />
+            </concept>
+            <concept>
+                <code value="256352005" />
+                <display value="Walnut - nut (substance)" />
             </concept>
             <concept>
                 <code value="442461000124102" />
                 <display value="Hickory nut (substance)" />
             </concept>
             <concept>
-                <code value="72015003" />
-                <display value="Iodinated (125-I) albumin (substance)" />
+                <code value="102263004" />
+                <display value="Eggs (edible) (substance)" />
             </concept>
             <concept>
                 <code value="226760005" />
                 <display value="Dairy foods (substance)" />
             </concept>
             <concept>
+                <code value="227400003" />
+                <display value="Ginger (substance)" />
+            </concept>
+            <concept>
+                <code value="256355007" />
+                <display value="Soya bean (substance)" />
+            </concept>
+            <concept>
                 <code value="12801003" />
                 <display value="Iodamide meglumine (substance)" />
+            </concept>
+            <concept>
+                <code value="72015003" />
+                <display value="Iodinated (125-I) albumin (substance)" />
+            </concept>
+            <concept>
+                <code value="37575004" />
+                <display value="Carmoisine A stain (substance)" />
+            </concept>
+            <concept>
+                <code value="372722000" />
+                <display value="Substance with quinolone structure and antibacterial mechanism of action (substance)" />
+            </concept>
+            <concept>
+                <code value="66925006" />
+                <display value="Copper (substance)" />
+            </concept>
+            <concept>
+                <code value="255632006" />
+                <display value="Anticonvulsant (substance)" />
+            </concept>
+            <concept>
+                <code value="387448009" />
+                <display value="Thiopental sodium (substance)" />
+            </concept>
+            <concept>
+                <code value="373780001" />
+                <display value="Mescaline (substance)" />
+            </concept>
+            <concept>
+                <code value="421921003" />
+                <display value="Cannabinoid (substance)" />
             </concept>
             <concept>
                 <code value="372787008" />
@@ -2431,16 +2603,44 @@
                 <display value="Substance with cephalosporin structure and antibacterial mechanism of action (substance)" />
             </concept>
             <concept>
+                <code value="764166003" />
+                <display value="Carbol-fuchsin (substance)" />
+            </concept>
+            <concept>
+                <code value="52836003" />
+                <display value="Paraformaldehyde (substance)" />
+            </concept>
+            <concept>
+                <code value="83881004" />
+                <display value="Aluminium oxide (substance)" />
+            </concept>
+            <concept>
                 <code value="125707004" />
                 <display value="Alphadolone acetate (substance)" />
+            </concept>
+            <concept>
+                <code value="36176003" />
+                <display value="Thrombin (substance)" />
             </concept>
             <concept>
                 <code value="387124009" />
                 <display value="Thromboplastin (substance)" />
             </concept>
             <concept>
+                <code value="45215009" />
+                <display value="Tantalum (substance)" />
+            </concept>
+            <concept>
+                <code value="710183004" />
+                <display value="Rabbit - meat (substance)" />
+            </concept>
+            <concept>
                 <code value="726759005" />
                 <display value="Cuttlefish (substance)" />
+            </concept>
+            <concept>
+                <code value="736031006" />
+                <display value="Oyster (substance)" />
             </concept>
             <concept>
                 <code value="735977009" />
@@ -2459,8 +2659,24 @@
                 <display value="Mango fruit (substance)" />
             </concept>
             <concept>
+                <code value="418504009" />
+                <display value="Oats (substance)" />
+            </concept>
+            <concept>
+                <code value="346364006" />
+                <display value="Cat allergy vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="346467003" />
+                <display value="Horse dander allergy vaccine (product)" />
+            </concept>
+            <concept>
                 <code value="346468008" />
                 <display value="House dust allergy vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="45355008" />
+                <display value="Rocky Mountain spotted fever vaccine (product)" />
             </concept>
             <concept>
                 <code value="333707007" />
@@ -2469,6 +2685,18 @@
             <concept>
                 <code value="348045000" />
                 <display value="Hepatitis A vaccine injection suspension prefilled syringe (product)" />
+            </concept>
+            <concept>
+                <code value="409152009" />
+                <display value="Dried smallpox vaccine, calf lymph type 1 vial + diluent 0.25mL syringe (product)" />
+            </concept>
+            <concept>
+                <code value="425638005" />
+                <display value="Recombinant hepatitis B virus surface antigen 10micrograms/diphtheria toxoid 30 iu/tetanus toxoid 40 iu/acellular pertussis 25micrograms injection solution 0.5mL prefilled syringe (product)" />
+            </concept>
+            <concept>
+                <code value="448897007" />
+                <display value="Inactivated Influenza split virion subtype H1N1v-like strain adjuvant vaccine (product)" />
             </concept>
             <concept>
                 <code value="348047008" />
@@ -2487,6 +2715,14 @@
                 <display value="Haemophilus influenzae Type b (Hib)/diphtheria/tetanus/pertussis vaccine prefilled syringe (product)" />
             </concept>
             <concept>
+                <code value="414005006" />
+                <display value="Diphtheria + tetanus + pertussis + poliomyelitis vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="414003004" />
+                <display value="Diphtheria + tetanus + pertussis + inactivated poliovirus vaccine (product)" />
+            </concept>
+            <concept>
                 <code value="419550004" />
                 <display value="Measles + mumps + rubella + varicella vaccine (product)" />
             </concept>
@@ -2499,8 +2735,36 @@
                 <display value="Anthrax vaccine (product)" />
             </concept>
             <concept>
+                <code value="423912009" />
+                <display value="Haemophilus influenzae type b + Meningococcal group C vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="373869007" />
+                <display value="Melanoma vaccine (product)" />
+            </concept>
+            <concept>
+                <code value="423531006" />
+                <display value="Meningococcus vaccine (product)" />
+            </concept>
+            <concept>
                 <code value="333670003" />
                 <display value="Meningococcal C conjugate vaccine injection solution vial (product)" />
+            </concept>
+            <concept>
+                <code value="784484001" />
+                <display value="Product containing precisely follitropin alfa 300 unit/1 milliliter conventional release solution for injection (clinical drug)" />
+            </concept>
+            <concept>
+                <code value="377428005" />
+                <display value="Product containing precisely pituitary follicle stimulating hormone 75 unit and pituitary luteinizing hormone 75 unit/1 vial powder for conventional release solution for injection (clinical drug)" />
+            </concept>
+            <concept>
+                <code value="30492008" />
+                <display value="Medicinal product acting as diuretic (product)" />
+            </concept>
+            <concept>
+                <code value="7140000" />
+                <display value="Radiographic contrast media (product)" />
             </concept>
             <concept>
                 <code value="353912008" />
@@ -2519,188 +2783,20 @@
                 <display value="Product containing anion exchange resin (product)" />
             </concept>
             <concept>
+                <code value="42416001" />
+                <display value="Lanolin (substance)" />
+            </concept>
+            <concept>
                 <code value="412160003" />
                 <display value="Suture allergen (substance)" />
-            </concept>
-            <concept>
-                <code value="372664007" />
-                <display value="Benzodiazepine (substance)" />
-            </concept>
-            <concept>
-                <code value="96227004" />
-                <display value="Zolazepam hydrochloride (substance)" />
-            </concept>
-            <concept>
-                <code value="373254001" />
-                <display value="Substance with beta adrenergic receptor antagonist mechanism of action (substance)" />
-            </concept>
-            <concept>
-                <code value="373294004" />
-                <display value="Low molecular weight heparin (substance)" />
-            </concept>
-            <concept>
-                <code value="735248001" />
-                <display value="Cherry (substance)" />
-            </concept>
-            <concept>
-                <code value="372810006" />
-                <display value="Theophylline (substance)" />
-            </concept>
-            <concept>
-                <code value="372703009" />
-                <display value="Pentobarbital (substance)" />
-            </concept>
-            <concept>
-                <code value="372798009" />
-                <display value="Barbiturate (substance)" />
-            </concept>
-            <concept>
-                <code value="387146001" />
-                <display value="Droperidol (substance)" />
-            </concept>
-            <concept>
-                <code value="372677003" />
-                <display value="Lincomycin (substance)" />
-            </concept>
-            <concept>
-                <code value="373477003" />
-                <display value="Local anesthetic (substance)" />
-            </concept>
-            <concept>
-                <code value="372681003" />
-                <display value="Hemostatic agent (substance)" />
-            </concept>
-            <concept>
-                <code value="372862008" />
-                <display value="Anticoagulant (substance)" />
-            </concept>
-            <concept>
-                <code value="736159005" />
-                <display value="Crab (substance)" />
-            </concept>
-            <concept>
-                <code value="735046009" />
-                <display value="Nutmeg (substance)" />
-            </concept>
-            <concept>
-                <code value="735215001" />
-                <display value="Apple (substance)" />
-            </concept>
-            <concept>
-                <code value="264337003" />
-                <display value="Seed (substance)" />
-            </concept>
-            <concept>
-                <code value="102262009" />
-                <display value="Chocolate (substance)" />
-            </concept>
-            <concept>
-                <code value="37575004" />
-                <display value="Carmoisine A stain (substance)" />
-            </concept>
-            <concept>
-                <code value="66925006" />
-                <display value="Copper (substance)" />
-            </concept>
-            <concept>
-                <code value="373780001" />
-                <display value="Mescaline (substance)" />
-            </concept>
-            <concept>
-                <code value="710183004" />
-                <display value="Rabbit - meat (substance)" />
-            </concept>
-            <concept>
-                <code value="346467003" />
-                <display value="Horse dander allergy vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="414005006" />
-                <display value="Diphtheria + tetanus + pertussis + poliomyelitis vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="414003004" />
-                <display value="Diphtheria + tetanus + pertussis + inactivated poliovirus vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="423531006" />
-                <display value="Meningococcus vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="784484001" />
-                <display value="Product containing precisely follitropin alfa 300 unit/1 milliliter conventional release solution for injection (clinical drug)" />
             </concept>
             <concept>
                 <code value="772245002" />
                 <display value="Wool alcohol (substance)" />
             </concept>
             <concept>
-                <code value="373476007" />
-                <display value="Midazolam (substance)" />
-            </concept>
-            <concept>
-                <code value="227511008" />
-                <display value="Pine nut (substance)" />
-            </concept>
-            <concept>
-                <code value="227512001" />
-                <display value="Pistachio nut (substance)" />
-            </concept>
-            <concept>
-                <code value="111095003" />
-                <display value="Formaldehyde (substance)" />
-            </concept>
-            <concept>
-                <code value="227374009" />
-                <display value="Herbs and spices (substance)" />
-            </concept>
-            <concept>
-                <code value="419420009" />
-                <display value="Watermelon (substance)" />
-            </concept>
-            <concept>
-                <code value="83881004" />
-                <display value="Aluminium oxide (substance)" />
-            </concept>
-            <concept>
-                <code value="25761002" />
-                <display value="Glutamine (substance)" />
-            </concept>
-            <concept>
-                <code value="421921003" />
-                <display value="Cannabinoid (substance)" />
-            </concept>
-            <concept>
-                <code value="764166003" />
-                <display value="Carbol-fuchsin (substance)" />
-            </concept>
-            <concept>
-                <code value="52836003" />
-                <display value="Paraformaldehyde (substance)" />
-            </concept>
-            <concept>
-                <code value="36176003" />
-                <display value="Thrombin (substance)" />
-            </concept>
-            <concept>
-                <code value="418504009" />
-                <display value="Oats (substance)" />
-            </concept>
-            <concept>
-                <code value="346364006" />
-                <display value="Cat allergy vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="45355008" />
-                <display value="Rocky Mountain spotted fever vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="425638005" />
-                <display value="Recombinant hepatitis B virus surface antigen 10micrograms/diphtheria toxoid 30 iu/tetanus toxoid 40 iu/acellular pertussis 25micrograms injection solution 0.5mL prefilled syringe (product)" />
-            </concept>
-            <concept>
-                <code value="423912009" />
-                <display value="Haemophilus influenzae type b + Meningococcal group C vaccine (product)" />
+                <code value="49998007" />
+                <display value="Sufentanil (substance)" />
             </concept>
             <concept>
                 <code value="4832001" />
@@ -2715,46 +2811,6 @@
                 <display value="Technetium (99m-Tc) sodium pertechnetate (substance)" />
             </concept>
             <concept>
-                <code value="77313009" />
-                <display value="Technetium (99m-Tc) exametazime (substance)" />
-            </concept>
-            <concept>
-                <code value="45215009" />
-                <display value="Tantalum (substance)" />
-            </concept>
-            <concept>
-                <code value="736031006" />
-                <display value="Oyster (substance)" />
-            </concept>
-            <concept>
-                <code value="448897007" />
-                <display value="Inactivated Influenza split virion subtype H1N1v-like strain adjuvant vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="373869007" />
-                <display value="Melanoma vaccine (product)" />
-            </concept>
-            <concept>
-                <code value="377428005" />
-                <display value="Product containing precisely pituitary follicle stimulating hormone 75 unit and pituitary luteinizing hormone 75 unit/1 vial powder for conventional release solution for injection (clinical drug)" />
-            </concept>
-            <concept>
-                <code value="30492008" />
-                <display value="Medicinal product acting as diuretic (product)" />
-            </concept>
-            <concept>
-                <code value="7140000" />
-                <display value="Radiographic contrast media (product)" />
-            </concept>
-            <concept>
-                <code value="42416001" />
-                <display value="Lanolin (substance)" />
-            </concept>
-            <concept>
-                <code value="49998007" />
-                <display value="Sufentanil (substance)" />
-            </concept>
-            <concept>
                 <code value="52454007" />
                 <display value="Albumin (substance)" />
             </concept>
@@ -2767,12 +2823,72 @@
                 <display value="Sodium chromate (51-Cr) (substance)" />
             </concept>
             <concept>
+                <code value="77313009" />
+                <display value="Technetium (99m-Tc) exametazime (substance)" />
+            </concept>
+            <concept>
+                <code value="77671006" />
+                <display value="Antidiuretic hormone (substance)" />
+            </concept>
+            <concept>
+                <code value="372664007" />
+                <display value="Benzodiazepine (substance)" />
+            </concept>
+            <concept>
+                <code value="96227004" />
+                <display value="Zolazepam hydrochloride (substance)" />
+            </concept>
+            <concept>
+                <code value="373476007" />
+                <display value="Midazolam (substance)" />
+            </concept>
+            <concept>
+                <code value="373254001" />
+                <display value="Substance with beta adrenergic receptor antagonist mechanism of action (substance)" />
+            </concept>
+            <concept>
+                <code value="373294004" />
+                <display value="Low molecular weight heparin (substance)" />
+            </concept>
+            <concept>
+                <code value="735248001" />
+                <display value="Cherry (substance)" />
+            </concept>
+            <concept>
                 <code value="764821009" />
                 <display value="Technetium (99m-Tc) pyrophosphate (substance)" />
             </concept>
             <concept>
+                <code value="2309006" />
+                <display value="Gold (substance)" />
+            </concept>
+            <concept>
                 <code value="69089000" />
                 <display value="Iron-52 (substance)" />
+            </concept>
+            <concept>
+                <code value="43735007" />
+                <display value="Sulfur (substance)" />
+            </concept>
+            <concept>
+                <code value="767406000" />
+                <display value="Sulfite and sulfite derivative (substance)" />
+            </concept>
+            <concept>
+                <code value="372810006" />
+                <display value="Theophylline (substance)" />
+            </concept>
+            <concept>
+                <code value="10249006" />
+                <display value="Agar (substance)" />
+            </concept>
+            <concept>
+                <code value="227511008" />
+                <display value="Pine nut (substance)" />
+            </concept>
+            <concept>
+                <code value="227512001" />
+                <display value="Pistachio nut (substance)" />
             </concept>
             <concept>
                 <code value="62442005" />
@@ -2791,36 +2907,52 @@
                 <display value="Iodine (124-I) labeled monoclonal antibody (substance)" />
             </concept>
             <concept>
-                <code value="77671006" />
-                <display value="Antidiuretic hormone (substance)" />
-            </concept>
-            <concept>
-                <code value="2309006" />
-                <display value="Gold (substance)" />
-            </concept>
-            <concept>
-                <code value="43735007" />
-                <display value="Sulfur (substance)" />
-            </concept>
-            <concept>
-                <code value="767406000" />
-                <display value="Sulfite and sulfite derivative (substance)" />
-            </concept>
-            <concept>
-                <code value="10249006" />
-                <display value="Agar (substance)" />
-            </concept>
-            <concept>
                 <code value="33396006" />
                 <display value="Nickel (substance)" />
+            </concept>
+            <concept>
+                <code value="372703009" />
+                <display value="Pentobarbital (substance)" />
+            </concept>
+            <concept>
+                <code value="372798009" />
+                <display value="Barbiturate (substance)" />
+            </concept>
+            <concept>
+                <code value="387146001" />
+                <display value="Droperidol (substance)" />
+            </concept>
+            <concept>
+                <code value="372677003" />
+                <display value="Lincomycin (substance)" />
+            </concept>
+            <concept>
+                <code value="111095003" />
+                <display value="Formaldehyde (substance)" />
+            </concept>
+            <concept>
+                <code value="373477003" />
+                <display value="Local anesthetic (substance)" />
             </concept>
             <concept>
                 <code value="19041007" />
                 <display value="Tolazoline hydrochloride (substance)" />
             </concept>
             <concept>
+                <code value="372681003" />
+                <display value="Hemostatic agent (substance)" />
+            </concept>
+            <concept>
+                <code value="372862008" />
+                <display value="Anticoagulant (substance)" />
+            </concept>
+            <concept>
                 <code value="44027008" />
                 <display value="Seafood (substance)" />
+            </concept>
+            <concept>
+                <code value="736159005" />
+                <display value="Crab (substance)" />
             </concept>
             <concept>
                 <code value="67324005" />
@@ -2829,6 +2961,34 @@
             <concept>
                 <code value="734881000" />
                 <display value="Tomato (substance)" />
+            </concept>
+            <concept>
+                <code value="227374009" />
+                <display value="Herbs and spices (substance)" />
+            </concept>
+            <concept>
+                <code value="735046009" />
+                <display value="Nutmeg (substance)" />
+            </concept>
+            <concept>
+                <code value="419420009" />
+                <display value="Watermelon (substance)" />
+            </concept>
+            <concept>
+                <code value="735215001" />
+                <display value="Apple (substance)" />
+            </concept>
+            <concept>
+                <code value="264337003" />
+                <display value="Seed (substance)" />
+            </concept>
+            <concept>
+                <code value="102262009" />
+                <display value="Chocolate (substance)" />
+            </concept>
+            <concept>
+                <code value="25761002" />
+                <display value="Glutamine (substance)" />
             </concept>
         </include>
     </compose>
