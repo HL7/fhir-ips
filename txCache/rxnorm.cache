@@ -3,7 +3,7 @@
   "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
   "code" : "757704",
   "display" : "Simvastatin 40 MG Disintegrating Oral Tablet"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "simvastatin 40 MG Disintegrating Oral Tablet",
   "severity" : null,
@@ -21,11 +21,21 @@ v: {
       "system" : "http://www.whocc.no/atc"
     }]
   }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
 v: {
-  "display" : "",
-  "severity" : "error",
-  "error" : "The code provided (http://www.nlm.nih.gov/research/umls/rxnorm#757704) is not  valid in the value set WHOATC"
+  "display" : "simvastatin 40 MG Disintegrating Oral Tablet",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+  "code" : "757704"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "simvastatin 40 MG Disintegrating Oral Tablet",
+  "severity" : null,
+  "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
@@ -1911,45 +1921,6 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-  "code" : "757704",
-  "display" : "Simvastatin 40 MG Disintegrating Oral Tablet"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "simvastatin 40 MG Disintegrating Oral Tablet",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-  "code" : "757704",
-  "display" : "Simvastatin 40 MG Disintegrating Oral Tablet"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://www.whocc.no/atc"
-    }]
-  }
-}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "simvastatin 40 MG Disintegrating Oral Tablet",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-  "code" : "757704"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "simvastatin 40 MG Disintegrating Oral Tablet",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
 {"hierarchical" : false, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -1974,8 +1945,8 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:75387ff7-5003-46c2-9260-0fb0e9bbbd6d",
-    "timestamp" : "2020-01-23T19:37:13.955Z",
+    "identifier" : "urn:uuid:3c5ecaf8-2998-45d9-be79-ced0222ae1d6",
+    "timestamp" : "2020-03-05T02:24:27.096Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueString" : "-1"
