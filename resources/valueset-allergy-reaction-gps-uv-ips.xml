@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="allergy-reaction-gps-uv-ips" />
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+	</meta>
+	<!--
+	<text>
+		<status value="generated" />
+		<div xmlns="http://www.w3.org/1999/xhtml">Allergy Reaction (GPS)</div>
+	</text>
+	-->
+	<url value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-reaction-gps-uv-ips" />
+	<!--
+	<identifier>
+		<use value="official" />
+		<system value="http://art-decor.org/ns/oids/vs" />
+		<value value="2.16.840.1.113883.11.22.3" />
+	</identifier>
+	-->
+	<version value="2017-02-23T00:00:00" />
+	<name value="IPSAllergyReactionGPS" />
+	<title value="Allergy Reaction (GPS)" />
+	<status value="draft" />
+	<experimental value="false" />
+	<publisher value="HL7 International" />
+	<contact>
+		<name value="HL7 International" />
+		<telecom>
+			<system value="phone" />
+			<value value="+1 734 677 7777" />
+		</telecom>
+		<telecom>
+			<system value="fax" />
+			<value value="+1 734 677 6622" />
+		</telecom>
+		<telecom>
+			<system value="email" />
+			<value value="info@hl7.org" />
+		</telecom>
+	</contact>
+    <description value="IPS Allergy reaction GPS value set. This value set includes a set of codes from the SNOMED International Global Patient Set (GPS) subset of SNOMED CT that may be used to represent allergy or intolerance reactions.  The current value set contains concepts from the September 2019 release of the GPS, which is based on the July 2019 SNOMED CT International Edition release." />
+	<immutable value="false" />
+	<copyright value="The GPS is produced by SNOMED International under the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/)&#10;&#10;Additional information about this license specific to SNOMED International&#8217;s release of the GPS:&#10;* SNOMED CT is &#169; and &#174; SNOMED International. The right to maintain the GPS remains vested exclusively in SNOMED International.&#10;* The Licensee can redistribute the GPS.&#10;* The Licensee can create derivatives or implementation-related products and services based on the GPS.&#10;* The Licensee cannot claim that SNOMED International or any of its Members endorses the Licensee&#8217;s derivative because it uses content from the GPS.&#10;* Neither SNOMED International nor any of the contributors accept any liability for the Licensee&#8217;s use or redistribution of the GPS.&#10;* SNOMED CT&#174; was originally created by the College of American Pathologists.&#10;&#10;Without obtaining prior written permission from SNOMED International, you are expressly prohibited from using, distributing or reproducing the SNOMED International, SNOMED CT or SNOMED GPS logo, service mark or trademark. Please review all terms and conditions of use [here](http://www.snomed.org/terms-and-conditions)." />
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct" />
+			<version value="http://snomed.info/sct/900000000000207008/version/20190731" />
+			<concept>
+				<code value="1985008" />
+				<display value="Vomitus (substance)" />
+			</concept>
+			<concept>
+				<code value="4386001" />
+				<display value="Bronchospasm (finding)" />
+			</concept>
+			<concept>
+				<code value="9826008" />
+				<display value="Conjunctivitis (disorder)" />
+			</concept>
+			<concept>
+				<code value="23924001" />
+				<display value="Tight chest (finding)" />
+			</concept>
+			<concept>
+				<code value="24079001" />
+				<display value="Atopic dermatitis (disorder)" />
+			</concept>
+			<concept>
+				<code value="31996006" />
+				<display value="Vasculitis (disorder)" />
+			</concept>
+			<concept>
+				<code value="39579001" />
+				<display value="Anaphylaxis (disorder)" />
+			</concept>
+			<concept>
+				<code value="41291007" />
+				<display value="Angioedema (disorder)" />
+			</concept>
+			<concept>
+				<code value="43116000" />
+				<display value="Eczema (disorder)" />
+			</concept>
+			<concept>
+				<code value="49727002" />
+				<display value="Cough (finding)" />
+			</concept>
+			<concept>
+				<code value="51599000" />
+				<display value="Edema of larynx (disorder)" />
+			</concept>
+			<concept>
+				<code value="62315008" />
+				<display value="Diarrhea (finding)" />
+			</concept>
+			<concept>
+				<code value="70076002" />
+				<display value="Rhinitis (disorder)" />
+			</concept>
+			<concept>
+				<code value="73442001" />
+				<display value="Stevens-Johnson syndrome (disorder)" />
+			</concept>
+			<concept>
+				<code value="76067001" />
+				<display value="Sneezing (finding)" />
+			</concept>
+			<concept>
+				<code value="91175000" />
+				<display value="Seizure (finding)" />
+			</concept>
+			<concept>
+				<code value="126485001" />
+				<display value="Urticaria (disorder)" />
+			</concept>
+			<concept>
+				<code value="162290004" />
+				<display value="Dry eyes (finding)" />
+			</concept>
+			<concept>
+				<code value="195967001" />
+				<display value="Asthma (disorder)" />
+			</concept>
+			<concept>
+				<code value="247472004" />
+				<display value="Weal (disorder)" />
+			</concept>
+			<concept>
+				<code value="267036007" />
+				<display value="Dyspnea (finding)" />
+			</concept>
+			<concept>
+				<code value="271757001" />
+				<display value="Papular eruption (disorder)" />
+			</concept>
+			<concept>
+				<code value="271759003" />
+				<display value="Bullous eruption (disorder)" />
+			</concept>
+			<concept>
+				<code value="271807003" />
+				<display value="Eruption of skin (disorder)" />
+			</concept>
+			<concept>
+				<code value="359610006" />
+				<display value="Ocular hyperemia (disorder)" />
+			</concept>
+			<concept>
+				<code value="410430005" />
+				<display value="Cardiorespiratory arrest (disorder)" />
+			</concept>
+			<concept>
+				<code value="418363000" />
+				<display value="Itching of skin (finding)" />
+			</concept>
+			<concept>
+				<code value="422587007" />
+				<display value="Nausea (finding)" />
+			</concept>
+			<concept>
+				<code value="698247007" />
+				<display value="Cardiac arrhythmia (disorder)" />
+			</concept>
+			<concept>
+				<code value="702809001" />
+				<display value="Drug reaction with eosinophilia and systemic symptoms (disorder)" />
+			</concept>
+			<concept>
+				<code value="768962006" />
+				<display value="Lyell syndrome (disorder)" />
+			</concept>
+		</include>
+	</compose>
+</ValueSet>
