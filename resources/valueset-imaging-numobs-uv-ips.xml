@@ -40,10 +40,142 @@
 	<immutable value="false"/>
 		 <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) Global Patient Set (GPS), DICOM®: &#10;&#10; The copyright for the DICOM Standard is held by the National Electrical Manufacturers Association (NEMA) on behalf of the DICOM Standards Committee. Terms &amp; Conditions in https://www.nema.org/About/Pages/Terms-and-Conditions.aspx. &#10;&#10;The GPS is produced by SNOMED International under the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/)&#10;&#10;Additional information about this license specific to SNOMED International&#8217;s release of the GPS:&#10;* SNOMED CT is &#169; and &#174; SNOMED International. The right to maintain the GPS remains vested exclusively in SNOMED International.&#10;* The Licensee can redistribute the GPS.&#10;* The Licensee can create derivatives or implementation-related products and services based on the GPS.&#10;* The Licensee cannot claim that SNOMED International or any of its Members endorses the Licensee&#8217;s derivative because it uses content from the GPS.&#10;* Neither SNOMED International nor any of the contributors accept any liability for the Licensee&#8217;s use or redistribution of the GPS.&#10;* SNOMED CT&#174; was originally created by the College of American Pathologists.&#10;&#10;Without obtaining prior written permission from SNOMED International, you are expressly prohibited from using, distributing or reproducing the SNOMED International, SNOMED CT or SNOMED GPS logo, service mark or trademark. Please review all terms and conditions of use [here](http://www.snomed.org/terms-and-conditions)." />
 	<compose>
+	
+
+	<!-- Pls Note: due to expansion rendering issues this version explictly includes the content of the referred value sets 
 		<include>
-			<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-linear-measure-code-uv-ips"/>
+			<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-linear-measure-code-uv-ips"/>					
 			<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-area-measure-code-uv-ips"/>
 			<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-volume-measure-code-uv-ips"/>
 		</include>
+-->	
+	
+<!-- DICOM CID 7470 for ”Linear Measurement”  Begin -->
+	<include>
+			<system value="http://dicom.nema.org/resources/ontology/DCM"/>
+			<concept>
+				<code value="121207"/>
+				<display value="Height"/>
+			</concept>
+			<concept>
+				<code value="121211"/>
+				<display value="Path length"/>
+			</concept>
+			<concept>
+				<code value="121206"/>
+				<display value="Distance"/>
+			</concept>
+		</include>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<concept>
+				<code value="410668003"/>
+				<display value="Length"/>
+			</concept>
+			<concept>
+				<code value="103355008"/>
+				<display value="Width"/>
+			</concept>
+			<concept>
+				<code value="131197000"/>
+				<display value="Depth"/>
+			</concept>
+			<concept>
+				<code value="81827009"/>
+				<display value="Diameter"/>
+			</concept>
+			<concept>
+				<code value="103339001"/>
+				<display value="Long Axis"/>
+			</concept>
+			<concept>
+				<code value="103340004"/>
+				<display value="Short Axis"/>
+			</concept>
+			<concept>
+				<code value="131187009"/>
+				<display value="Major Axis"/>
+			</concept>
+			<concept>
+				<code value="131188004"/>
+				<display value="Minor Axis"/>
+			</concept>
+			<concept>
+				<code value="131189007"/>
+				<display value="Perpendicular Axis"/>
+			</concept>
+			<concept>
+				<code value="131190003"/>
+				<display value="Radius"/>
+			</concept>
+			<concept>
+				<code value="131191004"/>
+				<display value="Perimeter"/>
+			</concept>
+			<concept>
+				<code value="74551000"/>
+				<display value="Circumference"/>
+			</concept>
+			<concept>
+				<code value="131192006"/>
+				<display value="Diameter of circumscribed circle"/>
+			</concept>
+		</include>
+		
+	<!-- DICOM CID 7471 for ”Area Measurement” -->
+					<include>
+			<system value="http://snomed.info/sct"/>
+			<concept>
+				<code value="42798000"/>
+				<display value="Area"/>
+			</concept>
+			<concept>
+				<code value="131184002"/>
+				<display value="Area of defined region"/>
+			</concept>
+		</include>
+		
+<!-- DICOM CID 7472 for ”Volume Measurement” -->
+	<include>
+			<system value="http://dicom.nema.org/resources/ontology/DCM"/>
+			<concept>
+				<code value="121216"/>
+				<display value="Volume estimated from single 2D region"/>
+			</concept>
+			<concept>
+				<code value="121218"/>
+				<display value="Volume estimated from two non-coplanar 2D regions"/>
+			</concept>
+			<concept>
+				<code value="121217"/>
+				<display value="Volume estimated from three or more non-coplanar 2D regions"/>
+			</concept>
+			<concept>
+				<code value="121222"/>
+				<display value="Volume of sphere"/>
+			</concept>
+			<concept>
+				<code value="121221"/>
+				<display value="Volume of ellipsoid"/>
+			</concept>
+			<concept>
+				<code value="121220"/>
+				<display value="Volume of circumscribed sphere"/>
+			</concept>
+			<concept>
+				<code value="121219"/>
+				<display value="Volume of bounding three dimensional region"/>
+			</concept>
+		</include>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<concept>
+				<code value="118565006"/>
+				<display value="Volume"/>
+			</concept>
+		</include>		
+		
+	
+
 	</compose>
 </ValueSet>

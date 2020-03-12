@@ -192,34 +192,6 @@ v: {
   "system" : "http://www.whocc.no/atc",
   "code" : "J07CA02",
   "display" : "diphtheria-pertussis-poliomyelitis-tetanus"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "filter" : [{
-        "property" : "concept",
-        "op" : "is-a",
-        "value" : "71181003"
-      }]
-    }],
-    "exclude" : [{
-      "system" : "http://snomed.info/sct",
-      "concept" : [{
-        "code" : "71181003"
-      }]
-    }]
-  }
-}, "lang":"fr-LU", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "diphtheria-pertussis-poliomyelitis-tetanus",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "J07CA02"
 }, "valueSet" :null, "lang":"fr-LU", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "diphtheria-pertussis-poliomyelitis-tetanus",
@@ -239,11 +211,11 @@ e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
   "expansion" : {
-    "identifier" : "urn:uuid:601d8338-6d2f-41b3-9347-2cc7d68e7f25",
-    "timestamp" : "2020-03-05T02:33:37.903Z",
+    "identifier" : "urn:uuid:83d66102-1223-467e-9db6-6d49583ee05b",
+    "timestamp" : "2020-03-12T09:10:47.816Z",
     "parameter" : [{
       "name" : "limitedExpansion",
-      "valueString" : "-1"
+      "valueBoolean" : true
     },
     {
       "name" : "version",
@@ -1626,17 +1598,6 @@ e: {
     }]
   }
 },
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "J07CA02",
-  "display" : "diphtheria-pertussis-poliomyelitis-tetanus"
-}, "valueSet" :null, "lang":"fr-LU", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "diphtheria-pertussis-poliomyelitis-tetanus",
-  "severity" : null,
   "error" : ""
 }
 -------------------------------------------------------------------------------------
