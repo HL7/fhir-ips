@@ -28761,3 +28761,253 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "18723-7"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Hematology studies (set)",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "60591-5"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "SCALE_TYP",
+        "op" : "=",
+        "value" : "Doc"
+      }]
+    }]
+  }
+}, "lang":"it-IT", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Profilo sanitario sintetico",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "60591-5",
+  "display" : "Patient Summary"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "SCALE_TYP",
+        "op" : "=",
+        "value" : "Doc"
+      }]
+    }]
+  }
+}, "lang":"it-IT", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "Profilo sanitario sintetico",
+  "severity" : "warning",
+  "error" : "The display \"Patient Summary\" is not a valid display for the code {http://loinc.org}60591-5 - should be one of [\"Profilo sanitario sintetico\",\"Patient summary Doc\",\"Documenti (epSOS) Smart Open Services for European Osservazione paziente Punto nel tempo (episodio)\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "60591-5"
+}, "valueSet" :null, "lang":"it-IT", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Profilo sanitario sintetico",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "11450-4",
+  "display" : "Problemi attivi"
+}, "valueSet" :null, "lang":"it-IT", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Lista dei problemi",
+  "severity" : "warning",
+  "error" : "The display \"Problemi attivi\" is not a valid display for the code {http://loinc.org}11450-4 - should be one of [\"Lista dei problemi\",\"Problem list Reported\",\"Anamnesi Osservazione paziente Punto nel tempo (episodio)\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "10160-0",
+  "display" : "Medicinali"
+}, "valueSet" :null, "lang":"it-IT", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Uso di farmaci",
+  "severity" : "warning",
+  "error" : "The display \"Medicinali\" is not a valid display for the code {http://loinc.org}10160-0 - should be one of [\"Uso di farmaci\",\"Hx of Medication use\",\"Anamnesi paziente Punto nel tempo (episodio) Storia\",Anamnesi]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "48765-2",
+  "display" : "Allergie ed Intolleranze"
+}, "valueSet" :null, "lang":"it-IT", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Allergie &o reazioni avverse",
+  "severity" : "warning",
+  "error" : "The display \"Allergie ed Intolleranze\" is not a valid display for the code {http://loinc.org}48765-2 - should be one of [\"Allergie &o reazioni avverse\",\"Allergies &or adverse reactions Doc\",\"Allergie e reazioni avverse Documentazione miscellanea Miscellanea Osservazione paziente Punto nel tempo (episodio)\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "8716-3",
+  "display" : "Parametri Vitali"
+}, "valueSet" :null, "lang":"it-IT", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Vital signs",
+  "severity" : "warning",
+  "error" : "The display \"Parametri Vitali\" is not a valid display for the code {http://loinc.org}8716-3 - should be one of [\"Vital signs\",\"Vital signs\",\"Esame obbiettivo Osservazione paziente Punto nel tempo (episodio)\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "30954-2",
+  "display" : "Test diagnostici rilevanti e/o dati di laboratorio"
+}, "valueSet" :null, "lang":"it-IT", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Test diagnostici rilevanti &o dati di laboratorio",
+  "severity" : "warning",
+  "error" : "The display \"Test diagnostici rilevanti e/o dati di laboratorio\" is not a valid display for the code {http://loinc.org}30954-2 - should be one of [\"Test diagnostici rilevanti &o dati di laboratorio\",\"Relevant Dx tests/lab data\",\"Osservazione paziente Punto nel tempo (episodio) Test diagnostici rilevanti/dati di laboratorio Vaccinazioni\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "8716-3",
+  "display" : "Parametri Vitali"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Vital signs",
+  "severity" : "warning",
+  "error" : "The display \"Parametri Vitali\" is not a valid display for the code {http://loinc.org}8716-3 - should be one of [\"Vital signs\",\"Vital signs\"]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "8716-3"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "85353-1"
+      },
+      {
+        "code" : "9279-1"
+      },
+      {
+        "code" : "8867-4"
+      },
+      {
+        "code" : "2708-6"
+      },
+      {
+        "code" : "8310-5"
+      },
+      {
+        "code" : "8302-2"
+      },
+      {
+        "code" : "9843-4"
+      },
+      {
+        "code" : "29463-7"
+      },
+      {
+        "code" : "39156-5"
+      },
+      {
+        "code" : "85354-9"
+      },
+      {
+        "code" : "8480-6"
+      },
+      {
+        "code" : "8462-4"
+      },
+      {
+        "code" : "8478-0"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://loinc.org#8716-3) is not  valid"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "18723-7",
+  "display" : "Analisi del sangue"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Hematology studies (set)",
+  "severity" : "warning",
+  "error" : "The display \"Analisi del sangue\" is not a valid display for the code {http://loinc.org}18723-7 - should be one of [\"Hematology studies (set)\",]"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://loinc.org",
+  "code" : "18723-7"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "STATUS",
+        "op" : "=",
+        "value" : "ACTIVE"
+      },
+      {
+        "property" : "CLASSTYPE",
+        "op" : "=",
+        "value" : "1"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!PATH\\.PROTOCOLS.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!NR STATS.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!H&P\\.HX.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!H&P\\.HX\\.LAB.*$).*"
+      },
+      {
+        "property" : "CLASS",
+        "op" : "regex",
+        "value" : "^(?!CHALSKIN.*$).*"
+      }]
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code provided (http://loinc.org#18723-7) is not  valid"
+}
+-------------------------------------------------------------------------------------
