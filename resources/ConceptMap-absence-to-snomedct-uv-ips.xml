@@ -32,7 +32,7 @@
 			<code value="no-allergy-info"/>
 			<display value="No information about allergies"/>
 			<target>
-				<equivalence value="disjoint"/>
+				<equivalence value="unmatched"/>
 			</target>
 		</element>
 		<element>
@@ -75,7 +75,7 @@
 			<code value="no-device-info"/>
 			<display value="No information about devices"/>
 			<target>
-				<equivalence value="disjoint"/>
+				<equivalence value="unmatched"/>
 			</target>
 		</element>
 		<element>
@@ -85,14 +85,14 @@
 				<code value="787483001"/>
 				<display value="No known device use (situation)"/>
 				<equivalence value="narrower"/>
-				<comment value="The source includes also those known but not relevant for the purpose of this record. The target has Finding context Unknown"/>
+				<comment value="The source includes also those known but not relevant for the purpose of this record. The SNOMED CT Finding context of the target concept is Unknown"/>
 			</target>
 		</element>
 		<element>
 			<code value="no-immunization-info"/>
 			<display value="No information about immunizations"/>
 			<target>
-				<equivalence value="disjoint"/>
+				<equivalence value="unmatched"/>
 			</target>
 		</element>
 		<element>
@@ -102,14 +102,14 @@
 				<code value="787482006"/>
 				<display value="No known immunizations (situation)"/>
 				<equivalence value="narrower"/>
-				<comment value="The source includes also those known but not relevant for the purpose of this record. The target has Procedure context Action status unknown"/>
+				<comment value="The source includes also those known but not relevant for the purpose of this record. The SNOMED CT  Procedure context of the target concept is Action status unknown"/>
 			</target>
 		</element>
 		<element>
 			<code value="no-medication-info"/>
 			<display value="No information about medications"/>
 			<target>
-				<equivalence value="disjoint"/>
+				<equivalence value="unmatched"/>
 			</target>
 		</element>
 		<element>
@@ -119,14 +119,14 @@
 				<code value="787481004"/>
 				<display value="No known medications (situation)"/>
 				<equivalence value="narrower"/>
-				<comment value="The source includes also those known but not relevant for the purpose of this record. The target has Finding context Unknown"/>
+				<comment value="The source includes also those known but not relevant for the purpose of this record. The SNOMED CT Finding context of the target concept is Unknown"/>
 			</target>
 		</element>
 		<element>
 			<code value="no-problem-info"/>
 			<display value="No information about problems"/>
 			<target>
-				<equivalence value="disjoint"/>
+				<equivalence value="unmatched"/>
 			</target>
 		</element>
 		<element>
@@ -136,14 +136,14 @@
 				<code value="160245001"/>
 				<display value="No current problems or disability (situation)"/>
 				<equivalence value="narrower"/>
-				<comment value="The source includes also those known but not relevant for the purpose of this record. The target has Finding context Unknown"/>
+				<comment value="The source includes also those known but not relevant for the purpose of this record. The SNOMED CT Finding context of the target concept is Unknown"/>
 			</target>
 		</element>
 		<element>
 			<code value="no-procedure-info"/>
 			<display value="No information about past history of procedures"/>
 			<target>
-				<equivalence value="disjoint"/>
+				<equivalence value="unmatched"/>
 			</target>
 		</element>
 		<element>
@@ -153,7 +153,7 @@
 				<code value="787480003"/>
 				<display value="No known procedures (situation)"/>
 				<equivalence value="narrower"/>
-				<comment value="The source includes also those known but not relevant for the purpose of this record. The target has Procedure context Action status unknown"/>
+				<comment value="The source includes also those known but not relevant for the purpose of this record. The SNOMED CT  Procedure context of the target concept is Action status unknown"/>
 			</target>
 		</element>
 	</group>

@@ -71,6 +71,10 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
+			<binding>
+				<strength value="extensible"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips"/>
+			</binding>
 		</element>
 		<!--
 		<element id="Condition.category:problem">
