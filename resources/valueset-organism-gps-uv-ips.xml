@@ -7,7 +7,9 @@
 	</meta>
 	<text>
 		<status value="generated"/>
-		<div xmlns="http://www.w3.org/1999/xhtml">Organism Value set to be used in the Results Observation Values</div>
+		<div xmlns="http://www.w3.org/1999/xhtml"><h2>Organism Value set to be used in the Results Observation Values</h2>
+			<p>The value set additionally contains the recently added SNOMED CT concepts for the novel Coronavirus organism from the March 2020 Interim International Release.</p>
+		</div>
 	</text>
 	<url value="http://hl7.org/fhir/uv/ips/ValueSet/organism-gps-uv-ips"/>
 	<identifier>
@@ -16370,6 +16372,14 @@
 			<concept>
 				<code value="61949005"/>
 				<display value="Toxoplasma (organism)"/>
+			</concept>
+		</include>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20200309"/>
+			<concept>
+				<code value="840533007"/>
+				<display value="Severe acute respiratory syndrome coronavirus 2 (organism)"/>
 			</concept>
 		</include>
 	</compose>

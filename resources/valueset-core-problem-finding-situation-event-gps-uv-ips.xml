@@ -12,6 +12,7 @@
 			<p>This value set includes the concepts which are in the Clinical finding, Situation with explicit context and Event hierarchies, but excludes the concepts from the Procedure hierarchy, as they are expected to be represented separately in the History of Procedures Section. </p>
 			<p>The CORE Problem List Subset includes SNOMED CT concepts that can be used for the problem list, discharge diagnoses, or reason for encounter.</p>
 			<p>The concepts currently included in the value set concepts are the set contained in both the November 2019 release of the CORE Problem List Subset and the September 2019 release of the GPS, both of which are based on the July 2019 SNOMED CT International Edition release. The CORE Problem List Subset is updated regularly by the NLM for new SNOMED CT releases. https://www.nlm.nih.gov/research/umls/Snomed/core_subset.html</p>
+			<p>The value set additionally contains three recently added SNOMED CT concepts for Coronavirus from the March 2020 Interim International Release.</p>
 		</div>
 	</text>
 	<url value="http://hl7.org/fhir/uv/ips/ValueSet/core-problem-finding-situation-event-gps-uv-ips"/>
@@ -22342,6 +22343,22 @@
 			<concept>
 				<code value="785745000"/>
 				<display value="Acute bronchitis co-occurrent with wheeze (disorder)"/>
+			</concept>
+		</include>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20200309"/>
+			<concept>
+				<code value="840539006"/>
+				<display value="Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)"/>
+			</concept>
+			<concept>
+				<code value="840544004"/>
+				<display value="Suspected disease caused by severe acute respiratory coronavirus 2 (situation)"/>
+			</concept>
+			<concept>
+				<code value="840546002"/>
+				<display value="Exposure to severe acute respiratory syndrome coronavirus 2 (event)"/>
 			</concept>
 		</include>
 	</compose>
