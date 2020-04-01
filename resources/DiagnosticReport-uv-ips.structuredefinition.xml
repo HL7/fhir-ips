@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<StructureDefinition xmlns="http://hl7.org/fhir">
 	<id value="DiagnosticReport-uv-ips"/>
 	<text>
 		<status value="generated"/>
@@ -61,6 +61,11 @@
 		<element id="DiagnosticReport.subject">
 			<path value="DiagnosticReport.subject"/>
 			<min value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"/>
+			</type>
 			<mustSupport value="true"/>
 		</element>
 		<element id="DiagnosticReport.subject.reference">
@@ -113,6 +118,14 @@
 			<path value="DiagnosticReport.performer.reference"/>
 			<min value="1"/>
 			<mustSupport value="true"/>
+		</element>
+		<element id="DiagnosticReport.specimen">
+			<path value="DiagnosticReport.specimen"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips"/>
+			</type>
+			<mustSupport value="false"/>
 		</element>
 		<element id="DiagnosticReport.result">
 			<path value="DiagnosticReport.result"/>
