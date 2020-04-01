@@ -4,23 +4,12 @@
     <meta>
         <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
     </meta>
-    <text>
-        <status value="generated" />
-        <div xmlns="http://www.w3.org/1999/xhtml">
-            <h2>IPS Allergy intolerance substance condition (GPS).</h2>
-            <p>
-                This value set includes the codes from the SNOMED International Global Patient Set (GPS) subset of SNOMED CT that are included in:
-                <ul>
-                    <li>all descendants of 762766007 | Edible substance (substance);</li>
-                    <li>all descendants of 406455002 | Allergen class (substance);</li>
-                    <li>all descendants of 425620007 | Metal (substance);</li>
-                    <li>all descendants of 373873005 | Pharmaceutical / biologic product (product); </li>
-                    <li>all descendants of 410942007 |Drug or medicament (substance)</li>
-                </ul>
-            </p>
-            <p>The current value set contains concepts from the September 2019 release of the GPS, which is based on the July 2019 SNOMED CT International Edition release.</p>
-        </div>
-    </text>
+	<text>
+		<status value="additional"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<div id="cld"><p>This value set has a large enumerated (extensional) definition.  See "Definition" in the table above for the definition description.  The full definition is available in the resource instance (see links in "Source Resource" in the table above).</p></div>
+		</div>
+	</text>
     <url value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-gps-uv-ips" />
     <version value="2018-03-20T16:38:39" />
     <name value="AllergyintolerancesubstanceconditionGPS" />

@@ -13,7 +13,7 @@ These code systems have been defined for this implementation guide:
 
 # Global Patient Set Value Set
 
-A value set representing the SNOMED CT Global Patient Set (https://www.snomed.org/snomed-international/learn-more/global-patient-set) is available here.  It is provided in this IG as a FHIR ValueSet resource instance for the convenience of IPS implementers.
+A value set representing the full SNOMED CT Global Patient Set (https://www.snomed.org/snomed-international/learn-more/global-patient-set) is available here.  It is provided in this IG as a FHIR ValueSet resource instance for the convenience of IPS implementers.
 
 The current value set contains all concepts (21,782) from the September 2019 release of the GPS (based on the July 2019 SNOMED CT International Edition release) plus seven recently added concepts for Coronavirus (from the March 2020 Interim International Release) (total 21,789 concepts).
 

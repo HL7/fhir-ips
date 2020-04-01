@@ -6,8 +6,8 @@
 	</meta>
 	<text>
 		<status value="additional"/>
-		<div xmlns="http://www.w3.org/1999/xhtml"><h2>SNOMED International Global Patient Set (GPS)</h2>
-			<p>This version of the value set contains all concepts (21,782) from the September 2019 release of the GPS (based on the July 2019 SNOMED CT International Edition release) plus seven recently added concepts for Coronavirus (from the March 2020 Interim International Release) (total 21,789 concepts).  It is provided in this IG as a FHIR ValueSet resource instance for the convenience of IPS implementers.</p>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<div id="cld"><p>This value set has a large enumerated (extensional) definition.  See "Definition" in the table above for the definition description.  The full definition is available in the resource instance (see links in "Source Resource" in the table above).</p></div>
 		</div>
 	</text>
 	<url value="http://hl7.org/fhir/uv/ips/ValueSet/snomed-intl-gps"/>
@@ -32,7 +32,15 @@
 			<value value="info@hl7.org"/>
 		</telecom>
 	</contact>
-	<description value="SNOMED International Global Patient Set (GPS) value set. The value set includes all of the codes from the SNOMED International Global Patient Set (GPS) subset of SNOMED CT.  The current version of the value set contains all concepts (21,782) from the September 2019 release of the GPS (based on the July 2019 SNOMED CT International Edition release) plus seven recently added concepts for Coronavirus (from the March 2020 Interim International Release) (total 21,789 concepts)."/>
+	<description value="SNOMED International Global Patient Set (GPS) value set. 
+		The value set includes all of the codes from the SNOMED International Global Patient Set (GPS) 
+		subset of SNOMED CT.  The current version of the value set contains all concepts (21,782) from 
+		the September 2019 release of the GPS (based on the July 2019 SNOMED CT International Edition 
+		release) plus seven recently added concepts for Coronavirus (from the March 2020 Interim 
+		International Release) (total 21,789 concepts).
+		&#10;&#10;
+		This value set is provided in this IG as a FHIR ValueSet resource instance for the convenience of IPS implementers.
+		"/>
 	<immutable value="false"/>
 	<copyright value="The GPS is produced by SNOMED International under the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/)&#10;&#10;Additional information about this license specific to SNOMED International&#8217;s release of the GPS:&#10;* SNOMED CT is &#169; and &#174; SNOMED International. The right to maintain the GPS remains vested exclusively in SNOMED International.&#10;* The Licensee can redistribute the GPS.&#10;* The Licensee can create derivatives or implementation-related products and services based on the GPS.&#10;* The Licensee cannot claim that SNOMED International or any of its Members endorses the Licensee&#8217;s derivative because it uses content from the GPS.&#10;* Neither SNOMED International nor any of the contributors accept any liability for the Licensee&#8217;s use or redistribution of the GPS.&#10;* SNOMED CT&#174; was originally created by the College of American Pathologists.&#10;&#10;Without obtaining prior written permission from SNOMED International, you are expressly prohibited from using, distributing or reproducing the SNOMED International, SNOMED CT or SNOMED GPS logo, service mark or trademark. Please review all terms and conditions of use [here](http://www.snomed.org/terms-and-conditions)."/>
 	<compose>

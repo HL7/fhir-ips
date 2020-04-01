@@ -6,9 +6,9 @@
 		<!--<profile value="http://hl7.org/fhir/3.0/StructureDefinition/ValueSet"/>-->
 	</meta>
 	<text>
-		<status value="generated"/>
-		<div xmlns="http://www.w3.org/1999/xhtml"><h2>Organism Value set to be used in the Results Observation Values</h2>
-			<p>The value set additionally contains the recently added SNOMED CT concepts for the novel Coronavirus organism from the March 2020 Interim International Release.</p>
+		<status value="additional"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<div id="cld"><p>This value set has a large enumerated (extensional) definition.  See "Definition" in the table above for the definition description.  The full definition is available in the resource instance (see links in "Source Resource" in the table above).</p></div>
 		</div>
 	</text>
 	<url value="http://hl7.org/fhir/uv/ips/ValueSet/organism-gps-uv-ips"/>
@@ -38,7 +38,7 @@
 			<value value="info@hl7.org"/>
 		</telecom>
 	</contact>
-	<description value="Organism Value set to be used in the Results Observation Values"/>
+	<description value="This is a value set of the SNOMED CT organism concepts contained in the SNOMED CT Global Patient Set (GPS) for use in the Results section observation values.  The concepts currently included in the value set are from the September 2019 release of the GPS, which is based on the July 2019 SNOMED CT International Edition release.  This value set additionally contains the recently added SNOMED CT concept for the Coronavirus organism from the March 2020 Interim International Release."/>
 	<immutable value="false"/>
 	<copyright value="The GPS is produced by SNOMED International under the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/)&#10;&#10;Additional information about this license specific to SNOMED International&#8217;s release of the GPS:&#10;* SNOMED CT is &#169; and &#174; SNOMED International. The right to maintain the GPS remains vested exclusively in SNOMED International.&#10;* The Licensee can redistribute the GPS.&#10;* The Licensee can create derivatives or implementation-related products and services based on the GPS.&#10;* The Licensee cannot claim that SNOMED International or any of its Members endorses the Licensee&#8217;s derivative because it uses content from the GPS.&#10;* Neither SNOMED International nor any of the contributors accept any liability for the Licensee&#8217;s use or redistribution of the GPS.&#10;* SNOMED CT&#174; was originally created by the College of American Pathologists.&#10;&#10;Without obtaining prior written permission from SNOMED International, you are expressly prohibited from using, distributing or reproducing the SNOMED International, SNOMED CT or SNOMED GPS logo, service mark or trademark. Please review all terms and conditions of use [here](http://www.snomed.org/terms-and-conditions)."/>
 	<compose>
