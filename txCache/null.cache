@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://hl7.org/fhir/uv/ips/ValueSet/lab-absence-presence-uv-ips"]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to find value set \"http://hl7.org/fhir/uv/ips/ValueSet/lab-absence-presence-uv-ips\""
+}
+-------------------------------------------------------------------------------------
