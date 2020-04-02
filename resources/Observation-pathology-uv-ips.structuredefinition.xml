@@ -200,10 +200,7 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-laboratory-uv-ips"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
@@ -251,7 +248,7 @@
 			<mustSupport value="true"/>
 			<binding>
 				<strength value="extensible"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/lab-result-coded-value-uv-ips"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/pathology-result-coded-value-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Observation.dataAbsentReason">
