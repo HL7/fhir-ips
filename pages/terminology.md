@@ -19,6 +19,7 @@ The current value set contains all concepts (21,782) from the September 2019 rel
 
 <li><a href="ValueSet-snomed-intl-gps.html">SNOMED International Global Patient Set (GPS)</a></li>
 
+
 # Value Sets
 
 These value sets have been defined for this implementation guide:
@@ -57,17 +58,11 @@ These value sets have been defined for this implementation guide:
    <li>
     <a href="ValueSet-current-smoking-status-uv-ips.html">Current Smoking Status - IPS</a>
    </li>
-   <li>
-    <a href="ValueSet-edd-method-uv-ips.html">Expected Delivery Date Method - IPS</a>
-   </li>
-   <li>
-    <a href="ValueSet-laboratory-tests-and-panels-uv-ips.html">Laboratory tests and panels - IPS</a>
-   </li>
-   <li>
+    <li>
     <a href="ValueSet-medical-devices-uv-ips.html">Medical Devices - IPS</a>
    </li>
    <li>
-    <a href="ValueSet-med-uv-ips.html">Medications (example) - IPS</a>
+    <a href="ValueSet-medication-example-uv-ips.html">Medications (example) - IPS</a>
    </li>
    <li>
     <a href="ValueSet-medication-snomed-uv-ips.html">Medications (SNOMED CT) - IPS</a>
@@ -84,9 +79,13 @@ These value sets have been defined for this implementation guide:
    <li>
     <a href="ValueSet-personal-relationship-uv-ips.html">Personal Relationship - IPS</a>
    </li>
-   <li>
+      <li>
     <a href="ValueSet-pregnancies-summary-uv-ips.html">Pregnancies Summary - IPS</a>
    </li>
+     <li>
+    <a href="ValueSet-edd-method-uv-ips.html">Pregnancy Expected Delivery Date Method - IPS</a>
+   </li>
+
    <li>
     <a href="ValueSet-pregnancy-status-uv-ips.html">Pregnancy Status - IPS</a>
    </li>
@@ -110,6 +109,9 @@ These value sets have been defined for this implementation guide:
    </li>
    <li>
     <a href="ValueSet-pathology-result-coded-value-uv-ips.html">Results Coded Values Pathology - IPS</a>
+   </li>
+      <li>
+    <a href="ValueSet-laboratory-tests-and-panels-uv-ips.html">Results Laboratory Tests and Panels - IPS</a>
    </li>
    <li>
     <a href="ValueSet-observation-codes-uv-ips.html">Results Observation - IPS</a>
@@ -139,10 +141,10 @@ These value sets have been defined for this implementation guide:
     <a href="ValueSet-imaging-txtobs-code-uv-ips.html">Results Radiology Textual Observations - IPS</a>
    </li>
    <li>
-    <a href="ValueSet-specimen-collection-method-uv-ips.html">Specimen Collection Method - IPS</a>
+    <a href="ValueSet-specimen-collection-method-uv-ips.html">Results Specimen Collection Method - IPS</a>
    </li>
    <li>
-    <a href="ValueSet-specimen-type-gps-uv-ips.html">Specimen Type (GPS) - IPS</a>
+    <a href="ValueSet-specimen-type-gps-uv-ips.html">Results Specimen Type (GPS) - IPS</a>
    </li>
    <li>
     <a href="ValueSet-target-site-uv-ips.html">Target Site - IPS</a>

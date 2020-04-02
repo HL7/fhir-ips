@@ -47,42 +47,12 @@
 				<rules value="closed"/>
 			</slicing>
 			<definition value="Identifies the medication being administered or the reason for absent or unknown Medication. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code. To improve global interoperability is strongly encouraged that the reference to a medication resource is used, limiting the usage of the medicationCodeableConcept only to the cases in which no other information than a simple code is available."/>
-			<!--
-			<min value="1"/>
-			<max value="1"/>
--->
-			<!--======= new begin ======= -->
-			<!--
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"/>
-			</type>
-			-->
-			<!-- ======= new end ======= -->
 			<mustSupport value="true"/>
-			<!--======= new begin ======= -->
-			<!--
-			<binding>
-				<strength value="preferred"/>
-				<description value="Representation of unknown or absent medications"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips"/>
-			</binding>
 			<binding>
 				<strength value="example"/>
 				<description value="The type of medication"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/med-uv-ips"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medication-example-uv-ips"/>
 			</binding>
-			-->
-			<binding>
-				<strength value="example"/>
-				<description value="The type of medication"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/med-uv-ips"/>
-			</binding>
-			<!-- ======= new end ======= -->
 		</element>
 		<element id="MedicationStatement.medication[x]:medicationReference">
 			<path value="MedicationStatement.medication[x]"/>
@@ -128,13 +98,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<!--
-		<element id="MedicationStatement.subject.reference">
-			<path value="MedicationStatement.subject.reference"/>
-			<min value="1"/>
-			<mustSupport value="true"/>
-		</element>
-		-->
 		<element id="MedicationStatement.effective[x]">
 			<path value="MedicationStatement.effective[x]"/>
 			<min value="1"/>
