@@ -21,7 +21,7 @@
 			<path value="Observation"/>
 			<mustSupport value="true"/>
 		</element>
-			<element id="Observation.id">
+		<element id="Observation.id">
 			<path value="Observation.id"/>
 			<mustSupport value="true"/>
 		</element>
@@ -41,26 +41,6 @@
 			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
-		<!--
-		<element id="Observation.code.coding">
-			<path value="Observation.code.coding"/>
-			<min value="1"/>
-			<max value="1"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.code.coding.system">
-			<path value="Observation.code.coding.system"/>
-			<min value="1"/>
-			<fixedUri value="http://loinc.org"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.code.coding.code">
-			<path value="Observation.code.coding.code"/>
-			<min value="1"/>
-			<fixedCode value="82810-3"/>
-			<mustSupport value="true"/>
-		</element>
-	-->
 		<element id="Observation.subject">
 			<path value="Observation.subject"/>
 			<min value="1"/>

@@ -237,7 +237,6 @@
 			<slicing>
 				<discriminator>
 					<type value="type"/>
-					<!-- <path value="$this.value[x]"/> -->
 					<path value="value"/>
 				</discriminator>
 				<description value="Slicing based on value[x] type."/>
@@ -288,7 +287,6 @@
 			<path value="Observation.component"/>
 			<sliceName value="observationCode"/>
 			<short value="Observation Code"/>
-			<!-- <max value="1"/> -->
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component:observationCode.code">

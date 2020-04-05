@@ -27,16 +27,6 @@
 			<path value="Specimen"/>
 			<mustSupport value="true"/>
 		</element>
-		<!--
-		<element id="Specimen.id">
-			<path value="Specimen.id"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Specimen.meta">
-			<path value="Specimen.meta"/>
-			<mustSupport value="true"/>
-		</element>
--->
 		<element id="Specimen.type">
 			<path value="Specimen.type"/>
 			<min value="1"/>
@@ -53,16 +43,6 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/specimen-type-gps-uv-ips"/>
 			</binding>
 		</element>
-		<!--
-		<element id="Specimen.type.coding">
-			<path value="Specimen.type.coding"/>
-			<type>
-				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-	-->
 		<element id="Specimen.subject">
 			<path value="Specimen.subject"/>
 			<type>

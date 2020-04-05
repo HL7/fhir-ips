@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Organization-laboratory-uv-ips"/>
-  <meta>
-    <lastUpdated value="2018-02-16T18:38:21.486+01:00"/>
-  </meta>
+	<id value="Organization-laboratory-uv-ips"/>
+	<meta>
+		<lastUpdated value="2018-02-16T18:38:21.486+01:00"/>
+	</meta>
 	<text>
 		<status value="generated"/>
 		<div xmlns="http://www.w3.org/1999/xhtml">This profile constrains the Organization resource to represent an organization having produced laboratory results for a patient summary.&#xD;&#xA;Examples of such organizations include laboratory medicine, public health laboratory, healthcare institution ...</div>
 	</text>
-  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-laboratory-uv-ips"/>
-  <version value="0.2"/>
-  <name value="OrganizationLaboratoryUvIps"/>
-  <title value="Organization (laboratory)"/>
-  <status value="draft"/>
-  <date value="2018-03-09"/>
-  <publisher value="HL7 International"/>
-  <description value="This profile constrains the Organization resource to represent an organization having produced laboratory results for a patient summary.&#xD;&#xA;Examples of such organizations include laboratory medicine, public health laboratory, healthcare institution ..."/>
-  <kind value="resource"/>
-  <abstract value="false"/>
-  <type value="Organization"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization"/>
-  <derivation value="constraint"/>
-  <differential>
-    <element id="Organization">
-      <path value="Organization"/>
-      <mustSupport value="true"/>
-    </element>
+	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-laboratory-uv-ips"/>
+	<version value="0.2"/>
+	<name value="OrganizationLaboratoryUvIps"/>
+	<title value="Organization (laboratory)"/>
+	<status value="draft"/>
+	<date value="2018-03-09"/>
+	<publisher value="HL7 International"/>
+	<description value="This profile constrains the Organization resource to represent an organization having produced laboratory results for a patient summary.&#xD;&#xA;Examples of such organizations include laboratory medicine, public health laboratory, healthcare institution ..."/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Organization"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Organization">
+			<path value="Organization"/>
+			<mustSupport value="true"/>
+		</element>
 		<element id="Organization.meta">
 			<path value="Organization.meta"/>
 			<mustSupport value="false"/>
@@ -42,32 +42,26 @@
 			<fixedCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-laboratory-uv-ips"/>
 			<mustSupport value="false"/>
 		</element>
-    <element id="Organization.type">
-      <path value="Organization.type"/>
-      <min value="1"/>
-      <max value="1"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Organization.type.coding">
-      <path value="Organization.type.coding"/>
-      <min value="1"/>
-      <max value="1"/>
-      <type>
-        <code value="Coding"/>
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
-      </type>
-      <!-- Value set to be better specified 
-      <binding>
-        <strength value="extensible"/>
-        <valueSet value="http://trilliumbridge.eu/fhir/ValueSet/performing-organization-type"/>
-      </binding>
-      -->
-      <mustSupport value="true"/>
-    </element>
-    <element id="Organization.name">
-      <path value="Organization.name"/>
-      <min value="1"/>
-      <mustSupport value="true"/>
-    </element>
-  </differential>
+		<element id="Organization.type">
+			<path value="Organization.type"/>
+			<min value="1"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Organization.type.coding">
+			<path value="Organization.type.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Coding"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Organization.name">
+			<path value="Organization.name"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+	</differential>
 </StructureDefinition>

@@ -1,69 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Range-uv-ips"/>
+	<id value="Range-uv-ips"/>
 	<text>
 		<status value="generated"/>
 		<div xmlns="http://www.w3.org/1999/xhtml">Range constrained to UCUM as codesystem.</div>
 	</text>
-  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Range-uv-ips"/>
-  <name value="RangeIPS"/>
-  <title value="Range (IPS)"/>
-  <status value="draft"/>
-  <experimental value="true"/>
-  <date value="2018-03-21T14:43:39.739+01:00"/>
-  <description value="Range constrained to UCUM as codesystem."/>
-  <purpose value="Requires UCUM as codesystem for units"/>
-  <kind value="complex-type"/>
-  <abstract value="false"/>
-  <type value="Range"/>
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Range"/>
-  <derivation value="constraint"/>
-  <differential>
-    <element id="Range">
-      <path value="Range"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Range.low">
-      <path value="Range.low"/>
+	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Range-uv-ips"/>
+	<name value="RangeIPS"/>
+	<title value="Range (IPS)"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<date value="2018-03-21T14:43:39.739+01:00"/>
+	<description value="Range constrained to UCUM as codesystem."/>
+	<purpose value="Requires UCUM as codesystem for units"/>
+	<kind value="complex-type"/>
+	<abstract value="false"/>
+	<type value="Range"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Range"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Range">
+			<path value="Range"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Range.low">
+			<path value="Range.low"/>
 			<type>
 				<code value="Quantity"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/SimpleQuantity-uv-ips"/>
 			</type>
-      <mustSupport value="true"/>
-    </element>
-    <!--
-    <element id="Range.low.system">
-      <path value="Range.low.system"/>
-      <min value="1"/>
-      <fixedUri value="http://unitsofmeasure.org"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Range.low.code">
-      <path value="Range.low.code"/>
-      <min value="1"/>
-      <mustSupport value="true"/>
-    </element>
-  -->
-    <element id="Range.high">
-      <path value="Range.high"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Range.high">
+			<path value="Range.high"/>
 			<type>
 				<code value="Quantity"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/SimpleQuantity-uv-ips"/>
 			</type>
-      <mustSupport value="true"/>
-    </element>
-    <!--
-    <element id="Range.high.system">
-      <path value="Range.high.system"/>
-      <min value="1"/>
-      <fixedUri value="http://unitsofmeasure.org"/>
-      <mustSupport value="true"/>
-    </element>
-    <element id="Range.high.code">
-      <path value="Range.high.code"/>
-      <min value="1"/>
-      <mustSupport value="true"/>
-    </element>
-  -->
-  </differential>
+			<mustSupport value="true"/>
+		</element>
+	</differential>
 </StructureDefinition>

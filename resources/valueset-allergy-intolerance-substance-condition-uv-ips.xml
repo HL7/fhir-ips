@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<!-- Value set exported from ART-DECOR project hl7ips (IPS) -->
 	<id value="allergy-intolerance-substance-condition-uv-ips"/>
 	<meta>
 		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
 	</meta>
-	<!--
-	<text>
-		<status value="generated"/>
-		<div xmlns="http://www.w3.org/1999/xhtml">IPS Allergy intolerance substance condition</div>
-	</text>
-	-->
 	<url value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips"/>
 	<identifier>
 		<use value="official"/>
@@ -40,17 +33,8 @@
 	</contact>
 	<description value="IPS Allergy intolerance substance condition value set. This value set includes codes from SNOMED Clinical Terms®:  all descendants of 762766007 | Edible substance (substance);  all descendants of 406455002 | Allergen class (substance); all descendants of 425620007 | Metal (substance); all descendants of 373873005 | Pharmaceutical / biologic product (product); all descendants of 410942007 |Drug or medicament (substance)"/>
 	<immutable value="false"/>
-	<copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomed-ct or info@snomed.org" />
+	<copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomed-ct or info@snomed.org"/>
 	<compose>
-		<!--               
-                    <include>
-                        <valueSet value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.11.22.10-20170329000000"/>
-                    </include>
-                    <include>
-                        <valueSet value="http://art-decor.org/fhir/ValueSet/2.16.840.1.113883.11.22.11-20170329000000"/>
-                    </include>
-   -->
-   
 		<include>
 			<system value="http://snomed.info/sct"/>
 			<filter>

@@ -1,123 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ValueSet xmlns="http://hl7.org/fhir" 
-    xmlns:f="http://hl7.org/fhir">
-    <!-- Value set exported from ART-DECOR project hl7ips (IPS) -->
-    <id value="procedures-uv-ips"/>
-    <meta>
-        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
-    </meta>
-    <text>
-        <status value="generated"/>
-        <div xmlns="http://www.w3.org/1999/xhtml">IPS Procedures</div>
-    </text>
-    <url value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips"/>
-    <identifier>
-        <use value="official"/>
-        <system value="http://art-decor.org/ns/oids/vs"/>
-        <value value="2.16.840.1.113883.11.22.35"/>
-    </identifier>
-    <version value="2017-05-23T00:00:00"/>
-    <name value="ProceduresUvIps"/>
-    <title value="Procedures - IPS"/>
-    <status value="draft"/>
-    <experimental value="false"/>
-    <publisher value="HL7 International"/>
-    <contact>
-        <name value="HL7 International"/>
-        <telecom>
-            <system value="phone"/>
-            <value value="+1 734 677 7777"/>
-        </telecom>
-        <telecom>
-            <system value="fax"/>
-            <value value="+1 734 677 6622"/>
-        </telecom>
-        <telecom>
-            <system value="email"/>
-            <value value="info@hl7.org"/>
-        </telecom>
-    </contact>
-    <description value="This value set includes codes from SNOMED Clinical Terms®:  all descendants of 71388002 | Procedure (procedure), excluding [ 71388002 , all descendants of 14734007, all descendants of 59524001, all descendants of 389067005, all descendants of 442006003, all descendants of 225288009, all descendants of 308335008, all descendants of 710135002, all descendants of 389084004]"/>
-    <immutable value="false"/>
-     <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the of the SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
-    <compose>
-        <include>
-            <system value="http://snomed.info/sct"/>
-            <filter>
-                <property value="concept"/>
-                <op value="is-a"/>
-                <value value="71388002"/>
-            </filter>
-        </include>
-        <exclude>
-            <system value="http://snomed.info/sct"/>
-            <concept>
-                <code value="71388002"/>
-            </concept>
-        </exclude>
-        <exclude>
-            <system value="http://snomed.info/sct"/>
-            <filter>
-                <property value="concept"/>
-                <op value="is-a"/>
-                <value value="14734007"/>
-            </filter>
-        </exclude>
-        <exclude>
-            <system value="http://snomed.info/sct"/>
-            <filter>
-                <property value="concept"/>
-                <op value="is-a"/>
-                <value value="59524001"/>
-            </filter>
-        </exclude>
-        <exclude>
-            <system value="http://snomed.info/sct"/>
-            <filter>
-                <property value="concept"/>
-                <op value="is-a"/>
-                <value value="389067005"/>
-            </filter>
-        </exclude>
-        <exclude>
-            <system value="http://snomed.info/sct"/>
-            <filter>
-                <property value="concept"/>
-                <op value="is-a"/>
-                <value value="442006003"/>
-            </filter>
-        </exclude>
-        <exclude>
-            <system value="http://snomed.info/sct"/>
-            <filter>
-                <property value="concept"/>
-                <op value="is-a"/>
-                <value value="225288009"/>
-            </filter>
-        </exclude>
-        <exclude>
-            <system value="http://snomed.info/sct"/>
-            <filter>
-                <property value="concept"/>
-                <op value="is-a"/>
-                <value value="308335008"/>
-            </filter>
-        </exclude>
-        <exclude>
-            <system value="http://snomed.info/sct"/>
-            <filter>
-                <property value="concept"/>
-                <op value="is-a"/>
-                <value value="710135002"/>
-            </filter>
-        </exclude>
-        <exclude>
-            <system value="http://snomed.info/sct"/>
-            <filter>
-                <property value="concept"/>
-                <op value="is-a"/>
-                <value value="389084004"/>
-            </filter>
-        </exclude>
-    </compose>
+<!-- edited with XMLSpy v2013 sp1 (http://www.altova.com) by ﻿Giorgio Cangioli (Giorgio Cangioli) -->
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:f="http://hl7.org/fhir">
+	<id value="procedures-uv-ips"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+	</meta>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">IPS Procedures</div>
+	</text>
+	<url value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips"/>
+	<identifier>
+		<use value="official"/>
+		<system value="http://art-decor.org/ns/oids/vs"/>
+		<value value="2.16.840.1.113883.11.22.35"/>
+	</identifier>
+	<version value="2017-05-23T00:00:00"/>
+	<name value="ProceduresUvIps"/>
+	<title value="Procedures - IPS"/>
+	<status value="draft"/>
+	<experimental value="false"/>
+	<publisher value="HL7 International"/>
+	<contact>
+		<name value="HL7 International"/>
+		<telecom>
+			<system value="phone"/>
+			<value value="+1 734 677 7777"/>
+		</telecom>
+		<telecom>
+			<system value="fax"/>
+			<value value="+1 734 677 6622"/>
+		</telecom>
+		<telecom>
+			<system value="email"/>
+			<value value="info@hl7.org"/>
+		</telecom>
+	</contact>
+	<description value="This value set includes codes from SNOMED Clinical Terms®:  all descendants of 71388002 | Procedure (procedure), excluding [ 71388002 , all descendants of 14734007, all descendants of 59524001, all descendants of 389067005, all descendants of 442006003, all descendants of 225288009, all descendants of 308335008, all descendants of 710135002, all descendants of 389084004]"/>
+	<immutable value="false"/>
+	<copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the of the SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<filter>
+				<property value="concept"/>
+				<op value="is-a"/>
+				<value value="71388002"/>
+			</filter>
+		</include>
+		<exclude>
+			<system value="http://snomed.info/sct"/>
+			<concept>
+				<code value="71388002"/>
+			</concept>
+		</exclude>
+		<exclude>
+			<system value="http://snomed.info/sct"/>
+			<filter>
+				<property value="concept"/>
+				<op value="is-a"/>
+				<value value="14734007"/>
+			</filter>
+		</exclude>
+		<exclude>
+			<system value="http://snomed.info/sct"/>
+			<filter>
+				<property value="concept"/>
+				<op value="is-a"/>
+				<value value="59524001"/>
+			</filter>
+		</exclude>
+		<exclude>
+			<system value="http://snomed.info/sct"/>
+			<filter>
+				<property value="concept"/>
+				<op value="is-a"/>
+				<value value="389067005"/>
+			</filter>
+		</exclude>
+		<exclude>
+			<system value="http://snomed.info/sct"/>
+			<filter>
+				<property value="concept"/>
+				<op value="is-a"/>
+				<value value="442006003"/>
+			</filter>
+		</exclude>
+		<exclude>
+			<system value="http://snomed.info/sct"/>
+			<filter>
+				<property value="concept"/>
+				<op value="is-a"/>
+				<value value="225288009"/>
+			</filter>
+		</exclude>
+		<exclude>
+			<system value="http://snomed.info/sct"/>
+			<filter>
+				<property value="concept"/>
+				<op value="is-a"/>
+				<value value="308335008"/>
+			</filter>
+		</exclude>
+		<exclude>
+			<system value="http://snomed.info/sct"/>
+			<filter>
+				<property value="concept"/>
+				<op value="is-a"/>
+				<value value="710135002"/>
+			</filter>
+		</exclude>
+		<exclude>
+			<system value="http://snomed.info/sct"/>
+			<filter>
+				<property value="concept"/>
+				<op value="is-a"/>
+				<value value="389084004"/>
+			</filter>
+		</exclude>
+	</compose>
 </ValueSet>

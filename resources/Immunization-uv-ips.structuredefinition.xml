@@ -35,12 +35,9 @@
 			<path value="Immunization.vaccineCode"/>
 			<slicing>
 				<discriminator>
-					<!-- <type value="value"/>
-					<path value="coding.system"/> -->
 					<type value="pattern"/>
 					<path value="$this"/>
 				</discriminator>
-				<!-- <description value="Discriminated by code system"/> -->
 				<description value="Discriminated by bound value set"/>
 				<rules value="open"/>
 			</slicing>
@@ -69,12 +66,6 @@
 			<definition value="WHO ATC classification"/>
 			<min value="0"/>
 			<max value="1"/>
-			<!--
-			<type>
-				<code value="Coding"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
-			</type>
-			-->
 			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -91,10 +82,6 @@
 			<definition value="A reference to a code indicating that there there are no known immunizations or that this information is unknown."/>
 			<min value="0"/>
 			<max value="1"/>
-			<!-- <type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type> -->
 			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -141,7 +128,6 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<!--			<mustSupport value="true"/> -->
 			<binding>
 				<strength value="preferred"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
