@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2013 sp1 (http://www.altova.com) by ﻿Giorgio Cangioli (Giorgio Cangioli) -->
 <StructureDefinition xmlns="http://hl7.org/fhir">
 	<id value="DiagnosticReport-uv-ips"/>
 	<text>
@@ -138,16 +139,6 @@
 			</slicing>
 			<short value="Observation results included in the diagnostic report."/>
 			<definition value="Observation results included in the diagnostic report."/>
-			<!--
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-uv-ips"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-uv-ips"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-imaging-uv-ips"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pathology-uv-ips"/>
-				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
-			</type>
-		-->
 			<mustSupport value="true"/>
 		</element>
 		<element id="DiagnosticReport.result:observation-laboratory">
@@ -186,12 +177,5 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<!--
-		<element id="DiagnosticReport.result.reference">
-			<path value="DiagnosticReport.result.reference"/>
-			<min value="1"/>
-			<mustSupport value="true"/>
-		</element>
-	-->
 	</differential>
 </StructureDefinition>

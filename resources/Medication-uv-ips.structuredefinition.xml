@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2013 sp1 (http://www.altova.com) by ﻿Giorgio Cangioli (Giorgio Cangioli) -->
 <StructureDefinition xmlns="http://hl7.org/fhir">
 	<id value="Medication-uv-ips"/>
 	<meta>
@@ -62,22 +63,6 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medication-example-uv-ips"/>
 			</binding>
 		</element>
-		<!--
-		<element id="Medication.code.coding">
-			<path value="Medication.code.coding"/>
-			<slicing>
-				<discriminator>
-					<type value="pattern"/>
-					<path value="$this"/>
-				</discriminator>
-				<description value="Discriminated by value set"/>
-				<rules value="open"/>
-			</slicing>
-			<min value="1"/>
-			<mustSupport value="true"/>
-		</element>
-		-->
-		<!-- <element id="Medication.code:atcClass"> -->
 		<element id="Medication.code:atcClass">
 			<path value="Medication.code"/>
 			<sliceName value="atcClass"/>
@@ -94,14 +79,6 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips"/>
 			</binding>
 		</element>
-		<!--
-    <element id="Medication.code.coding:atcClass.system">
-      <path value="Medication.code.coding.system" />
-      <min value="1" />
-      <fixedUri value="http://www.whocc.no/atc" />
-      <mustSupport value="true" />
-    </element>
-  -->
 		<element id="Medication.code:snomed">
 			<path value="Medication.code"/>
 			<sliceName value="snomed"/>
@@ -118,20 +95,6 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips"/>
 			</binding>
 		</element>
-  		<!--
-		<element id="Medication.code:@default">
-			<path value="Medication.code"/>
-			<sliceName value="@default"/>
-			<short value="Medications (any code system)"/>
-			<definition value="Medications (any code system)"/>
-			<max value="1"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-	-->
 		<element id="Medication.form">
 			<path value="Medication.form"/>
 			<definition value="Describes the form of the item.  Powder; tablets; capsule.&#xD;&#xA;&#xD;&#xA;Administrable Pharmaceutical Dose Form. &#xD;&#xA;This code represents the form of the medication (e.g. tablet, capsule, liquid)&#xD;&#xA;&#xD;&#xA;Since the EDQM Standards Terms, together with UCUM, is one of the IDMP terminologies actually available for usage, this code system has been selected  as referecne terminology for representing Pharmaceutical Dose forms;Pakages and Route of Administration.&#xD;&#xA;&#xD;&#xA;It is known that also alternative jurisdictional and international terminologies are known to be used for this concept domain, as NCI or SNOMED CT."/>

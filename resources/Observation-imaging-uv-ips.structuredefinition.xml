@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2013 sp1 (http://www.altova.com) by ﻿Giorgio Cangioli (Giorgio Cangioli) -->
 <StructureDefinition xmlns="http://hl7.org/fhir">
 	<id value="Observation-imaging-uv-ips"/>
 	<meta>
@@ -45,26 +46,6 @@
 			<fixedCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-imaging-uv-ips"/>
 			<mustSupport value="false"/>
 		</element>
-		<!--
-		<element id="Observation.extension:partOf">
-			<path value="Observation.extension"/>
-			<sliceName value="partOf"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/StructureDefinition/event-partOf"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.extension:partOf.valueReference:valueReference">
-			<path value="Observation.extension.valueReference"/>
-			<sliceName value="valueReference"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/ImagingStudy-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		-->
 		<element id="Observation.partOf">
 			<path value="Observation.partOf"/>
 			<type>
@@ -84,10 +65,6 @@
 		</element>
 		<element id="Observation.category">
 			<path value="Observation.category"/>
-			<!--
-			<min value="1"/>
-			<max value="1"/>
-			-->
 			<type>
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
@@ -268,7 +245,6 @@
 			</slicing>
 			<requirements value="Required if not(exists(Observation.valueString))"/>
 			<min value="0"/>
-			<!-- <max value="*"/> -->
 			<constraint>
 				<key value="hasMemberOrComponent"/>
 				<severity value="error"/>
@@ -287,7 +263,6 @@
 			<path value="Observation.component"/>
 			<sliceName value="observationText"/>
 			<short value="Observation Text"/>
-			<!-- <max value="1"/> -->
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component:observationText.code">
@@ -440,106 +415,5 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<!--
-		<element id="Observation.component:linearMeasurement">
-			<path value="Observation.component"/>
-			<sliceName value="linearMeasurement"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.component:linearMeasurement.code">
-			<path value="Observation.component.code"/>
-			<mustSupport value="true"/>
-			<binding>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="ObservationCode"/>
-				</extension>
-				<strength value="extensible"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-linear-measure-code-uv-ips"/>
-			</binding>
-		</element>
-		<element id="Observation.component:linearMeasurement.value[x]">
-			<path value="Observation.component.value[x]"/>
-			<type>
-				<code value="Quantity"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips"/>
-			</type>
-			<type>
-				<code value="Range"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Range-uv-ips"/>
-			</type>
-			<type>
-				<code value="Ratio"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Ratio-uv-ips"/>
-			</type>
-			<type>
-				<code value="SampledData"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.component:areaMeasurement">
-			<path value="Observation.component"/>
-			<sliceName value="areaMeasurement"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.component:areaMeasurement.code">
-			<path value="Observation.component.code"/>
-			<mustSupport value="true"/>
-			<binding>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="ObservationCode"/>
-				</extension>
-				<strength value="extensible"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-area-measure-code-uv-ips"/>
-			</binding>
-		</element>
-		<element id="Observation.component:areaMeasurement.value[x]">
-			<path value="Observation.component.value[x]"/>
-			<type>
-				<code value="Quantity"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips"/>
-			</type>
-			<type>
-				<code value="Range"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Range-uv-ips"/>
-			</type>
-			<type>
-				<code value="Ratio"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Ratio-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.component:volumeMeasurement">
-			<path value="Observation.component"/>
-			<sliceName value="volumeMeasurement"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.component:volumeMeasurement.code">
-			<path value="Observation.component.code"/>
-			<mustSupport value="true"/>
-			<binding>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="ObservationCode"/>
-				</extension>
-				<strength value="extensible"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-volume-measure-code-uv-ips"/>
-			</binding>
-		</element>
-		<element id="Observation.component:volumeMeasurement.value[x]">
-			<path value="Observation.component.value[x]"/>
-			<type>
-				<code value="Quantity"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips"/>
-			</type>
-			<type>
-				<code value="Range"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Range-uv-ips"/>
-			</type>
-			<type>
-				<code value="Ratio"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Ratio-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
--->
 	</differential>
 </StructureDefinition>

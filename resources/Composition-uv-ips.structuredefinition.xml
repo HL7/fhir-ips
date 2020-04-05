@@ -49,19 +49,6 @@
 			<path value="Composition.text"/>
 			<mustSupport value="true"/>
 		</element>
-		<!-- removed according to resolution #25011 
-		<element id="Composition.extension:healthcareProviderParticipant">
-			<path value="Composition.extension"/>
-			<sliceName value="healthcareProviderParticipant"/>
-			<short value="Provider to be contacted"/>
-			<definition value="Extension defined to allow to capture the preferred practitioner ( with its role ) or the organization to be contacted, represented in the IPS CDA with an indirect participant in the header."/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/participant-uv-ips"/>
-			</type>
-			<mustSupport value="false"/>
-		</element>
--->
 		<element id="Composition.identifier">
 			<path value="Composition.identifier"/>
 			<mustSupport value="true"/>
@@ -755,11 +742,6 @@
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-uv-ips"/>
-				<!--
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-uv-ips"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pathology-uv-ips"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-imaging-uv-ips"/>
-				-->
 			</type>
 			<mustSupport value="true"/>
 		</element>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2013 sp1 (http://www.altova.com) by ﻿Giorgio Cangioli (Giorgio Cangioli) -->
 <StructureDefinition xmlns="http://hl7.org/fhir">
 	<id value="MedicationStatement-uv-ips"/>
 	<meta>
@@ -115,50 +116,10 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<!--======= new begin ======= 
-			= added to try to overcome to resolve the unable to rsolve the slice issue, but when added the 
-			= error "minimum required = 1, but only found 0" occurs again (known problem with polymorphic elements)
-			= Commented for the time being -!->
-
-		<element id="MedicationStatement.effective[x]:effectiveDateTime">
-			<path value="MedicationStatement.effective[x]"/>
-			<sliceName value="effectiveDateTime"/>
-			<min value="0"/>
-			<max value="1"/>
-			<type>
-				<code value="dateTime"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="MedicationStatement.effective[x]:effectivePeriod">
-			<path value="MedicationStatement.effective[x]"/>
-			<sliceName value="effectivePeriod"/>
-			<min value="0"/>
-			<max value="1"/>
-			<type>
-				<code value="Period"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<!-!- ======= new end ======= -->
 		<element id="MedicationStatement.informationSource">
 			<path value="MedicationStatement.informationSource"/>
 			<mustSupport value="true"/>
 		</element>
-		<!-- they are not mustSupport based on the resolution https://jira.hl7.org/browse/FHIR-23897
-		<element id="MedicationStatement.reasonCode">
-			<path value="MedicationStatement.reasonCode"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="MedicationStatement.reasonReference">
-			<path value="MedicationStatement.reasonReference"/>
-			<mustSupport value="true"/>
-		</element>
--->
 		<element id="MedicationStatement.dosage">
 			<path value="MedicationStatement.dosage"/>
 			<mustSupport value="true"/>
@@ -167,50 +128,10 @@
 			<path value="MedicationStatement.dosage.text"/>
 			<mustSupport value="true"/>
 		</element>
-		<!--
-		<element id="MedicationStatement.dosage.patientInstruction">
-			<path value="MedicationStatement.dosage.patientInstruction"/>
-			<mustSupport value="true"/>
-		</element>
--->
 		<element id="MedicationStatement.dosage.timing">
 			<path value="MedicationStatement.dosage.timing"/>
 			<mustSupport value="true"/>
 		</element>
-		<!--
-		<element id="MedicationStatement.dosage.timing.repeat">
-			<path value="MedicationStatement.dosage.timing.repeat"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="MedicationStatement.dosage.timing.repeat.bounds[x]">
-			<path value="MedicationStatement.dosage.timing.repeat.bounds[x]"/>
-			<type>
-				<code value="Duration"/>
-			</type>
-			<type>
-				<code value="Period"/>
-			</type>
-			<type>
-				<code value="Range"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Range-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
--->
-<!-- they are not mustSupport based on the resolution https://jira.hl7.org/browse/FHIR-23897
-		<element id="MedicationStatement.dosage.site">
-			<path value="MedicationStatement.dosage.site"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-			<binding>
-				<strength value="preferred"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
-			</binding>
-		</element>
--->
 		<element id="MedicationStatement.dosage.route">
 			<path value="MedicationStatement.dosage.route"/>
 			<type>

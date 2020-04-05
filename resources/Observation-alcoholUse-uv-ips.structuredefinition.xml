@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2013 sp1 (http://www.altova.com) by ﻿Giorgio Cangioli (Giorgio Cangioli) -->
 <StructureDefinition xmlns="http://hl7.org/fhir">
 	<id value="Observation-alcoholuse-uv-ips"/>
 	<text>
@@ -21,7 +22,7 @@
 			<path value="Observation"/>
 			<mustSupport value="true"/>
 		</element>
-			<element id="Observation.id">
+		<element id="Observation.id">
 			<path value="Observation.id"/>
 			<mustSupport value="true"/>
 		</element>
@@ -48,28 +49,6 @@
 			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
-		<!--
-		<element id="Observation.code.coding">
-			<path value="Observation.code.coding"/>
-			<min value="1"/>
-			<max value="1"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.code.coding.system">
-			<path value="Observation.code.coding.system"/>
-			<min value="1"/>
-			<max value="1"/>
-			<fixedUri value="http://loinc.org"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.code.coding.code">
-			<path value="Observation.code.coding.code"/>
-			<min value="1"/>
-			<max value="1"/>
-			<fixedCode value="74013-4"/>
-			<mustSupport value="true"/>
-		</element>
-	-->
 		<element id="Observation.subject">
 			<path value="Observation.subject"/>
 			<min value="1"/>
@@ -112,28 +91,5 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<!--
-		<element id="Observation.valueQuantity.value">
-			<path value="Observation.valueQuantity.value"/>
-			<min value="1"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.valueQuantity.comparator">
-			<path value="Observation.valueQuantity.comparator"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
-		<element id="Observation.valueQuantity.system">
-			<path value="Observation.valueQuantity.system"/>
-			<min value="1"/>
-			<fixedUri value="http://unitsofmeasure.org"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.valueQuantity.code">
-			<path value="Observation.valueQuantity.code"/>
-			<min value="1"/>
-			<mustSupport value="true"/>
-		</element>
--->
 	</differential>
 </StructureDefinition>
