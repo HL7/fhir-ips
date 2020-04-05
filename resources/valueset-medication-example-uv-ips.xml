@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ValueSet xmlns="http://hl7.org/fhir" xmlns:f="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:f="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<id value="medication-example-uv-ips"/>
 	<meta>
 		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
@@ -45,7 +46,7 @@
 	</contact>
 	<description value="This value set provides an example of possible coded concepts representing medicinal products, packaged medicinal products, or medications based on their generic composition of active substance(s); active substance(s) with strength; active substance(s) with administrable dose form; active substance(s) with strength and administrable dose form."/>
 	<immutable value="false"/>
-	     <copyright value="This artefact includes content from:
+	<copyright value="This artefact includes content from:
 	     (1) SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the of the SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.
 	     (2)  National Drug Code (NDC). NDC is copyright Food and Drug Administration.  Terms &amp; Conditions in https://www.fda.gov/drugs/drug-approvals-and-databases/national-drug-code-directory.
         (3) RxNorm. RxNorm is copyright Unified Medical Language System® (UMLS®). Terms &amp; Conditions in https://uts.nlm.nih.gov/license.html https://www.nlm.nih.gov/research/umls/rxnorm/docs/termsofservice.html.
@@ -103,7 +104,6 @@
 				<display value="Acenocoumarol 1 mg oral tablet"/>
 			</concept>
 		</include>
-		<!-- -->
 		<include>
 			<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
 			<concept>
@@ -119,15 +119,6 @@
 				<display value="lithium citrate 60 MG/ML"/>
 			</concept>
 		</include>
-		<!--
-		<include>
-			<system value="urn:oid:2.16.840.1.113883.2.9.6.1.5"/>
-			<concept>
-				<code value="023108"/>
-				<display value="AMOXICILLINA DOC"/>
-			</concept>
-		</include>
-	-->
 		<include>
 			<system value="http://hl7.org/fhir/sid/ndc"/>
 			<concept>
@@ -135,22 +126,6 @@
 				<display value="Amoxicillin and Clavulanate Potassium 875 mg/1 125 mg/1 TABLET, FILM COATED"/>
 			</concept>
 		</include>
-		<!--
-		<include>
-			<system value="urn:oid:1.2.250.1.213.2.3.1"/>
-			<concept>
-				<code value="63672890"/>
-				<display value="LITHIUM OLIGOSOL, solution buvable en ampoule ou en récipient unidose"/>
-			</concept>
-		</include>
-		<include>
-			<system value="urn:oid:2.16.840.1.113883.2.9.6.1.5"/>
-			<concept>
-				<code value="023108184"/>
-				<display value="AMOXICILLINA DOC '1000 MG COMPRESSE' 12 COMPRESSE"/>
-			</concept>
-		</include>
-	-->
 		<include>
 			<system value="http://hl7.org/fhir/sid/ndc"/>
 			<concept>
@@ -158,14 +133,5 @@
 				<display value="Amoxicillin and Clavulanate Potassium 875 mg/1 125 mg/1 20 TABLET, FILM COATED in 1 BOTTLE (50436-3129-1)"/>
 			</concept>
 		</include>
-		<!--
-		<include>
-			<system value="urn:oid:1.2.250.1.213.2.3.3"/>
-			<concept>
-				<code value="3400937546621"/>
-				<display value="LITHIUM OLIGOSOL, solution buvable en ampoule ou en récipient unidose, 28 ampoules en verre de 2 ml"/>
-			</concept>
-		</include>
-	-->
 	</compose>
 </ValueSet>
