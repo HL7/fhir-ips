@@ -1,82 +1,22 @@
-# Compiled source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
-*.sh
-*.py
+# Temporary folders #
+#####################
+temp
+template
+output
 
-# Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
+# Don't commit this because it's so large #
+###########################################
+/input-cache/org.hl7.fhir.publisher.jar
 
-# Logs and databases #
-######################
-*.log
-*.sql
-*.sqlite
+# Windows generated files #
+###########################
+Thumbs.db
 
 # OS generated files #
 ######################
 .DS_Store
 .DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
 
-
-# FHIR IG Publisher local build directories #
-#############################################
-
-qa
-temp
-output
-archive
-sandbox
-capstmnt_markup
-
-# Altova files #
+# backup files #
 ################
-*.spp
-tmp*.html
-tmp*.md
-*.mfd
-tmp*.xml
-~mf*.tmp
-edos-example1.csv
-schema-template.xsd
-infile.csv
-outfile.csv
-Log-FHIR.xlsx
-
-# Microsoft Office #
-####################
-~*.docx
-~*.xlsx
-
-# Miscellaneous files #
-######################
-*.project
-c:\\temp\\json.json
-ig.ini
-resources/ig-new*
-resources/ig-expansion-parameters.json
-resources/ig-validation-parameters.json
-.vscode
-/resources/_attic
-/__esempio_interopehrate
-/_attic
+*.bak
