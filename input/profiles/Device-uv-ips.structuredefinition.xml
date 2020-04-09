@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+	<id value="Device-uv-ips"/>
+	<meta>
+		<lastUpdated value="2018-02-14T11:49:41.487+01:00"/>
+	</meta>
+	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips"/>
+	<version value="0.2"/>
+	<name value="DeviceUvIps"/>
+	<title value="Device (IPS)"/>
+	<status value="active"/>
+	<experimental value="false"/>
+	<date value="2018-02-14"/>
+	<publisher value="HL7 International"/>
+	<description value="This profile represents the constraints applied to the Device resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A device used by or implanted on the patient is described in the patient summary as an instance of a Device resource constrained by this profile."/>
+	<purpose value="This profile constrains the representation of a medical device used by or impanted on the patient, in the context of the international patient summary as specified by the IPS project of HL7 International."/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Device"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Device"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Device">
+			<path value="Device"/>
+			<comment value="This profile applies the rules defined by HL7 International for representing the UDI in the FHIR standard, by the document &quot;Medical Devices and Unique Device Identification (UDI) Pattern, Release 1&quot;"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Device.meta">
+			<path value="Device.meta"/>
+			<mustSupport value="false"/>
+		</element>
+		<element id="Device.meta.profile">
+			<path value="Device.meta.profile"/>
+			<fixedCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips"/>
+			<mustSupport value="false"/>
+		</element>
+		<element id="Device.type">
+			<path value="Device.type"/>
+			<slicing>
+				<discriminator>
+					<type value="pattern"/>
+					<path value="$this"/>
+				</discriminator>
+				<description value="Discriminated by the bound value set"/>
+				<rules value="open"/>
+			</slicing>
+			<short value="Type of device.&#xD;&#xA;Preferably valued by using SNOMED CT.&#xD;&#xA;The absence of information, or of devices relevant for purpose of this IPS, shall be explicitly stated by using the codes included in the absent-or-unknown-devices-uv-ips value set."/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+			<binding>
+				<strength value="preferred"/>
+				<description value="The type of device"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Device.type:absentOrUnknownDevice">
+			<path value="Device.type"/>
+			<sliceName value="absentOrUnknownDevice"/>
+			<definition value="Slice to be valued in case of no information or known absence of relevant devices for the purpose of this IPS"/>
+			<max value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="absentOrUnknownDevice"/>
+				</extension>
+				<strength value="required"/>
+				<description value="Absent problem or unknown device"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-devices-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Device.patient">
+			<path value="Device.patient"/>
+			<min value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Device.patient.reference">
+			<path value="Device.patient.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+	</differential>
+</StructureDefinition>

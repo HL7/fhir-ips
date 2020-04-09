@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<id value="DeviceUseStatement-uv-ips"/>
+	<meta>
+		<lastUpdated value="2018-02-14T20:25:36.732+01:00"/>
+	</meta>
+	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips"/>
+	<version value="0.2"/>
+	<name value="DeviceUseStatementUvIps"/>
+	<title value="Device Use Statement (IPS)"/>
+	<status value="active"/>
+	<experimental value="false"/>
+	<date value="2018-02-14"/>
+	<publisher value="HL7 International"/>
+	<description value="This profile represents the constraints applied to the DeviceUseStatement resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A statement about a device used by or implanted on the patient is described in the patient summary as an instance of a DeviceUseStatement resource constrained by this profile."/>
+	<purpose value="This profile constrains the representation of a statement about a medical device used by or impanted on the patient, part of the &quot;Medical Devices&quot; section of the Composition resource representing the international patient summary, as specified by the IPS project of HL7 International."/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="DeviceUseStatement"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/DeviceUseStatement"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="DeviceUseStatement">
+			<path value="DeviceUseStatement"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DeviceUseStatement.subject">
+			<path value="DeviceUseStatement.subject"/>
+			<definition value="The patient using the device."/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DeviceUseStatement.subject.reference">
+			<path value="DeviceUseStatement.subject.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DeviceUseStatement.timing[x]">
+			<path value="DeviceUseStatement.timing[x]"/>
+			<min value="1"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DeviceUseStatement.timing[x]:data-absent-reason">
+			<path value="DeviceUseStatement.timing[x].extension"/>
+			<sliceName value="data-absent-reason"/>
+			<definition value="Provides a reason why the timing is missing."/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DeviceUseStatement.source">
+			<path value="DeviceUseStatement.source"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DeviceUseStatement.device">
+			<path value="DeviceUseStatement.device"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DeviceUseStatement.bodySite">
+			<path value="DeviceUseStatement.bodySite"/>
+			<requirements value="Knowing where the device is targeted is important for tracking if multiple sites are possible. If more information than just a code is required, use the extension bodySite"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<binding>
+				<strength value="example"/>
+				<valueSet value="http://hl7.org/fhir/ValueSet/body-site"/>
+			</binding>
+		</element>
+	</differential>
+</StructureDefinition>

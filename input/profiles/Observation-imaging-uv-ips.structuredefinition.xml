@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+	<id value="Observation-imaging-uv-ips"/>
+	<meta>
+		<lastUpdated value="2018-02-20T13:45:02.729+01:00"/>
+	</meta>
+	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-imaging-uv-ips"/>
+	<name value="ObservationImagingUvIps"/>
+	<title value="Observation (Results: imaging)"/>
+	<status value="active"/>
+	<experimental value="false"/>
+	<date value="2018-02-06T09:53:52.306+01:00"/>
+	<description value="This profile represents the constraints applied to the Observation resource by the IPS project, which specifies an imaging observation for the international patient summary based on the FHIR standard R4. &#xD;&#xA;&#xD;&#xA;This observation may represent the conclusions of a diagnostic procedure such a Chest RX, or it may group the set of results produced by that single or multi-modality procedure. &#xD;&#xA;&#xD;&#xA;In the latter case, the main observation (this one) carries the overall conclusion of the study and/or a global interpretation by the observer of the study as value of this observation; and may references the atomic results of the study  as &quot;child observations&quot;.&#xD;&#xA;&#xD;&#xA;It allows also providing details about the related study using the partOf element referring to an ImagingStudy resource.&#xD;&#xA;"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Observation"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Observation">
+			<path value="Observation"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.id">
+			<path value="Observation.id"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.meta">
+			<path value="Observation.meta"/>
+			<mustSupport value="false"/>
+		</element>
+		<!-- Meta.profile is specified in order to provide a mechanism for downstream disambiguation of the profile used for 
+			resource creation in cases where there is overlap between the profile constraints (e.g., the profiles differ only by 
+			extensible value set bindings).  The 'meta' and 'meta.profile' elements are not required and are not designated as 
+			mustSupport (this information is not required to be sent, and if received it can be ignored by the receiving system
+			unless it is deemed to be useful).  Generally it is best to avoid relying on a declared profile. but it is available
+			if and when it is needed.
+		-->
+		<element id="Observation.meta.profile">
+			<path value="Observation.meta.profile"/>
+			<fixedCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-imaging-uv-ips"/>
+			<mustSupport value="false"/>
+		</element>
+		<element id="Observation.partOf">
+			<path value="Observation.partOf"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/ImagingStudy-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.status">
+			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
+				<valueString value="default: final"/>
+			</extension>
+			<path value="Observation.status"/>
+			<definition value="The status of the result value. Only final results feed patient summaries."/>
+			<fixedCode value="final"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.category">
+			<path value="Observation.category"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.code">
+			<path value="Observation.code"/>
+			<label value="Diagnostic Procedure Code"/>
+			<definition value="Describes what was observed. Sometimes this is called the observation &quot;name&quot;.&#xD;&#xA;In this profile the code of the containing observation (the organizer result in the CDA implementation) may correspond to the procedure code (e.g. Chest X-Ray)."/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="ObservationCode"/>
+				</extension>
+				<strength value="extensible"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Observation.subject">
+			<path value="Observation.subject"/>
+			<definition value="The patient, or group of patients, location, or device whose characteristics (direct or indirect) are described by the observation and into whose record the observation is placed.  Comments: Indirect characteristics may be those of a specimen, fetus, donor,  other observer (for example a relative or EMT), or any observation made about the subject.&#xD;&#xA;&#xD;&#xA;In this profile is constrained to the patient"/>
+			<min value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.subject.reference">
+			<path value="Observation.subject.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]">
+			<path value="Observation.effective[x]"/>
+			<min value="1"/>
+			<max value="1"/>
+			<constraint>
+				<key value="ips-1"/>
+				<severity value="error"/>
+				<human value="Datetime must be at least to day."/>
+				<expression value="$this.ofType(dateTime).empty() or ($this as dateTime).toString().length() &gt;= 8"/>
+				<xpath value="not(boolean(effectiveDateTime)) or f:matches(effectiveDateTime,/\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d([+-][0-2]\d:[0-5]\d|Z)/)"/>
+			</constraint>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]:data-absent-reason">
+			<path value="Observation.effective[x].extension"/>
+			<short value="effective[x] absence reason"/>
+			<definition value="Provides a reason why the effectiveTime is missing."/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]:effectiveDateTime">
+			<path value="Observation.effective[x]"/>
+			<sliceName value="effectiveDateTime"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="dateTime"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]:effectivePeriod">
+			<path value="Observation.effective[x]"/>
+			<sliceName value="effectivePeriod"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Period"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]:effectiveTiming">
+			<path value="Observation.effective[x]"/>
+			<sliceName value="effectiveTiming"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Timing"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.effective[x]:effectiveInstant">
+			<path value="Observation.effective[x]"/>
+			<sliceName value="effectiveInstant"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="instant"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.performer">
+			<path value="Observation.performer"/>
+			<label value="Human Observer"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-observation-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.performer.reference">
+			<path value="Observation.performer.reference"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.valueString">
+			<path value="Observation.valueString"/>
+			<label value="Overall Conclusion"/>
+			<type>
+				<code value="string"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.bodySite">
+			<path value="Observation.bodySite"/>
+			<label value="body site"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="BodySite"/>
+				</extension>
+				<strength value="example"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Observation.device">
+			<path value="Observation.device"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Device-observer-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.hasMember">
+			<path value="Observation.hasMember"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-imaging-uv-ips"/>
+			</type>
+			<constraint>
+				<key value="hasMemberOrComponent"/>
+				<severity value="error"/>
+				<human value="component and hasMember are mutually exclusive"/>
+				<expression value="has-member.empty() or component.empty()"/>
+			</constraint>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.hasMember.reference">
+			<path value="Observation.hasMember.reference"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.component">
+			<path value="Observation.component"/>
+			<slicing>
+				<discriminator>
+					<type value="type"/>
+					<path value="value"/>
+				</discriminator>
+				<description value="Slicing based on value[x] type."/>
+				<rules value="closed"/>
+			</slicing>
+			<requirements value="Required if not(exists(Observation.valueString))"/>
+			<min value="0"/>
+			<constraint>
+				<key value="hasMemberOrComponent"/>
+				<severity value="error"/>
+				<human value="component and hasMember are mutually exclusive"/>
+				<expression value="has-member.empty() or component.empty()"/>
+			</constraint>
+			<constraint>
+				<key value="hasComponentifValueStringEmpty"/>
+				<severity value="error"/>
+				<human value="component is required if valueString is empty"/>
+				<expression value="(component.exists() and valueString.empty()) or valueString.exists()"/>
+			</constraint>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.component:observationText">
+			<path value="Observation.component"/>
+			<sliceName value="observationText"/>
+			<short value="Observation Text"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.component:observationText.code">
+			<path value="Observation.component.code"/>
+			<mustSupport value="true"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="ObservationCode"/>
+				</extension>
+				<strength value="extensible"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-txtobs-code-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Observation.component:observationText.value[x]">
+			<path value="Observation.component.value[x]"/>
+			<min value="1"/>
+			<type>
+				<code value="string"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.component:observationCode">
+			<path value="Observation.component"/>
+			<sliceName value="observationCode"/>
+			<short value="Observation Code"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.component:observationCode.code">
+			<path value="Observation.component.code"/>
+			<mustSupport value="true"/>
+			<binding>
+				<strength value="extensible"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-observations-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Observation.component:observationCode.value[x]">
+			<path value="Observation.component.value[x]"/>
+			<min value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.component:numericQuantityMeasurement">
+			<path value="Observation.component"/>
+			<sliceName value="numericQuantityMeasurement"/>
+			<short value="Observation Measurement, including linear, area and volume quantity measurements"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.component:numericQuantityMeasurement.code">
+			<path value="Observation.component.code"/>
+			<mustSupport value="true"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="ObservationMeasurements"/>
+				</extension>
+				<strength value="extensible"/>
+				<description value="Codes identifying numeric measurements"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-numobs-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Observation.component:numericQuantityMeasurement.value[x]">
+			<path value="Observation.component.value[x]"/>
+			<min value="1"/>
+			<type>
+				<code value="Quantity"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.component:numericRangeMeasurement">
+			<path value="Observation.component"/>
+			<sliceName value="numericRangeMeasurement"/>
+			<short value="Observation Measurement, including linear, area and volume range measurements"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.component:numericRangeMeasurement.code">
+			<path value="Observation.component.code"/>
+			<mustSupport value="true"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="ObservationMeasurements"/>
+				</extension>
+				<strength value="extensible"/>
+				<description value="Codes identifying numeric measurements"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-numobs-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Observation.component:numericRangeMeasurement.value[x]">
+			<path value="Observation.component.value[x]"/>
+			<min value="1"/>
+			<type>
+				<code value="Range"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Range-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.component:numericRatioMeasurement">
+			<path value="Observation.component"/>
+			<sliceName value="numericRatioMeasurement"/>
+			<short value="Observation Measurement, including linear, area and volume ratio measurements"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.component:numericRatioMeasurement.code">
+			<path value="Observation.component.code"/>
+			<mustSupport value="true"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="ObservationMeasurements"/>
+				</extension>
+				<strength value="extensible"/>
+				<description value="Codes identifying numeric measurements"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-numobs-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Observation.component:numericRatioMeasurement.value[x]">
+			<path value="Observation.component.value[x]"/>
+			<min value="1"/>
+			<type>
+				<code value="Ratio"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Ratio-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.component:numericSampledDataMeasurement">
+			<path value="Observation.component"/>
+			<sliceName value="numericSampledDataMeasurement"/>
+			<short value="Observation Measurement, including linear, area and volume sampled data measurements"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.component:numericSampledDataMeasurement.code">
+			<path value="Observation.component.code"/>
+			<mustSupport value="true"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="ObservationMeasurements"/>
+				</extension>
+				<strength value="extensible"/>
+				<description value="Codes identifying numeric measurements"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/imaging-numobs-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Observation.component:numericSampledDataMeasurement.value[x]">
+			<path value="Observation.component.value[x]"/>
+			<min value="1"/>
+			<type>
+				<code value="SampledData"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+	</differential>
+</StructureDefinition>

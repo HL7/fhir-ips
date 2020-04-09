@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<id value="Specimen-uv-ips"/>
+	<meta>
+		<lastUpdated value="2018-02-09T21:49:57.382+01:00"/>
+	</meta>
+	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips"/>
+	<version value="0.2"/>
+	<name value="SpecimenUvIps"/>
+	<title value="Specimen (IPS)"/>
+	<status value="active"/>
+	<date value="2018-03-09"/>
+	<publisher value="HL7 International"/>
+	<description value="This profile constrains the Specimen resource to represent the characteristics of a biological specimens in the context of laboratory results integrated to a patient summary"/>
+	<purpose value="Minimal specimen attributes, usable for the laboratory results section and entry of a patient summary"/>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Specimen"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Specimen"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Specimen">
+			<path value="Specimen"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Specimen.type">
+			<path value="Specimen.type"/>
+			<min value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="SpecimenType"/>
+				</extension>
+				<strength value="extensible"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/specimen-type-gps-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Specimen.subject">
+			<path value="Specimen.subject"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Specimen.subject.reference">
+			<path value="Specimen.subject.reference"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Specimen.collection">
+			<path value="Specimen.collection"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Specimen.collection.method">
+			<path value="Specimen.collection.method"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+			<binding>
+				<strength value="extensible"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/specimen-collection-method-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Specimen.collection.bodySite">
+			<path value="Specimen.collection.bodySite"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+			<binding>
+				<strength value="extensible"/>
+				<valueSet value="http://hl7.org/fhir/ValueSet/body-site"/>
+			</binding>
+		</element>
+	</differential>
+</StructureDefinition>
