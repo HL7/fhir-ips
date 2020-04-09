@@ -1,68 +1,68 @@
 ### AllergyIntolerance
 
-{% include list-simple-allergyintolerances.xhtml %}
+<ul>{% include list-simple-allergyintolerances.xhtml %}</ul>
 
 ### Bundle
 
-{% include list-simple-bundles.xhtml %}
+<ul>{% include list-simple-bundles.xhtml %}</ul>
 
 
 ### Condition
 
-{% include list-simple-conditions.xhtml %}
+<ul>{% include list-simple-conditions.xhtml %}</ul>
 
 
 ### DeviceUseStatement
 
-{% include list-simple-deviceusestatements.xhtml %}
+<ul>{% include list-simple-deviceusestatements.xhtml %}</ul>
 
 ### Device
 
-{% include list-simple-devices.xhtml %}
+<ul>{% include list-simple-devices.xhtml %}</ul>
 
 ### DiagnosticReports
 
-{% include list-simple-diagnosticreports.xhtml %}
+<ul>{% include list-simple-diagnosticreports.xhtml %}</ul>
 
 ### Immunization
 
-{% include list-simple-immunizations.xhtml %}
+<ul>{% include list-simple-immunizations.xhtml %}</ul>
 
 ### Medication
 
-{% include list-simple-medications.xhtml %}
+<ul>{% include list-simple-medications.xhtml %}</ul>
 
 ### Media
 
-{% include list-simple-media.xhtml %}
+<ul>{% include list-simple-media.xhtml %}</ul>
 
 ### MedicationStatement
 
-{% include list-simple-medicationstatements.xhtml %}
+<ul>{% include list-simple-medicationstatements.xhtml %}</ul>
 
 ### Observation
 
-{% include list-simple-observations.xhtml %}
+<ul>{% include list-simple-observations.xhtml %}</ul>
 
 ### Organization
 
-{% include list-simple-organizations.xhtml %}
+<ul>{% include list-simple-organizations.xhtml %}</ul>
 
 ### Patient
 
-{% include list-simple-patients.xhtml %}
+<ul>{% include list-simple-patients.xhtml %}</ul>
 
 ### Practitioner
 
-{% include list-simple-practitioners.xhtml %}
+<ul>{% include list-simple-practitioners.xhtml %}</ul>
 
 ### Procedure
 
-{% include list-simple-procedures.xhtml %}
+<ul>{% include list-simple-procedures.xhtml %}</ul>
 
 ### Specimen
 
-{% include list-simple-specimen.xhtml %}
+<ul>{% include list-simple-specimen.xhtml %}</ul>
 
 <!-- `todo: generate an example list from preprocessor` -->
 
