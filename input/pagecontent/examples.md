@@ -28,6 +28,12 @@
 
 <ul>{% include list-simple-immunizations.xhtml %}</ul>
 
+
+### ImagingStudy
+
+<ul>{% include list-simple-imagingstudies.xhtml %}</ul>
+
+
 ### Medication
 
 <ul>{% include list-simple-medications.xhtml %}</ul>

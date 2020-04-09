@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Mon, Apr 6, 2020 20:35+0000 for FHIR v4.2.0 
+  Generated on Thu, Apr 9, 2020 12:39+0000 for FHIR v4.2.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.2.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -7152,14 +7152,9 @@ The duration (usually in minutes) could also be provided to indicate the length 
               <xs:documentation xml:lang="en">The time when the event was recorded.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="outcome" minOccurs="0" maxOccurs="1" type="AuditEventOutcome">
+          <xs:element name="outcome" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Indicates whether the event succeeded or failed.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="outcomeDesc" minOccurs="0" maxOccurs="1" type="string">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">A free text description of the outcome of the event.</xs:documentation>
+              <xs:documentation xml:lang="en">Indicates whether the event succeeded or failed. A free text descripiton can be given in outcome.text.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="purposeOfEvent" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
@@ -7370,41 +7365,6 @@ The duration (usually in minutes) could also be provided to indicate the length 
             <xs:element name="valueBase64Binary" type="base64Binary"/>
           </xs:choice>
         </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:simpleType name="AuditEventOutcome-list">
-    <xs:restriction base="code-primitive">
-      <xs:enumeration value="0">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Success</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="4">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Minor failure</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="8">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Serious failure</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="12">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Major failure</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:complexType name="AuditEventOutcome">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">Indicates whether the event succeeded or failed.</xs:documentation>
-      <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="Element">
-        <xs:attribute name="value" type="AuditEventOutcome-list" use="optional"/>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
