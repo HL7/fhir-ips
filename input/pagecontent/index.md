@@ -9,17 +9,17 @@ The IPS document is composed by a set of robust, well-defined and potentially re
 {% include img.html img="IPS_doc_library.png" caption="Figure 1: The IPS product and by-products"
     width="70%" %}
 
-## Purpose
+### Purpose
 
 The goal of this Implementation Guide is to specify how to represent in HL7 FHIR the International Patient Summary (IPS). An alternative representation as templated HL7 CDA R2 is also provided ( see the [hl7.org site](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=483) or [ART DECOR](https://art-decor.org/art-decor/decor-project--hl7ips-).
 The initial focus of the International Patient Summary (IPS) was the unplanned care across national borders. Starting from this focus, the specification is intended to be used and be useful in local applications and also to be supportive of planned care. 
 
 
-## Project Background
+### Project Background
 
 See further details on the project background in the IPS Wiki <a href="http://international-patient-summary.net/mediawiki/index.php?title=IPS_Introduction_1#Project_Background">here</a>.
 
-## Project Scope
+### Project Scope
 
 As specified in the CEN EN 17269 and ISO/DIS 27269, the IPS dataset is a <b><i>"minimal, non-exhaustive set of data elements required for the international patient summary"</i></b>. A Patient Summary is defined by ISO/TR 12773 1:2009 as a "Health record extract comprising a standardized collection of clinical and contextual information (retrospective, concurrent, prospective) that provides a snapshot in time of a subject of care’s health information and healthcare."
 
@@ -33,20 +33,20 @@ The following picture provides an overview of the current IPS content.
 
 {% include img.html img="IPS_composition.png" caption="Figure 2: The IPS composition" width="70%" %}
 
-## Relationships with Other Projects and Guidelines
+### Relationships with Other Projects and Guidelines
 
 See further details on the IPS project relationships with other projects and guidelines in the IPS Wiki <a href="http://international-patient-summary.net/mediawiki/index.php?title=IPS_implementationguide_1#Relationships_with_other_projects_and_guidelines">here</a>.
 
-## Ballot Status
+### Ballot Status
 
 This Implementation Guide is being balloted as STU with the intention to go normative in a subsequent ballot cycle.
 
 
-## Authors and Contributors
+### Authors and Contributors
 
 | Role  | Name | Organization | Contact |
 | --- | --- | --- | --- |
-| **Primary Editor** | Giorgio Cangioli, PhD | Consultant, HL7 Italy | giorgio.cangioli@gmail.com |
+| **Primary Editor** | Giorgio Cangioli | Consultant, HL7 Italy | giorgio.cangioli@gmail.com |
 | **Primary Editor** | Rob Hausam | Hausam Consulting LLC | rob@hausamconsulting.com |
 | **Primary Editor** | François Macary | Phast | francois.macary@phast.fr |
 | **Contributor** | Dr Christof Geßner | Gematik | christof.gessner@gematik.de |

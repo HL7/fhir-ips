@@ -1,4 +1,4 @@
-# Representing "known absent" and "not known"
+### Representing "known absent" and "not known"
 
 In line with the approach followed for the IPS CDA implementation Guide, we enforce by design that for required sections the expressions of "known absent" and "not known" are explicitly asserted in the resource referred to in the entries and not by using the emptyReason attribute in the section.
 
@@ -14,23 +14,23 @@ The following sections are recommended (not required), and for these sections in
 
 All of the other sections are expected to be omitted in the case of absence of information.
 
-# Translation of designations and narratives
+### Translation of designations and narratives
 
 The functional requirement of supporting the translation of the designations has been addressed in this guide extending the coding data type (coding-uv-ips).
 
 For details about the support of narrative translations please refer to the [Multi-Language support in FHIR](http://build.fhir.org/languages.html) section.
 
-# Medicinal Product Identification
+### Medicinal Product Identification
 
-A general introduction to the problem of cross-jurisdictional identification of medicinal product is provided in the [IPS CDA implementation guide](http://international-patient-summary.net/mediawiki/index.php?title=IPS_Design_conventions_and_principles_1#Medicinal_Product_Identification)
+A general introduction to the problem of cross-jurisdictional identification of medicinal product is provided in the [IPS CDA implementation guide](http://international-patient-summary.net/mediawiki/index.php?title=IPS_Design_conventions_and_principles_1###Medicinal_Product_Identification)
 
 As for the CDA implementation guide, this guide describes how the relevant IDMP identifiers and attributes, namely the Pharmaceutical Product Identifiers (PhPIDs), the Medicinal Product Identifier (MPID), and the Medicinal Product Package Identifier (PCID) are represented in the IPS.
 
 The solution proposed for the FHIR IPS is slightly different from that adopted in the CDA and follows the current indications of the FHIR community: all the relevant product codes are represented in fact as one of the possible Codings of the product CodeableConcept, rather than being expressed as distinct attributes/resources (which is a possible approach). The same approach is followed for the vaccines.
 
-# Provenance
+### Provenance
 
-This guide follows the principles described in the [IPS CDA implementation guide](http://international-patient-summary.net/mediawiki/index.php?title=IPS_Design_conventions_and_principles_1#Provenance)
+This guide follows the principles described in the [IPS CDA implementation guide](http://international-patient-summary.net/mediawiki/index.php?title=IPS_Design_conventions_and_principles_1###Provenance)
 
 In that sense it allows to determine whether the IPS document is constructed by a human or an automated process, regardless of whether the IPS contains some content of both kinds.
 
@@ -40,13 +40,13 @@ In the case of a software-assembled IPS that is then verified by a human, the do
 
 Note: Discussions with the EHR work group suggest that a possible future project should be an IPS functional profile, once there is greater clarity and operational experience with usage of the IPS. 
 
-# Representation of Names
+### Representation of Names
 This specification requires that any Person Name is represented including at least the given and family components.
 Even though it is recognized that there is not in all cultures the same concept of “family name”, no evidence has been collected in analyzing the international context (e.g. Japan, Korea; China) that justifies the retirement of this requirement.
 Moreover, due to the global scope of the International Patient Summary, the case of non-alphabetic representations of the names has also been considered.
 In this case, to facilitate the global use of the IPS, at least one alphabetic representation of the name SHALL be provided. 
 
-# Profiling approach
+### Profiling approach
 
 By design, the IPS dataset is a "minimal and non-exhaustive patient summary dataset, specialty-agnostic, condition-independent, but readily usable by clinicians for the cross-border unscheduled care of a patient".
 
@@ -60,7 +60,7 @@ The second has been finally chosen for the following reasons:
 
 <!-- The items that are part of this minimal set have been marked with the mustSupport attribute. -->
 
-# Must Support
+### Must Support
 In the context of the IPS, mustSupport on any data element SHALL be interpreted as follows:
 * Implementers conforming to the IPS Implementation Guide, when creating IPS content
   * SHALL be capable of including mustSupport data elements.
@@ -69,7 +69,7 @@ In the context of the IPS, mustSupport on any data element SHALL be interprete
   * SHOULD be capable of displaying mustSupport data elements for human use, or processing (e.g. storing) them for other purposes.
   * SHALL be able to process resource instances containing mustSupport data elements asserting missing information.
 
-## Missing Data
+#### Missing Data
 {:.no_toc}
 
 <b>Optional mustSupport data elements</b>

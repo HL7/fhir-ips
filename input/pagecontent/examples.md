@@ -1,66 +1,66 @@
-## AllergyIntolerance
+### AllergyIntolerance
 
 {% include list-simple-allergyintolerances.xhtml %}
 
-## Bundle
+### Bundle
 
 {% include list-simple-bundles.xhtml %}
 
 
-## Condition
+### Condition
 
 {% include list-simple-conditions.xhtml %}
 
 
-## DeviceUseStatement
+### DeviceUseStatement
 
 {% include list-simple-deviceusestatements.xhtml %}
 
-## Device
+### Device
 
 {% include list-simple-devices.xhtml %}
 
-## DiagnosticReports
+### DiagnosticReports
 
 {% include list-simple-diagnosticreports.xhtml %}
 
-## Immunization
+### Immunization
 
 {% include list-simple-immunizations.xhtml %}
 
-## Medication
+### Medication
 
 {% include list-simple-medications.xhtml %}
 
-## Media
+### Media
 
 {% include list-simple-media.xhtml %}
 
-## MedicationStatement
+### MedicationStatement
 
 {% include list-simple-medicationstatements.xhtml %}
 
-## Observation
+### Observation
 
 {% include list-simple-observations.xhtml %}
 
-## Organization
+### Organization
 
 {% include list-simple-organizations.xhtml %}
 
-## Patient
+### Patient
 
 {% include list-simple-patients.xhtml %}
 
-## Practitioner
+### Practitioner
 
 {% include list-simple-practitioners.xhtml %}
 
-## Procedure
+### Procedure
 
 {% include list-simple-procedures.xhtml %}
 
-## Specimen
+### Specimen
 
 {% include list-simple-specimen.xhtml %}
 

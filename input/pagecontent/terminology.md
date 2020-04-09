@@ -6,7 +6,7 @@ Most terminologies specified by this guide are also published in the [Art Decor 
 These code systems have been defined for this implementation guide:
 {% include list-simple-codesystems.xhtml %}
 
-# Global Patient Set Value Set
+### Global Patient Set Value Set
 
 A value set representing the full SNOMED CT Global Patient Set (https://www.snomed.org/snomed-international/learn-more/global-patient-set) is available here.  It is provided in this IG as a FHIR ValueSet resource instance for the convenience of IPS implementers.
 
@@ -15,7 +15,7 @@ The current value set contains all concepts (21,782) from the September 2019 rel
 <li><a href="ValueSet-snomed-intl-gps.html">SNOMED International Global Patient Set (GPS)</a></li>
 
 
-# Value Sets
+### Value Sets
 
 These value sets have been defined for this implementation guide:
 
@@ -152,7 +152,7 @@ These value sets have been defined for this implementation guide:
    </li>
    </ul>
 
-# Concept Maps
+### Concept Maps
 
 These concept maps have been defined for this implementation guide:
 {% include list-simple-conceptmaps.xhtml %}
