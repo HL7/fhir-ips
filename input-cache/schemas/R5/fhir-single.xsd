@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Thu, Apr 9, 2020 12:39+0000 for FHIR v4.2.0 
+  Generated on Fri, Apr 10, 2020 21:00+0000 for FHIR v4.2.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.2.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -6024,7 +6024,7 @@ A coverage may only be responsible for specific types of charges, and the sequen
               <xs:documentation xml:lang="en">Accompanying device.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="characteristic" type="AdministrableProductDefinition.Characteristic" minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="property" type="AdministrableProductDefinition.Property" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation xml:lang="en">Characteristics e.g. a products onset of action.</xs:documentation>
            </xs:annotation>
@@ -6038,14 +6038,14 @@ A coverage may only be responsible for specific types of charges, and the sequen
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="AdministrableProductDefinition.Characteristic">
+  <xs:complexType name="AdministrableProductDefinition.Property">
     <xs:annotation>
       <xs:documentation xml:lang="en">A pharmaceutical product described in terms of its composition and dose form.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="code" minOccurs="1" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="type" minOccurs="1" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">A code expressing the type of characteristic.</xs:documentation>
            </xs:annotation>
@@ -6182,7 +6182,7 @@ A coverage may only be responsible for specific types of charges, and the sequen
           </xs:element>
           <xs:element name="status" minOccurs="1" maxOccurs="1" type="AdverseEventStatus">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The current state of the data entry of the adverse event or potential adverse event.</xs:documentation>
+              <xs:documentation xml:lang="en">The current state of the adverse event or potential adverse event.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="actuality" minOccurs="1" maxOccurs="1" type="AdverseEventActuality">
@@ -9779,7 +9779,7 @@ into another (possibly the same) biological entity.</xs:documentation>
             <xs:element name="scheduledPeriod" type="Period"/>
             <xs:element name="scheduledString" type="string"/>
           </xs:choice>
-          <xs:element name="location" minOccurs="0" maxOccurs="1" type="Reference">
+          <xs:element name="location" minOccurs="0" maxOccurs="1" type="CodeableReference">
             <xs:annotation>
               <xs:documentation xml:lang="en">Identifies the facility where the activity will occur; e.g. home, hospital, specific clinic, etc.</xs:documentation>
            </xs:annotation>
@@ -13356,12 +13356,12 @@ into another (possibly the same) biological entity.</xs:documentation>
   </xs:complexType>
   <xs:element name="Communication" type="Communication">
     <xs:annotation>
-      <xs:documentation xml:lang="en">An occurrence of information being transmitted; e.g. an alert that was sent to a responsible provider, a public health agency communication to a provider/reporter in response to a case report for a reportable condition.</xs:documentation>
+      <xs:documentation xml:lang="en">A clinical or business level record of information being transmitted or shared; e.g. an alert that was sent to a responsible provider, a public health agency communication to a provider/reporter in response to a case report for a reportable condition.</xs:documentation>
     </xs:annotation>
   </xs:element>
   <xs:complexType name="Communication">
     <xs:annotation>
-      <xs:documentation xml:lang="en">An occurrence of information being transmitted; e.g. an alert that was sent to a responsible provider, a public health agency communication to a provider/reporter in response to a case report for a reportable condition.</xs:documentation>
+      <xs:documentation xml:lang="en">A clinical or business level record of information being transmitted or shared; e.g. an alert that was sent to a responsible provider, a public health agency communication to a provider/reporter in response to a case report for a reportable condition.</xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
@@ -13483,7 +13483,7 @@ into another (possibly the same) biological entity.</xs:documentation>
   </xs:complexType>
   <xs:complexType name="Communication.Payload">
     <xs:annotation>
-      <xs:documentation xml:lang="en">An occurrence of information being transmitted; e.g. an alert that was sent to a responsible provider, a public health agency communication to a provider/reporter in response to a case report for a reportable condition.</xs:documentation>
+      <xs:documentation xml:lang="en">A clinical or business level record of information being transmitted or shared; e.g. an alert that was sent to a responsible provider, a public health agency communication to a provider/reporter in response to a case report for a reportable condition.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
@@ -29351,7 +29351,7 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
               <xs:documentation xml:lang="en">The ingredients that make up this manufactured item.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="characteristic" type="ManufacturedItemDefinition.Characteristic" minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="property" type="ManufacturedItemDefinition.Property" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation xml:lang="en">General characteristics of this item.</xs:documentation>
            </xs:annotation>
@@ -29360,14 +29360,14 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="ManufacturedItemDefinition.Characteristic">
+  <xs:complexType name="ManufacturedItemDefinition.Property">
     <xs:annotation>
       <xs:documentation xml:lang="en">The definition and characteristics of a medicinal manufactured item, such as a tablet or capsule, as contained in a packaged medicinal product.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="code" minOccurs="1" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="type" minOccurs="1" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">A code expressing the type of characteristic.</xs:documentation>
            </xs:annotation>
@@ -35498,6 +35498,11 @@ For resource issues, this will be a simple XPath limited to element names, repet
               <xs:documentation xml:lang="en">Marketing information.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="characteristic" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Allows the key product features to be recorded, such as &quot;hospital pack&quot;, &quot;nurse prescribable&quot;, &quot;calendar pack&quot;.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="copackagedIndicator" minOccurs="0" maxOccurs="1" type="boolean">
             <xs:annotation>
               <xs:documentation xml:lang="en">States whether a drug product is supplied with another item such as a diluent or adjuvant.</xs:documentation>
@@ -35590,7 +35595,7 @@ For resource issues, this will be a simple XPath limited to element names, repet
               <xs:documentation xml:lang="en">Manufacturer of this Package Item.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="characteristic" type="PackagedProductDefinition.Characteristic" minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="property" type="PackagedProductDefinition.Property" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation xml:lang="en">General characteristics of this item.</xs:documentation>
            </xs:annotation>
@@ -35609,14 +35614,14 @@ For resource issues, this will be a simple XPath limited to element names, repet
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="PackagedProductDefinition.Characteristic">
+  <xs:complexType name="PackagedProductDefinition.Property">
     <xs:annotation>
       <xs:documentation xml:lang="en">A medicinal product in a container or package.</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="BackboneElement">
         <xs:sequence>
-          <xs:element name="code" minOccurs="1" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="type" minOccurs="1" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">A code expressing the type of characteristic.</xs:documentation>
            </xs:annotation>
@@ -37578,7 +37583,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:choice>
           <xs:element name="recorded" minOccurs="0" maxOccurs="1" type="dateTime">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The date the occurrence of the procedure was first captured in the record - potentially significantly after the occurrence of the event.</xs:documentation>
+              <xs:documentation xml:lang="en">The date the occurrence of the procedure was first captured in the record regardless of Procedure.status (potentially after the occurrence of the event).</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="recorder" minOccurs="0" maxOccurs="1" type="Reference">
