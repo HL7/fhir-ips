@@ -20,6 +20,18 @@
 	<differential>
 		<element id="Observation">
 			<path value="Observation"/>
+			<constraint>
+				<key value="hasMemberOrComponent"/>
+				<severity value="error"/>
+				<human value="component and hasMember are mutually exclusive"/>
+				<expression value="hasMember.empty() or component.empty()"/>
+			</constraint>
+			<constraint>
+				<key value="hasComponentifValueStringEmpty"/>
+				<severity value="error"/>
+				<human value="component is required if valueString is empty"/>
+				<expression value="(component.exists() and valueString.empty()) or valueString.exists()"/>
+			</constraint>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.id">
@@ -123,6 +135,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Observation.effective[x]:effectiveDateTime">
 			<path value="Observation.effective[x]"/>
 			<sliceName value="effectiveDateTime"/>
@@ -163,6 +176,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+	-->
 		<element id="Observation.performer">
 			<path value="Observation.performer"/>
 			<label value="Human Observer"/>
@@ -216,12 +230,6 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-imaging-uv-ips"/>
 			</type>
-			<constraint>
-				<key value="hasMemberOrComponent"/>
-				<severity value="error"/>
-				<human value="component and hasMember are mutually exclusive"/>
-				<expression value="has-member.empty() or component.empty()"/>
-			</constraint>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.hasMember.reference">
@@ -240,18 +248,6 @@
 			</slicing>
 			<requirements value="Required if not(exists(Observation.valueString))"/>
 			<min value="0"/>
-			<constraint>
-				<key value="hasMemberOrComponent"/>
-				<severity value="error"/>
-				<human value="component and hasMember are mutually exclusive"/>
-				<expression value="has-member.empty() or component.empty()"/>
-			</constraint>
-			<constraint>
-				<key value="hasComponentifValueStringEmpty"/>
-				<severity value="error"/>
-				<human value="component is required if valueString is empty"/>
-				<expression value="(component.exists() and valueString.empty()) or valueString.exists()"/>
-			</constraint>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component:observationText">
@@ -262,6 +258,10 @@
 		</element>
 		<element id="Observation.component:observationText.code">
 			<path value="Observation.component.code"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
 			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -287,6 +287,10 @@
 		</element>
 		<element id="Observation.component:observationCode.code">
 			<path value="Observation.component.code"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
 			<mustSupport value="true"/>
 			<binding>
 				<strength value="extensible"/>
@@ -310,6 +314,10 @@
 		</element>
 		<element id="Observation.component:numericQuantityMeasurement.code">
 			<path value="Observation.component.code"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
 			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -337,6 +345,10 @@
 		</element>
 		<element id="Observation.component:numericRangeMeasurement.code">
 			<path value="Observation.component.code"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
 			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -364,6 +376,10 @@
 		</element>
 		<element id="Observation.component:numericRatioMeasurement.code">
 			<path value="Observation.component.code"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
 			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -391,6 +407,10 @@
 		</element>
 		<element id="Observation.component:numericSampledDataMeasurement.code">
 			<path value="Observation.component.code"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
 			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">

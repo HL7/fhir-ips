@@ -27,6 +27,12 @@
 			<definition value="This observation may represent the result of a simple laboratory test such as hematocrit or it may group the set of results produced by a multi-test study or panel such as a complete blood count, a dynamic function test, a urine specimen study. In the latter case, the observation carries the overall conclusion of the study and references the atomic results of the study  as &quot;has-member&quot; child observations"/>
 			<comment value="Represents either a lab simple observation or the group of observations produced by a laboratory study."/>
 			<mustSupport value="true"/>
+			<constraint>
+				<key value="ips-2"/>
+				<severity value="error"/>
+				<human value="if no &quot;hasMember&quot; element is present then Observation must have a&quot; value&quot;"/>
+				<expression value="value.exists() or hasMember.exists()"/>
+			</constraint>
 		</element>
 		<element id="Observation.id">
 			<path value="Observation.id"/>
@@ -147,6 +153,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Observation.effective[x]:effectiveDateTime">
 			<path value="Observation.effective[x]"/>
 			<sliceName value="effectiveDateTime"/>
@@ -187,7 +194,8 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Observation.performer">
+	-->
+	<element id="Observation.performer">
 			<path value="Observation.performer"/>
 			<min value="1"/>
 			<max value="1"/>
@@ -205,6 +213,13 @@
 		</element>
 		<element id="Observation.value[x]">
 			<path value="Observation.value[x]"/>
+			<slicing>
+				<discriminator>
+					<type value="type"/>
+					<path value="$this"/>
+				</discriminator>
+				<rules value="closed"/>
+			</slicing>
 			<!--
 			<type>
 				<code value="string"/>
@@ -230,18 +245,74 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<type>
+		<type>
 				<code value="Quantity"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips"/>
 			</type>
 		-->
-			<condition value="value"/>
-			<constraint>
-				<key value="ips-2"/>
-				<severity value="error"/>
-				<human value="if no &quot;hasMember&quot; element is present then Observation must have a&quot; value&quot;"/>
-				<expression value="hasValue() or hasMember.exists"/>
-			</constraint>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.value[x]:valueString">
+			<path value="Observation.value[x]"/>
+			<sliceName value="valueString"/>
+			<type>
+				<code value="string"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.value[x]:valueRange">
+			<path value="Observation.value[x]"/>
+			<sliceName value="valueRange"/>
+			<type>
+				<code value="Range"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Range-uv-ips"/>
+			</type>
+		</element>
+		<element id="Observation.value[x]:valueRatio">
+			<path value="Observation.value[x]"/>
+			<sliceName value="valueRatio"/>
+			<type>
+				<code value="Ratio"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Ratio-uv-ips"/>
+			</type>
+		</element>
+		<element id="Observation.value[x]:valueTime">
+			<path value="Observation.value[x]"/>
+			<sliceName value="valueTime"/>
+			<type>
+				<code value="time"/>
+			</type>
+		</element>
+		<element id="Observation.value[x]:valueDateTime">
+			<path value="Observation.value[x]"/>
+			<sliceName value="valueDateTime"/>
+			<type>
+				<code value="dateTime"/>
+			</type>
+		</element>
+		<element id="Observation.value[x]:valuePeriod">
+			<path value="Observation.value[x]"/>
+			<sliceName value="valuePeriod"/>
+			<type>
+				<code value="Period"/>
+			</type>
+		</element>
+		<element id="Observation.value[x]:valueQuantity">
+			<path value="Observation.value[x]"/>
+			<sliceName value="valueQuantity"/>
+			<type>
+				<code value="Quantity"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.value[x]:valueCodeableConcept">
+			<path value="Observation.value[x]"/>
+			<sliceName value="valueCodeableConcept"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
 			<mustSupport value="true"/>
 			<binding>
 				<strength value="extensible"/>

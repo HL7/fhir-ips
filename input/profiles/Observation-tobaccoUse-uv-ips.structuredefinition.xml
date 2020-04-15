@@ -83,5 +83,10 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips"/>
 			</binding>
 		</element>
+		<element id="Observation.component">
+			<path value="Observation.component"/>
+			<max value="0"/>
+			<mustSupport value="false"/>
+		</element>
 	</differential>
 </StructureDefinition>
