@@ -72,11 +72,12 @@ In the context of the IPS, mustSupport on any data element SHALL be interprete
 #### Missing Data
 {:.no_toc}
 
-<b>Optional mustSupport data elements</b>
+##### Optional mustSupport data elements
+
 <p>If an IPS creator (a system generating the IPS contents) does not have data to be included in the IPS, the data element is omitted.</p>
 <p>Note: an IPS creator may have no data to be included in the IPS either because there are no data; either beacuse data available are not pertinent with the scope of the IPS.</p>
 
-<b>Required mustSupport data elements</b>
+##### Required mustSupport data elements
 <p>If an IPS creator does not have data to be included in the IPS, the reason for the absence has to be specified as follows:</p>
 
 1.  For *non-coded* data elements, use the [DataAbsentReason Extension] in the data type.
