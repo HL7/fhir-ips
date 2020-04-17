@@ -14,6 +14,28 @@ The following sections are recommended (not required), and for these sections in
 
 All of the other sections are expected to be omitted in the case of absence of information.
 
+### Open slices and alternative Code Systems
+
+Most of the slicings specified in this guide are _open_ (i.e. slicing.rules is not 'closed'), that means that it is possible to include also items that do not satisfy the conditions defined for the slices.
+
+Having this clear is important for a correct interpretation of the published profiles, in particular  those using a value set binding for discriminating the slices.
+
+It is in fact allowed in these cases to use alternative value sets / code systems that are not those _'required'_. Let's take as example the slicing of the Condition.code in the [Condition-uv-ips](StructureDefinition-Condition-uv-ips.html) profile. This profile specifies two slices for this element:
+1. one to indicate a problem from the SNOMED CT GPS ( [CORE Problem List Finding/Situation/Event (GPS) - IPS](ValueSet-core-problem-finding-situation-event-gps-uv-ips.html) )
+1. one for  unknown or absent relevant problems ( [Absent or Unknown Problems - IPS](ValueSet-absent-or-unknown-problems-uv-ips.html) )
+
+Since this slicing is open, the presence of these two required value sets doesn't prevent implementers or specifiers to represent a problem by using alternative code systems (e.g. ICD-11) as primary code. The fragments below shows an example of alternative representation for the problem used in the [Condition example](Condition-eumfh-39-07-1.html) included in this guide ("Acute myocardial infarction of anterior wall")
+
+```
+	<code>
+		<coding>
+			<system value="http://hl7.org/fhir/sid/icd-11"/>
+			<code value="BA41&XA7RE3"/>
+			<display value="Acute myocardial infarction & Anterior wall of heart"/>
+		</coding>
+	</code>
+```
+
 ### Translation of designations and narratives
 
 The functional requirement of supporting the translation of the designations has been addressed in this guide extending the coding data type (coding-uv-ips).
