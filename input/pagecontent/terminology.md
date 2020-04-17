@@ -98,9 +98,6 @@ These value sets have been defined for this implementation guide:
     <a href="ValueSet-lab-blood-abo-rh-grp-gps-uv-ips.html">Results ABO+RH Group (GPS) - IPS</a>
    </li>
    <li>
-    <a href="ValueSet-result-coded-value-lab-uv-ips.html">Results Coded Values Laboratory - IPS</a>
-   </li>
-   <li>
     <a href="ValueSet-result-coded-value-lab-gps-uv-ips.html">Results Coded Values Laboratory (GPS) - IPS</a>
    </li>
    <li>
@@ -120,9 +117,6 @@ These value sets have been defined for this implementation guide:
    </li>
    <li>
     <a href="ValueSet-imaging-observations-uv-ips.html">Results Observation Radiology - IPS</a>
-   </li>
-   <li>
-    <a href="ValueSet-organism-uv-ips.html">Results Organism - IPS</a>
    </li>
    <li>
     <a href="ValueSet-organism-gps-uv-ips.html">Results Organism (GPS) - IPS</a>
