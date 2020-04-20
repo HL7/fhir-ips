@@ -29,7 +29,7 @@ Since this slicing is open, the presence of these two required value sets doesn'
 ```
 	<code>
 		<coding>
-			<system value="http://hl7.org/fhir/sid/icd-11"/>
+			<system value="http://id.who.int/icd11/mms"/>
 			<code value="BA41&XA7RE3"/>
 			<display value="Acute myocardial infarction & Anterior wall of heart"/>
 		</coding>
