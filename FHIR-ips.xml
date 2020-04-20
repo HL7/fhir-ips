@@ -2,7 +2,7 @@
 <specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                url="http://hl7.org/fhir/uv/ips"
                ciUrl="https://build.fhir.org/ig/HL7/fhir-ips"
-               defaultWorkgroup=""
+               defaultWorkgroup="pc"
                defaultVersion="current"
                xsi:noNamespaceSchemaLocation="../schemas/specification.xsd"
                ballotUrl="http://hl7.org/fhir/uv/ips/2019Sep">
@@ -32,7 +32,7 @@
    <artifact name="AllergyIntolerance: No known allergies"
              key="AllergyIntolerance-eumfh-39-07-1"
              id="AllergyIntolerance/eumfh-39-07-1"/>
-   <artifact name="AllergyIntolerance: resolved  allergy"
+   <artifact name="AllergyIntolerance: resolved allergy"
              key="AllergyIntolerance-allergyintolerance-with-abatement"
              id="AllergyIntolerance/allergyintolerance-with-abatement"/>
    <artifact name="Condition: Acute myocardial infarction of anterior wall"
@@ -215,6 +215,9 @@
    <artifact name="Vaccines - IPS"
              key="ValueSet-vaccines-uv-ips"
              id="ValueSet/vaccines-uv-ips"/>
+   <artifact name="Vaccines (GPS) - IPS"
+             key="ValueSet-vaccines-gps-uv-ips"
+             id="ValueSet/vaccines-gps-uv-ips"/>
    <artifact name="WHO ATC - IPS"
              key="ValueSet-whoatc-uv-ips"
              id="ValueSet/whoatc-uv-ips"/>

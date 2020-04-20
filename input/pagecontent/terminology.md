@@ -143,6 +143,9 @@ These value sets have been defined for this implementation guide:
     <a href="ValueSet-vaccines-uv-ips.html">Vaccines - IPS</a>
    </li>
    <li>
+    <a href="ValueSet-vaccines-gps-uv-ips.html">Vaccines (GPS) - IPS</a>
+   </li>
+   <li>
     <a href="ValueSet-whoatc-uv-ips.html">WHO ATC - IPS</a>
    </li>
    </ul>

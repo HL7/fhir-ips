@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:f="http://hl7.org/fhir">
+	<id value="vaccines-gps-uv-ips"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+	</meta>
+	<url value="http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips"/>
+	<identifier>
+		<use value="official"/>
+		<system value="http://art-decor.org/ns/oids/vs"/>
+		<value value="2.16.840.1.113883.11.22.44"/>
+	</identifier>
+	<version value="2017-05-24T00:00:00"/>
+	<name value="VaccinesGpsUvIps"/>
+	<title value="Vaccines (GPS) - IPS"/>
+	<status value="active"/>
+	<experimental value="false"/>
+	<publisher value="HL7 International"/>
+	<contact>
+		<name value="HL7 International"/>
+		<telecom>
+			<system value="phone"/>
+			<value value="+1 734 677 7777"/>
+		</telecom>
+		<telecom>
+			<system value="fax"/>
+			<value value="+1 734 677 6622"/>
+		</telecom>
+		<telecom>
+			<system value="email"/>
+			<value value="info@hl7.org"/>
+		</telecom>
+	</contact>
+	<description value="This value set includes the codes from the SNOMED International Global Patient Set (GPS) subset of SNOMED CT that are included in:  all descendants of 71181003 |Product containing vaccine (product)|.  The concepts currently included in the value set are from the September 2019 release of the GPS, which is based on the July 2019 SNOMED CT International Edition release."/>
+	<immutable value="false"/>
+	<copyright value="The GPS is produced by SNOMED International under the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/)&#10;&#10;Additional information about this license specific to SNOMED International&#8217;s release of the GPS:&#10;* SNOMED CT is &#169; and &#174; SNOMED International. The right to maintain the GPS remains vested exclusively in SNOMED International.&#10;* The Licensee can redistribute the GPS.&#10;* The Licensee can create derivatives or implementation-related products and services based on the GPS.&#10;* The Licensee cannot claim that SNOMED International or any of its Members endorses the Licensee&#8217;s derivative because it uses content from the GPS.&#10;* Neither SNOMED International nor any of the contributors accept any liability for the Licensee&#8217;s use or redistribution of the GPS.&#10;* SNOMED CT&#174; was originally created by the College of American Pathologists.&#10;&#10;Without obtaining prior written permission from SNOMED International, you are expressly prohibited from using, distributing or reproducing the SNOMED International, SNOMED CT or SNOMED GPS logo, service mark or trademark. Please review all terms and conditions of use [here](http://www.snomed.org/terms-and-conditions)."/>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20190731"/>
+			<concept>
+				<code value="449019003"/>
+				<display value="Acellular pertussis vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="333549004"/>
+				<display value="Adsorbed diphtheria+tetanus vaccine injection suspension 0.5mL prefilled syringe (product)"/>
+			</concept>
+			<concept>
+				<code value="347664008"/>
+				<display value="Adsorbed tetanus vaccine injection solution ampule (product)"/>
+			</concept>
+			<concept>
+				<code value="333641007"/>
+				<display value="Adsorbed tetanus vaccine injection solution prefilled syringe (product)"/>
+			</concept>
+			<concept>
+				<code value="346313005"/>
+				<display value="Allergen extract vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="333521006"/>
+				<display value="Anthrax vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="333522004"/>
+				<display value="Anthrax vaccine injection solution 0.5mL ampule (product)"/>
+			</concept>
+			<concept>
+				<code value="400563009"/>
+				<display value="Anthrax vaccine, adsorbed injection solution 5mL vial (product)"/>
+			</concept>
+			<concept>
+				<code value="11185009"/>
+				<display value="Autogenous vaccine - autogenous bacterin (product)"/>
+			</concept>
+			<concept>
+				<code value="62354009"/>
+				<display value="Bronchitis vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="7230005"/>
+				<display value="Brucella vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="409580000"/>
+				<display value="CVD 103-HgR live attenuated oral cholera vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="346728008"/>
+				<display value="Cat allergy initial kit (product)"/>
+			</concept>
+			<concept>
+				<code value="346747006"/>
+				<display value="Cat allergy maintenance kit (product)"/>
+			</concept>
+			<concept>
+				<code value="346364006"/>
+				<display value="Cat allergy vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="35736007"/>
+				<display value="Cholera vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="449240007"/>
+				<display value="Diphtheria + acellular pertussis adsorbed + inactivated polio + tetanus toxoids vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="412373007"/>
+				<display value="Diphtheria + pertussis + tetanus + Haemophilus influenzae type b vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="421245007"/>
+				<display value="Diphtheria + pertussis + tetanus vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="427806004"/>
+				<display value="Diphtheria + tetanus + haemophilus influenzae type b vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="414002009"/>
+				<display value="Diphtheria + tetanus + inactivated poliovirus vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="414003004"/>
+				<display value="Diphtheria + tetanus + pertussis + inactivated poliovirus vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="414004005"/>
+				<display value="Diphtheria + tetanus + pertussis + poliomyelitis + haemophilus influenzae b vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="426842004"/>
+				<display value="Diphtheria + tetanus + pertussis + poliomyelitis + recombinant hepatitis B virus + recombinant haemophilus influenzae type B vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="427542001"/>
+				<display value="Diphtheria + tetanus + pertussis + poliomyelitis + recombinant hepatitis B virus vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="414005006"/>
+				<display value="Diphtheria + tetanus + pertussis + poliomyelitis vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="426081003"/>
+				<display value="Diphtheria + tetanus + pertussis + recombinant hepatitis B virus vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="414006007"/>
+				<display value="Diphtheria + tetanus + poliomyelitis vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="350327004"/>
+				<display value="Diphtheria + tetanus vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="346402006"/>
+				<display value="Diphtheria single antigen vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="426361005"/>
+				<display value="Diphtheria toxoid 30 iu/tetanus toxoid 40 iu/acellular pertussis 25micrograms/recombinant hepatitis B virus surface antigen 10micrograms/inactivated poliomyelitis injection solution 0.5mL prefilled syringe (product)"/>
+			</concept>
+			<concept>
+				<code value="427682002"/>
+				<display value="Diphtheria toxoid 30 iu/tetanus toxoid 40 iu/acellular pertussis toxoid 25micrograms injection solution 0.5mL prefilled syringe (product)"/>
+			</concept>
+			<concept>
+				<code value="428214002"/>
+				<display value="Diphtheria vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="396457007"/>
+				<display value="Diphtheria, acellular pertussis, hepatitis B and inactivated polio vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="346729000"/>
+				<display value="Dog allergy initial kit (product)"/>
+			</concept>
+			<concept>
+				<code value="346748001"/>
+				<display value="Dog allergy maintenance kit (product)"/>
+			</concept>
+			<concept>
+				<code value="346405008"/>
+				<display value="Dog allergy vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="409152009"/>
+				<display value="Dried smallpox vaccine, calf lymph type 1 vial + diluent 0.25mL syringe (product)"/>
+			</concept>
+			<concept>
+				<code value="346730005"/>
+				<display value="Grass allergy initial kit (product)"/>
+			</concept>
+			<concept>
+				<code value="346750009"/>
+				<display value="Grass allergy maintenance kit (product)"/>
+			</concept>
+			<concept>
+				<code value="68113000"/>
+				<display value="Haemophilus b oligosaccharide conjugate(diphtheria CRM&gt;197&lt; protein conjugate) vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="766203003"/>
+				<display value="Haemophilus b polysaccharide 10micrograms/tetanus toxoid 30micrograms powder for conventional release solution for injection vial (product)"/>
+			</concept>
+			<concept>
+				<code value="48028008"/>
+				<display value="Haemophilus b polysaccharide conjugate (diphtheria toxoid conjugate) vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="333693009"/>
+				<display value="Haemophilus influenzae Type b (Hib)/diphtheria/tetanus/pertussis vaccine prefilled syringe (product)"/>
+			</concept>
+			<concept>
+				<code value="333696001"/>
+				<display value="Haemophilus influenzae Type b (Hib)/diphtheria/tetanus/pertussis vaccine vial (product)"/>
+			</concept>
+			<concept>
+				<code value="333691006"/>
+				<display value="Haemophilus influenzae Type b (Hib)/diphtheria/tetanus/pertussis vaccine vial+prefilled syringe (product)"/>
+			</concept>
+			<concept>
+				<code value="426971004"/>
+				<display value="Haemophilus influenzae Type b + recombinant hepatitis B virus vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="425555004"/>
+				<display value="Haemophilus influenzae Type b + tetanus vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="333680004"/>
+				<display value="Haemophilus influenzae Type b vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="347647005"/>
+				<display value="Haemophilus influenzae Type b vaccine injection (pdr for recon)+diluent (product)"/>
+			</concept>
+			<concept>
+				<code value="698026000"/>
+				<display value="Haemophilus influenzae b (Ross strain) capsular polysaccharide Meningococcal Protein Conjugate Vaccine/Hepatitis B Surface Antigen Vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="423912009"/>
+				<display value="Haemophilus influenzae type b + Meningococcal group C vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="427048007"/>
+				<display value="Haemophilus influenzae type b 10micrograms/diphtheria toxoid 30 iu/tetanus toxoid 40 iu/pertussis 25micrograms/recombinant hepatitis B virus surface antigen 10micrograms/inactivated poliomyelitis injection solution 0.5mL prefilled syringe (product)"/>
+			</concept>
+			<concept>
+				<code value="427514003"/>
+				<display value="Haemophilus influenzae type b 7.5micrograms/recombinant hepatitis B virus surface antigen 5micrograms injection solution 0.5mL vial (product)"/>
+			</concept>
+			<concept>
+				<code value="333708002"/>
+				<display value="Hepatitis A 1440u//typhoid 25mcg vaccine injection solution 1mL prefilled syringe (product)"/>
+			</concept>
+			<concept>
+				<code value="406324009"/>
+				<display value="Hepatitis A vaccine injection suspension 0.5 mL prefilled syringe (product)"/>
+			</concept>
+			<concept>
+				<code value="406325005"/>
+				<display value="Hepatitis A vaccine injection suspension 1 mL prefilled syringe (product)"/>
+			</concept>
+			<concept>
+				<code value="348045000"/>
+				<display value="Hepatitis A vaccine injection suspension prefilled syringe (product)"/>
+			</concept>
+			<concept>
+				<code value="14745005"/>
+				<display value="Hepatitis A virus vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="333702001"/>
+				<display value="Hepatitis A+B vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="333707007"/>
+				<display value="Hepatitis A+typhoid vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="333569009"/>
+				<display value="Hepatitis B vaccine 10micrograms/mL injection suspension 1mL prefilled syringe (product)"/>
+			</concept>
+			<concept>
+				<code value="333568001"/>
+				<display value="Hepatitis B vaccine 10micrograms/mL injection suspension 1mL vial (product)"/>
+			</concept>
+			<concept>
+				<code value="333573007"/>
+				<display value="Hepatitis B vaccine 40micrograms/mL injection suspension 1ml vial (product)"/>
+			</concept>
+			<concept>
+				<code value="412403009"/>
+				<display value="Hepatitis B virus recombinant vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="34689006"/>
+				<display value="Hepatitis B virus vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="346731009"/>
+				<display value="Horse allergy initial kit (product)"/>
+			</concept>
+			<concept>
+				<code value="346751008"/>
+				<display value="Horse allergy maintenance kit (product)"/>
+			</concept>
+			<concept>
+				<code value="346467003"/>
+				<display value="Horse dander allergy vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="346468008"/>
+				<display value="House dust allergy vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="346733007"/>
+				<display value="House mite allergy initial kit (product)"/>
+			</concept>
+			<concept>
+				<code value="346753006"/>
+				<display value="House mite allergy maintenance kit (product)"/>
+			</concept>
+			<concept>
+				<code value="346469000"/>
+				<display value="House mite allergy vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="424519000"/>
+				<display value="Human papillomavirus vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="448897007"/>
+				<display value="Inactivated Influenza split virion subtype H1N1v-like strain adjuvant vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="451022006"/>
+				<display value="Inactivated Influenza split virion subtype H1N1v-like strain unadjuvanted vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="346525009"/>
+				<display value="Inactivated Influenza surface antigen sub-unit vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="348047008"/>
+				<display value="Inactivated Influenza surface antigen sub-unit vaccine prefilled syringe (product)"/>
+			</concept>
+			<concept>
+				<code value="419562000"/>
+				<display value="Inactivated Influenza surface antigen virosome vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="418707004"/>
+				<display value="Inactivated Influenza surface antigen virosome vaccine prefilled syringe (product)"/>
+			</concept>
+			<concept>
+				<code value="408752008"/>
+				<display value="Inactivated influenza split virion vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="125688000"/>
+				<display value="Inactivated poliovirus vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="409579003"/>
+				<display value="Inactivated whole-cell/recombinant-B-subunit cholera vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="348046004"/>
+				<display value="Influenza (split virion) vaccine injection suspension 0.5mL prefilled syringe (product)"/>
+			</concept>
+			<concept>
+				<code value="443161002"/>
+				<display value="Influenza A virus subtype H1N1 monovalent vaccine 0.5mL injection solution (product)"/>
+			</concept>
+			<concept>
+				<code value="443651005"/>
+				<display value="Influenza A virus subtype H1N1 vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="346524008"/>
+				<display value="Influenza split virion vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="427036009"/>
+				<display value="Influenza virus H5N1 vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="427077008"/>
+				<display value="Influenza virus H5N1 vaccine injection solution 5mL multi-dose vial (product)"/>
+			</concept>
+			<concept>
+				<code value="46233009"/>
+				<display value="Influenza virus vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="400788004"/>
+				<display value="Influenza virus vaccine triv 45mcg/0.5mL injection solution 0.5mL syringe (product)"/>
+			</concept>
+			<concept>
+				<code value="400564003"/>
+				<display value="Influenza virus vaccine trivalent 45mcg/0.5mL injection solution 5mL vial (product)"/>
+			</concept>
+			<concept>
+				<code value="409269001"/>
+				<display value="Intranasal influenza live virus vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="333697005"/>
+				<display value="Japanese B encephalitis vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="333698000"/>
+				<display value="Japanese B encephalitis vaccine powder and solvent for injection solution vial (product)"/>
+			</concept>
+			<concept>
+				<code value="326303007"/>
+				<display value="Lactobacill acidophil vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="442560004"/>
+				<display value="Live adenovirus type 4 vaccine oral dosage form (product)"/>
+			</concept>
+			<concept>
+				<code value="442561000"/>
+				<display value="Live adenovirus type 7 vaccine oral dosage form (product)"/>
+			</concept>
+			<concept>
+				<code value="440075005"/>
+				<display value="Live measles + rubella vaccine injection dose form (product)"/>
+			</concept>
+			<concept>
+				<code value="125690004"/>
+				<display value="Live poliovirus vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="428688001"/>
+				<display value="Live smallpox vaccine powder 3mL vial + diluent (product)"/>
+			</concept>
+			<concept>
+				<code value="116083002"/>
+				<display value="Lyme disease vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="377089008"/>
+				<display value="Lyme disease vaccine recombi 60mcg/mL injection solution 0.5mL ampule (product)"/>
+			</concept>
+			<concept>
+				<code value="376208003"/>
+				<display value="Lyme disease vaccine recombi 6mcg/mL injection solution 5mL ampule (product)"/>
+			</concept>
+			<concept>
+				<code value="419550004"/>
+				<display value="Measles + mumps + rubella + varicella vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="386012008"/>
+				<display value="Measles vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="400449000"/>
+				<display value="Measles virus vaccine, live, 0.5mL/vial powder for injection (product)"/>
+			</concept>
+			<concept>
+				<code value="61153008"/>
+				<display value="Measles, mumps and rubella vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="347649008"/>
+				<display value="Measles/mumps/rubella vaccine powder and solvent for injection solution vial (product)"/>
+			</concept>
+			<concept>
+				<code value="419771007"/>
+				<display value="Measles/mumps/rubella/varicella vaccine powder and solvent for injection solution vial (product)"/>
+			</concept>
+			<concept>
+				<code value="373869007"/>
+				<display value="Melanoma vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="421281005"/>
+				<display value="Meningococcal A+C vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="359068008"/>
+				<display value="Meningococcal C conjugate vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="333668007"/>
+				<display value="Meningococcal C conjugate vaccine injection solution prefilled syringe (product)"/>
+			</concept>
+			<concept>
+				<code value="333670003"/>
+				<display value="Meningococcal C conjugate vaccine injection solution vial (product)"/>
+			</concept>
+			<concept>
+				<code value="333669004"/>
+				<display value="Meningococcal C conjugate vaccine powder and solvent for injection solution vial (product)"/>
+			</concept>
+			<concept>
+				<code value="422069000"/>
+				<display value="Meningococcal group C vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="420261000"/>
+				<display value="Meningococcal groups A+C+W135+Y vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="347659009"/>
+				<display value="Meningococcal polysaccharide vaccine powder and solvent for injection solution vial (product)"/>
+			</concept>
+			<concept>
+				<code value="423531006"/>
+				<display value="Meningococcus vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="123686003"/>
+				<display value="Mixed bacterial vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="125696005"/>
+				<display value="Mixed respiratory vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="90043005"/>
+				<display value="Mumps live virus vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="376997008"/>
+				<display value="Mumps virus vaccine live injection solution 0.5mL vial (product)"/>
+			</concept>
+			<concept>
+				<code value="428601009"/>
+				<display value="Paratyphoid vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="409568008"/>
+				<display value="Pentavalent botulinum toxoid vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="61602008"/>
+				<display value="Pertussis vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="11866009"/>
+				<display value="Plague vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="448964007"/>
+				<display value="Pneumococcal 13-valent conjugate vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="125714002"/>
+				<display value="Pneumococcal 7-valent conjugate vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="135643009"/>
+				<display value="Pneumococcal polysaccharide conjugated vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="135642004"/>
+				<display value="Pneumococcal polysaccharide vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="333598008"/>
+				<display value="Pneumococcal vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="333603000"/>
+				<display value="Poliomyelitis inactivated vaccine injection (product)"/>
+			</concept>
+			<concept>
+				<code value="111164008"/>
+				<display value="Poliovirus vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="320835005"/>
+				<display value="Pollen allergy preparations (product)"/>
+			</concept>
+			<concept>
+				<code value="70447008"/>
+				<display value="Polyvalent pneumococcal vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="400287005"/>
+				<display value="Polyvalent pneumococcal vaccine injection solution 0.5mL syringe (product)"/>
+			</concept>
+			<concept>
+				<code value="430410002"/>
+				<display value="Product containing Influenza virus vaccine in nasal dose form (medicinal product form)"/>
+			</concept>
+			<concept>
+				<code value="64296005"/>
+				<display value="Product containing Staphylococcus toxoid vaccine (medicinal product)"/>
+			</concept>
+			<concept>
+				<code value="125580002"/>
+				<display value="Product containing antigen of whole cell pertussis and diphtheria toxoid and tetanus toxoid adsorbed (medicinal product)"/>
+			</concept>
+			<concept>
+				<code value="418268006"/>
+				<display value="Product containing attenuated Bacillus Calmette Guerin (medicinal product)"/>
+			</concept>
+			<concept>
+				<code value="68208009"/>
+				<display value="Product containing diphtheria toxoid and tetanus toxoid adsorbed (medicinal product)"/>
+			</concept>
+			<concept>
+				<code value="58098008"/>
+				<display value="Product containing tetanus toxoid adsorbed (medicinal product)"/>
+			</concept>
+			<concept>
+				<code value="105949007"/>
+				<display value="Product containing toxoid (product)"/>
+			</concept>
+			<concept>
+				<code value="427533008"/>
+				<display value="Q fever vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="333607004"/>
+				<display value="Rabies inactivated vaccine powder and solvent for injection solution vial (product)"/>
+			</concept>
+			<concept>
+				<code value="333606008"/>
+				<display value="Rabies vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="125715001"/>
+				<display value="Rabies vaccine, adsorbed (product)"/>
+			</concept>
+			<concept>
+				<code value="3526007"/>
+				<display value="Rabies vaccine, human (product)"/>
+			</concept>
+			<concept>
+				<code value="425638005"/>
+				<display value="Recombinant hepatitis B virus surface antigen 10micrograms/diphtheria toxoid 30 iu/tetanus toxoid 40 iu/acellular pertussis 25micrograms injection solution 0.5mL prefilled syringe (product)"/>
+			</concept>
+			<concept>
+				<code value="13178004"/>
+				<display value="Rickettsial vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="45355008"/>
+				<display value="Rocky Mountain spotted fever vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="766567004"/>
+				<display value="Rotavirus live vaccine powder for conventional release oral suspension 1mL (product)"/>
+			</concept>
+			<concept>
+				<code value="116077000"/>
+				<display value="Rotavirus vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="347653005"/>
+				<display value="Rubella live vaccine powder and solvent for injection solution vial (product)"/>
+			</concept>
+			<concept>
+				<code value="386013003"/>
+				<display value="Rubella vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="358640003"/>
+				<display value="Silver birch allergy initial kit (product)"/>
+			</concept>
+			<concept>
+				<code value="358641004"/>
+				<display value="Silver birch allergy maintenance kit (product)"/>
+			</concept>
+			<concept>
+				<code value="33234009"/>
+				<display value="Smallpox vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="333620001"/>
+				<display value="Smallpox vaccine injection solution vial (product)"/>
+			</concept>
+			<concept>
+				<code value="81970008"/>
+				<display value="Swine influenza virus vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="375054005"/>
+				<display value="Tetanus toxoid, adsorbed 20u/mL 0.5mL injection solution ampule (product)"/>
+			</concept>
+			<concept>
+				<code value="333621002"/>
+				<display value="Tetanus vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="333699008"/>
+				<display value="Tick-borne encephalitis vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="333700009"/>
+				<display value="Tick-borne encephalitis vaccine injection solution prefilled syringe (product)"/>
+			</concept>
+			<concept>
+				<code value="346734001"/>
+				<display value="Timothy grass allergy initial kit (product)"/>
+			</concept>
+			<concept>
+				<code value="346754000"/>
+				<display value="Timothy grass allergy maintenance kit (product)"/>
+			</concept>
+			<concept>
+				<code value="346735000"/>
+				<display value="Treemix allergy initial kit (product)"/>
+			</concept>
+			<concept>
+				<code value="346755004"/>
+				<display value="Treemix allergy maintenance kit (product)"/>
+			</concept>
+			<concept>
+				<code value="420538001"/>
+				<display value="Tuberculosis vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="412324003"/>
+				<display value="Typhoid VI polysaccharide vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="346696005"/>
+				<display value="Typhoid live oral vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="346639000"/>
+				<display value="Typhoid polysaccharide vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="348070000"/>
+				<display value="Typhoid polysaccharide vaccine 25micrograms injection suspension 0.5mL prefilled syringe (product)"/>
+			</concept>
+			<concept>
+				<code value="89428009"/>
+				<display value="Typhoid vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="346697001"/>
+				<display value="Typhoid whole cell vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="52628005"/>
+				<display value="Typhoid-paratyphoid vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="37146000"/>
+				<display value="Typhus vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="10332002"/>
+				<display value="Vaccine - bacterin - toxoid (product)"/>
+			</concept>
+			<concept>
+				<code value="669007"/>
+				<display value="Vaccinia virus vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="412530002"/>
+				<display value="Varicella virus live vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="108729007"/>
+				<display value="Varicella virus vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="407746005"/>
+				<display value="Varicella-zoster live attenuated vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="407933006"/>
+				<display value="Varicella-zoster live attenuated vaccine injection (pdr for recon)+solvent (product)"/>
+			</concept>
+			<concept>
+				<code value="407737004"/>
+				<display value="Varicella-zoster vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="370459009"/>
+				<display value="West Nile virus vaccine (product)"/>
+			</concept>
+			<concept>
+				<code value="333652001"/>
+				<display value="Yellow fever live vaccine injection solution vial (product)"/>
+			</concept>
+			<concept>
+				<code value="56844000"/>
+				<display value="Yellow fever vaccine (product)"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>
