@@ -125,13 +125,13 @@ These value sets have been defined for this implementation guide:
     <a href="ValueSet-lab-absence-presence-gps-uv-ips.html">Results Presence/Absence (GPS) - IPS</a>
    </li>
    <li>
-    <a href="ValueSet-imaging-numobs-uv-ips.html">Results Radiology Measurements - IPS</a>
+    <a href="ValueSet-imaging-numobs-gps-dicom-uv-ips.html">Results Radiology Measurements (GPS-DICOM) - IPS</a>
    </li>
    <li>
-    <a href="ValueSet-imaging-txtobs-code-uv-ips.html">Results Radiology Textual Observations - IPS</a>
+    <a href="ValueSet-imaging-txtobs-gps-dicom-loinc-uv-ips.html">Results Radiology Textual Observations (GPS-DICOM-LOINC) - IPS</a>
    </li>
    <li>
-    <a href="ValueSet-specimen-collection-method-uv-ips.html">Results Specimen Collection Method - IPS</a>
+    <a href="ValueSet-specimen-collection-method-gps-uv-ips.html">Results Specimen Collection Method (GPS) - IPS</a>
    </li>
    <li>
     <a href="ValueSet-specimen-type-gps-uv-ips.html">Results Specimen Type (GPS) - IPS</a>
