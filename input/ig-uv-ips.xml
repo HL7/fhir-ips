@@ -11,7 +11,7 @@
 	<contact>
 		<telecom>
 			<system value="url"/>
-			<value value="http://www.hl7.org/Special/committees/patientcare/index.cfm"/>
+			<value value="http://www.hl7.org/Special/committees/patientcare"/>
 		</telecom>
 	</contact>
 	<description value="International Patient Summary (IPS) FHIR Implementation Guide"/>
@@ -69,8 +69,8 @@
 			<reference>
 				<reference value="AllergyIntolerance/allergyintolerance-with-abatement"/>
 			</reference>
-			<name value="AllergyIntolerance: resolved  allergy"/>
-			<description value="AllergyIntolerance: resolved  allergy"/>
+			<name value="AllergyIntolerance: resolved allergy"/>
+			<description value="AllergyIntolerance: resolved allergy"/>
 			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"/>
 		</resource>
 		<resource>
@@ -296,13 +296,13 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="ValueSet/imaging-txtobs-code-uv-ips"/>
+				<reference value="ValueSet/imaging-txtobs-gps-dicom-loinc-uv-ips"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
 		<resource>
 			<reference>
-				<reference value="ValueSet/imaging-numobs-uv-ips"/>
+				<reference value="ValueSet/imaging-numobs-gps-dicom-uv-ips"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
@@ -314,7 +314,7 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="ValueSet/specimen-collection-method-uv-ips"/>
+				<reference value="ValueSet/specimen-collection-method-gps-uv-ips"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
@@ -477,6 +477,12 @@
 		<resource>
 			<reference>
 				<reference value="ValueSet/vaccines-uv-ips"/>
+			</reference>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/vaccines-gps-uv-ips"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>

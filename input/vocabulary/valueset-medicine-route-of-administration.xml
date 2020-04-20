@@ -4,15 +4,6 @@
 	<meta>
 		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
 	</meta>
-	<text>
-		<status value="generated"/>
-		<div xmlns="http://www.w3.org/1999/xhtml">This Value Set includes all the EDQM Standard Terms having <ul>
-				<li>[Concept Status] = ‘Current’   AND </li>
-				<li> [Concept Class] = 'route of administration'  AND</li>
-				<li>[Domain] = 'Human and Veterinary'</li>
-			</ul>
-         The list of values reported hereafter is provided only as exemplification</div>
-	</text>
 	<url value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration"/>
 	<identifier>
 		<use value="official"/>
@@ -40,9 +31,12 @@
 			<value value="info@hl7.org"/>
 		</telecom>
 	</contact>
-	<description value="EDQM Route of Administration codes"/>
+	<description value="EDQM Route of Administration codes.  This Value Set includes all the EDQM Standard Terms having:
+	&#10;[Concept Status] = ‘Current’ AND
+	&#10;[Concept Class] = 'route of administration' AND
+	&#10;[Domain] = 'Human and Veterinary'"/>
 	<immutable value="false"/>
-	<copyright value="This artefact includes content from EDQM Standard Terms. EDQM Standard Terms are copyright European Directorate for the Quality of Medicines . Terms &amp; Conditions in https://www.edqm.eu/en/standard-terms-database"/>
+	<copyright value="This artifact includes content from EDQM Standard Terms. EDQM Standard Terms are copyright European Directorate for the Quality of Medicines . Terms &amp; Conditions in https://www.edqm.eu/en/standard-terms-database"/>
 	<compose>
 		<include>
 			<system value="http://standardterms.edqm.eu"/>
