@@ -24,7 +24,7 @@ It is in fact allowed in these cases to use alternative value sets / code system
 1. one to indicate a problem from the SNOMED CT GPS ( [CORE Problem List Finding/Situation/Event (GPS) - IPS](ValueSet-core-problem-finding-situation-event-gps-uv-ips.html) )
 1. one for  unknown or absent relevant problems ( [Absent or Unknown Problems - IPS](ValueSet-absent-or-unknown-problems-uv-ips.html) )
 
-Since this slicing is open, the presence of these two required value sets doesn't prevent implementers or specifiers to represent a problem by using alternative code systems (e.g. ICD-11) as primary code. The fragments below shows an example of alternative representation for the problem used in the [Condition example](Condition-eumfh-39-07-1.html) included in this guide ("Acute myocardial infarction of anterior wall")
+Since this slicing is open, the presence of these two required value sets doesn't prevent implementers or specifiers to represent a problem by using alternative code systems (e.g. ICD-11) as primary code. The fragment below shows an example of alternative representation for the problem used in the [Condition example](Condition-eumfh-39-07-1.html) included in this guide ("Acute myocardial infarction of anterior wall")
 
 ```
 	<code>
@@ -62,7 +62,7 @@ In the case of a software-assembled IPS that is then verified by a human, the do
 
 Note: Discussions with the EHR work group suggest that a possible future project should be an IPS functional profile, once there is greater clarity and operational experience with usage of the IPS. 
 
-### Representation of Names
+### Representation of Person Names
 This specification requires that any Person Name is represented including at least the given and family components.
 Even though it is recognized that there is not in all cultures the same concept of “family name”, no evidence has been collected in analyzing the international context (e.g. Japan, Korea; China) that justifies the retirement of this requirement.
 Moreover, due to the global scope of the International Patient Summary, the case of non-alphabetic representations of the names has also been considered.
@@ -97,7 +97,7 @@ In the context of the IPS, mustSupport on any data element SHALL be interprete
 ##### Optional mustSupport data elements
 
 <p>If an IPS creator (a system generating the IPS contents) does not have data to be included in the IPS, the data element is omitted.</p>
-<p>Note: an IPS creator may have no data to be included in the IPS either because there are no data; either beacuse data available are not pertinent with the scope of the IPS.</p>
+<p>Note: an IPS creator may have no data to be included in the IPS either because there are no data, or because data available are not pertinent with the scope of the IPS.</p>
 
 ##### Required mustSupport data elements
 <p>If an IPS creator does not have data to be included in the IPS, the reason for the absence has to be specified as follows:</p>
