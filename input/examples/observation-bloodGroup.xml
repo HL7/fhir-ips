@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation  xmlns="http://hl7.org/fhir">
+	<id value="simple-bld-group"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-uv-ips"/>
+	</meta>
+	<status value="final"/>
+	<category>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+			<code value="laboratory"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="34530-6"/>
+			<display value="ABO and Rh group panel - Blood"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/eumfh-39-07"/>
+	</subject>
+	<effectiveDateTime>
+		 <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="unknown"/>
+      </extension>
+	</effectiveDateTime>
+	<valueCodeableConcept>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="278149003"/>
+			<display value="Blood group A Rh(D) positive (finding)"/>
+		</coding>
+	</valueCodeableConcept>
+</Observation>
