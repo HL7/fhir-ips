@@ -28,7 +28,7 @@ The second has been finally chosen for the following reasons:
 
 <!-- The items that are part of this minimal set have been marked with the mustSupport attribute. -->
 
-### Profiling and open slices and the use of alternative Code Systems
+### Open slices and the use of alternative Code Systems
 
 One of the important and useful capabilities of FHIR profiling is [slicing](http://hl7.org/fhir/profiling.html#slicing), where multiple sets of constraints for a specific use case can be defined for a resource element or a complex element group (slicing can be used with repeating, type choice or non-repeating elements). Most of the slices specified in this guide are _open_ (i.e. `slicing.rules` is not `closed`), which means that it is possible for resource instances with elements that do not match any of the defined slices to still be conformant with the profile as long as they satisfy the remaining profile constraints.
 
