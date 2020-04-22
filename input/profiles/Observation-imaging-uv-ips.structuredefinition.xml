@@ -180,16 +180,13 @@
 		<element id="Observation.performer">
 			<path value="Observation.performer"/>
 			<label value="Human Observer"/>
+			<min value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-observation-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.performer.reference">
-			<path value="Observation.performer.reference"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.valueString">
