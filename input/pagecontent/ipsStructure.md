@@ -2,14 +2,6 @@
 
 The IPS is composed by the following sections described below.
 
-<!--
-<div class="image">
-<img src="assets/images/IPS_composition.png" width="400" />
-<div>The IPS Composition</div>
-<p></p>
-</div>
--->
-
 {% include img.html img="IPS_composition.png" caption="Figure 2: The IPS composition" width="70%" %}
 
 ### Sections description
@@ -116,20 +108,17 @@ Following are the profiles that have been defined for each section. (R) denotes 
 * Diagnostic Results (S)
   * Laboratory results 
    [ <a href="StructureDefinition-Observation-laboratory-uv-ips.html">Observation (Results: laboratory)</a> ;
-<!--   <a href="StructureDefinition-Observation-member-laboratory-uv-ips.html">Observation (Results: laboratory, member)</a> ; -->
    <a href="StructureDefinition-Specimen-uv-ips.html">Specimen (IPS)</a> ;
    <a href="StructureDefinition-Organization-laboratory-uv-ips.html">Organization (laboratory)</a> ;
    <a href="StructureDefinition-Media-observation-uv-ips.html">Observation (Results: laboratory, media)</a> ]
   * Radiology results
    [ <a href="StructureDefinition-Observation-imaging-uv-ips.html">Observation (Results: imaging)</a> ;
-<!--   <a href="StructureDefinition-Observation-member-imaging-uv-ips.html">Observation (Results: imaging, member)</a> ; -->
    <a href="StructureDefinition-Device-observer-uv-ips.html">Device (Results: imaging, observer)</a> ;
    <a href="StructureDefinition-ImagingStudy-uv-ips.html">Imaging Study (IPS)</a> ;
    <a href="StructureDefinition-Organization-observation-uv-ips.html">Organization (IPS)</a> ;
    <a href="StructureDefinition-Practitioner-uv-ips.html">Practitioner (IPS)</a> ]
   * Pathology results
    [ <a href="StructureDefinition-Observation-pathology-uv-ips.html">Observation (Results: pathology)</a> ;
-<!--   <a href="StructureDefinition-Observation-member-pathology-uv-ips.html">Observation (Results: pathology, member)</a> ; -->
    <a href="StructureDefinition-Specimen-uv-ips.html">Specimen (IPS)</a> ;
    <a href="StructureDefinition-Organization-laboratory-uv-ips.html">Organization (laboratory)</a> ;
    [ <a href="StructureDefinition-Media-observation-uv-ips.html">Observation (Results: laboratory, media)</a> ]

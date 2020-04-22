@@ -1,11 +1,8 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<!-- <h3> Guida introduttiva sul profilo del paziente</h3>
-	<p>Questo profilo descrive come le applicazioni recuperano la risorsa Patient per verificare l'identità del paziente e accedere ai dati demografici di base e ad altre informazioni amministrative sul paziente.</p>
-
--->
 	<blockquote class="stu-note">
-		<b>medicationCodeableConcept Vs. medicationReference</b>
+		<b>medicationCodeableConcept vs. medicationReference</b>
 		<p>In the previously balloted versions the medicationCodeableConcept was used only to provide information about the known absent/unknown medications; using the medicationReference to describe the actual medication. To better support local implementations of patient summaries and align with the US Core appoach, both options (medicationCodeableConcept and medicationReference) have been made possible; recognizing however that there are jurisdictions that impose that the medicationReference is always used.</p>
 		<p>Implemeters are encouraged "to improve global interoperability (...)" to use the medicationReference, limiting the usage of the medicationCodeableConcept only to the cases in which no other information than a simple code is available.</p>
+		<p>It also should be noted that in an anticipated future version of the IG based on R5, these two slices on medication[x] will be replaced by the 'medication' element in the MedicationUsage resource (which replaces MedicationStatement), which uses the new CodeableReference data type.</p>
 	</blockquote>
 </div>
