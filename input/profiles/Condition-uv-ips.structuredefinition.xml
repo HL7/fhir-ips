@@ -158,7 +158,7 @@
 					<type value="type"/>
 					<path value="$this"/>
 				</discriminator>
-				<rules value="open"/>
+				<rules value="closed"/>
 			</slicing>
 			<mustSupport value="true"/>
 		</element>
@@ -185,14 +185,8 @@
 					<type value="type"/>
 					<path value="$this"/>
 				</discriminator>
-				<rules value="open"/>
+				<rules value="closed"/>
 			</slicing>
-			<type>
-				<code value="dateTime"/>
-			</type>
-			<type>
-				<code value="Period"/>
-			</type>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Condition.abatement[x]:abatementDateTime">
@@ -203,7 +197,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<!--
 		<element id="Condition.abatement[x]:abatementPeriod">
 			<path value="Condition.abatement[x]"/>
 			<sliceName value="abatementPeriod"/>
@@ -212,7 +205,6 @@
 			</type>
 			<mustSupport value="false"/>
 		</element>
--->
 		<element id="Condition.asserter">
 			<path value="Condition.asserter"/>
 			<definition value="Individual who is making the condition statement.&#xD;&#xA;Information source."/>
