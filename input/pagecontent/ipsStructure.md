@@ -19,7 +19,7 @@ The actual content could depend on the jurisdiction, it could report:
 In all those cases however medications are documented in the Patient Summary as medication statements.
 
 The entries of this section must be one of the choices below:
-- an entry stating that the patient is known not to be under any relevant medication+;+
+- an entry stating that the patient is known not to be under any relevant medication;
 - an entry stating that no information is available about the patient's potential medications;
 - one or more entries enumerating the patient's relevant medication (one entry per medication).
 
@@ -96,12 +96,13 @@ The profiles that have been defined for this implementation guide are listed <a 
 Following are the profiles that have been defined for each section. (R) denotes a required section (i.e. must be present in an IPS), (S) denotes a recommended section, the others are optional:
 * Medication Summary (R) [ <a href="StructureDefinition-MedicationStatement-uv-ips.html">Medication Statement (IPS)</a>; <a href="StructureDefinition-Medication-uv-ips.html">Medication (IPS)</a> ]
 * Allergies and Intolerances (R) [ <a href="StructureDefinition-AllergyIntolerance-uv-ips.html">Allergy Intolerance (IPS)</a> ]
-* Problem List (R) [ <a href="StructureDefinition-Condition-uv-ips.html">Condition (IPS)</a> ]
+* Problem List (R) 
+  [ <a href="StructureDefinition-Condition-uv-ips.html">Condition (IPS)</a> ]
 * Immunizations (S)
  [ <a href="StructureDefinition-Immunization-uv-ips.html">Immunization (IPS)</a> ]
 * History of Procedures (S)
  [ <a href="StructureDefinition-Procedure-uv-ips.html">Procedure (IPS)</a> ;
- <a href="StructureDefinition-Organization-observation-uv-ips.html">Organization (IPS)</a> ]
+ <a href="StructureDefinition-Organization-uv-ips.html">Organization (IPS)</a> ]
 * Medical Devices (S)
  [ <a href="StructureDefinition-DeviceUseStatement-uv-ips.html">Device Use Statement (IPS)</a> ;
  <a href="StructureDefinition-Device-uv-ips.html">Device (IPS)</a> ]
@@ -110,12 +111,12 @@ Following are the profiles that have been defined for each section. (R) denotes 
    [ <a href="StructureDefinition-Observation-laboratory-uv-ips.html">Observation (Results: laboratory)</a> ;
    <a href="StructureDefinition-Specimen-uv-ips.html">Specimen (IPS)</a> ;
    <a href="StructureDefinition-Organization-laboratory-uv-ips.html">Organization (laboratory)</a> ;
-   <a href="StructureDefinition-Media-observation-uv-ips.html">Observation (Results: laboratory, media)</a> ]
+   <a href="StructureDefinition-Media-observation-uv-ips.html">Media observation (Results: laboratory, media)</a> ]
   * Radiology results
    [ <a href="StructureDefinition-Observation-imaging-uv-ips.html">Observation (Results: imaging)</a> ;
    <a href="StructureDefinition-Device-observer-uv-ips.html">Device (Results: imaging, observer)</a> ;
    <a href="StructureDefinition-ImagingStudy-uv-ips.html">Imaging Study (IPS)</a> ;
-   <a href="StructureDefinition-Organization-observation-uv-ips.html">Organization (IPS)</a> ;
+   <a href="StructureDefinition-Organization-uv-ips.html">Organization (IPS)</a> ;
    <a href="StructureDefinition-Practitioner-uv-ips.html">Practitioner (IPS)</a> ]
   * Pathology results
    [ <a href="StructureDefinition-Observation-pathology-uv-ips.html">Observation (Results: pathology)</a> ;
@@ -124,9 +125,12 @@ Following are the profiles that have been defined for each section. (R) denotes 
    [ <a href="StructureDefinition-Media-observation-uv-ips.html">Observation (Results: laboratory, media)</a> ]
   * Other results 
    [ <a href="StructureDefinition-Observation-uv-ips.html">Observation (Results: generic)</a> ]
+  * Diagnostic Report (extract of)
+   [ <a href="StructureDefinition-Observation-uv-ips.html">DiagnosticReport (IPS)</a> ]
 * Vital Signs 
   [ <a href="{{site.data.fhir.path}}vitalsigns.html">Vital Signs</a> ]
 * Past history of illnesses
+  [ <a href="StructureDefinition-Condition-uv-ips.html">Condition (IPS)</a> ]
 * Pregnancy (status and history summary)
  [ <a href="StructureDefinition-Observation-pregnancy-edd-uv-ips.html">Observation (Pregnancy: EDD)</a> ;
  <a href="StructureDefinition-Observation-pregnancy-outcome-uv-ips.html">Observation (Pregnancy: outcome)</a> ;
@@ -135,7 +139,11 @@ Following are the profiles that have been defined for each section. (R) denotes 
  [ <a href="StructureDefinition-Observation-alcoholuse-uv-ips.html">Observation (SH: alcohol use)</a> ;
  <a href="StructureDefinition-Observation-tobaccouse-uv-ips.html">Observation (SH: tobacco use)</a> ]
 * Functional Status (Autonomy / Invalidity)
+ [ <a href="StructureDefinition-Condition-uv-ips.html">Condition (IPS)</a> ]
+ [ <a href="{{site.data.fhir.path}}clinicalimpression.html">Clinical Impression</a> ]
 * Plan of care
+  [ <a href="{{site.data.fhir.path}}careplan.html">Care Plan</a> ]
 * Advance Directives
+  [ <a href="{{site.data.fhir.path}}consent.html">Consent</a> ]
 
 ---

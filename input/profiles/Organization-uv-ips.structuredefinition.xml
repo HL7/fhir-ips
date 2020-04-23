@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="Organization-observation-uv-ips"/>
-  <meta>
-    <lastUpdated value="2018-02-19T12:23:48.535+01:00"/>
-  </meta>
-  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-observation-uv-ips"/>
-  <name value="OrganizationObservationUvIps"/>
+  <id value="Organization-uv-ips"/>
+  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips"/>
+  <name value="OrganizationUvIps"/>
   <title value="Organization (IPS)"/>
   <status value="active"/>
   <date value="2018-02-15T16:58:09.62+01:00"/>
@@ -20,31 +17,34 @@
       <path value="Organization"/>
       <mustSupport value="true"/>
     </element>
+	<!--
     <element id="Organization.meta">
       <path value="Organization.meta"/>
       <mustSupport value="false"/>
     </element>
-    <!-- Meta.profile is specified in order to provide a mechanism for downstream disambiguation of the profile used for 
+     Meta.profile is specified in order to provide a mechanism for downstream disambiguation of the profile used for 
       resource creation in cases where there is overlap between the profile constraints (e.g., the profiles differ only by 
       extensible value set bindings).  The 'meta' and 'meta.profile' elements are not required and are not designated as 
       mustSupport (this information is not required to be sent, and if received it can be ignored by the receiving system
       unless it is deemed to be useful).  Generally it is best to avoid relying on a declared profile. but it is available
       if and when it is needed.
-    -->
+    
     <element id="Organization.meta.profile">
       <path value="Organization.meta.profile"/>
-      <fixedCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-observation-uv-ips"/>
+      <fixedCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips"/>
       <mustSupport value="false"/>
     </element>
     <element id="Organization.identifier">
       <path value="Organization.identifier"/>
       <mustSupport value="true"/>
     </element>
+	-->
     <element id="Organization.name">
       <path value="Organization.name"/>
       <min value="1"/>
       <mustSupport value="true"/>
     </element>
+	<!--
     <element id="Organization.telecom">
       <path value="Organization.telecom"/>
       <mustSupport value="true"/>
@@ -53,5 +53,6 @@
       <path value="Organization.address"/>
       <mustSupport value="true"/>
     </element>
+	-->
   </differential>
 </StructureDefinition>

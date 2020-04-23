@@ -20,7 +20,7 @@
 
 <ul>{% include list-simple-devices.xhtml %}</ul>
 
-### DiagnosticReports
+### DiagnosticReport
 
 <ul>{% include list-simple-diagnosticreports.xhtml %}</ul>
 
@@ -61,6 +61,10 @@
 ### Practitioner
 
 <ul>{% include list-simple-practitioners.xhtml %}</ul>
+
+### PractitionerRole
+
+<ul>{% include list-simple-practitionerroles.xhtml %}</ul>
 
 ### Procedure
 

@@ -1,0 +1,15 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "simple-pr",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/ips/StructureDefinition/PractitionerRole-uv-ips"
+    ]
+  },
+  "practitioner": {
+    "reference": "Practitioner/eumfh-39-07"
+  },
+  "organization": {
+    "reference": "Organization/simple-org"
+  }
+}

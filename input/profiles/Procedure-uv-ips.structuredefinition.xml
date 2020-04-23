@@ -123,7 +123,7 @@
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Device-observer-uv-ips"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-observation-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips"/>
 			</type>
 			<mustSupport value="false"/>
 		</element>
@@ -131,7 +131,7 @@
 			<path value="Procedure.performer.onBehalfOf"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-observation-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips"/>
 			</type>
 			<mustSupport value="false"/>
 		</element>

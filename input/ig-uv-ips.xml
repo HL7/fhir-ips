@@ -171,7 +171,7 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="StructureDefinition/Organization-observation-uv-ips"/>
+				<reference value="StructureDefinition/Organization-uv-ips"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
@@ -388,7 +388,23 @@
 			</reference>
 			<name value="Organization: example"/>
 			<description value="Organization: example"/>
-			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-observation-uv-ips"/>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips"/>
+		</resource>
+			<resource>
+			<reference>
+				<reference value="Organization/simple-org"/>
+			</reference>
+			<name value="Organization: simple example"/>
+			<description value="Very Simple Organization example"/>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="PractitionerRole/simple-pr"/>
+			</reference>
+			<name value="PractitionerRole: simple example"/>
+			<description value="Very Simple PractitionerRole example"/>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/PractitionerRole-uv-ips"/>
 		</resource>
 		<resource>
 			<reference>
