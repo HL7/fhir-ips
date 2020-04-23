@@ -1,0 +1,116 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "targetDiseases-gps-uv-ips",
+  "url" : "http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips",
+  "version" : "0.3.0",
+  "name" : "TargetDiseasesGpsUvIps",
+  "title" : "Vaccine Target Diseases (GPS)",
+  "status" : "active",
+  "description" : "This value set includes the codes from the SNOMED International Global Patient Set (GPS) subset of SNOMED CT describing Vaccine Target Diseases. The concepts currently included in the value set are from the September 2019 release of the GPS, which is based on the July 2019 SNOMED CT International Edition release.",
+  "copyright" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomed-ct or info@snomed.org",
+  "compose" : {
+    "include" : [
+      {
+        "system" : "http://snomed.info/sct",
+        "concept" : [
+          {
+            "code" : "186150001",
+            "display" : "Enteritis caused by rotavirus (disorder)"
+          },
+          {
+            "code" : "56717001",
+            "display" : "Tuberculosis (disorder)"
+          },
+          {
+            "code" : "447894003",
+            "display" : "Sepsis caused by Staphylococcus (disorder)"
+          },
+          {
+            "code" : "110270004",
+            "display" : "Sequela of infection caused by Human poliovirus (disorder)"
+          },
+          {
+            "code" : "27836007",
+            "display" : "Pertussis (disorder)"
+          },
+          {
+            "code" : "372244006",
+            "display" : "Malignant melanoma (disorder)"
+          },
+          {
+            "code" : "36989005",
+            "display" : "Mumps (disorder)"
+          },
+          {
+            "code" : "38907003",
+            "display" : "Varicella (disorder)"
+          },
+          {
+            "code" : "23502006",
+            "display" : "Lyme disease (disorder)"
+          },
+          {
+            "code" : "14189004",
+            "display" : "Measles (disorder)"
+          },
+          {
+            "code" : "25225006",
+            "display" : "Disease caused by Adenovirus (disorder)"
+          },
+          {
+            "code" : "442438000",
+            "display" : "Influenza caused by Influenza A virus (disorder)"
+          },
+          {
+            "code" : "24662006",
+            "display" : "Influenza caused by Influenza B virus (disorder)"
+          },
+          {
+            "code" : "6142004",
+            "display" : "Influenza (disorder)"
+          },
+          {
+            "code" : "240532009",
+            "display" : "Human papillomavirus infection (disorder)"
+          },
+          {
+            "code" : "4834000",
+            "display" : "Typhoid fever (disorder)"
+          },
+          {
+            "code" : "76902006",
+            "display" : "Tetanus (disorder)"
+          },
+          {
+            "code" : "32398004",
+            "display" : "Bronchitis (disorder)"
+          },
+          {
+            "code" : "27836007",
+            "display" : "Pertussis (disorder)"
+          },
+          {
+            "code" : "70036007",
+            "display" : "Haemophilus influenzae pneumonia (disorder)"
+          },
+          {
+            "code" : "398102009",
+            "display" : "Acute poliomyelitis (disorder)"
+          },
+          {
+            "code" : "40468003",
+            "display" : "Viral hepatitis, type A (disorder)"
+          },
+          {
+            "code" : "66071002",
+            "display" : "Viral hepatitis type B (disorder)"
+          },
+          {
+            "code" : "50711007",
+            "display" : "Viral hepatitis type C (disorder)"
+          }
+        ]
+      }
+    ]
+  }
+}

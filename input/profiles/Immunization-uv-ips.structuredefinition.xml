@@ -183,5 +183,15 @@
 			<path value="Immunization.performer.actor.reference"/>
 			<mustSupport value="true"/>
 		</element>
+		<element id="Immunization.protocolApplied">
+			<path value="Immunization.protocolApplied"/>			
+		</element>
+		<element id="Immunization.protocolApplied.targetDisease">
+			<path value="Immunization.protocolApplied.targetDisease"/>
+			<binding>
+				<strength value="example"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-uv-ips"/>
+			</binding>
+		</element>
 	</differential>
 </StructureDefinition>
