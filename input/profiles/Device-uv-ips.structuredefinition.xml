@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
 	<id value="Device-uv-ips"/>
-	<meta>
-		<lastUpdated value="2018-02-14T11:49:41.487+01:00"/>
-	</meta>
 	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips"/>
 	<version value="0.2"/>
 	<name value="DeviceUvIps"/>
@@ -24,15 +21,6 @@
 			<path value="Device"/>
 			<comment value="This profile applies the rules defined by HL7 International for representing the UDI in the FHIR standard, by the document &quot;Medical Devices and Unique Device Identification (UDI) Pattern, Release 1&quot;"/>
 			<mustSupport value="true"/>
-		</element>
-		<element id="Device.meta">
-			<path value="Device.meta"/>
-			<mustSupport value="false"/>
-		</element>
-		<element id="Device.meta.profile">
-			<path value="Device.meta.profile"/>
-			<fixedCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips"/>
-			<mustSupport value="false"/>
 		</element>
 		<element id="Device.type">
 			<path value="Device.type"/>

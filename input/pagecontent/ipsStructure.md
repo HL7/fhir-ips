@@ -102,7 +102,8 @@ Following are the profiles that have been defined for each section. (R) denotes 
  [ <a href="StructureDefinition-Immunization-uv-ips.html">Immunization (IPS)</a> ]
 * History of Procedures (S)
  [ <a href="StructureDefinition-Procedure-uv-ips.html">Procedure (IPS)</a> ;
- <a href="StructureDefinition-Organization-uv-ips.html">Organization (IPS)</a> ]
+ <a href="StructureDefinition-Organization-uv-ips.html">Organization (IPS)</a>;
+    <a href="StructureDefinition-Device-observer-uv-ips.html">Device (performer, observer)</a> ]
 * Medical Devices (S)
  [ <a href="StructureDefinition-DeviceUseStatement-uv-ips.html">Device Use Statement (IPS)</a> ;
  <a href="StructureDefinition-Device-uv-ips.html">Device (IPS)</a> ]
@@ -114,7 +115,7 @@ Following are the profiles that have been defined for each section. (R) denotes 
    <a href="StructureDefinition-Media-observation-uv-ips.html">Media observation (Results: laboratory, media)</a> ]
   * Radiology results
    [ <a href="StructureDefinition-Observation-imaging-uv-ips.html">Observation (Results: imaging)</a> ;
-   <a href="StructureDefinition-Device-observer-uv-ips.html">Device (Results: imaging, observer)</a> ;
+   <a href="StructureDefinition-Device-observer-uv-ips.html">Device (performer, observer)</a> ;
    <a href="StructureDefinition-ImagingStudy-uv-ips.html">Imaging Study (IPS)</a> ;
    <a href="StructureDefinition-Organization-uv-ips.html">Organization (IPS)</a> ;
    <a href="StructureDefinition-Practitioner-uv-ips.html">Practitioner (IPS)</a> ]
@@ -139,8 +140,8 @@ Following are the profiles that have been defined for each section. (R) denotes 
  [ <a href="StructureDefinition-Observation-alcoholuse-uv-ips.html">Observation (SH: alcohol use)</a> ;
  <a href="StructureDefinition-Observation-tobaccouse-uv-ips.html">Observation (SH: tobacco use)</a> ]
 * Functional Status (Autonomy / Invalidity)
- [ <a href="StructureDefinition-Condition-uv-ips.html">Condition (IPS)</a> ]
- [ <a href="{{site.data.fhir.path}}clinicalimpression.html">Clinical Impression</a> ]
+ [ <a href="StructureDefinition-Condition-uv-ips.html">Condition (IPS)</a> ;
+  <a href="{{site.data.fhir.path}}clinicalimpression.html">Clinical Impression</a> ]
 * Plan of care
   [ <a href="{{site.data.fhir.path}}careplan.html">Care Plan</a> ]
 * Advance Directives

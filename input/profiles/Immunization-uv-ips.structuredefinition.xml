@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <StructureDefinition xmlns="http://hl7.org/fhir">
 	<id value="Immunization-uv-ips"/>
 	<meta>
@@ -184,13 +183,37 @@
 			<mustSupport value="true"/>
 		</element>
 		<element id="Immunization.protocolApplied">
-			<path value="Immunization.protocolApplied"/>			
+			<path value="Immunization.protocolApplied"/>
 		</element>
 		<element id="Immunization.protocolApplied.targetDisease">
 			<path value="Immunization.protocolApplied.targetDisease"/>
+			<slicing>
+				<discriminator>
+					<type value="pattern"/>
+					<path value="$this"/>
+				</discriminator>
+				<description value="Discriminated by bound value set"/>
+				<rules value="open"/>
+			</slicing>
 			<binding>
-				<strength value="example"/>
+				<strength value="preferred"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Immunization.protocolApplied.targetDisease:targetDiseaseGPSCode">
+			<path value="Immunization.protocolApplied.targetDisease"/>
+			<sliceName value="targetDiseaseGPSCode"/>
+			<short value="Code for a disease the vaccination is against from the SNOMED CT GPS code set."/>
+			<definition value="Code for a disease the vaccination is against from the SNOMED CT GPS code set."/>
+			<min value="0"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="TargetDiseasesGpsUvIps"/>
+				</extension>
+				<strength value="required"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips"/>
 			</binding>
 		</element>
 	</differential>
