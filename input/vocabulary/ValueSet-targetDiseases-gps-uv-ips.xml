@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="targetDiseases-gps-uv-ips"/>
+  <url value="http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips"/>
+  <version value="0.3.0"/>
+  <name value="TargetDiseasesGpsUvIps"/>
+  <title value="Vaccine Target Diseases (GPS) - IPS"/>
+  <status value="active"/>
+  <description value="This value set includes the codes from the SNOMED International Global Patient Set (GPS) subset of SNOMED CT describing Vaccine Target Diseases. The concepts currently included in the value set are from the September 2019 release of the GPS, which is based on the July 2019 SNOMED CT International Edition release."/>
+  <copyright value="This artifact includes content from SNOMED Clinical Terms&#174; (SNOMED CT&#174;) Global Patient Set (GPS). The GPS is produced by SNOMED International under the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/)&#10;&#10;Additional information about this license specific to SNOMED International&#8217;s release of the GPS:&#10;* SNOMED CT is &#169; and &#174; SNOMED International. The right to maintain the GPS remains vested exclusively in SNOMED International.&#10;* The Licensee can redistribute the GPS.&#10;* The Licensee can create derivatives or implementation-related products and services based on the GPS.&#10;* The Licensee cannot claim that SNOMED International or any of its Members endorses the Licensee&#8217;s derivative because it uses content from the GPS.&#10;* Neither SNOMED International nor any of the contributors accept any liability for the Licensee&#8217;s use or redistribution of the GPS.&#10;* SNOMED CT&#174; was originally created by the College of American Pathologists.&#10;&#10;Without obtaining prior written permission from SNOMED International, you are expressly prohibited from using, distributing or reproducing the SNOMED International, SNOMED CT or SNOMED GPS logo, service mark or trademark. Please review all terms and conditions of use [here](http://www.snomed.org/terms-and-conditions)."/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="186150001"/>
+        <display value="Enteritis caused by rotavirus (disorder)"/>
+      </concept>
+      <concept>
+        <code value="56717001"/>
+        <display value="Tuberculosis (disorder)"/>
+      </concept>
+      <concept>
+        <code value="447894003"/>
+        <display value="Sepsis caused by Staphylococcus (disorder)"/>
+      </concept>
+      <concept>
+        <code value="110270004"/>
+        <display value="Sequela of infection caused by Human poliovirus (disorder)"/>
+      </concept>
+      <concept>
+        <code value="27836007"/>
+        <display value="Pertussis (disorder)"/>
+      </concept>
+      <concept>
+        <code value="372244006"/>
+        <display value="Malignant melanoma (disorder)"/>
+      </concept>
+      <concept>
+        <code value="36989005"/>
+        <display value="Mumps (disorder)"/>
+      </concept>
+      <concept>
+        <code value="38907003"/>
+        <display value="Varicella (disorder)"/>
+      </concept>
+      <concept>
+        <code value="23502006"/>
+        <display value="Lyme disease (disorder)"/>
+      </concept>
+      <concept>
+        <code value="14189004"/>
+        <display value="Measles (disorder)"/>
+      </concept>
+      <concept>
+        <code value="25225006"/>
+        <display value="Disease caused by Adenovirus (disorder)"/>
+      </concept>
+      <concept>
+        <code value="442438000"/>
+        <display value="Influenza caused by Influenza A virus (disorder)"/>
+      </concept>
+      <concept>
+        <code value="24662006"/>
+        <display value="Influenza caused by Influenza B virus (disorder)"/>
+      </concept>
+      <concept>
+        <code value="6142004"/>
+        <display value="Influenza (disorder)"/>
+      </concept>
+      <concept>
+        <code value="240532009"/>
+        <display value="Human papillomavirus infection (disorder)"/>
+      </concept>
+      <concept>
+        <code value="4834000"/>
+        <display value="Typhoid fever (disorder)"/>
+      </concept>
+      <concept>
+        <code value="76902006"/>
+        <display value="Tetanus (disorder)"/>
+      </concept>
+      <concept>
+        <code value="32398004"/>
+        <display value="Bronchitis (disorder)"/>
+      </concept>
+      <concept>
+        <code value="27836007"/>
+        <display value="Pertussis (disorder)"/>
+      </concept>
+      <concept>
+        <code value="70036007"/>
+        <display value="Haemophilus influenzae pneumonia (disorder)"/>
+      </concept>
+      <concept>
+        <code value="398102009"/>
+        <display value="Acute poliomyelitis (disorder)"/>
+      </concept>
+      <concept>
+        <code value="40468003"/>
+        <display value="Viral hepatitis, type A (disorder)"/>
+      </concept>
+      <concept>
+        <code value="66071002"/>
+        <display value="Viral hepatitis type B (disorder)"/>
+      </concept>
+      <concept>
+        <code value="50711007"/>
+        <display value="Viral hepatitis type C (disorder)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

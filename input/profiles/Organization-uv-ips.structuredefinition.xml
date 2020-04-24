@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Organization-uv-ips"/>
+  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips"/>
+  <name value="OrganizationUvIps"/>
+  <title value="Organization (IPS)"/>
+  <status value="active"/>
+  <date value="2018-02-15T16:58:09.62+01:00"/>
+  <description value="This profile constrains the Organization resource to represent an organization that acts as performer or observer for an imaging observation; or as performer for a procedure."/>
+  <kind value="resource"/>
+  <abstract value="false"/>
+  <type value="Organization"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+  <derivation value="constraint"/>
+  <differential>
+    <element id="Organization">
+      <path value="Organization"/>
+      <mustSupport value="true"/>
+    </element>	
+    <element id="Organization.name">
+      <path value="Organization.name"/>
+      <min value="1"/>
+      <mustSupport value="true"/>
+    </element>	
+  </differential>
+</StructureDefinition>
