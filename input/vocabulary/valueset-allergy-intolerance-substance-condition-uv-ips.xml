@@ -37,6 +37,7 @@
 	<compose>
 		<include>
 			<system value="http://snomed.info/sct"/>
+			<!-- "Drug or medicament" -->
 			<filter>
 				<property value="concept"/>
 				<op value="descendent-of"/>
@@ -45,6 +46,7 @@
 		</include>
 		<include>
 			<system value="http://snomed.info/sct"/>
+			<!-- "Edible substance" -->
 			<filter>
 				<property value="concept"/>
 				<op value="descendent-of"/>
@@ -53,6 +55,7 @@
 		</include>
 		<include>
 			<system value="http://snomed.info/sct"/>
+			<!-- "Allergen class" -->
 			<filter>
 				<property value="concept"/>
 				<op value="descendent-of"/>
@@ -61,6 +64,16 @@
 		</include>
 		<include>
 			<system value="http://snomed.info/sct"/>
+			<!-- "Biological substance" -->
+			<filter>
+				<property value="concept"/>
+				<op value="descendent-of"/>
+				<value value="115668003"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<!-- "Metal" -->
 			<filter>
 				<property value="concept"/>
 				<op value="descendent-of"/>
@@ -69,6 +82,7 @@
 		</include>
 		<include>
 			<system value="http://snomed.info/sct"/>
+			<!-- "Pharmaceutical / biologic product" -->
 			<filter>
 				<property value="concept"/>
 				<op value="descendent-of"/>

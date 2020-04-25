@@ -1,4 +1,63 @@
 -------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept" : [{
+        "code" : "331055",
+        "display" : "Amoxicillin 1000 MG"
+      },
+      {
+        "code" : "437158",
+        "display" : "Acetaminophen 100 MG"
+      },
+      {
+        "code" : "332122",
+        "display" : "lithium citrate 60 MG/ML"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:f4fbf5b9-78f2-46e0-a24d-aa44a4613767",
+    "timestamp" : "2020-04-25T20:35:23.676Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://www.nlm.nih.gov/research/umls/rxnorm|??"
+    }],
+    "contains" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "331055",
+      "display" : "Amoxicillin 1000 MG"
+    },
+    {
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "437158",
+      "display" : "Acetaminophen 100 MG"
+    },
+    {
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "332122",
+      "display" : "lithium citrate 60 MG/ML"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
   "code" : "757704",
@@ -1918,65 +1977,6 @@ v: {
 v: {
   "display" : "Simvastatin",
   "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : false, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "concept" : [{
-        "code" : "331055",
-        "display" : "Amoxicillin 1000 MG"
-      },
-      {
-        "code" : "437158",
-        "display" : "Acetaminophen 100 MG"
-      },
-      {
-        "code" : "332122",
-        "display" : "lithium citrate 60 MG/ML"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "status" : "active",
-  "expansion" : {
-    "identifier" : "urn:uuid:04daf79b-a60c-4aae-96bb-bde6201916ac",
-    "timestamp" : "2020-04-13T13:27:45.642Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueBoolean" : true
-    },
-    {
-      "name" : "excludeNested",
-      "valueBoolean" : true
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://www.nlm.nih.gov/research/umls/rxnorm|??"
-    }],
-    "contains" : [{
-      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "code" : "331055",
-      "display" : "Amoxicillin 1000 MG"
-    },
-    {
-      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "code" : "437158",
-      "display" : "Acetaminophen 100 MG"
-    },
-    {
-      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "code" : "332122",
-      "display" : "lithium citrate 60 MG/ML"
-    }]
-  }
-},
   "error" : ""
 }
 -------------------------------------------------------------------------------------

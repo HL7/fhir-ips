@@ -192,34 +192,6 @@ v: {
   "system" : "http://www.whocc.no/atc",
   "code" : "J07CA02",
   "display" : "diphtheria-pertussis-poliomyelitis-tetanus"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://snomed.info/sct",
-      "filter" : [{
-        "property" : "concept",
-        "op" : "is-a",
-        "value" : "787859002"
-      }]
-    }],
-    "exclude" : [{
-      "system" : "http://snomed.info/sct",
-      "concept" : [{
-        "code" : "787859002"
-      }]
-    }]
-  }
-}, "lang":"fr-LU", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "diphtheria-pertussis-poliomyelitis-tetanus",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "J07CA02"
 }, "valueSet" :null, "lang":"fr-LU", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "diphtheria-pertussis-poliomyelitis-tetanus",
@@ -240,8 +212,8 @@ e: {
   "resourceType" : "ValueSet",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:e9186c81-7152-445c-8700-94bc45115315",
-    "timestamp" : "2020-04-13T13:22:39.691Z",
+    "identifier" : "urn:uuid:bfb5ca5b-cfb0-4258-841e-7c5c753ef5f8",
+    "timestamp" : "2020-04-25T20:37:57.691Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -1627,17 +1599,6 @@ e: {
     }]
   }
 },
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.whocc.no/atc",
-  "code" : "J07CA02",
-  "display" : "diphtheria-pertussis-poliomyelitis-tetanus"
-}, "valueSet" :null, "lang":"fr-LU", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "diphtheria-pertussis-poliomyelitis-tetanus",
-  "severity" : null,
   "error" : ""
 }
 -------------------------------------------------------------------------------------
