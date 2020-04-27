@@ -83,8 +83,8 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.encounter.reference">
-			<path value="Composition.encounter.reference"/>
+		<element id="Composition.encounter">
+			<path value="Composition.encounter"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.date">
@@ -95,10 +95,6 @@
 			<path value="Composition.author"/>
 			<short value="Who and/or what authored the IPS"/>
 			<definition value="Identifies who is responsible for the information in the IPS, not necessarily who typed it in.&#xD;&#xA;&#xD;&#xA;The type of author(s) contribute to determine the &quot;nature&quot;of the Patient Summary: e.g. a &quot;human-curated&quot; IPS Vs. an &quot;automatically generated&quot; IPS."/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Composition.author.reference">
-			<path value="Composition.author.reference"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.title">
@@ -127,16 +123,8 @@
 			<path value="Composition.attester.party"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.attester.party.reference">
-			<path value="Composition.attester.party.reference"/>
-			<mustSupport value="true"/>
-		</element>
 		<element id="Composition.custodian">
 			<path value="Composition.custodian"/>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Composition.custodian.reference">
-			<path value="Composition.custodian.reference"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.relatesTo">
