@@ -54,6 +54,9 @@ These value sets have been defined for this implementation guide:
    <li>
     <a href="ValueSet-current-smoking-status-uv-ips.html">Current Smoking Status - IPS</a>
    </li>
+   <li>
+    <a href="ValueSet-healthcare-professional-roles-uv-ips.html">Healthcare Professional Roles - IPS</a>
+   </li>
     <li>
     <a href="ValueSet-medical-devices-uv-ips.html">Medical Devices - IPS</a>
    </li>
