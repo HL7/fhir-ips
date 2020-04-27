@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="CodeableConcept-uv-ips" />
-  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips" />
-  <name value="CodeableConceptIPS" />
-  <title value="Codeable Concept (IPS)" />
+  <id value="CodeableConcept-uv-ips"/>
+  <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+  <name value="CodeableConceptIPS"/>
+  <title value="Codeable Concept (IPS)"/>
   <status value="active"/>
-  <date value="2018-03-19T11:26:15.349+01:00" />
-  <publisher value="HL7 International" />
-  <description value="This profile represents the constraint applied to the CodeableConcept data type by the International Patient Summary (IPS) FHIR Implementation Guide to use the Coding-uv-ips data type profile." />
-  <kind value="complex-type" />
-  <abstract value="false" />
-  <type value="CodeableConcept" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
-  <derivation value="constraint" />
+  <date value="2018-03-19T11:26:15.349+01:00"/>
+  <publisher value="HL7 International"/>
+  <description value="This profile represents the constraint applied to the CodeableConcept data type by the International Patient Summary (IPS) FHIR Implementation Guide to use the Coding-uv-ips data type profile."/>
+  <kind value="complex-type"/>
+  <abstract value="false"/>
+  <type value="CodeableConcept"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+  <derivation value="constraint"/>
   <differential>
     <element id="CodeableConcept">
-      <path value="CodeableConcept" />
-      <mustSupport value="true" />
+      <path value="CodeableConcept"/>
+      <mustSupport value="true"/>
     </element>
     <element id="CodeableConcept.coding">
-      <path value="CodeableConcept.coding" />
+      <path value="CodeableConcept.coding"/>
       <type>
-        <code value="Coding" />
-        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips" />
+        <code value="Coding"/>
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Coding-uv-ips"/>
       </type>
-      <mustSupport value="true" />
+      <mustSupport value="true"/>
     </element>
 		<element id="CodeableConcept.text">
 			<path value="CodeableConcept.text"/>

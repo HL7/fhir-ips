@@ -7,8 +7,8 @@
   <status value="active"/>
   <date value="2018-03-20T17:17:13.817+01:00"/>
   <publisher value="HL7 International"/>
-  <description value="Data type Quantity constrained to use the UCUM units"/>
-  <purpose value="This profile of the Quantity data type imposes the usage of the UCUM code system for units"/>
+  <description value="Data type Quantity constrained to use UCUM as the code system for units"/>
+  <purpose value="This profile of the Quantity data type imposes the usage of the UCUM as the code system for units"/>
   <kind value="complex-type"/>
   <abstract value="false"/>
   <type value="Quantity"/>
@@ -18,7 +18,7 @@
     <element id="Quantity">
       <path value="Quantity"/>
       <short value="A measured amount using UCUM"/>
-      <definition value="A measured amount (or an amount that can potentially be measured). Note that measured amounts include amounts that are not precisely quantified, including amounts involving arbitrary units and floating currencies.&#xD;&#xA;This profile imposes that the code system for unit be UCUM"/>
+      <definition value="A measured amount (or an amount that can potentially be measured). Note that measured amounts include amounts that are not precisely quantified, including amounts involving arbitrary units and floating currencies.&#xD;&#xA;This profile imposes that the code system for units be UCUM."/>
       <mustSupport value="true"/>
     </element>
     <element id="Quantity.system">

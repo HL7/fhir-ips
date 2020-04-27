@@ -36,7 +36,7 @@ It is in fact allowed in these cases to use alternative value sets / code system
 1. One to indicate a problem from the SNOMED CT Global Patient Set (GPS) ( [CORE Problem List Finding/Situation/Event (GPS) - IPS](ValueSet-core-problem-finding-situation-event-gps-uv-ips.html) )
 1. One for  unknown or absent relevant problems ( [Absent or Unknown Problems - IPS](ValueSet-absent-or-unknown-problems-uv-ips.html) )
 
-Since this slicing is open, the presence of these two required value sets doesn't prevent implementers or specifiers from representing a problem by using a code from an alternative code system (e.g. ICD-11) as the primary code. The fragment below shows an example of an alternative representation for the problem, as used in the [Condition example](Condition-eumfh-39-07-1.html) for "Acute myocardial infarction of anterior wall" that is included in this guide.
+Since this slicing is open, the presence of these two required value sets doesn't prevent implementers or specifiers from representing a problem by using a code from an alternative code system (e.g. ICD-11) as the primary code. The code fragment below shows an example of using ICD-11 for coding the problem, as included as one of the Coding instances in the [Condition example](Condition-eumfh-39-07-1.html) for "Acute myocardial infarction of anterior wall" in this guide.
 
 ```
 	<code>
@@ -96,13 +96,13 @@ In the context of the IPS, mustSupport on any data element SHALL be interprete
 
 ### Translation of designations and narratives
 
-The functional requirement of supporting the translation of the designations has been addressed in this guide extending the coding data type (coding-uv-ips).
+The functional requirement of supporting the translation of the designations has been addressed in this guide extending the coding data type (Coding-uv-ips).
 
 For details about the support of narrative translations please refer to the [Multi-Language support in FHIR](http://build.fhir.org/languages.html) section.
 
 ### Representation of Person Names
 This specification requires that any Person Name is represented including at least the given and family components.
-Even though it is recognized that there is not in all cultures the same concept of “family name”, no evidence has been collected in analyzing the international context (e.g. Japan, Korea; China) that justifies the retirement of this requirement.
+Even though it is recognized that there is not in all cultures the same concept of “family name”, no evidence has been collected in analyzing the international context (e.g. Japan, Korea, China) that justifies the retirement of this requirement.
 Moreover, due to the global scope of the International Patient Summary, the case of non-alphabetic representations of the names has also been considered.
 In this case, to facilitate the global use of the IPS, at least one alphabetic representation of the name SHALL be provided. 
 
@@ -112,7 +112,7 @@ A general introduction to the problem of cross-jurisdictional identification of 
 
 As for the CDA implementation guide, this guide describes how the relevant IDMP identifiers and attributes, namely the Pharmaceutical Product Identifiers (PhPIDs), the Medicinal Product Identifier (MPID), and the Medicinal Product Package Identifier (PCID) are represented in the IPS.
 
-The solution proposed for the FHIR IPS is slightly different from that adopted in the CDA and follows the current indications of the FHIR community: all the relevant product codes are represented in fact as one of the possible Codings of the product CodeableConcept, rather than being expressed as distinct attributes/resources (which is a possible approach). The same approach is followed for the vaccines.
+The solution proposed for the FHIR IPS IG is slightly different from that adopted in the CDA IG and follows the current indications of the FHIR community: all the relevant product codes are represented in fact as one of the possible Codings of the product CodeableConcept, rather than being expressed as distinct attributes/resources (which is a possible approach). The same approach is followed for the vaccines.
 
 ### Provenance
 
