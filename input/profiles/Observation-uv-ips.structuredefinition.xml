@@ -87,6 +87,12 @@
 			<path value="Observation.effective[x]"/>
 			<min value="1"/>
 			<max value="1"/>
+			<type>
+				<code value="dateTime"/>
+			</type>
+			<type>
+				<code value="Period"/>
+			</type>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.effective[x]:data-absent-reason">
@@ -110,6 +116,11 @@
 		</element>
 		<element id="Observation.hasMember">
 			<path value="Observation.hasMember"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.hasMember.reference">
+			<path value="Observation.hasMember.reference"/>
+			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
 	</differential>

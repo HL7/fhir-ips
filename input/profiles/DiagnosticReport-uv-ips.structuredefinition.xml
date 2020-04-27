@@ -73,6 +73,12 @@
 			<path value="DiagnosticReport.effective[x]"/>
 			<min value="1"/>
 			<max value="1"/>
+			<type>
+				<code value="dateTime"/>
+			</type>
+			<type>
+				<code value="Period"/>
+			</type>
 			<mustSupport value="true"/>
 		</element>
 		<element id="DiagnosticReport.effective[x]:data-absent-reason">
@@ -83,26 +89,6 @@
 			<type>
 				<code value="Extension"/>
 				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="DiagnosticReport.effective[x]:effectiveDateTime">
-			<path value="DiagnosticReport.effective[x]"/>
-			<sliceName value="effectiveDateTime"/>
-			<min value="0"/>
-			<max value="1"/>
-			<type>
-				<code value="dateTime"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="DiagnosticReport.effective[x]:effectivePeriod">
-			<path value="DiagnosticReport.effective[x]"/>
-			<sliceName value="effectivePeriod"/>
-			<min value="0"/>
-			<max value="1"/>
-			<type>
-				<code value="Period"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>

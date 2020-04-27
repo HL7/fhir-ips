@@ -24,7 +24,7 @@
 		<element id="Observation">
 			<path value="Observation"/>
 			<short value="Laboratory result for a simple test or for a panel/study"/>
-			<definition value="This observation may represent the result of a simple laboratory test such as hematocrit or it may group the set of results produced by a multi-test study or panel such as a complete blood count, a dynamic function test, a urine specimen study. In the latter case, the observation carries the overall conclusion of the study and references the atomic results of the study  as &quot;has-member&quot; child observations"/>
+			<definition value="This observation may represent the result of a simple laboratory test such as hematocrit or it may group the set of results produced by a multi-test study or panel such as a complete blood count, a dynamic function test, a urine specimen study. In the latter case, the observation carries the overall conclusion of the study and references the atomic results of the study as &quot;has-member&quot; child observations"/>
 			<comment value="Represents either a lab simple observation or the group of observations produced by a laboratory study."/>
 			<constraint>
 				<key value="ips-2"/>
@@ -140,6 +140,12 @@
 				<expression value="$this.ofType(dateTime).empty() or ($this as dateTime).toString().length() &gt;= 8"/>
 				<xpath value="not(boolean(effectiveDateTime)) or f:matches(effectiveDateTime,/\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d([+-][0-2]\d:[0-5]\d|Z)/)"/>
 			</constraint>
+			<type>
+				<code value="dateTime"/>
+			</type>
+			<type>
+				<code value="Period"/>
+			</type>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.effective[x]:data-absent-reason">
@@ -257,7 +263,7 @@
 		</element>
 		<element id="Observation.specimen">
 			<path value="Observation.specimen"/>
-			<comment value="The specimen is often implied by the observation code. &#xD;&#xA;In the context of this Observation-laboratory-uv-ips profile, specimen should be provided only when it is not implied by the Observation.code, and when further information about the specimen needs to be captured (such as specimen source body site). &#xD;&#xA;In case of a laboratory panel/study using a single specimen , which needs  further description (like a CSF microbiology study), the specimen is introduced by this element.&#xD;&#xA;In case of a dynamic function test using multiple specimens, each specimen shall be further described, if needed, within the sub-observation that was produced on this specimen."/>
+			<comment value="The specimen is often implied by the observation code. &#xD;&#xA;In the context of this Observation-laboratory-uv-ips profile, specimen should be provided only when it is not implied by the Observation.code, and when further information about the specimen needs to be captured (such as specimen source body site). &#xD;&#xA;In case of a laboratory panel/study using a single specimen , which needs further description (like a CSF microbiology study), the specimen is introduced by this element.&#xD;&#xA;In case of a dynamic function test using multiple specimens, each specimen shall be further described, if needed, within the sub-observation that was produced on this specimen."/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips"/>
@@ -316,8 +322,8 @@
 		</element>
 		<element id="Observation.hasMember">
 			<path value="Observation.hasMember"/>
-			<definition value="A  reference to another Observation profiled by Observation-pathology-uv-ips. The target observation is considered as a sub-observation of the current one, which plays the role of a grouper"/>
-			<comment value="This element is used in the context of international patient summary when there is a need to group a collection of observations, because they belong to the same panel, or because they share a common interpretation comment, or a common media attachment (illustrative image or graph). In these cases, the current observation profiled as observation-laboratory-uv-trillium2 is the grouper, and its set of sub-observations are related observations  using the type &quot;has-member&quot; and the profile observation-member-laboratory-uv-trillium2."/>
+			<definition value="A reference to another Observation profiled by Observation-pathology-uv-ips. The target observation is considered as a sub-observation of the current one, which plays the role of a grouper"/>
+			<comment value="This element is used in the context of international patient summary when there is a need to group a collection of observations, because they belong to the same panel, or because they share a common interpretation comment, or a common media attachment (illustrative image or graph). In these cases, the current observation profiled as observation-laboratory-uv-trillium2 is the grouper, and its set of sub-observations are related observations using the type &quot;has-member&quot; and the profile observation-member-laboratory-uv-trillium2."/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pathology-uv-ips"/>
@@ -331,7 +337,7 @@
 		</element>
 		<element id="Observation.derivedFrom">
 			<path value="Observation.derivedFrom"/>
-			<definition value="A  reference to another Observation, which is constrained to valueAttachment, in order to convey an illustrative media content."/>
+			<definition value="A reference to another Observation, which is constrained to valueAttachment, in order to convey an illustrative media content."/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Media-observation-uv-ips"/>
