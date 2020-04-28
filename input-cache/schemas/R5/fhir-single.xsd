@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Mon, Apr 27, 2020 16:34+0000 for FHIR v4.2.0 
+  Generated on Tue, Apr 28, 2020 00:15+0000 for FHIR v4.2.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.2.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -527,6 +527,8 @@
       <xs:element ref="StructureDefinition"/>
       <xs:element ref="StructureMap"/>
       <xs:element ref="Subscription"/>
+      <xs:element ref="SubscriptionStatus"/>
+      <xs:element ref="SubscriptionTopic"/>
       <xs:element ref="Substance"/>
       <xs:element ref="SubstanceDefinition"/>
       <xs:element ref="SubstanceNucleicAcid"/>
@@ -540,7 +542,6 @@
       <xs:element ref="TerminologyCapabilities"/>
       <xs:element ref="TestReport"/>
       <xs:element ref="TestScript"/>
-      <xs:element ref="Topic"/>
       <xs:element ref="ValueSet"/>
       <xs:element ref="VerificationResult"/>
       <xs:element ref="VisionPrescription"/>
@@ -8226,6 +8227,11 @@ into another (possibly the same) biological entity.</xs:documentation>
       <xs:enumeration value="collection">
         <xs:annotation>
           <xs:documentation xml:lang="en">Collection</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="subscription-notification">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Subscription Notification</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>
@@ -22168,6 +22174,21 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
           <xs:documentation xml:lang="es">Suscripción</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
+      <xs:enumeration value="SubscriptionStatus">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SubscriptionStatus</xs:documentation>
+          <xs:documentation xml:lang="en">SubscriptionStatus</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="SubscriptionTopic">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">SubscriptionTopic</xs:documentation>
+          <xs:documentation xml:lang="en">SubscriptionTopic</xs:documentation>
+          <xs:documentation xml:lang="fr">Souscription Sujet</xs:documentation>
+          <xs:documentation xml:lang="es">Tema de Suscripción</xs:documentation>
+          <xs:documentation xml:lang="zh">话题</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
       <xs:enumeration value="Substance">
         <xs:annotation>
           <xs:documentation xml:lang="en">Substance</xs:documentation>
@@ -22264,15 +22285,6 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
           <xs:documentation xml:lang="fr">ScriptTest</xs:documentation>
           <xs:documentation xml:lang="es">ScriptDePrueba</xs:documentation>
           <xs:documentation xml:lang="zh">测试脚本</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="Topic">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Topic</xs:documentation>
-          <xs:documentation xml:lang="en">Topic</xs:documentation>
-          <xs:documentation xml:lang="fr">Sujet</xs:documentation>
-          <xs:documentation xml:lang="es">Tema</xs:documentation>
-          <xs:documentation xml:lang="zh">话题</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
       <xs:enumeration value="ValueSet">
@@ -41974,12 +41986,12 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
   </xs:complexType>
   <xs:element name="Subscription" type="Subscription">
     <xs:annotation>
-      <xs:documentation xml:lang="en">The subscription resource describes a particular client's request to be notified about a Topic.</xs:documentation>
+      <xs:documentation xml:lang="en">The subscription resource describes a particular client's request to be notified about a SubscriptionTopic.</xs:documentation>
     </xs:annotation>
   </xs:element>
   <xs:complexType name="Subscription">
     <xs:annotation>
-      <xs:documentation xml:lang="en">The subscription resource describes a particular client's request to be notified about a Topic.</xs:documentation>
+      <xs:documentation xml:lang="en">The subscription resource describes a particular client's request to be notified about a SubscriptionTopic.</xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
@@ -41995,14 +42007,14 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
               <xs:documentation xml:lang="en">A natural language name identifying the subscription.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="status" minOccurs="1" maxOccurs="1" type="SubscriptionStatus">
+          <xs:element name="status" minOccurs="1" maxOccurs="1" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">The status of the subscription, which marks the server state for managing the subscription.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="topic" minOccurs="1" maxOccurs="1" type="Reference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The reference to the topic to be notified about.</xs:documentation>
+              <xs:documentation xml:lang="en">The reference to the subscription topic to be notified about.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="contact" minOccurs="0" maxOccurs="unbounded" type="ContactPoint">
@@ -42022,7 +42034,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:element name="filterBy" type="Subscription.FilterBy" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The filter properties to be applied to narrow the topic stream.  When multiple filters are applied, evaluates to true if all the conditions are met; otherwise it returns false.   (i.e., logical AND).</xs:documentation>
+              <xs:documentation xml:lang="en">The filter properties to be applied to narrow the subscription topic stream.  When multiple filters are applied, evaluates to true if all the conditions are met; otherwise it returns false.   (i.e., logical AND).</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="error" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
@@ -42030,54 +42042,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
               <xs:documentation xml:lang="en">A record of the last error that occurred when the server processed a notification.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="eventCount" minOccurs="0" maxOccurs="1" type="unsignedInt">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">A record of  the number of events for which the server has attempted delivery on this subscription (i.e., the number of events that occurred while the subscription is in an &quot;active&quot; or &quot;error&quot; state -- not &quot;requested&quot; or &quot;off&quot;).   Server Initializes to 0 for a new subscription.  Repeated attempts at delivery of the *same* event notification do not increment this counter.  Valid values are unsigned integers (0+).  The decmial type is used to ensure that counts can grow larger than 32-bit values.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="channel" type="Subscription.Channel" minOccurs="1" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Details where to send notifications when resources are received that meet the criteria.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="Subscription.FilterBy">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">The subscription resource describes a particular client's request to be notified about a Topic.</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="BackboneElement">
-        <xs:sequence>
-          <xs:element name="name" minOccurs="1" maxOccurs="1" type="string">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The filter label (=key) as defined in the `Topic.canFilterBy.name`  element.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="matchType" minOccurs="0" maxOccurs="1" type="SubscriptionFilterByMatchType">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The operator to apply to the filter value when determining matches (Search modifiers).</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="value" minOccurs="1" maxOccurs="1" type="string">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The literal value or resource path as is legal in search - for example, &quot;Patient/123&quot; or &quot;le1950&quot;.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="Subscription.Channel">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">The subscription resource describes a particular client's request to be notified about a Topic.</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="BackboneElement">
-        <xs:sequence>
-          <xs:element name="type" minOccurs="1" maxOccurs="1" type="CodeableConcept">
+          <xs:element name="channelType" minOccurs="1" maxOccurs="1" type="Coding">
             <xs:annotation>
               <xs:documentation xml:lang="en">The type of channel to send notifications on.</xs:documentation>
            </xs:annotation>
@@ -42097,22 +42062,11 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
               <xs:documentation xml:lang="en">If present,  a 'hearbeat&quot; notification (keepalive) is sent via this channel with an the interval period equal to this elements integer value in seconds.    If not present, a heartbeat notification is not sent.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="payload" type="Subscription.Payload" minOccurs="0" maxOccurs="1">
+          <xs:element name="timeout" minOccurs="0" maxOccurs="1" type="unsignedInt">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The payload mimetype and content.  If the payload is not present, then there is no payload in the notification, just a notification.</xs:documentation>
+              <xs:documentation xml:lang="en">If present, the maximum amount of time a server will allow before failing a notification attempt.</xs:documentation>
            </xs:annotation>
           </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="Subscription.Payload">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">The subscription resource describes a particular client's request to be notified about a Topic.</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="BackboneElement">
-        <xs:sequence>
           <xs:element name="contentType" minOccurs="0" maxOccurs="1" type="code">
             <xs:annotation>
               <xs:documentation xml:lang="en">The mime type to send the payload in - either application/fhir+xml, or application/fhir+json. The MIME types &quot;text/plain&quot; and &quot;text/html&quot; may also be used for Email subscriptions.</xs:documentation>
@@ -42121,6 +42075,32 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           <xs:element name="content" minOccurs="0" maxOccurs="1" type="SubscriptionPayloadContent">
             <xs:annotation>
               <xs:documentation xml:lang="en">How much of the resource content to deliver in the notification payload. The choices are an empty payload, only the resource id, or the full resource content.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Subscription.FilterBy">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">The subscription resource describes a particular client's request to be notified about a SubscriptionTopic.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="searchParamName" minOccurs="1" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The filter label (=key) as defined in the `SubscriptionTopic.canfilterBy.searchParamName`  element.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="searchModifier" minOccurs="0" maxOccurs="1" type="code">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The operator to apply to the filter value when determining matches (Search modifiers).</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="value" minOccurs="1" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The literal value or resource path as is legal in search - for example, &quot;Patient/123&quot; or &quot;le1950&quot;.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -42157,78 +42137,320 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:simpleType name="SubscriptionStatus-list">
-    <xs:restriction base="code-primitive">
-      <xs:enumeration value="requested">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Requested</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="active">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Active</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="error">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Error</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="off">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">Off</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-    </xs:restriction>
-  </xs:simpleType>
+  <xs:element name="SubscriptionStatus" type="SubscriptionStatus">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">The SubscriptionStatus resource describes the state of a Subscription during notifications.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
   <xs:complexType name="SubscriptionStatus">
     <xs:annotation>
-      <xs:documentation xml:lang="en">The status of a subscription.</xs:documentation>
+      <xs:documentation xml:lang="en">The SubscriptionStatus resource describes the state of a Subscription during notifications.</xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
-      <xs:extension base="Element">
-        <xs:attribute name="value" type="SubscriptionStatus-list" use="optional"/>
+      <xs:extension base="DomainResource">
+        <xs:sequence>
+          <xs:element name="notificationType" minOccurs="1" maxOccurs="1" type="SubscriptionNotificationType">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The type of event being conveyed with this notificaiton.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="eventsSinceSubscriptionStart" minOccurs="0" maxOccurs="1" type="integer64">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The total number of actual events which have been generated since the Subscription was created (inclusive of this notification) - regardless of how many have been successfully communicated.  This number is NOT incremented for handshake and heartbeat notifications.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="eventsInNotification" minOccurs="0" maxOccurs="1" type="integer">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The total number of actual events represented within this notification.  For handshake and heartbeat notifications, this will be zero or not present.  For event-notifications, this number may be one or more, depending on server batching.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="subscription" minOccurs="1" maxOccurs="1" type="Reference">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The reference to the Subscription which generated this notification.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="status" minOccurs="0" maxOccurs="1" type="code">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The status of the subscription, which marks the server state for managing the subscription.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="topic" minOccurs="1" maxOccurs="1" type="Reference">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The reference to the SubscriptionTopic for the Subscription which generated this notification.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:simpleType name="SubscriptionFilterByMatchType-list">
+  <xs:simpleType name="SubscriptionNotificationType-list">
     <xs:restriction base="code-primitive">
-      <xs:enumeration value="=">
+      <xs:enumeration value="handshake">
         <xs:annotation>
-          <xs:documentation xml:lang="en">=</xs:documentation>
+          <xs:documentation xml:lang="en">Handshake</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="in">
+      <xs:enumeration value="heartbeat">
         <xs:annotation>
-          <xs:documentation xml:lang="en">in</xs:documentation>
+          <xs:documentation xml:lang="en">Heartbeat</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="not-in">
+      <xs:enumeration value="event-notification">
         <xs:annotation>
-          <xs:documentation xml:lang="en">not-in</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="above">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">above</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="below">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">below</xs:documentation>
+          <xs:documentation xml:lang="en">Event Notification</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>
   </xs:simpleType>
-  <xs:complexType name="SubscriptionFilterByMatchType">
+  <xs:complexType name="SubscriptionNotificationType">
     <xs:annotation>
-      <xs:documentation xml:lang="en">Operator to apply to filter label.</xs:documentation>
+      <xs:documentation xml:lang="en">The type of notification represented by the status message.</xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
     </xs:annotation>
     <xs:complexContent>
       <xs:extension base="Element">
-        <xs:attribute name="value" type="SubscriptionFilterByMatchType-list" use="optional"/>
+        <xs:attribute name="value" type="SubscriptionNotificationType-list" use="optional"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SubscriptionTopic" type="SubscriptionTopic">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Describes a stream of resource state changes identified by trigger criteria and annotated with labels useful to filter projections from this topic.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="SubscriptionTopic">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Describes a stream of resource state changes identified by trigger criteria and annotated with labels useful to filter projections from this topic.</xs:documentation>
+      <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DomainResource">
+        <xs:sequence>
+          <xs:element name="url" minOccurs="0" maxOccurs="1" type="uri">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">An absolute URL that is used to identify this SubscriptionTopic when it is referenced in a specification, model, design or an instance. This SHALL be a URL, SHOULD be globally unique, and SHOULD be an address at which this Topic is (or will be) published. The URL SHOULD include the major version of the Topic. For more information see [Technical and Business Versions](resource.html#versions).</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="identifier" minOccurs="0" maxOccurs="unbounded" type="Identifier">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Business identifiers assigned to this SubscriptionTopic by the performer and/or other systems.  These identifiers remain constant as the resource is updated and propagates from server to server.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="version" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The identifier that is used to identify this version of the SubscriptionTopic when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the Topic author and is not expected to be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if a managed version is not available. There is also no expectation that versions are orderable.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="title" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A short, descriptive, user-friendly title for the SubscriptionTopic, for example, &quot;admission&quot;.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="derivedFromCanonical" minOccurs="0" maxOccurs="unbounded" type="canonical">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The canonical URL pointing to another FHIR-defined SubscriptionTopic that is adhered to in whole or in part by this SubscriptionTopic.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="derivedFromUri" minOccurs="0" maxOccurs="unbounded" type="uri">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The URL pointing to an externally-defined SubscriptionTopic or other definition that is adhered to in whole or in part by this definition.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="status" minOccurs="1" maxOccurs="1" type="PublicationStatus">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The current state of the SubscriptionTopic.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="experimental" minOccurs="0" maxOccurs="1" type="boolean">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A flag to indicate that this TopSubscriptionTopicic is authored for testing purposes (or education/evaluation/marketing), and is not intended to be used for genuine usage.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="date" minOccurs="0" maxOccurs="1" type="dateTime">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">For draft definitions, indicates the date of initial creation.  For active definitions, represents the date of activation.  For withdrawn definitions, indicates the date of withdrawal.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="publisher" minOccurs="0" maxOccurs="1" type="Reference">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Helps establish the &quot;authority/credibility&quot; of the SubscriptionTopic.  May also allow for contact.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="contact" minOccurs="0" maxOccurs="unbounded" type="ContactDetail">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Contact details to assist a user in finding and communicating with the publisher.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="markdown">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A free text natural language description of the Topic from the consumer's perspective.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="useContext" minOccurs="0" maxOccurs="unbounded" type="UsageContext">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The content was developed with a focus and intent of supporting the contexts that are listed. These terms may be used to assist with indexing and searching of code system definitions.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="jurisdiction" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A jurisdiction in which the Topic is intended to be used.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="purpose" minOccurs="0" maxOccurs="1" type="markdown">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Explains why this Topic is needed and why it has been designed as it has.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="copyright" minOccurs="0" maxOccurs="1" type="markdown">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A copyright statement relating to the SubscriptionTopic and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the SubscriptionTopic.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="approvalDate" minOccurs="0" maxOccurs="1" type="date">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The date on which the asset content was approved by the publisher. Approval happens once when the content is officially approved for usage.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="lastReviewDate" minOccurs="0" maxOccurs="1" type="date">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The date on which the asset content was last reviewed. Review happens periodically after that, but doesn't change the original approval date.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="effectivePeriod" minOccurs="0" maxOccurs="1" type="Period">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The period during which the SubscriptionTopic content was or is planned to be effective.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="resourceTrigger" type="SubscriptionTopic.ResourceTrigger" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The criteria for including updates to a nominated resource in the subscription topic.  Thie criteria may be just a human readable description and/or a full FHIR search string or FHIRPath expression.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="canFilterBy" type="SubscriptionTopic.CanFilterBy" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">List of properties by which Subscriptions on the subscription topic can be filtered.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SubscriptionTopic.ResourceTrigger">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Describes a stream of resource state changes identified by trigger criteria and annotated with labels useful to filter projections from this topic.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The human readable description of what triggers inclusion into this subscription topic -  for example, &quot;Beginning of a clinical encounter&quot;.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="resourceType" minOccurs="0" maxOccurs="unbounded" type="ResourceType">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The list of resource types that are candidates for this subscription topic.  For example, the Encounter resource is updated in an 'admission' subscription topic.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="methodCriteria" minOccurs="0" maxOccurs="unbounded" type="InteractionTrigger">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The REST interaction based rules that the server should use to determine when to trigger a notification for this topic.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="queryCriteria" type="SubscriptionTopic.QueryCriteria" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The FHIR query based rules that the server should use to determine when to trigger a notification for this subscription topic.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="fhirPathCriteria" minOccurs="0" maxOccurs="unbounded" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The FHIRPath based rules that the server should use to determine when to trigger a notification for this topic.  If there are multiple, FHIRPath filters are joined with AND.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SubscriptionTopic.QueryCriteria">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Describes a stream of resource state changes identified by trigger criteria and annotated with labels useful to filter projections from this topic.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="previous" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The FHIR query based rules are applied to the previous resource state.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="current" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The FHIR query based rules are applied to the current resource state.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="requireBoth" minOccurs="0" maxOccurs="1" type="boolean">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">If set to true, both current and previous criteria must evaluate true to  trigger a notification for this topic.  Otherwise a notification for this topic will be triggered if either one evaluates to true.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="SubscriptionTopic.CanFilterBy">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Describes a stream of resource state changes identified by trigger criteria and annotated with labels useful to filter projections from this topic.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="searchParamName" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A search parameter (like &quot;patient&quot;) which is a label for the filter.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="searchModifier" minOccurs="0" maxOccurs="unbounded" type="code">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Allowable operators to apply when determining matches (Search Modifiers).</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="documentation" minOccurs="0" maxOccurs="1" type="markdown">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Description of how this filter parameter is intended to be used.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:simpleType name="InteractionTrigger-list">
+    <xs:restriction base="code-primitive">
+      <xs:enumeration value="create">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">create</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="update">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">update</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="delete">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">delete</xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="InteractionTrigger">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">FHIR RESTful interaction used for subscription topic trigger.</xs:documentation>
+      <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="Element">
+        <xs:attribute name="value" type="InteractionTrigger-list" use="optional"/>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
@@ -46328,286 +46550,6 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
     <xs:complexContent>
       <xs:extension base="Element">
         <xs:attribute name="value" type="TestScriptRequestMethodCode-list" use="optional"/>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="Topic" type="Topic">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">Describes a stream of resource state changes identified by trigger criteria and annotated with labels useful to filter projections from this topic.</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="Topic">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">Describes a stream of resource state changes identified by trigger criteria and annotated with labels useful to filter projections from this topic.</xs:documentation>
-      <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="DomainResource">
-        <xs:sequence>
-          <xs:element name="url" minOccurs="0" maxOccurs="1" type="uri">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">An absolute URL that is used to identify this Topic when it is referenced in a specification, model, design or an instance. This SHALL be a URL, SHOULD be globally unique, and SHOULD be an address at which this Topic is (or will be) published. The URL SHOULD include the major version of the Topic. For more information see [Technical and Business Versions](resource.html#versions).</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="identifier" minOccurs="0" maxOccurs="unbounded" type="Identifier">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Business identifiers assigned to this Topic by the performer and/or other systems.  These identifiers remain constant as the resource is updated and propagates from server to server.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="version" minOccurs="0" maxOccurs="1" type="string">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The identifier that is used to identify this version of the Topic when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the Topic author and is not expected to be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if a managed version is not available. There is also no expectation that versions are orderable.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="title" minOccurs="0" maxOccurs="1" type="string">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">A short, descriptive, user-friendly title for the Topic, for example, &quot;admission&quot;.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="derivedFromCanonical" minOccurs="0" maxOccurs="unbounded" type="canonical">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The canonical URL pointing to another FHIR-defined Topic that is adhered to in whole or in part by this Topic.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="derivedFromUri" minOccurs="0" maxOccurs="unbounded" type="uri">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The URL pointing to an externally-defined subscription topic or other definition that is adhered to in whole or in part by this definition.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="status" minOccurs="1" maxOccurs="1" type="PublicationStatus">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The current state of the Topic.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="experimental" minOccurs="0" maxOccurs="1" type="boolean">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">A flag to indicate that this Topic is authored for testing purposes (or education/evaluation/marketing), and is not intended to be used for genuine usage.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="date" minOccurs="0" maxOccurs="1" type="dateTime">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">For draft definitions, indicates the date of initial creation.  For active definitions, represents the date of activation.  For withdrawn definitions, indicates the date of withdrawal.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="publisher" minOccurs="0" maxOccurs="1" type="Reference">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Helps establish the &quot;authority/credibility&quot; of the Topic.  May also allow for contact.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="contact" minOccurs="0" maxOccurs="unbounded" type="ContactDetail">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Contact details to assist a user in finding and communicating with the publisher.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="markdown">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">A free text natural language description of the Topic from the consumer's perspective.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="useContext" minOccurs="0" maxOccurs="unbounded" type="UsageContext">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The content was developed with a focus and intent of supporting the contexts that are listed. These terms may be used to assist with indexing and searching of code system definitions.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="jurisdiction" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">A jurisdiction in which the Topic is intended to be used.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="purpose" minOccurs="0" maxOccurs="1" type="markdown">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Explains why this Topic is needed and why it has been designed as it has.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="copyright" minOccurs="0" maxOccurs="1" type="markdown">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">A copyright statement relating to the Topic and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the Topic.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="approvalDate" minOccurs="0" maxOccurs="1" type="date">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The date on which the asset content was approved by the publisher. Approval happens once when the content is officially approved for usage.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="lastReviewDate" minOccurs="0" maxOccurs="1" type="date">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The date on which the asset content was last reviewed. Review happens periodically after that, but doesn't change the original approval date.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="effectivePeriod" minOccurs="0" maxOccurs="1" type="Period">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The period during which the Topic content was or is planned to be effective.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="resourceTrigger" type="Topic.ResourceTrigger" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The criteria for including updates to a nominated resource in the topic.  Thie criteria may be just a human readable description and/or a full FHIR search string or FHIRPath expression.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="canFilterBy" type="Topic.CanFilterBy" minOccurs="0" maxOccurs="unbounded">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">List of properties by which Subscriptions on the topic can be filtered.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="Topic.ResourceTrigger">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">Describes a stream of resource state changes identified by trigger criteria and annotated with labels useful to filter projections from this topic.</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="BackboneElement">
-        <xs:sequence>
-          <xs:element name="description" minOccurs="0" maxOccurs="1" type="string">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The human readable description of what triggers inclusion into this topic -  for example, &quot;Beginning of a clinical encounter&quot;.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="resourceType" minOccurs="0" maxOccurs="unbounded" type="ResourceType">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The list of resource types that are candidates for this topic.  For example, the Encounter resource is updated in an 'admission' topic.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="methodCriteria" minOccurs="0" maxOccurs="unbounded" type="InteractionTrigger">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The REST interaction based rules that the server should use to determine when to trigger a notification for this topic.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="queryCriteria" type="Topic.QueryCriteria" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The FHIR query based rules that the server should use to determine when to trigger a notification for this topic.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="fhirPathCriteria" minOccurs="0" maxOccurs="1" type="string">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The FHIRPath based rules that the server should use to determine when to trigger a notification for this topic.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="Topic.QueryCriteria">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">Describes a stream of resource state changes identified by trigger criteria and annotated with labels useful to filter projections from this topic.</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="BackboneElement">
-        <xs:sequence>
-          <xs:element name="previous" minOccurs="0" maxOccurs="1" type="string">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The FHIR query based rules are applied to the previous resource state.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="current" minOccurs="0" maxOccurs="1" type="string">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">The FHIR query based rules are applied to the current resource state.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="requireBoth" minOccurs="0" maxOccurs="1" type="boolean">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">If set to true, both current and previous criteria must evaluate true to  trigger a notification for this topic.  Otherwise a notification for this topic will be triggered if either one evaluates to true.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:complexType name="Topic.CanFilterBy">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">Describes a stream of resource state changes identified by trigger criteria and annotated with labels useful to filter projections from this topic.</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="BackboneElement">
-        <xs:sequence>
-          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">A search parameter (like &quot;patient&quot;) which is a label for the filter.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="matchType" minOccurs="0" maxOccurs="unbounded" type="TopicFilterByMatchType">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Allowable operators to apply when determining matches (Search Modifiers).</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="documentation" minOccurs="0" maxOccurs="1" type="markdown">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Description of how this filter parameter is intended to be used.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-        </xs:sequence>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:simpleType name="InteractionTrigger-list">
-    <xs:restriction base="code-primitive">
-      <xs:enumeration value="create">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">create</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="update">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">update</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="delete">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">delete</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:complexType name="InteractionTrigger">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">FHIR RESTful interaction used for topic trigger.</xs:documentation>
-      <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="Element">
-        <xs:attribute name="value" type="InteractionTrigger-list" use="optional"/>
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:simpleType name="TopicFilterByMatchType-list">
-    <xs:restriction base="code-primitive">
-      <xs:enumeration value="=">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">=</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="in">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">in</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="not-in">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">not-in</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="above">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">above</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="below">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">below</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:complexType name="TopicFilterByMatchType">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">Operator to apply to filter label.</xs:documentation>
-      <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-      <xs:extension base="Element">
-        <xs:attribute name="value" type="TopicFilterByMatchType-list" use="optional"/>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
