@@ -106,6 +106,15 @@ Even though it is recognized that there is not in all cultures the same concept 
 Moreover, due to the global scope of the International Patient Summary, the case of non-alphabetic representations of the names has also been considered.
 In this case, to facilitate the global use of the IPS, at least one alphabetic representation of the name SHALL be provided. 
 
+### The use of medication statements in the summary
+A medication list may strongly vary depending on the context of use (e.g. support for prescription or dispensation, drug reconciliation, etc. ) and on the type of information reported (e.g. patient-reported medication, prescribed, dispensed or administered medications, active or past medications, etc.).
+
+This is still true also for the medication summary in a Patient Summary. It could be, for instance, a list of "Relevant prescribed medicines whose period of time indicated for the treatment has not yet expired whether it has been dispensed or not" (European guidelines on Patient Summary); a list of actually dispensed medications; a list of relevant medications for the patient (IHE PCC); or conversely, it could be a complete history including the full patient's prescription and dispensation history and information about intended drug monitoring (HL7 C-CDA).
+
+For the scope of the International Patient Summary, it is important to know what medications are being taken by or have been given to a patient; without necessarily providing all the details about the medication order, supply, administration or monitoring. This information need, in line with the IPS principle of minimum non exhaustive data, is well expressed by the concept of Medication Statement (see https://www.hl7.org/fhir/medicationstatement.html).
+
+The IPS medication summary is therefore a list of relevant medication statements, possibly built from either a prescription list or a dispensation list. In fact, in many practical cases data included in a Patient Summary are derived from the list of the medicines prescribed by a GP and recorded in its EHR-S; or extracted from a in regional/national prescribing and/or dispensation systems. In these cases, data obtained from actual dispensation and/or prescription records can be still recorded in the IPS as statements and the original request, supply or administration records referred by the statement if really needed.
+
 ### Medicinal Product Identification
 
 A general introduction to the problem of cross-jurisdictional identification of medicinal product is provided in the [IPS CDA implementation guide](http://international-patient-summary.net/mediawiki/index.php?title=IPS_Design_conventions_and_principles_1###Medicinal_Product_Identification)
