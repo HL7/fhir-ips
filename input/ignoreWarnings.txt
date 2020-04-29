@@ -5,12 +5,3 @@ WARNING: ImagingStudy/TII-ImagingStudy-5-1: ImagingStudy.series[0].modality: Val
 # The following code systems are not supported by the build terminology service.
 INFORMATION: Immunization/75680: Immunization.vaccineCode.coding[2]: Code System URI "urn:oid:1.3.182.4.11.22" is unknown so the code cannot be validated
 INFORMATION: Condition/eumfh-39-07-1: Condition.code.coding[1]: Code System URI "http://id.who.int/icd11/mms" is unknown so the code cannot be validated
-# The slicing rule is open.  The Procedure.code value in the example is for a known procedure and satisfies the Procedure.code element constraints, and is not expected to match the slice defined for absentOrUnknownProcedure.
-INFORMATION: Procedure/eumfh-39-07-1: Procedure.code: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips
-#  The Condition-39-07-1.xml instance does successfully validate with the Condition-uv-ips profile, and the SNOMED CT code 54329005 |Acute myocardial infarction of anterior wall (disorder)| is a member of the core-problem-finding-situation-event-gps-uv-ips value set, so this instance should match the problemGPSCode slice.
-INFORMATION: Condition/eumfh-39-07-1: Condition.code: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips
-# The Immunization-75680.xml instance does successfully validate against the Immunization-uv-ips profile, and the SNOMED CT code 414005006 |Diphtheria + tetanus + pertussis + poliomyelitis vaccine (product)| is a member of the vaccines-gps-uv-ips value set, so this instance should match the vaccineGPSCode slice.
-INFORMATION: Immunization/75680: Immunization.vaccineCode: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips
-# These "QA Reasoning" explanations are essentially incomprehensible and appear to be inaccurate.  
-INFORMATION: Bundle/IPS-examples-Bundle-01: Bundle.entry[0].resource.section[5].entry[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips
-INFORMATION: Bundle/IPS-examples-Bundle-01: Bundle.entry[0].resource.section[5].entry[2]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips
