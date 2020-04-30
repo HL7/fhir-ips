@@ -123,6 +123,18 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="StructureDefinition/Observation-laboratory-uv-ips"/>
+			</reference>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/Observation-pathology-uv-ips"/>
+			</reference>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="StructureDefinition/Observation-pregnancy-edd-uv-ips"/>
 			</reference>
 			<exampleBoolean value="false"/>
@@ -458,14 +470,6 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="Observation/hemoglobin"/>
-			</reference>
-			<name value="Observation: hemoglobin example"/>
-			<description value="Observation: hemoglobin example"/>
-			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-pathology-uv-ips"/>
-		</resource>
-		<resource>
-			<reference>
 				<reference value="Observation/serum-creatinine-adult"/>
 			</reference>
 			<name value="Observation: serum creatinine example"/>
@@ -474,11 +478,19 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="Observation/hemoglobin"/>
+			</reference>
+			<name value="Observation: hemoglobin example"/>
+			<description value="Observation: hemoglobin example"/>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-uv-ips"/>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="Observation/pathology-cancer"/>
 			</reference>
 			<name value="Observation: estrogen receptor in tissue example"/>
 			<description value="Observation: estrogen receptor in tissue example"/>
-			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-pathology-uv-ips"/>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pathology-uv-ips"/>
 		</resource>
 		<resource>
 			<reference>
