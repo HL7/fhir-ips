@@ -4,9 +4,10 @@
 	<meta>
 		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
 	</meta>
-	<url value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-pathology-observations-uv-ips"/>
+    <url value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-pathology-observations-uv-ips"/>
+    <version value="2020-04-30"/>
 	<name value="LabPathResultsObservationUvIps"/>
-	<title value="Results Observation Laboratory &amp; Pathology - IPS"/>
+	<title value="Results Observation Laboratory and Pathology - IPS"/>
 	<status value="active"/>
 	<experimental value="false"/>
 	<publisher value="HL7 International"/>
@@ -28,7 +29,8 @@
 	<description value="Value Set Definition: LOINC codes from the laboratory-observations and pathology-observations value sets."/>
 	<immutable value="false"/>
 	<copyright value="This artifact includes content from LOINC®. LOINC codes are copyright Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee. Terms &amp; Conditions in https://loinc.org/license/"/>
-	<compose>
+    <!-- compose.include.valueSet is not currently supported
+    <compose>
 		<include>
             <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-observations-uv-ips"/>
         </include>
@@ -36,4 +38,182 @@
             <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/pathology-observations-uv-ips"/>
         </include>
     </compose>
+    -->
+    <compose>
+        <!-- <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-observations-uv-ips"/> -->
+        <include>
+            <system value="http://loinc.org"/>
+            <!-- regex not supported currently
+            <filter>
+                <property value="COMPONENT"/>
+                <op value="regex"/>
+                <value value="^((?!Panel).)*$"/>
+            </filter>
+            <filter>
+                <property value="COMPONENT"/>
+                <op value="regex"/>
+                <value value="^((?!panel).)*$"/>
+            </filter>
+            -->
+            <filter>
+                <property value="STATUS"/>
+                <op value="="/>
+                <value value="ACTIVE"/>
+            </filter>
+            <filter>
+                <property value="CLASSTYPE"/>
+                <op value="="/>
+                <value value="1"/>
+            </filter>
+            <filter>
+                <property value="ORDER_OBS"/>
+                <op value="="/>
+                <value value="Observation"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://loinc.org"/>
+            <!-- regex not supported currently
+            <filter>
+                <property value="COMPONENT"/>
+                <op value="regex"/>
+                <value value="^((?!Panel).)*$"/>
+            </filter>
+            <filter>
+                <property value="COMPONENT"/>
+                <op value="regex"/>
+                <value value="^((?!panel).)*$"/>
+            </filter>
+            -->
+            <filter>
+                <property value="STATUS"/>
+                <op value="="/>
+                <value value="ACTIVE"/>
+            </filter>
+            <filter>
+                <property value="CLASSTYPE"/>
+                <op value="="/>
+                <value value="1"/>
+            </filter>
+            <filter>
+                <property value="ORDER_OBS"/>
+                <op value="="/>
+                <value value="Both"/>
+            </filter>
+        </include>
+        <exclude>
+            <filter>
+                <property value="CLASS"/>
+                <op value="regex"/>
+                <value value="^(?!PATH\.PROTOCOLS.*$).*"/>
+            </filter>
+        </exclude>
+        <exclude>
+            <filter>
+                <property value="CLASS"/>
+                <op value="regex"/>
+                <value value="^(?!NR STATS.*$).*"/>
+            </filter>
+            </exclude>
+        <exclude>
+            <filter>
+                <property value="CLASS"/>
+                <op value="regex"/>
+                <value value="^(?!H&amp;P\.HX.*$).*"/>
+            </filter>
+        </exclude>
+        <exclude>
+            <filter>
+                <property value="CLASS"/>
+                <op value="regex"/>
+                <value value="^(?!H&amp;P\.HX\.LAB.*$).*"/>
+            </filter>
+        </exclude>
+        <exclude>
+            <filter>
+                <property value="CLASS"/>
+                <op value="regex"/>
+                <value value="^(?!CHALSKIN.*$).*"/>
+            </filter>
+        </exclude>
+        <!-- <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/pathology-observations-uv-ips"/> -->
+        <include>
+            <system value="http://loinc.org"/>
+            <!-- regex not supported currently
+            <filter>
+                <property value="COMPONENT"/>
+                <op value="regex"/>
+                <value value="^((?!Panel).)*$"/>
+            </filter>
+            <filter>
+                <property value="COMPONENT"/>
+                <op value="regex"/>
+                <value value="^((?!panel).)*$"/>
+            </filter>
+            <filter>
+                <property value="COMPONENT"/>
+                <op value="regex"/>
+                <value value="^(?!Can pronounce.*$).*"/>
+            </filter -->
+            <filter>
+                <property value="STATUS"/>
+                <op value="="/>
+                <value value="ACTIVE"/>
+            </filter>
+            <filter>
+                <property value="CLASSTYPE"/>
+                <op value="="/>
+                <value value="1"/>
+            </filter>
+            <filter>
+                <property value="ORDER_OBS"/>
+                <op value="="/>
+                <value value="Observation"/>
+            </filter>
+            <filter>
+                <property value="CLASS"/>
+                <op value="regex"/>
+                <value value="CYTO|HEM/BC|HL7\.CYTOGEN|HL7\.GENETICS|PATH|^(?!MOLPATH.*$).*"/>
+            </filter>
+        </include>
+        <include>
+            <system value="http://loinc.org"/>
+            <!-- regex not supported currently
+            <filter>
+                <property value="COMPONENT"/>
+                <op value="regex"/>
+                <value value="^((?!Panel).)*$"/>
+            </filter>
+            <filter>
+                <property value="COMPONENT"/>
+                <op value="regex"/>
+                <value value="^((?!panel).)*$"/>
+            </filter>
+            <filter>
+                <property value="COMPONENT"/>
+                <op value="regex"/>
+                <value value="^(?!Can pronounce.*$).*"/>
+            </filter -->
+            <filter>
+                <property value="STATUS"/>
+                <op value="="/>
+                <value value="ACTIVE"/>
+            </filter>
+            <filter>
+                <property value="CLASSTYPE"/>
+                <op value="="/>
+                <value value="1"/>
+            </filter>
+            <filter>
+                <property value="ORDER_OBS"/>
+                <op value="="/>
+                <value value="Both"/>
+            </filter>
+            <filter>
+                <property value="CLASS"/>
+                <op value="regex"/>
+                <value value="CYTO|HEM/BC|HL7\.CYTOGEN|HL7\.GENETICS|PATH|^(?!MOLPATH.*$).*"/>
+            </filter>
+        </include>
+    </compose>    
 </ValueSet>

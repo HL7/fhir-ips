@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Wed, Apr 29, 2020 20:19+0000 for FHIR v4.2.0 
+  Generated on Thu, Apr 30, 2020 15:31+0000 for FHIR v4.2.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.2.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -17817,19 +17817,19 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
           </xs:element>
           <xs:choice minOccurs="0" maxOccurs="1" >
             <xs:annotation>
-              <xs:documentation xml:lang="en">A name of the manufacturer.</xs:documentation>
+              <xs:documentation xml:lang="en">A name of the manufacturer  or legal representative e.g. labeler. Whether this is the actual manufacturer or the labeler or responsible depends on implementation and jurisdiction.</xs:documentation>
             </xs:annotation>
             <xs:element name="manufacturerString" type="string"/>
             <xs:element name="manufacturerReference" type="Reference"/>
           </xs:choice>
           <xs:element name="deviceName" type="DeviceDefinition.DeviceName" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation xml:lang="en">A name given to the device to identify it.</xs:documentation>
+              <xs:documentation xml:lang="en">The name or names of the device as given by the manufacturer.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="modelNumber" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The model number for the device.</xs:documentation>
+              <xs:documentation xml:lang="en">The model number for the device for example as defined by the manufacturer or labeler, or other agency.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="type" minOccurs="0" maxOccurs="1" type="CodeableConcept">
@@ -17859,7 +17859,7 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
           </xs:element>
           <xs:element name="physicalCharacteristics" minOccurs="0" maxOccurs="1" type="ProdCharacteristic">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Dimensions, color etc.</xs:documentation>
+              <xs:documentation xml:lang="en">Physical characteristics to define or specify the product - for example dimensions, color etc. These can be defined by the manufacturer or labeler, or can be used to specify characteristics when ordering.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="languageCode" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
@@ -17869,7 +17869,7 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
           </xs:element>
           <xs:element name="capability" type="DeviceDefinition.Capability" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Device capabilities.</xs:documentation>
+              <xs:documentation xml:lang="en">Additional capabilities that the device is defined or required to have e.g. &quot;water resistant&quot;, &quot;long life&quot;.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="property" type="DeviceDefinition.Property" minOccurs="0" maxOccurs="unbounded">
@@ -17885,11 +17885,6 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
           <xs:element name="contact" minOccurs="0" maxOccurs="unbounded" type="ContactPoint">
             <xs:annotation>
               <xs:documentation xml:lang="en">Contact details for an organization or a particular human that is responsible for the device.</xs:documentation>
-           </xs:annotation>
-          </xs:element>
-          <xs:element name="url" minOccurs="0" maxOccurs="1" type="uri">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">A network address on which the device may be contacted directly.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="onlineInformation" minOccurs="0" maxOccurs="1" type="uri">
@@ -17956,7 +17951,7 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
         <xs:sequence>
           <xs:element name="name" minOccurs="1" maxOccurs="1" type="string">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The name of the device.</xs:documentation>
+              <xs:documentation xml:lang="en">A human-friendly name that is used to refer to the device - depending on the type, it can be the brand name, the common name or alias, or other.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="type" minOccurs="1" maxOccurs="1" type="DeviceNameType">
@@ -17999,12 +17994,12 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
         <xs:sequence>
           <xs:element name="type" minOccurs="1" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Type of capability.</xs:documentation>
+              <xs:documentation xml:lang="en">The type of capability - whether it is a physical attribute, a customization needed. For exampl e &quot;water ingress protection&quot;.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="description" minOccurs="0" maxOccurs="unbounded" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Description of capability.</xs:documentation>
+              <xs:documentation xml:lang="en">The actual capability of the device e.g. IP67.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -18046,7 +18041,7 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
         <xs:sequence>
           <xs:element name="substance" minOccurs="1" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The substance.</xs:documentation>
+              <xs:documentation xml:lang="en">A substance that the device contains, may contain, or is made of - for example latex - to be used to determine patient compatibility. This is not intended to represent the composition of the device, only the clinically relevant materials.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="alternate" minOccurs="0" maxOccurs="1" type="boolean">
