@@ -115,6 +115,7 @@
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
+		<!--
 		<resource>
 			<reference>
 				<reference value="StructureDefinition/Observation-laboratory-uv-ips"/>
@@ -124,6 +125,13 @@
 		<resource>
 			<reference>
 				<reference value="StructureDefinition/Observation-pathology-uv-ips"/>
+			</reference>
+			<exampleBoolean value="false"/>
+		</resource>
+	-->
+		<resource>
+			<reference>
+				<reference value="StructureDefinition/Observation-laboratory-pathology-uv-ips"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
@@ -468,7 +476,7 @@
 			</reference>
 			<name value="Observation: hemoglobin example"/>
 			<description value="Observation: hemoglobin example"/>
-			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-uv-ips"/>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-pathology-uv-ips"/>
 		</resource>
 		<resource>
 			<reference>
@@ -476,7 +484,7 @@
 			</reference>
 			<name value="Observation: serum creatinine example"/>
 			<description value="Observation: serum creatinine example"/>
-			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-uv-ips"/>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-pathology-uv-ips"/>
 		</resource>
 		<resource>
 			<reference>
@@ -484,7 +492,7 @@
 			</reference>
 			<name value="Observation: estrogen receptor in tissue example"/>
 			<description value="Observation: estrogen receptor in tissue example"/>
-			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pathology-uv-ips"/>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-pathology-uv-ips"/>
 		</resource>
 		<resource>
 			<reference>
@@ -637,7 +645,7 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="ValueSet/laboratory-and-vital-signs-observations"/>
+				<reference value="ValueSet/laboratory-observations-uv-ips"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
@@ -649,7 +657,19 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="ValueSet/laboratory-pathology-observations-uv-ips"/>
+			</reference>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="ValueSet/result-coded-value-lab-gps-uv-ips"/>
+			</reference>
+			<exampleBoolean value="false"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/result-coded-value-lab-gps-path-uv-ips"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
@@ -679,13 +699,13 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="ValueSet/observation-codes-uv-ips"/>
+				<reference value="ValueSet/results-observations-uv-ips"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>
 		<resource>
 			<reference>
-				<reference value="ValueSet/pathology-and-vital-signs-observations"/>
+				<reference value="ValueSet/pathology-observations-uv-ips"/>
 			</reference>
 			<exampleBoolean value="false"/>
 		</resource>

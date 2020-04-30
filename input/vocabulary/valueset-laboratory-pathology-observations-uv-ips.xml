@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:f="http://hl7.org/fhir">
+	<id value="laboratory-pathology-observations-uv-ips"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+	</meta>
+	<url value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-pathology-observations-uv-ips"/>
+	<name value="LabPathResultsObservationUvIps"/>
+	<title value="Results Observation Laboratory &amp; Pathology - IPS"/>
+	<status value="active"/>
+	<experimental value="false"/>
+	<publisher value="HL7 International"/>
+	<contact>
+		<name value="HL7 International"/>
+		<telecom>
+			<system value="phone"/>
+			<value value="+1 734 677 7777"/>
+		</telecom>
+		<telecom>
+			<system value="fax"/>
+			<value value="+1 734 677 6622"/>
+		</telecom>
+		<telecom>
+			<system value="email"/>
+			<value value="info@hl7.org"/>
+		</telecom>
+	</contact>
+	<description value="Value Set Definition: LOINC codes from the laboratory-observations and pathology-observations value sets."/>
+	<immutable value="false"/>
+	<copyright value="This artifact includes content from LOINC®. LOINC codes are copyright Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee. Terms &amp; Conditions in https://loinc.org/license/"/>
+	<compose>
+		<include>
+            <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-observations-uv-ips"/>
+        </include>
+		<include>
+            <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/pathology-observations-uv-ips"/>
+        </include>
+    </compose>
+</ValueSet>

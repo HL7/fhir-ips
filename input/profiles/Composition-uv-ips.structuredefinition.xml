@@ -693,6 +693,7 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		<!--
 		<element id="Composition.section:sectionResults.entry:observation-lab">
 			<path value="Composition.section.entry"/>
 			<sliceName value="observation-lab"/>
@@ -708,6 +709,16 @@
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pathology-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+	-->
+		<element id="Composition.section:sectionResults.entry:observation-lab-path">
+			<path value="Composition.section.entry"/>
+			<sliceName value="observation-lab"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-pathology-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
