@@ -53,10 +53,53 @@
 		</element>
 		<element id="Observation.category">
 			<path value="Observation.category"/>
+			<slicing>
+				<discriminator>
+					<type value="pattern"/>
+					<path value="$this"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+			<definition value="A code that classifies the general type of observation being made. In this profile, fixed to &quot;imaging&quot;."/>
+			<min value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.category:imaging">
+			<path value="Observation.category"/>
+			<sliceName value="imaging"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+					<code value="imaging"/>
+				</coding>
+			</patternCodeableConcept>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.category:laboratory">
+			<path value="Observation.category"/>
+			<sliceName value="laboratory"/>
+			<min value="0"/>
+			<max value="0"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+					<code value="laboratory"/>
+				</coding>
+			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.code">

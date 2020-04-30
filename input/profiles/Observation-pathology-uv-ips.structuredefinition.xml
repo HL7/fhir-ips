@@ -78,6 +78,23 @@
 			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
+		<element id="Observation.category:imaging">
+			<path value="Observation.category"/>
+			<sliceName value="imaging"/>
+			<min value="0"/>
+			<max value="0"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+					<code value="imaging"/>
+				</coding>
+			</patternCodeableConcept>
+			<mustSupport value="true"/>
+		</element>
 		<element id="Observation.code">
 			<path value="Observation.code"/>
 			<definition value="Describes what was observed. Sometimes this is called the observation &quot;name&quot;.  In this profile this code represents either a simple laboratory test or a laboratory study with multiple child observations"/>

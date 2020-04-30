@@ -100,6 +100,10 @@
 			<path value="DiagnosticReport.result"/>
 			<slicing>
 				<discriminator>
+					<type value="pattern"/>
+					<path value="$this.resolve().category"/>
+				</discriminator>
+				<discriminator>
 					<type value="profile"/>
 					<path value="$this.resolve()"/>
 				</discriminator>
@@ -109,18 +113,18 @@
 			<definition value="Observation results included in the diagnostic report."/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="DiagnosticReport.result:observation-laboratory">
+		<element id="DiagnosticReport.result:observation-lab">
 			<path value="DiagnosticReport.result"/>
-			<sliceName value="observation-laboratory"/>
+			<sliceName value="observation-lab"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="DiagnosticReport.result:observation-pathology">
+		<element id="DiagnosticReport.result:observation-path">
 			<path value="DiagnosticReport.result"/>
-			<sliceName value="observation-pathology"/>
+			<sliceName value="observation-path"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pathology-uv-ips"/>
@@ -136,9 +140,9 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="DiagnosticReport.result:observation">
+		<element id="DiagnosticReport.result:observation-result">
 			<path value="DiagnosticReport.result"/>
-			<sliceName value="observation"/>
+			<sliceName value="observation-result"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-uv-ips"/>

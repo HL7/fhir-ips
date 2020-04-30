@@ -675,6 +675,14 @@
 			<path value="Composition.section.entry"/>
 			<slicing>
 				<discriminator>
+					<type value="type"/>
+					<path value="$this.resolve()"/>
+				</discriminator>
+				<discriminator>
+					<type value="pattern"/>
+					<path value="$this.resolve().category"/>
+				</discriminator>
+				<discriminator>
 					<type value="profile"/>
 					<path value="$this.resolve()"/>
 				</discriminator>
@@ -685,18 +693,18 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionResults.entry:observation-laboratory">
+		<element id="Composition.section:sectionResults.entry:observation-lab">
 			<path value="Composition.section.entry"/>
-			<sliceName value="observation-laboratory"/>
+			<sliceName value="observation-lab"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionResults.entry:observation-pathology">
+		<element id="Composition.section:sectionResults.entry:observation-path">
 			<path value="Composition.section.entry"/>
-			<sliceName value="observation-pathology"/>
+			<sliceName value="observation-path"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pathology-uv-ips"/>
@@ -712,9 +720,9 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionResults.entry:observation">
+		<element id="Composition.section:sectionResults.entry:observation-result">
 			<path value="Composition.section.entry"/>
-			<sliceName value="observation"/>
+			<sliceName value="observation-result"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-uv-ips"/>
