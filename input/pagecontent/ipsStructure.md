@@ -56,10 +56,9 @@ The medical devices section contains narrative text and coded entries describing
 #### Diagnostic Results
 This section assembles relevant observation results collected on the patient or produced on in-vitro biologic specimens collected from the patient. Some of these results may be laboratory results, others may be anatomic pathology results, others, radiology results, and others, clinical results.
 
-This version is comprised of three alternative entries to carry results from:
-* laboratory
-* imaging
-* pathology
+This version is comprised of two alternative entries to carry results from:
+* laboratory or pathology
+* imaging 
 
 A generic result entry is also supported.
 
@@ -109,7 +108,8 @@ Following are the profiles that have been defined for each section. (R) denotes 
  <a href="StructureDefinition-Device-uv-ips.html">Device (IPS)</a> ]
 * Diagnostic Results (S)
   * Laboratory results 
-   [ <a href="StructureDefinition-Observation-laboratory-uv-ips.html">Observation (Results: laboratory)</a> ;
+   [ <a href="StructureDefinition-Observation-laboratory-pathology-uv-ips.html">Observation (Results: laboratory and pathology)</a> ;
+   <a href="StructureDefinition-Observation-laboratory-uv-ips.html">Observation (Results: laboratory)</a> ;
    <a href="StructureDefinition-Specimen-uv-ips.html">Specimen (IPS)</a> ;
    <a href="StructureDefinition-Organization-laboratory-uv-ips.html">Organization (laboratory)</a> ;
    <a href="StructureDefinition-Media-observation-uv-ips.html">Media observation (Results: laboratory, media)</a> ]
@@ -120,7 +120,8 @@ Following are the profiles that have been defined for each section. (R) denotes 
    <a href="StructureDefinition-Organization-uv-ips.html">Organization (IPS)</a> ;
    <a href="StructureDefinition-Practitioner-uv-ips.html">Practitioner (IPS)</a> ]
   * Pathology results
-   [ <a href="StructureDefinition-Observation-pathology-uv-ips.html">Observation (Results: pathology)</a> ;
+   [ <a href="StructureDefinition-Observation-laboratory-pathology-uv-ips.html">Observation (Results: laboratory and pathology)</a> ;
+   <a href="StructureDefinition-Observation-pathology-uv-ips.html">Observation (Results: pathology)</a> ;
    <a href="StructureDefinition-Specimen-uv-ips.html">Specimen (IPS)</a> ;
    <a href="StructureDefinition-Organization-laboratory-uv-ips.html">Organization (laboratory)</a> ;
    [ <a href="StructureDefinition-Media-observation-uv-ips.html">Observation (Results: laboratory, media)</a> ]
