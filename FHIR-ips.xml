@@ -170,8 +170,8 @@
    <artifact name="Imaging Study (IPS)"
              key="StructureDefinition-ImagingStudy-uv-ips"
              id="StructureDefinition/ImagingStudy-uv-ips"/>
-   <artifact name="Observation (Results: generic)"
-             key="StructureDefinition-Observation-uv-ips"
+   <artifact name="Observation (Results)"
+             key="StructureDefinition-Observation-results-uv-ips"
              id="StructureDefinition/Observation-results-uv-ips"/>
    <artifact name="Organization (IPS)"
              key="StructureDefinition-Organization-observation-uv-ips"
@@ -383,6 +383,10 @@
    <artifact name="Severity Value Set Mappings - LOINC to FHIR"
              key="ConceptMap-severity-loinc-uv-ips"
              id="ConceptMap/severity-loinc-uv-ips"/>
+   <artifact name="Observation (Results: generic)"
+             key="StructureDefinition-Observation-uv-ips"
+             id="StructureDefinition/Observation-uv-ips"
+             deprecated="true"/>
    <artifact name="Observation: simple blood ABO and Rh group panel"
              key="Observation-simple-bld-group"
              id="Observation/simple-bld-group"
