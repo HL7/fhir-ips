@@ -100,10 +100,6 @@
 			<path value="DiagnosticReport.result"/>
 			<slicing>
 				<discriminator>
-					<type value="pattern"/>
-					<path value="$this.resolve().category"/>
-				</discriminator>
-				<discriminator>
 					<type value="profile"/>
 					<path value="$this.resolve()"/>
 				</discriminator>
@@ -113,52 +109,71 @@
 			<definition value="Observation results included in the diagnostic report."/>
 			<mustSupport value="true"/>
 		</element>
-		<!--
-		<element id="DiagnosticReport.result:observation-lab">
+		<element id="DiagnosticReport.result:observation-results">
 			<path value="DiagnosticReport.result"/>
-			<sliceName value="observation-lab"/>
+			<sliceName value="observation-results"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips"/>
+				<!--
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-pathology-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-imaging-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-clinical-uv-ips"/>
+				-->
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="DiagnosticReport.result:observation-path">
+		<!--
+		<element id="DiagnosticReport.result:observation-results-lab">
 			<path value="DiagnosticReport.result"/>
-			<sliceName value="observation-path"/>
+			<sliceName value="observation-results-lab"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pathology-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="DiagnosticReport.result:observation-results-path">
+			<path value="DiagnosticReport.result"/>
+			<sliceName value="observation-results-path"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-pathology-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
 	-->
+		<!--
 		<element id="DiagnosticReport.result:observation-lab-path">
 			<path value="DiagnosticReport.result"/>
 			<sliceName value="observation-lab"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-pathology-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-pathology-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="DiagnosticReport.result:observation-imaging">
+	-->
+	<!--
+		<element id="DiagnosticReport.result:observation-results-imaging">
 			<path value="DiagnosticReport.result"/>
-			<sliceName value="observation-imaging"/>
+			<sliceName value="observation-results-imaging"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-imaging-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-imaging-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="DiagnosticReport.result:observation-result">
+		<element id="DiagnosticReport.result:observation-results-clinical">
 			<path value="DiagnosticReport.result"/>
-			<sliceName value="observation-result"/>
+			<sliceName value="observation-results-clinical"/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-clinical-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
+	-->
 	</differential>
 </StructureDefinition>

@@ -107,28 +107,27 @@ Following are the profiles that have been defined for each section. (R) denotes 
  [ <a href="StructureDefinition-DeviceUseStatement-uv-ips.html">Device Use Statement (IPS)</a> ;
  <a href="StructureDefinition-Device-uv-ips.html">Device (IPS)</a> ]
 * Diagnostic Results (S)
+  [ <a href="StructureDefinition-Observation-results-uv-ips.html">Observation (Results)</a> ]
   * Laboratory results 
-   [ <a href="StructureDefinition-Observation-laboratory-pathology-uv-ips.html">Observation (Results: laboratory and pathology)</a> ;
-   <a href="StructureDefinition-Observation-laboratory-uv-ips.html">Observation (Results: laboratory)</a> ;
+   [ <a href="StructureDefinition-Observation-results-laboratory-uv-ips.html">Observation (Results: laboratory)</a> ;
    <a href="StructureDefinition-Specimen-uv-ips.html">Specimen (IPS)</a> ;
    <a href="StructureDefinition-Organization-laboratory-uv-ips.html">Organization (laboratory)</a> ;
    <a href="StructureDefinition-Media-observation-uv-ips.html">Media observation (Results: laboratory, media)</a> ]
   * Radiology results
-   [ <a href="StructureDefinition-Observation-imaging-uv-ips.html">Observation (Results: imaging)</a> ;
+   [ <a href="StructureDefinition-Observation-results-imaging-uv-ips.html">Observation (Results: imaging)</a> ;
    <a href="StructureDefinition-Device-observer-uv-ips.html">Device (performer, observer)</a> ;
    <a href="StructureDefinition-ImagingStudy-uv-ips.html">Imaging Study (IPS)</a> ;
    <a href="StructureDefinition-Organization-uv-ips.html">Organization (IPS)</a> ;
    <a href="StructureDefinition-Practitioner-uv-ips.html">Practitioner (IPS)</a> ]
   * Pathology results
-   [ <a href="StructureDefinition-Observation-laboratory-pathology-uv-ips.html">Observation (Results: laboratory and pathology)</a> ;
-   <a href="StructureDefinition-Observation-pathology-uv-ips.html">Observation (Results: pathology)</a> ;
+   [ <a href="StructureDefinition-Observation-results-pathology-uv-ips.html">Observation (Results: pathology)</a> ;
    <a href="StructureDefinition-Specimen-uv-ips.html">Specimen (IPS)</a> ;
    <a href="StructureDefinition-Organization-laboratory-uv-ips.html">Organization (laboratory)</a> ;
    [ <a href="StructureDefinition-Media-observation-uv-ips.html">Observation (Results: laboratory, media)</a> ]
-  * Other results 
-   [ <a href="StructureDefinition-Observation-uv-ips.html">Observation (Results: generic)</a> ]
+  * Clinical results (associated) 
+   [ <a href="StructureDefinition-Observation-results-clinical-uv-ips.html">Observation (Results: associated clinical)</a> ]
   * Diagnostic Report (extract of)
-   [ <a href="StructureDefinition-Observation-uv-ips.html">DiagnosticReport (IPS)</a> ]
+   [ <a href="StructureDefinition-DiagnosticReport-uv-ips.html">DiagnosticReport (IPS)</a> ]
 * Vital Signs 
   [ <a href="{{site.data.fhir.path}}vitalsigns.html">Vital Signs</a> ]
 * Past history of illnesses

@@ -113,7 +113,7 @@ These value sets have been defined for this implementation guide:
     <a href="ValueSet-laboratory-tests-and-panels-uv-ips.html">Results Laboratory Tests and Panels - IPS</a>
    </li>
    <li>
-    <a href="ValueSet-results-observations-uv-ips.html">Results Observation - IPS</a>
+    <a href="ValueSet-results-clinical-observations-uv-ips.html">Results Observation - IPS</a>
    </li>
    <li>
     <a href="ValueSet-laboratory-observations-uv-ips.html">Results Observation Laboratory - IPS</a>

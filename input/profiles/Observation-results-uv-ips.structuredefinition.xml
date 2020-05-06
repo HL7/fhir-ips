@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<id value="Observation-uv-ips"/>
-	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-uv-ips"/>
-	<name value="ObservationUvIps"/>
-	<title value="Observation (Results: generic)"/>
+	<id value="Observation-results-uv-ips"/>
+	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips"/>
+	<name value="ObservationResultsUvIps"/>
+	<title value="Observation (Results)"/>
 	<status value="active"/>
 	<experimental value="false"/>
 	<date value="2018-03-21T09:24:38.624+01:00"/>
 	<publisher value="HL7 International"/>
-	<description value="This profile constrains the Observation resource to represent various results in a patient summary, if no other more specific profile applies."/>
-	<purpose value="This profile constrains the Observation resource to represent clinical observations where more specific profiles are not applicable. In case of a panel of observations, the results of the panel appear as sub-observations."/>
+	<description value="This profile constrains the Observation resource to represent various types of results and associated observations in a patient summary.  This is the base profile from which the other results profiles are derived."/>
+	<purpose value="This profile constrains the Observation resource to represent various types of results and associated observations in a patient summary."/>
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="Observation"/>
@@ -30,52 +30,10 @@
 		</element>
 		<element id="Observation.category">
 			<path value="Observation.category"/>
-			<slicing>
-				<discriminator>
-					<type value="pattern"/>
-					<path value="$this"/>
-				</discriminator>
-				<rules value="open"/>
-			</slicing>
-			<definition value="A code that classifies the general type of observation being made."/>
 			<type>
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.category:laboratory">
-			<path value="Observation.category"/>
-			<sliceName value="laboratory"/>
-			<min value="0"/>
-			<max value="0"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
-			<patternCodeableConcept>
-				<coding>
-					<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-					<code value="laboratory"/>
-				</coding>
-			</patternCodeableConcept>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.category:imaging">
-			<path value="Observation.category"/>
-			<sliceName value="imaging"/>
-			<min value="0"/>
-			<max value="0"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
-			<patternCodeableConcept>
-				<coding>
-					<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-					<code value="imaging"/>
-				</coding>
-			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.code">
@@ -85,10 +43,6 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
-			<binding>
-				<strength value="extensible"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/results-observations-uv-ips"/>
-			</binding>
 		</element>
 		<element id="Observation.subject">
 			<path value="Observation.subject"/>

@@ -1,37 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-	<id value="Observation-laboratory-uv-ips"/>
+	<id value="Observation-results-pathology-uv-ips"/>
 	<meta>
 		<versionId value="1"/>
 		<lastUpdated value="2018-03-08T16:05:00.196+00:00"/>
 	</meta>
-	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-uv-ips"/>
+	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-pathology-uv-ips"/>
 	<version value="0.2"/>
-	<name value="ObservationLaboratoryUvIps"/>
-	<title value="Observation (Results: laboratory)"/>
+	<name value="ObservationResultsPathologyUvIps"/>
+	<title value="Observation (Results: pathology)"/>
 	<status value="active"/>
 	<experimental value="false"/>
-	<date value="2018-03-09"/>
+	<date value="2018-03-21"/>
 	<publisher value="HL7 International"/>
-	<description value="This profile constrains the Observation resource to represent results produced by laboratory tests or panels/studies in a patient summary.&#xD;&#xA;&#xD;&#xA;This observation may represent the result of a simple laboratory test such as hematocrit or it may group the set of results produced by a multi-test study or panel such as a complete blood count, a dynamic function test, a urine specimen study. In the latter case, the observation carries the overall conclusion of the study and or a global interpretation by the producer of the study, in the comment element; and references the atomic results of the study as &quot;has-member&quot; child observations.&#xD;&#xA;"/>
-	<purpose value="This profile constrains the Observation resource to represent a laboratory in vitro diagnostic test or panel/study. In case of a panel/study, the results of the panel appear as sub-observations. In this case this top-level Observation acts as a grouper of all the observations belonging to the panel or study.  The top-level observation may carry a conclusion in the value element and or a global interpretation by the producer of the study, in the comment element."/>
+	<description value="This profile constrains the Observation resource to represent results produced by pathology studies in a patient summary"/>
+	<purpose value="This profile constrains the Observation resource to represent a pathology in vitro study. In case of a multiple-observation study, the results of the study appear as sub-observations. In this case this top-level Observation acts as a grouper of all the observations belonging to the study.  The top-level observation may carry a conclusion in the value element and or a global interpretation by the producer of the study, in the comment element."/>
 	<kind value="resource"/>
 	<abstract value="false"/>
 	<type value="Observation"/>
-	<baseDefinition value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-pathology-uv-ips"/>
+	<baseDefinition value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips"/>
 	<derivation value="constraint"/>
 	<differential>
 		<element id="Observation">
 			<path value="Observation"/>
-			<short value="Laboratory result for a simple test or for a panel/study"/>
-			<definition value="This observation may represent the result of a simple laboratory test such as hematocrit or it may group the set of results produced by a multi-test study or panel such as a complete blood count, a dynamic function test, a urine specimen study. In the latter case, the observation carries the overall conclusion of the study and references the atomic results of the study as &quot;has-member&quot; child observations"/>
-			<comment value="Represents either a lab simple observation or the group of observations produced by a laboratory study."/>
+			<short value="Pathology result for a simple test or for a panel/study"/>
+			<definition value="This observation may represent the result of a simple pathology test such as hematocrit or it may group the set of results produced by a multi-test study or panel such as a complete blood count, a dynamic function test, a urine specimen study. In the latter case, the observation carries the overall conclusion of the study and references the atomic results of the study as &quot;has-member&quot; child observations"/>
+			<comment value="Represents either a lab simple observation or the group of observations produced by a pathology study."/>
 			<constraint>
 				<key value="ips-2"/>
 				<severity value="error"/>
 				<human value="if no &quot;hasMember&quot; element is present then Observation must have a&quot; value&quot;"/>
 				<expression value="value.exists() or hasMember.exists()"/>
 			</constraint>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.category">
+			<path value="Observation.category"/>
+			<slicing>
+				<discriminator>
+					<type value="pattern"/>
+					<path value="$this"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+			<definition value="A code that classifies the general type of observation being made. In this profile, fixed to &quot;laboratory&quot;."/>
+			<comment value="&quot;laboratory&quot; includes laboratory medicine and pathology"/>
+			<min value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.category:laboratory">
+			<path value="Observation.category"/>
+			<sliceName value="laboratory"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<patternCodeableConcept>
+				<coding>
+					<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+					<code value="laboratory"/>
+				</coding>
+			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.code">
@@ -48,9 +83,10 @@
 					<valueString value="ObservationCode"/>
 				</extension>
 				<strength value="extensible"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-tests-and-panels-uv-ips"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/pathology-observations-uv-ips"/>
 			</binding>
 		</element>
+	
 		<element id="Observation.value[x]">
 			<path value="Observation.value[x]"/>
 			<slicing>
@@ -125,18 +161,17 @@
 			</type>
 			<mustSupport value="true"/>
 			<binding>
-				<strength value="extensible"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/result-coded-value-lab-gps-uv-ips"/>
+				<strength value="example"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/result-coded-value-pathology-uv-ips"/>
 			</binding>
 		</element>
-		
 		<element id="Observation.hasMember">
 			<path value="Observation.hasMember"/>
-			<definition value="A reference to another Observation profiled by Observation-laboratory-uv-ips. The target observation (for instance an individual test member of a panel) is considered as a sub-observation of the current one, which plays the role of a grouper."/>
-			<comment value="This element is used in the context of international patient summary when there is a need to group a collection of observations, because they belong to the same panel, or because they share a common interpretation comment, or a common media attachment (illustrative image or graph). In these cases, the current observation profiled as observation-laboratory-uv-trillium2 is the grouper, and its set of sub-observations are related observations using the type &quot;has-member&quot; and the profile observation-member-laboratory-uv-ips.  For a discussion on the ways Observations can be assembled in groups together see [Notes below](observation.html#4.20.4)."/>
+			<definition value="A reference to another Observation profiled by Observation-results-pathology-uv-ips. The target observation is considered as a sub-observation of the current one, which plays the role of a grouper"/>
+			<comment value="This element is used in the context of international patient summary when there is a need to group a collection of observations, because they belong to the same panel, or because they share a common interpretation comment, or a common media attachment (illustrative image or graph). In these cases, the current observation profiled as observation-laboratory-uv-trillium2 is the grouper, and its set of sub-observations are related observations using the type &quot;has-member&quot; and the profile observation-member-laboratory-uv-trillium2."/>
 			<type>
 				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-laboratory-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-pathology-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>	
