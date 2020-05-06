@@ -104,22 +104,13 @@ These value sets have been defined for this implementation guide:
     <a href="ValueSet-result-coded-value-lab-gps-uv-ips.html">Results Coded Values Laboratory (GPS) - IPS</a>
    </li>
    <li>
-    <a href="ValueSet-result-coded-value-lab-gps-path-uv-ips.html">Results Coded Values Laboratory &amp; Pathology (GPS) - IPS</a>
-   </li>
-   <li>
     <a href="ValueSet-result-coded-value-pathology-uv-ips.html">Results Coded Values Pathology - IPS</a>
-   </li>
-      <li>
-    <a href="ValueSet-laboratory-tests-and-panels-uv-ips.html">Results Laboratory Tests and Panels - IPS</a>
    </li>
    <li>
     <a href="ValueSet-results-clinical-observations-uv-ips.html">Results Observation - IPS</a>
    </li>
    <li>
     <a href="ValueSet-laboratory-observations-uv-ips.html">Results Observation Laboratory - IPS</a>
-   </li>
-   <li>
-    <a href="ValueSet-laboratory-pathology-observations-uv-ips.html">Results Observation Laboratory &amp; Pathology - IPS</a>
    </li>
    <li>
     <a href="ValueSet-pathology-observations-uv-ips.html">Results Observation Pathology - IPS</a>
