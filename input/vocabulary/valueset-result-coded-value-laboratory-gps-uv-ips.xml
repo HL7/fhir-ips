@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir" 
+    xmlns:f="http://hl7.org/fhir">
+    <id value="result-coded-value-laboratory-gps-uv-ips"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+    </meta>
+    <url value="http://hl7.org/fhir/uv/ips/ValueSet/result-coded-value-laboratory-gps-uv-ips"/>
+    <identifier>
+        <use value="official"/>
+        <system value="http://art-decor.org/ns/oids/vs"/>
+        <value value="2.16.840.1.113883.11.22.46"/>
+    </identifier>
+    <version value="2017-05-31T00:00:00"/>
+    <name value="ResultsCodedValuesLabGpsUvIps"/>
+    <title value="Results Coded Values Laboratory (GPS) - IPS"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="HL7 International"/>
+    <contact>
+        <name value="HL7 International"/>
+        <telecom>
+            <system value="phone"/>
+            <value value="+1 734 677 7777"/>
+        </telecom>
+        <telecom>
+            <system value="fax"/>
+            <value value="+1 734 677 6622"/>
+        </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="info@hl7.org"/>
+        </telecom>
+    </contact>
+    <description value="This Value set is defined as the union of: (a) ABO and Rh group [Type] in Blood (2.16.840.1.113883.11.22.51); (b) Presence/Absence Indicators (2.16.840.1.113883.11.22.52) (c) Organisms (2.16.840.1.113883.11.22.49)"/>
+    <immutable value="false"/>
+	<copyright value="The GPS is produced by SNOMED International under the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/)&#10;&#10;Additional information about this license specific to SNOMED International&#8217;s release of the GPS:&#10;* SNOMED CT is &#169; and &#174; SNOMED International. The right to maintain the GPS remains vested exclusively in SNOMED International.&#10;* The Licensee can redistribute the GPS.&#10;* The Licensee can create derivatives or implementation-related products and services based on the GPS.&#10;* The Licensee cannot claim that SNOMED International or any of its Members endorses the Licensee&#8217;s derivative because it uses content from the GPS.&#10;* Neither SNOMED International nor any of the contributors accept any liability for the Licensee&#8217;s use or redistribution of the GPS.&#10;* SNOMED CT&#174; was originally created by the College of American Pathologists.&#10;&#10;Without obtaining prior written permission from SNOMED International, you are expressly prohibited from using, distributing or reproducing the SNOMED International, SNOMED CT or SNOMED GPS logo, service mark or trademark. Please review all terms and conditions of use [here](http://www.snomed.org/terms-and-conditions)."/>
+    <compose>
+        <include>
+            <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/lab-blood-abo-rh-grp-gps-uv-ips"/>
+        </include>
+        <include>
+            <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/lab-absence-presence-gps-uv-ips"/>
+        </include>
+        <include>
+            <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/organism-gps-uv-ips"/>
+        </include>
+    </compose>
+</ValueSet>

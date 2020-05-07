@@ -101,10 +101,10 @@ These value sets have been defined for this implementation guide:
     <a href="ValueSet-lab-blood-abo-rh-grp-gps-uv-ips.html">Results ABO+RH Group (GPS) - IPS</a>
    </li>
    <li>
-    <a href="ValueSet-result-coded-value-lab-gps-uv-ips.html">Results Coded Values Laboratory (GPS) - IPS</a>
+    <a href="ValueSet-result-coded-value-laboratory-gps-uv-ips.html">Results Coded Values Laboratory (GPS) - IPS</a>
    </li>
    <li>
-    <a href="ValueSet-result-coded-value-pathology-uv-ips.html">Results Coded Values Pathology - IPS</a>
+    <a href="ValueSet-result-coded-value-pathology-gps-uv-ips.html">Results Coded Values Pathology (GPS) - IPS</a>
    </li>
    <li>
     <a href="ValueSet-results-clinical-observations-uv-ips.html">Results Observation - IPS</a>

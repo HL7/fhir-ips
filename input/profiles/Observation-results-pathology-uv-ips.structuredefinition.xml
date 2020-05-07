@@ -86,7 +86,6 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/pathology-observations-uv-ips"/>
 			</binding>
 		</element>
-	
 		<element id="Observation.value[x]">
 			<path value="Observation.value[x]"/>
 			<slicing>
@@ -161,8 +160,8 @@
 			</type>
 			<mustSupport value="true"/>
 			<binding>
-				<strength value="example"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/result-coded-value-pathology-uv-ips"/>
+				<strength value="preferred"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/result-coded-value-pathology-gps-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Observation.hasMember">

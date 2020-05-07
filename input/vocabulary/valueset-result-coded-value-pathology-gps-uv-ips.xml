@@ -1,0 +1,2531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:f="http://hl7.org/fhir">
+	<id value="result-coded-value-pathology-gps-uv-ips"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+	</meta>
+	<text>
+		<status value="additional"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<div id="cld">
+				<p>This value set has a large enumerated (extensional) definition.  See "Definition" in the table above for the definition description.  The full definition is available in the resource instance (see links in "Source Resource" in the table above).</p>
+			</div>
+		</div>
+	</text>
+	<url value="http://hl7.org/fhir/uv/ips/ValueSet/result-coded-value-pathology-gps-uv-ips"/>
+	<version value="2017-05-31T00:00:00"/>
+	<name value="ResultsCodedValuesPathologyGpsUvIps"/>
+	<title value="Results Coded Values Pathology (GPS) - IPS"/>
+	<status value="active"/>
+	<experimental value="false"/>
+	<publisher value="HL7 International"/>
+	<contact>
+		<name value="HL7 International"/>
+		<telecom>
+			<system value="phone"/>
+			<value value="+1 734 677 7777"/>
+		</telecom>
+		<telecom>
+			<system value="fax"/>
+			<value value="+1 734 677 6622"/>
+		</telecom>
+		<telecom>
+			<system value="email"/>
+			<value value="info@hl7.org"/>
+		</telecom>
+	</contact>
+	<description value="IPS Pathology observation coded results GPS value set.  the codes from the SNOMED International Global Patient Set (GPS) subset of SNOMED CT that are included in: all descendants of 106253005 |Histologic grading differentiation AND/OR behavior (qualifier value)|, all descendants of 373369003 |Finding of histologic grading differentiation AND/OR behavior (finding)|, all descendants of 399981008 |Neoplasm and/or hamartoma (disorder)|.  The current value set contains concepts from the September 2019 release of the GPS, which is based on the July 2019 SNOMED CT International Edition release."/>
+    <immutable value="false"/>
+	<copyright value="The GPS is produced by SNOMED International under the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/)&#10;&#10;Additional information about this license specific to SNOMED International&#8217;s release of the GPS:&#10;* SNOMED CT is &#169; and &#174; SNOMED International. The right to maintain the GPS remains vested exclusively in SNOMED International.&#10;* The Licensee can redistribute the GPS.&#10;* The Licensee can create derivatives or implementation-related products and services based on the GPS.&#10;* The Licensee cannot claim that SNOMED International or any of its Members endorses the Licensee&#8217;s derivative because it uses content from the GPS.&#10;* Neither SNOMED International nor any of the contributors accept any liability for the Licensee&#8217;s use or redistribution of the GPS.&#10;* SNOMED CT&#174; was originally created by the College of American Pathologists.&#10;&#10;Without obtaining prior written permission from SNOMED International, you are expressly prohibited from using, distributing or reproducing the SNOMED International, SNOMED CT or SNOMED GPS logo, service mark or trademark. Please review all terms and conditions of use [here](http://www.snomed.org/terms-and-conditions)."/>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20190731"/>
+			<concept>
+				<code value="1663004"/>
+				<display value="G2 grade (finding)"/>
+			</concept>
+			<concept>
+				<code value="384668003"/>
+				<display value="Nottingham Combined Grade cannot be determined (finding)"/>
+			</concept>
+			<concept>
+				<code value="409783000"/>
+				<display value="Tumor invasion limited to skin (finding)"/>
+			</concept>
+			<concept>
+				<code value="39629007"/>
+				<display value="Pyogenic granuloma of skin (disorder)"/>
+			</concept>
+			<concept>
+				<code value="443496006"/>
+				<display value="Enchondroma of bone (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92375009"/>
+				<display value="Benign neoplasm of skin of scalp (disorder)"/>
+			</concept>
+			<concept>
+				<code value="402944008"/>
+				<display value="Condylomata lata of perianal skin (disorder)"/>
+			</concept>
+			<concept>
+				<code value="442348004"/>
+				<display value="Inflamed seborrheic keratosis (disorder)"/>
+			</concept>
+			<concept>
+				<code value="93160004"/>
+				<display value="Lipoma of skin and subcutaneous tissue of neck (disorder)"/>
+			</concept>
+			<concept>
+				<code value="134209002"/>
+				<display value="Prolactinoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92248004"/>
+				<display value="Benign neoplasm of nipple of female breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92308005"/>
+				<display value="Benign neoplasm of prostate (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92166000"/>
+				<display value="Benign neoplasm of labia majora (disorder)"/>
+			</concept>
+			<concept>
+				<code value="255181009"/>
+				<display value="Benign neoplasm of ear (disorder)"/>
+			</concept>
+			<concept>
+				<code value="424568000"/>
+				<display value="Fibroma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="443093007"/>
+				<display value="Osteochondroma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="53132006"/>
+				<display value="Zollinger-Ellison syndrome (disorder)"/>
+			</concept>
+			<concept>
+				<code value="189179009"/>
+				<display value="Craniopharyngioma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="372120003"/>
+				<display value="Carcinoma of main bronchus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="276870001"/>
+				<display value="Carcinoma of fallopian tube (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254634000"/>
+				<display value="Squamous cell carcinoma of lung (disorder)"/>
+			</concept>
+			<concept>
+				<code value="372111007"/>
+				<display value="Carcinoma of lower lobe, bronchus or lung (disorder)"/>
+			</concept>
+			<concept>
+				<code value="702391001"/>
+				<display value="Renal cell carcinoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="269533000"/>
+				<display value="Carcinoma of colon (disorder)"/>
+			</concept>
+			<concept>
+				<code value="315058005"/>
+				<display value="Hereditary nonpolyposis colon cancer (disorder)"/>
+			</concept>
+			<concept>
+				<code value="372143007"/>
+				<display value="Carcinoma of stomach (disorder)"/>
+			</concept>
+			<concept>
+				<code value="312104005"/>
+				<display value="Cholangiocarcinoma of biliary tract (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94455000"/>
+				<display value="Secondary malignant neoplasm of ovary (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94360002"/>
+				<display value="Secondary malignant neoplasm of kidney (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94623007"/>
+				<display value="Secondary malignant neoplasm of testis (disorder)"/>
+			</concept>
+			<concept>
+				<code value="126885006"/>
+				<display value="Neoplasm of bladder (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363517008"/>
+				<display value="Malignant tumor of urinary tract proper (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363449006"/>
+				<display value="Malignant tumor of testis (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363443007"/>
+				<display value="Malignant tumor of ovary (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363354003"/>
+				<display value="Malignant tumor of cervix (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363445000"/>
+				<display value="Malignant tumor of vagina (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363413005"/>
+				<display value="Malignant tumor of splenic flexure (disorder)"/>
+			</concept>
+			<concept>
+				<code value="187732006"/>
+				<display value="Malignant tumor of cardia (disorder)"/>
+			</concept>
+			<concept>
+				<code value="428322007"/>
+				<display value="Malignant neoplasm of uterine adnexa (disorder)"/>
+			</concept>
+			<concept>
+				<code value="269579005"/>
+				<display value="Malignant melanoma of trunk (disorder)"/>
+			</concept>
+			<concept>
+				<code value="302820008"/>
+				<display value="Intracranial meningioma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="372138000"/>
+				<display value="Carcinoma of esophagus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363505006"/>
+				<display value="Malignant tumor of oral cavity (disorder)"/>
+			</concept>
+			<concept>
+				<code value="91855006"/>
+				<display value="Acute leukemia, disease (disorder)"/>
+			</concept>
+			<concept>
+				<code value="443495005"/>
+				<display value="Neoplasm of lymphoid system structure (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94397007"/>
+				<display value="Secondary malignant neoplasm of lymph nodes of neck (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94038007"/>
+				<display value="Primary malignant neoplasm of skin of scalp (disorder)"/>
+			</concept>
+			<concept>
+				<code value="403892001"/>
+				<display value="Squamous cell carcinoma of skin of face (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363228008"/>
+				<display value="Neoplasm of ear (disorder)"/>
+			</concept>
+			<concept>
+				<code value="423284006"/>
+				<display value="Squamous cell carcinoma of skin of neck (disorder)"/>
+			</concept>
+			<concept>
+				<code value="187841006"/>
+				<display value="Malignant tumor of glottis (disorder)"/>
+			</concept>
+			<concept>
+				<code value="187842004"/>
+				<display value="Malignant tumor of supraglottis (disorder)"/>
+			</concept>
+			<concept>
+				<code value="405822008"/>
+				<display value="Squamous cell carcinoma of larynx (disorder)"/>
+			</concept>
+			<concept>
+				<code value="255056009"/>
+				<display value="Malignant tumor of head and/or neck (disorder)"/>
+			</concept>
+			<concept>
+				<code value="187999008"/>
+				<display value="Malignant neoplasm of connective and soft tissue of hip and lower limb (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254701007"/>
+				<display value="Basal cell carcinoma of skin (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94264008"/>
+				<display value="Secondary malignant neoplasm of soft tissues (disorder)"/>
+			</concept>
+			<concept>
+				<code value="415112005"/>
+				<display value="Plasmacytoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="307593001"/>
+				<display value="Carcinomatosis (disorder)"/>
+			</concept>
+			<concept>
+				<code value="443487006"/>
+				<display value="Mantle cell lymphoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="277637000"/>
+				<display value="Large cell anaplastic lymphoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="443439001"/>
+				<display value="Malignant fibrous histiocytoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="402815007"/>
+				<display value="Squamous cell carcinoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="443675005"/>
+				<display value="Seminoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="65399007"/>
+				<display value="Langerhans cell histiocytosis (disorder)"/>
+			</concept>
+			<concept>
+				<code value="416053008"/>
+				<display value="Estrogen receptor positive tumor (disorder)"/>
+			</concept>
+			<concept>
+				<code value="444374006"/>
+				<display value="Type C thymoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="369785000"/>
+				<display value="10-20 mitoses per 10 high power fields (score = 2) (finding)"/>
+			</concept>
+			<concept>
+				<code value="92354001"/>
+				<display value="Benign neoplasm of skin of ear (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92371000"/>
+				<display value="Benign neoplasm of skin of neck (disorder)"/>
+			</concept>
+			<concept>
+				<code value="255184001"/>
+				<display value="Papilloma of skin (disorder)"/>
+			</concept>
+			<concept>
+				<code value="398838000"/>
+				<display value="Senile hyperkeratosis (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254819008"/>
+				<display value="Atypical mole syndrome (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92468007"/>
+				<display value="Benign neoplasm of urinary system (disorder)"/>
+			</concept>
+			<concept>
+				<code value="281700003"/>
+				<display value="Benign papilloma of bladder (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254845004"/>
+				<display value="Fibroadenoma of breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="93616000"/>
+				<display value="Intramural leiomyoma of uterus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="95279007"/>
+				<display value="Submucous leiomyoma of uterus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92059004"/>
+				<display value="Benign neoplasm of choroid (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92258000"/>
+				<display value="Benign neoplasm of orbit (disorder)"/>
+			</concept>
+			<concept>
+				<code value="271472001"/>
+				<display value="Benign neoplasm of nose, middle ear and accessory sinuses (disorder)"/>
+			</concept>
+			<concept>
+				<code value="255166003"/>
+				<display value="Benign neoplasm of respiratory system (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92564006"/>
+				<display value="Carcinoma in situ of uterine cervix (disorder)"/>
+			</concept>
+			<concept>
+				<code value="109889007"/>
+				<display value="Intraductal carcinoma in situ of breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94962000"/>
+				<display value="Neoplasm of uncertain behavior of neck (disorder)"/>
+			</concept>
+			<concept>
+				<code value="372113005"/>
+				<display value="Carcinoma of middle lobe, bronchus or lung (disorder)"/>
+			</concept>
+			<concept>
+				<code value="372136001"/>
+				<display value="Carcinoma of upper lobe, bronchus or lung (disorder)"/>
+			</concept>
+			<concept>
+				<code value="93974005"/>
+				<display value="Primary malignant neoplasm of prostate (disorder)"/>
+			</concept>
+			<concept>
+				<code value="372016004"/>
+				<display value="Primary malignant neoplasm of the peritoneum (disorder)"/>
+			</concept>
+			<concept>
+				<code value="408642003"/>
+				<display value="Transitional cell carcinoma of kidney (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254612002"/>
+				<display value="Carcinoma of endocrine pancreas (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254557000"/>
+				<display value="Carcinoma of body of stomach (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94186002"/>
+				<display value="Secondary malignant neoplasm of bladder (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94459006"/>
+				<display value="Secondary malignant neoplasm of pancreas (disorder)"/>
+			</concept>
+			<concept>
+				<code value="403899005"/>
+				<display value="Squamous cell carcinoma of skin of trunk (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363457009"/>
+				<display value="Malignant tumor of renal pelvis (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254913005"/>
+				<display value="Neoplasm of urinary tract proper (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363458004"/>
+				<display value="Malignant tumor of ureter (disorder)"/>
+			</concept>
+			<concept>
+				<code value="188243001"/>
+				<display value="Malignant neoplasm of posterior wall of urinary bladder (disorder)"/>
+			</concept>
+			<concept>
+				<code value="188189001"/>
+				<display value="Malignant neoplasm of corpus uteri, excluding isthmus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363403002"/>
+				<display value="Malignant tumor of duodenum (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363411007"/>
+				<display value="Malignant tumor of appendix (disorder)"/>
+			</concept>
+			<concept>
+				<code value="126847008"/>
+				<display value="Neoplasm of rectum (disorder)"/>
+			</concept>
+			<concept>
+				<code value="187734007"/>
+				<display value="Malignant neoplasm of cardioesophageal junction of stomach (disorder)"/>
+			</concept>
+			<concept>
+				<code value="126851005"/>
+				<display value="Neoplasm of liver (disorder)"/>
+			</concept>
+			<concept>
+				<code value="187793004"/>
+				<display value="Malignant tumor of pancreatic duct (disorder)"/>
+			</concept>
+			<concept>
+				<code value="28122003"/>
+				<display value="Pulmonary eosinophilic granuloma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363433009"/>
+				<display value="Malignant tumor of pleura (disorder)"/>
+			</concept>
+			<concept>
+				<code value="93749002"/>
+				<display value="Primary malignant neoplasm of cerebrum (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254938000"/>
+				<display value="Astrocytoma of brain (disorder)"/>
+			</concept>
+			<concept>
+				<code value="189164002"/>
+				<display value="Cerebral meningioma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="307649006"/>
+				<display value="Microglioma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363507003"/>
+				<display value="Malignant neoplasm of pharynx (disorder)"/>
+			</concept>
+			<concept>
+				<code value="420120006"/>
+				<display value="Gastrointestinal stromal tumor (disorder)"/>
+			</concept>
+			<concept>
+				<code value="126789008"/>
+				<display value="Neoplasm of submaxillary gland (disorder)"/>
+			</concept>
+			<concept>
+				<code value="91857003"/>
+				<display value="Acute lymphoid leukemia, disease (disorder)"/>
+			</concept>
+			<concept>
+				<code value="110005000"/>
+				<display value="Acute myelomonocytic leukemia, FAB M4 (disorder)"/>
+			</concept>
+			<concept>
+				<code value="109995007"/>
+				<display value="Myelodysplastic syndrome (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94392001"/>
+				<display value="Secondary malignant neoplasm of lymph node (disorder)"/>
+			</concept>
+			<concept>
+				<code value="403915004"/>
+				<display value="Basal cell carcinoma of scalp (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363501002"/>
+				<display value="Malignant tumor of face (disorder)"/>
+			</concept>
+			<concept>
+				<code value="188032002"/>
+				<display value="Malignant melanoma of ear and/or external auditory canal (disorder)"/>
+			</concept>
+			<concept>
+				<code value="128516002"/>
+				<display value="Neoplasm of ocular adnexa (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363461003"/>
+				<display value="Malignant tumor of eye (disorder)"/>
+			</concept>
+			<concept>
+				<code value="402509003"/>
+				<display value="Basal cell carcinoma of neck (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363429002"/>
+				<display value="Malignant tumor of larynx (disorder)"/>
+			</concept>
+			<concept>
+				<code value="276975007"/>
+				<display value="Carcinoma of larynx (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363478007"/>
+				<display value="Malignant tumor of thyroid gland (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94098005"/>
+				<display value="Primary malignant neoplasm of thyroid gland (disorder)"/>
+			</concept>
+			<concept>
+				<code value="255032005"/>
+				<display value="Medullary thyroid carcinoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="269578002"/>
+				<display value="Malignant melanoma of head and neck (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363229000"/>
+				<display value="Neoplasm of musculoskeletal system (disorder)"/>
+			</concept>
+			<concept>
+				<code value="307608006"/>
+				<display value="Ewing's sarcoma of bone (disorder)"/>
+			</concept>
+			<concept>
+				<code value="93655004"/>
+				<display value="Malignant melanoma of skin (disorder)"/>
+			</concept>
+			<concept>
+				<code value="118618005"/>
+				<display value="Mycosis fungoides (disorder)"/>
+			</concept>
+			<concept>
+				<code value="432328008"/>
+				<display value="Neuroblastoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="443492008"/>
+				<display value="Carcinoid tumor (disorder)"/>
+			</concept>
+			<concept>
+				<code value="373168002"/>
+				<display value="Reticulosarcoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="423294001"/>
+				<display value="Idiopathic hypereosinophilic syndrome (disorder)"/>
+			</concept>
+			<concept>
+				<code value="443261008"/>
+				<display value="Oxyphilic adenocarcinoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="72100002"/>
+				<display value="Solar lentigo (disorder)"/>
+			</concept>
+			<concept>
+				<code value="52298009"/>
+				<display value="Linear sebaceous nevus sequence (disorder)"/>
+			</concept>
+			<concept>
+				<code value="445513004"/>
+				<display value="Intracranial cavernous hemangioma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="54102005"/>
+				<display value="G1 grade (finding)"/>
+			</concept>
+			<concept>
+				<code value="369790002"/>
+				<display value="Nottingham Combined Grade I: 3-5 points (finding)"/>
+			</concept>
+			<concept>
+				<code value="235002009"/>
+				<display value="Gingival pyogenic granuloma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92359006"/>
+				<display value="Benign neoplasm of skin of face (disorder)"/>
+			</concept>
+			<concept>
+				<code value="195469007"/>
+				<display value="Anal skin tag (disorder)"/>
+			</concept>
+			<concept>
+				<code value="201091002"/>
+				<display value="Skin tag (disorder)"/>
+			</concept>
+			<concept>
+				<code value="255187008"/>
+				<display value="Lipoma of skin (disorder)"/>
+			</concept>
+			<concept>
+				<code value="402555001"/>
+				<display value="Multiple benign melanocytic nevi (disorder)"/>
+			</concept>
+			<concept>
+				<code value="235001002"/>
+				<display value="Gingival fibroepithelial polyp (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92503002"/>
+				<display value="Neurofibromatosis type 2 (disorder)"/>
+			</concept>
+			<concept>
+				<code value="91967007"/>
+				<display value="Benign neoplasm of adrenal gland (disorder)"/>
+			</concept>
+			<concept>
+				<code value="128474007"/>
+				<display value="Parathyroid adenoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254956000"/>
+				<display value="Pituitary adenoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92439006"/>
+				<display value="Benign neoplasm of thyroid gland (disorder)"/>
+			</concept>
+			<concept>
+				<code value="109913001"/>
+				<display value="Benign neoplasm of meninges (disorder)"/>
+			</concept>
+			<concept>
+				<code value="91992005"/>
+				<display value="Benign neoplasm of bladder (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92206006"/>
+				<display value="Benign neoplasm of male breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92260003"/>
+				<display value="Benign neoplasm of ovary (disorder)"/>
+			</concept>
+			<concept>
+				<code value="276851006"/>
+				<display value="Intraduct papilloma of pancreas (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92207002"/>
+				<display value="Benign neoplasm of male genital organ (disorder)"/>
+			</concept>
+			<concept>
+				<code value="443892003"/>
+				<display value="Neuroma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="443416007"/>
+				<display value="Benign adenomatous neoplasm (disorder)"/>
+			</concept>
+			<concept>
+				<code value="83270006"/>
+				<display value="Neoplastic pleural effusion (disorder)"/>
+			</concept>
+			<concept>
+				<code value="252991009"/>
+				<display value="Cervical intraepithelial neoplasia grade III with severe dysplasia (disorder)"/>
+			</concept>
+			<concept>
+				<code value="277577000"/>
+				<display value="Monoclonal gammopathy of uncertain significance (disorder)"/>
+			</concept>
+			<concept>
+				<code value="372100004"/>
+				<display value="Carcinoma of exocervix (disorder)"/>
+			</concept>
+			<concept>
+				<code value="286895009"/>
+				<display value="Carcinoma of breast - upper, outer quadrant (disorder)"/>
+			</concept>
+			<concept>
+				<code value="255035007"/>
+				<display value="Adrenal carcinoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="95214007"/>
+				<display value="Primary malignant neoplasm of liver (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254609000"/>
+				<display value="Carcinoma of ampulla of Vater (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94297009"/>
+				<display value="Secondary malignant neoplasm of female breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94161006"/>
+				<display value="Secondary malignant neoplasm of adrenal gland (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94493005"/>
+				<display value="Secondary malignant neoplasm of pleura (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94628003"/>
+				<display value="Secondary malignant neoplasm of retroperitoneum (disorder)"/>
+			</concept>
+			<concept>
+				<code value="402523001"/>
+				<display value="Basal cell carcinoma of truncal skin (disorder)"/>
+			</concept>
+			<concept>
+				<code value="419052002"/>
+				<display value="Malignant tumor of urinary system (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363515000"/>
+				<display value="Malignant tumor of male genital organ (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254872007"/>
+				<display value="Embryonal carcinoma of ovary (disorder)"/>
+			</concept>
+			<concept>
+				<code value="285838002"/>
+				<display value="Cervical intraepithelial neoplasia grade 2 (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254878006"/>
+				<display value="Endometrial carcinoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="126832004"/>
+				<display value="Neoplasm of small intestine (disorder)"/>
+			</concept>
+			<concept>
+				<code value="126843007"/>
+				<display value="Neoplasm of splenic flexure of colon (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363406005"/>
+				<display value="Malignant neoplasm of colon (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363351006"/>
+				<display value="Malignant tumor of rectum (disorder)"/>
+			</concept>
+			<concept>
+				<code value="314966008"/>
+				<display value="Local recurrence of malignant tumor of rectum (disorder)"/>
+			</concept>
+			<concept>
+				<code value="408647009"/>
+				<display value="Adenocarcinoma of stomach (disorder)"/>
+			</concept>
+			<concept>
+				<code value="93870000"/>
+				<display value="Malignant neoplasm of liver (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363353009"/>
+				<display value="Malignant tumor of gallbladder (disorder)"/>
+			</concept>
+			<concept>
+				<code value="387842002"/>
+				<display value="Neoplasm of heart (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363493006"/>
+				<display value="Malignant tumor of bronchus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="188153009"/>
+				<display value="Malignant neoplasm of lower-inner quadrant of female breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="427685000"/>
+				<display value="Human epidermal growth factor 2 positive carcinoma of breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="431396003"/>
+				<display value="Human epidermal growth factor 2 negative carcinoma of breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="314955001"/>
+				<display value="Local recurrence of malignant tumor of breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="127024001"/>
+				<display value="Neoplasm of pituitary gland (disorder)"/>
+			</concept>
+			<concept>
+				<code value="276826005"/>
+				<display value="Malignant glioma of brain (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363392002"/>
+				<display value="Malignant tumor of oropharynx (disorder)"/>
+			</concept>
+			<concept>
+				<code value="129154003"/>
+				<display value="Hematologic neoplasm (disorder)"/>
+			</concept>
+			<concept>
+				<code value="277571004"/>
+				<display value="B-cell acute lymphoblastic leukemia (disorder)"/>
+			</concept>
+			<concept>
+				<code value="110004001"/>
+				<display value="Acute promyelocytic leukemia, FAB M3 (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92812005"/>
+				<display value="Chronic leukemia, disease (disorder)"/>
+			</concept>
+			<concept>
+				<code value="95192000"/>
+				<display value="Nodular lymphoma of lymph nodes of multiple sites (disorder)"/>
+			</concept>
+			<concept>
+				<code value="402818009"/>
+				<display value="Basal cell carcinoma of nose (disorder)"/>
+			</concept>
+			<concept>
+				<code value="422572002"/>
+				<display value="Squamous cell carcinoma of chin (disorder)"/>
+			</concept>
+			<concept>
+				<code value="420519005"/>
+				<display value="Malignant lymphoma of the eye region (disorder)"/>
+			</concept>
+			<concept>
+				<code value="372103002"/>
+				<display value="Carcinoma of glottis (disorder)"/>
+			</concept>
+			<concept>
+				<code value="255029007"/>
+				<display value="Papillary thyroid carcinoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="423812005"/>
+				<display value="Sarcoma of head and neck (disorder)"/>
+			</concept>
+			<concept>
+				<code value="403898002"/>
+				<display value="Squamous cell carcinoma of skin of lower extremity (disorder)"/>
+			</concept>
+			<concept>
+				<code value="188075008"/>
+				<display value="Malignant melanoma of foot (disorder)"/>
+			</concept>
+			<concept>
+				<code value="428281000"/>
+				<display value="Malignant neoplasm of bone (disorder)"/>
+			</concept>
+			<concept>
+				<code value="126488004"/>
+				<display value="Neoplasm of skin (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94579000"/>
+				<display value="Secondary malignant neoplasm of skin (disorder)"/>
+			</concept>
+			<concept>
+				<code value="372010005"/>
+				<display value="Primary malignant neoplasm of soft tissues (disorder)"/>
+			</concept>
+			<concept>
+				<code value="35868009"/>
+				<display value="Carcinoid syndrome (disorder)"/>
+			</concept>
+			<concept>
+				<code value="387922007"/>
+				<display value="Neoplasm of endocrine gland (disorder)"/>
+			</concept>
+			<concept>
+				<code value="255052006"/>
+				<display value="Malignant neoplasm of unknown origin (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363346000"/>
+				<display value="Malignant neoplastic disease (disorder)"/>
+			</concept>
+			<concept>
+				<code value="128462008"/>
+				<display value="Secondary malignant neoplastic disease (disorder)"/>
+			</concept>
+			<concept>
+				<code value="314990009"/>
+				<display value="Metastasis from malignant tumor of bone (disorder)"/>
+			</concept>
+			<concept>
+				<code value="285645000"/>
+				<display value="Disseminated malignancy of unknown primary (disorder)"/>
+			</concept>
+			<concept>
+				<code value="443493003"/>
+				<display value="Metastatic malignant melanoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="118599009"/>
+				<display value="Hodgkin's disease (disorder)"/>
+			</concept>
+			<concept>
+				<code value="277622004"/>
+				<display value="Mucosa-associated lymphoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="239107007"/>
+				<display value="Epidermal nevus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="20376005"/>
+				<display value="Benign neoplastic disease (disorder)"/>
+			</concept>
+			<concept>
+				<code value="203468000"/>
+				<display value="Aneurysmal bone cyst (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92380000"/>
+				<display value="Benign neoplasm of skin of trunk (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92394004"/>
+				<display value="Benign neoplasm of soft tissues of lower limb (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92401003"/>
+				<display value="Benign neoplasm of soft tissues of upper limb (disorder)"/>
+			</concept>
+			<concept>
+				<code value="428054006"/>
+				<display value="Adenomatous polyp of colon (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92030004"/>
+				<display value="Benign neoplasm of brain (disorder)"/>
+			</concept>
+			<concept>
+				<code value="188991008"/>
+				<display value="Lipoma of anterior chest wall (disorder)"/>
+			</concept>
+			<concept>
+				<code value="269485000"/>
+				<display value="Benign tumor of breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="93162007"/>
+				<display value="Lipoma of spermatic cord (disorder)"/>
+			</concept>
+			<concept>
+				<code value="422470007"/>
+				<display value="Adenolymphoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="109355002"/>
+				<display value="Carcinoma in situ (disorder)"/>
+			</concept>
+			<concept>
+				<code value="400066006"/>
+				<display value="Intraepithelial squamous cell carcinoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94805002"/>
+				<display value="Neoplasm of uncertain behavior of soft tissues (disorder)"/>
+			</concept>
+			<concept>
+				<code value="30664006"/>
+				<display value="Multiple endocrine neoplasia, type 1 (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94767002"/>
+				<display value="Neoplasm of uncertain behavior of brain (disorder)"/>
+			</concept>
+			<concept>
+				<code value="307604008"/>
+				<display value="Mesoblastic nephroma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="400153009"/>
+				<display value="Abdominal fibromatosis (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254662007"/>
+				<display value="Keratoacanthoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="372098004"/>
+				<display value="Carcinoma of endocervix (disorder)"/>
+			</concept>
+			<concept>
+				<code value="399490008"/>
+				<display value="Adenocarcinoma of prostate (disorder)"/>
+			</concept>
+			<concept>
+				<code value="278054005"/>
+				<display value="Lobular carcinoma of breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="109841003"/>
+				<display value="Liver cell carcinoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="93980002"/>
+				<display value="Primary malignant neoplasm of rectosigmoid junction (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254570009"/>
+				<display value="Carcinoma of duodenum (disorder)"/>
+			</concept>
+			<concept>
+				<code value="444597005"/>
+				<display value="Extranodal marginal zone lymphoma of mucosa-associated lymphoid tissue of stomach (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94281004"/>
+				<display value="Secondary malignant neoplasm of endometrium (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94260004"/>
+				<display value="Secondary malignant neoplasm of colon (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94381002"/>
+				<display value="Secondary malignant neoplasm of liver (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94391008"/>
+				<display value="Secondary malignant neoplasm of lung (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94409002"/>
+				<display value="Secondary malignant neoplasm of mediastinum (disorder)"/>
+			</concept>
+			<concept>
+				<code value="372126009"/>
+				<display value="Malignant neoplasm of skin of trunk (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363352004"/>
+				<display value="Malignant tumor of anal canal (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363518003"/>
+				<display value="Malignant tumor of kidney (disorder)"/>
+			</concept>
+			<concept>
+				<code value="188239000"/>
+				<display value="Malignant tumor of trigone of urinary bladder (disorder)"/>
+			</concept>
+			<concept>
+				<code value="126906006"/>
+				<display value="Neoplasm of prostate (disorder)"/>
+			</concept>
+			<concept>
+				<code value="123843001"/>
+				<display value="Neoplasm of ovary (disorder)"/>
+			</concept>
+			<concept>
+				<code value="126838000"/>
+				<display value="Neoplasm of colon (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363412000"/>
+				<display value="Malignant tumor of ascending colon (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363409003"/>
+				<display value="Malignant tumor of descending colon (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254582000"/>
+				<display value="Adenocarcinoma of rectum (disorder)"/>
+			</concept>
+			<concept>
+				<code value="188151006"/>
+				<display value="Malignant neoplasm of central part of female breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="706970001"/>
+				<display value="Triple negative malignant neoplasm of breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363475005"/>
+				<display value="Malignant tumor of spinal cord (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94243009"/>
+				<display value="Secondary malignant neoplasm of central nervous system (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254547001"/>
+				<display value="Carcinoma of upper third of esophagus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="187726001"/>
+				<display value="Malignant tumor of middle third of esophagus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="255071008"/>
+				<display value="Squamous cell carcinoma of lip (disorder)"/>
+			</concept>
+			<concept>
+				<code value="359648001"/>
+				<display value="Acute myeloid leukemia with maturation, FAB M2 (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92818009"/>
+				<display value="Chronic myeloid leukemia, disease (disorder)"/>
+			</concept>
+			<concept>
+				<code value="423700001"/>
+				<display value="Squamous cell carcinoma of auricle of ear (disorder)"/>
+			</concept>
+			<concept>
+				<code value="371481006"/>
+				<display value="Neoplasm of eye region (disorder)"/>
+			</concept>
+			<concept>
+				<code value="255021005"/>
+				<display value="Malignant melanoma of choroid (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363489000"/>
+				<display value="Malignant tumor of neck (disorder)"/>
+			</concept>
+			<concept>
+				<code value="403896003"/>
+				<display value="Squamous cell carcinoma of hand (disorder)"/>
+			</concept>
+			<concept>
+				<code value="188061001"/>
+				<display value="Malignant melanoma of upper arm (disorder)"/>
+			</concept>
+			<concept>
+				<code value="269581007"/>
+				<display value="Malignant melanoma of lower limb (disorder)"/>
+			</concept>
+			<concept>
+				<code value="302851001"/>
+				<display value="Synovial sarcoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="445238008"/>
+				<display value="Malignant carcinoid tumor (disorder)"/>
+			</concept>
+			<concept>
+				<code value="403906006"/>
+				<display value="Metastatic squamous cell carcinoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="188188009"/>
+				<display value="Choriocarcinoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="441117001"/>
+				<display value="Estrogen receptor negative neoplasm (disorder)"/>
+			</concept>
+			<concept>
+				<code value="369778004"/>
+				<display value="Breast tubule formation: Majority of tumor &gt;75% (score = 1) (finding)"/>
+			</concept>
+			<concept>
+				<code value="369780005"/>
+				<display value="Breast tubule formation: Minimal &lt;10% (score = 3) (finding)"/>
+			</concept>
+			<concept>
+				<code value="384735004"/>
+				<display value="Nuclear pleomorphism: small regular nuclei (score=1) (finding)"/>
+			</concept>
+			<concept>
+				<code value="61026006"/>
+				<display value="G3 grade (finding)"/>
+			</concept>
+			<concept>
+				<code value="369791003"/>
+				<display value="Nottingham Combined Grade II: 6-7 points (finding)"/>
+			</concept>
+			<concept>
+				<code value="55342001"/>
+				<display value="Neoplastic disease (disorder)"/>
+			</concept>
+			<concept>
+				<code value="308123002"/>
+				<display value="Lipoma of back (disorder)"/>
+			</concept>
+			<concept>
+				<code value="200722003"/>
+				<display value="Pyogenic granuloma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="385427008"/>
+				<display value="Osteochondroma of elbow (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92369000"/>
+				<display value="Benign neoplasm of skin of lip (disorder)"/>
+			</concept>
+			<concept>
+				<code value="109269004"/>
+				<display value="Melanocytic nevus of face (disorder)"/>
+			</concept>
+			<concept>
+				<code value="402946005"/>
+				<display value="Condylomata lata of vulva (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254805008"/>
+				<display value="Compound nevus of skin (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92296004"/>
+				<display value="Benign neoplasm of pituitary gland (disorder)"/>
+			</concept>
+			<concept>
+				<code value="309084001"/>
+				<display value="Villous adenoma of colon (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92051001"/>
+				<display value="Benign neoplasm of cerebral meninges (disorder)"/>
+			</concept>
+			<concept>
+				<code value="119423009"/>
+				<display value="Benign teratoma of ovary (disorder)"/>
+			</concept>
+			<concept>
+				<code value="95315005"/>
+				<display value="Uterine leiomyoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="21173002"/>
+				<display value="Benign adenoma of prostate (disorder)"/>
+			</concept>
+			<concept>
+				<code value="314515006"/>
+				<display value="Papilloma of eyelid (disorder)"/>
+			</concept>
+			<concept>
+				<code value="255155005"/>
+				<display value="Pleomorphic adenoma of parotid gland (disorder)"/>
+			</concept>
+			<concept>
+				<code value="417044008"/>
+				<display value="Hydatidiform mole, benign (disorder)"/>
+			</concept>
+			<concept>
+				<code value="444408007"/>
+				<display value="Tubular adenoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92546004"/>
+				<display value="Carcinoma in situ of bladder (disorder)"/>
+			</concept>
+			<concept>
+				<code value="78745000"/>
+				<display value="Urticaria pigmentosa (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94963005"/>
+				<display value="Neoplasm of uncertain behavior of nervous system (disorder)"/>
+			</concept>
+			<concept>
+				<code value="189484008"/>
+				<display value="Neoplasm of uncertain behavior of brain and/or spinal cord (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254900004"/>
+				<display value="Carcinoma of prostate (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254645002"/>
+				<display value="Malignant mesothelioma of pleura (disorder)"/>
+			</concept>
+			<concept>
+				<code value="372096000"/>
+				<display value="Carcinoma of male breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="187769009"/>
+				<display value="Primary carcinoma of liver (disorder)"/>
+			</concept>
+			<concept>
+				<code value="372142002"/>
+				<display value="Carcinoma of pancreas (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254561006"/>
+				<display value="Carcinoma of pylorus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94365007"/>
+				<display value="Secondary malignant neoplasm of large intestine (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94503003"/>
+				<display value="Secondary malignant neoplasm of prostate (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94350006"/>
+				<display value="Secondary malignant neoplasm of intrapelvic lymph nodes (disorder)"/>
+			</concept>
+			<concept>
+				<code value="307601000"/>
+				<display value="Pseudomyxoma peritonei (disorder)"/>
+			</concept>
+			<concept>
+				<code value="93651008"/>
+				<display value="Malignant melanoma of skin of trunk (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363492001"/>
+				<display value="Malignant tumor of peritoneum (disorder)"/>
+			</concept>
+			<concept>
+				<code value="126880001"/>
+				<display value="Neoplasm of kidney (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363516004"/>
+				<display value="Malignant tumor of penis (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254901000"/>
+				<display value="Prostatic intraepithelial neoplasia (disorder)"/>
+			</concept>
+			<concept>
+				<code value="126907002"/>
+				<display value="Neoplasm of female genital organ (disorder)"/>
+			</concept>
+			<concept>
+				<code value="285636001"/>
+				<display value="Cervical intraepithelial neoplasia (disorder)"/>
+			</concept>
+			<concept>
+				<code value="188192002"/>
+				<display value="Malignant neoplasm of endometrium of corpus uteri (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363407001"/>
+				<display value="Malignant tumor of hepatic flexure (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363350007"/>
+				<display value="Malignant tumor of cecum (disorder)"/>
+			</concept>
+			<concept>
+				<code value="187723009"/>
+				<display value="Malignant tumor of thoracic part of esophagus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254936001"/>
+				<display value="Glial tumor of brain (disorder)"/>
+			</concept>
+			<concept>
+				<code value="428905002"/>
+				<display value="Malignant neoplasm of gastrointestinal tract (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363385007"/>
+				<display value="Malignant tumor of floor of mouth (disorder)"/>
+			</concept>
+			<concept>
+				<code value="269516007"/>
+				<display value="Tongue carcinoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="91856007"/>
+				<display value="Acute lymphoid leukemia in remission (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92813000"/>
+				<display value="Chronic lymphoid leukemia in remission (disorder)"/>
+			</concept>
+			<concept>
+				<code value="93195001"/>
+				<display value="Malignant lymphoma of lymph nodes of head, face AND/OR neck (disorder)"/>
+			</concept>
+			<concept>
+				<code value="188637007"/>
+				<display value="Sézary's disease of lymph nodes of multiple sites (disorder)"/>
+			</concept>
+			<concept>
+				<code value="403891008"/>
+				<display value="Squamous cell carcinoma of scalp (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363506007"/>
+				<display value="Malignant tumor of nasal sinuses (disorder)"/>
+			</concept>
+			<concept>
+				<code value="402522006"/>
+				<display value="Basal cell carcinoma of lower extremity (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94222008"/>
+				<display value="Secondary malignant neoplasm of bone (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254727007"/>
+				<display value="Extramammary Paget's disease of skin (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254651007"/>
+				<display value="Squamous cell carcinoma of skin (disorder)"/>
+			</concept>
+			<concept>
+				<code value="253001006"/>
+				<display value="Merkel cell carcinoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="400122007"/>
+				<display value="Primary cutaneous T-cell lymphoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="449096009"/>
+				<display value="Malignant neoplasm of respiratory system (disorder)"/>
+			</concept>
+			<concept>
+				<code value="405843009"/>
+				<display value="Widespread metastatic malignant neoplastic disease (disorder)"/>
+			</concept>
+			<concept>
+				<code value="443144000"/>
+				<display value="Metastatic sarcoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="109972003"/>
+				<display value="Follicular non-Hodgkin's lymphoma, large cell (disorder)"/>
+			</concept>
+			<concept>
+				<code value="190818004"/>
+				<display value="Waldenström macroglobulinemia (disorder)"/>
+			</concept>
+			<concept>
+				<code value="443937008"/>
+				<display value="Mixed glioma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="372244006"/>
+				<display value="Malignant melanoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="302847003"/>
+				<display value="Rhabdomyosarcoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="443520009"/>
+				<display value="Chondrosarcoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="443961001"/>
+				<display value="Malignant adenomatous neoplasm (disorder)"/>
+			</concept>
+			<concept>
+				<code value="443643007"/>
+				<display value="Ependymoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="416561008"/>
+				<display value="Progesterone receptor positive tumor (disorder)"/>
+			</concept>
+			<concept>
+				<code value="441118006"/>
+				<display value="Progesterone receptor negative neoplasm (disorder)"/>
+			</concept>
+			<concept>
+				<code value="56975005"/>
+				<display value="Strawberry nevus of skin (disorder)"/>
+			</concept>
+			<concept>
+				<code value="373372005"/>
+				<display value="Histological grade finding (finding)"/>
+			</concept>
+			<concept>
+				<code value="369792005"/>
+				<display value="Nottingham Combined Grade III: 8-9 points (finding)"/>
+			</concept>
+			<concept>
+				<code value="92384009"/>
+				<display value="Benign neoplasm of skin (disorder)"/>
+			</concept>
+			<concept>
+				<code value="274901004"/>
+				<display value="Pilomatrixoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92370004"/>
+				<display value="Benign neoplasm of skin of lower limb (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92382008"/>
+				<display value="Benign neoplasm of skin of upper limb (disorder)"/>
+			</concept>
+			<concept>
+				<code value="302838006"/>
+				<display value="Dermal cellular nevus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="253011004"/>
+				<display value="Macroprolactinoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92065004"/>
+				<display value="Benign neoplasm of colon (disorder)"/>
+			</concept>
+			<concept>
+				<code value="399730005"/>
+				<display value="Adenoma of rectum (disorder)"/>
+			</concept>
+			<concept>
+				<code value="188994000"/>
+				<display value="Lipoma of shoulder (disorder)"/>
+			</concept>
+			<concept>
+				<code value="419645003"/>
+				<display value="Benign neoplasm of oral cavity (disorder)"/>
+			</concept>
+			<concept>
+				<code value="398696001"/>
+				<display value="Congenital pigmented melanocytic nevus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="404029005"/>
+				<display value="Neurofibroma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254656002"/>
+				<display value="Squamous cell carcinoma in situ of skin (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92664001"/>
+				<display value="Carcinoma in situ of nasopharynx (disorder)"/>
+			</concept>
+			<concept>
+				<code value="189336000"/>
+				<display value="Carcinoma in situ of breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92652009"/>
+				<display value="Carcinoma in situ of male breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94989005"/>
+				<display value="Neoplasm of uncertain behavior of parotid gland (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94889006"/>
+				<display value="Neoplasm of uncertain behavior of kidney (disorder)"/>
+			</concept>
+			<concept>
+				<code value="285310000"/>
+				<display value="Carcinoma of anal canal (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254632001"/>
+				<display value="Small cell carcinoma of lung (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254637007"/>
+				<display value="Non-small cell lung cancer (disorder)"/>
+			</concept>
+			<concept>
+				<code value="255108000"/>
+				<display value="Carcinoma of bladder (disorder)"/>
+			</concept>
+			<concept>
+				<code value="408643008"/>
+				<display value="Infiltrating duct carcinoma of breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94513006"/>
+				<display value="Secondary malignant neoplasm of rectum (disorder)"/>
+			</concept>
+			<concept>
+				<code value="236513009"/>
+				<display value="Lymphoma of kidney (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94351005"/>
+				<display value="Secondary malignant neoplasm of intrathoracic lymph nodes (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94627008"/>
+				<display value="Secondary malignant neoplasm of peritoneum (disorder)"/>
+			</concept>
+			<concept>
+				<code value="126510002"/>
+				<display value="Neoplasm of skin of breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363459007"/>
+				<display value="Malignant tumor of urethra (disorder)"/>
+			</concept>
+			<concept>
+				<code value="371973000"/>
+				<display value="Malignant neoplasm of uterus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363367000"/>
+				<display value="Malignant tumor of vulva (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363410008"/>
+				<display value="Malignant tumor of sigmoid colon (disorder)"/>
+			</concept>
+			<concept>
+				<code value="253032007"/>
+				<display value="Benign pheochromocytoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="188152004"/>
+				<display value="Malignant neoplasm of upper-inner quadrant of female breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254838004"/>
+				<display value="Carcinoma of breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="188462001"/>
+				<display value="Secondary malignant neoplasm of brain and spinal cord (disorder)"/>
+			</concept>
+			<concept>
+				<code value="109378008"/>
+				<display value="Mesothelioma (malignant, clinical disorder) (disorder)"/>
+			</concept>
+			<concept>
+				<code value="126952004"/>
+				<display value="Neoplasm of brain (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94225005"/>
+				<display value="Secondary malignant neoplasm of brain (disorder)"/>
+			</concept>
+			<concept>
+				<code value="230156002"/>
+				<display value="Malignant meningitis (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363399006"/>
+				<display value="Malignant tumor of hypopharynx (disorder)"/>
+			</concept>
+			<concept>
+				<code value="126809003"/>
+				<display value="Neoplasm of oropharynx (disorder)"/>
+			</concept>
+			<concept>
+				<code value="187727005"/>
+				<display value="Malignant tumor of lower third of esophagus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363402007"/>
+				<display value="Malignant tumor of esophagus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="276804009"/>
+				<display value="Squamous cell carcinoma of esophagus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="276954004"/>
+				<display value="Squamous cell carcinoma of floor of mouth (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363375006"/>
+				<display value="Malignant tumor of tongue (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363379000"/>
+				<display value="Malignant tumor of parotid gland (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363390005"/>
+				<display value="Malignant tumor of palate (disorder)"/>
+			</concept>
+			<concept>
+				<code value="255077007"/>
+				<display value="Malignant tumor of digestive organ (disorder)"/>
+			</concept>
+			<concept>
+				<code value="91860005"/>
+				<display value="Acute myeloid leukemia in remission (disorder)"/>
+			</concept>
+			<concept>
+				<code value="91861009"/>
+				<display value="Acute myeloid leukemia, disease (disorder)"/>
+			</concept>
+			<concept>
+				<code value="277545003"/>
+				<display value="T-cell chronic lymphocytic leukemia (disorder)"/>
+			</concept>
+			<concept>
+				<code value="303194003"/>
+				<display value="Metastasis to head and neck lymph node (disorder)"/>
+			</concept>
+			<concept>
+				<code value="188507008"/>
+				<display value="Lymphosarcoma of lymph nodes of multiple sites (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363422006"/>
+				<display value="Malignant tumor of nasal cavity (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363425008"/>
+				<display value="Malignant tumor of maxillary sinus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="402820007"/>
+				<display value="Basal cell carcinoma of ear (disorder)"/>
+			</concept>
+			<concept>
+				<code value="127018007"/>
+				<display value="Neoplasm of thyroid gland (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94057003"/>
+				<display value="Primary malignant neoplasm of soft tissues of lower limb (disorder)"/>
+			</concept>
+			<concept>
+				<code value="302835009"/>
+				<display value="Pheochromocytoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="118607005"/>
+				<display value="Hodgkin lymphoma, lymphocyte-rich (disorder)"/>
+			</concept>
+			<concept>
+				<code value="118608000"/>
+				<display value="Hodgkin's disease, nodular sclerosis (disorder)"/>
+			</concept>
+			<concept>
+				<code value="118601006"/>
+				<display value="Non-Hodgkin's lymphoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="109979007"/>
+				<display value="B-cell lymphoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="393563007"/>
+				<display value="Glioblastoma multiforme (disorder)"/>
+			</concept>
+			<concept>
+				<code value="424413001"/>
+				<display value="Sarcoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="443250000"/>
+				<display value="Malignant fibromatous neoplasm (disorder)"/>
+			</concept>
+			<concept>
+				<code value="402878003"/>
+				<display value="Germ cell tumor (disorder)"/>
+			</concept>
+			<concept>
+				<code value="443790001"/>
+				<display value="Giant cell tumor (disorder)"/>
+			</concept>
+			<concept>
+				<code value="444231005"/>
+				<display value="Thymoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="60876000"/>
+				<display value="Gardner syndrome (disorder)"/>
+			</concept>
+			<concept>
+				<code value="189197001"/>
+				<display value="Hemangioma of intra-abdominal structure (disorder)"/>
+			</concept>
+			<concept>
+				<code value="271481007"/>
+				<display value="Hemangioma of skin and subcutaneous tissue (disorder)"/>
+			</concept>
+			<concept>
+				<code value="369784001"/>
+				<display value="Less than 10 mitoses per 10 high power fields (score = 1) (finding)"/>
+			</concept>
+			<concept>
+				<code value="384738002"/>
+				<display value="Nuclear pleomorphism: marked variation in size, nucleoli, chromatin clumping, etc (score = 3) (finding)"/>
+			</concept>
+			<concept>
+				<code value="258245003"/>
+				<display value="G4 grade (finding)"/>
+			</concept>
+			<concept>
+				<code value="92376005"/>
+				<display value="Benign neoplasm of skin of shoulder (disorder)"/>
+			</concept>
+			<concept>
+				<code value="201101007"/>
+				<display value="Actinic keratosis (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254818000"/>
+				<display value="Dysplastic nevus of skin (disorder)"/>
+			</concept>
+			<concept>
+				<code value="310605004"/>
+				<display value="Fibrous histiocytoma of tendon sheath (disorder)"/>
+			</concept>
+			<concept>
+				<code value="302826002"/>
+				<display value="Adrenal cortical adenoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92102001"/>
+				<display value="Benign neoplasm of female breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92264007"/>
+				<display value="Benign neoplasm of pancreas (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92103006"/>
+				<display value="Benign neoplasm of female genital organ (disorder)"/>
+			</concept>
+			<concept>
+				<code value="255024002"/>
+				<display value="Nevus of choroid (disorder)"/>
+			</concept>
+			<concept>
+				<code value="95711003"/>
+				<display value="Nevus of iris (disorder)"/>
+			</concept>
+			<concept>
+				<code value="400096001"/>
+				<display value="Melanocytic nevus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92653004"/>
+				<display value="Carcinoma in situ of male genital organ (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92764008"/>
+				<display value="Carcinoma in situ of testis (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92749008"/>
+				<display value="Carcinoma in situ of skin (disorder)"/>
+			</concept>
+			<concept>
+				<code value="95087004"/>
+				<display value="Neoplasm of uncertain behavior of skin (disorder)"/>
+			</concept>
+			<concept>
+				<code value="13370002"/>
+				<display value="Plantar fascial fibromatosis (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94820008"/>
+				<display value="Neoplasm of uncertain behavior of endocrine gland (disorder)"/>
+			</concept>
+			<concept>
+				<code value="109914007"/>
+				<display value="Neoplasm of uncertain behavior of meninges (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94754000"/>
+				<display value="Neoplasm of uncertain behavior of bladder (disorder)"/>
+			</concept>
+			<concept>
+				<code value="302833002"/>
+				<display value="Paraganglioma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254794007"/>
+				<display value="Angiosarcoma of skin (disorder)"/>
+			</concept>
+			<concept>
+				<code value="93797001"/>
+				<display value="Primary malignant neoplasm of female genital organ (disorder)"/>
+			</concept>
+			<concept>
+				<code value="93934004"/>
+				<display value="Primary malignant neoplasm of ovary (disorder)"/>
+			</concept>
+			<concept>
+				<code value="93880001"/>
+				<display value="Primary malignant neoplasm of lung (disorder)"/>
+			</concept>
+			<concept>
+				<code value="255109008"/>
+				<display value="Transitional cell carcinoma of bladder (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254915003"/>
+				<display value="Clear cell carcinoma of kidney (disorder)"/>
+			</concept>
+			<concept>
+				<code value="302849000"/>
+				<display value="Nephroblastoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254553001"/>
+				<display value="Carcinoma of cardia (disorder)"/>
+			</concept>
+			<concept>
+				<code value="372140005"/>
+				<display value="Carcinoma of gallbladder (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94347008"/>
+				<display value="Secondary malignant neoplasm of intra-abdominal lymph nodes (disorder)"/>
+			</concept>
+			<concept>
+				<code value="188241004"/>
+				<display value="Malignant neoplasm of lateral wall of urinary bladder (disorder)"/>
+			</concept>
+			<concept>
+				<code value="399326009"/>
+				<display value="Malignant tumor of urinary bladder (disorder)"/>
+			</concept>
+			<concept>
+				<code value="126895004"/>
+				<display value="Neoplasm of male genital organ (disorder)"/>
+			</concept>
+			<concept>
+				<code value="285836003"/>
+				<display value="Cervical intraepithelial neoplasia grade 1 (disorder)"/>
+			</concept>
+			<concept>
+				<code value="423973006"/>
+				<display value="Carcinoma of uterine cervix, invasive (disorder)"/>
+			</concept>
+			<concept>
+				<code value="123844007"/>
+				<display value="Neoplasm of endometrium (disorder)"/>
+			</concept>
+			<concept>
+				<code value="123845008"/>
+				<display value="Adenocarcinoma of endometrium (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363414004"/>
+				<display value="Malignant tumor of rectosigmoid junction (disorder)"/>
+			</concept>
+			<concept>
+				<code value="269459004"/>
+				<display value="Malignant tumor of lesser curve of stomach (disorder)"/>
+			</concept>
+			<concept>
+				<code value="269460009"/>
+				<display value="Malignant tumor of greater curve of stomach (disorder)"/>
+			</concept>
+			<concept>
+				<code value="187791002"/>
+				<display value="Malignant tumor of body of pancreas (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363418001"/>
+				<display value="Malignant tumor of pancreas (disorder)"/>
+			</concept>
+			<concept>
+				<code value="126713003"/>
+				<display value="Neoplasm of lung (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363358000"/>
+				<display value="Malignant tumor of lung (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363494000"/>
+				<display value="Malignant tumor of mediastinum (disorder)"/>
+			</concept>
+			<concept>
+				<code value="126926005"/>
+				<display value="Neoplasm of breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="708921005"/>
+				<display value="Carcinoma of central portion of breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="126950007"/>
+				<display value="Neoplasm of nervous system (disorder)"/>
+			</concept>
+			<concept>
+				<code value="428061005"/>
+				<display value="Malignant neoplasm of brain (disorder)"/>
+			</concept>
+			<concept>
+				<code value="271943005"/>
+				<display value="Carcinoma of base of tongue (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94286009"/>
+				<display value="Secondary malignant neoplasm of esophagus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363348004"/>
+				<display value="Malignant tumor of lip (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363360003"/>
+				<display value="Malignant tumor of anterior two-thirds of tongue (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254462001"/>
+				<display value="Carcinoma of parotid gland (disorder)"/>
+			</concept>
+			<concept>
+				<code value="276962007"/>
+				<display value="Squamous cell carcinoma of palate (disorder)"/>
+			</concept>
+			<concept>
+				<code value="307502000"/>
+				<display value="Squamous cell carcinoma of mouth (disorder)"/>
+			</concept>
+			<concept>
+				<code value="118613001"/>
+				<display value="Hairy cell leukemia (disorder)"/>
+			</concept>
+			<concept>
+				<code value="127225006"/>
+				<display value="Chronic myelomonocytic leukemia (disorder)"/>
+			</concept>
+			<concept>
+				<code value="109992005"/>
+				<display value="Polycythemia vera (disorder)"/>
+			</concept>
+			<concept>
+				<code value="307651005"/>
+				<display value="Myelosclerosis with myeloid metaplasia (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94022001"/>
+				<display value="Primary malignant neoplasm of skin of face (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94254004"/>
+				<display value="Secondary malignant neoplasm of choroid (disorder)"/>
+			</concept>
+			<concept>
+				<code value="93225001"/>
+				<display value="Malignant melanoma of skin of face (disorder)"/>
+			</concept>
+			<concept>
+				<code value="402519009"/>
+				<display value="Basal cell carcinoma of face (disorder)"/>
+			</concept>
+			<concept>
+				<code value="443648003"/>
+				<display value="Malignant neoplasm of ear (disorder)"/>
+			</concept>
+			<concept>
+				<code value="255028004"/>
+				<display value="Follicular thyroid carcinoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="188044004"/>
+				<display value="Malignant melanoma of scalp AND/OR neck (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94180008"/>
+				<display value="Secondary malignant neoplasm of axilla (disorder)"/>
+			</concept>
+			<concept>
+				<code value="188060000"/>
+				<display value="Malignant melanoma of shoulder (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363432004"/>
+				<display value="Malignant tumor of trachea (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254829001"/>
+				<display value="Liposarcoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="443333004"/>
+				<display value="Medulloblastoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="109989006"/>
+				<display value="Multiple myeloma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94704006"/>
+				<display value="Multiple myeloma in remission (disorder)"/>
+			</concept>
+			<concept>
+				<code value="109385007"/>
+				<display value="Kaposi's sarcoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="109994006"/>
+				<display value="Essential thrombocythemia (disorder)"/>
+			</concept>
+			<concept>
+				<code value="118600007"/>
+				<display value="Malignant lymphoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="93199007"/>
+				<display value="Malignant lymphoma of extranodal AND/OR solid organ site (disorder)"/>
+			</concept>
+			<concept>
+				<code value="269476000"/>
+				<display value="Nodular lymphoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="443936004"/>
+				<display value="Oligodendroglioma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="438628005"/>
+				<display value="Hormone receptor negative neoplasm (disorder)"/>
+			</concept>
+			<concept>
+				<code value="21877004"/>
+				<display value="Osler hemorrhagic telangiectasia syndrome (disorder)"/>
+			</concept>
+			<concept>
+				<code value="400178008"/>
+				<display value="Lymphangioma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="400210000"/>
+				<display value="Hemangioma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="93469006"/>
+				<display value="Hemangioma of liver (disorder)"/>
+			</concept>
+			<concept>
+				<code value="369786004"/>
+				<display value="Greater than 20 mitoses per 10 high power fields (score = 3) (finding)"/>
+			</concept>
+			<concept>
+				<code value="369779007"/>
+				<display value="Breast tubule formation: Moderate 10% to 75% (score = 2) (finding)"/>
+			</concept>
+			<concept>
+				<code value="384737007"/>
+				<display value="Nuclear pleomorphism: moderate increase in size, etc (score = 2) (finding)"/>
+			</concept>
+			<concept>
+				<code value="189058007"/>
+				<display value="Benign neoplasm of skin of external auditory meatus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="91554004"/>
+				<display value="Condyloma latum (disorder)"/>
+			</concept>
+			<concept>
+				<code value="400010006"/>
+				<display value="Melanocytic nevus of skin (disorder)"/>
+			</concept>
+			<concept>
+				<code value="398028009"/>
+				<display value="Halo nevus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="427186000"/>
+				<display value="Dermatofibroma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254750001"/>
+				<display value="Fibrous histiocytoma of skin (disorder)"/>
+			</concept>
+			<concept>
+				<code value="46795000"/>
+				<display value="Actinic cheilitis (disorder)"/>
+			</concept>
+			<concept>
+				<code value="126949007"/>
+				<display value="Acoustic neuroma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="271479005"/>
+				<display value="Benign neoplasm of pituitary gland and craniopharyngeal duct (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254962005"/>
+				<display value="Functionless pituitary adenoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="255033000"/>
+				<display value="Thyroid adenoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="255034006"/>
+				<display value="Thyroid follicular adenoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="399432003"/>
+				<display value="Adenoma of large intestine (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92247009"/>
+				<display value="Benign neoplasm of nervous system (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92071005"/>
+				<display value="Benign neoplasm of cranial nerve (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254921004"/>
+				<display value="Angiomyolipoma of kidney (disorder)"/>
+			</concept>
+			<concept>
+				<code value="95280005"/>
+				<display value="Subserous leiomyoma of uterus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="255196008"/>
+				<display value="Adenomatous polyp of cervix uteri (disorder)"/>
+			</concept>
+			<concept>
+				<code value="93163002"/>
+				<display value="Lipoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="231824001"/>
+				<display value="Benign tumor of eyelid (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92097004"/>
+				<display value="Benign neoplasm of eye (disorder)"/>
+			</concept>
+			<concept>
+				<code value="255167007"/>
+				<display value="Benign tumor of digestive organ (disorder)"/>
+			</concept>
+			<concept>
+				<code value="189948006"/>
+				<display value="Schwannoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="109888004"/>
+				<display value="Lobular carcinoma in situ of breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92824003"/>
+				<display value="Neurofibromatosis type 1 (disorder)"/>
+			</concept>
+			<concept>
+				<code value="274142002"/>
+				<display value="Dupuytren's contracture (disorder)"/>
+			</concept>
+			<concept>
+				<code value="109371002"/>
+				<display value="Overlapping malignant neoplasm of bronchus and lung (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254622008"/>
+				<display value="Squamous cell carcinoma of bronchus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="285432005"/>
+				<display value="Carcinoma of cervix (disorder)"/>
+			</concept>
+			<concept>
+				<code value="109843000"/>
+				<display value="Hepatoblastoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="285312008"/>
+				<display value="Carcinoma of sigmoid colon (disorder)"/>
+			</concept>
+			<concept>
+				<code value="372003004"/>
+				<display value="Primary malignant neoplasm of pancreas (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254559002"/>
+				<display value="Carcinoma of pyloric antrum (disorder)"/>
+			</concept>
+			<concept>
+				<code value="126883004"/>
+				<display value="Neoplasm of urethra (disorder)"/>
+			</concept>
+			<concept>
+				<code value="188240003"/>
+				<display value="Malignant tumor of vault of bladder (disorder)"/>
+			</concept>
+			<concept>
+				<code value="399068003"/>
+				<display value="Malignant tumor of prostate (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363514001"/>
+				<display value="Malignant tumor of female genital organ (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363408006"/>
+				<display value="Malignant tumor of transverse colon (disorder)"/>
+			</concept>
+			<concept>
+				<code value="314965007"/>
+				<display value="Local recurrence of malignant tumor of colon (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363510005"/>
+				<display value="Malignant tumor of large intestine (disorder)"/>
+			</concept>
+			<concept>
+				<code value="408645001"/>
+				<display value="Adenocarcinoma of large intestine (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363508008"/>
+				<display value="Malignant tumor of intestine (disorder)"/>
+			</concept>
+			<concept>
+				<code value="126824007"/>
+				<display value="Neoplasm of stomach (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363349007"/>
+				<display value="Malignant tumor of stomach (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363419009"/>
+				<display value="Malignant tumor of head of pancreas (disorder)"/>
+			</concept>
+			<concept>
+				<code value="187792009"/>
+				<display value="Malignant tumor of tail of pancreas (disorder)"/>
+			</concept>
+			<concept>
+				<code value="127021009"/>
+				<display value="Neoplasm of adrenal gland (disorder)"/>
+			</concept>
+			<concept>
+				<code value="126644004"/>
+				<display value="Neoplasm of pelvis (disorder)"/>
+			</concept>
+			<concept>
+				<code value="126872008"/>
+				<display value="Neoplasm of retroperitoneum (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254626006"/>
+				<display value="Adenocarcinoma of lung (disorder)"/>
+			</concept>
+			<concept>
+				<code value="188154003"/>
+				<display value="Malignant neoplasm of upper-outer quadrant of female breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="188155002"/>
+				<display value="Malignant neoplasm of lower-outer quadrant of female breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="372064008"/>
+				<display value="Malignant neoplasm of female breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254837009"/>
+				<display value="Malignant neoplasm of breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="417181009"/>
+				<display value="Hormone receptor positive malignant neoplasm of breast (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94602001"/>
+				<display value="Secondary malignant neoplasm of vertebral column (disorder)"/>
+			</concept>
+			<concept>
+				<code value="444545003"/>
+				<display value="Glioma of brainstem (disorder)"/>
+			</concept>
+			<concept>
+				<code value="372063002"/>
+				<display value="Malignant neoplasm of nervous system (disorder)"/>
+			</concept>
+			<concept>
+				<code value="109266006"/>
+				<display value="Melanoma in situ of skin (disorder)"/>
+			</concept>
+			<concept>
+				<code value="128348002"/>
+				<display value="Neoplasm of digestive system (disorder)"/>
+			</concept>
+			<concept>
+				<code value="187692001"/>
+				<display value="Malignant tumor of nasopharynx (disorder)"/>
+			</concept>
+			<concept>
+				<code value="422886007"/>
+				<display value="Olfactory neuroblastoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="363393007"/>
+				<display value="Malignant tumor of tonsil (disorder)"/>
+			</concept>
+			<concept>
+				<code value="274085008"/>
+				<display value="Tonsil carcinoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="276952000"/>
+				<display value="Squamous cell carcinoma of tongue (disorder)"/>
+			</concept>
+			<concept>
+				<code value="126788000"/>
+				<display value="Neoplasm of parotid gland (disorder)"/>
+			</concept>
+			<concept>
+				<code value="255072001"/>
+				<display value="Malignant tumor of salivary gland (disorder)"/>
+			</concept>
+			<concept>
+				<code value="275266006"/>
+				<display value="Metastasis to digestive organs (disorder)"/>
+			</concept>
+			<concept>
+				<code value="93143009"/>
+				<display value="Leukemia, disease (disorder)"/>
+			</concept>
+			<concept>
+				<code value="92814006"/>
+				<display value="Chronic lymphoid leukemia, disease (disorder)"/>
+			</concept>
+			<concept>
+				<code value="109996008"/>
+				<display value="Myelodysplastic syndrome: Refractory anemia, without ringed sideroblasts, without excess blasts (disorder)"/>
+			</concept>
+			<concept>
+				<code value="94393006"/>
+				<display value="Secondary malignant neoplasm of lymph nodes of face (disorder)"/>
+			</concept>
+			<concept>
+				<code value="93197009"/>
+				<display value="Malignant lymphoma of lymph nodes of multiple sites (disorder)"/>
+			</concept>
+			<concept>
+				<code value="231832009"/>
+				<display value="Basal cell carcinoma of eyelid (disorder)"/>
+			</concept>
+			<concept>
+				<code value="254935002"/>
+				<display value="Intracranial tumor (disorder)"/>
+			</concept>
+			<concept>
+				<code value="126692004"/>
+				<display value="Neoplasm of larynx (disorder)"/>
+			</concept>
+			<concept>
+				<code value="448216007"/>
+				<display value="Malignant epithelial neoplasm of thyroid (disorder)"/>
+			</concept>
+			<concept>
+				<code value="307576001"/>
+				<display value="Osteosarcoma of bone (disorder)"/>
+			</concept>
+			<concept>
+				<code value="372130007"/>
+				<display value="Malignant neoplasm of skin (disorder)"/>
+			</concept>
+			<concept>
+				<code value="443719001"/>
+				<display value="Leiomyosarcoma (disorder)"/>
+			</concept>
+			<concept>
+				<code value="417742002"/>
+				<display value="Hormone receptor positive tumor (disorder)"/>
+			</concept>
+			<concept>
+				<code value="398723007"/>
+				<display value="Verrucous epidermal nevus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="402624000"/>
+				<display value="Lentiginosis (disorder)"/>
+			</concept>
+			<concept>
+				<code value="93471006"/>
+				<display value="Hemangioma of skin (disorder)"/>
+			</concept>
+			<concept>
+				<code value="93473009"/>
+				<display value="Hemangioma of subcutaneous tissue (disorder)"/>
+			</concept>
+			<concept>
+				<code value="402867006"/>
+				<display value="Capillary hemangioma (disorder)"/>
+			</concept>
+        </include>
+	</compose>
+</ValueSet>
