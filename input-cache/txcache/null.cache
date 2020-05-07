@@ -3,14 +3,17 @@
   "resourceType" : "ValueSet",
   "compose" : {
     "include" : [{
-      "valueSet" : ["http://hl7.org/fhir/uv/ips/ValueSet/laboratory-observations-uv-ips"]
+      "valueSet" : ["http://hl7.org/fhir/uv/ips/ValueSet/lab-blood-abo-rh-grp-gps-uv-ips"]
     },
     {
-      "valueSet" : ["http://hl7.org/fhir/uv/ips/ValueSet/pathology-observations-uv-ips"]
+      "valueSet" : ["http://hl7.org/fhir/uv/ips/ValueSet/lab-absence-presence-gps-uv-ips"]
+    },
+    {
+      "valueSet" : ["http://hl7.org/fhir/uv/ips/ValueSet/organism-gps-uv-ips"]
     }]
   }
 }}####
 e: {
-  "error" : "Error from server: Unable to find value set \"http://hl7.org/fhir/uv/ips/ValueSet/laboratory-observations-uv-ips\""
+  "error" : "Error from server: Unable to find value set \"http://hl7.org/fhir/uv/ips/ValueSet/lab-blood-abo-rh-grp-gps-uv-ips\""
 }
 -------------------------------------------------------------------------------------

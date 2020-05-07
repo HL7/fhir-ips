@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <ValueSet xmlns="http://hl7.org/fhir" xmlns:f="http://hl7.org/fhir">
-	<id value="laboratory-observations-uv-ips"/>
+	<id value="results-pathology-observations-uv-ips"/>
 	<meta>
 		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
 	</meta>
-	<url value="http://hl7.org/fhir/uv/ips/ValueSet/laboratory-observations-uv-ips"/>
+	<url value="http://hl7.org/fhir/uv/ips/ValueSet/results-pathology-observations-uv-ips"/>
 	<identifier>
 		<use value="official"/>
 		<system value="http://art-decor.org/ns/oids/vs"/>
-		<value value="2.16.840.1.113883.11.22.39"/>
+		<value value="2.16.840.1.113883.11.22.41"/>
 	</identifier>
 	<version value="2017-05-23T00:00:00"/>
-	<name value="ResultsLabObservationUvIps"/>
-	<title value="Results Laboratory Observation - IPS"/>
+	<name value="ResultsPathObservationUvIps"/>
+	<title value="Results Pathology Observation - IPS"/>
 	<status value="active"/>
 	<experimental value="false"/>
 	<publisher value="HL7 International"/>
@@ -31,7 +32,7 @@
 			<value value="info@hl7.org"/>
 		</telecom>
 	</contact>
-	<description value="Value Set Definition: LOINC { COMPONENT not containing the word &#34;panel&#34; STATUS in {ACTIVE} CLASSTYPE in {1} ORDER_OBS in {Observation, Both} CLASS exclude {CHALSKIN, H&amp;P.HX.LAB, H&amp;P.HX, LABORDERS, NR STATS, PATH.PROTOCOLS.*} }&#xA;&#xA;Note: This definition is only partially implemented and the current value set expansion contains more than the expected set of codes, as the required regex filter on the LOINC COMPONENT property is not currently supported by the terminology service."/>
+	<description value="&#xA; Value Set Definition:&#xA;&#xA; LOINC { COMPONENT not ( containing the word &#34;panel&#34; OR starting with &#34;can pronounce&#34; ) CLASS in {CYTO, HEM/BC, HL7.CYTOGEN, HL7.GENETICS, MOLPATH, MOLPATH.*, PATH} STATUS in {ACTIVE} CLASSTYPE in {1} ORDER_OBS in&#xA; {Observation, Both} }&#xA;&#xA;Note: This definition is only partially implemented and the current value set expansion contains more than the expected set of codes, as the required regex filter on the LOINC COMPONENT property is not currently supported by the terminology service."/>
 	<immutable value="false"/>
 	<copyright value="This artifact includes content from LOINC®. LOINC codes are copyright Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee. Terms &amp; Conditions in https://loinc.org/license/"/>
 	<compose>
@@ -48,7 +49,11 @@
 				<op value="regex"/>
 				<value value="^((?!panel).)*$"/>
 			</filter>
-			-->
+			<filter>
+				<property value="COMPONENT"/>
+				<op value="regex"/>
+				<value value="^(?!Can pronounce.*$).*"/>
+			</filter -->
 			<filter>
 				<property value="STATUS"/>
 				<op value="="/>
@@ -64,6 +69,11 @@
 				<op value="="/>
 				<value value="Observation"/>
 			</filter>
+			<filter>
+				<property value="CLASS"/>
+				<op value="regex"/>
+				<value value="CYTO|HEM/BC|HL7\.CYTOGEN|HL7\.GENETICS|PATH|^(?!MOLPATH.*$).*"/>
+			</filter>
 		</include>
 		<include>
 			<system value="http://loinc.org"/>
@@ -78,7 +88,11 @@
 				<op value="regex"/>
 				<value value="^((?!panel).)*$"/>
 			</filter>
-			-->
+			<filter>
+				<property value="COMPONENT"/>
+				<op value="regex"/>
+				<value value="^(?!Can pronounce.*$).*"/>
+			</filter -->
 			<filter>
 				<property value="STATUS"/>
 				<op value="="/>
@@ -94,41 +108,11 @@
 				<op value="="/>
 				<value value="Both"/>
 			</filter>
-        </include>
-		<exclude>
 			<filter>
 				<property value="CLASS"/>
 				<op value="regex"/>
-				<value value="^(?!PATH\.PROTOCOLS.*$).*"/>
+				<value value="CYTO|HEM/BC|HL7\.CYTOGEN|HL7\.GENETICS|PATH|^(?!MOLPATH.*$).*"/>
 			</filter>
-        </exclude>
-        <exclude>
-            <filter>
-                <property value="CLASS"/>
-                <op value="regex"/>
-                <value value="^(?!NR STATS.*$).*"/>
-            </filter>
-            </exclude>
-		<exclude>
-			<filter>
-				<property value="CLASS"/>
-				<op value="regex"/>
-				<value value="^(?!H&amp;P\.HX.*$).*"/>
-			</filter>
-        </exclude>
-		<exclude>
-			<filter>
-				<property value="CLASS"/>
-				<op value="regex"/>
-				<value value="^(?!H&amp;P\.HX\.LAB.*$).*"/>
-			</filter>
-        </exclude>
-		<exclude>
-			<filter>
-				<property value="CLASS"/>
-				<op value="regex"/>
-				<value value="^(?!CHALSKIN.*$).*"/>
-			</filter>
-        </exclude>
-    </compose>
+		</include>
+	</compose>
 </ValueSet>

@@ -98,7 +98,7 @@ These value sets have been defined for this implementation guide:
     <a href="ValueSet-procedures-uv-ips.html">Procedures - IPS</a>
    </li>
    <li>
-    <a href="ValueSet-lab-blood-abo-rh-grp-gps-uv-ips.html">Results ABO+RH Group (GPS) - IPS</a>
+    <a href="ValueSet-results-laboratory-blood-abo-rh-grp-gps-uv-ips.html">Results ABO+RH Group (GPS) - IPS</a>
    </li>
    <li>
     <a href="ValueSet-result-coded-value-laboratory-gps-uv-ips.html">Results Coded Values Laboratory (GPS) - IPS</a>
@@ -110,31 +110,31 @@ These value sets have been defined for this implementation guide:
     <a href="ValueSet-results-clinical-observations-uv-ips.html">Results Observation - IPS</a>
    </li>
    <li>
-    <a href="ValueSet-laboratory-observations-uv-ips.html">Results Observation Laboratory - IPS</a>
+    <a href="ValueSet-results-laboratory-observations-uv-ips.html">Results Observation Laboratory - IPS</a>
    </li>
    <li>
-    <a href="ValueSet-pathology-observations-uv-ips.html">Results Observation Pathology - IPS</a>
+    <a href="ValueSet-results-pathology-observations-uv-ips.html">Results Observation Pathology - IPS</a>
    </li>
    <li>
-    <a href="ValueSet-imaging-observations-uv-ips.html">Results Observation Radiology - IPS</a>
+    <a href="ValueSet-results-radiology-observations-uv-ips.html">Results Observation Radiology - IPS</a>
    </li>
    <li>
-    <a href="ValueSet-organism-gps-uv-ips.html">Results Organism (GPS) - IPS</a>
+    <a href="ValueSet-results-organism-gps-uv-ips.html">Results Organism (GPS) - IPS</a>
    </li>
    <li>
-    <a href="ValueSet-lab-absence-presence-gps-uv-ips.html">Results Presence/Absence (GPS) - IPS</a>
+    <a href="ValueSet-results-laboratory-presence-absence-gps-uv-ips.html">Results Laboratory Presence/Absence (GPS) - IPS</a>
    </li>
    <li>
-    <a href="ValueSet-imaging-numobs-gps-dicom-uv-ips.html">Results Radiology Measurements (GPS-DICOM) - IPS</a>
+    <a href="ValueSet-results-radiology-numobs-gps-dicom-uv-ips.html">Results Radiology Measurements (GPS-DICOM) - IPS</a>
    </li>
    <li>
-    <a href="ValueSet-imaging-txtobs-gps-dicom-loinc-uv-ips.html">Results Radiology Textual Observations (GPS-DICOM-LOINC) - IPS</a>
+    <a href="ValueSet-results-radiology-txtobs-gps-dicom-loinc-uv-ips.html">Results Radiology Textual Observations (GPS-DICOM-LOINC) - IPS</a>
    </li>
    <li>
-    <a href="ValueSet-specimen-collection-method-gps-uv-ips.html">Results Specimen Collection Method (GPS) - IPS</a>
+    <a href="ValueSet-results-specimen-collection-method-gps-uv-ips.html">Results Specimen Collection Method (GPS) - IPS</a>
    </li>
    <li>
-    <a href="ValueSet-specimen-type-gps-uv-ips.html">Results Specimen Type (GPS) - IPS</a>
+    <a href="ValueSet-results-specimen-type-gps-uv-ips.html">Results Specimen Type (GPS) - IPS</a>
    </li>
    <li>
     <a href="ValueSet-target-site-uv-ips.html">Target Site - IPS</a>

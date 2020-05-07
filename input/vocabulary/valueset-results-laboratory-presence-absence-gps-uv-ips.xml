@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-	<id value="specimen-collection-method-gps-uv-ips"/>
+	<id value="results-laboratory-presence-absence-gps-uv-ips"/>
 	<meta>
-		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+		 <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
 	</meta>
-	<url value="http://hl7.org/fhir/uv/ips/ValueSet/specimen-collection-method-gps-uv-ips"/>
-	<version value="2017-05-23T00:00:00"/>
-	<name value="SpecimenCollectionMethodGpsUvIps"/>
-	<title value="Results Specimen Collection Method (GPS) - IPS"/>
+	<url value="http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-presence-absence-gps-uv-ips"/>
+	<identifier>
+		<use value="official"/>
+		<system value="http://art-decor.org/ns/oids/vs"/>
+		<value value="2.16.840.1.113883.11.22.52"/>
+	</identifier>
+	<version value="2017-05-31T00:00:00"/>
+	<name value="ResultsLabPresenceAbsenceGpsUvIps"/>
+	<title value="Results Laboratory Presence/Absence (GPS) - IPS"/>
 	<status value="active"/>
 	<experimental value="false"/>
 	<publisher value="HL7 International"/>
@@ -26,52 +31,48 @@
 			<value value="info@hl7.org"/>
 		</telecom>
 	</contact>
-	<description value="IPS Specimen Collection Method"/>
+	<description value="Presence/Absence value set"/>
 	<immutable value="false"/>
 	<copyright value="The GPS is produced by SNOMED International under the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/)&#10;&#10;Additional information about this license specific to SNOMED International&#8217;s release of the GPS:&#10;* SNOMED CT is &#169; and &#174; SNOMED International. The right to maintain the GPS remains vested exclusively in SNOMED International.&#10;* The Licensee can redistribute the GPS.&#10;* The Licensee can create derivatives or implementation-related products and services based on the GPS.&#10;* The Licensee cannot claim that SNOMED International or any of its Members endorses the Licensee&#8217;s derivative because it uses content from the GPS.&#10;* Neither SNOMED International nor any of the contributors accept any liability for the Licensee&#8217;s use or redistribution of the GPS.&#10;* SNOMED CT&#174; was originally created by the College of American Pathologists.&#10;&#10;Without obtaining prior written permission from SNOMED International, you are expressly prohibited from using, distributing or reproducing the SNOMED International, SNOMED CT or SNOMED GPS logo, service mark or trademark. Please review all terms and conditions of use [here](http://www.snomed.org/terms-and-conditions)."/>
 	<compose>
 		<include>
-			<system value="http://snomed.info/sct"/>
-			<version value="http://snomed.info/sct/900000000000207008/version/20190731"/>
+            <system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008/version/20190731"/>
 			<concept>
-				<code value="129316008"/>
-				<display value="Aspiration - action"/>
+				<code value="2667000"/>
+				<display value="Absent (qualifier value)"/>
 			</concept>
 			<concept>
-				<code value="129314006"/>
-				<display value="Biopsy - action"/>
+				<code value="52101004"/>
+				<display value="Present (qualifier value)"/>
 			</concept>
 			<concept>
-				<code value="129300006"/>
-				<display value="Puncture - action"/>
+				<code value="441614007"/>
+				<display value="Present one plus out of three plus (qualifier value)"/>
 			</concept>
 			<concept>
-				<code value="129304002"/>
-				<display value="Excision - action"/>
+				<code value="441517005"/>
+				<display value="Present two plus out of three plus (qualifier value)"/>
 			</concept>
 			<concept>
-				<code value="129323009"/>
-				<display value="Scraping - action"/>
+				<code value="441521003"/>
+				<display value="Present three plus out of three plus (qualifier value)"/>
 			</concept>
 			<concept>
-				<code value="73416001"/>
-				<display value="Urine specimen collection, clean catch"/>
+				<code value="260347006"/>
+				<display value="Present + out of ++++ (qualifier value)"/>
 			</concept>
 			<concept>
-				<code value="225113003"/>
-				<display value="Timed urine collection"/>
+				<code value="260348001"/>
+				<display value="Present ++ out of ++++ (qualifier value)"/>
 			</concept>
 			<concept>
-				<code value="70777001"/>
-				<display value="Urine specimen collection, catheterized"/>
+				<code value="260349009"/>
+				<display value="Present +++ out of ++++ (qualifier value)"/>
 			</concept>
 			<concept>
-				<code value="386089008"/>
-				<display value="Collection of coughed sputum"/>
-			</concept>
-			<concept>
-				<code value="278450005"/>
-				<display value="Finger-prick sampling"/>
+				<code value="260350009"/>
+				<display value="Present ++++ out of ++++ (qualifier value)"/>
 			</concept>
 		</include>
 	</compose>

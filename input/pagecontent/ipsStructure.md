@@ -56,9 +56,11 @@ The medical devices section contains narrative text and coded entries describing
 #### Diagnostic Results
 This section assembles relevant observation results collected on the patient or produced on in-vitro biologic specimens collected from the patient. Some of these results may be laboratory results, others may be anatomic pathology results, others, radiology results, and others, clinical results.
 
-This version is comprised of two alternative entries to carry results from:
-* laboratory or pathology
-* imaging 
+This section includes alternative entries to carry result observations (including referenced observations in DiagnosticReport) from:
+* laboratory
+* pathology
+* radiology
+* associated clinical 
 
 A generic result entry is also supported.
 
@@ -114,7 +116,7 @@ Following are the profiles that have been defined for each section. (R) denotes 
    <a href="StructureDefinition-Organization-laboratory-uv-ips.html">Organization (laboratory)</a> ;
    <a href="StructureDefinition-Media-observation-uv-ips.html">Media observation (Results: laboratory, media)</a> ]
   * Radiology results
-   [ <a href="StructureDefinition-Observation-results-imaging-uv-ips.html">Observation (Results: imaging)</a> ;
+   [ <a href="StructureDefinition-Observation-results-radiology-uv-ips.html">Observation (Results: radiology)</a> ;
    <a href="StructureDefinition-Device-observer-uv-ips.html">Device (performer, observer)</a> ;
    <a href="StructureDefinition-ImagingStudy-uv-ips.html">Imaging Study (IPS)</a> ;
    <a href="StructureDefinition-Organization-uv-ips.html">Organization (IPS)</a> ;
