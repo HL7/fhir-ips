@@ -31,29 +31,12 @@
 			<value value="info@hl7.org"/>
 		</telecom>
 	</contact>
-	<description value="IPS Results Observation.  This value set includes clinical observations which may be relevant in a lab report (body weight, temperature ….).  Value Set Definition: LOINC { COMPONENT not ( containing the word &#34;panel&#34; OR starting with &#34;can pronounce&#34; ) STATUS in {ACTIVE} CLASSTYPE in {2} ORDER_OBS in {Observation, Both} SYSTEM = ^Patient }&#xA;&#xA;Note: This definition is only partially implemented and the current value set expansion contains more than the expected set of codes, as the required regex filter on the LOINC COMPONENT property is not currently supported by the terminology service."/>
+	<description value="IPS Results Clinical Observation.  This value set includes clinical observations which may be relevant in a lab report (body weight, temperature ….).  Value Set Definition: LOINC { STATUS in {ACTIVE} CLASSTYPE in {2} SYSTEM = ^Patient }"/>
 	<immutable value="false"/>
 	<copyright value="This artifact includes content from LOINC®. LOINC codes are copyright Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee. Terms &amp; Conditions in https://loinc.org/license/"/>
 	<compose>
 		<include>
 			<system value="http://loinc.org"/>
-			<!-- regex not supported currently
-			<filter>
-				<property value="COMPONENT"/>
-				<op value="regex"/>
-				<value value="^((?!Panel).)*$"/>
-			</filter>
-			<filter>
-				<property value="COMPONENT"/>
-				<op value="regex"/>
-				<value value="^((?!panel).)*$"/>
-			</filter>
-			<filter>
-				<property value="COMPONENT"/>
-				<op value="regex"/>
-				<value value="^(?!Can pronounce.*$).*"/>
-			</filter>
-			-->
 			<filter>
 				<property value="STATUS"/>
 				<op value="="/>
@@ -63,51 +46,6 @@
 				<property value="CLASSTYPE"/>
 				<op value="="/>
 				<value value="2"/>
-			</filter>
-			<filter>
-				<property value="ORDER_OBS"/>
-				<op value="="/>
-				<value value="Observation"/>
-			</filter>
-			<filter>
-				<property value="SYSTEM"/>
-				<op value="="/>
-				<value value="^Patient"/>
-			</filter>
-		</include>
-		<include>
-			<system value="http://loinc.org"/>
-			<!-- regex not supported currently
-			<filter>
-				<property value="COMPONENT"/>
-				<op value="regex"/>
-				<value value="^((?!Panel).)*$"/>
-			</filter>
-			<filter>
-				<property value="COMPONENT"/>
-				<op value="regex"/>
-				<value value="^((?!panel).)*$"/>
-			</filter>
-			<filter>
-				<property value="COMPONENT"/>
-				<op value="regex"/>
-				<value value="^(?!Can pronounce.*$).*"/>
-			</filter>
-			-->
-			<filter>
-				<property value="STATUS"/>
-				<op value="="/>
-				<value value="ACTIVE"/>
-			</filter>
-			<filter>
-				<property value="CLASSTYPE"/>
-				<op value="="/>
-				<value value="2"/>
-			</filter>
-			<filter>
-				<property value="ORDER_OBS"/>
-				<op value="="/>
-				<value value="Both"/>
 			</filter>
 			<filter>
 				<property value="SYSTEM"/>
