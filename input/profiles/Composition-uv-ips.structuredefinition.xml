@@ -489,23 +489,23 @@
 			<max value="0"/>
 			<mustSupport value="false"/>
 		</element>
-		<element id="Composition.section:sectionImmunizations">
+		<element id="Composition.section:sectionImmuneStatus">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
 				<valueString value="Section"/>
 			</extension>
 			<path value="Composition.section"/>
-			<sliceName value="sectionImmunizations"/>
-			<short value="IPS Immunizations Section"/>
-			<definition value="The Immunizations Section defines a patient's current immunization status and pertinent immunization history.&#xD;&#xA;The primary use case for the Immunization Section is to enable communication of a patient's immunization status.&#xD;&#xA;The section includes current immunization status, and may contain the entire immunization history that is relevant to the period of time being summarized."/>
+			<sliceName value="sectionImmuneStatus"/>
+			<short value="IPS Immunization/Immune Status Section"/>
+			<definition value="The Immunization/Immune Status Section defines a patient's current immunization status and pertinent immunization history, including, when relevant, the status of immunity to specific target diseases.&#xD;&#xA;The primary use case for the Immunization Section is to enable communication of a patient's immunization and immunity status.&#xD;&#xA;The section includes the current immunization and, when relevant, immunity status, and may contain the entire immunization history that is relevant to the period of time being summarized."/>
 			<max value="1"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionImmunizations.title">
+		<element id="Composition.section:sectionImmuneStatus.title">
 			<path value="Composition.section.title"/>
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionImmunizations.code">
+		<element id="Composition.section:sectionImmuneStatus.code">
 			<path value="Composition.section.code"/>
 			<min value="1"/>
 			<type>
@@ -520,7 +520,7 @@
 			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionImmunizations.text">
+		<element id="Composition.section:sectionImmuneStatus.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
 			<type>
@@ -528,7 +528,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionImmunizations.entry">
+		<element id="Composition.section:sectionImmuneStatus.entry">
 			<path value="Composition.section.entry"/>
 			<slicing>
 				<discriminator>
@@ -542,7 +542,7 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionImmunizations.entry:immunization">
+		<element id="Composition.section:sectionImmuneStatus.entry:immunization">
 			<path value="Composition.section.entry"/>
 			<sliceName value="immunization"/>
 			<min value="1"/>
@@ -552,12 +552,12 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionImmunizations.emptyReason">
+		<element id="Composition.section:sectionImmuneStatus.emptyReason">
 			<path value="Composition.section.emptyReason"/>
 			<max value="0"/>
 			<mustSupport value="false"/>
 		</element>
-		<element id="Composition.section:sectionImmunizations.section">
+		<element id="Composition.section:sectionImmuneStatus.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
 			<mustSupport value="false"/>
@@ -689,18 +689,22 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionResults.entry:observation-results">
+		<element id="Composition.section:sectionResults.entry:results-observation">
 			<path value="Composition.section.entry"/>
-			<sliceName value="observation-results"/>
+			<sliceName value="results-observation"/>
 			<type>
 				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-pathology-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-radiology-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-clinical-uv-ips"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionResults.entry:diagnosticReport">
+		<element id="Composition.section:sectionResults.entry:results-diagnosticReport">
 			<path value="Composition.section.entry"/>
-			<sliceName value="diagnosticReport"/>
+			<sliceName value="results-diagnosticReport"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips"/>
