@@ -107,9 +107,6 @@ These value sets have been defined for this implementation guide:
     <a href="ValueSet-result-coded-value-pathology-gps-uv-ips.html">Results Coded Values Pathology (GPS) - IPS</a>
    </li>
    <li>
-    <a href="ValueSet-results-clinical-observations-uv-ips.html">Results Observation Clinical - IPS</a>
-   </li>
-   <li>
     <a href="ValueSet-results-laboratory-observations-uv-ips.html">Results Observation Laboratory - IPS</a>
    </li>
    <li>

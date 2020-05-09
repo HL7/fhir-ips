@@ -126,8 +126,6 @@ Following are the profiles that have been defined for each section. (R) denotes 
    <a href="StructureDefinition-Specimen-uv-ips.html">Specimen (IPS)</a> ;
    <a href="StructureDefinition-Organization-laboratory-uv-ips.html">Organization (laboratory)</a> ;
    [ <a href="StructureDefinition-Media-observation-uv-ips.html">Observation (Results: laboratory, media)</a> ]
-  * Clinical results (associated) 
-   [ <a href="StructureDefinition-Observation-results-clinical-uv-ips.html">Observation (Results: associated clinical)</a> ]
   * Diagnostic Report (extract of)
    [ <a href="StructureDefinition-DiagnosticReport-uv-ips.html">DiagnosticReport (IPS)</a> ]
 * Vital Signs 
