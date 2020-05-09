@@ -1,16 +1,16 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<blockquote class="stu-note">
-		In this version of the guide the Medication Summary is expressed as a list of MedicationStatements. The reason for this choice is explained in the <a href="design.html#the-use-of-medication-statements-in-the-summary">Design Conventions and Principles</a> page.<br/>
-		STU implementers are encouraged to provide their feedback about this design choice.		
+		<p>In this version of the guide the Medication Summary is expressed as a list of MedicationStatements. The reason for this choice is explained in the <a href="design.html#the-use-of-medication-statements-in-the-summary">Design Conventions and Principles</a> page.</p>
+		<p>STU implementers are encouraged to provide their feedback about this design choice.</p>
 	</blockquote>
 	<blockquote class="stu-note">
-		In this version of the guide the Immunization section has been extended to also include, when relevant, the status of immunity to specific target diseases.<br/>
-		The section has been renamed to ImmuneStatus (Immunization/Immune Status) to reflect this (a status of immunity to a disease is the intended and desired outcome of a vaccinaation).<br/>
-		The capability to record a statement of immunity to a disease and the supporting data for that statement is provided by a profile on the Condition resource, using specific codes (pre-coordinated).<br/>
-		The Condition resource is used to represent the immune status, as immunity is an ongoing state of the patient.  It is not simply an observation at a point in time, although those observations will often be associated with the condition and used to provide supporting evidence for it.<br/>
-		This capability is especially relevant and needed at the present time for recording immunity to the COVID-19 disease caused by the SARS-CoV-2 virus.<br/>
-		A code for representing a condition of immunity to COVID-19 has not yet been developed and made available in SNOMED CT, so at this time a FHIR code for this is included in the value set.<br/>
-		Comments are welcome and implementers of this STU are encouraged to provide their feedback about these design choices.<br/>
-		This proposed solution will be also subject to evaluation by the wider cross-SDO IPS community, in order to assure a complete alignment among the different IPS standards; it is therefore potentially subject to change.
+		<p>In this version of the guide the Immunization section has been extended to also include, when relevant, the status of immunity to specific target diseases.
+		The section has been renamed to ImmuneStatus (Immunization/Immune Status) to reflect this (a status of immunity to a disease is the intended and desired outcome of a vaccinaation).
+		The capability to record a statement of immunity to a disease and the supporting data for that statement is provided by a profile on the Condition resource, using specific (pre-coordinated) codes.
+		The Condition resource is used to represent the immune status, as immunity is an ongoing state of the patient.  It is not simply an observation at a point in time, although those observations will often be associated with the condition and used to provide supporting evidence for it.
+		This capability is especially relevant and needed at the present time for recording immunity to the COVID-19 disease caused by the SARS-CoV-2 virus.
+		A code for representing a condition of immunity to COVID-19 has not yet been developed and made available in SNOMED CT, so at this time a FHIR code for this is included in the value set.</p>
+		<p>Comments are welcome and implementers of this STU are encouraged to provide their feedback about these design choices.</p>
+		<p>This proposed solution will be also subject to evaluation by the wider cross-SDO IPS community, in order to assure a complete alignment among the different IPS standards; it is therefore potentially subject to change.</p>
 	</blockquote>
 </div>
