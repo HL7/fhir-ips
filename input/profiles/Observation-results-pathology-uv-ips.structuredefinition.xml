@@ -86,6 +86,26 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/results-pathology-observations-uv-ips"/>
 			</binding>
 		</element>
+		<element id="Observation.subject">
+			<path value="Observation.subject"/>
+			<definition value="The patient, or group of patients, location, or device whose characteristics (direct or indirect) are described by the observation and into whose record the observation is placed.  Comments: Indirect characteristics may be those of a specimen, fetus, donor, other observer (for example a relative or EMT), or any observation made about the subject.&#xD;&#xA;&#xD;&#xA;In this profile is constrained to the patient"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.performer">
+			<path value="Observation.performer"/>
+			<min value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/PractitionerRole-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
 		<element id="Observation.value[x]">
 			<path value="Observation.value[x]"/>
 			<slicing>
@@ -164,6 +184,14 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/result-coded-value-pathology-gps-uv-ips"/>
 			</binding>
 		</element>
+		<element id="Observation.specimen">
+			<path value="Observation.specimen"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>	
 		<element id="Observation.hasMember">
 			<path value="Observation.hasMember"/>
 			<definition value="A reference to another Observation profiled by Observation-results-pathology-uv-ips. The target observation is considered as a sub-observation of the current one, which plays the role of a grouper"/>

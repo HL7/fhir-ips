@@ -73,10 +73,6 @@
 			<path value="Observation.code"/>
 			<definition value="Describes what was observed. Sometimes this is called the observation &quot;name&quot;.  In this profile this code represents either a simple laboratory test or a laboratory study with multiple child observations"/>
 			<comment value="In the context of this Observation-laboratory-uv-ips profile, when the observation plays the role of a grouper of member sub-observations, the code represent the group (for instance a panel code). In case no code is available, at least a text shall be provided."/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
 			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -85,6 +81,19 @@
 				<strength value="extensible"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-observations-uv-ips"/>
 			</binding>
+		</element>
+		<element id="Observation.performer">
+			<path value="Observation.performer"/>
+			<min value="1"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips"/> 
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/PractitionerRole-uv-ips"/> 
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/> 
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.value[x]">
 			<path value="Observation.value[x]"/>
@@ -164,6 +173,26 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/result-coded-value-laboratory-gps-uv-ips"/>
 			</binding>
 		</element>
+		<element id="Observation.interpretation">
+			<path value="Observation.interpretation"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>	
+		<element id="Observation.specimen">
+			<path value="Observation.specimen"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>	
+		<element id="Observation.referenceRange">
+			<path value="Observation.referenceRange"/>
+			<mustSupport value="true"/>
+		</element>
 		<element id="Observation.hasMember">
 			<path value="Observation.hasMember"/>
 			<definition value="A reference to another Observation profiled by Observation-results-laboratory-uv-ips. The target observation (for instance an individual test member of a panel) is considered as a sub-observation of the current one, which plays the role of a grouper."/>
@@ -173,6 +202,6 @@
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
-		</element>	
+		</element>
 	</differential>
 </StructureDefinition>

@@ -105,22 +105,14 @@
 		<element id="Observation.subject">
 			<path value="Observation.subject"/>
 			<definition value="The patient, or group of patients, location, or device whose characteristics (direct or indirect) are described by the observation and into whose record the observation is placed.  Comments: Indirect characteristics may be those of a specimen, fetus, donor, other observer (for example a relative or EMT), or any observation made about the subject.&#xD;&#xA;&#xD;&#xA;In this profile is constrained to the patient"/>
-			<min value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Observation.subject.reference">
-			<path value="Observation.subject.reference"/>
-			<min value="1"/>
-			<mustSupport value="true"/>
-		</element>
 		<element id="Observation.effective[x]">
 			<path value="Observation.effective[x]"/>
-			<min value="1"/>
-			<max value="1"/>
 			<constraint>
 				<key value="ips-1"/>
 				<severity value="error"/>
@@ -128,28 +120,10 @@
 				<expression value="$this.ofType(dateTime).empty() or ($this as dateTime).toString().length() &gt;= 8"/>
 				<xpath value="not(boolean(effectiveDateTime)) or f:matches(effectiveDateTime,/\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d([+-][0-2]\d:[0-5]\d|Z)/)"/>
 			</constraint>
-			<type>
-				<code value="dateTime"/>
-			</type>
-			<type>
-				<code value="Period"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Observation.effective[x]:data-absent-reason">
-			<path value="Observation.effective[x].extension"/>
-			<short value="effective[x] absence reason"/>
-			<definition value="Provides a reason why the effectiveTime is missing."/>
-			<max value="1"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
-			</type>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.performer">
 			<path value="Observation.performer"/>
-			<label value="Human Observer"/>
 			<min value="1"/>
 			<type>
 				<code value="Reference"/>

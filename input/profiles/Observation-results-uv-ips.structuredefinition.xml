@@ -47,6 +47,13 @@
 		<element id="Observation.subject">
 			<path value="Observation.subject"/>
 			<min value="1"/>
+			<type> 
+				<code value="Reference"/> 
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/> 
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Group"/> 
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Device"/> 
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Location"/> 
+			</type>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.subject.reference">
@@ -57,7 +64,6 @@
 		<element id="Observation.effective[x]">
 			<path value="Observation.effective[x]"/>
 			<min value="1"/>
-			<max value="1"/>
 			<type>
 				<code value="dateTime"/>
 			</type>
@@ -79,6 +85,15 @@
 		</element>
 		<element id="Observation.performer">
 			<path value="Observation.performer"/>
+			<type> 
+				<code value="Reference"/> 
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips"/> 
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/PractitionerRole-uv-ips"/> 
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips"/> 
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam"/> 
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/> 
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+			</type>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.value[x]">
@@ -87,11 +102,16 @@
 		</element>
 		<element id="Observation.hasMember">
 			<path value="Observation.hasMember"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"/> 
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/MolecularSequence"/> 
+			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Observation.hasMember.reference">
-			<path value="Observation.hasMember.reference"/>
-			<min value="1"/>
+		<element id="Observation.component">
+			<path value="Observation.component"/>
 			<mustSupport value="true"/>
 		</element>
 	</differential>

@@ -86,6 +86,13 @@
 		</element>
 		<element id="DiagnosticReport.performer">
 			<path value="DiagnosticReport.performer"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips"/> 
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/PractitionerRole-uv-ips"/> 
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips"/> 
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/CareTeam"/> 
+			</type>
 			<mustSupport value="true"/>
 		</element>
 		<element id="DiagnosticReport.specimen">

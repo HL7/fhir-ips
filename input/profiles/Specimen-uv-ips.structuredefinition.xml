@@ -80,5 +80,16 @@
 				<valueSet value="http://hl7.org/fhir/ValueSet/body-site"/>
 			</binding>
 		</element>
+		<element id="Specimen.collection.fastingStatus">
+			<path value="Specimen.collection.fastingStatus"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<type> 
+				<code value="Duration"/> 
+			</type> 
+			<mustSupport value="true"/>
+		</element>
 	</differential>
 </StructureDefinition>
