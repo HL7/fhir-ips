@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="condition-verification-immuneStatus-uv-ips"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <url value="http://hl7.org/fhir/ValueSet/condition-verification-immuneStatus-uv-ips"/>
+  <version value="4.0.1"/>
+  <name value="ConditionVerificationStatusImmuneStatusCodesUvIps"/>
+  <title value="Condition Verification Status Codes - Immune Status (IPS)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="HL7 International"/>
+  <contact>
+      <name value="HL7 International"/>
+      <telecom>
+          <system value="phone"/>
+          <value value="+1 734 677 7777"/>
+      </telecom>
+      <telecom>
+          <system value="fax"/>
+          <value value="+1 734 677 6622"/>
+      </telecom>
+      <telecom>
+          <system value="email"/>
+          <value value="info@hl7.org"/>
+      </telecom>
+  </contact>
+  <description value="Condition verification status value set for immune status statements."/>
+  <immutable value="false"/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <concept>
+        <code value="unconfirmed"/>
+        <display value="Unconfirmed"/>
+      </concept>
+      <concept>
+        <code value="confirmed"/>
+        <display value="Confirmed"/>
+      </concept>
+      <concept>
+        <code value="refuted"/>
+        <display value="Refuted"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

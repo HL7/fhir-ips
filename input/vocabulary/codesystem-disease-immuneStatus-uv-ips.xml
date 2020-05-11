@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="disease-immuneStatus-uv-ips"/>
+	<url value="http://hl7.org/fhir/uv/ips/CodeSystem/disease-immuneStatus-uv-ips"/>
+	<name value="CodeSystemDiseaseImmuneStatusIPS"/>
+	<title value="Disease Immune Status - IPS"/>
+	<status value="active"/>
+	<experimental value="false"/>
+	<description value="International Patient Summary (IPS) codes for status of immunity to a target disease (not yet available in SNOMED CT)."/>
+	<caseSensitive value="true"/>
+		<copyright value="Produced by HL7 under the terms of HL7® Governance and Operations Manual relating to Intellectual Property (Section 16), specifically its copyright, trademark and patent provisions. This document is licensed under Creative Commons &quot;No Rights Reserved&quot; (CC0)."/>
+	<content value="complete"/>
+	<concept>
+		<code value="covid19-immune"/>
+		<display value="COVID-19 immune"/>
+		<definition value="Sufficient clinical evidence of immunity to the COVID-19 disease (caused by the SARS-CoV-2 virus)."/>
+	</concept>
+</CodeSystem>
