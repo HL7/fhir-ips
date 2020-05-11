@@ -8,7 +8,7 @@ These code systems have been defined for this implementation guide:
 
 ### Global Patient Set Value Set
 
-A value set representing the full SNOMED CT Global Patient Set (https://www.snomed.org/snomed-international/learn-more/global-patient-set) is available here.  It is provided in this IG as a FHIR ValueSet resource instance for the convenience of the implementer community.
+A value set representing the full SNOMED CT Global Patient Set (https://www.snomed.org/snomed-international/learn-more/global-patient-set) is available here.  It is provided in this IG as a FHIR ValueSet resource instance for the convenience of IPS implementers.
 
 The current value set contains all concepts (21,782) from the September 2019 release of the GPS (based on the July 2019 SNOMED CT International Edition release) plus seven recently added concepts for Coronavirus (from the March 2020 Interim International Release) (total 21,789 concepts).
 
@@ -47,15 +47,6 @@ These value sets have been defined for this implementation guide:
    </li>
    <li>
     <a href="ValueSet-allergy-reaction-gps-uv-ips.html">Allergy Reaction (GPS) - IPS</a>
-   </li>
-   <li>
-    <a href="ValueSet-condition-clinical-immuneStatus-uv-ips.html">Condition Clinical Status Codes - Immune Status (IPS)</a>
-   </li>
-   <li>
-    <a href="ValueSet-condition-disease-immuneStatus-uv-ips.html">Condition Disease Immune Status Codes (IPS)</a>
-   </li>
-   <li>
-    <a href="ValueSet-condition-verification-immuneStatus-uv-ips.html">Condition Verification Status Codes - Immune Status (IPS)</a>
    </li>
    <li>
     <a href="ValueSet-core-problem-finding-situation-event-gps-uv-ips.html">CORE Problem List Finding/Situation/Event (GPS) - IPS</a>

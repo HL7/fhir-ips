@@ -2,7 +2,7 @@
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	<id value="IPS-examples-Bundle-01"/>
 	<meta>
-		<lastUpdated value="2020-05-11T14:30:00+01:00"/>
+		<lastUpdated value="2017-07-20T14:30:00+01:00"/>
 	</meta>
 	<language value="en-GB"/>
 	<identifier>
@@ -10,7 +10,7 @@
 		<value value="175bd032-8b00-4728-b2dc-748bb1501aed"/>
 	</identifier>
 	<type value="document"/>
-	<timestamp value="2020-05-11T14:30:00+01:00"/>
+	<timestamp value="2017-07-20T14:30:00+01:00"/>
 	<!--e0-->
 	<entry>
 		<fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad4d"/>
@@ -32,7 +32,7 @@
 				<subject>
 					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
 				</subject>
-				<date value="2020-05-11T14:30:00+01:00"/>
+				<date value="2017-07-20T14:30:00+01:00"/>
 				<author>
 					<reference value="Practitioner/1c616b24-3895-48c4-9a02-9a64110351ef"/>
 				</author>
@@ -40,14 +40,14 @@
 				<confidentiality value="N"/>
 				<attester>
 					<mode value="legal"/>
-					<time value="2020-05-11T14:30:00+01:00"/>
+					<time value="2017-07-20T14:30:00+01:00"/>
 					<party>
 						<reference value="Practitioner/1c616b24-3895-48c4-9a02-9a64110351ef"/>
 					</party>
 				</attester>
 				<attester>
 					<mode value="legal"/>
-					<time value="2020-05-11T14:30:00+01:00"/>
+					<time value="2017-07-20T14:30:00+01:00"/>
 					<party>
 						<reference value="Organization/890751f4-2924-4636-bab7-efffc7f3cf15"/>
 					</party>
@@ -70,7 +70,7 @@
 						</coding>
 					</code>
 					<period>
-						<end value="2020-05-11T14:30:00+01:00"/>
+						<end value="2017-07-20T14:30:00+01:00"/>
 					</period>
 				</event>
 				<section>
@@ -261,20 +261,6 @@
 									</xhtml:tr>
 								</xhtml:tbody>
 							</xhtml:table>
-							<xhtml:table>
-								<xhtml:thead>
-									<xhtml:tr>
-										<xhtml:th colspan="3">COVID-19 antibody testing</xhtml:th>
-									</xhtml:tr>
-								</xhtml:thead>
-								<xhtml:tbody>
-									<xhtml:tr>
-										<xhtml:td>SARS coronavirus 2 Ab [Presence] in Serum or Plasma by Immunoassay</xhtml:td>
-										<xhtml:td>Reactive</xhtml:td>
-										<xhtml:td/>
-									</xhtml:tr>
-								</xhtml:tbody>
-							</xhtml:table>
 						</xhtml:div>
 					</text>
 					<!-- top level observations (member observations are nested) -->
@@ -286,31 +272,6 @@
 					</entry>
 					<entry>
 						<reference value="Observation/26bee0a9-5997-4557-ab9d-c6adbb05b572"/>
-					</entry>
-				</section>
-				<section>
-					<title value="Immunizations/Immune Status"/>
-					<code>
-						<coding>
-							<system value="http://loinc.org"/>
-							<code value="11369-6"/>
-							<display value="History of Immunization Narrative"/>
-						</coding>
-					</code>
-					<text>
-						<status value="generated"/>
-						<xhtml:div>
-							<xhtml:p>DPT + Polio vaccine, Jun 3, 1998, 10:00:00 PM</xhtml:p>
-							<xhtml:p>intramuscular, right thigh</xhtml:p>
-							<xhtml:p/>
-							<xhtml:p>COVID-19 immunity, 2020-05-10</xhtml:p>
-						</xhtml:div>
-					</text>
-					<entry>
-						<reference value="Immunization/19d16d91-f31a-4fe3-beab-7ebdcdbd8389"/>
-					</entry>
-					<entry>
-						<reference value="Condition/129cb8b1-7db9-4fbe-8dff-f2b3458cab1b"/>
 					</entry>
 				</section>
 			</Composition>
@@ -1050,127 +1011,6 @@
 					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
 				</patient>
 			</AllergyIntolerance>
-		</resource>
-	</entry>
-	<!--e20-->
-	<entry>
-		<fullUrl value="urn:uuid:129cb8b1-7db9-4fbe-8dff-f2b3458cab1b"/>
-		<resource>
-			<Condition xmlns="http://hl7.org/fhir">
-				<id value="129cb8b1-7db9-4fbe-8dff-f2b3458cab1b"/>
-				<clinicalStatus>
-					<coding>
-						<system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
-						<code value="active"/>
-					</coding>
-				</clinicalStatus>
-				<code>
-					<coding>
-						<system value="http://hl7.org/fhir/uv/ips/CodeSystem/disease-immuneStatus-uv-ips"/>
-						<code value="covid19-immune"/>
-						<display value="COVID-19 immune"/>
-					</coding>
-				</code>
-				<subject>
-					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
-				</subject>
-				<onsetDateTime value="2020-05-10"/>
-				<evidence>
-					<detail>
-						<reference value="Observation/fc38b5b0-a3a4-4cd4-82e4-ecb20cb46238"/>
-					</detail>
-				</evidence>
-			</Condition>
-		</resource>
-	</entry>
-	<!--e21-->
-	<entry>
-		<fullUrl value="urn:uuid:19d16d91-f31a-4fe3-beab-7ebdcdbd8389"/>
-		<resource>
-			<Immunization xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-				<id value="19d16d91-f31a-4fe3-beab-7ebdcdbd8389"/>
-				<status value="completed"/>
-				<vaccineCode>
-					<coding>
-						<system value="http://snomed.info/sct"/>
-						<version value="http://snomed.info/sct/900000000000207008"/>
-						<code value="414005006"/>
-						<display value="Diphtheria + Pertussis + Poliomyelitis + Tetanus vaccine"/>
-					</coding>
-					<coding>
-						<system value="http://www.whocc.no/atc"/>
-						<code value="J07CA02"/>
-						<display value="diphtheria-pertussis-poliomyelitis-tetanus"/>
-					</coding>
-					<coding>
-						<system value="urn:oid:1.3.182.4.11.22"/>
-						<code value="2374429"/>
-						<display value="BOOSTRIX-POLIO"/>
-					</coding>
-					<text value="DPT + Polio vaccine"/>
-				</vaccineCode>
-				<patient>
-					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
-				</patient>
-				<occurrenceDateTime value="1998-06-04T00:00:00+02:00"/>
-				<primarySource value="true"/>
-				<lotNumber value="AXK23RWERS"/>
-				<expirationDate value="2000-06-01"/>
-				<site>
-					<coding>
-						<system value="http://snomed.info/sct"/>
-						<version value="http://snomed.info/sct/900000000000207008"/>
-						<code value="11207009"/>
-						<display value="Right thigh"/>
-					</coding>
-					<text value="right thigh"/>
-				</site>
-				<route>
-					<coding>
-						<system value="http://standardterms.edqm.eu"/>
-						<code value="20035000"/>
-						<display value="Intramuscular use"/>
-					</coding>
-					<text value="intramuscular"/>
-				</route>
-			</Immunization>
-		</resource>
-	</entry>
-	<!--e22-->
-	<entry>
-		<fullUrl value="urn:uuid:fc38b5b0-a3a4-4cd4-82e4-ecb20cb46238"/>
-		<resource>
-			<Observation>
-				<id value="fc38b5b0-a3a4-4cd4-82e4-ecb20cb46238"/>
-				<status value="final"/>
-				<category>
-					<coding>
-						<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
-						<code value="laboratory"/>
-					</coding>
-				</category>
-				<code>
-					<coding>
-						<system value="http://loinc.org"/>
-						<code value="94762-2"/>
-						<display value="SARS coronavirus 2 Ab [Presence] in Serum or Plasma by Immunoassay"/>
-					</coding>
-				</code>
-				<subject>
-					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
-				</subject>
-				<effectiveDateTime value="2020-05-09T09:15:00+01:00"/>
-				<performer>
-					<reference value="Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7"/>
-				</performer>
-				<valueCodeableConcept>
-					<coding>
-						<system value="http://loinc.org"/>
-						<code value="LA15255-5"/>
-						<display value="Reactive"/>
-					</coding>
-				</valueCodeableConcept>
-			</Observation>
 		</resource>
 	</entry>
 </Bundle>

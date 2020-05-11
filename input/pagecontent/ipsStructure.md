@@ -35,10 +35,11 @@ If no information about allergies is available, or if no allergies are known thi
 
 The IPS problem section lists and describes clinical problems or conditions currently being monitored for the patient.
 
-#### Immune Status/Immunization History
+#### Immunizations
 
-The Immune Status/Immunization History Section defines a patient's current immune status and pertinent immunization history.
-The primary use case for the Immune Status/Immunization History Section is to enable communication of a patient's status of immunity (by means of vaccination or otherwise) to specific target diseases.  The section includes current status of immunity and the entire clinically pertinent immunization history that is known.
+The Immunizations Section defines a patient's current immunization status and pertinent immunization history.
+The primary use case for the Immunization Section is to enable communication of a patient's immunization status.
+The section includes current immunization status and the entire clinically pertinent immunization history that is known.
 
 #### History of Procedures
 
@@ -100,9 +101,8 @@ Following are the profiles that have been defined for each section. (R) denotes 
  [ <a href="StructureDefinition-AllergyIntolerance-uv-ips.html">Allergy Intolerance (IPS)</a> ]
 * Problem List (R) 
  [ <a href="StructureDefinition-Condition-uv-ips.html">Condition (IPS)</a> ]
-* Immune Status/Immunization History (S)
- [ <a href="StructureDefinition-Immunization-uv-ips.html">Immunization (IPS)</a> |
-  <a href="StructureDefinition-Condition-immune-status-uv-ips.html">Condition Immune Status (IPS)</a> ]
+* Immunizations (S)
+ [ <a href="StructureDefinition-Immunization-uv-ips.html">Immunization (IPS)</a> ]
 * History of Procedures (S)
  [ <a href="StructureDefinition-Procedure-uv-ips.html">Procedure (IPS)</a> |
   <a href="StructureDefinition-Organization-uv-ips.html">Organization (IPS)</a> |

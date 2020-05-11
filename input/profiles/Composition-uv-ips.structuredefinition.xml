@@ -532,10 +532,6 @@
 			<path value="Composition.section.entry"/>
 			<slicing>
 				<discriminator>
-					<type value="type"/>
-					<path value="$this.resolve()"/>
-				</discriminator>
-				<discriminator>
 					<type value="profile"/>
 					<path value="$this.resolve()"/>
 				</discriminator>
@@ -553,16 +549,6 @@
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Composition.section:sectionImmuneStatusHistory.entry:immuneStatus">
-			<path value="Composition.section.entry"/>
-			<sliceName value="immuneStatus"/>
-			<min value="1"/>
-			<type>
-				<code value="Reference"/>
-				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-immune-status-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
