@@ -198,7 +198,12 @@
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-uv-ips"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Observation.hasMember.reference">
+			<path value="Observation.hasMember.reference"/>
 			<mustSupport value="true"/>
 		</element>
 	</differential>
