@@ -8,7 +8,7 @@
 	<status value="active"/>
 	<date value="2018-08-29"/>
 	<publisher value="HL7 International"/>
-	<description value="Clinical document used to represent the International Patient Summary (IPS) data set. &#xD;&#xA;An International Patient Summary (IPS) document is an electronic health record extract containing essential healthcare information about a subject of care. &#xD;&#xA;The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-independent; but still clinically relevant. As specified in EN 17269 and ISO/DIS 27269, it is designed for supporting the use case scenario for ‘unplanned, cross border care’, but it is not limited to it. It is intended to be international, i.e., to provide generic solutions for global application beyond a particular region or country.&#xD;&#xA;&#xD;&#xA;This profile is based on the ClinicalDocument profile"/>
+	<description value="Clinical document used to represent the International Patient Summary (IPS) data set. &#xD;&#xA;An International Patient Summary (IPS) document is an electronic health record extract containing essential healthcare information about a subject of care. &#xD;&#xA;The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-independent; but still clinically relevant. As specified in EN 17269 and ISO/DIS 27269, it is designed for supporting the use case scenario for ‘unplanned, cross border care’, but it is not limited to it. It is intended to be international, i.e., to provide generic solutions for global application beyond a particular region or country.&#xD;&#xA;&#xD;&#xA;This profile is based on the ClinicalDocument profile."/>
 	<purpose value="An International Patient Summary (IPS) document is an electronic health record extract containing essential healthcare information about a subject of care, comprising at least the required elements of the IPS dataset. The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-independent; but still clinically relevant. As specified in EN 17269 and ISO/DIS 27269, it is designed for supporting the use case scenario for ‘unplanned, cross border care’, but it is not limited to it. It is intended to be international, i.e., to provide generic solutions for global application beyond a particular region or country."/>
 	<copyright value="HL7 International"/>
 	<mapping>
@@ -489,23 +489,23 @@
 			<max value="0"/>
 			<mustSupport value="false"/>
 		</element>
-		<element id="Composition.section:sectionImmuneStatusHistory">
+		<element id="Composition.section:sectionImmunizations">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
 				<valueString value="Section"/>
 			</extension>
 			<path value="Composition.section"/>
-			<sliceName value="sectionImmuneStatusHistory"/>
-			<short value="IPS Immune Status/Immunization History Section"/>
-			<definition value="The Immune Status/Immunization History Section defines a patient's current immunization status and pertinent immunization history, including, when relevant, the status of immunity to specific target diseases.&#xD;&#xA;The primary use case for the Immunization Section is to enable communication of a patient's immunization and immunity status.&#xD;&#xA;The section includes the current immunization and, when relevant, immunity status, and may contain the entire immunization history that is relevant to the period of time being summarized."/>
+			<sliceName value="sectionImmunizations"/>
+			<short value="IPS Immunizations Section"/>
+			<definition value="The Immunizations Section defines a patient's current immunization status and pertinent immunization history.&#xD;&#xA;The primary use case for the Immunization Section is to enable communication of a patient's immunization status.&#xD;&#xA;The section includes the current immunization status, and may contain the entire immunization history that is relevant to the period of time being summarized."/>
 			<max value="1"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionImmuneStatusHistory.title">
+		<element id="Composition.section:sectionImmunizations.title">
 			<path value="Composition.section.title"/>
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionImmuneStatusHistory.code">
+		<element id="Composition.section:sectionImmunizations.code">
 			<path value="Composition.section.code"/>
 			<min value="1"/>
 			<type>
@@ -520,7 +520,7 @@
 			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionImmuneStatusHistory.text">
+		<element id="Composition.section:sectionImmunizations.text">
 			<path value="Composition.section.text"/>
 			<min value="1"/>
 			<type>
@@ -528,7 +528,7 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionImmuneStatusHistory.entry">
+		<element id="Composition.section:sectionImmunizations.entry">
 			<path value="Composition.section.entry"/>
 			<slicing>
 				<discriminator>
@@ -542,22 +542,22 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionImmuneStatusHistory.entry:immunization">
+		<element id="Composition.section:sectionImmunizations.entry:immunization">
 			<path value="Composition.section.entry"/>
 			<sliceName value="immunization"/>
-			<min value="1"/>
+			<min value="0"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionImmuneStatusHistory.emptyReason">
+		<element id="Composition.section:sectionImmunizations.emptyReason">
 			<path value="Composition.section.emptyReason"/>
 			<max value="0"/>
 			<mustSupport value="false"/>
 		</element>
-		<element id="Composition.section:sectionImmuneStatusHistory.section">
+		<element id="Composition.section:sectionImmunizations.section">
 			<path value="Composition.section.section"/>
 			<max value="0"/>
 			<mustSupport value="false"/>
