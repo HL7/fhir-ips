@@ -32,7 +32,7 @@
 			<value value="info@hl7.org"/>
 		</telecom>
 	</contact>
-	<description value="&#xA; Value Set Definition:&#xA;&#xA; LOINC { CLASS in {CYTO, HEM/BC, HL7.CYTOGEN, HL7.GENETICS, MOLPATH, MOLPATH.*, PATH} STATUS in {ACTIVE} CLASSTYPE in {1} }"/>
+	<description value="&#xA; Value Set Definition:&#xA;&#xA; LOINC {STATUS in {ACTIVE}, CLASSTYPE in {1}, CLASS in {CYTO, HL7.CYTOGEN, HL7.GENETICS, MOLPATH, MOLPATH.\*, PATH, PATH.HISTO}}"/>
 	<immutable value="false"/>
 	<copyright value="This artifact includes content from LOINC®. LOINC codes are copyright Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee. Terms &amp; Conditions in https://loinc.org/license/"/>
 	<compose>
@@ -51,7 +51,7 @@
 			<filter>
 				<property value="CLASS"/>
 				<op value="regex"/>
-				<value value="CYTO|HEM/BC|HL7\.CYTOGEN|HL7\.GENETICS|PATH|^(?!MOLPATH.*$).*"/>
+				<value value="CYTO|HL7\.CYTOGEN|HL7\.GENETICS|PATH|PATH\.HISTO|^MOLPATH(\..*)?"/>
 			</filter>
 		</include>
 	</compose>

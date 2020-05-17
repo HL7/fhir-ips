@@ -31,7 +31,7 @@
 			<value value="info@hl7.org"/>
 		</telecom>
 	</contact>
-	<description value="Value Set Definition: LOINC { STATUS in {ACTIVE} CLASSTYPE in {1} CLASS exclude {CHALSKIN, H&amp;P.HX.LAB, H&amp;P.HX, LABORDERS, NR STATS, PATH.PROTOCOLS.*} }"/>
+	<description value="Value Set Definition: LOINC {STATUS in {ACTIVE}, CLASSTYPE in {1}, CLASS exclude {CHALSKIN, H&amp;P.HX.LAB, LABORDERS, NR STATS, PATH, PATH.\*, MOLPATH, MOLPATH.\*, CYTO, HL7.CYTOGEN, HL7.GENETICS}}"/>
 	<immutable value="false"/>
 	<copyright value="This artifact includes content from LOINC®. LOINC codes are copyright Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee. Terms &amp; Conditions in https://loinc.org/license/"/>
 	<compose>
@@ -53,39 +53,7 @@
 			<filter>
 				<property value="CLASS"/>
 				<op value="regex"/>
-				<value value="^(?!PATH\.PROTOCOLS.*$).*"/>
-			</filter>
-        </exclude>
-        <exclude>
-			<system value="http://loinc.org"/>
-            <filter>
-                <property value="CLASS"/>
-                <op value="regex"/>
-                <value value="^(?!NR STATS.*$).*"/>
-            </filter>
-            </exclude>
-		<exclude>
-			<system value="http://loinc.org"/>
-			<filter>
-				<property value="CLASS"/>
-				<op value="regex"/>
-				<value value="^(?!H&amp;P\.HX.*$).*"/>
-			</filter>
-        </exclude>
-		<exclude>
-			<system value="http://loinc.org"/>
-			<filter>
-				<property value="CLASS"/>
-				<op value="regex"/>
-				<value value="^(?!H&amp;P\.HX\.LAB.*$).*"/>
-			</filter>
-        </exclude>
-		<exclude>
-			<system value="http://loinc.org"/>
-			<filter>
-				<property value="CLASS"/>
-				<op value="regex"/>
-				<value value="^(?!CHALSKIN.*$).*"/>
+				<value value="CYTO|HL7\.CYTOGEN|HL7\.GENETICS|^PATH(\..*)?|^MOLPATH(\..*)?|NR STATS|H&amp;P\.HX\.LAB|CHALSKIN|LABORDERS"/>
 			</filter>
         </exclude>
     </compose>
