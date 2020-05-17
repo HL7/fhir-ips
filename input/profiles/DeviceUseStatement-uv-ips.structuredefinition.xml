@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<id value="DeviceUseStatement-uv-ips"/>
-	<meta>
-		<lastUpdated value="2018-02-14T20:25:36.732+01:00"/>
-	</meta>
 	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips"/>
-	<version value="0.2"/>
 	<name value="DeviceUseStatementUvIps"/>
 	<title value="Device Use Statement (IPS)"/>
 	<status value="active"/>
 	<experimental value="false"/>
-	<date value="2018-02-14"/>
 	<publisher value="HL7 International"/>
 	<description value="This profile represents the constraints applied to the DeviceUseStatement resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A statement about a device used by or implanted on the patient is described in the patient summary as an instance of a DeviceUseStatement resource constrained by this profile."/>
 	<purpose value="This profile constrains the representation of a statement about a medical device used by or impanted on the patient, part of the &quot;Medical Devices&quot; section of the Composition resource representing the international patient summary, as specified by the IPS project of HL7 International."/>
