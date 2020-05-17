@@ -1,1074 +1,398 @@
 -------------------------------------------------------------------------------------
-{"hierarchical" : false, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://standardterms.edqm.eu",
-      "concept" : [{
-        "code" : "20001000",
-        "display" : "Auricular use"
-      },
-      {
-        "code" : "20002500",
-        "display" : "Buccal use"
-      },
-      {
-        "code" : "20003000",
-        "display" : "Cutaneous use"
-      },
-      {
-        "code" : "20004000",
-        "display" : "Dental use"
-      },
-      {
-        "code" : "20006000",
-        "display" : "Endocervical use"
-      },
-      {
-        "code" : "20007000",
-        "display" : "Endosinusial use"
-      },
-      {
-        "code" : "20008000",
-        "display" : "Endotracheopulmonary use"
-      },
-      {
-        "code" : "20009000",
-        "display" : "Epidural use"
-      },
-      {
-        "code" : "20010000",
-        "display" : "Epilesional use"
-      },
-      {
-        "code" : "20011000",
-        "display" : "Extraamniotic use"
-      },
-      {
-        "code" : "20011500",
-        "display" : "Extracorporeal use"
-      },
-      {
-        "code" : "20013500",
-        "display" : "Gastric use"
-      },
-      {
-        "code" : "20013000",
-        "display" : "Gastroenteral use"
-      },
-      {
-        "code" : "20014000",
-        "display" : "Gingival use"
-      },
-      {
-        "code" : "20015000",
-        "display" : "Haemodialysis"
-      },
-      {
-        "code" : "20015500",
-        "display" : "Implantation"
-      },
-      {
-        "code" : "20019500",
-        "display" : "Infiltration"
-      },
-      {
-        "code" : "20020000",
-        "display" : "Inhalation use"
-      },
-      {
-        "code" : "20021000",
-        "display" : "Intestinal use"
-      },
-      {
-        "code" : "20022000",
-        "display" : "Intraamniotic use"
-      },
-      {
-        "code" : "20023000",
-        "display" : "Intraarterial use"
-      },
-      {
-        "code" : "20024000",
-        "display" : "Intraarticular use"
-      },
-      {
-        "code" : "20025000",
-        "display" : "Intrabursal use"
-      },
-      {
-        "code" : "20025500",
-        "display" : "Intracameral use"
-      },
-      {
-        "code" : "20026000",
-        "display" : "Intracardiac use"
-      },
-      {
-        "code" : "20026500",
-        "display" : "Intracartilaginous use"
-      },
-      {
-        "code" : "20027000",
-        "display" : "Intracavernous use"
-      },
-      {
-        "code" : "20027010",
-        "display" : "Intracerebral use"
-      },
-      {
-        "code" : "20080000",
-        "display" : "Intracerebroventricular use"
-      },
-      {
-        "code" : "20028000",
-        "display" : "Intracervical use"
-      },
-      {
-        "code" : "20028300",
-        "display" : "Intracholangiopancreatic use"
-      },
-      {
-        "code" : "20028500",
-        "display" : "Intracisternal use"
-      },
-      {
-        "code" : "20029000",
-        "display" : "Intracoronary use"
-      },
-      {
-        "code" : "20030000",
-        "display" : "Intradermal use"
-      },
-      {
-        "code" : "20031000",
-        "display" : "Intradiscal use"
-      },
-      {
-        "code" : "20031500",
-        "display" : "Intraepidermal use"
-      },
-      {
-        "code" : "20031700",
-        "display" : "Intraglandular use"
-      },
-      {
-        "code" : "20032000",
-        "display" : "Intralesional use"
-      },
-      {
-        "code" : "20033000",
-        "display" : "Intralymphatic use"
-      },
-      {
-        "code" : "20035000",
-        "display" : "Intramuscular use"
-      },
-      {
-        "code" : "20036000",
-        "display" : "Intraocular use"
-      },
-      {
-        "code" : "20036500",
-        "display" : "Intraosseous use"
-      },
-      {
-        "code" : "20037000",
-        "display" : "Intrapericardial use"
-      },
-      {
-        "code" : "20038000",
-        "display" : "Intraperitoneal use"
-      },
-      {
-        "code" : "20039000",
-        "display" : "Intrapleural use"
-      },
-      {
-        "code" : "20039200",
-        "display" : "Intraportal use"
-      },
-      {
-        "code" : "20039500",
-        "display" : "Intraprostatic use"
-      },
-      {
-        "code" : "20041000",
-        "display" : "Intrasternal use"
-      },
-      {
-        "code" : "20042000",
-        "display" : "Intrathecal use"
-      },
-      {
-        "code" : "20043000",
-        "display" : "Intratumoral use"
-      },
-      {
-        "code" : "20044000",
-        "display" : "Intrauterine use"
-      },
-      {
-        "code" : "20045000",
-        "display" : "Intravenous use"
-      },
-      {
-        "code" : "20046000",
-        "display" : "Intravesical use"
-      },
-      {
-        "code" : "20047000",
-        "display" : "Intravitreal use"
-      },
-      {
-        "code" : "20047500",
-        "display" : "Iontophoresis"
-      },
-      {
-        "code" : "20048000",
-        "display" : "Laryngopharyngeal use"
-      },
-      {
-        "code" : "20049000",
-        "display" : "Nasal use"
-      },
-      {
-        "code" : "20051000",
-        "display" : "Ocular use"
-      },
-      {
-        "code" : "20053000",
-        "display" : "Oral use"
-      },
-      {
-        "code" : "20054000",
-        "display" : "Oromucosal use"
-      },
-      {
-        "code" : "20055000",
-        "display" : "Oropharyngeal use"
-      },
-      {
-        "code" : "20057000",
-        "display" : "Periarticular use"
-      },
-      {
-        "code" : "20058000",
-        "display" : "Perineural use"
-      },
-      {
-        "code" : "20059000",
-        "display" : "Periodontal use"
-      },
-      {
-        "code" : "20059300",
-        "display" : "Periosseous use"
-      },
-      {
-        "code" : "20059400",
-        "display" : "Peritumoral use"
-      },
-      {
-        "code" : "20059500",
-        "display" : "Posterior juxtascleral use"
-      },
-      {
-        "code" : "20061000",
-        "display" : "Rectal use"
-      },
-      {
-        "code" : "20061500",
-        "display" : "Retrobulbar use"
-      },
-      {
-        "code" : "20062000",
-        "display" : "Route of administration not applicable"
-      },
-      {
-        "code" : "20063000",
-        "display" : "Skin scarification"
-      },
-      {
-        "code" : "20065000",
-        "display" : "Subconjunctival use"
-      },
-      {
-        "code" : "20066000",
-        "display" : "Subcutaneous use"
-      },
-      {
-        "code" : "20067000",
-        "display" : "Sublingual use"
-      },
-      {
-        "code" : "20067500",
-        "display" : "Submucosal use"
-      },
-      {
-        "code" : "20081000",
-        "display" : "Subretinal use"
-      },
-      {
-        "code" : "20070000",
-        "display" : "Transdermal use"
-      },
-      {
-        "code" : "20071000",
-        "display" : "Urethral use"
-      },
-      {
-        "code" : "20072000",
-        "display" : "Vaginal use"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "status" : "active",
-  "expansion" : {
-    "identifier" : "urn:uuid:e09c293a-aac2-4784-84c9-2351667b2115",
-    "timestamp" : "2020-04-29T20:15:49.771Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueBoolean" : true
-    },
-    {
-      "name" : "excludeNested",
-      "valueBoolean" : true
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://standardterms.edqm.eu|5 March 2019"
-    }],
-    "contains" : [{
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20001000",
-      "display" : "Auricular use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20002500",
-      "display" : "Buccal use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20003000",
-      "display" : "Cutaneous use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20004000",
-      "display" : "Dental use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20006000",
-      "display" : "Endocervical use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20007000",
-      "display" : "Endosinusial use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20008000",
-      "display" : "Endotracheopulmonary use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20009000",
-      "display" : "Epidural use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20010000",
-      "display" : "Epilesional use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20011000",
-      "display" : "Extraamniotic use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20011500",
-      "display" : "Extracorporeal use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20013500",
-      "display" : "Gastric use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20013000",
-      "display" : "Gastroenteral use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20014000",
-      "display" : "Gingival use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20015000",
-      "display" : "Haemodialysis"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20015500",
-      "display" : "Implantation"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20019500",
-      "display" : "Infiltration"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20020000",
-      "display" : "Inhalation use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20021000",
-      "display" : "Intestinal use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20022000",
-      "display" : "Intraamniotic use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20023000",
-      "display" : "Intraarterial use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20024000",
-      "display" : "Intraarticular use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20025000",
-      "display" : "Intrabursal use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20025500",
-      "display" : "Intracameral use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20026000",
-      "display" : "Intracardiac use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20026500",
-      "display" : "Intracartilaginous use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20027000",
-      "display" : "Intracavernous use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20027010",
-      "display" : "Intracerebral use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20080000",
-      "display" : "Intracerebroventricular use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20028000",
-      "display" : "Intracervical use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20028300",
-      "display" : "Intracholangiopancreatic use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20028500",
-      "display" : "Intracisternal use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20029000",
-      "display" : "Intracoronary use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20030000",
-      "display" : "Intradermal use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20031000",
-      "display" : "Intradiscal use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20031500",
-      "display" : "Intraepidermal use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20031700",
-      "display" : "Intraglandular use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20032000",
-      "display" : "Intralesional use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20033000",
-      "display" : "Intralymphatic use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20035000",
-      "display" : "Intramuscular use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20036000",
-      "display" : "Intraocular use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20036500",
-      "display" : "Intraosseous use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20037000",
-      "display" : "Intrapericardial use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20038000",
-      "display" : "Intraperitoneal use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20039000",
-      "display" : "Intrapleural use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20039200",
-      "display" : "Intraportal use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20039500",
-      "display" : "Intraprostatic use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20041000",
-      "display" : "Intrasternal use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20042000",
-      "display" : "Intrathecal use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20043000",
-      "display" : "Intratumoral use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20044000",
-      "display" : "Intrauterine use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20045000",
-      "display" : "Intravenous use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20046000",
-      "display" : "Intravesical use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20047000",
-      "display" : "Intravitreal use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20047500",
-      "display" : "Iontophoresis"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20048000",
-      "display" : "Laryngopharyngeal use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20049000",
-      "display" : "Nasal use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20051000",
-      "display" : "Ocular use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20053000",
-      "display" : "Oral use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20054000",
-      "display" : "Oromucosal use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20055000",
-      "display" : "Oropharyngeal use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20057000",
-      "display" : "Periarticular use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20058000",
-      "display" : "Perineural use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20059000",
-      "display" : "Periodontal use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20059300",
-      "display" : "Periosseous use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20059400",
-      "display" : "Peritumoral use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20059500",
-      "display" : "Posterior juxtascleral use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20061000",
-      "display" : "Rectal use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20061500",
-      "display" : "Retrobulbar use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20062000",
-      "display" : "Route of administration not applicable"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20063000",
-      "display" : "Skin scarification"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20065000",
-      "display" : "Subconjunctival use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20066000",
-      "display" : "Subcutaneous use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20067000",
-      "display" : "Sublingual use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20067500",
-      "display" : "Submucosal use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20081000",
-      "display" : "Subretinal use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20070000",
-      "display" : "Transdermal use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20071000",
-      "display" : "Urethral use"
-    },
-    {
-      "system" : "http://standardterms.edqm.eu",
-      "code" : "20072000",
-      "display" : "Vaginal use"
-    }]
-  }
-},
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20001000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Auricular use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20002500"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Buccal use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20003000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Cutaneous use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20004000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Dental use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20006000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Endocervical use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20007000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Endosinusial use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20008000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Endotracheopulmonary use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20009000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Epidural use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20010000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Epilesional use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20011000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Extraamniotic use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20011500"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Extracorporeal use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20013500"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Gastric use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20013000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Gastroenteral use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20014000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Gingival use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20015000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Haemodialysis",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20015500"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Implantation",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20019500"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Infiltration",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20020000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Inhalation use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20021000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intestinal use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20022000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intraamniotic use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20023000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intraarterial use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20024000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intraarticular use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20025000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intrabursal use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20025500"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intracameral use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20026000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intracardiac use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20026500"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intracartilaginous use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20027000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intracavernous use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20027010"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intracerebral use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20080000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intracerebroventricular use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20028000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intracervical use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20028300"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intracholangiopancreatic use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20028500"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intracisternal use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20029000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intracoronary use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20030000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intradermal use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20031000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intradiscal use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20031500"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intraepidermal use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20031700"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intraglandular use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20032000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intralesional use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20033000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intralymphatic use",
+  "severity" : null,
   "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://standardterms.edqm.eu",
   "code" : "20035000"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://standardterms.edqm.eu",
-      "concept" : [{
-        "code" : "20001000",
-        "display" : "Auricular use"
-      },
-      {
-        "code" : "20002500",
-        "display" : "Buccal use"
-      },
-      {
-        "code" : "20003000",
-        "display" : "Cutaneous use"
-      },
-      {
-        "code" : "20004000",
-        "display" : "Dental use"
-      },
-      {
-        "code" : "20006000",
-        "display" : "Endocervical use"
-      },
-      {
-        "code" : "20007000",
-        "display" : "Endosinusial use"
-      },
-      {
-        "code" : "20008000",
-        "display" : "Endotracheopulmonary use"
-      },
-      {
-        "code" : "20009000",
-        "display" : "Epidural use"
-      },
-      {
-        "code" : "20010000",
-        "display" : "Epilesional use"
-      },
-      {
-        "code" : "20011000",
-        "display" : "Extraamniotic use"
-      },
-      {
-        "code" : "20011500",
-        "display" : "Extracorporeal use"
-      },
-      {
-        "code" : "20013500",
-        "display" : "Gastric use"
-      },
-      {
-        "code" : "20013000",
-        "display" : "Gastroenteral use"
-      },
-      {
-        "code" : "20014000",
-        "display" : "Gingival use"
-      },
-      {
-        "code" : "20015000",
-        "display" : "Haemodialysis"
-      },
-      {
-        "code" : "20015500",
-        "display" : "Implantation"
-      },
-      {
-        "code" : "20019500",
-        "display" : "Infiltration"
-      },
-      {
-        "code" : "20020000",
-        "display" : "Inhalation use"
-      },
-      {
-        "code" : "20021000",
-        "display" : "Intestinal use"
-      },
-      {
-        "code" : "20022000",
-        "display" : "Intraamniotic use"
-      },
-      {
-        "code" : "20023000",
-        "display" : "Intraarterial use"
-      },
-      {
-        "code" : "20024000",
-        "display" : "Intraarticular use"
-      },
-      {
-        "code" : "20025000",
-        "display" : "Intrabursal use"
-      },
-      {
-        "code" : "20025500",
-        "display" : "Intracameral use"
-      },
-      {
-        "code" : "20026000",
-        "display" : "Intracardiac use"
-      },
-      {
-        "code" : "20026500",
-        "display" : "Intracartilaginous use"
-      },
-      {
-        "code" : "20027000",
-        "display" : "Intracavernous use"
-      },
-      {
-        "code" : "20027010",
-        "display" : "Intracerebral use"
-      },
-      {
-        "code" : "20080000",
-        "display" : "Intracerebroventricular use"
-      },
-      {
-        "code" : "20028000",
-        "display" : "Intracervical use"
-      },
-      {
-        "code" : "20028300",
-        "display" : "Intracholangiopancreatic use"
-      },
-      {
-        "code" : "20028500",
-        "display" : "Intracisternal use"
-      },
-      {
-        "code" : "20029000",
-        "display" : "Intracoronary use"
-      },
-      {
-        "code" : "20030000",
-        "display" : "Intradermal use"
-      },
-      {
-        "code" : "20031000",
-        "display" : "Intradiscal use"
-      },
-      {
-        "code" : "20031500",
-        "display" : "Intraepidermal use"
-      },
-      {
-        "code" : "20031700",
-        "display" : "Intraglandular use"
-      },
-      {
-        "code" : "20032000",
-        "display" : "Intralesional use"
-      },
-      {
-        "code" : "20033000",
-        "display" : "Intralymphatic use"
-      },
-      {
-        "code" : "20035000",
-        "display" : "Intramuscular use"
-      },
-      {
-        "code" : "20036000",
-        "display" : "Intraocular use"
-      },
-      {
-        "code" : "20036500",
-        "display" : "Intraosseous use"
-      },
-      {
-        "code" : "20037000",
-        "display" : "Intrapericardial use"
-      },
-      {
-        "code" : "20038000",
-        "display" : "Intraperitoneal use"
-      },
-      {
-        "code" : "20039000",
-        "display" : "Intrapleural use"
-      },
-      {
-        "code" : "20039200",
-        "display" : "Intraportal use"
-      },
-      {
-        "code" : "20039500",
-        "display" : "Intraprostatic use"
-      },
-      {
-        "code" : "20041000",
-        "display" : "Intrasternal use"
-      },
-      {
-        "code" : "20042000",
-        "display" : "Intrathecal use"
-      },
-      {
-        "code" : "20043000",
-        "display" : "Intratumoral use"
-      },
-      {
-        "code" : "20044000",
-        "display" : "Intrauterine use"
-      },
-      {
-        "code" : "20045000",
-        "display" : "Intravenous use"
-      },
-      {
-        "code" : "20046000",
-        "display" : "Intravesical use"
-      },
-      {
-        "code" : "20047000",
-        "display" : "Intravitreal use"
-      },
-      {
-        "code" : "20047500",
-        "display" : "Iontophoresis"
-      },
-      {
-        "code" : "20048000",
-        "display" : "Laryngopharyngeal use"
-      },
-      {
-        "code" : "20049000",
-        "display" : "Nasal use"
-      },
-      {
-        "code" : "20051000",
-        "display" : "Ocular use"
-      },
-      {
-        "code" : "20053000",
-        "display" : "Oral use"
-      },
-      {
-        "code" : "20054000",
-        "display" : "Oromucosal use"
-      },
-      {
-        "code" : "20055000",
-        "display" : "Oropharyngeal use"
-      },
-      {
-        "code" : "20057000",
-        "display" : "Periarticular use"
-      },
-      {
-        "code" : "20058000",
-        "display" : "Perineural use"
-      },
-      {
-        "code" : "20059000",
-        "display" : "Periodontal use"
-      },
-      {
-        "code" : "20059300",
-        "display" : "Periosseous use"
-      },
-      {
-        "code" : "20059400",
-        "display" : "Peritumoral use"
-      },
-      {
-        "code" : "20059500",
-        "display" : "Posterior juxtascleral use"
-      },
-      {
-        "code" : "20061000",
-        "display" : "Rectal use"
-      },
-      {
-        "code" : "20061500",
-        "display" : "Retrobulbar use"
-      },
-      {
-        "code" : "20062000",
-        "display" : "Route of administration not applicable"
-      },
-      {
-        "code" : "20063000",
-        "display" : "Skin scarification"
-      },
-      {
-        "code" : "20065000",
-        "display" : "Subconjunctival use"
-      },
-      {
-        "code" : "20066000",
-        "display" : "Subcutaneous use"
-      },
-      {
-        "code" : "20067000",
-        "display" : "Sublingual use"
-      },
-      {
-        "code" : "20067500",
-        "display" : "Submucosal use"
-      },
-      {
-        "code" : "20081000",
-        "display" : "Subretinal use"
-      },
-      {
-        "code" : "20070000",
-        "display" : "Transdermal use"
-      },
-      {
-        "code" : "20071000",
-        "display" : "Urethral use"
-      },
-      {
-        "code" : "20072000",
-        "display" : "Vaginal use"
-      }]
-    }]
-  }
-}, "lang":"fr-LU", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "Intramuscular use",
   "severity" : null,
@@ -1077,344 +401,390 @@ v: {
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://standardterms.edqm.eu",
-  "code" : "20035000",
-  "display" : "Intramuscular use"
-}, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://standardterms.edqm.eu",
-      "concept" : [{
-        "code" : "20001000",
-        "display" : "Auricular use"
-      },
-      {
-        "code" : "20002500",
-        "display" : "Buccal use"
-      },
-      {
-        "code" : "20003000",
-        "display" : "Cutaneous use"
-      },
-      {
-        "code" : "20004000",
-        "display" : "Dental use"
-      },
-      {
-        "code" : "20006000",
-        "display" : "Endocervical use"
-      },
-      {
-        "code" : "20007000",
-        "display" : "Endosinusial use"
-      },
-      {
-        "code" : "20008000",
-        "display" : "Endotracheopulmonary use"
-      },
-      {
-        "code" : "20009000",
-        "display" : "Epidural use"
-      },
-      {
-        "code" : "20010000",
-        "display" : "Epilesional use"
-      },
-      {
-        "code" : "20011000",
-        "display" : "Extraamniotic use"
-      },
-      {
-        "code" : "20011500",
-        "display" : "Extracorporeal use"
-      },
-      {
-        "code" : "20013500",
-        "display" : "Gastric use"
-      },
-      {
-        "code" : "20013000",
-        "display" : "Gastroenteral use"
-      },
-      {
-        "code" : "20014000",
-        "display" : "Gingival use"
-      },
-      {
-        "code" : "20015000",
-        "display" : "Haemodialysis"
-      },
-      {
-        "code" : "20015500",
-        "display" : "Implantation"
-      },
-      {
-        "code" : "20019500",
-        "display" : "Infiltration"
-      },
-      {
-        "code" : "20020000",
-        "display" : "Inhalation use"
-      },
-      {
-        "code" : "20021000",
-        "display" : "Intestinal use"
-      },
-      {
-        "code" : "20022000",
-        "display" : "Intraamniotic use"
-      },
-      {
-        "code" : "20023000",
-        "display" : "Intraarterial use"
-      },
-      {
-        "code" : "20024000",
-        "display" : "Intraarticular use"
-      },
-      {
-        "code" : "20025000",
-        "display" : "Intrabursal use"
-      },
-      {
-        "code" : "20025500",
-        "display" : "Intracameral use"
-      },
-      {
-        "code" : "20026000",
-        "display" : "Intracardiac use"
-      },
-      {
-        "code" : "20026500",
-        "display" : "Intracartilaginous use"
-      },
-      {
-        "code" : "20027000",
-        "display" : "Intracavernous use"
-      },
-      {
-        "code" : "20027010",
-        "display" : "Intracerebral use"
-      },
-      {
-        "code" : "20080000",
-        "display" : "Intracerebroventricular use"
-      },
-      {
-        "code" : "20028000",
-        "display" : "Intracervical use"
-      },
-      {
-        "code" : "20028300",
-        "display" : "Intracholangiopancreatic use"
-      },
-      {
-        "code" : "20028500",
-        "display" : "Intracisternal use"
-      },
-      {
-        "code" : "20029000",
-        "display" : "Intracoronary use"
-      },
-      {
-        "code" : "20030000",
-        "display" : "Intradermal use"
-      },
-      {
-        "code" : "20031000",
-        "display" : "Intradiscal use"
-      },
-      {
-        "code" : "20031500",
-        "display" : "Intraepidermal use"
-      },
-      {
-        "code" : "20031700",
-        "display" : "Intraglandular use"
-      },
-      {
-        "code" : "20032000",
-        "display" : "Intralesional use"
-      },
-      {
-        "code" : "20033000",
-        "display" : "Intralymphatic use"
-      },
-      {
-        "code" : "20035000",
-        "display" : "Intramuscular use"
-      },
-      {
-        "code" : "20036000",
-        "display" : "Intraocular use"
-      },
-      {
-        "code" : "20036500",
-        "display" : "Intraosseous use"
-      },
-      {
-        "code" : "20037000",
-        "display" : "Intrapericardial use"
-      },
-      {
-        "code" : "20038000",
-        "display" : "Intraperitoneal use"
-      },
-      {
-        "code" : "20039000",
-        "display" : "Intrapleural use"
-      },
-      {
-        "code" : "20039200",
-        "display" : "Intraportal use"
-      },
-      {
-        "code" : "20039500",
-        "display" : "Intraprostatic use"
-      },
-      {
-        "code" : "20041000",
-        "display" : "Intrasternal use"
-      },
-      {
-        "code" : "20042000",
-        "display" : "Intrathecal use"
-      },
-      {
-        "code" : "20043000",
-        "display" : "Intratumoral use"
-      },
-      {
-        "code" : "20044000",
-        "display" : "Intrauterine use"
-      },
-      {
-        "code" : "20045000",
-        "display" : "Intravenous use"
-      },
-      {
-        "code" : "20046000",
-        "display" : "Intravesical use"
-      },
-      {
-        "code" : "20047000",
-        "display" : "Intravitreal use"
-      },
-      {
-        "code" : "20047500",
-        "display" : "Iontophoresis"
-      },
-      {
-        "code" : "20048000",
-        "display" : "Laryngopharyngeal use"
-      },
-      {
-        "code" : "20049000",
-        "display" : "Nasal use"
-      },
-      {
-        "code" : "20051000",
-        "display" : "Ocular use"
-      },
-      {
-        "code" : "20053000",
-        "display" : "Oral use"
-      },
-      {
-        "code" : "20054000",
-        "display" : "Oromucosal use"
-      },
-      {
-        "code" : "20055000",
-        "display" : "Oropharyngeal use"
-      },
-      {
-        "code" : "20057000",
-        "display" : "Periarticular use"
-      },
-      {
-        "code" : "20058000",
-        "display" : "Perineural use"
-      },
-      {
-        "code" : "20059000",
-        "display" : "Periodontal use"
-      },
-      {
-        "code" : "20059300",
-        "display" : "Periosseous use"
-      },
-      {
-        "code" : "20059400",
-        "display" : "Peritumoral use"
-      },
-      {
-        "code" : "20059500",
-        "display" : "Posterior juxtascleral use"
-      },
-      {
-        "code" : "20061000",
-        "display" : "Rectal use"
-      },
-      {
-        "code" : "20061500",
-        "display" : "Retrobulbar use"
-      },
-      {
-        "code" : "20062000",
-        "display" : "Route of administration not applicable"
-      },
-      {
-        "code" : "20063000",
-        "display" : "Skin scarification"
-      },
-      {
-        "code" : "20065000",
-        "display" : "Subconjunctival use"
-      },
-      {
-        "code" : "20066000",
-        "display" : "Subcutaneous use"
-      },
-      {
-        "code" : "20067000",
-        "display" : "Sublingual use"
-      },
-      {
-        "code" : "20067500",
-        "display" : "Submucosal use"
-      },
-      {
-        "code" : "20081000",
-        "display" : "Subretinal use"
-      },
-      {
-        "code" : "20070000",
-        "display" : "Transdermal use"
-      },
-      {
-        "code" : "20071000",
-        "display" : "Urethral use"
-      },
-      {
-        "code" : "20072000",
-        "display" : "Vaginal use"
-      }]
-    }]
-  }
-}, "lang":"fr-LU", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+  "code" : "20036000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "Intramuscular use",
+  "display" : "Intraocular use",
   "severity" : null,
   "error" : ""
 }
 -------------------------------------------------------------------------------------
 {"code" : {
   "system" : "http://standardterms.edqm.eu",
-  "code" : "20035000"
-}, "valueSet" :null, "lang":"fr-LU", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+  "code" : "20036500"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
-  "display" : "Intramuscular use",
+  "display" : "Intraosseous use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20037000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intrapericardial use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20038000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intraperitoneal use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20039000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intrapleural use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20039200"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intraportal use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20039500"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intraprostatic use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20041000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intrasternal use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20042000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intrathecal use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20043000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intratumoral use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20044000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intrauterine use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20045000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intravenous use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20046000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intravesical use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20047000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intravitreal use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20047500"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Iontophoresis",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20048000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Laryngopharyngeal use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20049000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Nasal use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20051000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Ocular use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20053000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Oral use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20054000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Oromucosal use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20055000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Oropharyngeal use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20057000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Periarticular use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20058000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Perineural use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20059000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Periodontal use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20059300"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Periosseous use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20059400"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Peritumoral use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20059500"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Posterior juxtascleral use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20061000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Rectal use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20061500"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Retrobulbar use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20062000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Route of administration not applicable",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20063000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Skin scarification",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20065000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Subconjunctival use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20066000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Subcutaneous use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20067000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Sublingual use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20067500"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Submucosal use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20081000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Subretinal use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20070000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Transdermal use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20071000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Urethral use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20072000"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Vaginal use",
   "severity" : null,
   "error" : ""
 }
@@ -2091,16 +1461,6 @@ v: {
     }]
   }
 }, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
-v: {
-  "display" : "Oral use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20053000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
 v: {
   "display" : "Oral use",
   "severity" : null,
@@ -5840,6 +5200,683 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20035000"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://standardterms.edqm.eu",
+      "concept" : [{
+        "code" : "20001000",
+        "display" : "Auricular use"
+      },
+      {
+        "code" : "20002500",
+        "display" : "Buccal use"
+      },
+      {
+        "code" : "20003000",
+        "display" : "Cutaneous use"
+      },
+      {
+        "code" : "20004000",
+        "display" : "Dental use"
+      },
+      {
+        "code" : "20006000",
+        "display" : "Endocervical use"
+      },
+      {
+        "code" : "20007000",
+        "display" : "Endosinusial use"
+      },
+      {
+        "code" : "20008000",
+        "display" : "Endotracheopulmonary use"
+      },
+      {
+        "code" : "20009000",
+        "display" : "Epidural use"
+      },
+      {
+        "code" : "20010000",
+        "display" : "Epilesional use"
+      },
+      {
+        "code" : "20011000",
+        "display" : "Extraamniotic use"
+      },
+      {
+        "code" : "20011500",
+        "display" : "Extracorporeal use"
+      },
+      {
+        "code" : "20013500",
+        "display" : "Gastric use"
+      },
+      {
+        "code" : "20013000",
+        "display" : "Gastroenteral use"
+      },
+      {
+        "code" : "20014000",
+        "display" : "Gingival use"
+      },
+      {
+        "code" : "20015000",
+        "display" : "Haemodialysis"
+      },
+      {
+        "code" : "20015500",
+        "display" : "Implantation"
+      },
+      {
+        "code" : "20019500",
+        "display" : "Infiltration"
+      },
+      {
+        "code" : "20020000",
+        "display" : "Inhalation use"
+      },
+      {
+        "code" : "20021000",
+        "display" : "Intestinal use"
+      },
+      {
+        "code" : "20022000",
+        "display" : "Intraamniotic use"
+      },
+      {
+        "code" : "20023000",
+        "display" : "Intraarterial use"
+      },
+      {
+        "code" : "20024000",
+        "display" : "Intraarticular use"
+      },
+      {
+        "code" : "20025000",
+        "display" : "Intrabursal use"
+      },
+      {
+        "code" : "20025500",
+        "display" : "Intracameral use"
+      },
+      {
+        "code" : "20026000",
+        "display" : "Intracardiac use"
+      },
+      {
+        "code" : "20026500",
+        "display" : "Intracartilaginous use"
+      },
+      {
+        "code" : "20027000",
+        "display" : "Intracavernous use"
+      },
+      {
+        "code" : "20027010",
+        "display" : "Intracerebral use"
+      },
+      {
+        "code" : "20080000",
+        "display" : "Intracerebroventricular use"
+      },
+      {
+        "code" : "20028000",
+        "display" : "Intracervical use"
+      },
+      {
+        "code" : "20028300",
+        "display" : "Intracholangiopancreatic use"
+      },
+      {
+        "code" : "20028500",
+        "display" : "Intracisternal use"
+      },
+      {
+        "code" : "20029000",
+        "display" : "Intracoronary use"
+      },
+      {
+        "code" : "20030000",
+        "display" : "Intradermal use"
+      },
+      {
+        "code" : "20031000",
+        "display" : "Intradiscal use"
+      },
+      {
+        "code" : "20031500",
+        "display" : "Intraepidermal use"
+      },
+      {
+        "code" : "20031700",
+        "display" : "Intraglandular use"
+      },
+      {
+        "code" : "20032000",
+        "display" : "Intralesional use"
+      },
+      {
+        "code" : "20033000",
+        "display" : "Intralymphatic use"
+      },
+      {
+        "code" : "20035000",
+        "display" : "Intramuscular use"
+      },
+      {
+        "code" : "20036000",
+        "display" : "Intraocular use"
+      },
+      {
+        "code" : "20036500",
+        "display" : "Intraosseous use"
+      },
+      {
+        "code" : "20037000",
+        "display" : "Intrapericardial use"
+      },
+      {
+        "code" : "20038000",
+        "display" : "Intraperitoneal use"
+      },
+      {
+        "code" : "20039000",
+        "display" : "Intrapleural use"
+      },
+      {
+        "code" : "20039200",
+        "display" : "Intraportal use"
+      },
+      {
+        "code" : "20039500",
+        "display" : "Intraprostatic use"
+      },
+      {
+        "code" : "20041000",
+        "display" : "Intrasternal use"
+      },
+      {
+        "code" : "20042000",
+        "display" : "Intrathecal use"
+      },
+      {
+        "code" : "20043000",
+        "display" : "Intratumoral use"
+      },
+      {
+        "code" : "20044000",
+        "display" : "Intrauterine use"
+      },
+      {
+        "code" : "20045000",
+        "display" : "Intravenous use"
+      },
+      {
+        "code" : "20046000",
+        "display" : "Intravesical use"
+      },
+      {
+        "code" : "20047000",
+        "display" : "Intravitreal use"
+      },
+      {
+        "code" : "20047500",
+        "display" : "Iontophoresis"
+      },
+      {
+        "code" : "20048000",
+        "display" : "Laryngopharyngeal use"
+      },
+      {
+        "code" : "20049000",
+        "display" : "Nasal use"
+      },
+      {
+        "code" : "20051000",
+        "display" : "Ocular use"
+      },
+      {
+        "code" : "20053000",
+        "display" : "Oral use"
+      },
+      {
+        "code" : "20054000",
+        "display" : "Oromucosal use"
+      },
+      {
+        "code" : "20055000",
+        "display" : "Oropharyngeal use"
+      },
+      {
+        "code" : "20057000",
+        "display" : "Periarticular use"
+      },
+      {
+        "code" : "20058000",
+        "display" : "Perineural use"
+      },
+      {
+        "code" : "20059000",
+        "display" : "Periodontal use"
+      },
+      {
+        "code" : "20059300",
+        "display" : "Periosseous use"
+      },
+      {
+        "code" : "20059400",
+        "display" : "Peritumoral use"
+      },
+      {
+        "code" : "20059500",
+        "display" : "Posterior juxtascleral use"
+      },
+      {
+        "code" : "20061000",
+        "display" : "Rectal use"
+      },
+      {
+        "code" : "20061500",
+        "display" : "Retrobulbar use"
+      },
+      {
+        "code" : "20062000",
+        "display" : "Route of administration not applicable"
+      },
+      {
+        "code" : "20063000",
+        "display" : "Skin scarification"
+      },
+      {
+        "code" : "20065000",
+        "display" : "Subconjunctival use"
+      },
+      {
+        "code" : "20066000",
+        "display" : "Subcutaneous use"
+      },
+      {
+        "code" : "20067000",
+        "display" : "Sublingual use"
+      },
+      {
+        "code" : "20067500",
+        "display" : "Submucosal use"
+      },
+      {
+        "code" : "20081000",
+        "display" : "Subretinal use"
+      },
+      {
+        "code" : "20070000",
+        "display" : "Transdermal use"
+      },
+      {
+        "code" : "20071000",
+        "display" : "Urethral use"
+      },
+      {
+        "code" : "20072000",
+        "display" : "Vaginal use"
+      }]
+    }]
+  }
+}, "lang":"fr-LU", "useServer":"true", "useClient":"false", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intramuscular use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20035000",
+  "display" : "Intramuscular use"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://standardterms.edqm.eu",
+      "concept" : [{
+        "code" : "20001000",
+        "display" : "Auricular use"
+      },
+      {
+        "code" : "20002500",
+        "display" : "Buccal use"
+      },
+      {
+        "code" : "20003000",
+        "display" : "Cutaneous use"
+      },
+      {
+        "code" : "20004000",
+        "display" : "Dental use"
+      },
+      {
+        "code" : "20006000",
+        "display" : "Endocervical use"
+      },
+      {
+        "code" : "20007000",
+        "display" : "Endosinusial use"
+      },
+      {
+        "code" : "20008000",
+        "display" : "Endotracheopulmonary use"
+      },
+      {
+        "code" : "20009000",
+        "display" : "Epidural use"
+      },
+      {
+        "code" : "20010000",
+        "display" : "Epilesional use"
+      },
+      {
+        "code" : "20011000",
+        "display" : "Extraamniotic use"
+      },
+      {
+        "code" : "20011500",
+        "display" : "Extracorporeal use"
+      },
+      {
+        "code" : "20013500",
+        "display" : "Gastric use"
+      },
+      {
+        "code" : "20013000",
+        "display" : "Gastroenteral use"
+      },
+      {
+        "code" : "20014000",
+        "display" : "Gingival use"
+      },
+      {
+        "code" : "20015000",
+        "display" : "Haemodialysis"
+      },
+      {
+        "code" : "20015500",
+        "display" : "Implantation"
+      },
+      {
+        "code" : "20019500",
+        "display" : "Infiltration"
+      },
+      {
+        "code" : "20020000",
+        "display" : "Inhalation use"
+      },
+      {
+        "code" : "20021000",
+        "display" : "Intestinal use"
+      },
+      {
+        "code" : "20022000",
+        "display" : "Intraamniotic use"
+      },
+      {
+        "code" : "20023000",
+        "display" : "Intraarterial use"
+      },
+      {
+        "code" : "20024000",
+        "display" : "Intraarticular use"
+      },
+      {
+        "code" : "20025000",
+        "display" : "Intrabursal use"
+      },
+      {
+        "code" : "20025500",
+        "display" : "Intracameral use"
+      },
+      {
+        "code" : "20026000",
+        "display" : "Intracardiac use"
+      },
+      {
+        "code" : "20026500",
+        "display" : "Intracartilaginous use"
+      },
+      {
+        "code" : "20027000",
+        "display" : "Intracavernous use"
+      },
+      {
+        "code" : "20027010",
+        "display" : "Intracerebral use"
+      },
+      {
+        "code" : "20080000",
+        "display" : "Intracerebroventricular use"
+      },
+      {
+        "code" : "20028000",
+        "display" : "Intracervical use"
+      },
+      {
+        "code" : "20028300",
+        "display" : "Intracholangiopancreatic use"
+      },
+      {
+        "code" : "20028500",
+        "display" : "Intracisternal use"
+      },
+      {
+        "code" : "20029000",
+        "display" : "Intracoronary use"
+      },
+      {
+        "code" : "20030000",
+        "display" : "Intradermal use"
+      },
+      {
+        "code" : "20031000",
+        "display" : "Intradiscal use"
+      },
+      {
+        "code" : "20031500",
+        "display" : "Intraepidermal use"
+      },
+      {
+        "code" : "20031700",
+        "display" : "Intraglandular use"
+      },
+      {
+        "code" : "20032000",
+        "display" : "Intralesional use"
+      },
+      {
+        "code" : "20033000",
+        "display" : "Intralymphatic use"
+      },
+      {
+        "code" : "20035000",
+        "display" : "Intramuscular use"
+      },
+      {
+        "code" : "20036000",
+        "display" : "Intraocular use"
+      },
+      {
+        "code" : "20036500",
+        "display" : "Intraosseous use"
+      },
+      {
+        "code" : "20037000",
+        "display" : "Intrapericardial use"
+      },
+      {
+        "code" : "20038000",
+        "display" : "Intraperitoneal use"
+      },
+      {
+        "code" : "20039000",
+        "display" : "Intrapleural use"
+      },
+      {
+        "code" : "20039200",
+        "display" : "Intraportal use"
+      },
+      {
+        "code" : "20039500",
+        "display" : "Intraprostatic use"
+      },
+      {
+        "code" : "20041000",
+        "display" : "Intrasternal use"
+      },
+      {
+        "code" : "20042000",
+        "display" : "Intrathecal use"
+      },
+      {
+        "code" : "20043000",
+        "display" : "Intratumoral use"
+      },
+      {
+        "code" : "20044000",
+        "display" : "Intrauterine use"
+      },
+      {
+        "code" : "20045000",
+        "display" : "Intravenous use"
+      },
+      {
+        "code" : "20046000",
+        "display" : "Intravesical use"
+      },
+      {
+        "code" : "20047000",
+        "display" : "Intravitreal use"
+      },
+      {
+        "code" : "20047500",
+        "display" : "Iontophoresis"
+      },
+      {
+        "code" : "20048000",
+        "display" : "Laryngopharyngeal use"
+      },
+      {
+        "code" : "20049000",
+        "display" : "Nasal use"
+      },
+      {
+        "code" : "20051000",
+        "display" : "Ocular use"
+      },
+      {
+        "code" : "20053000",
+        "display" : "Oral use"
+      },
+      {
+        "code" : "20054000",
+        "display" : "Oromucosal use"
+      },
+      {
+        "code" : "20055000",
+        "display" : "Oropharyngeal use"
+      },
+      {
+        "code" : "20057000",
+        "display" : "Periarticular use"
+      },
+      {
+        "code" : "20058000",
+        "display" : "Perineural use"
+      },
+      {
+        "code" : "20059000",
+        "display" : "Periodontal use"
+      },
+      {
+        "code" : "20059300",
+        "display" : "Periosseous use"
+      },
+      {
+        "code" : "20059400",
+        "display" : "Peritumoral use"
+      },
+      {
+        "code" : "20059500",
+        "display" : "Posterior juxtascleral use"
+      },
+      {
+        "code" : "20061000",
+        "display" : "Rectal use"
+      },
+      {
+        "code" : "20061500",
+        "display" : "Retrobulbar use"
+      },
+      {
+        "code" : "20062000",
+        "display" : "Route of administration not applicable"
+      },
+      {
+        "code" : "20063000",
+        "display" : "Skin scarification"
+      },
+      {
+        "code" : "20065000",
+        "display" : "Subconjunctival use"
+      },
+      {
+        "code" : "20066000",
+        "display" : "Subcutaneous use"
+      },
+      {
+        "code" : "20067000",
+        "display" : "Sublingual use"
+      },
+      {
+        "code" : "20067500",
+        "display" : "Submucosal use"
+      },
+      {
+        "code" : "20081000",
+        "display" : "Subretinal use"
+      },
+      {
+        "code" : "20070000",
+        "display" : "Transdermal use"
+      },
+      {
+        "code" : "20071000",
+        "display" : "Urethral use"
+      },
+      {
+        "code" : "20072000",
+        "display" : "Vaginal use"
+      }]
+    }]
+  }
+}, "lang":"fr-LU", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"NO_MEMBERSHIP_CHECK"}####
+v: {
+  "display" : "Intramuscular use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://standardterms.edqm.eu",
+  "code" : "20035000"
+}, "valueSet" :null, "lang":"fr-LU", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "Intramuscular use",
+  "severity" : null,
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
 {"hierarchical" : true, "valueSet" :{
   "resourceType" : "ValueSet",
   "compose" : {
@@ -7697,8 +7734,8 @@ e: {
   "resourceType" : "ValueSet",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:a528deed-2425-4bd5-84da-0f3a1aeda1a8",
-    "timestamp" : "2020-04-29T20:24:50.862Z",
+    "identifier" : "urn:uuid:1d3920b7-7ed5-481f-b197-83fd64d109a5",
+    "timestamp" : "2020-05-17T15:04:18.461Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -10346,8 +10383,8 @@ e: {
   "resourceType" : "ValueSet",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:4d668fab-a03f-4b76-aeed-7b08a9c89717",
-    "timestamp" : "2020-04-29T20:24:51.815Z",
+    "identifier" : "urn:uuid:b981b028-6b88-479f-9352-ca9981683ffc",
+    "timestamp" : "2020-05-17T15:04:25.304Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -10753,786 +10790,6 @@ e: {
     }]
   }
 },
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20001000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Auricular use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20002500"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Buccal use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20003000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Cutaneous use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20004000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Dental use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20006000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Endocervical use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20007000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Endosinusial use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20008000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Endotracheopulmonary use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20009000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Epidural use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20010000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Epilesional use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20011000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Extraamniotic use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20011500"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Extracorporeal use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20013500"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Gastric use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20013000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Gastroenteral use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20014000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Gingival use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20015000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Haemodialysis",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20015500"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Implantation",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20019500"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Infiltration",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20020000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Inhalation use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20021000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intestinal use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20022000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intraamniotic use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20023000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intraarterial use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20024000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intraarticular use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20025000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intrabursal use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20025500"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intracameral use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20026000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intracardiac use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20026500"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intracartilaginous use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20027000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intracavernous use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20027010"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intracerebral use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20080000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intracerebroventricular use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20028000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intracervical use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20028300"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intracholangiopancreatic use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20028500"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intracisternal use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20029000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intracoronary use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20030000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intradermal use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20031000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intradiscal use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20031500"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intraepidermal use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20031700"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intraglandular use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20032000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intralesional use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20033000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intralymphatic use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20035000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intramuscular use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20036000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intraocular use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20036500"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intraosseous use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20037000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intrapericardial use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20038000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intraperitoneal use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20039000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intrapleural use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20039200"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intraportal use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20039500"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intraprostatic use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20041000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intrasternal use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20042000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intrathecal use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20043000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intratumoral use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20044000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intrauterine use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20045000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intravenous use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20046000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intravesical use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20047000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Intravitreal use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20047500"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Iontophoresis",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20048000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Laryngopharyngeal use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20049000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Nasal use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20051000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Ocular use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20054000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Oromucosal use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20055000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Oropharyngeal use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20057000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Periarticular use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20058000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Perineural use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20059000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Periodontal use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20059300"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Periosseous use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20059400"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Peritumoral use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20059500"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Posterior juxtascleral use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20061000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Rectal use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20061500"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Retrobulbar use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20062000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Route of administration not applicable",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20063000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Skin scarification",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20065000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Subconjunctival use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20066000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Subcutaneous use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20067000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Sublingual use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20067500"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Submucosal use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20081000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Subretinal use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20070000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Transdermal use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20071000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Urethral use",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://standardterms.edqm.eu",
-  "code" : "20072000"
-}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Vaginal use",
-  "severity" : null,
   "error" : ""
 }
 -------------------------------------------------------------------------------------
