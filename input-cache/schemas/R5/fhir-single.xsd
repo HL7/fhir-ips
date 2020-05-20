@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Mon, May 18, 2020 15:06+0000 for FHIR v4.4.0 
+  Generated on Wed, May 20, 2020 12:31+0000 for FHIR v4.4.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.4.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -3490,21 +3490,18 @@ The type is the Canonical URL of Resource Definition that is the type this refer
     <xs:complexContent>
       <xs:extension base="BackboneType">
         <xs:sequence>
-          <xs:element name="identifier" type="Identifier" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Unique identifier for the packaged Medicinal Product.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="type" type="CodeableConcept" minOccurs="1" maxOccurs="1">
+          <xs:element name="type" type="CodeableConcept" minOccurs="0" maxOccurs="1">
             <xs:annotation>
               <xs:documentation xml:lang="en">This describes the shelf life, taking into account various scenarios such as shelf life of the packaged Medicinal Product itself, shelf life after transformation where necessary and shelf life after the first opening of a bottle, etc. The shelf life type shall be specified using an appropriate controlled vocabulary The controlled term and the controlled term identifier shall be specified.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="period" type="Quantity" minOccurs="1" maxOccurs="1">
+          <xs:choice minOccurs="0" maxOccurs="1">
             <xs:annotation>
               <xs:documentation xml:lang="en">The shelf life time period can be specified using a numerical value for the period of time and its unit of time measurement The unit of measurement shall be specified in accordance with ISO 11240 and the resulting terminology The symbol and the symbol identifier shall be used.</xs:documentation>
             </xs:annotation>
-          </xs:element>
+           <xs:element name="periodQuantity" type="Quantity"  maxOccurs="1"/>
+           <xs:element name="periodString" type="string"  maxOccurs="1"/>
+          </xs:choice>
           <xs:element name="specialPrecautionsForStorage" type="CodeableConcept" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation xml:lang="en">Special precautions for storage, if any, can be specified using an appropriate controlled vocabulary The controlled term and the controlled term identifier shall be specified.</xs:documentation>
@@ -10999,6 +10996,11 @@ into another (possibly the same) biological entity.</xs:documentation>
               <xs:documentation xml:lang="en">A formal identifier that is used to identify things closely related to this citation.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="summary" type="Citation.Summary" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A human-readable display of the citation.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="dateCited" minOccurs="0" maxOccurs="1" type="dateTime">
             <xs:annotation>
               <xs:documentation xml:lang="en">Date Cited.</xs:documentation>
@@ -11093,6 +11095,27 @@ into another (possibly the same) biological entity.</xs:documentation>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
+  <xs:complexType name="Citation.Summary">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">The Citation.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="style" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Format for display of the citation.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="text" minOccurs="1" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The human-readable display of the citation.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
   <xs:complexType name="Citation.VariantCitation">
     <xs:annotation>
       <xs:documentation xml:lang="en">The Citation.</xs:documentation>
@@ -11172,9 +11195,50 @@ into another (possibly the same) biological entity.</xs:documentation>
               <xs:documentation xml:lang="en">Issue, part or supplement of journal in which the article is published.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="publicationDate" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="publicationDate" type="Citation.PublicationDate" minOccurs="0" maxOccurs="1">
             <xs:annotation>
               <xs:documentation xml:lang="en">Date on which the issue of the journal was published.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Citation.PublicationDate">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">The Citation.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="date" minOccurs="0" maxOccurs="1" type="date">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Defining the date on which the issue of the joutnal was published.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="year" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Year on which the issue of the journal was published.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="month" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Month on which the issue of the journal was published.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="day" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Day on which the issue of the journal was published.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="season" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Spring, Summer, Fall/Autumn, Winter.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="text" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Text representation of the date of which the issue of the journal was published.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -11302,7 +11366,7 @@ into another (possibly the same) biological entity.</xs:documentation>
               <xs:documentation xml:lang="en">An individual entity named in the author list or contributor list.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="summary" type="Citation.Summary" minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="summary" type="Citation.Summary1" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
               <xs:documentation xml:lang="en">Used to record a display of the author/contributor list without separate coding for each list member.</xs:documentation>
            </xs:annotation>
@@ -11403,7 +11467,7 @@ into another (possibly the same) biological entity.</xs:documentation>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="Citation.Summary">
+  <xs:complexType name="Citation.Summary1">
     <xs:annotation>
       <xs:documentation xml:lang="en">The Citation.</xs:documentation>
     </xs:annotation>
@@ -11413,6 +11477,11 @@ into another (possibly the same) biological entity.</xs:documentation>
           <xs:element name="type" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
               <xs:documentation xml:lang="en">Used most commonly to express an author list or a contributorship statement.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="style" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The format for the display string.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="source" minOccurs="0" maxOccurs="1" type="CodeableConcept">
@@ -11482,9 +11551,50 @@ into another (possibly the same) biological entity.</xs:documentation>
               <xs:documentation xml:lang="en">Issue, part or supplement of journal in which the article is published.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="publicationDate" minOccurs="0" maxOccurs="1" type="string">
+          <xs:element name="publicationDate" type="Citation.PublicationDate1" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Defining the date on which the issue of the joutnal was published.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Citation.PublicationDate1">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">The Citation.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="date" minOccurs="0" maxOccurs="1" type="date">
             <xs:annotation>
               <xs:documentation xml:lang="en">Date on which the issue of the journal was published.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="year" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Year on which the issue of the journal was published.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="month" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Month on which the issue of the journal was published.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="day" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Day on which the issue of the journal was published.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="season" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Spring, Summer, Fall/Autumn, Winter.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="text" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Text representation of the date of which the issue of the journal was published.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -34645,7 +34755,7 @@ The primary difference between a medicationusage and a medicationadministration 
           </xs:element>
           <xs:element name="knownAllergen" minOccurs="0" maxOccurs="unbounded" type="CodeableReference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Allergens that are known to be a part of this nutrition product.</xs:documentation>
+              <xs:documentation xml:lang="en">Allergens that are known or suspected to be a part of this nutrition product.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="productCharacteristic" type="NutritionProduct.ProductCharacteristic" minOccurs="0" maxOccurs="unbounded">
@@ -39422,7 +39532,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:element name="holder" minOccurs="0" maxOccurs="1" type="Reference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Marketing Authorization Holder.</xs:documentation>
+              <xs:documentation xml:lang="en">The organization that holds the granted authorization.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="regulator" minOccurs="0" maxOccurs="1" type="Reference">
