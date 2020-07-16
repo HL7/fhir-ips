@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Mon, Jun 8, 2020 23:15+0000 for FHIR v4.4.0 
+  Generated on Thu, Jun 25, 2020 14:35+0000 for FHIR v4.4.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.4.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -1765,9 +1765,40 @@ The value of mustSupport SHALL be a FHIRPath resolveable on the type of the Data
           </xs:element>
           <xs:element name="attributeEstimate" type="Statistic.AttributeEstimate" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation xml:lang="en">An estimate of the precision of the statistic.</xs:documentation>
+              <xs:documentation xml:lang="en">A statistical attribute of the statistic such as a measure of heterogeneity.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="modelCharacteristic" type="Statistic.ModelCharacteristic" minOccurs="0" maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A component of the method to generate the statistic.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Statistic.ModelCharacteristic">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">A fact or piece of data from a  study of a large quantity of numerical data.  A mathematical or quantified characteristic of a group of observations.</xs:documentation>
+      <xs:documentation xml:lang="en">If the element is present, it must have a value for at least one of the defined elements, an @id referenced from the Narrative, or extensions</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneType">
+        <xs:sequence>
+          <xs:element name="code" type="CodeableConcept" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Description of a component of the method to generate the statistic.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:choice minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Further specification of a component of the method to generate the statistic.</xs:documentation>
+            </xs:annotation>
+           <xs:element name="valueCodeableConcept" type="CodeableConcept"  maxOccurs="1"/>
+           <xs:element name="valueBoolean" type="boolean"  maxOccurs="1"/>
+           <xs:element name="valueQuantity" type="Quantity"  maxOccurs="1"/>
+           <xs:element name="valueRange" type="Range"  maxOccurs="1"/>
+          </xs:choice>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -1834,12 +1865,12 @@ The value of mustSupport SHALL be a FHIRPath resolveable on the type of the Data
           </xs:element>
           <xs:element name="type" type="CodeableConcept" minOccurs="0" maxOccurs="1">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The estimateType of precision estimate, eg confidence interval or p value type.</xs:documentation>
+              <xs:documentation xml:lang="en">The type of attribute estimate, eg confidence interval or p value.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="quantity" type="Quantity" minOccurs="0" maxOccurs="1">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The singular quantity of the precision estimate, for precision estimates represented as single values; also used to report unit of measure.</xs:documentation>
+              <xs:documentation xml:lang="en">The singular quantity of the attribute estimate, for attribute estimates represented as single values; also used to report unit of measure.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="level" type="decimal" minOccurs="0" maxOccurs="1">
@@ -1852,16 +1883,16 @@ The value of mustSupport SHALL be a FHIRPath resolveable on the type of the Data
               <xs:documentation xml:lang="en">Lower bound of confidence interval.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="estimateQualifier" type="Statistic.EstimateQualifier" minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="attributeEstimate" type="Statistic.AttributeEstimate1" minOccurs="0" maxOccurs="unbounded">
             <xs:annotation>
-              <xs:documentation xml:lang="en">An estimate of the precision of the estimate.</xs:documentation>
+              <xs:documentation xml:lang="en">A nested attribute estimate; which is the attribute estimate of an attribute estimate.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
   </xs:complexType>
-  <xs:complexType name="Statistic.EstimateQualifier">
+  <xs:complexType name="Statistic.AttributeEstimate1">
     <xs:annotation>
       <xs:documentation xml:lang="en">A fact or piece of data from a  study of a large quantity of numerical data.  A mathematical or quantified characteristic of a group of observations.</xs:documentation>
       <xs:documentation xml:lang="en">If the element is present, it must have a value for at least one of the defined elements, an @id referenced from the Narrative, or extensions</xs:documentation>
@@ -1881,7 +1912,7 @@ The value of mustSupport SHALL be a FHIRPath resolveable on the type of the Data
           </xs:element>
           <xs:element name="type" type="CodeableConcept" minOccurs="0" maxOccurs="1">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The estimateType of attribute estimate, eg confidence interval or p value type.</xs:documentation>
+              <xs:documentation xml:lang="en">The type of attribute estimate, eg confidence interval or p value.</xs:documentation>
             </xs:annotation>
           </xs:element>
           <xs:element name="quantity" type="Quantity" minOccurs="0" maxOccurs="1">
@@ -11215,6 +11246,11 @@ into another (possibly the same) biological entity.</xs:documentation>
               <xs:documentation xml:lang="en">The date the article was added to the database.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="revisionDate" minOccurs="0" maxOccurs="1" type="dateTime">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The date the article was last revised or updated in the database.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
           <xs:element name="pageCount" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Actual or Approximate number of pages or screens.</xs:documentation>
@@ -11540,6 +11576,11 @@ into another (possibly the same) biological entity.</xs:documentation>
               <xs:documentation xml:lang="en">Indicates the inclusive pages for the article cited.</xs:documentation>
            </xs:annotation>
           </xs:element>
+          <xs:element name="publicationInfo" type="Citation.PublicationInfo1" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Citation detail for sources other than journals such as books and databases.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -11636,6 +11677,73 @@ into another (possibly the same) biological entity.</xs:documentation>
           <xs:element name="lastPage" minOccurs="0" maxOccurs="1" type="string">
             <xs:annotation>
               <xs:documentation xml:lang="en">Used for isolated representation of last page.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Citation.PublicationInfo1">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">The Citation.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="publishedIn" type="Citation.PublishedIn1" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The collection the cited article is published in.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="entryDate" minOccurs="0" maxOccurs="1" type="dateTime">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The date the article was added to the database.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="revisionDate" minOccurs="0" maxOccurs="1" type="dateTime">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The date the article was last revised or updated in the database.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="pageCount" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Actual or Approximate number of pages or screens.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="Citation.PublishedIn1">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">The Citation.</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="BackboneElement">
+        <xs:sequence>
+          <xs:element name="type" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Database or book.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="name" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Name of the database or title of the book.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="publisher" minOccurs="0" maxOccurs="1" type="Reference">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Name of the publisher.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="publisherLocation" minOccurs="0" maxOccurs="1" type="string">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Geographic location of the publisher.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="startDate" minOccurs="0" maxOccurs="1" type="date">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">When the database was first available or when the book was published.</xs:documentation>
            </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -15872,7 +15980,7 @@ into another (possibly the same) biological entity.</xs:documentation>
           </xs:element>
           <xs:element name="scope" minOccurs="1" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">A selector of the type of consent being presented: Privacy, Treatment,  or Research.  This list is now extensible.</xs:documentation>
+              <xs:documentation xml:lang="en">A selector of the type of consent being presented with the base being Privacy, Treatment,  or Research.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="category" minOccurs="1" maxOccurs="unbounded" type="CodeableConcept">
@@ -32457,7 +32565,7 @@ UDILabelName | UserFriendlyName | PatientReportedName | ManufactureDeviceName | 
           </xs:element>
           <xs:element name="doNotPerform" minOccurs="0" maxOccurs="1" type="boolean">
             <xs:annotation>
-              <xs:documentation xml:lang="en">If true indicates that the provider is asking for the medication request not to occur.</xs:documentation>
+              <xs:documentation xml:lang="en">If true, indicates that the provider is asking for the patient to either stop taking or to not start taking the specified medication. For example, the patient is taking an existing medication and the provider is changing their medication. They want to create two seperate requests: one to stop using the current medication and another to start the new medication.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="reported" minOccurs="0" maxOccurs="1" type="boolean">
@@ -39780,7 +39888,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:element name="subject" minOccurs="0" maxOccurs="1" type="Reference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The type of product or service that is being authorized.</xs:documentation>
+              <xs:documentation xml:lang="en">Reference to the actual product, service or entity that is being authorized.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="type" minOccurs="0" maxOccurs="1" type="CodeableConcept">
@@ -39847,7 +39955,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:element name="regulator" minOccurs="0" maxOccurs="1" type="Reference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Medicines Regulatory Agency.</xs:documentation>
+              <xs:documentation xml:lang="en">The regulatory agency or organization that is granting the authorization.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="case" type="RegulatedAuthorization.Case" minOccurs="0" maxOccurs="1">
