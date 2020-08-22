@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Thu, Jun 25, 2020 14:35+0000 for FHIR v4.4.0 
+  Generated on Tue, Jul 21, 2020 15:59+0000 for FHIR v4.4.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.4.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -1758,6 +1758,11 @@ The value of mustSupport SHALL be a FHIRPath resolveable on the type of the Data
               <xs:documentation xml:lang="en">Statistic value.</xs:documentation>
             </xs:annotation>
           </xs:element>
+          <xs:element name="numberOfEvents" type="integer" minOccurs="0" maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The number of events associated with the statistic.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
           <xs:element name="sampleSize" type="Statistic.SampleSize" minOccurs="0" maxOccurs="1">
             <xs:annotation>
               <xs:documentation xml:lang="en">Number of samples in the statistic.</xs:documentation>
@@ -1834,11 +1839,6 @@ The value of mustSupport SHALL be a FHIRPath resolveable on the type of the Data
           <xs:element name="knownDataCount" type="integer" minOccurs="0" maxOccurs="1">
             <xs:annotation>
               <xs:documentation xml:lang="en">Number of participants with known results for measured variables.</xs:documentation>
-            </xs:annotation>
-          </xs:element>
-          <xs:element name="numeratorCount" type="integer" minOccurs="0" maxOccurs="1">
-            <xs:annotation>
-              <xs:documentation xml:lang="en">Number of participants with “positive” results, only used to report actual numerator count for a proportion.</xs:documentation>
             </xs:annotation>
           </xs:element>
         </xs:sequence>
@@ -3551,7 +3551,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
               <xs:documentation xml:lang="en">A short name assigned to the expression to allow for multiple reuse of the expression in the context where it is defined.</xs:documentation>
             </xs:annotation>
           </xs:element>
-          <xs:element name="language" type="ExpressionLanguage" minOccurs="1" maxOccurs="1">
+          <xs:element name="language" type="code" minOccurs="1" maxOccurs="1">
             <xs:annotation>
               <xs:documentation xml:lang="en">The media type of the language for the expression.</xs:documentation>
             </xs:annotation>
@@ -3569,36 +3569,6 @@ The type is the Canonical URL of Resource Definition that is the type this refer
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
-  </xs:complexType>
-  <xs:simpleType name="ExpressionLanguage-list">
-    <xs:restriction base="code-primitive">
-      <xs:enumeration value="text/cql">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">CQL</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="text/fhirpath">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">FHIRPath</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-      <xs:enumeration value="application/x-fhir-query">
-        <xs:annotation>
-          <xs:documentation xml:lang="en">FHIR Query</xs:documentation>
-        </xs:annotation>
-      </xs:enumeration>
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:complexType name="ExpressionLanguage">
-    <xs:annotation>
-      <xs:documentation xml:lang="en">The media type of the expression language.</xs:documentation>
-      <xs:documentation xml:lang="en">If the element is present, it must have either a @value, an @id, or extensions</xs:documentation>
-    </xs:annotation>
-    <xs:complexContent>
-       <xs:extension base="Element">
-         <xs:attribute name="value" type="ExpressionLanguage-list" use="optional"/>
-       </xs:extension>
-     </xs:complexContent>
   </xs:complexType>
   <xs:complexType name="CodeableReference">
     <xs:annotation>
@@ -13545,7 +13515,7 @@ into another (possibly the same) biological entity.</xs:documentation>
           </xs:element>
           <xs:element name="category" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">A categorisation of the issue, primarily for dividing warnings into subject heading areas such as &quot;Pregnancy and Lactation&quot;, &quot;Overdose&quot;, &quot;Effects Ability to Drive and Use Machines&quot;.</xs:documentation>
+              <xs:documentation xml:lang="en">A categorisation of the issue, primarily for dividing warnings into subject heading areas such as &quot;Pregnancy and Lactation&quot;, &quot;Overdose&quot;, &quot;Effects on Ability to Drive and Use Machines&quot;.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="subject" minOccurs="0" maxOccurs="unbounded" type="Reference">
@@ -13555,12 +13525,12 @@ into another (possibly the same) biological entity.</xs:documentation>
           </xs:element>
           <xs:element name="status" minOccurs="0" maxOccurs="1" type="CodeableConcept">
             <xs:annotation>
-              <xs:documentation xml:lang="en">General description.</xs:documentation>
+              <xs:documentation xml:lang="en">Whether this is a current issue or one that has been retired etc.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="description" minOccurs="0" maxOccurs="1" type="markdown">
             <xs:annotation>
-              <xs:documentation xml:lang="en">General description.</xs:documentation>
+              <xs:documentation xml:lang="en">General description of an effect (particularly for a general warning, rather than any of the more specific types such as indication) for when a distinct coded or textual description is not appropriate using  Indication.diseaseSymptomProcedure.text, Contraindication.diseaseSymptomProcedure.text etc. For example &quot;May affect ability to drive&quot;.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="contraindication" type="ClinicalUseIssue.Contraindication" minOccurs="0" maxOccurs="1">
@@ -16003,9 +15973,14 @@ into another (possibly the same) biological entity.</xs:documentation>
               <xs:documentation xml:lang="en">Either the Grantor, which is the entity responsible for granting the rights listed in a Consent Directive or the Grantee, which is the entity responsible for complying with the Consent Directive, including any obligations or limitations on authorizations and enforcement of prohibitions.</xs:documentation>
            </xs:annotation>
           </xs:element>
-          <xs:element name="organization" minOccurs="0" maxOccurs="unbounded" type="Reference">
+          <xs:element name="manager" minOccurs="0" maxOccurs="unbounded" type="Reference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The organization that manages the consent, and the framework within which it is executed.</xs:documentation>
+              <xs:documentation xml:lang="en">The actor that manages the consent through its lifecycle.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="controller" minOccurs="0" maxOccurs="unbounded" type="Reference">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">The actor that controls/enforces the access according to the consent.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="sourceAttachment" minOccurs="0" maxOccurs="unbounded" type="Attachment">
@@ -39888,7 +39863,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:element name="subject" minOccurs="0" maxOccurs="1" type="Reference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">Reference to the actual product, service or entity that is being authorized.</xs:documentation>
+              <xs:documentation xml:lang="en">The type of product or service that is being authorized.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="type" minOccurs="0" maxOccurs="1" type="CodeableConcept">
@@ -39955,7 +39930,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
           </xs:element>
           <xs:element name="regulator" minOccurs="0" maxOccurs="1" type="Reference">
             <xs:annotation>
-              <xs:documentation xml:lang="en">The regulatory agency or organization that is granting the authorization.</xs:documentation>
+              <xs:documentation xml:lang="en">Medicines Regulatory Agency.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="case" type="RegulatedAuthorization.Case" minOccurs="0" maxOccurs="1">

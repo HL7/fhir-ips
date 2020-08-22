@@ -9,23 +9,62 @@ v: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-  "code" : "437158"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "Acetaminophen 100 MG",
-  "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"code" : {
-  "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-  "code" : "332122"
-}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
-v: {
-  "display" : "lithium citrate 60 MG/ML",
-  "severity" : null,
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept" : [{
+        "code" : "331055",
+        "display" : "Amoxicillin 1000 MG"
+      },
+      {
+        "code" : "437158",
+        "display" : "Acetaminophen 100 MG"
+      },
+      {
+        "code" : "332122",
+        "display" : "lithium citrate 60 MG/ML"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:a3acb598-2dde-4238-9e47-e2a14bb1e60b",
+    "timestamp" : "2020-08-22T22:42:49.223Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://www.nlm.nih.gov/research/umls/rxnorm|??"
+    }],
+    "contains" : [{
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "331055",
+      "display" : "Amoxicillin 1000 MG"
+    },
+    {
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "437158",
+      "display" : "Acetaminophen 100 MG"
+    },
+    {
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "code" : "332122",
+      "display" : "lithium citrate 60 MG/ML"
+    }]
+  }
+},
   "error" : ""
 }
 -------------------------------------------------------------------------------------
@@ -1948,65 +1987,6 @@ v: {
 v: {
   "display" : "Simvastatin",
   "severity" : null,
-  "error" : ""
-}
--------------------------------------------------------------------------------------
-{"hierarchical" : false, "valueSet" :{
-  "resourceType" : "ValueSet",
-  "compose" : {
-    "include" : [{
-      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "concept" : [{
-        "code" : "331055",
-        "display" : "Amoxicillin 1000 MG"
-      },
-      {
-        "code" : "437158",
-        "display" : "Acetaminophen 100 MG"
-      },
-      {
-        "code" : "332122",
-        "display" : "lithium citrate 60 MG/ML"
-      }]
-    }]
-  }
-}}####
-e: {
-  "valueSet" : {
-  "resourceType" : "ValueSet",
-  "status" : "active",
-  "expansion" : {
-    "identifier" : "urn:uuid:8399f110-cbfe-489f-99a1-10533dca7377",
-    "timestamp" : "2020-07-15T18:21:12.899Z",
-    "parameter" : [{
-      "name" : "limitedExpansion",
-      "valueBoolean" : true
-    },
-    {
-      "name" : "excludeNested",
-      "valueBoolean" : true
-    },
-    {
-      "name" : "version",
-      "valueString" : "http://www.nlm.nih.gov/research/umls/rxnorm|??"
-    }],
-    "contains" : [{
-      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "code" : "331055",
-      "display" : "Amoxicillin 1000 MG"
-    },
-    {
-      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "code" : "437158",
-      "display" : "Acetaminophen 100 MG"
-    },
-    {
-      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
-      "code" : "332122",
-      "display" : "lithium citrate 60 MG/ML"
-    }]
-  }
-},
   "error" : ""
 }
 -------------------------------------------------------------------------------------

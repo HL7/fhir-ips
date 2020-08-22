@@ -1592,3 +1592,1580 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.whocc.no/atc"
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "status" : "active",
+  "expansion" : {
+    "identifier" : "urn:uuid:14387413-579b-459e-8994-fe83624691e7",
+    "timestamp" : "2020-08-22T03:55:15.460Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "excludeNested",
+      "valueBoolean" : true
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://www.whocc.no/atc|January 2020"
+    }],
+    "contains" : [{
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A",
+      "display" : "ALIMENTARY TRACT AND METABOLISM"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01",
+      "display" : "STOMATOLOGICAL PREPARATIONS"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01A",
+      "display" : "STOMATOLOGICAL PREPARATIONS"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AA",
+      "display" : "Caries prophylactic agents"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AA01",
+      "display" : "sodium fluoride"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AA02",
+      "display" : "sodium monofluorophosphate"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AA03",
+      "display" : "olaflur"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AA04",
+      "display" : "stannous fluoride"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AA30",
+      "display" : "combinations"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AA51",
+      "display" : "sodium fluoride, combinations"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AB",
+      "display" : "Antiinfectives and antiseptics for local oral treatment"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AB02",
+      "display" : "hydrogen peroxide"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AB03",
+      "display" : "chlorhexidine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AB04",
+      "display" : "amphotericin B"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AB05",
+      "display" : "polynoxylin"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AB06",
+      "display" : "domiphen"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AB07",
+      "display" : "oxyquinoline"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AB08",
+      "display" : "neomycin"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AB09",
+      "display" : "miconazole"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AB10",
+      "display" : "natamycin"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AB11",
+      "display" : "various"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AB12",
+      "display" : "hexetidine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AB13",
+      "display" : "tetracycline"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AB14",
+      "display" : "benzoxonium chloride"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AB15",
+      "display" : "tibezonium iodide"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AB16",
+      "display" : "mepartricin"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AB17",
+      "display" : "metronidazole"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AB18",
+      "display" : "clotrimazole"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AB19",
+      "display" : "sodium perborate"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AB21",
+      "display" : "chlortetracycline"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AB22",
+      "display" : "doxycycline"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AB23",
+      "display" : "minocycline"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AC",
+      "display" : "Corticosteroids for local oral treatment"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AC01",
+      "display" : "triamcinolone"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AC02",
+      "display" : "dexamethasone"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AC03",
+      "display" : "hydrocortisone"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AC54",
+      "display" : "prednisolone, combinations"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AD",
+      "display" : "Other agents for local oral treatment"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AD01",
+      "display" : "epinephrine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AD02",
+      "display" : "benzydamine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AD05",
+      "display" : "acetylsalicylic acid"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AD06",
+      "display" : "adrenalone"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AD07",
+      "display" : "amlexanox"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AD08",
+      "display" : "becaplermin"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A01AD11",
+      "display" : "various"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02",
+      "display" : "DRUGS FOR ACID RELATED DISORDERS"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02A",
+      "display" : "ANTACIDS"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AA",
+      "display" : "Magnesium compounds"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AA01",
+      "display" : "magnesium carbonate"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AA02",
+      "display" : "magnesium oxide"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AA03",
+      "display" : "magnesium peroxide"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AA04",
+      "display" : "magnesium hydroxide"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AA05",
+      "display" : "magnesium silicate"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AA10",
+      "display" : "combinations"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AB",
+      "display" : "Aluminium compounds"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AB01",
+      "display" : "aluminium hydroxide"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AB02",
+      "display" : "algeldrate"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AB03",
+      "display" : "aluminium phosphate"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AB04",
+      "display" : "dihydroxialumini sodium carbonate"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AB05",
+      "display" : "aluminium acetoacetate"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AB06",
+      "display" : "aloglutamol"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AB07",
+      "display" : "aluminium glycinate"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AB10",
+      "display" : "combinations"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AC",
+      "display" : "Calcium compounds"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AC01",
+      "display" : "calcium carbonate"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AC02",
+      "display" : "calcium silicate"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AC10",
+      "display" : "combinations"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AD",
+      "display" : "Combinations and complexes of aluminium, calcium and magnesium compounds"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AD01",
+      "display" : "ordinary salt combinations"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AD02",
+      "display" : "magaldrate"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AD03",
+      "display" : "almagate"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AD04",
+      "display" : "hydrotalcite"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AD05",
+      "display" : "almasilate"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AF",
+      "display" : "Antacids with antiflatulents"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AF01",
+      "display" : "magaldrate and antiflatulents"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AF02",
+      "display" : "ordinary salt combinations and antiflatulents"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AG",
+      "display" : "Antacids with antispasmodics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AH",
+      "display" : "Antacids with sodium bicarbonate"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02AX",
+      "display" : "Antacids, other combinations"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02B",
+      "display" : "DRUGS FOR PEPTIC ULCER AND GASTRO-OESOPHAGEAL REFLUX DISEASE (GORD)"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BA",
+      "display" : "H2-receptor antagonists"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BA01",
+      "display" : "cimetidine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BA02",
+      "display" : "ranitidine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BA03",
+      "display" : "famotidine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BA04",
+      "display" : "nizatidine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BA05",
+      "display" : "niperotidine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BA06",
+      "display" : "roxatidine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BA07",
+      "display" : "ranitidine bismuth citrate"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BA08",
+      "display" : "lafutidine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BA51",
+      "display" : "cimetidine, combinations"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BA53",
+      "display" : "famotidine, combinations"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BB",
+      "display" : "Prostaglandins"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BB01",
+      "display" : "misoprostol"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BB02",
+      "display" : "enprostil"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BC",
+      "display" : "Proton pump inhibitors"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BC01",
+      "display" : "omeprazole"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BC02",
+      "display" : "pantoprazole"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BC03",
+      "display" : "lansoprazole"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BC04",
+      "display" : "rabeprazole"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BC05",
+      "display" : "esomeprazole"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BC06",
+      "display" : "dexlansoprazole"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BC07",
+      "display" : "dexrabeprazole"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BC53",
+      "display" : "lansoprazole, combinations"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BC54",
+      "display" : "rabeprazole, combinations"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BD",
+      "display" : "Combinations for eradication of Helicobacter pylori"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BD01",
+      "display" : "omeprazole, amoxicillin and metronidazole"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BD02",
+      "display" : "lansoprazole, tetracycline and metronidazole"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BD03",
+      "display" : "lansoprazole, amoxicillin and metronidazole"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BD04",
+      "display" : "pantoprazole, amoxicillin and clarithromycin"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BD05",
+      "display" : "omeprazole, amoxicillin and clarithromycin"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BD06",
+      "display" : "esomeprazole, amoxicillin and clarithromycin"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BD07",
+      "display" : "lansoprazole, amoxicillin and clarithromycin"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BD08",
+      "display" : "bismuth subcitrate, tetracycline and metronidazole"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BD09",
+      "display" : "lansoprazole, clarithromycin and tinidazole"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BD10",
+      "display" : "lansoprazole, amoxicillin and levofloxacin"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BD11",
+      "display" : "pantoprazole, amoxicillin, clarithromycin and metronidazole"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BD12",
+      "display" : "rabeprazole, amoxicillin and clarithromycin"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BD13",
+      "display" : "rabeprazole, amoxicillin and metronidazole"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BD14",
+      "display" : "vonoprazan, amoxicillin and clarithromycin"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BD15",
+      "display" : "vonoprazan, amoxicillin and metronidazole"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BX",
+      "display" : "Other drugs for peptic ulcer and gastro-oesophageal reflux disease (GORD)"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BX01",
+      "display" : "carbenoxolone"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BX02",
+      "display" : "sucralfate"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BX03",
+      "display" : "pirenzepine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BX04",
+      "display" : "methiosulfonium chloride"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BX05",
+      "display" : "bismuth subcitrate"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BX06",
+      "display" : "proglumide"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BX07",
+      "display" : "gefarnate"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BX08",
+      "display" : "sulglicotide"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BX09",
+      "display" : "acetoxolone"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BX10",
+      "display" : "zolimidine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BX11",
+      "display" : "troxipide"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BX12",
+      "display" : "bismuth subnitrate"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BX13",
+      "display" : "alginic acid"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BX14",
+      "display" : "rebamipide"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BX51",
+      "display" : "carbenoxolone, combinations excl. psycholeptics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BX71",
+      "display" : "carbenoxolone, combinations with psycholeptics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02BX77",
+      "display" : "gefarnate, combinations with psycholeptics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A02X",
+      "display" : "OTHER DRUGS FOR ACID RELATED DISORDERS"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03",
+      "display" : "DRUGS FOR FUNCTIONAL GASTROINTESTINAL DISORDERS"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03A",
+      "display" : "DRUGS FOR FUNCTIONAL GASTROINTESTINAL DISORDERS"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AA",
+      "display" : "Synthetic anticholinergics, esters with tertiary amino group"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AA01",
+      "display" : "oxyphencyclimine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AA03",
+      "display" : "camylofin"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AA04",
+      "display" : "mebeverine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AA05",
+      "display" : "trimebutine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AA06",
+      "display" : "rociverine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AA07",
+      "display" : "dicycloverine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AA08",
+      "display" : "dihexyverine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AA09",
+      "display" : "difemerine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AA30",
+      "display" : "piperidolate"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AB",
+      "display" : "Synthetic anticholinergics, quaternary ammonium compounds"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AB01",
+      "display" : "benzilone"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AB02",
+      "display" : "glycopyrronium bromide"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AB03",
+      "display" : "oxyphenonium"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AB04",
+      "display" : "penthienate"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AB05",
+      "display" : "propantheline"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AB06",
+      "display" : "otilonium bromide"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AB07",
+      "display" : "methantheline"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AB08",
+      "display" : "tridihexethyl"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AB09",
+      "display" : "isopropamide"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AB10",
+      "display" : "hexocyclium"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AB11",
+      "display" : "poldine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AB12",
+      "display" : "mepenzolate"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AB13",
+      "display" : "bevonium"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AB14",
+      "display" : "pipenzolate"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AB15",
+      "display" : "diphemanil"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AB16",
+      "display" : "(2-benzhydryloxyethyl)diethyl-methylammonium iodide"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AB17",
+      "display" : "tiemonium iodide"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AB18",
+      "display" : "prifinium bromide"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AB19",
+      "display" : "timepidium bromide"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AB21",
+      "display" : "fenpiverinium"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AB53",
+      "display" : "oxyphenonium, combinations"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AC",
+      "display" : "Synthetic antispasmodics, amides with tertiary amines"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AC02",
+      "display" : "dimethylaminopropionylphenothiazine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AC04",
+      "display" : "nicofetamide"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AC05",
+      "display" : "tiropramide"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AD",
+      "display" : "Papaverine and derivatives"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AD01",
+      "display" : "papaverine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AD02",
+      "display" : "drotaverine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AD30",
+      "display" : "moxaverine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AE",
+      "display" : "Serotonin receptor antagonists"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AE01",
+      "display" : "alosetron"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AE03",
+      "display" : "cilansetron"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AX",
+      "display" : "Other drugs for functional gastrointestinal disorders"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AX01",
+      "display" : "fenpiprane"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AX02",
+      "display" : "diisopromine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AX03",
+      "display" : "chlorbenzoxamine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AX04",
+      "display" : "pinaverium"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AX05",
+      "display" : "fenoverine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AX06",
+      "display" : "idanpramine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AX07",
+      "display" : "proxazole"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AX08",
+      "display" : "alverine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AX09",
+      "display" : "trepibutone"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AX10",
+      "display" : "isometheptene"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AX11",
+      "display" : "caroverine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AX12",
+      "display" : "phloroglucinol"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AX13",
+      "display" : "silicones"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AX14",
+      "display" : "valethamate"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AX30",
+      "display" : "trimethyldiphenylpropylamine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03AX58",
+      "display" : "alverine, combinations"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03B",
+      "display" : "BELLADONNA AND DERIVATIVES, PLAIN"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03BA",
+      "display" : "Belladonna alkaloids, tertiary amines"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03BA01",
+      "display" : "atropine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03BA03",
+      "display" : "hyoscyamine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03BA04",
+      "display" : "belladonna total alkaloids"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03BB",
+      "display" : "Belladonna alkaloids, semisynthetic, quaternary ammonium compounds"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03BB01",
+      "display" : "butylscopolamine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03BB02",
+      "display" : "methylatropine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03BB03",
+      "display" : "methylscopolamine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03BB04",
+      "display" : "fentonium"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03BB05",
+      "display" : "cimetropium bromide"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03BB06",
+      "display" : "homatropine methylbromide"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03C",
+      "display" : "ANTISPASMODICS IN COMBINATION WITH PSYCHOLEPTICS"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03CA",
+      "display" : "Synthetic anticholinergic agents in combination with psycholeptics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03CA01",
+      "display" : "isopropamide and psycholeptics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03CA02",
+      "display" : "clidinium and psycholeptics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03CA03",
+      "display" : "oxyphencyclimine and psycholeptics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03CA04",
+      "display" : "otilonium bromide and psycholeptics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03CA05",
+      "display" : "glycopyrronium bromide and psycholeptics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03CA06",
+      "display" : "bevonium and psycholeptics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03CA07",
+      "display" : "ambutonium and psycholeptics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03CA08",
+      "display" : "diphemanil and psycholeptics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03CA09",
+      "display" : "pipenzolate and psycholeptics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03CA30",
+      "display" : "emepronium and psycholeptics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03CA34",
+      "display" : "propantheline and psycholeptics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03CB",
+      "display" : "Belladonna and derivatives in combination with psycholeptics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03CB01",
+      "display" : "methylscopolamine and psycholeptics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03CB02",
+      "display" : "belladonna total alkaloids and psycholeptics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03CB03",
+      "display" : "atropine and psycholeptics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03CB04",
+      "display" : "methylhomatropine and psycholeptics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03CB31",
+      "display" : "hyoscyamine and psycholeptics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03CC",
+      "display" : "Other antispasmodics in combination with psycholeptics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03D",
+      "display" : "ANTISPASMODICS IN COMBINATION WITH ANALGESICS"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03DA",
+      "display" : "Synthetic anticholinergic agents in combination with analgesics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03DA01",
+      "display" : "tropenzilone and analgesics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03DA02",
+      "display" : "pitofenone and analgesics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03DA03",
+      "display" : "bevonium and analgesics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03DA04",
+      "display" : "ciclonium and analgesics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03DA05",
+      "display" : "camylofin and analgesics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03DA06",
+      "display" : "trospium and analgesics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03DA07",
+      "display" : "tiemonium iodide and analgesics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03DB",
+      "display" : "Belladonna and derivatives in combination with analgesics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03DB04",
+      "display" : "butylscopolamine and analgesics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03DC",
+      "display" : "Other antispasmodics in combination with analgesics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03E",
+      "display" : "ANTISPASMODICS AND ANTICHOLINERGICS IN COMBINATION WITH OTHER DRUGS"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03EA",
+      "display" : "Antispasmodics, psycholeptics and analgesics in combination"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03ED",
+      "display" : "Antispasmodics in combination with other drugs"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03F",
+      "display" : "PROPULSIVES"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03FA",
+      "display" : "Propulsives"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03FA01",
+      "display" : "metoclopramide"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03FA02",
+      "display" : "cisapride"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03FA03",
+      "display" : "domperidone"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03FA04",
+      "display" : "bromopride"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03FA05",
+      "display" : "alizapride"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03FA06",
+      "display" : "clebopride"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03FA07",
+      "display" : "itopride"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03FA08",
+      "display" : "cinitapride"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A03FA09",
+      "display" : "mosapride"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A04",
+      "display" : "ANTIEMETICS AND ANTINAUSEANTS"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A04A",
+      "display" : "ANTIEMETICS AND ANTINAUSEANTS"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A04AA",
+      "display" : "Serotonin (5HT3) antagonists"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A04AA01",
+      "display" : "ondansetron"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A04AA02",
+      "display" : "granisetron"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A04AA03",
+      "display" : "tropisetron"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A04AA04",
+      "display" : "dolasetron"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A04AA05",
+      "display" : "palonosetron"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A04AA55",
+      "display" : "palonosetron, combinations"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A04AD",
+      "display" : "Other antiemetics"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A04AD01",
+      "display" : "scopolamine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A04AD02",
+      "display" : "cerium oxalate"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A04AD04",
+      "display" : "chlorobutanol"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A04AD05",
+      "display" : "metopimazine"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A04AD10",
+      "display" : "dronabinol"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A04AD11",
+      "display" : "nabilone"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A04AD12",
+      "display" : "aprepitant"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A04AD13",
+      "display" : "casopitant"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A04AD14",
+      "display" : "rolapitant"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A04AD51",
+      "display" : "scopolamine, combinations"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "A04AD54",
+      "display" : "chlorobutanol, combinations"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "B",
+      "display" : "BLOOD AND BLOOD FORMING ORGANS"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "C",
+      "display" : "CARDIOVASCULAR SYSTEM"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "C10",
+      "display" : "LIPID MODIFYING AGENTS"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "C10A",
+      "display" : "LIPID MODIFYING AGENTS, PLAIN"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "C10AA",
+      "display" : "HMG CoA reductase inhibitors"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "C10AA01",
+      "display" : "simvastatin"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "D",
+      "display" : "DERMATOLOGICALS"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "G",
+      "display" : "GENITO URINARY SYSTEM AND SEX HORMONES"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "G02",
+      "display" : "OTHER GYNECOLOGICALS"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "G02C",
+      "display" : "OTHER GYNECOLOGICALS"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "G02CX",
+      "display" : "Other gynecologicals"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "G02CX04",
+      "display" : "Cimicifugae rhizoma"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "H",
+      "display" : "SYSTEMIC HORMONAL PREPARATIONS, EXCL. SEX HORMONES AND INSULINS"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "J",
+      "display" : "ANTIINFECTIVES FOR SYSTEMIC USE"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "J07",
+      "display" : "VACCINES"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "J07C",
+      "display" : "BACTERIAL AND VIRAL VACCINES, COMBINED"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "J07CA",
+      "display" : "Bacterial and viral vaccines, combined"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "J07CA02",
+      "display" : "diphtheria-pertussis-poliomyelitis-tetanus"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "L",
+      "display" : "ANTINEOPLASTIC AND IMMUNOMODULATING AGENTS"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "L02",
+      "display" : "ENDOCRINE THERAPY"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "L02B",
+      "display" : "HORMONE ANTAGONISTS AND RELATED AGENTS"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "L02BG",
+      "display" : "Aromatase inhibitors"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "L02BG03",
+      "display" : "anastrozole"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "M",
+      "display" : "MUSCULO-SKELETAL SYSTEM"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "N",
+      "display" : "NERVOUS SYSTEM"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "P",
+      "display" : "ANTIPARASITIC PRODUCTS, INSECTICIDES AND REPELLENTS"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "R",
+      "display" : "RESPIRATORY SYSTEM"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "S",
+      "display" : "SENSORY ORGANS"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "V",
+      "display" : "VARIOUS"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
