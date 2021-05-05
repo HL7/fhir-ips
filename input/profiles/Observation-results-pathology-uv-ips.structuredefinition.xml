@@ -181,8 +181,8 @@
 		<element id="Observation.specimen">
 			<path value="Observation.specimen"/>
 			<type>
-				<code value="Specimen"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips"/>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>	
