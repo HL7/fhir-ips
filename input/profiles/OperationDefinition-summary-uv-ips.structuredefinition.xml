@@ -1,8 +1,13 @@
 <OperationDefinition xmlns="http://hl7.org/fhir">
     <url value="/fhir/*/OperationDefinition/Patient-t-summary"/>
+<<<<<<< HEAD
     <name value="patient_summary"/>
     <status value="active"/>
     <description value="Patient Summary Requests"/>
+=======
+    <name value="Summary"/>
+    <status value="active"/>
+>>>>>>> 44aaf4c2 (Added optional capability statement and optional operation definition)
     <kind value="operation"/>
     <affectsState value="false"/>
     <code value="summary"/>
@@ -38,4 +43,8 @@
         <max value="1"/>
         <type value="Bundle"/>
     </parameter>
+<<<<<<< HEAD
 </OperationDefinition>
+=======
+</OperationDefinition>
+>>>>>>> 44aaf4c2 (Added optional capability statement and optional operation definition)

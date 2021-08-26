@@ -1,0 +1,41 @@
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+    <id value="3d89fb4f-86fd-4abd-8296-b96d561106b5"/>
+    <name value="IPSServer"/>
+    <status value="active"/>
+    <date value="2021-08-26T10:40:47.474+02:00"/>
+    <publisher value="Not provided"/>
+    <kind value="instance"/>
+    <software>
+        <name value="HAPI FHIR Server"/>
+        <version value="5.5.0"/>
+    </software>
+    <implementation>
+        <description value="HAPI FHIR"/>
+        <url value="/fhir/*"/>
+    </implementation>
+    <fhirVersion value="4.0.1"/>
+    <format value="application/fhir+xml"/>
+    <format value="xml"/>
+    <format value="application/fhir+json"/>
+    <format value="json"/>
+    <rest>
+        <mode value="server"/>
+        <resource>
+            <type value="OperationDefinition"/>
+            <profile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
+            <interaction>
+                <code value="read"/>
+            </interaction>
+            <searchInclude value="*"/>
+        </resource>
+        <resource>
+            <type value="Patient"/>
+            <profile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
+            <searchInclude value="*"/>
+            <operation>
+                <name value="summary"/>
+                <definition value="/fhir/*/OperationDefinition/Patient-t-summary"/>
+            </operation>
+        </resource>
+    </rest>
+</CapabilityStatement>
