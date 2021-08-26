@@ -1,0 +1,41 @@
+<OperationDefinition xmlns="http://hl7.org/fhir">
+    <url value="/fhir/*/OperationDefinition/Patient-t-summary"/>
+    <name value="patient_summary"/>
+    <status value="active"/>
+    <description value="Patient Summary Requests"/>
+    <kind value="operation"/>
+    <affectsState value="false"/>
+    <code value="summary"/>
+    <resource value="Patient"/>
+    <system value="false"/>
+    <type value="true"/>
+    <instance value="true"/>
+    <parameter>
+        <name value="identifer"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="Identifier"/>
+    </parameter>
+    <parameter>
+        <name value="profile"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="uri"/>
+    </parameter>
+    <parameter>
+        <name value="graph"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="uri"/>
+    </parameter>
+    <parameter>
+        <name value="return"/>
+        <use value="out"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="Bundle"/>
+    </parameter>
+</OperationDefinition>
