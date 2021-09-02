@@ -2,11 +2,11 @@
 
 Download the entire implementation guide [here](full-ig.zip).
 
-### Validator Pack and Definitions
+### NPM Package and Definitions
 
 The following file contains all the value sets, profiles, extensions, list of pages and urls in the IG, etc. defined as part of this Implementation Guide:
 
-- [Validator Pack](validator.pack)
+- [NPM Package](package.tgz)
 
 In addition there are format specific definition files:
 
