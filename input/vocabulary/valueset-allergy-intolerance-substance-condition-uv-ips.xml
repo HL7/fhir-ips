@@ -30,62 +30,35 @@
 			<value value="info@hl7.org"/>
 		</telecom>
 	</contact>
-	<description value="IPS Allergy intolerance substance condition value set. This value set includes codes from SNOMED Clinical Terms®: all descendants of 762766007 | Edible substance (substance); all descendants of 406455002 | Allergen class (substance); all descendants of 425620007 | Metal (substance); all descendants of 373873005 | Pharmaceutical / biologic product (product); all descendants of 410942007 |Drug or medicament (substance)"/>
+	<description value="IPS Allergy intolerance substance condition value set. This value set includes codes from SNOMED Clinical Terms®: all descendants of 373873005 |Pharmaceutical / biologic product (product); all descendants of 105590001 |Substance (substance); all descendants of 418038007 |Propensity to adverse reactions to substance (finding)"/>
 	<immutable value="false"/>
 	<copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomed-ct or info@snomed.org"/>
 	<compose>
 		<include>
 			<system value="http://snomed.info/sct"/>
-			<!-- "Drug or medicament" -->
+			<!-- "Substance (substance)" -->
 			<filter>
 				<property value="concept"/>
 				<op value="descendent-of"/>
-				<value value="410942007"/>
+				<value value="105590001"/>
 			</filter>
 		</include>
 		<include>
 			<system value="http://snomed.info/sct"/>
-			<!-- "Edible substance" -->
-			<filter>
-				<property value="concept"/>
-				<op value="descendent-of"/>
-				<value value="762766007"/>
-			</filter>
-		</include>
-		<include>
-			<system value="http://snomed.info/sct"/>
-			<!-- "Allergen class" -->
-			<filter>
-				<property value="concept"/>
-				<op value="descendent-of"/>
-				<value value="406455002"/>
-			</filter>
-		</include>
-		<include>
-			<system value="http://snomed.info/sct"/>
-			<!-- "Biological substance" -->
-			<filter>
-				<property value="concept"/>
-				<op value="descendent-of"/>
-				<value value="115668003"/>
-			</filter>
-		</include>
-		<include>
-			<system value="http://snomed.info/sct"/>
-			<!-- "Metal" -->
-			<filter>
-				<property value="concept"/>
-				<op value="descendent-of"/>
-				<value value="425620007"/>
-			</filter>
-		</include>
-		<include>
-			<system value="http://snomed.info/sct"/>
-			<!-- "Pharmaceutical / biologic product" -->
+			<!-- "Pharmaceutical / biologic product (product)" -->
 			<filter>
 				<property value="concept"/>
 				<op value="descendent-of"/>
 				<value value="373873005"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<!-- "Propensity to adverse reactions to substance (finding)" -->
+			<filter>
+				<property value="concept"/>
+				<op value="descendent-of"/>
+				<value value="418038007"/>
 			</filter>
 		</include>
 	</compose>
