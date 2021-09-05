@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <StructureDefinition xmlns="http://hl7.org/fhir">
 	<id value="ImagingStudy-uv-ips"/>
 	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/ImagingStudy-uv-ips"/>
@@ -54,6 +53,13 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="ImagingProcedureCode"/>
+				</extension>
+				<strength value="extensible"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/results-radiology-observations-uv-ips"/>
+			</binding>
 		</element>
 		<element id="ImagingStudy.reasonCode">
 			<path value="ImagingStudy.reasonCode"/>
@@ -86,6 +92,13 @@
 		<element id="ImagingStudy.series.instance.sopClass">
 			<path value="ImagingStudy.series.instance.sopClass"/>
 			<mustSupport value="true"/>
+			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="DicomStandardSOPClasses"/>
+				</extension>
+				<strength value="extensible"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/dicom-standard-SOP-classes"/>
+			</binding>
 		</element>
 	</differential>
 </StructureDefinition>

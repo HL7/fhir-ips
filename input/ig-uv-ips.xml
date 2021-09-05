@@ -71,7 +71,15 @@
 			</reference>
 			<name value="AllergyIntolerance: resolved allergy"/>
 			<description value="AllergyIntolerance: resolved allergy"/>
-			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"/>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-cross-border-uv-ips"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="AllergyIntolerance/allergyintolerance-multiple-codings"/>
+			</reference>
+			<name value="AllergyIntolerance: multiple codings"/>
+			<description value="AllergyIntolerance: multiple codings"/>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-cross-border-uv-ips"/>
 		</resource>
 		<resource>
 			<reference>
@@ -267,6 +275,14 @@
 		</resource>
 		<resource>
 			<reference>
+				<reference value="Observation/urine-wbc-range"/>
+			</reference>
+			<name value="Observation: urine wbc range example"/>
+			<description value="Observation: urine wbc range example"/>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-uv-ips"/>
+		</resource>
+		<resource>
+			<reference>
 				<reference value="Observation/pathology-cancer"/>
 			</reference>
 			<name value="Observation: estrogen receptor in tissue example"/>
@@ -288,6 +304,24 @@
 			<name value="Media: example"/>
 			<description value="Media: example"/>
 			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Media-observation-uv-ips"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/dicom-cid-29-AcquisitionModality"/>
+			</reference>
+			<name value="AcquisitionModality"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/dicom-cid-33-Modality"/>
+			</reference>
+			<name value="Modality"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/dicom-standard-SOP-classes"/>
+			</reference>
+			<name value="DicomStandardSOPClasses"/>
 		</resource>
 		<page>
 			<nameUrl value="toc.html"/>
@@ -370,5 +404,25 @@
 			<code value="path-binary"/>
 			<value value="input\cql"/>
 		</parameter>
+		<parameter>
+			<code value="special-url"/>
+			<value value="http://id.who.int/icd11/mms"/>
+		</parameter>
+		<parameter>
+			<code value="special-url"/>
+			<value value="urn:oid:1.3.182.4.11.22"/>
+		</parameter>
+		<parameter>
+			<code value="special-url"/>
+			<value value="http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html"/>
+		</parameter>
+		<parameter>
+			<code value="special-url"/>
+			<value value="http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html"/>
+		</parameter>
+		<parameter>
+			<code value="special-url"/>
+			<value value="http://dicom.nema.org/resources/ontology/DCM"/>
+		</parameter>		
 	</definition>
 </ImplementationGuide>
