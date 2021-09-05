@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="icd-11-mms"/>
+  <url value="http://id.who.int/icd11/mms"/>
+  <version value="1.0.0"/>
+  <name value="Icd11Mms"/>
+  <title value="ICD-11 MMS"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <publisher value="World Health Organization (WHO)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://icd.who.int"/>
+    </telecom>
+  </contact>
+  <description value="International Classification of Diseases 11th Revision"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="WHO has developed and retains all rights in the ICD-11 Software. The Software is copyright (©) World Health Organization, 2020, and is distributed under the terms of this Agreement. All rights not granted herein are reserved by WHO."/>
+  <caseSensitive value="false"/>
+  <content value="fragment"/>
+  <concept>
+    <code value="BA41.Z"/>
+    <display value="Acute myocardial infarction, unspecified"/>
+  </concept>
+  <concept>
+    <code value="XA7RE3"/>
+    <display value="Anterior wall of heart"/>
+  </concept>
+  <concept>
+    <code value="BA41.Z&amp;XA7RE3"/>
+    <display value="Acute myocardial infarction, unspecified [Anterior wall of heart]"/>
+  </concept>
+</CodeSystem>
