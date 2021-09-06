@@ -92,8 +92,13 @@
 			<max value="1"/>
 			<mustSupport value="true"/>
 			<binding>
+				<!--
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet">
+					<valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips"/>
+				</extension>
+			-->
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="GPS"/>
+					<valueString value="AllergyIntolerance GPS"/>
 				</extension>
 				<strength value="required"/>
 				<description value="Codes for allergy or intolerance from the SNOMED CT GPS code set"/>
