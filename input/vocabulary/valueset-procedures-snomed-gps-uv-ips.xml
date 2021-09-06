@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ValueSet xmlns="http://hl7.org/fhir" xmlns:f="http://hl7.org/fhir">
-	<id value="procedures-uv-ips"/>
+	<id value="procedures-snomed-gps-uv-ips"/>
 	<meta>
 		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
 	</meta>
-	<url value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips"/>
-	<identifier>
-		<use value="official"/>
-		<system value="http://art-decor.org/ns/oids/vs"/>
-		<value value="2.16.840.1.113883.11.22.35"/>
-	</identifier>
-	<name value="ProceduresUvIps"/>
-	
-	<title value="Procedures - IPS"/>
+	<url value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-snomed-gps-uv-ips"/>
+    <version value="1"/>
+	<name value="ProceduresSnomedGpsUvIps"/>	
+	<title value="Procedures - SNOMED CT GPS - IPS"/>
 	<status value="active"/>
 	<experimental value="false"/>
 	<publisher value="HL7 International"/>
@@ -43,6 +38,7 @@
 				<op value="descendent-of"/>
 				<value value="71388002"/>
 			</filter>
+            <valueSet value="http://terminology.hl7.org/ValueSet/snomed-intl-gps"/>
 		</include>
 		<exclude>
 			<system value="http://snomed.info/sct"/>
