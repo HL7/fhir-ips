@@ -10,14 +10,10 @@
   "timestamp": "2020-12-11T14:30:00+01:00",
   "entry": [
     {
-      "fullUrl": "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad4d",
+      "fullUrl": "urn:uuid:6e1fb74a-742b-4c7b-8487-171dacb88766",
       "resource": {
         "resourceType": "Composition",
-        "id": "30551ce1-5a28-4356-b684-1e639094ad4d",
-        "identifier": {
-          "system": "urn:oid:2.16.724.4.8.10.200.10",
-          "value": "3f69e0a5-2177-4540-baab-7a5d0877428f"
-        },
+        "id": "6e1fb74a-742b-4c7b-8487-171dacb88766",
         "status": "final",
         "type": {
           "coding": [
@@ -29,12 +25,12 @@
           ]
         },
         "subject": {
-          "reference": "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"
+          "reference": "Patient/7685713c-e29e-4a75-8a90-45be7ba3be94"
         },
         "date": "2020-12-11T14:30:00+01:00",
         "author": [
           {
-            "reference": "Practitioner/1c616b24-3895-48c4-9a02-9a64110351ef"
+            "reference": "Practitioner/98315ba9-ffea-41ef-b59b-a836c039858f"
           }
         ],
         "title": "Patient Summary as of December 11, 2020 14:30",
@@ -44,26 +40,26 @@
             "mode": "legal",
             "time": "2020-12-11T14:30:00+01:00",
             "party": {
-              "reference": "Practitioner/1c616b24-3895-48c4-9a02-9a64110351ef"
+              "reference": "Practitioner/98315ba9-ffea-41ef-b59b-a836c039858f"
             }
           },
           {
             "mode": "legal",
             "time": "2020-12-11T14:30:00+01:00",
             "party": {
-              "reference": "Organization/890751f4-2924-4636-bab7-efffc7f3cf15"
+              "reference": "Organization/bb6bdf4f-7fcb-4d44-96a5-b858ad031d1d"
             }
           }
         ],
         "custodian": {
-          "reference": "Organization/890751f4-2924-4636-bab7-efffc7f3cf15"
+          "reference": "Organization/bb6bdf4f-7fcb-4d44-96a5-b858ad031d1d"
         },
         "relatesTo": [
           {
             "code": "appends",
             "targetIdentifier": {
               "system": "urn:oid:2.16.724.4.8.10.200.10",
-              "value": "c2277753-9f90-4a95-8ddb-a0b3f6e7d292"
+              "value": "20e12ce3-857f-49c0-b888-cb670597f191"
             }
           }
         ],
@@ -96,13 +92,9 @@
                 }
               ]
             },
-            "text": {
-              "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hot flushes</div>"
-            },
             "entry": [
               {
-                "reference": "Condition/c64139e7-f02d-409c-bf34-75e8bf23bc80"
+                "reference": "Condition/ad84b7a2-b4dd-474e-bef3-0779e6cb595f"
               }
             ]
           },
@@ -117,13 +109,9 @@
                 }
               ]
             },
-            "text": {
-              "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Medication</th><th>Strength</th><th>Form</th><th>Dosage</th><th>Comment</th></tr></thead><tbody><tr><td>Anastrozole</td><td>1 mg</td><td>tablet</td><td>once daily</td><td>treatment for breast cancer</td></tr></tbody></table></div>"
-            },
             "entry": [
               {
-                "reference": "MedicationStatement/c220e36c-eb67-4fc4-9ba1-2fabc52acec6"
+                "reference": "MedicationStatement/6e883e5e-7648-485a-86de-3640a61601fe"
               }
             ]
           },
@@ -138,13 +126,9 @@
                 }
               ]
             },
-            "text": {
-              "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Allergy to penicillin, high criticality, active No known food allergies</div>"
-            },
             "entry": [
               {
-                "reference": "AllergyIntolerance/72884cad-ebe6-4f43-a51a-2f978275f132"
+                "reference": "AllergyIntolerance/fe2769fd-22c9-4307-9122-ee0466e5aebb"
               }
             ]
           }
@@ -152,10 +136,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8",
+      "fullUrl": "urn:uuid:7685713c-e29e-4a75-8a90-45be7ba3be94",
       "resource": {
         "resourceType": "Patient",
-        "id": "2b90dd2b-2dab-4c75-9bb9-a355e07401e8",
+        "id": "7685713c-e29e-4a75-8a90-45be7ba3be94",
         "identifier": [
           {
             "system": "urn:oid:2.16.840.1.113883.2.4.6.3",
@@ -228,10 +212,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:1c616b24-3895-48c4-9a02-9a64110351ef",
+      "fullUrl": "urn:uuid:98315ba9-ffea-41ef-b59b-a836c039858f",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "1c616b24-3895-48c4-9a02-9a64110351ef",
+        "id": "98315ba9-ffea-41ef-b59b-a836c039858f",
         "identifier": [
           {
             "system": "urn:oid:2.16.528.1.1007.3.1",
@@ -267,10 +251,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:890751f4-2924-4636-bab7-efffc7f3cf15",
+      "fullUrl": "urn:uuid:bb6bdf4f-7fcb-4d44-96a5-b858ad031d1d",
       "resource": {
         "resourceType": "Organization",
-        "id": "890751f4-2924-4636-bab7-efffc7f3cf15",
+        "id": "bb6bdf4f-7fcb-4d44-96a5-b858ad031d1d",
         "identifier": [
           {
             "system": "urn:oid:2.16.528.1.1007.3.3",
@@ -300,14 +284,14 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:c64139e7-f02d-409c-bf34-75e8bf23bc80",
+      "fullUrl": "urn:uuid:ad84b7a2-b4dd-474e-bef3-0779e6cb595f",
       "resource": {
         "resourceType": "Condition",
-        "id": "c64139e7-f02d-409c-bf34-75e8bf23bc80",
+        "id": "ad84b7a2-b4dd-474e-bef3-0779e6cb595f",
         "identifier": [
           {
             "system": "urn:oid:1.2.3.999",
-            "value": "c87bf51c-e53c-4bfe-b8b7-aa62bdd93002"
+            "value": "cacceb57-395f-48e1-9c88-e9c9704dc2d2"
           }
         ],
         "clinicalStatus": {
@@ -378,29 +362,29 @@
           ]
         },
         "subject": {
-          "reference": "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"
+          "reference": "Patient/7685713c-e29e-4a75-8a90-45be7ba3be94"
         },
         "onsetDateTime": "2015",
         "recordedDate": "2016-10"
       }
     },
     {
-      "fullUrl": "urn:uuid:c220e36c-eb67-4fc4-9ba1-2fabc52acec6",
+      "fullUrl": "urn:uuid:6e883e5e-7648-485a-86de-3640a61601fe",
       "resource": {
         "resourceType": "MedicationStatement",
-        "id": "c220e36c-eb67-4fc4-9ba1-2fabc52acec6",
+        "id": "6e883e5e-7648-485a-86de-3640a61601fe",
         "identifier": [
           {
             "system": "urn:oid:1.2.3.999",
-            "value": "b75f92cb-61d4-469a-9387-df5ef70d25f0"
+            "value": "8faf0319-89d3-427c-b9d1-e8c8fd390dca"
           }
         ],
         "status": "active",
         "medicationReference": {
-          "reference": "Medication/976d0804-cae0-45ae-afe3-a19f3ceba6bc"
+          "reference": "Medication/6369a973-afc7-4617-8877-3e9811e05a5b"
         },
         "subject": {
-          "reference": "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"
+          "reference": "Patient/7685713c-e29e-4a75-8a90-45be7ba3be94"
         },
         "effectivePeriod": {
           "start": "2015-03"
@@ -446,10 +430,10 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:976d0804-cae0-45ae-afe3-a19f3ceba6bc",
+      "fullUrl": "urn:uuid:6369a973-afc7-4617-8877-3e9811e05a5b",
       "resource": {
         "resourceType": "Medication",
-        "id": "976d0804-cae0-45ae-afe3-a19f3ceba6bc",
+        "id": "6369a973-afc7-4617-8877-3e9811e05a5b",
         "code": {
           "coding": [
             {
@@ -477,14 +461,14 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:72884cad-ebe6-4f43-a51a-2f978275f132",
+      "fullUrl": "urn:uuid:fe2769fd-22c9-4307-9122-ee0466e5aebb",
       "resource": {
         "resourceType": "AllergyIntolerance",
-        "id": "72884cad-ebe6-4f43-a51a-2f978275f132",
+        "id": "fe2769fd-22c9-4307-9122-ee0466e5aebb",
         "identifier": [
           {
             "system": "urn:oid:1.2.3.999",
-            "value": "3a462598-009c-484a-965c-d6b24a821424"
+            "value": "8d9566a4-d26d-46be-a3e4-c9f3a0e5cd83"
           }
         ],
         "clinicalStatus": {
@@ -518,7 +502,7 @@
           ]
         },
         "patient": {
-          "reference": "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"
+          "reference": "Patient/7685713c-e29e-4a75-8a90-45be7ba3be94"
         },
         "onsetDateTime": "2010"
       }
