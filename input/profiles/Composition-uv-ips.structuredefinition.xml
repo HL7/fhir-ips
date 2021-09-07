@@ -180,6 +180,13 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		<!--
+		<element id="Composition.section.text">
+			<path value="Composition.section.text"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+	-->
 		<element id="Composition.section:sectionMedications">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
 				<valueString value="Section"/>
@@ -212,14 +219,6 @@
 					<code value="10160-0"/>
 				</coding>
 			</patternCodeableConcept>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Composition.section:sectionMedications.text">
-			<path value="Composition.section.text"/>
-			<min value="1"/>
-			<type>
-				<code value="Narrative"/>
-			</type>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionMedications.entry">
@@ -288,14 +287,6 @@
 			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionAllergies.text">
-			<path value="Composition.section.text"/>
-			<min value="1"/>
-			<type>
-				<code value="Narrative"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
 		<element id="Composition.section:sectionAllergies.entry">
 			<path value="Composition.section.entry"/>
 			<slicing>
@@ -360,14 +351,6 @@
 					<code value="11450-4"/>
 				</coding>
 			</patternCodeableConcept>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Composition.section:sectionProblems.text">
-			<path value="Composition.section.text"/>
-			<min value="1"/>
-			<type>
-				<code value="Narrative"/>
-			</type>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionProblems.entry">
@@ -435,14 +418,6 @@
 			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionProceduresHx.text">
-			<path value="Composition.section.text"/>
-			<min value="1"/>
-			<type>
-				<code value="Narrative"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
 		<element id="Composition.section:sectionProceduresHx.entry">
 			<path value="Composition.section.entry"/>
 			<slicing>
@@ -506,14 +481,6 @@
 					<code value="11369-6"/>
 				</coding>
 			</patternCodeableConcept>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Composition.section:sectionImmunizations.text">
-			<path value="Composition.section.text"/>
-			<min value="1"/>
-			<type>
-				<code value="Narrative"/>
-			</type>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionImmunizations.entry">
@@ -581,14 +548,6 @@
 			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionMedicalDevices.text">
-			<path value="Composition.section.text"/>
-			<min value="1"/>
-			<type>
-				<code value="Narrative"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
 		<element id="Composition.section:sectionMedicalDevices.entry">
 			<path value="Composition.section.entry"/>
 			<slicing>
@@ -652,11 +611,6 @@
 					<code value="30954-2"/>
 				</coding>
 			</patternCodeableConcept>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Composition.section:sectionResults.text">
-			<path value="Composition.section.text"/>
-			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionResults.entry">
@@ -737,14 +691,6 @@
 			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionVitalSigns.text">
-			<path value="Composition.section.text"/>
-			<min value="1"/>
-			<type>
-				<code value="Narrative"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
 		<element id="Composition.section:sectionVitalSigns.entry">
 			<path value="Composition.section.entry"/>
 			<slicing>
@@ -806,11 +752,6 @@
 					<code value="11348-0"/>
 				</coding>
 			</patternCodeableConcept>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Composition.section:sectionPastIllnessHx.text">
-			<path value="Composition.section.text"/>
-			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionPastIllnessHx.entry">
@@ -876,14 +817,6 @@
 					<code value="47420-5"/>
 				</coding>
 			</patternCodeableConcept>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Composition.section:sectionFunctionalStatus.text">
-			<path value="Composition.section.text"/>
-			<min value="1"/>
-			<type>
-				<code value="Narrative"/>
-			</type>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionFunctionalStatus.entry">
@@ -958,14 +891,6 @@
 			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionPlanOfCare.text">
-			<path value="Composition.section.text"/>
-			<min value="1"/>
-			<type>
-				<code value="Narrative"/>
-			</type>
-			<mustSupport value="true"/>
-		</element>
 		<element id="Composition.section:sectionPlanOfCare.entry">
 			<path value="Composition.section.entry"/>
 			<slicing>
@@ -1027,11 +952,6 @@
 					<code value="29762-2"/>
 				</coding>
 			</patternCodeableConcept>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Composition.section:sectionSocialHistory.text">
-			<path value="Composition.section.text"/>
-			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionSocialHistory.entry">
@@ -1108,11 +1028,6 @@
 			</patternCodeableConcept>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionPregnancyHx.text">
-			<path value="Composition.section.text"/>
-			<min value="1"/>
-			<mustSupport value="true"/>
-		</element>
 		<element id="Composition.section:sectionPregnancyHx.entry">
 			<path value="Composition.section.entry"/>
 			<slicing>
@@ -1183,14 +1098,6 @@
 					<code value="42348-3"/>
 				</coding>
 			</patternCodeableConcept>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Composition.section:sectionAdvanceDirectives.text">
-			<path value="Composition.section.text"/>
-			<min value="1"/>
-			<type>
-				<code value="Narrative"/>
-			</type>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionAdvanceDirectives.entry">
