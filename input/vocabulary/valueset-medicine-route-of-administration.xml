@@ -10,6 +10,7 @@
 		<system value="http://art-decor.org/ns/oids/vs"/>
 		<value value="2.16.840.1.113883.11.22.33"/>
 	</identifier>
+	<version value="2"/>
 	<name value="RouteOfAdminUvIps"/>
 	<title value="Medicine Route of Administration - IPS"/>
 	<status value="active"/>
@@ -32,329 +33,29 @@
 	</contact>
 	<description value="EDQM Route of Administration codes.  This Value Set includes all the EDQM Standard Terms having:
 	&#10;[Concept Status] = ‘Current’ AND
-	&#10;[Concept Class] = 'route of administration' AND
-	&#10;[Domain] = 'Human and Veterinary'"/>
+	&#10;[Concept Class] = 'ROA' AND
+	&#10;[Domain] = 'Human and Veterinary'
+	&#10;&#10;ROA = 'Route of administration'"/>
 	<immutable value="false"/>
 	<copyright value="This artifact includes content from EDQM Standard Terms. EDQM Standard Terms are copyright European Directorate for the Quality of Medicines . Terms &amp; Conditions in https://www.edqm.eu/en/standard-terms-database"/>
 	<compose>
 		<include>
 			<system value="http://standardterms.edqm.eu"/>
-			<concept>
-				<code value="20001000"/>
-				<display value="Auricular use"/>
-			</concept>
-			<concept>
-				<code value="20002500"/>
-				<display value="Buccal use"/>
-			</concept>
-			<concept>
-				<code value="20003000"/>
-				<display value="Cutaneous use"/>
-			</concept>
-			<concept>
-				<code value="20004000"/>
-				<display value="Dental use"/>
-			</concept>
-			<concept>
-				<code value="20006000"/>
-				<display value="Endocervical use"/>
-			</concept>
-			<concept>
-				<code value="20007000"/>
-				<display value="Endosinusial use"/>
-			</concept>
-			<concept>
-				<code value="20008000"/>
-				<display value="Endotracheopulmonary use"/>
-			</concept>
-			<concept>
-				<code value="20009000"/>
-				<display value="Epidural use"/>
-			</concept>
-			<concept>
-				<code value="20010000"/>
-				<display value="Epilesional use"/>
-			</concept>
-			<concept>
-				<code value="20011000"/>
-				<display value="Extraamniotic use"/>
-			</concept>
-			<concept>
-				<code value="20011500"/>
-				<display value="Extracorporeal use"/>
-			</concept>
-			<concept>
-				<code value="20013500"/>
-				<display value="Gastric use"/>
-			</concept>
-			<concept>
-				<code value="20013000"/>
-				<display value="Gastroenteral use"/>
-			</concept>
-			<concept>
-				<code value="20014000"/>
-				<display value="Gingival use"/>
-			</concept>
-			<concept>
-				<code value="20015000"/>
-				<display value="Haemodialysis"/>
-			</concept>
-			<concept>
-				<code value="20015500"/>
-				<display value="Implantation"/>
-			</concept>
-			<concept>
-				<code value="20019500"/>
-				<display value="Infiltration"/>
-			</concept>
-			<concept>
-				<code value="20020000"/>
-				<display value="Inhalation use"/>
-			</concept>
-			<concept>
-				<code value="20021000"/>
-				<display value="Intestinal use"/>
-			</concept>
-			<concept>
-				<code value="20022000"/>
-				<display value="Intraamniotic use"/>
-			</concept>
-			<concept>
-				<code value="20023000"/>
-				<display value="Intraarterial use"/>
-			</concept>
-			<concept>
-				<code value="20024000"/>
-				<display value="Intraarticular use"/>
-			</concept>
-			<concept>
-				<code value="20025000"/>
-				<display value="Intrabursal use"/>
-			</concept>
-			<concept>
-				<code value="20025500"/>
-				<display value="Intracameral use"/>
-			</concept>
-			<concept>
-				<code value="20026000"/>
-				<display value="Intracardiac use"/>
-			</concept>
-			<concept>
-				<code value="20026500"/>
-				<display value="Intracartilaginous use"/>
-			</concept>
-			<concept>
-				<code value="20027000"/>
-				<display value="Intracavernous use"/>
-			</concept>
-			<concept>
-				<code value="20027010"/>
-				<display value="Intracerebral use"/>
-			</concept>
-			<concept>
-				<code value="20080000"/>
-				<display value="Intracerebroventricular use"/>
-			</concept>
-			<concept>
-				<code value="20028000"/>
-				<display value="Intracervical use"/>
-			</concept>
-			<concept>
-				<code value="20028300"/>
-				<display value="Intracholangiopancreatic use"/>
-			</concept>
-			<concept>
-				<code value="20028500"/>
-				<display value="Intracisternal use"/>
-			</concept>
-			<concept>
-				<code value="20029000"/>
-				<display value="Intracoronary use"/>
-			</concept>
-			<concept>
-				<code value="20030000"/>
-				<display value="Intradermal use"/>
-			</concept>
-			<concept>
-				<code value="20031000"/>
-				<display value="Intradiscal use"/>
-			</concept>
-			<concept>
-				<code value="20031500"/>
-				<display value="Intraepidermal use"/>
-			</concept>
-			<concept>
-				<code value="20031700"/>
-				<display value="Intraglandular use"/>
-			</concept>
-			<concept>
-				<code value="20032000"/>
-				<display value="Intralesional use"/>
-			</concept>
-			<concept>
-				<code value="20033000"/>
-				<display value="Intralymphatic use"/>
-			</concept>
-			<concept>
-				<code value="20035000"/>
-				<display value="Intramuscular use"/>
-			</concept>
-			<concept>
-				<code value="20036000"/>
-				<display value="Intraocular use"/>
-			</concept>
-			<concept>
-				<code value="20036500"/>
-				<display value="Intraosseous use"/>
-			</concept>
-			<concept>
-				<code value="20037000"/>
-				<display value="Intrapericardial use"/>
-			</concept>
-			<concept>
-				<code value="20038000"/>
-				<display value="Intraperitoneal use"/>
-			</concept>
-			<concept>
-				<code value="20039000"/>
-				<display value="Intrapleural use"/>
-			</concept>
-			<concept>
-				<code value="20039200"/>
-				<display value="Intraportal use"/>
-			</concept>
-			<concept>
-				<code value="20039500"/>
-				<display value="Intraprostatic use"/>
-			</concept>
-			<concept>
-				<code value="20041000"/>
-				<display value="Intrasternal use"/>
-			</concept>
-			<concept>
-				<code value="20042000"/>
-				<display value="Intrathecal use"/>
-			</concept>
-			<concept>
-				<code value="20043000"/>
-				<display value="Intratumoral use"/>
-			</concept>
-			<concept>
-				<code value="20044000"/>
-				<display value="Intrauterine use"/>
-			</concept>
-			<concept>
-				<code value="20045000"/>
-				<display value="Intravenous use"/>
-			</concept>
-			<concept>
-				<code value="20046000"/>
-				<display value="Intravesical use"/>
-			</concept>
-			<concept>
-				<code value="20047000"/>
-				<display value="Intravitreal use"/>
-			</concept>
-			<concept>
-				<code value="20047500"/>
-				<display value="Iontophoresis"/>
-			</concept>
-			<concept>
-				<code value="20048000"/>
-				<display value="Laryngopharyngeal use"/>
-			</concept>
-			<concept>
-				<code value="20049000"/>
-				<display value="Nasal use"/>
-			</concept>
-			<concept>
-				<code value="20051000"/>
-				<display value="Ocular use"/>
-			</concept>
-			<concept>
-				<code value="20053000"/>
-				<display value="Oral use"/>
-			</concept>
-			<concept>
-				<code value="20054000"/>
-				<display value="Oromucosal use"/>
-			</concept>
-			<concept>
-				<code value="20055000"/>
-				<display value="Oropharyngeal use"/>
-			</concept>
-			<concept>
-				<code value="20057000"/>
-				<display value="Periarticular use"/>
-			</concept>
-			<concept>
-				<code value="20058000"/>
-				<display value="Perineural use"/>
-			</concept>
-			<concept>
-				<code value="20059000"/>
-				<display value="Periodontal use"/>
-			</concept>
-			<concept>
-				<code value="20059300"/>
-				<display value="Periosseous use"/>
-			</concept>
-			<concept>
-				<code value="20059400"/>
-				<display value="Peritumoral use"/>
-			</concept>
-			<concept>
-				<code value="20059500"/>
-				<display value="Posterior juxtascleral use"/>
-			</concept>
-			<concept>
-				<code value="20061000"/>
-				<display value="Rectal use"/>
-			</concept>
-			<concept>
-				<code value="20061500"/>
-				<display value="Retrobulbar use"/>
-			</concept>
-			<concept>
-				<code value="20062000"/>
-				<display value="Route of administration not applicable"/>
-			</concept>
-			<concept>
-				<code value="20063000"/>
-				<display value="Skin scarification"/>
-			</concept>
-			<concept>
-				<code value="20065000"/>
-				<display value="Subconjunctival use"/>
-			</concept>
-			<concept>
-				<code value="20066000"/>
-				<display value="Subcutaneous use"/>
-			</concept>
-			<concept>
-				<code value="20067000"/>
-				<display value="Sublingual use"/>
-			</concept>
-			<concept>
-				<code value="20067500"/>
-				<display value="Submucosal use"/>
-			</concept>
-			<concept>
-				<code value="20081000"/>
-				<display value="Subretinal use"/>
-			</concept>
-			<concept>
-				<code value="20070000"/>
-				<display value="Transdermal use"/>
-			</concept>
-			<concept>
-				<code value="20071000"/>
-				<display value="Urethral use"/>
-			</concept>
-			<concept>
-				<code value="20072000"/>
-				<display value="Vaginal use"/>
-			</concept>
+			<filter>
+				<property value="status"/>
+				<op value="="/>
+				<value value="Current"/>
+			</filter>
+			<filter>
+				<property value="class"/>
+				<op value="="/>
+				<value value="ROA"/>
+			</filter>
+			<filter>
+				<property value="domain"/>
+				<op value="="/>
+				<value value="Human and Veterinary"/>
+			</filter>
 		</include>
 	</compose>
 </ValueSet>
