@@ -32,7 +32,8 @@
     <compose>
         <include>
             <system value="http://snomed.info/sct"/>
-            <!-- "Substance (substance)" -->
+			<version value="http://snomed.info/sct/900000000000207008"/>
+			<!-- "Substance (substance)" -->
             <filter>
                 <property value="concept"/>
                 <op value="descendent-of"/>
@@ -42,7 +43,8 @@
         </include>
         <include>
             <system value="http://snomed.info/sct"/>
-            <!-- "Pharmaceutical / biologic product (product)" -->
+			<version value="http://snomed.info/sct/900000000000207008"/>
+			<!-- "Pharmaceutical / biologic product (product)" -->
             <filter>
                 <property value="concept"/>
                 <op value="descendent-of"/>
@@ -52,7 +54,8 @@
         </include>
         <include>
             <system value="http://snomed.info/sct"/>
-            <!-- "Propensity to adverse reactions to substance (finding)" -->
+			<version value="http://snomed.info/sct/900000000000207008"/>
+			<!-- "Propensity to adverse reactions to substance (finding)" -->
             <filter>
                 <property value="concept"/>
                 <op value="descendent-of"/>
