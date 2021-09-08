@@ -180,6 +180,15 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
+		<element id="Composition.section.code">
+			<path value="Composition.section.code"/>
+			<min value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
 		<!--
 		<element id="Composition.section.text">
 			<path value="Composition.section.text"/>
@@ -187,6 +196,16 @@
 			<mustSupport value="true"/>
 		</element>
 	-->
+		<element id="Composition.section.emptyReason">
+			<path value="Composition.section.emptyReason"/>
+			<max value="0"/>
+			<mustSupport value="false"/>
+		</element>
+		<element id="Composition.section.section">
+			<path value="Composition.section.section"/>
+			<max value="0"/>
+			<mustSupport value="false"/>
+		</element>
 		<element id="Composition.section:sectionMedications">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
 				<valueString value="Section"/>
@@ -208,18 +227,12 @@
 		</element>
 		<element id="Composition.section:sectionMedications.code">
 			<path value="Composition.section.code"/>
-			<min value="1"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
 			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="10160-0"/>
 				</coding>
 			</patternCodeableConcept>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionMedications.entry">
 			<path value="Composition.section.entry"/>
@@ -253,16 +266,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionMedications.emptyReason">
-			<path value="Composition.section.emptyReason"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
-		<element id="Composition.section:sectionMedications.section">
-			<path value="Composition.section.section"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
 		<element id="Composition.section:sectionAllergies">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
 				<valueString value="Section"/>
@@ -282,18 +285,12 @@
 		</element>
 		<element id="Composition.section:sectionAllergies.code">
 			<path value="Composition.section.code"/>
-			<min value="1"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
 			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="48765-2"/>
 				</coding>
 			</patternCodeableConcept>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionAllergies.entry">
 			<path value="Composition.section.entry"/>
@@ -319,16 +316,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionAllergies.emptyReason">
-			<path value="Composition.section.emptyReason"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
-		<element id="Composition.section:sectionAllergies.section">
-			<path value="Composition.section.section"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
 		<element id="Composition.section:sectionProblems">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
 				<valueString value="Section"/>
@@ -348,18 +335,12 @@
 		</element>
 		<element id="Composition.section:sectionProblems.code">
 			<path value="Composition.section.code"/>
-			<min value="1"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
 			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="11450-4"/>
 				</coding>
 			</patternCodeableConcept>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionProblems.entry">
 			<path value="Composition.section.entry"/>
@@ -385,16 +366,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionProblems.emptyReason">
-			<path value="Composition.section.emptyReason"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
-		<element id="Composition.section:sectionProblems.section">
-			<path value="Composition.section.section"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
 		<element id="Composition.section:sectionProceduresHx">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
 				<valueString value="Section"/>
@@ -413,18 +384,12 @@
 		</element>
 		<element id="Composition.section:sectionProceduresHx.code">
 			<path value="Composition.section.code"/>
-			<min value="1"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
 			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="47519-4"/>
 				</coding>
 			</patternCodeableConcept>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionProceduresHx.entry">
 			<path value="Composition.section.entry"/>
@@ -450,16 +415,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionProceduresHx.emptyReason">
-			<path value="Composition.section.emptyReason"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
-		<element id="Composition.section:sectionProceduresHx.section">
-			<path value="Composition.section.section"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
 		<element id="Composition.section:sectionImmunizations">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
 				<valueString value="Section"/>
@@ -478,18 +433,12 @@
 		</element>
 		<element id="Composition.section:sectionImmunizations.code">
 			<path value="Composition.section.code"/>
-			<min value="1"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
 			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="11369-6"/>
 				</coding>
 			</patternCodeableConcept>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionImmunizations.entry">
 			<path value="Composition.section.entry"/>
@@ -515,16 +464,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionImmunizations.emptyReason">
-			<path value="Composition.section.emptyReason"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
-		<element id="Composition.section:sectionImmunizations.section">
-			<path value="Composition.section.section"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
 		<element id="Composition.section:sectionMedicalDevices">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
 				<valueString value="Section"/>
@@ -543,18 +482,12 @@
 		</element>
 		<element id="Composition.section:sectionMedicalDevices.code">
 			<path value="Composition.section.code"/>
-			<min value="1"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
 			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="46264-8"/>
 				</coding>
 			</patternCodeableConcept>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionMedicalDevices.entry">
 			<path value="Composition.section.entry"/>
@@ -580,16 +513,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionMedicalDevices.emptyReason">
-			<path value="Composition.section.emptyReason"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
-		<element id="Composition.section:sectionMedicalDevices.section">
-			<path value="Composition.section.section"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
 		<element id="Composition.section:sectionResults">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
 				<valueString value="Results Section"/>
@@ -608,18 +531,12 @@
 		</element>
 		<element id="Composition.section:sectionResults.code">
 			<path value="Composition.section.code"/>
-			<min value="1"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
 			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="30954-2"/>
 				</coding>
 			</patternCodeableConcept>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionResults.entry">
 			<path value="Composition.section.entry"/>
@@ -657,16 +574,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionResults.emptyReason">
-			<path value="Composition.section.emptyReason"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
-		<element id="Composition.section:sectionResults.section">
-			<path value="Composition.section.section"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
 		<element id="Composition.section:sectionVitalSigns">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
 				<valueString value="Vital Signs Section"/>
@@ -686,18 +593,12 @@
 		</element>
 		<element id="Composition.section:sectionVitalSigns.code">
 			<path value="Composition.section.code"/>
-			<min value="1"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
 			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="8716-3"/>
 				</coding>
 			</patternCodeableConcept>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionVitalSigns.entry">
 			<path value="Composition.section.entry"/>
@@ -721,16 +622,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionVitalSigns.emptyReason">
-			<path value="Composition.section.emptyReason"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
-		<element id="Composition.section:sectionVitalSigns.section">
-			<path value="Composition.section.section"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
 		<element id="Composition.section:sectionPastIllnessHx">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
 				<valueString value="Section"/>
@@ -749,18 +640,12 @@
 		</element>
 		<element id="Composition.section:sectionPastIllnessHx.code">
 			<path value="Composition.section.code"/>
-			<min value="1"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
 			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="11348-0"/>
 				</coding>
 			</patternCodeableConcept>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionPastIllnessHx.entry">
 			<path value="Composition.section.entry"/>
@@ -786,16 +671,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionPastIllnessHx.emptyReason">
-			<path value="Composition.section.emptyReason"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
-		<element id="Composition.section:sectionPastIllnessHx.section">
-			<path value="Composition.section.section"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
 		<element id="Composition.section:sectionFunctionalStatus">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
 				<valueString value="Section"/>
@@ -814,18 +689,12 @@
 		</element>
 		<element id="Composition.section:sectionFunctionalStatus.code">
 			<path value="Composition.section.code"/>
-			<min value="1"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
 			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="47420-5"/>
 				</coding>
 			</patternCodeableConcept>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionFunctionalStatus.entry">
 			<path value="Composition.section.entry"/>
@@ -858,16 +727,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionFunctionalStatus.emptyReason">
-			<path value="Composition.section.emptyReason"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
-		<element id="Composition.section:sectionFunctionalStatus.section">
-			<path value="Composition.section.section"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
 		<element id="Composition.section:sectionPlanOfCare">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
 				<valueString value="Section"/>
@@ -886,18 +745,12 @@
 		</element>
 		<element id="Composition.section:sectionPlanOfCare.code">
 			<path value="Composition.section.code"/>
-			<min value="1"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
 			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="18776-5"/>
 				</coding>
 			</patternCodeableConcept>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionPlanOfCare.entry">
 			<path value="Composition.section.entry"/>
@@ -921,16 +774,6 @@
 			</type>
 			<mustSupport value="false"/>
 		</element>
-		<element id="Composition.section:sectionPlanOfCare.emptyReason">
-			<path value="Composition.section.emptyReason"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
-		<element id="Composition.section:sectionPlanOfCare.section">
-			<path value="Composition.section.section"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
 		<element id="Composition.section:sectionSocialHistory">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
 				<valueString value="Section"/>
@@ -949,18 +792,12 @@
 		</element>
 		<element id="Composition.section:sectionSocialHistory.code">
 			<path value="Composition.section.code"/>
-			<min value="1"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
 			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="29762-2"/>
 				</coding>
 			</patternCodeableConcept>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionSocialHistory.entry">
 			<path value="Composition.section.entry"/>
@@ -995,16 +832,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionSocialHistory.emptyReason">
-			<path value="Composition.section.emptyReason"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
-		<element id="Composition.section:sectionSocialHistory.section">
-			<path value="Composition.section.section"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
 		<element id="Composition.section:sectionPregnancyHx">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
 				<valueString value="Section"/>
@@ -1023,18 +850,12 @@
 		</element>
 		<element id="Composition.section:sectionPregnancyHx.code">
 			<path value="Composition.section.code"/>
-			<min value="1"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
 			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="10162-6"/>
 				</coding>
 			</patternCodeableConcept>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionPregnancyHx.entry">
 			<path value="Composition.section.entry"/>
@@ -1067,16 +888,6 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="Composition.section:sectionPregnancyHx.emptyReason">
-			<path value="Composition.section.emptyReason"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
-		<element id="Composition.section:sectionPregnancyHx.section">
-			<path value="Composition.section.section"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
 		<element id="Composition.section:sectionAdvanceDirectives">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
 				<valueString value="Section"/>
@@ -1095,18 +906,12 @@
 		</element>
 		<element id="Composition.section:sectionAdvanceDirectives.code">
 			<path value="Composition.section.code"/>
-			<min value="1"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
 			<patternCodeableConcept>
 				<coding>
 					<system value="http://loinc.org"/>
 					<code value="42348-3"/>
 				</coding>
 			</patternCodeableConcept>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionAdvanceDirectives.entry">
 			<path value="Composition.section.entry"/>
@@ -1129,16 +934,6 @@
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Consent"/>
 			</type>
 			<mustSupport value="true"/>
-		</element>
-		<element id="Composition.section:sectionAdvanceDirectives.emptyReason">
-			<path value="Composition.section.emptyReason"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
-		</element>
-		<element id="Composition.section:sectionAdvanceDirectives.section">
-			<path value="Composition.section.section"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
 		</element>
 	</differential>
 </StructureDefinition>
