@@ -45,7 +45,6 @@
 		<element id="MedicationStatement.medication[x]:medicationReference">
 			<path value="MedicationStatement.medication[x]"/>
 			<sliceName value="medicationReference"/>
-			<definition value="Identifies the medication being administered or the reason for absent or unknown Medication. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code. To improve global interoperability is strongly encouraged that the reference to a medication resource is used, limiting the usage of the medicationCodeableConcept only to the cases in which no other information than a simple code is available."/>
 			<min value="0"/>
 			<max value="1"/>
 			<type>
@@ -57,8 +56,8 @@
 		<element id="MedicationStatement.medication[x]:medicationCodeableConcept">
 			<path value="MedicationStatement.medication[x]"/>
 			<sliceName value="medicationCodeableConcept"/>
-			<short value="Code for absent or unknown medication"/>
-			<definition value="Code for a negated/excluded medication statement.  This describes a categorical negated statement (e.g., &quot;No known medications&quot;)."/>
+			<short value="Code for the medication being administered or an absent or unknown medication"/>
+			<definition value="Code for the medication being administered or a negated/excluded medication statement.  If negated, this describes a categorical negated statement (e.g., &quot;No known medications&quot;)."/>
 			<min value="0"/>
 			<max value="1"/>
 			<type>

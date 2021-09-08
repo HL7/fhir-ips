@@ -238,10 +238,18 @@
 		<element id="Composition.section:sectionMedications.entry:medicationStatement">
 			<path value="Composition.section.entry"/>
 			<sliceName value="medicationStatement"/>
-			<min value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Composition.section:sectionMedications.entry:medicationRequest">
+			<path value="Composition.section.entry"/>
+			<sliceName value="medicationRequest"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationRequest-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
 		</element>
