@@ -1,0 +1,527 @@
+{
+  "resourceType": "Bundle",
+  "id": "IPS-examples-Bundle-minimal",
+  "language": "en-US",
+  "identifier": {
+    "system": "urn:oid:2.16.724.4.8.10.200.10",
+    "value": "28b95815-76ce-457b-b7ae-a972e527db40"
+  },
+  "type": "document",
+  "timestamp": "2020-12-11T14:30:00+01:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad4d",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "30551ce1-5a28-4356-b684-1e639094ad4d",
+        "identifier": {
+          "system": "urn:oid:2.16.724.4.8.10.200.10",
+          "value": "3f69e0a5-2177-4540-baab-7a5d0877428f"
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "code": "60591-5",
+              "system": "http://loinc.org",
+              "display": "Patient summary Document"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"
+        },
+        "date": "2020-12-11T14:30:00+01:00",
+        "author": [
+          {
+            "reference": "Practitioner/1c616b24-3895-48c4-9a02-9a64110351ef"
+          }
+        ],
+        "title": "Patient Summary as of December 11, 2020 14:30",
+        "confidentiality": "N",
+        "attester": [
+          {
+            "mode": "legal",
+            "time": "2020-12-11T14:30:00+01:00",
+            "party": {
+              "reference": "Practitioner/1c616b24-3895-48c4-9a02-9a64110351ef"
+            }
+          },
+          {
+            "mode": "legal",
+            "time": "2020-12-11T14:30:00+01:00",
+            "party": {
+              "reference": "Organization/890751f4-2924-4636-bab7-efffc7f3cf15"
+            }
+          }
+        ],
+        "custodian": {
+          "reference": "Organization/890751f4-2924-4636-bab7-efffc7f3cf15"
+        },
+        "relatesTo": [
+          {
+            "code": "appends",
+            "targetIdentifier": {
+              "system": "urn:oid:2.16.724.4.8.10.200.10",
+              "value": "c2277753-9f90-4a95-8ddb-a0b3f6e7d292"
+            }
+          }
+        ],
+        "event": [
+          {
+            "code": [
+              {
+                "coding": [
+                  {
+                    "code": "PCPR",
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActClass"
+                  }
+                ]
+              }
+            ],
+            "period": {
+              "end": "2020-12-11T14:30:00+01:00"
+            }
+          }
+        ],
+        "section": [
+          {
+            "title": "Active Problems",
+            "code": {
+              "coding": [
+                {
+                  "code": "11450-4",
+                  "system": "http://loinc.org",
+                  "display": "Problem list Reported"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hot flushes</div>"
+            },
+            "entry": [
+              {
+                "reference": "Condition/c64139e7-f02d-409c-bf34-75e8bf23bc80"
+              }
+            ]
+          },
+          {
+            "title": "Medication",
+            "code": {
+              "coding": [
+                {
+                  "code": "10160-0",
+                  "system": "http://loinc.org",
+                  "display": "History of Medication use Narrative"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Medication</th><th>Strength</th><th>Form</th><th>Dosage</th><th>Comment</th></tr></thead><tbody><tr><td>Anastrozole</td><td>1 mg</td><td>tablet</td><td>once daily</td><td>treatment for breast cancer</td></tr></tbody></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "MedicationStatement/c220e36c-eb67-4fc4-9ba1-2fabc52acec6"
+              }
+            ]
+          },
+          {
+            "title": "Allergies and Intolerances",
+            "code": {
+              "coding": [
+                {
+                  "code": "48765-2",
+                  "system": "http://loinc.org",
+                  "display": "Allergies and adverse reactions Document"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Allergy to penicillin, high criticality, active No known food allergies</div>"
+            },
+            "entry": [
+              {
+                "reference": "AllergyIntolerance/72884cad-ebe6-4f43-a51a-2f978275f132"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "2b90dd2b-2dab-4c75-9bb9-a355e07401e8",
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.2.4.6.3",
+            "value": "574687583"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "DeLarosa",
+            "given": [
+              "Martha"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+31788700800",
+            "use": "home"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1972-05-01",
+        "address": [
+          {
+            "line": [
+              "Laan Van Europa 1600"
+            ],
+            "city": "Dordrecht",
+            "postalCode": "3317 DB",
+            "country": "Netherlands"
+          }
+        ],
+        "contact": [
+          {
+            "relationship": [
+              {
+                "coding": [
+                  {
+                    "code": "MTH",
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
+                  }
+                ]
+              }
+            ],
+            "name": {
+              "family": "Mum",
+              "given": [
+                "Martha"
+              ]
+            },
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "+33-555-20036",
+                "use": "home"
+              }
+            ],
+            "address": {
+              "line": [
+                "Promenade des Anglais 111"
+              ],
+              "city": "Lyon",
+              "postalCode": "69001",
+              "country": "France"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1c616b24-3895-48c4-9a02-9a64110351ef",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "1c616b24-3895-48c4-9a02-9a64110351ef",
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.528.1.1007.3.1",
+            "value": "129854633",
+            "assigner": {
+              "display": "CIBG"
+            }
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "family": "van Hulp",
+            "given": [
+              "Beetje"
+            ]
+          }
+        ],
+        "qualification": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "MD",
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0360",
+                  "version": "2.7",
+                  "display": "Doctor of Medicine"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:890751f4-2924-4636-bab7-efffc7f3cf15",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "890751f4-2924-4636-bab7-efffc7f3cf15",
+        "identifier": [
+          {
+            "system": "urn:oid:2.16.528.1.1007.3.3",
+            "value": "564738757"
+          }
+        ],
+        "active": true,
+        "name": "Anorg Aniza Tion BV / The best custodian ever",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "+31-51-34343400",
+            "use": "work"
+          }
+        ],
+        "address": [
+          {
+            "use": "work",
+            "line": [
+              "Houttuinen 27"
+            ],
+            "city": "Dordrecht",
+            "postalCode": "3311 CE",
+            "country": "Netherlands"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c64139e7-f02d-409c-bf34-75e8bf23bc80",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "c64139e7-f02d-409c-bf34-75e8bf23bc80",
+        "identifier": [
+          {
+            "system": "urn:oid:1.2.3.999",
+            "value": "c87bf51c-e53c-4bfe-b8b7-aa62bdd93002"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "75326-9",
+                "system": "http://loinc.org",
+                "display": "Problem"
+              }
+            ]
+          }
+        ],
+        "severity": {
+          "coding": [
+            {
+              "code": "LA6751-7",
+              "system": "http://loinc.org",
+              "display": "Moderate"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "198436008",
+              "system": "http://snomed.info/sct",
+              "display": "Menopausal flushing (finding)",
+              "_display": {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/translation",
+                    "extension": [
+                      {
+                        "url": "lang",
+                        "valueCode": "nl-NL"
+                      },
+                      {
+                        "url": "content",
+                        "valueString": "opvliegers"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "code": "N95.1",
+              "system": "http://hl7.org/fhir/sid/icd-10",
+              "display": "Menopausal and female climacteric states"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"
+        },
+        "onsetDateTime": "2015",
+        "recordedDate": "2016-10"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c220e36c-eb67-4fc4-9ba1-2fabc52acec6",
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "c220e36c-eb67-4fc4-9ba1-2fabc52acec6",
+        "identifier": [
+          {
+            "system": "urn:oid:1.2.3.999",
+            "value": "b75f92cb-61d4-469a-9387-df5ef70d25f0"
+          }
+        ],
+        "status": "active",
+        "medicationReference": {
+          "reference": "Medication/976d0804-cae0-45ae-afe3-a19f3ceba6bc"
+        },
+        "subject": {
+          "reference": "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"
+        },
+        "effectivePeriod": {
+          "start": "2015-03"
+        },
+        "dosage": [
+          {
+            "timing": {
+              "repeat": {
+                "count": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "code": "20053000",
+                  "system": "http://standardterms.edqm.eu",
+                  "display": "Oral use"
+                }
+              ]
+            },
+            "doseAndRate": [
+              {
+                "type": {
+                  "coding": [
+                    {
+                      "code": "ordered",
+                      "system": "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+                      "display": "Ordered"
+                    }
+                  ]
+                },
+                "doseQuantity": {
+                  "value": 1,
+                  "code": "1",
+                  "system": "http://unitsofmeasure.org",
+                  "unit": "tablet"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:976d0804-cae0-45ae-afe3-a19f3ceba6bc",
+      "resource": {
+        "resourceType": "Medication",
+        "id": "976d0804-cae0-45ae-afe3-a19f3ceba6bc",
+        "code": {
+          "coding": [
+            {
+              "code": "108774000",
+              "system": "http://snomed.info/sct",
+              "display": "Product containing anastrozole (medicinal product)"
+            },
+            {
+              "code": "99872",
+              "system": "urn:oid:2.16.840.1.113883.2.4.4.1",
+              "display": "ANASTROZOL 1MG TABLET"
+            },
+            {
+              "code": "2076667",
+              "system": "urn:oid:2.16.840.1.113883.2.4.4.7",
+              "display": "ANASTROZOL CF TABLET FILMOMHULD 1MG"
+            },
+            {
+              "code": "L02BG03",
+              "system": "http://www.whocc.no/atc",
+              "display": "anastrozole"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:72884cad-ebe6-4f43-a51a-2f978275f132",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "72884cad-ebe6-4f43-a51a-2f978275f132",
+        "identifier": [
+          {
+            "system": "urn:oid:1.2.3.999",
+            "value": "3a462598-009c-484a-965c-d6b24a821424"
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+            }
+          ]
+        },
+        "type": "allergy",
+        "category": [
+          "medication"
+        ],
+        "criticality": "high",
+        "code": {
+          "coding": [
+            {
+              "code": "373270004",
+              "system": "http://snomed.info/sct",
+              "display": "Substance with penicillin structure and antibacterial mechanism of action (substance)"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"
+        },
+        "onsetDateTime": "2010"
+      }
+    }
+  ]
+}
