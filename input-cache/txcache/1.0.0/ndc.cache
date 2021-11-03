@@ -14,10 +14,11 @@
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
+  "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:2229f036-6ae3-480b-923e-b55dcae3260d",
-    "timestamp" : "2020-12-23T16:00:58.156Z",
+    "identifier" : "urn:uuid:034a3b36-4283-4b75-b13b-1903f7587e8e",
+    "timestamp" : "2021-11-03T07:42:35.170Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -25,15 +26,6 @@ e: {
     {
       "name" : "excludeNested",
       "valueBoolean" : true
-    }],
-    "contains" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
-        "valueString" : "Amoxicillin and Clavulanate Potassium "
-      }],
-      "system" : "http://hl7.org/fhir/sid/ndc",
-      "code" : "50436-3129",
-      "display" : "Amoxicillin and Clavulanate Potassium 875 mg/1 125 mg/1 TABLET, FILM COATED"
     }]
   }
 },
@@ -55,10 +47,11 @@ e: {
 e: {
   "valueSet" : {
   "resourceType" : "ValueSet",
+  "language" : "en",
   "status" : "active",
   "expansion" : {
-    "identifier" : "urn:uuid:34ef317f-60d3-40e2-92fd-2b7013eca0ca",
-    "timestamp" : "2020-12-23T16:00:58.624Z",
+    "identifier" : "urn:uuid:24692dd4-8c81-445b-903f-02cc80f637a3",
+    "timestamp" : "2021-11-03T07:42:35.326Z",
     "parameter" : [{
       "name" : "limitedExpansion",
       "valueBoolean" : true
@@ -66,15 +59,6 @@ e: {
     {
       "name" : "excludeNested",
       "valueBoolean" : true
-    }],
-    "contains" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/valueset-definition",
-        "valueString" : "Amoxicillin and Clavulanate Potassium  20 TABLET, FILM COATED in 1 BOTTLE (50436-3129-1)"
-      }],
-      "system" : "http://hl7.org/fhir/sid/ndc",
-      "code" : "50436-3129-1",
-      "display" : "Amoxicillin and Clavulanate Potassium 875 mg/1 125 mg/1 20 TABLET, FILM COATED in 1 BOTTLE (50436-3129-1)"
     }]
   }
 },
