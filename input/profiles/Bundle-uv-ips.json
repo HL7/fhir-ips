@@ -19,6 +19,15 @@
         "path": "Bundle",
         "short": "International Patient Summary Bundle",
         "definition": "International Patient Summary Bundle. \r\nA container for a collection of resources in the patient summary.",
+        "constraint": [
+          {
+            "key": "bdl-ips-1",
+            "severity": "error",
+            "human": "An IPS document must have no additional Composition (including Composition subclass) resources besides the first",
+            "expression": "entry.tail().where(resource is Composition).empty()",
+            "source": "http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-cross-border-uv-ips"
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -26,6 +35,11 @@
         "path": "Bundle.identifier",
         "min": 1,
         "mustSupport": true
+      },
+      {
+        "id": "Bundle.type",
+        "path": "Bundle.type",
+        "fixedCode": "document"
       },
       {
         "id": "Bundle.timestamp",
@@ -51,8 +65,8 @@
           "rules": "open"
         },
         "short": "Entry resource in the patient summary bundle",
-        "definition": "An entry resource included in the patient summary bundle resource.",
-        "comment": "Must contain at a minimum the IPS Composition as the first entry and at least one entry each for IPS Problems, Allergies and Medications.",
+        "definition": "An entry resource included in the patient summary document bundle resource.",
+        "comment": "Must contain at a minimum the IPS Composition as the first entry (only a single Composition resource instance may be included) and at least one entry each for IPS Problems, Allergies and Medications.",
         "min": 4,
         "mustSupport": true
       },
