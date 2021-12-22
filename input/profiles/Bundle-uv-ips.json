@@ -25,7 +25,7 @@
             "severity": "error",
             "human": "An IPS document must have no additional Composition (including Composition subclass) resources besides the first",
             "expression": "entry.tail().where(resource is Composition).empty()",
-            "source": "http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-cross-border-uv-ips"
+            "source": "http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips"
           }
         ],
         "mustSupport": true
