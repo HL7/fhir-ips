@@ -1,14 +1,18 @@
 <OperationDefinition xmlns="http://hl7.org/fhir">
-    <url value="/fhir/*/OperationDefinition/Patient-t-summary"/>
-<<<<<<< HEAD
-    <name value="patient_summary"/>
-    <status value="active"/>
-    <description value="Patient Summary Requests"/>
-=======
-    <name value="Summary"/>
-    <status value="active"/>
->>>>>>> 44aaf4c2 (Added optional capability statement and optional operation definition)
+    <url value="http://hl7.org/fhir/uv/ips/OperationDefinition-summary.html"/>
+    <name value="International Patient Summary"/>
+    <status value="draft"/>
+    <description value="International Patient Summary Request"/>
     <kind value="operation"/>
+    <publisher value="HL7 International - Patient Care Workgroup"/>
+    <contact>
+      <name value="HL7 International - Patient Care Workgroup"/>
+      <telecom>
+        <system value="url"/>
+        <value value="http://www.hl7.org/Special/committees/patientcare/index.cfm"/>
+      </telecom>
+    </contact>
+    <description value="This operation is used to return a patient summary using the IPS profile."/>
     <affectsState value="false"/>
     <code value="summary"/>
     <resource value="Patient"/>
@@ -18,7 +22,7 @@
     <parameter>
         <name value="identifer"/>
         <use value="in"/>
-        <min value="0"/>
+        <min value="1"/>
         <max value="1"/>
         <type value="Identifier"/>
     </parameter>
@@ -43,8 +47,4 @@
         <max value="1"/>
         <type value="Bundle"/>
     </parameter>
-<<<<<<< HEAD
 </OperationDefinition>
-=======
-</OperationDefinition>
->>>>>>> 44aaf4c2 (Added optional capability statement and optional operation definition)
