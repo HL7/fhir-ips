@@ -1,62 +1,260 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
-    <url value="http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server"/>
-    <version value="1.0.0" />
-    <name value="IpsServerCapabilityStatement"/>
-    <title value="IPS Server Capability Statement"/>
-    <status value="draft"/>
-    <experimental value="false" />
-    <date value="2022-01-05T13:15:56.964-00:00"/>
-    <publisher value="HL7 International - Patient Care Workgroup"/>
-    <contact>
-      <name value="HL7 International - Patient Care Workgroup"/>
-      <telecom>
-        <system value="url"/>
-        <value value="http://www.hl7.org/Special/committees/patientcare/index.cfm"/>
-      </telecom>
-    </contact>
-    <description value="This Section describes the expected capabilities of the IPS Server actor which is responsible for providing responses to the queries submitted for IPS documents. The complete list of FHIR profiles supported by IPS Core Servers are defined."/>
-    <copyright value="Used by permission of HL7 International, all rights reserved Creative Commons License"/>
-    <kind value="capability"/>
-    <fhirVersion value="4.0.1"/>
-    <format value="application/fhir+xml"/>
-    <format value="xml"/>
-    <format value="application/fhir+json"/>
-    <format value="json"/>
-    <rest>
-        <mode value="server"/>
-        <resource>
-            <type value="OperationDefinition"/>
-            <profile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
-            <interaction>
-                <code value="read"/>
-            </interaction>
-            <searchInclude value="*"/>
-        </resource>
-        <resource>
-            <type value="Patient"/>
-            <profile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
-            <searchInclude value="*"/>
-            <operation>
-                <extension>
-                  <url value="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" />
-                  <valueCode value="SHOULD" />
-                </extension>
-                <name value="summary"/>
-                <definition value="http://hl7.org/fhir/uv/ips/OperationDefinition-summary.html"/>
-            </operation>
-        </resource>
-        <resource>
-            <type value="DocumentReference"/>
-            <profile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
-            <searchInclude value="*"/>
-            <operation>
-                <extension>
-                  <url value="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" />
-                  <valueCode value="SHOULD" />
-                </extension>
-                <name value="summary"/>
-                <definition value="http://build.fhir.org/ig/HL7/fhir-ipa/OperationDefinition-docref.html"/>
-            </operation>
-        </resource>
-    </rest>
+  <id value="ips-server" />
+  <url value="http://hl7.org/fhir/uv/ips/CapabilityStatement/ips-server"/>
+  <version value="1.0.0" />
+  <name value="IpsServerCapabilityStatement"/>
+  <title value="IPS Server Capability Statement"/>
+  <status value="draft"/>
+  <experimental value="false" />
+  <date value="2022-01-05T13:15:56.964-00:00"/>
+  <publisher value="HL7 International - Patient Care Workgroup"/>
+  <contact>
+    <name value="HL7 International - Patient Care Workgroup"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://www.hl7.org/Special/committees/patientcare/index.cfm"/>
+    </telecom>
+  </contact>
+  <description value="This Section describes the expected capabilities of the IPS Server actor which is responsible for providing responses to the queries submitted for IPS documents. The complete list of FHIR profiles supported by IPS Core Servers are defined."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Used by permission of HL7 International, all rights reserved Creative Commons License"/>
+  <kind value="capability"/>
+  <fhirVersion value="4.0.1"/>
+  <format value="application/fhir+xml"/>
+  <format value="xml"/>
+  <format value="application/fhir+json"/>
+  <format value="json"/>
+  <rest>
+    <mode value="server"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL" />
+      </extension>
+      <type value="Patient"/>
+      <profile value="https://hl7.org/fhir/uv/ips/StructureDefinition-Patient-uv-ips"/>
+      <operation>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD" />
+        </extension>
+        <name value="summary"/>
+        <definition value="http://hl7.org/fhir/uv/ips/OperationDefinition-summary"/>
+      </operation>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL" />
+      </extension>
+      <type value="Bundle"/>
+      <profile value="https://hl7.org/fhir/uv/ips/StructureDefinition-Bundle-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL" />
+      </extension>
+      <type value="Composition"/>
+      <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition-Composition-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHALL" />
+      </extension>
+      <type value="Composition"/>
+      <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition-Composition-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD" />
+      </extension>
+      <type value="AllergyIntolerance"/>
+      <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition-AllergyIntolerance-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD" />
+      </extension>
+      <type value="Condition"/>
+      <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition-Condition-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD" />
+      </extension>
+      <type value="Device"/>
+      <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition-Device-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD" />
+      </extension>
+      <type value="DeviceStatement" />
+      <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition-DeviceUseStatement-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD" />
+      </extension>
+      <type value="DiagnosticReport"/>
+      <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition-DiagnosticReport-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD" />
+      </extension>
+      <type value="ImagingStudy"/>
+      <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition-ImagingStudy-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD" />
+      </extension>
+      <type value="Immunization"/>
+      <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition-Immunization-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD" />
+      </extension>
+      <type value="Media"/>
+      <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition-Media-observation-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD" />
+      </extension>
+      <type value="Medication"/>
+      <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition-Medication-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD" />
+      </extension>
+      <type value="MedicationRequest"/>
+      <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition-MedicationRequest-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD" />
+      </extension>
+      <type value="MedicationStatement"/>
+      <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition-MedicationStatement-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD" />
+      </extension>
+      <type value="Observation"/>
+      <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition-Observation-pregnancy-edd-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD" />
+      </extension>
+      <type value="Observation"/>
+      <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition-Observation-pregnancy-status-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD" />
+      </extension>
+      <type value="Observation"/>
+      <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition-Observation-alcoholuse-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD" />
+      </extension>
+      <type value="Observation"/>
+      <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition-Observation-tobaccouse-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD" />
+      </extension>
+      <type value="Observation"/>
+      <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition-Observation-results-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD" />
+      </extension>
+      <type value="Observation"/>
+      <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition-Observation-results-laboratory-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD" />
+      </extension>
+      <type value="Observation"/>
+      <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition-Observation-results-pathology-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD" />
+      </extension>
+      <type value="Observation"/>
+      <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition-Observation-results-radiology-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD" />
+      </extension>
+      <type value="Organization"/>
+      <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition-Organization-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD" />
+      </extension>
+      <type value="Practitioner"/>
+      <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition-Practitioner-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD" />
+      </extension>
+      <type value="PractitionerRole"/>
+      <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition-PractitionerRole-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD" />
+      </extension>
+      <type value="Procedures"/>
+      <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition-Procedure-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD" />
+      </extension>
+      <type value="Specimen"/>
+      <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition-Specimen-uv-ips"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD" />
+      </extension>
+      <type value="DocumentReference"/>
+      <profile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
+      <operation>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          
+          <valueCode value="SHOULD" />
+        </extension>
+        <name value="docref"/>
+        <definition value="http://build.fhir.org/ig/HL7/fhir-ipa/OperationDefinition-docref"/>
+      </operation>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="SHOULD"/>
+      </extension>
+      <type value="OperationDefinition"/>
+      <profile value="http://hl7.org/fhir/StructureDefinition/OperationDefinition"/>
+    </resource>
+  </rest>
 </CapabilityStatement>
