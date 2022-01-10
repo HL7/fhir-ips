@@ -1,0 +1,52 @@
+<OperationDefinition xmlns="http://hl7.org/fhir">
+    <id value="summary" />
+    <url value="http://hl7.org/fhir/uv/ips/OperationDefinition/summary"/>
+    <name value="IpsSummary"/>
+    <title value="IPS Summary" />
+    <status value="draft"/>
+    <kind value="operation"/>
+    <date value="2022-01-05T13:15:56.964-00:00"/>
+    <publisher value="HL7 International - Patient Care Workgroup"/>
+    <contact>
+      <name value="HL7 International - Patient Care Workgroup"/>
+      <telecom>
+        <system value="url"/>
+        <value value="http://www.hl7.org/Special/committees/patientcare/index.cfm"/>
+      </telecom>
+    </contact>
+    <description value="This operation is used to return a patient summary using the IPS profile."/>
+    <affectsState value="false"/>
+    <code value="summary"/>
+    <resource value="Patient"/>
+    <system value="false"/>
+    <type value="true"/>
+    <instance value="true"/>
+    <parameter>
+        <name value="identifer"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="Identifier"/>
+    </parameter>
+    <parameter>
+        <name value="profile"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="uri"/>
+    </parameter>
+    <parameter>
+        <name value="graph"/>
+        <use value="in"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="uri"/>
+    </parameter>
+    <parameter>
+        <name value="return"/>
+        <use value="out"/>
+        <min value="0"/>
+        <max value="1"/>
+        <type value="Bundle"/>
+    </parameter>
+</OperationDefinition>
