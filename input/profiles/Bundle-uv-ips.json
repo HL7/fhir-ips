@@ -58,7 +58,7 @@
         "slicing": {
           "discriminator": [
             {
-              "type": "profile",
+              "type": "type",
               "path": "resource"
             }
           ],
@@ -112,6 +112,349 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:patient",
+        "path": "Bundle.entry",
+        "sliceName": "patient",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:patient.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Patient",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"
+            ]
+          }
+        ],  
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:AllergyIntolerance",
+        "path": "Bundle.entry",
+        "sliceName": "AllergyIntolerance",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:AllergyIntolerance.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "AllergyIntolerance",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:Condition",
+        "path": "Bundle.entry",
+        "sliceName": "Condition",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:Condition.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Condition",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:Device",
+        "path": "Bundle.entry",
+        "sliceName": "Device"
+      },
+      {
+        "id": "Bundle.entry:Device.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Device",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips",
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Device-observer-uv-ips"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:DeviceUseStatement",
+        "path": "Bundle.entry",
+        "sliceName": "DeviceUseStatement"
+      },
+      {
+        "id": "Bundle.entry:DeviceUseStatement.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "DeviceUseStatement",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:DiagnosticReport",
+        "path": "Bundle.entry",
+        "sliceName": "DiagnosticReport"
+      },
+      {
+        "id": "Bundle.entry:DiagnosticReport.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "DiagnosticReport",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:ImagingStudy",
+        "path": "Bundle.entry",
+        "sliceName": "ImagingStudy"
+      },
+      {
+        "id": "Bundle.entry:ImagingStudy.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "ImagingStudy",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/ImagingStudy-uv-ips"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:Immunization",
+        "path": "Bundle.entry",
+        "sliceName": "Immunization"
+      },
+      {
+        "id": "Bundle.entry:Immunization.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Immunization",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:Media",
+        "path": "Bundle.entry",
+        "sliceName": "Media"
+      },
+      {
+        "id": "Bundle.entry:Media.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Media",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Media-observation-uv-ips"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:Medication",
+        "path": "Bundle.entry",
+        "sliceName": "Medication"
+      },
+      {
+        "id": "Bundle.entry:Medication.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Medication",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"
+            ]    
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:MedicationRequest",
+        "path": "Bundle.entry",
+        "sliceName": "MedicationRequest"
+      },
+      {
+        "id": "Bundle.entry:MedicationRequest.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "MedicationRequest",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationRequest-uv-ips"
+            ] 
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:MedicationStatement",
+        "path": "Bundle.entry",
+        "sliceName": "MedicationStatement"
+      },
+      {
+        "id": "Bundle.entry:MedicationStatement.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "MedicationStatement",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"
+            ] 
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:Practitioner",
+        "path": "Bundle.entry",
+        "sliceName": "Practitioner"
+      },
+      {
+        "id": "Bundle.entry:Practitioner.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Practitioner",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:PractitionerRole",
+        "path": "Bundle.entry",
+        "sliceName": "PractitionerRole"
+      },
+      {
+        "id": "Bundle.entry:PractitionerRole.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "PractitionerRole",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/PractitionerRole-uv-ips"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:Procedure",
+        "path": "Bundle.entry",
+        "sliceName": "Procedure"
+      },
+      {
+        "id": "Bundle.entry:Procedure.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Procedure",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
+            ] 
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:Organization",
+        "path": "Bundle.entry",
+        "sliceName": "Organization"
+      },
+      {
+        "id": "Bundle.entry:Organization.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Organization",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips"
+            ] 
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:Observation",
+        "path": "Bundle.entry",
+        "sliceName": "Observation"
+      },
+      {
+        "id": "Bundle.entry:Observation.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Observation", 
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-edd-uv-ips",
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-outcome-uv-ips",
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips",
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips",
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips",
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips",
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-uv-ips",
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-pathology-uv-ips",
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-radiology-uv-ips"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:Specimen",
+        "path": "Bundle.entry",
+        "sliceName": "Specimen"
+      },
+      {
+        "id": "Bundle.entry:Specimen.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Specimen",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips"
+            ] 
+          }
+        ]
       }
     ]
   }
