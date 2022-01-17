@@ -39,15 +39,23 @@
 			</reference>
 			<name value="IPS Bundle example"/>
 			<description value="IPS Bundle example"/>
-			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips"/>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips"/>
 		</resource>
 		<resource>
 			<reference>
-				<reference value="Bundle/IPS-examples-Bundle-minimal"/>
+				<reference value="Bundle/bundle-no-info-required-sections"/>
+			</reference>
+			<name value="IPS Bundle example - no information in required sections"/>
+			<description value="IPS Bundle example - no information in required sections"/>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="Bundle/bundle-minimal"/>
 			</reference>
 			<name value="IPS Bundle example - minimal"/>
 			<description value="IPS Bundle example - minimal"/>
-			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips"/>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips"/>
 		</resource>
 		<resource>
 			<reference>
@@ -259,19 +267,19 @@
 		</resource>
 		<resource>
 			<reference>
-				<reference value="Observation/tobaccouse-example"/>
+				<reference value="Observation/tobacco-use-example"/>
 			</reference>
-			<name value="Observation: SH tobaccouse example"/>
-			<description value="Observation: SH tobaccouse example"/>
-			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips"/>
+			<name value="Observation: SH tobacco use example"/>
+			<description value="Observation: SH tobacco use example"/>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobacco-use-uv-ips"/>
 		</resource>
 		<resource>
 			<reference>
-				<reference value="Observation/alcoholuse-example"/>
+				<reference value="Observation/alcohol-use-example"/>
 			</reference>
-			<name value="Observation: SH alcoholuse example"/>
-			<description value="Observation: SH alcoholuse example"/>
-			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips"/>
+			<name value="Observation: SH alcohol use example"/>
+			<description value="Observation: SH alcohol use example"/>
+			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcohol-use-uv-ips"/>
 		</resource>
 		<resource>
 			<reference>
@@ -328,6 +336,12 @@
 			<name value="Media: example"/>
 			<description value="Media: example"/>
 			<exampleCanonical value="http://hl7.org/fhir/uv/ips/StructureDefinition/Media-observation-uv-ips"/>
+		</resource>
+		<resource>
+			<reference>
+				<reference value="ValueSet/dicom-cid-29-AcquisitionModality"/>
+			</reference>
+			<name value="AcquisitionModality"/>
 		</resource>
 		<resource>
 			<reference>
@@ -437,7 +451,33 @@
 		</parameter>
 		<parameter>
 			<code value="special-url"/>
+			<value value="http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html"/>
+		</parameter>
+		<parameter>
+			<code value="special-url"/>
 			<value value="http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_33.html"/>
 		</parameter>
+		<!--
+		<parameter>
+			<code value="logging"/>
+			<value value="init"/>
+		</parameter>
+		<parameter>
+			<code value="logging"/>
+			<value value="progress"/>
+		</parameter>
+		<parameter>
+			<code value="logging"/>
+			<value value="tx"/>
+		</parameter>
+		<parameter>
+			<code value="logging"/>
+			<value value="generate"/>
+		</parameter>
+		<parameter>
+			<code value="logging"/>
+			<value value="html"/>
+		</parameter>
+	-->
 	</definition>
 </ImplementationGuide>

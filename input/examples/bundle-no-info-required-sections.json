@@ -1,0 +1,599 @@
+{
+    "resourceType": "Bundle",
+    "id": "bundle-no-info-required-sections",
+    "language": "en-NZ",
+    "identifier": {
+        "system": "urn:oid:2.16.724.4.8.10.200.10",
+        "value": "59f51f0b-2005-485c-858e-3d3ae9657287"
+    },
+    "type": "document",
+    "timestamp": "2022-01-08T20:42:11.0607701+00:00",
+    "entry": [
+        {
+            "fullUrl": "https://terminz.azurewebsites.net/fhir/Composition/514af4c1-194d-48b4-8afe-7be09d3f895a",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "514af4c1-194d-48b4-8afe-7be09d3f895a",
+                "meta": {
+                    "versionId": "1"
+                },
+                "language": "en-NZ",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml' lang='en-NZ' xml:lang='en-NZ'>International Patient Summary for James Judge</div>"
+                },
+                "identifier": {
+                    "system": "urn:oid:2.16.840.1.113883.2.18.7.2",
+                    "value": "59f51f0b-2005-485c-858e-3d3ae9657287"
+                },
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "60591-5",
+                            "display": "Patient summary Document"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/AAA1234"
+                },
+                "date": "2021-05-03",
+                "author": [
+                    {
+                        "reference": "Organization/d9b97b04-b606-4f07-baf2-7eb3dcae0a2a"
+                    }
+                ],
+                "title": "International Patient Summary",
+                "confidentiality": "N",
+                "attester": [
+                    {
+                        "mode": "professional",
+                        "time": "2021-05-03",
+                        "party": {
+                            "reference": "PractitionerRole/f54d8c90-aea2-46b0-8f7a-8683db78344e"
+                        }
+                    }
+                ],
+                "custodian": {
+                    "reference": "Organization/70a756e3-20b3-4637-8601-a222983e295a"
+                },
+                "relatesTo": [
+                    {
+                        "code": "transforms",
+                        "targetIdentifier": {
+                            "system": "urn:oid:2.16.840.1.113883.2.18.7.2",
+                            "value": "59f51f0b-2005-485c-858e-3d3ae9657287"
+                        }
+                    }
+                ],
+                "event": [
+                    {
+                        "code": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v3-ActClass",
+                                        "code": "PCPR"
+                                    }
+                                ]
+                            }
+                        ],
+                        "period": {
+                            "end": "2021-05-03"
+                        }
+                    }
+                ],
+                "section": [
+                    {
+                        "title": "Allergies and Intolerances",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "48765-2",
+                                    "display": "Allergies and adverse reactions Document"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "<div xmlns='http://www.w3.org/1999/xhtml' lang='en-NZ' xml:lang='en-NZ'>There is no information available regarding the subject's allergy conditions.</div>"
+                        },
+                        "entry": [
+                            {
+                                "reference": "AllergyIntolerance/e198be1e-9861-46af-9d97-841ef9f7c707"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Problem List",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "11450-4",
+                                    "display": "Problem list - Reported"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "<div xmlns='http://www.w3.org/1999/xhtml' lang='en-NZ' xml:lang='en-NZ'>There is no information available about the subject's health problems or disabilities.</div>"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Condition/da138a5d-633f-493f-9485-e5af1320db5b"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Medication Summary",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "10160-0",
+                                    "display": "History of Medication use Narrative"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "<div xmlns='http://www.w3.org/1999/xhtml' lang='en-NZ' xml:lang='en-NZ'>There is no information available about the subject's medication use or administration.</div>"
+                        },
+                        "entry": [
+                            {
+                                "reference": "MedicationStatement/ceb9a0d2-454c-4834-be55-2fa1eb2acd49"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Immunizations",
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "11369-6",
+                                    "display": "History of Immunization Narrative"
+                                }
+                            ]
+                        },
+                        "text": {
+                            "status": "generated",
+                            "div": "<div xmlns='http://www.w3.org/1999/xhtml' xml:lang='en-NZ'><table xmlns=\"http://www.w3.org/1999/xhtml\">\r\n        <thead>\r\n          <tr>\r\n            <th>Vaccine</th>\r\n            <th>Date</th>\r\n            <th>Seq</th>\r\n            <th>Route</th>\r\n            <th>Site</th>\r\n            <th>Indication</th>\r\n            <th>Status</th>\r\n            \r\n            \r\n          </tr>\r\n        </thead>\r\n        <tbody>\r\n          <tr>\r\n            <td>Influenza</td>\r\n            <td>03/07/2020</td>\r\n            <td>2</td>\r\n            <td>Injection, intramuscular</td>\r\n            <td>Entire left upper arm</td>\r\n            <td>Eligible condition (Influenza)</td>\r\n            <td>completed</td>\r\n            \r\n            \r\n          </tr>\r\n          <tr>\r\n            <td>Influenza</td>\r\n            <td>03/06/2019</td>\r\n            <td>1</td>\r\n            <td>Injection, intramuscular</td>\r\n            <td>Entire left upper arm</td>\r\n            <td>Eligible condition (Influenza)</td>\r\n            <td>completed</td>\r\n            \r\n            \r\n          </tr>\r\n        </tbody>\r\n      </table>\r\n    </div>"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Immunization/4ab062b3-8843-4b98-af62-3d6d178a3772"
+                            },
+                            {
+                                "reference": "Immunization/bd6c6537-6c5a-4fa8-8d26-2b49377425a2"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://terminz.azurewebsites.net/fhir/Patient/AAA1234",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "AAA1234",
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns='http://www.w3.org/1999/xhtml' xml:lang='en-NZ'>Name: James Judge</div>"
+                },
+                "identifier": [
+                    {
+                        "system": "https://standards.digital.health.nz/ns/nhi-id",
+                        "value": "AAA1234"
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "usual",
+                        "family": "Judge",
+                        "given": [
+                            "James"
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "tel:+6478532279",
+                        "use": "home"
+                    }
+                ],
+                "gender": "male",
+                "birthDate": "1985-04-25",
+                "address": [
+                    {
+                        "use": "home",
+                        "type": "physical",
+                        "line": [
+                            "Bleak House",
+                            "3 Worcester Drive",
+                            "Rototuna North"
+                        ],
+                        "city": "Hamilton",
+                        "postalCode": "3210",
+                        "country": "NZ"
+                    }
+                ],
+                "maritalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                            "code": "M",
+                            "display": "Married"
+                        }
+                    ]
+                },
+                "contact": [
+                    {
+                        "relationship": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                                        "code": "FAMMEMB",
+                                        "display": "family member"
+                                    },
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                                        "code": "N",
+                                        "display": "Next-of-Kin"
+                                    }
+                                ]
+                            }
+                        ],
+                        "name": {
+                            "use": "usual",
+                            "family": "mother",
+                            "given": [
+                                "Natural",
+                                "mother"
+                            ]
+                        }
+                    },
+                    {
+                        "relationship": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                                        "code": "FRND",
+                                        "display": "unrelated friend"
+                                    },
+                                    {
+                                        "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                                        "code": "C",
+                                        "display": "Emergency Contact"
+                                    }
+                                ]
+                            }
+                        ],
+                        "name": {
+                            "use": "usual",
+                            "family": "Rabbit",
+                            "given": [
+                                "Peter",
+                                "Rabbit"
+                            ]
+                        },
+                        "telecom": [
+                            {
+                                "system": "phone",
+                                "value": "07 853 9191",
+                                "use": "home"
+                            }
+                        ],
+                        "address": {
+                            "use": "home",
+                            "type": "physical",
+                            "line": [
+                                "9 Worcester Drive",
+                                "Rototuna"
+                            ],
+                            "city": "Hamilton",
+                            "postalCode": "3210",
+                            "country": "NZ"
+                        }
+                    }
+                ],
+                "communication": [
+                    {
+                        "language": {
+                            "coding": [
+                                {
+                                    "system": "urn:ietf:bcp:47",
+                                    "code": "en-NZ"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://terminz.azurewebsites.net/fhir/Organization/d9b97b04-b606-4f07-baf2-7eb3dcae0a2a",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "d9b97b04-b606-4f07-baf2-7eb3dcae0a2a",
+                "identifier": [
+                    {
+                        "system": "https://standards.digital.health.nz/ns/hpi-facility-id",
+                        "value": "F0K068-E"
+                    }
+                ],
+                "name": "Northcare, Thomas Road"
+            }
+        },
+        {
+            "fullUrl": "https://terminz.azurewebsites.net/fhir/PractitionerRole/f54d8c90-aea2-46b0-8f7a-8683db78344e",
+            "resource": {
+                "resourceType": "PractitionerRole",
+                "id": "f54d8c90-aea2-46b0-8f7a-8683db78344e",
+                "practitioner": {
+                    "reference": "Practitioner/19c24876-ccf8-45e7-8b66-462317e970f1"
+                },
+                "code": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "158965000",
+                                "display": "Doctor"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://terminz.azurewebsites.net/fhir/Practitioner/19c24876-ccf8-45e7-8b66-462317e970f1",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "19c24876-ccf8-45e7-8b66-462317e970f1",
+                "name": [
+                    {
+                        "use": "usual",
+                        "family": "Kildare",
+                        "given": [
+                            "Dr",
+                            "Richard",
+                            "Kildare"
+                        ]
+                    }
+                ],
+                "telecom": [
+                    {
+                        "system": "phone",
+                        "value": "tel:+6478539191",
+                        "use": "work"
+                    }
+                ],
+                "address": [
+                    {
+                        "use": "work",
+                        "type": "physical",
+                        "line": [
+                            "12 Thomas Rd",
+                            "Huntingdon"
+                        ],
+                        "city": "Hamilton",
+                        "postalCode": "3211",
+                        "country": "NZ"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://terminz.azurewebsites.net/fhir/Organization/70a756e3-20b3-4637-8601-a222983e295a",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "70a756e3-20b3-4637-8601-a222983e295a",
+                "identifier": [
+                    {
+                        "system": "https://standards.digital.health.nz/ns/psychotherapists-board-id",
+                        "value": "F2N000-J"
+                    }
+                ],
+                "name": "NorthCare Pukete Road"
+            }
+        },
+        {
+            "fullUrl": "https://terminz.azurewebsites.net/fhir/AllergyIntolerance/e198be1e-9861-46af-9d97-841ef9f7c707",
+            "resource": {
+                "resourceType": "AllergyIntolerance",
+                "id": "e198be1e-9861-46af-9d97-841ef9f7c707",
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+                            "code": "active"
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
+                            "code": "no-allergy-info",
+                            "display": "No information about allergies"
+                        }
+                    ]
+                },
+                "patient": {
+                    "reference": "Patient/AAA1234"
+                }
+            }
+        },
+        {
+            "fullUrl": "https://terminz.azurewebsites.net/fhir/Condition/da138a5d-633f-493f-9485-e5af1320db5b",
+            "resource": {
+                "resourceType": "Condition",
+                "id": "da138a5d-633f-493f-9485-e5af1320db5b",
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "code": "active"
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
+                            "code": "no-problem-info",
+                            "display": "No information about problems"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/AAA1234"
+                }
+            }
+        },
+        {
+            "fullUrl": "https://terminz.azurewebsites.net/fhir/MedicationStatement/ceb9a0d2-454c-4834-be55-2fa1eb2acd49",
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "ceb9a0d2-454c-4834-be55-2fa1eb2acd49",
+                "status": "unknown",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
+                            "code": "no-medication-info",
+                            "display": "No information about medications"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/AAA1234"
+                },
+                "effectivePeriod": {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                            "valueCode": "not-applicable"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "fullUrl": "https://terminz.azurewebsites.net/fhir/Immunization/4ab062b3-8843-4b98-af62-3d6d178a3772",
+            "resource": {
+                "resourceType": "Immunization",
+                "id": "4ab062b3-8843-4b98-af62-3d6d178a3772",
+                "status": "completed",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/sid/cvx",
+                            "code": "141",
+                            "display": "Influenza, seasonal, injectable"
+                        }
+                    ]
+                },
+                "patient": {
+                    "reference": "Patient/AAA1234"
+                },
+                "occurrenceDateTime": "2020-07-03",
+                "lotNumber": "B52b",
+                "expirationDate": "2020-07-03",
+                "site": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "72098002",
+                            "display": "Entire left upper arm"
+                        }
+                    ]
+                },
+                "route": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration",
+                            "code": "IM",
+                            "display": "Injection, intramuscular"
+                        }
+                    ]
+                },
+                "performer": [
+                    {
+                        "actor": {
+                            "reference": "Organization/70a756e3-20b3-4637-8601-a222983e295a"
+                        }
+                    }
+                ],
+                "protocolApplied": [
+                    {
+                        "series": "45y (Eligible condition (Influenza))",
+                        "doseNumberPositiveInt": 2
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "https://terminz.azurewebsites.net/fhir/Immunization/bd6c6537-6c5a-4fa8-8d26-2b49377425a2",
+            "resource": {
+                "resourceType": "Immunization",
+                "id": "bd6c6537-6c5a-4fa8-8d26-2b49377425a2",
+                "status": "completed",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "system": "http://hl7.org/fhir/sid/cvx",
+                            "code": "141",
+                            "display": "Influenza, seasonal, injectable"
+                        }
+                    ]
+                },
+                "patient": {
+                    "reference": "Patient/AAA1234"
+                },
+                "occurrenceDateTime": "2019-06-03",
+                "lotNumber": "B52",
+                "expirationDate": "2019-08-03",
+                "site": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "72098002",
+                            "display": "Entire left upper arm"
+                        }
+                    ]
+                },
+                "route": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration",
+                            "code": "IM",
+                            "display": "Injection, intramuscular"
+                        }
+                    ]
+                },
+                "performer": [
+                    {
+                        "actor": {
+                            "reference": "Organization/70a756e3-20b3-4637-8601-a222983e295a"
+                        }
+                    }
+                ],
+                "protocolApplied": [
+                    {
+                        "series": "45y (Eligible condition (Influenza))",
+                        "doseNumberPositiveInt": 1
+                    }
+                ]
+            }
+        }
+    ]
+}
