@@ -23,7 +23,7 @@
           {
             "key": "bdl-ips-1",
             "severity": "error",
-            "human": "An IPS document must have no additional Composition (including Composition subclass) resources besides the first",
+            "human": "An IPS document must have no additional Composition (including Composition subclass) resources besides the first.",
             "expression": "entry.tail().where(resource is Composition).empty()",
             "source": "http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips"
           }
@@ -59,6 +59,10 @@
           "discriminator": [
             {
               "type": "type",
+              "path": "resource"
+            },
+            {
+              "type": "profile",
               "path": "resource"
             }
           ],
@@ -96,8 +100,7 @@
         "path": "Bundle.entry",
         "sliceName": "composition",
         "min": 1,
-        "max": "1",
-        "mustSupport": true
+        "max": "1"
       },
       {
         "id": "Bundle.entry:composition.resource",
@@ -110,16 +113,14 @@
               "http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips"
             ]
           }
-        ],
-        "mustSupport": true
+        ]
       },
       {
         "id": "Bundle.entry:patient",
         "path": "Bundle.entry",
         "sliceName": "patient",
         "min": 1,
-        "max": "1",
-        "mustSupport": true
+        "max": "1"
       },
       {
         "id": "Bundle.entry:patient.resource",
@@ -132,18 +133,15 @@
               "http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"
             ]
           }
-        ],  
-        "mustSupport": true
+        ]
       },
       {
-        "id": "Bundle.entry:AllergyIntolerance",
+        "id": "Bundle.entry:allergyintolerance",
         "path": "Bundle.entry",
-        "sliceName": "AllergyIntolerance",
-        "min": 1,
-        "mustSupport": true
+        "sliceName": "allergyintolerance"
       },
       {
-        "id": "Bundle.entry:AllergyIntolerance.resource",
+        "id": "Bundle.entry:allergyintolerance.resource",
         "path": "Bundle.entry.resource",
         "min": 1,
         "type": [
@@ -153,18 +151,15 @@
               "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"
             ]
           }
-        ],
-        "mustSupport": true
+        ]
       },
       {
-        "id": "Bundle.entry:Condition",
+        "id": "Bundle.entry:condition",
         "path": "Bundle.entry",
-        "sliceName": "Condition",
-        "min": 1,
-        "mustSupport": true
+        "sliceName": "condition"
       },
       {
-        "id": "Bundle.entry:Condition.resource",
+        "id": "Bundle.entry:condition.resource",
         "path": "Bundle.entry.resource",
         "min": 1,
         "type": [
@@ -174,35 +169,33 @@
               "http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"
             ]
           }
-        ],
-        "mustSupport": true
+        ]
       },
       {
-        "id": "Bundle.entry:Device",
+        "id": "Bundle.entry:device",
         "path": "Bundle.entry",
-        "sliceName": "Device"
+        "sliceName": "device"
       },
       {
-        "id": "Bundle.entry:Device.resource",
+        "id": "Bundle.entry:device.resource",
         "path": "Bundle.entry.resource",
         "min": 1,
         "type": [
           {
             "code": "Device",
             "profile": [
-              "http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips",
-              "http://hl7.org/fhir/uv/ips/StructureDefinition/Device-observer-uv-ips"
+              "http://hl7.org/fhir/StructureDefinition/Device"
             ]
           }
         ]
       },
       {
-        "id": "Bundle.entry:DeviceUseStatement",
+        "id": "Bundle.entry:deviceusestatement",
         "path": "Bundle.entry",
-        "sliceName": "DeviceUseStatement"
+        "sliceName": "deviceusestatement"
       },
       {
-        "id": "Bundle.entry:DeviceUseStatement.resource",
+        "id": "Bundle.entry:deviceusestatement.resource",
         "path": "Bundle.entry.resource",
         "min": 1,
         "type": [
@@ -215,12 +208,12 @@
         ]
       },
       {
-        "id": "Bundle.entry:DiagnosticReport",
+        "id": "Bundle.entry:diagnosticreport",
         "path": "Bundle.entry",
-        "sliceName": "DiagnosticReport"
+        "sliceName": "diagnosticreport"
       },
       {
-        "id": "Bundle.entry:DiagnosticReport.resource",
+        "id": "Bundle.entry:diagnosticreport.resource",
         "path": "Bundle.entry.resource",
         "min": 1,
         "type": [
@@ -233,12 +226,12 @@
         ]
       },
       {
-        "id": "Bundle.entry:ImagingStudy",
+        "id": "Bundle.entry:imagingstudy",
         "path": "Bundle.entry",
-        "sliceName": "ImagingStudy"
+        "sliceName": "imagingstudy"
       },
       {
-        "id": "Bundle.entry:ImagingStudy.resource",
+        "id": "Bundle.entry:imagingstudy.resource",
         "path": "Bundle.entry.resource",
         "min": 1,
         "type": [
@@ -251,12 +244,12 @@
         ]
       },
       {
-        "id": "Bundle.entry:Immunization",
+        "id": "Bundle.entry:immunization",
         "path": "Bundle.entry",
-        "sliceName": "Immunization"
+        "sliceName": "immunization"
       },
       {
-        "id": "Bundle.entry:Immunization.resource",
+        "id": "Bundle.entry:immunization.resource",
         "path": "Bundle.entry.resource",
         "min": 1,
         "type": [
@@ -269,12 +262,12 @@
         ]
       },
       {
-        "id": "Bundle.entry:Media",
+        "id": "Bundle.entry:media",
         "path": "Bundle.entry",
-        "sliceName": "Media"
+        "sliceName": "media"
       },
       {
-        "id": "Bundle.entry:Media.resource",
+        "id": "Bundle.entry:media.resource",
         "path": "Bundle.entry.resource",
         "min": 1,
         "type": [
@@ -287,12 +280,12 @@
         ]
       },
       {
-        "id": "Bundle.entry:Medication",
+        "id": "Bundle.entry:medication",
         "path": "Bundle.entry",
-        "sliceName": "Medication"
+        "sliceName": "medication"
       },
       {
-        "id": "Bundle.entry:Medication.resource",
+        "id": "Bundle.entry:medication.resource",
         "path": "Bundle.entry.resource",
         "min": 1,
         "type": [
@@ -300,17 +293,17 @@
             "code": "Medication",
             "profile": [
               "http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"
-            ]    
+            ]
           }
         ]
       },
       {
-        "id": "Bundle.entry:MedicationRequest",
+        "id": "Bundle.entry:medicationrequest",
         "path": "Bundle.entry",
-        "sliceName": "MedicationRequest"
+        "sliceName": "medicationrequest"
       },
       {
-        "id": "Bundle.entry:MedicationRequest.resource",
+        "id": "Bundle.entry:medicationrequest.resource",
         "path": "Bundle.entry.resource",
         "min": 1,
         "type": [
@@ -318,17 +311,17 @@
             "code": "MedicationRequest",
             "profile": [
               "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationRequest-uv-ips"
-            ] 
+            ]
           }
         ]
       },
       {
-        "id": "Bundle.entry:MedicationStatement",
+        "id": "Bundle.entry:medicationstatement",
         "path": "Bundle.entry",
-        "sliceName": "MedicationStatement"
+        "sliceName": "medicationstatement"
       },
       {
-        "id": "Bundle.entry:MedicationStatement.resource",
+        "id": "Bundle.entry:medicationstatement.resource",
         "path": "Bundle.entry.resource",
         "min": 1,
         "type": [
@@ -336,17 +329,17 @@
             "code": "MedicationStatement",
             "profile": [
               "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"
-            ] 
+            ]
           }
         ]
       },
       {
-        "id": "Bundle.entry:Practitioner",
+        "id": "Bundle.entry:practitioner",
         "path": "Bundle.entry",
-        "sliceName": "Practitioner"
+        "sliceName": "practitioner"
       },
       {
-        "id": "Bundle.entry:Practitioner.resource",
+        "id": "Bundle.entry:practitioner.resource",
         "path": "Bundle.entry.resource",
         "min": 1,
         "type": [
@@ -359,12 +352,12 @@
         ]
       },
       {
-        "id": "Bundle.entry:PractitionerRole",
+        "id": "Bundle.entry:practitionerrole",
         "path": "Bundle.entry",
-        "sliceName": "PractitionerRole"
+        "sliceName": "practitionerrole"
       },
       {
-        "id": "Bundle.entry:PractitionerRole.resource",
+        "id": "Bundle.entry:practitionerrole.resource",
         "path": "Bundle.entry.resource",
         "min": 1,
         "type": [
@@ -377,12 +370,12 @@
         ]
       },
       {
-        "id": "Bundle.entry:Procedure",
+        "id": "Bundle.entry:procedure",
         "path": "Bundle.entry",
-        "sliceName": "Procedure"
+        "sliceName": "procedure"
       },
       {
-        "id": "Bundle.entry:Procedure.resource",
+        "id": "Bundle.entry:procedure.resource",
         "path": "Bundle.entry.resource",
         "min": 1,
         "type": [
@@ -390,17 +383,17 @@
             "code": "Procedure",
             "profile": [
               "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
-            ] 
+            ]
           }
         ]
       },
       {
-        "id": "Bundle.entry:Organization",
+        "id": "Bundle.entry:organization",
         "path": "Bundle.entry",
-        "sliceName": "Organization"
+        "sliceName": "organization"
       },
       {
-        "id": "Bundle.entry:Organization.resource",
+        "id": "Bundle.entry:organization.resource",
         "path": "Bundle.entry.resource",
         "min": 1,
         "type": [
@@ -408,43 +401,125 @@
             "code": "Organization",
             "profile": [
               "http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips"
-            ] 
-          }
-        ]
-      },
-      {
-        "id": "Bundle.entry:Observation",
-        "path": "Bundle.entry",
-        "sliceName": "Observation"
-      },
-      {
-        "id": "Bundle.entry:Observation.resource",
-        "path": "Bundle.entry.resource",
-        "min": 1,
-        "type": [
-          {
-            "code": "Observation", 
-            "profile": [
-              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-edd-uv-ips",
-              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-outcome-uv-ips",
-              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips",
-              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips",
-              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips",
-              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips",
-              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-uv-ips",
-              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-pathology-uv-ips",
-              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-radiology-uv-ips"
             ]
           }
         ]
       },
       {
-        "id": "Bundle.entry:Specimen",
+        "id": "Bundle.entry:observation-pregnancy-edd",
         "path": "Bundle.entry",
-        "sliceName": "Specimen"
+        "sliceName": "observation-pregnancy-edd"
       },
       {
-        "id": "Bundle.entry:Specimen.resource",
+        "id": "Bundle.entry:observation-pregnancy-edd.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-edd-uv-ips"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:observation-pregnancy-outcome",
+        "path": "Bundle.entry",
+        "sliceName": "observation-pregnancy-outcome"
+      },
+      {
+        "id": "Bundle.entry:observation-pregnancy-outcome.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-outcome-uv-ips"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:observation-pregnancy-status",
+        "path": "Bundle.entry",
+        "sliceName": "observation-pregnancy-status"
+      },
+      {
+        "id": "Bundle.entry:observation-pregnancy-status.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:observation-alcohol-use",
+        "path": "Bundle.entry",
+        "sliceName": "observation-alcohol-use"
+      },
+      {
+        "id": "Bundle.entry:observation-alcohol-use.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:observation-tobacco-use",
+        "path": "Bundle.entry",
+        "sliceName": "observation-tobacco-use"
+      },
+      {
+        "id": "Bundle.entry:observation-tobacco-use.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:observation-results",
+        "path": "Bundle.entry",
+        "sliceName": "observation-results"
+      },
+      {
+        "id": "Bundle.entry:observation-results.resource",
+        "path": "Bundle.entry.resource",
+        "min": 1,
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:specimen",
+        "path": "Bundle.entry",
+        "sliceName": "specimen"
+      },
+      {
+        "id": "Bundle.entry:specimen.resource",
         "path": "Bundle.entry.resource",
         "min": 1,
         "type": [
@@ -452,7 +527,7 @@
             "code": "Specimen",
             "profile": [
               "http://hl7.org/fhir/uv/ips/StructureDefinition/Specimen-uv-ips"
-            ] 
+            ]
           }
         ]
       }
