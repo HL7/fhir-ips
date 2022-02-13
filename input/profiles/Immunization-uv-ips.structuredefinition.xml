@@ -198,7 +198,6 @@
 			<short value="Code for a disease the vaccination is against from the SNOMED CT GPS code set."/>
 			<definition value="Code for a disease the vaccination is against from the SNOMED CT GPS code set."/>
 			<min value="0"/>
-			<max value="1"/>
 			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
@@ -206,6 +205,17 @@
 				</extension>
 				<strength value="required"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips"/>
+			</binding>
+		</element>
+		<element id="Immunization.protocolApplied.targetDisease:slicingTest">
+			<path value="Immunization.protocolApplied.targetDisease"/>
+			<sliceName value="slicingTest"/>
+			<short value="Additional slice for slicing tests."/>
+			<min value="0"/>
+			<mustSupport value="true"/>
+			<binding>
+				<strength value="required"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-reaction-gps-uv-ips"/>
 			</binding>
 		</element>
 	</differential>
