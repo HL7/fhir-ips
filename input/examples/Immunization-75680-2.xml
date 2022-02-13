@@ -1,0 +1,108 @@
+<Immunization xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<id value="75680-2"/>
+	<language value="fr-LU"/>
+	<text xmlns:xhtml="http://www.w3.org/1999/xhtml" >
+		<status value="generated"/>
+		<xhtml:div lang="fr-LU" xml:lang="fr-LU">
+			<xhtml:p>
+				<xhtml:b>Marie Lux-Brennard</xhtml:b> (Apr 17, 1998) </xhtml:p>
+			<xhtml:p>Vaccin anti diphtérie-coqueluche-tétanos-poliomyélite, Jun 3, 1998, 10:00:00 PM</xhtml:p>
+			<xhtml:p>Voie intramusculaire, Cuisse droite</xhtml:p>
+		</xhtml:div>
+	</text>
+	<status value="completed"/>
+	<vaccineCode>
+        <!--
+		<coding>
+			<system value="http://snomed.info/sct"/>
+            <code value="836508001"/>
+            <display value="Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens-containing vaccine product">
+				<extension url="http://hl7.org/fhir/StructureDefinition/translation">
+					<extension url="lang">
+						<valueCode value="fr-LU"/>
+					</extension>
+					<extension url="content">
+						<valueString value="Vaccin anti diphtérie-coqueluche-tétanos-poliomyélite"/>
+					</extension>
+				</extension>
+			</display>
+		</coding>
+		<coding>
+			<system value="http://www.whocc.no/atc"/>
+			<code value="J07CA02"/>
+			<display value="diphtheria-pertussis-poliomyelitis-tetanus">
+				<extension url="http://hl7.org/fhir/StructureDefinition/translation">
+					<extension url="lang">
+						<valueCode value="fr-LU"/>
+					</extension>
+					<extension url="content">
+						<valueString value="DIPHTERIE - COQUELUCHE - POLIOMYELITE - TETANOS"/>
+					</extension>
+				</extension>
+			</display>
+		</coding>
+    -->
+		<coding>
+			<system value="urn:oid:1.3.182.4.11.22"/>
+			<code value="2374429"/>
+			<display value="BOOSTRIX-POLIO"/>
+		</coding>
+		<text value="Vaccin anti diphtérie-coqueluche-tétanos-poliomyélite"/>
+	</vaccineCode>
+	<patient>
+		<reference value="Patient/66033"/>
+	</patient>
+	<occurrenceDateTime value="1998-06-04T00:00:00+02:00"/>
+	<primarySource value="true"/>
+	<lotNumber value="AXK23RWERS"/>
+	<expirationDate value="2000-06-01"/>
+	<site>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="11207009"/>
+			<display value="Right thigh">
+				<extension url="http://hl7.org/fhir/StructureDefinition/translation">
+					<extension url="lang">
+						<valueCode value="fr-LU"/>
+					</extension>
+					<extension url="content">
+						<valueString value="Cuisse droite"/>
+					</extension>
+				</extension>
+			</display>
+		</coding>
+		<text value="Cuisse droite"/>
+	</site>
+	<route>
+		<coding>
+			<system value="http://standardterms.edqm.eu"/>
+			<code value="20035000"/>
+			<display value="Intramuscular use">
+				<extension url="http://hl7.org/fhir/StructureDefinition/translation">
+					<extension url="lang">
+						<valueCode value="fr-LU"/>
+					</extension>
+					<extension url="content">
+						<valueString value="Voie intramusculaire"/>
+					</extension>
+				</extension>
+			</display>
+		</coding>
+		<text value="Voie intramusculaire"/>
+	</route>
+	<protocolApplied>
+		<targetDisease>
+			<coding>
+				<system value="urn:oid:1.3.182.4.11.22"/>
+				<code value="2374429"/>
+				<display value="BOOSTRIX-POLIO"/>
+			</coding>
+			<coding>
+				<system value="http://snomed.info/sct"/>
+				<code value="14189004"/>
+				<display value="Measles"/>
+			</coding>
+		</targetDisease>
+		<doseNumberPositiveInt value="1"/>
+	</protocolApplied>
+</Immunization>
