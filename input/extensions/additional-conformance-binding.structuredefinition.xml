@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <id value="elementdefinition-additionalBinding"/>
+    <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/elementdefinition-additionalBinding"/>
+    <name value="AdditionalBinding"/>
+    <title value="Additional Binding"/>
+    <status value="active"/>
+    <description value="Extension defined by the IPS project to allow specification of an additional conformance binding for an element."/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <context>
+        <type value="element"/>
+        <expression value="ElementDefinition.binding"/>
+    </context>
+    <type value="Extension"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Extension">
+            <path value="Extension"/>
+            <short value="Additional Binding"/>
+            <definition value="Specification of an additional conformance binding for an element."/>
+            <min value="0"/>
+            <max value="*"/>
+        </element>
+        <element id="Extension.extension">
+            <path value="Extension.extension"/>
+            <max value="0"/>
+        </element>
+        <element id="Extension.url">
+            <path value="Extension.url"/>
+            <fixedUri value="http://hl7.org/fhir/uv/ips/StructureDefinition/elementdefinition-additionalBinding"/>
+        </element>
+        <element id="Extension.valueCanonical">
+            <path value="Extension.valueCanonical"/>
+            <min value="1"/>
+            <type>
+                <code value="canonical"/>
+                <targetProfile value="http://hl7.org/fhir/StructureDefinition/ValueSet"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>
