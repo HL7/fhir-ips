@@ -24,6 +24,7 @@
 		</element>
 		<element id="Immunization.vaccineCode">
 			<path value="Immunization.vaccineCode"/>
+			<!--
 			<slicing>
 				<discriminator>
 					<type value="pattern"/>
@@ -32,6 +33,7 @@
 				<description value="Discriminated by bound value set"/>
 				<rules value="open"/>
 			</slicing>
+		-->
 			<short value="Vaccine that was administered or was to be administered.Several kinds of vaccine product coding could be provided.&#xD;&#xA;&#xD;&#xA;
 				The IPS assumes that either the type of the vaccine for particular disease or diseases (e.g. MMR vaccine) against which the patient has been immunised is provided; or the known absent / unknown code.&#xD;&#xA;&#xD;&#xA;
 				Other coded information can be provided as well as: the IDMP Pharmaceutical Product Identifiers (PhPID), Medicinal Product Identifier (MPID), Packaged Medicinal Product Identifier (PCID), when available, or equivalent coded concepts; the WHO ATC codes; or any other kind of code that that identifies, classifies or cluster the administered product."/>
@@ -60,8 +62,19 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips"/>
 			</binding>
 		</element>
-		<element id="Immunization.vaccineCode:vaccineGPSCode">
-			<path value="Immunization.vaccineCode"/>
+		<element id="Immunization.vaccineCode.coding">
+			<path value="Immunization.vaccineCode.coding"/>
+			<slicing>
+				<discriminator>
+					<type value="pattern"/>
+					<path value="$this"/>
+				</discriminator>
+				<description value="Discriminated by bound value set"/>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="Immunization.vaccineCode.coding:vaccineGPSCode">
+			<path value="Immunization.vaccineCode.coding"/>
 			<sliceName value="vaccineGPSCode"/>
 			<short value="Code for vaccine from the SNOMED CT GPS code set"/>
 			<definition value="Code for a vaccine that is selected from the SNOMED CT GPS code set."/>
@@ -76,8 +89,8 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips"/>
 			</binding>
 		</element>
-		<element id="Immunization.vaccineCode:atcClass">
-			<path value="Immunization.vaccineCode"/>
+		<element id="Immunization.vaccineCode.coding:atcClass">
+			<path value="Immunization.vaccineCode.coding"/>
 			<sliceName value="atcClass"/>
 			<short value="WHO ATC classification"/>
 			<definition value="WHO ATC classification"/>
@@ -92,8 +105,8 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips"/>
 			</binding>
 		</element>
-		<element id="Immunization.vaccineCode:absentOrUnknownImmunization">
-			<path value="Immunization.vaccineCode"/>
+		<element id="Immunization.vaccineCode.coding:absentOrUnknownImmunization">
+			<path value="Immunization.vaccineCode.coding"/>
 			<sliceName value="absentOrUnknownImmunization"/>
 			<short value="Absent Unknown Immunization"/>
 			<definition value="A reference to a code indicating that there there are no known immunizations or that this information is unknown."/>
@@ -179,6 +192,7 @@
 		</element>
 		<element id="Immunization.protocolApplied.targetDisease">
 			<path value="Immunization.protocolApplied.targetDisease"/>
+			<!--
 			<slicing>
 				<discriminator>
 					<type value="pattern"/>
@@ -187,13 +201,25 @@
 				<description value="Discriminated by bound value set"/>
 				<rules value="open"/>
 			</slicing>
+		-->
 			<binding>
 				<strength value="preferred"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-uv-ips"/>
 			</binding>
 		</element>
-		<element id="Immunization.protocolApplied.targetDisease:targetDiseaseGPSCode">
-			<path value="Immunization.protocolApplied.targetDisease"/>
+		<element id="Immunization.protocolApplied.targetDisease.coding">
+			<path value="Immunization.protocolApplied.targetDisease.coding"/>
+			<slicing>
+				<discriminator>
+					<type value="pattern"/>
+					<path value="$this"/>
+				</discriminator>
+				<description value="Discriminated by bound value set"/>
+				<rules value="open"/>
+			</slicing>
+		</element>
+		<element id="Immunization.protocolApplied.targetDisease.coding:targetDiseaseGPSCode">
+			<path value="Immunization.protocolApplied.targetDisease.coding"/>
 			<sliceName value="targetDiseaseGPSCode"/>
 			<short value="Code for a disease the vaccination is against from the SNOMED CT GPS code set."/>
 			<definition value="Code for a disease the vaccination is against from the SNOMED CT GPS code set."/>
@@ -207,8 +233,8 @@
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips"/>
 			</binding>
 		</element>
-		<element id="Immunization.protocolApplied.targetDisease:slicingTest">
-			<path value="Immunization.protocolApplied.targetDisease"/>
+		<element id="Immunization.protocolApplied.targetDisease.coding:slicingTest">
+			<path value="Immunization.protocolApplied.targetDisease.coding"/>
 			<sliceName value="slicingTest"/>
 			<short value="Additional slice for slicing tests."/>
 			<min value="0"/>
