@@ -1,0 +1,1145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Bundle xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	<id value="IPS-examples-Bundle-with-immunization"/>
+	<language value="en-GB"/>
+	<identifier>
+		<system value="urn:oid:2.16.724.4.8.10.200.10"/>
+		<value value="175bd032-8b00-4728-b2dc-748bb1501aed"/>
+	</identifier>
+	<type value="document"/>
+	<timestamp value="2017-12-11T14:30:00+01:00"/>
+	<!--e0-->
+	<entry>
+		<fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad4d"/>
+		<resource>
+			<Composition>
+				<id value="30551ce1-5a28-4356-b684-1e639094ad4d"/>
+				<identifier>
+					<system value="urn:oid:2.16.724.4.8.10.200.10"/>
+					<value value="3f69e0a5-2177-4540-baab-7a5d0877428f"/>
+				</identifier>
+				<status value="final"/>
+				<type>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="60591-5"/>
+						<display value="Patient summary Document"/>
+					</coding>
+				</type>
+				<subject>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
+				</subject>
+				<date value="2017-12-11T14:30:00+01:00"/>
+				<author>
+					<reference value="Practitioner/1c616b24-3895-48c4-9a02-9a64110351ef"/>
+				</author>
+				<title value="Patient Summary as of December 11, 2017 14:30"/>
+				<confidentiality value="N"/>
+				<attester>
+					<mode value="legal"/>
+					<time value="2017-12-11T14:30:00+01:00"/>
+					<party>
+						<reference value="Practitioner/1c616b24-3895-48c4-9a02-9a64110351ef"/>
+					</party>
+				</attester>
+				<attester>
+					<mode value="legal"/>
+					<time value="2017-12-11T14:30:00+01:00"/>
+					<party>
+						<reference value="Organization/890751f4-2924-4636-bab7-efffc7f3cf15"/>
+					</party>
+				</attester>
+				<custodian>
+					<reference value="Organization/890751f4-2924-4636-bab7-efffc7f3cf15"/>
+				</custodian>
+				<relatesTo>
+					<code value="appends"/>
+					<targetIdentifier>
+						<system value="urn:oid:2.16.724.4.8.10.200.10"/>
+						<value value="c2277753-9f90-4a95-8ddb-a0b3f6e7d292"/>
+					</targetIdentifier>
+				</relatesTo>
+				<event>
+					<code>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v3-ActClass"/>
+							<code value="PCPR"/>
+						</coding>
+					</code>
+					<period>
+						<end value="2017-12-11T14:30:00+01:00"/>
+					</period>
+				</event>
+				<section>
+					<title value="Active Problems"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<code value="11450-4"/>
+							<display value="Problem list Reported"/>
+						</coding>
+					</code>
+					<text>
+						<status value="generated"/>
+						<xhtml:div>Hot flushes</xhtml:div>
+					</text>
+					<entry>
+						<reference value="Condition/c64139e7-f02d-409c-bf34-75e8bf23bc80"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Medication"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<code value="10160-0"/>
+							<display value="History of Medication use Narrative"/>
+						</coding>
+					</code>
+					<text>
+						<status value="generated"/>
+						<xhtml:div>
+							<xhtml:table>
+								<xhtml:thead>
+									<xhtml:tr>
+										<xhtml:th>Medication</xhtml:th>
+										<xhtml:th>Strength</xhtml:th>
+										<xhtml:th>Form</xhtml:th>
+										<xhtml:th>Dosage</xhtml:th>
+										<xhtml:th>Comment</xhtml:th>
+									</xhtml:tr>
+								</xhtml:thead>
+								<xhtml:tbody>
+									<xhtml:tr>
+										<xhtml:td>Anastrozole</xhtml:td>
+										<xhtml:td>1 mg</xhtml:td>
+										<xhtml:td>tablet</xhtml:td>
+										<xhtml:td>once daily</xhtml:td>
+										<xhtml:td>treatment for breast cancer</xhtml:td>
+									</xhtml:tr>
+									<xhtml:tr>
+										<xhtml:td>Black Cohosh Extract</xhtml:td>
+										<xhtml:td> </xhtml:td>
+										<xhtml:td>pil</xhtml:td>
+										<xhtml:td> </xhtml:td>
+										<xhtml:td>herbal supplement</xhtml:td>
+									</xhtml:tr>
+								</xhtml:tbody>
+							</xhtml:table>
+						</xhtml:div>
+					</text>
+					<entry>
+						<reference value="MedicationStatement/c220e36c-eb67-4fc4-9ba1-2fabc52acec6"/>
+					</entry>
+					<entry>
+						<reference value="MedicationStatement/47524493-846a-4a26-bae2-4ab03e60f02e"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Allergies and Intolerances"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<code value="48765-2"/>
+							<display value="Allergies and adverse reactions Document"/>
+						</coding>
+					</code>
+					<text>
+						<status value="generated"/>
+						<xhtml:div>Allergy to penicillin, high criticality, active
+							No known food allergies
+						</xhtml:div>
+					</text>
+					<entry>
+						<reference value="AllergyIntolerance/72884cad-ebe6-4f43-a51a-2f978275f132"/>
+					</entry>
+					<entry>
+						<reference value="AllergyIntolerance/c7781f44-6df8-4a8b-9e06-0b34263a47c5"/>
+					</entry>
+				</section>
+				<section>
+					<title value="History of Past Illness"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<code value="11348-0"/>
+							<display value="Hx of Past illness"/>
+						</coding>
+					</code>
+					<text>
+						<status value="generated"/>
+						<xhtml:div>Breast cancer Stage II with no evidence of recurrence following treatment</xhtml:div>
+					</text>
+					<entry>
+						<reference value="Condition/c4597aa2-688a-401b-a658-70acc6de28c6"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Plan of Treatment"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<code value="18776-5"/>
+							<display value="Plan of care note"/>
+						</coding>
+					</code>
+					<text>
+						<status value="generated"/>
+						<xhtml:div>Continue hormone medication with Anastrozole for total of 5 years and monitor for potential breast cancer recurrence</xhtml:div>
+					</text>
+				</section>
+				<section>
+					<title value="Results"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<code value="30954-2"/>
+							<display value="Relevant diagnostic tests/laboratory data Narrative"/>
+						</coding>
+					</code>
+					<text>
+						<status value="generated"/>
+						<xhtml:div>
+							<xhtml:table>
+								<xhtml:thead>
+									<xhtml:tr>
+										<xhtml:th colspan="3">Blood typing</xhtml:th>
+									</xhtml:tr>
+								</xhtml:thead>
+								<xhtml:tbody>
+									<xhtml:tr>
+										<xhtml:td>Blood group</xhtml:td>
+										<xhtml:td>A+</xhtml:td>
+										<xhtml:td/>
+									</xhtml:tr>
+									<xhtml:tr>
+										<xhtml:td>C Ab [Presence] in Serum or Plasma</xhtml:td>
+										<xhtml:td>Positive</xhtml:td>
+										<xhtml:td/>
+									</xhtml:tr>
+									<xhtml:tr>
+										<xhtml:td>E Ab [Presence] in Serum or Plasma</xhtml:td>
+										<xhtml:td>Positive</xhtml:td>
+										<xhtml:td/>
+									</xhtml:tr>
+									<xhtml:tr>
+										<xhtml:td>Little c Ab [Presence] in Serum or Plasma</xhtml:td>
+										<xhtml:td>Negative</xhtml:td>
+										<xhtml:td/>
+									</xhtml:tr>
+								</xhtml:tbody>
+							</xhtml:table>
+							<xhtml:table>
+								<xhtml:thead>
+									<xhtml:tr>
+										<xhtml:th colspan="3">Hemoglobin A1c monitoring</xhtml:th>
+									</xhtml:tr>
+								</xhtml:thead>
+								<xhtml:tbody>
+									<xhtml:tr>
+										<xhtml:td>Hemoglobin A1c/Hemoglobin.total in Blood by HPLC</xhtml:td>
+										<xhtml:td>7.5 %</xhtml:td>
+										<xhtml:td/>
+									</xhtml:tr>
+								</xhtml:tbody>
+							</xhtml:table>
+							<xhtml:table>
+								<xhtml:thead>
+									<xhtml:tr>
+										<xhtml:th colspan="3">Bacteriology</xhtml:th>
+									</xhtml:tr>
+								</xhtml:thead>
+								<xhtml:tbody>
+									<xhtml:tr>
+										<xhtml:td colspan="3">Methicillin resistant Staphylococcus aureus</xhtml:td>
+									</xhtml:tr>
+									<xhtml:tr>
+										<xhtml:td colspan="3">Healthy carrier of MRSA</xhtml:td>
+									</xhtml:tr>
+								</xhtml:tbody>
+							</xhtml:table>
+						</xhtml:div>
+					</text>
+					<!-- top level observations (member observations are nested) -->
+					<entry>
+						<reference value="Observation/2639657a-c19a-48e2-82cc-471e13b8ad94"/>
+					</entry>
+					<entry>
+						<reference value="Observation/cc354e00-a419-47ea-8b6c-1768b2a01646"/>
+					</entry>
+					<entry>
+						<reference value="Observation/26bee0a9-5997-4557-ab9d-c6adbb05b572"/>
+					</entry>
+				</section>
+				<section>
+					<title value="Immunizations"/>
+					<code>
+						<coding>
+							<system value="http://loinc.org"/>
+							<code value="11369-6"/>
+							<display value="History of Immunization Narrative"/>
+						</coding>
+					</code>
+					<entry>
+						<reference value="Immunization/40b7b6a0-c043-423a-9959-be3707e728b2"/>
+					</entry>
+				</section>
+			</Composition>
+		</resource>
+	</entry>
+	<!--e1-->
+	<entry>
+		<fullUrl value="urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
+		<resource>
+			<Patient>
+				<id value="2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
+				<identifier>
+					<system value="urn:oid:2.16.840.1.113883.2.4.6.3"/>
+					<value value="574687583"/>
+				</identifier>
+				<active value="true"/>
+				<name>
+					<family value="DeLarosa"/>
+					<given value="Martha"/>
+				</name>
+				<telecom>
+					<system value="phone"/>
+					<value value="+31788700800"/>
+					<use value="home"/>
+				</telecom>
+				<gender value="female"/>
+				<birthDate value="1972-05-01"/>
+				<address>
+					<line value="Laan Van Europa 1600"/>
+					<city value="Dordrecht"/>
+					<postalCode value="3317 DB"/>
+					<country value="NL"/>
+				</address>
+				<contact>
+					<relationship>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+							<code value="MTH"/>
+						</coding>
+					</relationship>
+					<name>
+						<family value="Mum"/>
+						<given value="Martha"/>
+					</name>
+					<telecom>
+						<system value="phone"/>
+						<value value="+33-555-20036"/>
+						<use value="home"/>
+					</telecom>
+					<address>
+						<line value="Promenade des Anglais 111"/>
+						<city value="Lyon"/>
+						<postalCode value="69001"/>
+						<country value="FR"/>
+					</address>
+				</contact>
+			</Patient>
+		</resource>
+	</entry>
+	<!--e2-->
+	<entry>
+		<fullUrl value="urn:uuid:1c616b24-3895-48c4-9a02-9a64110351ef"/>
+		<resource>
+			<Practitioner>
+				<id value="1c616b24-3895-48c4-9a02-9a64110351ef"/>
+				<identifier>
+					<system value="urn:oid:2.16.528.1.1007.3.1"/>
+					<value value="129854633"/>
+					<assigner>
+						<display value="CIBG"/>
+					</assigner>
+				</identifier>
+				<active value="true"/>
+				<name>
+					<family value="van Hulp"/>
+					<given value="Beetje"/>
+				</name>
+				<qualification>
+					<code>
+						<coding>
+							<system value="http://terminology.hl7.org/CodeSystem/v2-0360|2.7"/>
+							<code value="MD"/>
+							<display value="Doctor of Medicine"/>
+						</coding>
+					</code>
+				</qualification>
+			</Practitioner>
+		</resource>
+	</entry>
+	<!--e3-->
+	<entry>
+		<fullUrl value="urn:uuid:890751f4-2924-4636-bab7-efffc7f3cf15"/>
+		<resource>
+			<Organization>
+				<id value="890751f4-2924-4636-bab7-efffc7f3cf15"/>
+				<identifier>
+					<system value="urn:oid:2.16.528.1.1007.3.3"/>
+					<value value="564738757"/>
+				</identifier>
+				<active value="true"/>
+				<name value="Anorg Aniza Tion BV / The best custodian ever"/>
+				<telecom>
+					<system value="phone"/>
+					<value value="+31-51-34343400"/>
+					<use value="work"/>
+				</telecom>
+				<address>
+					<use value="work"/>
+					<line value="Houttuinen 27"/>
+					<city value="Dordrecht"/>
+					<postalCode value="3311 CE"/>
+					<country value="NL"/>
+				</address>
+			</Organization>
+		</resource>
+	</entry>
+	<!--e4-->
+	<entry>
+		<fullUrl value="urn:uuid:c64139e7-f02d-409c-bf34-75e8bf23bc80"/>
+		<resource>
+			<Condition>
+				<id value="c64139e7-f02d-409c-bf34-75e8bf23bc80"/>
+				<identifier>
+					<system value="urn:oid:1.2.3.999"/>
+					<value value="c87bf51c-e53c-4bfe-b8b7-aa62bdd93002"/>
+				</identifier>
+				<clinicalStatus>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+						<code value="active"/>
+					</coding>
+				</clinicalStatus>
+				<verificationStatus>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+						<code value="confirmed"/>
+					</coding>
+				</verificationStatus>
+				<category>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="75326-9"/>
+						<display value="Problem"/>
+					</coding>
+				</category>
+				<severity>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="LA6751-7"/>
+						<display value="Moderate"/>
+					</coding>
+				</severity>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="198436008"/>
+						<display value="Menopausal flushing (finding)">
+							<extension url="http://hl7.org/fhir/StructureDefinition/translation">
+								<extension url="lang">
+									<valueCode value="nl-NL"/>
+								</extension>
+								<extension url="content">
+									<valueString value="opvliegers"/>
+								</extension>
+							</extension>
+						</display>
+					</coding>
+					<coding>
+						<system value="http://hl7.org/fhir/sid/icd-10"/>
+						<code value="N95.1"/>
+						<display value="Menopausal and female climacteric states"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
+				</subject>
+				<onsetDateTime value="2015"/>
+				<recordedDate value="2016-10"/>
+			</Condition>
+		</resource>
+	</entry>
+	<!--e5-->
+	<entry>
+		<fullUrl value="urn:uuid:c220e36c-eb67-4fc4-9ba1-2fabc52acec6"/>
+		<resource>
+			<MedicationStatement>
+				<id value="c220e36c-eb67-4fc4-9ba1-2fabc52acec6"/>
+				<identifier>
+					<system value="urn:oid:1.2.3.999"/>
+					<value value="b75f92cb-61d4-469a-9387-df5ef70d25f0"/>
+				</identifier>
+				<status value="active"/>
+				<medicationReference>
+					<reference value="Medication/976d0804-cae0-45ae-afe3-a19f3ceba6bc"/>
+				</medicationReference>
+				<subject>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
+				</subject>
+				<effectivePeriod>
+					<start value="2015-03"/>
+				</effectivePeriod>
+				<dosage>
+					<timing>
+						<repeat>
+							<count value="1"/>
+							<periodUnit value="d"/>
+						</repeat>
+					</timing>
+					<route>
+						<coding>
+							<system value="http://standardterms.edqm.eu"/>
+							<code value="20053000"/>
+							<display value="Oral use"/>
+						</coding>
+					</route>
+					<doseAndRate>
+						<type>
+							<coding>
+								<system value="http://terminology.hl7.org/CodeSystem/dose-rate-type"/>
+								<code value="ordered"/>
+								<display value="Ordered"/>
+							</coding>
+						</type>
+						<doseQuantity>
+							<value value="1"/>
+							<unit value="tablet"/>
+							<system value="http://unitsofmeasure.org"/>
+							<code value="1"/>
+						</doseQuantity>
+					</doseAndRate>
+				</dosage>
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<!--e6-->
+	<entry>
+		<fullUrl value="urn:uuid:47524493-846a-4a26-bae2-4ab03e60f02e"/>
+		<resource>
+			<MedicationStatement>
+				<id value="47524493-846a-4a26-bae2-4ab03e60f02e"/>
+				<identifier>
+					<system value="urn:oid:1.2.3.999"/>
+					<value value="9e312d6b-c6b6-439a-a730-6efaa5dcf8bc"/>
+				</identifier>
+				<status value="active"/>
+				<medicationReference>
+					<reference value="Medication/8adc0999-9468-4ac9-9557-680fa133d626"/>
+				</medicationReference>
+				<subject>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
+				</subject>
+				<effectivePeriod>
+					<start value="2016-01"/>
+				</effectivePeriod>
+				<dosage>
+					<route>
+						<coding>
+							<system value="http://standardterms.edqm.eu"/>
+							<code value="20053000"/>
+							<display value="Oral use"/>
+						</coding>
+					</route>
+				</dosage>
+			</MedicationStatement>
+		</resource>
+	</entry>
+	<!--e7-->
+	<entry>
+		<fullUrl value="urn:uuid:976d0804-cae0-45ae-afe3-a19f3ceba6bc"/>
+		<resource>
+			<Medication>
+				<id value="976d0804-cae0-45ae-afe3-a19f3ceba6bc"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="108774000"/>
+						<display value="Product containing anastrozole (medicinal product)"/>
+					</coding>
+					<coding>
+						<system value="urn:oid:2.16.840.1.113883.2.4.4.1"/>
+						<code value="99872"/>
+						<display value="ANASTROZOL 1MG TABLET"/>
+					</coding>
+					<coding>
+						<system value="urn:oid:2.16.840.1.113883.2.4.4.7"/>
+						<code value="2076667"/>
+						<display value="ANASTROZOL CF TABLET FILMOMHULD 1MG"/>
+					</coding>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="L02BG03"/>
+						<display value="anastrozole"/>
+					</coding>
+				</code>
+			</Medication>
+		</resource>
+	</entry>
+	<!--e8-->
+	<entry>
+		<fullUrl value="urn:uuid:8adc0999-9468-4ac9-9557-680fa133d626"/>
+		<resource>
+			<Medication>
+				<id value="8adc0999-9468-4ac9-9557-680fa133d626"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="412588001"/>
+						<display value="Cimicifuga racemosa extract (substance)">
+							<extension url="http://hl7.org/fhir/StructureDefinition/translation">
+								<extension url="lang">
+									<valueCode value="nl-NL"/>
+								</extension>
+								<extension url="content">
+									<valueString value="Zwarte Cohosh Extract"/>
+								</extension>
+							</extension>
+						</display>
+					</coding>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="G02CX04"/>
+						<display value="Cimicifugae rhizoma"/>
+					</coding>
+					<text value="Black Cohosh Extract herbal supplement"/>
+				</code>
+			</Medication>
+		</resource>
+	</entry>
+	<!--e9-->
+	<entry>
+		<fullUrl value="urn:uuid:72884cad-ebe6-4f43-a51a-2f978275f132"/>
+		<resource>
+			<AllergyIntolerance>
+				<id value="72884cad-ebe6-4f43-a51a-2f978275f132"/>
+				<identifier>
+					<system value="urn:oid:1.2.3.999"/>
+					<value value="3a462598-009c-484a-965c-d6b24a821424"/>
+				</identifier>
+				<clinicalStatus>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+						<code value="active"/>
+					</coding>
+				</clinicalStatus>
+				<verificationStatus>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+						<code value="confirmed"/>
+					</coding>
+				</verificationStatus>
+				<type value="allergy"/>
+				<category value="medication"/>
+				<criticality value="high"/>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="373270004"/>
+						<display value="Substance with penicillin structure and antibacterial mechanism of action (substance)"/>
+					</coding>
+				</code>
+				<patient>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
+				</patient>
+				<onsetDateTime value="2010"/>
+			</AllergyIntolerance>
+		</resource>
+	</entry>
+	<!--e10-->
+	<entry>
+		<fullUrl value="urn:uuid:c4597aa2-688a-401b-a658-70acc6de28c6"/>
+		<resource>
+			<Condition>
+				<id value="c4597aa2-688a-401b-a658-70acc6de28c6"/>
+				<identifier>
+					<system value="urn:oid:1.2.3.999"/>
+					<value value="66d4a8c7-9081-43e0-a63f-489c2ae6edd6"/>
+				</identifier>
+				<clinicalStatus>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+						<code value="remission"/>
+					</coding>
+				</clinicalStatus>
+				<verificationStatus>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+						<code value="confirmed"/>
+					</coding>
+				</verificationStatus>
+				<category>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="75326-9"/>
+						<display value="Problem"/>
+					</coding>
+				</category>
+				<severity>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="LA6750-9"/>
+						<display value="Severe"/>
+					</coding>
+				</severity>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="254837009"/>
+						<display value="Malignant tumor of breast">
+							<extension url="http://hl7.org/fhir/StructureDefinition/translation">
+								<extension url="lang">
+									<valueCode value="nl-NL"/>
+								</extension>
+								<extension url="content">
+									<valueString value="Borstkanker stadium II zonder aanwijzingen van recidieven na behandeling"/>
+								</extension>
+							</extension>
+						</display>
+					</coding>
+					<coding>
+						<system value="urn:oid:2.16.840.1.113883.6.43.1"/>
+						<code value="8500/3"/>
+						<display value="Infiltrating duct carcinoma, NOS"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
+				</subject>
+				<onsetDateTime value="2015-01"/>
+				<abatementDateTime value="2015-03"/>
+			</Condition>
+		</resource>
+	</entry>
+	<!--e11-->
+	<entry>
+		<fullUrl value="urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7"/>
+		<resource>
+			<Organization>
+				<id value="45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7"/>
+				<active value="true"/>
+				<type>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+						<code value="other"/>
+					</coding>
+				</type>
+				<name value="Laboratoire de charme"/>
+			</Organization>
+		</resource>
+	</entry>
+	<!--e12-->
+	<entry>
+		<fullUrl value="urn:uuid:aa11a2be-3e36-4be7-b58a-6fc3dace2741"/>
+		<resource>
+			<Observation>
+				<id value="aa11a2be-3e36-4be7-b58a-6fc3dace2741"/>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+						<code value="laboratory"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="882-1"/>
+						<display value="ABO and Rh group [Type] in Blood"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
+				</subject>
+				<effectiveDateTime value="2015-10-10T09:15:00+01:00"/>
+				<performer>
+					<reference value="Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7"/>
+				</performer>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="278149003"/>
+						<display value="Blood group A Rh(D) positive"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<!--e13-->
+	<entry>
+		<fullUrl value="urn:uuid:6e39ccf3-f997-4a2b-8f28-b4b71c778c70"/>
+		<resource>
+			<Observation>
+				<id value="6e39ccf3-f997-4a2b-8f28-b4b71c778c70"/>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+						<code value="laboratory"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="945-6"/>
+						<display value="C Ab [Presence] in Serum or Plasma"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
+				</subject>
+				<effectiveDateTime value="2015-10-10T09:35:00+01:00"/>
+				<performer>
+					<reference value="Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7"/>
+				</performer>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="10828004"/>
+						<display value="Positive"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<!--e14-->
+	<entry>
+		<fullUrl value="urn:uuid:b4916505-a06b-460c-9be8-011609282457"/>
+		<resource>
+			<Observation>
+				<id value="b4916505-a06b-460c-9be8-011609282457"/>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+						<code value="laboratory"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="1018-1"/>
+						<display value="E Ab [Presence] in Serum or Plasma"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
+				</subject>
+				<effectiveDateTime value="2015-10-10T09:35:00+01:00"/>
+				<performer>
+					<reference value="Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7"/>
+				</performer>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="10828004"/>
+						<display value="Positive"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<!--e15-->
+	<entry>
+		<fullUrl value="urn:uuid:a6a5a1d5-c896-4c7e-b922-888fcc7e6ae4"/>
+		<resource>
+			<Observation>
+				<id value="a6a5a1d5-c896-4c7e-b922-888fcc7e6ae4"/>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+						<code value="laboratory"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="1156-9"/>
+						<display value="little c Ab [Presence] in Serum or Plasma"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
+				</subject>
+				<effectiveDateTime value="2015-10-10T09:35:00+01:00"/>
+				<performer>
+					<reference value="Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7"/>
+				</performer>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="260385009"/>
+						<display value="Negative"/>
+					</coding>
+				</valueCodeableConcept>
+			</Observation>
+		</resource>
+	</entry>
+	<!--e16-->
+	<entry>
+		<fullUrl value="urn:uuid:2639657a-c19a-48e2-82cc-471e13b8ad94"/>
+		<resource>
+			<Observation>
+				<id value="2639657a-c19a-48e2-82cc-471e13b8ad94"/>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+						<code value="laboratory"/>
+					</coding>
+				</category>
+				<code>
+					<text value="Blood typing"/>
+				</code>
+				<subject>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
+				</subject>
+				<effectiveDateTime value="2015-10-10"/>
+				<performer>
+					<reference value="Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7"/>
+				</performer>
+				<hasMember>
+					<reference value="Observation/aa11a2be-3e36-4be7-b58a-6fc3dace2741"/>
+				</hasMember>
+				<hasMember>
+					<reference value="Observation/6e39ccf3-f997-4a2b-8f28-b4b71c778c70"/>
+				</hasMember>
+				<hasMember>
+					<reference value="Observation/b4916505-a06b-460c-9be8-011609282457"/>
+				</hasMember>
+				<hasMember>
+					<reference value="Observation/a6a5a1d5-c896-4c7e-b922-888fcc7e6ae4"/>
+				</hasMember>
+			</Observation>
+		</resource>
+	</entry>
+	<!--e17-->
+	<entry>
+		<fullUrl value="urn:uuid:cc354e00-a419-47ea-8b6c-1768b2a01646"/>
+		<resource>
+			<Observation>
+				<id value="cc354e00-a419-47ea-8b6c-1768b2a01646"/>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+						<code value="laboratory"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="17856-6"/>
+						<display value="Hemoglobin A1c/Hemoglobin.total in Blood by HPLC"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
+				</subject>
+				<effectiveDateTime value="2017-11-10T08:20:00+01:00"/>
+				<performer>
+					<reference value="Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7"/>
+				</performer>
+				<valueQuantity>
+					<value value="7.5"/>
+					<unit value="%"/>
+					<system value="http://unitsofmeasure.org"/>
+					<code value="%"/>
+				</valueQuantity>
+				<note>
+					<text value="Above stated goal of 7.0 %"/>
+				</note>
+			</Observation>
+		</resource>
+	</entry>
+	<!--e18-->
+	<entry>
+		<fullUrl value="urn:uuid:26bee0a9-5997-4557-ab9d-c6adbb05b572"/>
+		<resource>
+			<Observation>
+				<id value="26bee0a9-5997-4557-ab9d-c6adbb05b572"/>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+						<code value="laboratory"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://loinc.org"/>
+						<code value="42803-7"/>
+						<display value="Bacteria identified in Isolate"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
+				</subject>
+				<effectiveDateTime value="2017-12-10T08:20:00+01:00"/>
+				<performer>
+					<reference value="Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7"/>
+				</performer>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="115329001"/>
+						<display value="Methicillin resistant Staphylococcus aureus"/>
+					</coding>
+				</valueCodeableConcept>
+				<note>
+					<text value="Healthy carrier of MRSA"/>
+				</note>
+			</Observation>
+		</resource>
+	</entry>
+	<!--e19-->
+	<entry>
+		<fullUrl value="urn:uuid:c7781f44-6df8-4a8b-9e06-0b34263a47c5"/>
+		<resource>
+			<AllergyIntolerance>
+				<id value="c7781f44-6df8-4a8b-9e06-0b34263a47c5"/>
+				<!-- the clinicalStatus element (regardless of the element value) is not clinically relevant in the case of 
+					"no known allergies", but it is required to be present currently by the FHIR specification and the 
+					validation tooling - this is likely to be addressed in R5 -->
+				<clinicalStatus>
+					<coding>
+						<system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+						<code value="active"/>
+					</coding>
+				</clinicalStatus>
+				<code>
+					<coding>
+						<system value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
+						<code value="no-known-food-allergies"/>
+					</coding>
+				</code>
+				<patient>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
+				</patient>
+			</AllergyIntolerance>
+		</resource>
+	</entry>
+	<!--e20-->
+	<entry>
+		<fullUrl value="urn:uuid:40b7b6a0-c043-423a-9959-be3707e728b2"/>
+		<resource>
+			<Immunization xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+				<id value="40b7b6a0-c043-423a-9959-be3707e728b2"/>
+				<language value="fr-LU"/>
+				<text xmlns:xhtml="http://www.w3.org/1999/xhtml">
+					<status value="generated"/>
+					<xhtml:div lang="fr-LU" xml:lang="fr-LU">
+						<xhtml:p>
+							<xhtml:b>Marie Lux-Brennard</xhtml:b>
+							(Apr 17, 1998)
+						</xhtml:p>
+						<xhtml:p>Vaccin anti diphtérie-coqueluche-tétanos-poliomyélite, Jun 3, 1998, 10:00:00 PM</xhtml:p>
+						<xhtml:p>Voie intramusculaire, Cuisse droite</xhtml:p>
+					</xhtml:div>
+				</text>
+				<status value="completed"/>
+				<vaccineCode>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="836508001"/>
+						<display value="Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens-containing vaccine product">
+							<extension url="http://hl7.org/fhir/StructureDefinition/translation">
+								<extension url="lang">
+									<valueCode value="fr-LU"/>
+								</extension>
+								<extension url="content">
+									<valueString value="Vaccin anti diphtérie-coqueluche-tétanos-poliomyélite"/>
+								</extension>
+							</extension>
+						</display>
+					</coding>
+					<coding>
+						<system value="http://www.whocc.no/atc"/>
+						<code value="J07CA02"/>
+						<display value="diphtheria-pertussis-poliomyelitis-tetanus">
+							<extension url="http://hl7.org/fhir/StructureDefinition/translation">
+								<extension url="lang">
+									<valueCode value="fr-LU"/>
+								</extension>
+								<extension url="content">
+									<valueString value="DIPHTERIE - COQUELUCHE - POLIOMYELITE - TETANOS"/>
+								</extension>
+							</extension>
+						</display>
+					</coding>
+					<text value="Vaccin anti diphtérie-coqueluche-tétanos-poliomyélite"/>
+				</vaccineCode>
+				<patient>
+					<reference value="Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
+				</patient>
+				<occurrenceDateTime value="1998-06-04T00:00:00+02:00"/>
+				<primarySource value="true"/>
+				<lotNumber value="AXK23RWERS"/>
+				<expirationDate value="2000-06-01"/>
+				<site>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="11207009"/>
+						<display value="Right thigh">
+							<extension url="http://hl7.org/fhir/StructureDefinition/translation">
+								<extension url="lang">
+									<valueCode value="fr-LU"/>
+								</extension>
+								<extension url="content">
+									<valueString value="Cuisse droite"/>
+								</extension>
+							</extension>
+						</display>
+					</coding>
+					<text value="Cuisse droite"/>
+				</site>
+				<route>
+					<coding>
+						<system value="http://standardterms.edqm.eu"/>
+						<code value="20035000"/>
+						<display value="Intramuscular use">
+							<extension url="http://hl7.org/fhir/StructureDefinition/translation">
+								<extension url="lang">
+									<valueCode value="fr-LU"/>
+								</extension>
+								<extension url="content">
+									<valueString value="Voie intramusculaire"/>
+								</extension>
+							</extension>
+						</display>
+					</coding>
+					<text value="Voie intramusculaire"/>
+				</route>
+				<protocolApplied>
+					<targetDisease>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<code value="27836007"/>
+							<display value="Pertussis"/>
+						</coding>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<code value="76902006"/>
+							<display value="Tetanus"/>
+						</coding>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<code value="398102009"/>
+							<display value="Acute poliomyelitis"/>
+						</coding>
+						<coding>
+							<system value="http://snomed.info/sct"/>
+							<code value="397430003"/>
+							<display value="Diphtheria caused by Corynebacterium diphtheriae"/>
+						</coding>
+					</targetDisease>
+					<doseNumberPositiveInt value="1"/>
+				</protocolApplied>
+			</Immunization>
+		</resource>
+	</entry>
+</Bundle>
