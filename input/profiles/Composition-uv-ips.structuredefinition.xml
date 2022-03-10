@@ -52,6 +52,7 @@
 		<element id="Composition.subject">
 			<path value="Composition.subject"/>
 			<definition value="Who or what the composition is about. &#xD;&#xA;In general a composition can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of livestock, or a set of patients that share a common exposure).&#xD;&#xA;For the IPS the subject is always the patient."/>
+			<min value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
