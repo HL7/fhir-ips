@@ -675,12 +675,10 @@
 			<short value="IPS History of Past Illness Section"/>
 			<definition value="The History of Past Illness section contains a description of the conditions the patient suffered in the past."/>
 			<max value="1"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionPastIllnessHx.title">
 			<path value="Composition.section.title"/>
 			<min value="1"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionPastIllnessHx.code">
 			<path value="Composition.section.code"/>
@@ -708,7 +706,6 @@
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionPastIllnessHx.entry:pastProblem">
 			<path value="Composition.section.entry"/>
@@ -718,7 +715,6 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionFunctionalStatus">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
@@ -786,12 +782,10 @@
 			<short value="IPS Plan of Care Section"/>
 			<definition value="The plan of care section contains a narrative description of the expectations for care including proposals, goals, and order requests for monitoring, tracking, or improving the condition of the patient."/>
 			<max value="1"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionPlanOfCare.title">
 			<path value="Composition.section.title"/>
 			<min value="1"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionPlanOfCare.code">
 			<path value="Composition.section.code"/>
@@ -818,7 +812,6 @@
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
 			</type>
-			<mustSupport value="false"/>
 		</element>
 		<element id="Composition.section:sectionPlanOfCare.entry:carePlan">
 			<path value="Composition.section.entry"/>
@@ -827,7 +820,6 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan"/>
 			</type>
-			<mustSupport value="false"/>
 		</element>
 		<element id="Composition.section:sectionSocialHistory">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
