@@ -729,12 +729,10 @@
 			<short value="IPS Functional Status"/>
 			<definition value="The functional status section shall contain a narrative description of capability of the patient to perform acts of daily living, including possible needs of the patient to be continuously assessed by third parties. The invalidity status may in fact influence decisions about how to administer treatments.&#xD;&#xA;Profiles to express disabilities and functional assessments will be specified by future versions of this guide."/>
 			<max value="1"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionFunctionalStatus.title">
 			<path value="Composition.section.title"/>
 			<min value="1"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionFunctionalStatus.code">
 			<path value="Composition.section.code"/>
@@ -762,7 +760,6 @@
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/ClinicalImpression"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionFunctionalStatus.entry:disability">
 			<path value="Composition.section.entry"/>
@@ -771,7 +768,6 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionFunctionalStatus.entry:functionalAssessment">
 			<path value="Composition.section.entry"/>
@@ -780,7 +776,6 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/ClinicalImpression"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionPlanOfCare">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
