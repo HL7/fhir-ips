@@ -921,7 +921,6 @@
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionPregnancyHx.entry:pregnancyStatus">
 			<path value="Composition.section.entry"/>
@@ -930,7 +929,6 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-status-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionPregnancyHx.entry:pregnancyOutcomeSummary">
 			<path value="Composition.section.entry"/>
@@ -939,7 +937,6 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-outcome-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionAdvanceDirectives">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
