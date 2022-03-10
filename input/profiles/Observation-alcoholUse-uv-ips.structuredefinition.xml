@@ -15,14 +15,12 @@
 	<differential>
 		<element id="Observation">
 			<path value="Observation"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.status">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
 				<valueString value="default: final"/>
 			</extension>
 			<path value="Observation.status"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.code">
 			<path value="Observation.code"/>
@@ -38,7 +36,6 @@
 					<code value="74013-4"/>
 				</coding>
 			</patternCodeableConcept>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.subject">
 			<path value="Observation.subject"/>
@@ -47,12 +44,10 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.subject.reference">
 			<path value="Observation.subject.reference"/>
 			<min value="1"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.effective[x]">
 			<path value="Observation.effective[x]"/>
@@ -61,7 +56,6 @@
 			<type>
 				<code value="dateTime"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.effective[x]:data-absent-reason">
 			<path value="Observation.effective[x].extension"/>
@@ -72,7 +66,6 @@
 				<code value="Extension"/>
 				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.valueQuantity">
 			<path value="Observation.valueQuantity"/>
@@ -80,12 +73,10 @@
 				<code value="Quantity"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component">
 			<path value="Observation.component"/>
 			<max value="0"/>
-			<mustSupport value="false"/>
 		</element>
 	</differential>
 </StructureDefinition>

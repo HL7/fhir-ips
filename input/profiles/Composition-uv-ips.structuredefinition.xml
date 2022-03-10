@@ -826,12 +826,10 @@
 			<short value="IPS Social History Section"/>
 			<definition value="The social history section contains a description of the person’s Health related &quot;lifestyle factors&quot; or &quot;lifestyle observations&quot; (e.g. smoke habits; alcohol consumption; diets, risky habits.)"/>
 			<max value="1"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionSocialHistory.title">
 			<path value="Composition.section.title"/>
 			<min value="1"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionSocialHistory.code">
 			<path value="Composition.section.code"/>
@@ -858,7 +856,6 @@
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionSocialHistory.entry:smokingTobaccoUse">
 			<path value="Composition.section.entry"/>
@@ -868,7 +865,6 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionSocialHistory.entry:alcoholUse">
 			<path value="Composition.section.entry"/>
@@ -878,7 +874,6 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionPregnancyHx">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
