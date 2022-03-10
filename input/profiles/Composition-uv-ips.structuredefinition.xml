@@ -967,12 +967,10 @@
 			<short value="IPS Advance Directives Section"/>
 			<definition value="The advance directives section contains a narrative description of patient's advance directive."/>
 			<max value="1"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionAdvanceDirectives.title">
 			<path value="Composition.section.title"/>
 			<min value="1"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionAdvanceDirectives.code">
 			<path value="Composition.section.code"/>
@@ -999,7 +997,6 @@
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Consent"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionAdvanceDirectives.entry:advanceDirectivesConsent">
 			<path value="Composition.section.entry"/>
@@ -1008,7 +1005,6 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Consent"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 	</differential>
 </StructureDefinition>
