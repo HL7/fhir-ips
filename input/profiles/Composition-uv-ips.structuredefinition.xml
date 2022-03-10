@@ -623,12 +623,10 @@
 			<short value="IPS Vital Signs Section"/>
 			<definition value="The Vital signs section includes blood pressure, body temperature, heart rate, and respiratory rate. It may also include other clinical findings, such as height, weight, body mass index, head circumference, and pulse oximetry. In particular, notable vital signs or physical findings such as the most recent, maximum and/or minimum, baseline, or relevant trends may be included"/>
 			<max value="1"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionVitalSigns.title">
 			<path value="Composition.section.title"/>
 			<min value="1"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionVitalSigns.code">
 			<path value="Composition.section.code"/>
@@ -655,7 +653,6 @@
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionVitalSigns.entry:vitalSign">
 			<path value="Composition.section.entry"/>
@@ -664,7 +661,6 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionPastIllnessHx">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
