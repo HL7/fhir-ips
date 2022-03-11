@@ -36,7 +36,6 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/ImagingStudy-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.status">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
@@ -62,7 +61,6 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.category:radiology">
 			<path value="Observation.category"/>
@@ -130,7 +128,6 @@
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/> 
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.valueString">
 			<path value="Observation.valueString"/>
@@ -147,7 +144,6 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="BodySite"/>
@@ -162,7 +158,6 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Device-observer-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.hasMember">
 			<path value="Observation.hasMember"/>
@@ -171,11 +166,9 @@
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-radiology-uv-ips"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.hasMember.reference">
 			<path value="Observation.hasMember.reference"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component">
 			<path value="Observation.component"/>
@@ -195,7 +188,6 @@
 			<path value="Observation.component"/>
 			<sliceName value="observationText"/>
 			<short value="Observation Text"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component:observationText.code">
 			<path value="Observation.component.code"/>
@@ -203,7 +195,6 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="ObservationCode"/>
@@ -218,13 +209,11 @@
 			<type>
 				<code value="string"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component:observationCode">
 			<path value="Observation.component"/>
 			<sliceName value="observationCode"/>
 			<short value="Observation Code"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component:observationCode.code">
 			<path value="Observation.component.code"/>
@@ -232,7 +221,6 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 			<binding>
 				<strength value="extensible"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/results-radiology-observations-uv-ips"/>
@@ -245,13 +233,11 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component:numericQuantityMeasurement">
 			<path value="Observation.component"/>
 			<sliceName value="numericQuantityMeasurement"/>
 			<short value="Observation Measurement, including linear, area and volume quantity measurements"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component:numericQuantityMeasurement.code">
 			<path value="Observation.component.code"/>
@@ -259,7 +245,6 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="ObservationMeasurements"/>
@@ -276,13 +261,11 @@
 				<code value="Quantity"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Quantity-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component:numericRangeMeasurement">
 			<path value="Observation.component"/>
 			<sliceName value="numericRangeMeasurement"/>
 			<short value="Observation Measurement, including linear, area and volume range measurements"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component:numericRangeMeasurement.code">
 			<path value="Observation.component.code"/>
@@ -290,7 +273,6 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="ObservationMeasurements"/>
@@ -307,13 +289,11 @@
 				<code value="Range"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Range-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component:numericRatioMeasurement">
 			<path value="Observation.component"/>
 			<sliceName value="numericRatioMeasurement"/>
 			<short value="Observation Measurement, including linear, area and volume ratio measurements"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component:numericRatioMeasurement.code">
 			<path value="Observation.component.code"/>
@@ -321,7 +301,6 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="ObservationMeasurements"/>
@@ -338,13 +317,11 @@
 				<code value="Ratio"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Ratio-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component:numericSampledDataMeasurement">
 			<path value="Observation.component"/>
 			<sliceName value="numericSampledDataMeasurement"/>
 			<short value="Observation Measurement, including linear, area and volume sampled data measurements"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component:numericSampledDataMeasurement.code">
 			<path value="Observation.component.code"/>
@@ -352,7 +329,6 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="ObservationMeasurements"/>
@@ -368,7 +344,6 @@
 			<type>
 				<code value="SampledData"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 	</differential>
 </StructureDefinition>
