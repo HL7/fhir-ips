@@ -156,7 +156,6 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="ImmunizationRoute"/>
@@ -167,11 +166,10 @@
 		</element>
 		<element id="Immunization.performer">
 			<path value="Immunization.performer"/>
-			<mustSupport value="true"/>
+			<max value="1"/>
 		</element>
 		<element id="Immunization.performer.actor">
 			<path value="Immunization.performer.actor"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Immunization.protocolApplied">
 			<path value="Immunization.protocolApplied"/>
@@ -198,7 +196,6 @@
 			<definition value="Code for a disease the vaccination is against from the SNOMED CT GPS code set."/>
 			<min value="0"/>
 			<max value="1"/>
-			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="TargetDiseasesGpsUvIps"/>
