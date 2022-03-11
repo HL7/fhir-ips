@@ -18,7 +18,6 @@
 	<differential>
 		<element id="Media">
 			<path value="Media"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Media.status">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
@@ -27,7 +26,6 @@
 			<path value="Media.status"/>
 			<definition value="The status of the result value. Only final observation are eligible to the international patient summary."/>
 			<fixedCode value="completed"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Media.type">
 			<path value="Media.type"/>
@@ -35,7 +33,6 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Media.subject">
 			<path value="Media.subject"/>
@@ -44,24 +41,19 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Media.subject.reference">
 			<path value="Media.subject.reference"/>
 			<min value="1"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Media.operator">
 			<path value="Media.operator"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Media.device">
 			<path value="Media.device"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Media.content">
 			<path value="Media.content"/>
-			<mustSupport value="true"/>
 		</element>
 	</differential>
 </StructureDefinition>
