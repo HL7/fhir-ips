@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/ips/2019Sep" ciUrl="https://build.fhir.org/ig/HL7/fhir-ips" defaultVersion="1.0.0" defaultWorkgroup="pc" gitUrl="https://github.com/HL7/fhir-ips" url="http://hl7.org/fhir/uv/ips">
+<version code="current" url="https://build.fhir.org/ig/HL7/fhir-ips"/>
+<version code="1.0.0" url="http://hl7.org/fhir/uv/ips/STU1"/>
+<version code="0.3.0" url="http://hl7.org/fhir/uv/ips/2019Sep"/>
+<version code="0.2.0" deprecated="true" url="http://hl7.org/fhir/uv/ips/2018Sep"/>
+<version code="0.1.0" deprecated="true" url="http://hl7.org/fhir/uv/ips/2018May"/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="ConceptMap/absence-to-snomed-uv-ips" key="ConceptMap-absence-to-snomed-uv-ips" name="Absence of Information Mappings - IPS to SNOMED CT"/>
+<artifact id="CodeSystem/absent-unknown-uv-ips" key="CodeSystem-absent-unknown-uv-ips" name="Absent and Unknown Data - IPS"/>
+<artifact id="ValueSet/absent-or-unknown-allergies-uv-ips" key="ValueSet-absent-or-unknown-allergies-uv-ips" name="Absent or Unknown Allergies - IPS"/>
+<artifact id="ValueSet/absent-or-unknown-devices-uv-ips" key="ValueSet-absent-or-unknown-devices-uv-ips" name="Absent or Unknown Devices - IPS"/>
+<artifact id="ValueSet/absent-or-unknown-immunizations-uv-ips" key="ValueSet-absent-or-unknown-immunizations-uv-ips" name="Absent or Unknown Immunization - IPS"/>
+<artifact id="ValueSet/absent-or-unknown-medications-uv-ips" key="ValueSet-absent-or-unknown-medications-uv-ips" name="Absent or Unknown Medication - IPS"/>
+<artifact id="ValueSet/absent-or-unknown-problems-uv-ips" key="ValueSet-absent-or-unknown-problems-uv-ips" name="Absent or Unknown Problems - IPS"/>
+<artifact id="ValueSet/absent-or-unknown-procedures-uv-ips" key="ValueSet-absent-or-unknown-procedures-uv-ips" name="Absent or Unknown Procedures - IPS"/>
+<artifact id="ValueSet/dicom-cid-29-AcquisitionModality" key="ValueSet-dicom-cid-29-AcquisitionModality" name="AcquisitionModality"/>
+<artifact id="StructureDefinition/AllergyIntolerance-uv-ips" key="StructureDefinition-AllergyIntolerance-uv-ips" name="Allergy Intolerance (IPS)"/>
+<artifact id="ValueSet/allergy-reaction-gps-uv-ips" key="ValueSet-allergy-reaction-gps-uv-ips" name="Allergy Reaction (GPS) - IPS"/>
+<artifact id="ValueSet/allergy-intolerance-substance-condition-gps-uv-ips" key="ValueSet-allergy-intolerance-substance-condition-gps-uv-ips" name="Allergy intolerance substance condition (GPS) - IPS"/>
+<artifact id="ValueSet/allergy-intolerance-substance-condition-uv-ips" key="ValueSet-allergy-intolerance-substance-condition-uv-ips" name="Allergy intolerance substance condition - IPS"/>
+<artifact deprecated="true" key="AllergyIntolerance" name="AllergyIntolerance"/>
+<artifact id="AllergyIntolerance/eumfh-39-07-1" key="AllergyIntolerance-eumfh-39-07-1" name="AllergyIntolerance: No known allergies"/>
+<artifact id="AllergyIntolerance/allergyintolerance-multiple-codings" key="AllergyIntolerance-allergyintolerance-multiple-codings" name="AllergyIntolerance: multiple codings"/>
+<artifact id="AllergyIntolerance/allergyintolerance-with-abatement" key="AllergyIntolerance-allergyintolerance-with-abatement" name="AllergyIntolerance: resolved allergy"/>
+<artifact id="StructureDefinition/Bundle-uv-ips" key="StructureDefinition-Bundle-uv-ips" name="Bundle - IPS"/>
+<artifact id="ValueSet/core-problem-finding-situation-event-gps-uv-ips" key="ValueSet-core-problem-finding-situation-event-gps-uv-ips" name="CORE Problem List Finding/Situation/Event (GPS) - IPS"/>
+<artifact id="CodeSystem/1.3.182.4.11.22" key="CodeSystem-1.3.182.4.11.22" name="Code System - 1.3.182.4.11.22"/>
+<artifact id="StructureDefinition/CodeableConcept-uv-ips" key="StructureDefinition-CodeableConcept-uv-ips" name="Codeable Concept (IPS)"/>
+<artifact id="StructureDefinition/Coding-uv-ips" key="StructureDefinition-Coding-uv-ips" name="Coding with translations"/>
+<artifact deprecated="true" key="Composition" name="Composition"/>
+<artifact id="StructureDefinition/Composition-uv-ips" key="StructureDefinition-Composition-uv-ips" name="Composition (IPS)"/>
+<artifact deprecated="true" key="Condition" name="Condition"/>
+<artifact id="StructureDefinition/Condition-uv-ips" key="StructureDefinition-Condition-uv-ips" name="Condition (IPS)"/>
+<artifact id="StructureDefinition/abatement-dateTime-uv-ips" key="StructureDefinition-abatement-dateTime-uv-ips" name="Condition abatement date"/>
+<artifact id="Condition/eumfh-39-07-1" key="Condition-eumfh-39-07-1" name="Condition: Acute myocardial infarction of anterior wall"/>
+<artifact id="ValueSet/current-smoking-status-uv-ips" key="ValueSet-current-smoking-status-uv-ips" name="Current Smoking Status - IPS"/>
+<artifact deprecated="true" key="Device" name="Device"/>
+<artifact id="StructureDefinition/Device-uv-ips" key="StructureDefinition-Device-uv-ips" name="Device (IPS)"/>
+<artifact id="StructureDefinition/Device-observer-uv-ips" key="StructureDefinition-Device-observer-uv-ips" name="Device (performer, observer)"/>
+<artifact id="StructureDefinition/DeviceUseStatement-uv-ips" key="StructureDefinition-DeviceUseStatement-uv-ips" name="Device Use Statement (IPS)"/>
+<artifact id="Device/eumfh-70-275-1" key="Device-eumfh-70-275-1" name="Device: No known devices in use"/>
+<artifact id="Device/ips-example-imaging-1" key="Device-trilliumII-example-imaging-1" name="Device: device observer example"/>
+<artifact deprecated="true" key="DeviceUseStatement" name="DeviceUseStatement"/>
+<artifact id="DeviceUseStatement/eumfh-70-275-1" key="DeviceUseStatement-eumfh-70-275-1" name="DeviceUseStatement: No known devices in use"/>
+<artifact id="StructureDefinition/DiagnosticReport-uv-ips" key="StructureDefinition-DiagnosticReport-uv-ips" name="DiagnosticReport (IPS)"/>
+<artifact id="DiagnosticReport/hemoglobin" key="DiagnosticReport-hemoglobin" name="DiagnosticReport: hemoglobin example"/>
+<artifact id="ValueSet/dicom-standard-SOP-classes" key="ValueSet-dicom-standard-SOP-classes" name="DicomStandardSOPClasses"/>
+<artifact deprecated="true" key="Feed" name="Feed"/>
+<artifact id="ValueSet/healthcare-professional-roles-uv-ips" key="ValueSet-healthcare-professional-roles-uv-ips" name="Healthcare Professional Roles - IPS"/>
+<artifact id="CodeSystem/icd-11-mms" key="CodeSystem-icd-11-mms" name="ICD-11 MMS"/>
+<artifact id="Bundle/IPS-examples-Bundle-01" key="Bundle-IPS-examples-Bundle-01" name="IPS Bundle example"/>
+<artifact id="Bundle/bundle-minimal" key="Bundle-bundle-minimal" name="IPS Bundle example - minimal"/>
+<artifact id="Bundle/bundle-no-info-required-sections" key="Bundle-bundle-no-info-required-sections" name="IPS Bundle example - no information in required sections"/>
+<artifact id="CapabilityStatement/ips-server" key="CapabilityStatement-ips-server" name="IPS Server Capability Statement"/>
+<artifact id="OperationDefinition/summary" key="OperationDefinition-summary" name="IPS Summary"/>
+<artifact id="StructureDefinition/ImagingStudy-uv-ips" key="StructureDefinition-ImagingStudy-uv-ips" name="Imaging Study (IPS)"/>
+<artifact deprecated="true" key="ImagingStudy" name="ImagingStudy"/>
+<artifact id="ImagingStudy/TII-ImagingStudy-5-1" key="ImagingStudy-TII-ImagingStudy-5-1" name="ImagingStudy: referred DICOM study"/>
+<artifact deprecated="true" key="Immunization" name="Immunization"/>
+<artifact id="StructureDefinition/Immunization-uv-ips" key="StructureDefinition-Immunization-uv-ips" name="Immunization (IPS)"/>
+<artifact id="Immunization/75680" key="Immunization-75680" name="Immunization: Vaccin anti diphtérie-coqueluche-tétanos-poliomyélite (Luxembourg)"/>
+<artifact deprecated="true" key="ImplementationGuide" name="ImplementationGuide"/>
+<artifact id="StructureDefinition/Media-observation-uv-ips" key="StructureDefinition-Media-observation-uv-ips" name="Media observation (Results: laboratory, media)"/>
+<artifact id="Media/media-example-smile" key="Media-media-example-smile" name="Media: example"/>
+<artifact id="ValueSet/medical-devices-uv-ips" key="ValueSet-medical-devices-uv-ips" name="Medical Devices - IPS"/>
+<artifact deprecated="true" key="Medication" name="Medication"/>
+<artifact id="StructureDefinition/Medication-uv-ips" key="StructureDefinition-Medication-uv-ips" name="Medication (IPS)"/>
+<artifact id="Medication/eumfh-39-07-1" key="Medication-eumfh-39-07-1" name="Medication : Simvastatin 40 MG Disintegrating Oral Tablet"/>
+<artifact id="StructureDefinition/MedicationRequest-uv-ips" key="StructureDefinition-MedicationRequest-uv-ips" name="Medication Request (IPS)"/>
+<artifact id="StructureDefinition/MedicationStatement-uv-ips" key="StructureDefinition-MedicationStatement-uv-ips" name="Medication Statement (IPS)"/>
+<artifact id="MedicationRequest/eumfh-39-07-1-request" key="MedicationRequest-eumfh-39-07-1-request" name="MedicationRequest: Simvastatin request"/>
+<artifact id="MedicationStatement/eumfh-39-07-1" key="MedicationStatement-eumfh-39-07-1" name="MedicationStatement: on-going Simvastatin treatment"/>
+<artifact deprecated="true" key="MedicationStatement" name="MedicationUsage (MedicationStatement)"/>
+<artifact id="ValueSet/medication-snomed-uv-ips" key="ValueSet-medication-snomed-uv-ips" name="Medications (SNOMED CT) - IPS"/>
+<artifact id="ValueSet/medication-example-uv-ips" key="ValueSet-medication-example-uv-ips" name="Medications (example) - IPS"/>
+<artifact id="ValueSet/medicine-active-substances-uv-ips" key="ValueSet-medicine-active-substances-uv-ips" name="Medicine Active Substances - IPS"/>
+<artifact id="ValueSet/medicine-doseform" key="ValueSet-medicine-doseform" name="Medicine Doseform - IPS"/>
+<artifact id="ValueSet/medicine-route-of-administration" key="ValueSet-medicine-route-of-administration" name="Medicine Route of Administration - IPS"/>
+<artifact id="ValueSet/dicom-cid-33-Modality" key="ValueSet-dicom-cid-33-Modality" name="Modality"/>
+<artifact deprecated="true" key="Observation" name="Observation"/>
+<artifact id="StructureDefinition/Observation-pregnancy-edd-uv-ips" key="StructureDefinition-Observation-pregnancy-edd-uv-ips" name="Observation (Pregnancy: EDD)"/>
+<artifact id="StructureDefinition/Observation-pregnancy-outcome-uv-ips" key="StructureDefinition-Observation-pregnancy-outcome-uv-ips" name="Observation (Pregnancy: outcome)"/>
+<artifact id="StructureDefinition/Observation-pregnancy-status-uv-ips" key="StructureDefinition-Observation-pregnancy-status-uv-ips" name="Observation (Pregnancy: status)"/>
+<artifact deprecated="true" id="StructureDefinition/Observation-uv-ips" key="StructureDefinition-Observation-uv-ips" name="Observation (Results: generic)"/>
+<artifact deprecated="true" id="StructureDefinition/Observation-imaging-uv-ips" key="StructureDefinition-Observation-imaging-uv-ips" name="Observation (Results: imaging)"/>
+<artifact deprecated="true" id="StructureDefinition/Observation-laboratory-uv-ips" key="StructureDefinition-Observation-laboratory-uv-ips" name="Observation (Results: laboratory)"/>
+<artifact deprecated="true" id="StructureDefinition/Observation-pathology-uv-ips" key="StructureDefinition-Observation-pathology-uv-ips" name="Observation (Results: pathology)"/>
+<artifact id="StructureDefinition/Observation-alcoholuse-uv-ips" key="StructureDefinition-Observation-alcoholuse-uv-ips" name="Observation (SH: alcohol use)"/>
+<artifact id="StructureDefinition/Observation-tobaccouse-uv-ips" key="StructureDefinition-Observation-tobaccouse-uv-ips" name="Observation (SH: tobacco use)"/>
+<artifact id="StructureDefinition/Observation-results-uv-ips" key="StructureDefinition-Observation-results-uv-ips" name="Observation Results (IPS)"/>
+<artifact id="StructureDefinition/Observation-results-laboratory-uv-ips" key="StructureDefinition-Observation-results-laboratory-uv-ips" name="Observation Results: laboratory (IPS)"/>
+<artifact id="StructureDefinition/Observation-results-pathology-uv-ips" key="StructureDefinition-Observation-results-pathology-uv-ips" name="Observation Results: pathology (IPS)"/>
+<artifact id="StructureDefinition/Observation-results-radiology-uv-ips" key="StructureDefinition-Observation-results-radiology-uv-ips" name="Observation Results: radiology (IPS)"/>
+<artifact id="Observation/alcohol-use-example" key="Observation-alcohol-use-example" name="Observation: SH alcohol use example"/>
+<artifact deprecated="true" id="Observation/alcoholuse-example" key="Observation-alcoholuse-example" name="Observation: SH alcoholuse example"/>
+<artifact id="Observation/tobacco-use-example" key="Observation-tobacco-use-example" name="Observation: SH tobacco use example"/>
+<artifact deprecated="true" id="Observation/tobaccouse-example" key="Observation-tobaccouse-example" name="Observation: SH tobaccouse example"/>
+<artifact id="Observation/pathology-cancer" key="Observation-pathology-cancer" name="Observation: estrogen receptor in tissue example"/>
+<artifact id="Observation/hemoglobin" key="Observation-hemoglobin" name="Observation: hemoglobin example"/>
+<artifact id="Observation/ips-example-imaging-1" key="Observation-trilliumII-example-imaging-1" name="Observation: imaging CT Abdomen W contrast IV"/>
+<artifact id="Observation/ips-example-imaging-4" key="Observation-trilliumII-example-imaging-4" name="Observation: imaging CT Abdomen W contrast IV, sub-observations"/>
+<artifact id="Observation/pregnancy-edd-example" key="Observation-pregnancy-edd-example" name="Observation: pregnancy edd example"/>
+<artifact deprecated="true" id="Observation/pregnancy-eed-example" key="Observation-pregnancy-eed-example" name="Observation: pregnancy eed example"/>
+<artifact id="Observation/pregnancy-outcome-example" key="Observation-pregnancy-outcome-example" name="Observation: pregnancy outcome example"/>
+<artifact id="Observation/pregnancy-status-example" key="Observation-pregnancy-status-example" name="Observation: pregnancy status example"/>
+<artifact id="Observation/serum-creatinine-adult" key="Observation-serum-creatinine-adult" name="Observation: serum creatinine example"/>
+<artifact deprecated="true" id="Observation/simple-bld-group" key="Observation-simple-bld-group" name="Observation: simple blood ABO and Rh group panel"/>
+<artifact id="Observation/urine-wbc-range" key="Observation-urine-wbc-range" name="Observation: urine wbc range example"/>
+<artifact deprecated="true" key="Organization" name="Organization"/>
+<artifact id="StructureDefinition/Organization-uv-ips" key="StructureDefinition-Organization-observation-uv-ips" name="Organization (IPS)"/>
+<artifact deprecated="true" id="StructureDefinition/Organization-laboratory-uv-ips" key="StructureDefinition-Organization-laboratory-uv-ips" name="Organization (laboratory)"/>
+<artifact id="Organization/TII-Organization1" key="Organization-TII-Organization1" name="Organization: example"/>
+<artifact id="Organization/lab-org-example" key="Organization-lab-org-example" name="Organization: lab example"/>
+<artifact id="Organization/simple-org" key="Organization-simple-org" name="Organization: simple example"/>
+<artifact deprecated="true" key="Patient" name="Patient"/>
+<artifact id="StructureDefinition/Patient-uv-ips" key="StructureDefinition-Patient-uv-ips" name="Patient (IPS)"/>
+<artifact id="Patient/patient-example-female" key="Patient-patient-example-female" name="Patient: female patient"/>
+<artifact id="Patient/eumfh-39-07" key="Patient-eumfh-39-07" name="Patient: male patient"/>
+<artifact id="Patient/66033" key="Patient-66033" name="Patient: minimal example"/>
+<artifact deprecated="true" id="ValueSet/personal-relationship-uv-ips" key="ValueSet-personal-relationship-uv-ips" name="Personal Relationship - IPS"/>
+<artifact deprecated="true" key="Practitioner" name="Practitioner"/>
+<artifact id="StructureDefinition/Practitioner-uv-ips" key="StructureDefinition-Practitioner-uv-ips" name="Practitioner (IPS)"/>
+<artifact id="Practitioner/eumfh-39-07" key="Practitioner-eumfh-39-07" name="Practitioner example"/>
+<artifact id="StructureDefinition/PractitionerRole-uv-ips" key="StructureDefinition-PractitionerRole-uv-ips" name="PractitionerRole (IPS)"/>
+<artifact id="PractitionerRole/simple-pr" key="PractitionerRole-simple-pr" name="PractitionerRole: simple example"/>
+<artifact id="ValueSet/pregnancies-summary-uv-ips" key="ValueSet-pregnancies-summary-uv-ips" name="Pregnancies Summary - IPS"/>
+<artifact id="ValueSet/edd-method-uv-ips" key="ValueSet-edd-method-uv-ips" name="Pregnancy Expected Delivery Date Method - IPS"/>
+<artifact id="ValueSet/pregnancy-status-uv-ips" key="ValueSet-pregnancy-status-uv-ips" name="Pregnancy Status - IPS"/>
+<artifact id="ValueSet/condition-severity-uv-ips" key="ValueSet-condition-severity-uv-ips" name="Problem Severity - IPS"/>
+<artifact id="ValueSet/problem-type-uv-ips" key="ValueSet-problem-type-uv-ips" name="Problem Type - IPS"/>
+<artifact deprecated="true" key="Procedure" name="Procedure"/>
+<artifact id="StructureDefinition/Procedure-uv-ips" key="StructureDefinition-Procedure-uv-ips" name="Procedure (IPS)"/>
+<artifact id="Procedure/eumfh-39-07-1" key="Procedure-eumfh-39-07-1" name="Procedure: Surgical procedure"/>
+<artifact id="ValueSet/procedures-uv-ips" key="ValueSet-procedures-uv-ips" name="Procedures - IPS"/>
+<artifact id="ValueSet/procedures-snomed-gps-uv-ips" key="ValueSet-procedures-snomed-gps-uv-ips" name="Procedures - SNOMED CT GPS - IPS"/>
+<artifact id="StructureDefinition/Quantity-uv-ips" key="StructureDefinition-Quantity-uv-ips" name="Quantity (IPS)"/>
+<artifact id="StructureDefinition/Range-uv-ips" key="StructureDefinition-Range-uv-ips" name="Range (IPS)"/>
+<artifact id="StructureDefinition/Ratio-uv-ips" key="StructureDefinition-Ratio-uv-ips" name="Ratio (IPS)"/>
+<artifact deprecated="true" id="ValueSet/lab-blood-abo-rh-grp-gps-uv-ips" key="ValueSet-lab-blood-abo-rh-grp-gps-uv-ips" name="Results ABO+RH Group (GPS) - IPS"/>
+<artifact id="ValueSet/result-coded-value-laboratory-gps-uv-ips" key="ValueSet-result-coded-value-lab-gps-uv-ips" name="Results Coded Values Laboratory (GPS) - IPS"/>
+<artifact deprecated="true" id="ValueSet/result-coded-value-lab-uv-ips" key="ValueSet-result-coded-value-lab-uv-ips" name="Results Coded Values Laboratory - IPS"/>
+<artifact id="ValueSet/result-coded-value-pathology-gps-uv-ips" key="ValueSet-result-coded-value-pathology-gps-uv-ips" name="Results Coded Values Pathology (GPS) - IPS"/>
+<artifact deprecated="true" id="ValueSet/result-coded-value-pathology-uv-ips" key="ValueSet-result-coded-value-pathology-uv-ips" name="Results Coded Values Pathology - IPS"/>
+<artifact deprecated="true" id="ValueSet/results-laboratory-blood-abo-rh-grp-gps-uv-ips" key="ValueSet-results-laboratory-blood-abo-rh-grp-gps-uv-ips" name="Results Laboratory ABO+RH Group (GPS) - IPS"/>
+<artifact id="ValueSet/results-laboratory-blood-grp-gps-uv-ips" key="ValueSet-results-laboratory-blood-grp-gps-uv-ips" name="Results Laboratory Blood Group (GPS) - IPS"/>
+<artifact id="ValueSet/results-laboratory-observations-uv-ips" key="ValueSet-results-laboratory-observations-uv-ips" name="Results Laboratory Observation - IPS"/>
+<artifact id="ValueSet/results-laboratory-presence-absence-gps-uv-ips" key="ValueSet-results-laboratory-presence-absence-gps-uv-ips" name="Results Laboratory Presence/Absence (GPS) - IPS"/>
+<artifact deprecated="true" id="ValueSet/laboratory-tests-and-panels-uv-ips" key="ValueSet-laboratory-tests-and-panels-uv-ips" name="Results Laboratory Tests and Panels - IPS"/>
+<artifact deprecated="true" id="ValueSet/observation-codes-uv-ips" key="ValueSet-observation-codes-uv-ips" name="Results Observation - IPS"/>
+<artifact deprecated="true" id="ValueSet/laboratory-and-vital-signs-observations" key="ValueSet-laboratory-and-vital-signs-observations" name="Results Observation Laboratory - IPS"/>
+<artifact deprecated="true" id="ValueSet/pathology-and-vital-signs-observations" key="ValueSet-pathology-and-vital-signs-observations" name="Results Observation Pathology - IPS"/>
+<artifact deprecated="true" id="ValueSet/imaging-observations-uv-ips" key="ValueSet-imaging-observations-uv-ips" name="Results Observation Radiology - IPS"/>
+<artifact id="ValueSet/results-organism-gps-uv-ips" key="ValueSet-organism-gps-uv-ips" name="Results Organism (GPS) - IPS"/>
+<artifact deprecated="true" id="ValueSet/organism-uv-ips" key="ValueSet-organism-uv-ips" name="Results Organism - IPS"/>
+<artifact id="ValueSet/results-pathology-observations-uv-ips" key="ValueSet-results-pathology-observations-uv-ips" name="Results Pathology Observation - IPS"/>
+<artifact deprecated="true" id="ValueSet/lab-absence-presence-gps-uv-ips" key="ValueSet-lab-absence-presence-gps-uv-ips" name="Results Presence/Absence (GPS) - IPS"/>
+<artifact id="ValueSet/results-radiology-numobs-gps-dicom-uv-ips" key="ValueSet-results-radiology-numobs-gps-dicom-uv-ips" name="Results Radiology Measurement Observation (GPS-DICOM) - IPS"/>
+<artifact deprecated="true" id="ValueSet/imaging-numobs-gps-dicom-uv-ips" key="ValueSet-imaging-numobs-gps-dicom-uv-ips" name="Results Radiology Measurements (GPS-DICOM) - IPS"/>
+<artifact deprecated="true" id="ValueSet/imaging-numobs-uv-ips" key="ValueSet-imaging-numobs-uv-ips" name="Results Radiology Measurements - IPS"/>
+<artifact id="ValueSet/results-radiology-observations-uv-ips" key="ValueSet-results-radiology-observations-uv-ips" name="Results Radiology Observation - IPS"/>
+<artifact id="ValueSet/results-radiology-txtobs-gps-dicom-loinc-uv-ips" key="ValueSet-imaging-txtobs-gps-dicom-loinc-uv-ips" name="Results Radiology Textual Observations (GPS-DICOM-LOINC) - IPS"/>
+<artifact deprecated="true" id="ValueSet/imaging-txtobs-code-uv-ips" key="ValueSet-imaging-txtobs-code-uv-ips" name="Results Radiology Textual Observations - IPS"/>
+<artifact id="ValueSet/results-specimen-collection-method-gps-uv-ips" key="ValueSet-specimen-collection-method-gps-uv-ips" name="Results Specimen Collection Method (GPS) - IPS"/>
+<artifact deprecated="true" id="ValueSet/specimen-collection-method-uv-ips" key="ValueSet-specimen-collection-method-uv-ips" name="Results Specimen Collection Method - IPS"/>
+<artifact id="ValueSet/results-specimen-type-gps-uv-ips" key="ValueSet-specimen-type-gps-uv-ips" name="Results Specimen Type (GPS) - IPS"/>
+<artifact deprecated="true" id="ValueSet/snomed-intl-gps" key="ValueSet-snomed-intl-gps" name="SNOMED International Global Patient Set (GPS)"/>
+<artifact id="ConceptMap/severity-loinc-uv-ips" key="ConceptMap-severity-loinc-uv-ips" name="Severity Value Set Mappings - LOINC to FHIR"/>
+<artifact id="ConceptMap/severity-snomedct-uv-ips" key="ConceptMap-severity-snomedct-uv-ips" name="Severity Value Set Mappings - SNOMED CT to FHIR"/>
+<artifact id="StructureDefinition/SimpleQuantity-uv-ips" key="StructureDefinition-SimpleQuantity-uv-ips" name="SimpleQuantity (IPS)"/>
+<artifact deprecated="true" key="Specimen" name="Specimen"/>
+<artifact id="StructureDefinition/Specimen-uv-ips" key="StructureDefinition-Specimen-uv-ips" name="Specimen (IPS)"/>
+<artifact id="Specimen/specimen-example-1" key="Specimen-specimen-example-1" name="Specimen: example"/>
+<artifact id="ValueSet/target-site-uv-ips" key="ValueSet-target-site-uv-ips" name="Target Site - IPS"/>
+<artifact id="ValueSet/targetDiseases-gps-uv-ips" key="ValueSet-targetDiseases-gps-uv-ips" name="Vaccine Target Diseases (GPS) - IPS"/>
+<artifact id="ValueSet/targetDiseases-uv-ips" key="ValueSet-targetDiseases-uv-ips" name="Vaccine Target Diseases - IPS"/>
+<artifact id="ValueSet/vaccines-gps-uv-ips" key="ValueSet-vaccines-gps-uv-ips" name="Vaccines (GPS) - IPS"/>
+<artifact id="ValueSet/vaccines-uv-ips" key="ValueSet-vaccines-uv-ips" name="Vaccines - IPS"/>
+<artifact deprecated="true" key="ValueSet" name="ValueSet"/>
+<artifact id="ValueSet/whoatc-uv-ips" key="ValueSet-whoatc-uv-ips" name="WHO ATC - IPS"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="copyrights" name="Copyrights"/>
+<page key="datatypes" name="Datatypes defined for this Guide"/>
+<page key="design" name="Design Conventions and Principles"/>
+<page key="downloads" name="Downloads"/>
+<page key="examples" name="Examples"/>
+<page key="extensions" name="Extensions"/>
+<page key="principles" name="General Principles"/>
+<page key="ipsGeneration" name="Generation and Data Inclusion"/>
+<page key="ipsStructure" name="IPS Structure"/>
+<page key="index" name="International Patient Summary Implementation Guide"/>
+<page key="knownIssues" name="Known Issues and Future Development"/>
+<page key="profiles" name="Profiles defined as part of the IPS Guide"/>
+<page key="toc" name="Table of Contents"/>
+<page key="terminology" name="Terminology artifacts defined as part of the IPS Implementation Guide"/>
+<page deprecated="true" key="methodology" name="methodology"/>
+<page deprecated="true" key="terminologies-valuesets" name="terminologies-valuesets"/>
+</specification>
