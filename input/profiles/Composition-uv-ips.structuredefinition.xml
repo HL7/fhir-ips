@@ -65,7 +65,6 @@
 		</element>
 		<element id="Composition.encounter">
 			<path value="Composition.encounter"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.date">
 			<path value="Composition.date"/>
@@ -85,7 +84,6 @@
 		</element>
 		<element id="Composition.confidentiality">
 			<path value="Composition.confidentiality"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.attester">
 			<path value="Composition.attester"/>
@@ -109,11 +107,9 @@
 		</element>
 		<element id="Composition.relatesTo">
 			<path value="Composition.relatesTo"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.relatesTo.code">
 			<path value="Composition.relatesTo.code"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.relatesTo.target[x]">
 			<path value="Composition.relatesTo.target[x]"/>
@@ -125,7 +121,6 @@
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Composition"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.event">
 			<path value="Composition.event"/>
@@ -263,7 +258,6 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionMedications.entry:medicationRequest">
 			<path value="Composition.section.entry"/>
@@ -272,7 +266,6 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationRequest-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionAllergies">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name">
