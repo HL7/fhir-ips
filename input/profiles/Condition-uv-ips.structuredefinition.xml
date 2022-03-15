@@ -170,6 +170,9 @@
 		<element id="Condition.abatement[x]">
 			<path value="Condition.abatement[x]"/>
 			<type>
+				<code value="dateTime"/>
+			</type>
+			<type>
 				<code value="Age"/>
 			</type>
 			<type>
@@ -181,6 +184,7 @@
 			<type>
 				<code value="string"/>					
 			</type>
+			<mustSupport value="true" />
 		</element>
 		<element id="Condition.asserter">
 			<path value="Condition.asserter"/>
