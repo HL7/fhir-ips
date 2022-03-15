@@ -28,7 +28,6 @@
 				<human value="component is required if valueString is empty"/>
 				<expression value="(component.exists() and valueString.empty()) or valueString.exists()"/>
 			</constraint>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.partOf">
 			<path value="Observation.partOf"/>

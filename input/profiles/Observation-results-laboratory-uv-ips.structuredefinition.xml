@@ -26,7 +26,6 @@
 				<human value="if no &quot;hasMember&quot; element is present then Observation must have a&quot; value&quot;"/>
 				<expression value="value.exists() or hasMember.exists()"/>
 			</constraint>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.category">
 			<path value="Observation.category"/>
