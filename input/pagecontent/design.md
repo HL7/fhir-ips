@@ -35,7 +35,7 @@ Having this clear is important for correctly understanding the published profile
 ### Must Support
 In the context of the IPS, mustSupport on any data element SHALL be interpreted as follows:
 * Implementers conforming to the IPS Implementation Guide, when creating IPS content
-  * SHALL be capable of including mustSupport data elements.
+  * SHALL be capable of including mustSupport data elements for generated IPS profiles. For avoidance of doubt, it is not required to support mustSupport elements within optional IPS profiles when they are not included.
 * Implementers conforming to the IPS Implementation Guide, when receiving IPS content
   * SHALL be capable of processing resource instances containing  mustSupport data elements without generating an error or causing the application to fail.
   * SHOULD be capable of displaying mustSupport data elements for human use, or processing (e.g. storing) them for other purposes.
