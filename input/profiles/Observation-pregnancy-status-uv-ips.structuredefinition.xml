@@ -29,6 +29,7 @@
 					<code value="82810-3"/>
 				</coding>
 			</patternCodeableConcept>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.subject">
 			<path value="Observation.subject"/>
@@ -37,10 +38,12 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.subject.reference">
 			<path value="Observation.subject.reference"/>
 			<min value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.effective[x]">
 			<path value="Observation.effective[x]"/>
@@ -49,6 +52,7 @@
 			<type>
 				<code value="dateTime"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.effective[x]:data-absent-reason">
 			<path value="Observation.effective[x].extension"/>
@@ -59,6 +63,7 @@
 				<code value="Extension"/>
 				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.valueCodeableConcept">
 			<path value="Observation.valueCodeableConcept"/>
@@ -66,6 +71,7 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
 			<binding>
 				<strength value="required"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips"/>
@@ -74,18 +80,22 @@
 		<element id="Observation.bodySite">
 			<path value="Observation.bodySite"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Observation.specimen">
 			<path value="Observation.specimen"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Observation.device">
 			<path value="Observation.device"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Observation.referenceRange">
 			<path value="Observation.referenceRange"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 		<element id="Observation.hasMember">
 			<path value="Observation.hasMember"/>
@@ -95,14 +105,17 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-pregnancy-edd-uv-ips"/>
 			</type>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.hasMember.reference">
 			<path value="Observation.hasMember.reference"/>
 			<min value="1"/>
+			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component">
 			<path value="Observation.component"/>
 			<max value="0"/>
+			<mustSupport value="false"/>
 		</element>
 	</differential>
 </StructureDefinition>
