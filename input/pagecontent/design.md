@@ -33,13 +33,15 @@ One of the important and useful capabilities of FHIR profiling is [slicing](http
 Having this clear is important for correctly understanding the published profiles. For example, the optional section of [Social History](./StructureDefinition-Composition-uv-ips-definitions.html#Composition.section:sectionSocialHistory.entry) has open slicing on the entry element allowing for the use of the [IPS Tobacco Use profile](./StructureDefinition-Observation-tobaccouse-uv-ips.html), the [IPS Alcohol Use profile](./StructureDefinition-Observation-alcoholuse-uv-ips.html), or any other Observation or DocumentReference. Therefore, while specific IPS profiles are described in this guide, other profiles may also be included as well. 
 
 ### Must Support
-In the context of the IPS, mustSupport on any data element SHALL be interpreted as follows:
-* Implementers conforming to the IPS Implementation Guide, when creating IPS content
-  * SHALL be capable of including mustSupport data elements for generated IPS profiles. For avoidance of doubt, it is not required to support mustSupport elements within optional IPS profiles when they are not included.
-* Implementers conforming to the IPS Implementation Guide, when receiving IPS content
-  * SHALL be capable of processing resource instances containing  mustSupport data elements without generating an error or causing the application to fail.
-  * SHOULD be capable of displaying mustSupport data elements for human use, or processing (e.g. storing) them for other purposes.
-  * SHALL be able to process resource instances containing mustSupport data elements asserting missing information.
+
+Implementers conforming to a particular profile in the IPS Implementation Guide:
+* SHALL be capable of producing values for the mustSupport elements in the IPS profile [See 3.4.1 for Missing Data] 
+* SHALL be capable of processing resource instances containing mustSupport data elements, including elements with missing data, without generating an error or causing the application to fail.
+* SHOULD be capable of displaying mustSupport data elements for human use, or processing (e.g. storing) them for other purposes.
+
+Implementers conforming to an IPS document in the IPS Implementation Guide:
+* SHALL be capable of supporting profiles under sections that are marked mustSupport in the IPS Composition profile
+* SHALL be capable of populating profiles for allergy, medication and problem information in an IPS document 
 
 #### Missing Data
 {:.no_toc}
