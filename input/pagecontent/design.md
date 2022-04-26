@@ -30,23 +30,7 @@ The second has been finally chosen for the following reasons:
 
 One of the important and useful capabilities of FHIR profiling is [slicing](http://hl7.org/fhir/profiling.html#slicing), where multiple sets of constraints for a specific use case can be defined for a resource element or a complex element group (slicing can be used with repeating, type choice or non-repeating elements). Most of the slices specified in this guide are _open_ (i.e. `slicing.rules` is not `closed`), which means that it is possible for resource instances with elements that do not match any of the defined slices to still be conformant with the profile as long as they satisfy the remaining profile constraints.
 
-Having this clear is important for correctly understanding the published profiles, particularly those using a value set binding for discriminating the slices.
-
-It is in fact allowed in these cases to use alternative value sets / code systems that are not those that are _'required'_. Let's take as an example the slicing of Condition.code in the [Condition-uv-ips](StructureDefinition-Condition-uv-ips.html) profile. This profile specifies two slices for this element:
-1. One to indicate a problem from the SNOMED CT Global Patient Set (GPS) ( [CORE Problem List Finding/Situation/Event (GPS) - IPS](ValueSet-core-problem-finding-situation-event-gps-uv-ips.html) )
-1. One for  unknown or absent relevant problems ( [Absent or Unknown Problems - IPS](ValueSet-absent-or-unknown-problems-uv-ips.html) )
-
-Since this slicing is open, the presence of these two required value sets doesn't prevent implementers or specifiers from representing a problem by using a code from an alternative code system (e.g. ICD-11) as the primary code. The code fragment below shows an example of using ICD-11 for coding the problem, as included as one of the Coding instances in the [Condition example](Condition-eumfh-39-07-1.html) for "Acute myocardial infarction of anterior wall" in this guide.
-
-```
-	<code>
-		<coding>
-			<system value="http://id.who.int/icd11/mms"/>
-			<code value="BA41&XA7RE3"/>
-			<display value="Acute myocardial infarction & Anterior wall of heart"/>
-		</coding>
-	</code>
-```
+Having this clear is important for correctly understanding the published profiles. For example, the optional section of [Social History] (./StructureDefinition-Composition-uv-ips-definitions.html#Composition.section:sectionSocialHistory.entry) has open slicing on the entry element allowing for the use of the [IPS Tobacco Use profile] (), the [IPS Alcohol Use profile] (), or any other Observation or DocumentReference. Therefore, while the inclusion of specific IPS profiles are described, other profiles may also be included as well. 
 
 ### Must Support
 In the context of the IPS, mustSupport on any data element SHALL be interpreted as follows:
