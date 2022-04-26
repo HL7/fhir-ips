@@ -16,5 +16,5 @@ This IPS IG does not provide any specific set of rules for when data may no long
 
 -	[HL7 Relevant and Pertinent Implementation Guide](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=453)
 -	[Concise Consolidated CDA Recommendations (C-CDA guidance for USA)](http://www.commonwellalliance.org/wp-content/uploads/2018/07/Carequality_CommonWell_Improve_C-CDA_06-15-2018_V1.pdf) 
-- [European Guidelines for Patient Summaries (eHealth Network)](https://ec.europa.eu/health/sites/default/files/ehealth/docs/ehn_guidelines_patientsummary_en.pdf) 
+- [European Guidelines for Patient Summaries (eHealth Network)](https://ec.europa.eu/health/publications/guidelines-patient-summary_en) 
 -	National adaptations of the IPS
