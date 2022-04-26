@@ -98,6 +98,8 @@ In the context of the IPS, mustSupport on any data element SHALL be interprete
 
 The functional requirement of supporting the translation of the designations has been addressed in this guide extending the coding data type (Coding-uv-ips).
 
+While the IPS standard allows for language translations to be included, both in coded display and narrative, there should be no expectation by downstream consumers (e.g. another nation in cross-border sharing) that local language translations will be present.
+
 For details about the support of narrative translations please refer to the [Multi-Language support in FHIR](http://build.fhir.org/languages.html) section.
 
 ### Representation of Person Names
