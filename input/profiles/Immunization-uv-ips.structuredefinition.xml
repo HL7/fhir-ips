@@ -37,7 +37,7 @@
 			<short value="Vaccine that was administered or was to be administered.Several kinds of vaccine product coding could be provided.&#xD;&#xA;&#xD;&#xA;
 				The IPS assumes that either the type of the vaccine for particular disease or diseases (e.g. MMR vaccine) against which the patient has been immunised is provided; or the known absent / unknown code.&#xD;&#xA;&#xD;&#xA;
 				Other coded information can be provided as well as: the IDMP Pharmaceutical Product Identifiers (PhPID), Medicinal Product Identifier (MPID), Packaged Medicinal Product Identifier (PCID), when available, or equivalent coded concepts; the WHO ATC codes; or any other kind of code that that identifies, classifies or cluster the administered product."/>
-			<definition value="Vaccine that was administered or was to be administered. Several kinds of vaccine product coding could be provided.&#xD;&#xA;The IPS assumes that either the type of the vaccine for particular disease or diseases (e.g. MMR vaccine) against which the patient has been immunized is provided; or the known absent / unknown.&#xD;&#xA;&#xD;&#xA;Other coded information can be provided as well as:&#xD;&#xA;&#xD;&#xA;- The IDMP Pharmaceutical Product Identifier (PhPID), Level 1, [Substance(s)]. Example: Amoxicillin and Clavulanate Potassium; or any other equivalent coded concept.&#xD;&#xA;- The IDMP Pharmaceutical Product Identifier (PhPID), Level 2 [Substance(s) + Strength + reference strength]. Example: Amoxicillin 875 mg and Clavulanate Potassium 125 mg; or any other equivalent coded concept.&#xD;&#xA;- The IDMP Pharmaceutical Product Identifier (PhPID), Level 3 [Substance(s) + administrable dose form]. Example: Amoxicillin and Clavulanate Potassium, Oral Tablet; or any other equivalent coded concept.&#xD;&#xA;- The IDMP Pharmaceutical Product Identifier (PhPID), Level 4 [Substance(s) + strength + reference strength + administrable dose form]. Example: Amoxicillin 875 mg and clavulanate potassium 125 mg, oral tablet; or any other equivalent coded concept.&#xD;&#xA;- The IDMP Medicinal Product Identifier (MPID) or any equivalent Medicinal Product Identifier. IDMP MPID uniquely identifies a Medicinal Product, reflecting (but not replacing) any other authorization numbers allocated by a regulator. MPID implies one (set of) PhPID. The MPID shall use a common segment pattern related to a Medicinal Product, which, when each segment is valued shall define a specific MPID concept.&#xD;&#xA;- The IDMP Packaged Medicinal Product Identifier (PCID) or any equivalent Packaged Medicinal Product Identifier. Uniquely identifies a Medicinal Product based on its packaging. This implies one MPID can be associated with more than one PCID, if the same Medicinal Product has more than one type of package.&#xD;&#xA;- Any other kind of code that that identifies, classifies or clusters the administered product (e.g. the medicinal product or the product class).&#xD;&#xA;&#xD;&#xA;The value sets used for the PhPID, MPID and PCID identifiers are provisional and include only few equivalent concepts used for exemplification purposes, they will be updated with real IDMP identifiers when they will become available.&#xD;&#xA;&#xD;&#xA;Additional conformance bindings provided for use for this element in specific (jurisdictional or other) contexts include (these bindings are represented in the StructureDefinition as instances of the [elementdefinition-additionalBinding](StructureDefinition-elementdefinition-additionalBinding.html) extension):&#xD;&#xA;- [vaccines-uv-ips](ValueSet-vaccines-uv-ips.html)&#xD;&#xA;- [whoatc-uv-ips](ValueSet-whoatc-uv-ips.html)"/>
+			<definition value="Vaccine that was administered or was to be administered. Several kinds of vaccine product coding could be provided.&#xD;&#xA;The IPS assumes that either the type of the vaccine for particular disease or diseases (e.g. MMR vaccine) against which the patient has been immunized is provided; or the known absent / unknown.&#xD;&#xA;&#xD;&#xA;Other coded information can be provided as well as:&#xD;&#xA;&#xD;&#xA;- The IDMP Pharmaceutical Product Identifier (PhPID), Level 1, [Substance(s)]. Example: Amoxicillin and Clavulanate Potassium; or any other equivalent coded concept.&#xD;&#xA;- The IDMP Pharmaceutical Product Identifier (PhPID), Level 2 [Substance(s) + Strength + reference strength]. Example: Amoxicillin 875 mg and Clavulanate Potassium 125 mg; or any other equivalent coded concept.&#xD;&#xA;- The IDMP Pharmaceutical Product Identifier (PhPID), Level 3 [Substance(s) + administrable dose form]. Example: Amoxicillin and Clavulanate Potassium, Oral Tablet; or any other equivalent coded concept.&#xD;&#xA;- The IDMP Pharmaceutical Product Identifier (PhPID), Level 4 [Substance(s) + strength + reference strength + administrable dose form]. Example: Amoxicillin 875 mg and clavulanate potassium 125 mg, oral tablet; or any other equivalent coded concept.&#xD;&#xA;- The IDMP Medicinal Product Identifier (MPID) or any equivalent Medicinal Product Identifier. IDMP MPID uniquely identifies a Medicinal Product, reflecting (but not replacing) any other authorization numbers allocated by a regulator. MPID implies one (set of) PhPID. The MPID shall use a common segment pattern related to a Medicinal Product, which, when each segment is valued shall define a specific MPID concept.&#xD;&#xA;- The IDMP Packaged Medicinal Product Identifier (PCID) or any equivalent Packaged Medicinal Product Identifier. Uniquely identifies a Medicinal Product based on its packaging. This implies one MPID can be associated with more than one PCID, if the same Medicinal Product has more than one type of package.&#xD;&#xA;- Any other kind of code that that identifies, classifies or clusters the administered product (e.g. the medicinal product or the product class).&#xD;&#xA;&#xD;&#xA;The value sets used for the PhPID, MPID and PCID identifiers are provisional and include only few equivalent concepts used for exemplification purposes, they will be updated with real IDMP identifiers when they will become available."/>
 			<min value="1"/>
 			<max value="1"/>
 			<type>
@@ -46,14 +46,71 @@
 			</type>
 			<mustSupport value="true"/>
 			<binding>
-				<extension url="http://hl7.org/fhir/uv/ips/StructureDefinition/elementdefinition-additionalBinding">
-					<valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips"/>
+				<extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
+					<extension url="purpose">
+						<valueCode value="conformance"/>
+					</extension>
+					<extension url="valueSet">
+						<valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips"/>
+					</extension>
+					<extension url="documentation">
+						<valueMarkdown value="Additional conformance binding to a vaccines value set from the WHO ATC code system for use in specific jurisdictional or other contexts where use of the ATC terminology is preferred."/>
+					</extension>
+					<!--
+					<extension url="usage">
+						<valueUsageContext xmlns="http://hl7.org/fhir">
+							<code>
+								<system value="http://snomed.info/sct"/>
+								<code value="223496003"/>
+								<display value="Geographical and/or political region of the world"/>
+							</code>
+							<valueCodeableConcept>
+								<coding>
+									<system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+									<code value="001"/>
+									<display value="World"/>
+								</coding>
+							</valueCodeableConcept>
+						</valueUsageContext>
+					</extension>
+				-->
 				</extension>
-				<extension url="http://hl7.org/fhir/uv/ips/StructureDefinition/elementdefinition-additionalBinding">
-					<valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips"/>
+				<extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
+					<extension url="purpose">
+						<valueCode value="conformance"/>
+					</extension>
+					<extension url="valueSet">
+						<valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips"/>
+					</extension>
+					<extension url="documentation">
+						<valueMarkdown value="Additional conformance binding to a vaccines value set from the full SNOMED CT release for use in specific jurisdictional or other contexts where a SNOMED CT license is available."/>
+					</extension>
+					<!--
+					<extension url="usage">
+						<valueUsageContext xmlns="http://hl7.org/fhir">
+							<code>
+								<system value="http://snomed.info/sct"/>
+								<code value="223496003"/>
+								<display value="Geographical and/or political region of the world"/>
+							--> <!--
+								<system value="http://terminology.hl7.org/CodeSystem/usage-context-type"/>
+								<code value="program"/>
+								<display value="Program"/>
+						-->	<!--
+							</code>
+							<valueCodeableConcept>
+								<coding>
+									<system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+									<code value="001"/>
+									<display value="World"/>
+								</coding>
+							</valueCodeableConcept>
+						</valueUsageContext>
+					</extension>
+				-->
 				</extension>
 				<strength value="preferred"/>
-				<description value="The type of vaccine for particular disease or diseases against which the patient has been immunised, or a code for absent/unknown immunization. See the [Detailed Descriptions](StructureDefinition-Immunization-uv-ips-definitions.html#Immunization.vaccineCode) and [elementdefinition-additionalBinding](StructureDefinition-elementdefinition-additionalBinding.html) extension instances for additional conformance bindings that are provided for use for this element in specific (jurisdictional or other) contexts."/>
+				<description value="The type of vaccine for particular disease or diseases against which the patient has been immunised, or a code for absent/unknown immunization."/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-absent-unknown-uv-ips"/>
 			</binding>
 		</element>
@@ -190,11 +247,37 @@
 			</slicing>
 		-->
 			<binding>
-				<extension url="http://hl7.org/fhir/uv/ips/StructureDefinition/elementdefinition-additionalBinding">
-					<valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-uv-ips"/>
+				<extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
+					<extension url="purpose">
+						<valueCode value="conformance"/>
+					</extension>
+					<extension url="valueSet">
+						<valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-uv-ips"/>
+					</extension>
+					<extension url="documentation">
+						<valueMarkdown value="Additional conformance binding to a target diseases value set from the full SNOMED CT release for use in specific jurisdictional or other contexts where a SNOMED CT license is available."/>
+					</extension>
+					<!--
+					<extension url="usage">
+						<valueUsageContext xmlns="http://hl7.org/fhir">
+							<code>
+								<system value="http://snomed.info/sct"/>
+								<code value="223496003"/>
+								<display value="Geographical and/or political region of the world"/>
+							</code>
+							<valueCodeableConcept>
+								<coding>
+									<system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+									<code value="001"/>
+									<display value="World"/>
+								</coding>
+							</valueCodeableConcept>
+						</valueUsageContext>
+					</extension>
+				-->
 				</extension>
 				<strength value="preferred"/>
-				<description value="The particular disease or diseases against which the patient has been immunized. See the [Detailed Descriptions](StructureDefinition-Immunization-uv-ips-definitions.html#Immunization.protocolApplied.targetDisease) and [elementdefinition-additionalBinding](StructureDefinition-elementdefinition-additionalBinding.html) extension instances for additional conformance bindings that are provided for use for this element in specific (jurisdictional or other) contexts."/>
+				<description value="The particular disease or diseases against which the patient has been immunized."/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips"/>
 			</binding>
 		</element>
