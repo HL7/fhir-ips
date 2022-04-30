@@ -55,5 +55,6 @@ This Implementation Guide has been balloted as STU with the intention to go norm
 | **Contributor** | Catherine Chronaki | HL7 International Foundation | chronaki@gmail.com |
 | **Contributor** | George Dixon | Allscripts LLC | george.dixon@allscripts.com |
 | **Contributor** | Kenneth Sinn  | Ontario Health Digital Services | ken.sinn@ontariohealth.ca |
+| **Contributor** | John D'Amore | More Informatics | johnd@moreinformatics.com |
 
 
