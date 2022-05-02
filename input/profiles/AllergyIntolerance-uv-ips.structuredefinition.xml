@@ -139,12 +139,27 @@
 			<min value="1"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="AllergyIntolerance.onsetDateTime">
-			<path value="AllergyIntolerance.onsetDateTime"/>
+		<element id="AllergyIntolerance.onset[x]">
+			<path value="AllergyIntolerance.onset[x]"/>
 			<type>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
+					<valueBoolean value="true" />
+				</extension>
 				<code value="dateTime"/>
 			</type>
-			<mustSupport value="true"/>
+			<type>
+				<code value="Age"/>
+			</type>
+			<type>
+				<code value="Period"/>
+			</type>
+			<type>
+				<code value="Range"/>			
+			</type>
+			<type>
+				<code value="string"/>					
+			</type>
+			<mustSupport value="true" />
 		</element>
 		<element id="AllergyIntolerance.asserter">
 			<path value="AllergyIntolerance.asserter"/>
