@@ -96,6 +96,7 @@ The profiles that have been defined for this implementation guide are listed <a 
 Following are the profiles that have been defined for each section. (R) denotes a required section (i.e. must be present in an IPS), (S) denotes a recommended section, the others are optional:
 * Medication Summary (R) 
  [ <a href="StructureDefinition-MedicationStatement-uv-ips.html">Medication Statement (IPS)</a> |
+ <a href="StructureDefinition-MedicationRequest-uv-ips.html">Medication Statement (IPS)</a> |
  <a href="StructureDefinition-Medication-uv-ips.html">Medication (IPS)</a> ]
 * Allergies and Intolerances (R) 
  [ <a href="StructureDefinition-AllergyIntolerance-uv-ips.html">Allergy Intolerance (IPS)</a> ]
