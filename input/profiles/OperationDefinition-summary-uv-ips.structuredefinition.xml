@@ -26,7 +26,7 @@
         <use value="in"/>
         <min value="0"/>
         <max value="1"/>
-        <documentation value="When the logical id of the patient is not used, servers MAY choose to support patient selection based on provided identifier." />
+        <documentation value="When the logical id of the patient is not used, servers MAY choose to support patient selection based on provided identifier" />
         <type value="Identifier"/>
     </parameter>
     <parameter>
@@ -50,7 +50,7 @@
         <use value="out"/>
         <min value="0"/>
         <max value="1"/>
-        <documentation value="The Bundle returned is a document conforming to an International Patient Summary [Bundle profile](./StructureDefinition-Bundle-uv-ips.html)" />
+        <documentation value="The Bundle returned is a document conforming to the specified input profile parameter or the International Patient Summary [Bundle profile](./StructureDefinition-Bundle-uv-ips.html) (if not otherwise specified)" />
         <type value="Bundle"/>
     </parameter>
 </OperationDefinition>
