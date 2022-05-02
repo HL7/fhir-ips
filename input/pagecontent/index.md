@@ -17,7 +17,7 @@ The initial focus of the International Patient Summary (IPS) was the unplanned c
 
 ### Project Background
 
-Details on the project background are available in the <a href="http://international-patient-summary.net/mediawiki/index.php?title=IPS_Introduction_1#Project_Background">IPS Wiki</a>.
+Details on the project background are available in the <a href="https://international-patient-summary.net">IPS Website</a>.
 
 ### Project Scope
 
@@ -35,7 +35,7 @@ The following picture provides an overview of the current IPS content.
 
 ### Relationships with Other Projects and Guidelines
 
-Further details on the IPS project relationships with other projects and guidelines are available in the <a href="http://international-patient-summary.net/mediawiki/index.php?title=IPS_implementationguide_1#Relationships_with_other_projects_and_guidelines">IPS Wiki</a>.
+Further details on the IPS project relationships with other projects and guidelines are available in the <a href="https://international-patient-summary.net/">IPS Website</a>.
 
 ### Ballot Status
 
