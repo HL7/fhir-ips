@@ -21,14 +21,6 @@
 			</element>
 		<element id="Device.type">
 			<path value="Device.type"/>
-			<slicing>
-				<discriminator>
-					<type value="pattern"/>
-					<path value="$this"/>
-				</discriminator>
-				<description value="Discriminated by the bound value set"/>
-				<rules value="open"/>
-			</slicing>
 			<short value="Type of device.&#xD;&#xA;Preferably valued by using SNOMED CT.&#xD;&#xA;The absence of information, or of devices relevant for purpose of this IPS, shall be explicitly stated by using the codes included in the absent-or-unknown-devices-uv-ips value set."/>
 			<min value="0"/>
 			<max value="1"/>
@@ -39,27 +31,8 @@
 			<mustSupport value="true"/>
 			<binding>
 				<strength value="preferred"/>
-				<description value="The type of device"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-uv-ips"/>
-			</binding>
-		</element>
-		<element id="Device.type:absentOrUnknownDevice">
-			<path value="Device.type"/>
-			<sliceName value="absentOrUnknownDevice"/>
-			<definition value="Slice to be valued in case of no information or known absence of relevant devices for the purpose of this IPS"/>
-			<max value="1"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-			<binding>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="absentOrUnknownDevice"/>
-				</extension>
-				<strength value="required"/>
-				<description value="Absent problem or unknown device"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-devices-uv-ips"/>
+				<description value="The type of device or a code for absent/unknown device"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-ips-absent-unknown-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Device.patient">
