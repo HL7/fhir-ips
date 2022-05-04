@@ -38,43 +38,34 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
-			<binding>
-				<strength value="example"/>
-				<description value="The type of medication"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medication-example-uv-ips"/>
-			</binding>
-		</element>
-		<element id="Medication.code:atcClass">
-			<path value="Medication.code"/>
-			<sliceName value="atcClass"/>
-			<short value="WHO ATC classification"/>
-			<definition value="WHO ATC classification"/>
-			<max value="1"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-			<binding>
-				<strength value="required"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips"/>
-			</binding>
-		</element>
-		<element id="Medication.code:snomed">
-			<path value="Medication.code"/>
-			<sliceName value="snomed"/>
-			<short value="SNOMED CT medications"/>
-			<definition value="SNOMED CT medications (Pharmaceutical / biologic product)"/>
-			<max value="1"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
-			<mustSupport value="true"/>
-			<binding>
-				<strength value="required"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-uv-ips"/>
-			</binding>
+      <binding>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
+          <extension url="purpose">
+            <valueCode value="conformance"/>
+          </extension>
+          <extension url="valueSet">
+            <valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/medication-example-uv-ips"/>
+          </extension>
+          <extension url="documentation">
+          <!-- NOTE THAT THIS DESCRIPTION SHOULD BE IMPROVED..WHAT IS DIFFERENT-->
+            <valueMarkdown value="The type of medication"/>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
+          <extension url="purpose">
+            <valueCode value="conformance"/>
+          </extension>
+          <extension url="valueSet">
+            <valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips"/>
+          </extension>
+          <extension url="documentation">
+            <valueMarkdown value="WHO ATC classification"/>
+          </extension>
+        </extension>
+        <strength value="preferred"/>
+        <description value="SNOMED CT medications (Pharmaceutical / biologic product) or a code for absent/unknown medication"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown"/>
+      </binding>
 		</element>
 		<element id="Medication.form">
 			<path value="Medication.form"/>
