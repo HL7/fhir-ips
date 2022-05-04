@@ -22,14 +22,6 @@
 		</element>
 		<element id="Procedure.code">
 			<path value="Procedure.code"/>
-			<slicing>
-				<discriminator>
-					<type value="pattern"/>
-					<path value="$this"/>
-				</discriminator>
-				<description value="Discriminated by the bound value set"/>
-				<rules value="open"/>
-			</slicing>
 			<definition value="Identification of the procedure or recording of &quot;absence of relevant procedures&quot; or of &quot;procedures unknown&quot;."/>
 			<min value="1"/>
 			<max value="1"/>
@@ -38,55 +30,23 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
-			<binding>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="ProcedureCode"/>
-				</extension>
-				<strength value="preferred"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips"/>
-			</binding>
-		</element>
-		<element id="Procedure.code:procedureGPSCode">
-			<path value="Procedure.code"/>
-			<sliceName value="procedureGPSCode"/>
-			<short value="Code for procedure from the SNOMED CT GPS code set"/>
-			<definition value="Code for a procedure that is selected from the SNOMED CT GPS code set."/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
-			<min value="0"/>
-			<max value="1"/>
-			<mustSupport value="true"/>
-			<binding>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="Procedure GPS"/>
-				</extension>
-				<strength value="required"/>
-				<description value="Codes for procedures from the SNOMED CT GPS code set"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-snomed-gps-uv-ips"/>
-			</binding>
-		</element>
-		<element id="Procedure.code:absentOrUnknownProcedure">
-			<path value="Procedure.code"/>
-			<sliceName value="absentOrUnknownProcedure"/>
-			<short value="Code for absent problem or for unknown procedure"/>
-			<definition value="Code representing the statement &quot;absent problem&quot; or the statement &quot;procedures unknown&quot;"/>
-			<type>
-				<code value="CodeableConcept"/>
-				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
-			</type>
-			<min value="0"/>
-			<max value="1"/>
-			<mustSupport value="true"/>
-			<binding>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="absentOrUnknownProcedure"/>
-				</extension>
-				<strength value="required"/>
-				<description value="A code to identify absent or unknown procedures"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-procedures-uv-ips"/>
-			</binding>
+      <binding>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
+          <extension url="purpose">
+            <valueCode value="conformance"/>
+          </extension>
+          <extension url="valueSet">
+            <valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips"/>
+          </extension>
+          <extension url="documentation">
+            <!-- NOTE THAT THIS DESCRIPTION SHOULD BE IMPROVED..WHAT IS DIFFERENT-->
+            <valueMarkdown value="Procedure code"/>
+          </extension>
+        </extension>
+        <strength value="preferred"/>
+        <description value="SNOMED CT GPS procedure code set or a code for absent/unknown procedure"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-gps-absent-unknown"/>
+      </binding>
 		</element>
 		<element id="Procedure.subject">
 			<path value="Procedure.subject"/>
