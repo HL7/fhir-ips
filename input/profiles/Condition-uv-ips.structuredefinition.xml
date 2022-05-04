@@ -66,14 +66,6 @@
 		</element>
 		<element id="Condition.code">
 			<path value="Condition.code"/>
-			<slicing>
-				<discriminator>
-					<type value="pattern"/>
-					<path value="$this"/>
-				</discriminator>
-				<description value="Discriminated by the bound value set"/>
-				<rules value="open"/>
-			</slicing>
 			<definition value="Identification of the condition, problem or diagnosis or recording of &quot;problem absent&quot; or of &quot;problems unknown&quot;."/>
 			<min value="1"/>
 			<max value="1"/>
@@ -82,40 +74,22 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
-		</element>
-		<element id="Condition.code:problemGPSCode">
-			<path value="Condition.code"/>
-			<sliceName value="problemGPSCode"/>
-			<short value="Code for a problem from the SNOMED CT GPS code set"/>
-			<definition value="Code for a clinical problem that is selected from the SNOMED CT GPS code set."/>
-			<min value="0"/>
-			<max value="1"/>
-			<mustSupport value="true"/>
-			<binding>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="problemGPSCode"/>
-				</extension>
-				<strength value="required"/>
-				<description value="problemGPS"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/core-problem-finding-situation-event-gps-uv-ips"/>
-			</binding>
-		</element>
-		<element id="Condition.code:absentOrUnknownProblem">
-			<path value="Condition.code"/>
-			<sliceName value="absentOrUnknownProblem"/>
-			<short value="Code for absent problem or for unknown problem"/>
-			<definition value="Code representing the statement &quot;absent problem&quot; or the statement &quot;problems unknown&quot;"/>
-			<min value="0"/>
-			<max value="1"/>
-			<mustSupport value="true"/>
-			<binding>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="absentOrUnknownProblem"/>
-				</extension>
-				<strength value="required"/>
-				<description value="Absent problem or unknown problem"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips"/>
-			</binding>
+      <binding>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
+          <extension url="purpose">
+            <valueCode value="conformance"/>
+          </extension>
+          <extension url="valueSet">
+            <valueCanonical value="http://hl7.org/fhir/ValueSet/condition-code"/>
+          </extension>
+          <extension url="documentation">
+            <valueMarkdown value="Identification of the condition, problem or diagnosis"/>
+          </extension>
+        </extension>
+        <strength value="preferred"/>
+        <description value="Code for a clinical problem that is selected from the SNOMED CT CORE code set or a code for absent/unknown problem"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/core-problem-gps-absent-unknown"/>
+      </binding>
 		</element>
 		<element id="Condition.bodySite">
 			<path value="Condition.bodySite"/>
