@@ -46,15 +46,15 @@ Implementers conforming to an IPS document in the IPS Implementation Guide:
 #### Missing Data
 {:.no_toc}
 
-##### Optional mustSupport data elements
+##### Optional mustSupport data elements (cardinality of 0..1 or 0..*)
 
 <p>If an IPS creator (a system generating the IPS contents) does not have data to be included in the IPS, the data element is omitted.</p>
 <p>Note: an IPS creator may have no data to be included in the IPS either because there are no data, or because data available are not pertinent with the scope of the IPS.</p>
 
-##### Required mustSupport data elements
+##### Required mustSupport data elements (cardinality of 1..1 or 1..*)
 <p>If an IPS creator does not have data to be included in the IPS, the reason for the absence has to be specified as follows:</p>
 
-1.  For *non-coded* data elements, use the [DataAbsentReason Extension] in the data type.
+1.  For *non-coded* data elements, use the [Data Absent Reason Extension](http://hl7.org/fhir/R4/extension-data-absent-reason.html) in the data type.
 
     Example: Patient resource where the patient birthDate is not known.
 
@@ -76,7 +76,7 @@ Implementers conforming to an IPS document in the IPS Implementation Guide:
       - if the source systems has text but no coded data, only the text element is used.
       - if there is neither text or codes representing actual (i.e non-exceptional) concepts:
         - use the appropriate exceptional concept code from the value set if available
-        - use the appropriate concept code from the [DataAbsentReason Code System] if the value set does not have it.
+        - use the appropriate concept code from the [Data Absent Reason Code System](http://hl7.org/fhir/R4/valueset-data-absent-reason.html) if the value set does not have it.
    - *required* binding strength (CodeableConcept or code datatypes):
       - use the appropriate exceptional concept code from the value set
 
