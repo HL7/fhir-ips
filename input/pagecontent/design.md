@@ -35,7 +35,7 @@ Having this clear is important for correctly understanding the published profile
 ### Must Support
 
 Implementers conforming to a particular profile in the IPS Implementation Guide:
-* SHALL be capable of producing values for the mustSupport elements in the IPS profile [See 3.4.1 for Missing Data] 
+* SHALL be capable of producing values for the mustSupport elements in the profile (see [3.4.1](#missing-data) for handling of missing data)  
 * SHALL be capable of processing resource instances containing mustSupport data elements, including elements with missing data, without generating an error or causing the application to fail.
 * SHOULD be capable of displaying mustSupport data elements for human use, or processing (e.g. storing) them for other purposes.
 
