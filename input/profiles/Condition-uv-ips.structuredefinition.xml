@@ -148,57 +148,47 @@
 		</element>
 		<element id="Condition.onset[x]">
 			<path value="Condition.onset[x]"/>
-			<slicing>
-				<discriminator>
-					<type value="type"/>
-					<path value="$this"/>
-				</discriminator>
-				<rules value="closed"/>
-			</slicing>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Condition.onset[x]:onsetDateTime">
-			<path value="Condition.onsetDateTime"/>
-			<sliceName value="onsetDateTime"/>
 			<type>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
+					<valueBoolean value="true" />
+				</extension>
 				<code value="dateTime"/>
 			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Condition.onset[x]:onsetPeriod">
-			<path value="Condition.onsetPeriod"/>
-			<sliceName value="onsetPeriod"/> 
+			<type>
+				<code value="Age"/>
+			</type>
 			<type>
 				<code value="Period"/>
 			</type>
-			<mustSupport value="false"/>
+			<type>
+				<code value="Range"/>			
+			</type>
+			<type>
+				<code value="string"/>					
+			</type>
+			<mustSupport value="true" />
 		</element>
 		<element id="Condition.abatement[x]">
 			<path value="Condition.abatement[x]"/>
-			<slicing>
-				<discriminator>
-					<type value="type"/>
-					<path value="$this"/>
-				</discriminator>
-				<rules value="closed"/>
-			</slicing>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Condition.abatement[x]:abatementDateTime">
-			<path value="Condition.abatement[x]"/>
-			<sliceName value="abatementDateTime"/>
 			<type>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
+					<valueBoolean value="true" />
+				</extension>
 				<code value="dateTime"/>
 			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Condition.abatement[x]:abatementPeriod">
-			<path value="Condition.abatement[x]"/>
-			<sliceName value="abatementPeriod"/>
+			<type>
+				<code value="Age"/>
+			</type>
 			<type>
 				<code value="Period"/>
 			</type>
-			<mustSupport value="false"/>
+			<type>
+				<code value="Range"/>			
+			</type>
+			<type>
+				<code value="string"/>					
+			</type>
+			<mustSupport value="true" />
 		</element>
 		<element id="Condition.asserter">
 			<path value="Condition.asserter"/>

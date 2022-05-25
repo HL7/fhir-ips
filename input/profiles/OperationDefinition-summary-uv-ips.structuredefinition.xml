@@ -26,6 +26,7 @@
         <use value="in"/>
         <min value="0"/>
         <max value="1"/>
+        <documentation value="When the logical id of the patient is not used, servers MAY choose to support patient selection based on provided identifier" />
         <type value="Identifier"/>
     </parameter>
     <parameter>
@@ -33,6 +34,7 @@
         <use value="in"/>
         <min value="0"/>
         <max value="1"/>
+        <documentation value="A specific profile for the patient summary may be specified. By default, servers MAY use the [Bundle profile](./StructureDefinition-Bundle-uv-ips.html)" />
         <type value="uri"/>
     </parameter>
     <parameter>
@@ -40,6 +42,7 @@
         <use value="in"/>
         <min value="0"/>
         <max value="1"/>
+        <documentation value="Servers MAY choose to allow any graph definition to be specified, but MAY require that the client choose a graph definition from a specific list of known supported definitions. The server is not required to support a formal definition of the graph on the end point" />
         <type value="uri"/>
     </parameter>
     <parameter>
@@ -47,6 +50,7 @@
         <use value="out"/>
         <min value="0"/>
         <max value="1"/>
+        <documentation value="The Bundle returned is a document conforming to the specified input profile parameter or the International Patient Summary [Bundle profile](./StructureDefinition-Bundle-uv-ips.html) (if not otherwise specified)" />
         <type value="Bundle"/>
     </parameter>
 </OperationDefinition>
