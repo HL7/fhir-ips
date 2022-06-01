@@ -14,7 +14,6 @@
 	<differential>
 		<element id="Observation">
 			<path value="Observation"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.code">
 			<path value="Observation.code"/>
@@ -72,7 +71,6 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 			<binding>
 				<strength value="required"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/current-smoking-status-uv-ips"/>

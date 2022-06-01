@@ -77,14 +77,12 @@
     "element": [
       {
         "id": "MedicationRequest",
-        "path": "MedicationRequest",
-        "mustSupport": true
+        "path": "MedicationRequest"
       },
       {
         "id": "MedicationRequest.status",
         "path": "MedicationRequest.status",
-        "comment": "In the scope of the IPS the entered-in-error concept is not allowed.",
-        "mustSupport": true
+        "comment": "In the scope of the IPS the entered-in-error concept is not allowed."
       },
       {
         "id": "MedicationRequest.medication[x]",
@@ -161,8 +159,7 @@
       },
       {
         "id": "MedicationRequest.requester",
-        "path": "MedicationRequest.requester",
-        "mustSupport": true
+        "path": "MedicationRequest.requester"
       },
       {
         "id": "MedicationRequest.dosageInstruction",
@@ -190,7 +187,6 @@
             ]
           }
         ],
-        "mustSupport": true,
         "binding": {
           "strength": "preferred",
           "valueSet": "http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration",
@@ -200,8 +196,7 @@
       {
         "id": "MedicationRequest.dispenseRequest.validityPeriod",
         "path": "MedicationRequest.dispenseRequest.validityPeriod",
-        "min": 1,
-        "mustSupport": true
+        "min": 1
       },
       {
         "id": "MedicationRequest.dispenseRequest.validityPeriod.extension",
@@ -216,8 +211,7 @@
               "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
             ]
           }
-        ],
-        "mustSupport": true
+        ]
       }
     ]
   }

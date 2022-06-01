@@ -14,7 +14,6 @@
 	<differential>
 		<element id="Patient">
 			<path value="Patient"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Patient.identifier">
 			<path value="Patient.identifier"/>
@@ -80,7 +79,6 @@
 				<valueString value="Contact"/>
 			</extension>
 			<path value="Patient.contact"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Patient.contact.relationship">
 			<path value="Patient.contact.relationship"/>
@@ -88,7 +86,6 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="ContactRelationship"/>
@@ -99,27 +96,21 @@
 		</element>
 		<element id="Patient.contact.name">
 			<path value="Patient.contact.name"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Patient.contact.telecom">
 			<path value="Patient.contact.telecom"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Patient.contact.address">
 			<path value="Patient.contact.address"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Patient.contact.organization">
 			<path value="Patient.contact.organization"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Patient.communication">
 			<path value="Patient.communication"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Patient.communication.language">
 			<path value="Patient.communication.language"/>
-			<mustSupport value="true"/>
 			<binding>
 				<strength value="required"/>
 				<valueSet value="http://hl7.org/fhir/ValueSet/all-languages"/>

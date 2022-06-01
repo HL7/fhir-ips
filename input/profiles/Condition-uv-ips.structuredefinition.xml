@@ -17,7 +17,6 @@
 		<element id="Condition">
 			<path value="Condition"/>
 			<short value="Documentation of a health problem of the patient"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Condition.clinicalStatus">
 			<path value="Condition.clinicalStatus"/>
@@ -35,7 +34,6 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Condition.category">
 			<path value="Condition.category"/>
@@ -171,9 +169,6 @@
 		<element id="Condition.abatement[x]">
 			<path value="Condition.abatement[x]"/>
 			<type>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
-					<valueBoolean value="true" />
-				</extension>
 				<code value="dateTime"/>
 			</type>
 			<type>
@@ -193,7 +188,6 @@
 		<element id="Condition.asserter">
 			<path value="Condition.asserter"/>
 			<definition value="Individual who is making the condition statement.&#xD;&#xA;Information source."/>
-			<mustSupport value="true"/>
 		</element>
 	</differential>
 </StructureDefinition>

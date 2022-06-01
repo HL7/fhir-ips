@@ -17,7 +17,6 @@
 	<differential>
 		<element id="Observation">
 			<path value="Observation"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.status">
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
@@ -25,7 +24,6 @@
 			</extension>
 			<path value="Observation.status"/>
 			<fixedCode value="final"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.category">
 			<path value="Observation.category"/>
@@ -33,7 +31,6 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.code">
 			<path value="Observation.code"/>
@@ -93,7 +90,6 @@
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/> 
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.value[x]">
 			<path value="Observation.value[x]"/>
@@ -107,7 +103,6 @@
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse"/> 
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/MolecularSequence"/> 
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Observation.component">
 			<path value="Observation.component"/>

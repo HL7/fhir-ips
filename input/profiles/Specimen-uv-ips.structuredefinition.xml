@@ -16,7 +16,6 @@
 	<differential>
 		<element id="Specimen">
 			<path value="Specimen"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Specimen.type">
 			<path value="Specimen.type"/>
@@ -25,7 +24,6 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="SpecimenType"/>
@@ -40,16 +38,13 @@
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Specimen.subject.reference">
 			<path value="Specimen.subject.reference"/>
 			<min value="1"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Specimen.collection">
 			<path value="Specimen.collection"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Specimen.collection.method">
 			<path value="Specimen.collection.method"/>
@@ -57,7 +52,6 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 			<binding>
 				<strength value="extensible"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/results-specimen-collection-method-gps-uv-ips"/>
@@ -69,7 +63,6 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
 			<binding>
 				<strength value="extensible"/>
 				<valueSet value="http://hl7.org/fhir/ValueSet/body-site"/>
@@ -84,7 +77,6 @@
 			<type> 
 				<code value="Duration"/> 
 			</type> 
-			<mustSupport value="true"/>
 		</element>
 	</differential>
 </StructureDefinition>

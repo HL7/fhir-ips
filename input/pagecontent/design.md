@@ -33,26 +33,28 @@ One of the important and useful capabilities of FHIR profiling is [slicing](http
 Having this clear is important for correctly understanding the published profiles. For example, the optional section of [Social History](./StructureDefinition-Composition-uv-ips-definitions.html#Composition.section:sectionSocialHistory.entry) has open slicing on the entry element allowing for the use of the [IPS Tobacco Use profile](./StructureDefinition-Observation-tobaccouse-uv-ips.html), the [IPS Alcohol Use profile](./StructureDefinition-Observation-alcoholuse-uv-ips.html), or any other Observation or DocumentReference. Therefore, while specific IPS profiles are described in this guide, other profiles may also be included as well. 
 
 ### Must Support
-In the context of the IPS, mustSupport on any data element SHALL be interpreted as follows:
-* Implementers conforming to the IPS Implementation Guide, when creating IPS content
-  * SHALL be capable of including mustSupport data elements.
-* Implementers conforming to the IPS Implementation Guide, when receiving IPS content
-  * SHALL be capable of processing resource instances containing  mustSupport data elements without generating an error or causing the application to fail.
-  * SHOULD be capable of displaying mustSupport data elements for human use, or processing (e.g. storing) them for other purposes.
-  * SHALL be able to process resource instances containing mustSupport data elements asserting missing information.
+
+Implementers conforming to a particular profile in the IPS Implementation Guide:
+* SHALL be capable of producing values for the mustSupport elements in the profile (see [3.4.1](#missing-data) for handling of missing data)  
+* SHALL be capable of processing resource instances containing mustSupport data elements, including elements with missing data, without generating an error or causing the application to fail.
+* SHOULD be capable of displaying mustSupport data elements for human use, or processing (e.g. storing) them for other purposes.
+
+Implementers conforming to an IPS document in the IPS Implementation Guide:
+* SHALL be capable of supporting profiles under sections that are marked mustSupport in the IPS Composition profile
+* SHALL be capable of populating profiles for allergy, medication and problem information in an IPS document 
 
 #### Missing Data
 {:.no_toc}
 
-##### Optional mustSupport data elements
+##### Optional mustSupport data elements (cardinality of 0..1 or 0..*)
 
 <p>If an IPS creator (a system generating the IPS contents) does not have data to be included in the IPS, the data element is omitted.</p>
 <p>Note: an IPS creator may have no data to be included in the IPS either because there are no data, or because data available are not pertinent with the scope of the IPS.</p>
 
-##### Required mustSupport data elements
+##### Required mustSupport data elements (cardinality of 1..1 or 1..*)
 <p>If an IPS creator does not have data to be included in the IPS, the reason for the absence has to be specified as follows:</p>
 
-1.  For *non-coded* data elements, use the [DataAbsentReason Extension] in the data type.
+1.  For *non-coded* data elements, use the [Data Absent Reason Extension](http://hl7.org/fhir/R4/extension-data-absent-reason.html) in the data type.
 
     Example: Patient resource where the patient birthDate is not known.
 
@@ -74,7 +76,7 @@ In the context of the IPS, mustSupport on any data element SHALL be interprete
       - if the source systems has text but no coded data, only the text element is used.
       - if there is neither text or codes representing actual (i.e non-exceptional) concepts:
         - use the appropriate exceptional concept code from the value set if available
-        - use the appropriate concept code from the [DataAbsentReason Code System] if the value set does not have it.
+        - use the appropriate concept code from the [Data Absent Reason Code System](http://hl7.org/fhir/R4/valueset-data-absent-reason.html) if the value set does not have it.
    - *required* binding strength (CodeableConcept or code datatypes):
       - use the appropriate exceptional concept code from the value set
 
