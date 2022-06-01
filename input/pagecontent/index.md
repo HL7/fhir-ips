@@ -51,7 +51,7 @@ This Implementation Guide has been balloted as STU with the intention to go norm
 | **Primary Editor** | François Macary | Phast | francois.macary@phast.fr |
 | **Contributor** | Dr Christof Geßner | Gematik | christof.gessner@gematik.de |
 | **Contributor** | Gary Dickinson | CentriHealth | gary.dickinson@ehr-standards.com |
-| **Contributor** |  Dr Kai U. Heitmann | Heitmann Consulting and Services, Gefyra GmbH, HL7 Germany | info@kheitmann.de  |
+| **Contributor** |  Dr Kai U. Heitmann | Heitmann Consulting and Services, ART-DECOR Open Tools GmbH, HL7 Germany | info@kheitmann.de  |
 | **Contributor** | Catherine Chronaki | HL7 International Foundation | chronaki@gmail.com |
 | **Contributor** | George Dixon | Allscripts LLC | george.dixon@allscripts.com |
 | **Contributor** | Kenneth Sinn  | Ontario Health Digital Services | ken.sinn@ontariohealth.ca |
