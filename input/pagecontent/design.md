@@ -80,20 +80,23 @@ Implementers conforming to an IPS document in the IPS Implementation Guide:
    - *required* binding strength (CodeableConcept or code datatypes):
       - use the appropriate exceptional concept code from the value set
 
-### Translation of Structured Data and Narratives
+### Narrative and Language Translation
 
-The functional requirement of supporting the translation of the designations has been addressed in this guide extending the coding data type (Coding-uv-ips).
+When an [IPS Composition](./StructureDefinition-Composition-uv-ips.html) is generated, this represents a document oriented view of a patient's summary. The IPS Composition includes a [requirement](./StructureDefinition-Composition-uv-ips-definitions.html#Composition.section.text) for each section to have human-readable narrative text. This aligns with the principles of [FHIR Documents](https://hl7.org/FHIR/documents.html) and has some particular importance in the context of cross-border IPS exchange. Specifically: 
 
-While the IPS standard allows for language translations to be included, both in coded display and narrative, there should be no expectation by downstream consumers (e.g. another nation in cross-border sharing) that local language translations will be present.
+- As stated in ISO 27269, IPS documents should have the ability for attestation. While IPS documents need not be signed in all cases, the inclusion of human-readable narrative is necessary for attestation and legal authentication since that represents a presented form of the document. 
 
-For details about the support of narrative translations please refer to the [Multi-Language support in FHIR](http://build.fhir.org/languages.html) section.
+- The [FHIR Narrative guidance](https://hl7.org/FHIR/narrative.html) specifies that in strictly managaged trading systems, narrative may be omitted, but the IPS is primarily intended for cross-border use which is not tightly coupled. Human-readable narrative provides a fallback for patient safety when two systems may not be able to process all machine readable content during exchange.  
+
+- While this IPS guide stronly encourages the encoding of patient information using FHIR resources and structured terminology whenever possible, some systems may not be able to encode all relevant information for all patients. Having each section in an IPS document contain human-readable narrative ensures a consistent place where receiving systems will be able to display narrative information generated from the source system.    
+
+- IPS documents may often be shared across borders where different languages are used. Human-readable narrative created by a source system provides a presented form of the document before translation. This provides a point of comparison for any subsequent translation. While the IPS standard allows for language translations to be included, both in coded display and narrative, there should be no expectation by downstream consumers (e.g. another nation in cross-border sharing) that local language translations will be present. The functional requirement of supporting the translation of the designations has been addressed in this guide extending the [coding data type](./StructureDefinition-Coding-uv-ips). For other details about the support of narrative translations, please refer to [Multi-Language support in FHIR](http://build.fhir.org/languages.html).
+
+The rational above provides context for why narrative is important in the context of IPS document exchange. Since human-readable content is required in the Composition resource, this IPS guide does not require narrative text for other resources included in an IPS document. If individual resources profiled in this guide are planned for use outside of a document context, implementers should refer to the base [FHIR Narrative guidance](https://hl7.org/FHIR/narrative.html) for perspective on when those resources should include human-readable text.      
 
 ### Representation of Person Names
 
-This specification requires that any Person Name is represented including at least the given and family components.
-Even though it is recognized that there is not in all cultures the same concept of “family name”, no evidence has been collected in analyzing the international context (e.g. Japan, Korea, China) that justifies the retirement of this requirement.
-Moreover, due to the global scope of the International Patient Summary, the case of non-alphabetic representations of the names has also been considered.
-In this case, to facilitate the global use of the IPS, at least one alphabetic representation of the name SHALL be provided. 
+This specification requires that any Person Name is represented including at least the given and family components. Even though it is recognized that there is not in all cultures the same concept of “family name”, no evidence has been collected in analyzing the international context (e.g. Japan, Korea, China) that justifies the retirement of this requirement. Moreover, due to the global scope of the International Patient Summary, the case of non-alphabetic representations of the names has also been considered. In this case, to facilitate the global use of the IPS, at least one alphabetic representation of the name SHALL be provided. 
 
 ### Medication Lists in the IPS
 
