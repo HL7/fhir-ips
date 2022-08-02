@@ -30,7 +30,7 @@
 			<value value="info@hl7.org"/>
 		</telecom>
 	</contact>
-	<description value="This value set provides a list of types of vaccine. It includes codes from SNOMED Clinical Terms®: all descendants of 787859002 |Vaccine product (product)|."/>
+	<description value="This value set provides a list of types of vaccine, plus IPS codes for absent/unknown immunizations. It includes codes from SNOMED Clinical Terms®: all descendants of 787859002 |Vaccine product (product)|."/>
 	<immutable value="false"/>
 	<copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomed-ct or info@snomed.org"/>
 	<compose>
@@ -42,6 +42,9 @@
 				<op value="descendent-of"/>
 				<value value="787859002"/>
 			</filter>
+		</include>
+		<include>
+			<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-immunizations-uv-ips"/>
 		</include>
 	</compose>
 </ValueSet>
