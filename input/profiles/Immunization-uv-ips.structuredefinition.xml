@@ -148,15 +148,15 @@
 						<valueCode value="conformance"/>
 					</extension>
 					<extension url="valueSet">
-						<valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-uv-ips"/>
+						<valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/target-diseases-snomed-ct-ips-free-set"/>
 					</extension>
 					<extension url="documentation">
-						<valueMarkdown value="Additional conformance binding to a target diseases value set from the full SNOMED CT release for use in specific jurisdictional or other contexts where a SNOMED CT license is available."/>
+						<valueMarkdown value="Additional conformance binding to a target diseases value set from the SNOMED CT IPS free set for use globally (in SNOMED member and non-member jurisdictions)."/>
 					</extension>
 				</extension>
 				<strength value="preferred"/>
 				<description value="The particular disease or diseases against which the patient has been immunized."/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-diseases-uv-ips"/>
 			</binding>
 		</element>
 	</differential>
