@@ -124,20 +124,9 @@
       </type>
       <mustSupport value="true"/>
       <binding>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
-          <extension url="purpose">
-            <valueCode value="conformance"/>
-          </extension>
-          <extension url="valueSet">
-            <valueCanonical value="http://hl7.org/fhir/ValueSet/clinical-findings"/>
-          </extension>
-          <extension url="documentation">
-            <valueMarkdown value="Clinical symptoms and/or signs that are observed or associated with an Adverse Reaction Event"/>
-          </extension>
-        </extension>
         <strength value="preferred"/>
-        <description value="Code for the allergy or intolerance reaction manifestation from the SNOMED CT GPS code set"/>
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-reaction-gps-uv-ips"/>
+        <description value="Code for the allergy or intolerance reaction manifestation from the SNOMED International Patient Set (IPS) subset of SNOMED CT (IPS Free Set)."/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-reaction-snomed-ct-ips-free-set"/>
       </binding>
     </element>
     <element id="AllergyIntolerance.reaction.onset">
