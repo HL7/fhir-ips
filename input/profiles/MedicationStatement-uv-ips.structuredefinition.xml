@@ -94,8 +94,9 @@
 			<max value="1"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="MedicationStatement.effective[x]:data-absent-reason">
+		<element id="MedicationStatement.effective[x].extension:data-absent-reason">
 			<path value="MedicationStatement.effective[x].extension"/>
+			<sliceName value="data-absent-reason"/>
 			<short value="effective[x] absence reason"/>
 			<definition value="Provides a reason why the effectiveTime is missing."/>
 			<max value="1"/>

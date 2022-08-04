@@ -70,8 +70,9 @@
 			</type>
 			<mustSupport value="true"/>
 		</element>
-		<element id="DiagnosticReport.effective[x]:data-absent-reason">
+		<element id="DiagnosticReport.effective[x].extension:data-absent-reason">
 			<path value="DiagnosticReport.effective[x].extension"/>
+			<sliceName value="data-absent-reason"/>
 			<short value="effective[x] absence reason"/>
 			<definition value="Provides a reason why the effectiveTime is missing."/>
 			<max value="1"/>
