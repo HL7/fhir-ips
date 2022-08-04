@@ -26,7 +26,7 @@
             <value value="info@hl7.org"/>
         </telecom>
     </contact>
-    <description value="IPS Allergy intolerance substance condition GPS value set. This value set includes the codes from the SNOMED International Global Patient Set (GPS) subset of SNOMED CT that are included in: all descendants of 373873005 |Pharmaceutical / biologic product (product); all descendants of 105590001 |Substance (substance); all descendants of 418038007 |Propensity to adverse reactions to substance (finding)."/>
+    <description value="IPS Allergy intolerance substance condition IPS value set. This value set includes the codes from the SNOMED International Global Patient Set (GPS) subset of SNOMED CT that are included in: all descendants of 373873005 |Pharmaceutical / biologic product (product); all descendants of 105590001 |Substance (substance); all descendants of 418038007 |Propensity to adverse reactions to substance (finding)."/>
     <immutable value="false"/>
     <copyright value="The GPS is produced by SNOMED International under the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/)&#10;&#10;Additional information about this license specific to SNOMED International&#8217;s release of the GPS:&#10;* SNOMED CT is &#169; and &#174; SNOMED International. The right to maintain the GPS remains vested exclusively in SNOMED International.&#10;* The Licensee can redistribute the GPS.&#10;* The Licensee can create derivatives or implementation-related products and services based on the GPS.&#10;* The Licensee cannot claim that SNOMED International or any of its Members endorses the Licensee&#8217;s derivative because it uses content from the GPS.&#10;* Neither SNOMED International nor any of the contributors accept any liability for the Licensee&#8217;s use or redistribution of the GPS.&#10;* SNOMED CT&#174; was originally created by the College of American Pathologists.&#10;&#10;Without obtaining prior written permission from SNOMED International, you are expressly prohibited from using, distributing or reproducing the SNOMED International, SNOMED CT or SNOMED GPS logo, service mark or trademark. Please review all terms and conditions of use [here](http://www.snomed.org/terms-and-conditions)."/>
     <compose>
@@ -39,7 +39,7 @@
                 <op value="descendent-of"/>
                 <value value="105590001"/>
             </filter>
-            <valueSet value="http://terminology.hl7.org/ValueSet/snomed-intl-gps"/>
+            <valueSet value="http://terminology.hl7.org/ValueSet/snomed-intl-ips"/>
         </include>
         <include>
             <system value="http://snomed.info/sct"/>
@@ -50,7 +50,7 @@
                 <op value="descendent-of"/>
                 <value value="373873005"/>
             </filter>
-            <valueSet value="http://terminology.hl7.org/ValueSet/snomed-intl-gps"/>
+            <valueSet value="http://terminology.hl7.org/ValueSet/snomed-intl-ips"/>
         </include>
         <include>
             <system value="http://snomed.info/sct"/>
@@ -61,7 +61,7 @@
                 <op value="descendent-of"/>
                 <value value="418038007"/>
             </filter>
-            <valueSet value="http://terminology.hl7.org/ValueSet/snomed-intl-gps"/>
+            <valueSet value="http://terminology.hl7.org/ValueSet/snomed-intl-ips"/>
         </include>
     </compose>
 </ValueSet>
