@@ -25,54 +25,20 @@
 			<path value="MedicationStatement.medication[x]"/>
 			<!-- The slicing below is expected to be replaced in R5 by a 'medication' element of the new CodeableReference 
 				data type with the appropriate constraints. -->
-			<slicing>
-				<discriminator>
-					<type value="type"/>
-					<path value="$this"/>
-				</discriminator>
-				<rules value="closed"/>
-			</slicing>
 			<definition value="Identifies the medication being administered or the reason for absent or unknown Medication. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code. To improve global interoperability is strongly encouraged that the reference to a medication resource is used, limiting the usage of the medicationCodeableConcept only to the cases in which no other information than a simple code is available."/>
-			<mustSupport value="true"/>
-			<binding>
-				<strength value="example"/>
-				<description value="The type of medication"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medication-example-uv-ips"/>
-			</binding>
-		</element>
-		<element id="MedicationStatement.medication[x]:medicationReference">
-			<path value="MedicationStatement.medication[x]"/>
-			<sliceName value="medicationReference"/>
-			<min value="0"/>
-			<max value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"/>
 			</type>
-			<mustSupport value="true"/>
-		</element>
-		<element id="MedicationStatement.medication[x]:medicationCodeableConcept">
-			<path value="MedicationStatement.medication[x]"/>
-			<sliceName value="medicationCodeableConcept"/>
-			<short value="Code for the medication being administered or an absent or unknown medication"/>
-			<definition value="Code for the medication being administered or a negated/excluded medication statement.  If negated, this describes a categorical negated statement (e.g., &quot;No known medications&quot;)."/>
-			<min value="0"/>
-			<max value="1"/>
 			<type>
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
-			<!-- The extensible binding requires the specified codes for absent and unknown medications, but also allows
-				any code to be used for a statement of an administered medication.  This will be replaced in R5 with
-				with appropriate bindings and constraints with the new CodeableReference data type. -->
 			<binding>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="UnknownMedicationCode"/>
-				</extension>
-				<strength value="extensible"/>
-				<description value="Representation of unknown or absent medications"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips"/>
+				<strength value="preferred"/>
+				<description value="SNOMED CT medications (Pharmaceutical / biologic product) or a code for absent/unknown medication"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown"/>
 			</binding>
 		</element>
 		<element id="MedicationStatement.subject">

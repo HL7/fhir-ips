@@ -87,56 +87,24 @@
       {
         "id": "MedicationRequest.medication[x]",
         "path": "MedicationRequest.medication[x]",
-        "slicing": {
-          "discriminator": [
-            {
-            "type": "type",
-            "path": "$this"
-            }
-          ],
-          "rules": "closed"
-        },
         "definition": "Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code. To improve global interoperability is strongly encouraged that the reference to a medication resource is used, limiting the usage of the medicationCodeableConcept only to the cases in which no other information than a simple code is available.",
+        "type": [
+          {
+              "code": "CodeableConcept"
+          },
+          {
+              "code": "Reference",
+              "targetProfile": [
+                  "http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"
+              ]
+          }
+        ],
         "mustSupport": true,
         "binding": {
-          "strength": "example",
-          "valueSet": "http://hl7.org/fhir/uv/ips/ValueSet/medication-example-uv-ips",
-          "description": "The type of medication"
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown",
+          "description": "SNOMED CT medications (Pharmaceutical / biologic product) or a code for absent/unknown medication"
         }
-      },
-      {
-        "id": "MedicationRequest.medication[x]:medicationReference",
-        "path": "MedicationRequest.medication[x]",
-        "sliceName": "medicationReference",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationRequest.medication[x]:medicationCodeableConcept",
-        "path": "MedicationRequest.medication[x]",
-        "sliceName": "medicationCodeableConcept",
-			  "short": "Code for the medication being administered",
-			  "definition": "Code for the medication being administered.",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept",
-            "profile": [
-              "http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"
-            ]
-          }
-        ],
-        "mustSupport": true
       },
       {
         "id": "MedicationRequest.subject",
