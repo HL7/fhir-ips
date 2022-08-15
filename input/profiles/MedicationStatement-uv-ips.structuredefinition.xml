@@ -23,7 +23,7 @@
 		</element>
 		<element id="MedicationStatement.medication[x]">
 			<path value="MedicationStatement.medication[x]"/>
-			<!-- The slicing below is expected to be replaced in R5 by a 'medication' element of the new CodeableReference 
+			<!-- The slicing below is expected to be replaced in R5 by a 'medication' element of the new CodeableReference
 				data type with the appropriate constraints. -->
 			<slicing>
 				<discriminator>
@@ -105,9 +105,6 @@
 				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
 			</type>
 			<mustSupport value="true"/>
-		</element>
-		<element id="MedicationStatement.informationSource">
-			<path value="MedicationStatement.informationSource"/>
 		</element>
 		<element id="MedicationStatement.dosage">
 			<path value="MedicationStatement.dosage"/>
