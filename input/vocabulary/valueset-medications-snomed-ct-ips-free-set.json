@@ -1,567 +1,182 @@
 {
-    "resourceType": "ValueSet",
-    "id": "medications-snomed-ct-ips-free-set",
-    "url": "http://hl7.org/fhir/uv/ips/ValueSet/medications-snomed-ct-ips-free-set",
-    "version": "1.0.0",
-    "name": "MedicationsSnomedCtIpsFreeSet",
-    "title": "Medications - SNOMED CT IPS Free Set",
-    "status": "active",
-    "experimental": false,
-    "date": "2022-07-27T08:08:18-05:00",
-    "publisher": "Health Level Seven International - Patient Care Work Group",
-    "contact": [
-        {
-            "telecom": [
-                {
-                    "system": "url",
-                    "value": "http://www.hl7.org/Special/committees/patientcare"
-                }
+  "resourceType": "ValueSet",
+  "id": "medications-snomed-ct-ips-free-set",
+  "url": "http://hl7.org/fhir/uv/ips/ValueSet/medications-snomed-ct-ips-free-set",
+  "version": "1.0.0",
+  "name": "MedicationsSnomedCtIpsFreeSet",
+  "title": "Medications - SNOMED CT IPS Free Set",
+  "status": "active",
+  "experimental": false,
+  "date": "2022-07-27T08:08:18-05:00",
+  "publisher": "Health Level Seven International - Patient Care Work Group",
+  "contact": [
+      {
+          "telecom": [
+              {
+                  "system": "url",
+                  "value": "http://www.hl7.org/Special/committees/patientcare"
+              }
+          ]
+      }
+  ],
+  "description": "This value set includes the codes from the SNOMED International Patient Set (IPS) subset of SNOMED CT (IPS Free Set) that are included in: descendants of 373873005 \\|Pharmaceutical / biologic product (product)\\| excluding the descendants of 71181003 \\|Product containing vaccine (product)\\|.",
+  "jurisdiction": [
+      {
+          "coding": [
+              {
+                  "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+                  "code": "001"
+              }
+          ]
+      }
+  ],
+  "immutable": false,
+  "copyright": "The HL7 International IPS implementation guides incorporate SNOMED CT ® , used by permission of the International Health Terminology Standards Development Organisation. SNOMED CT© was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved.",
+  "compose": {
+      "include": [
+          {
+              "system": "http://snomed.info/sct",
+              "filter": [
+                  {
+                      "property": "constraint",
+                      "op": "=",
+                      "value": "< 373873005 |Pharmaceutical / biologic product (product)| AND ^ 816080008 |International Patient Summary (foundation metadata concept)|"
+                  },
+                  {
+                    "property": "constraint",
+                    "op": "is-not-a",
+                    "value": "< 787859002 |Product containing vaccine (product)|"
+                  }
             ]
+          }
+      ]
+  },
+  "expansion": {
+    "total": 23,
+    "offset": 0,
+    "timestamp": "2022-08-02T14:28:57.119+00:00",
+    "parameter": [
+        {
+            "name": "version",
+            "valueUri": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
         }
     ],
-    "description": "This value set includes the codes from the SNOMED International Patient Set (IPS) subset of SNOMED CT (IPS Free Set) that are included in: all descendants of 373873005 \\|Pharmaceutical / biologic product (product)\\|.",
-    "jurisdiction": [
-        {
-            "coding": [
-                {
-                    "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
-                    "code": "001"
-                }
-            ]
-        }
-    ],
-    "immutable": false,
-    "copyright": "The HL7 International IPS implementation guides incorporate SNOMED CT ® , used by permission of the International Health Terminology Standards Development Organisation. SNOMED CT© was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved.",
-    "compose": {
-        "include": [
-            {
-                "system": "http://snomed.info/sct",
-                "filter": [
-                    {
-                        "property": "constraint",
-                        "op": "=",
-                        "value": "<      |Pharmaceutical / biologic product (product)| AND ^ 816080008 |International Patient Summary (foundation metadata concept)|"
-                    }
-                ]
-            }
-        ]
-    },
-    "expansion": {
-        "total": 101,
-        "offset": 0,
-        "timestamp": "2022-08-02T14:28:57.119+00:00",
-        "parameter": [
-            {
-                "name": "version",
-                "valueUri": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
-            }
-        ],
-        "contains": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "37146000",
-              "display": "Typhus vaccine (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "43747001",
-              "display": "Drug excipient (product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "63338004",
-              "display": "Drug flavouring"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "320835005",
-              "display": "Pollen immunotherapy extract"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "346313005",
-              "display": "Allergen immunotherapy extract"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "346364006",
-              "display": "Cat immunotherapy extract"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "346405008",
-              "display": "Dog immunotherapy extract"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "346467003",
-              "display": "Horse dander allergy vaccine (product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "346468008",
-              "display": "House dust immunotherapy extract"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "346469000",
-              "display": "House dust mite immunotherapy extract"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "409568008",
-              "display": "Pentavalent botulinum toxoid vaccine (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "418268006",
-              "display": "Live attenuated Mycobacterium bovis antigen-containing product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "428601009",
-              "display": "Paratyphoid vaccine (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "709079002",
-              "display": "Allergen extract"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "763158003",
-              "display": "Medicinal product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "774618008",
-              "display": "Diphtheria toxoid and whole cell pertussis and tetanus toxoid adsorbed vaccine"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "774702006",
-              "display": "Live attenuated Mycobacterium bovis antigen only product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "775641005",
-              "display": "Diphtheria toxoid and tetanus toxoid adsorbed vaccine"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "777725002",
-              "display": "Tetanus toxoid adsorbed vaccine"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "787859002",
-              "display": "Vaccine product (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "836368004",
-              "display": "Vaccine product containing bacteria antigen (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "836369007",
-              "display": "Vaccine product containing virus antigen (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "836374004",
-              "display": "Vaccine product containing Hepatitis B virus antigen (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "836375003",
-              "display": "Vaccine product containing Hepatitis A virus antigen (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "836377006",
-              "display": "Influenza virus antigen-containing vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "836378001",
-              "display": "Vaccine product containing Japanese encephalitis virus antigen (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "836379009",
-              "display": "Human papillomavirus antigen-containing vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "836380007",
-              "display": "Haemophilus influenzae type B antigen-containing vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "836381006",
-              "display": "Vaccine product containing Corynebacterium diphtheriae antigen (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "836382004",
-              "display": "Measles morbillivirus antigen-containing vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "836383009",
-              "display": "Vaccine product containing Vibrio cholerae antigen (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "836384003",
-              "display": "Vaccine product containing Bacillus anthracis antigen (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "836385002",
-              "display": "Vaccine product containing Yellow fever virus antigen (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "836387005",
-              "display": "Vaccine product containing Rotavirus antigen (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "836388000",
-              "display": "Rubella virus antigen-containing vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "836389008",
-              "display": "Vaccinia virus antigen-containing vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "836390004",
-              "display": "Salmonella enterica subspecies enterica serovar Typhi antigen-containing vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "836393002",
-              "display": "Rabies lyssavirus antigen-containing vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "836397001",
-              "display": "Coxiella burnetii antigen-containing vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "836398006",
-              "display": "Streptococcus pneumoniae antigen-containing vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "836401009",
-              "display": "Neisseria meningitidis antigen-containing vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "836402002",
-              "display": "Live attenuated Mycobacterium bovis antigen-containing vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "836403007",
-              "display": "Vaccine product containing Tick-borne encephalitis virus antigen (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "836495005",
-              "display": "Varicella-zoster virus antigen-containing vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "836498007",
-              "display": "Mumps orthorubulavirus antigen-containing vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "836500008",
-              "display": "Haemophilus influenzae type B and meningitis C vaccine"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "840549009",
-              "display": "Yersinia pestis antigen-containing vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "840599008",
-              "display": "Vaccine product containing Borrelia burgdorferi antigen (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "863911006",
-              "display": "Clostridium tetani antigen-containing vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871726005",
-              "display": "Vaccine product containing only Rabies lyssavirus antigen (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871737006",
-              "display": "Mumps vaccine"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871738001",
-              "display": "Live attenuated Mumps orthorubulavirus antigen only vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871739009",
-              "display": "Human poliovirus antigen only vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871740006",
-              "display": "Inactivated polio vaccine"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871742003",
-              "display": "Clostridium tetani antigen only vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871751006",
-              "display": "Hepatitis A vaccine"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871759008",
-              "display": "Acellular pertussis vaccine"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871764007",
-              "display": "Haemophilus influenzae type B vaccine"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871765008",
-              "display": "Measles morbillivirus antigen only vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871768005",
-              "display": "Vaccine product containing only Influenza virus antigen in nasal dose form (medicinal product form)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871772009",
-              "display": "Influenza A virus subtype H1N1 antigen only vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871803007",
-              "display": "Hepatitis A and B vaccine"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871804001",
-              "display": "Hepatitis A and typhoid vaccine"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871806004",
-              "display": "Vaccine product containing only Haemophilus influenzae type B and Hepatitis B virus antigens (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871826000",
-              "display": "Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871831003",
-              "display": "Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens only vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871837004",
-              "display": "Diphtheria and poliomyelitis and tetanus vaccine"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871839001",
-              "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B antigens (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871866001",
-              "display": "Meningitis C vaccine"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871871008",
-              "display": "Vaccine product containing only Neisseria meningitidis serogroup A and C antigens (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871873006",
-              "display": "Neisseria meningitidis serogroup A, C, W135 and Y only vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871875004",
-              "display": "Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens only vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871876003",
-              "display": "Acellular Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens only vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871878002",
-              "display": "Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871887006",
-              "display": "Diphtheria and Haemophilus influenzae type B and pertussis and poliomyelitis and tetanus vaccine"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871889009",
-              "display": "Acellular Bordetella pertussis and Corynebacterium diphtheriae and Hepatitis B virus and inactivated whole Human poliovirus antigens only vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871895005",
-              "display": "Diphtheria and Haemophilus influenzae type B and hepatitis B and pertussis and poliomyelitis and tetanus"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871908002",
-              "display": "Measles and mumps and rubella and varicella virus vaccine"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871918007",
-              "display": "Vaccine product containing Rickettsia antigen (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "871921009",
-              "display": "Staphylococcus toxoid vaccine"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "1052328007",
-              "display": "Streptococcus pneumoniae Danish serotype 4, 6B, 9V, 14, 18C, 19F, and 23F capsular polysaccharide antigens conjugated only vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "1119254000",
-              "display": "Pneumococcal 13-valent vaccine"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "1119305005",
-              "display": "Vaccine product containing only severe acute respiratory syndrome coronavirus 2 antigen (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "1121000221106",
-              "display": "Live attenuated yellow fever vaccine"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "2221000221107",
-              "display": "Live attenuated Human alphaherpesvirus 3 vaccine"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "1031000221108",
-              "display": "Human poliovirus antigen-containing vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "1051000221104",
-              "display": "Vaccine product containing only live attenuated Human poliovirus serotypes 1 and 3 antigens in oral dose form (medicinal product form)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "1081000221109",
-              "display": "Live attenuated Rotavirus antigen only vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "1131000221109",
-              "display": "Inactivated rabies vaccine"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "1181000221105",
-              "display": "Vaccine product containing only Influenza virus antigen (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "1861000221106",
-              "display": "Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "921000221108",
-              "display": "Vaccine product containing only Neisseria meningitidis antigen (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "1981000221108",
-              "display": "Neisseria meningitidis serogroup B antigen only vaccine product"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "1001000221103",
-              "display": "Vaccine product containing only inactivated whole Vibrio cholerae antigen in oral dose form (medicinal product form)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "1011000221100",
-              "display": "Vaccine product containing only live attenuated Vibrio cholerae antigen in oral dose form (medicinal product form)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "601000221108",
-              "display": "Vaccine product containing Bordetella pertussis antigen (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "981000221107",
-              "display": "Vaccine product containing only Streptococcus pneumoniae antigen (medicinal product)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "1801000221105",
-              "display": "Pneumococcal polysaccharide conjugate vaccine"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "2171000221104",
-              "display": "Vaccine product containing only Salmonella enterica subspecies enterica serovar Typhi capsular polysaccharide unconjugated antigen in parenteral dose form (medicinal product form)"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "971000221109",
-              "display": "Live attenuated typhoid vaccine in oral dose form"
-            },
-            {
-              "system": "http://snomed.info/sct",
-              "code": "1101000221104",
-              "display": "Clostridium tetani toxoid antigen-containing vaccine product"
-            }
-        ]
-    }
+    "contains": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "43747001",
+        "display": "Drug excipient (product)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "63338004",
+        "display": "Drug flavouring"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "320835005",
+        "display": "Pollen immunotherapy extract"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "346313005",
+        "display": "Allergen immunotherapy extract"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "346364006",
+        "display": "Cat immunotherapy extract"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "346405008",
+        "display": "Dog immunotherapy extract"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "346467003",
+        "display": "Horse dander allergy vaccine (product)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "346468008",
+        "display": "House dust immunotherapy extract"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "346469000",
+        "display": "House dust mite immunotherapy extract"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "418268006",
+        "display": "Live attenuated Mycobacterium bovis antigen-containing product"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "709079002",
+        "display": "Allergen extract"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "763158003",
+        "display": "Medicinal product"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "774702006",
+        "display": "Live attenuated Mycobacterium bovis antigen only product"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "787859002",
+        "display": "Vaccine product (medicinal product)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "871726005",
+        "display": "Vaccine product containing only Rabies lyssavirus antigen (medicinal product)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "871739009",
+        "display": "Human poliovirus antigen only vaccine product"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "871742003",
+        "display": "Clostridium tetani antigen only vaccine product"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "871751006",
+        "display": "Hepatitis A vaccine"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "871764007",
+        "display": "Haemophilus influenzae type B vaccine"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1119305005",
+        "display": "Vaccine product containing only severe acute respiratory syndrome coronavirus 2 antigen (medicinal product)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1861000221106",
+        "display": "Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "921000221108",
+        "display": "Vaccine product containing only Neisseria meningitidis antigen (medicinal product)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "981000221107",
+        "display": "Vaccine product containing only Streptococcus pneumoniae antigen (medicinal product)"
+      }
+    ]
+  }
 }

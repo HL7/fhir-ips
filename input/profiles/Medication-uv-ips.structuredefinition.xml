@@ -93,15 +93,16 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
+      <type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Substance"/>
+				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Medication"/>
+			</type>
 			<binding>
 				<strength value="preferred"/>
 				<description value="SNOMED CT drug substances"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-active-substances-uv-ips"/>
 			</binding>
-			<mustSupport value="true"/>
-		</element>
-		<element id="Medication.ingredient.item[x]:itemCodeableConcept.text">
-			<path value="Medication.ingredient.itemCodeableConcept.text"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Medication.ingredient.strength">
