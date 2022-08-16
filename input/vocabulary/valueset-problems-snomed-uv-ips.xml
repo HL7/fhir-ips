@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:f="http://hl7.org/fhir">
+	<id value="problems-snomed-uv-ips"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+	</meta>
+	<url value="http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips"/>
+	<name value="ProblemsSnomedUvIps"/>
+	<title value="Problems - IPS"/>
+	<status value="active"/>
+	<experimental value="false"/>
+	<publisher value="HL7 International"/>
+	<contact>
+		<name value="HL7 International"/>
+		<telecom>
+			<system value="phone"/>
+			<value value="+1 734 677 7777"/>
+		</telecom>
+		<telecom>
+			<system value="fax"/>
+			<value value="+1 734 677 6622"/>
+		</telecom>
+		<telecom>
+			<system value="email"/>
+			<value value="info@hl7.org"/>
+		</telecom>
+	</contact>
+	<description value="This value set includes codes from SNOMED Clinical Terms®:  descendants of 404684003 \|Clinical finding (finding) \|, descendants of 243796009 \|Situation with explicit context (situation)\| and descendants of 272379006 \|Event (event)\| but excludes descendants of 71388002 \|Procedure (procedure)\|, as they are expected to be represented separately in the History of Procedures Section."/>
+	<immutable value="false"/>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008"/>
+			<filter>
+				<property value="concept"/>
+				<op value="descendent-of"/>
+				<value value="404684003"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008"/>
+			<filter>
+				<property value="concept"/>
+				<op value="descendent-of"/>
+				<value value="243796009"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008"/>
+			<filter>
+				<property value="concept"/>
+				<op value="descendent-of"/>
+				<value value="272379006"/>
+			</filter>
+    </include>
+		<exclude>
+			<system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/900000000000207008"/>
+			<filter>
+				<property value="concept"/>
+				<op value="descendent-of"/>
+				<value value="71388002"/>
+			</filter>
+    </exclude>		
+	</compose>
+</ValueSet>
