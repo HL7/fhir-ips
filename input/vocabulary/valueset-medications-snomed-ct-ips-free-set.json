@@ -19,7 +19,7 @@
           ]
       }
   ],
-  "description": "This value set includes the codes from the SNOMED International Patient Set (IPS) subset of SNOMED CT (IPS Free Set) that are included in: descendants of 373873005 \\|Pharmaceutical / biologic product (product)\\| excluding the descendants of 71181003 \\|Product containing vaccine (product)\\|.",
+  "description": "This value set includes the codes from the SNOMED International Patient Set (IPS) subset of SNOMED CT (IPS Free Set) that are included in: descendants of 373873005 \\|Pharmaceutical / biologic product (product)\\| excluding the descendants of 787859002 \\|Vaccine product (medicinal product)\\|.",
   "jurisdiction": [
       {
           "coding": [
@@ -41,18 +41,25 @@
                       "property": "constraint",
                       "op": "=",
                       "value": "< 373873005 |Pharmaceutical / biologic product (product)| AND ^ 816080008 |International Patient Summary (foundation metadata concept)|"
-                  },
-                  {
-                    "property": "constraint",
-                    "op": "is-not-a",
-                    "value": "< 787859002 |Product containing vaccine (product)|"
                   }
             ]
           }
+      ],
+      "exclude": [
+        {
+          "system": "http://snomed.info/sct",
+          "filter": [
+            {
+              "property": "constraint",
+              "op": "=",
+              "value": "< 787859002 |Vaccine product (medicinal product)|"
+            }
+          ]
+        }
       ]
   },
   "expansion": {
-    "total": 23,
+    "total": 13,
     "offset": 0,
     "timestamp": "2022-08-02T14:28:57.119+00:00",
     "parameter": [
@@ -126,56 +133,6 @@
         "system": "http://snomed.info/sct",
         "code": "774702006",
         "display": "Live attenuated Mycobacterium bovis antigen only product"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "787859002",
-        "display": "Vaccine product (medicinal product)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "871726005",
-        "display": "Vaccine product containing only Rabies lyssavirus antigen (medicinal product)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "871739009",
-        "display": "Human poliovirus antigen only vaccine product"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "871742003",
-        "display": "Clostridium tetani antigen only vaccine product"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "871751006",
-        "display": "Hepatitis A vaccine"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "871764007",
-        "display": "Haemophilus influenzae type B vaccine"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "1119305005",
-        "display": "Vaccine product containing only severe acute respiratory syndrome coronavirus 2 antigen (medicinal product)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "1861000221106",
-        "display": "Vaccine product containing only live attenuated Mycobacterium bovis antigen (medicinal product)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "921000221108",
-        "display": "Vaccine product containing only Neisseria meningitidis antigen (medicinal product)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "981000221107",
-        "display": "Vaccine product containing only Streptococcus pneumoniae antigen (medicinal product)"
       }
     ]
   }
