@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir" xmlns:f="http://hl7.org/fhir">
-	<id value="procedures-snomed-absent-unknown"/>
-    <url value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-snomed-absent-unknown"/>
-	<name value="ProceduresSnomedAbsentUnknown"/>
+	<id value="procedures-snomed-absent-unknown-uv-ips"/>
+    <url value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-snomed-absent-unknown-uv-ips"/>
+	<name value="ProceduresSnomedAbsentUnknownUvIps"/>
 	<title value="Procedures - IPS"/>
 	<status value="active"/>
 	<experimental value="false"/>
@@ -26,7 +26,7 @@
 	<immutable value="false"/>
 	<compose>
 		<include>
-      <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-snomed-uv-ips"/>
+      <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips"/>
     </include>
     <include>
       <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-procedures-uv-ips"/>
