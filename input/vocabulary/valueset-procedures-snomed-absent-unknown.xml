@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir" xmlns:f="http://hl7.org/fhir">
+	<id value="procedures-snomed-absent-unknown"/>
+    <url value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-snomed-absent-unknown"/>
+	<name value="ProceduresSnomedAbsentUnknown"/>
+	<title value="Procedures - IPS"/>
+	<status value="active"/>
+	<experimental value="false"/>
+	<publisher value="HL7 International"/>
+	<contact>
+		<name value="HL7 International"/>
+		<telecom>
+			<system value="phone"/>
+			<value value="+1 734 677 7777"/>
+		</telecom>
+		<telecom>
+			<system value="fax"/>
+			<value value="+1 734 677 6622"/>
+		</telecom>
+		<telecom>
+			<system value="email"/>
+			<value value="info@hl7.org"/>
+		</telecom>
+	</contact>
+	<description value="This value set includes codes from SNOMED Clinical Terms®: descendants of 71388002 \|Procedure (procedure)\|, excluding [all subtypes of 14734007 \|Administrative procedure (procedure)\|, all subtypes of 59524001 \|Blood bank procedure (procedure)\|, all subtypes of 389067005 \|Community health procedure (procedure)\|, all subtypes of 442006003 \|Determination of information related to transfusion (procedure)\|, all subtypes of 225288009 \|Environmental care procedure (procedure)\|, all subtypes of 308335008 \|Patient encounter procedure (procedure)\|, all subtypes of 710135002 \|Promotion (procedure)\|, all subtypes of 389084004 \|Staff related procedure (procedure)\|], plus IPS codes for absent/unknown procedures."/>
+	<immutable value="false"/>
+	<compose>
+		<include>
+      <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-snomed-uv-ips"/>
+    </include>
+    <include>
+      <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-procedures-uv-ips"/>
+    </include>
+  </compose>
+</ValueSet>

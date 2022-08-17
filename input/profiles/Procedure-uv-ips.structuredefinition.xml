@@ -34,16 +34,26 @@
             <valueCode value="conformance"/>
           </extension>
           <extension url="valueSet">
-            <valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips"/>
+            <valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-snomed-ct-ips-free-set"/>
           </extension>
           <extension url="documentation">
-            <!-- NOTE THAT THIS DESCRIPTION SHOULD BE IMPROVED..WHAT IS DIFFERENT-->
-            <valueMarkdown value="Procedure code"/>
+            <valueMarkdown value="Codes for procedures in SNOMED IPS Free Set"/>
           </extension>
         </extension>
-        <strength value="preferred"/>
-        <description value="SNOMED CT GPS procedure code set or a code for absent/unknown procedure"/>
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-gps-absent-unknown"/>
+				<extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
+          <extension url="purpose">
+            <valueCode value="conformance"/>
+          </extension>
+          <extension url="valueSet">
+            <valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-procedures-uv-ips"/>
+          </extension>
+          <extension url="documentation">
+            <valueMarkdown value="Codes for absent or unknown procedures"/>
+          </extension>
+        </extension>
+				<strength value="preferred"/>
+        <description value="SNOMED CT procedure code set or a code for absent/unknown procedure"/>
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-snomed-absent-unknown"/>
       </binding>
 		</element>
 		<element id="Procedure.subject">
