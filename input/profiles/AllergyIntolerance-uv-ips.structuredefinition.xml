@@ -63,7 +63,18 @@
             <valueCode value="conformance"/>
           </extension>
           <extension url="valueSet">
-            <valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-substance-condition-uv-ips"/>
+            <valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-snomed-ct-ips-free-set"/>
+          </extension>
+          <extension url="documentation">
+            <valueMarkdown value="Type of the substance/product, allergy or intolerance condition."/>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
+          <extension url="purpose">
+            <valueCode value="conformance"/>
+          </extension>
+          <extension url="valueSet">
+            <valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-allergies-uv-ips"/>
           </extension>
           <extension url="documentation">
             <valueMarkdown value="Type of the substance/product, allergy or intolerance condition."/>
@@ -71,7 +82,7 @@
         </extension>
         <strength value="preferred"/>
 				<description value="Type of the substance/product, allergy or intolerance condition or or a code for absent/unknown allergy."/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-gps-absent-unknown-uv-ips"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-uv-ips"/>
       </binding>
     </element>
     <element id="AllergyIntolerance.patient">
