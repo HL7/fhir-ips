@@ -46,9 +46,6 @@
 			<path value="AllergyIntolerance.type"/>
 			<mustSupport value="true"/>
 		</element>
-		<element id="AllergyIntolerance.criticality">
-			<path value="AllergyIntolerance.criticality"/>
-		</element>
 		<element id="AllergyIntolerance.code">
 			<path value="AllergyIntolerance.code"/>
 			<slicing>
@@ -149,15 +146,12 @@
 				<code value="Period"/>
 			</type>
 			<type>
-				<code value="Range"/>			
+				<code value="Range"/>
 			</type>
 			<type>
-				<code value="string"/>					
+				<code value="string"/>
 			</type>
 			<mustSupport value="true" />
-		</element>
-		<element id="AllergyIntolerance.asserter">
-			<path value="AllergyIntolerance.asserter"/>
 		</element>
 		<element id="AllergyIntolerance.reaction">
 			<path value="AllergyIntolerance.reaction"/>
@@ -198,9 +192,6 @@
 				<strength value="required"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-reaction-gps-uv-ips"/>
 			</binding>
-		</element>
-		<element id="AllergyIntolerance.reaction.onset">
-			<path value="AllergyIntolerance.reaction.onset"/>
 		</element>
 		<element id="AllergyIntolerance.reaction.severity">
 			<path value="AllergyIntolerance.reaction.severity"/>
