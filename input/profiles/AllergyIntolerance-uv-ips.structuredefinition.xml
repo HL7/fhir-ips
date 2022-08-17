@@ -74,10 +74,21 @@
             <valueCode value="conformance"/>
           </extension>
           <extension url="valueSet">
-            <valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-allergies-uv-ips"/>
+            <valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips"/>
           </extension>
           <extension url="documentation">
             <valueMarkdown value="Type of the substance/product, allergy or intolerance condition."/>
+          </extension>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
+          <extension url="purpose">
+            <valueCode value="conformance"/>
+          </extension>
+          <extension url="valueSet">
+            <valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-allergies-uv-ips"/>
+          </extension>
+          <extension url="documentation">
+            <valueMarkdown value="Absent of unknown codes for allergy or intolerance."/>
           </extension>
         </extension>
         <strength value="preferred"/>
