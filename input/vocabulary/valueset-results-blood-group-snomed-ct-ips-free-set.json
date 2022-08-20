@@ -1,0 +1,133 @@
+{
+    "resourceType": "ValueSet",
+    "id": "results-blood-group-snomed-ct-ips-free-set",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+        ]
+    },
+    "url": "http://hl7.org/fhir/uv/ips/ValueSet/results-blood-group-snomed-ct-ips-free-set",
+    "version": "1.0.0",
+    "name": "ResultsBloodGroupSnomedCtIpsFreeSet",
+    "title": "Results Blood Group - SNOMED CT IPS Free Set",
+    "status": "active",
+    "experimental": false,
+    "date": "2022-08-19T23:02:06+00:00",
+    "publisher": "Health Level Seven International - Patient Care Work Group",
+    "contact": [
+        {
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "http://www.hl7.org/Special/committees/patientcare"
+                }
+            ]
+        }
+    ],
+    "description": "This value set includes the codes for blood group findings from the SNOMED International Patient Set (IPS) subset of SNOMED CT (IPS Free Set).",
+    "jurisdiction": [
+        {
+            "coding": [
+                {
+                    "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+                    "code": "001"
+                }
+            ]
+        }
+    ],
+    "immutable": false,
+    "copyright": "The HL7 International IPS implementation guides incorporate SNOMED CT ®, used by permission of the International Health Terminology Standards Development Organisation. SNOMED CT© was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://snomed.info/sct",
+                "version": "http://snomed.info/sct/900000000000207008",
+                "filter": [
+                    {
+                        "property": "constraint",
+                        "op": "=",
+                        "value": "< 365636006 |Finding of blood group (finding)| AND ^ 816080008 |International Patient Summary (foundation metadata concept)|"
+                    }
+                ]
+            }
+        ]
+    },
+    "expansion": {
+        "timestamp": "2022-08-19T23:02:06+00:00",
+        "total": 13,
+        "offset": 0,
+        "parameter": [
+            {
+                "name": "version",
+                "valueUri": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+            }
+        ],
+        "contains": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "278154007",
+                "display": "Blood group AB Rh(D) negative"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "278153001",
+                "display": "Blood group B Rh(D) negative"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "278152006",
+                "display": "Blood group A Rh(D) negative"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "278151004",
+                "display": "Blood group AB Rh(D) positive"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "278150003",
+                "display": "Blood group B Rh(D) positive"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "278149003",
+                "display": "Blood group A Rh(D) positive"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "278148006",
+                "display": "Blood group O Rh(D) negative"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "278147001",
+                "display": "Blood group O Rh(D) positive"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "165746003",
+                "display": "RhD negative"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "165743006",
+                "display": "Blood group AB"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "112149005",
+                "display": "Blood group B"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "112144000",
+                "display": "Blood group A"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "58460004",
+                "display": "Blood group O"
+            }
+        ]
+    }
+}

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<id value="results-microorganism-uv-ips"/>
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+	</meta>
+	<url value="http://hl7.org/fhir/uv/ips/ValueSet/results-microorganism-uv-ips"/>
+	<version value="2"/>
+	<name value="ResultsMicroorganismUvIps"/>
+	<title value="Results Microorganism - IPS"/>
+	<status value="active"/>
+	<experimental value="false"/>
+	<publisher value="HL7 International"/>
+	<contact>
+		<name value="HL7 International"/>
+		<telecom>
+			<system value="phone"/>
+			<value value="+1 734 677 7777"/>
+		</telecom>
+		<telecom>
+			<system value="fax"/>
+			<value value="+1 734 677 6622"/>
+		</telecom>
+		<telecom>
+			<system value="email"/>
+			<value value="info@hl7.org"/>
+		</telecom>
+	</contact>
+	<description value="This is a value set of the SNOMED CT microorganism concepts for use in the Results section observation values."/>
+	<immutable value="false"/>
+	<copyright value="This value set includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this value set makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomed-ct or info@snomed.org"/>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+            <version value="http://snomed.info/sct/900000000000207008"/>
+			<!-- 409822003 |Domain Bacteria (organism)| -->
+			<filter>
+				<property value="concept"/>
+				<op value="descendent-of"/>
+				<value value="409822003"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008"/>
+			<!-- 441649000 |Class Cestoda and/or Class Trematoda and/or Phylum Nemata (organism)| -->
+			<filter>
+				<property value="concept"/>
+				<op value="descendent-of"/>
+				<value value="441649000"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008"/>
+			<!-- 414561005 |Kingdom Fungi (organism)| -->
+			<filter>
+				<property value="concept"/>
+				<op value="descendent-of"/>
+				<value value="414561005"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008"/>
+			<!-- 84676004 |Prion (organism)| -->
+			<filter>
+				<property value="concept"/>
+				<op value="descendent-of"/>
+				<value value="84676004"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008"/>
+			<!-- 49872002 |Virus (organism)| -->
+			<filter>
+				<property value="concept"/>
+				<op value="descendent-of"/>
+				<value value="49872002"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008"/>
+			<!-- 417396000 |Kingdom Protozoa (organism)| -->
+			<filter>
+				<property value="concept"/>
+				<op value="descendent-of"/>
+				<value value="417396000"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008"/>
+			<!-- 419036000 |Domain Archaea (organism)| -->
+			<filter>
+				<property value="concept"/>
+				<op value="descendent-of"/>
+				<value value="419036000"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008"/>
+			<!-- 426785004 |Kingdom Chromista (organism)| -->
+			<filter>
+				<property value="concept"/>
+				<op value="descendent-of"/>
+				<value value="426785004"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008"/>
+			<!-- 370570004 |Kingdom Protoctista (organism)| -->
+			<filter>
+				<property value="concept"/>
+				<op value="descendent-of"/>
+				<value value="370570004"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008"/>
+			<!-- 417377004 |Kingdom Viridiplantae (organism)| -->
+			<filter>
+				<property value="concept"/>
+				<op value="descendent-of"/>
+				<value value="417377004"/>
+			</filter>
+		</include>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008"/>
+			<!-- 243565002 |Slime mold (organism)| -->
+			<filter>
+				<property value="concept"/>
+				<op value="descendent-of"/>
+				<value value="243565002"/>
+			</filter>
+		</include>
+	</compose>
+</ValueSet>

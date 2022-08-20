@@ -70,7 +70,7 @@
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="ObservationCode"/>
 				</extension>
-				<strength value="extensible"/>
+				<strength value="preferred"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/results-laboratory-observations-uv-ips"/>
 			</binding>
 		</element>
@@ -162,8 +162,41 @@
 			</type>
 			<mustSupport value="true"/>
 			<binding>
+				<extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
+					<extension url="purpose">
+						<valueCode value="conformance"/>
+					</extension>
+					<extension url="valueSet">
+						<valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/results-blood-group-snomed-ct-ips-free-set"/>
+					</extension>
+					<extension url="documentation">
+						<valueMarkdown value="Additional conformance binding to a blood group findings value set for laboratory result values from the SNOMED CT IPS free set for use globally (in SNOMED member and non-member jurisdictions)."/>
+					</extension>
+				</extension>
+				<extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
+					<extension url="purpose">
+						<valueCode value="conformance"/>
+					</extension>
+					<extension url="valueSet">
+						<valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/results-presence-absence-snomed-ct-ips-free-set"/>
+					</extension>
+					<extension url="documentation">
+						<valueMarkdown value="Additional conformance binding to a presence and absence findings (qualifier values) value set for laboratory result values from the SNOMED CT IPS free set for use globally (in SNOMED member and non-member jurisdictions)."/>
+					</extension>
+				</extension>
+				<extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
+					<extension url="purpose">
+						<valueCode value="conformance"/>
+					</extension>
+					<extension url="valueSet">
+						<valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/results-microorganism-snomed-ct-ips-free-set"/>
+					</extension>
+					<extension url="documentation">
+						<valueMarkdown value="Additional conformance binding to a microorganisms value set for laboratory result values from the SNOMED CT IPS free set for use globally (in SNOMED member and non-member jurisdictions)."/>
+					</extension>
+				</extension>
 				<strength value="preferred"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/result-coded-value-laboratory-gps-uv-ips"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/results-coded-values-laboratory-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Observation.interpretation">

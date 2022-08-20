@@ -25,11 +25,22 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<binding>
+				<extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
+					<extension url="purpose">
+						<valueCode value="conformance"/>
+					</extension>
+					<extension url="valueSet">
+						<valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/results-specimen-type-snomed-ct-ips-free-set"/>
+					</extension>
+					<extension url="documentation">
+						<valueMarkdown value="Additional conformance binding to a specimen type value set from the SNOMED CT IPS free set for use globally (in SNOMED member and non-member jurisdictions)."/>
+					</extension>
+				</extension>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="SpecimenType"/>
 				</extension>
-				<strength value="extensible"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/results-specimen-type-gps-uv-ips"/>
+				<strength value="preferred"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/results-specimen-type-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Specimen.subject">
@@ -53,8 +64,8 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<binding>
-				<strength value="extensible"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/results-specimen-collection-method-gps-uv-ips"/>
+				<strength value="preferred"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/results-specimen-collection-method-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Specimen.collection.bodySite">
@@ -64,8 +75,8 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<binding>
-				<strength value="extensible"/>
-				<valueSet value="http://hl7.org/fhir/ValueSet/body-site"/>
+				<strength value="preferred"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/body-site-uv-ips"/>
 			</binding>
 		</element>
 		<element id="Specimen.collection.fastingStatus[x]">

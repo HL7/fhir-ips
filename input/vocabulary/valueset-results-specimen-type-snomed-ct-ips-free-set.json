@@ -1,0 +1,697 @@
+{
+    "resourceType": "ValueSet",
+    "id": "results-specimen-type-snomed-ct-ips-free-set",
+    "url": "http://hl7.org/fhir/uv/ips/ValueSet/results-specimen-type-snomed-ct-ips-free-set",
+    "version": "1.0.0",
+    "name": "ResultsSpecimenTypeSnomedCtIpsFreeSet",
+    "title": "Results Specimen Type - SNOMED CT IPS Free Set",
+    "status": "active",
+    "experimental": false,
+    "date": "2022-08-20T13:24:58+00:00",
+    "publisher": "Health Level Seven International - Patient Care Work Group",
+    "contact": [
+        {
+            "telecom": [
+                {
+                    "system": "url",
+                    "value": "http://www.hl7.org/Special/committees/patientcare"
+                }
+            ]
+        }
+    ],
+    "description": "This value set includes the codes from the SNOMED International Patient Set (IPS) subset of SNOMED CT (IPS Free Set) that are included in: all descendants of 123038009 \\|Specimen (specimen)\\|.",
+    "jurisdiction": [
+        {
+            "coding": [
+                {
+                    "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+                    "code": "001"
+                }
+            ]
+        }
+    ],
+    "immutable": false,
+    "copyright": "The HL7 International IPS implementation guides incorporate SNOMED CT ® , used by permission of the International Health Terminology Standards Development Organisation. SNOMED CT© was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved.",
+    "compose": {
+        "include": [
+            {
+                "system": "http://snomed.info/sct",
+                "filter": [
+                    {
+                        "property": "constraint",
+                        "op": "=",
+                        "value": "< 123038009 |Specimen (specimen)| AND ^ 816080008 |International Patient Summary (foundation metadata concept)|"
+                    }
+                ]
+            }
+        ]
+    },
+    "expansion": {
+        "timestamp": "2022-08-20T13:24:58+00:00",
+        "total": 127,
+        "offset": 0,
+        "parameter": [
+            {
+                "name": "version",
+                "valueUri": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+            }
+        ],
+        "contains": [
+            {
+                "system": "http://snomed.info/sct",
+                "code": "708048008",
+                "display": "Plasma specimen with citrate"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "702701006",
+                "display": "Specimen from cervix or vagina"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "698276005",
+                "display": "First stream urine specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "472896000",
+                "display": "Swab from blister"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "472881004",
+                "display": "Swab from pharynx"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "472867001",
+                "display": "Swab from tonsil"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "446861007",
+                "display": "Cerebrospinal fluid specimen obtained via ventriculoperitoneal shunt"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "446846006",
+                "display": "Urine specimen obtained via indwelling urinary catheter"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "446562005",
+                "display": "Body fluid specimen obtained via sump drain"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "446302006",
+                "display": "Air specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "446272009",
+                "display": "Blood specimen submitted in heparinized collection tube"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "440500007",
+                "display": "Dried blood spot specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "440493002",
+                "display": "Graft specimen from patient"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "440473005",
+                "display": "Contact lens submitted as specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "440137008",
+                "display": "Specimen obtained by peritoneal lavage"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "439961009",
+                "display": "Implant submitted as specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "438660002",
+                "display": "Specimen from prosthetic device"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "432825001",
+                "display": "Body secretion specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "430268003",
+                "display": "Specimen from bone"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "408654003",
+                "display": "Specimen obtained by amputation"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "399713008",
+                "display": "Specimen from uterine cervix obtained by cone biopsy"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "309502007",
+                "display": "Fetus specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "309213006",
+                "display": "Gastric brushings specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "309211008",
+                "display": "Gastric biopsy specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "309210009",
+                "display": "Esophageal brushings specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "309176002",
+                "display": "Bronchial brushings specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "309166000",
+                "display": "Ear swab specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "309075001",
+                "display": "Skin cyst specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "309068002",
+                "display": "Skin lesion specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "309067007",
+                "display": "Specimen from skin obtained by curettage"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "309066003",
+                "display": "Skin biopsy specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "309051001",
+                "display": "Body fluid specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "309049000",
+                "display": "Lesion specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "302795002",
+                "display": "Lymph node aspirate"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "302794003",
+                "display": "Nasogastric aspirate"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "278020009",
+                "display": "Spot urine specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258649003",
+                "display": "Intravenous infusion fluid specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258609006",
+                "display": "Sputum specimen obtained by aspiration from trachea"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258607008",
+                "display": "Bronchoalveolar lavage fluid specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258603007",
+                "display": "Respiratory specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258591005",
+                "display": "White blood cell specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258580003",
+                "display": "Whole blood specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258574006",
+                "display": "Mid-stream urine specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258531008",
+                "display": "Wound swab"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258530009",
+                "display": "Urethral swab"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258528007",
+                "display": "Rectal swab"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258523003",
+                "display": "Vulval swab"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258520000",
+                "display": "Vaginal swab"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258505006",
+                "display": "Skin ulcer swab"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258503004",
+                "display": "Skin swab"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258502009",
+                "display": "Pus swab"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258500001",
+                "display": "Nasopharyngeal swab"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258498002",
+                "display": "Conjunctival swab"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258482009",
+                "display": "Vesicle fluid specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258474009",
+                "display": "Sinus fluid specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258463000",
+                "display": "Jejunal fluid specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258459007",
+                "display": "Gastric fluid specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258455001",
+                "display": "Drainage fluid specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258453008",
+                "display": "Cyst fluid specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258450006",
+                "display": "Cerebrospinal fluid specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258442002",
+                "display": "Fluid specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258441009",
+                "display": "Exudate specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258440005",
+                "display": "Effusion specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258438000",
+                "display": "Vitreous humor specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258435002",
+                "display": "Tumor tissue specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "258415003",
+                "display": "Biopsy specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "257261003",
+                "display": "Swab"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "168141000",
+                "display": "Nasal fluid specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "168139001",
+                "display": "Peritoneal fluid specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "168138009",
+                "display": "Gastric lavage aspirate specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "168137004",
+                "display": "Gastric aspirate specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "122880004",
+                "display": "Urine specimen obtained by clean catch procedure"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "122877000",
+                "display": "Upper respiratory fluid specimen obtained by tracheal aspiration"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "122609004",
+                "display": "Specimen from lung obtained by bronchial washing procedure"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "122593002",
+                "display": "Tissue specimen obtained from ulcer"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "122580007",
+                "display": "Cerumen specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "122575003",
+                "display": "Urine specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "122572000",
+                "display": "Vomitus specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "122568004",
+                "display": "Exudate specimen from wound"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "122566000",
+                "display": "Fluid specimen from wound"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "122565001",
+                "display": "Urinary catheter specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "122560006",
+                "display": "Blood specimen from blood donor"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "122556008",
+                "display": "Cord blood specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "122555007",
+                "display": "Venous blood specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "122554006",
+                "display": "Capillary blood specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "122552005",
+                "display": "Arterial blood specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119401005",
+                "display": "Specimen from conjunctiva"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119395005",
+                "display": "Specimen from uterine cervix"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119394009",
+                "display": "Specimen from vagina"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119376003",
+                "display": "Tissue specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119371008",
+                "display": "Specimen from abscess"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119370009",
+                "display": "Specimen from fistula"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119367005",
+                "display": "Specimen from burn injury"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119366001",
+                "display": "Specimen from wound abscess"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119365002",
+                "display": "Specimen from wound"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119364003",
+                "display": "Serum specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119363009",
+                "display": "Platelet rich plasma specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119362004",
+                "display": "Platelet poor plasma specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119361006",
+                "display": "Plasma specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119360007",
+                "display": "Dialysis fluid specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119351004",
+                "display": "Erythrocyte specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119350003",
+                "display": "Calculus specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119349003",
+                "display": "Spermatozoa specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119345009",
+                "display": "Menstrual blood specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119344008",
+                "display": "Specimen from genital system"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119342007",
+                "display": "Saliva specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119341000",
+                "display": "Bile specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119339001",
+                "display": "Stool specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119337004",
+                "display": "Inhaled gas specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119336008",
+                "display": "Exhaled air specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119335007",
+                "display": "Coughed sputum specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119334006",
+                "display": "Sputum specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119332005",
+                "display": "Synovial fluid specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119329007",
+                "display": "Colostrum specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119327009",
+                "display": "Nail specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119325001",
+                "display": "Tissue specimen from skin"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119323008",
+                "display": "Pus specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119320006",
+                "display": "Food specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119318008",
+                "display": "Water specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119312009",
+                "display": "Catheter tip submitted as specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119311002",
+                "display": "Catheter submitted as specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119305000",
+                "display": "Specimen from plasma bag"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119304001",
+                "display": "Specimen from blood bag"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119300005",
+                "display": "Specimen from blood product"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119297000",
+                "display": "Blood specimen"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119295008",
+                "display": "Specimen obtained by aspiration"
+            },
+            {
+                "system": "http://snomed.info/sct",
+                "code": "119294007",
+                "display": "Dried blood specimen"
+            }
+        ]
+    }
+}
