@@ -23,7 +23,7 @@
 		</element>
 		<element id="MedicationStatement.medication[x]">
 			<path value="MedicationStatement.medication[x]"/>
-			<!-- The slicing below is expected to be replaced in R5 by a 'medication' element of the new CodeableReference 
+			<!-- The slicing below is expected to be replaced in R5 by a 'medication' element of the new CodeableReference
 				data type with the appropriate constraints. -->
 			<definition value="Identifies the medication being administered or the reason for absent or unknown Medication. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code. To improve global interoperability is strongly encouraged that the reference to a medication resource is used, limiting the usage of the medicationCodeableConcept only to the cases in which no other information than a simple code is available."/>
 			<type>
@@ -71,9 +71,6 @@
 				<profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason"/>
 			</type>
 			<mustSupport value="true"/>
-		</element>
-		<element id="MedicationStatement.informationSource">
-			<path value="MedicationStatement.informationSource"/>
 		</element>
 		<element id="MedicationStatement.dosage">
 			<path value="MedicationStatement.dosage"/>

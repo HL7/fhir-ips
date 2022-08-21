@@ -124,16 +124,13 @@
 				<code value="Period"/>
 			</type>
 			<type>
-				<code value="Range"/>			
+				<code value="Range"/>
 			</type>
 			<type>
-				<code value="string"/>					
+				<code value="string"/>
 			</type>
 			<mustSupport value="true" />
 		</element>
-    <element id="AllergyIntolerance.asserter">
-      <path value="AllergyIntolerance.asserter"/>
-    </element>
     <element id="AllergyIntolerance.reaction">
       <path value="AllergyIntolerance.reaction"/>
       <mustSupport value="true"/>
@@ -150,9 +147,6 @@
         <description value="Code for the allergy or intolerance reaction manifestation from the SNOMED International Patient Set (IPS) subset of SNOMED CT (IPS Free Set)."/>
         <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-reaction-snomed-ct-ips-free-set"/>
       </binding>
-    </element>
-    <element id="AllergyIntolerance.reaction.onset">
-      <path value="AllergyIntolerance.reaction.onset"/>
     </element>
     <element id="AllergyIntolerance.reaction.severity">
       <path value="AllergyIntolerance.reaction.severity"/>

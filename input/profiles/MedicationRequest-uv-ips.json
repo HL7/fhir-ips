@@ -126,10 +126,6 @@
         "mustSupport": true
       },
       {
-        "id": "MedicationRequest.requester",
-        "path": "MedicationRequest.requester"
-      },
-      {
         "id": "MedicationRequest.dosageInstruction",
         "path": "MedicationRequest.dosageInstruction",
         "mustSupport": true
@@ -160,11 +156,6 @@
           "valueSet": "http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration",
           "description": "EDQM Standards Terms"
         }
-      },
-      {
-        "id": "MedicationRequest.dispenseRequest.validityPeriod",
-        "path": "MedicationRequest.dispenseRequest.validityPeriod",
-        "min": 1
       },
       {
         "id": "MedicationRequest.dispenseRequest.validityPeriod.extension:data-absent-reason",
