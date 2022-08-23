@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir" xmlns:f="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<id value="results-radiology-numobs-gps-dicom-uv-ips"/>
+	<id value="results-radiology-numobs-snomed-dicom-uv-ips"/>
 	<meta>
 		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
 	</meta>
-	<url value="http://hl7.org/fhir/uv/ips/ValueSet/results-radiology-numobs-gps-dicom-uv-ips"/>
-	<name value="ResultsRadMeasuresObservationGpsDicomUvIps"/>
-	<title value="Results Radiology Measurement Observation (GPS-DICOM) - IPS"/>
+	<url value="http://hl7.org/fhir/uv/ips/ValueSet/results-radiology-numobs-snomed-dicom-uv-ips"/>
+	<name value="ResultsRadMeasuresObservationSnomedDicomUvIps"/>
+	<title value="Results Radiology Measurement Observation (SNOMED-DICOM) - IPS"/>
 	<status value="active"/>
 	<experimental value="false"/>
 	<publisher value="HL7 International"/>
@@ -25,7 +25,7 @@
 			<value value="info@hl7.org"/>
 		</telecom>
 	</contact>
-	<description value="Extensible value set including SNOMED CT GPS and DICOM concepts for Linear, Area and Volume Measurements"/>
+	<description value="Extensible value set including SNOMED CT and DICOM concepts for Linear, Area and Volume Measurements"/>
 	<immutable value="false"/>
   <copyright value="The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](http://www.snomed.org/snomed-ct/get-snomed-ct) or directly contact SNOMED International: info@snomed.org" />
 	<compose>

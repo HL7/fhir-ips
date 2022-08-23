@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <ValueSet xmlns="http://hl7.org/fhir" xmlns:f="http://hl7.org/fhir">
-	<id value="result-coded-value-pathology-gps-uv-ips"/>
+	<id value="result-coded-value-pathology-uv-ips"/>
 	<meta>
 		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
 	</meta>
-	<url value="http://hl7.org/fhir/uv/ips/ValueSet/result-coded-value-pathology-gps-uv-ips"/>
+	<url value="http://hl7.org/fhir/uv/ips/ValueSet/result-coded-value-pathology-uv-ips"/>
 	<version value="2"/>
-	<name value="ResultsCodedValuesPathologyGpsUvIps"/>
-	<title value="Results Coded Values Pathology (GPS) - IPS"/>
+	<name value="ResultsCodedValuesPathologyUvIps"/>
+	<title value="Results Coded Values Pathology - IPS"/>
 	<status value="active"/>
 	<experimental value="false"/>
 	<publisher value="HL7 International"/>
@@ -27,8 +26,8 @@
 			<value value="info@hl7.org"/>
 		</telecom>
 	</contact>
-	<description value="IPS Pathology observation coded results GPS value set.  The codes from the SNOMED International Global Patient Set (GPS) subset of SNOMED CT that are included in: all descendants of 106253005 |Histologic grading differentiation AND/OR behavior (qualifier value)|, all descendants of 373369003 |Finding of histologic grading differentiation AND/OR behavior (finding)|, all descendants of 399981008 |Neoplasm and/or hamartoma (disorder)|."/>
-    <immutable value="false"/>
+	<description value="This value set includes codes from SNOMED Clinical Terms (SNOMED CT®) that are included in:  all descendants of 106253005 |Histologic grading differentiation AND/OR behavior (qualifier value)|, all descendants of 373369003 |Finding of histologic grading differentiation AND/OR behavior (finding)|, all descendants of 399981008 |Neoplasm and/or hamartoma (disorder)|."/>
+  <immutable value="false"/>
   <copyright value="The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](http://www.snomed.org/snomed-ct/get-snomed-ct) or directly contact SNOMED International: info@snomed.org" />
 	<compose>
 		<include>
@@ -40,7 +39,6 @@
 				<op value="descendent-of"/>
 				<value value="106253005"/>
 			</filter>
-			<valueSet value="http://terminology.hl7.org/ValueSet/snomed-intl-gps"/>
 		</include>
 		<include>
 			<system value="http://snomed.info/sct"/>
@@ -51,7 +49,6 @@
 				<op value="descendent-of"/>
 				<value value="373369003"/>
 			</filter>
-			<valueSet value="http://terminology.hl7.org/ValueSet/snomed-intl-gps"/>
 		</include>
 		<include>
 			<system value="http://snomed.info/sct"/>
@@ -62,7 +59,6 @@
 				<op value="descendent-of"/>
 				<value value="399981008"/>
 			</filter>
-			<valueSet value="http://terminology.hl7.org/ValueSet/snomed-intl-gps"/>
 		</include>
 	</compose>
 </ValueSet>
