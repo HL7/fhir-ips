@@ -27,25 +27,25 @@
 	</contact>
 	<description value="This value set includes codes from SNOMED Clinical Terms®: descendants of 373873005 \|Pharmaceutical / biologic product (product)\| excluding the descendants of 787859002 \|Vaccine product (medicinal product)\|."/>
 	<immutable value="false"/>
-  <copyright value="The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](http://www.snomed.org/snomed-ct/get-snomed-ct) or directly contact SNOMED International: info@snomed.org" />
+	<copyright value="The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](http://www.snomed.org/snomed-ct/get-snomed-ct) or directly contact SNOMED International: info@snomed.org"/>
 	<compose>
 		<include>
 			<system value="http://snomed.info/sct"/>
-      <version value="http://snomed.info/sct/900000000000207008"/>
+			<version value="http://snomed.info/sct/900000000000207008"/>
 			<filter>
 				<property value="concept"/>
 				<op value="descendent-of"/>
 				<value value="373873005"/>
 			</filter>
 		</include>
-    <exclude>
+		<exclude>
 			<system value="http://snomed.info/sct"/>
-      <version value="http://snomed.info/sct/900000000000207008"/>
+			<version value="http://snomed.info/sct/900000000000207008"/>
 			<filter>
 				<property value="concept"/>
 				<op value="descendent-of"/>
 				<value value="787859002"/>
 			</filter>
-    </exclude>
+		</exclude>
 	</compose>
 </ValueSet>

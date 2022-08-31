@@ -7,134 +7,106 @@
   "title": "Medications - SNOMED CT IPS Free Set",
   "status": "active",
   "experimental": false,
-  "date": "2022-07-27T08:08:18-05:00",
+  "date": "2022-08-31T11:33:59+00:00",
   "publisher": "Health Level Seven International - Patient Care Work Group",
   "contact": [
-      {
-          "telecom": [
-              {
-                  "system": "url",
-                  "value": "http://www.hl7.org/Special/committees/patientcare"
-              }
-          ]
-      }
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/patientcare"
+        }
+      ]
+    }
   ],
   "description": "This value set includes the codes from the SNOMED International Patient Set (IPS) subset of SNOMED CT (IPS Free Set) that are included in: descendants of 373873005 \\|Pharmaceutical / biologic product (product)\\| excluding the descendants of 787859002 \\|Vaccine product (medicinal product)\\|.",
   "jurisdiction": [
-      {
-          "coding": [
-              {
-                  "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
-                  "code": "001"
-              }
-          ]
-      }
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
   ],
   "immutable": false,
   "copyright": "The SNOMED International IPS Terminology is distributed by International Health Terminology Standards Development Organisation, trading as SNOMED International, and is subject the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/). For more information, see [SNOMED IPS Terminology](https://www.snomed.org/snomed-ct/Other-SNOMED-products/international-patient-summary-terminology)",
   "compose": {
-      "include": [
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "version": "http://snomed.info/sct/900000000000207008",
+        "filter": [
           {
-              "system": "http://snomed.info/sct",
-              "version": "http://snomed.info/sct/900000000000207008",
-              "filter": [
-                  {
-                      "property": "constraint",
-                      "op": "=",
-                      "value": "< 373873005 |Pharmaceutical / biologic product (product)| AND ^ 816080008 |International Patient Summary (foundation metadata concept)|"
-                  }
-            ]
+            "property": "constraint",
+            "op": "=",
+            "value": "(< 373873005 |Pharmaceutical / biologic product (product)| MINUS < 787859002 |Vaccine product (medicinal product)|) AND ^ 816080008 |International Patient Summary (foundation metadata concept)|"
           }
-      ],
-      "exclude": [
-        {
-          "system": "http://snomed.info/sct",
-          "version": "http://snomed.info/sct/900000000000207008",
-          "filter": [
-            {
-              "property": "constraint",
-              "op": "=",
-              "value": "< 787859002 |Vaccine product (medicinal product)|"
-            }
-          ]
-        }
-      ]
+        ]
+      }
+    ]
   },
   "expansion": {
-    "total": 13,
+    "timestamp": "2022-08-31T11:33:59+00:00",
+    "total": 10,
     "offset": 0,
-    "timestamp": "2022-08-02T14:28:57.119+00:00",
     "parameter": [
-        {
-            "name": "version",
-            "valueUri": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
-        }
+      {
+        "name": "version",
+        "valueUri": "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+      }
     ],
     "contains": [
       {
         "system": "http://snomed.info/sct",
-        "code": "43747001",
-        "display": "Drug excipient (product)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "63338004",
-        "display": "Drug flavouring"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "320835005",
-        "display": "Pollen immunotherapy extract"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "346313005",
-        "display": "Allergen immunotherapy extract"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "346364006",
-        "display": "Cat immunotherapy extract"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "346405008",
-        "display": "Dog immunotherapy extract"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "346467003",
-        "display": "Horse dander allergy vaccine (product)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "346468008",
-        "display": "House dust immunotherapy extract"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "346469000",
-        "display": "House dust mite immunotherapy extract"
+        "code": "774702006",
+        "display": "Bacillus Calmette-Guerin antigen only product"
       },
       {
         "system": "http://snomed.info/sct",
         "code": "418268006",
-        "display": "Live attenuated Mycobacterium bovis antigen-containing product"
+        "display": "Bacillus Calmette-Guerin antigen-containing product"
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "709079002",
-        "display": "Allergen extract"
+        "code": "346469000",
+        "display": "House mite allergy vaccine"
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "763158003",
-        "display": "Medicinal product"
+        "code": "346468008",
+        "display": "House dust allergy vaccine"
       },
       {
         "system": "http://snomed.info/sct",
-        "code": "774702006",
-        "display": "Live attenuated Mycobacterium bovis antigen only product"
+        "code": "346467003",
+        "display": "Horse allergy vaccine"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "346405008",
+        "display": "Dog allergy vaccine"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "346364006",
+        "display": "Cat allergy vaccine"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "346313005",
+        "display": "Allergen extract vaccine"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "320835005",
+        "display": "Pollen allergy preparations"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "63338004",
+        "display": "Drug flavoring"
       }
     ]
   }
