@@ -57,6 +57,17 @@
 			</type>
 			<mustSupport value="true"/>
 			<binding>
+				<extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
+					<extension url="purpose">
+						<valueCode value="conformance"/>
+					</extension>
+					<extension url="valueSet">
+						<valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/condition-severity-uv-ips"/>
+					</extension>
+					<extension url="documentation">
+						<valueMarkdown value="An alternative additional binding to LOINC answer codes for condition/problem severity"/>
+					</extension>
+				</extension>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="ConditionSeverity"/>
 				</extension>
@@ -74,33 +85,33 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<mustSupport value="true"/>
-      <binding>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
-          <extension url="purpose">
-            <valueCode value="conformance"/>
-          </extension>
-          <extension url="valueSet">
-            <valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-ct-ips-free-set"/>
-          </extension>
-          <extension url="documentation">
-            <valueMarkdown value="Codes for a clinical problem in SNOMED IPS Free Set"/>
-          </extension>
-        </extension>
+			<binding>
 				<extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
-          <extension url="purpose">
-            <valueCode value="conformance"/>
-          </extension>
-          <extension url="valueSet">
-            <valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips"/>
-          </extension>
-          <extension url="documentation">
-            <valueMarkdown value="Codes for absent or unknown problems"/>
-          </extension>
-        </extension>
-        <strength value="preferred"/>
-        <description value="Code for a clinical problem that is selected from SNOMED CT or a code for absent/unknown problem"/>
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips"/>
-      </binding>
+					<extension url="purpose">
+						<valueCode value="conformance"/>
+					</extension>
+					<extension url="valueSet">
+						<valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-ct-ips-free-set"/>
+					</extension>
+					<extension url="documentation">
+						<valueMarkdown value="Codes for a clinical problem in SNOMED IPS Free Set"/>
+					</extension>
+				</extension>
+				<extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
+					<extension url="purpose">
+						<valueCode value="conformance"/>
+					</extension>
+					<extension url="valueSet">
+						<valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips"/>
+					</extension>
+					<extension url="documentation">
+						<valueMarkdown value="Codes for absent or unknown problems"/>
+					</extension>
+				</extension>
+				<strength value="preferred"/>
+				<description value="Code for a clinical problem that is selected from SNOMED CT or a code for absent/unknown problem"/>
+				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips"/>
+			</binding>
 		</element>
 		<element id="Condition.bodySite">
 			<path value="Condition.bodySite"/>
@@ -133,7 +144,7 @@
 			<path value="Condition.onset[x]"/>
 			<type>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support">
-					<valueBoolean value="true" />
+					<valueBoolean value="true"/>
 				</extension>
 				<code value="dateTime"/>
 			</type>
@@ -149,7 +160,7 @@
 			<type>
 				<code value="string"/>
 			</type>
-			<mustSupport value="true" />
+			<mustSupport value="true"/>
 		</element>
 	</differential>
 </StructureDefinition>

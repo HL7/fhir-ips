@@ -30,7 +30,7 @@
 			<value value="info@hl7.org"/>
 		</telecom>
 	</contact>
-	<description value="Problem Severity. This value set will be removed from a future version of IPS and instead use the [base condition severity codes from FHIR R4](https://www.hl7.org/fhir/R4/valueset-condition-severity.html)"/>
+	<description value="Problem Severity. The [condition-severity](https://www.hl7.org/fhir/R4/valueset-condition-severity.html) value set from the base Condition resource is now the preferred binding for IPS.  This value set of LOINC answer codes is retained as an additional binding for backward compatibility with the prior IPS release."/>
 	<immutable value="false"/>
 	<copyright value="This artifact includes content from LOINC®. LOINC codes are copyright Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee. Terms &amp; Conditions in https://loinc.org/license/"/>
 	<compose>
