@@ -5,6 +5,7 @@
 		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
 	</meta>
 	<url value="http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-uv-ips"/>
+	<version value="2"/>
 	<name value="ProblemsSnomedUvIps"/>
 	<title value="Problems (SNOMED CT) - IPS"/>
 	<status value="active"/>
@@ -25,13 +26,13 @@
 			<value value="info@hl7.org"/>
 		</telecom>
 	</contact>
-	<description value="This value set includes codes from SNOMED Clinical Terms®:  descendants of 404684003 \|Clinical finding (finding) \|, descendants of 243796009 \|Situation with explicit context (situation)\| and descendants of 272379006 \|Event (event)\| but excludes descendants of 71388002 \|Procedure (procedure)\|, as they are expected to be represented separately in the History of Procedures Section."/>
+	<description value="This value set includes codes from SNOMED Clinical Terms®: descendants of 404684003 \|Clinical finding (finding) \|, descendants of 243796009 \|Situation with explicit context (situation)\| and descendants of 272379006 \|Event (event)\|.  The descendants of 71388002 \|Procedure (procedure)\| (which were included in the CORE problem list) are not included, as they are expected to be represented separately in the History of Procedures Section."/>
 	<immutable value="false"/>
-  <copyright value="The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](http://www.snomed.org/snomed-ct/get-snomed-ct) or directly contact SNOMED International: info@snomed.org" />
+	<copyright value="The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](http://www.snomed.org/snomed-ct/get-snomed-ct) or directly contact SNOMED International: info@snomed.org"/>
 	<compose>
 		<include>
 			<system value="http://snomed.info/sct"/>
-      <version value="http://snomed.info/sct/900000000000207008"/>
+			<version value="http://snomed.info/sct/900000000000207008"/>
 			<filter>
 				<property value="concept"/>
 				<op value="descendent-of"/>
@@ -40,7 +41,7 @@
 		</include>
 		<include>
 			<system value="http://snomed.info/sct"/>
-      <version value="http://snomed.info/sct/900000000000207008"/>
+			<version value="http://snomed.info/sct/900000000000207008"/>
 			<filter>
 				<property value="concept"/>
 				<op value="descendent-of"/>
@@ -49,21 +50,12 @@
 		</include>
 		<include>
 			<system value="http://snomed.info/sct"/>
-      <version value="http://snomed.info/sct/900000000000207008"/>
+			<version value="http://snomed.info/sct/900000000000207008"/>
 			<filter>
 				<property value="concept"/>
 				<op value="descendent-of"/>
 				<value value="272379006"/>
 			</filter>
-    </include>
-		<exclude>
-			<system value="http://snomed.info/sct"/>
-      <version value="http://snomed.info/sct/900000000000207008"/>
-			<filter>
-				<property value="concept"/>
-				<op value="descendent-of"/>
-				<value value="71388002"/>
-			</filter>
-    </exclude>		
+		</include>
 	</compose>
 </ValueSet>
