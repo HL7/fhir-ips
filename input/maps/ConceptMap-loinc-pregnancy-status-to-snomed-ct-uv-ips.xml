@@ -1,0 +1,60 @@
+<ConceptMap xmlns="http://hl7.org/fhir">
+	<id value="loinc-pregnancy-status-to-snomed-ct-uv-ips"/>
+	<url value="http://hl7.org/fhir/uv/ips/ConceptMap/loinc-pregnancy-status-to-snomed-ct-uv-ips"/>
+	<version value="4.0.1"/>
+	<name value="ConceptMapLoincPregnancyStatusToSnomedCt"/>
+	<title value="Pregnancy Status Value Set Mappings - LOINC to SNOMED CT"/>
+	<status value="draft"/>
+	<experimental value="false"/>
+	<publisher value="HL7 International"/>
+	<description value="Pregnancy Status: LOINC Answers to SNOMED CT concepts. This is an informative map and may be subject to future change."/>
+	<contact>
+		<name value="HL7 International"/>
+		<telecom>
+			<system value="phone"/>
+			<value value="+1 734 677 7777"/>
+		</telecom>
+		<telecom>
+			<system value="fax"/>
+			<value value="+1 734 677 6622"/>
+		</telecom>
+		<telecom>
+			<system value="email"/>
+			<value value="info@hl7.org"/>
+		</telecom>
+	</contact>
+	<sourceUri value="http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips"/>
+	<targetUri value="urn:oid:2.16.840.1.113883.11.20.9.85"/>
+	<group>
+		<source value="http://loinc.org"/>
+		<target value="http://snomed.info/sct"/>
+		<element>
+			<code value="LA15173-0"/>
+			<display value="Pregnant"/>
+			<target>
+				<code value="77386006"/>
+				<display value="Pregnant"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="LA26683-5"/>
+			<display value="Not pregnant"/>
+			<target>
+				<code value="60001007"/>
+				<display value="Not pregnant"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="LA4489-6"/>
+			<display value="Unknown"/>
+			<target>
+				<code value="102874004"/>
+				<display value="Possible pregnancy"/>
+				<equivalence value="narrower"/>
+				<comment value="Possible pregnancy is a subset of all possible unknown pregnancy statuses" />
+			</target>
+		</element>
+	</group>
+</ConceptMap>
