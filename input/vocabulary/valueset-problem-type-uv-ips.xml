@@ -6,11 +6,7 @@
 		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
 	</meta>
 	<url value="http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips"/>
-	<identifier>
-		<use value="official"/>
-		<system value="http://art-decor.org/ns/oids/vs"/>
-		<value value="2.16.840.1.113883.11.22.16"/>
-	</identifier>
+	<version value="2"/>
 	<name value="ProblemTypeUvIps"/>
 	<title value="Problem Type - IPS"/>
 	<status value="active"/>
@@ -31,15 +27,14 @@
 			<value value="info@hl7.org"/>
 		</telecom>
 	</contact>
-	<description value="This value set indicates the level of medical judgment used to determine the existence of a problem."/>
+	<description value="This value set provides a category for the condition as a clinical problem for inclusion in the patient summary."/>
 	<immutable value="false"/>
-	<copyright value="This artifact includes content from LOINC®. LOINC codes are copyright Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee. Terms &amp; Conditions in https://loinc.org/license/"/>
 	<compose>
 		<include>
-			<system value="http://loinc.org"/>
+			<system value="http://hl7.org/fhir/ValueSet/condition-category"/>
 			<concept>
-				<code value="75326-9"/>
-				<display value="Problem"/>
+				<code value="problem-list-item"/>
+				<display value="Problem List Item"/>
 			</concept>
 		</include>
 	</compose>

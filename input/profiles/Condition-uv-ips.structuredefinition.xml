@@ -45,7 +45,18 @@
 			</type>
 			<mustSupport value="true"/>
 			<binding>
-				<strength value="extensible"/>
+				<extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
+					<extension url="purpose">
+						<valueCode value="conformance"/>
+					</extension>
+					<extension url="valueSet">
+						<valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/problem-type-loinc"/>
+					</extension>
+					<extension url="documentation">
+						<valueMarkdown value="An alternative additional binding to the LOINC &quot;Problem&quot; code - retained for backward compatibility."/>
+					</extension>
+				</extension>
+				<strength value="preferred"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/problem-type-uv-ips"/>
 			</binding>
 		</element>
