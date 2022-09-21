@@ -27,9 +27,9 @@
 			<constraint>
 				<key value="ips-pat-1"/>
 				<severity value="error"/>
-				<human value="Patient.name.given or Patient.name.family or both SHALL be present"/>
-				<expression value="family.exists() or given.exists()"/>
-				<xpath value="f:given or f:family"/>
+				<human value="Patient.name.given, Patient.name.family or Patient.name.text SHALL be present"/>
+				<expression value="family.exists() or given.exists() or text.exists()"/>
+				<xpath value="f:given or f:family or f:text"/>
 			</constraint>
 			<mustSupport value="true"/>
 		</element>
