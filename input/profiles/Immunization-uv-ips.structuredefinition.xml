@@ -120,8 +120,11 @@
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
 			<binding>
+				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
+					<valueString value="SNOMEDCTBodyStructures"/>
+				</extension>
 				<strength value="preferred"/>
-				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"/>
+				<valueSet value="http://hl7.org/fhir/ValueSet/body-site"/>
 			</binding>
 		</element>
 		<element id="Immunization.route">

@@ -56,19 +56,22 @@ Implementers conforming to an IPS document in the IPS Implementation Guide:
 
 1.  For *non-coded* data elements, use the [Data Absent Reason Extension](http://hl7.org/fhir/R4/extension-data-absent-reason.html) in the data type.
 
-    Example: Patient resource where the patient birthDate is not known.
+    Example: Patient resource where the birthDate is not known (note that since birthDate is a date primitive datatype the _birthDate sibling property is used for the extension). Other required properties of Patient resource are omitted (shown by ...) in this simplified example.
 
     ~~~
     {
       "resourceType" : "Patient",
-           ...
-           "birthDate":[
-             "extension" : [
-             "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-             "valueCode" : "unknown"
-              ]
-            ]
-         }
+      ...
+      "_birthDate": {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode" : "unknown"
+          }
+        ]
+      },
+      ...
+    }
     ~~~
 
 1. For *coded* data elements:
