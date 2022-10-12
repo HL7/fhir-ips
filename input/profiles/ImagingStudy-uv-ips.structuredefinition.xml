@@ -16,16 +16,20 @@
 			<path value="ImagingStudy"/>
 		</element>
 		<element id="ImagingStudy.identifier">
+			<!--
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
 				<valueString value="dicom="/>
 			</extension>
+		-->
 			<path value="ImagingStudy.identifier"/>
 			<mustSupport value="true"/>
 		</element>
 		<element id="ImagingStudy.subject">
+			<!--
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
 				<valueString value="dicom=http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.2.2.html"/>
 			</extension>
+		-->
 			<path value="ImagingStudy.subject"/>
 			<type>
 				<code value="Reference"/>
@@ -39,9 +43,11 @@
 			<mustSupport value="true"/>
 		</element>
 		<element id="ImagingStudy.started">
+			<!--
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
 				<valueString value="dicom=http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.2.html#sect_C.7.2.1"/>
 			</extension>
+		-->
 			<path value="ImagingStudy.started"/>
 			<mustSupport value="true"/>
 		</element>
@@ -91,6 +97,7 @@
 		<element id="ImagingStudy.series.instance.sopClass">
 			<path value="ImagingStudy.series.instance.sopClass"/>
 			<mustSupport value="true"/>
+			<!--
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
 					<valueString value="DicomStandardSOPClasses"/>
@@ -98,6 +105,7 @@
 				<strength value="extensible"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/dicom-standard-SOP-classes"/>
 			</binding>
+		-->
 		</element>
 	</differential>
 </StructureDefinition>

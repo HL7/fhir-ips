@@ -20,11 +20,13 @@
 			<path value="Media"/>
 		</element>
 		<element id="Media.status">
+			<!--
 			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
 				<valueString value="default: final"/>
 			</extension>
+		-->
 			<path value="Media.status"/>
-			<definition value="The status of the result value. Only final observation are eligible to the international patient summary."/>
+			<definition value="The status of the result value. Only final observations are eligible to be included in the international patient summary."/>
 			<fixedCode value="completed"/>
 		</element>
 		<element id="Media.type">
