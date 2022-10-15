@@ -7,6 +7,10 @@
 <ul>{% include list-simple-bundles.xhtml %}</ul>
 
 
+### Composition
+
+<ul>{% include list-simple-compositions.xhtml %}</ul>
+
 ### Condition
 
 <ul>{% include list-simple-conditions.xhtml %}</ul>
