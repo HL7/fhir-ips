@@ -1,17 +1,17 @@
 ### Code Systems
 
 These code systems have been defined for this implementation guide:
-<ul>{% include list-simple-codesystems.xhtml %}</ul>
+<ul>{% include list-simple-name-codesystems.xhtml %}</ul>
 
 ### Value Sets
 
 These value sets have been defined for this implementation guide:
-<ul>{% include list-simple-valuesets.xhtml %}</ul>
+<ul>{% include list-simple-name-valuesets.xhtml %}</ul>
 
 ### Concept Maps
 
 These concept maps have been defined for this implementation guide:
-<ul>{% include list-simple-conceptmaps.xhtml %}</ul>
+<ul>{% include list-simple-name-conceptmaps.xhtml %}</ul>
 
 ### Note
 
