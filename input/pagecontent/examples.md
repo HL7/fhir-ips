@@ -48,6 +48,10 @@
 
 ### MedicationStatement
 
+<ul>{% include list-simple-name-medicationrequests.xhtml %}</ul>
+
+### MedicationStatement
+
 <ul>{% include list-simple-name-medicationstatements.xhtml %}</ul>
 
 ### Observation
