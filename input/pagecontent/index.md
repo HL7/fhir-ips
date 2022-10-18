@@ -53,10 +53,6 @@ This Implementation Guide has been balloted as STU with the intention to go norm
 
 {% include globals-table.xhtml %}
 
-### IP Statements
-
-{% include ip-statements.xhtml %}
-
 ### Authors and Contributors
 
 | Role  | Name | Organization | Contact |
