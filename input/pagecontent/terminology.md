@@ -15,7 +15,7 @@ These concept maps have been defined for this implementation guide:
 
 ### Note
 
-Many of the terminologies artifacts specified by this guide are also published in the [Art Decor IPS repository](https://art-decor.org/art-decor/decor-valuesets--hl7ips-).
+Many of the terminology artifacts specified by this guide are also published in the [Art Decor IPS repository](https://art-decor.org/art-decor/decor-valuesets--hl7ips-).
 
 ### IP Statements
 
