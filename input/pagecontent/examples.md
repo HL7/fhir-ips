@@ -46,7 +46,7 @@
 
 <ul>{% include list-simple-name-media.xhtml %}</ul>
 
-### MedicationStatement
+### MedicationRequest
 
 <ul>{% include list-simple-name-medicationrequests.xhtml %}</ul>
 
