@@ -2,7 +2,7 @@
 	<id value="loinc-pregnancy-status-to-snomed-ct-uv-ips"/>
 	<url value="http://hl7.org/fhir/uv/ips/ConceptMap/loinc-pregnancy-status-to-snomed-ct-uv-ips"/>
 	<version value="4.0.1"/>
-	<name value="ConceptMapLoincPregnancyStatusToSnomedCt"/>
+	<name value="PregnancyStatusValueSetMappingsLoincToSnomedCt"/>
 	<title value="Pregnancy Status Value Set Mappings - LOINC to SNOMED CT"/>
 	<status value="draft"/>
 	<experimental value="false"/>
@@ -23,8 +23,6 @@
 			<value value="info@hl7.org"/>
 		</telecom>
 	</contact>
-	<sourceUri value="http://hl7.org/fhir/uv/ips/ValueSet/pregnancy-status-uv-ips"/>
-	<targetUri value="urn:oid:2.16.840.1.113883.11.20.9.85"/>
 	<group>
 		<source value="http://loinc.org"/>
 		<target value="http://snomed.info/sct"/>

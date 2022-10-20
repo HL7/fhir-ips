@@ -4,7 +4,7 @@
 	<id value="Observation-alcoholuse-uv-ips"/>
 	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips"/>
 	<name value="ObservationAlcoholUseUvIps"/>
-	<title value="Observation (SH: alcohol use)"/>
+	<title value="Observation - SH: alcohol use"/>
 	<status value="active"/>
 	<description value="This profile constrains the Observation resource to represent alcohol use assessment in a patient summary."/>
 	<kind value="resource"/>
@@ -15,12 +15,6 @@
 	<differential>
 		<element id="Observation">
 			<path value="Observation"/>
-		</element>
-		<element id="Observation.status">
-			<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint">
-				<valueString value="default: final"/>
-			</extension>
-			<path value="Observation.status"/>
 		</element>
 		<element id="Observation.code">
 			<path value="Observation.code"/>

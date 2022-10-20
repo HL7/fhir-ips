@@ -27,9 +27,9 @@
 			<constraint>
 				<key value="ips-pat-1"/>
 				<severity value="error"/>
-				<human value="Patient.name.given or Patient.name.family or both SHALL be present"/>
-				<expression value="family.exists() or given.exists()"/>
-				<xpath value="f:given or f:family"/>
+				<human value="Patient.name.given, Patient.name.family or Patient.name.text SHALL be present"/>
+				<expression value="family.exists() or given.exists() or text.exists()"/>
+				<xpath value="f:given or f:family or f:text"/>
 			</constraint>
 			<mustSupport value="true"/>
 		</element>
@@ -79,13 +79,6 @@
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-			<binding>
-				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="ContactRelationship"/>
-				</extension>
-				<strength value="required"/>
-				<valueSet value="http://terminology.hl7.org/ValueSet/v3-PersonalRelationshipRoleType"/>
-			</binding>
 		</element>
 		<element id="Patient.generalPractitioner">
 			<path value="Patient.generalPractitioner"/>

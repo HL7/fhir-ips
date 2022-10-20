@@ -41,6 +41,17 @@ Further details on the IPS project relationships with other projects and guideli
 
 This Implementation Guide has been balloted as STU with the intention to go normative in a subsequent ballot cycle.
 
+### Dependencies
+
+{% include dependency-table.xhtml %}
+
+### Cross Version Analysis
+
+{% include cross-version-analysis.xhtml %}
+
+### Global Profiles
+
+{% include globals-table.xhtml %}
 
 ### Authors and Contributors
 
@@ -56,5 +67,3 @@ This Implementation Guide has been balloted as STU with the intention to go norm
 | **Contributor** | George Dixon | Allscripts LLC | george.dixon@allscripts.com |
 | **Contributor** | Kenneth Sinn  | Ontario Health Digital Services | ken.sinn@ontariohealth.ca |
 | **Contributor** | John D'Amore | More Informatics | johnd@moreinformatics.com |
-
-
