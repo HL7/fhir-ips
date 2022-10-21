@@ -5,7 +5,7 @@
   <name value="PractitionerRoleUvIps"/>
   <title value="PractitionerRole (IPS)"/>
   <status value="active"/>
-  <description value="This profile constrains the PractitionerRole resource to represent a practitioner acting as observer for observattion results for a specified organization."/>
+  <description value="This profile constrains the PractitionerRole resource to represent a practitioner acting as observer for observation results for a specified organization."/>
   <fhirVersion value="4.0.1"/>
   <kind value="resource"/>
   <abstract value="false"/>
@@ -30,31 +30,17 @@
     </element>
 		<element id="PractitionerRole.code">
 			<path value="PractitionerRole.code"/>
-			<slicing>
-				<discriminator>
-					<type value="pattern"/>
-					<path value="$this"/>
-				</discriminator>
-				<description value="Discriminated by the bound value set"/>
-				<rules value="open"/>
-			</slicing>
 			<definition value="Roles which this practitioner is authorized to perform for the organization."/>
 			<type>
 				<code value="CodeableConcept"/>
 				<profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/CodeableConcept-uv-ips"/>
 			</type>
-		</element>
-		<element id="PractitionerRole.code:healthcareProfessionalRoles">
-			<path value="PractitionerRole.code"/>
-			<sliceName value="healthcareProfessionalRoles"/>
-			<short value="Healthcare professional role codes from International Standard Classification of Occupations (ISCO)"/>
-			<definition value="Healthcare professional role codes from International Standard Classification of Occupations (ISCO)."/>
 			<binding>
 				<extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName">
-					<valueString value="healthcareProfessionalRoles"/>
+					<valueString value="HealthcareProfessionalRoles"/>
 				</extension>
-				<strength value="required"/>
-				<description value="healthcare professional roles"/>
+				<strength value="preferred"/>
+				<description value="Healthcare professional role codes from International Standard Classification of Occupations (ISCO)."/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/healthcare-professional-roles-uv-ips"/>
 			</binding>
 		</element>
