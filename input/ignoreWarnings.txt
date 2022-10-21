@@ -1,1 +1,20 @@
 == Suppressed Messages ==
+# The following code systems are localized (European) and are not supported by the build terminology service.
+INFORMATION: Bundle/IPS-examples-Bundle-01: Bundle.entry[7].resource.code.coding[1]: Code System URI 'urn:oid:2.16.840.1.113883.2.4.4.1' is unknown so the code cannot be validated
+INFORMATION: Bundle/IPS-examples-Bundle-with-immunization: Bundle.entry[7].resource.code.coding[1]: Code System URI 'urn:oid:2.16.840.1.113883.2.4.4.1' is unknown so the code cannot be validated
+INFORMATION: Bundle/bundle-minimal: Bundle.entry[6].resource.code.coding[1]: Code System URI 'urn:oid:2.16.840.1.113883.2.4.4.1' is unknown so the code cannot be validated
+INFORMATION: Bundle/IPS-examples-Bundle-01: Bundle.entry[5].resource.entry[7].resource.ofType(Medication).code.coding[1]: Code System URI 'urn:oid:2.16.840.1.113883.2.4.4.1' is unknown so the code cannot be validated
+INFORMATION: Bundle/IPS-examples-Bundle-with-immunization: Bundle.entry[5].resource.entry[7].resource.ofType(Medication).code.coding[1]: Code System URI 'urn:oid:2.16.840.1.113883.2.4.4.1' is unknown so the code cannot be validated
+INFORMATION: Bundle/bundle-minimal: Bundle.entry[5].resource.entry[6].resource.ofType(Medication).code.coding[1]: Code System URI 'urn:oid:2.16.840.1.113883.2.4.4.1' is unknown so the code cannot be validated
+
+INFORMATION: Bundle/IPS-examples-Bundle-01: Bundle.entry[7].resource.code.coding[2]: Code System URI 'urn:oid:2.16.840.1.113883.2.4.4.7' is unknown so the code cannot be validated
+INFORMATION: Bundle/IPS-examples-Bundle-with-immunization: Bundle.entry[7].resource.code.coding[2]: Code System URI 'urn:oid:2.16.840.1.113883.2.4.4.7' is unknown so the code cannot be validated
+INFORMATION: Bundle/bundle-minimal: Bundle.entry[6].resource.code.coding[2]: Code System URI 'urn:oid:2.16.840.1.113883.2.4.4.7' is unknown so the code cannot be validated
+INFORMATION: Bundle/IPS-examples-Bundle-01: Bundle.entry[5].resource.entry[7].resource.ofType(Medication).code.coding[2]: Code System URI 'urn:oid:2.16.840.1.113883.2.4.4.7' is unknown so the code cannot be validated
+INFORMATION: Bundle/IPS-examples-Bundle-with-immunization: Bundle.entry[5].resource.entry[7].resource.ofType(Medication).code.coding[2]: Code System URI 'urn:oid:2.16.840.1.113883.2.4.4.7' is unknown so the code cannot be validated
+INFORMATION: Bundle/bundle-minimal: Bundle.entry[5].resource.entry[6].resource.ofType(Medication).code.coding[2]: Code System URI 'urn:oid:2.16.840.1.113883.2.4.4.7' is unknown so the code cannot be validated
+
+INFORMATION: Immunization/75680: Immunization.vaccineCode.coding[2]: Code System URI 'urn:oid:1.3.182.4.11.22' is unknown so the code cannot be validated
+
+# This ICD-11 MMS code system url is the correct one as specified by TSMG/HTA.  A request is being made for this to be added to THO, but that addition is still pending.
+INFORMATION: Condition/eumfh-39-07-1: Condition.code.coding[1]: Code System URI 'http://id.who.int/icd/release/11/mms' is unknown so the code cannot be validated
