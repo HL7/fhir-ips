@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
 	<id value="ig-uv-ips"/>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+		<valueCode value="trial-use"/>
+	</extension>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+		<valueInteger value="3"/>
+	</extension>
 	<url value="http://hl7.org/fhir/uv/ips/ImplementationGuide/ig-uv-ips"/>
 	<version value="1.1.0"/>
 	<name value="InternationalPatientSummaryIG"/>
