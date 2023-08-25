@@ -190,9 +190,7 @@
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section.emptyReason">
-			<path value="Composition.section.emptyReason"/>
-			<max value="0"/>
-			<mustSupport value="false"/>
+			<path value="Composition.section.emptyReason"/>		
 		</element>
 		<element id="Composition.section.section">
 			<path value="Composition.section.section"/>
@@ -209,6 +207,16 @@
 			<definition value="The medication summary section contains a description of the patient's medications relevant for the scope of the patient summary.&#xD;&#xA;The actual content could depend on the jurisdiction, it could report:&#xD;&#xA;- the currently active medications; &#xD;&#xA;- the current and past medications considered relevant by the authoring GP; &#xD;&#xA;- the patient prescriptions or dispensations automatically extracted by a regional or a national EHR.&#xD;&#xA;&#xD;&#xA;In those cases medications are documented in the Patient Summary as medication statements or medication requests.&#xD;&#xA;This section requires either an entry indicating the subject is known not to be on any relevant medication; either an entry indicating that no information is available about medications; or entries summarizing the subject's relevant medications."/>
 			<min value="1"/>
 			<max value="1"/>
+	        <constraint>
+	        <key value="ips-comp-1"/>
+	        <severity value="error"/>
+	        <human
+	               value="Either section.entry or emptyReason are present"/>
+	        <expression
+	                    value="(entry.reference.exists() or emptyReason.exists())"/>
+	        <xpath
+	               value="(/f:entry.reference and not /f:emptyReason) or (not(/f:emptyReason) and /f:entry.reference)"/>
+	        </constraint>				
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionMedications.title">
@@ -238,7 +246,6 @@
 			</slicing>
 			<short value="Medications relevant for the scope of the patient summary"/>
 			<definition value="This list the medications relevant for the scope of the patient summary or it is used to indicate that the subject is known not to be on any relevant medication; either that no information is available about medications."/>
-			<min value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationStatement"/>
@@ -246,7 +253,7 @@
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/MedicationDispense"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
-			</type>
+			</type>		
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionMedications.entry:medicationStatement">
@@ -275,6 +282,16 @@
 			<definition value="This section documents the relevant allergies or intolerances (conditions) for that patient, describing the kind of reaction (e.g. rash, anaphylaxis,..); preferably the agents that cause it; and optionally the criticality and the certainty of the allergy.&#xD;&#xA;At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.&#xD;&#xA;If no information about allergies is available, or if no allergies are known this should be clearly documented in the section."/>
 			<min value="1"/>
 			<max value="1"/>
+	        <constraint>
+	        <key value="ips-comp-1"/>
+	        <severity value="error"/>
+	        <human
+	               value="Either section.entry or emptyReason are present"/>
+	        <expression
+	                    value="(entry.reference.exists() or emptyReason.exists())"/>
+	        <xpath
+	               value="(/f:entry.reference and not /f:emptyReason) or (not(/f:emptyReason) and /f:entry.reference)"/>
+	        </constraint>				
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionAllergies.title">
@@ -302,18 +319,16 @@
 			</slicing>
 			<short value="Relevant allergies or intolerances (conditions) for that patient."/>
 			<definition value="It lists the relevant allergies or intolerances (conditions) for that patient, describing the kind of reaction (e.g. rash, anaphylaxis,..); preferably the agents that cause it; and optionally the criticality and the certainty of the allergy.&#xD;&#xA;At a minimum, it should list currently active and any relevant historical allergies and adverse reactions.&#xD;&#xA; This entry shall be used to document that no information about allergies is available, or that no allergies are known ."/>
-			<min value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
-			</type>
+			</type>					
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionAllergies.entry:allergyOrIntolerance">
 			<path value="Composition.section.entry"/>
 			<sliceName value="allergyOrIntolerance"/>
-			<min value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips"/>
@@ -330,6 +345,16 @@
 			<definition value="The IPS problem section lists and describes clinical problems or conditions currently being monitored for the patient."/>
 			<min value="1"/>
 			<max value="1"/>
+	        <constraint>
+	        <key value="ips-comp-1"/>
+	        <severity value="error"/>
+	        <human
+	               value="Either section.entry or emptyReason are present"/>
+	        <expression
+	                    value="(entry.reference.exists() or emptyReason.exists())"/>
+	        <xpath
+	               value="(/f:entry.reference and not /f:emptyReason) or (not(/f:emptyReason) and /f:entry.reference)"/>
+	        </constraint>				
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionProblems.title">
@@ -357,18 +382,16 @@
 			</slicing>
 			<short value="Clinical problems or conditions currently being monitored for the patient."/>
 			<definition value="It lists and describes clinical problems or conditions currently being monitored for the patient.  This entry shall be used to document that no information about problems is available, or that no relevant problems are known."/>
-			<min value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference"/>
-			</type>
+			</type>	
 			<mustSupport value="true"/>
 		</element>
 		<element id="Composition.section:sectionProblems.entry:problem">
 			<path value="Composition.section.entry"/>
 			<sliceName value="problem"/>
-			<min value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"/>
