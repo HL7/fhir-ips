@@ -69,8 +69,8 @@
         },
         "short": "Entry resource in the patient summary bundle",
         "definition": "An entry resource included in the patient summary document bundle resource.",
-        "comment": "Must contain the IPS Composition as the first entry (only a single Composition resource instance may be included).  Additional constraints are specified in the IPS Composition profile.",
-        "min": 1,
+        "comment": "Must contain the IPS Composition as the first entry (only a single Composition resource instance may be included) and a Patient resource.  Additional constraints are specified in the IPS Composition profile.",
+        "min": 2,
         "mustSupport": true
       },
       {
