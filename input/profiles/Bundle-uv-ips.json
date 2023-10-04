@@ -1,6 +1,12 @@
 {
   "resourceType": "StructureDefinition",
   "id": "Bundle-uv-ips",
+  "extension": [
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode" : "pc"
+    }
+  ],
   "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips",
   "name": "BundleUvIps",
   "title": "Bundle - IPS",

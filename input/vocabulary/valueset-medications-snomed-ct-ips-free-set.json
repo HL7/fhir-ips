@@ -1,6 +1,12 @@
 {
   "resourceType": "ValueSet",
   "id": "medications-snomed-ct-ips-free-set",
+  "extension": [
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode" : "pc"
+    }
+  ],
   "url": "http://hl7.org/fhir/uv/ips/ValueSet/medications-snomed-ct-ips-free-set",
   "version": "1.0.0",
   "name": "MedicationsSnomedCtIpsFreeSet",

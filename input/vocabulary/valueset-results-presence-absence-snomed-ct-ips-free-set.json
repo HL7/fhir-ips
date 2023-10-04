@@ -1,6 +1,12 @@
 {
     "resourceType": "ValueSet",
     "id": "results-presence-absence-snomed-ct-ips-free-set",
+    "extension": [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+        "valueCode" : "pc"
+      }
+    ],
     "meta": {
         "profile": [
             "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
