@@ -28,8 +28,8 @@
 			<constraint>
 				<key value="hasComponentifValueStringEmpty"/>
 				<severity value="error"/>
-				<human value="component is required if valueString is empty"/>
-				<expression value="(component.exists() and valueString.empty()) or valueString.exists()"/>
+				<human value="component is required if value is empty"/>
+				<expression value="(component.exists() and value.empty()) or value.exists()"/>
 			</constraint>
 		</element>
 		<element id="Observation.partOf">
