@@ -25,12 +25,6 @@
 				<human value="component and hasMember are mutually exclusive"/>
 				<expression value="hasMember.empty() or component.empty()"/>
 			</constraint>
-			<constraint>
-				<key value="hasComponentifValueStringEmpty"/>
-				<severity value="error"/>
-				<human value="component is required if value is empty"/>
-				<expression value="(component.exists() and value.empty()) or value.exists()"/>
-			</constraint>
 		</element>
 		<element id="Observation.partOf">
 			<path value="Observation.partOf"/>
