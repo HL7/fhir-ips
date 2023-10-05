@@ -2,6 +2,9 @@
 
 <StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<id value="Media-observation-uv-ips"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="pc" />
+  </extension>
 	<url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Media-observation-uv-ips"/>
 	<name value="MediaObservationUvIps"/>
 	<title value="Media observation (Results: laboratory, media)"/>
