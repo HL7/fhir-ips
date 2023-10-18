@@ -1,19 +1,3 @@
-### Representing "known absent" and "not known"
-
-In line with the approach followed for the IPS CDA implementation Guide, we enforce by design that for required sections the expressions of "known absent" and "not known" are explicitly asserted in the resource referred to in the entries and not by using the emptyReason attribute in the section.
-
-This rule is applied for the following required sections:
-* Allergies and Intolerances
-* Medication Summary
-* Problems
-
-The following sections are recommended (not required), and for these sections in the case of “unknown” or “no information” this may either be asserted explicitly (as above) or the section itself may be omitted:
-* History of Procedures
-* Medical devices
-* Immunizations
-
-All of the other sections are expected to be omitted in the case of absence of information.
-
 ### Profiling Approach
 
 By design, the IPS dataset is a "minimal and non-exhaustive patient summary dataset, specialty-agnostic, condition-independent, but readily usable by clinicians for the cross-border unscheduled care of a patient".
@@ -44,14 +28,19 @@ Implementers conforming to an IPS document in the IPS Implementation Guide:
 * SHALL be capable of populating profiles for allergy, medication and problem information in an IPS document
 
 #### Missing Data
+
 {:.no_toc}
 
-##### Optional mustSupport data elements (cardinality of 0..1 or 0..*)
+##### Sections without Structured Resources
+
+There are currently 14 sections defined in the IPS. All sections have 0..* references in the [IPS Composition.section.entry](./StructureDefinition-Composition-uv-ips.html) element of the IPS, meaning that a section may be included without including a reference to a structured resource. For required sections (allergies, problems and medications), Composition.section.emptyReason must be specified in these circumstances. For all section, Composition.section.text must be populated to provide a human readable presentation of the information from zero, one or many resources referenced in the section. See [Narrative and Language Translation](./design.html#narrative-and-language-translation) for more on this design decision.   
+
+##### Optional MustSupport Data Elements (cardinality of 0..1 or 0..*)
 
 <p>If an IPS creator (a system generating the IPS contents) does not have data to be included in the IPS, the data element is omitted.</p>
 <p>Note: an IPS creator may have no data to be included in the IPS either because there are no data, or because data available are not pertinent with the scope of the IPS.</p>
 
-##### Required mustSupport data elements (cardinality of 1..1 or 1..*)
+##### Required MustSupport Data Elements (cardinality of 1..1 or 1..*)
 <p>If an IPS creator does not have data to be included in the IPS, the reason for the absence has to be specified as follows:</p>
 
 1.  For *non-coded* data elements, use the [Data Absent Reason Extension](http://hl7.org/fhir/R4/extension-data-absent-reason.html) in the data type.
