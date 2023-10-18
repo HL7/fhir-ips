@@ -19,7 +19,7 @@ Having this clear is important for correctly understanding the published profile
 ### Must Support
 
 Implementers conforming to a particular profile in the IPS Implementation Guide:
-* SHALL be capable of producing values for the mustSupport elements in the profile (see [3.4.1](#missing-data) for handling of missing data)  
+* SHALL be capable of producing values for the mustSupport elements in the profile (see [3.4](#missing-data) for handling of missing data)  
 * SHALL be capable of processing resource instances containing mustSupport data elements, including elements with missing data, without generating an error or causing the application to fail.
 * SHOULD be capable of displaying mustSupport data elements for human use, or processing (e.g. storing) them for other purposes.
 
@@ -27,20 +27,20 @@ Implementers conforming to an IPS document in the IPS Implementation Guide:
 * SHALL be capable of supporting profiles under sections that are marked mustSupport in the IPS Composition profile
 * SHALL be capable of populating profiles for allergy, medication and problem information in an IPS document
 
-#### Missing Data
+### Empty Sections & Missing Data
 
 {:.no_toc}
 
-##### Sections without Structured Resources
+#### Sections without Structured Resources
 
-There are currently 14 sections defined in the IPS. All sections have 0..* references in the [IPS Composition.section.entry](./StructureDefinition-Composition-uv-ips.html) element of the IPS, meaning that a section may be included without including a reference to a structured resource. For required sections (allergies, problems and medications), Composition.section.emptyReason must be specified in these circumstances. For all section, Composition.section.text must be populated to provide a human readable presentation of the information from zero, one or many resources referenced in the section. See [Narrative and Language Translation](./design.html#narrative-and-language-translation) for more on this design decision.   
+There are currently 14 sections defined in the IPS. All sections have 0..* references in the [IPS Composition.section.entry](./StructureDefinition-Composition-uv-ips.html) element of the IPS, meaning that a section may be included without a reference to a structured resource. For required sections (allergies, problems and medications), Composition.section.emptyReason must be included in this circumstance. For non-required sections, document creators may choose to omit sections when no data is available. For all sections in an IPS doucment, Composition.section.text must be populated to provide a human readable presentation of the information in the section. See [Narrative and Language Translation](#narrative-and-language-translation) for more on this design decision.
 
-##### Optional MustSupport Data Elements (cardinality of 0..1 or 0..*)
+#### Optional MustSupport Data Elements (cardinality of 0..1 or 0..*)
 
 <p>If an IPS creator (a system generating the IPS contents) does not have data to be included in the IPS, the data element is omitted.</p>
 <p>Note: an IPS creator may have no data to be included in the IPS either because there are no data, or because data available are not pertinent with the scope of the IPS.</p>
 
-##### Required MustSupport Data Elements (cardinality of 1..1 or 1..*)
+#### Required MustSupport Data Elements (cardinality of 1..1 or 1..*)
 <p>If an IPS creator does not have data to be included in the IPS, the reason for the absence has to be specified as follows:</p>
 
 1.  For *non-coded* data elements, use the [Data Absent Reason Extension](http://hl7.org/fhir/R4/extension-data-absent-reason.html) in the data type.
