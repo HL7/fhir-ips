@@ -33,7 +33,11 @@ Implementers conforming to an IPS document in the IPS Implementation Guide:
 
 #### Sections without Structured Resources
 
-There are currently 14 sections defined in the IPS. All sections have 0..* references in the [IPS Composition.section.entry](./StructureDefinition-Composition-uv-ips.html) element of the IPS, meaning that a section may be included without a reference to a structured resource. For required sections (allergies, problems and medications), Composition.section.emptyReason must be included in this circumstance. For non-required sections, document creators may choose to omit sections when no data is available. For all sections of IPS documents, Composition.section.text must be populated to provide a human readable presentation of the information in the section. See [Narrative and Language Translation](#narrative-and-language-translation) for more on this design decision.
+There are currently 14 sections defined in the IPS. All sections have 0..* references in the [IPS Composition.section.entry](./StructureDefinition-Composition-uv-ips.html) element of the IPS, meaning that a section may be included without a reference to a structured resource. For required sections (allergies, problems and medications), Composition.section.emptyReason must be included in this circumstance. For non-required sections, document creators may choose to omit sections when no data is available. For all sections of IPS documents, Composition.section.text still must be populated to provide a human readable presentation of the information in the section. See [Narrative and Language Translation](#narrative-and-language-translation) for more on this design decision.
+
+#### Sections with 'Known Absent' Resources
+
+If a system would like to include a resource asserting the known absence of data rather than using the [IPS Composition.section.emptyReason](./StructureDefinition-Composition-uv-ips.html), this is permitted within IPS. To do so, it is recommended to use patterns established within FHIR generally to assert known absence. For example with an AllergyIntolerance, a [SNOMED code may be used to represent no known allergy](https://hl7.org/fhir/R4/allergyintolerance-nka.json.html). Prior versions of the IPS implementation guide had included a code system for no known data circumstances, although this terminology has been removed from the guide and is no longer recommended for use.  
 
 #### Optional MustSupport Data Elements (cardinality of 0..1 or 0..*)
 
