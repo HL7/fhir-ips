@@ -33,7 +33,7 @@ Implementers conforming to an IPS document in the IPS Implementation Guide:
 
 #### Sections without Structured Resources
 
-There are currently 14 sections defined in the IPS. All sections have 0..* references in the [IPS Composition.section.entry](./StructureDefinition-Composition-uv-ips.html) element of the IPS, meaning that a section may be included without a reference to a structured resource. For required sections (allergies, problems and medications), Composition.section.emptyReason must be included in this circumstance. For non-required sections, document creators may choose to omit sections when no data is available. For all sections of IPS documents, Composition.section.text still must be populated to provide a human readable presentation of the information in the section. See [Narrative and Language Translation](#narrative-and-language-translation) for more on this design decision.
+There are currently 14 sections defined in the IPS. All sections have 0..* references in the [IPS Composition.section.entry](./StructureDefinition-Composition-uv-ips.html) element of the IPS, meaning that a section may be included without a reference to a structured resource. For required sections (allergies, problems and medications), Composition.section.emptyReason must be included in this circumstance. For non-required sections, document creators may choose to omit sections when no data is available. For all sections populated of an IPS document, Composition.section.text must still be populated to provide a human readable presentation of the information in the section. See [Narrative and Language Translation](#narrative-and-language-translation) for more on this design decision.
 
 #### Sections with 'Known Absent' Resources
 
