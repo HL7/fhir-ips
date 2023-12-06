@@ -437,7 +437,6 @@
 			</slicing>
 			<short value="Patient past procedures pertinent to the scope of this document."/>
 			<definition value="It lists the patient past procedures that are pertinent to the scope of this document.&#xD;&#xA;Procedures may refer for example to:&#xD;&#xA;1. Invasive Diagnostic procedure:e.g. Cardiac catheterization; (the results of these procedure are documented in the results section)&#xD;&#xA;2. Therapeutic procedure: e.g. dialysis;&#xD;&#xA;3. Surgical procedure: e.g. appendectomy. This entry shall be used to document that no information about past procedures is available, or that no relevant past procedures are known."/>
-			<min value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure"/>
@@ -448,7 +447,6 @@
 		<element id="Composition.section:sectionProceduresHx.entry:procedure">
 			<path value="Composition.section.entry"/>
 			<sliceName value="procedure"/>
-			<min value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"/>
@@ -491,7 +489,6 @@
 			</slicing>
 			<short value="Patient's immunization status and pertinent history."/>
 			<definition value="It defines the patient's current immunization status and pertinent immunization history.&#xD;&#xA;The primary use case for the Immunization Section is to enable communication of a patient's immunization status.&#xD;&#xA;It may contain the entire immunization history that is relevant to the period of time being summarized. This entry shall be used to document that no information about immunizations is available, or that no immunizations are known."/>
-			<min value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Immunization"/>
@@ -502,7 +499,6 @@
 		<element id="Composition.section:sectionImmunizations.entry:immunization">
 			<path value="Composition.section.entry"/>
 			<sliceName value="immunization"/>
-			<min value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"/>
@@ -545,7 +541,6 @@
 			</slicing>
 			<short value="Patient history of medical device use."/>
 			<definition value="It describes the patient history of medical device use. This entry shall be used to document that no information about medical device use is available, or that no relevant medical device use is known."/>
-			<min value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceUseStatement"/>
@@ -556,7 +551,6 @@
 		<element id="Composition.section:sectionMedicalDevices.entry:deviceStatement">
 			<path value="Composition.section.entry"/>
 			<sliceName value="deviceStatement"/>
-			<min value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips"/>
@@ -603,7 +597,6 @@
 			</slicing>
 			<short value="Relevant observation results collected on the patient or produced on in-vitro biologic specimens collected from the patient."/>
 			<definition value="Relevant observation results collected on the patient or produced on in-vitro biologic specimens collected from the patient. Some of these results may be laboratory results, others may be anatomic pathology results, others, radiology results, and others, clinical results."/>
-			<min value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
@@ -713,7 +706,6 @@
 			</slicing>
 			<short value="Conditions the patient suffered in the past."/>
 			<definition value="It contains a description of the conditions the patient suffered in the past."/>
-			<min value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
@@ -723,7 +715,6 @@
 		<element id="Composition.section:sectionPastIllnessHx.entry:pastProblem">
 			<path value="Composition.section.entry"/>
 			<sliceName value="pastProblem"/>
-			<min value="1"/>
 			<type>
 				<code value="Reference"/>
 				<targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"/>
