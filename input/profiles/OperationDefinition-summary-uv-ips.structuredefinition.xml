@@ -30,7 +30,8 @@
         <min value="0"/>
         <max value="1"/>
         <documentation value="When the logical id of the patient is not used, servers MAY choose to support patient selection based on provided identifier" />
-        <type value="Identifier"/>
+        <type value="string"/>
+        <searchType value="token"/>
     </parameter>
     <parameter>
         <name value="profile"/>
