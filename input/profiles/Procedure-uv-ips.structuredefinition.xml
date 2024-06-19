@@ -43,17 +43,6 @@
             <valueMarkdown value="Codes for procedures in SNOMED IPS Free Set"/>
           </extension>
         </extension>
-				<extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
-          <extension url="purpose">
-            <valueCode value="candidate"/>
-          </extension>
-          <extension url="valueSet">
-            <valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-procedures-uv-ips"/>
-          </extension>
-          <extension url="documentation">
-            <valueMarkdown value="Codes for absent or unknown procedures"/>
-          </extension>
-        </extension>
 				<strength value="preferred"/>
         <description value="SNOMED CT procedure code set or a code for absent/unknown procedure"/>
         <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/procedures-snomed-absent-unknown-uv-ips"/>

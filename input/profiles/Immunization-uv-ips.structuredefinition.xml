@@ -66,20 +66,6 @@
 						<valueString value="For when WHO ATC code system is preferred"/>
 					</extension>
 				</extension>
-				<extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
-					<extension url="purpose">
-						<valueCode value="candidate"/>
-					</extension>
-					<extension url="valueSet">
-						<valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-immunizations-uv-ips"/>
-					</extension>
-					<extension url="documentation">
-						<valueMarkdown value="Additional conformance binding for &quot;known absent&quot; and &quot;not known&quot; immunization data.  This value set binding is intended to be used as part of a combined value set along with one of the other &quot;additional binding&quot; value sets."/>
-					</extension>
-					<extension url="shortDoco">
-						<valueString value="&quot;known absent&quot; and &quot;not known&quot;, for use with other value sets"/>
-					</extension>
-				</extension>
 				<strength value="preferred"/>
 				<description value="The type of vaccine for particular disease or diseases against which the patient has been immunised, or a code for absent/unknown immunization."/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips"/>
