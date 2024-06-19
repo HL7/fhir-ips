@@ -10,7 +10,7 @@
 	<status value="active"/>
 	<experimental value="false"/>
 	<publisher value="HL7 International"/>
-	<description value="Absence of Information Mappings - IPS to SNOMED CT"/>
+	<description value="The codeSystem for absent and unknown has been removed from the IPS Implementation Guide. Cuurent guidance is to use SNOMED codes (mappings shown here) when positive assertion of missing information is required. When positive assertion is not required, the recommendation is to populate emptyReason at the Composition.section and include no entry."/>
 	<contact>
 		<name value="HL7 International"/>
 		<telecom>
@@ -26,10 +26,10 @@
 			<value value="info@hl7.org"/>
 		</telecom>
 	</contact>
-	<sourceUri value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
+	<sourceUri value="https://hl7.org/fhir/uv/ips/STU1.1/CodeSystem-absent-unknown-uv-ips.html"/>
 	<targetUri value="http://snomed.info/sct"/>
 	<group>
-		<source value="http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips"/>
+		<source value="https://hl7.org/fhir/uv/ips/STU1.1/CodeSystem-absent-unknown-uv-ips.html"/>
 		<target value="http://snomed.info/sct"/>
 		<element>
 			<code value="no-allergy-info"/>

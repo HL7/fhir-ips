@@ -84,17 +84,6 @@
             <valueMarkdown value="Type of the substance/product, allergy or intolerance condition."/>
           </extension>
         </extension>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
-          <extension url="purpose">
-            <valueCode value="candidate"/>
-          </extension>
-          <extension url="valueSet">
-            <valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-allergies-uv-ips"/>
-          </extension>
-          <extension url="documentation">
-            <valueMarkdown value="Absent and unknown codes for allergy or intolerance."/>
-          </extension>
-        </extension>
         <strength value="preferred"/>
 				<description value="Type of the substance/product, allergy or intolerance condition or or a code for absent/unknown allergy."/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-uv-ips"/>

@@ -101,11 +101,16 @@
                             "status": "generated",
                             "div": "<div xmlns='http://www.w3.org/1999/xhtml' lang='en-NZ' xml:lang='en-NZ'>There is no information available regarding the subject's allergy conditions.</div>"
                         },
-                        "entry": [
-                            {
-                                "reference": "AllergyIntolerance/e198be1e-9861-46af-9d97-841ef9f7c707"
-                            }
-                        ]
+                        "emptyReason": {
+                            "coding": [
+                                {
+                                    "code": "unavailable",
+                                    "system": "http://terminology.hl7.org/CodeSystem/list-empty-reason",
+                                    "display": "Unavailable"
+                                }
+                            ],
+                            "text": "No information available"
+                        } 
                     },
                     {
                         "title": "Problem List",
@@ -122,11 +127,16 @@
                             "status": "generated",
                             "div": "<div xmlns='http://www.w3.org/1999/xhtml' lang='en-NZ' xml:lang='en-NZ'>There is no information available about the subject's health problems or disabilities.</div>"
                         },
-                        "entry": [
-                            {
-                                "reference": "Condition/da138a5d-633f-493f-9485-e5af1320db5b"
-                            }
-                        ]
+                        "emptyReason": {
+                            "coding": [
+                                {
+                                    "code": "unavailable",
+                                    "system": "http://terminology.hl7.org/CodeSystem/list-empty-reason",
+                                    "display": "Unavailable"
+                                }
+                            ],
+                            "text": "No information available"
+                        } 
                     },
                     {
                         "title": "Medication Summary",
@@ -143,11 +153,16 @@
                             "status": "generated",
                             "div": "<div xmlns='http://www.w3.org/1999/xhtml' lang='en-NZ' xml:lang='en-NZ'>There is no information available about the subject's medication use or administration.</div>"
                         },
-                        "entry": [
-                            {
-                                "reference": "MedicationStatement/ceb9a0d2-454c-4834-be55-2fa1eb2acd49"
-                            }
-                        ]
+                        "emptyReason": {
+                            "coding": [
+                                {
+                                    "code": "unavailable",
+                                    "system": "http://terminology.hl7.org/CodeSystem/list-empty-reason",
+                                    "display": "Unavailable"
+                                }
+                            ],
+                            "text": "No information available"
+                        } 
                     },
                     {
                         "title": "Immunizations",
@@ -403,88 +418,6 @@
                     }
                 ],
                 "name": "NorthCare Pukete Road"
-            }
-        },
-        {
-            "fullUrl": "https://terminz.azurewebsites.net/fhir/AllergyIntolerance/e198be1e-9861-46af-9d97-841ef9f7c707",
-            "resource": {
-                "resourceType": "AllergyIntolerance",
-                "id": "e198be1e-9861-46af-9d97-841ef9f7c707",
-                "clinicalStatus": {
-                    "coding": [
-                        {
-                            "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
-                            "code": "active"
-                        }
-                    ]
-                },
-                "code": {
-                    "coding": [
-                        {
-                            "system": "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
-                            "code": "no-allergy-info",
-                            "display": "No information about allergies"
-                        }
-                    ]
-                },
-                "patient": {
-                    "reference": "Patient/AAA1234"
-                }
-            }
-        },
-        {
-            "fullUrl": "https://terminz.azurewebsites.net/fhir/Condition/da138a5d-633f-493f-9485-e5af1320db5b",
-            "resource": {
-                "resourceType": "Condition",
-                "id": "da138a5d-633f-493f-9485-e5af1320db5b",
-                "clinicalStatus": {
-                    "coding": [
-                        {
-                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-                            "code": "active"
-                        }
-                    ]
-                },
-                "code": {
-                    "coding": [
-                        {
-                            "system": "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
-                            "code": "no-problem-info",
-                            "display": "No information about problems"
-                        }
-                    ]
-                },
-                "subject": {
-                    "reference": "Patient/AAA1234"
-                }
-            }
-        },
-        {
-            "fullUrl": "https://terminz.azurewebsites.net/fhir/MedicationStatement/ceb9a0d2-454c-4834-be55-2fa1eb2acd49",
-            "resource": {
-                "resourceType": "MedicationStatement",
-                "id": "ceb9a0d2-454c-4834-be55-2fa1eb2acd49",
-                "status": "unknown",
-                "medicationCodeableConcept": {
-                    "coding": [
-                        {
-                            "system": "http://hl7.org/fhir/uv/ips/CodeSystem/absent-unknown-uv-ips",
-                            "code": "no-medication-info",
-                            "display": "No information about medications"
-                        }
-                    ]
-                },
-                "subject": {
-                    "reference": "Patient/AAA1234"
-                },
-                "effectivePeriod": {
-                    "extension": [
-                        {
-                            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-                            "valueCode": "not-applicable"
-                        }
-                    ]
-                }
             }
         },
         {

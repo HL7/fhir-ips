@@ -44,17 +44,6 @@
             <valueMarkdown value="Codes for medical devices in SNOMED IPS Free Set"/>
           </extension>
         </extension>
-				<extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
-          <extension url="purpose">
-            <valueCode value="candidate"/>
-          </extension>
-          <extension url="valueSet">
-            <valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-devices-uv-ips"/>
-          </extension>
-          <extension url="documentation">
-            <valueMarkdown value="Codes for absent or unknown medical devices"/>
-          </extension>
-        </extension>
 				<strength value="preferred"/>
 				<description value="The type of device or a code for absent/unknown device"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-snomed-absent-unknown-uv-ips"/>

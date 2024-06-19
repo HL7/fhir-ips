@@ -56,17 +56,6 @@
             <valueMarkdown value="WHO ATC classification"/>
           </extension>
         </extension>
-				<extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
-          <extension url="purpose">
-            <valueCode value="candidate"/>
-          </extension>
-          <extension url="valueSet">
-            <valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips"/>
-          </extension>
-          <extension url="documentation">
-            <valueMarkdown value="Codes for absent or unknown medication"/>
-          </extension>
-        </extension>
         <strength value="preferred"/>
         <description value="SNOMED CT medications (Pharmaceutical / biologic product) or a code for absent/unknown medication"/>
         <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medication-snomed-absent-unknown-uv-ips"/>

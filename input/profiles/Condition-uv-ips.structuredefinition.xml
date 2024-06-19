@@ -110,17 +110,6 @@
 						<valueMarkdown value="Codes for a clinical problem in SNOMED IPS Free Set"/>
 					</extension>
 				</extension>
-				<extension url="http://hl7.org/fhir/tools/StructureDefinition/additional-binding">
-					<extension url="purpose">
-						<valueCode value="candidate"/>
-					</extension>
-					<extension url="valueSet">
-						<valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips"/>
-					</extension>
-					<extension url="documentation">
-						<valueMarkdown value="Codes for absent or unknown problems"/>
-					</extension>
-				</extension>
 				<strength value="preferred"/>
 				<description value="Code for a clinical problem that is selected from SNOMED CT or a code for absent/unknown problem"/>
 				<valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-absent-unknown-uv-ips"/>
