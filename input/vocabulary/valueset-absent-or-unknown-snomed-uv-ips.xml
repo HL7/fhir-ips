@@ -1,40 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-  <id value="absent-or-unknown-snomed-uv-ips"/>
-  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
-    <valueCode value="pc" />
-  </extension>
-  <meta>
-    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
-  </meta>
-  <url value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-snomed-uv-ips"/>
-  <name value="AbsentOrUnknownSNOMEDUvIps"/>
-  <title value="Absent or Unknown SNOMED - IPS"/>
-  <status value="active"/>
-  <experimental value="false"/>
-  <publisher value="HL7 International"/>
-  <description value="SNOMED codes recommended for use in resources to express absent or unknown"/>
-  <immutable value="false"/>
-  <copyright value="Produced by HL7 under the terms of HL7® Governance and Operations Manual relating to Intellectual Property (Section 16), specifically its copyright, trademark and patent provisions. This document is licensed under Creative Commons 'No Rights Reserved' (CC0)."/>
-  <compose>
-    <include>
-      <system value="http://snomed.info/sct"/>
-      <concept>
-				<code value="261665006"/>
-				<display value="Unknown (qualifier value)"/>
-      </concept>
-      <concept>
-				<code value="410516002"/>
-				<display value="Known absent (qualifier value)"/>
-      </concept>
-      <concept>
-				<code value="410590009"/>
-				<display value="Known possible (qualifier value)"/>
-      </concept>
-      <concept>
-				<code value="36692007"/>
-				<display value="Known present (qualifier value)"/>
-      </concept>
-    </include>
-  </compose>
+	<id value="absent-or-unknown-snomed-uv-ips"/>
+	<extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+		<valueCode value="pc"/>
+	</extension>
+	<meta>
+		<profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+	</meta>
+	<url value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-snomed-uv-ips"/>
+	<name value="AbsentOrUnknownSNOMEDUvIps"/>
+	<title value="Absent or Unknown SNOMED - IPS"/>
+	<status value="active"/>
+	<experimental value="false"/>
+	<publisher value="HL7 International"/>
+	<description value="SNOMED codes recommended for use in resources to express absent or unknown"/>
+	<immutable value="false"/>
+	<copyright value="Produced by HL7 under the terms of HL7® Governance and Operations Manual relating to Intellectual Property (Section 16), specifically its copyright, trademark and patent provisions. This document is licensed under Creative Commons 'No Rights Reserved' (CC0)."/>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<concept>
+				<code value="716186003"/>
+				<display value="No known allergy (situation)"/>
+			</concept>
+			<concept>
+				<code value="409137002"/>
+				<display value="No known drug allergy (situation)"/>
+			</concept>
+			<concept>
+				<code value="428607008"/>
+				<display value="No known environmental allergy (situation)"/>
+			</concept>
+			<concept>
+				<code value="429625007"/>
+				<display value="No known food allergy (situation)"/>
+			</concept>
+			<concept>
+				<code value="787483001"/>
+				<display value="No known device use (situation)"/>
+			</concept>
+			<concept>
+				<code value="787482006"/>
+				<display value="No known immunizations (situation)"/>
+			</concept>
+			<concept>
+				<code value="787481004"/>
+				<display value="No known medications (situation)"/>
+			</concept>
+			<concept>
+				<code value="160245001"/>
+				<display value="No current problems or disability (situation)"/>
+			</concept>
+			<concept>
+				<code value="787480003"/>
+				<display value="No known procedures (situation)"/>
+			</concept>
+		</include>
+	</compose>
 </ValueSet>
