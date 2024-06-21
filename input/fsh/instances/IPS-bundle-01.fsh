@@ -74,7 +74,7 @@ Usage: #inline
 * event.code = $v3-ActClass#PCPR
 * event.period.end = "2017-12-11T14:30:00+01:00"
 * section[0].title = "Active Problems"
-* section[=].code = $loinc#11450-4 "Problem list Reported"
+* section[=].code = $loinc#11450-4 "Problem list - Reported"
 * section[=].text.status = #generated
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Hot flushes</div>"
 * section[=].entry = Reference(urn:uuid:c64139e7-f02d-409c-bf34-75e8bf23bc80)
@@ -91,7 +91,7 @@ Usage: #inline
 * section[=].entry[0] = Reference(urn:uuid:72884cad-ebe6-4f43-a51a-2f978275f132)
 * section[=].entry[+] = Reference(urn:uuid:c7781f44-6df8-4a8b-9e06-0b34263a47c5)
 * section[+].title = "History of Past Illness"
-* section[=].code = $loinc#11348-0 "Hx of Past illness"
+* section[=].code = $loinc#11348-0 "History of Past illness Narrative"
 * section[=].text.status = #generated
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Breast cancer Stage II with no evidence of recurrence following treatment</div>"
 * section[=].entry = Reference(urn:uuid:c4597aa2-688a-401b-a658-70acc6de28c6)

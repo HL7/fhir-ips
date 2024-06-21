@@ -23,7 +23,7 @@ Usage: #example
 * event.code = $v3-ActClass#PCPR
 * event.period.end = "2020-12-11T14:30:00+01:00"
 * section[0].title = "Active Problems"
-* section[=].code = $loinc#11450-4 "Problem list Reported"
+* section[=].code = $loinc#11450-4 "Problem list - Reported"
 * section[=].text.status = #generated
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li><div><b>Condition Name</b>: Acute myocardial infarction of anterior wall</div><div><b>Code</b>: <span>54329005</span></div><div><b>Status</b>: <span>Active</span></div></li></ul></div>"
 * section[=].entry = Reference(Condition/eumfh-39-07-1)
