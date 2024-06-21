@@ -33,6 +33,25 @@ dependencies:
   fhir.dicom:
     version: 2024.2.20240331
     uri: http://fhir.org/packages/fhir.dicom/ImplementationGuide/fhir.dicom
+menu:
+  Home: index.html
+  Table of Contents: toc.html
+  General Principles and Design:
+    General Principles: principles.html
+    Design Conventions: design.html
+    Generation and Data Inclusion: ipsGeneration.html
+    Known Issues and Future Development: knownIssues.html
+  The "IPS": ipsStructure.html
+  FHIR Artifacts:
+    The IPS Composition: StructureDefinition-Composition-uv-ips.html
+    IPS Library: profiles.html
+    Datatypes: datatypes.html
+    Extensions: extensions.html
+    Terminology: terminology.html
+    Examples: examples.html
+  Downloads: downloads.html
+  Copyrights: copyrights.html
+  Change Log: changes.html
 resources:
   Bundle/IPS-examples-Bundle-01:
     name: 'IPS Bundle example'
