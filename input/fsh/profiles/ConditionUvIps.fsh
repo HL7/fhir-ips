@@ -16,9 +16,9 @@ Description: "This profile represents the constraints applied to the Condition r
 * clinicalStatus MS
 * verificationStatus only CodeableConceptIPS
 * verificationStatus ^comment = "This element is labeled as a modifier because the status contains the code refuted and entered-in-error that mark the Condition as not currently valid."
-* category only CodeableConceptIPS (preferred)
+* category only CodeableConceptIPS
 * category MS
-* category from ProblemTypeUvIps
+* category from ProblemTypeUvIps (extensible)
 * category ^definition = "A category assigned to the condition. In this profile, a health problem of the patient, therefore a 'problem-list-item'.\r\n"
 * category ^comment = "In this profile, Condition represents a health problem of the patient. Therefore one of the category value(s) must be problem-list-item."
 * category ^binding.extension[0].extension[0].url = "purpose"
