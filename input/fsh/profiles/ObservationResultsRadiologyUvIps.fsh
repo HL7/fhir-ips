@@ -30,21 +30,21 @@ It allows also providing details about the related study using the partOf elemen
 * category contains radiology 1..1 MS
 * category[radiology] only CodeableConceptIPS
 * category[radiology] = $observation-category#imaging
-* code only CodeableConceptIPS
-* code MS
+//* code only CodeableConceptIPS
+//* code MS
 * code from ResultsRadiologyObservationUvIps (extensible)
 * code ^label = "Diagnostic Procedure Code"
 * code ^definition = "Describes what was observed. Sometimes this is called the observation \"name\".\r\nIn this profile the code of the containing observation (the organizer result in the CDA implementation) may correspond to the procedure code (e.g. Chest X-Ray)."
 * code ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * code ^binding.extension.valueString = "ObservationCode"
 * subject only Reference(PatientUvIps)
-* subject MS
-* subject ^definition = "The patient, or group of patients, location, or device whose characteristics (direct or indirect) are described by the observation and into whose record the observation is placed.  Comments: Indirect characteristics may be those of a specimen, fetus, donor, other observer (for example a relative or EMT), or any observation made about the subject.\r\n\r\nIn this profile is constrained to the patient"
+//* subject MS
+//* subject ^definition = "The patient, or group of patients, location, or device whose characteristics (direct or indirect) are described by the observation and into whose record the observation is placed.  Comments: Indirect characteristics may be those of a specimen, fetus, donor, other observer (for example a relative or EMT), or any observation made about the subject.\r\n\r\nIn this profile is constrained to the patient"
 * effective[x] MS
 * effective[x] obeys ips-1
 * performer 1.. MS
 * performer only Reference(PractitionerUvIps or PractitionerRoleUvIps or OrganizationUvIps or CareTeam or PatientUvIps or RelatedPerson)
-* valueString only string
+//* valueString only string
 * valueString MS
 * valueString ^label = "Overall Conclusion"
 * bodySite only CodeableConceptIPS

@@ -23,42 +23,42 @@ Description: "This profile constrains the Observation resource to represent resu
 * category contains laboratory 1..1 MS
 * category[laboratory] only CodeableConceptIPS
 * category[laboratory] = $observation-category#laboratory
-* code only CodeableConceptIPS
-* code MS
+//* code only CodeableConceptIPS
+//* code MS
 * code from ResultsPathologyObservationUvIps (extensible)
-* code ^definition = "Describes what was observed. Sometimes this is called the observation \"name\".  In this profile this code represents either a simple laboratory test or a laboratory study with multiple child observations"
-* code ^comment = "In the context of this Observation-laboratory-uv-ips profile, when the observation plays the role of a grouper of member sub-observations, the code represent the group (for instance a panel code). In case no code is available, at least a text shall be provided."
+* code ^definition = "Describes what was observed. Sometimes this is called the observation \"name\".  In this profile this code represents either a single pathology examination or a pathology study with multiple child observations"
+* code ^comment = "In the context of this Observation-results-pathology-uv-ips profile, when the observation plays the role of a grouper of member sub-observations, the code represent the group (for instance a panel code). In case no code is available, at least a text shall be provided."
 * code ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * code ^binding.extension.valueString = "ObservationCode"
 * subject only Reference(PatientUvIps)
-* subject MS
-* subject ^definition = "The patient, or group of patients, location, or device whose characteristics (direct or indirect) are described by the observation and into whose record the observation is placed.  Comments: Indirect characteristics may be those of a specimen, fetus, donor, other observer (for example a relative or EMT), or any observation made about the subject.\r\n\r\nIn this profile is constrained to the patient"
+//* subject MS
+//* subject ^definition = "The patient, or group of patients, location, or device whose characteristics (direct or indirect) are described by the observation and into whose record the observation is placed.  Comments: Indirect characteristics may be those of a specimen, fetus, donor, other observer (for example a relative or EMT), or any observation made about the subject.\r\n\r\nIn this profile is constrained to the patient"
 * performer 1.. MS
 * performer only Reference(PractitionerUvIps or PractitionerRoleUvIps or OrganizationUvIps or CareTeam or PatientUvIps or RelatedPerson)
-* value[x] MS
-* value[x] ^slicing.discriminator.type = #type
-* value[x] ^slicing.discriminator.path = "$this"
-* value[x] ^slicing.rules = #closed
-* valueString only string
+//* value[x] MS
+//* value[x] ^slicing.discriminator.type = #type
+//* value[x] ^slicing.discriminator.path = "$this"
+//* value[x] ^slicing.rules = #closed
+//* valueString only string
 * valueString MS
-* valueString ^sliceName = "valueString"
-* valueRange only RangeIPS
-* valueRange ^sliceName = "valueRange"
-* valueRatio only RatioIPS
-* valueRatio ^sliceName = "valueRatio"
-* valueTime only time
-* valueTime ^sliceName = "valueTime"
-* valueDateTime only dateTime
-* valueDateTime ^sliceName = "valueDateTime"
-* valuePeriod only Period
-* valuePeriod ^sliceName = "valuePeriod"
-* valueQuantity only QuantityIPS
+//* valueString ^sliceName = "valueString"
+//* valueRange only RangeIPS
+//* valueRange ^sliceName = "valueRange"
+//* valueRatio only RatioIPS
+//* valueRatio ^sliceName = "valueRatio"
+//* valueTime only time
+//* valueTime ^sliceName = "valueTime"
+//* valueDateTime only dateTime
+//* valueDateTime ^sliceName = "valueDateTime"
+//* valuePeriod only Period
+//* valuePeriod ^sliceName = "valuePeriod"
+//* valueQuantity only QuantityIPS
 * valueQuantity MS
-* valueQuantity ^sliceName = "valueQuantity"
+//* valueQuantity ^sliceName = "valueQuantity"
 * valueCodeableConcept only CodeableConceptIPS
 * valueCodeableConcept MS
 * valueCodeableConcept from ResultsCodedValuesPathologyUvIps (preferred)
-* valueCodeableConcept ^sliceName = "valueCodeableConcept"
+//* valueCodeableConcept ^sliceName = "valueCodeableConcept"
 * specimen only Reference(SpecimenUvIps)
 * hasMember only Reference(ObservationResultsPathologyUvIps or ObservationResultsUvIps)
 * hasMember ^definition = "A reference to another Observation profiled by Observation-results-pathology-uv-ips. The target observation is considered as a sub-observation of the current one, which plays the role of a grouper"
