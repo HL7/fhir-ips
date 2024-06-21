@@ -4,10 +4,13 @@ FSHOnly: false
 applyExtensionMetadataToRoot: false
 id: hl7.fhir.uv.ips
 name: InternationalPatientSummaryIG
+title: International Patient Summary Implementation Guide
 status: active
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
     valueCode: pc
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
+    valueInteger: 2
 license: CC0-1.0
 version: 2.0.0-ballot
 copyrightYear: 2020+
