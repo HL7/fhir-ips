@@ -178,7 +178,7 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#active
 * verificationStatus = $condition-ver-status#confirmed
 * category = $loinc#75326-9 "Problem"
-* severity = $loinc#LA6751-7 "Moderate"
+* severity = $sct#6736007 "Moderate severity"
 * code.coding[0] = $sct#198436008 "Menopausal flushing (finding)"
 * code.coding[=].display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * code.coding[=].display.extension.extension[0].url = "lang"
@@ -258,7 +258,7 @@ Usage: #inline
 * clinicalStatus = $condition-clinical#remission
 * verificationStatus = $condition-ver-status#confirmed
 * category = $loinc#75326-9 "Problem"
-* severity = $loinc#LA6750-9 "Severe"
+* severity = $sct#24484000 "Severe"
 * code.coding[0] = $sct#254837009 "Malignant tumor of breast"
 * code.coding[=].display.extension.url = "http://hl7.org/fhir/StructureDefinition/translation"
 * code.coding[=].display.extension.extension[0].url = "lang"
