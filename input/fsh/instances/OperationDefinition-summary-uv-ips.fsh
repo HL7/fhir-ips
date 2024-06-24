@@ -7,7 +7,7 @@ Usage: #definition
 * version = "1.1.0"
 * name = "IpsSummary"
 * title = "IPS Summary"
-* status = #draft
+* status = #active
 * kind = #operation
 * date = "2022-01-05T13:15:56.964-00:00"
 * publisher = "HL7 International / Patient Care"

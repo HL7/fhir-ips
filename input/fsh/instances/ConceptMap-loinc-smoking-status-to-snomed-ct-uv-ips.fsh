@@ -7,7 +7,7 @@ Usage: #definition
 * version = "1.1.0"
 * name = "SmokingStatusValueSetMappingsLoincToSnomedCt"
 * title = "Smoking Status Value Set Mappings - LOINC to SNOMED CT"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2024-06-19T10:50:07-05:00"
 * publisher = "HL7 International / Patient Care"
