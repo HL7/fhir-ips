@@ -54,6 +54,7 @@ Description: "This profile represents the constraints applied to the Bundle reso
     observation-tobacco-use 0..* and
     observation-results-laboratory-pathology 0..* and
     observation-results-radiology 0..* and
+    observation-vital-signs 0..* and
     specimen 0..*
 * entry[composition].resource 1..
 * entry[composition].resource only CompositionUvIps
@@ -103,5 +104,6 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry[observation-results-laboratory-pathology].resource only ObservationResultsLaboratoryPathologyUvIps
 * entry[observation-results-radiology].resource 1..
 * entry[observation-results-radiology].resource only ObservationResultsRadiologyUvIps
+* entry[observation-vital-signs].resource only $vital-signs-profile
 * entry[specimen].resource 1..
 * entry[specimen].resource only SpecimenUvIps
