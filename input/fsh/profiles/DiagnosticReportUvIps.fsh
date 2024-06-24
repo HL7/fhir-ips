@@ -36,4 +36,4 @@ Description: "This profile constrains the DiagnosticReport resource to represent
 * result ^short = "Observation results included in the diagnostic report."
 * result ^definition = "Observation results included in the diagnostic report."
 * result contains observation-results 0..* MS
-* result[observation-results] only Reference(ObservationResultsLaboratoryUvIps or ObservationResultsPathologyUvIps or ObservationResultsRadiologyUvIps or ObservationResultsUvIps)
+* result[observation-results] only Reference(ObservationResultsLaboratoryPathologyUvIps or ObservationResultsRadiologyUvIps)

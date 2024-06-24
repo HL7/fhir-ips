@@ -52,7 +52,8 @@ Description: "This profile represents the constraints applied to the Bundle reso
     observation-pregnancy-status 0..* and
     observation-alcohol-use 0..* and
     observation-tobacco-use 0..* and
-    observation-results 0..* and
+    observation-results-laboratory-pathology 0..* and
+    observation-results-radiology 0..* and
     specimen 0..*
 * entry[composition].resource 1..
 * entry[composition].resource only CompositionUvIps
@@ -98,7 +99,9 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry[observation-alcohol-use].resource only ObservationAlcoholUseUvIps
 * entry[observation-tobacco-use].resource 1..
 * entry[observation-tobacco-use].resource only ObservationTobaccoUseUvIps
-* entry[observation-results].resource 1..
-* entry[observation-results].resource only ObservationResultsUvIps
+* entry[observation-results-laboratory-pathology].resource 1..
+* entry[observation-results-laboratory-pathology].resource only ObservationResultsLaboratoryPathologyUvIps
+* entry[observation-results-radiology].resource 1..
+* entry[observation-results-radiology].resource only ObservationResultsRadiologyUvIps
 * entry[specimen].resource 1..
 * entry[specimen].resource only SpecimenUvIps
