@@ -55,7 +55,7 @@ Description: "This profile represents the constraints applied to the Bundle reso
     observation-results-laboratory-pathology 0..* and
     observation-results-radiology 0..* and
     observation-vital-signs 0..* and
-    specimen 0..*
+    specimen 0..* and
     clinicalimpression 0..* and
     careplan 0..* and
     consent 0..* and
