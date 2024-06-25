@@ -32,10 +32,8 @@ This observation may represent the result of a simple laboratory test such as he
 * code only CodeableConceptIPS
 * code MS
 * code from ResultsLaboratoryPathologyObservationUvIps (preferred)
-* code ^definition = "Describes what was observed. Sometimes this is called the observation \"name\".  In this profile this code represents either a simple laboratory test or a laboratory study with multiple child observations"
-* code ^comment = "In the context of this Observation-laboratory-uv-ips profile, when the observation plays the role of a grouper of member sub-observations, the code represent the group (for instance a panel code). In case no code is available, at least a text shall be provided."
-* code ^definition = "Describes what was observed. Sometimes this is called the observation \"name\".  In this profile this code represents either a single pathology examination or a pathology study with multiple child observations"
-* code ^comment = "In the context of this Observation-results-pathology-uv-ips profile, when the observation plays the role of a grouper of member sub-observations, the code represent the group (for instance a panel code). In case no code is available, at least a text shall be provided."
+* code ^definition = "Describes what was observed. Sometimes this is called the observation \"name\".  In this profile this code represents either a simple laboratory test or a single pathology examination or a laboratory or pathology study with multiple child observations."
+* code ^comment = "In the context of this Observation-results-laboratory-pathology-uv-ips profile, when the observation plays the role of a grouper of member sub-observations, the code represents the group (for instance a panel code). In case no code is available, at least a text shall be provided."
 * code ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * code ^binding.extension[=].valueString = "ObservationCode"
 * subject 1.. MS
