@@ -56,6 +56,10 @@ Description: "This profile represents the constraints applied to the Bundle reso
     observation-results-radiology 0..* and
     observation-vital-signs 0..* and
     specimen 0..*
+    clinicalimpression 0..* and
+    careplan 0..* and
+    consent 0..* and
+    documentreference 0..*
 * entry[composition].resource 1..
 * entry[composition].resource only CompositionUvIps
 * entry[patient].resource 1..
@@ -107,3 +111,11 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry[observation-vital-signs].resource only $vital-signs-profile
 * entry[specimen].resource 1..
 * entry[specimen].resource only SpecimenUvIps
+* entry[clinicalimpression].resource 1..
+* entry[clinicalimpression].resource only ClinicalImpression
+* entry[careplan].resource 1..
+* entry[careplan].resource only CarePlan
+* entry[consent].resource 1..
+* entry[consent].resource only Consent
+* entry[documentreference].resource 1..
+* entry[documentreference].resource only DocumentReference
