@@ -1,0 +1,13 @@
+Instance: allergyintolerance-with-abatement
+InstanceOf: AllergyIntolerance
+Title: "AllergyIntolerance: resolved allergy"
+Description: "AllergyIntolerance: resolved allergy"
+Usage: #example
+* extension.url = "http://hl7.org/fhir/uv/ips/StructureDefinition/abatement-dateTime-uv-ips"
+* extension.valueDateTime = "2010"
+* clinicalStatus = $allergyintolerance-clinical#resolved
+* verificationStatus = $allergyintolerance-verification#confirmed
+* code = $sct#256303006 "Ragweed pollen"
+* patient = Reference(66033)
+* onsetDateTime.extension.url = "http://hl7.org/fhir/StructureDefinition/data-absent-reason"
+* onsetDateTime.extension.valueCode = #unknown

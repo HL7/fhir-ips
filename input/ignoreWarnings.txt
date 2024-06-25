@@ -1,21 +1,8 @@
 == Suppressed Messages ==
-# The following code systems that are used only in example instances are localized (European) and are not supported by the build terminology service.
-INFORMATION: Bundle/IPS-examples-Bundle-01: Bundle.entry[7].resource.code.coding[1]: Code System URI 'urn:oid:2.16.840.1.113883.2.4.4.1' is unknown so the code cannot be validated
-INFORMATION: Bundle/IPS-examples-Bundle-with-immunization: Bundle.entry[7].resource.code.coding[1]: Code System URI 'urn:oid:2.16.840.1.113883.2.4.4.1' is unknown so the code cannot be validated
-INFORMATION: Bundle/bundle-minimal: Bundle.entry[6].resource.code.coding[1]: Code System URI 'urn:oid:2.16.840.1.113883.2.4.4.1' is unknown so the code cannot be validated
-INFORMATION: Bundle/IPS-examples-Bundle-01: Bundle.entry[5].resource.entry[7].resource.ofType(Medication).code.coding[1]: Code System URI 'urn:oid:2.16.840.1.113883.2.4.4.1' is unknown so the code cannot be validated
-INFORMATION: Bundle/IPS-examples-Bundle-with-immunization: Bundle.entry[5].resource.entry[7].resource.ofType(Medication).code.coding[1]: Code System URI 'urn:oid:2.16.840.1.113883.2.4.4.1' is unknown so the code cannot be validated
-INFORMATION: Bundle/bundle-minimal: Bundle.entry[5].resource.entry[6].resource.ofType(Medication).code.coding[1]: Code System URI 'urn:oid:2.16.840.1.113883.2.4.4.1' is unknown so the code cannot be validated
-INFORMATION: Bundle/IPS-examples-Bundle-01: Bundle.entry[7].resource.code.coding[2]: Code System URI 'urn:oid:2.16.840.1.113883.2.4.4.7' is unknown so the code cannot be validated
-INFORMATION: Bundle/IPS-examples-Bundle-with-immunization: Bundle.entry[7].resource.code.coding[2]: Code System URI 'urn:oid:2.16.840.1.113883.2.4.4.7' is unknown so the code cannot be validated
-INFORMATION: Bundle/bundle-minimal: Bundle.entry[6].resource.code.coding[2]: Code System URI 'urn:oid:2.16.840.1.113883.2.4.4.7' is unknown so the code cannot be validated
-INFORMATION: Bundle/IPS-examples-Bundle-01: Bundle.entry[5].resource.entry[7].resource.ofType(Medication).code.coding[2]: Code System URI 'urn:oid:2.16.840.1.113883.2.4.4.7' is unknown so the code cannot be validated
-INFORMATION: Bundle/IPS-examples-Bundle-with-immunization: Bundle.entry[5].resource.entry[7].resource.ofType(Medication).code.coding[2]: Code System URI 'urn:oid:2.16.840.1.113883.2.4.4.7' is unknown so the code cannot be validated
-INFORMATION: Bundle/bundle-minimal: Bundle.entry[5].resource.entry[6].resource.ofType(Medication).code.coding[2]: Code System URI 'urn:oid:2.16.840.1.113883.2.4.4.7' is unknown so the code cannot be validated
-INFORMATION: Immunization/75680: Immunization.vaccineCode.coding[2]: Code System URI 'https://cnk.apb.be/codings/cnk_product_codes' is unknown so the code cannot be validated
+# There are no modifier extensions in the FSH source or generated profiles for the ConceptMap resources.  These messages are an artifact of the IG Publisher and cannot be resolved by anything in the IG source or configuration.
+%The modifier extension http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence from FHIR version 1.0 is not allowed to be used at this point%
 
-# The system url used in the example instance for the ICD-11 MMS code system is correct as specified by TSMG/HTA (https://confluence.hl7.org/display/TA/International+Classification+of+Diseases+11th+Revision).  A request has been made for the ICD-11 MMS metadata to be added to THO (https://jira.hl7.org/browse/HTA-117), but that addition is still pending.
-INFORMATION: Condition/eumfh-39-07-1: Condition.code.coding[1]: Code System URI 'http://id.who.int/icd/release/11/mms' is unknown so the code cannot be validated
-
-# The "table_B.5-1" value set bound to ImagingStudy.series.instance.sopClass in the base resource is not found by the Publisher/Validator, as it has not been included in the fhir.dicom package.  The 'sopClass' binding is not being constrained in the IPS ImagingStudy profile.
-WARNING: StructureDefinition/ImagingStudy-uv-ips: StructureDefinition.snapshot.element[59].binding: The valueSet reference http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1 on element ImagingStudy.series.instance.sopClass could not be resolved
+# Information messages regarding ConceptMap terminology validation - no action to be taken 
+%Source Code System http://loinc.org is only supported on the terminology server, so the source codes are not validated for performance reasons
+%Target Code System http://snomed.info/sct is only supported on the terminology server, so the target codes are not validated for performance reasons
+%Source Code System http://snomed.info/sct is only supported on the terminology server, so the source codes are not validated for performance reasons
