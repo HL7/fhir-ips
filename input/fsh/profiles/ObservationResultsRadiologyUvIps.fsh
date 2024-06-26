@@ -32,7 +32,7 @@ It allows also providing details about the related study using the partOf elemen
 * category[radiology] = $observation-category#imaging
 * code only CodeableConceptIPS
 * code MS
-* code from ResultsRadiologyObservationUvIps (extensible)
+* code from ResultsRadiologyObservationUvIps (preferred)
 * code ^label = "Diagnostic Procedure Code"
 * code ^definition = "Describes what was observed. Sometimes this is called the observation \"name\".\r\nIn this profile the code of the containing observation (the organizer result in the CDA implementation) may correspond to the procedure code (e.g. Chest X-Ray)."
 * code ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
