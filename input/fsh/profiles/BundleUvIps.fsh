@@ -108,6 +108,7 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry[observation-results-laboratory-pathology].resource only ObservationResultsLaboratoryPathologyUvIps
 * entry[observation-results-radiology].resource 1..
 * entry[observation-results-radiology].resource only ObservationResultsRadiologyUvIps
+* entry[observation-vital-signs].resource 1..
 * entry[observation-vital-signs].resource only $vital-signs-profile
 * entry[specimen].resource 1..
 * entry[specimen].resource only SpecimenUvIps
