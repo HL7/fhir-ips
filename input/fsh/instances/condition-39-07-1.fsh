@@ -10,4 +10,5 @@ Usage: #example
 * code.coding[+] = $mms#BA41.Z&XA7RE3 "Acute myocardial infarction, unspecified [Anterior wall of heart]"
 * subject = Reference(Patient/eumfh-39-07) "Alexander Heig (inject 39-07)"
 * onsetDateTime = "2014"
-* asserter = Reference(Practitioner/eumfh-39-07) "Dr. Mark Antonio"
+* participant.function = ProvenanceParticipantType#author
+* participant.actor = Reference(Practitioner/eumfh-39-07) "Dr. Mark Antonio"

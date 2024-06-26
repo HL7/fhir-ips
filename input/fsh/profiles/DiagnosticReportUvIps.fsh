@@ -12,7 +12,7 @@ Description: "This profile constrains the DiagnosticReport resource to represent
 * ^contact.telecom.value = "http://www.hl7.org/Special/committees/patientcare"
 * ^jurisdiction = $m49.htm#001
 * ^purpose = "This profile constrains the DiagnosticReport resource to use the specific IPS profiles for observations and coded data types."
-* status = #final (exactly)
+* status = #final
 * category 1..1 MS
 * category only CodeableConceptIPS
 * code only CodeableConceptIPS

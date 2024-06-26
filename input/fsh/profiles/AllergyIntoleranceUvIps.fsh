@@ -46,7 +46,7 @@ It documents the relevant allergies or intolerances (conditions) for a patient, 
 * onset[x] ^type.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
 * onset[x] ^type.extension.valueBoolean = true
 * reaction MS
-* reaction.manifestation only CodeableConceptIPS
+* reaction.manifestation only CodeableReferenceIPS
 * reaction.manifestation MS
 * reaction.manifestation from AllergyReactionSnomedCtIpsFreeSet (preferred)
 * reaction.manifestation ^binding.description = "Code for the allergy or intolerance reaction manifestation from the SNOMED International Patient Set (IPS) subset of SNOMED CT (IPS Free Set)."

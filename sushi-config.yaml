@@ -1,5 +1,5 @@
 canonical: http://hl7.org/fhir/uv/ips
-fhirVersion: 4.0.1
+fhirVersion: 5.0.0
 FSHOnly: false
 applyExtensionMetadataToRoot: false
 id: hl7.fhir.uv.ips
@@ -129,10 +129,10 @@ resources:
     name: 'Patient: female patient'
     description: 'Patient: female patient'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips
-  DeviceUseStatement/eumfh-70-275-1:
-    name: 'DeviceUseStatement: No known devices in use'
-    description: 'DeviceUseStatement: No known devices in use'
-    exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips
+  DeviceUsage/eumfh-70-275-1:
+    name: 'DeviceUsage: No known devices in use'
+    description: 'DeviceUsage: No known devices in use'
+    exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUsage-uv-ips
   Device/eumfh-70-275-1:
     name: 'Device: No known devices in use'
     description: 'Device: No known devices in use'
@@ -205,11 +205,11 @@ resources:
     name: 'Observation: estrogen receptor in tissue example'
     description: 'Observation: estrogen receptor in tissue example'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-pathology-uv-ips
+  Observation/media-example-smile:
+    name: 'Observation: media example'
+    description: 'Observation: media example'
+    exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-media-uv-ips
   DiagnosticReport/hemoglobin:
     name: 'DiagnosticReport: hemoglobin example'
     description: 'DiagnosticReport: hemoglobin example'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips
-  Media/media-example-smile:
-    name: 'Media: example'
-    description: 'Media: example'
-    exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Media-observation-uv-ips

@@ -4,8 +4,9 @@ Title: "MedicationStatement: on-going Simvastatin treatment"
 Description: "MedicationStatement: on-going Simvastatin treatment"
 Usage: #example
 * id = "eumfh-39-07-1"
-* status = #active
-* medicationReference = Reference(Medication/eumfh-39-07-1) "simvastatin"
+* status = #recorded
+//* status = #active (R4 status)
+* medication.reference = Reference(Medication/eumfh-39-07-1) "simvastatin"
 * subject = Reference(Patient/eumfh-39-07) "Alexander Heig (inject 39-07)"
 * effectivePeriod.start = "2014"
 * dosage.text = "40 mg/day"

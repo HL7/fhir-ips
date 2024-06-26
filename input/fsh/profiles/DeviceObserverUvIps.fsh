@@ -2,7 +2,7 @@ Profile: DeviceObserverUvIps
 Parent: Device
 Id: Device-observer-uv-ips
 Title: "Device - performer, observer"
-Description: """This profile represents the constraints applied to the Device resource by the IPS project, which specifies an international patient summary based on the FHIR standard R4.;
+Description: """This profile represents the constraints applied to the Device resource by the IPS project, which specifies an international patient summary based on the FHIR standard R5.;
 
 This profile describes a device that plays the role of observer or performer."""
 * ^version = "1.1.0"

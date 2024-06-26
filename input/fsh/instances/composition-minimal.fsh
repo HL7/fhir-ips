@@ -3,24 +3,24 @@ InstanceOf: Composition
 Title: "IPS Composition example - minimal"
 Description: "IPS Composition example - minimal"
 Usage: #example
+* meta.security = Confidentiality#N
 * status = #final
 * type = $loinc#60591-5 "Patient summary Document"
 * subject = Reference(Patient/eumfh-39-07)
 * date = "2020-12-11T14:30:00+01:00"
 * author = Reference(Practitioner/eumfh-39-07)
 * title = "Patient Summary as of December 11, 2020 14:30"
-* confidentiality = #N
-* attester[0].mode = #legal
+* attester[0].mode = CompositionAttestationMode#legal
 * attester[=].time = "2020-12-11T14:30:00+01:00"
 * attester[=].party = Reference(Practitioner/eumfh-39-07)
-* attester[+].mode = #legal
+* attester[+].mode = CompositionAttestationMode#legal
 * attester[=].time = "2020-12-11T14:30:00+01:00"
 * attester[=].party = Reference(simple-org)
 * custodian = Reference(simple-org)
-* relatesTo.code = #appends
-* relatesTo.targetIdentifier.system = "urn:oid:2.16.724.4.8.10.200.10"
-* relatesTo.targetIdentifier.value = "20e12ce3-857f-49c0-b888-cb670597f191"
-* event.code = $v3-ActClass#PCPR
+* relatesTo.type = #appends
+* relatesTo.resourceReference.identifier.system = "urn:oid:2.16.724.4.8.10.200.10"
+* relatesTo.resourceReference.identifier.value = "20e12ce3-857f-49c0-b888-cb670597f191"
+* event.detail.concept = $v3-ActClass#PCPR
 * event.period.end = "2020-12-11T14:30:00+01:00"
 * section[0].title = "Active Problems"
 * section[=].code = $loinc#11450-4 "Problem list - Reported"

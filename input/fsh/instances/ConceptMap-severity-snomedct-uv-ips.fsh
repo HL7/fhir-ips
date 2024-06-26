@@ -15,22 +15,25 @@ Usage: #definition
 * contact.telecom.value = "http://www.hl7.org/Special/committees/patientcare"
 * description = "Severity Value Set Mappings - SNOMED CT to FHIR"
 * jurisdiction = $m49.htm#001
-* sourceUri = "http://hl7.org/fhir/ValueSet/condition-severity"
-* targetUri = "http://hl7.org/fhir/ValueSet/reaction-event-severity"
+* sourceScopeUri = "http://hl7.org/fhir/ValueSet/condition-severity"
+* targetScopeUri = "http://hl7.org/fhir/ValueSet/reaction-event-severity"
 * group.source = "http://snomed.info/sct"
 * group.target = "http://hl7.org/fhir/reaction-event-severity"
 * group.element[0].code = #255604002
 * group.element[=].display = "Mild"
 * group.element[=].target.code = #mild
 * group.element[=].target.display = "Mild"
-* group.element[=].target.equivalence = #specializes
+* group.element[=].target.relationship = #source-is-broader-than-target
+* group.element[=].target.comment = "The SNOMED CT concept is a simple qualifier without further context, whereas the HL7 concept specifically represents the context of the severity of a reaction event and the degree of physiological effects, and therefore has a narrower meaning."
 * group.element[+].code = #6736007
 * group.element[=].display = "Moderate"
 * group.element[=].target.code = #moderate
 * group.element[=].target.display = "Moderate"
-* group.element[=].target.equivalence = #specializes
+* group.element[=].target.relationship = #source-is-broader-than-target
+* group.element[=].target.comment = "The SNOMED CT concept is a simple qualifier without further context, whereas the HL7 concept specifically represents the context of the severity of a reaction event and the degree of physiological effects, and therefore has a narrower meaning."
 * group.element[+].code = #24484000
 * group.element[=].display = "Severe"
 * group.element[=].target.code = #severe
 * group.element[=].target.display = "Severe"
-* group.element[=].target.equivalence = #specializes
+* group.element[=].target.relationship = #source-is-broader-than-target
+* group.element[=].target.comment = "The SNOMED CT concept is a simple qualifier without further context, whereas the HL7 concept specifically represents the context of the severity of a reaction event and the degree of physiological effects, and therefore has a narrower meaning."

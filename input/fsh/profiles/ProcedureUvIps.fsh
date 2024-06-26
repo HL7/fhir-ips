@@ -2,7 +2,7 @@ Profile: ProcedureUvIps
 Parent: Procedure
 Id: Procedure-uv-ips
 Title: "Procedure (IPS)"
-Description: "This profile represents the constraints applied to the Procedure resource by the IPS project, which specifies an entry of the History of Procedure for the international patient summary based on the FHIR standard R4."
+Description: "This profile represents the constraints applied to the Procedure resource by the IPS project, which specifies an entry of the History of Procedure for the international patient summary based on the FHIR standard R5."
 * ^version = "1.1.0"
 * ^status = #active
 * ^date = "2024-06-19T10:50:07-05:00"
@@ -26,11 +26,10 @@ Description: "This profile represents the constraints applied to the Procedure r
 * subject MS
 * subject ^definition = "The person on which the procedure was performed."
 * subject.reference 1.. MS
-* performed[x] 1..1 MS
-* performed[x].extension contains $data-absent-reason named data-absent-reason 0..1 MS
-* performed[x].extension[data-absent-reason] ^short = "performed[x] absence reason"
-* performed[x].extension[data-absent-reason] ^definition = "Provides a reason why the performed is missing."
-* asserter ^mustSupport = false
+* occurrence[x] 1..1 MS
+* occurrence[x].extension contains $data-absent-reason named data-absent-reason 0..1 MS
+* occurrence[x].extension[data-absent-reason] ^short = "occurrence[x] absence reason"
+* occurrence[x].extension[data-absent-reason] ^definition = "Provides a reason why the performed is missing."
 * performer ^mustSupport = false
 * performer.actor only Reference(PatientUvIps or RelatedPerson or DeviceObserverUvIps or PractitionerUvIps or PractitionerRoleUvIps or OrganizationUvIps)
 * performer.actor ^mustSupport = false

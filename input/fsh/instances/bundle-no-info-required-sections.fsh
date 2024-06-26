@@ -29,6 +29,7 @@ Instance: 514af4c1-194d-48b4-8afe-7be09d3f895a
 InstanceOf: Composition
 Usage: #inline
 * meta.versionId = "1"
+* meta.security = Confidentiality#N
 * language = #en-NZ
 * identifier.system = "urn:oid:2.16.840.1.113883.2.18.7.2"
 * identifier.value = "59f51f0b-2005-485c-858e-3d3ae9657287"
@@ -38,15 +39,14 @@ Usage: #inline
 * date = "2021-05-03"
 * author = Reference(d9b97b04-b606-4f07-baf2-7eb3dcae0a2a)
 * title = "International Patient Summary"
-* confidentiality = #N
-* attester.mode = #professional
+* attester.mode = CompositionAttestationMode#professional
 * attester.time = "2021-05-03"
 * attester.party = Reference(f54d8c90-aea2-46b0-8f7a-8683db78344e)
 * custodian = Reference(70a756e3-20b3-4637-8601-a222983e295a)
-* relatesTo.code = #transforms
-* relatesTo.targetIdentifier.system = "urn:oid:2.16.840.1.113883.2.18.7.2"
-* relatesTo.targetIdentifier.value = "59f51f0b-2005-485c-858e-3d3ae9657287"
-* event.code = $v3-ActClass#PCPR
+* relatesTo.type = #transforms
+* relatesTo.resourceReference.identifier.system = "urn:oid:2.16.840.1.113883.2.18.7.2"
+* relatesTo.resourceReference.identifier.value = "59f51f0b-2005-485c-858e-3d3ae9657287"
+* event.detail.concept = $v3-ActClass#PCPR
 * event.period.end = "2021-05-03"
 * section[0].title = "Allergies and Intolerances"
 * section[=].code = $loinc#48765-2 "Allergies and adverse reactions Document"
@@ -171,7 +171,7 @@ Usage: #inline
 * route = $v3-RouteOfAdministration#IM "Injection, intramuscular"
 * performer.actor = Reference(70a756e3-20b3-4637-8601-a222983e295a)
 * protocolApplied.series = "45y (Eligible condition (Influenza))"
-* protocolApplied.doseNumberPositiveInt = 2
+* protocolApplied.doseNumber = "2"
 
 Instance: bd6c6537-6c5a-4fa8-8d26-2b49377425a2
 InstanceOf: Immunization
@@ -186,4 +186,4 @@ Usage: #inline
 * route = $v3-RouteOfAdministration#IM "Injection, intramuscular"
 * performer.actor = Reference(70a756e3-20b3-4637-8601-a222983e295a)
 * protocolApplied.series = "45y (Eligible condition (Influenza))"
-* protocolApplied.doseNumberPositiveInt = 1
+* protocolApplied.doseNumber = "1"

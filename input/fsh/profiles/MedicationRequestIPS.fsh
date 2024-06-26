@@ -2,7 +2,7 @@ Profile: MedicationRequestIPS
 Parent: MedicationRequest
 Id: MedicationRequest-uv-ips
 Title: "Medication Request (IPS)"
-Description: "This profile represents the constraints applied to the MedicationRequest resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A record of a medication request is represented in the patient summary as an instance of a MedicationRequest resource constrained by this profile."
+Description: "This profile represents the constraints applied to the MedicationRequest resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R5. A record of a medication request is represented in the patient summary as an instance of a MedicationRequest resource constrained by this profile."
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-category"
 * ^extension[=].valueString = "Clinical.Medications"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category"
@@ -16,11 +16,12 @@ Description: "This profile represents the constraints applied to the MedicationR
 * ^jurisdiction = $m49.htm#001
 * ^purpose = "This profile constrains the representation of a medication request related to the patient, in the context of the international patient summary as specified by the IPS project of HL7 International."
 * status ^comment = "In the scope of the IPS the entered-in-error concept is not allowed."
-* medication[x] only CodeableConcept or Reference(MedicationIPS)
-* medication[x] MS
-* medication[x] from MedicationSnomedCodesAbsentUnknown (preferred)
-* medication[x] ^definition = "Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code. To improve global interoperability is strongly encouraged that the reference to a medication resource is used, limiting the usage of the medicationCodeableConcept only to the cases in which no other information than a simple code is available."
-* medication[x] ^binding.description = "SNOMED CT medications (Pharmaceutical / biologic product) or a code for absent/unknown medication"
+* medication only CodeableReference(MedicationIPS)
+//* medication only CodeableReferenceIPS(MedicationIPS) - should this be CodeableReferenceIPS (as in MedicationStatementIPS)? - it is CodeableConcept in IPS R4
+* medication MS
+* medication from MedicationSnomedCodesAbsentUnknown (preferred)
+* medication ^definition = "Identifies the medication being administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code. To improve global interoperability is strongly encouraged that the reference to a medication resource is used, limiting the usage of the medicationCodeableConcept only to the cases in which no other information than a simple code is available."
+* medication ^binding.description = "SNOMED CT medications (Pharmaceutical / biologic product) or a code for absent/unknown medication"
 * subject only Reference(PatientUvIps)
 * subject MS
 * subject.reference 1.. MS

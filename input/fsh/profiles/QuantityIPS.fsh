@@ -13,6 +13,6 @@ Description: "Data type Quantity constrained to use UCUM as the code system for 
 * . ^short = "A measured amount using UCUM"
 * . ^definition = "A measured amount (or an amount that can potentially be measured). Note that measured amounts include amounts that are not precisely quantified, including amounts involving arbitrary units and floating currencies.\r\nThis profile imposes that the code system for units be UCUM."
 * system 1.. MS
-* system = "http://unitsofmeasure.org" (exactly)
+* system = "http://unitsofmeasure.org"
 * system ^short = "UCUM system for units"
 * code 1.. MS

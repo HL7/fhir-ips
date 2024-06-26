@@ -2,7 +2,7 @@ Profile: ObservationResultsRadiologyUvIps
 Parent: Observation
 Id: Observation-results-radiology-uv-ips
 Title: "Observation Results: radiology (IPS)"
-Description: """This profile represents the constraints applied to the Observation resource by the IPS project, which specifies a radiology observation for the international patient summary based on the FHIR standard R4. 
+Description: """This profile represents the constraints applied to the Observation resource by the IPS project, which specifies a radiology observation for the international patient summary based on the FHIR standard R5. 
 
 This observation may represent the conclusions of a diagnostic procedure such a Chest RX, or it may group the set of results produced by that single or multi-modality procedure. 
 
@@ -18,7 +18,7 @@ It allows also providing details about the related study using the partOf elemen
 * ^jurisdiction = $m49.htm#001
 * obeys hasMemberOrComponent
 * partOf only Reference(ImagingStudyUvIps)
-* status = #final (exactly)
+* status = #final
 * status ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * status ^extension.valueString = "default: final"
 * status ^definition = "The status of the result value. Only final results feed patient summaries."

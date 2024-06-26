@@ -108,7 +108,7 @@ Following are the profiles that have been defined for each section. (R) denotes 
   <a href="StructureDefinition-Organization-uv-ips.html">Organization (IPS)</a> |
   <a href="StructureDefinition-Device-observer-uv-ips.html">Device (performer, observer)</a> ]
 * Medical Devices (S)
- [ <a href="StructureDefinition-DeviceUseStatement-uv-ips.html">Device Use Statement (IPS)</a> |
+ [ <a href="StructureDefinition-DeviceUsage-uv-ips.html">Device Usage (IPS)</a> |
  <a href="StructureDefinition-Device-uv-ips.html">Device (IPS)</a> ]
 * Diagnostic Results (S)
  [ <a href="StructureDefinition-DiagnosticReport-uv-ips.html">DiagnosticReport (IPS)</a> |
@@ -116,7 +116,7 @@ Following are the profiles that have been defined for each section. (R) denotes 
   * Laboratory/Pathology results 
    [ <a href="StructureDefinition-Observation-results-laboratory-pathology-uv-ips.html">Observation (Results: laboratory)</a> |
    <a href="StructureDefinition-Specimen-uv-ips.html">Specimen (IPS)</a> |
-   <a href="StructureDefinition-Media-observation-uv-ips.html">Media observation (Results: laboratory, media)</a> ]
+   <a href="StructureDefinition-Observation-media-uv-ips.html">Observation: media</a> ]
   * Radiology results
    [ <a href="StructureDefinition-Observation-results-radiology-uv-ips.html">Observation (Results: radiology)</a> |
    <a href="StructureDefinition-Device-observer-uv-ips.html">Device (performer, observer)</a> |

@@ -16,13 +16,13 @@ Description: """This profile represents the constraints applied to the ImagingSt
 * subject MS
 * subject.reference 1.. MS
 * started MS
-* procedureCode only CodeableConceptIPS
-* procedureCode MS
-* procedureCode from ResultsRadiologyObservationUvIps (extensible)
-* procedureCode ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* procedureCode ^binding.extension.valueString = "ImagingProcedureCode"
-* reasonCode only CodeableConceptIPS
-* reasonCode MS
+* procedure only CodeableReferenceIPS
+* procedure MS
+* procedure from ResultsRadiologyObservationUvIps (extensible)
+* procedure ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+* procedure ^binding.extension.valueString = "ImagingProcedureCode"
+* reason only CodeableReferenceIPS
+* reason MS
 * series MS
 * series.uid MS
 * series.modality MS

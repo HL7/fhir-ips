@@ -14,7 +14,7 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * . ^short = "International Patient Summary Bundle"
 * . ^definition = "International Patient Summary Bundle. \r\nA container for a collection of resources in the patient summary document."
 * identifier 1.. MS
-* type = #document (exactly)
+* type = #document
 * timestamp 1.. MS
 * entry MS
 * entry ^slicing.discriminator[0].type = #type
@@ -35,11 +35,10 @@ Description: "This profile represents the constraints applied to the Bundle reso
     allergyintolerance 0..* and
     condition 0..* and
     device 0..* and
-    deviceusestatement 0..* and
+    DeviceUsage 0..* and
     diagnosticreport 0..* and
     imagingstudy 0..* and
     immunization 0..* and
-    media 0..* and
     medication 0..* and
     medicationrequest 0..* and
     medicationstatement 0..* and
@@ -55,6 +54,7 @@ Description: "This profile represents the constraints applied to the Bundle reso
     observation-results-laboratory-pathology 0..* and
     observation-results-radiology 0..* and
     observation-vital-signs 0..* and
+    observation-media 0..* and
     specimen 0..* and
     clinicalimpression 0..* and
     careplan 0..* and
@@ -70,16 +70,14 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry[condition].resource only ConditionUvIps
 * entry[device].resource 1..
 * entry[device].resource only Device
-* entry[deviceusestatement].resource 1..
-* entry[deviceusestatement].resource only DeviceUseStatementUvIps
+* entry[DeviceUsage].resource 1..
+* entry[DeviceUsage].resource only DeviceUsageUvIps
 * entry[diagnosticreport].resource 1..
 * entry[diagnosticreport].resource only DiagnosticReportUvIps
 * entry[imagingstudy].resource 1..
 * entry[imagingstudy].resource only ImagingStudyUvIps
 * entry[immunization].resource 1..
 * entry[immunization].resource only ImmunizationUvIps
-* entry[media].resource 1..
-* entry[media].resource only MediaObservationUvIps
 * entry[medication].resource 1..
 * entry[medication].resource only MedicationIPS
 * entry[medicationrequest].resource 1..
@@ -110,6 +108,8 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry[observation-results-radiology].resource only ObservationResultsRadiologyUvIps
 * entry[observation-vital-signs].resource 1..
 * entry[observation-vital-signs].resource only $vital-signs-profile
+* entry[observation-media].resource 1..
+* entry[observation-media].resource only ObservationMediaUvIps
 * entry[specimen].resource 1..
 * entry[specimen].resource only SpecimenUvIps
 * entry[clinicalimpression].resource 1..

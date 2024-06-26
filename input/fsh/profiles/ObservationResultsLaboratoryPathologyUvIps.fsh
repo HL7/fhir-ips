@@ -17,7 +17,7 @@ This observation may represent the result of a simple laboratory test such as he
 * . ^definition = "This observation may represent the result of a simple laboratory or pathology test such as hematocrit, or it may group the set of results produced by a multi-test study or panel such as a complete blood count, a dynamic function test, or a urine specimen study. In the latter case, the observation carries the overall conclusion of the study and references the atomic results of the study as \"has-member\" child observations"
 * . ^comment = "Represents either a lab simple observation or the group of observations produced by a laboratory study."
 * obeys ips-2
-* status = #final (exactly)
+* status = #final
 * status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * status ^extension[=].valueString = "default: final"
 * category only CodeableConceptIPS

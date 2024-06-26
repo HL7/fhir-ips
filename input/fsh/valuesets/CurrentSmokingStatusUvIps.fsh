@@ -17,26 +17,26 @@ Description: "HL7 LOINC value set for smoking status.  Based on the HL7 Vocab an
 * ^immutable = false
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
 * LOINC#LA18976-3 "Current every day smoker"
-* LOINC#LA18976-3 ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
-* LOINC#LA18976-3 ^extension[=].valueDecimal = 1
+* LOINC#LA18976-3 ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder"
+* LOINC#LA18976-3 ^extension[=].valueInteger = 1
 * LOINC#LA18977-1 "Current some day smoker"
-* LOINC#LA18977-1 ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
-* LOINC#LA18977-1 ^extension[=].valueDecimal = 2
+* LOINC#LA18977-1 ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder"
+* LOINC#LA18977-1 ^extension[=].valueInteger = 2
 * LOINC#LA15920-4 "Former smoker"
-* LOINC#LA15920-4 ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
-* LOINC#LA15920-4 ^extension[=].valueDecimal = 3
+* LOINC#LA15920-4 ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder"
+* LOINC#LA15920-4 ^extension[=].valueInteger = 3
 * LOINC#LA18978-9 "Never smoker"
-* LOINC#LA18978-9 ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
-* LOINC#LA18978-9 ^extension[=].valueDecimal = 4
+* LOINC#LA18978-9 ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder"
+* LOINC#LA18978-9 ^extension[=].valueInteger = 4
 * LOINC#LA18979-7 "Smoker, current status unknown"
-* LOINC#LA18979-7 ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
-* LOINC#LA18979-7 ^extension[=].valueDecimal = 5
+* LOINC#LA18979-7 ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder"
+* LOINC#LA18979-7 ^extension[=].valueInteger = 5
 * LOINC#LA18980-5 "Unknown if ever smoked"
-* LOINC#LA18980-5 ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
-* LOINC#LA18980-5 ^extension[=].valueDecimal = 6
+* LOINC#LA18980-5 ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder"
+* LOINC#LA18980-5 ^extension[=].valueInteger = 6
 * LOINC#LA18981-3 "Heavy tobacco smoker"
-* LOINC#LA18981-3 ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
-* LOINC#LA18981-3 ^extension[=].valueDecimal = 7
+* LOINC#LA18981-3 ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder"
+* LOINC#LA18981-3 ^extension[=].valueInteger = 7
 * LOINC#LA18982-1 "Light tobacco smoker"
-* LOINC#LA18982-1 ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/ordinalValue"
-* LOINC#LA18982-1 ^extension[=].valueDecimal = 8
+* LOINC#LA18982-1 ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/valueset-conceptOrder"
+* LOINC#LA18982-1 ^extension[=].valueInteger = 8

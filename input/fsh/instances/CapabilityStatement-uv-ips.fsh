@@ -57,9 +57,9 @@ Usage: #definition
 * rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips"
 * rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].supportedProfile.extension.valueCode = #SHOULD
-* rest.resource[+].type = #DeviceUseStatement
-* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/DeviceUseStatement"
-* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips"
+* rest.resource[+].type = #DeviceUsage
+* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/DeviceUsage"
+* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUsage-uv-ips"
 * rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].supportedProfile.extension.valueCode = #SHOULD
 * rest.resource[+].type = #DiagnosticReport
@@ -75,11 +75,6 @@ Usage: #definition
 * rest.resource[+].type = #Immunization
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Immunization"
 * rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
-* rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].supportedProfile.extension.valueCode = #SHOULD
-* rest.resource[+].type = #Media
-* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Media"
-* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/Media-observation-uv-ips"
 * rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].supportedProfile.extension.valueCode = #SHOULD
 * rest.resource[+].type = #Medication
@@ -105,6 +100,7 @@ Usage: #definition
 * rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips"
 * rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-pathology-uv-ips"
 * rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-radiology-uv-ips"
+* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-media-uv-ips"
 * rest.resource[=].supportedProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].supportedProfile[=].extension.valueCode = #SHOULD
 * rest.resource[=].supportedProfile[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"

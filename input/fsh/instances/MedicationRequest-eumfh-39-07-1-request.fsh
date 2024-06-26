@@ -5,7 +5,7 @@ Description: "MedicationRequest: Simvastatin request"
 Usage: #example
 * status = #active
 * intent = #order
-* medicationReference = Reference(Medication/eumfh-39-07-1) "simvastatin"
+* medication.reference = Reference(Medication/eumfh-39-07-1) "simvastatin"
 * subject = Reference(Patient/eumfh-39-07) "Alexander Heig (inject 39-07)"
 * dosageInstruction.text = "40 mg/day"
 * dosageInstruction.timing.repeat.frequency = 1

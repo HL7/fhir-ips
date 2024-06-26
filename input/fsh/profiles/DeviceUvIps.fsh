@@ -2,7 +2,7 @@ Profile: DeviceUvIps
 Parent: Device
 Id: Device-uv-ips
 Title: "Device (IPS)"
-Description: "This profile represents the constraints applied to the Device resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A device used by or implanted on the patient is described in the patient summary as an instance of a Device resource constrained by this profile."
+Description: "This profile represents the constraints applied to the Device resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R5. A device used by or implanted on the patient is described in the patient summary as an instance of a Device resource constrained by this profile."
 * ^version = "1.1.0"
 * ^status = #active
 * ^experimental = false
@@ -25,6 +25,3 @@ Description: "This profile represents the constraints applied to the Device reso
 * type ^binding.extension.extension[=].valueMarkdown = "Codes for medical devices in SNOMED IPS Free Set"
 * type ^binding.extension.url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
 * type ^binding.description = "The type of device or a code for absent/unknown device"
-* patient 1.. MS
-* patient only Reference(PatientUvIps)
-* patient.reference 1.. MS

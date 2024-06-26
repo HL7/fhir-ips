@@ -12,5 +12,5 @@ Description: "Ratio data type, constrained to use UCUM as the code system for un
 * ^purpose = "Allow only UCUM as the code system for units."
 * numerator only QuantityIPS
 * numerator MS
-* denominator only QuantityIPS
+* denominator only SimpleQuantityIPS
 * denominator MS

@@ -28,24 +28,24 @@ Usage: #example
 Instance: 6e1fb74a-742b-4c7b-8487-171dacb88766
 InstanceOf: Composition
 Usage: #inline
+* meta.security = Confidentiality#N
 * status = #final
 * type = $loinc#60591-5 "Patient summary Document"
 * subject = Reference(urn:uuid:7685713c-e29e-4a75-8a90-45be7ba3be94)
 * date = "2020-12-11T14:30:00+01:00"
 * author = Reference(urn:uuid:98315ba9-ffea-41ef-b59b-a836c039858f)
 * title = "Patient Summary as of December 11, 2020 14:30"
-* confidentiality = #N
-* attester[0].mode = #legal
+* attester[0].mode = CompositionAttestationMode#legal
 * attester[=].time = "2020-12-11T14:30:00+01:00"
 * attester[=].party = Reference(urn:uuid:98315ba9-ffea-41ef-b59b-a836c039858f)
-* attester[+].mode = #legal
+* attester[+].mode = CompositionAttestationMode#legal
 * attester[=].time = "2020-12-11T14:30:00+01:00"
 * attester[=].party = Reference(urn:uuid:bb6bdf4f-7fcb-4d44-96a5-b858ad031d1d)
 * custodian = Reference(urn:uuid:bb6bdf4f-7fcb-4d44-96a5-b858ad031d1d)
-* relatesTo.code = #appends
-* relatesTo.targetIdentifier.system = "urn:oid:2.16.724.4.8.10.200.10"
-* relatesTo.targetIdentifier.value = "20e12ce3-857f-49c0-b888-cb670597f191"
-* event.code = $v3-ActClass#PCPR
+* relatesTo.type = #appends
+* relatesTo.resourceReference.identifier.system = "urn:oid:2.16.724.4.8.10.200.10"
+* relatesTo.resourceReference.identifier.value = "20e12ce3-857f-49c0-b888-cb670597f191"
+* event.detail.concept = $v3-ActClass#PCPR
 * event.period.end = "2020-12-11T14:30:00+01:00"
 * section[0].title = "Active Problems"
 * section[=].code = $loinc#11450-4 "Problem list - Reported"
@@ -110,14 +110,14 @@ Usage: #inline
 * identifier.value = "564738757"
 * active = true
 * name = "Anorg Aniza Tion BV / The best custodian ever"
-* telecom.system = #phone
-* telecom.value = "+31-51-34343400"
-* telecom.use = #work
-* address.use = #work
-* address.line = "Houttuinen 27"
-* address.city = "Dordrecht"
-* address.postalCode = "3311 CE"
-* address.country = "NL"
+* contact.telecom.system = #phone
+* contact.telecom.value = "+31-51-34343400"
+* contact.telecom.use = #work
+* contact.address.use = #work
+* contact.address.line = "Houttuinen 27"
+* contact.address.city = "Dordrecht"
+* contact.address.postalCode = "3311 CE"
+* contact.address.country = "NL"
 
 Instance: ad84b7a2-b4dd-474e-bef3-0779e6cb595f
 InstanceOf: Condition
@@ -144,8 +144,9 @@ InstanceOf: MedicationStatement
 Usage: #inline
 * identifier.system = "urn:oid:1.2.3.999"
 * identifier.value = "8faf0319-89d3-427c-b9d1-e8c8fd390dca"
-* status = #active
-* medicationReference = Reference(urn:uuid:6369a973-afc7-4617-8877-3e9811e05a5b)
+* status = #recorded
+//* status = #active (R4 status)
+* medication.reference = Reference(urn:uuid:6369a973-afc7-4617-8877-3e9811e05a5b)
 * subject = Reference(urn:uuid:7685713c-e29e-4a75-8a90-45be7ba3be94)
 * effectivePeriod.start = "2015-03"
 * dosage.timing.repeat.count = 1
@@ -169,7 +170,7 @@ Usage: #inline
 * identifier.value = "8d9566a4-d26d-46be-a3e4-c9f3a0e5cd83"
 * clinicalStatus = $allergyintolerance-clinical#active
 * verificationStatus = $allergyintolerance-verification#confirmed
-* type = #allergy
+* type = AllergyIntoleranceType#allergy
 * category = #medication
 * criticality = #high
 * code = $sct#373270004 "Substance with penicillin structure and antibacterial mechanism of action (substance)"

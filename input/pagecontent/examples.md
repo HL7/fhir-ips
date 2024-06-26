@@ -16,9 +16,9 @@
 <ul>{% include list-simple-name-conditions.xhtml %}</ul>
 
 
-### DeviceUseStatement
+### DeviceUsage
 
-<ul>{% include list-simple-name-deviceusestatements.xhtml %}</ul>
+<ul>{% include list-simple-name-deviceusages.xhtml %}</ul>
 
 ### Device
 
@@ -41,10 +41,6 @@
 ### Medication
 
 <ul>{% include list-simple-name-medications.xhtml %}</ul>
-
-### Media
-
-<ul>{% include list-simple-name-media.xhtml %}</ul>
 
 ### MedicationRequest
 

@@ -52,6 +52,7 @@ Usage: #example
 Instance: 30551ce1-5a28-4356-b684-1e639094ad4d
 InstanceOf: Composition
 Usage: #inline
+* meta.security = Confidentiality#N
 * identifier.system = "urn:oid:2.16.724.4.8.10.200.10"
 * identifier.value = "3f69e0a5-2177-4540-baab-7a5d0877428f"
 * status = #final
@@ -60,18 +61,17 @@ Usage: #inline
 * date = "2017-12-11T14:30:00+01:00"
 * author = Reference(urn:uuid:1c616b24-3895-48c4-9a02-9a64110351ef)
 * title = "Patient Summary as of December 11, 2017 14:30"
-* confidentiality = #N
-* attester[0].mode = #legal
+* attester[0].mode = CompositionAttestationMode#legal
 * attester[=].time = "2017-12-11T14:30:00+01:00"
 * attester[=].party = Reference(urn:uuid:1c616b24-3895-48c4-9a02-9a64110351ef)
-* attester[+].mode = #legal
+* attester[+].mode = CompositionAttestationMode#legal
 * attester[=].time = "2017-12-11T14:30:00+01:00"
 * attester[=].party = Reference(urn:uuid:890751f4-2924-4636-bab7-efffc7f3cf15)
 * custodian = Reference(urn:uuid:890751f4-2924-4636-bab7-efffc7f3cf15)
-* relatesTo.code = #appends
-* relatesTo.targetIdentifier.system = "urn:oid:2.16.724.4.8.10.200.10"
-* relatesTo.targetIdentifier.value = "c2277753-9f90-4a95-8ddb-a0b3f6e7d292"
-* event.code = $v3-ActClass#PCPR
+* relatesTo.type = #appends
+* relatesTo.resourceReference.identifier.system = "urn:oid:2.16.724.4.8.10.200.10"
+* relatesTo.resourceReference.identifier.value = "c2277753-9f90-4a95-8ddb-a0b3f6e7d292"
+* event.detail.concept = $v3-ActClass#PCPR
 * event.period.end = "2017-12-11T14:30:00+01:00"
 * section[0].title = "Active Problems"
 * section[=].code = $loinc#11450-4 "Problem list - Reported"
@@ -153,14 +153,14 @@ Usage: #inline
 * identifier.value = "564738757"
 * active = true
 * name = "Anorg Aniza Tion BV / The best custodian ever"
-* telecom.system = #phone
-* telecom.value = "+31-51-34343400"
-* telecom.use = #work
-* address.use = #work
-* address.line = "Houttuinen 27"
-* address.city = "Dordrecht"
-* address.postalCode = "3311 CE"
-* address.country = "NL"
+* contact.telecom.system = #phone
+* contact.telecom.value = "+31-51-34343400"
+* contact.telecom.use = #work
+* contact.address.use = #work
+* contact.address.line = "Houttuinen 27"
+* contact.address.city = "Dordrecht"
+* contact.address.postalCode = "3311 CE"
+* contact.address.country = "NL"
 
 Instance: c64139e7-f02d-409c-bf34-75e8bf23bc80
 InstanceOf: Condition
@@ -187,8 +187,9 @@ InstanceOf: MedicationStatement
 Usage: #inline
 * identifier.system = "urn:oid:1.2.3.999"
 * identifier.value = "b75f92cb-61d4-469a-9387-df5ef70d25f0"
-* status = #active
-* medicationReference = Reference(urn:uuid:976d0804-cae0-45ae-afe3-a19f3ceba6bc)
+* status = #recorded
+//* status = #active (R4 status)
+* medication.reference = Reference(urn:uuid:976d0804-cae0-45ae-afe3-a19f3ceba6bc)
 * subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * effectivePeriod.start = "2015-03"
 * dosage.timing.repeat.count = 1
@@ -202,8 +203,9 @@ InstanceOf: MedicationStatement
 Usage: #inline
 * identifier.system = "urn:oid:1.2.3.999"
 * identifier.value = "9e312d6b-c6b6-439a-a730-6efaa5dcf8bc"
-* status = #active
-* medicationReference = Reference(urn:uuid:8adc0999-9468-4ac9-9557-680fa133d626)
+* status = #recorded
+//* status = #active (R4 status)
+* medication.reference = Reference(urn:uuid:8adc0999-9468-4ac9-9557-680fa133d626)
 * subject = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * effectivePeriod.start = "2016-01"
 * dosage.route = $standardterms#20053000 "Oral use"
@@ -235,9 +237,9 @@ Usage: #inline
 * identifier.value = "3a462598-009c-484a-965c-d6b24a821424"
 * clinicalStatus = $allergyintolerance-clinical#active
 * verificationStatus = $allergyintolerance-verification#confirmed
-* type = #allergy
-* category = #medication
-* criticality = #high
+* type = $allergy-intolerance-type#allergy
+* category = $allergy-intolerance-category#medication
+* criticality = $allergy-intolerance-criticality#high
 * code = $sct#373270004 "Substance with penicillin structure and antibacterial mechanism of action (substance)"
 * patient = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8)
 * onsetDateTime = "2010"
