@@ -186,7 +186,7 @@ This profile is based on the ClinicalDocument profile."""
 * section[sectionResults] ^definition = "This section assembles relevant observation results collected on the patient or produced on in-vitro biologic specimens collected from the patient. Some of these results may be laboratory results, others may be anatomic pathology results, others, radiology results, and others, clinical results."
 * section[sectionResults].title 1.. MS
 * section[sectionResults].code = $loinc#30954-2
-* section[sectionResults].entry only Reference(Observation or DiagnosticReport or DocumentReference)
+* section[sectionResults].entry only Reference(Observation or DiagnosticReport or Media or DocumentReference)
 * section[sectionResults].entry MS
 * section[sectionResults].entry ^slicing.discriminator[0].type = #type
 * section[sectionResults].entry ^slicing.discriminator[=].path = "resolve()"
@@ -198,10 +198,12 @@ This profile is based on the ClinicalDocument profile."""
 * section[sectionResults].entry contains
     results-observation-laboratory-pathology 0..* MS and
     results-observation-radiology 0..* MS and
-    results-diagnosticReport 0..* MS
+    results-diagnosticReport 0..* MS and
+    results-media 0..*
 * section[sectionResults].entry[results-observation-laboratory-pathology] only Reference(ObservationResultsLaboratoryPathologyUvIps)
 * section[sectionResults].entry[results-observation-radiology] only Reference(ObservationResultsRadiologyUvIps)
 * section[sectionResults].entry[results-diagnosticReport] only Reference(DiagnosticReportUvIps)
+* section[sectionResults].entry[results-media] only Reference(MediaObservationUvIps)
 * section[sectionVitalSigns] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[sectionVitalSigns] ^extension[=].valueString = "Vital Signs Section"
 * section[sectionVitalSigns] ^label = "Vital signs"
