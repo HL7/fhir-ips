@@ -14,7 +14,7 @@ This specialized Flag is used to convey information about an alert specific to a
 * ^contact.telecom.value = "http://www.hl7.org/Special/committees/patientcare"
 * ^jurisdiction = $m49.htm#001
 * ^purpose = "This profile constrains the representation of a record of an alert in the context of the international patient summary as specified by the IPS project of HL7 International."
-* extension contains workflow-supportingInfo named supportingInfo 0..1
-* extension contains flag-priority named flag-priority 0..1 MS
+* extension contains $workflow-supportingInfo named supportingInfo 0..1
+* extension contains $flag-priority named flag-priority 0..1 MS
 * status = #active (exactly)
 * category MS

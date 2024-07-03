@@ -31,5 +31,7 @@ Alias: $v3-RouteOfAdministration = http://terminology.hl7.org/CodeSystem/v3-Rout
 Alias: $clinicaldocument = http://hl7.org/fhir/StructureDefinition/clinicaldocument
 Alias: $vitalsigns = http://hl7.org/fhir/StructureDefinition/vitalsigns
 Alias: $data-absent-reason = http://hl7.org/fhir/StructureDefinition/data-absent-reason
+Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
+Alias: $flag-priority = http://hl7.org/fhir/StructureDefinition/flag-priority
 Alias: $condition-severity = http://hl7.org/fhir/ValueSet/condition-severity
 Alias: $vital-signs-profile = http://hl7.org/fhir/StructureDefinition/vitalsigns
