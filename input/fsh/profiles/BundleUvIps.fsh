@@ -114,7 +114,7 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry[specimen].resource 1..
 * entry[specimen].resource only SpecimenUvIps
 * entry[flag].resource 1..
-* entry[flag].resource only FlagUvIps
+* entry[flag].resource only FlagAlertUvIps
 * entry[clinicalimpression].resource 1..
 * entry[clinicalimpression].resource only ClinicalImpression
 * entry[careplan].resource 1..

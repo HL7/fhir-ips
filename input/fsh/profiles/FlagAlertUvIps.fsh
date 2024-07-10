@@ -1,7 +1,7 @@
-Profile: FlagUvIps
+Profile: FlagAlertUvIps
 Parent: Flag
-Id: Flag-uv-ips
-Title: "Alert (IPS)"
+Id: Flag-alert-uv-ips
+Title: "Flag - Alert (IPS)"
 Description: """This profile constrains the Flag resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an alert is represented in the patient summary as an instance of a Flag resource constrained by this profile. 
 
 This specialized Flag is used to convey information about an alert specific to an IPS. Information is flagged to raise awareness of potential concerns and/or dangers to/from the subject of the IPS. It brings information to the fore and may reference other information from the summary (through the supportingInfo extension) as well as present obstacles to care."""
@@ -20,4 +20,4 @@ This specialized Flag is used to convey information about an alert specific to a
 * category MS
 * category only CodeableConceptIPS
 * code MS 
-* code only CodeableConceptIPS 
+* code only CodeableConceptIPS

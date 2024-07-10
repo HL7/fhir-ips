@@ -325,17 +325,14 @@ This profile is based on the ClinicalDocument profile."""
 * section[sectionAlerts].entry ^slicing.discriminator[=].path = "resolve()"
 * section[sectionAlerts].entry ^slicing.rules = #open
 * section[sectionAlerts].entry ^short = "Alert information."
-* section[sectionAlerts].entry ^definition = "Contains alert information to be brought to the fore. May optionally reference other resources in IPS."
+* section[sectionAlerts].entry ^definition = "Contains alert information to be communicated. May optionally reference other resources in IPS."
 * section[sectionAlerts].entry contains alertsFlag 0..*
-* section[sectionAlerts].entry[alertsFlag] only Reference(FlagUvIps)
+* section[sectionAlerts].entry[alertsFlag] only Reference(FlagAlertUvIps)
 * section[sectionPatientStory] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[sectionPatientStory] ^extension[=].valueString = "Section"
 * section[sectionPatientStory] ^short = "IPS Patient Story Section"
 * section[sectionPatientStory] ^definition = "The section contains narrative text along with optional resources that express what matters to a patient. This may include needs, strengths, values, concerns and preferences to others providing support and care. The patient’s story, provided here, may be told by the patient or by a proxy."
 * section[sectionPatientStory].title 1..
 * section[sectionPatientStory].code = $loinc#81338-6
-* section[sectionPatientStory].entry ^slicing.discriminator[0].type = #profile
-* section[sectionPatientStory].entry ^slicing.discriminator[=].path = "resolve()"
-* section[sectionPatientStory].entry ^slicing.rules = #open
 * section[sectionPatientStory].entry ^short = "Patient Story resources."
-* section[sectionPatientStory].entry ^definition = "Contains resources to support the Patient Story. Any resource may be used."
+* section[sectionPatientStory].entry ^definition = "Contains resources to support the Patient Story. Instances of DocumentReference or any other suitable resource type may be used."
