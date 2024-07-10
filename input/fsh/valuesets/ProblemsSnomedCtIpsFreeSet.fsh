@@ -16,7 +16,7 @@ Description: "This value set includes the codes from the SNOMED International Pa
 * ^expansion.total = 5622
 * ^expansion.offset = 0
 * ^expansion.parameter.name = "version"
-* ^expansion.parameter.valueUri = "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+* ^expansion.parameter.valueUri = "http://snomed.info/sct/version/20220731"
 * ^expansion.contains[0].system = "http://snomed.info/sct"
 * ^expansion.contains[=].code = #15971541000119105
 * ^expansion.contains[=].display = "Left femoral hernia"
@@ -16883,5 +16883,5 @@ Description: "This value set includes the codes from the SNOMED International Pa
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].code = #140004
 * ^expansion.contains[=].display = "Chronic pharyngitis"
-* include codes from system http://snomed.info/sct|http://snomed.info/sct/900000000000207008
+* include codes from system http://snomed.info/sct
     where constraint = "(< 404684003 |Clinical finding (finding)| OR < 243796009 |Situation with explicit context (situation)| OR < 272379006 |Event (event)|) AND ^ 816080008 |International Patient Summary (foundation metadata concept)|"

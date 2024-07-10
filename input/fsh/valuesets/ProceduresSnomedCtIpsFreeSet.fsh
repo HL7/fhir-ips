@@ -16,7 +16,7 @@ Description: "This value set includes the codes from the SNOMED International Pa
 * ^expansion.total = 690
 * ^expansion.offset = 0
 * ^expansion.parameter.name = "version"
-* ^expansion.parameter.valueUri = "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+* ^expansion.parameter.valueUri = "http://snomed.info/sct/version/20220731"
 * ^expansion.contains[0].system = "http://snomed.info/sct"
 * ^expansion.contains[=].code = #1144279009
 * ^expansion.contains[=].display = "Fitting of complete denture"
@@ -2087,5 +2087,5 @@ Description: "This value set includes the codes from the SNOMED International Pa
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].code = #2598006
 * ^expansion.contains[=].display = "Open heart surgery"
-* include codes from system http://snomed.info/sct|http://snomed.info/sct/900000000000207008
+* include codes from system http://snomed.info/sct
     where constraint = "(< 71388002 |Procedure (procedure)| AND ^ 816080008 |International Patient Summary (foundation metadata concept)|) minus (<< 14734007 |Administrative procedure (procedure)| or << 59524001 |Blood bank procedure (procedure)| or << 389067005 |Community health procedure (procedure)| or << 442006003 |Determination of information related to transfusion (procedure)| or << 225288009 |Environmental care procedure (procedure)| or << 308335008 |Patient encounter procedure (procedure)| or << 710135002 |Promotion (procedure)| or << 389084004 |Staff related procedure (procedure)|)"

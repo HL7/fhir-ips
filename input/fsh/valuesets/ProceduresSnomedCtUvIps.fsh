@@ -13,21 +13,21 @@ Description: "This value set includes codes from SNOMED Clinical Terms®: descen
 * ^jurisdiction = $m49.htm#001
 * ^immutable = false
 * ^copyright = "The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](http://www.snomed.org/snomed-ct/get-snomed-ct) or directly contact SNOMED International: info@snomed.org"
-* include codes from system http://snomed.info/sct|http://snomed.info/sct/900000000000207008
+* include codes from system http://snomed.info/sct
     where concept descendent-of #71388002
-* exclude codes from system http://snomed.info/sct|http://snomed.info/sct/900000000000207008
+* exclude codes from system http://snomed.info/sct
     where concept is-a #14734007
-* exclude codes from system http://snomed.info/sct|http://snomed.info/sct/900000000000207008
+* exclude codes from system http://snomed.info/sct
     where concept is-a #59524001
-* exclude codes from system http://snomed.info/sct|http://snomed.info/sct/900000000000207008
+* exclude codes from system http://snomed.info/sct
     where concept is-a #389067005
-* exclude codes from system http://snomed.info/sct|http://snomed.info/sct/900000000000207008
+* exclude codes from system http://snomed.info/sct
     where concept is-a #442006003
-* exclude codes from system http://snomed.info/sct|http://snomed.info/sct/900000000000207008
+* exclude codes from system http://snomed.info/sct
     where concept is-a #225288009
-* exclude codes from system http://snomed.info/sct|http://snomed.info/sct/900000000000207008
+* exclude codes from system http://snomed.info/sct
     where concept is-a #308335008
-* exclude codes from system http://snomed.info/sct|http://snomed.info/sct/900000000000207008
+* exclude codes from system http://snomed.info/sct
     where concept is-a #710135002
-* exclude codes from system http://snomed.info/sct|http://snomed.info/sct/900000000000207008
+* exclude codes from system http://snomed.info/sct
     where concept is-a #389084004

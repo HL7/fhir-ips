@@ -17,7 +17,7 @@ Description: "This value set includes the codes for blood group findings from th
 * ^expansion.total = 13
 * ^expansion.offset = 0
 * ^expansion.parameter.name = "version"
-* ^expansion.parameter.valueUri = "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+* ^expansion.parameter.valueUri = "http://snomed.info/sct/version/20220731"
 * ^expansion.contains[0].system = "http://snomed.info/sct"
 * ^expansion.contains[=].code = #278154007
 * ^expansion.contains[=].display = "Blood group AB Rh(D) negative"
@@ -57,5 +57,5 @@ Description: "This value set includes the codes for blood group findings from th
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].code = #58460004
 * ^expansion.contains[=].display = "Blood group O"
-* include codes from system http://snomed.info/sct|http://snomed.info/sct/900000000000207008
+* include codes from system http://snomed.info/sct
     where constraint = "< 365636006 |Finding of blood group (finding)| AND ^ 816080008 |International Patient Summary (foundation metadata concept)|"

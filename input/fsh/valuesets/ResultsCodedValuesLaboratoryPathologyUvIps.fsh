@@ -16,9 +16,9 @@ Description: "This value set is defined as the union of: (a) Blood group [Type],
 * include codes from valueset ResultsBloodGroupUvIps
 * include codes from valueset ResultsPresenceAbsenceUvIps
 * include codes from valueset ResultsMicroorganismUvIps
-* include codes from system http://snomed.info/sct|http://snomed.info/sct/900000000000207008
+* include codes from system http://snomed.info/sct
     where concept descendent-of #106253005
-* include codes from system http://snomed.info/sct|http://snomed.info/sct/900000000000207008
+* include codes from system http://snomed.info/sct
     where concept descendent-of #373369003
-* include codes from system http://snomed.info/sct|http://snomed.info/sct/900000000000207008
+* include codes from system http://snomed.info/sct
     where concept descendent-of #399981008

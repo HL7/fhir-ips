@@ -16,6 +16,6 @@ Description: "This value set provides a list of types of vaccine, plus IPS codes
 * ^jurisdiction = $m49.htm#001
 * ^immutable = false
 * ^copyright = "The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](http://www.snomed.org/snomed-ct/get-snomed-ct) or directly contact SNOMED International: info@snomed.org"
-* include codes from system http://snomed.info/sct|http://snomed.info/sct/900000000000207008
+* include codes from system http://snomed.info/sct
     where concept descendent-of #787859002
 * include codes from valueset AbsentOrUnknownSNOMEDUvIps

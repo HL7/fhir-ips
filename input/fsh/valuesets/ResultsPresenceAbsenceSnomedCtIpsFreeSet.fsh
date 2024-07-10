@@ -17,7 +17,7 @@ Description: "This value set includes the codes for presence and absence finding
 * ^expansion.total = 9
 * ^expansion.offset = 0
 * ^expansion.parameter.name = "version"
-* ^expansion.parameter.valueUri = "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+* ^expansion.parameter.valueUri = "http://snomed.info/sct/version/20220731"
 * ^expansion.contains[0].system = "http://snomed.info/sct"
 * ^expansion.contains[=].code = #441614007
 * ^expansion.contains[=].display = "Present one plus out of three plus"
@@ -45,5 +45,5 @@ Description: "This value set includes the codes for presence and absence finding
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].code = #2667000
 * ^expansion.contains[=].display = "Absent"
-* include codes from system http://snomed.info/sct|http://snomed.info/sct/900000000000207008
+* include codes from system http://snomed.info/sct
     where constraint = "(< 260411009 |Presence findings (qualifier value)| OR < 272519000 |Absence findings (qualifier value)|) AND ^ 816080008 |International Patient Summary (foundation metadata concept)|"

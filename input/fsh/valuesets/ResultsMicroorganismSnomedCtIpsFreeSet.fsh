@@ -17,7 +17,7 @@ Description: "This value set includes the codes for microorganisms from the SNOM
 * ^expansion.total = 1343
 * ^expansion.offset = 0
 * ^expansion.parameter.name = "version"
-* ^expansion.parameter.valueUri = "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+* ^expansion.parameter.valueUri = "http://snomed.info/sct/version/20220731"
 * ^expansion.contains[0].system = "http://snomed.info/sct"
 * ^expansion.contains[=].code = #646165971000087107
 * ^expansion.contains[=].display = "Shigella flexneri 5a"
@@ -4047,5 +4047,5 @@ Description: "This value set includes the codes for microorganisms from the SNOM
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].code = #252000
 * ^expansion.contains[=].display = "Acinetobacter johnsonii"
-* include codes from system http://snomed.info/sct|http://snomed.info/sct/900000000000207008
+* include codes from system http://snomed.info/sct
     where constraint = "(< 409822003 |Domain Bacteria| OR < 441649000 |Class Cestoda and/or Class Trematoda and/or Phylum Nemata| OR < 414561005 |Kingdom Fungi| OR < 84676004 |Prion| OR < 49872002 |Virus| OR < 417396000 |Kingdom Protozoa| OR < 419036000 |Domain Archaea (organism)| OR < 426785004 |Kingdom Chromista| OR < 370570004 |Kingdom Protoctista| OR < 417377004 |Kingdom Viridiplantae| OR < 243565002 |Slime Mould|) AND ^ 816080008 |International Patient Summary (foundation metadata concept)|"

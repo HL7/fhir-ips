@@ -16,7 +16,7 @@ Description: "This value set includes the codes from the SNOMED International Pa
 * ^expansion.total = 72
 * ^expansion.offset = 0
 * ^expansion.parameter.name = "version"
-* ^expansion.parameter.valueUri = "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+* ^expansion.parameter.valueUri = "http://snomed.info/sct/version/20220731"
 * ^expansion.contains[0].system = "http://snomed.info/sct"
 * ^expansion.contains[=].code = #705991002
 * ^expansion.contains[=].display = "Mechanical cardiac valve prosthesis"
@@ -233,5 +233,5 @@ Description: "This value set includes the codes from the SNOMED International Pa
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].code = #271003
 * ^expansion.contains[=].display = "Bone plate"
-* include codes from system http://snomed.info/sct|http://snomed.info/sct/900000000000207008
+* include codes from system http://snomed.info/sct
     where constraint = "< 49062001 | Device (physical object)| AND ^ 816080008 |International Patient Summary (foundation metadata concept)|"

@@ -17,7 +17,7 @@ Description: "This value set includes the codes for allergy or intolerance findi
 * ^expansion.total = 292
 * ^expansion.offset = 0
 * ^expansion.parameter.name = "version"
-* ^expansion.parameter.valueUri = "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"
+* ^expansion.parameter.valueUri = "http://snomed.info/sct/version/20220731"
 * ^expansion.contains[0].system = "http://snomed.info/sct"
 * ^expansion.contains[=].code = #1985008
 * ^expansion.contains[=].display = "Vomitus"
@@ -894,5 +894,5 @@ Description: "This value set includes the codes for allergy or intolerance findi
 * ^expansion.contains[+].system = "http://snomed.info/sct"
 * ^expansion.contains[=].code = #442461000124102
 * ^expansion.contains[=].display = "Hickory nut"
-* include codes from system http://snomed.info/sct|http://snomed.info/sct/900000000000207008
+* include codes from system http://snomed.info/sct
     where constraint = "(< 373873005 |Pharmaceutical / biologic product (product)| OR < 105590001 |Substance (substance)| OR < 418038007 |Propensity to adverse reactions to substance (finding)|) AND ^ 816080008 |International Patient Summary (foundation metadata concept)|"
