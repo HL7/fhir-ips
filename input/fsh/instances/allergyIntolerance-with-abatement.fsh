@@ -3,7 +3,7 @@ InstanceOf: AllergyIntolerance
 Title: "AllergyIntolerance: resolved allergy"
 Description: "AllergyIntolerance: resolved allergy"
 Usage: #example
-* extension.url = "http://hl7.org/fhir/uv/ips/StructureDefinition/abatement-dateTime-uv-ips"
+* extension.url = "http://hl7.org/fhir/StructureDefinition/allergyintolerance-abatement"
 * extension.valueDateTime = "2010"
 * clinicalStatus = $allergyintolerance-clinical#resolved
 * verificationStatus = $allergyintolerance-verification#confirmed

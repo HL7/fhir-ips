@@ -3,6 +3,7 @@ Alias: $v3-RoleCode = http://terminology.hl7.org/CodeSystem/v3-RoleCode
 Alias: $DCM = http://dicom.nema.org/resources/ontology/DCM
 Alias: $allergyintolerance-clinical = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical
 Alias: $allergyintolerance-verification = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
+Alias: $allergyintolerance-abatement = http://hl7.org/fhir/StructureDefinition/allergyintolerance-abatement
 Alias: $sct = http://snomed.info/sct
 Alias: $rxnorm = http://www.nlm.nih.gov/research/umls/rxnorm
 Alias: $atc = http://www.whocc.no/atc
