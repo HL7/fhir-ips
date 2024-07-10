@@ -81,7 +81,9 @@ This profile is based on the ClinicalDocument profile."""
     sectionPlanOfCare 0..1 and
     sectionSocialHistory 0..1 and
     sectionPregnancyHx 0..1 and
-    sectionAdvanceDirectives 0..1
+    sectionAdvanceDirectives 0..1 and
+    sectionAlerts 0..1 and
+    sectionPatientStory 0..1
 * section[sectionMedications] obeys ips-comp-1
 * section[sectionMedications] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[sectionMedications] ^extension[=].valueString = "Section"
@@ -312,3 +314,25 @@ This profile is based on the ClinicalDocument profile."""
 * section[sectionAdvanceDirectives].entry ^definition = "Contains a narrative description or a Consent entry with information about the patient's advance directive."
 * section[sectionAdvanceDirectives].entry contains advanceDirectivesConsent 0..*
 * section[sectionAdvanceDirectives].entry[advanceDirectivesConsent] only Reference(Consent)
+* section[sectionAlerts] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionAlerts] ^extension[=].valueString = "Section"
+* section[sectionAlerts] ^short = "IPS Alerts Section"
+* section[sectionAlerts] ^definition = "The alerts section flags potential concerns and/or dangers to/from the patient and may also include obstacles to care."
+* section[sectionAlerts].title 1..
+* section[sectionAlerts].code = $loinc#104605-1
+* section[sectionAlerts].entry only Reference(Flag or DocumentReference)
+* section[sectionAlerts].entry ^slicing.discriminator[0].type = #profile
+* section[sectionAlerts].entry ^slicing.discriminator[=].path = "resolve()"
+* section[sectionAlerts].entry ^slicing.rules = #open
+* section[sectionAlerts].entry ^short = "Alert information."
+* section[sectionAlerts].entry ^definition = "Contains alert information to be communicated. May optionally reference other resources in IPS."
+* section[sectionAlerts].entry contains alertsFlag 0..*
+* section[sectionAlerts].entry[alertsFlag] only Reference(FlagAlertUvIps)
+* section[sectionPatientStory] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionPatientStory] ^extension[=].valueString = "Section"
+* section[sectionPatientStory] ^short = "IPS Patient Story Section"
+* section[sectionPatientStory] ^definition = "The section contains narrative text along with optional resources that express what matters to a patient. This may include needs, strengths, values, concerns and preferences to others providing support and care. The patient’s story, provided here, may be told by the patient or by a proxy."
+* section[sectionPatientStory].title 1..
+* section[sectionPatientStory].code = $loinc#81338-6
+* section[sectionPatientStory].entry ^short = "Patient Story resources."
+* section[sectionPatientStory].entry ^definition = "Contains resources to support the Patient Story. Instances of DocumentReference or any other suitable resource type may be used."
