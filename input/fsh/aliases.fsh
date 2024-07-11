@@ -36,3 +36,4 @@ Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workfl
 Alias: $flag-priority = http://hl7.org/fhir/StructureDefinition/flag-priority
 Alias: $condition-severity = http://hl7.org/fhir/ValueSet/condition-severity
 Alias: $vital-signs-profile = http://hl7.org/fhir/StructureDefinition/vitalsigns
+Alias: $composition-section-note = http://hl7.org/fhir/StructureDefinition/note
