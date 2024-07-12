@@ -25,7 +25,7 @@ Usage: #definition
 * parameter[=].use = #in
 * parameter[=].min = 0
 * parameter[=].max = "1"
-* parameter[=].documentation = "When the logical id of the patient is not used, servers MAY choose to support patient selection based on provided identifier"
+* parameter[=].documentation = "When the logical id of the patient is not used, servers MAY choose to support patient selection based on provided identifier. Unless the identifier system is unknown, requestors SHOULD include both the system and value (e.g. 'identifier=https://standards.digital.health.nz/ns/nhi-id|CNNJ9186') when using this parameter."
 * parameter[=].type = #string
 * parameter[=].searchType = #token
 * parameter[+].name = #profile
