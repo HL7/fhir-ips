@@ -65,8 +65,6 @@ This profile is based on the ClinicalDocument profile."""
 * section.extension contains $composition-section-note named section-note 0..1
 * section.extension[section-note] ^short = "Additional notes that apply to the section (but not to specific resource)."
 * section.extension[section-note] ^definition = "Additional notes that apply to the section (but not to specific resource)."
-* section.code 1.. MS
-* section.code only CodeableConceptIPS
 * section.text 1.. MS
 * section.section ..0
 * section.section ^mustSupport = false
@@ -95,7 +93,7 @@ This profile is based on the ClinicalDocument profile."""
 * section[sectionMedications].title 1.. MS
 * section[sectionMedications].title ^short = "Medication Summary section"
 * section[sectionMedications].title ^definition = "The label for this particular section.  This will be part of the rendered content for the document, and is often used to build a table of contents.\r\n\r\nMedication Summary "
-* section[sectionMedications].code = $loinc#10160-0
+* section[sectionMedications].code = $loinc#10160-0 
 * section[sectionMedications].entry only Reference(MedicationStatement or MedicationRequest or MedicationAdministration or MedicationDispense or DocumentReference)
 * section[sectionMedications].entry MS
 * section[sectionMedications].entry ^slicing.discriminator[0].type = #profile
