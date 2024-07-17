@@ -22,4 +22,4 @@ SNOMED CT® ECL definition: < 373873005 \|Pharmaceutical / biologic product (pro
 * include codes from system http://snomed.info/sct
     where concept descendent-of #420134006 "Propensity to adverse reaction (finding)"
 * include codes from system http://snomed.info/sct
-    where concept descendent-of #716186003 "No known allergy (situation)"
+    where concept is-a #716186003 "No known allergy (situation)"
