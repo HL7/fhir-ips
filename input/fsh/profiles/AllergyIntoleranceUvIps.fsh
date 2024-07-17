@@ -24,13 +24,6 @@ It documents the relevant allergies or intolerances (conditions) for a patient, 
 * code ^binding.extension[0].extension[0].url = "purpose"
 * code ^binding.extension[=].extension[=].valueCode = #candidate
 * code ^binding.extension[=].extension[+].url = "valueSet"
-* code ^binding.extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ValueSet/allergy-intolerance-snomed-ct-ips-free-set"
-* code ^binding.extension[=].extension[+].url = "documentation"
-* code ^binding.extension[=].extension[=].valueMarkdown = "Type of the substance/product, allergy or intolerance condition."
-* code ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
-* code ^binding.extension[+].extension[0].url = "purpose"
-* code ^binding.extension[=].extension[=].valueCode = #candidate
-* code ^binding.extension[=].extension[+].url = "valueSet"
 * code ^binding.extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips"
 * code ^binding.extension[=].extension[+].url = "documentation"
 * code ^binding.extension[=].extension[=].valueMarkdown = "Type of the substance/product, allergy or intolerance condition."
