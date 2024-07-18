@@ -134,6 +134,11 @@ Usage: #definition
 * rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/PractitionerRole-uv-ips"
 * rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].supportedProfile.extension.valueCode = #SHOULD
+* rest.resource[+].type = #Flag
+* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Flag"
+* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/Flag-alert-uv-ips"
+* rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].supportedProfile.extension.valueCode = #SHOULD
 * rest.resource[+].type = #Procedure
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Procedure"
 * rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips"
@@ -151,7 +156,7 @@ Usage: #definition
 * rest.resource[=].operation.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].operation.extension.valueCode = #SHOULD
 * rest.resource[=].operation.name = "docref"
-* rest.resource[=].operation.definition = "http://build.fhir.org/ig/HL7/fhir-ipa/OperationDefinition-docref"
+* rest.resource[=].operation.definition = "http://hl7.org/fhir/uv/ipa/OperationDefinition/docref"
 * rest.resource[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].extension.valueCode = #SHOULD
 * rest.resource[=].type = #OperationDefinition
