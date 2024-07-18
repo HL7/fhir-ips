@@ -31,15 +31,6 @@ Description: "This profile represents the constraints applied to the Condition r
 * severity only CodeableConceptIPS
 * severity MS
 * severity from $condition-severity (preferred)
-* severity ^binding.extension[0].extension[0].url = "purpose"
-* severity ^binding.extension[=].extension[=].valueCode = #candidate
-* severity ^binding.extension[=].extension[+].url = "valueSet"
-* severity ^binding.extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ValueSet/condition-severity-uv-ips"
-* severity ^binding.extension[=].extension[+].url = "documentation"
-* severity ^binding.extension[=].extension[=].valueMarkdown = "An alternative additional binding to LOINC answer codes for condition/problem severity"
-* severity ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
-* severity ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* severity ^binding.extension[=].valueString = "ConditionSeverity"
 * code 1..1 MS
 * code only CodeableConceptIPS
 * code from ProblemsSnomedAbsentUnknownUvIps (preferred)

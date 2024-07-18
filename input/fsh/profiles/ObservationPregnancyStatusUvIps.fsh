@@ -22,7 +22,7 @@ Description: "This profile constrains the Observation resource to represent the 
 * effective[x].extension[data-absent-reason] ^definition = "Provides a reason why the effectiveTime is missing."
 * valueCodeableConcept only CodeableConceptIPS
 * valueCodeableConcept MS
-* valueCodeableConcept from PregnancyStatusUvIps (required)
+* valueCodeableConcept from PregnancyStatusUvIps (preferred)
 * bodySite ..0
 * bodySite ^mustSupport = false
 * specimen ..0
