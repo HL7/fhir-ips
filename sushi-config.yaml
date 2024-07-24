@@ -16,23 +16,11 @@ extension:
 license: CC0-1.0
 version: 2.0.0-ballot
 copyrightYear: 2020+
-releaseLabel: ci-build
+releaseLabel: STU 2 Ballot
 publisher:
   name: HL7 International / Patient Care
   url: http://www.hl7.org/Special/committees/patientcare
 jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
-dependencies:
-  hl7.terminology.r4:
-    version: 5.5.0
-    uri: http://terminology.hl7.org/ImplementationGuide/hl7.terminology
-    id: hl7tx
-  hl7.fhir.uv.extensions.r4:
-    version: 5.1.0
-    uri: http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions
-    id: hl7ext
-  fhir.dicom:
-    version: 2024.2.20240331
-    uri: http://fhir.org/packages/fhir.dicom/ImplementationGuide/fhir.dicom
 menu:
   Home: index.html
   Table of Contents: toc.html

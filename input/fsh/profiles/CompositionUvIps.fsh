@@ -1,12 +1,11 @@
 Profile: CompositionUvIps
-Parent: $clinicaldocument
+Parent: Composition
 Id: Composition-uv-ips
 Title: "Composition (IPS)"
 Description: """Clinical document used to represent the International Patient Summary (IPS) data set. 
 An International Patient Summary (IPS) document is an electronic health record extract containing essential healthcare information about a subject of care. 
 The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-independent; but still clinically relevant. As specified in EN 17269 and ISO 27269, it is designed for supporting the use case scenario for ‘unplanned, cross border care’, but it is not limited to it. It is intended to be international, i.e., to provide generic solutions for global application beyond a particular region or country.
-
-This profile is based on the ClinicalDocument profile."""
+"""
 * ^version = "1.1.0"
 * ^status = #active
 * ^date = "2024-06-19T10:50:07-05:00"

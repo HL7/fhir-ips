@@ -194,7 +194,6 @@ Usage: #inline
 * dosage.timing.repeat.count = 1
 * dosage.timing.repeat.periodUnit = #d
 * dosage.route = $standardterms#20053000 "Oral use"
-* dosage.doseAndRate.type = $dose-rate-type#ordered "Ordered"
 * dosage.doseAndRate.doseQuantity = 1 '1' "tablet"
 
 Instance: 47524493-846a-4a26-bae2-4ab03e60f02e

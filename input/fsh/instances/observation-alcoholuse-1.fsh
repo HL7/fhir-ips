@@ -7,4 +7,5 @@ Usage: #example
 * code = $loinc#74013-4 "Alcoholic drinks per day"
 * subject = Reference(patient-example-female)
 * effectiveDateTime = "2019-07-15"
-* valueQuantity = 2 '{wine glasses}/d'
+* performer = Reference(eumfh-39-07)
+* valueQuantity = 2 '{wine glasses}/d' "wine glasses per day"

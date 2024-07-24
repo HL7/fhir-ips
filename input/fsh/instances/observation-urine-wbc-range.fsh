@@ -9,8 +9,7 @@ Usage: #example
 * subject = Reference(66033)
 * effectiveDateTime = "2018-02-16T09:17:00+01:00"
 * performer = Reference(TII-Organization1)
-* valueRange.low = 10 '/[HPF]' "per HPF"
-* valueRange.high = 20 '/[HPF]' "per HPF"
+* valueQuantity = 10 '/[HPF]' "per HPF"
 * interpretation = $v3-ObservationInterpretation#H
 * referenceRange.high = 5 '/[HPF]' "per HPF"
 * referenceRange.type = $referencerange-meaning#normal "Normal Range"
