@@ -16,15 +16,15 @@ When an IPS is being created for a given recipient that does not have the author
 
 Data may be eliminated for other Privacy reasons, depending on policy. Such as a Patient Consent that would restrict data by timeframe, or author, etc. IHE has an Implementation Guide covering [Privacy Consent on FHIR](https://profiles.ihe.net/ITI/PCF/index.html) including Consent profiles covering all of these concerns.
 
-The IPS may be created with a system audience (e.g. EHR, PHR), where that system is expected and trusted to redact highly sensitive health information based on user permission within that system. For this to function all Resources need to preserve their security and privacy tagging. This use-case is also a use of the Bundle.meta.security high water mark, as a signal to the system.
+The IPS may be created with a system audience (e.g. EHR, PHR), where that system is expected and trusted to redact highly sensitive health information based on user permission within that system. For this to function all Resources need to preserve their security and privacy tagging. This use-case is also a use of the Bundle.meta.security "High Water Mark" defined below, as a signal to the system.
 
 ### Sensitive Section Narrative
 
 The IPS has section narrative that is expected to be generated based on the content included. This section narrative would need to be created carefully considering the highly sensitive health topics. This would be especially important when the IPS may be consumed by users that would have differing permissions than the permissions used to create the IPS. For example, when the IPS is created including all health data, but a section is consumed by a user that should not be allowed to see highly sensitive data. Removing the highly sensitive data can be accomplished using the Resource.meta.security tagging, but the same is not available for narrative. 
 
-### IPS High Water Mark
+### Defining the IPS "High Water Mark"
 
-The IPS Bundle would indicate the most sensitive of all the content within the Bundle. Thus if all the data in the IPS is normal health data, then the Bundle.meta.security would indicate `N` normal. However if there is any restricted health data, then the Bundle.meta.security would indicate `R` restricted. This example uses the [Confidentiality codes](https://terminology.hl7.org/ValueSet-v3-Confidentiality.html).
+The IPS ["High Water Mark"](https://hl7.org/fhir/uv/security-label-ds4p/glossary.html#high-water-mark-hwm) is defined as the most sensitive of all the content within the Bundle as would be specified in Bundle.meta.security. Thus if all the data in the IPS is normal health data, then the Bundle.meta.security would indicate `N` normal. However if there is any restricted health data, then the Bundle.meta.security would indicate `R` restricted. This example uses the [Confidentiality codes](https://terminology.hl7.org/ValueSet-v3-Confidentiality.html).
 
 The IPS Bundle.meta.security would also contain any Security or Privacy tags that apply to the content of the IPS. Examples include Obligations or Refrain instructions, such as do not redisclose without an explicit consent. These Obligations and Refrains are a set of codes included in the [Healthcare Privacy and Security Classification System (HCS)](https://hl7.org/fhir/security-labels.html#hcs)
 
