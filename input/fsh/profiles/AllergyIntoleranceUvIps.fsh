@@ -39,6 +39,6 @@ It documents the relevant allergies or intolerances (conditions) for a patient, 
 * reaction MS
 * reaction.manifestation only CodeableConceptIPS
 * reaction.manifestation MS
-* reaction.manifestation from AllergyReactionSnomedCtIpsFreeSet (preferred)
-* reaction.manifestation ^binding.description = "Code for the allergy or intolerance reaction manifestation from the SNOMED International Patient Set (IPS) subset of SNOMED CT (IPS Free Set)."
+* reaction.manifestation from AllergyReactionUvIps (preferred)
+* reaction.manifestation ^binding.description = "Code for the allergy or intolerance reaction manifestation from SNOMED CT."
 * reaction.severity MS
