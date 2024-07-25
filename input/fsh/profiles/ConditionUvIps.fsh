@@ -33,16 +33,9 @@ Description: "This profile represents the constraints applied to the Condition r
 * severity from $condition-severity (preferred)
 * code 1..1 MS
 * code only CodeableConceptIPS
-* code from ProblemsSnomedAbsentUnknownUvIps (preferred)
-* code ^definition = "Identification of the condition, problem or diagnosis or recording of \"problem absent\" or of \"problems unknown\"."
-* code ^binding.extension[0].extension[0].url = "purpose"
-* code ^binding.extension[=].extension[=].valueCode = #candidate
-* code ^binding.extension[=].extension[+].url = "valueSet"
-* code ^binding.extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ValueSet/problems-snomed-ct-ips-free-set"
-* code ^binding.extension[=].extension[+].url = "documentation"
-* code ^binding.extension[=].extension[=].valueMarkdown = "Codes for a clinical problem in SNOMED IPS Free Set"
-* code ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
-* code ^binding.description = "Code for a clinical problem that is selected from SNOMED CT or a code for absent/unknown problem"
+* code from ProblemsUvIps (preferred)
+* code ^definition = "Identification of the condition, problem or diagnosis or recording of absent problems."
+* code ^binding.description = "Code for a clinical problem (or absent problem) that is selected from SNOMED CT"
 * bodySite only CodeableConceptIPS
 * bodySite from SNOMEDCTBodyStructures (example)
 * bodySite ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
