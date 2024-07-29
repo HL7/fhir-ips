@@ -1,6 +1,6 @@
 With the formal agreement signed on April 2017, HL7 International and CEN/TC 251 expressed their intent to collaborate under a set of principles for the IPS.
 
-{% include img.html img="600px-IPS_principles.png" caption="Figure 1: The IPS principles" width="40%" %}
+{% include img.html img="IPS_principles.png" caption="Figure 1: The IPS principles" width="40%" %}
 
 Based on this agreement, the standards specification for the IPS has to be (a) implementable (b) applicable for global use (c) extensible and open to future use cases and solutions. The standards specification and their implementation must be moreover sustainable. 
 
