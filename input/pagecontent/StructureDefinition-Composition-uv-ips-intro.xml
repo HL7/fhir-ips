@@ -1,37 +1,9 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<blockquote class="stu-note">
-		<p>In this version of the guide the Medication Summary is expressed as a list of MedicationStatements or 
-    MedicationRequests. More information on medications lists are included in the <a href="design.html#medication-lists-in-the-ips">
-    Design Conventions and Principles</a> page.</p>
-	  <p>STU implementers are encouraged to provide their feedback about this design choice.</p>
-	</blockquote>
-	<blockquote class="stu-note">
-		<p>Particularly in light of the currect state of global health and the response to the COVID-19 pandemic 
-		due to the SARS-CoV-2 virus, extending the IPS Immunizations section to also include, when relevant, the status of 
-		immunity to specific target diseases is being considered.  The potential updates to this implementation guide to 
-		incorporate this capability are still being discussed and have not been included in this initial published version of 
-		the guide.  These proposed updates may include revising the Immunization section description to reflect this 
-		broadened scope (as <i>IPS Immunizations/Immune Status Section</i>, or similar), as a presumed or verified status of 
-		immunity to a disease is, in fact, the intended and desired outcome of a vaccination/immunization.</p>
-		<p>The capability to record a statement of immunity to a disease could be provided via a profile on the Condition
-		resource and specific "immune status" codes (a set of "Finding of immune status" codes is currently available in 
-		SNOMED CT - however, at this time, a code representing "Immunity to COVID-19" or the equivalent is not available).  
-		The Condition resource may be appropriate for this purpose, as immunity (including, in some cases, a statement of 
-		"no immunity") is an ongoing state of the patient for some period of time (once immunity is acquired, typically for
-		multiple years).  The statement of immunity is not simply an observation at a point in time, although a statement of 
-		immunity would be expected in the case of COVID-19 and in many or most other cases to have associated observations 
-		that are necessary for providing the supporting evidence for the "immunity" condition.</p>
-		<p>As specific profiling is not yet available in the current IG publication to support the representation of a 
-		statement of immunity, the open slicing approach for including additional data in an IPS instance may be used.  An 
-		example of of how this might be done is available in the 'immune-status' and potentially other branches of the IPS 
-		IG specification continuous integration (CI) build - link available by request from 
-		<a href="mailto:ips@lists.hl7.org">ips@lists.hl7.org</a> or in the FHIR Zulip chat <i>IPS Community of Practice</i> 
-		<a href="https://chat.fhir.org/#narrow/stream/207835-IPS">stream</a>.</p>
-		<p>Reviewers and implementers of this STU are encouraged to provide their feedback about this need and any questions, 
-		suggestions or concerns regarding the example profiles or other alternative approaches to addressing this situation.  
-		Any proposed solutions to be considered for inclusion in a future version of this guide will be subject to evaluation 
-		by the wider cross-SDO IPS community as well as the broader standards community and where possible relevant public 
-		health authorities (global, national and regional), in order to ensure to the extent possible that any solution that 
-		is adopted will be appropriate, usable and clinically sound.</p>
+		<p>In this version of the guide the Medication Summary is expressed as a list of
+			MedicationStatements or MedicationRequests. More information on medications lists are included
+			in the <a href="design.html#medication-lists-in-the-ips">
+				Design Conventions and Principles</a> page.</p>
+		<p>STU implementers are encouraged to provide their feedback about this design choice.</p>
 	</blockquote>
 </div>
