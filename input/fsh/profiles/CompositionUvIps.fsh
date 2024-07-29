@@ -201,7 +201,7 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
 * section[sectionResults].code 1..
 * section[sectionResults].code only CodeableConceptIPS
 * section[sectionResults].code = $loinc#30954-2
-* section[sectionResults].entry only Reference(Observation or DiagnosticReport or Media or DocumentReference)
+* section[sectionResults].entry only Reference(Observation or DiagnosticReport or DocumentReference)
 * section[sectionResults].entry MS
 * section[sectionResults].entry ^slicing.discriminator[0].type = #type
 * section[sectionResults].entry ^slicing.discriminator[=].path = "resolve()"
