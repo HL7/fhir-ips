@@ -57,13 +57,14 @@ This Implementation Guide has been balloted as STU with the intention to go norm
 
 | Role  | Name | Organization | Contact |
 | --- | --- | --- | --- |
-| **Primary Editor** | Giorgio Cangioli | Consultant, HL7 Italy | giorgio.cangioli@gmail.com |
 | **Primary Editor** | Rob Hausam | Hausam Consulting LLC | rob@hausamconsulting.com |
-| **Primary Editor** | François Macary | Phast | francois.macary@phast.fr |
-| **Contributor** | Dr Christof Geßner | Gematik | christof.gessner@gematik.de |
-| **Contributor** | Gary Dickinson | CentriHealth | gary.dickinson@ehr-standards.com |
-| **Contributor** |  Dr Kai U. Heitmann | Heitmann Consulting and Services, ART-DECOR Open Tools GmbH, HL7 Germany | info@kheitmann.de  |
+| **Primary Editor** | John D'Amore | More Informatics | johnd@moreinformatics.com |
+| **Primary Editor** | Giorgio Cangioli | Consultant, HL7 Italy | giorgio.cangioli@gmail.com |
 | **Contributor** | Catherine Chronaki | HL7 International Foundation | chronaki@gmail.com |
+| **Contributor** | Dr Christof Geßner | Gematik | christof.gessner@gematik.de |
+| **Contributor** | François Macary | Phast | francois.macary@phast.fr |
+| **Contributor** | Gary Dickinson | CentriHealth | gary.dickinson@ehr-standards.com |
 | **Contributor** | George Dixon | Allscripts LLC | george.dixon@allscripts.com |
+| **Contributor** | Dr Kai U. Heitmann | Heitmann Consulting and Services, ART-DECOR Open Tools GmbH, HL7 Germany | info@kheitmann.de |
 | **Contributor** | Kenneth Sinn  | Ontario Health Digital Services | ken.sinn@ontariohealth.ca |
-| **Contributor** | John D'Amore | More Informatics | johnd@moreinformatics.com |
+| **Contributor** | Sheridan Cook | Accenture | sheridan.cook@accenture.com |
