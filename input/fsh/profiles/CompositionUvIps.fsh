@@ -213,12 +213,10 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
 * section[sectionResults].entry contains
     results-observation-laboratory-pathology 0..* MS and
     results-observation-radiology 0..* MS and
-    results-diagnosticReport 0..* MS and
-    results-media 0..*
+    results-diagnosticReport 0..* MS
 * section[sectionResults].entry[results-observation-laboratory-pathology] only Reference(ObservationResultsLaboratoryPathologyUvIps)
 * section[sectionResults].entry[results-observation-radiology] only Reference(ObservationResultsRadiologyUvIps)
 * section[sectionResults].entry[results-diagnosticReport] only Reference(DiagnosticReportUvIps)
-* section[sectionResults].entry[results-media] only Reference(MediaObservationUvIps)
 * section[sectionVitalSigns] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[sectionVitalSigns] ^extension[=].valueString = "Vital Signs Section"
 * section[sectionVitalSigns] ^label = "Vital signs"

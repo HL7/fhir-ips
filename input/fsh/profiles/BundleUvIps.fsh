@@ -39,7 +39,6 @@ Description: "This profile represents the constraints applied to the Bundle reso
     diagnosticreport 0..* and
     imagingstudy 0..* and
     immunization 0..* and
-    media 0..* and
     medication 0..* and
     medicationrequest 0..* and
     medicationstatement 0..* and
@@ -79,8 +78,6 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry[imagingstudy].resource only ImagingStudyUvIps
 * entry[immunization].resource 1..
 * entry[immunization].resource only ImmunizationUvIps
-* entry[media].resource 1..
-* entry[media].resource only MediaObservationUvIps
 * entry[medication].resource 1..
 * entry[medication].resource only MedicationIPS
 * entry[medicationrequest].resource 1..

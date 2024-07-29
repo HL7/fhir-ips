@@ -77,11 +77,6 @@ Usage: #definition
 * rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips"
 * rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].supportedProfile.extension.valueCode = #SHOULD
-* rest.resource[+].type = #Media
-* rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Media"
-* rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/Media-observation-uv-ips"
-* rest.resource[=].supportedProfile.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
-* rest.resource[=].supportedProfile.extension.valueCode = #SHOULD
 * rest.resource[+].type = #Medication
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/Medication"
 * rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips"
