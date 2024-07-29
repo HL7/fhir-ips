@@ -5,7 +5,7 @@ All the profiles specified by this guide are used by the <b>International Patien
 
 The <b>Bundle</b> used for the transport or the persistence SHALL include all the resources that are referenced directly or indirectly by an International Patient Summary Composition.
 
-A complete list of the sections and the profiles used is available in the <a href="ipsStructure.html">International Patient Summary Structure </a> page.
+A complete list of the sections and the profiles used is available in the <a href="Structure-of-the-International-Patient-Summary.html">International Patient Summary Structure </a> page.
 
 ### List of Profiles
 
