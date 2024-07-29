@@ -1,5 +1,3 @@
-### The International Patient Summary Structure
-
 The IPS is composed by the following sections described below.
 
 {% include img.html img="IPS_composition.png" caption="Figure 2: The IPS composition" width="70%" %}

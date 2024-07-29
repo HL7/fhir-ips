@@ -1,5 +1,3 @@
-# Privacy and Security Considerations
-
 The IPS will carry Patient identifiable health information (i.e., PI, PII, PHI, and SPI), and some of this data is considered specifically highly sensitive (e.g. mental health, drug abuse, sexual health, etc). Thus the IPS is subject to Privacy, Security, and Medical Records Regulations.
 
 Health information is sensitive, and thus must be recognized as sensitive. There is a subset of health information that is related to stigmatizing topics that are highly sensitive and considered restricted. For more information healthcare information and Privacy see [FHIR Data Segmentation for Privacy](https://hl7.org/fhir/uv/security-label-ds4p/) Implementation Guide. This guide includes details on Healthcare Privacy background, data tagging, data segmentation, and focuses on the use of security and privacy data tagging to protect health information.
