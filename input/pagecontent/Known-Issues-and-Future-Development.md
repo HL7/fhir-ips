@@ -7,3 +7,5 @@
 ### Future Development
 1. Investigate the relationships and the possible synergies with the proposed [International Patient Access Implementation Guide](https://hl7.org/fhir/uv/ipa/); exploring and better clarifying the role of the IPS document and of its reusable components (IPS profiles library).
 1. Explore the adoption of the Provenance resource with the IPS (bundle level, composition level or entry level) to document the IPS curation (see Known Issue ###1 above) (see also the ["International Patient Summary: Use Cases"](https://confluence.hl7.org/pages/viewpage.action?pageId=48237134###InternationalPatientSummary:UseCases-Examples) confluence page)
+1. Include additional guidance or references on approaches for selecting appropriate summary content and genearating narrative representations
+1. Gather feedback on the IPS [$summary operation](./OperationDefinition-summary.html) introduced in STU1.1 of the this guide. 
