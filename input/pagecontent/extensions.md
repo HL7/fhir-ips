@@ -1,1 +1,0 @@
-{% include table-extensions.xhtml %}
