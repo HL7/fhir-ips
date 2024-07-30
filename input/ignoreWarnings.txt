@@ -11,5 +11,13 @@ INFORMATION: Immunization/75680: Immunization.vaccineCode.coding[2].system: A de
 # Draft codesystem in THO (but the one example binding in FHIR based and appropriate for our examples)
 %Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/v2-0360|2.7|0360%
 
-# The EDQM codesystem has properties not known to FHIR publication. Suppress unknown properties error
+# The EDQM codesystem has properties not known to FHIR publication tooling
 %No definition can be found for the system http://standardterms.edqm.eu, and the property%
+
+# UCUM coding has been reviewed and decision to retain information inside curly brackets
+WARNING: Medication/eumfh-39-07-1: Medication.ingredient[0].strength.denominator: UCUM Codes that contain human readable annotations like {tablet} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
+WARNING: Observation/alcohol-use-example: Observation.value.ofType(Quantity): UCUM Codes that contain human readable annotations like {wine glasses} can be misleading (e.g. they are ignored when comparing units). Best Practice is not to depend on annotations in the UCUM code, so this usage should be checked
+
+# It is not possible to include examples on datatypes (oddly this error does not arise on other datatypes which lack examples)
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/uv/ips/StructureDefinition/Range-uv-ips'): The Implementation Guide contains no examples for this data type profile
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/uv/ips/StructureDefinition/SimpleQuantity-uv-ips'): The Implementation Guide contains no examples for this data type profile
