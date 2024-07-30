@@ -20,3 +20,6 @@ INFORMATION: Bundle/bundle-minimal: Bundle.entry[6].resource/*Medication/6369a97
 
 # Draft codesystem in THO (but the one example binding in FHIR based and appropriate for our examples)
 %Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/v2-0360|2.7|0360%
+
+# The EDQM codesystem has properties not known to FHIR publication. Suppress unknown properties error
+%No definition can be found for the system http://standardterms.edqm.eu, and the property%
