@@ -35,3 +35,5 @@ Alias: $flag-priority = http://hl7.org/fhir/StructureDefinition/flag-priority
 Alias: $condition-severity = http://hl7.org/fhir/ValueSet/condition-severity
 Alias: $vital-signs-profile = http://hl7.org/fhir/StructureDefinition/vitalsigns
 Alias: $composition-section-note = http://hl7.org/fhir/StructureDefinition/note
+Alias: $flag-category = http://terminology.hl7.org/CodeSystem/flag-category
+Alias: $flag-priority-code = http://hl7.org/fhir/flag-priority-code
