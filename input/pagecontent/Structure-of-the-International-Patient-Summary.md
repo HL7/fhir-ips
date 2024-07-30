@@ -131,8 +131,7 @@ Following are the profiles that have been defined for each section. (R) denotes 
   - Radiology results
     [ <a href="StructureDefinition-Observation-results-radiology-uv-ips.html">Observation Results: radiology (IPS)</a> |
     <a href="StructureDefinition-Device-observer-uv-ips.html">Device (performer, observer)</a> |
-    <a href="StructureDefinition-ImagingStudy-uv-ips.html">Imaging Study (IPS)</a> |
-    <a href="StructureDefinition-Practitioner-uv-ips.html">Practitioner (IPS)</a> ]
+    <a href="StructureDefinition-ImagingStudy-uv-ips.html">Imaging Study (IPS)</a> ]
 - Vital Signs
   [ <a href="{{site.data.fhir.path}}vitalsigns.html">Vital Signs</a> ]
 - Past history of illnesses
@@ -142,8 +141,8 @@ Following are the profiles that have been defined for each section. (R) denotes 
   <a href="StructureDefinition-Observation-pregnancy-outcome-uv-ips.html">Observation (Pregnancy: outcome)</a> |
   <a href="StructureDefinition-Observation-pregnancy-status-uv-ips.html">Observation (Pregnancy: status)</a> ]
 - Social History
-  [ <a href="{{site.data.fhir.path}}careplan.html">Care Plan</a> ]
-  <a href="StructureDefinition-Observation-tobaccouse-uv-ips.html">Observation (SH: tobacco use)</a> ]
+  [ <a href="StructureDefinition-Observation-tobaccouse-uv-ips.html">Observation (SH: tobacco use)</a> |
+    <a href="StructureDefinition-Observation-alcoholuse-uv-ips.html">Observation (SH: alcohol use)</a> ]
 - Functional Status (Autonomy / Invalidity)
   [ <a href="StructureDefinition-Condition-uv-ips.html">Condition (IPS)</a> |
   <a href="{{site.data.fhir.path}}clinicalimpression.html">Clinical Impression</a> ]
@@ -155,7 +154,7 @@ Following are the profiles that have been defined for each section. (R) denotes 
   [ <a href="StructureDefinition-Flag-alert-uv-ips.html">Flag - Alert (IPS)</a> ]
 - Patient Story
   [ No specific resources required. Any may be used to support narrative. ]
-- IPS Resources used across various sections
-  [ <a href="StructureDefinition-Organization-uv-ips.html">Organization (IPS)</a> | <a href="StructureDefinition-Practitioner-uv-ips.html">Practitioner (IPS)</a> | <a href="StructureDefinition-PractitionerRole-uv-ips.html">PractitionerRole (IPS)</a> ]
+- Resources and profiles used across various sections
+  [ <a href="StructureDefinition-Organization-uv-ips.html">Organization (IPS)</a> | <a href="StructureDefinition-Practitioner-uv-ips.html">Practitioner (IPS)</a> | <a href="StructureDefinition-PractitionerRole-uv-ips.html">PractitionerRole (IPS)</a> | <a href="{{site.data.fhir.path}}documentreference.html">DocumentReference</a>]
 
 ---
