@@ -2,10 +2,10 @@ ValueSet: ProblemsUvIps
 Id: problems-uv-ips
 Title: "Problems - IPS"
 Description: """
-IPS Problem (Condition) codes value set. 
-This value set includes codes from SNOMED CT®: all descendants of 404684003 \|Clinical finding (finding)\|; all descendants of 243796009 \|Situation with explicit context (situation)\|; all descendants of 272379006 \|Event (event)\|; all descendants or self of 160245001 \|No current problems or disability (situation)\|.  The descendants of 71388002 \|Procedure (procedure)\| (which were included in the CORE problem list) are not included, as they are expected to be represented separately in the History of Procedures Section.
+IPS Problem (Condition) codes value set.  This value set includes codes from SNOMED CT®: all descendants of 404684003 \|Clinical finding (finding)\|; all descendants of 243796009 \|Situation with explicit context (situation)\|; all descendants of 272379006 \|Event (event)\|; all descendants or self of 160245001 \|No current problems or disability (situation)\|.  The descendants of 71388002 \|Procedure (procedure)\| (which were included in the CORE problem list) are not included, as they are expected to be represented separately in the History of Procedures Section.
 
-SNOMED CT® ECL definition: < 404684003 \|Clinical finding (finding)\| OR < 243796009 \|Situation with explicit context (situation)\| OR < 272379006 \|Event (event)\| OR \<\< 160245001 \|No current problems or disability (situation)\|
+SNOMED CT® ECL definition:\
+< 404684003 \|Clinical finding (finding)\| OR < 243796009 \|Situation with explicit context (situation)\| OR < 272379006 \|Event (event)\| OR \<\< 160245001 \|No current problems or disability (situation)\|
 """
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^status = #active

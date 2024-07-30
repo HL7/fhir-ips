@@ -12,15 +12,8 @@ Description: "This profile represents the constraints applied to the Procedure r
 * ^jurisdiction = $m49.htm#001
 * code 1..1 MS
 * code only CodeableConceptIPS
-* code from ProceduresSnomedAbsentUnknownUvIps (preferred)
+* code from ProceduresUvIps (preferred)
 * code ^definition = "Identification of the procedure or recording of \"absence of relevant procedures\" or of \"procedures unknown\"."
-* code ^binding.extension.extension[0].url = "purpose"
-* code ^binding.extension.extension[=].valueCode = #candidate
-* code ^binding.extension.extension[+].url = "valueSet"
-* code ^binding.extension.extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ValueSet/procedures-snomed-ct-ips-free-set"
-* code ^binding.extension.extension[+].url = "documentation"
-* code ^binding.extension.extension[=].valueMarkdown = "Codes for procedures in SNOMED IPS Free Set"
-* code ^binding.extension.url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
 * code ^binding.description = "SNOMED CT procedure code set or a code for absent/unknown procedure"
 * subject only Reference(PatientUvIps)
 * subject MS

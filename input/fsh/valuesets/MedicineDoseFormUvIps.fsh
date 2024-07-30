@@ -1,20 +1,20 @@
 ValueSet: MedicineDoseFormUvIps
 Id: medicine-doseform
 Title: "Medicine Doseform - IPS"
-Description: """EDQM (European Directorate for the Quality of Medicines and Healthcare) Dose Form codes.  This Value Set includes all the EDQM Standard Terms having:  
+Description: """
+EDQM (European Directorate for the Quality of Medicines and Healthcare) Dose Form codes.  This Value Set includes all the EDQM Standard Terms having:  
 [Concept Status] = ‘Current’ AND  
 [Concept Class] IN (‘PDF’, ‘CMT’, ‘CDF’, ‘PFT') AND  
 [Domain] = 'Human and Veterinary'  
 
-PDF = 'Pharmaceutical dose form'; CMT = 'Combined terms'; CDF = 'Combined pharmaceutical dose form'; PFT = 'Patient Friendly'"""
+PDF = 'Pharmaceutical dose form'; CMT = 'Combined terms'; CDF = 'Combined pharmaceutical dose form'; PFT = 'Patient Friendly'
+"""
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^identifier.use = #official
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"
 * ^identifier.value = "2.16.840.1.113883.11.22.25"
-* ^version = "1.1.0"
 * ^status = #active
 * ^experimental = false
-* ^date = "2024-06-19T10:50:07-05:00"
 * ^publisher = "HL7 International / Patient Care"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "http://www.hl7.org/Special/committees/patientcare"

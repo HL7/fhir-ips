@@ -1,12 +1,15 @@
 ValueSet: PregnancyStatusUvIps
 Id: pregnancy-status-uv-ips
 Title: "Pregnancy Status - IPS"
-Description: "IPS Pregnancy Status"
+Description: """
+IPS pregnancy status codes value set.  This value set includes codes from SNOMED CT®: 77386006 \|Pregnant\|; 60001007 \|Not pregnant\|; 152231000119106 \|Pregnancy not yet confirmed\|; 146799005 \|Possible pregnancy\|
+
+SNOMED CT® ECL definition:\
+77386006 \|Pregnant\| OR 60001007 \|Not pregnant\| OR 152231000119106 \|Pregnancy not yet confirmed\| OR 146799005 \|Possible pregnancy\|
+"""
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
-* ^version = "2.0.0"
 * ^status = #active
 * ^experimental = false
-* ^date = "2024-07-17T10:50:07-05:00"
 * ^publisher = "HL7 International / Patient Care"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "http://www.hl7.org/Special/committees/patientcare"

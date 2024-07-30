@@ -84,7 +84,7 @@ It allows also providing details about the related study using the partOf elemen
 * component[observationCode].value[x] only CodeableConceptIPS
 * component[numericQuantityMeasurement] ^short = "Observation Measurement, including linear, area and volume quantity measurements"
 * component[numericQuantityMeasurement].code only CodeableConceptIPS
-* component[numericQuantityMeasurement].code from ResultsRadiologyMeasurementObservationSnomedDicomUvIps (extensible)
+* component[numericQuantityMeasurement].code from ResultsRadiologyMeasurementObservationUvIps (extensible)
 * component[numericQuantityMeasurement].code ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * component[numericQuantityMeasurement].code ^binding.extension.valueString = "ObservationMeasurements"
 * component[numericQuantityMeasurement].code ^binding.description = "Codes identifying numeric measurements"
@@ -92,7 +92,7 @@ It allows also providing details about the related study using the partOf elemen
 * component[numericQuantityMeasurement].value[x] only QuantityIPS
 * component[numericRangeMeasurement] ^short = "Observation Measurement, including linear, area and volume range measurements"
 * component[numericRangeMeasurement].code only CodeableConceptIPS
-* component[numericRangeMeasurement].code from ResultsRadiologyMeasurementObservationSnomedDicomUvIps (extensible)
+* component[numericRangeMeasurement].code from ResultsRadiologyMeasurementObservationUvIps (extensible)
 * component[numericRangeMeasurement].code ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * component[numericRangeMeasurement].code ^binding.extension.valueString = "ObservationMeasurements"
 * component[numericRangeMeasurement].code ^binding.description = "Codes identifying numeric measurements"
@@ -100,7 +100,7 @@ It allows also providing details about the related study using the partOf elemen
 * component[numericRangeMeasurement].value[x] only RangeIPS
 * component[numericRatioMeasurement] ^short = "Observation Measurement, including linear, area and volume ratio measurements"
 * component[numericRatioMeasurement].code only CodeableConceptIPS
-* component[numericRatioMeasurement].code from ResultsRadiologyMeasurementObservationSnomedDicomUvIps (extensible)
+* component[numericRatioMeasurement].code from ResultsRadiologyMeasurementObservationUvIps (extensible)
 * component[numericRatioMeasurement].code ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * component[numericRatioMeasurement].code ^binding.extension.valueString = "ObservationMeasurements"
 * component[numericRatioMeasurement].code ^binding.description = "Codes identifying numeric measurements"
@@ -108,7 +108,7 @@ It allows also providing details about the related study using the partOf elemen
 * component[numericRatioMeasurement].value[x] only RatioIPS
 * component[numericSampledDataMeasurement] ^short = "Observation Measurement, including linear, area and volume sampled data measurements"
 * component[numericSampledDataMeasurement].code only CodeableConceptIPS
-* component[numericSampledDataMeasurement].code from ResultsRadiologyMeasurementObservationSnomedDicomUvIps (extensible)
+* component[numericSampledDataMeasurement].code from ResultsRadiologyMeasurementObservationUvIps (extensible)
 * component[numericSampledDataMeasurement].code ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * component[numericSampledDataMeasurement].code ^binding.extension.valueString = "ObservationMeasurements"
 * component[numericSampledDataMeasurement].code ^binding.description = "Codes identifying numeric measurements"

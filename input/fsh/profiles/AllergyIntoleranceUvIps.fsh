@@ -28,7 +28,7 @@ It documents the relevant allergies or intolerances (conditions) for a patient, 
 * code ^binding.extension[=].extension[+].url = "documentation"
 * code ^binding.extension[=].extension[=].valueMarkdown = "Type of the substance/product, allergy or intolerance condition."
 * code ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
-* code ^binding.description = "Type of the substance/product, allergy or intolerance condition or a code for absent allergy."
+* code ^binding.description = "Type of the substance/product, allergy or intolerance condition or a code for absent/unknown allergy."
 * patient only Reference(PatientUvIps)
 * patient MS
 * patient.reference 1.. MS

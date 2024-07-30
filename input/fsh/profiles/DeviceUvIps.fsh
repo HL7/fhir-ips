@@ -15,15 +15,8 @@ Description: "This profile represents the constraints applied to the Device reso
 * . ^comment = "This profile applies the rules defined by HL7 International for representing the UDI in the FHIR standard, by the document \"Medical Devices and Unique Device Identification (UDI) Pattern, Release 1\""
 * type 0..1 MS
 * type only CodeableConceptIPS
-* type from MedicalDevicesSnomedAbsentUnknownUvIps (preferred)
-* type ^short = "Type of device.\r\nPreferably valued by using SNOMED CT.\r\nThe absence of information, or of devices relevant for purpose of this IPS, shall be explicitly stated by using the codes included in the absent-or-unknown-devices-uv-ips value set."
-* type ^binding.extension.extension[0].url = "purpose"
-* type ^binding.extension.extension[=].valueCode = #candidate
-* type ^binding.extension.extension[+].url = "valueSet"
-* type ^binding.extension.extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ValueSet/medical-devices-snomed-ct-ips-free-set"
-* type ^binding.extension.extension[+].url = "documentation"
-* type ^binding.extension.extension[=].valueMarkdown = "Codes for medical devices in SNOMED IPS Free Set"
-* type ^binding.extension.url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
+* type from MedicalDevicesUvIps (preferred)
+* type ^short = "Type of device."
 * type ^binding.description = "The type of device or a code for absent/unknown device"
 * patient 1.. MS
 * patient only Reference(PatientUvIps)

@@ -14,13 +14,6 @@ Description: "This profile constrains the Specimen resource to represent the cha
 * type 1..
 * type only CodeableConceptIPS
 * type from ResultsSpecimenTypeUvIps (preferred)
-* type ^binding.extension[0].extension[0].url = "purpose"
-* type ^binding.extension[=].extension[=].valueCode = #candidate
-* type ^binding.extension[=].extension[+].url = "valueSet"
-* type ^binding.extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ValueSet/results-specimen-type-snomed-ct-ips-free-set"
-* type ^binding.extension[=].extension[+].url = "documentation"
-* type ^binding.extension[=].extension[=].valueMarkdown = "Additional conformance binding to a specimen type value set from the SNOMED CT IPS free set for use globally (in SNOMED member and non-member jurisdictions)."
-* type ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
 * type ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * type ^binding.extension[=].valueString = "SpecimenType"
 * subject only Reference(PatientUvIps)

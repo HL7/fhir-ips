@@ -34,8 +34,8 @@ Description: "This profile represents the constraints applied to the Condition r
 * code 1..1 MS
 * code only CodeableConceptIPS
 * code from ProblemsUvIps (preferred)
-* code ^definition = "Identification of the condition, problem or diagnosis or recording of absent problems."
-* code ^binding.description = "Code for a clinical problem (or absent problem) that is selected from SNOMED CT"
+* code ^definition = "Identification of the condition, problem or diagnosis or recording of absent/unknown problems."
+* code ^binding.description = "Code for a clinical problem (or absent/unknown problem) that is selected from SNOMED CT"
 * bodySite only CodeableConceptIPS
 * bodySite from SNOMEDCTBodyStructures (example)
 * bodySite ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
