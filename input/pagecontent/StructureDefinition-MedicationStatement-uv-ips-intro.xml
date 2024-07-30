@@ -1,8 +1,13 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<blockquote class="stu-note">
 		<b>medicationCodeableConcept vs. medicationReference</b>
-		<p>In the previously balloted versions the medicationCodeableConcept was used only to provide information about the known absent/unknown medications; using the medicationReference to describe the actual medication. To better support local implementations of patient summaries and align with the US Core appoach, both options (medicationCodeableConcept and medicationReference) have been made possible; recognizing however that there are jurisdictions that impose that the medicationReference is always used.</p>
-		<p>Implemeters are encouraged "to improve global interoperability (...)" to use the medicationReference, limiting the usage of the medicationCodeableConcept only to the cases in which no other information than a simple code is available.</p>
-		<p>It also should be noted that in an anticipated future version of the IG based on R5, these two slices on medication[x] will be replaced by the 'medication' element in the MedicationUsage resource (which replaces MedicationStatement), as it uses the new CodeableReference data type.</p>
+		<p>In the previously balloted versions, medicationCodeableConcept was not allowed to represent
+			medications. To better support implementations, both options (medicationCodeableConcept and
+			medicationReference) are now allowed, recognizing that different jurisdictions may provide
+			different guidance worldwide and that future FHIR releases introduce <a
+				href="https://hl7.org/fhir/R5/references.html#CodeableReference">CodeableReference
+			</a>
+		</p>
+		<p>STU implementers are encouraged to provide their feedback about this design choice.</p>
 	</blockquote>
 </div>

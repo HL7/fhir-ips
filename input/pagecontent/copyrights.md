@@ -6,6 +6,7 @@ HL7®, HEALTH LEVEL SEVEN®, FHIR® and the FHIR ® are trademarks owned by Heal
 
 This HL7 specification contains and references intellectual property owned by third parties ("Third Party IP").  
 Implementers and testers of this specification SHALL abide by the license requirements for each terminology content artifact utilized within a functioning implementation.
+
 Terminology licenses SHALL be obtained from the Third Party IP owner for each code system and/or other specified artifact used. It is the sole responsibility of each organization deploying or testing this specification to ensure their implementations comply with licensing requirements of each Third Party IP.
 
 
@@ -14,7 +15,7 @@ Following is a non-exhaustive list of third-party terminologies used in this gui
 | Terminology | Owner/Contact | Links |
 | - | - | -- |
 | SNOMED CT® | SNOMED International |  http://www.snomed.org/snomed-ct/get-snomed-ct |
-| SNOMED CT® Global Patient Set (GPS) | SNOMED International | https://www.snomed.org/snomed-international/learn-more/global-patient-set|
+| SNOMED CT® IPS Terminology | SNOMED International | https://www.snomed.org/international-patient-summary-terminology |
 | Logical Observation Identifiers Names & Codes (LOINC®) | Regenstrief Institute, Inc. and the LOINC Committee| https://loinc.org/license/ |
 | Unified Codes for Units of Measures (UCUM)  | Regenstrief Institute, Inc. and the UCUM Organization | http://unitsofmeasure.org/trac/wiki/TermsOfUse |
 | International Classification of Diseases (ICD) classification system  | World Health Organization (WHO)  | https://www.who.int/publishing/copyright/en/ |
