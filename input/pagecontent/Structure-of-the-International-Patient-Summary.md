@@ -133,7 +133,7 @@ Following are the profiles that have been defined for each section. (R) denotes 
     <a href="StructureDefinition-Device-observer-uv-ips.html">Device (performer, observer)</a> |
     <a href="StructureDefinition-ImagingStudy-uv-ips.html">Imaging Study (IPS)</a> ]
 - Vital Signs
-  [ <a href="{{site.data.fhir.path}}vitalsigns.html">Vital Signs</a> ]
+  [ <a href="{{site.data.fhir.path}}observation-vitalsigns.html">Vital Signs Profiles</a> ]
 - Past history of illnesses
   [ <a href="StructureDefinition-Condition-uv-ips.html">Condition (IPS)</a> ]
 - Pregnancy (status and history summary)
