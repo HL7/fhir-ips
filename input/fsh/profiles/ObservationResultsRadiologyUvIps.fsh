@@ -18,10 +18,10 @@ It allows also providing details about the related study using the partOf elemen
 * ^jurisdiction = $m49.htm#001
 * obeys hasMemberOrComponent
 * partOf only Reference(ImagingStudyUvIps)
-* status = #final (exactly)
-* status ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
-* status ^extension.valueString = "default: final"
-* status ^definition = "The status of the result value. Only final results feed patient summaries."
+* status from ResultsStatusUvIps (required)
+* status ^label = "Completed or Replaced Status Codes"
+* status ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+* status ^binding.extension[=].valueString = "ObservationStatus"
 * category only CodeableConceptIPS
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
