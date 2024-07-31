@@ -1,3 +1,15 @@
+### STU 2.0 Update
+
+This change list provides an overview and detail of changes in STU 2.0.  The major categories of revision include:
+
+Detailed change list for 2.0.0 since 1.1.0 includes: 
+
+- **Compatible, Substantive Changes**
+
+- Reinstate revised ResultsSpecimenCollectionMethodUvIps value set (https://jira.hl7.org/browse/FHIR-46500)
+
+- **Non-substantive Changes**
+
 ### STU 1.1.0 Update
 
 This change list provides an overview and detail of changes in STU 1.1.  This publication is an unballoted STU 1.1 update which incorporates implementation feedback, terminology updates and publication cleanup. The major categories of revision include:

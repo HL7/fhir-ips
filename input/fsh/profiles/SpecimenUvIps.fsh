@@ -19,7 +19,7 @@ Description: "This profile constrains the Specimen resource to represent the cha
 * subject only Reference(PatientUvIps)
 * subject.reference 1..
 * collection.method only CodeableConceptIPS
-* collection.method from FHIRSpecimenCollectionMethod (preferred)
+* collection.method from ResultsSpecimenCollectionMethodUvIps (preferred)
 * collection.bodySite only CodeableConceptIPS
 * collection.bodySite from BodySiteUvIps (preferred)
 * collection.fastingStatus[x] only CodeableConceptIPS or Duration
