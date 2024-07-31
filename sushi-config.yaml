@@ -25,16 +25,17 @@ menu:
   Home: index.html
   Table of Contents: toc.html
   General Principles and Design:
-    General Principles: General-Principles.html
-    Design Conventions: Design-Conventions.html
-    Generation and Data Inclusion: Generation-and-Data-Inclusion.html
-    Privacy and Security Considerations: Privacy-and-Security-Considerations.html
-    Known Issues and Future Development: Known-Issues-and-Future-Development.html
-  The "IPS": Structure-of-the-International-Patient-Summary.html
+    General Principles: principles.html
+    Design Conventions: design.html
+    Generation and Data Inclusion: ipsGeneration.html
+    Privacy and Security Considerations: considerations.html
+    Known Issues and Future Development: knownIssues.html
+  The "IPS": ipsStructure.html
   FHIR Artifacts:
-    IPS Composition: StructureDefinition-Composition-uv-ips.html
-    IPS Library (Profiles): profiles.html
+    The IPS Composition: StructureDefinition-Composition-uv-ips.html
+    IPS Library: profiles.html
     Datatypes: datatypes.html
+    Extensions: extensions.html
     Terminology: terminology.html
     Operations: OperationDefinition-summary.html
     Examples: examples.html
@@ -54,14 +55,6 @@ resources:
     name: 'IPS Bundle example - no information in required sections'
     description: 'IPS Bundle example - no information in required sections'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips
-  Bundle/bundle-minimal:
-    name: 'IPS Bundle example - minimal'
-    description: 'IPS Bundle example - minimal'
-    exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips
-  Composition/composition-minimal:
-    name: 'IPS Composition example - minimal'
-    description: 'IPS Composition example - minimal'
-    exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips
   Medication/eumfh-39-07-1:
     name: 'Medication : Simvastatin 40 MG Disintegrating Oral Tablet'
     description: 'Medication : Simvastatin 40 MG Disintegrating Oral Tablet'
@@ -198,7 +191,3 @@ resources:
     name: 'DiagnosticReport: hemoglobin example'
     description: 'DiagnosticReport: hemoglobin example'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips
-  Flag/546482:
-    name: 'Alert Flag (IPS) example'
-    description: 'Alert Flag (IPS) example'
-    exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Flag-alert-uv-ips
