@@ -65,7 +65,7 @@ This Implementation Guide has been balloted as STU with the intention to go norm
 | **Contributor** | François Macary | Phast | francois.macary@phast.fr |
 | **Contributor** | Gary Dickinson | CentriHealth | gary.dickinson@ehr-standards.com |
 | **Contributor** | George Dixon | Allscripts | george.dixon@allscripts.com |
-| **Contributor** | John Moerhke | By Light Professional IT Services | John.Moehrke@bylight.com
+| **Contributor** | John Moehrke | By Light Professional IT Services | John.Moehrke@bylight.com
 | **Contributor** | Dr Kai U. Heitmann | Heitmann Consulting and Services, ART-DECOR Open Tools GmbH, HL7 Germany | info@kheitmann.de |
 | **Contributor** | Kenneth Sinn  | Ontario Health Digital Services | ken.sinn@ontariohealth.ca |
 | **Contributor** | Sheridan Cook | Accenture | sheridan.cook@accenture.com |
