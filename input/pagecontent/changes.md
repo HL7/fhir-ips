@@ -1,4 +1,4 @@
-### STU 2.0-ballot Update
+### STU 2.0.0-ballot Update
 
 This change list provides an overview and detail of changes in STU 2.0 Ballot.  The major categories of revision include:
 
