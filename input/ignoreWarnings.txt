@@ -14,9 +14,6 @@ INFORMATION: Immunization/75680: Immunization.vaccineCode.coding[2].system: A de
 # The EDQM codesystem has properties not known to FHIR publication tooling
 %No definition can be found for the system http://standardterms.edqm.eu, and the property%
 
-# This code is forthcoming to the valueset and IPS would like to pre-adopt
-WARNING: ValueSet/results-status-uv-ips: ValueSet.compose.include[0].concept[3]: The code 'appended' is not valid in the system http://hl7.org/fhir/observation-status (Unknown code 'appended' in the CodeSystem
-
 # It is not possible to include examples on datatypes (oddly this error does not arise on other datatypes which lack examples)
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/uv/ips/StructureDefinition/Range-uv-ips'): The Implementation Guide contains no examples for this data type profile
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/uv/ips/StructureDefinition/SimpleQuantity-uv-ips'): The Implementation Guide contains no examples for this data type profile
