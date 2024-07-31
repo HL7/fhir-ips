@@ -6,7 +6,8 @@ Detailed change list for 2.0.0 since 1.1.0 includes:
 
 - **Compatible, Substantive Changes**
 
-- Reinstate revised ResultsSpecimenCollectionMethodUvIps value set (https://jira.hl7.org/browse/FHIR-46500)
+  - Reinstate revised ResultsSpecimenCollectionMethodUvIps value set (https://jira.hl7.org/browse/FHIR-46500)
+  - Remove "Target Site - IPS" value set (as per [FHIR-32809](https://jira.hl7.org/browse/FHIR-32809))
 
 - **Non-substantive Changes**
 

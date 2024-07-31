@@ -72,7 +72,7 @@ It allows also providing details about the related study using the partOf elemen
     numericSampledDataMeasurement 0..*
 * component[observationText] ^short = "Observation Text"
 * component[observationText].code only CodeableConceptIPS
-* component[observationText].code from ResultsRadiologyTextualObservationsSnomedDicomLoincUvIps (extensible)
+* component[observationText].code from ResultsRadiologyTextualObservationUvIps (extensible)
 * component[observationText].code ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * component[observationText].code ^binding.extension.valueString = "ObservationCode"
 * component[observationText].value[x] 1..

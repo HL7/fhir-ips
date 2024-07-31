@@ -2,7 +2,7 @@ ValueSet: MedicineActiveSubstancesUvIps
 Id: medicine-active-substances-uv-ips
 Title: "Medicine Active Substances - IPS"
 Description: """
-IPS Medicine active substance codes value set.  This value set includes codes from SNOMED Clinical Terms®: all descendants of 410942007 \|Drug or medicament (substance)\|
+IPS Medicine active substance codes value set.  This value set includes codes from SNOMED CT®: all descendants of 410942007 \|Drug or medicament (substance)\|
 
 SNOMED CT® ECL definition:\
 < 410942007 \|Drug or medicament (substance)\|\

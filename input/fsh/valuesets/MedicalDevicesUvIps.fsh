@@ -2,7 +2,7 @@ ValueSet: MedicalDevicesUvIps
 Id: medical-devices-uv-ips
 Title: "Medical Devices - IPS"
 Description: """
-IPS Medical device codes value set.  This value set includes codes from SNOMED Clinical Terms (SNOMED CT®) that are included in: all descendants of 49062001 \|Device (physical object)\|; all descendants or self of 787483001 \|No known device use (situation)\|
+IPS Medical device codes value set.  This value set includes codes from SNOMED CT (SNOMED CT®) that are included in: all descendants of 49062001 \|Device (physical object)\|; all descendants or self of 787483001 \|No known device use (situation)\|
 
 SNOMED CT® ECL definition:\
 < 49062001 \|Device (physical object)\| OR \<\< 787483001 \|No known device use (situation)\|
