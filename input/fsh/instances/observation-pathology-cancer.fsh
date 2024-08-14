@@ -1,5 +1,5 @@
 Instance: pathology-cancer
-InstanceOf: Observation
+InstanceOf: ObservationResultsLaboratoryPathologyUvIps
 Title: "Observation: estrogen receptor in tissue example"
 Description: "Observation: estrogen receptor in tissue example"
 Usage: #example

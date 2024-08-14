@@ -1,5 +1,5 @@
 Instance: eumfh-39-07-of-Patient
-InstanceOf: Patient
+InstanceOf: PatientUvIps
 Title: "Patient: male patient"
 Description: "Patient: male patient"
 Usage: #example

@@ -1,5 +1,5 @@
 Instance: alcohol-use-example
-InstanceOf: Observation
+InstanceOf: ObservationAlcoholUseUvIps
 Title: "Observation: SH alcohol use example"
 Description: "Observation: SH alcohol use example"
 Usage: #example

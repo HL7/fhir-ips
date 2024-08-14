@@ -1,5 +1,5 @@
 Instance: eumfh-39-07-1-of-Procedure
-InstanceOf: Procedure
+InstanceOf: ProcedureUvIps
 Title: "Procedure: Surgical procedure"
 Description: "Procedure: Surgical procedure"
 Usage: #example

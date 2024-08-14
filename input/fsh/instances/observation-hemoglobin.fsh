@@ -1,5 +1,5 @@
 Instance: hemoglobin-of-Observation
-InstanceOf: Observation
+InstanceOf: ObservationResultsLaboratoryPathologyUvIps
 Title: "Observation: hemoglobin example"
 Description: "Observation: hemoglobin example"
 Usage: #example

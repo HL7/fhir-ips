@@ -1,5 +1,5 @@
 Instance: urine-wbc-range
-InstanceOf: Observation
+InstanceOf: ObservationResultsLaboratoryPathologyUvIps
 Title: "Observation: urine wbc range example"
 Description: "Observation: urine wbc range example"
 Usage: #example

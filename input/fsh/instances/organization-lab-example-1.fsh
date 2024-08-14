@@ -1,5 +1,5 @@
 Instance: lab-org-example
-InstanceOf: Organization
+InstanceOf: OrganizationUvIps
 Title: "Organization: lab example"
 Description: "Best Hospital Lab Organization example"
 Usage: #example

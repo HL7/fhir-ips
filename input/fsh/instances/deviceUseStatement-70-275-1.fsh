@@ -1,5 +1,5 @@
 Instance: eumfh-70-275-1-of-DeviceUseStatement
-InstanceOf: DeviceUseStatement
+InstanceOf: DeviceUseStatementUvIps
 Title: "DeviceUseStatement: No known devices in use"
 Description: "DeviceUseStatement: No known devices in use"
 Usage: #example

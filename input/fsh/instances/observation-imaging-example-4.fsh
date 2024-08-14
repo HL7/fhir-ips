@@ -1,5 +1,5 @@
 Instance: ips-example-imaging-4
-InstanceOf: Observation
+InstanceOf: ObservationResultsRadiologyUvIps
 Title: "Observation: imaging CT Abdomen W contrast IV, sub-observations"
 Description: "Observation: imaging CT Abdomen W contrast IV,sub-observations"
 Usage: #example
