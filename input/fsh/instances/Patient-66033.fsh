@@ -1,5 +1,5 @@
 Instance: 66033
-InstanceOf: Patient
+InstanceOf: PatientUvIps
 Title: "Patient: minimal example"
 Description: "Patient: minimal example"
 Usage: #example

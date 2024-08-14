@@ -1,5 +1,5 @@
 Instance: serum-creatinine-adult
-InstanceOf: Observation
+InstanceOf: ObservationResultsLaboratoryPathologyUvIps
 Title: "Observation: serum creatinine example"
 Description: "Observation: serum creatinine example"
 Usage: #example

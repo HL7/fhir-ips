@@ -1,5 +1,5 @@
 Instance: eumfh-39-07-1-of-MedicationStatement
-InstanceOf: MedicationStatement
+InstanceOf: MedicationStatementIPS
 Title: "MedicationStatement: on-going Simvastatin treatment"
 Description: "MedicationStatement: on-going Simvastatin treatment"
 Usage: #example

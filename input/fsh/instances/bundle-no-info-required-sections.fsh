@@ -1,5 +1,5 @@
 Instance: bundle-no-info-required-sections
-InstanceOf: Bundle
+InstanceOf: BundleUvIps
 Title: "IPS Bundle example - no information in required sections"
 Description: "IPS Bundle example - no information in required sections"
 Usage: #example

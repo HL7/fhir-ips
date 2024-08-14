@@ -1,5 +1,5 @@
 Instance: TII-Organization1
-InstanceOf: Organization
+InstanceOf: OrganizationUvIps
 Title: "Organization: example"
 Description: "Organization: example"
 Usage: #example

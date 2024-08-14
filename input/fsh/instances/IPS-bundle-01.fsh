@@ -1,5 +1,5 @@
 Instance: IPS-examples-Bundle-01
-InstanceOf: Bundle
+InstanceOf: BundleUvIps
 Title: "IPS Bundle example"
 Description: "IPS Bundle example"
 Usage: #example

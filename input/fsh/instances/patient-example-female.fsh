@@ -1,5 +1,5 @@
 Instance: patient-example-female
-InstanceOf: Patient
+InstanceOf: PatientUvIps
 Title: "Patient: female patient"
 Description: "Patient: female patient"
 Usage: #example

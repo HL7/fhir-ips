@@ -1,5 +1,5 @@
 Instance: tobacco-use-example
-InstanceOf: Observation
+InstanceOf: ObservationTobaccoUseUvIps
 Title: "Observation: SH tobacco use example"
 Description: "Observation: SH tobacco use example"
 Usage: #example

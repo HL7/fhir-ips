@@ -1,5 +1,5 @@
 Instance: pregnancy-edd-example
-InstanceOf: Observation
+InstanceOf: ObservationPregnancyEddUvIps
 Title: "Observation: pregnancy edd example"
 Description: "Observation: pregnancy edd example"
 Usage: #example
