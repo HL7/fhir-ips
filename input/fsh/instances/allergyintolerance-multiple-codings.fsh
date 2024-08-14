@@ -1,5 +1,5 @@
 Instance: allergyintolerance-multiple-codings
-InstanceOf: AllergyIntolerance
+InstanceOf: AllergyIntoleranceUvIps
 Title: "AllergyIntolerance: multiple codings"
 Description: "AllergyIntolerance: multiple codings"
 Usage: #example

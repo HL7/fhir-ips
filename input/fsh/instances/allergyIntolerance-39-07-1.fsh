@@ -1,5 +1,5 @@
 Instance: eumfh-39-07-1-of-AllergyIntolerance
-InstanceOf: AllergyIntolerance
+InstanceOf: AllergyIntoleranceUvIps
 Title: "AllergyIntolerance: No known allergies"
 Description: "AllergyIntolerance: No known allergies"
 Usage: #example
