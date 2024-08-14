@@ -6,7 +6,7 @@ Description: """This profile represents the constraints applied to the Observati
 
 This observation may represent the conclusions of a diagnostic procedure such a Chest RX, or it may group the set of results produced by that single or multi-modality procedure. 
 
-In the latter case, the main observation (this one) carries the overall conclusion of the study and/or a global interpretation by the observer of the study as value of this observation; and may references the atomic results of the study as "child observations".
+In the latter case, the main observation (this one) carries the overall conclusion of the study and/or a global interpretation by the observer of the study as value of this observation; and may reference the atomic results of the study as "child observations".
 
 It allows also providing details about the related study using the partOf element referring to an ImagingStudy resource.
 """
@@ -18,10 +18,10 @@ It allows also providing details about the related study using the partOf elemen
 * ^jurisdiction = $m49.htm#001
 * obeys hasMemberOrComponent
 * partOf only Reference(ImagingStudyUvIps)
-* status = #final (exactly)
-* status ^extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
-* status ^extension.valueString = "default: final"
-* status ^definition = "The status of the result value. Only final results feed patient summaries."
+* status from ResultsStatusUvIps (required)
+* status ^label = "Observation 'complete' status codes"
+* status ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+* status ^binding.extension[=].valueString = "ObservationStatus"
 * category only CodeableConceptIPS
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"

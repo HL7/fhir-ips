@@ -18,6 +18,7 @@ Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation
 Alias: $v3-ObservationInterpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 Alias: $referencerange-meaning = http://terminology.hl7.org/CodeSystem/referencerange-meaning
 Alias: $condition-ver-status = http://terminology.hl7.org/CodeSystem/condition-ver-status
+Alias: $observation-status = http://hl7.org/fhir/observation-status
 Alias: $icd-10 = http://hl7.org/fhir/sid/icd-10
 Alias: $icd-o-3 = http://terminology.hl7.org/CodeSystem/icd-o-3
 Alias: $organization-type = http://terminology.hl7.org/CodeSystem/organization-type

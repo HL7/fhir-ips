@@ -11,4 +11,4 @@ Usage: #example
 * form.coding[+] = $standardterms#10219000 "Tablet"
 * ingredient.itemCodeableConcept = $rxnorm#36567 "Simvastatin"
 * ingredient.strength.numerator = 40 'mg' "mcg"
-* ingredient.strength.denominator = 1 '{tablet}' "tablet"
+* ingredient.strength.denominator = 1 '1' "tablet"

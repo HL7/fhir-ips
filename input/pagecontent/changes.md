@@ -1,15 +1,70 @@
-### STU 2.0 Update
+### STU 2.0.0-ballot Update
 
-This change list provides an overview and detail of changes in STU 2.0.  The major categories of revision include:
+This change list provides an overview and detail of changes in STU 2.0 Ballot.  The major categories of revision include:
 
-Detailed change list for 2.0.0 since 1.1.0 includes: 
+- Sending "empty" sections allowed (no section.entry with use of emptyReason)
+- Add Alerts Section
+- Add Patient Story Section
+- Clarifications on the $summary operation
+- Rework of Observation profiles
+- Updates for IPS-IPA Alignment
+- Transition to SNOMED IPS Terminology and Terminology Consolidation
+
+Detailed change list for 2.0.0-ballot since 1.1.0 includes: 
+
+- **Non-compatible**
+  - AllergyIntolerance.code should have min cardinality of 1.. ([FHIR-39530](https://jira.hl7.org/browse/FHIR-39530) )
+  - Allow sections with emptyReason and no entries ([FHIR-41529](https://jira.hl7.org/browse/FHIR-41529) )
+  - Relax cardinality on composition.section.entries to allow for section.text to be used in isolate ([FHIR-42872](https://jira.hl7.org/browse/FHIR-42872) )
+  - Revision to absent-unknown valueset setup in IPS ([FHIR-45004](https://jira.hl7.org/browse/FHIR-45004) )
+  - Combine lab/path profiles and remove base results observation profile ([FHIR-45294](https://jira.hl7.org/browse/FHIR-45294) )
 
 - **Compatible, Substantive Changes**
-
-  - Reinstate revised ResultsSpecimenCollectionMethodUvIps value set (https://jira.hl7.org/browse/FHIR-46500)
-  - Remove "Target Site - IPS" value set (as per [FHIR-32809](https://jira.hl7.org/browse/FHIR-32809))
-
+  - Remove "Target Site - IPS" value set ([FHIR-32809](https://jira.hl7.org/browse/FHIR-32809))
+  - Modification profile input definition of $summary  ([FHIR-40240](https://jira.hl7.org/browse/FHIR-40240) )
+  - Transition the absent-unknown codesystem to SNOMED valueset ([FHIR-40456](https://jira.hl7.org/browse/FHIR-40456) )
+  - Add a section for Patient commentary / Patient Story ([FHIR-41260](https://jira.hl7.org/browse/FHIR-41260) )
+  - Revise invariant ips-2 for Lab Observation ([FHIR-41554](https://jira.hl7.org/browse/FHIR-41554) )
+  - Remove old constraint for radiology Observation that requires valueString or component ([FHIR-42870](https://jira.hl7.org/browse/FHIR-42870) )
+  - Remove all required LOINC bindings on observation value[x] elements ([FHIR-42972](https://jira.hl7.org/browse/FHIR-42972) )
+  - Relax cardinality on Condition.clinicalStatus - exception given Required ValueSet deficiency ([FHIR-43299](https://jira.hl7.org/browse/FHIR-43299) )
+  remove invariant pat-cnt-2or3-char (Patient country code) ([FHIR-43370](https://jira.hl7.org/browse/FHIR-43370) )
+  - Remove Allergy Abatement Extension and use base extension ([FHIR-44847](https://jira.hl7.org/browse/FHIR-44847) )
+  - Resolve SNOMED Version challenge with value set ([FHIR-44904](https://jira.hl7.org/browse/FHIR-44904) )
+  - Remove IPS Bundle.link 0..0 constraint ([FHIR-45973](https://jira.hl7.org/browse/FHIR-45973) )
+  - Add Alerts section to IPS based on ISO 27269 ([FHIR-46289](https://jira.hl7.org/browse/FHIR-46289) )
+  - Consolidate SNOMED terminology valuesets and make definitions consistent ([FHIR-46365](https://jira.hl7.org/browse/FHIR-46365) )
+  - Remove Media profile ([FHIR-46401](https://jira.hl7.org/browse/FHIR-46401) )
+  - Add reference to new FHIR Clinical Documents profile ([FHIR-46458](https://jira.hl7.org/browse/FHIR-46458) )
+  - Reinstate revised ResultsSpecimenCollectionMethodUvIps value set ([FHIR-46500](https://jira.hl7.org/browse/FHIR-46500) )
+  - Reinstate revised ResultsSpecimenCollectionMethodUvIps value set ([FHIR-46500](https://jira.hl7.org/browse/FHIR-46500))
+  - Add additional status codes to Result Observation ([FHIR-46502](https://jira.hl7.org/browse/FHIR-46502) )
+  
 - **Non-substantive Changes**
+  - Composition-uv-ips profile, changes to clinicaldocument profile reference ([FHIR-15995](https://jira.hl7.org/browse/FHIR-15995) )
+  - Distinct tabs for Differential View, Snapshot View and Examples ([FHIR-16149](https://jira.hl7.org/browse/FHIR-16149) )
+  - Profiles used in the entries are not always made explicit ([FHIR-16159](https://jira.hl7.org/browse/FHIR-16159) )
+  - Add links for downloading this guide and the specified resources ([FHIR-16160](https://jira.hl7.org/browse/FHIR-16160) )
+  - Rename the observation-uv-ips profile ([FHIR-16281](https://jira.hl7.org/browse/FHIR-16281) )
+  - Clarify intended use of vital signs ([FHIR-37837](https://jira.hl7.org/browse/FHIR-37837) )
+  - Addition of change log to IG ([FHIR-39449](https://jira.hl7.org/browse/FHIR-39449) )
+  - Improve details of IPS Generation and Data Inclusion ([FHIR-39598](https://jira.hl7.org/browse/FHIR-39598) )
+  - Remove graph parameter from $summary operation ([FHIR-40223](https://jira.hl7.org/browse/FHIR-40223) )
+  - Text for 6.2.1 Medication Summary is no longer correct ([FHIR-41556](https://jira.hl7.org/browse/FHIR-41556) )
+  - Update $summary to update identifier param/provide guidance on supply of system ([FHIR-43029](https://jira.hl7.org/browse/FHIR-43029) )
+  - Display mismatch between value set and code system ([FHIR-44806](https://jira.hl7.org/browse/FHIR-44806) )
+  - Composition profile restrictions on codes can be improved ([FHIR-45197](https://jira.hl7.org/browse/FHIR-45197) )
+  - Modify Patient/$summary identifier definition to allow as a query param ([FHIR-45441](https://jira.hl7.org/browse/FHIR-45441) )
+  - Add guidance for minimal expectations of Composition.text ([FHIR-45975](https://jira.hl7.org/browse/FHIR-45975) )
+  - Fix example bundle reference errors ( [FHIR-45979](https://jira.hl7.org/browse/FHIR-45975) )
+  - Add pointer to note extension at Composition.section ([FHIR-46084](https://jira.hl7.org/browse/FHIR-46084) )
+  - Relax the valueset code binding in Radiology profile ([FHIR-46286](https://jira.hl7.org/browse/FHIR-46286) )
+  - Add section/narrative on data redaction/confidentiality/security ([FHIR-46457](https://jira.hl7.org/browse/FHIR-46457) )
+  - Remove ordinalValue extension from the current-smoking-status-uv-ips value set ([FHIR-46471](https://jira.hl7.org/browse/FHIR-46471) )
+  - Remove IPS ConceptMap instances ([FHIR-46474](https://jira.hl7.org/browse/FHIR-46474) )
+  - Narrative updates - update STU notes, update images, update authors, design and other narrative updates ([FHIR-46488](https://jira.hl7.org/browse/FHIR-46488) )
+  - Consider changing example instances to follow best practice for UCUM and avoid using curly braces ([FHIR-46501](https://jira.hl7.org/browse/FHIR-46501) )
+  
 
 ### STU 1.1.0 Update
 

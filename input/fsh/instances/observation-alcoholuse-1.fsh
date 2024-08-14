@@ -8,4 +8,4 @@ Usage: #example
 * subject = Reference(patient-example-female)
 * effectiveDateTime = "2019-07-15"
 * performer = Reference(eumfh-39-07)
-* valueQuantity = 2 '{wine glasses}/d' "wine glasses per day"
+* valueQuantity = 2 '/d' "wine glasses per day"
