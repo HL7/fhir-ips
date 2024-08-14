@@ -1,5 +1,5 @@
 Instance: 75680
-InstanceOf: Immunization
+InstanceOf: ImmunizationUvIps
 Title: "Immunization: Vaccin anti diphtérie-coqueluche-tétanos-poliomyélite (Luxembourg)"
 Description: "Immunization: Vaccin anti diphtérie-coqueluche-tétanos-poliomyélite (Luxembourg)"
 Usage: #example
