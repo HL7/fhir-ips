@@ -13,7 +13,7 @@ Usage: #definition
 * publisher = "HL7 International / Patient Care"
 * contact.telecom.system = #url
 * contact.telecom.value = "http://www.hl7.org/Special/committees/patientcare"
-* description = "This operation returns an IPS document in response to a POST request.  The returned document MAY be generated on-demand and SHOULD represent the latest available information. This operation would not necessarily create a persisted IPS instance on the server responding to the request. When historic records or other documents are desired, this operation is not appropriate. For alternative operations and IPS generation guidance, please see [IPS Generation and Data Inclusion](./Generation-and-Data-Inclusion.html) 
+* description = "This operation returns an IPS document in response to a POST/GET request (see [FHIR Operations](https://hl7.org/fhir/operations.html)).  The returned document MAY be generated on-demand and SHOULD represent the latest available information. This operation would not necessarily create a persisted IPS instance on the server responding to the request. When historic records or other documents are desired, this operation is not appropriate. For alternative operations and IPS generation guidance, please see [IPS Generation and Data Inclusion](./Generation-and-Data-Inclusion.html) 
 
 Generally when a patient's logical id is known, that id would be used to request the patient summary from a FHIR server (see [id] pattern below). When it is not known, servers MAY support using other identifiers (see identifier parameter below).
 
