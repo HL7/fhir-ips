@@ -1,4 +1,4 @@
-### IPS and its structure
+### IPS and Its Structure
 
 The <b>International Patient Summary</b> is a document.
 All the profiles specified by this guide are used by the <b>International Patient Summary Composition</b>.
