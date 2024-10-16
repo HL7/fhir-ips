@@ -320,9 +320,9 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
 * section[sectionPregnancyHx].entry ^definition = "It contains information about whether the patient is currently pregnant or not.\r\nIt may contain addition summarizing information about the outcome of earlier pregnancies."
 * section[sectionPregnancyHx].entry contains
     pregnancyStatus 0..* and
-    pregnancyOutcomeSummary 0..*
+    pregnancyOutcome 0..*
 * section[sectionPregnancyHx].entry[pregnancyStatus] only Reference(ObservationPregnancyStatusUvIps)
-* section[sectionPregnancyHx].entry[pregnancyOutcomeSummary] only Reference(ObservationPregnancyOutcomeUvIps)
+* section[sectionPregnancyHx].entry[pregnancyOutcome] only Reference(ObservationPregnancyOutcomeUvIps)
 * section[sectionAdvanceDirectives] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * section[sectionAdvanceDirectives] ^extension[=].valueString = "Section"
 * section[sectionAdvanceDirectives] ^short = "IPS Advance Directives Section"

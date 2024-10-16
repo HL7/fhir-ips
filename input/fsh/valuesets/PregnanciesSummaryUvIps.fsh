@@ -1,6 +1,6 @@
 ValueSet: PregnanciesSummaryUvIps
 Id: pregnancies-summary-uv-ips
-Title: "Pregnancies Summary - IPS"
+Title: "Pregnancy Outcome - IPS"
 Description: "IPS Pregnancies Summary"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^identifier.use = #official

@@ -2,7 +2,7 @@ Profile: ObservationPregnancyOutcomeUvIps
 Parent: Observation
 Id: Observation-pregnancy-outcome-uv-ips
 Title: "Observation Pregnancy - Outcome (IPS)"
-Description: "This profile constrains the Observation resource to represent the history of pregnancy outcomes (summary)."
+Description: "This profile constrains the Observation resource to represent the summarized history of pregnancy outcomes."
 * ^version = "1.1.0"
 * ^date = "2024-06-19T10:50:07-05:00"
 * ^publisher = "HL7 International / Patient Care"
