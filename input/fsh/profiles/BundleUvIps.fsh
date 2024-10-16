@@ -1,7 +1,7 @@
 Profile: BundleUvIps
 Parent: Bundle
 Id: Bundle-uv-ips
-Title: "Bundle - IPS"
+Title: "Bundle (IPS)"
 Description: "This profile represents the constraints applied to the Bundle resource by the International Patient Summary (IPS) FHIR Implementation Guide."
 * ^version = "1.1.0"
 * ^date = "2024-06-19T10:50:07-05:00"

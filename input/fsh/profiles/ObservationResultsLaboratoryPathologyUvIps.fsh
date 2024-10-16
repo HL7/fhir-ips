@@ -1,7 +1,7 @@
 Profile: ObservationResultsLaboratoryPathologyUvIps
 Parent: Observation
 Id: Observation-results-laboratory-pathology-uv-ips
-Title: "Observation Results: laboratory/pathology (IPS)"
+Title: "Observation Results - Laboratory/Pathology (IPS)"
 Description: """This profile constrains the Observation resource to represent results produced by laboratory (including pathology) tests or panels/studies in a patient summary.
 
 This observation may represent the result of a simple laboratory test such as hematocrit or it may group the set of results produced by a multi-test study or panel such as a complete blood count, a dynamic function test, a urine specimen study. In the latter case, the observation carries the overall conclusion of the study and or a global interpretation by the producer of the study, in the comment element; and references the atomic results of the study as "has-member" child observations.

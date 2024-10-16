@@ -1,7 +1,7 @@
 Profile: ObservationResultsRadiologyUvIps
 Parent: Observation
 Id: Observation-results-radiology-uv-ips
-Title: "Observation Results: radiology (IPS)"
+Title: "Observation Results - Radiology (IPS)"
 Description: """This profile represents the constraints applied to the Observation resource by the IPS project, which specifies a radiology observation for the international patient summary based on the FHIR standard R4. 
 
 This observation may represent the conclusions of a diagnostic procedure such a Chest RX, or it may group the set of results produced by that single or multi-modality procedure. 

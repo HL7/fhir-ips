@@ -1,7 +1,7 @@
 Profile: ObservationAlcoholUseUvIps
 Parent: Observation
 Id: Observation-alcoholuse-uv-ips
-Title: "Observation - SH: alcohol use"
+Title: "Observation Social History - Alcohol Use (IPS)"
 Description: "This profile constrains the Observation resource to represent alcohol use assessment in a patient summary."
 * ^version = "1.1.0"
 * ^date = "2024-06-19T10:50:07-05:00"

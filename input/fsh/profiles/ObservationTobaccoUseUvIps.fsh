@@ -1,7 +1,7 @@
 Profile: ObservationTobaccoUseUvIps
 Parent: Observation
 Id: Observation-tobaccouse-uv-ips
-Title: "Observation - SH: tobacco use"
+Title: "Observation Social History - Tobacco Use (IPS)"
 Description: "This profile constrains the Observation resource to represent Tobacco use assessment in a patient summary."
 * ^version = "1.1.0"
 * ^date = "2024-06-19T10:50:07-05:00"

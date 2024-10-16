@@ -1,7 +1,7 @@
 Profile: DeviceUseStatementUvIps
 Parent: DeviceUseStatement
 Id: DeviceUseStatement-uv-ips
-Title: "Device Use Statement (IPS)"
+Title: "DeviceUseStatement (IPS)"
 Description: "This profile represents the constraints applied to the DeviceUseStatement resource by the International Patient Summary (IPS) FHIR Implementation Guide, based on FHIR R4. A statement about a device used by or implanted on the patient is described in the patient summary as an instance of a DeviceUseStatement resource constrained by this profile."
 * ^version = "1.1.0"
 * ^status = #active

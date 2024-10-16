@@ -1,7 +1,7 @@
 Profile: ImagingStudyUvIps
 Parent: ImagingStudy
 Id: ImagingStudy-uv-ips
-Title: "Imaging Study (IPS)"
+Title: "ImagingStudy (IPS)"
 Description: """This profile represents the constraints applied to the ImagingStudy resource by the IPS project, which specifies the information on a DICOM imaging study this imaging result is part of.
 """
 * ^version = "1.1.0"
