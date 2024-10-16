@@ -115,7 +115,7 @@ Granular requirements regarding what is considered clinically relevant for inclu
   </p>
 </blockquote>
 
-This specification does not dictate the conditions under which narrative is generated and acknowledges the wide range of implementing workflows and systems, some of which may use human manual intervention or automatic generation using resource content to generate the narrative or other means. While no constraints are implemented, early implementaters have recommended that IPS documents not duplicate the content contained in `Composition.section.text` (which is required) in the `Composition.text`. This may lead to validation issues with duplicate ids and also excess document size. This recommendation currently aligns with forthcoming guidance in the "FHIR Clinical Documents" implementation guide.
+This specification does not dictate the conditions under which narrative is generated and acknowledges the wide range of implementing workflows and systems, some of which may use human manual intervention or automatic generation using resource content to generate the narrative or other means. While no constraints are implemented, early implementers have recommended that IPS documents not duplicate the content contained in `Composition.section.text` (which is required) in the `Composition.text`. This may lead to validation issues with duplicate ids and also excess document size. This recommendation currently aligns with forthcoming guidance in the "FHIR Clinical Documents" implementation guide.
 
 ### Representation of Person Names
 
