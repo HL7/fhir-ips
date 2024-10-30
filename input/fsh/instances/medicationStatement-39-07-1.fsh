@@ -1,7 +1,7 @@
 Instance: eumfh-39-07-1-of-MedicationStatement
 InstanceOf: MedicationStatement
-Title: "MedicationStatement: on-going Simvastatin treatment"
-Description: "MedicationStatement: on-going Simvastatin treatment"
+Title: "MedicationStatement - Ongoing Simvastatin Treatment"
+Description: "MedicationStatement - Ongoing Simvastatin Treatment"
 Usage: #example
 * id = "eumfh-39-07-1"
 * status = #active

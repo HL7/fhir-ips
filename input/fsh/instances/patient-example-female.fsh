@@ -1,7 +1,7 @@
 Instance: patient-example-female
 InstanceOf: Patient
-Title: "Patient: female patient"
-Description: "Patient: female patient"
+Title: "Patient - Female Martha DeLarosa"
+Description: "Patient - Female Martha DeLarosa"
 Usage: #example
 * identifier.system = "urn:oid:2.16.840.1.113883.2.4.6.3"
 * identifier.value = "574687583"

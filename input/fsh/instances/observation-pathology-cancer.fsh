@@ -1,7 +1,7 @@
 Instance: pathology-cancer
 InstanceOf: Observation
-Title: "Observation: estrogen receptor in tissue example"
-Description: "Observation: estrogen receptor in tissue example"
+Title: "Observation - Result Estrogen Receptor in Tissue Example"
+Description: "Observation - Result Estrogen Receptor in Tissue Example"
 Usage: #example
 * status = #final
 * category = $observation-category#laboratory

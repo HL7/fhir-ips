@@ -1,7 +1,7 @@
 Instance: pregnancy-edd-example
 InstanceOf: Observation
-Title: "Observation: pregnancy edd example"
-Description: "Observation: pregnancy edd example"
+Title: "Observation - Pregnancy Expected Delivery Date (EDD)"
+Description: "Observation - Pregnancy Expected Delivery Date (EDD)"
 Usage: #example
 * status = #final
 * code = $loinc#11778-8 "Delivery date Estimated"

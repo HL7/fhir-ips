@@ -1,7 +1,7 @@
 Instance: ips-example-imaging-1-of-Observation
 InstanceOf: Observation
-Title: "Observation: imaging CT Abdomen W contrast IV"
-Description: "Observation: imaging CT Abdomen W contrast IV"
+Title: "Observation - Result Imaging CT Abdomen with Contrast IV"
+Description: "Observation - Result Imaging CT Abdomen with Contrast IV"
 Usage: #example
 * id = "ips-example-imaging-1"
 * status = #final

@@ -1,7 +1,7 @@
 Instance: eumfh-39-07-1-of-Medication
 InstanceOf: Medication
-Title: "Medication : Simvastatin 40 MG Disintegrating Oral Tablet"
-Description: "Medication : Simvastatin 40 MG Disintegrating Oral Tablet"
+Title: "Medication - Simvastatin 40 MG Disintegrating Oral Tablet"
+Description: "Medication - Simvastatin 40 MG Disintegrating Oral Tablet"
 Usage: #example
 * id = "eumfh-39-07-1"
 * code.coding[0] = $rxnorm#757704 "Simvastatin 40 MG Disintegrating Oral Tablet"

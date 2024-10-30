@@ -1,7 +1,7 @@
 Instance: eumfh-39-07-1-of-Procedure
 InstanceOf: Procedure
-Title: "Procedure: Surgical procedure"
-Description: "Procedure: Surgical procedure"
+Title: "Procedure - Surgical Placement of Coronary Stent"
+Description: "Procedure - Surgical Placement of Coronary Stent"
 Usage: #example
 * id = "eumfh-39-07-1"
 * status = #completed

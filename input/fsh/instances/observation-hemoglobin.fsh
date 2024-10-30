@@ -1,7 +1,7 @@
 Instance: hemoglobin-of-Observation
 InstanceOf: Observation
-Title: "Observation: hemoglobin example"
-Description: "Observation: hemoglobin example"
+Title: "Observation - Result Hemoglobin"
+Description: "Observation - Result Hemoglobin"
 Usage: #example
 * id = "hemoglobin"
 * status = #final

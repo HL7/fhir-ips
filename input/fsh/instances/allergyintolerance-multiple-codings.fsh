@@ -1,7 +1,7 @@
 Instance: allergyintolerance-multiple-codings
 InstanceOf: AllergyIntolerance
-Title: "AllergyIntolerance: multiple codings"
-Description: "AllergyIntolerance: multiple codings"
+Title: "AllergyIntolerance - Multiple Codings"
+Description: "AllergyIntolerance - Multiple Codings"
 Usage: #example
 * clinicalStatus = $allergyintolerance-clinical#active
 * verificationStatus = $allergyintolerance-verification#confirmed

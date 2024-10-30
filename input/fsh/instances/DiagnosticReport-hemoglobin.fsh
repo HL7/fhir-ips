@@ -1,7 +1,7 @@
 Instance: hemoglobin-of-DiagnosticReport
 InstanceOf: DiagnosticReport
-Title: "DiagnosticReport: hemoglobin example"
-Description: "DiagnosticReport: hemoglobin example"
+Title: "DiagnosticReport - Hemoglobin"
+Description: "DiagnosticReport - Hemoglobin"
 Usage: #example
 * id = "hemoglobin"
 * status = #final

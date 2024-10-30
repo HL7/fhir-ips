@@ -1,7 +1,7 @@
 Instance: eumfh-39-07-of-Patient
 InstanceOf: Patient
-Title: "Patient: male patient"
-Description: "Patient: male patient"
+Title: "Patient - Male Alexander Hieg"
+Description: "Patient - Male Alexander Hieg"
 Usage: #example
 * id = "eumfh-39-07"
 * extension.url = "http://hl7.org/fhir/StructureDefinition/patient-citizenship"

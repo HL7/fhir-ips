@@ -1,7 +1,7 @@
 Instance: ips-example-imaging-5
 InstanceOf: Observation
-Title: "Observation: imaging Chest X-ray - PA and lateral, with additional sub-observation including numeric range"
-Description: "Observation: imaging Chest X-ray - PA and lateral, with additional sub-observation including numeric range"
+Title: "Observation - Result Imaging Chest X-ray - PA and Aateral, with Additional Sub-observation Including Numeric Range"
+Description: "Observation - Result Imaging Chest X-ray - PA and Aateral, with Additional Sub-observation Including Numeric Range"
 Usage: #example
 * partOf = Reference(TII-ImagingStudy-5-1)
 * status = #final

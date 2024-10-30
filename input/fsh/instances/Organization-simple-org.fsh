@@ -1,6 +1,6 @@
 Instance: simple-org
 InstanceOf: Organization
-Title: "Organization: simple example"
-Description: "Very Simple Organization example"
+Title: "Organization - Minimal Name Only"
+Description: "Organization - Minimal Name Only"
 Usage: #example
 * name = "Best Diagnostic Department"

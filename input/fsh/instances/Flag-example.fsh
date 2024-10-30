@@ -1,7 +1,7 @@
 Instance: 546482
 InstanceOf: Flag
-Title: "Alert IPS Flag Example"
-Description: "Alert IPS Flag Illustrative Example with Recommended Fields"
+Title: "Flag - Alert of Patient Immunocompromised"
+Description: "Flag - Alert of Patient Immunocompromised"
 Usage: #example
 * extension[0].url = "http://hl7.org/fhir/StructureDefinition/flag-priority"
 * extension[0].valueCodeableConcept = $flag-priority-code#PH "High priority"

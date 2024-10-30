@@ -1,7 +1,7 @@
 Instance: eumfh-70-275-1-of-DeviceUseStatement
 InstanceOf: DeviceUseStatement
-Title: "DeviceUseStatement: No known devices in use"
-Description: "DeviceUseStatement: No known devices in use"
+Title: "DeviceUseStatement - No Known Devices in Use"
+Description: "DeviceUseStatement - No Known Devices in Use"
 Usage: #example
 * id = "eumfh-70-275-1"
 * status = #active

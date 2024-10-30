@@ -1,7 +1,7 @@
 Instance: bundle-minimal
 InstanceOf: Bundle
-Title: "IPS Bundle example - minimal"
-Description: "IPS Bundle example - minimal"
+Title: "Bundle - Minimal Complete IPS"
+Description: "Bundle - Minimal Complete IPS"
 Usage: #example
 * language = #en-US
 * identifier.system = "urn:oid:2.16.724.4.8.10.200.10"

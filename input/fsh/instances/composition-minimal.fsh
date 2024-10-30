@@ -1,7 +1,7 @@
 Instance: composition-minimal
 InstanceOf: Composition
-Title: "IPS Composition example - minimal"
-Description: "IPS Composition example - minimal"
+Title: "Composition - Minimal Sections"
+Description: "Composition - Minimal Sections"
 Usage: #example
 * status = #final
 * type = $loinc#60591-5 "Patient summary Document"

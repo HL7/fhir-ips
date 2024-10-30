@@ -1,7 +1,7 @@
 Instance: IPS-examples-Bundle-with-immunization
 InstanceOf: Bundle
-Title: "IPS Bundle example with Immunization"
-Description: "IPS Bundle example with Immunization section"
+Title: "Bundle - IPS with Required Sections and Immunization"
+Description: "Bundle - IPS with Required Sections and Immunization"
 Usage: #example
 * language = #en-GB
 * identifier.system = "urn:oid:2.16.724.4.8.10.200.10"

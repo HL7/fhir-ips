@@ -1,7 +1,7 @@
 Instance: pregnancy-status-example
 InstanceOf: Observation
-Title: "Observation: pregnancy status example"
-Description: "Observation: pregnancy status example"
+Title: "Observation - Pregnancy Status"
+Description: "Observation - Pregnancy Status"
 Usage: #example
 * status = #final
 * code = $loinc#82810-3 "Pregnancy status"

@@ -1,7 +1,7 @@
 Instance: eumfh-70-275-1-of-Device
 InstanceOf: Device
-Title: "Device: No known devices in use"
-Description: "Device: No known devices in use"
+Title: "Device - No Known Devices in Use"
+Description: "Device - No Known Devices in Use"
 Usage: #example
 * id = "eumfh-70-275-1"
 * type = $sct#787483001 "No known device use (situation)"

@@ -1,7 +1,7 @@
 Instance: ips-example-imaging-1-of-Device
 InstanceOf: Device
-Title: "Device: device observer example"
-Description: "Device: device observer example"
+Title: "Device - Device Observer"
+Description: "Device - Device Observer"
 Usage: #example
 * id = "ips-example-imaging-1"
 * identifier.system = "http://my.organization.example/devicesID"

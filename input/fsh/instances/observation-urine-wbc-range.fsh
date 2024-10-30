@@ -1,7 +1,7 @@
 Instance: urine-wbc-range
 InstanceOf: Observation
-Title: "Observation: urine wbc range example"
-Description: "Observation: urine wbc range example"
+Title: "Observation - Result Urine White Blood Cell (WBC) Range"
+Description: "Observation - Result Urine White Blood Cell (WBC) Range"
 Usage: #example
 * status = #final
 * category = $observation-category#laboratory

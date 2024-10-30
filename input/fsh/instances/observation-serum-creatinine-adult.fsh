@@ -1,7 +1,7 @@
 Instance: serum-creatinine-adult
 InstanceOf: Observation
-Title: "Observation: serum creatinine example"
-Description: "Observation: serum creatinine example"
+Title: "Observation - Result Serum Creatinine"
+Description: "Observation - Result Serum Creatinine"
 Usage: #example
 * status = #final
 * category = $observation-category#laboratory

@@ -1,7 +1,7 @@
 Instance: bundle-no-info-required-sections
 InstanceOf: Bundle
-Title: "IPS Bundle example - no information in required sections"
-Description: "IPS Bundle example - no information in required sections"
+Title: "Bundle - No Information in Required Sections"
+Description: "Bundle - No Information in Required Sections"
 Usage: #example
 * language = #en-NZ
 * identifier.system = "urn:oid:2.16.724.4.8.10.200.10"

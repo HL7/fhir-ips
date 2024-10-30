@@ -1,7 +1,7 @@
 Instance: TII-Organization1
 InstanceOf: Organization
-Title: "Organization: example"
-Description: "Organization: example"
+Title: "Organization - Hospital"
+Description: "Organization - Hospital"
 Usage: #example
 * name = "Someplace General Hospital"
 * address.line = "123 Street Address"

@@ -1,7 +1,7 @@
 Instance: IPS-examples-Bundle-01
 InstanceOf: Bundle
-Title: "IPS Bundle example"
-Description: "IPS Bundle example"
+Title: "Bundle - IPS with Data"
+Description: "Bundle - IPS with Data"
 Usage: #example
 * language = #en-GB
 * identifier.system = "urn:oid:2.16.724.4.8.10.200.10"

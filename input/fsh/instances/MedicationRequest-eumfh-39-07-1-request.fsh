@@ -1,7 +1,7 @@
 Instance: eumfh-39-07-1-request
 InstanceOf: MedicationRequest
-Title: "MedicationRequest: Simvastatin request"
-Description: "MedicationRequest: Simvastatin request"
+Title: "MedicationRequest - Simvastatin Request"
+Description: "MedicationRequest - Simvastatin Request"
 Usage: #example
 * status = #active
 * intent = #order

@@ -1,7 +1,7 @@
 Instance: TII-ImagingStudy-5-1
 InstanceOf: ImagingStudy
-Title: "ImagingStudy: referred DICOM study"
-Description: "ImagingStudy: referred DICOM study"
+Title: "ImagingStudy - Referred DICOM Study"
+Description: "ImagingStudy - Referred DICOM Study"
 Usage: #example
 * identifier.system = "urn:dicom:uid"
 * identifier.value = "urn:oid:2.16.840.1.113883.2.9.999.1.12345"

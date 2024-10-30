@@ -1,7 +1,7 @@
 Instance: 75680
 InstanceOf: Immunization
-Title: "Immunization: Vaccin anti diphtérie-coqueluche-tétanos-poliomyélite (Luxembourg)"
-Description: "Immunization: Vaccin anti diphtérie-coqueluche-tétanos-poliomyélite (Luxembourg)"
+Title: "Immunization - Vaccin anti diphtérie-coqueluche-tétanos-poliomyélite (Luxembourg)"
+Description: "Immunization - Vaccin anti diphtérie-coqueluche-tétanos-poliomyélite (Luxembourg)"
 Usage: #example
 * language = #fr-LU
 * status = #completed

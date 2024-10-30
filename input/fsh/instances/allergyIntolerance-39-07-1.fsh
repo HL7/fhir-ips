@@ -1,7 +1,7 @@
 Instance: eumfh-39-07-1-of-AllergyIntolerance
 InstanceOf: AllergyIntolerance
-Title: "AllergyIntolerance: No known allergies"
-Description: "AllergyIntolerance: No known allergies"
+Title: "AllergyIntolerance - No Known Allergies"
+Description: "AllergyIntolerance - No known allergies"
 Usage: #example
 * id = "eumfh-39-07-1"
 * clinicalStatus = $allergyintolerance-clinical#active

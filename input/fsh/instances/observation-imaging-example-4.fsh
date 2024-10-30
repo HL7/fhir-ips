@@ -1,7 +1,7 @@
 Instance: ips-example-imaging-4
 InstanceOf: Observation
-Title: "Observation: imaging CT Abdomen W contrast IV, sub-observations"
-Description: "Observation: imaging CT Abdomen W contrast IV,sub-observations"
+Title: "Observation - Result Imaging CT Abdomen with Contrast IV, Sub-observations"
+Description: "Observation - Result Imaging CT Abdomen with Contrast IV, Sub-observations"
 Usage: #example
 * partOf = Reference(TII-ImagingStudy-5-1)
 * status = #final

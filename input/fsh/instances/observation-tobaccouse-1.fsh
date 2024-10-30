@@ -1,7 +1,7 @@
 Instance: tobacco-use-example
 InstanceOf: Observation
-Title: "Observation: SH tobacco use example"
-Description: "Observation: SH tobacco use example"
+Title: "Observation - Social History Tobacco Use"
+Description: "Observation - Social History Tobacco Use"
 Usage: #example
 * status = #final
 * code = $loinc#72166-2 "Tobacco smoking status"
