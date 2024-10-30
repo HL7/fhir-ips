@@ -1,7 +1,7 @@
 Instance: 66033
 InstanceOf: Patient
-Title: "Patient: minimal example"
-Description: "Patient: minimal example"
+Title: "Patient - Female Minimal Marie Lux-Brennard"
+Description: "Patient - Female Minimal Marie Lux-Brennard"
 Usage: #example
 * identifier[0].system = "urn:oid:1.3.182.4.4"
 * identifier[=].value = "1998041799999"

@@ -1,7 +1,7 @@
 Instance: eumfh-39-07-1-of-Condition
 InstanceOf: Condition
-Title: "Condition - Acute Myeloid leukemia"
-Description: "Condition - Acute Myeloid leukemia"
+Title: "Condition - Acute Myeloid Leukemia"
+Description: "Condition - Acute Myeloid Leukemia"
 Usage: #example
 * id = "eumfh-39-07-1"
 * clinicalStatus = $condition-clinical#active

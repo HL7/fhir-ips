@@ -43,56 +43,56 @@ menu:
   Change Log: changes.html
 resources:
   Bundle/IPS-examples-Bundle-01:
-    name: 'IPS Bundle example'
-    description: 'IPS Bundle example'
+    name: 'Bundle - IPS with Data'
+    description: 'Bundle - IPS with Data'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips
   Bundle/IPS-examples-Bundle-with-immunization:
-    name: 'IPS Bundle example with Immunization'
-    description: 'IPS Bundle example with Immunization section'
+    name: 'Bundle - IPS with Required Sections and Immunization'
+    description: 'Bundle - IPS with Required Sections and Immunization'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips
   Bundle/bundle-no-info-required-sections:
-    name: 'IPS Bundle example - no information in required sections'
-    description: 'IPS Bundle example - no information in required sections'
+    name: 'Bundle - No Information in Required Sections'
+    description: 'Bundle - No Information in Required Sections'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips
   Bundle/bundle-minimal:
-    name: 'IPS Bundle example - minimal'
-    description: 'IPS Bundle example - minimal'
+    name: 'Bundle - Minimal Complete IPS'
+    description: 'Bundle - Minimal Complete IPS'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips
   Composition/composition-minimal:
-    name: 'IPS Composition example - minimal'
-    description: 'IPS Composition example - minimal'
+    name: 'Composition - Minimal Sections'
+    description: 'Composition - Minimal Sections'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips
   Medication/eumfh-39-07-1:
-    name: 'Medication : Simvastatin 40 MG Disintegrating Oral Tablet'
-    description: 'Medication : Simvastatin 40 MG Disintegrating Oral Tablet'
+    name: 'Medication - Simvastatin 40 MG Disintegrating Oral Tablet'
+    description: 'Medication - Simvastatin 40 MG Disintegrating Oral Tablet'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Medication-uv-ips
   MedicationStatement/eumfh-39-07-1:
-    name: 'MedicationStatement: on-going Simvastatin treatment'
-    description: 'MedicationStatement: on-going Simvastatin treatment'
+    name: 'MedicationStatement - Ongoing Simvastatin Treatment'
+    description: 'MedicationStatement - Ongoing Simvastatin Treatment'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips
   MedicationRequest/eumfh-39-07-1-request:
-    name: 'MedicationRequest: Simvastatin request'
-    description: 'MedicationRequest: Simvastatin request'
+    name: 'MedicationRequest - Simvastatin Request'
+    description: 'MedicationRequest - Simvastatin Request'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationRequest-uv-ips
   Immunization/75680:
-    name: 'Immunization: Vaccin anti diphtérie-coqueluche-tétanos-poliomyélite (Luxembourg)'
-    description: 'Immunization: Vaccin anti diphtérie-coqueluche-tétanos-poliomyélite (Luxembourg)'
+    name: 'Immunization - Vaccin anti diphtérie-coqueluche-tétanos-poliomyélite (Luxembourg)'
+    description: 'Immunization - Vaccin anti diphtérie-coqueluche-tétanos-poliomyélite (Luxembourg)'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-uv-ips
   AllergyIntolerance/eumfh-39-07-1:
-    name: 'AllergyIntolerance: No known allergies'
-    description: 'AllergyIntolerance: No known allergies'
+    name: 'AllergyIntolerance - No Known Allergies'
+    description: 'AllergyIntolerance - No Known Allergies'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips
   AllergyIntolerance/allergyintolerance-with-abatement:
-    name: 'AllergyIntolerance: resolved allergy'
-    description: 'AllergyIntolerance: resolved allergy'
+    name: 'AllergyIntolerance - Resolved Allergy'
+    description: 'AllergyIntolerance - Resolved Allergy'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips
   AllergyIntolerance/allergyintolerance-multiple-codings:
-    name: 'AllergyIntolerance: multiple codings'
-    description: 'AllergyIntolerance: multiple codings'
+    name: 'AllergyIntolerance - Multiple Codings'
+    description: 'AllergyIntolerance - Multiple Codings'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips
   Condition/eumfh-39-07-1:
-    name: 'Condition: Acute myocardial infarction of anterior wall'
-    description: 'Condition: Acute myocardial infarction of anterior wall'
+    name: 'Condition - Acute Myeloid Leukemia'
+    description: 'Condition - Acute Myeloid Leukemia'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips
   Procedure/eumfh-39-07-1:
     name: 'Procedure: Surgical procedure'
@@ -103,8 +103,8 @@ resources:
     description: 'Practitioner example'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Practitioner-uv-ips
   PractitionerRole/simple-pr:
-    name: 'PractitionerRole: simple example'
-    description: 'Very Simple PractitionerRole example'
+    name: 'PractitionerRole - Minimal'
+    description: 'PractitionerRole - Minimal'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/PractitionerRole-uv-ips
   Patient/eumfh-39-07:
     name: 'Patient: male patient'
@@ -119,16 +119,16 @@ resources:
     description: 'Patient: female patient'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips
   DeviceUseStatement/eumfh-70-275-1:
-    name: 'DeviceUseStatement: No known devices in use'
-    description: 'DeviceUseStatement: No known devices in use'
+    name: 'DeviceUseStatement - No Known Devices in Use'
+    description: 'DeviceUseStatement - No Known Devices in Use'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/DeviceUseStatement-uv-ips
   Device/eumfh-70-275-1:
-    name: 'Device: No known devices in use'
-    description: 'Device: No known devices in use'
+    name: 'Device - No Known Devices in Use'
+    description: 'Device - No Known Devices in Use'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Device-uv-ips
   Device/ips-example-imaging-1:
-    name: 'Device: device observer example'
-    description: 'Device: device observer example'
+    name: 'Device - Device Observer'
+    description: 'Device - Device Observer'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Device-observer-uv-ips
   Observation/ips-example-imaging-1:
     name: 'Observation: imaging CT Abdomen W contrast IV'
@@ -143,16 +143,16 @@ resources:
     description: 'Observation: imaging Chest X-ray - PA and lateral, with additional sub-observation including numeric range'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-radiology-uv-ips  
   ImagingStudy/TII-ImagingStudy-5-1:
-    name: 'ImagingStudy: referred DICOM study'
-    description: 'ImagingStudy: referred DICOM study'
+    name: 'ImagingStudy - Referred DICOM Study'
+    description: 'ImagingStudy - Referred DICOM Study'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/ImagingStudy-uv-ips
   Organization/TII-Organization1:
     name: 'Organization: example'
     description: 'Organization: example'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips
   Organization/simple-org:
-    name: 'Organization: simple example'
-    description: 'Very Simple Organization example'
+    name: 'Organization - Minimal Name Only'
+    description: 'Organization - Minimal Name Only'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Organization-uv-ips
   Organization/lab-org-example:
     name: 'Organization: lab example'
@@ -175,8 +175,8 @@ resources:
     description: 'Observation: SH tobacco use example'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips
   Observation/alcohol-use-example:
-    name: 'Observation: SH alcohol use example'
-    description: 'Observation: SH alcohol use example'
+    name: 'Observation - Social History Alcohol Use'
+    description: 'Observation - Social History Alcohol Use'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-alcoholuse-uv-ips
   Specimen/specimen-example-1:
     name: 'Specimen: example'
@@ -199,10 +199,10 @@ resources:
     description: 'Observation: estrogen receptor in tissue example'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-pathology-uv-ips
   DiagnosticReport/hemoglobin:
-    name: 'DiagnosticReport: hemoglobin example'
-    description: 'DiagnosticReport: hemoglobin example'
+    name: 'DiagnosticReport - Hemoglobin'
+    description: 'DiagnosticReport - Hemoglobin'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips
   Flag/546482:
-    name: 'Alert Flag (IPS) example'
-    description: 'Alert Flag (IPS) example'
+    name: 'Flag - Alert of Patient Immunocompromised'
+    description: 'Flag - Alert of Patient Immunocompromised'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Flag-alert-uv-ips
