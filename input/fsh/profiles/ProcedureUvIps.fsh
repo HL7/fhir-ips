@@ -30,6 +30,6 @@ Description: "This profile represents the constraints applied to the Procedure r
 * performer.onBehalfOf only Reference(OrganizationUvIps)
 * performer.onBehalfOf ^mustSupport = false
 * bodySite only CodeableConceptIPS
-* bodySite from SNOMEDCTBodyStructures (example)
+* bodySite from SNOMEDCTBodyStructures (preferred)
 * bodySite ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * bodySite ^binding.extension.valueString = "BodySite"
