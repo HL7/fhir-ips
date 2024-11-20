@@ -11,3 +11,5 @@ Description: "This profile constrains the Organization resource to represent an 
 * ^contact.telecom.value = "http://www.hl7.org/Special/committees/patientcare"
 * ^jurisdiction = $m49.htm#001
 * name 1.. MS
+* telecom MS
+* address MS
