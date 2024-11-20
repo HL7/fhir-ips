@@ -115,7 +115,15 @@ Usage: #definition
 * rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-tobaccouse-uv-ips"
 * rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-pathology-uv-ips"
 * rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-radiology-uv-ips"
-* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
+* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/StructureDefinition/resprate"
+* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/StructureDefinition/heartrate"
+* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/StructureDefinition/oxygensat"
+* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/StructureDefinition/bodytemp"
+* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/StructureDefinition/bodyheight"
+* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/StructureDefinition/headcircum"
+* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/StructureDefinition/bodyweight"
+* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/StructureDefinition/bmi"
+* rest.resource[=].supportedProfile[+] = "http://hl7.org/fhir/StructureDefinition/bp"
 * rest.resource[+].type = #Organization
 * rest.resource[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].extension.valueCode = #MAY
