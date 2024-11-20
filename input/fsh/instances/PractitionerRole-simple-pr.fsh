@@ -1,5 +1,5 @@
 Instance: simple-pr
-InstanceOf: PractitionerRole
+InstanceOf: PractitionerRoleUvIps
 Title: "PractitionerRole: simple example"
 Description: "Very Simple PractitionerRole example"
 Usage: #example

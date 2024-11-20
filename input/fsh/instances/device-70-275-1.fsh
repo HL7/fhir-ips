@@ -1,5 +1,5 @@
 Instance: eumfh-70-275-1-of-Device
-InstanceOf: Device
+InstanceOf: DeviceUvIps
 Title: "Device: No known devices in use"
 Description: "Device: No known devices in use"
 Usage: #example

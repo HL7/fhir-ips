@@ -1,5 +1,5 @@
 Instance: ips-example-imaging-1-of-Device
-InstanceOf: Device
+InstanceOf: DeviceObserverUvIps
 Title: "Device: device observer example"
 Description: "Device: device observer example"
 Usage: #example

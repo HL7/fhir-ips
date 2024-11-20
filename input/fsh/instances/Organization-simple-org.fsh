@@ -1,5 +1,5 @@
 Instance: simple-org
-InstanceOf: Organization
+InstanceOf: OrganizationUvIps
 Title: "Organization: simple example"
 Description: "Very Simple Organization example"
 Usage: #example

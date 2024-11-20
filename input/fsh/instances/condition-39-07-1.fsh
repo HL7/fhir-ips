@@ -1,5 +1,5 @@
 Instance: eumfh-39-07-1-of-Condition
-InstanceOf: Condition
+InstanceOf: ConditionUvIps
 Title: "Condition: Acute myeloid leukemia"
 Description: "Condition: Acute myeloid leukemia"
 Usage: #example

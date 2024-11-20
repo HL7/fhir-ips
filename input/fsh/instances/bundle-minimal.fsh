@@ -1,5 +1,5 @@
 Instance: bundle-minimal
-InstanceOf: Bundle
+InstanceOf: BundleUvIps
 Title: "IPS Bundle example - minimal"
 Description: "IPS Bundle example - minimal"
 Usage: #example
@@ -174,4 +174,3 @@ Usage: #inline
 * code = $sct#373270004 "Substance with penicillin structure and antibacterial mechanism of action (substance)"
 * patient = Reference(urn:uuid:244ad7c3-beeb-41d1-8a2f-c76b8cf720ad)
 * onsetDateTime = "2010"
-

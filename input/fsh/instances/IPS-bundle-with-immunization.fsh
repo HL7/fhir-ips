@@ -1,5 +1,5 @@
 Instance: IPS-examples-Bundle-with-immunization
-InstanceOf: Bundle
+InstanceOf: BundleUvIps
 Title: "IPS Bundle example with Immunization"
 Description: "IPS Bundle example with Immunization section"
 Usage: #example
