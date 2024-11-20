@@ -1,6 +1,14 @@
 ### STU 2.0.0-ballot Update
 
-This change list provides an overview and detail of changes in STU 2.0 Ballot.  The major categories of revision include:
+#### Rationale for 2.0 Update
+
+The 2.0 represents a major update to the FHIR IPS specification based on implementation and community feedback. Two new sections have been added to the specification: 1) The "Alerts" section presents a dedicated section which can be used to warn regarding awareness of potential dangers to/from the subject of the IPS or awareness of a potential obstacles to care. 2) The "Patient Story" section presents the opportunity for patients to say what should be communicated to the attending clinician. This may include ‘what matters’ or is important to them. Patients unable to communicate can be supported by a proxy author.  
+
+In addition, simplifications have been made to terminologies, Observation profiles and empty sections from the 1.1 IPS specification. 60 separate terminology value sets have been reduced to 31 distinct value sets in the specification. Along with a reduction in value sets, there has also been a focus to define value sets in a manner that allows for the use of either a SNOMED-CT license (for nations who are SNOMED affiliates) or the SNOMED IPS Terminology (creative commons license worldwide).  Observation profiles for laboratory and pathology were consoldiated into a single profile and the generic Result Observation profile has been removed based on implementer feedback. And the use of "empty sections" codes means that implementers do not need to send an artificial resource when a section has no information.  
+
+Finally, changes have been made to align the IPS specification with the International Patient Access (IPA) and the parameters have been updated in the $summary operation. Altogether, we believe these changes along with significant narrative revisions based on community feedback provide a clearer and more implementable specificiation. More information on specific changes are detailed below.    
+
+The major categories of revision include:
 
 - Sending "empty" sections allowed (no section.entry with use of emptyReason)
 - Add Alerts Section
