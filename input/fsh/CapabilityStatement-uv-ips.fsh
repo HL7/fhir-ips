@@ -51,10 +51,12 @@ Usage: #definition
 * rest.resource[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].extension.valueCode = #SHOULD
 * rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationRequest-uv-ips"
+* rest.resource[=].documentation = "Some systems may only support MedicationRequest(IPS) or MedicationStatement(IPS)."
 * rest.resource[+].type = #MedicationStatement
 * rest.resource[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].extension.valueCode = #SHOULD
 * rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips"
+* rest.resource[=].documentation = "Some systems may only support MedicationRequest(IPS) or MedicationStatement(IPS)."
 * rest.resource[+].type = #CarePlan
 * rest.resource[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].extension.valueCode = #MAY
