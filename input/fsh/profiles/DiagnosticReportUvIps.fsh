@@ -12,7 +12,10 @@ Description: "This profile constrains the DiagnosticReport resource to represent
 * ^contact.telecom.value = "http://www.hl7.org/Special/committees/patientcare"
 * ^jurisdiction = $m49.htm#001
 * ^purpose = "This profile constrains the DiagnosticReport resource to use the specific IPS profiles for observations and coded data types."
-* status = #final (exactly)
+* status from DiagnosticReportStatusUvIps (required)
+* status ^label = "Observation status codes except 'entered-in-error'"
+* status ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+* status ^binding.extension[=].valueString = "ObservationStatus"
 * category 1..1 MS
 * category only CodeableConceptIPS
 * code only CodeableConceptIPS

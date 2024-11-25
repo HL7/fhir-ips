@@ -12,6 +12,10 @@ Description: """This profile represents the constraints applied to the ImagingSt
 * ^contact.telecom.value = "http://www.hl7.org/Special/committees/patientcare"
 * ^jurisdiction = $m49.htm#001
 * identifier MS
+* status from ImagingStudyStatusUvIps (required)
+* status ^label = "Imaging study status codes except 'entered-in-error'"
+* status ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+* status ^binding.extension[=].valueString = "ImagingStudyStatus"
 * subject only Reference(PatientUvIps)
 * subject MS
 * subject.reference 1.. MS
