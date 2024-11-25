@@ -103,6 +103,102 @@ When an [IPS Composition](./StructureDefinition-Composition-uv-ips.html) is gene
 
 The rationale above provides context for why narrative is important in the context of IPS document exchange. Since human-readable content is required in the Composition resource, this IPS guide does not require narrative text for other resources included in an IPS document. If individual resources profiled in this guide are planned for use outside of a document context, implementers should refer to the base [FHIR Narrative guidance](https://hl7.org/FHIR/narrative.html) for perspective on when those resources should include human-readable text.
 
+#### Linking Narrative to Source Resources
+
+It is often helpful to be able to trace contents of a narrative section back to its corresponding structured information. There has been a long precedence of doing so in CDA clinical documents. There are multiple options to accomplish this in FHIR. Implementers of FHIR IPS have suggested a consistent pattern of referencing individual resources from Composition.section.text as helpful guidance to include the IPS specification. While not required, the pattern established and tested by multiple vendors has been to use the [id/idref strategy](https://hl7.org/fhir/R4/narrative.html#internal) and we recommend this pattern for implementers. 
+
+For example, if you have a table in Composition.section.text showing two problems here is how use the idref tags to reference individual entry resources which are elsewhere in the IPS Bundle: 
+
+```
+{
+  "resourceType": "Bundle",
+  "identifier": {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:uuid:1db8db5e-5a17-499c-8b13-1b0f68411041"
+  },
+  "type": "document",
+  "timestamp": "2024-09-22T17:05:18Z",
+  "entry": [
+    {
+      "fullUrl": "https://sample.fhir.server/FHIR/R4/Composition/zzz",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "zzz",
+        "otherElements": "... skipping other Composition elements for brevity",
+        "section": [
+          {
+            "title": "Problem List",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11450-4",
+                  "display": "Problem list Reported"
+                }
+              ],
+              "text": "Problem list Reported"
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Active Problems</h3><table><thead><tr><th>Problem</th><th>Severity</th><th>Onset</th><th>Verification Status</th></tr></thead>
+              <tr idref=\"e2mZUha3piBjaWLgFVsNMrOmShLngxdtOSd0pab1f8EE3\"><td>Type 1 diabetes mellitus with diabetic chronic kidney disease</td><td>-</td><td>5/16/2024</td><td>Confirmed</td></tr>
+              <tr idref=\"e7e9DoHyH8d3o9uWFcd9mP2f7koQBUMUhv4Jc4kmb-sE3\"><td>Cellulitis</td><td>Lo</td><td>5/13/2024</td><td>Confirmed</td></tr></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "Condition/e2mZUha3piBjaWLgFVsNMrOmShLngxdtOSd0pab1f8EE3"
+              },
+              { "reference": "Condition/1" }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "e2mZUha3piBjaWLgFVsNMrOmShLngxdtOSd0pab1f8EE3",
+      "fullUrl": "https://sample.fhir.server/FHIR/R4/Condition/e2mZUha3piBjaWLgFVsNMrOmShLngxdtOSd0pab1f8EE3",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "e2mZUha3piBjaWLgFVsNMrOmShLngxdtOSd0pab1f8EE3",
+        "otherElements": "... skipping other Condition elements for brevity",
+        "code": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10-cm",
+              "code": "E10.22",
+              "display": "Type 1 diabetes mellitus with diabetic chronic kidney disease"
+            }
+          ],
+          "text": "Type 1 diabetes mellitus with diabetic chronic kidney disease"
+        }
+      }
+    },
+    {
+      "id": "e7e9DoHyH8d3o9uWFcd9mP2f7koQBUMUhv4Jc4kmb-sE3",
+      "fullUrl": "https://sample.fhir.server/FHIR/R4/Condition/1",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "1",
+        "otherElements": "... skipping other Condition elements for brevity",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "128045006",
+              "display": "Cellulitis"
+            }
+          ],
+          "text": "Cellulitis"
+        }
+      }
+    }
+  ]
+}
+```
+
+*Note that many elements and required entries and sections are not included above and line breaks have been artificially added to make it easier to read. The idref attributes ("e2mZUha3piBjaWLgFVsNMrOmShLngxdtOSd0pab1f8EE3" and "e7e9DoHyH8d3o9uWFcd9mP2f7koQBUMUhv4Jc4kmb-sE3") above reference the Bundle.entry.id.*
+
+
 #### Narrative Content Guidance
 
 Granular requirements regarding what is considered clinically relevant for inclusion in the narrative of each section are not currently defined in [ISO 27269](https://www.iso.org/standard/79491.html) and are subsequently not defined or enforced in this guide.
