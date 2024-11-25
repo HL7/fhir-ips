@@ -107,7 +107,7 @@ The rationale above provides context for why narrative is important in the conte
 
 It is often helpful to be able to trace contents of a narrative section back to its corresponding structured information. There has been a long precedence of doing so in CDA clinical documents. There are multiple options to accomplish this in FHIR. Implementers of FHIR IPS have suggested a consistent pattern of referencing individual resources from Composition.section.text as helpful guidance to include the IPS specification. While not required, the pattern established and tested by multiple vendors has been to use the [id/idref strategy](https://hl7.org/fhir/R4/narrative.html#internal) and we recommend this pattern for implementers. 
 
-For example, if you have a table in Composition.section.text showing two problems here is how use the idref tags to reference individual entry resources which are elsewhere in the IPS Bundle: 
+For example, if you have a table in Composition.section.text showing two problems here is how use the idref attributes to reference individual entry resources which are elsewhere in the IPS Bundle: 
 
 ```
 {
