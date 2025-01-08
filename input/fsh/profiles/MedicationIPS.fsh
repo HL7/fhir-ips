@@ -36,5 +36,4 @@ Description: "This profile represents the constraints applied to the Medication 
 * ingredient.item[x] from MedicineActiveSubstancesUvIps (preferred)
 * ingredient.item[x] ^comment = "The IDMP ISO 11238 standard addresses the identification and exchange of regulated information on substances. \r\nThe Global Ingredient Archival System (GInAS) will provide a common global identifier for all of the substances used in medicinal products, providing a definition of substances globally consistent with this standard.\r\nThose identifiers however are yet available for concrete usage, therefore in this version of the template, SNOMED CT has been chosen as reference terminology also for the active substances.\r\nThis choice will be revised based on the availability and the maturity of GInAS."
 * ingredient.item[x] ^binding.description = "SNOMED CT drug substances"
-* ingredient.strength only RatioIPS
 * ingredient.strength MS
