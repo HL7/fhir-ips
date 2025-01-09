@@ -9,6 +9,8 @@ Description: "This profile represents the constraints applied to the Patient res
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "http://www.hl7.org/Special/committees/patientcare"
 * ^jurisdiction = $m49.htm#001
+* extension contains $genderIdentity named genderIdentity 0..*
+* extension contains $personalPronouns named personalPronouns 0..*
 * identifier MS
 * name 1..* MS
 * name obeys ips-pat-1
