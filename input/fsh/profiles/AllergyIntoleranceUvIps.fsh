@@ -18,7 +18,37 @@ It documents the relevant allergies or intolerances (conditions) for a patient, 
 * verificationStatus only CodeableConceptIPS
 * verificationStatus ^comment = "In the scope of the IPS the entered-in-error concept is not allowed."
 * type MS
+* type ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* type ^extension[=].extension[0].url = "code"
+* type ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* type ^extension[=].extension[+].url = "actor"
+* type ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Producer"
+* type ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* type ^extension[=].extension[0].url = "code"
+* type ^extension[=].extension[=].valueCode = #SHALL:handle
+* type ^extension[=].extension[+].url = "actor"
+* type ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* type ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* type ^extension[=].extension[0].url = "code"
+* type ^extension[=].extension[=].valueCode = #SHOULD:display
+* type ^extension[=].extension[+].url = "actor"
+* type ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
 * code 1..1 MS
+* code ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* code ^extension[=].extension[0].url = "code"
+* code ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* code ^extension[=].extension[+].url = "actor"
+* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Producer"
+* code ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* code ^extension[=].extension[0].url = "code"
+* code ^extension[=].extension[=].valueCode = #SHALL:handle
+* code ^extension[=].extension[+].url = "actor"
+* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* code ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* code ^extension[=].extension[0].url = "code"
+* code ^extension[=].extension[=].valueCode = #SHOULD:display
+* code ^extension[=].extension[+].url = "actor"
+* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
 * code only CodeableConceptIPS
 * code from AllergyIntoleranceUvIps (preferred)
 * code ^binding.extension[0].extension[0].url = "purpose"
@@ -32,13 +62,73 @@ It documents the relevant allergies or intolerances (conditions) for a patient, 
 * patient only Reference(PatientUvIps)
 * patient MS
 * patient.reference 1.. MS
+* patient.reference ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* patient.reference ^extension[=].extension[0].url = "code"
+* patient.reference ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* patient.reference ^extension[=].extension[+].url = "actor"
+* patient.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Producer"
+* patient.reference ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* patient.reference ^extension[=].extension[0].url = "code"
+* patient.reference ^extension[=].extension[=].valueCode = #SHALL:handle
+* patient.reference ^extension[=].extension[+].url = "actor"
+* patient.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* patient.reference ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* patient.reference ^extension[=].extension[0].url = "code"
+* patient.reference ^extension[=].extension[=].valueCode = #SHOULD:display
+* patient.reference ^extension[=].extension[+].url = "actor"
+* patient.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
 * onset[x] only dateTime or Age or Period or Range or string
 * onset[x] MS
+* onset[x] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* onset[x] ^extension[=].extension[0].url = "code"
+* onset[x] ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* onset[x] ^extension[=].extension[+].url = "actor"
+* onset[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Producer"
+* onset[x] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* onset[x] ^extension[=].extension[0].url = "code"
+* onset[x] ^extension[=].extension[=].valueCode = #SHALL:handle
+* onset[x] ^extension[=].extension[+].url = "actor"
+* onset[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* onset[x] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* onset[x] ^extension[=].extension[0].url = "code"
+* onset[x] ^extension[=].extension[=].valueCode = #SHOULD:display
+* onset[x] ^extension[=].extension[+].url = "actor"
+* onset[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
 * onset[x] ^type.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
 * onset[x] ^type.extension.valueBoolean = true
 * reaction MS
 * reaction.manifestation only CodeableConceptIPS
 * reaction.manifestation MS
+* reaction.manifestation ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* reaction.manifestation ^extension[=].extension[0].url = "code"
+* reaction.manifestation ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* reaction.manifestation ^extension[=].extension[+].url = "actor"
+* reaction.manifestation ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Producer"
+* reaction.manifestation ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* reaction.manifestation ^extension[=].extension[0].url = "code"
+* reaction.manifestation ^extension[=].extension[=].valueCode = #SHALL:handle
+* reaction.manifestation ^extension[=].extension[+].url = "actor"
+* reaction.manifestation ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* reaction.manifestation ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* reaction.manifestation ^extension[=].extension[0].url = "code"
+* reaction.manifestation ^extension[=].extension[=].valueCode = #SHOULD:display
+* reaction.manifestation ^extension[=].extension[+].url = "actor"
+* reaction.manifestation ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
 * reaction.manifestation from AllergyReactionUvIps (preferred)
 * reaction.manifestation ^binding.description = "Code for the allergy or intolerance reaction manifestation from SNOMED CT."
 * reaction.severity MS
+* reaction.severity ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* reaction.severity ^extension[=].extension[0].url = "code"
+* reaction.severity ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* reaction.severity ^extension[=].extension[+].url = "actor"
+* reaction.severity ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Producer"
+* reaction.severity ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* reaction.severity ^extension[=].extension[0].url = "code"
+* reaction.severity ^extension[=].extension[=].valueCode = #SHALL:handle
+* reaction.severity ^extension[=].extension[+].url = "actor"
+* reaction.severity ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* reaction.severity ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* reaction.severity ^extension[=].extension[0].url = "code"
+* reaction.severity ^extension[=].extension[=].valueCode = #SHOULD:display
+* reaction.severity ^extension[=].extension[+].url = "actor"
+* reaction.severity ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
