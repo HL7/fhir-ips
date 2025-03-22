@@ -11,7 +11,7 @@ Description: """This profile represents the constraints applied to the ImagingSt
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "http://www.hl7.org/Special/committees/patientcare"
 * ^jurisdiction = $m49.htm#001
-* identifier MS
+* identifier 
 * status from ImagingStudyStatusUvIps (required)
 * status ^label = "Imaging study status codes except 'entered-in-error'"
 * status ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
@@ -26,10 +26,10 @@ Description: """This profile represents the constraints applied to the ImagingSt
 * procedureCode ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * procedureCode ^binding.extension.valueString = "ImagingProcedureCode"
 * reasonCode only CodeableConceptIPS
-* reasonCode MS
-* series MS
-* series.uid MS
-* series.modality MS
-* series.instance MS
-* series.instance.uid MS
-* series.instance.sopClass MS
+* reasonCode 
+* series 
+* series.uid 
+* series.modality 
+* series.instance 
+* series.instance.uid 
+* series.instance.sopClass 
