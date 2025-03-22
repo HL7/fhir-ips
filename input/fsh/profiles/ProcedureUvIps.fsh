@@ -11,6 +11,21 @@ Description: "This profile represents the constraints applied to the Procedure r
 * ^contact.telecom.value = "http://www.hl7.org/Special/committees/patientcare"
 * ^jurisdiction = $m49.htm#001
 * code 1..1 MS
+* code ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* code ^extension[=].extension[0].url = "code"
+* code ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* code ^extension[=].extension[+].url = "actor"
+* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Producer"
+* code ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* code ^extension[=].extension[0].url = "code"
+* code ^extension[=].extension[=].valueCode = #SHALL:handle
+* code ^extension[=].extension[+].url = "actor"
+* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* code ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* code ^extension[=].extension[0].url = "code"
+* code ^extension[=].extension[=].valueCode = #SHOULD:display
+* code ^extension[=].extension[+].url = "actor"
+* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
 * code only CodeableConceptIPS
 * code from ProceduresUvIps (preferred)
 * code ^definition = "Identification of the procedure or recording of \"absence of relevant procedures\" or of \"procedures unknown\"."
@@ -19,16 +34,42 @@ Description: "This profile represents the constraints applied to the Procedure r
 * subject MS
 * subject ^definition = "The person on which the procedure was performed."
 * subject.reference 1.. MS
+* subject.reference ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* subject.reference ^extension[=].extension[0].url = "code"
+* subject.reference ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* subject.reference ^extension[=].extension[+].url = "actor"
+* subject.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Producer"
+* subject.reference ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* subject.reference ^extension[=].extension[0].url = "code"
+* subject.reference ^extension[=].extension[=].valueCode = #SHALL:handle
+* subject.reference ^extension[=].extension[+].url = "actor"
+* subject.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* subject.reference ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* subject.reference ^extension[=].extension[0].url = "code"
+* subject.reference ^extension[=].extension[=].valueCode = #SHOULD:display
+* subject.reference ^extension[=].extension[+].url = "actor"
+* subject.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
 * performed[x] 1..1 MS
+* performed[x] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* performed[x] ^extension[=].extension[0].url = "code"
+* performed[x] ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* performed[x] ^extension[=].extension[+].url = "actor"
+* performed[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Producer"
+* performed[x] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* performed[x] ^extension[=].extension[0].url = "code"
+* performed[x] ^extension[=].extension[=].valueCode = #SHALL:handle
+* performed[x] ^extension[=].extension[+].url = "actor"
+* performed[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* performed[x] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* performed[x] ^extension[=].extension[0].url = "code"
+* performed[x] ^extension[=].extension[=].valueCode = #SHOULD:display
+* performed[x] ^extension[=].extension[+].url = "actor"
+* performed[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
 * performed[x].extension contains $data-absent-reason named data-absent-reason 0..1 MS
 * performed[x].extension[data-absent-reason] ^short = "performed[x] absence reason"
 * performed[x].extension[data-absent-reason] ^definition = "Provides a reason why the performed is missing."
-* asserter ^mustSupport = false
-* performer ^mustSupport = false
 * performer.actor only Reference(PatientUvIps or RelatedPerson or DeviceObserverUvIps or PractitionerUvIps or PractitionerRoleUvIps or OrganizationUvIps)
-* performer.actor ^mustSupport = false
 * performer.onBehalfOf only Reference(OrganizationUvIps)
-* performer.onBehalfOf ^mustSupport = false
 * bodySite only CodeableConceptIPS
 * bodySite from SNOMEDCTBodyStructures (preferred)
 * bodySite ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"

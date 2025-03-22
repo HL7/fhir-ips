@@ -16,9 +16,54 @@ Description: "This profile represents the constraints applied to the DeviceUseSt
 * subject MS
 * subject ^definition = "The patient using the device."
 * subject.reference 1.. MS
+* subject.reference ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* subject.reference ^extension[=].extension[0].url = "code"
+* subject.reference ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* subject.reference ^extension[=].extension[+].url = "actor"
+* subject.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Producer"
+* subject.reference ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* subject.reference ^extension[=].extension[0].url = "code"
+* subject.reference ^extension[=].extension[=].valueCode = #SHALL:handle
+* subject.reference ^extension[=].extension[+].url = "actor"
+* subject.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* subject.reference ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* subject.reference ^extension[=].extension[0].url = "code"
+* subject.reference ^extension[=].extension[=].valueCode = #SHOULD:display
+* subject.reference ^extension[=].extension[+].url = "actor"
+* subject.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
 * timing[x] 1..1 MS
 * timing[x].extension contains $data-absent-reason named data-absent-reason 0..1 MS
 * timing[x].extension[data-absent-reason] ^definition = "Provides a reason why the timing is missing."
+* timing[x] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* timing[x] ^extension[=].extension[0].url = "code"
+* timing[x] ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* timing[x] ^extension[=].extension[+].url = "actor"
+* timing[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Producer"
+* timing[x] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* timing[x] ^extension[=].extension[0].url = "code"
+* timing[x] ^extension[=].extension[=].valueCode = #SHALL:handle
+* timing[x] ^extension[=].extension[+].url = "actor"
+* timing[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* timing[x] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* timing[x] ^extension[=].extension[0].url = "code"
+* timing[x] ^extension[=].extension[=].valueCode = #SHOULD:display
+* timing[x] ^extension[=].extension[+].url = "actor"
+* timing[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
 * device only Reference(DeviceUvIps)
 * device MS
+* device ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* device ^extension[=].extension[0].url = "code"
+* device ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* device ^extension[=].extension[+].url = "actor"
+* device ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Producer"
+* device ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* device ^extension[=].extension[0].url = "code"
+* device ^extension[=].extension[=].valueCode = #SHALL:handle
+* device ^extension[=].extension[+].url = "actor"
+* device ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* device ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* device ^extension[=].extension[0].url = "code"
+* device ^extension[=].extension[=].valueCode = #SHOULD:display
+* device ^extension[=].extension[+].url = "actor"
+* device ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
 * bodySite only CodeableConceptIPS
