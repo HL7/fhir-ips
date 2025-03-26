@@ -18,18 +18,15 @@ One of the important and useful capabilities of FHIR profiling is [slicing](http
 
 Having this clear is important for correctly understanding the published profiles. For example, the optional section of [Social History](./StructureDefinition-Composition-uv-ips-definitions.html#Composition.section:sectionSocialHistory.entry) has open slicing on the entry element allowing for the use of the [IPS Tobacco Use profile](./StructureDefinition-Observation-tobaccouse-uv-ips.html), the [IPS Alcohol Use profile](./StructureDefinition-Observation-alcoholuse-uv-ips.html), or any other Observation or DocumentReference. Therefore, while specific IPS profiles are described in this guide, other profiles may also be included as well.
 
-### Must Support
+### Obligations and Must Support
 
-Implementers conforming to a particular profile in the IPS Implementation Guide:
+In the context of IPS, Obligations defines how an Actor ([IPS-Producer](./ActorDefinition-IPS-Producer.html) or [IPS-Consumer](ActorDefinition-IPS-Consumer.html)) must “support” a given element. All MustSupport elements in this publication are accompanied by an explicit obligation, which identifies structured expectations for a given actor. Obligations can be found in the formal view section of a resource as shown below for the IPS Procedure profile: 
 
-- SHALL be capable of producing values for the mustSupport elements in the profile (see [Empty Sections and Missing Data](#empty-sections--missing-data) for more detail)
-- SHALL be capable of processing resource instances containing mustSupport data elements, including elements with missing data, without generating an error or causing the application to fail.
-- SHOULD be capable of displaying mustSupport data elements for human use, or processing (e.g. storing) them for other purposes.
+{% include img.html img="Obligations.png" caption="Figure 4: Example of Obligations in IPS Procedure Profile" width="70%" %}
 
-Implementers conforming to an IPS document in the IPS Implementation Guide:
+Obligations may be different between the IPS-Producer and IPS-Consumer of an IPS document and also may differ by profile and resource attributes. For all obligations, no data should be populated or processed in any way that conflicts with regional laws, regulations or policies. For additional context, see the Security and Privacy Consideration (./Privacy-and-Security-Considerations.html) section of this implementation guide. 
 
-- SHALL be capable of supporting profiles under sections that are marked mustSupport in the IPS Composition profile
-- SHALL be capable of populating profiles for allergy, medication and problem information in an IPS document
+Because IPS is a standard which may be localized to different jurisdictions and regions, one goal of obligations is that they may be inherited. Realm-specific implementation guides may apply additional obligations and/or provide additional guidance on the definition of MustSupport. However, they SHOULD identify and document these differences. For more information on obligations, see the [extension description](https://hl7.org/fhir/extensions/StructureDefinition-obligation.html) and to see all possible types of obligations it may be helpful to review the associated [obligations valueset](https://hl7.org/fhir/extensions/ValueSet-obligation.html) 
 
 ### Empty Sections & Missing Data
 

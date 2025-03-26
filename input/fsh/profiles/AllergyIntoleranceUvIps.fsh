@@ -50,7 +50,7 @@ It documents the relevant allergies or intolerances (conditions) for a patient, 
 * code ^extension[=].extension[+].url = "actor"
 * code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
 * code only CodeableConceptIPS
-* code from AllergyIntoleranceUvIps (preferred)
+* code from AllergyIntoleranceCodesUvIps (preferred)
 * code ^binding.extension[0].extension[0].url = "purpose"
 * code ^binding.extension[=].extension[=].valueCode = #candidate
 * code ^binding.extension[=].extension[+].url = "valueSet"
@@ -114,7 +114,7 @@ It documents the relevant allergies or intolerances (conditions) for a patient, 
 * reaction.manifestation ^extension[=].extension[=].valueCode = #SHOULD:display
 * reaction.manifestation ^extension[=].extension[+].url = "actor"
 * reaction.manifestation ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
-* reaction.manifestation from AllergyReactionCodesUvIps (preferred)
+* reaction.manifestation from AllergyReactionUvIps (preferred)
 * reaction.manifestation ^binding.description = "Code for the allergy or intolerance reaction manifestation from SNOMED CT."
 * reaction.severity MS
 * reaction.severity ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
