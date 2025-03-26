@@ -14,6 +14,21 @@ Description: "This profile represents the constraints applied to the Condition r
 * . ^short = "Documentation of a health problem of the patient"
 * clinicalStatus only CodeableConceptIPS
 * clinicalStatus MS
+* clinicalStatus ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* clinicalStatus ^extension[=].extension[0].url = "code"
+* clinicalStatus ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* clinicalStatus ^extension[=].extension[+].url = "actor"
+* clinicalStatus ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
+* clinicalStatus ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* clinicalStatus ^extension[=].extension[0].url = "code"
+* clinicalStatus ^extension[=].extension[=].valueCode = #SHALL:handle
+* clinicalStatus ^extension[=].extension[+].url = "actor"
+* clinicalStatus ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* clinicalStatus ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* clinicalStatus ^extension[=].extension[0].url = "code"
+* clinicalStatus ^extension[=].extension[=].valueCode = #SHOULD:display
+* clinicalStatus ^extension[=].extension[+].url = "actor"
+* clinicalStatus ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
 * verificationStatus only CodeableConceptIPS
 * verificationStatus ^comment = "This element is labeled as a modifier because the status contains the code refuted and entered-in-error that mark the Condition as not currently valid."
 * category only CodeableConceptIPS
@@ -23,17 +38,17 @@ Description: "This profile represents the constraints applied to the Condition r
 * category ^extension[=].extension[0].url = "code"
 * category ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * category ^extension[=].extension[+].url = "actor"
-* category ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Producer"
+* category ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
 * category ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * category ^extension[=].extension[0].url = "code"
 * category ^extension[=].extension[=].valueCode = #SHALL:handle
 * category ^extension[=].extension[+].url = "actor"
-* category ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* category ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
 * category ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * category ^extension[=].extension[0].url = "code"
 * category ^extension[=].extension[=].valueCode = #SHOULD:display
 * category ^extension[=].extension[+].url = "actor"
-* category ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* category ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
 * category ^definition = "A category assigned to the condition. In this profile, a health problem of the patient, therefore a 'problem-list-item'.\r\n"
 * category ^comment = "In this profile, Condition represents a health problem of the patient. Therefore one of the category value(s) must be problem-list-item."
 * category ^binding.extension[0].extension[0].url = "purpose"
@@ -49,34 +64,34 @@ Description: "This profile represents the constraints applied to the Condition r
 * severity ^extension[=].extension[0].url = "code"
 * severity ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * severity ^extension[=].extension[+].url = "actor"
-* severity ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Producer"
+* severity ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
 * severity ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * severity ^extension[=].extension[0].url = "code"
 * severity ^extension[=].extension[=].valueCode = #SHALL:handle
 * severity ^extension[=].extension[+].url = "actor"
-* severity ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* severity ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
 * severity ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * severity ^extension[=].extension[0].url = "code"
 * severity ^extension[=].extension[=].valueCode = #SHOULD:display
 * severity ^extension[=].extension[+].url = "actor"
-* severity ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* severity ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
 * severity from $condition-severity (preferred)
 * code 1..1 MS
 * code ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * code ^extension[=].extension[0].url = "code"
 * code ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * code ^extension[=].extension[+].url = "actor"
-* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Producer"
+* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
 * code ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * code ^extension[=].extension[0].url = "code"
 * code ^extension[=].extension[=].valueCode = #SHALL:handle
 * code ^extension[=].extension[+].url = "actor"
-* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
 * code ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * code ^extension[=].extension[0].url = "code"
 * code ^extension[=].extension[=].valueCode = #SHOULD:display
 * code ^extension[=].extension[+].url = "actor"
-* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
 * code only CodeableConceptIPS
 * code from ProblemsUvIps (preferred)
 * code ^definition = "Identification of the condition, problem or diagnosis or recording of absent/unknown problems."
@@ -87,38 +102,53 @@ Description: "This profile represents the constraints applied to the Condition r
 * bodySite ^binding.extension[=].valueString = "BodySite"
 * subject only Reference(PatientUvIps)
 * subject MS
+* subject ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* subject ^extension[=].extension[0].url = "code"
+* subject ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* subject ^extension[=].extension[+].url = "actor"
+* subject ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
+* subject ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* subject ^extension[=].extension[0].url = "code"
+* subject ^extension[=].extension[=].valueCode = #SHALL:handle
+* subject ^extension[=].extension[+].url = "actor"
+* subject ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* subject ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* subject ^extension[=].extension[0].url = "code"
+* subject ^extension[=].extension[=].valueCode = #SHOULD:display
+* subject ^extension[=].extension[+].url = "actor"
+* subject ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
 * subject.reference 1.. MS
 * subject.reference ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * subject.reference ^extension[=].extension[0].url = "code"
 * subject.reference ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * subject.reference ^extension[=].extension[+].url = "actor"
-* subject.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Producer"
+* subject.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
 * subject.reference ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * subject.reference ^extension[=].extension[0].url = "code"
 * subject.reference ^extension[=].extension[=].valueCode = #SHALL:handle
 * subject.reference ^extension[=].extension[+].url = "actor"
-* subject.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* subject.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
 * subject.reference ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * subject.reference ^extension[=].extension[0].url = "code"
 * subject.reference ^extension[=].extension[=].valueCode = #SHOULD:display
 * subject.reference ^extension[=].extension[+].url = "actor"
-* subject.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* subject.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
 * onset[x] only dateTime or Age or Period or Range or string
 * onset[x] MS
 * onset[x] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * onset[x] ^extension[=].extension[0].url = "code"
 * onset[x] ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * onset[x] ^extension[=].extension[+].url = "actor"
-* onset[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Producer"
+* onset[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
 * onset[x] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * onset[x] ^extension[=].extension[0].url = "code"
 * onset[x] ^extension[=].extension[=].valueCode = #SHALL:handle
 * onset[x] ^extension[=].extension[+].url = "actor"
-* onset[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* onset[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
 * onset[x] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * onset[x] ^extension[=].extension[0].url = "code"
 * onset[x] ^extension[=].extension[=].valueCode = #SHOULD:display
 * onset[x] ^extension[=].extension[+].url = "actor"
-* onset[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* onset[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
 * onset[x] ^type.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
 * onset[x] ^type.extension.valueBoolean = true

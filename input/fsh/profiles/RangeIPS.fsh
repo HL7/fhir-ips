@@ -17,31 +17,31 @@ Description: "Range constrained to UCUM as the code system for units."
 * low ^extension[=].extension[0].url = "code"
 * low ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * low ^extension[=].extension[+].url = "actor"
-* low ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Producer"
+* low ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
 * low ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * low ^extension[=].extension[0].url = "code"
 * low ^extension[=].extension[=].valueCode = #SHALL:handle
 * low ^extension[=].extension[+].url = "actor"
-* low ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* low ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
 * low ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * low ^extension[=].extension[0].url = "code"
 * low ^extension[=].extension[=].valueCode = #SHOULD:display
 * low ^extension[=].extension[+].url = "actor"
-* low ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* low ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
 * high only SimpleQuantityIPS
 * high MS
 * high ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * high ^extension[=].extension[0].url = "code"
 * high ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * high ^extension[=].extension[+].url = "actor"
-* high ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Producer"
+* high ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
 * high ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * high ^extension[=].extension[0].url = "code"
 * high ^extension[=].extension[=].valueCode = #SHALL:handle
 * high ^extension[=].extension[+].url = "actor"
-* high ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* high ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
 * high ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * high ^extension[=].extension[0].url = "code"
 * high ^extension[=].extension[=].valueCode = #SHOULD:display
 * high ^extension[=].extension[+].url = "actor"
-* high ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* high ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"

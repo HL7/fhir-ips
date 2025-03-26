@@ -18,90 +18,120 @@ Description: "This profile represents the constraints applied to the MedicationS
 * medication[x] ^extension[=].extension[0].url = "code"
 * medication[x] ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * medication[x] ^extension[=].extension[+].url = "actor"
-* medication[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Producer"
+* medication[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
 * medication[x] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * medication[x] ^extension[=].extension[0].url = "code"
 * medication[x] ^extension[=].extension[=].valueCode = #SHALL:handle
 * medication[x] ^extension[=].extension[+].url = "actor"
-* medication[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* medication[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
 * medication[x] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * medication[x] ^extension[=].extension[0].url = "code"
 * medication[x] ^extension[=].extension[=].valueCode = #SHOULD:display
 * medication[x] ^extension[=].extension[+].url = "actor"
-* medication[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* medication[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
 * medication[x] from MedicationsUvIps (preferred)
 * medication[x] ^definition = "Identifies the medication being administered or the reason for absent or unknown Medication. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code. To improve global interoperability is strongly encouraged that the reference to a medication resource is used, limiting the usage of the medicationCodeableConcept only to the cases in which no other information than a simple code is available."
 * medication[x] ^binding.description = "SNOMED CT medications (Medicinal product) or a code for absent/unknown medication"
 * subject only Reference(PatientUvIps)
 * subject MS
+* subject ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* subject ^extension[=].extension[0].url = "code"
+* subject ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* subject ^extension[=].extension[+].url = "actor"
+* subject ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
+* subject ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* subject ^extension[=].extension[0].url = "code"
+* subject ^extension[=].extension[=].valueCode = #SHALL:handle
+* subject ^extension[=].extension[+].url = "actor"
+* subject ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* subject ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* subject ^extension[=].extension[0].url = "code"
+* subject ^extension[=].extension[=].valueCode = #SHOULD:display
+* subject ^extension[=].extension[+].url = "actor"
+* subject ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
 * subject.reference 1.. MS
 * subject.reference ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * subject.reference ^extension[=].extension[0].url = "code"
 * subject.reference ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * subject.reference ^extension[=].extension[+].url = "actor"
-* subject.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Producer"
+* subject.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
 * subject.reference ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * subject.reference ^extension[=].extension[0].url = "code"
 * subject.reference ^extension[=].extension[=].valueCode = #SHALL:handle
 * subject.reference ^extension[=].extension[+].url = "actor"
-* subject.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* subject.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
 * subject.reference ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * subject.reference ^extension[=].extension[0].url = "code"
 * subject.reference ^extension[=].extension[=].valueCode = #SHOULD:display
 * subject.reference ^extension[=].extension[+].url = "actor"
-* subject.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* subject.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
 * effective[x] 1..1 MS
 * effective[x] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * effective[x] ^extension[=].extension[0].url = "code"
 * effective[x] ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * effective[x] ^extension[=].extension[+].url = "actor"
-* effective[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Producer"
+* effective[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
 * effective[x] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * effective[x] ^extension[=].extension[0].url = "code"
 * effective[x] ^extension[=].extension[=].valueCode = #SHALL:handle
 * effective[x] ^extension[=].extension[+].url = "actor"
-* effective[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* effective[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
 * effective[x] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * effective[x] ^extension[=].extension[0].url = "code"
 * effective[x] ^extension[=].extension[=].valueCode = #SHOULD:display
 * effective[x] ^extension[=].extension[+].url = "actor"
-* effective[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
-* effective[x].extension contains $data-absent-reason named data-absent-reason 0..1 MS
+* effective[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* effective[x].extension contains $data-absent-reason named data-absent-reason 0..1
 * effective[x].extension[data-absent-reason] ^short = "effective[x] absence reason"
 * effective[x].extension[data-absent-reason] ^definition = "Provides a reason why the effectiveTime is missing."
 * dosage MS
+* dosage ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* dosage ^extension[=].extension[0].url = "code"
+* dosage ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* dosage ^extension[=].extension[+].url = "actor"
+* dosage ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
+* dosage ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* dosage ^extension[=].extension[0].url = "code"
+* dosage ^extension[=].extension[=].valueCode = #SHALL:handle
+* dosage ^extension[=].extension[+].url = "actor"
+* dosage ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* dosage ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* dosage ^extension[=].extension[0].url = "code"
+* dosage ^extension[=].extension[=].valueCode = #SHOULD:display
+* dosage ^extension[=].extension[+].url = "actor"
+* dosage ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
 * dosage.text MS
 * dosage.text ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * dosage.text ^extension[=].extension[0].url = "code"
 * dosage.text ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * dosage.text ^extension[=].extension[+].url = "actor"
-* dosage.text ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Producer"
+* dosage.text ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
 * dosage.text ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * dosage.text ^extension[=].extension[0].url = "code"
 * dosage.text ^extension[=].extension[=].valueCode = #SHALL:handle
 * dosage.text ^extension[=].extension[+].url = "actor"
-* dosage.text ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* dosage.text ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
 * dosage.text ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * dosage.text ^extension[=].extension[0].url = "code"
 * dosage.text ^extension[=].extension[=].valueCode = #SHOULD:display
 * dosage.text ^extension[=].extension[+].url = "actor"
-* dosage.text ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* dosage.text ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
 * dosage.timing MS
 * dosage.timing ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * dosage.timing ^extension[=].extension[0].url = "code"
 * dosage.timing ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * dosage.timing ^extension[=].extension[+].url = "actor"
-* dosage.timing ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Producer"
+* dosage.timing ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
 * dosage.timing ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * dosage.timing ^extension[=].extension[0].url = "code"
 * dosage.timing ^extension[=].extension[=].valueCode = #SHALL:handle
 * dosage.timing ^extension[=].extension[+].url = "actor"
-* dosage.timing ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* dosage.timing ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
 * dosage.timing ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * dosage.timing ^extension[=].extension[0].url = "code"
 * dosage.timing ^extension[=].extension[=].valueCode = #SHOULD:display
 * dosage.timing ^extension[=].extension[+].url = "actor"
-* dosage.timing ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
+* dosage.timing ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
 * dosage.route only CodeableConceptIPS
 * dosage.route from MedicineRouteOfAdministrationUvIps (preferred)
 * dosage.route ^binding.description = "EDQM Standards Terms"
