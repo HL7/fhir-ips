@@ -114,7 +114,7 @@ It documents the relevant allergies or intolerances (conditions) for a patient, 
 * reaction.manifestation ^extension[=].extension[=].valueCode = #SHOULD:display
 * reaction.manifestation ^extension[=].extension[+].url = "actor"
 * reaction.manifestation ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/IPS-Consumer"
-* reaction.manifestation from AllergyReactionUvIps (preferred)
+* reaction.manifestation from AllergyReactionCodesUvIps (preferred)
 * reaction.manifestation ^binding.description = "Code for the allergy or intolerance reaction manifestation from SNOMED CT."
 * reaction.severity MS
 * reaction.severity ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
