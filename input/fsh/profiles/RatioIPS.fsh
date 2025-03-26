@@ -16,31 +16,31 @@ Description: "Ratio data type, constrained to use UCUM as the code system for un
 * numerator ^extension[=].extension[0].url = "code"
 * numerator ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * numerator ^extension[=].extension[+].url = "actor"
-* numerator ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
+* numerator ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * numerator ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * numerator ^extension[=].extension[0].url = "code"
 * numerator ^extension[=].extension[=].valueCode = #SHALL:handle
 * numerator ^extension[=].extension[+].url = "actor"
-* numerator ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* numerator ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * numerator ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * numerator ^extension[=].extension[0].url = "code"
 * numerator ^extension[=].extension[=].valueCode = #SHOULD:display
 * numerator ^extension[=].extension[+].url = "actor"
-* numerator ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* numerator ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * denominator only QuantityIPS
 * denominator MS
 * denominator ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * denominator ^extension[=].extension[0].url = "code"
 * denominator ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * denominator ^extension[=].extension[+].url = "actor"
-* denominator ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
+* denominator ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * denominator ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * denominator ^extension[=].extension[0].url = "code"
 * denominator ^extension[=].extension[=].valueCode = #SHALL:handle
 * denominator ^extension[=].extension[+].url = "actor"
-* denominator ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* denominator ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * denominator ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * denominator ^extension[=].extension[0].url = "code"
 * denominator ^extension[=].extension[=].valueCode = #SHOULD:display
 * denominator ^extension[=].extension[+].url = "actor"
-* denominator ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* denominator ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"

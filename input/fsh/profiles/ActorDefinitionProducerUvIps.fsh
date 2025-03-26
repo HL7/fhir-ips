@@ -1,9 +1,9 @@
-Instance: producer
+Instance: Producer
 InstanceOf: ActorDefinition
 // Usage: #example
-* url = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
+* url = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * version = "2.0"
-* name = "producer"
+* name = "Producer"
 * title = "Producer (IPS)"
 * status = #active
 * date = "2025-03-19T14:31:30.239Z"

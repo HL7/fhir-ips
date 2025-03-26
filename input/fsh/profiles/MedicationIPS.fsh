@@ -18,17 +18,17 @@ Description: "This profile represents the constraints applied to the Medication 
 * code ^extension[=].extension[0].url = "code"
 * code ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * code ^extension[=].extension[+].url = "actor"
-* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
+* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * code ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * code ^extension[=].extension[0].url = "code"
 * code ^extension[=].extension[=].valueCode = #SHALL:handle
 * code ^extension[=].extension[+].url = "actor"
-* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * code ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * code ^extension[=].extension[0].url = "code"
 * code ^extension[=].extension[=].valueCode = #SHOULD:display
 * code ^extension[=].extension[+].url = "actor"
-* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * code only CodeableConceptIPS
 * code from MedicationsUvIps (preferred)
 * code ^short = "Medication that was administered or was to be administered (medication code from any code system)"
@@ -47,17 +47,17 @@ Description: "This profile represents the constraints applied to the Medication 
 * form ^extension[=].extension[0].url = "code"
 * form ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * form ^extension[=].extension[+].url = "actor"
-* form ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
+* form ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * form ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * form ^extension[=].extension[0].url = "code"
 * form ^extension[=].extension[=].valueCode = #SHALL:handle
 * form ^extension[=].extension[+].url = "actor"
-* form ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* form ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * form ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * form ^extension[=].extension[0].url = "code"
 * form ^extension[=].extension[=].valueCode = #SHOULD:display
 * form ^extension[=].extension[+].url = "actor"
-* form ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* form ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * form from MedicineDoseFormUvIps (preferred)
 * form ^definition = "Describes the form of the item.  Powder; tablets; capsule.\r\n\r\nAdministrable Pharmaceutical Dose Form. \r\nThis code represents the form of the medication (e.g. tablet, capsule, liquid)\r\n\r\nSince the EDQM Standards Terms, together with UCUM, is one of the IDMP terminologies actually available for usage, this code system has been selected as referecne terminology for representing Pharmaceutical Dose forms;Pakages and Route of Administration.\r\n\r\nIt is known that also alternative jurisdictional and international terminologies are known to be used for this concept domain, as NCI or SNOMED CT."
 * ingredient MS
@@ -65,34 +65,34 @@ Description: "This profile represents the constraints applied to the Medication 
 * ingredient ^extension[=].extension[0].url = "code"
 * ingredient ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * ingredient ^extension[=].extension[+].url = "actor"
-* ingredient ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
+* ingredient ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * ingredient ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * ingredient ^extension[=].extension[0].url = "code"
 * ingredient ^extension[=].extension[=].valueCode = #SHALL:handle
 * ingredient ^extension[=].extension[+].url = "actor"
-* ingredient ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* ingredient ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * ingredient ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * ingredient ^extension[=].extension[0].url = "code"
 * ingredient ^extension[=].extension[=].valueCode = #SHOULD:display
 * ingredient ^extension[=].extension[+].url = "actor"
-* ingredient ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* ingredient ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * ingredient.item[x] only CodeableConceptIPS or Reference(Substance or Medication)
 * ingredient.item[x] MS
 * ingredient.item[x] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * ingredient.item[x] ^extension[=].extension[0].url = "code"
 * ingredient.item[x] ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * ingredient.item[x] ^extension[=].extension[+].url = "actor"
-* ingredient.item[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
+* ingredient.item[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * ingredient.item[x] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * ingredient.item[x] ^extension[=].extension[0].url = "code"
 * ingredient.item[x] ^extension[=].extension[=].valueCode = #SHALL:handle
 * ingredient.item[x] ^extension[=].extension[+].url = "actor"
-* ingredient.item[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* ingredient.item[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * ingredient.item[x] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * ingredient.item[x] ^extension[=].extension[0].url = "code"
 * ingredient.item[x] ^extension[=].extension[=].valueCode = #SHOULD:display
 * ingredient.item[x] ^extension[=].extension[+].url = "actor"
-* ingredient.item[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* ingredient.item[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * ingredient.item[x] from MedicineActiveSubstancesUvIps (preferred)
 * ingredient.item[x] ^comment = "The IDMP ISO 11238 standard addresses the identification and exchange of regulated information on substances. \r\nThe Global Ingredient Archival System (GInAS) will provide a common global identifier for all of the substances used in medicinal products, providing a definition of substances globally consistent with this standard.\r\nThose identifiers however are yet available for concrete usage, therefore in this version of the template, SNOMED CT has been chosen as reference terminology also for the active substances.\r\nThis choice will be revised based on the availability and the maturity of GInAS."
 * ingredient.item[x] ^binding.description = "SNOMED CT drug substances"
@@ -101,14 +101,14 @@ Description: "This profile represents the constraints applied to the Medication 
 * ingredient.strength ^extension[=].extension[0].url = "code"
 * ingredient.strength ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * ingredient.strength ^extension[=].extension[+].url = "actor"
-* ingredient.strength ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
+* ingredient.strength ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * ingredient.strength ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * ingredient.strength ^extension[=].extension[0].url = "code"
 * ingredient.strength ^extension[=].extension[=].valueCode = #SHALL:handle
 * ingredient.strength ^extension[=].extension[+].url = "actor"
-* ingredient.strength ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* ingredient.strength ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * ingredient.strength ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * ingredient.strength ^extension[=].extension[0].url = "code"
 * ingredient.strength ^extension[=].extension[=].valueCode = #SHOULD:display
 * ingredient.strength ^extension[=].extension[+].url = "actor"
-* ingredient.strength ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* ingredient.strength ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"

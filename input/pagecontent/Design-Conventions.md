@@ -20,7 +20,7 @@ Having this clear is important for correctly understanding the published profile
 
 ### Obligations and MustSupport
 
-In the context of IPS, Obligations defines how an Actor ([IPS-Producer](./ActorDefinition-producer.html) or [IPS-Consumer](ActorDefinition-consumer.html)) must “support” a given element. All MustSupport elements in this publication are accompanied by an explicit obligation, which identifies structured expectations for a given actor. Obligations can be found in the formal view section of a resource as shown below for the IPS Procedure profile: 
+In the context of IPS, Obligations defines how an Actor ([IPS-Producer](./ActorDefinition-Producer.html) or [IPS-Consumer](ActorDefinition-Consumer.html)) must “support” a given element. All MustSupport elements in this publication are accompanied by an explicit obligation, which identifies structured expectations for a given actor. Obligations can be found in the formal view section of a resource as shown below for the IPS Procedure profile: 
 
 {% include img.html img="Obligations.png" caption="Figure 4: Example of Obligations in IPS Procedure Profile" width="100%" %}
 
@@ -42,12 +42,12 @@ It is recommended that when a source system does not have information about a pa
 
 #### Optional Data Elements with MustSupport/Obligations (cardinality of 0..1 or 0..\*)
 
-<p>If an [IPS Producer](./ActorDefinition-producer.html) does not have data to be included in the IPS, the data element is omitted.</p>
-<p>Note: an [IPS Producer](./ActorDefinition-producer.html) may have no data to be included in the IPS either because there are no data, data are not allowed to be shared or because data available are not pertinent with the scope of the IPS.</p>
+<p>If an [IPS Producer](./ActorDefinition-Producer.html) does not have data to be included in the IPS, the data element is omitted.</p>
+<p>Note: an [IPS Producer](./ActorDefinition-Producer.html) may have no data to be included in the IPS either because there are no data, data are not allowed to be shared or because data available are not pertinent with the scope of the IPS.</p>
 
 #### Required MustSupport Data Elements (cardinality of 1..1 or 1..\*)
 
-<p>If an [IPS Producer](./ActorDefinition-producer.html) does not have data to be included in the IPS, the reason for the absence has to be specified as follows:</p>
+<p>If an [IPS Producer](./ActorDefinition-Producer.html) does not have data to be included in the IPS, the reason for the absence has to be specified as follows:</p>
 
 1.  For _non-coded_ data elements, use the [Data Absent Reason Extension](http://hl7.org/fhir/R4/extension-data-absent-reason.html) in the data type.
 

@@ -18,17 +18,17 @@ Description: "This profile represents the constraints applied to the Device reso
 * type ^extension[=].extension[0].url = "code"
 * type ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * type ^extension[=].extension[+].url = "actor"
-* type ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
+* type ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * type ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * type ^extension[=].extension[0].url = "code"
 * type ^extension[=].extension[=].valueCode = #SHALL:handle
 * type ^extension[=].extension[+].url = "actor"
-* type ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* type ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * type ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * type ^extension[=].extension[0].url = "code"
 * type ^extension[=].extension[=].valueCode = #SHOULD:display
 * type ^extension[=].extension[+].url = "actor"
-* type ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* type ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * type only CodeableConceptIPS
 * type from MedicalDevicesUvIps (preferred)
 * type ^short = "Type of device."
@@ -38,31 +38,31 @@ Description: "This profile represents the constraints applied to the Device reso
 * patient ^extension[=].extension[0].url = "code"
 * patient ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * patient ^extension[=].extension[+].url = "actor"
-* patient ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
+* patient ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * patient ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * patient ^extension[=].extension[0].url = "code"
 * patient ^extension[=].extension[=].valueCode = #SHALL:handle
 * patient ^extension[=].extension[+].url = "actor"
-* patient ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* patient ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * patient ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * patient ^extension[=].extension[0].url = "code"
 * patient ^extension[=].extension[=].valueCode = #SHOULD:display
 * patient ^extension[=].extension[+].url = "actor"
-* patient ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* patient ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * patient only Reference(PatientUvIps)
 * patient.reference 1.. MS
 * patient.reference ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * patient.reference ^extension[=].extension[0].url = "code"
 * patient.reference ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * patient.reference ^extension[=].extension[+].url = "actor"
-* patient.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
+* patient.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * patient.reference ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * patient.reference ^extension[=].extension[0].url = "code"
 * patient.reference ^extension[=].extension[=].valueCode = #SHALL:handle
 * patient.reference ^extension[=].extension[+].url = "actor"
-* patient.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* patient.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * patient.reference ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * patient.reference ^extension[=].extension[0].url = "code"
 * patient.reference ^extension[=].extension[=].valueCode = #SHOULD:display
 * patient.reference ^extension[=].extension[+].url = "actor"
-* patient.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* patient.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"

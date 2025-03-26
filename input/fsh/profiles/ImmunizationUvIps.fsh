@@ -19,33 +19,33 @@ It describes the event of a patient being administered a vaccination or a record
 * status ^extension[=].extension[0].url = "code"
 * status ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * status ^extension[=].extension[+].url = "actor"
-* status ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
+* status ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * status ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * status ^extension[=].extension[0].url = "code"
 * status ^extension[=].extension[=].valueCode = #SHALL:handle
 * status ^extension[=].extension[+].url = "actor"
-* status ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* status ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * status ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * status ^extension[=].extension[0].url = "code"
 * status ^extension[=].extension[=].valueCode = #SHOULD:display
 * status ^extension[=].extension[+].url = "actor"
-* status ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* status ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * vaccineCode 1..1 MS
 * vaccineCode ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * vaccineCode ^extension[=].extension[0].url = "code"
 * vaccineCode ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * vaccineCode ^extension[=].extension[+].url = "actor"
-* vaccineCode ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
+* vaccineCode ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * vaccineCode ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * vaccineCode ^extension[=].extension[0].url = "code"
 * vaccineCode ^extension[=].extension[=].valueCode = #SHALL:handle
 * vaccineCode ^extension[=].extension[+].url = "actor"
-* vaccineCode ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* vaccineCode ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * vaccineCode ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * vaccineCode ^extension[=].extension[0].url = "code"
 * vaccineCode ^extension[=].extension[=].valueCode = #SHOULD:display
 * vaccineCode ^extension[=].extension[+].url = "actor"
-* vaccineCode ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* vaccineCode ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * vaccineCode only CodeableConceptIPS
 * vaccineCode from VaccinesUvIps (preferred)
 * vaccineCode ^short = "Vaccine that was administered or was to be administered.Several kinds of vaccine product coding could be provided.\r\n\r\n     The IPS assumes that either the type of the vaccine for particular disease or diseases (e.g. MMR vaccine) against which the patient has been immunised is provided; or the known absent / unknown code.\r\n\r\n     Other coded information can be provided as well as: the IDMP Pharmaceutical Product Identifiers (PhPID), Medicinal Product Identifier (MPID), Packaged Medicinal Product Identifier (PCID), when available, or equivalent coded concepts; the WHO ATC codes; or any other kind of code that that identifies, classifies or cluster the administered product."
@@ -66,50 +66,50 @@ It describes the event of a patient being administered a vaccination or a record
 * patient ^extension[=].extension[0].url = "code"
 * patient ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * patient ^extension[=].extension[+].url = "actor"
-* patient ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
+* patient ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * patient ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * patient ^extension[=].extension[0].url = "code"
 * patient ^extension[=].extension[=].valueCode = #SHALL:handle
 * patient ^extension[=].extension[+].url = "actor"
-* patient ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* patient ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * patient ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * patient ^extension[=].extension[0].url = "code"
 * patient ^extension[=].extension[=].valueCode = #SHOULD:display
 * patient ^extension[=].extension[+].url = "actor"
-* patient ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* patient ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * patient.reference 1.. MS
 * patient.reference ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * patient.reference ^extension[=].extension[0].url = "code"
 * patient.reference ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * patient.reference ^extension[=].extension[+].url = "actor"
-* patient.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
+* patient.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * patient.reference ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * patient.reference ^extension[=].extension[0].url = "code"
 * patient.reference ^extension[=].extension[=].valueCode = #SHALL:handle
 * patient.reference ^extension[=].extension[+].url = "actor"
-* patient.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* patient.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * patient.reference ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * patient.reference ^extension[=].extension[0].url = "code"
 * patient.reference ^extension[=].extension[=].valueCode = #SHOULD:display
 * patient.reference ^extension[=].extension[+].url = "actor"
-* patient.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* patient.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * occurrence[x] 1..1 MS
 * occurrence[x] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * occurrence[x] ^extension[=].extension[0].url = "code"
 * occurrence[x] ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
 * occurrence[x] ^extension[=].extension[+].url = "actor"
-* occurrence[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/producer"
+* occurrence[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * occurrence[x] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * occurrence[x] ^extension[=].extension[0].url = "code"
 * occurrence[x] ^extension[=].extension[=].valueCode = #SHALL:handle
 * occurrence[x] ^extension[=].extension[+].url = "actor"
-* occurrence[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
+* occurrence[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * occurrence[x] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * occurrence[x] ^extension[=].extension[0].url = "code"
 * occurrence[x] ^extension[=].extension[=].valueCode = #SHOULD:display
 * occurrence[x] ^extension[=].extension[+].url = "actor"
-* occurrence[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/consumer"
-* occurrence[x].extension contains $data-absent-reason named data-absent-reason 0..1
+* occurrence[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* occurrence[x].extension contains $data-absent-reason named data-absent-reason 0..1 MS
 * occurrence[x].extension[data-absent-reason] ^short = "occurrence[x] absence reason"
 * occurrence[x].extension[data-absent-reason] ^definition = "Provides a reason why the occurrence is missing."
 * site only CodeableConceptIPS
