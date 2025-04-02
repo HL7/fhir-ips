@@ -20,11 +20,11 @@ Having this clear is important for correctly understanding the published profile
 
 ### Obligations and MustSupport
 
-In the context of IPS, Obligations defines how an Actor ([IPS-Producer](./ActorDefinition-Producer.html) or [IPS-Consumer](ActorDefinition-Consumer.html)) must “support” a given element. All MustSupport elements in this publication are accompanied by an explicit obligation, which identifies structured expectations for a given actor. Obligations can be found in the formal view section of a resource as shown below for the IPS Procedure profile: 
+In the context of IPS, Obligations defines how an Actor ([Producer (IPS)](./ActorDefinition-Producer.html) or [Consumer (IPS)](ActorDefinition-Consumer.html)) must “support” a given element. All MustSupport elements in this publication are accompanied by an explicit obligation, which identifies structured expectations for a given actor. Obligations can be found in the formal view section of a resource as shown below for the IPS Procedure profile: 
 
 {% include img.html img="Obligations.png" caption="Figure 4: Example of Obligations in IPS Procedure Profile" width="100%" %}
 
-Obligations may be different between the IPS-Producer and IPS-Consumer of an IPS document and also may differ by profile and resource attributes. For all obligations, no data should be populated or processed in any way that conflicts with regional laws, regulations or policies. For additional context, see the [Security and Privacy Consideration](./Privacy-and-Security-Considerations.html) section of this implementation guide. 
+Obligations may be different between the Producer (IPS) and Consumer (IPS) of an IPS document and also may differ by profile and resource attributes. For all obligations, no data should be populated or processed in any way that conflicts with regional laws, regulations or policies. For additional context, see the [Security and Privacy Consideration](./Privacy-and-Security-Considerations.html) section of this implementation guide. 
 
 Because IPS is a standard which may be localized to different jurisdictions and regions, one goal of obligations is that they may be inherited. Realm-specific implementation guides may apply additional obligations and/or provide additional guidance on the definition of MustSupport. However, they SHOULD identify and document these differences. For more information on obligations, see the [extension description](https://hl7.org/fhir/extensions/StructureDefinition-obligation.html) and to see all possible types of obligations it may be helpful to review the associated [obligations valueset](https://hl7.org/fhir/extensions/ValueSet-obligation.html) 
 
@@ -42,12 +42,13 @@ It is recommended that when a source system does not have information about a pa
 
 #### Optional Data Elements with MustSupport/Obligations (cardinality of 0..1 or 0..\*)
 
-<p>If an [IPS Producer](./ActorDefinition-Producer.html) does not have data to be included in the IPS, the data element is omitted.</p>
-<p>Note: an [IPS Producer](./ActorDefinition-Producer.html) may have no data to be included in the IPS either because there are no data, data are not allowed to be shared or because data available are not pertinent with the scope of the IPS.</p>
+If an [Producer (IPS)](./ActorDefinition-Producer.html) does not have data to be included in the IPS, the data element is omitted.
 
-#### Required MustSupport Data Elements (cardinality of 1..1 or 1..\*)
+Note: an [Producer (IPS)](./ActorDefinition-Producer.html) may have no data to be included in the IPS either because there are no data, data are not allowed to be shared or because data available are not pertinent with the scope of the IPS.
 
-<p>If an [IPS Producer](./ActorDefinition-Producer.html) does not have data to be included in the IPS, the reason for the absence has to be specified as follows:</p>
+#### Required Data Elements with MustSupport/Obligations (cardinality of 1..1 or 1..\*)
+
+If an [Producer (IPS)](./ActorDefinition-Producer.html) does not have data to be included in the IPS, the reason for the absence has to be specified as follows:
 
 1.  For _non-coded_ data elements, use the [Data Absent Reason Extension](http://hl7.org/fhir/R4/extension-data-absent-reason.html) in the data type.
 

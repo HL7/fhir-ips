@@ -109,8 +109,23 @@ It documents the relevant allergies or intolerances (conditions) for a patient, 
 * onset[x] ^extension[=].extension[=].valueCode = #SHOULD:display
 * onset[x] ^extension[=].extension[+].url = "actor"
 * onset[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
-* onset[x] ^type.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-* onset[x] ^type.extension.valueBoolean = true
+* onset[x] ^type.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
+* onset[x] ^type.extension[=].valueBoolean = true
+* onset[x] ^type.extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* onset[x] ^type.extension[=].extension[0].url = "code"
+* onset[x] ^type.extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* onset[x] ^type.extension[=].extension[+].url = "actor"
+* onset[x] ^type.extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* onset[x] ^type.extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* onset[x] ^type.extension[=].extension[0].url = "code"
+* onset[x] ^type.extension[=].extension[=].valueCode = #SHALL:handle
+* onset[x] ^type.extension[=].extension[+].url = "actor"
+* onset[x] ^type.extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* onset[x] ^type.extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* onset[x] ^type.extension[=].extension[0].url = "code"
+* onset[x] ^type.extension[=].extension[=].valueCode = #SHOULD:display
+* onset[x] ^type.extension[=].extension[+].url = "actor"
+* onset[x] ^type.extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * reaction MS
 * reaction ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * reaction ^extension[=].extension[0].url = "code"
