@@ -112,6 +112,21 @@ It describes the event of a patient being administered a vaccination or a record
 * occurrence[x].extension contains $data-absent-reason named data-absent-reason 0..1 MS
 * occurrence[x].extension[data-absent-reason] ^short = "occurrence[x] absence reason"
 * occurrence[x].extension[data-absent-reason] ^definition = "Provides a reason why the occurrence is missing."
+* occurrence[x].extension[data-absent-reason] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* occurrence[x].extension[data-absent-reason] ^extension[=].extension[0].url = "code"
+* occurrence[x].extension[data-absent-reason] ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* occurrence[x].extension[data-absent-reason] ^extension[=].extension[+].url = "actor"
+* occurrence[x].extension[data-absent-reason] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* occurrence[x].extension[data-absent-reason] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* occurrence[x].extension[data-absent-reason] ^extension[=].extension[0].url = "code"
+* occurrence[x].extension[data-absent-reason] ^extension[=].extension[=].valueCode = #SHALL:handle
+* occurrence[x].extension[data-absent-reason] ^extension[=].extension[+].url = "actor"
+* occurrence[x].extension[data-absent-reason] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* occurrence[x].extension[data-absent-reason] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* occurrence[x].extension[data-absent-reason] ^extension[=].extension[0].url = "code"
+* occurrence[x].extension[data-absent-reason] ^extension[=].extension[=].valueCode = #SHOULD:display
+* occurrence[x].extension[data-absent-reason] ^extension[=].extension[+].url = "actor"
+* occurrence[x].extension[data-absent-reason] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * site only CodeableConceptIPS
 * site from SNOMEDCTBodyStructures (preferred)
 * site ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"

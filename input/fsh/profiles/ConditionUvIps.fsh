@@ -133,22 +133,19 @@ Description: "This profile represents the constraints applied to the Condition r
 * subject.reference ^extension[=].extension[=].valueCode = #SHOULD:display
 * subject.reference ^extension[=].extension[+].url = "actor"
 * subject.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
-* onset[x] only dateTime or Age or Period or Range or string
-* onset[x] MS
-* onset[x] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
-* onset[x] ^extension[=].extension[0].url = "code"
-* onset[x] ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
-* onset[x] ^extension[=].extension[+].url = "actor"
-* onset[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
-* onset[x] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
-* onset[x] ^extension[=].extension[0].url = "code"
-* onset[x] ^extension[=].extension[=].valueCode = #SHALL:handle
-* onset[x] ^extension[=].extension[+].url = "actor"
-* onset[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
-* onset[x] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
-* onset[x] ^extension[=].extension[0].url = "code"
-* onset[x] ^extension[=].extension[=].valueCode = #SHOULD:display
-* onset[x] ^extension[=].extension[+].url = "actor"
-* onset[x] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
-* onset[x] ^type.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-* onset[x] ^type.extension.valueBoolean = true
+* onsetDateTime MS
+* onsetDateTime ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* onsetDateTime ^extension[=].extension[0].url = "code"
+* onsetDateTime ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* onsetDateTime ^extension[=].extension[+].url = "actor"
+* onsetDateTime ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* onsetDateTime ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* onsetDateTime ^extension[=].extension[0].url = "code"
+* onsetDateTime ^extension[=].extension[=].valueCode = #SHALL:handle
+* onsetDateTime ^extension[=].extension[+].url = "actor"
+* onsetDateTime ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* onsetDateTime ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* onsetDateTime ^extension[=].extension[0].url = "code"
+* onsetDateTime ^extension[=].extension[=].valueCode = #SHOULD:display
+* onsetDateTime ^extension[=].extension[+].url = "actor"
+* onsetDateTime ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"

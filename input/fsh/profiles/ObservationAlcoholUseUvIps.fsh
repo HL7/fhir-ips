@@ -80,6 +80,21 @@ Description: "This profile constrains the Observation resource to represent alco
 * effective[x].extension contains $data-absent-reason named data-absent-reason 0..1 MS
 * effective[x].extension[data-absent-reason] ^short = "effective[x] absence reason"
 * effective[x].extension[data-absent-reason] ^definition = "Provides a reason why the effectiveTime is missing."
+* effective[x].extension[data-absent-reason] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* effective[x].extension[data-absent-reason] ^extension[=].extension[0].url = "code"
+* effective[x].extension[data-absent-reason] ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* effective[x].extension[data-absent-reason] ^extension[=].extension[+].url = "actor"
+* effective[x].extension[data-absent-reason] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* effective[x].extension[data-absent-reason] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* effective[x].extension[data-absent-reason] ^extension[=].extension[0].url = "code"
+* effective[x].extension[data-absent-reason] ^extension[=].extension[=].valueCode = #SHALL:handle
+* effective[x].extension[data-absent-reason] ^extension[=].extension[+].url = "actor"
+* effective[x].extension[data-absent-reason] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* effective[x].extension[data-absent-reason] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* effective[x].extension[data-absent-reason] ^extension[=].extension[0].url = "code"
+* effective[x].extension[data-absent-reason] ^extension[=].extension[=].valueCode = #SHOULD:display
+* effective[x].extension[data-absent-reason] ^extension[=].extension[+].url = "actor"
+* effective[x].extension[data-absent-reason] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * valueQuantity only QuantityIPS
 * component ..0
 * component ^mustSupport = false

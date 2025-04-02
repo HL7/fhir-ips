@@ -83,6 +83,21 @@ Description: "This profile represents the constraints applied to the Procedure r
 * performed[x].extension contains $data-absent-reason named data-absent-reason 0..1 MS
 * performed[x].extension[data-absent-reason] ^short = "performed[x] absence reason"
 * performed[x].extension[data-absent-reason] ^definition = "Provides a reason why the performed is missing."
+* performed[x].extension[data-absent-reason] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* performed[x].extension[data-absent-reason] ^extension[=].extension[0].url = "code"
+* performed[x].extension[data-absent-reason] ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* performed[x].extension[data-absent-reason] ^extension[=].extension[+].url = "actor"
+* performed[x].extension[data-absent-reason] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* performed[x].extension[data-absent-reason] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* performed[x].extension[data-absent-reason] ^extension[=].extension[0].url = "code"
+* performed[x].extension[data-absent-reason] ^extension[=].extension[=].valueCode = #SHALL:handle
+* performed[x].extension[data-absent-reason] ^extension[=].extension[+].url = "actor"
+* performed[x].extension[data-absent-reason] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* performed[x].extension[data-absent-reason] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* performed[x].extension[data-absent-reason] ^extension[=].extension[0].url = "code"
+* performed[x].extension[data-absent-reason] ^extension[=].extension[=].valueCode = #SHOULD:display
+* performed[x].extension[data-absent-reason] ^extension[=].extension[+].url = "actor"
+* performed[x].extension[data-absent-reason] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * performer.actor only Reference(PatientUvIps or RelatedPerson or DeviceObserverUvIps or PractitionerUvIps or PractitionerRoleUvIps or OrganizationUvIps)
 * performer.onBehalfOf only Reference(OrganizationUvIps)
 * bodySite only CodeableConceptIPS
