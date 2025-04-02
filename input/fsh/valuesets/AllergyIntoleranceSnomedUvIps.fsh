@@ -1,6 +1,6 @@
-ValueSet: AllergyIntoleranceCodesUvIps
-Id: allergy-intolerance-codes-uv-ips
-Title: "Allergy Intolerance Codes - IPS"
+ValueSet: AllergyIntoleranceSnomedUvIps
+Id: allergy-intolerance-snomed-uv-ips
+Title: "Allergy Intolerance SNOMED Codes - IPS"
 Description: """
 IPS Allergy intolerance codes value set. This value set includes codes from SNOMED CT®: all descendants of 373873005 \|Pharmaceutical / biologic product (product)\|; all descendants of 105590001 \|Substance (substance)\|; all descendants of 420134006 \|Propensity to adverse reaction (finding)\|; all descendants or self of 716186003 \|No known allergy (situation)\|
 
