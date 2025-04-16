@@ -15,8 +15,85 @@ This specialized Flag is used to convey information about an alert specific to a
 * ^jurisdiction = $m49.htm#001
 * ^purpose = "This profile constrains the representation of a record of an alert in the context of the international patient summary as specified by the IPS project of HL7 International."
 * extension contains $flag-priority named flag-priority 0..1 MS
+* extension[flag-priority] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* extension[flag-priority] ^extension[=].extension[0].url = "code"
+* extension[flag-priority] ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* extension[flag-priority] ^extension[=].extension[+].url = "actor"
+* extension[flag-priority] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* extension[flag-priority] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* extension[flag-priority] ^extension[=].extension[0].url = "code"
+* extension[flag-priority] ^extension[=].extension[=].valueCode = #SHALL:handle
+* extension[flag-priority] ^extension[=].extension[+].url = "actor"
+* extension[flag-priority] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* extension[flag-priority] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* extension[flag-priority] ^extension[=].extension[0].url = "code"
+* extension[flag-priority] ^extension[=].extension[=].valueCode = #SHOULD:display
+* extension[flag-priority] ^extension[=].extension[+].url = "actor"
+* extension[flag-priority] ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * status = #active (exactly)
 * category MS
 * category only CodeableConceptIPS
+* category ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* category ^extension[=].extension[0].url = "code"
+* category ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* category ^extension[=].extension[+].url = "actor"
+* category ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* category ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* category ^extension[=].extension[0].url = "code"
+* category ^extension[=].extension[=].valueCode = #SHALL:handle
+* category ^extension[=].extension[+].url = "actor"
+* category ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* category ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* category ^extension[=].extension[0].url = "code"
+* category ^extension[=].extension[=].valueCode = #SHOULD:display
+* category ^extension[=].extension[+].url = "actor"
+* category ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * code MS 
 * code only CodeableConceptIPS
+* code ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* code ^extension[=].extension[0].url = "code"
+* code ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* code ^extension[=].extension[+].url = "actor"
+* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* code ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* code ^extension[=].extension[0].url = "code"
+* code ^extension[=].extension[=].valueCode = #SHALL:handle
+* code ^extension[=].extension[+].url = "actor"
+* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* code ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* code ^extension[=].extension[0].url = "code"
+* code ^extension[=].extension[=].valueCode = #SHOULD:display
+* code ^extension[=].extension[+].url = "actor"
+* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* subject MS
+* subject ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* subject ^extension[=].extension[0].url = "code"
+* subject ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* subject ^extension[=].extension[+].url = "actor"
+* subject ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* subject ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* subject ^extension[=].extension[0].url = "code"
+* subject ^extension[=].extension[=].valueCode = #SHALL:handle
+* subject ^extension[=].extension[+].url = "actor"
+* subject ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* subject ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* subject ^extension[=].extension[0].url = "code"
+* subject ^extension[=].extension[=].valueCode = #SHOULD:display
+* subject ^extension[=].extension[+].url = "actor"
+* subject ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* subject.reference 1.. MS
+* subject.reference ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* subject.reference ^extension[=].extension[0].url = "code"
+* subject.reference ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* subject.reference ^extension[=].extension[+].url = "actor"
+* subject.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* subject.reference ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* subject.reference ^extension[=].extension[0].url = "code"
+* subject.reference ^extension[=].extension[=].valueCode = #SHALL:handle
+* subject.reference ^extension[=].extension[+].url = "actor"
+* subject.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* subject.reference ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* subject.reference ^extension[=].extension[0].url = "code"
+* subject.reference ^extension[=].extension[=].valueCode = #SHOULD:display
+* subject.reference ^extension[=].extension[+].url = "actor"
+* subject.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"

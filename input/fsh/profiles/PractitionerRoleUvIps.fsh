@@ -13,6 +13,21 @@ Description: "This profile constrains the PractitionerRole resource to represent
 * practitioner only Reference(PractitionerUvIps)
 * organization only Reference(OrganizationUvIps)
 * organization MS
+* organization ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* organization ^extension[=].extension[0].url = "code"
+* organization ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* organization ^extension[=].extension[+].url = "actor"
+* organization ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* organization ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* organization ^extension[=].extension[0].url = "code"
+* organization ^extension[=].extension[=].valueCode = #SHALL:handle
+* organization ^extension[=].extension[+].url = "actor"
+* organization ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* organization ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* organization ^extension[=].extension[0].url = "code"
+* organization ^extension[=].extension[=].valueCode = #SHOULD:display
+* organization ^extension[=].extension[+].url = "actor"
+* organization ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * code only CodeableConceptIPS
 * code from HealthcareProfessionalRolesUvIps (preferred)
 * code ^definition = "Roles which this practitioner is authorized to perform for the organization."

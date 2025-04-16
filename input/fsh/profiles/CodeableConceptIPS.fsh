@@ -11,6 +11,36 @@ Description: "This profile represents the constraint applied to the CodeableConc
 * ^jurisdiction = $m49.htm#001
 * coding only CodingIPS
 * coding MS
+* coding ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* coding ^extension[=].extension[0].url = "code"
+* coding ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* coding ^extension[=].extension[+].url = "actor"
+* coding ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* coding ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* coding ^extension[=].extension[0].url = "code"
+* coding ^extension[=].extension[=].valueCode = #SHALL:handle
+* coding ^extension[=].extension[+].url = "actor"
+* coding ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* coding ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* coding ^extension[=].extension[0].url = "code"
+* coding ^extension[=].extension[=].valueCode = #SHOULD:display
+* coding ^extension[=].extension[+].url = "actor"
+* coding ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * text MS
 * text ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"
 * text ^extension[=].valueBoolean = true
+* text ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* text ^extension[=].extension[0].url = "code"
+* text ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* text ^extension[=].extension[+].url = "actor"
+* text ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* text ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* text ^extension[=].extension[0].url = "code"
+* text ^extension[=].extension[=].valueCode = #SHALL:handle
+* text ^extension[=].extension[+].url = "actor"
+* text ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* text ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* text ^extension[=].extension[0].url = "code"
+* text ^extension[=].extension[=].valueCode = #SHOULD:display
+* text ^extension[=].extension[+].url = "actor"
+* text ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"

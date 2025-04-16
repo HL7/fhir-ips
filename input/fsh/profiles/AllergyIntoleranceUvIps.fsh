@@ -18,9 +18,39 @@ It documents the relevant allergies or intolerances (conditions) for a patient, 
 * verificationStatus only CodeableConceptIPS
 * verificationStatus ^comment = "In the scope of the IPS the entered-in-error concept is not allowed."
 * type MS
+* type ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* type ^extension[=].extension[0].url = "code"
+* type ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* type ^extension[=].extension[+].url = "actor"
+* type ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* type ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* type ^extension[=].extension[0].url = "code"
+* type ^extension[=].extension[=].valueCode = #SHALL:handle
+* type ^extension[=].extension[+].url = "actor"
+* type ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* type ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* type ^extension[=].extension[0].url = "code"
+* type ^extension[=].extension[=].valueCode = #SHOULD:display
+* type ^extension[=].extension[+].url = "actor"
+* type ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * code 1..1 MS
+* code ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* code ^extension[=].extension[0].url = "code"
+* code ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* code ^extension[=].extension[+].url = "actor"
+* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* code ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* code ^extension[=].extension[0].url = "code"
+* code ^extension[=].extension[=].valueCode = #SHALL:handle
+* code ^extension[=].extension[+].url = "actor"
+* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* code ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* code ^extension[=].extension[0].url = "code"
+* code ^extension[=].extension[=].valueCode = #SHOULD:display
+* code ^extension[=].extension[+].url = "actor"
+* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * code only CodeableConceptIPS
-* code from AllergyIntoleranceUvIps (preferred)
+* code from AllergiesIntolerancesUvIps (preferred)
 * code ^binding.extension[0].extension[0].url = "purpose"
 * code ^binding.extension[=].extension[=].valueCode = #candidate
 * code ^binding.extension[=].extension[+].url = "valueSet"
@@ -31,14 +61,101 @@ It documents the relevant allergies or intolerances (conditions) for a patient, 
 * code ^binding.description = "Type of the substance/product, allergy or intolerance condition or a code for absent/unknown allergy."
 * patient only Reference(PatientUvIps)
 * patient MS
+* patient ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* patient ^extension[=].extension[0].url = "code"
+* patient ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* patient ^extension[=].extension[+].url = "actor"
+* patient ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* patient ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* patient ^extension[=].extension[0].url = "code"
+* patient ^extension[=].extension[=].valueCode = #SHALL:handle
+* patient ^extension[=].extension[+].url = "actor"
+* patient ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* patient ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* patient ^extension[=].extension[0].url = "code"
+* patient ^extension[=].extension[=].valueCode = #SHOULD:display
+* patient ^extension[=].extension[+].url = "actor"
+* patient ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * patient.reference 1.. MS
-* onset[x] only dateTime or Age or Period or Range or string
-* onset[x] MS
-* onset[x] ^type.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
-* onset[x] ^type.extension.valueBoolean = true
+* patient.reference ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* patient.reference ^extension[=].extension[0].url = "code"
+* patient.reference ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* patient.reference ^extension[=].extension[+].url = "actor"
+* patient.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* patient.reference ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* patient.reference ^extension[=].extension[0].url = "code"
+* patient.reference ^extension[=].extension[=].valueCode = #SHALL:handle
+* patient.reference ^extension[=].extension[+].url = "actor"
+* patient.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* patient.reference ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* patient.reference ^extension[=].extension[0].url = "code"
+* patient.reference ^extension[=].extension[=].valueCode = #SHOULD:display
+* patient.reference ^extension[=].extension[+].url = "actor"
+* patient.reference ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* onsetDateTime MS
+* onsetDateTime ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* onsetDateTime ^extension[=].extension[0].url = "code"
+* onsetDateTime ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* onsetDateTime ^extension[=].extension[+].url = "actor"
+* onsetDateTime ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* onsetDateTime ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* onsetDateTime ^extension[=].extension[0].url = "code"
+* onsetDateTime ^extension[=].extension[=].valueCode = #SHALL:handle
+* onsetDateTime ^extension[=].extension[+].url = "actor"
+* onsetDateTime ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* onsetDateTime ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* onsetDateTime ^extension[=].extension[0].url = "code"
+* onsetDateTime ^extension[=].extension[=].valueCode = #SHOULD:display
+* onsetDateTime ^extension[=].extension[+].url = "actor"
+* onsetDateTime ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * reaction MS
+* reaction ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* reaction ^extension[=].extension[0].url = "code"
+* reaction ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* reaction ^extension[=].extension[+].url = "actor"
+* reaction ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* reaction ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* reaction ^extension[=].extension[0].url = "code"
+* reaction ^extension[=].extension[=].valueCode = #SHALL:handle
+* reaction ^extension[=].extension[+].url = "actor"
+* reaction ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* reaction ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* reaction ^extension[=].extension[0].url = "code"
+* reaction ^extension[=].extension[=].valueCode = #SHOULD:display
+* reaction ^extension[=].extension[+].url = "actor"
+* reaction ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * reaction.manifestation only CodeableConceptIPS
 * reaction.manifestation MS
+* reaction.manifestation ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* reaction.manifestation ^extension[=].extension[0].url = "code"
+* reaction.manifestation ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* reaction.manifestation ^extension[=].extension[+].url = "actor"
+* reaction.manifestation ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* reaction.manifestation ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* reaction.manifestation ^extension[=].extension[0].url = "code"
+* reaction.manifestation ^extension[=].extension[=].valueCode = #SHALL:handle
+* reaction.manifestation ^extension[=].extension[+].url = "actor"
+* reaction.manifestation ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* reaction.manifestation ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* reaction.manifestation ^extension[=].extension[0].url = "code"
+* reaction.manifestation ^extension[=].extension[=].valueCode = #SHOULD:display
+* reaction.manifestation ^extension[=].extension[+].url = "actor"
+* reaction.manifestation ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * reaction.manifestation from AllergyReactionUvIps (preferred)
 * reaction.manifestation ^binding.description = "Code for the allergy or intolerance reaction manifestation from SNOMED CT."
 * reaction.severity MS
+* reaction.severity ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* reaction.severity ^extension[=].extension[0].url = "code"
+* reaction.severity ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* reaction.severity ^extension[=].extension[+].url = "actor"
+* reaction.severity ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* reaction.severity ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* reaction.severity ^extension[=].extension[0].url = "code"
+* reaction.severity ^extension[=].extension[=].valueCode = #SHALL:handle
+* reaction.severity ^extension[=].extension[+].url = "actor"
+* reaction.severity ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* reaction.severity ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* reaction.severity ^extension[=].extension[0].url = "code"
+* reaction.severity ^extension[=].extension[=].valueCode = #SHOULD:display
+* reaction.severity ^extension[=].extension[+].url = "actor"
+* reaction.severity ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"

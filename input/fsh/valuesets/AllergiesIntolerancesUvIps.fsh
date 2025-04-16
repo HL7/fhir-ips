@@ -1,8 +1,8 @@
-ValueSet: AllergyIntoleranceUvIps
-Id: allergy-intolerance-uv-ips
-Title: "Allergy Intolerance - IPS"
+ValueSet: AllergiesIntolerancesUvIps
+Id: allergies-intolerances-uv-ips
+Title: "Allergies & Intolerances - IPS"
 Description: """
-IPS Allergy intolerance codes value set. This value set includes codes from SNOMED CT®: all descendants of 373873005 \|Pharmaceutical / biologic product (product)\|; all descendants of 105590001 \|Substance (substance)\|; all descendants of 420134006 \|Propensity to adverse reaction (finding)\|; all descendants or self of 716186003 \|No known allergy (situation)\|
+IPS allergy and intolerance codes value set. This value set includes codes from SNOMED CT®: all descendants of 373873005 \|Pharmaceutical / biologic product (product)\|; all descendants of 105590001 \|Substance (substance)\|; all descendants of 420134006 \|Propensity to adverse reaction (finding)\|; all descendants or self of 716186003 \|No known allergy (situation)\|
 
 SNOMED CT® ECL definition:\
 < 373873005 \|Pharmaceutical / biologic product (product)\| OR < 105590001 \|Substance (substance)\| OR < 420134006 \|Propensity to adverse reaction (finding)\| OR \<\< 716186003 \|No known allergy (situation)\|

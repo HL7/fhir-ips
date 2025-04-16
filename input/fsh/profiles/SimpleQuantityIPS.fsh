@@ -13,6 +13,36 @@ Description: "Data type profile SimpleQuantity constrained to use UCUM as the co
 * . ^short = "A measured amount using UCUM"
 * . ^definition = "A measured amount (or an amount that can potentially be measured). Note that measured amounts include amounts that are not precisely quantified, including amounts involving arbitrary units and floating currencies.\r\nThis profile imposes that the code system for units be UCUM."
 * system 1.. MS
+* system ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* system ^extension[=].extension[0].url = "code"
+* system ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* system ^extension[=].extension[+].url = "actor"
+* system ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* system ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* system ^extension[=].extension[0].url = "code"
+* system ^extension[=].extension[=].valueCode = #SHALL:handle
+* system ^extension[=].extension[+].url = "actor"
+* system ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* system ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* system ^extension[=].extension[0].url = "code"
+* system ^extension[=].extension[=].valueCode = #SHOULD:display
+* system ^extension[=].extension[+].url = "actor"
+* system ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * system = "http://unitsofmeasure.org" (exactly)
 * system ^short = "UCUM system for units"
 * code 1.. MS
+* code ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* code ^extension[=].extension[0].url = "code"
+* code ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* code ^extension[=].extension[+].url = "actor"
+* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* code ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* code ^extension[=].extension[0].url = "code"
+* code ^extension[=].extension[=].valueCode = #SHALL:handle
+* code ^extension[=].extension[+].url = "actor"
+* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* code ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* code ^extension[=].extension[0].url = "code"
+* code ^extension[=].extension[=].valueCode = #SHOULD:display
+* code ^extension[=].extension[+].url = "actor"
+* code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"

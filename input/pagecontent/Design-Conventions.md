@@ -18,18 +18,15 @@ One of the important and useful capabilities of FHIR profiling is [slicing](http
 
 Having this clear is important for correctly understanding the published profiles. For example, the optional section of [Social History](./StructureDefinition-Composition-uv-ips-definitions.html#Composition.section:sectionSocialHistory.entry) has open slicing on the entry element allowing for the use of the [IPS Tobacco Use profile](./StructureDefinition-Observation-tobaccouse-uv-ips.html), the [IPS Alcohol Use profile](./StructureDefinition-Observation-alcoholuse-uv-ips.html), or any other Observation or DocumentReference. Therefore, while specific IPS profiles are described in this guide, other profiles may also be included as well.
 
-### Must Support
+### Obligations and Must Support
 
-Implementers conforming to a particular profile in the IPS Implementation Guide:
+In the context of IPS, Obligations defines how an Actor ([Producer (IPS)](./ActorDefinition-Producer.html) or [Consumer (IPS)](ActorDefinition-Consumer.html)) must “support” a given element. All Must Support elements in this publication are accompanied by an explicit obligation, which identifies structured expectations for a given actor. Obligations can be found in the formal view section of a resource as shown below for the IPS Procedure profile: 
 
-- SHALL be capable of producing values for the mustSupport elements in the profile (see [Empty Sections and Missing Data](#empty-sections--missing-data) for more detail)
-- SHALL be capable of processing resource instances containing mustSupport data elements, including elements with missing data, without generating an error or causing the application to fail.
-- SHOULD be capable of displaying mustSupport data elements for human use, or processing (e.g. storing) them for other purposes.
+{% include img.html img="Obligations.png" caption="Figure 4: Example of Obligations in IPS Procedure Profile" width="100%" %}
 
-Implementers conforming to an IPS document in the IPS Implementation Guide:
+Obligations may be different between the Producer (IPS) and Consumer (IPS) of an IPS document and also may differ by profile and resource attributes. For all obligations, no data should be populated or processed in any way that conflicts with regional laws, regulations or policies. For additional context, see the [Security and Privacy Consideration](./Privacy-and-Security-Considerations.html) section of this implementation guide. 
 
-- SHALL be capable of supporting profiles under sections that are marked mustSupport in the IPS Composition profile
-- SHALL be capable of populating profiles for allergy, medication and problem information in an IPS document
+Because IPS is a standard which may be localized to different jurisdictions and regions, one goal of obligations is that they may be inherited. Realm-specific implementation guides may apply additional obligations and/or provide additional guidance on the definition of Must Support. However, they SHOULD identify and document these differences. For more information on obligations, see the [extension description](https://hl7.org/fhir/extensions/StructureDefinition-obligation.html) and to see all possible types of obligations it may be helpful to review the associated [obligations valueset](https://hl7.org/fhir/extensions/ValueSet-obligation.html) 
 
 ### Empty Sections & Missing Data
 
@@ -43,14 +40,15 @@ Resources may also be used to assert the known absence of data rather than using
 
 It is recommended that when a source system does not have information about a particular IPS section, that the emptyReason element for that section be populated with the appropriate code [generally 'unavailable' or 'notasked'](https://hl7.org/fhir/R4/valueset-list-empty-reason.html). However, if it is desired to use an explicit clinical statement to assert the absence of information, it is recommended that a resource be included in the relevant section using the SNOMED CT code ['1287211007'](https://browser.ihtsdotools.org/?perspective=full&conceptId1=1287211007) for "No information available".
 
-#### Optional MustSupport Data Elements (cardinality of 0..1 or 0..\*)
+#### Optional Data Elements with Must Support/Obligations (cardinality of 0..1 or 0..\*)
 
-<p>If an IPS creator (a system generating the IPS contents) does not have data to be included in the IPS, the data element is omitted.</p>
-<p>Note: an IPS creator may have no data to be included in the IPS either because there are no data, or because data available are not pertinent with the scope of the IPS.</p>
+If an [Producer (IPS)](./ActorDefinition-Producer.html) does not have data to be included in the IPS, the data element is omitted.
 
-#### Required MustSupport Data Elements (cardinality of 1..1 or 1..\*)
+Note: an [Producer (IPS)](./ActorDefinition-Producer.html) may have no data to be included in the IPS either because there are no data, data are not allowed to be shared or because data available are not pertinent with the scope of the IPS.
 
-<p>If an IPS creator does not have data to be included in the IPS, the reason for the absence has to be specified as follows:</p>
+#### Required Data Elements with Must Support/Obligations (cardinality of 1..1 or 1..\*)
+
+If an [Producer (IPS)](./ActorDefinition-Producer.html) does not have data to be included in the IPS, the reason for the absence has to be specified as follows:
 
 1.  For _non-coded_ data elements, use the [Data Absent Reason Extension](http://hl7.org/fhir/R4/extension-data-absent-reason.html) in the data type.
 

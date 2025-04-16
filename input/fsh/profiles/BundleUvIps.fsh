@@ -14,9 +14,39 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * . ^short = "International Patient Summary Bundle"
 * . ^definition = "International Patient Summary Bundle. \r\nA container for a collection of resources in the patient summary document."
 * identifier 1.. MS
+* identifier ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* identifier ^extension[=].extension[0].url = "code"
+* identifier ^extension[=].extension[=].valueCode = #SHALL:able-to-populate
+* identifier ^extension[=].extension[+].url = "actor"
+* identifier ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* identifier ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* identifier ^extension[=].extension[0].url = "code"
+* identifier ^extension[=].extension[=].valueCode = #SHALL:handle
+* identifier ^extension[=].extension[+].url = "actor"
+* identifier ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * type = #document (exactly)
 * timestamp 1.. MS
+* timestamp ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* timestamp ^extension[=].extension[0].url = "code"
+* timestamp ^extension[=].extension[=].valueCode = #SHALL:able-to-populate
+* timestamp ^extension[=].extension[+].url = "actor"
+* timestamp ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* timestamp ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* timestamp ^extension[=].extension[0].url = "code"
+* timestamp ^extension[=].extension[=].valueCode = #SHALL:handle
+* timestamp ^extension[=].extension[+].url = "actor"
+* timestamp ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * entry MS
+* entry ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* entry ^extension[=].extension[0].url = "code"
+* entry ^extension[=].extension[=].valueCode = #SHALL:able-to-populate
+* entry ^extension[=].extension[+].url = "actor"
+* entry ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* entry ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* entry ^extension[=].extension[0].url = "code"
+* entry ^extension[=].extension[=].valueCode = #SHALL:handle
+* entry ^extension[=].extension[+].url = "actor"
+* entry ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * entry ^slicing.discriminator[0].type = #type
 * entry ^slicing.discriminator[=].path = "resource"
 * entry ^slicing.discriminator[+].type = #profile
@@ -26,6 +56,16 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry ^definition = "An entry resource included in the patient summary document bundle resource."
 * entry ^comment = "Must contain the IPS Composition as the first entry (only a single Composition resource instance may be included) and a Patient resource.  Additional constraints are specified in the IPS Composition profile."
 * entry.fullUrl 1.. MS
+* entry.fullUrl ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* entry.fullUrl ^extension[=].extension[0].url = "code"
+* entry.fullUrl ^extension[=].extension[=].valueCode = #SHALL:able-to-populate
+* entry.fullUrl ^extension[=].extension[+].url = "actor"
+* entry.fullUrl ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* entry.fullUrl ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* entry.fullUrl ^extension[=].extension[0].url = "code"
+* entry.fullUrl ^extension[=].extension[=].valueCode = #SHALL:handle
+* entry.fullUrl ^extension[=].extension[+].url = "actor"
+* entry.fullUrl ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * entry.search ..0
 * entry.request ..0
 * entry.response ..0
