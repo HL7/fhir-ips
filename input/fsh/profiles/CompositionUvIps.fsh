@@ -334,6 +334,22 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
 * section.extension contains $composition-section-note named section-note 0..1
 * section.extension[section-note] ^short = "Additional notes that apply to the section (but not to specific resource)."
 * section.extension[section-note] ^definition = "Additional notes that apply to the section (but not to specific resource)."
+* section.title 1..1 MS
+* section.title ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* section.title ^extension[=].extension[0].url = "code"
+* section.title ^extension[=].extension[=].valueCode = #SHALL:able-to-populate
+* section.title ^extension[=].extension[+].url = "actor"
+* section.title ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* section.title ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* section.title ^extension[=].extension[0].url = "code"
+* section.title ^extension[=].extension[=].valueCode = #SHALL:handle
+* section.title ^extension[=].extension[+].url = "actor"
+* section.title ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* section.title ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* section.title ^extension[=].extension[0].url = "code"
+* section.title ^extension[=].extension[=].valueCode = #SHOULD:display
+* section.title ^extension[=].extension[+].url = "actor"
+* section.title ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * section.text 1.. MS
 * section.text ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * section.text ^extension[=].extension[0].url = "code"
@@ -350,6 +366,22 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
 * section.text ^extension[=].extension[=].valueCode = #SHOULD:display
 * section.text ^extension[=].extension[+].url = "actor"
 * section.text ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* section.emptyReason  MS
+* section.emptyReason ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* section.emptyReason ^extension[=].extension[0].url = "code"
+* section.emptyReason ^extension[=].extension[=].valueCode = #SHOULD:populate-if-known
+* section.emptyReason ^extension[=].extension[+].url = "actor"
+* section.emptyReason ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* section.emptyReason ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* section.emptyReason ^extension[=].extension[0].url = "code"
+* section.emptyReason ^extension[=].extension[=].valueCode = #SHALL:handle
+* section.emptyReason ^extension[=].extension[+].url = "actor"
+* section.emptyReason ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* section.emptyReason ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* section.emptyReason ^extension[=].extension[0].url = "code"
+* section.emptyReason ^extension[=].extension[=].valueCode = #SHOULD:display
+* section.emptyReason ^extension[=].extension[+].url = "actor"
+* section.emptyReason ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * section.section ..0
 * section contains
     sectionProblems 1..1 MS and

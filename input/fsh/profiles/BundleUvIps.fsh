@@ -16,7 +16,7 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * identifier 1.. MS
 * identifier ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * identifier ^extension[=].extension[0].url = "code"
-* identifier ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* identifier ^extension[=].extension[=].valueCode = #SHALL:able-to-populate
 * identifier ^extension[=].extension[+].url = "actor"
 * identifier ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * identifier ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
@@ -33,7 +33,7 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * timestamp 1.. MS
 * timestamp ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * timestamp ^extension[=].extension[0].url = "code"
-* timestamp ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* timestamp ^extension[=].extension[=].valueCode = #SHALL:able-to-populate
 * timestamp ^extension[=].extension[+].url = "actor"
 * timestamp ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * timestamp ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
@@ -73,17 +73,12 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry.fullUrl 1.. MS
 * entry.fullUrl ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * entry.fullUrl ^extension[=].extension[0].url = "code"
-* entry.fullUrl ^extension[=].extension[=].valueCode = #SHALL:populate-if-known
+* entry.fullUrl ^extension[=].extension[=].valueCode = #SHALL:able-to-populate
 * entry.fullUrl ^extension[=].extension[+].url = "actor"
 * entry.fullUrl ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * entry.fullUrl ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
 * entry.fullUrl ^extension[=].extension[0].url = "code"
 * entry.fullUrl ^extension[=].extension[=].valueCode = #SHALL:handle
-* entry.fullUrl ^extension[=].extension[+].url = "actor"
-* entry.fullUrl ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
-* entry.fullUrl ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
-* entry.fullUrl ^extension[=].extension[0].url = "code"
-* entry.fullUrl ^extension[=].extension[=].valueCode = #SHOULD:display
 * entry.fullUrl ^extension[=].extension[+].url = "actor"
 * entry.fullUrl ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * entry.search ..0
