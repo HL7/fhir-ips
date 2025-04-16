@@ -50,7 +50,7 @@ It documents the relevant allergies or intolerances (conditions) for a patient, 
 * code ^extension[=].extension[+].url = "actor"
 * code ^extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * code only CodeableConceptIPS
-* code from AllergyIntoleranceSnomedUvIps (preferred)
+* code from AllergiesIntolerancesUvIps (preferred)
 * code ^binding.extension[0].extension[0].url = "purpose"
 * code ^binding.extension[=].extension[=].valueCode = #candidate
 * code ^binding.extension[=].extension[+].url = "valueSet"
