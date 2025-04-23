@@ -186,13 +186,6 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
 * section.text ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * section.text ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * section.text ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
-* section.emptyReason  MS
-* section.emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:populate-if-known
-* section.emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
-* section.emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
-* section.emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
-* section.emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
-* section.emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * section.section ..0
 * section contains
     sectionProblems 1..1 MS and
@@ -243,10 +236,6 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
 * section[sectionProblems].entry[problem] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * section[sectionProblems].entry[problem] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * section[sectionProblems].emptyReason MS
-* section[sectionProblems].emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:able-to-populate
-* section[sectionProblems].emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
-* section[sectionProblems].emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:populate-if-known
-* section[sectionProblems].emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * section[sectionProblems].emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
 * section[sectionProblems].emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * section[sectionProblems].emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
@@ -283,10 +272,6 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
 * section[sectionAllergies].entry[allergyOrIntolerance] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * section[sectionAllergies].entry[allergyOrIntolerance] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * section[sectionAllergies].emptyReason MS
-* section[sectionAllergies].emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:able-to-populate
-* section[sectionAllergies].emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
-* section[sectionAllergies].emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:populate-if-known
-* section[sectionAllergies].emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * section[sectionAllergies].emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
 * section[sectionAllergies].emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * section[sectionAllergies].emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
@@ -323,24 +308,20 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
 * section[sectionMedications].entry[medicationStatementOrRequest] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * section[sectionMedications].entry[medicationStatementOrRequest] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * section[sectionMedications].emptyReason MS
-* section[sectionMedications].emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:able-to-populate
-* section[sectionMedications].emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
-* section[sectionMedications].emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:populate-if-known
-* section[sectionMedications].emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * section[sectionMedications].emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
 * section[sectionMedications].emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * section[sectionMedications].emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * section[sectionMedications].emptyReason ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
-* section[sectionImmunizations] ^short = "IPS Immunizations Section"
-* section[sectionImmunizations] ^definition = "The Immunizations Section defines a patient's current immunization status and pertinent immunization history.\r\nThe primary use case for the Immunization Section is to enable communication of a patient's immunization status.\r\nThe section includes the current immunization status, and may contain the entire immunization history that is relevant to the period of time being summarized."
-// section[sectionImmunizations] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
-// section[sectionImmunizations] ^extension[=].valueString = "Section"
+* section[sectionImmunizations] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionImmunizations] ^extension[=].valueString = "Section"
 * section[sectionImmunizations] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:populate-if-known
 * section[sectionImmunizations] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * section[sectionImmunizations] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
 * section[sectionImmunizations] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * section[sectionImmunizations] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * section[sectionImmunizations] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* section[sectionImmunizations] ^short = "IPS Immunizations Section"
+* section[sectionImmunizations] ^definition = "The Immunizations Section defines a patient's current immunization status and pertinent immunization history.\r\nThe primary use case for the Immunization Section is to enable communication of a patient's immunization status.\r\nThe section includes the current immunization status, and may contain the entire immunization history that is relevant to the period of time being summarized."
 * section[sectionImmunizations].code 1..
 * section[sectionImmunizations].code only CodeableConceptIPS
 * section[sectionImmunizations].code = $loinc#11369-6
@@ -359,8 +340,8 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
 * section[sectionImmunizations].entry[immunization] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * section[sectionImmunizations].entry[immunization] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * section[sectionImmunizations].entry[immunization] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
-// section[sectionResults] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
-// section[sectionResults] ^extension[=].valueString = "Section"
+* section[sectionResults] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionResults] ^extension[=].valueString = "Section"
 * section[sectionResults] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:populate-if-known
 * section[sectionResults] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * section[sectionResults] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
@@ -401,8 +382,8 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
 * section[sectionResults].entry[results-observation-radiology] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * section[sectionResults].entry[results-observation-radiology] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * section[sectionResults].entry[results-diagnosticReport] only Reference(DiagnosticReportUvIps)
-//* section[sectionProceduresHx] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
-//* section[sectionProceduresHx] ^extension[=].valueString = "Section"
+* section[sectionProceduresHx] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionProceduresHx] ^extension[=].valueString = "Section"
 * section[sectionProceduresHx] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:populate-if-known
 * section[sectionProceduresHx] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * section[sectionProceduresHx] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
@@ -429,8 +410,8 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
 * section[sectionProceduresHx].entry[procedure] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * section[sectionProceduresHx].entry[procedure] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * section[sectionProceduresHx].entry[procedure] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
-//section[sectionMedicalDevices] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
-//section[sectionMedicalDevices] ^extension[=].valueString = "Section"
+* section[sectionMedicalDevices] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionMedicalDevices] ^extension[=].valueString = "Section"
 * section[sectionMedicalDevices] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:populate-if-known
 * section[sectionMedicalDevices] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * section[sectionMedicalDevices] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
@@ -457,6 +438,8 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
 * section[sectionMedicalDevices].entry[deviceStatement] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * section[sectionMedicalDevices].entry[deviceStatement] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * section[sectionMedicalDevices].entry[deviceStatement] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* section[sectionAdvanceDirectives] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionAdvanceDirectives] ^extension[=].valueString = "Section"
 * section[sectionAdvanceDirectives] ^short = "IPS Advance Directives Section"
 * section[sectionAdvanceDirectives] ^definition = "The advance directives section contains a narrative description of patient's advance directive."
 * section[sectionAdvanceDirectives].code 1..
@@ -470,6 +453,8 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
 * section[sectionAdvanceDirectives].entry ^definition = "Contains a narrative description or a Consent entry with information about the patient's advance directive."
 * section[sectionAdvanceDirectives].entry contains advanceDirectivesConsent 0..*
 * section[sectionAdvanceDirectives].entry[advanceDirectivesConsent] only Reference(Consent)
+* section[sectionAlerts] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionAlerts] ^extension[=].valueString = "Section"
 * section[sectionAlerts] ^short = "IPS Alerts Section"
 * section[sectionAlerts] ^definition = "The alerts section flags potential concerns and/or dangers to/from the patient and may also include obstacles to care."
 * section[sectionAlerts].code 1..
@@ -483,6 +468,8 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
 * section[sectionAlerts].entry ^definition = "Contains alert information to be communicated. May optionally reference other resources in IPS."
 * section[sectionAlerts].entry contains alertsFlag 0..*
 * section[sectionAlerts].entry[alertsFlag] only Reference(FlagAlertUvIps)
+* section[sectionFunctionalStatus] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionFunctionalStatus] ^extension[=].valueString = "Section"
 * section[sectionFunctionalStatus] ^short = "IPS Functional Status"
 * section[sectionFunctionalStatus] ^definition = "The functional status section shall contain a narrative description of capability of the patient to perform acts of daily living, including possible needs of the patient to be continuously assessed by third parties. The invalidity status may in fact influence decisions about how to administer treatments.\r\nProfiles to express disabilities and functional assessments will be specified by future versions of this guide."
 * section[sectionFunctionalStatus].code 1..
@@ -499,6 +486,8 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
     functionalAssessment 0..*
 * section[sectionFunctionalStatus].entry[disability] only Reference(ConditionUvIps)
 * section[sectionFunctionalStatus].entry[functionalAssessment] only Reference(ClinicalImpression)
+* section[sectionPastIllnessHx] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionPastIllnessHx] ^extension[=].valueString = "Section"
 * section[sectionPastIllnessHx] ^short = "IPS History of Past Illness Section"
 * section[sectionPastIllnessHx] ^definition = "The History of Past Illness section contains a description of the conditions the patient suffered in the past."
 * section[sectionPastIllnessHx].code 1..
@@ -528,6 +517,8 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
     pregnancyOutcome 0..*
 * section[sectionPregnancyHx].entry[pregnancyStatus] only Reference(ObservationPregnancyStatusUvIps)
 * section[sectionPregnancyHx].entry[pregnancyOutcome] only Reference(ObservationPregnancyOutcomeUvIps)
+* section[sectionPatientStory] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionPatientStory] ^extension[=].valueString = "Section"
 * section[sectionPatientStory] ^short = "IPS Patient Story Section"
 * section[sectionPatientStory] ^definition = "The section contains narrative text along with optional resources that express what matters to a patient. This may include needs, strengths, values, concerns and preferences to others providing support and care. The patient’s story, provided here, may be told by the patient or by a proxy."
 * section[sectionPatientStory].code 1..
@@ -548,6 +539,8 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
 * section[sectionPlanOfCare].entry ^definition = "Dynamic, personalized plan including identified needed healthcare activity, health objectives and healthcare goals, relating to one or more specified health issues in a healthcare process [Source EN ISO 13940]"
 * section[sectionPlanOfCare].entry contains carePlan 0..*
 * section[sectionPlanOfCare].entry[carePlan] only Reference(CarePlan)
+* section[sectionSocialHistory] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionSocialHistory] ^extension[=].valueString = "Section"
 * section[sectionSocialHistory] ^short = "IPS Social History Section"
 * section[sectionSocialHistory] ^definition = "The social history section contains a description of the person’s Health related \"lifestyle factors\" or \"lifestyle observations\" (e.g. smoke habits; alcohol consumption; diets, risky habits.)"
 * section[sectionSocialHistory].code 1..
@@ -564,6 +557,8 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
     alcoholUse 0..1
 * section[sectionSocialHistory].entry[smokingTobaccoUse] only Reference(ObservationTobaccoUseUvIps)
 * section[sectionSocialHistory].entry[alcoholUse] only Reference(ObservationAlcoholUseUvIps)
+* section[sectionVitalSigns] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[sectionVitalSigns] ^extension[=].valueString = "Section"
 * section[sectionVitalSigns] ^label = "Vital signs"
 * section[sectionVitalSigns] ^short = "IPS Vital Signs Section"
 * section[sectionVitalSigns] ^definition = "The Vital signs section includes blood pressure, body temperature, heart rate, and respiratory rate. It may also include other clinical findings, such as height, weight, body mass index, head circumference, and pulse oximetry. In particular, notable vital signs or physical findings such as the most recent, maximum and/or minimum, baseline, or relevant trends may be included"
