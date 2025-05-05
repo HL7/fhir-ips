@@ -78,7 +78,7 @@ Usage: #definition
 * rest.resource[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].extension.valueCode = #MAY
 * rest.resource[=].supportedProfile = "http://hl7.org/fhir/uv/ips/StructureDefinition/DiagnosticReport-uv-ips"
-* rest.resource[=].type = #DocumentReference
+* rest.resource[+].type = #DocumentReference
 * rest.resource[=].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].extension.valueCode = #MAY
 * rest.resource[=].operation.extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"

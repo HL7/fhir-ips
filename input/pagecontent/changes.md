@@ -93,7 +93,7 @@ Detailed change list for 1.1.0 since 1.0.0 includes:
   - DiagnosticReport: refer patient and specimen ips profiles ([FHIR-26665](https://jira.hl7.org/browse/FHIR-26665))
   - Observation Performer : relax constraints ([FHIR-26668](https://jira.hl7.org/browse/FHIR-26668))
   - IPS binding on Patient.contact does not allow specifying an emergency contact ([FHIR-29963](https://jira.hl7.org/browse/FHIR-29963))
-  - must support should require population if known ([FHIR-30077](https://jira.hl7.org/browse/FHIR-30077))
+  - Must Support should require population if known ([FHIR-30077](https://jira.hl7.org/browse/FHIR-30077))
   - Align the performer cardinality to the base resource ([FHIR-31049](https://jira.hl7.org/browse/FHIR-31049))
   - Change the cardinality of the gender ([FHIR-31557](https://jira.hl7.org/browse/FHIR-31557))
   - Allow for ingredient.itemReference in the Medication resource ([FHIR-31561](https://jira.hl7.org/browse/FHIR-31561))

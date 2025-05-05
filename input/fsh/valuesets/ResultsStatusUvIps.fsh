@@ -14,16 +14,5 @@ IPS Observation status codes allowable for results.  This value set includes all
 * ^immutable = false
 * ^copyright = "Produced by HL7 under the terms of HL7® Governance and Operations Manual relating to Intellectual Property (Section 16), specifically its copyright, trademark and patent provisions."
 * include codes from system $observation-status
-    where concept is-a #registered "Registered"
-* include codes from system $observation-status
-    where concept is-a #preliminary "Preliminary"
-* include codes from system $observation-status
-    where concept is-a #final "Final"
-* include codes from system $observation-status
-    where concept is-a #amended "Amended"
-* include codes from system $observation-status
-    where concept is-a #corrected "Corrected"
-* include codes from system $observation-status
-    where concept is-a #cancelled "Cancelled"
-* include codes from system $observation-status
-    where concept is-a #unknown "Unknown"
+* exclude codes from system $observation-status
+    where concept is-a #entered-in-error "Entered in Error"

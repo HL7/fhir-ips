@@ -37,8 +37,8 @@ Servers MAY support profiles beyond the IPS. When supported, other profiles can 
 * parameter[=].use = #in
 * parameter[=].min = 0
 * parameter[=].max = "1"
-* parameter[=].documentation = "A specific profile for the patient summary may be specified. By default, servers MAY use the universal Composition profile to identify what profile the returned summary will adhere to.  This is intended as a more flexible approach for implementers to support derivations of the IPS (e.g. national and jurisdictional implementations)."
-* parameter[=].type = #uri
+* parameter[=].documentation = "A specific profile for the patient summary may be specified. By default, servers MAY use the universal Composition profile to identify what profile the returned summary will adhere to.  This is intended as a more flexible approach for implementers to support derivations of the IPS (e.g. national and jurisdictional implementations). A specific version may be requested using a canonical reference (e.g. http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips|2.0.0)"
+* parameter[=].type = #canonical
 * parameter[+].name = #return
 * parameter[=].use = #out
 * parameter[=].min = 0
