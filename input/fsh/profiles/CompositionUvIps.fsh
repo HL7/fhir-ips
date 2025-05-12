@@ -193,15 +193,15 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
     sectionResults 0..1 MS and
     sectionProceduresHx 0..1 MS and
     sectionMedicalDevices 0..1 MS and
-    sectionAdvanceDirectives 0..1 and
-    sectionAlerts 0..1 and
-    sectionFunctionalStatus 0..1 and
-    sectionPastIllnessHx 0..1 and
-    sectionPregnancyHx 0..1 and
-    sectionPatientStory 0..1 and
-    sectionPlanOfCare 0..1 and
-    sectionSocialHistory 0..1 and
-    sectionVitalSigns 0..1
+    sectionAdvanceDirectives 0..1 MS and
+    sectionAlerts 0..1 MS and
+    sectionFunctionalStatus 0..1 MS and
+    sectionPastIllnessHx 0..1 MS and
+    sectionPregnancyHx 0..1 MS and
+    sectionPatientStory 0..1 MS and
+    sectionPlanOfCare 0..1 MS and
+    sectionSocialHistory 0..1 MS and
+    sectionVitalSigns 0..1 MS
 * section[sectionProblems] obeys ips-comp-1
 * section[sectionProblems] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:populate
 * section[sectionProblems] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
