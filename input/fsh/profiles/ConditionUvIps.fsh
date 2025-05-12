@@ -33,7 +33,9 @@ Description: "This profile represents the constraints applied to the Condition r
 * category ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * category ^definition = "A category assigned to the condition. In this profile, a health problem of the patient, therefore a 'problem-list-item'.\r\n"
 * category ^comment = "In this profile, Condition represents a health problem of the patient. Therefore one of the category value(s) must be problem-list-item."
-* category ^binding.extension[0].extension[0].url = "purpose"
+* category ^binding.extension[0].extension[0].url = "key"
+* category ^binding.extension[=].extension[=].valueId = ips-condition-category-loinc-problem-type
+* category ^binding.extension[=].extension[+].url = "purpose"
 * category ^binding.extension[=].extension[=].valueCode = #candidate
 * category ^binding.extension[=].extension[+].url = "valueSet"
 * category ^binding.extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ValueSet/problem-type-loinc"

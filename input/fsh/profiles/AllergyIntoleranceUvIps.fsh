@@ -33,7 +33,9 @@ It documents the relevant allergies or intolerances (conditions) for a patient, 
 * code ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * code only CodeableConceptIPS
 * code from AllergiesIntolerancesUvIps (preferred)
-* code ^binding.extension[0].extension[0].url = "purpose"
+* code ^binding.extension[0].extension[0].url = "key"
+* code ^binding.extension[=].extension[=].valueId = ips-allergy-intolerance-code-whoatc
+* code ^binding.extension[=].extension[+].url = "purpose"
 * code ^binding.extension[=].extension[=].valueCode = #candidate
 * code ^binding.extension[=].extension[+].url = "valueSet"
 * code ^binding.extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips"
