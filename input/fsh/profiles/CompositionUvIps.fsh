@@ -428,6 +428,10 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
 * section[sectionResults].entry[results-observation-radiology] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * section[sectionResults].entry[results-observation-radiology] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * section[sectionResults].entry[results-diagnosticReport] only Reference(DiagnosticReportUvIps)
+* section[sectionResults].entry[results-diagnosticReport] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
+* section[sectionResults].entry[results-diagnosticReport] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* section[sectionResults].entry[results-diagnosticReport] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
+* section[sectionResults].entry[results-diagnosticReport] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * section[sectionProceduresHx] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:populate-if-known
 * section[sectionProceduresHx] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * section[sectionProceduresHx] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
