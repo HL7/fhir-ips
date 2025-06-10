@@ -37,22 +37,6 @@ The following picture provides an overview of the current IPS content.
 
 Further details on the IPS project relationships with other projects and guidelines are available in the <a href="https://international-patient-summary.net/">IPS Website</a>.
 
-### Ballot Status
-
-This Implementation Guide has been balloted as STU with the intention to go normative in a subsequent ballot cycle.
-
-### Dependencies
-
-{% include dependency-table.xhtml %}
-
-### Cross Version Analysis
-
-{% include cross-version-analysis.xhtml %}
-
-### Global Profiles
-
-{% include globals-table.xhtml %}
-
 ### Authors and Contributors
 
 | Role  | Name | Organization | Contact |
