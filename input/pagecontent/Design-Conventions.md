@@ -54,6 +54,16 @@ Granular requirements regarding what is considered clinically relevant for inclu
 
 This specification does not dictate the conditions under which narrative is generated and acknowledges the wide range of implementing workflows and systems, some of which may use human manual intervention or automatic generation using resource content to generate the narrative or other means. While no constraints are implemented, early implementers have recommended that IPS documents not duplicate the content contained in `Composition.section.text` (which is required) in the `Composition.text`. This may lead to validation issues with duplicate ids and also excess document size. This recommendation currently aligns with forthcoming guidance in the "FHIR Clinical Documents" implementation guide.
 
+#### Linking Narrative to Discrete FHIR Resources
+
+Since the IPS Composition requires each section to have human-readable narrative text as XHTML, we encourage implementers to reference individual discrete entries in the XHTML using the id attribute and an accompanying "textLink" extension that links this id to the resource. This practice provides value when text from IPS documents becomes translated from the originating system language and also in debugging the presented form of a clinical document from its structured content. Linking narrative content is well established in CDA documents and provides value in other FHIR clinical documents as well.  
+
+The following illustrative example shows how this could be accomplished within an IPS Composition.section. Note that id attributes within the XHTML example below share the same id of the structured resources for the following example but can be unique when needed. To see a full example with all required elements and structured data, refer to this this example [Full IPS example to be added] included in this guide:
+
+{% include img.html img="textLink.png" caption="Figure 4: Example of Using textLink extension" width="100%" %}
+
+STU Note: The final specification of the textLink extension shown above is pending at the time of the IPS FHIR 2.0 publication. Implementations can proactively adhere to the resolution of Jira ticket FHIR-43316, which will be formally incorporated into the next version of this IG.
+
 ### Representation of Person Names
 
 This specification requires that any Person Name is represented including at least the given and family components. Even though it is recognized that there is not in all cultures the same concept of “family name”, no evidence has been collected in analyzing the international context (e.g., Japan, Korea, China) that justifies the retirement of this requirement. Moreover, due to the global scope of the International Patient Summary, the case of non-alphabetic representations of the names has also been considered. In this case, to facilitate the global use of the IPS, at least one alphabetic representation of the name SHALL be provided.
