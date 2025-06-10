@@ -23,7 +23,19 @@ To support interoperability of IPS content between organizations that used diffe
 
 Other primary terminologies used in this specification are LOINC for observations (e.g., laboratory tests) and document sections, UCUM for units of measure, EDQM Standard Terms for dose forms and routes and ISO 3166 for countries [this ISO code system can be used for free in «lists» (e.g. value sets) or software]. Looking at the availability of other globally usable reference terminologies, in selected cases FHIR-defined terminologies are recommended.
 
+### Patient Safety in IPS Context
+
+Patient safety is foundational in healthcare and its importance is even more pronounced in the context of cross-border care information exchange. Understanding specific data elements from IPS profiles is critical to ensuring that clinicians have accurate, timely, and relevant information to make informed decisions. Ignoring or misinterpreting these elements can lead to adverse events.
+
+Elements throughout this IPS guide have obligations for both Producers and Consumers of IPS documents, and many of these attributes impact patient safety. IPS has made a deliberate design decision to align with the International Patient Access specification so that elements with a SHALL:handle obligation cannot be safely ignored in patient summary sharing. Implementers that are developing IPS consuming functions, either viewers or services that use the information in the IPS need to pay careful attention to the obligations. Many IPS documents will not populate the elements, particularly in a testing context, but when these elements are populated, or have unusual values, it is important that the clinical facts they convey are understood. Experience gained from the IPS development process has demonstrated that they are easily missed.
+
+Here are some example of clinical safety cases:
+
+The IPS includes a problem (Condition) with the modifier of “verificationStatus” of “refuted”, ignoring this element could introduce patient risk in downstream care
+The IPS includes a medication (MedicationRequest) where the patient was instructed not to take a medication (possibly temporarily) through use of “doNotPerform”
+The IPS includes a lab result (Observation) where the status may be “preliminary” or “amended”
+While this specification does not precisely define how downstream consumers should manage these elements, it is often recommended these elements be available for human-review (Obligation of SHOULD:display). Of course, language translation and presentation of textual narrative also have implications for patient safety as described with the Design Conventions of the guide. Ultimately, patient safety benefits from consistent, accurate, and context-aware handling of IPS documents —underscoring a need for producers and consumers to treat these obligations not as technical formalities, but as essential components of safe and effective clinical care.
+
 ### Publishing or Accessing the IPS
 
 As described also in the [IPS CDA implementation guide](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=483) it is not in the scope of this version of this Implementation Guide to constrain solutions or strategies for the creation, sharing, syntactical and semantic mapping, translation, and use of the IPS. Recommendations on [operations for IPS generation](./Generation-and-Data-Inclusion.html) are included in this guide, although future implementation guides may provide alternative methods and further recommendations different than those outlined. In addition, Integrating the Healthcare Enterprise (IHE) has also publsihed guidance on the [Sharing of IPS](https://profiles.ihe.net/ITI/sIPS/) which may be a helpful reference. 
-
