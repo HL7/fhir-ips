@@ -2,7 +2,7 @@
 
 In the context of IPS, Obligations defines how an Actor ([Producer (IPS)](./ActorDefinition-Producer.html) or [Consumer (IPS)](ActorDefinition-Consumer.html)) must “support” a given element. All Must Support elements in this publication are accompanied by an explicit obligation, which identifies structured expectations for a given actor. Obligations can be found in the formal view section of a resource as shown below for the IPS Procedure profile: 
 
-{% include img.html img="Obligations.png" caption="Figure 4: Example of Obligations in IPS Procedure Profile" width="100%" %}
+{% include img.html img="Obligations.png" caption="Figure 5: Example of Obligations in IPS Procedure Profile" width="100%" %}
 
 Obligations may be different between the Producer (IPS) and Consumer (IPS) of an IPS document and also may differ by profile and resource attributes. For all obligations, no data should be populated or processed in any way that conflicts with regional laws, regulations or policies. For additional context, see the [Security and Privacy Considerations](./Privacy-and-Security-Considerations.html) section of this implementation guide. 
 

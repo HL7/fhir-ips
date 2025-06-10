@@ -4,7 +4,6 @@ With the formal agreement signed on April 2017, HL7 International and CEN/TC 251
 
 Based on this agreement, the standards specification for the IPS has to be (a) implementable (b) applicable for global use (c) extensible and open to future use cases and solutions. The standards specification and their implementation must be moreover sustainable. 
 
-
 ### Structuring Terminology Choices
 
 The IPS is specified in this guide as a HL7 FHIR document (a `Bundle` including an IPS `Composition`), composed by a set of potentially reusable "minimal" data blocks (the IPS profiles). A HL7 CDA R2 representation is specified as well in a distinct Implementation Guide. The expressiveness of SNOMED CT and other primary terminologies from this guide enable the specification to represent information independent of the underlying syntax (CDA R2 or FHIR).
@@ -20,6 +19,7 @@ These value set definitions can be expanded against any available SNOMED CT cont
 <br/>
 To support interoperability of IPS content between organizations that used different SNOMED CT value set content, it is proposed to use a "common proximal ancestor" strategy, substituting any local concept with an ancestor that is shared between the exchanging parties, e.g., a concept in the IPS Terminology. This substitution can be performed using an ECL query, and detailed instructions will be available on the <a href="http://snomed.org/ecl">SNOMED ECL documentation</a>.
 </blockquote>
+<br/>
 
 Other primary terminologies used in this specification are LOINC for observations (e.g., laboratory tests) and document sections, UCUM for units of measure, EDQM Standard Terms for dose forms and routes and ISO 3166 for countries [this ISO code system can be used for free in «lists» (e.g. value sets) or software]. Looking at the availability of other globally usable reference terminologies, in selected cases FHIR-defined terminologies are recommended.
 
@@ -36,6 +36,10 @@ Here are some example of clinical safety cases:
 - The IPS includes a lab result (Observation) where the status may be “preliminary” or “amended”
 
 While this specification does not precisely define how downstream consumers should manage these elements, it is often recommended these elements be available for human-review (often shown as an obligation of SHOULD:display). Of course, language translation and presentation of textual narrative also have implications for patient safety as described with the Design Conventions of the guide. Ultimately, patient safety benefits from consistent, accurate, and context-aware handling of IPS documents — underscoring a need for producers and consumers to treat these obligations not as technical formalities, but as essential components of safe and effective clinical care.
+
+### Context of Patient Summaries
+
+The IPS defines a patient summary in the context of providing information to downstream providers. While profiled sections of the IPS may have content that reflects intentions or orders of clinical care, the IPS is meant as an informative document and is not intended to be directly actionable. For example, a MedicationRequest resource in the medications section or a CarePlan resource in the Plan of Care section, should not fulfilled or actioned from the IPS document.
 
 ### Publishing or Accessing the IPS
 

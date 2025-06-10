@@ -58,11 +58,14 @@ This specification does not dictate the conditions under which narrative is gene
 
 Since the IPS Composition requires each section to have human-readable narrative text as XHTML, we encourage implementers to reference individual discrete entries in the XHTML using the id attribute and an accompanying "textLink" extension that links this id to the resource. This practice provides value when text from IPS documents becomes translated from the originating system language and also in debugging the presented form of a clinical document from its structured content. Linking narrative content is well established in CDA documents and provides value in other FHIR clinical documents as well.  
 
-The following illustrative example shows how this could be accomplished within an IPS Composition.section. Note that id attributes within the XHTML example below share the same id of the structured resources for the following example but can be unique when needed. To see a full example with all required elements and structured data, refer to this this example [Full IPS example to be added] included in this guide:
+The following illustrative example shows how this could be accomplished within an IPS Composition.section. Note that id attributes within the XHTML example below share the same id of the structured resources for the following example but can be unique when needed. To see a full example with all required elements and structured data, refer to examples included in this guide:
 
 {% include img.html img="textLink.png" caption="Figure 4: Example of Using textLink extension" width="100%" %}
 
-STU Note: The final specification of the textLink extension shown above is pending at the time of the IPS FHIR 2.0 publication. Implementations can proactively adhere to the resolution of Jira ticket FHIR-43316, which will be formally incorporated into the next version of this IG.
+<blockquote class="stu-note">
+	<p>The final specification of the textLink extension shown above is pending at the time of the IPS FHIR 2.0 publication. Implementations can proactively adhere to the resolution of Jira ticket <a href="https://jira.hl7.org/browse/FHIR-43316">FHIR-43316</a> , which will be formally incorporated into the next version of this IG.
+  </p>
+</blockquote>
 
 ### Representation of Person Names
 
