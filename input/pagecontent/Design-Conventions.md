@@ -18,10 +18,6 @@ One of the important and useful capabilities of FHIR profiling is [slicing](http
 
 Having this clear is important for correctly understanding the published profiles. For example, the optional section of [Social History](./StructureDefinition-Composition-uv-ips-definitions.html#Composition.section:sectionSocialHistory.entry) has open slicing on the entry element allowing for the use of the [IPS Tobacco Use profile](./StructureDefinition-Observation-tobaccouse-uv-ips.html), the [IPS Alcohol Use profile](./StructureDefinition-Observation-alcoholuse-uv-ips.html), or any other Observation or DocumentReference. Therefore, while specific IPS profiles are described in this guide, other profiles may also be included as well.
 
-### Alignment to FHIR Clinical Documents
-
-This specification previously derived its IPS Composition from the [Clinical Document profile in FHIR](https://hl7.org/fhir/R4/clinicaldocument.html), which has since been deprecated. A new implementation guide ("FHIR Clinical Documents") is currently being developed to replace this profile and assist with the alignment/transition between CDA and FHIR documents. Future version of the IPS Implemenation Guide may closely align with principles outlined in "FHIR Clinical Documents" guide and we recommend implementers review this guidance when implementing IPS.
-
 ### Narrative and Language Translation
 
 #### Rationale for Narrative Requirements in IPS
