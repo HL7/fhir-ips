@@ -40,6 +40,24 @@ If an [Producer (IPS)](./ActorDefinition-Producer.html) does not have data to be
     }
     ```
 
+    Example: Procedure resource where the performed value is not known. The performed[x] is a choice of type, although any performed[x] choice element can be used to include the data absent reason extension, in this case performedDateTime is must support and hence a good choice (note that performedDateTime is a dateTime primitive datatype the \_performedDateTime sibling property is used for the extension). Other required properties of Procedure resource are omitted (shown by ...) in this simplified example.
+
+    ```
+    {
+      "resourceType" : "Procedure",
+      ...
+      "_performedDateTime": {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode" : "unknown"
+          }
+        ]
+      },
+      ...
+    }
+    ```
+
 1.  For _coded_ data elements:
     - _example_, _preferred_, or _extensible_ binding strengths (CodeableConcept datatypes):
       - if the source systems has text but no coded data, only the text element is used.
@@ -48,3 +66,21 @@ If an [Producer (IPS)](./ActorDefinition-Producer.html) does not have data to be
         - use the appropriate concept code from the [Data Absent Reason Code System](http://hl7.org/fhir/R4/valueset-data-absent-reason.html) if the value set does not have it.
     - _required_ binding strength (CodeableConcept or code datatypes):
       - use the appropriate exceptional concept code from the value set
+
+    Example: Observation Results - Laboratory/Pathology (IPS) resource where the code is not allowed to be shared (e.g. suppressed), the code element contains the data-absent-reason extension. Other required properties of Observation resource are omitted (shown by ...) in this simplified example.
+
+    ```
+    {
+      "resourceType" : "Observation",
+      ...
+      "code": {
+        "coding" : [
+          {
+            "system" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+            "code" : "unknown"
+          }
+        ]
+      },
+      ...
+    }
+    ```
