@@ -64,6 +64,3 @@ Description: "This profile represents the constraints applied to the MedicationR
 * dosageInstruction.route only CodeableConceptIPS
 * dosageInstruction.route from MedicineRouteOfAdministrationUvIps (preferred)
 * dosageInstruction.route ^binding.description = "EDQM Standards Terms"
-* dispenseRequest.validityPeriod.extension contains $data-absent-reason named data-absent-reason 0..1
-* dispenseRequest.validityPeriod.extension[data-absent-reason] ^short = "validityPeriod absence reason"
-* dispenseRequest.validityPeriod.extension[data-absent-reason] ^definition = "Provides a reason why the validityPeriod is missing."
