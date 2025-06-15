@@ -16,6 +16,13 @@ It documents the relevant allergies or intolerances (conditions) for a patient, 
 * extension contains $allergyintolerance-abatement named abatement 0..1
 * clinicalStatus only CodeableConceptIPS
 * verificationStatus only CodeableConceptIPS
+* verificationStatus MS
+* verificationStatus ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:populate-if-known
+* verificationStatus ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* verificationStatus ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
+* verificationStatus ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* verificationStatus ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
+* verificationStatus ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * verificationStatus ^comment = "In the scope of the IPS the entered-in-error concept is not allowed."
 * type MS
 * type ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:populate-if-known
