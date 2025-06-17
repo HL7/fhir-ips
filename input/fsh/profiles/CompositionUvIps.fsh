@@ -17,6 +17,11 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
 * ^copyright = "HL7 International"
 * . ^short = "International Patient Summary composition"
 * . ^definition = "International Patient Summary composition. \r\nA composition is a set of healthcare-related information that is assembled together into a single logical document that provides a single coherent statement of meaning, establishes its own context and that has clinical attestation with regard to who is making the statement. \r\nWhile a Composition defines the structure, it does not actually contain the content: rather the full content of a document is contained in a Bundle, of which the Composition is the first resource contained."
+* meta.profile MS
+* meta.profile ^short = "The conformance of this Composition to a specific IPS version."
+* meta.profile ^definition = "The conformance of this Composition to a specific version of the IPS (e.g. http://hl7.org/fhir/uv/ips/StructureDefinition/Composition-uv-ips|2.0.0 for 2.0.0)"
+* meta.profile ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #MAY:able-to-populate
+* meta.profile ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * text MS
 * text ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:populate-if-known
 * text ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
