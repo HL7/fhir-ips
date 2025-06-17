@@ -51,7 +51,7 @@ Usage: #inline
 * section[0].title = "Allergies and Intolerances"
 * section[=].code = $loinc#48765-2 "Allergies and adverse reactions Document"
 * section[=].text.status = #generated
-* section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en-NZ' xml:lang='en-NZ'>There is no information available regarding the subject's allergy conditions.</div>"
+* section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml' lang='en-NZ' xml:lang='en-NZ'>There is no information available regarding the subject's allergies.</div>"
 * section[=].emptyReason = $list-empty-reason#unavailable "Unavailable"
 * section[=].emptyReason.text = "No information available"
 * section[+].title = "Problem List"

@@ -254,7 +254,7 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
 * section[sectionAllergies] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * section[sectionAllergies] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * section[sectionAllergies] ^short = "IPS Allergies and Intolerances Section"
-* section[sectionAllergies] ^definition = "This section documents the relevant allergies or intolerances (conditions) for that patient, describing the kind of reaction (e.g. rash, anaphylaxis,..); preferably the agents that cause it; and optionally the criticality and the certainty of the allergy.\r\nAt a minimum, it should list currently active and any relevant historical allergies and adverse reactions.\r\nIf no information about allergies is available, or if no allergies are known this should be clearly documented in the section."
+* section[sectionAllergies] ^definition = "This section documents the relevant allergies or intolerances for that patient, describing the kind of reaction (e.g. rash, anaphylaxis,..); preferably the agents that cause it; and optionally the criticality and the certainty of the allergy.\r\nAt a minimum, it should list currently active and any relevant historical allergies and adverse reactions.\r\nIf no information about allergies is available, or if no allergies are known this should be clearly documented in the section."
 * section[sectionAllergies].title ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:able-to-populate
 * section[sectionAllergies].title ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * section[sectionAllergies].title ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
@@ -274,8 +274,8 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
 * section[sectionAllergies].entry ^slicing.discriminator[0].type = #profile
 * section[sectionAllergies].entry ^slicing.discriminator[=].path = "resolve()"
 * section[sectionAllergies].entry ^slicing.rules = #open
-* section[sectionAllergies].entry ^short = "Relevant allergies or intolerances (conditions) for that patient."
-* section[sectionAllergies].entry ^definition = "It lists the relevant allergies or intolerances (conditions) for that patient, describing the kind of reaction (e.g. rash, anaphylaxis,..); preferably the agents that cause it; and optionally the criticality and the certainty of the allergy.\r\nAt a minimum, it should list currently active and any relevant historical allergies and adverse reactions.\r\n This entry shall be used to document that no information about allergies is available, or that no allergies are known ."
+* section[sectionAllergies].entry ^short = "Relevant allergies or intolerances for that patient."
+* section[sectionAllergies].entry ^definition = "It lists the relevant allergies or intolerances for that patient, describing the kind of reaction (e.g. rash, anaphylaxis,..); preferably the agents that cause it; and optionally the criticality and the certainty of the allergy.\r\nAt a minimum, it should list currently active and any relevant historical allergies and adverse reactions.\r\n This entry shall be used to document that no information about allergies is available, or that no allergies are known ."
 * section[sectionAllergies].entry contains allergyOrIntolerance 0..*
 * section[sectionAllergies].entry[allergyOrIntolerance] only Reference(AllergyIntoleranceUvIps)
 * section[sectionAllergies].entry[allergyOrIntolerance] MS

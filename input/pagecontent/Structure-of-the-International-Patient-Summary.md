@@ -10,7 +10,7 @@ The IPS problem section lists and describes clinical problems or conditions curr
 
 #### Allergies and Intolerances
 
-This section documents the relevant allergies or intolerances (conditions) for a patient, describing the kind of reaction (e.g. rash, anaphylaxis,..); preferably the agents that cause it; and optionally the criticality and the certainty of the allergy.
+This section documents the relevant allergies or intolerances for a patient, describing the kind of reaction (e.g. rash, anaphylaxis,..); preferably the agents that cause it; and optionally the criticality and the certainty of the allergy.
 
 At a minimum, it should list currently active and any relevant historical allergies and adverse reactions. If no information about allergies is available, or if no allergies are known this should be documented in the section through the use of emptyReason (at Composition.section) or a referenced resource (at Composition.section.entry).
 
