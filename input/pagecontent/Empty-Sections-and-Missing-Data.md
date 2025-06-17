@@ -18,7 +18,7 @@ Note: an [Producer (IPS)](./ActorDefinition-Producer.html) may have no data to b
 
 #### Required Data Elements with Must Support/Obligations (cardinality of 1..1 or 1..\*)
 
-If an [Producer (IPS)](./ActorDefinition-Producer.html) does not have data to be included in the IPS, the reason for the absence has to be specified as follows:
+If an [Producer (IPS)](./ActorDefinition-Producer.html) does not have data to be included in the IPS, the reason for the absence SHALL be specified as follows:
 
 1.  For _non-coded_ data elements, use the [Data Absent Reason Extension](http://hl7.org/fhir/R4/extension-data-absent-reason.html) in the data type. 
     Example: Patient resource where the birthDate is not known (note that since birthDate is a date primitive datatype the \_birthDate sibling property is used for the extension). Other required properties of Patient resource are omitted (shown by ...) in this simplified example.
