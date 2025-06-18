@@ -709,14 +709,17 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
 * section[sectionPlanOfCare].text ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * section[sectionPlanOfCare].text ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * section[sectionPlanOfCare].text ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
-* section[sectionPlanOfCare].entry only Reference(CarePlan or DocumentReference)
+* section[sectionPlanOfCare].entry only Reference(CarePlan or ImmunizationRecommendation or DocumentReference)
 * section[sectionPlanOfCare].entry ^slicing.discriminator[0].type = #profile
 * section[sectionPlanOfCare].entry ^slicing.discriminator[=].path = "resolve()"
 * section[sectionPlanOfCare].entry ^slicing.rules = #open
 * section[sectionPlanOfCare].entry ^short = "Optional entry used to represent structured care plans"
 * section[sectionPlanOfCare].entry ^definition = "Dynamic, personalized plan including identified needed healthcare activity, health objectives and healthcare goals, relating to one or more specified health issues in a healthcare process [Source EN ISO 13940]"
-* section[sectionPlanOfCare].entry contains carePlan 0..*
+* section[sectionPlanOfCare].entry contains 
+    carePlan 0..* and
+    immunizationRecommendation 0..*
 * section[sectionPlanOfCare].entry[carePlan] only Reference(CarePlan)
+* section[sectionPlanOfCare].entry[immunizationRecommendation] only Reference(ImmunizationRecommendation)
 * section[sectionSocialHistory] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * section[sectionSocialHistory] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * section[sectionSocialHistory] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
