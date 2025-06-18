@@ -45,19 +45,24 @@ Description: "This profile represents the constraints applied to the Bundle reso
     composition 1..1 and
     patient 1..1 and
     allergyintolerance 0..* and
+    careplan 0..* and
+    clinicalimpression 0..* and
     condition 0..* and
+    consent 0..* and
     device 0..* and
     deviceusestatement 0..* and
     diagnosticreport 0..* and
+    documentreference 0..* and
+    flag 0..* and
     imagingstudy 0..* and
     immunization 0..* and
+    immunizationrecommendation 0..* and 
     medication 0..* and
     medicationrequest 0..* and
     medicationstatement 0..* and
     practitioner 0..* and
     practitionerrole 0..* and
     procedure 0..* and
-    organization 0..* and
     observation-pregnancy-edd 0..* and
     observation-pregnancy-outcome 0..* and
     observation-pregnancy-status 0..* and
@@ -66,12 +71,8 @@ Description: "This profile represents the constraints applied to the Bundle reso
     observation-results-laboratory-pathology 0..* and
     observation-results-radiology 0..* and
     observation-vital-signs 0..* and
-    specimen 0..* and
-    flag 0..* and
-    clinicalimpression 0..* and
-    careplan 0..* and
-    consent 0..* and
-    documentreference 0..*
+    organization 0..* and
+    specimen 0..* 
 * entry[composition].resource 1..
 * entry[composition].resource only CompositionUvIps
 * entry[composition] MS
@@ -83,18 +84,30 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry[patient].resource only PatientUvIps
 * entry[allergyintolerance].resource 1..
 * entry[allergyintolerance].resource only AllergyIntoleranceUvIps
+* entry[careplan].resource 1..
+* entry[careplan].resource only CarePlan
+* entry[clinicalimpression].resource 1..
+* entry[clinicalimpression].resource only ClinicalImpression
 * entry[condition].resource 1..
 * entry[condition].resource only ConditionUvIps
+* entry[consent].resource 1..
+* entry[consent].resource only Consent
 * entry[device].resource 1..
 * entry[device].resource only Device
 * entry[deviceusestatement].resource 1..
 * entry[deviceusestatement].resource only DeviceUseStatementUvIps
 * entry[diagnosticreport].resource 1..
 * entry[diagnosticreport].resource only DiagnosticReportUvIps
+* entry[documentreference].resource 1..
+* entry[documentreference].resource only DocumentReference
+* entry[flag].resource 1..
+* entry[flag].resource only FlagAlertUvIps
 * entry[imagingstudy].resource 1..
 * entry[imagingstudy].resource only ImagingStudyUvIps
 * entry[immunization].resource 1..
 * entry[immunization].resource only ImmunizationUvIps
+* entry[immunizationrecommendation].resource 1..
+* entry[immunizationrecommendation].resource only ImmunizationRecommendation
 * entry[medication].resource 1..
 * entry[medication].resource only MedicationIPS
 * entry[medicationrequest].resource 1..
@@ -127,13 +140,3 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry[observation-vital-signs].resource only $vital-signs-profile
 * entry[specimen].resource 1..
 * entry[specimen].resource only SpecimenUvIps
-* entry[flag].resource 1..
-* entry[flag].resource only FlagAlertUvIps
-* entry[clinicalimpression].resource 1..
-* entry[clinicalimpression].resource only ClinicalImpression
-* entry[careplan].resource 1..
-* entry[careplan].resource only CarePlan
-* entry[consent].resource 1..
-* entry[consent].resource only Consent
-* entry[documentreference].resource 1..
-* entry[documentreference].resource only DocumentReference
