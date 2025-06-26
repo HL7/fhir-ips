@@ -15,6 +15,13 @@ It documents the relevant allergies or intolerances for a patient, describing th
 * ^purpose = "This profile constrains the representation of a record of an allergy or intolerance of the patient, in the context of the international patient summary as specified by the IPS project of HL7 International."
 * extension contains $allergyintolerance-abatement named abatement 0..1
 * clinicalStatus only CodeableConceptIPS
+* clinicalStatus MS
+* clinicalStatus ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:populate-if-known
+* clinicalStatus ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* clinicalStatus ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
+* clinicalStatus ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* clinicalStatus ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
+* clinicalStatus ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * verificationStatus only CodeableConceptIPS
 * verificationStatus ^comment = "In the scope of the IPS the entered-in-error concept is not allowed."
 * type MS
