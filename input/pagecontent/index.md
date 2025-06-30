@@ -1,10 +1,11 @@
 An **International Patient Summary (IPS) document** is an electronic health record extract containing essential healthcare information about a subject of care.
-As specified in ISO 27269, it is designed for supporting the use case scenario for ‘unplanned, cross border care’, but it is not limited to it.
+As specified in [ISO 27269](https://www.iso.org/standard/79491.html), it is designed for supporting the use case scenario for ‘unplanned, cross border care’, but it is not limited to it.
+
 It is intended to be international, i.e., to provide generic solutions for global application beyond a particular region or country.
 
 The IPS dataset is **minimal and non-exhaustive; specialty-agnostic and condition-independent; but still clinically relevant**.
 
-The IPS document is composed by a set of robust, well-defined and potentially reusable sets of core data items (indicated as IPS library in the figure below). The tight focus of the IPS on unplanned care is in this case not a limitation, but, on the contrary, facilitates their potential re-use beyond the IPS scope.
+The IPS document is composed by a set of robust, well-defined and potentially reusable sets of core data items (indicated as IPS library in the figure below). The tight focus of the IPS on unplanned care is in this case not a limitation, but, on the contrary, facilitates its potential re-use beyond the IPS scope.
 
 {% include img.html img="IPS_doc_library.png" caption="Figure 1: The IPS product and by-products"
     width="70%" %}
@@ -12,7 +13,7 @@ The IPS document is composed by a set of robust, well-defined and potentially re
 ### Purpose
 
 The goal of this Implementation Guide is to specify how to represent in HL7 FHIR the International Patient Summary (IPS). An alternative representation as templated HL7 CDA R2 is also provided ( see the [hl7.org site](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=483) or the [ART DECOR](https://art-decor.org/art-decor/decor-project--hl7ips-) repository). 
-The initial focus of the International Patient Summary (IPS) was the unplanned care across national borders. This specification can be used and be useful also in local applications and be supportive of planned care. 
+The initial focus of the International Patient Summary (IPS) was the unplanned care across national borders. This specification can also be useful in local applications and supportive of planned care.
 
 
 ### Project Background
