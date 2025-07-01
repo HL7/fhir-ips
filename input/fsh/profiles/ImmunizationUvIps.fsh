@@ -79,9 +79,17 @@ It describes the event of a patient being administered a vaccination or a record
 * site ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * site ^binding.extension[=].valueString = "SNOMEDCTBodyStructures"
 * route only CodeableConceptIPS
-* route from MedicineRouteOfAdministrationUvIps (preferred)
-* route ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* route ^binding.extension[=].valueString = "ImmunizationRoute"
+* route from $MedicationRouteCodes (preferred)
+* route ^binding.description = "SNOMED Route Terms"
+* route ^binding.extension[+].extension[0].url = "key"
+* route ^binding.extension[=].extension[=].valueId = ips-medicine-route-of-administration
+* route ^binding.extension[=].extension[+].url = "purpose"
+* route ^binding.extension[=].extension[=].valueCode = #candidate
+* route ^binding.extension[=].extension[+].url = "valueSet"
+* route ^binding.extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration"
+* route ^binding.extension[=].extension[+].url = "documentation"
+* route ^binding.extension[=].extension[=].valueMarkdown = "EDQM Standards Route Terms"
+* route ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
 * protocolApplied.targetDisease from VaccineTargetDiseasesUvIps (preferred)
 * protocolApplied.targetDisease ^short = "Vaccine preventable disease being targeted"
 * protocolApplied.targetDisease ^definition = "The particular disease against which the patient has been immunized.\r\n\r\nAdditional conformance bindings provided for use for this element in specific (jurisdictional or other) contexts include (these bindings are represented in the StructureDefinition as instances of the [elementdefinition-additionalBinding](http://hl7.org/fhir/tools/StructureDefinition/additional-binding) extension):\r\n- [targetDiseases-uv-ips](./ValueSet-target-diseases-uv-ips.html)"

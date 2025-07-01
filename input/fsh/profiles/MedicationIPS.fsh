@@ -36,13 +36,23 @@ Description: "This profile represents the constraints applied to the Medication 
 * code ^binding.description = "SNOMED CT medications (Medicinal product) or a code for absent/unknown medication"
 * form only CodeableConceptIPS
 * form MS
+* form from $MedicationFormCodes (preferred)
 * form ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:populate-if-known
 * form ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
 * form ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
 * form ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * form ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * form ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
-* form from MedicineDoseFormUvIps (preferred)
+* form ^binding.description = "SNOMED Doseform Terms"
+* form ^binding.extension[+].extension[0].url = "key"
+* form ^binding.extension[=].extension[=].valueId = ips-medicine-doseform
+* form ^binding.extension[=].extension[+].url = "purpose"
+* form ^binding.extension[=].extension[=].valueCode = #candidate
+* form ^binding.extension[=].extension[+].url = "valueSet"
+* form ^binding.extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform"
+* form ^binding.extension[=].extension[+].url = "documentation"
+* form ^binding.extension[=].extension[=].valueMarkdown = "EDQM Doseform Terms"
+* form ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
 * form ^definition = "Describes the form of the item.  Powder; tablets; capsule.\r\n\r\nAdministrable Pharmaceutical Dose Form. \r\nThis code represents the form of the medication (e.g. tablet, capsule, liquid)\r\n\r\nSince the EDQM Standards Terms, together with UCUM, is one of the IDMP terminologies actually available for usage, this code system has been selected as referecne terminology for representing Pharmaceutical Dose forms;Pakages and Route of Administration.\r\n\r\nIt is known that also alternative jurisdictional and international terminologies are known to be used for this concept domain, as NCI or SNOMED CT."
 * ingredient MS
 * ingredient ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:populate-if-known

@@ -1,7 +1,9 @@
 ValueSet: MedicineRouteOfAdministrationUvIps
 Id: medicine-route-of-administration
-Title: "Medicine Route of Administration - IPS"
+Title: "Medicine EDQM Route of Administration - IPS"
 Description: """
+While SNOMED remains a preferred binding for medicine route, EDQM (European Directorate for the Quality of Medicines and Healthcare) route of administration codes are allowed as additional binding. 
+
 EDQM (European Directorate for the Quality of Medicines and Healthcare) Route of Administration codes.  This Value Set includes all the EDQM Standard Terms having:  
 [Concept Status] = ‘Current’ AND  
 [Concept Class] = 'ROA' AND  

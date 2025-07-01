@@ -43,3 +43,5 @@ Alias: $vitalsigns = http://hl7.org/fhir/StructureDefinition/vitalsigns
 Alias: $vital-signs-profile = http://hl7.org/fhir/StructureDefinition/vitalsigns
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 Alias: $dataAbsentReason = http://terminology.hl7.org/CodeSystem/data-absent-reason
+Alias: $MedicationRouteCodes = http://hl7.org/fhir/ValueSet/route-codes 
+Alias: $MedicationFormCodes = http://hl7.org/fhir/ValueSet/medication-form-codes

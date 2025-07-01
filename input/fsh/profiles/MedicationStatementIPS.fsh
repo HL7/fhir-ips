@@ -74,5 +74,14 @@ Description: "This profile represents the constraints applied to the MedicationS
 * dosage.timing ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * dosage.timing ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * dosage.route only CodeableConceptIPS
-* dosage.route from MedicineRouteOfAdministrationUvIps (preferred)
-* dosage.route ^binding.description = "EDQM Standards Terms"
+* dosage.route from $MedicationRouteCodes (preferred)
+* dosage.route ^binding.description = "SNOMED Route Terms"
+* dosage.route ^binding.extension[+].extension[0].url = "key"
+* dosage.route ^binding.extension[=].extension[=].valueId = ips-medicine-route-of-administration
+* dosage.route ^binding.extension[=].extension[+].url = "purpose"
+* dosage.route ^binding.extension[=].extension[=].valueCode = #candidate
+* dosage.route ^binding.extension[=].extension[+].url = "valueSet"
+* dosage.route ^binding.extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration"
+* dosage.route ^binding.extension[=].extension[+].url = "documentation"
+* dosage.route ^binding.extension[=].extension[=].valueMarkdown = "EDQM Route Terms"
+* dosage.route ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
