@@ -4,8 +4,8 @@
 	HL7 Cross Paradigm Implementation Guide: Gender Harmony - Sex and Gender Representation</a>. While the extensions 
 	of <a href="https://hl7.org/fhir/extensions/5.2.0/StructureDefinition-individual-genderIdentity.html">Individual 
 	Gender Identity</a> and <a href="https://hl7.org/fhir/extensions/5.2.0/StructureDefinition-individual-pronouns.html">
-	Individual Pronouns</a> are not-required in IPS, we recommend implementers consult with that guide in regards to their
-	use. In addition, <a href="https://hl7.org/xprod/ig/uv/gender-harmony/model.html#name-to-use-ntu">
-	Name to Use</a> may be represented by setting <code>Patient.name.use</code> to "usual" within this profile. 
+	Individual Pronouns</a> are not flagged as MustSupport in IPS, we recommend implementers consult with that 
+	guide in regards to their use. In addition, <a href="https://hl7.org/xprod/ig/uv/gender-harmony/model.html#name-to-use-ntu">
+	Name to Use</a> may be represented by setting <code>Patient.name.use</code> to "usual". 
 	</p>
 </div>
