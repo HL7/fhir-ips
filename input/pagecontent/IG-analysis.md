@@ -20,7 +20,7 @@ The scenario for cross-border exchange of a document is different than the direc
 
 #### Alignment to FHIR Clinical Documents
 
-This specification previously derived its IPS Composition from the [Clinical Document profile in FHIR](https://hl7.org/fhir/R4/clinicaldocument.html), which has since been deprecated. A new implementation guide ("FHIR Clinical Documents") is now available to replace this profile and assist with the alignment/transition between CDA and FHIR documents. Future version of the IPS Implemenation Guide may closely align with principles outlined in FHIR Clinical Documents guide and we recommend implementers review this guidance when implementing IPS.
+This specification previously derived its IPS Composition from the [Clinical Document profile in FHIR](https://hl7.org/fhir/R4/clinicaldocument.html), which has since been deprecated. A new implementation guide ([FHIR Clinical Documents](https://hl7.org/fhir/uv/fhir-clinical-document/)) is now available to replace this profile and assist with the alignment/transition between CDA and FHIR documents. Future version of the IPS Implemenation Guide may closely align with principles outlined in FHIR Clinical Documents guide and we recommend implementers review this guidance when implementing IPS.
 
 #### Alignment to HL7 Cross Paradigm Implementation Guide: Gender Harmony - Sex and Gender Representation
 
