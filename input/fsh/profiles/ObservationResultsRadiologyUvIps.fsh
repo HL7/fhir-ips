@@ -141,7 +141,7 @@ It allows also providing details about the related study using the partOf elemen
 * component[numericQuantityMeasurement].code ^binding.extension.valueString = "ObservationMeasurements"
 * component[numericQuantityMeasurement].code ^binding.description = "Codes identifying numeric measurements"
 * component[numericQuantityMeasurement].value[x] 1..
-* component[numericQuantityMeasurement].value[x] only QuantityIPS
+* component[numericQuantityMeasurement].value[x] only Quantity
 * component[numericRangeMeasurement] ^short = "Observation Measurement, including linear, area and volume range measurements"
 * component[numericRangeMeasurement].code only CodeableConceptIPS
 * component[numericRangeMeasurement].code from ResultsRadiologyMeasurementObservationUvIps (extensible)
@@ -149,7 +149,7 @@ It allows also providing details about the related study using the partOf elemen
 * component[numericRangeMeasurement].code ^binding.extension.valueString = "ObservationMeasurements"
 * component[numericRangeMeasurement].code ^binding.description = "Codes identifying numeric measurements"
 * component[numericRangeMeasurement].value[x] 1..
-* component[numericRangeMeasurement].value[x] only RangeIPS
+* component[numericRangeMeasurement].value[x] only Range
 * component[numericRatioMeasurement] ^short = "Observation Measurement, including linear, area and volume ratio measurements"
 * component[numericRatioMeasurement].code only CodeableConceptIPS
 * component[numericRatioMeasurement].code from ResultsRadiologyMeasurementObservationUvIps (extensible)
@@ -157,7 +157,7 @@ It allows also providing details about the related study using the partOf elemen
 * component[numericRatioMeasurement].code ^binding.extension.valueString = "ObservationMeasurements"
 * component[numericRatioMeasurement].code ^binding.description = "Codes identifying numeric measurements"
 * component[numericRatioMeasurement].value[x] 1..
-* component[numericRatioMeasurement].value[x] only RatioIPS
+* component[numericRatioMeasurement].value[x] only Ratio
 * component[numericSampledDataMeasurement] ^short = "Observation Measurement, including linear, area and volume sampled data measurements"
 * component[numericSampledDataMeasurement].code only CodeableConceptIPS
 * component[numericSampledDataMeasurement].code from ResultsRadiologyMeasurementObservationUvIps (extensible)

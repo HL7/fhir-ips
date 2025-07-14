@@ -41,6 +41,6 @@ Description: "This profile constrains the Observation resource to represent alco
 * effective[x] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * effective[x] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * effective[x] only dateTime
-* valueQuantity only QuantityIPS
+* valueQuantity only Quantity
 * component ..0
 * component ^mustSupport = false
