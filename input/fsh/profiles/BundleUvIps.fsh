@@ -33,11 +33,7 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry ^short = "Entry resource in the patient summary bundle"
 * entry ^definition = "An entry resource included in the patient summary document bundle resource."
 * entry ^comment = "Must contain the IPS Composition as the first entry (only a single Composition resource instance may be included) and a Patient resource.  Additional constraints are specified in the IPS Composition profile."
-* entry.fullUrl 1.. MS
-* entry.fullUrl ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:able-to-populate
-* entry.fullUrl ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Creator"
-* entry.fullUrl ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
-* entry.fullUrl ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* entry.fullUrl 1.. 
 * entry.search ..0
 * entry.request ..0
 * entry.response ..0
@@ -79,6 +75,8 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry[composition] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:able-to-populate
 * entry[composition] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Creator"
 * entry[composition] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
+* entry[composition] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* entry[composition] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * entry[composition] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * entry[patient].resource 1..
 * entry[patient].resource only PatientUvIps
