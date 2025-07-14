@@ -41,7 +41,7 @@ While this specification does not precisely define how downstream consumers shou
 
 ### Context of Patient Summaries
 
-The IPS defines a patient summary in the context of providing information to downstream providers. While profiled sections of the IPS may have content that reflects intentions or orders of clinical care, the IPS is meant as an informative document and is not intended to be directly actionable. For example, a MedicationRequest resource in the medications section or a CarePlan resource in the Plan of Care section, should not fulfilled or actioned from the IPS document.
+The IPS defines a patient summary in the context of providing information to downstream providers. While profiled sections of the IPS may have content that reflects intentions or orders of clinical care, the IPS is meant as an informative document and is not intended to be directly actionable or machine processable without clinical review. For example, a MedicationRequest resource in the medications section or a CarePlan resource in the Plan of Care section, should not fulfilled or actioned from the IPS document.
 
 ### Publishing or Accessing the IPS
 
