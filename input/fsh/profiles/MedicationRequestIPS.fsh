@@ -61,7 +61,7 @@ Description: "This profile represents the constraints applied to the MedicationR
 * dosageInstruction.timing ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * dosageInstruction.timing ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * dosageInstruction.timing ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
-* dosageInstruction.route only CodeableConceptIPS
+* dosageInstruction.route only CodeableConcept
 * dosageInstruction.route from $MedicationRouteCodes (preferred)
 * dosageInstruction.route ^binding.description = "SNOMED Route Terms"
 * dosageInstruction.route ^binding.extension[+].extension[0].url = "key"

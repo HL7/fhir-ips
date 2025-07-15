@@ -16,7 +16,7 @@ Description: "This profile constrains the DiagnosticReport resource to represent
 * status ^label = "Observation status codes except 'entered-in-error'"
 * status ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * status ^binding.extension[=].valueString = "ObservationStatus"
-* category only CodeableConceptIPS
+* category only CodeableConcept
 * code only CodeableConceptIPS
 * code MS
 * code ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:populate-if-known

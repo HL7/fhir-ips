@@ -55,7 +55,7 @@ Description: "This profile represents the constraints applied to the Procedure r
 * performer.actor only Reference(PatientUvIps or RelatedPerson or DeviceObserverUvIps or PractitionerUvIps or PractitionerRoleUvIps or OrganizationUvIps)
 * performer.actor only Reference(PatientUvIps or RelatedPerson or DeviceObserverUvIps or PractitionerUvIps or PractitionerRoleUvIps or OrganizationUvIps)
 * performer.onBehalfOf only Reference(OrganizationUvIps)
-* bodySite only CodeableConceptIPS
+* bodySite only CodeableConcept
 * bodySite from SNOMEDCTBodyStructures (preferred)
 * bodySite ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * bodySite ^binding.extension.valueString = "BodySite"

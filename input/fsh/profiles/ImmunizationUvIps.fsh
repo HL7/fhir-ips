@@ -74,11 +74,11 @@ It describes the event of a patient being administered a vaccination or a record
 * occurrenceDateTime ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * occurrenceDateTime ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * occurrenceDateTime ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
-* site only CodeableConceptIPS
+* site only CodeableConcept
 * site from SNOMEDCTBodyStructures (preferred)
 * site ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * site ^binding.extension[=].valueString = "SNOMEDCTBodyStructures"
-* route only CodeableConceptIPS
+* route only CodeableConcept
 * route from $MedicationRouteCodes (preferred)
 * route ^binding.description = "SNOMED Route Terms"
 * route ^binding.extension[+].extension[0].url = "key"

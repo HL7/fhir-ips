@@ -22,7 +22,7 @@ Description: "This profile represents the constraints applied to the Condition r
 * clinicalStatus ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * verificationStatus only CodeableConceptIPS
 * verificationStatus ^comment = "This element is labeled as a modifier because the status contains the code refuted and entered-in-error that mark the Condition as not currently valid."
-* category only CodeableConceptIPS
+* category only CodeableConcept
 * category MS
 * category from ProblemTypeUvIps (extensible)
 * category ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:populate-if-known
@@ -62,7 +62,7 @@ Description: "This profile represents the constraints applied to the Condition r
 * code from ProblemsUvIps (preferred)
 * code ^definition = "Identification of the condition, problem or diagnosis or recording of absent/unknown problems."
 * code ^binding.description = "Code for a clinical problem (or absent/unknown problem) that is selected from SNOMED CT"
-* bodySite only CodeableConceptIPS
+* bodySite only CodeableConcept
 * bodySite from SNOMEDCTBodyStructures (preferred)
 * bodySite ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * bodySite ^binding.extension[=].valueString = "BodySite"

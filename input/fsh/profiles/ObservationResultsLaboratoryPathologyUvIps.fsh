@@ -113,7 +113,7 @@ This observation may represent the result of a simple laboratory test such as he
 * valueCodeableConcept ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * valueCodeableConcept only CodeableConceptIPS
 * valueCodeableConcept from ResultsCodedValuesLaboratoryPathologyUvIps (preferred)
-* interpretation only CodeableConceptIPS
+* interpretation only CodeableConcept
 * specimen only Reference(SpecimenUvIps)
 * hasMember only Reference(ObservationResultsLaboratoryPathologyUvIps)
 * hasMember ^definition = "A reference to another Observation profiled by Observation-results-laboratory-pathology-uv-ips. The target observation (for instance an individual test member of a panel) is considered as a sub-observation of the current one, which plays the role of a grouper."

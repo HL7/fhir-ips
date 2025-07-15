@@ -41,7 +41,7 @@ Description: "This profile constrains the Observation resource to represent Toba
 * effective[x] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * effective[x] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * effective[x] only dateTime
-* valueCodeableConcept only CodeableConceptIPS
+* valueCodeableConcept only CodeableConcept
 * valueCodeableConcept from CurrentSmokingStatusUvIps (preferred)
 * component ..0
 * component ^mustSupport = false
