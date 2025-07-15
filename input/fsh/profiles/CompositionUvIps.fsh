@@ -93,8 +93,8 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
 * title ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * title ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * title ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
-* title ^short = "International Patient Summary"
-* title ^definition = "Official human-readable label for the composition.\r\n\r\nFor this document should be \"International Patient Summary\" or any equivalent translation"
+* title ^short = "The title of this patient summary. This may include information like the patient name and time generated"
+* title ^definition = "Official human-readable label for the composition.\r\n\r\nThis would typically include a label of \"International Patient Summary\" or any equivalent translation and other relevant document information"
 * attester MS
 * attester ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:populate-if-known
 * attester ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Creator"
