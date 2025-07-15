@@ -84,7 +84,15 @@ The pregnancy status and history is comprised of
 
 #### Patient Story
 
-The section contains narrative text along with optional resources that express what matters to a patient. This may include needs, strengths, values, concerns and preferences to others providing support and care. Any resource type may be used to support narrative.
+The section contains narrative text along with optional resources that express what matters to a patient. This may include needs, strengths, values, concerns and preferences to others providing support and care. Information in this section may include: 
+
+- My wellness and date
+- What are the most important things that I want to be known
+- Date of important elements
+- Important content to me
+- Important people to me
+
+Any resource type may be used to support narrative.
 
 #### Plan of Care
 
