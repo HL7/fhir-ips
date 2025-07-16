@@ -96,11 +96,13 @@ The solution proposed for the FHIR IPS IG is slightly different from that adopte
 
 ### Provenance
 
-While not profiled in this guide, [Provenance](https://hl7.org/fhir/R4/provenance.html) resources may be used throughout to add contextual information to any resource included in the document bundle. In addition, this guide follows these principles described in the [IPS CDA implementation guide](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=483), as follows:
+While not profiled in this guide, [Provenance](https://hl7.org/fhir/R4/provenance.html) resources may be used throughout to add contextual information to any resource included in the document bundle. In addition, this guide adopts and adapts these principles described in the [IPS CDA implementation guide](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=483), as follows:
 
 - The IPS document may be constructed by a human or an automated process, regardless of whether the IPS contains some content of both kinds. In all instances, document level authorship information is required.
 - The distinction between the two types of IPS, human-curated or software-assembled, is based on the authors recorded in the composition: the author shall be a human (e.g. Practitioner), if the IPS provenance type is "human-curated", or a device if the IPS provenance type is "software-assembled". In the case of a software-assembled IPS that is then verified by a human, the document provenance type shall be "software-assembled" and the author shall be the device or system that constructed the IPS document, but an additional attester identity shall name the human who performed this check.
 - Additional provenance information below the document level is optional. The current guide does not rely on any nationally defined Provenance profile.
+- Provenance can be used to emphasize patient generated health data from clinician authored data.
+- Provenance can be used to distinguish subsets of data in the IPS assembled from different sources. 
 
 ### Use of Persistent Identifiers in IPS
 
