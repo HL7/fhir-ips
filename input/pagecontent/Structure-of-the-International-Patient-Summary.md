@@ -73,7 +73,7 @@ The functional status section contains a narrative description of capability of 
 
 #### History of Past Problems
 
-The History of Past Illness section contains a description of the conditions the patient suffered in the past.
+The History of Past Problems section contains a description of the conditions the patient suffered in the past but are no longer tracked in the Problem List section of the IPS. 
 
 #### History of Pregnancy (status and history summary)
 
