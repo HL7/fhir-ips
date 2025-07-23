@@ -4,6 +4,28 @@ With the formal agreement signed on April 2017, HL7 International and CEN/TC 251
 
 Based on this agreement, the standards specification for the IPS has to be (a) implementable (b) applicable for global use (c) extensible and open to future use cases and solutions. The standards specification and their implementation must be moreover sustainable. 
 
+### Context and Usage of Patient Summaries
+
+The IPS defines a patient summary in the context of providing information to downstream providers. These summaries represent coherent snapshots of information for a given purpose at a given time. However its relevance and prevalence make it often considered for other use cases, which can lead to implementation challenges that are not aligned with the principles of IPS or clinical documents generally, mainly the fact that it is a subset of available information. The IPS workgroup is aware of possible caveats and intends to provide additional guidance in future versions.
+
+While profiled sections of the IPS may have content that reflects intentions or orders of clinical care, the IPS is meant as an informative document and is not intended to be directly actionable or machine processable without clinical review. For example, a MedicationRequest resource in the Medications section or a CarePlan resource in the Plan of Care section, should not be fulfilled or actioned from the IPS document.
+
+### Patient Safety in IPS Context
+
+Patient safety is foundational in healthcare and its importance is even more pronounced in the context of cross-border care information exchange. Understanding specific data elements from IPS profiles is critical to ensuring that clinicians have accurate, timely, and relevant information to make informed decisions. Ignoring or misinterpreting these elements can lead to adverse events.
+
+Elements throughout this IPS guide have [obligations for both Creators and Consumers](./Must-Support-and-Obligations.html) of IPS documents, many of which impact patient safety. Elements flagged with ["Is-modifier" (shown as ?!)](https://hl7.org/fhir/R4/conformance-rules.html#isModifier) or those with a SHALL:handle obligation cannot be safely ignored in patient summary sharing. Implementers that are developing IPS consuming functions, either viewers or services that use the information in the IPS need to pay careful attention to obligations and "Is-modifier" flags. Many IPS documents will not populate the elements, particularly in a testing context, but when these elements are populated, or have unusual values, it is important that the clinical facts they convey are understood. Experience gained from the IPS development process has demonstrated that they are easily missed.
+
+Here are some examples of clinical safety cases where ignoring data may introduce patient risk to downstream care
+
+- The IPS includes an allergy (AllergyIntolerance) where the reaction "severity" (an element with SHALL:handle obligations) is severe
+- The IPS includes an immunization (Immunization) where the "occurenceDateTime" (an element with SHALL:handle obligation) is so old that immunity is no longer conferred 
+- The IPS includes a problem (Condition) which the "verificationStatus" (an is-Modifier) is "refuted", meaning that the problem has been ruled out
+- The IPS includes a medication (MedicationRequest or MedicationStatus) where the "status" (an is-Modifier) is "stopped"
+- The IPS includes a lab result (Observation) where the "status" (an is-Modifier) is "preliminary", meaning this result may be incomplete or unverified
+
+While this specification does not precisely define how downstream consumers should manage these elements, it is often recommended these elements be available for human-review (often shown as an obligation of SHOULD:display). Of course, language translation and presentation of textual narrative also have implications for patient safety as described with the [Design Conventions](./Design-Conventions.html) of the guide. Ultimately, patient safety benefits from consistent, accurate, and context-aware handling of IPS documents — underscoring a need for creators and consumers to treat Is-modifier flags or obligations not as technical formalities, but as essential components of safe and effective clinical care.
+
 ### Structuring Terminology Choices
 
 The IPS is specified in this guide as a HL7 FHIR document (a `Bundle` including an IPS `Composition`), composed by a set of potentially reusable "minimal" data blocks (the IPS profiles). A HL7 CDA R2 representation is specified as well in a distinct Implementation Guide. The expressiveness of SNOMED CT and other primary terminologies from this guide enable the specification to represent information independent of the underlying syntax (CDA R2 or FHIR).
@@ -22,26 +44,6 @@ To support interoperability of IPS content between organizations that used diffe
 <br/>
 
 Other primary terminologies used in this specification are LOINC for observations (e.g., laboratory tests) and document sections, UCUM for units of measure, EDQM Standard Terms for dose forms and routes and ISO 3166 for countries [this ISO code system can be used for free in «lists» (e.g. value sets) or software]. Looking at the availability of other globally usable reference terminologies, in selected cases FHIR-defined terminologies are recommended.
-
-### Patient Safety in IPS Context
-
-Patient safety is foundational in healthcare and its importance is even more pronounced in the context of cross-border care information exchange. Understanding specific data elements from IPS profiles is critical to ensuring that clinicians have accurate, timely, and relevant information to make informed decisions. Ignoring or misinterpreting these elements can lead to adverse events.
-
-Elements throughout this IPS guide have [obligations for both Creators and Consumers](./Must-Support-and-Obligations.html) of IPS documents, many of which impact patient safety. Elements flagged with ["Is-modifier" (shown as ?!)](https://hl7.org/fhir/R4/conformance-rules.html#isModifier) or those with a SHALL:handle obligation cannot be safely ignored in patient summary sharing. Implementers that are developing IPS consuming functions, either viewers or services that use the information in the IPS need to pay careful attention to obligations and "Is-modifier" flags. Many IPS documents will not populate the elements, particularly in a testing context, but when these elements are populated, or have unusual values, it is important that the clinical facts they convey are understood. Experience gained from the IPS development process has demonstrated that they are easily missed.
-
-Here are some examples of clinical safety cases where ignoring data may introduce patient risk to downstream care
-
-- The IPS includes an allergy (AllergyIntolerance) where the reaction "severity" (an element with SHALL:handle obligations) is severe
-- The IPS includes an immunization (Immunization) where the "occurenceDateTime" (an element with SHALL:handle obligation) is so old that immunity is no longer conferred 
-- The IPS includes a problem (Condition) which the "verificationStatus" (an is-Modifier) is "refuted", meaning that the problem has been ruled out
-- The IPS includes a medication (MedicationRequest or MedicationStatus) where the "status" (an is-Modifier) is "stopped"
-- The IPS includes a lab result (Observation) where the "status" (an is-Modifier) is "preliminary", meaning this result may be incomplete or unverified
-
-While this specification does not precisely define how downstream consumers should manage these elements, it is often recommended these elements be available for human-review (often shown as an obligation of SHOULD:display). Of course, language translation and presentation of textual narrative also have implications for patient safety as described with the [Design Conventions](./Design-Conventions.html) of the guide. Ultimately, patient safety benefits from consistent, accurate, and context-aware handling of IPS documents — underscoring a need for creators and consumers to treat Is-modifier flags or obligations not as technical formalities, but as essential components of safe and effective clinical care.
-
-### Context of Patient Summaries
-
-The IPS defines a patient summary in the context of providing information to downstream providers. While profiled sections of the IPS may have content that reflects intentions or orders of clinical care, the IPS is meant as an informative document and is not intended to be directly actionable or machine processable without clinical review. For example, a MedicationRequest resource in the medications section or a CarePlan resource in the Plan of Care section, should not fulfilled or actioned from the IPS document.
 
 ### Publishing or Accessing the IPS
 
