@@ -1,0 +1,3 @@
+### IPS Server
+
+IPS Server is a FHIR server acting as an [IPS Creator](./ActorDefinition-Creator.html) providing conformant IPS documents. This production is in response to requests for documents and may include stored and/or generated on demand document content including historical and/or latest available information. While an IPS Server will fulfill all the obligations of an IPS Creator, not all IPS Creators need to meet the IPS Server obligations as defined in the [IPS Capability Statement](./CapabilityStatement-ips-server.html). 
