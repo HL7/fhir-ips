@@ -170,7 +170,7 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
 * section ^slicing.rules = #open
 * section ^short = "Sections composing the IPS"
 * section ^definition = "The root of the sections that make up the IPS composition."
-* section.extension contains $composition-section-note named section-note 0..1
+* section.extension contains $composition-section-note named section-note 0..*
 * section.extension[section-note] ^short = "Additional notes that apply to the section (but not to specific resource)."
 * section.extension[section-note] ^definition = "Additional notes that apply to the section (but not to specific resource)."
 * section.title 1..1 MS
