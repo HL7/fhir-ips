@@ -193,7 +193,7 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
     sectionAdvanceDirectives 0..1 MS and
     sectionAlerts 0..1 MS and
     sectionFunctionalStatus 0..1 MS and
-    sectionPastIllnessHx 0..1 MS and
+    sectionPastProblems 0..1 MS and
     sectionPregnancyHx 0..1 MS and
     sectionPatientStory 0..1 MS and
     sectionPlanOfCare 0..1 MS and
@@ -598,35 +598,35 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
     functionalAssessment 0..*
 * section[sectionFunctionalStatus].entry[disability] only Reference(ConditionUvIps)
 * section[sectionFunctionalStatus].entry[functionalAssessment] only Reference(ClinicalImpression)
-* section[sectionPastIllnessHx] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
-* section[sectionPastIllnessHx] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
-* section[sectionPastIllnessHx] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
-* section[sectionPastIllnessHx] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
-* section[sectionPastIllnessHx] ^short = "IPS History of Past Illness Section"
-* section[sectionPastIllnessHx] ^definition = "The History of Past Illness section contains a description of the conditions the patient suffered in the past."
-* section[sectionPastIllnessHx].title ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:populate
-* section[sectionPastIllnessHx].title ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Creator"
-* section[sectionPastIllnessHx].title ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
-* section[sectionPastIllnessHx].title ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
-* section[sectionPastIllnessHx].title ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
-* section[sectionPastIllnessHx].title ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
-* section[sectionPastIllnessHx].code 1..
-* section[sectionPastIllnessHx].code only CodeableConceptIPS
-* section[sectionPastIllnessHx].code = $loinc#11348-0
-* section[sectionPastIllnessHx].text ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:populate
-* section[sectionPastIllnessHx].text ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Creator"
-* section[sectionPastIllnessHx].text ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
-* section[sectionPastIllnessHx].text ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
-* section[sectionPastIllnessHx].text ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
-* section[sectionPastIllnessHx].text ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
-* section[sectionPastIllnessHx].entry only Reference(Condition or DocumentReference)
-* section[sectionPastIllnessHx].entry ^slicing.discriminator[0].type = #profile
-* section[sectionPastIllnessHx].entry ^slicing.discriminator[=].path = "resolve()"
-* section[sectionPastIllnessHx].entry ^slicing.rules = #open
-* section[sectionPastIllnessHx].entry ^short = "Conditions the patient suffered in the past."
-* section[sectionPastIllnessHx].entry ^definition = "It contains a description of the conditions the patient suffered in the past."
-* section[sectionPastIllnessHx].entry contains pastProblem 0..*
-* section[sectionPastIllnessHx].entry[pastProblem] only Reference(ConditionUvIps)
+* section[sectionPastProblems] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
+* section[sectionPastProblems] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* section[sectionPastProblems] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
+* section[sectionPastProblems] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* section[sectionPastProblems] ^short = "IPS History of Past Problems Section"
+* section[sectionPastProblems] ^definition = "The History of Past Problems section contains a description of the conditions the patient suffered in the past but no longer tracked in the Problem List."
+* section[sectionPastProblems].title ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:populate
+* section[sectionPastProblems].title ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Creator"
+* section[sectionPastProblems].title ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
+* section[sectionPastProblems].title ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* section[sectionPastProblems].title ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
+* section[sectionPastProblems].title ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* section[sectionPastProblems].code 1..
+* section[sectionPastProblems].code only CodeableConceptIPS
+* section[sectionPastProblems].code = $loinc#11348-0
+* section[sectionPastProblems].text ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:populate
+* section[sectionPastProblems].text ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Creator"
+* section[sectionPastProblems].text ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
+* section[sectionPastProblems].text ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* section[sectionPastProblems].text ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
+* section[sectionPastProblems].text ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* section[sectionPastProblems].entry only Reference(Condition or DocumentReference)
+* section[sectionPastProblems].entry ^slicing.discriminator[0].type = #profile
+* section[sectionPastProblems].entry ^slicing.discriminator[=].path = "resolve()"
+* section[sectionPastProblems].entry ^slicing.rules = #open
+* section[sectionPastProblems].entry ^short = "Conditions the patient suffered in the past."
+* section[sectionPastProblems].entry ^definition = "It contains a description of the conditions the patient suffered in the past."
+* section[sectionPastProblems].entry contains pastProblem 0..*
+* section[sectionPastProblems].entry[pastProblem] only Reference(ConditionUvIps)
 * section[sectionPregnancyHx] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * section[sectionPregnancyHx] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * section[sectionPregnancyHx] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
