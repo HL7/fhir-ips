@@ -14,6 +14,9 @@ Description: "This profile represents the constraints applied to the MedicationR
 * ^jurisdiction = $m49.htm#001
 * ^purpose = "This profile constrains the representation of a medication request related to the patient, in the context of the international patient summary as specified by the IPS project of HL7 International."
 * status ^comment = "In the scope of the IPS the entered-in-error concept is not allowed."
+* doNotPerform 0..1
+* doNotPerform = false
+* doNotPerform ^comment = "In the scope of the IPS MedicationRequest, the doNotPerform concept is not allowed to be set to true. Other sections may be used to convey medications that a patient should or will not take."
 * medication[x] only CodeableConcept or Reference(MedicationIPS)
 * medication[x] MS
 * medication[x] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:populate-if-known
