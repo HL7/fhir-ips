@@ -8,7 +8,7 @@ Based on this agreement, the standards specification for the IPS has to be (a) i
 
 The IPS defines a patient summary in the context of providing information to downstream providers. These summaries represent coherent snapshots of information for a given purpose at a given time. However its relevance and prevalence make it often considered for other use cases, which can lead to implementation challenges that are not aligned with the principles of IPS or clinical documents generally, mainly the fact that it is a subset of available information. The IPS workgroup is aware of possible caveats and intends to provide additional guidance in future versions.
 
-While profiled sections of the IPS may have content that reflects intentions or orders of clinical care, the IPS is meant as an informative document and is not intended to be directly actionable or machine processable without clinical review. For example, a MedicationRequest resource in the Medications section or a CarePlan resource in the Plan of Care section, should not be fulfilled or actioned from the IPS document.
+While profiled sections of the IPS may have content that reflects intentions or orders of clinical care, the IPS is meant as an informative document and is not intended to be directly actionable or machine processable as an order. For example, a MedicationRequest resource in the Medications section or a CarePlan resource in the Plan of Care section, should not be fulfilled or actioned from the IPS document.
 
 ### Patient Safety in IPS Context
 
