@@ -10,6 +10,8 @@ Resources may also be used to assert the known absence of data rather than using
 
 It is recommended that when a source system does not have information about a particular IPS section, that the emptyReason element for that section be populated with the appropriate code [generally 'unavailable' or 'notasked'](https://hl7.org/fhir/R4/valueset-list-empty-reason.html). However, if it is desired to use an explicit clinical statement to assert the absence of information, it is recommended that a resource be included in the relevant section using the SNOMED CT code ['1287211007'](https://browser.ihtsdotools.org/?perspective=full&conceptId1=1287211007) for "No information available".
 
+A system that can never produce data in a section marked with SHALL:populate Creator obligations (i.e. Allergies, Problems and Medications) can produce conformant instances of IPS documents even though they cannot meet all [Creator](./ActorDefinition-Creator.html) actor obligations.
+
 #### Optional Data Elements with Must Support/Obligations (cardinality of 0..1 or 0..\*)
 
 If an [Creator (IPS)](./ActorDefinition-Creator.html) does not have data to be included in the IPS, the data element is omitted.
