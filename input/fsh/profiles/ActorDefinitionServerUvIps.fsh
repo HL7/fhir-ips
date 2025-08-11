@@ -10,3 +10,5 @@ InstanceOf: ActorDefinition
 * description = "ActorDefinition Server (IPS)"
 * jurisdiction = $m49.htm#001
 * type = #system
+* capabilities = Canonical(ips-server)
+* derivedFrom = Canonical(Creator)
