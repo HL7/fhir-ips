@@ -50,9 +50,15 @@ Description: """This profile represents the constraints applied to the ImagingSt
 * procedureCode ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * procedureCode ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * procedureCode ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
-* procedureCode from ResultsRadiologyObservationUvIps (extensible)
-* procedureCode ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* procedureCode ^binding.extension.valueString = "ImagingProcedureCode"
+* procedureCode ^binding.extension[0].extension[0].url = "key"
+* procedureCode ^binding.extension[=].extension[=].valueId = results-radiology-observations-uv-ips
+* procedureCode ^binding.extension[=].extension[+].url = "purpose"
+* procedureCode ^binding.extension[=].extension[=].valueCode = #candidate
+* procedureCode ^binding.extension[=].extension[+].url = "valueSet"
+* procedureCode ^binding.extension[=].extension[=].valueCanonical = "http://hl7.org/fhir/uv/ips/ValueSet/results-radiology-observations-uv-ips"
+* procedureCode ^binding.extension[=].extension[+].url = "documentation"
+* procedureCode ^binding.extension[=].extension[=].valueMarkdown = "Radiology codes from LOINC."
+* procedureCode ^binding.extension[=].url = "http://hl7.org/fhir/tools/StructureDefinition/additional-binding"
 * reasonCode only CodeableConceptIPS
 * reasonCode MS
 * reasonCode ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:populate-if-known

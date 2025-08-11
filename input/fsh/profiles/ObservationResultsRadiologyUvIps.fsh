@@ -114,53 +114,16 @@ It allows also providing details about the related study using the partOf elemen
 * component ^requirements = "Required if not(exists(Observation.valueString))"
 * component ^min = 0
 * component contains
-    observationText 0..* and
     observationCode 0..* and
-    numericQuantityMeasurement 0..* and
-    numericRangeMeasurement 0..* and
-    numericRatioMeasurement 0..* and
-    numericSampledDataMeasurement 0..*
-* component[observationText] ^short = "Observation Text"
-* component[observationText].code only CodeableConcept
-* component[observationText].code from ResultsRadiologyTextualObservationUvIps (extensible)
-* component[observationText].code ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* component[observationText].code ^binding.extension.valueString = "ObservationCode"
-* component[observationText].value[x] 1..
-* component[observationText].value[x] only string
+    observationTextOrMeasurement 0..*
 * component[observationCode] ^short = "Observation Code"
 * component[observationCode].code only CodeableConcept
-* component[observationCode].code from ResultsRadiologyObservationUvIps (extensible)
+* component[observationCode].code from ResultsRadiologyObservationUvIps (preferred)
 * component[observationCode].value[x] 1..
 * component[observationCode].value[x] only CodeableConcept
-* component[numericQuantityMeasurement] ^short = "Observation Measurement, including linear, area and volume quantity measurements"
-* component[numericQuantityMeasurement].code only CodeableConcept
-* component[numericQuantityMeasurement].code from ResultsRadiologyMeasurementObservationUvIps (extensible)
-* component[numericQuantityMeasurement].code ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* component[numericQuantityMeasurement].code ^binding.extension.valueString = "ObservationMeasurements"
-* component[numericQuantityMeasurement].code ^binding.description = "Codes identifying numeric measurements"
-* component[numericQuantityMeasurement].value[x] 1..
-* component[numericQuantityMeasurement].value[x] only Quantity
-* component[numericRangeMeasurement] ^short = "Observation Measurement, including linear, area and volume range measurements"
-* component[numericRangeMeasurement].code only CodeableConcept
-* component[numericRangeMeasurement].code from ResultsRadiologyMeasurementObservationUvIps (extensible)
-* component[numericRangeMeasurement].code ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* component[numericRangeMeasurement].code ^binding.extension.valueString = "ObservationMeasurements"
-* component[numericRangeMeasurement].code ^binding.description = "Codes identifying numeric measurements"
-* component[numericRangeMeasurement].value[x] 1..
-* component[numericRangeMeasurement].value[x] only Range
-* component[numericRatioMeasurement] ^short = "Observation Measurement, including linear, area and volume ratio measurements"
-* component[numericRatioMeasurement].code only CodeableConcept
-* component[numericRatioMeasurement].code from ResultsRadiologyMeasurementObservationUvIps (extensible)
-* component[numericRatioMeasurement].code ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* component[numericRatioMeasurement].code ^binding.extension.valueString = "ObservationMeasurements"
-* component[numericRatioMeasurement].code ^binding.description = "Codes identifying numeric measurements"
-* component[numericRatioMeasurement].value[x] 1..
-* component[numericRatioMeasurement].value[x] only Ratio
-* component[numericSampledDataMeasurement] ^short = "Observation Measurement, including linear, area and volume sampled data measurements"
-* component[numericSampledDataMeasurement].code only CodeableConcept
-* component[numericSampledDataMeasurement].code from ResultsRadiologyMeasurementObservationUvIps (extensible)
-* component[numericSampledDataMeasurement].code ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
-* component[numericSampledDataMeasurement].code ^binding.extension.valueString = "ObservationMeasurements"
-* component[numericSampledDataMeasurement].code ^binding.description = "Codes identifying numeric measurements"
-* component[numericSampledDataMeasurement].value[x] 1..
-* component[numericSampledDataMeasurement].value[x] only SampledData
+* component[observationTextOrMeasurement] ^short = "Observation Text or Measurement Values"
+* component[observationTextOrMeasurement].code only CodeableConcept
+* component[observationTextOrMeasurement].code from ResultsRadiologyMeasurementTextObservationUvIps (preferred)
+* component[observationTextOrMeasurement].code ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
+* component[observationTextOrMeasurement].code ^binding.extension.valueString = "ObservationCode"
+* component[observationTextOrMeasurement].value[x] 1..
