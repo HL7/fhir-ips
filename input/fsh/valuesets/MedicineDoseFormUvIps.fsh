@@ -1,8 +1,10 @@
 ValueSet: MedicineDoseFormUvIps
 Id: medicine-doseform
-Title: "Medicine Doseform - IPS"
+Title: "Medicine EDQM Doseform - IPS"
 Description: """
-EDQM (European Directorate for the Quality of Medicines and Healthcare) Dose Form codes.  This Value Set includes all the EDQM Standard Terms having:  
+While SNOMED remains a preferred binding for medicine doseform, EDQM (European Directorate for the Quality of Medicines and Healthcare) doseform codes are allowed as additional binding. 
+
+This Value Set includes all the EDQM Standard Terms having:  
 [Concept Status] = ‘Current’ AND  
 [Concept Class] IN (‘PDF’, ‘CMT’, ‘CDF’, ‘PFT') AND  
 [Domain] = 'Human and Veterinary'  

@@ -12,14 +12,14 @@ Description: "This profile constrains the Specimen resource to represent the cha
 * ^jurisdiction = $m49.htm#001
 * ^purpose = "Minimal specimen attributes, usable for the laboratory results section and entry of a patient summary."
 * type 1..
-* type only CodeableConceptIPS
+* type only CodeableConcept
 * type from ResultsSpecimenTypeUvIps (preferred)
 * type ^binding.extension[+].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * type ^binding.extension[=].valueString = "SpecimenType"
 * subject only Reference(PatientUvIps)
 * subject.reference 1..
-* collection.method only CodeableConceptIPS
+* collection.method only CodeableConcept
 * collection.method from ResultsSpecimenCollectionMethodUvIps (preferred)
-* collection.bodySite only CodeableConceptIPS
+* collection.bodySite only CodeableConcept
 * collection.bodySite from BodySiteUvIps (preferred)
-* collection.fastingStatus[x] only CodeableConceptIPS or Duration
+* collection.fastingStatus[x] only CodeableConcept or Duration

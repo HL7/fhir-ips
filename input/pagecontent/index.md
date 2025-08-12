@@ -1,10 +1,11 @@
 An **International Patient Summary (IPS) document** is an electronic health record extract containing essential healthcare information about a subject of care.
-As specified in ISO 27269, it is designed for supporting the use case scenario for ‘unplanned, cross border care’, but it is not limited to it.
+As specified in [ISO 27269](https://www.iso.org/standard/79491.html), it is designed for supporting the use case scenario for ‘unplanned, cross border care’, but it is not limited to it.
+
 It is intended to be international, i.e., to provide generic solutions for global application beyond a particular region or country.
 
 The IPS dataset is **minimal and non-exhaustive; specialty-agnostic and condition-independent; but still clinically relevant**.
 
-The IPS document is composed by a set of robust, well-defined and potentially reusable sets of core data items (indicated as IPS library in the figure below). The tight focus of the IPS on unplanned care is in this case not a limitation, but, on the contrary, facilitates their potential re-use beyond the IPS scope.
+The IPS document is composed by a set of robust, well-defined and potentially reusable sets of core data items (indicated as IPS library in the figure below). The tight focus of the IPS on unplanned care is in this case not a limitation, but, on the contrary, facilitates its potential re-use beyond the IPS scope.
 
 {% include img.html img="IPS_doc_library.png" caption="Figure 1: The IPS product and by-products"
     width="70%" %}
@@ -12,7 +13,7 @@ The IPS document is composed by a set of robust, well-defined and potentially re
 ### Purpose
 
 The goal of this Implementation Guide is to specify how to represent in HL7 FHIR the International Patient Summary (IPS). An alternative representation as templated HL7 CDA R2 is also provided ( see the [hl7.org site](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=483) or the [ART DECOR](https://art-decor.org/art-decor/decor-project--hl7ips-) repository). 
-The initial focus of the International Patient Summary (IPS) was the unplanned care across national borders. This specification can be used and be useful also in local applications and be supportive of planned care. 
+The initial focus of the International Patient Summary (IPS) was the unplanned care across national borders. This specification can also be useful in local applications and supportive of planned care.
 
 
 ### Project Background
@@ -35,23 +36,9 @@ The following picture provides an overview of the current IPS content.
 
 ### Relationships with Other Projects and Guidelines
 
-Further details on the IPS project relationships with other projects and guidelines are available in the <a href="https://international-patient-summary.net/">IPS Website</a>.
+We anticipate that jurisdictions will profile based on the IPS Implementation Guide. Those guides should state if their profiles conform to IPS **OR** if any jurisdictional profile requirements conflict with the IPS. Differences in requirements should be described with resepect to document constraints and actor obligations. Jurisdictional adaptations of the IPS may introduce additional profile and conformance constraints (i.e. every document that conforms to the jurisdictional profile will inherently conform to IPS, but IPS documents from another region may not conform to that jurisdictional profile).
 
-### Ballot Status
-
-This Implementation Guide has been balloted as STU with the intention to go normative in a subsequent ballot cycle.
-
-### Dependencies
-
-{% include dependency-table.xhtml %}
-
-### Cross Version Analysis
-
-{% include cross-version-analysis.xhtml %}
-
-### Global Profiles
-
-{% include globals-table.xhtml %}
+Alignments of IPS to other FHIR guides are discuseed in the [Dependencies and Related Guides](./IG-analysis.html#dependencies-and-related-guides). Further details on the IPS project relationships with other projects and guidelines are available in the <a href="https://international-patient-summary.net/">IPS Website</a>.
 
 ### Authors and Contributors
 

@@ -18,71 +18,6 @@ One of the important and useful capabilities of FHIR profiling is [slicing](http
 
 Having this clear is important for correctly understanding the published profiles. For example, the optional section of [Social History](./StructureDefinition-Composition-uv-ips-definitions.html#Composition.section:sectionSocialHistory.entry) has open slicing on the entry element allowing for the use of the [IPS Tobacco Use profile](./StructureDefinition-Observation-tobaccouse-uv-ips.html), the [IPS Alcohol Use profile](./StructureDefinition-Observation-alcoholuse-uv-ips.html), or any other Observation or DocumentReference. Therefore, while specific IPS profiles are described in this guide, other profiles may also be included as well.
 
-### Obligations and Must Support
-
-In the context of IPS, Obligations defines how an Actor ([Producer (IPS)](./ActorDefinition-Producer.html) or [Consumer (IPS)](ActorDefinition-Consumer.html)) must “support” a given element. All Must Support elements in this publication are accompanied by an explicit obligation, which identifies structured expectations for a given actor. Obligations can be found in the formal view section of a resource as shown below for the IPS Procedure profile: 
-
-{% include img.html img="Obligations.png" caption="Figure 4: Example of Obligations in IPS Procedure Profile" width="100%" %}
-
-Obligations may be different between the Producer (IPS) and Consumer (IPS) of an IPS document and also may differ by profile and resource attributes. For all obligations, no data should be populated or processed in any way that conflicts with regional laws, regulations or policies. For additional context, see the [Security and Privacy Consideration](./Privacy-and-Security-Considerations.html) section of this implementation guide. 
-
-Because IPS is a standard which may be localized to different jurisdictions and regions, one goal of obligations is that they may be inherited. Realm-specific implementation guides may apply additional obligations and/or provide additional guidance on the definition of Must Support. However, they SHOULD identify and document these differences. For more information on obligations, see the [extension description](https://hl7.org/fhir/extensions/StructureDefinition-obligation.html) and to see all possible types of obligations it may be helpful to review the associated [obligations valueset](https://hl7.org/fhir/extensions/ValueSet-obligation.html) 
-
-### Empty Sections & Missing Data
-
-{:.no_toc}
-
-#### Empty & Known Absent Sections
-
-There are currently 16 sections defined in the IPS. All sections have 0..\* references in the [IPS Composition.section.entry](./StructureDefinition-Composition-uv-ips.html) element of the IPS, meaning that a section may be included without a reference to a structured resource. For required sections (allergies, problems and medications), Composition.section.emptyReason must be included in this circumstance. For non-required sections, document creators may alternatively choose to omit sections when no data is available. For all sections populated of an IPS document, Composition.section.text must still be populated to provide a human readable presentation of the information in the section. See [Narrative and Language Translation](#narrative-and-language-translation) for more on this design decision.
-
-Resources may also be used to assert the known absence of data rather than using the [IPS Composition.section.emptyReason](./StructureDefinition-Composition-uv-ips.html). To do so, it is recommended to use patterns established within FHIR generally to assert known absence. For example with an AllergyIntolerance, a [SNOMED CT code may be used to represent no known allergy](https://hl7.org/fhir/R4/allergyintolerance-nka.json.html). Prior versions of the IPS implementation guide had included a code system for no known data circumstances, although this terminology has been removed from the guide and is no longer recommended for use. The recommended SNOMED CT concepts for representing known absent data for specific profiles are included in the value sets that are bound for the "primary" element in the resource (typically the 'code' element).
-
-It is recommended that when a source system does not have information about a particular IPS section, that the emptyReason element for that section be populated with the appropriate code [generally 'unavailable' or 'notasked'](https://hl7.org/fhir/R4/valueset-list-empty-reason.html). However, if it is desired to use an explicit clinical statement to assert the absence of information, it is recommended that a resource be included in the relevant section using the SNOMED CT code ['1287211007'](https://browser.ihtsdotools.org/?perspective=full&conceptId1=1287211007) for "No information available".
-
-#### Optional Data Elements with Must Support/Obligations (cardinality of 0..1 or 0..\*)
-
-If an [Producer (IPS)](./ActorDefinition-Producer.html) does not have data to be included in the IPS, the data element is omitted.
-
-Note: an [Producer (IPS)](./ActorDefinition-Producer.html) may have no data to be included in the IPS either because there are no data, data are not allowed to be shared or because data available are not pertinent with the scope of the IPS.
-
-#### Required Data Elements with Must Support/Obligations (cardinality of 1..1 or 1..\*)
-
-If an [Producer (IPS)](./ActorDefinition-Producer.html) does not have data to be included in the IPS, the reason for the absence has to be specified as follows:
-
-1.  For _non-coded_ data elements, use the [Data Absent Reason Extension](http://hl7.org/fhir/R4/extension-data-absent-reason.html) in the data type.
-
-    Example: Patient resource where the birthDate is not known (note that since birthDate is a date primitive datatype the \_birthDate sibling property is used for the extension). Other required properties of Patient resource are omitted (shown by ...) in this simplified example.
-
-    ```
-    {
-      "resourceType" : "Patient",
-      ...
-      "_birthDate": {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-            "valueCode" : "unknown"
-          }
-        ]
-      },
-      ...
-    }
-    ```
-
-1.  For _coded_ data elements:
-    - _example_, _preferred_, or _extensible_ binding strengths (CodeableConcept datatypes):
-      - if the source systems has text but no coded data, only the text element is used.
-      - if there is neither text or codes representing actual (i.e non-exceptional) concepts:
-        - use the appropriate exceptional concept code from the value set if available
-        - use the appropriate concept code from the [Data Absent Reason Code System](http://hl7.org/fhir/R4/valueset-data-absent-reason.html) if the value set does not have it.
-    - _required_ binding strength (CodeableConcept or code datatypes):
-      - use the appropriate exceptional concept code from the value set
-
-### Alignment to FHIR Clinical Documents
-
-This specification previously derived its IPS Composition from the [Clinical Document profile in FHIR](https://hl7.org/fhir/R4/clinicaldocument.html), which has since been deprecated. A new implementation guide ("FHIR Clinical Documents") is currently being developed to replace this profile and assist with the alignment/transition between CDA and FHIR documents. Future version of the IPS Implemenation Guide may closely align with principles outlined in "FHIR Clinical Documents" guide and we recommend implementers review this guidance when implementing IPS.
-
 ### Narrative and Language Translation
 
 #### Rationale for Narrative Requirements in IPS
@@ -97,7 +32,7 @@ When an [IPS Composition](./StructureDefinition-Composition-uv-ips.html) is gene
 
 - While the IPS guide strongly encourages the encoding of patient information using FHIR resources and structured terminology whenever possible, some systems may not be able to encode or consume all relevant information for all patients. Having each section in an IPS document contain human-readable narrative ensures a consistent place where receiving systems will be able to display narrative information generated from the source system.
 
-- The functional requirement of supporting coded translations has been addressed in this guide extending the [coding data type](./StructureDefinition-Coding-uv-ips.html). In addition, the use of [SNOMED as a primary IPS terminology](./General-Principles.html#structuring-terminology-choices) facilitates translation capabilities based on coded data. For other details about the support of narrative translations, please refer to [Multi-Language support in FHIR](http://build.fhir.org/languages.html).
+- The functional requirement of supporting coded translations has been addressed in this guide extending the [CodeadbleConcept datatype](./StructureDefinition-CodeableConcept-uv-ips.html) and [Coding datatype](./StructureDefinition-Coding-uv-ips.html). In addition, the use of [SNOMED as a primary IPS terminology](./General-Principles.html#structuring-terminology-choices) facilitates translation capabilities based on coded data. For other details about the support of narrative translations, please refer to [Multi-Language support in FHIR](https://hl7.org/fhir/R4/narrative.html#lang).
 
 The rationale above provides context for why narrative is important in the context of IPS document exchange. Since human-readable content is required in the Composition resource, this IPS guide does not require narrative text for other resources included in an IPS document. If individual resources profiled in this guide are planned for use outside of a document context, implementers should refer to the base [FHIR Narrative guidance](https://hl7.org/FHIR/narrative.html) for perspective on when those resources should include human-readable text.
 
@@ -113,11 +48,31 @@ Granular requirements regarding what is considered clinically relevant for inclu
   </p>
 </blockquote>
 
-This specification does not dictate the conditions under which narrative is generated and acknowledges the wide range of implementing workflows and systems, some of which may use human manual intervention or automatic generation using resource content to generate the narrative or other means. While no constraints are implemented, early implementers have recommended that IPS documents not duplicate the content contained in `Composition.section.text` (which is required) in the `Composition.text`. This may lead to validation issues with duplicate ids and also excess document size. This recommendation currently aligns with forthcoming guidance in the "FHIR Clinical Documents" implementation guide.
+This specification does not dictate the conditions under which narrative is generated and acknowledges the wide range of implementing workflows and systems, some of which may use human manual intervention or automatic generation using resource content to generate the narrative or other means. While no constraints are implemented, early implementers have recommended that IPS documents not duplicate the content contained in `Composition.section.text` (which is required) in the `Composition.text`. This may lead to validation issues with duplicate ids and also excess document size. In addition, implementers may consider the following principles:  
+
+- Consumer friendly terms when available and appropriate
+- Consistent ordering of tables (and explanation of how ordered when appropriate)
+- Inclusion of multiple language narrative (with appropriate tags) when available and appropriate
+- Consider information currency in narrative and encourage renderers and viewers to display `meta.lastUpdated` when available and appropriate
+
+Additional perspective on the alignment of IPS to broader guidance around clinical documents in FHIR are included in the [Alignment to FHIR Clinical Documents](./IG-analysis.html#alignment-to-fhir-clinical-documents) section. 
+
+#### Linking Narrative to Discrete FHIR Resources
+
+Since the IPS Composition requires each section to have human-readable narrative text as XHTML, we encourage implementers to reference individual discrete entries in the XHTML using the id attribute and an accompanying ["textLink"](https://build.fhir.org/ig/HL7/fhir-extensions/StructureDefinition-textLink.html) extension that links this id to the resource. This practice provides value when text from IPS documents becomes translated from the originating system language and also in debugging the presented form of a clinical document from its structured content. Linking narrative content is well established in CDA documents and provides value in other FHIR clinical documents as well.  
+
+The following illustrative example shows how this could be accomplished within an IPS Composition.section. Note that id attributes within the XHTML example below share the same id of the structured resources for the following example but can be unique when needed. To see a full example with all required elements and structured data, refer to examples included in this guide:
+
+{% include img.html img="textLink.png" caption="Figure 4: Example of Using textLink extension" width="100%" %}
+
+<blockquote class="stu-note">
+	<p>The extension registry that includes the <a href="https://build.fhir.org/ig/HL7/fhir-extensions/StructureDefinition-textLink.html">textLink</a> extension shown above has not been officially published as of the current IPS publication. Implementations can proactively adhere to the resolution of JIRA ticket <a href="https://jira.hl7.org/browse/FHIR-43316">FHIR-43316</a> , and a reference to the published textLink extension will be incorporated into the next version of this IG.
+  </p>
+</blockquote>
 
 ### Representation of Person Names
 
-This specification requires that any Person Name is represented including at least the given and family components. Even though it is recognized that there is not in all cultures the same concept of “family name”, no evidence has been collected in analyzing the international context (e.g., Japan, Korea, China) that justifies the retirement of this requirement. Moreover, due to the global scope of the International Patient Summary, the case of non-alphabetic representations of the names has also been considered. In this case, to facilitate the global use of the IPS, at least one alphabetic representation of the name SHALL be provided.
+This specification requires that any Person Name is represented including at least one of the following components: given, family or text. Even though it is recognized that there is not in all cultures the same concept of "family name", when the name of a person is provided, that name SHOULD be provided as a list of parts (such as given, family, prefix and suffix) when possible. 
 
 ### Relationship to Gender Harmony
 
@@ -141,8 +96,14 @@ The solution proposed for the FHIR IPS IG is slightly different from that adopte
 
 ### Provenance
 
-While not profiled in this guide, [Provenance](https://hl7.org/fhir/R4/provenance.html) resources may be used throughout to add contextual information to any resource included in the document bundle. In addition, this guide follows these principles described in the [IPS CDA implementation guide](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=483), as follows:
+While not profiled in this guide, [Provenance](https://hl7.org/fhir/R4/provenance.html) resources may be used throughout to add contextual information to any resource included in the document bundle. In addition, this guide adopts and adapts these principles described in the [IPS CDA implementation guide](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=483), as follows:
 
 - The IPS document may be constructed by a human or an automated process, regardless of whether the IPS contains some content of both kinds. In all instances, document level authorship information is required.
 - The distinction between the two types of IPS, human-curated or software-assembled, is based on the authors recorded in the composition: the author shall be a human (e.g. Practitioner), if the IPS provenance type is "human-curated", or a device if the IPS provenance type is "software-assembled". In the case of a software-assembled IPS that is then verified by a human, the document provenance type shall be "software-assembled" and the author shall be the device or system that constructed the IPS document, but an additional attester identity shall name the human who performed this check.
 - Additional provenance information below the document level is optional. The current guide does not rely on any nationally defined Provenance profile.
+- Provenance can be used to emphasize patient generated health data from clinician authored data.
+- Provenance can be used to distinguish subsets of data in the IPS assembled from different sources. 
+
+### Use of Persistent Identifiers in IPS
+
+Business identifiers on resource instances are encouraged in IPS to aid with consumers being able to reconcile and deduplicate information.

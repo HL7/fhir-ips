@@ -27,6 +27,8 @@ menu:
   General Principles and Design:
     General Principles: General-Principles.html
     Design Conventions: Design-Conventions.html
+    Must Support and Obligations: Must-Support-and-Obligations.html
+    Empty Sections & Missing Data: Empty-Sections-and-Missing-Data.html
     Generation and Data Inclusion: Generation-and-Data-Inclusion.html
     Privacy and Security Considerations: Privacy-and-Security-Considerations.html
     Known Issues and Future Development: Known-Issues-and-Future-Development.html
@@ -34,13 +36,16 @@ menu:
   FHIR Artifacts:
     IPS Composition: StructureDefinition-Composition-uv-ips.html
     IPS Library (Profiles): profiles.html
+    Actors: actors.html
     Datatypes: Data-Types-Defined-in-this-Guide.html
     Terminology: terminology.html
     Operations: OperationDefinition-summary.html
     Examples: examples.html
     CapabilityStatement: CapabilityStatement-ips-server.html
-  Downloads: downloads.html
-  Copyrights: copyrights.html
+  Support:
+    About: IG-analysis.html
+    Downloads: downloads.html
+    Copyrights: copyrights.html
   Change Log: changes.html
 resources:
   Bundle/IPS-examples-Bundle-01:
@@ -98,6 +103,10 @@ resources:
   Procedure/eumfh-39-07-1:
     name: 'Procedure: Surgical procedure'
     description: 'Procedure: Surgical procedure'
+    exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips
+  Procedure/procedure-missing-performed:
+    name: 'Procedure: Missing Data'
+    description: 'Procedure: Missing Data'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Procedure-uv-ips
   Practitioner/eumfh-39-07:
     name: 'Practitioner example'
@@ -199,6 +208,10 @@ resources:
     name: 'Observation: estrogen receptor in tissue example'
     description: 'Observation: estrogen receptor in tissue example'
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-pathology-uv-ips
+  Observation/pathology-suppressed-data:
+    name: 'Observation: pathology suppressed example'
+    description: 'Observation: pathology suppressed example'
+    exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Observation-results-laboratory-pathology-uv-ips  
   DiagnosticReport/hemoglobin:
     name: 'DiagnosticReport - Hemoglobin'
     description: 'DiagnosticReport - Hemoglobin'
@@ -209,5 +222,7 @@ resources:
     exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Flag-alert-uv-ips
   ActorDefinition/Consumer:
     exampleBoolean: false
-  ActorDefinition/Producer:
+  ActorDefinition/Creator:
+    exampleBoolean: false
+  ActorDefinition/Server:
     exampleBoolean: false

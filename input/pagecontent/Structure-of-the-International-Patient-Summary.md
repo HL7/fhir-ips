@@ -10,7 +10,7 @@ The IPS problem section lists and describes clinical problems or conditions curr
 
 #### Allergies and Intolerances
 
-This section documents the relevant allergies or intolerances (conditions) for a patient, describing the kind of reaction (e.g. rash, anaphylaxis,..); preferably the agents that cause it; and optionally the criticality and the certainty of the allergy.
+This section documents the relevant allergies or intolerances for a patient, describing the kind of reaction (e.g. rash, anaphylaxis,..); preferably the agents that cause it; and optionally the criticality and the certainty of the allergy.
 
 At a minimum, it should list currently active and any relevant historical allergies and adverse reactions. If no information about allergies is available, or if no allergies are known this should be documented in the section through the use of emptyReason (at Composition.section) or a referenced resource (at Composition.section.entry).
 
@@ -73,7 +73,7 @@ The functional status section contains a narrative description of capability of 
 
 #### History of Past Problems
 
-The History of Past Illness section contains a description of the conditions the patient suffered in the past.
+The History of Past Problems section contains a description of the conditions the patient suffered in the past but are no longer tracked in the Problem List section of the IPS. 
 
 #### History of Pregnancy (status and history summary)
 
@@ -84,7 +84,15 @@ The pregnancy status and history is comprised of
 
 #### Patient Story
 
-The section contains narrative text along with optional resources that express what matters to a patient. This may include needs, strengths, values, concerns and preferences to others providing support and care. Any resource type may be used to support narrative.
+The section contains narrative text along with optional resources that express what matters to a patient. This may include needs, strengths, values, concerns and preferences to others providing support and care. Information in this section may include: 
+
+- My wellness and date
+- What are the most important things that I want to be known
+- Date of important elements
+- Important content to me
+- Important people to me
+
+Any resource type may be used to support narrative.
 
 #### Plan of Care
 

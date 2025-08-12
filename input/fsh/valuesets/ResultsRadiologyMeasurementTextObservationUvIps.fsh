@@ -1,7 +1,7 @@
-ValueSet: ResultsRadiologyMeasurementObservationUvIps
+ValueSet: ResultsRadiologyMeasurementTextObservationUvIps
 Id: results-radiology-numobs-uv-ips
 Title: "Results Radiology Measurement Observation - IPS"
-Description: "Extensible value set including SNOMED CT and DICOM concepts for Linear, Area and Volume Measurements"
+Description: "Extensible value set including SNOMED CT, LOINC and DICOM concepts for textual reports as well as linear, area and Volume Measurements"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^status = #active
 * ^experimental = false
@@ -11,6 +11,17 @@ Description: "Extensible value set including SNOMED CT and DICOM concepts for Li
 * ^jurisdiction = $m49.htm#001
 * ^immutable = false
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
+* $DCM#121065 "Procedure Description"
+* $DCM#121069 "Previous Finding"
+* $DCM#121071 "Finding"
+* $DCM#121073 "Impression"
+* $DCM#121075 "Recommendation"
+* $DCM#121077 "Conclusion"
+* $DCM#121110 "Patient Presentation"
+* $DCM#121111 "Summary"
+* LOINC#11329-0 "History"
+* LOINC#55115-0 "Request"
+* SNOMED_CT#116224001 "Complication of Procedure"
 * $DCM#121207 "Height"
 * $DCM#121211 "Path length"
 * $DCM#121206 "Distance"

@@ -15,21 +15,16 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * . ^definition = "International Patient Summary Bundle. \r\nA container for a collection of resources in the patient summary document."
 * identifier 1.. MS
 * identifier ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:able-to-populate
-* identifier ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* identifier ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Creator"
 * identifier ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
 * identifier ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 
 * type = #document (exactly)
 * timestamp 1.. MS
 * timestamp ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:able-to-populate
-* timestamp ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
+* timestamp ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Creator"
 * timestamp ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
 * timestamp ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
-* entry MS
-* entry ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:able-to-populate
-* entry ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
-* entry ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
-* entry ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * entry ^slicing.discriminator[0].type = #type
 * entry ^slicing.discriminator[=].path = "resource"
 * entry ^slicing.discriminator[+].type = #profile
@@ -38,11 +33,7 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry ^short = "Entry resource in the patient summary bundle"
 * entry ^definition = "An entry resource included in the patient summary document bundle resource."
 * entry ^comment = "Must contain the IPS Composition as the first entry (only a single Composition resource instance may be included) and a Patient resource.  Additional constraints are specified in the IPS Composition profile."
-* entry.fullUrl 1.. MS
-* entry.fullUrl ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:able-to-populate
-* entry.fullUrl ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Producer"
-* entry.fullUrl ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
-* entry.fullUrl ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* entry.fullUrl 1.. 
 * entry.search ..0
 * entry.request ..0
 * entry.response ..0
@@ -50,19 +41,24 @@ Description: "This profile represents the constraints applied to the Bundle reso
     composition 1..1 and
     patient 1..1 and
     allergyintolerance 0..* and
+    careplan 0..* and
+    clinicalimpression 0..* and
     condition 0..* and
+    consent 0..* and
     device 0..* and
     deviceusestatement 0..* and
     diagnosticreport 0..* and
+    documentreference 0..* and
+    flag 0..* and
     imagingstudy 0..* and
     immunization 0..* and
+    immunizationrecommendation 0..* and 
     medication 0..* and
     medicationrequest 0..* and
     medicationstatement 0..* and
     practitioner 0..* and
     practitionerrole 0..* and
     procedure 0..* and
-    organization 0..* and
     observation-pregnancy-edd 0..* and
     observation-pregnancy-outcome 0..* and
     observation-pregnancy-status 0..* and
@@ -71,30 +67,45 @@ Description: "This profile represents the constraints applied to the Bundle reso
     observation-results-laboratory-pathology 0..* and
     observation-results-radiology 0..* and
     observation-vital-signs 0..* and
-    specimen 0..* and
-    flag 0..* and
-    clinicalimpression 0..* and
-    careplan 0..* and
-    consent 0..* and
-    documentreference 0..*
+    organization 0..* and
+    specimen 0..* 
 * entry[composition].resource 1..
 * entry[composition].resource only CompositionUvIps
+* entry[composition] MS
+* entry[composition] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:able-to-populate
+* entry[composition] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Creator"
+* entry[composition] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:handle
+* entry[composition] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
+* entry[composition] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
+* entry[composition] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * entry[patient].resource 1..
 * entry[patient].resource only PatientUvIps
 * entry[allergyintolerance].resource 1..
 * entry[allergyintolerance].resource only AllergyIntoleranceUvIps
+* entry[careplan].resource 1..
+* entry[careplan].resource only CarePlan
+* entry[clinicalimpression].resource 1..
+* entry[clinicalimpression].resource only ClinicalImpression
 * entry[condition].resource 1..
 * entry[condition].resource only ConditionUvIps
+* entry[consent].resource 1..
+* entry[consent].resource only Consent
 * entry[device].resource 1..
 * entry[device].resource only Device
 * entry[deviceusestatement].resource 1..
 * entry[deviceusestatement].resource only DeviceUseStatementUvIps
 * entry[diagnosticreport].resource 1..
 * entry[diagnosticreport].resource only DiagnosticReportUvIps
+* entry[documentreference].resource 1..
+* entry[documentreference].resource only DocumentReference
+* entry[flag].resource 1..
+* entry[flag].resource only FlagAlertUvIps
 * entry[imagingstudy].resource 1..
 * entry[imagingstudy].resource only ImagingStudyUvIps
 * entry[immunization].resource 1..
 * entry[immunization].resource only ImmunizationUvIps
+* entry[immunizationrecommendation].resource 1..
+* entry[immunizationrecommendation].resource only ImmunizationRecommendation
 * entry[medication].resource 1..
 * entry[medication].resource only MedicationIPS
 * entry[medicationrequest].resource 1..
@@ -127,13 +138,3 @@ Description: "This profile represents the constraints applied to the Bundle reso
 * entry[observation-vital-signs].resource only $vital-signs-profile
 * entry[specimen].resource 1..
 * entry[specimen].resource only SpecimenUvIps
-* entry[flag].resource 1..
-* entry[flag].resource only FlagAlertUvIps
-* entry[clinicalimpression].resource 1..
-* entry[clinicalimpression].resource only ClinicalImpression
-* entry[careplan].resource 1..
-* entry[careplan].resource only CarePlan
-* entry[consent].resource 1..
-* entry[consent].resource only Consent
-* entry[documentreference].resource 1..
-* entry[documentreference].resource only DocumentReference

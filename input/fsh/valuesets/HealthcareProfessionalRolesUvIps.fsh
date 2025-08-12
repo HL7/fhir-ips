@@ -15,3 +15,6 @@ Description: "IPS Healthcare Professional Roles"
 * ^immutable = false
 * ^copyright = "This artifact includes content from International Standard Classification of Occupations (ISCO). ISCO is copyright International Labour Organization (ILO). Terms & Conditions in http://www.ilo.org/global/copyright/lang--en/index.htm"
 * include codes from system urn:oid:2.16.840.1.113883.2.9.6.2.7
+    where concept descendent-of #22 "Health Professionals"
+* include codes from system urn:oid:2.16.840.1.113883.2.9.6.2.7
+    where concept descendent-of #32 "Health Associate Professionals"
