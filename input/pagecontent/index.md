@@ -36,7 +36,7 @@ The following picture provides an overview of the current IPS content.
 
 ### Relationships with Other Projects and Guidelines
 
-We anticipate that jurisdictions will profile based on the IPS Implementation Guide. Those guides should state if their profiles conform to IPS **OR** if any jurisdictional profile requirements conflict with the IPS. Differences in requirements should be described with resepect to document constraints and actor obligations. Jurisdictional adaptations of the IPS may introduce additional profile and conformance constraints (i.e. every document that conforms to the jurisdictional profile will inherently conform to IPS, but IPS documents from another region may not conform to that jurisdictional profile).
+We anticipate that jurisdictions will profile based on the IPS Implementation Guide. Those guides should state if their profiles conform to IPS **OR** if any jurisdictional profile requirements conflict with the IPS. Differences in requirements should be described with respect to document constraints and actor obligations. Jurisdictional adaptations of the IPS may introduce additional profile and conformance constraints (i.e. every document that conforms to the jurisdictional profile will inherently conform to IPS, but IPS documents from another region may not conform to that jurisdictional profile).
 
 Alignments of IPS to other FHIR guides are discuseed in the [Dependencies and Related Guides](./IG-analysis.html#dependencies-and-related-guides). Further details on the IPS project relationships with other projects and guidelines are available in the <a href="https://international-patient-summary.net/">IPS Website</a>.
 
