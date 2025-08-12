@@ -1,7 +1,7 @@
-ValueSet: ResultsRadiologyMeasurementTextObservationUvIps
-Id: results-radiology-numobs-uv-ips
-Title: "Results Radiology Measurement Observation - IPS"
-Description: "Extensible value set including SNOMED CT, LOINC and DICOM concepts for textual reports as well as linear, area and Volume Measurements"
+ValueSet: ResultsRadiologyComponentUvIps
+Id: results-radiology-component-uv-ips
+Title: "Results Radiology Component - IPS"
+Description: "Value set including SNOMED CT, LOINC and DICOM concepts for textual reports, measurements, and other radiology components"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^status = #active
 * ^experimental = false
@@ -10,7 +10,11 @@ Description: "Extensible value set including SNOMED CT, LOINC and DICOM concepts
 * ^contact.telecom.value = "http://www.hl7.org/Special/committees/patientcare"
 * ^jurisdiction = $m49.htm#001
 * ^immutable = false
-* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
+* ^copyright = "\n- This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement.\n- This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
+
+* include codes from valueset ResultsRadiologyObservationUvIps
+
+// textual reports
 * $DCM#121065 "Procedure Description"
 * $DCM#121069 "Previous Finding"
 * $DCM#121071 "Finding"
@@ -22,6 +26,8 @@ Description: "Extensible value set including SNOMED CT, LOINC and DICOM concepts
 * LOINC#11329-0 "History"
 * LOINC#55115-0 "Request"
 * SNOMED_CT#116224001 "Complication of Procedure"
+
+// measurements
 * $DCM#121207 "Height"
 * $DCM#121211 "Path length"
 * $DCM#121206 "Distance"
