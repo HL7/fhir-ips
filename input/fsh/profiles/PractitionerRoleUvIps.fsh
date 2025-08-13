@@ -19,7 +19,7 @@ Description: "This profile constrains the PractitionerRole resource to represent
 * organization ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * organization ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * organization ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
-* code only CodeableConceptIPS
+* code only CodeableConcept
 * code from HealthcareProfessionalRolesUvIps (preferred)
 * code ^definition = "Roles which this practitioner is authorized to perform for the organization."
 * code ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"

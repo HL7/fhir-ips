@@ -20,7 +20,7 @@ Description: "This profile represents the constraints applied to the Condition r
 * clinicalStatus ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * clinicalStatus ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * clinicalStatus ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
-* verificationStatus only CodeableConceptIPS
+* verificationStatus only CodeableConcept
 * verificationStatus ^comment = "This element is labeled as a modifier because the status contains the code refuted and entered-in-error that mark the Condition as not currently valid."
 * category only CodeableConcept
 * category MS
