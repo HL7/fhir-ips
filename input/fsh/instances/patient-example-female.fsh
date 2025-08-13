@@ -1,5 +1,5 @@
 Instance: patient-example-female
-InstanceOf: Patient
+InstanceOf: Patient-uv-ips
 Title: "Patient - Female Martha DeLarosa"
 Description: "Patient - Female Martha DeLarosa"
 Usage: #example

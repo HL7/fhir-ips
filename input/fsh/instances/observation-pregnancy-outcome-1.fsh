@@ -1,5 +1,5 @@
 Instance: pregnancy-outcome-example
-InstanceOf: Observation
+InstanceOf: Observation-pregnancy-outcome-uv-ips
 Title: "Observation - Pregnancy Outcome"
 Description: "Observation - Pregnancy Outcome"
 Usage: #example

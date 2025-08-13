@@ -1,5 +1,5 @@
 Instance: specimen-example-1
-InstanceOf: Specimen
+InstanceOf: Specimen-uv-ips
 Title: "Specimen: example"
 Description: "Specimen: example"
 Usage: #example

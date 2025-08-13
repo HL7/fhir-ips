@@ -1,5 +1,5 @@
 Instance: pregnancy-edd-example
-InstanceOf: Observation
+InstanceOf: Observation-pregnancy-edd-uv-ips
 Title: "Observation - Pregnancy Expected Delivery Date (EDD)"
 Description: "Observation - Pregnancy Expected Delivery Date (EDD)"
 Usage: #example

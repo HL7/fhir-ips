@@ -1,5 +1,5 @@
 Instance: bundle-no-info-required-sections
-InstanceOf: Bundle
+InstanceOf: Bundle-uv-ips
 Title: "Bundle - No Information in Required Sections"
 Description: "Bundle - No Information in Required Sections"
 Usage: #example

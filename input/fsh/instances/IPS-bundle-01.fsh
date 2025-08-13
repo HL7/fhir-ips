@@ -1,5 +1,5 @@
 Instance: IPS-examples-Bundle-01
-InstanceOf: Bundle
+InstanceOf: Bundle-uv-ips
 Title: "Bundle - IPS with Data"
 Description: "Bundle - IPS with Data"
 Usage: #example

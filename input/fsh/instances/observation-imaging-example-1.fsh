@@ -1,11 +1,11 @@
 Instance: ips-example-imaging-1-of-Observation
-InstanceOf: Observation
+InstanceOf: Observation-results-radiology-uv-ips
 Title: "Observation - Result Imaging CT Abdomen with Contrast IV"
 Description: "Observation - Result Imaging CT Abdomen with Contrast IV"
 Usage: #example
 * id = "ips-example-imaging-1"
 * status = #final
-* category = $observation-category#imaging "Imaging"
+* category[radiology] = $observation-category#imaging "Imaging"
 * code = $loinc#79103-8 "CT Abdomen W contrast IV"
 * code.text = "Upper abdomen with the administration of oral and intravenous contrast (example-4)"
 * subject = Reference(Patient/eumfh-39-07)

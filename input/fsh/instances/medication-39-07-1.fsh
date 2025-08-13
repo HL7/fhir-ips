@@ -1,5 +1,5 @@
 Instance: eumfh-39-07-1-of-Medication
-InstanceOf: Medication
+InstanceOf: Medication-uv-ips
 Title: "Medication - Simvastatin 40 MG Disintegrating Oral Tablet"
 Description: "Medication - Simvastatin 40 MG Disintegrating Oral Tablet"
 Usage: #example

@@ -1,11 +1,11 @@
 Instance: ips-example-imaging-5
-InstanceOf: Observation
+InstanceOf: Observation-results-radiology-uv-ips
 Title: "Observation - Result Imaging Chest X-ray - PA and Aateral, with Additional Sub-observation Including Numeric Range"
 Description: "Observation - Result Imaging Chest X-ray - PA and Aateral, with Additional Sub-observation Including Numeric Range"
 Usage: #example
 * partOf = Reference(TII-ImagingStudy-5-1)
 * status = #final
-* category = $observation-category#imaging "Imaging"
+* category[radiology] = $observation-category#imaging "Imaging"
 * code = $loinc#42272-5 "XR Chest PA and Lateral"
 * code.text = "Chest X-ray - PA and lateral"
 * subject = Reference(Patient/eumfh-39-07)

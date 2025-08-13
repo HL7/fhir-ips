@@ -1,5 +1,5 @@
 Instance: 546482
-InstanceOf: Flag
+InstanceOf: Flag-alert-uv-ips
 Title: "Flag - Alert of Patient Immunocompromised"
 Description: "Flag - Alert of Patient Immunocompromised"
 Usage: #example

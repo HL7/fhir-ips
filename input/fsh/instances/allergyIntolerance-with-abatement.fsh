@@ -1,5 +1,5 @@
 Instance: allergyintolerance-with-abatement
-InstanceOf: AllergyIntolerance
+InstanceOf: AllergyIntolerance-uv-ips
 Title: "AllergyIntolerance - Resolved Allergy"
 Description: "AllergyIntolerance - Resolved Allergy"
 Usage: #example

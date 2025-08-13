@@ -1,5 +1,5 @@
 Instance: bundle-minimal
-InstanceOf: Bundle
+InstanceOf: Bundle-uv-ips
 Title: "Bundle - Minimal Complete IPS"
 Description: "Bundle - Minimal Complete IPS"
 Usage: #example

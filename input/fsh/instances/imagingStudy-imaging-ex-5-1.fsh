@@ -1,5 +1,5 @@
 Instance: TII-ImagingStudy-5-1
-InstanceOf: ImagingStudy
+InstanceOf: ImagingStudy-uv-ips
 Title: "ImagingStudy - Referred DICOM Study"
 Description: "ImagingStudy - Referred DICOM Study"
 Usage: #example

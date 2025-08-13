@@ -1,5 +1,5 @@
 Instance: simple-pr
-InstanceOf: PractitionerRole
+InstanceOf: PractitionerRole-uv-ips
 Title: "PractitionerRole - Minimal"
 Description: "PractitionerRole - Minimal"
 Usage: #example

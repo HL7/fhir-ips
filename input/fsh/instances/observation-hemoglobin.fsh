@@ -1,11 +1,11 @@
 Instance: hemoglobin-of-Observation
-InstanceOf: Observation
+InstanceOf: Observation-results-laboratory-pathology-uv-ips
 Title: "Observation - Result Hemoglobin"
 Description: "Observation - Result Hemoglobin"
 Usage: #example
 * id = "hemoglobin"
 * status = #final
-* category = $observation-category#laboratory
+* category[laboratory] = $observation-category#laboratory
 * code = $loinc#17856-6 "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC"
 * subject = Reference(Patient/eumfh-39-07)
 * effectiveDateTime = "2017-11-10T08:20:00+01:00"

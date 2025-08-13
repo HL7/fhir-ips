@@ -1,5 +1,5 @@
 Instance: alcohol-use-example
-InstanceOf: Observation
+InstanceOf: Observation-alcoholuse-uv-ips
 Title: "Observation - Social History Alcohol Use"
 Description: "Observation - Social History Alcohol Use"
 Usage: #example

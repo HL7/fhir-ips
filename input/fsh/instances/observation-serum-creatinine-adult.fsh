@@ -1,10 +1,10 @@
 Instance: serum-creatinine-adult
-InstanceOf: Observation
+InstanceOf: Observation-results-laboratory-pathology-uv-ips
 Title: "Observation - Result Serum Creatinine"
 Description: "Observation - Result Serum Creatinine"
 Usage: #example
 * status = #final
-* category = $observation-category#laboratory
+* category[laboratory]  = $observation-category#laboratory
 * code = $loinc#2160-0 "Creatinine [Mass/volume] in Serum or Plasma"
 * subject = Reference(Patient/eumfh-39-07)
 * effectiveDateTime = "2018-02-16T09:17:00+01:00"

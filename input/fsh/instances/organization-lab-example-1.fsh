@@ -1,5 +1,5 @@
 Instance: lab-org-example
-InstanceOf: Organization
+InstanceOf: Organization-uv-ips
 Title: "Organization - Laboratory"
 Description: "Organization - Laboratory"
 Usage: #example

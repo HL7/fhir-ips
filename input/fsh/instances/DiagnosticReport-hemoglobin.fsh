@@ -1,5 +1,5 @@
 Instance: hemoglobin-of-DiagnosticReport
-InstanceOf: DiagnosticReport
+InstanceOf: DiagnosticReport-uv-ips
 Title: "DiagnosticReport - Hemoglobin"
 Description: "DiagnosticReport - Hemoglobin"
 Usage: #example

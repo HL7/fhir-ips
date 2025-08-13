@@ -1,5 +1,5 @@
 Instance: eumfh-39-07-1-of-Procedure
-InstanceOf: Procedure
+InstanceOf: Procedure-uv-ips
 Title: "Procedure - Surgical Placement of Coronary Stent"
 Description: "Procedure - Surgical Placement of Coronary Stent"
 Usage: #example
