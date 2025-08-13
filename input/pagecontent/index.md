@@ -56,3 +56,6 @@ Alignments of IPS to other FHIR guides are discuseed in the [Dependencies and Re
 | **Contributor** | Dr Kai U. Heitmann | Heitmann Consulting and Services, ART-DECOR Open Tools GmbH, HL7 Germany | info@kheitmann.de |
 | **Contributor** | Kenneth Sinn  | Canada Health Infoway | ksinn@infoway-inforoute.ca |
 | **Contributor** | Sheridan Cook | Accenture | sheridan.cook@accenture.com |
+| **Contributor** | Heath Frankel | Intervise | heath@intervise.com.au |
+| **Contributor** | James Jahns | Epic | jjahns@epic.com |
+
