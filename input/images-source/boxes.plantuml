@@ -1,0 +1,357 @@
+
+@startuml
+skinparam linetype polyline
+hide circle
+hide stereotype
+
+' class "**ISO27269 IPS**" as ISO27269 {
+'   |_ patient 1..1   
+'   |_ allergiesAndIntolerances 1..1   
+'   |_ problems 1..1   
+'   |_ medicationSummary 1..1   
+'   |_ crossOrganization 1..1   
+'   |_ healthcareProviders 0..1   
+'   |_ addressBook 0..1   
+'   |_ historyOfProcedures 0..1   
+'   |_ immunizations 0..1   
+'   |_ medicalDevices 0..1   
+'   |_ results 0..1   
+'   |_ alerts 0..1   
+'   |_ HistoryOfPastIllnesses 0..1   
+'   |_ advanceDirectives 0..1   
+'   |_ carePlan 0..1   
+'   |_ historyOfPregnancy 0..1   
+'   |_ vitalSigns 0..1   
+'   |_ functionalStatus 0..1   
+'   |_ patientStory 0..1   
+'   |_ socialHistory 0..1   
+' }
+
+
+class "**PatientAttributes**" as PatientAttributes #fcc {
+  |_ name 1..1   
+  |_ address 0..*   
+    |_ Address 0..*   
+    |_ Telecom 0..*   
+  |_ administrativeGender 0..1   
+  |_ dateOfBirth 0..1   
+  |_ preferredLanguage 0..1   
+  |_ healthcareRelatedIdentifiers 0..*   
+    |_ patientIdentifier 0..*   
+  |_ insuranceInformation 0..*   
+    |_ insuranceProvider 0..*   
+}
+
+
+
+class "**AllergiesIntolerances**" as AllergiesIntolerances #fcc{
+  |_ contentStatus 0..1   
+  |_ allergyIntolerance 0..*   
+    |_ description 0..1   
+    |_ clinicalStatus 0..1   
+    |_ onsetDate 0..1   
+    |_ endDate 0..1   
+    |_ criticality 0..1   
+    |_ certainty 0..1   
+    |_ typeOfPropensity 0..1   
+    |_ diagnosis 0..1   
+    |_ reaction 0..1   
+      |_ manifestation 0..*   
+      |_ severity 0..1   
+    |_ agent 0..*   
+      |_ code 0..1   
+      |_ category 0..1   
+}
+
+PatientAttributes -r[hidden]-  AllergiesIntolerances
+
+class "**Problem**" as Problem #fcc{
+  |_ contentStatus 0..1   
+  |_ problem 0..*   
+    |_ type 0..1   
+    |_ description 0..1   
+    |_ diagnosis 0..1   
+    |_ severity 0..1   
+    |_ onsetDate 0..1   
+    |_ status 0..1   
+    |_ specialistContact 0..1   
+}
+
+
+AllergiesIntolerances -r[hidden]-  Problem
+
+
+class "**MedicationSummary**" as MedicationSummary #fcc{
+  |_ contentStatus 0..1   
+  |_ medicationStatus 0..1   
+  |_ medication 0..*   
+    |_ reason 0..1   
+    |_ medicinalProduct 0..1   
+      |_ productCode 0..1   
+      |_ commonNameAndStrength 0..1   
+      |_ doseForm 0..1   
+      |_ brandName 0..1   
+      |_ activeIngredients 0..*   
+        |_ activeIngredient 0..1   
+        |_ substanceCode 0..1   
+        |_ strength 0..1   
+    |_ administrationInstruction 0..1   
+      |_ instruction 0..1   
+      |_ periodOfUse 0..1   
+      |_ routeOfAdministration 0..1   
+      |_ doseInstruction 0..1   
+        |_ unitsPerIntake 0..1   
+        |_ frequencyOfIntake 0..1   
+}
+
+Problem -r[hidden]- MedicationSummary
+
+
+
+class "**CrossOrganizationFeature**" as CrossOrganizationFeature #fcc{
+  |_ originatingOrganization 0..1   
+  |_ organizationCodes 0..*   
+  |_ specificRequirements 0..1   
+  |_ asserter 0..1   
+  |_ dateOfDocumentCreation 0..1   
+  |_ languageOfDocument 0..1   
+  |_ dateOfLastUpdate 0..1   
+  |_ generationOfContent 0..1   
+    |_ natureOfIPS 0..1   
+  |_ healthcareProviders 0..*   
+    |_ authoringHealthcareProvider 0..1   
+  |_ legitimacy 0..1   
+    |_ legalAuthenticator 0..1   
+}
+
+MedicationSummary -r[hidden]- CrossOrganizationFeature
+
+
+
+class "**HealthcareProvider**" as HealthcareProvider #fea{
+  |_ healthcareProviderPerson 0..*   
+    |_ name 0..*   
+    |_ role 0..*   
+    |_ telecoms 0..*   
+  |_ healthcareProviderOrganization 0..*   
+    |_ name 0..*   
+    |_ telecoms 0..*   
+}
+
+PatientAttributes -d[hidden]- HealthcareProvider
+
+
+class "**AddressBookFeature**" as AddressBookFeature #fea{
+  |_ preferredHealthcareProviders 0..*   
+  |_ othersAddressDetails 0..*   
+    |_ addressee 0..1   
+      |_ role 0..*   
+      |_ name 0..*   
+      |_ address 0..*   
+      |_ telecom 0..*   
+      |_ healthcareProvider 0..*   
+      |_ addressBook 0..*   
+}
+
+HealthcareProvider -r[hidden]- AddressBookFeature
+
+class "**HistoryOfProcedures**" as HistoryOfProcedures #fea{
+  |_ contentStatus 0..1   
+  |_ procedure 0..*   
+    |_ code 0..1   
+    |_ description 0..1   
+    |_ bodySite 0..1   
+    |_ procedureDate 0..1   
+}
+
+AddressBookFeature -r[hidden]- HistoryOfProcedures
+
+
+class "**Immunizations**" as Immunizations #fea{
+  |_ contentStatus 0..1   
+  |_ immunization 0..*   
+    |_ vaccineType 0..1   
+    |_ targetDiseases 0..*   
+      |_ targetDisease 0..1   
+    |_ dateOfImmunization 0..1   
+    |_ dosesInSeries 0..1   
+    |_ productAdministered 0..1   
+      |_ brandName 0..1   
+      |_ vaccineProphylaxisComponent 0..1   
+    |_ productAdministrationProcess 0..1   
+      |_ performer 0..1   
+      |_ routeOfAdministration 0..1   
+}
+
+HistoryOfProcedures -r[hidden]- Immunizations
+
+class "**MedicalDevices**" as MedicalDevices #fea{
+  |_ contentStatus 0..1   
+  |_ device 0..*   
+    |_ type 0..1   
+    |_ identifier 0..1   
+    |_ useStartDate 0..1   
+    |_ useEndDate 0..1   
+    |_ careAndRisks 0..1   
+}
+
+Immunizations -r[hidden]- MedicalDevices : "        "
+
+class "**Results**" as Results #fea{
+  |_ observationResult 0..*   
+    |_ dateOfObservation 0..1   
+    |_ type 0..1   
+    |_ description 0..1   
+    |_ value 0..1   
+    |_ observationResult 0..1   
+    |_ performer 0..1   
+    |_ observer 0..1   
+}
+
+
+MedicalDevices -r[hidden]- Results : "             "
+
+class "**Alerts**" as Alerts #fea{
+  |_ alert 0..*   
+    |_ type 0..1   
+    |_ identifier 0..1   
+    |_ description 0..1   
+    |_ level 0..1   
+  |_ diseaseRelatedDiagnosis 0..1   
+    |_ diseaseName 0..1   
+    |_ onsetDate 0..1   
+    |_ assertionDegree 0..1   
+    |_ confirmationMethod 0..1   
+    |_ specialistContact 0..1   
+    |_ referenceToSpecialistAdvice 0..1   
+}
+
+Results -r[hidden]- Alerts
+
+class "**HistoryOfPastProblems**" as HistoryOfPastProblems #afa {
+  |_ pastProblem 0..*   
+    |_ type 0..1   
+    |_ description 0..1   
+    |_ diagnosis 0..1   
+    |_ severity 0..1   
+    |_ onsetDate 0..1   
+    |_ status 0..1   
+    |_ dateResolved 0..1   
+    |_ specialistContact 0..1   
+}
+
+HealthcareProvider -d[hidden]- HistoryOfPastProblems
+
+class "**AdvancedDirective**" as AdvancedDirective #afa{
+  |_ advancedDirective 0..*   
+    |_ authorizingPerson 0..1   
+      |_ name 0..*   
+      |_ role 0..*   
+      |_ telecoms 0..*   
+    |_ category 0..1   
+    |_ description 0..1   
+    |_ legalDocument 0..1   
+}
+
+HistoryOfPastProblems -r[hidden]- AdvancedDirective
+
+class "**PlanOfCare**" as PlanOfCare #afa{
+  |_ plan 0..*   
+    |_ type 0..1   
+    |_ date 0..1   
+    |_ description 0..1   
+    |_ recommendation 0..*   
+      |_ treatment 0..1   
+      |_ givenDate 0..1   
+      |_ applicableDate 0..1   
+  |_ extensivePlan 0..1   
+}
+
+AdvancedDirective -r[hidden]- PlanOfCare
+
+class "**HistoryOfPregnancy**" as HistoryOfPregnancy #afa{
+  |_ currentPregnancyStatus 0..1   
+    |_ description 0..1   
+    |_ details 0..1   
+      |_ dateOfObservation 0..1   
+      |_ state 0..1   
+      |_ expectedDeliveryDate 0..1   
+    |_ specialistContact 0..1   
+  |_ previousHistoryOfPregnancies 0..1   
+    |_ status 0..1   
+    |_ description 0..1   
+    |_ previousPregnancies 0..*   
+      |_ details 0..1   
+        |_ outcomeDate 0..1   
+        |_ outcome 0..1   
+        |_ specialistContact 0..1   
+  |_ summaryMetric 0..1   
+}
+
+PlanOfCare -r[hidden]- HistoryOfPregnancy
+
+class "**VitalSigns**" as VitalSigns #afa{
+  |_ vitalSign 0..*   
+    |_ dateOfObservation 0..1   
+    |_ observationType 0..1   
+    |_ resultDescription 0..1   
+    |_ value 0..1   
+    |_ vitalSignCode 0..1   
+}
+
+HistoryOfPregnancy -r[hidden]- VitalSigns
+
+class "**FunctionalStatus**" as FunctionalStatus #afa{
+  |_ disability 0..*   
+    |_ description 0..1   
+    |_ code 0..1   
+    |_ onsetDate 0..1   
+  |_ functionalAssessment 0..*   
+    |_ description 0..1   
+    |_ date 0..1   
+    |_ type 0..1   
+    |_ result 0..1   
+    |_ functionalAssessment 0..*   
+}
+
+VitalSigns -r[hidden]- FunctionalStatus
+
+
+class "**PatientStory**" as PatientStory #afa{
+  |_ myWellness 0..1   
+    |_ description 0..1   
+    |_ dateOfWellnessStatement 0..1   
+  |_ importantThings 0..1   
+    |_ description 0..*   
+    |_ dateOfImportantElements 0..1   
+  |_ myStory 0..1   
+    |_ importantContent 0..1   
+    |_ importantPeople 0..*   
+    |_ howITellMyStory 0..1   
+}
+
+FunctionalStatus -r[hidden]- PatientStory
+
+class "**SocialHistory**" as SocialHistory #afa{
+  |_ lifestyleFactor 0..*   
+    |_ description 0..1   
+    |_ details 0..1   
+    |_ referenceDateRange 0..1   
+}
+
+HealthcareProvider -d[hidden]- HistoryOfPastProblems
+
+HistoryOfPastProblems -d[hidden]- SocialHistory
+  
+CrossOrganizationFeature -d[hidden]- MedicalDevices
+
+MedicalDevices -d[hidden]- VitalSigns
+
+MedicationSummary -d[hidden]- Immunizations
+
+Problem -d[hidden]- HistoryOfProcedures
+
+
+VitalSigns -r[hidden]- FunctionalStatus : "         "
+
+@enduml
