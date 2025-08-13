@@ -52,7 +52,7 @@ Alignments of IPS to other FHIR guides are discuseed in the [Dependencies and Re
 | **Contributor** | François Macary | Phast | francois.macary@phast.fr |
 | **Contributor** | Gary Dickinson | CentriHealth | gary.dickinson@ehr-standards.com |
 | **Contributor** | George Dixon | Allscripts | george.dixon@allscripts.com |
-| **Contributor** | John Moehrke | By Light Professional IT Services | John.Moehrke@bylight.com
+| **Contributor** | John Moehrke | Moehrke Research | JohnMoehrke@gmail.com
 | **Contributor** | Dr Kai U. Heitmann | Heitmann Consulting and Services, ART-DECOR Open Tools GmbH, HL7 Germany | info@kheitmann.de |
 | **Contributor** | Kenneth Sinn  | Canada Health Infoway | ksinn@infoway-inforoute.ca |
 | **Contributor** | Sheridan Cook | Accenture | sheridan.cook@accenture.com |
