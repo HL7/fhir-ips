@@ -17,4 +17,12 @@
 %A definition could not be found for Canonical URL 'http://www.rsna.org/RadLex_Playbook.aspx%
 %A definition could not be found for Canonical URL 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1%
 
+# The ActorDefinition from R5 points to the deprecated valueset. The R6 one still has the code we use 
+INFORMATION: ActorDefinition/Consumer: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
+INFORMATION: ActorDefinition/Creator: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
+INFORMATION: ActorDefinition/Server: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
+
+# We prefer the effectiveDateTime, so only profile that in MedicationStatement
+% This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips|2.0.0 % 
+
 
