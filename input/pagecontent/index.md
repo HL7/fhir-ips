@@ -12,8 +12,8 @@ The IPS document is composed by a set of robust, well-defined and potentially re
 
 ### Purpose
 
-The goal of this Implementation Guide is to specify how to represent in HL7 FHIR the International Patient Summary (IPS). An alternative representation as templated HL7 CDA R2 is also provided ( see the [hl7.org site](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=483) or the [ART DECOR](https://art-decor.org/art-decor/decor-project--hl7ips-) repository). 
-The initial focus of the International Patient Summary (IPS) was the unplanned care across national borders. This specification can also be useful in local applications and supportive of planned care.
+The goal of this Implementation Guide is to specify how to represent in HL7 FHIR the IPS. An alternative representation as templated HL7 CDA R2 is also provided ( see the [hl7.org site](https://www.hl7.org/implement/standards/product_brief.cfm?product_id=483) or the [ART DECOR](https://art-decor.org/art-decor/decor-project--hl7ips-) repository). 
+The initial focus of the IPS was the unplanned care across national borders. This specification can also be useful in local applications and supportive of planned care.
 
 
 ### Project Background
@@ -28,7 +28,7 @@ As a further definition of terms in ISO 27269, <i>"'Minimal' reflects the ideas 
 
 <i>'Non-exhaustive' recognizes that the ideal data set is not closed, and is likely to be extended, not just in terms of requirement evolution, but also pragmatically in instances of use."</i>
 
-Furthermore the scope of the IPS is global. Although this is a major challenge, this implementation guide takes various experiences and newer developments (e.g. <a href="http://hl7.org/fhir/us/core/history.html">US Core Implementation Guide (FHIR IG)</a>) into account to address, as far as possible, global feasibility.
+Furthermore, the scope of the IPS is global. Although this is a major challenge, this implementation guide takes various experiences and newer developments (e.g. <a href="http://hl7.org/fhir/us/core/history.html">US Core Implementation Guide (FHIR IG)</a>) into account to address, as far as possible, global feasibility.
 
 The following picture provides an overview of the current IPS content.
 
@@ -38,7 +38,7 @@ The following picture provides an overview of the current IPS content.
 
 We anticipate that jurisdictions will profile based on the IPS Implementation Guide. Those guides should state if their profiles conform to IPS **OR** if any jurisdictional profile requirements conflict with the IPS. Differences in requirements should be described with respect to document constraints and actor obligations. Jurisdictional adaptations of the IPS may introduce additional profile and conformance constraints (i.e. every document that conforms to the jurisdictional profile will inherently conform to IPS, but IPS documents from another region may not conform to that jurisdictional profile).
 
-Alignments of IPS to other FHIR guides are discuseed in the [Dependencies and Related Guides](./IG-analysis.html#dependencies-and-related-guides). Further details on the IPS project relationships with other projects and guidelines are available in the <a href="https://international-patient-summary.net/">IPS Website</a>.
+Alignments of IPS to other FHIR guides are discussed in the [Dependencies and Related Guides](./IG-analysis.html#dependencies-and-related-guides). Further details on the IPS project relationships with other projects and guidelines are available in the <a href="https://international-patient-summary.net/">IPS Website</a>.
 
 ### Authors and Contributors
 
