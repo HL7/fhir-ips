@@ -1,5 +1,14 @@
 == Suppressed Messages ==
 
+# Error because 5.3 FHIR extension package registry not yet published. Available at: https://build.fhir.org/ig/HL7/fhir-extensions/StructureDefinition-textLink.html
+%The extension http://hl7.org/fhir/StructureDefinition/textLink could not be found so is not allowed here%
+%No definition could be found for URL value 'http://hl7.org/fhir/StructureDefinition/textLink'%
+ERROR: Bundle/bundle-ips-all-sections: Bundle: Slice 'Bundle.entry:composition': a matching slice is required, but not found (from http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips|2.0.0). Note that other slices are allowed in addition to this required slice
+INFORMATION: Bundle/bundle-ips-all-sections: Bundle.entry[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+#A bundle may reference a resource like an external document (i.e. PDF of Advance Directive) without embedding
+INFORMATION: Bundle/bundle-ips-all-sections: Bundle: Can't find 'https://sample.fhir.org/DocumentReference/advance-directive-123/content' in the bundle (Bundle.entry[37].resource.content[0].attachment.url)
+
 # The following code systems that are used only in example instances are localized (European) and are not supported by the build terminology service.
 %A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.4.4.1' could not be found, so the code cannot be validated%
 %A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.4.4.7' could not be found, so the code cannot be validated%
@@ -9,6 +18,10 @@
 %No definition could be found for URL value 'urn:oid:1.2.3.999%
 %No definition could be found for URL value 'urn:oid:2.16.528.1.1007.3.3%
 %No definition could be found for URL value 'urn:oid:2.16.528.1.1007.3.1%
+
+# The following New Zealand identifiers are allowable as in examples (all sections Bundle and Bundle Minimal example)
+%No definition could be found for URL value 'https://standards.digital.health.nz/ns/nhi-id'%
+%No definition could be found for URL value 'https://standards.digital.health.nz/ns/hpi-facility-id'%
 
 # The following shows up for all obligation extensions 
 %This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation%
