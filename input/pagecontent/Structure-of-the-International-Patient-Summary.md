@@ -49,11 +49,11 @@ This section includes entry choices to carry result observations (using Observat
 
 The History of Procedures Section contains a description of the patient's past procedures that are pertinent to the scope of the IPS.
 
-Procedures may refer for example to:
+Procedures may include, for example:
 
-1. Invasive Diagnostic procedure: e.g., Cardiac catheterization; (the results of these procedure are documented in the results section)
-2. Therapeutic procedure: e.g., dialysis
-3. Surgical procedure: e.g., appendectomy
+1. Invasive Diagnostic procedure (e.g., Cardiac catheterization; the results of these procedure are documented in the results section)
+2. Therapeutic procedure (e.g., dialysis)
+3. Surgical procedure (e.g., appendectomy)
 
 #### Medical Devices
 
@@ -84,7 +84,7 @@ The pregnancy status and history is comprised of
 
 #### Patient Story
 
-The section contains narrative text along with optional resources that express what matters to a patient. This may include needs, strengths, values, concerns and preferences to others providing support and care. Information in this section may include: 
+The section contains narrative text along with optional resources that express what matters to a patient. This may include needs, strengths, values, concerns and preferences for others providing support and care. Information in this section may include: 
 
 - My wellness and date
 - What are the most important things that I want to be known
@@ -113,7 +113,7 @@ The Vital Signs section includes blood pressure, body temperature, heart rate, a
 
 The profiles that have been defined for this implementation guide are listed <a href="profiles.html">here</a>.
 
-Following are the profiles that have been defined for each section. (R) denotes a required section (i.e. must be present in an IPS), (S) denotes a recommended section, the others are optional:
+Following are the profiles that have been defined for each section. (R) denotes a required section (i.e., must be present in an IPS); (S) denotes a recommended section; others are optional:
 
 - Problem List (R)
   [ <a href="StructureDefinition-Condition-uv-ips.html">Condition (IPS)</a> ]
