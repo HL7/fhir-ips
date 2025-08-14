@@ -14,13 +14,13 @@ A system that can never produce data in a section marked with SHALL:populate Cre
 
 #### Optional Data Elements with Must Support/Obligations (cardinality of 0..1 or 0..\*)
 
-If an [Creator (IPS)](./ActorDefinition-Creator.html) does not have data to be included in the IPS, the data element is omitted.
+If a [Creator (IPS)](./ActorDefinition-Creator.html) does not have data to be included in the IPS, the data element is omitted.
 
-Note: an [Creator (IPS)](./ActorDefinition-Creator.html) may have no data to be included in the IPS either because there are no data, data are not allowed to be shared or because data available are not pertinent with the scope of the IPS.
+Note: a [Creator (IPS)](./ActorDefinition-Creator.html) may have no data to be included in the IPS either because there are no data, data are not allowed to be shared or because data available are not pertinent with the scope of the IPS.
 
 #### Required Data Elements with Must Support/Obligations (cardinality of 1..1 or 1..\*)
 
-If an [Creator (IPS)](./ActorDefinition-Creator.html) does not have data to be included in the IPS, the reason for the absence SHALL be specified as follows:
+If a [Creator (IPS)](./ActorDefinition-Creator.html) does not have data to be included in the IPS, the reason for the absence SHALL be specified as follows:
 
 1.  For _non-coded_ data elements, use the [Data Absent Reason Extension](http://hl7.org/fhir/R4/extension-data-absent-reason.html) in the data type. 
     Example: Patient resource where the birthDate is not known (note that since birthDate is a date primitive datatype the \_birthDate sibling property is used for the extension). Other required properties of Patient resource are omitted (shown by ...) in this simplified example.
