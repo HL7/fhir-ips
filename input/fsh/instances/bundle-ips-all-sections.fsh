@@ -1,6 +1,7 @@
 Instance: bundle-ips-all-sections
 InstanceOf: Bundle-uv-ips
 Usage: #example
+* meta.security = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#N "normal"
 * language = #en-NZ
 * identifier.system = "urn:oid:2.16.724.4.8.10.200.10"
 * identifier.value = "ac7a747c-a2c9-493c-ba39-4ac6997eed1e"
