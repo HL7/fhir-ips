@@ -11,7 +11,7 @@ Description: "This profile represents the constraints applied to the Device reso
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "http://www.hl7.org/Special/committees/patientcare"
 * ^jurisdiction = $m49.htm#001
-* ^purpose = "This profile constrains the representation of a medical device used by or impanted on the patient, in the context of the international patient summary as specified by the IPS project of HL7 International."
+* ^purpose = "This profile constrains the representation of a medical device used by or implanted on the patient, in the context of the international patient summary as specified by the IPS project of HL7 International."
 * . ^comment = "This profile applies the rules defined by HL7 International for representing the UDI in the FHIR standard, by the document \"Medical Devices and Unique Device Identification (UDI) Pattern, Release 1\""
 * udiCarrier 0..*
 * udiCarrier ^short = "Unique Device Identifier (UDI) carrier. See IPS Device profile description for more detail and mapping link."
