@@ -72,7 +72,7 @@ The following illustrative example shows how this could be accomplished within a
 
 ### Representation of Person Names
 
-This specification requires that any Person Name is represented including at least one of the following components: given, family or text. Although it is recognized that there is not the same concept of "family name" in all cultures, when the name of a person is provided, where possible it SHOULD be provided as a list of parts, such as given, family, prefix and suffix. 
+This specification requires that any Person Name is represented including at least one of the following components: given, family or text. Although it is recognized there is not the concept of "family name" in all cultures, when the name of a person is provided, it SHOULD be provided as a list of parts, such as given, family, prefix and suffix. 
 
 ### Relationship to Gender Harmony
 
