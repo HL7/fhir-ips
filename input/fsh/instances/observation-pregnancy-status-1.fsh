@@ -1,5 +1,5 @@
 Instance: pregnancy-status-example
-InstanceOf: Observation
+InstanceOf: Observation-pregnancy-status-uv-ips
 Title: "Observation - Pregnancy Status"
 Description: "Observation - Pregnancy Status"
 Usage: #example

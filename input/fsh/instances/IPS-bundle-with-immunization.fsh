@@ -1,5 +1,5 @@
 Instance: IPS-examples-Bundle-with-immunization
-InstanceOf: Bundle
+InstanceOf: Bundle-uv-ips
 Title: "Bundle - IPS with Required Sections and Immunization"
 Description: "Bundle - IPS with Required Sections and Immunization"
 Usage: #example
@@ -245,7 +245,7 @@ Usage: #inline
 * type = #allergy
 * category = #medication
 * criticality = #high
-* code = $sct#373270004 "Substance with penicillin structure and antibacterial mechanism of action (substance)"
+* code = $sct#764146007 "Substance with penicillin structure (substance)"
 * patient = Reference(urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e1)
 * onsetDateTime = "2010"
 

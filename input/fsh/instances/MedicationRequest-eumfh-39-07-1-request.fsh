@@ -1,5 +1,5 @@
 Instance: eumfh-39-07-1-request
-InstanceOf: MedicationRequest
+InstanceOf: MedicationRequest-uv-ips
 Title: "MedicationRequest - Simvastatin Request"
 Description: "MedicationRequest - Simvastatin Request"
 Usage: #example

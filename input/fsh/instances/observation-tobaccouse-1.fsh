@@ -1,5 +1,5 @@
 Instance: tobacco-use-example
-InstanceOf: Observation
+InstanceOf: Observation-tobaccouse-uv-ips
 Title: "Observation - Social History Tobacco Use"
 Description: "Observation - Social History Tobacco Use"
 Usage: #example

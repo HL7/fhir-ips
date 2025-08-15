@@ -1,10 +1,10 @@
 Instance: urine-wbc-range
-InstanceOf: Observation
+InstanceOf: Observation-results-laboratory-pathology-uv-ips
 Title: "Observation - Result Urine White Blood Cell (WBC) Range"
 Description: "Observation - Result Urine White Blood Cell (WBC) Range"
 Usage: #example
 * status = #final
-* category = $observation-category#laboratory
+* category[laboratory] = $observation-category#laboratory
 * code = $loinc#5821-4 "Leukocytes [#/area] in Urine sediment by Microscopy high power field"
 * subject = Reference(66033)
 * effectiveDateTime = "2018-02-16T09:17:00+01:00"

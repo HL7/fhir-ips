@@ -1,5 +1,5 @@
 Instance: 66033
-InstanceOf: Patient
+InstanceOf: Patient-uv-ips
 Title: "Patient - Female Minimal Marie Lux-Brennard"
 Description: "Patient - Female Minimal Marie Lux-Brennard"
 Usage: #example

@@ -1,5 +1,67 @@
 == Suppressed Messages ==
 
+# A bundle may reference a resource like an external document (i.e. PDF of Advance Directive) without embedding
+INFORMATION: Bundle/bundle-ips-all-sections: Bundle: Can't find 'https://sample.fhir.org/DocumentReference/advance-directive-123/content' in the bundle (Bundle.entry[37].resource.content[0].attachment.url)
+
 # The following code systems that are used only in example instances are localized (European) and are not supported by the build terminology service.
 %A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.4.4.1' could not be found, so the code cannot be validated%
 %A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.4.4.7' could not be found, so the code cannot be validated%
+%No definition could be found for URL value 'urn:oid:2.16.724.4.8.10.200.10%
+%No definition could be found for URL value 'urn:oid:1.3.182.4.4%
+%No definition could be found for URL value 'urn:oid:2.16.840.1.113883.2.18.7.2%
+%No definition could be found for URL value 'urn:oid:1.2.3.999%
+%No definition could be found for URL value 'urn:oid:2.16.528.1.1007.3.3%
+%No definition could be found for URL value 'urn:oid:2.16.528.1.1007.3.1%
+
+# The following New Zealand identifiers are allowable as in examples (all sections Bundle and Bundle Minimal example)
+%No definition could be found for URL value 'https://standards.digital.health.nz/ns/nhi-id'%
+%No definition could be found for URL value 'https://standards.digital.health.nz/ns/hpi-facility-id'%
+%No definition could be found for URL value 'https://standards.digital.health.nz/ns/psychotherapists-board-id'%
+
+# The following shows up for all obligation extensions 
+%This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation%
+
+# This is inherited from the base ImagingStudy resource, so cannot address
+%A definition could not be found for Canonical URL 'http://www.rsna.org/RadLex_Playbook.aspx%
+%A definition could not be found for Canonical URL 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1%
+%ValueSet 'http://www.rsna.org/RadLex_Playbook.aspx' not found%
+WARNING: StructureDefinition/ImagingStudy-uv-ips: StructureDefinition.snapshot.element[52].binding: The definition for the element 'ImagingStudy.series.performer.function' binds to the value set 'http://hl7.org/fhir/ValueSet/series-performer-function' which is experimental, but this structure is not labeled as experimental
+
+
+# The ActorDefinition from R5 points to the deprecated valueset. The R6 one still has the code we use 
+INFORMATION: ActorDefinition/Consumer: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
+INFORMATION: ActorDefinition/Creator: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
+INFORMATION: ActorDefinition/Server: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
+
+# IPS guide directs support toward effectiveDateTime, so only profile that in MedicationStatement
+% This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips|2.0.0 % 
+
+# Previous guides have included multi-lingual examples. We would like to retain even though display checks may not work.
+INFORMATION: Bundle/IPS-examples-Bundle-with-immunization: Bundle.entry[20].resource.vaccineCode.coding[0].display: 'Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens only vaccine product' is the default display; the code system http://snomed.info/sct has no Display Names for the language fr-LU
+INFORMATION: Bundle/IPS-examples-Bundle-with-immunization: Bundle.entry[20].resource.site.coding[0].display: 'Right thigh' is the default display; the code system http://snomed.info/sct has no Display Names for the language fr-LU
+INFORMATION: Bundle/IPS-examples-Bundle-with-immunization: Bundle.entry[20].resource.protocolApplied[0].targetDisease[0].coding[0].display: 'Pertussis' is the default display; the code system http://snomed.info/sct has no Display Names for the language fr-LU
+INFORMATION: Bundle/IPS-examples-Bundle-with-immunization: Bundle.entry[20].resource.protocolApplied[0].targetDisease[0].coding[1].display: 'Tetanus' is the default display; the code system http://snomed.info/sct has no Display Names for the language fr-LU
+INFORMATION: Bundle/IPS-examples-Bundle-with-immunization: Bundle.entry[20].resource.protocolApplied[0].targetDisease[0].coding[2].display: 'Acute poliomyelitis' is the default display; the code system http://snomed.info/sct has no Display Names for the language fr-LU
+INFORMATION: Bundle/IPS-examples-Bundle-with-immunization: Bundle.entry[20].resource.protocolApplied[0].targetDisease[0].coding[3].display: 'Diphtheria caused by Corynebacterium diphtheriae' is the default display; the code system http://snomed.info/sct has no Display Names for the language fr-LU
+INFORMATION: Bundle/IPS-examples-Bundle-with-immunization: Bundle.entry[20].resource/*Immunization/40b7b6a0-c043-423a-9959-be3707e728b2*/.vaccineCode.coding[0].display: 'Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens only vaccine product' is the default display; the code system http://snomed.info/sct has no Display Names for the language fr-LU
+INFORMATION: Bundle/IPS-examples-Bundle-with-immunization: Bundle.entry[20].resource/*Immunization/40b7b6a0-c043-423a-9959-be3707e728b2*/.site.coding[0].display: 'Right thigh' is the default display; the code system http://snomed.info/sct has no Display Names for the language fr-LU
+INFORMATION: Bundle/IPS-examples-Bundle-with-immunization: Bundle.entry[20].resource/*Immunization/40b7b6a0-c043-423a-9959-be3707e728b2*/.protocolApplied[0].targetDisease[0].coding[0].display: 'Pertussis' is the default display; the code system http://snomed.info/sct has no Display Names for the language fr-LU
+INFORMATION: Bundle/IPS-examples-Bundle-with-immunization: Bundle.entry[20].resource/*Immunization/40b7b6a0-c043-423a-9959-be3707e728b2*/.protocolApplied[0].targetDisease[0].coding[1].display: 'Tetanus' is the default display; the code system http://snomed.info/sct has no Display Names for the language fr-LU
+INFORMATION: Bundle/IPS-examples-Bundle-with-immunization: Bundle.entry[20].resource/*Immunization/40b7b6a0-c043-423a-9959-be3707e728b2*/.protocolApplied[0].targetDisease[0].coding[2].display: 'Acute poliomyelitis' is the default display; the code system http://snomed.info/sct has no Display Names for the language fr-LU
+INFORMATION: Bundle/IPS-examples-Bundle-with-immunization: Bundle.entry[20].resource/*Immunization/40b7b6a0-c043-423a-9959-be3707e728b2*/.protocolApplied[0].targetDisease[0].coding[3].display: 'Diphtheria caused by Corynebacterium diphtheriae' is the default display; the code system http://snomed.info/sct has no Display Names for the language fr-LU
+INFORMATION: Immunization/75680: Immunization.vaccineCode.coding[0].display: 'Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens only vaccine product' is the default display; the code system http://snomed.info/sct has no Display Names for the language fr-LU
+INFORMATION: Immunization/75680: Immunization.site.coding[0].display: 'Right thigh' is the default display; the code system http://snomed.info/sct has no Display Names for the language fr-LU
+WARNING: Immunization/75680: Immunization.vaccineCode.coding[2].system: A definition for CodeSystem 'https://cnk.apb.be/codings/cnk_product_codes' could not be found, so the code cannot be validated
+
+
+# Resources that only had draft CodeSystems in R4
+INFORMATION: DiagnosticReport/hemoglobin: DiagnosticReport.status: Reference to draft CodeSystem http://hl7.org/fhir/diagnostic-report-status|4.0.1
+INFORMATION: ImagingStudy/TII-ImagingStudy-5-1: ImagingStudy.status: Reference to draft CodeSystem http://hl7.org/fhir/imagingstudy-status|4.0.1
+
+# CDA OIDs are available from prior publications which use art-decor
+%No definition could be found for URL value 'http://art-decor.org/ns/oids/vs'%
+
+# Desire to show that other extensions and local identifiers may be used in Patient resource
+INFORMATION: Patient/eumfh-39-07: Patient.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: Patient/eumfh-39-07: Patient.identifier[0].system: No definition could be found for URL value 'http://trilliumbridge.eu/fhir/demos/eumfh/inject'
+WARNING: Patient/eumfh-39-07: Patient.identifier[1].system: No definition could be found for URL value 'http://trilliumbridge.eu/fhir/demos/eumfh/patient_id'

@@ -1,5 +1,5 @@
 Instance: procedure-missing-performed
-InstanceOf: Procedure
+InstanceOf: Procedure-uv-ips
 Title: "Procedure - Missing performedDateTime"
 Description: "Procedure - Missing performedDateTime example"
 Usage: #example

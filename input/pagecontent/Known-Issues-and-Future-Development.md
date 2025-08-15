@@ -9,15 +9,15 @@
 2. Include additional guidance or references on approaches for selecting appropriate summary content, documenting algorithmic vs. human curation of data, and generating narrative representations. A draft page on the various [Methods for IPS generation](https://confluence.hl7.org/spaces/PC/pages/358881792/Methods+for+IPS+Generation+DRAFT+FUTURE+DEVLOPMENT) has been drafted on HL7 Confluence and may be a consideration for future version of this IPS FHIR Implementation Guide. 
 3. Gather feedback on the IPS [$summary operation](./OperationDefinition-summary.html) introduced in STU1.1 of the this guide. 
 4. Gather feedback on how Provenance could be used in IPS [FHIR-40610](https://jira.hl7.org/browse/FHIR-40610)
-5. Loosen Observation profile for alcohol usage  [FHIR-40802](https://jira.hl7.org/browse/FHIR-40802)
+5. Loosen Observation profile for alcohol usage [FHIR-40802](https://jira.hl7.org/browse/FHIR-40802)
 6. Provide IPS viewing requirements [FHIR-41630](https://jira.hl7.org/browse/FHIR-41630)
 7. Remove identifying information requirements in IPS [FHIR-43721](https://jira.hl7.org/browse/FHIR-43721)
 8. Check value Set OID alignment between FHIR and  CDA IPS IGs [FHIR-46169](https://jira.hl7.org/browse/FHIR-46169)
-9. Add NutritionIntake Observation profile in Social History[FHIR-46923](https://jira.hl7.org/browse/FHIR-46923)
+9. Add NutritionIntake Observation profile in Social History [FHIR-46923](https://jira.hl7.org/browse/FHIR-46923)
 10. Add Patient Travel History [FHIR-47930](https://jira.hl7.org/browse/FHIR-47930)
 11. Add NUVA as additional vaccine binding [FHIR-49146](https://jira.hl7.org/browse/FHIR-49146)
 12. Add 'disability' to ValueSet: Problem Type - IPS [FHIR-49218](https://jira.hl7.org/browse/FHIR-49218)
-13. Add CarePlan(IPS) Profile, based on ISO 27269 [FHIR-49905](https://jira.hl7.org/browse/FHIR-)
+13. Add CarePlan (IPS) Profile, based on ISO 27269 [FHIR-49905](https://jira.hl7.org/browse/FHIR-)
 14. Guidance on laterality in IPS [FHIR-50042](https://jira.hl7.org/browse/FHIR-)
 15. Add a CareTeam section, and describe how to use it for patient advocate / legal power of attorney [FHIR-50098](https://jira.hl7.org/browse/FHIR-)
 16. Include more detail in section about identifier usage [FHIR-51507](https://jira.hl7.org/browse/FHIR-)

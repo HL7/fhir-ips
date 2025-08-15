@@ -21,6 +21,10 @@ publisher:
   name: HL7 International / Patient Care
   url: http://www.hl7.org/Special/committees/patientcare
 jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
+dependencies:
+  hl7.fhir.uv.extensions.r4:
+    version: 5.3.0-ballot-tc1
+    uri: http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions
 menu:
   Home: index.html
   Table of Contents: toc.html
@@ -37,17 +41,21 @@ menu:
     IPS Composition: StructureDefinition-Composition-uv-ips.html
     IPS Library (Profiles): profiles.html
     Actors: actors.html
+    CapabilityStatement: CapabilityStatement-ips-server.html
+    Operations: OperationDefinition-summary.html
     Datatypes: Data-Types-Defined-in-this-Guide.html
     Terminology: terminology.html
-    Operations: OperationDefinition-summary.html
     Examples: examples.html
-    CapabilityStatement: CapabilityStatement-ips-server.html
   Support:
     About: IG-analysis.html
     Downloads: downloads.html
     Copyrights: copyrights.html
   Change Log: changes.html
 resources:
+  Bundle/bundle-ips-all-sections:
+    name: 'Bundle - IPS with All Sections'
+    description: 'Bundle - IPS with All Sections'
+    exampleCanonical: http://hl7.org/fhir/uv/ips/StructureDefinition/Bundle-uv-ips
   Bundle/IPS-examples-Bundle-01:
     name: 'Bundle - IPS with Data'
     description: 'Bundle - IPS with Data'

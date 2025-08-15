@@ -1,5 +1,5 @@
 Instance: bundle-minimal
-InstanceOf: Bundle
+InstanceOf: Bundle-uv-ips
 Title: "Bundle - Minimal Complete IPS"
 Description: "Bundle - Minimal Complete IPS"
 Usage: #example
@@ -171,7 +171,7 @@ Usage: #inline
 * type = #allergy
 * category = #medication
 * criticality = #high
-* code = $sct#373270004 "Substance with penicillin structure and antibacterial mechanism of action (substance)"
+* code = $sct#764146007 "Substance with penicillin structure (substance)"
 * patient = Reference(urn:uuid:244ad7c3-beeb-41d1-8a2f-c76b8cf720ad)
 * onsetDateTime = "2010"
 

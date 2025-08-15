@@ -4,7 +4,7 @@ Health information is sensitive, and thus must be recognized as sensitive. There
 
 The Health information may be impacted by Privacy Consent, also known as authorizations. The mechanism of Consent is not covered in IPS. IHE has an Implementation Guide covering [Privacy Consent on FHIR](https://profiles.ihe.net/ITI/PCF/index.html).
 
-Where an IPS is being created with a given recipient, the permissions of that recipient can and should be used to affect the content of the IPS. This might result in no limitations on the data in the IPS, or might result in some highly sensitive data being redacted. Any redaction of data must address any increase in risks to Medical Safety. The tradeoff between Privacy and Safety is a policy. The IPS specification does not define this policy.
+Where an IPS is being created with a given recipient, the permissions of that recipient can and should be used to affect the content of the IPS. This might result in no limitations on the data in the IPS, or might result in some highly sensitive data being redacted. Any redaction of data must address any increase in risks to Medical Safety. The trade-off between Privacy and Safety is a policy. The IPS specification does not define this policy.
 
 Often an IPS is created for one purpose and gets used for other purposes. Thus it is important to consider how the data might flow from the first party audience of the IPS to others downstream. This section covers design considerations, but does not include any normative rules that must be followed.
 

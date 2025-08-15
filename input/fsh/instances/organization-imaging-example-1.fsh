@@ -1,5 +1,5 @@
 Instance: TII-Organization1
-InstanceOf: Organization
+InstanceOf: Organization-uv-ips
 Title: "Organization - Hospital"
 Description: "Organization - Hospital"
 Usage: #example
