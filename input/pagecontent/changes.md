@@ -109,6 +109,7 @@ This change list provides an overview and detail of changes from the STU 2.0 Bal
   - Missing Resources in CapabilityStatement [FHIR-51795](https://jira.hl7.org/browse/FHIR-51795)
   - Adjustments to examples (Allergy and Procedure) [FHIR-51797](https://jira.hl7.org/browse/FHIR-51797)
   - Remove details on CDA IPS specification [FHIR-51798](https://jira.hl7.org/browse/FHIR-51798)
+  - Add/adjust author names [FHIR-51799](https://jira.hl7.org/browse/FHIR-51799)
   
 ### STU 2.0.0-ballot Update
 
