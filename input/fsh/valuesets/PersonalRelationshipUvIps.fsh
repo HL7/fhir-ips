@@ -1,7 +1,7 @@
 ValueSet: PersonalRelationshipUvIps
 Id: personal-relationship-uv-ips
 Title: "Personal Relationship - IPS [Deprecated]"
-Description: "The Value Set is used (optionally) to code the type of contact relationship between a person and the patient. This value set has been deprecated and will be removed in a future release.  It has been replaced with [PersonalRelationshipRoleType](https://terminology.hl7.org/3.1.0/ValueSet-v3-PersonalRelationshipRoleType.html)"
+Description: "The Value Set is used (optionally) to code the type of contact relationship between a person and the patient. This value set will be removed in a future release.  It has been replaced with [PersonalRelationshipRoleType](https://terminology.hl7.org/3.1.0/ValueSet-v3-PersonalRelationshipRoleType.html)"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^identifier.use = #official
 * ^identifier.system = "http://art-decor.org/ns/oids/vs"

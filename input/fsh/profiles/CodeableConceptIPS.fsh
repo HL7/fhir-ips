@@ -24,5 +24,5 @@ Description: "This profile represents the constraint applied to the CodeableConc
 * text ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * text ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * text ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
-* text.extension contains Translation named translation 0..*
+* text.extension contains $Translation named translation 0..*
 * text.extension[translation] ^short = "Language Translation (Localization)"
