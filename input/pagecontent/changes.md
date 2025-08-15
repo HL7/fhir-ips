@@ -108,6 +108,7 @@ This change list provides an overview and detail of changes from the STU 2.0 Bal
   - Typos and narrative consistency (Structure of IPS) [FHIR-51774](https://jira.hl7.org/browse/FHIR-51774)
   - Missing Resources in CapabilityStatement [FHIR-51795](https://jira.hl7.org/browse/FHIR-51795)
   - Adjustments to examples (Allergy and Procedure) [FHIR-51797](https://jira.hl7.org/browse/FHIR-51797)
+  - Remove details on CDA IPS specification [FHIR-51798](https://jira.hl7.org/browse/FHIR-51798)
   
 ### STU 2.0.0-ballot Update
 
