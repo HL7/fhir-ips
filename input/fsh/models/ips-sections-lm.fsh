@@ -112,7 +112,7 @@ Characteristics: #can-be-target
 
 Mapping:  IpsSectionsToIso27269
 Source: IPSSectionsLM
-Target:   "ISO 27269 - International Patient Summary"
+Target:   "ISO-27269_International_Patient_Summary"
 Id:       IpsSectionsToIso27269
 Title:    "IPS Sections To ISO 27269"
 * sectionProblems -> "Problems [21]"
