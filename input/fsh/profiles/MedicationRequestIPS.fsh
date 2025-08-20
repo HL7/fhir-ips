@@ -13,6 +13,7 @@ Description: "This profile represents the constraints applied to the MedicationR
 * ^contact.telecom.value = "http://www.hl7.org/Special/committees/patientcare"
 * ^jurisdiction = $m49.htm#001
 * ^purpose = "This profile constrains the representation of a medication request related to the patient, in the context of the international patient summary as specified by the IPS project of HL7 International."
+* status ^short = "active | on-hold | cancelled | completed | stopped | draft | unknown"
 * status ^comment = "In the scope of the IPS the entered-in-error concept is not allowed."
 * doNotPerform 0..1
 * doNotPerform = false
