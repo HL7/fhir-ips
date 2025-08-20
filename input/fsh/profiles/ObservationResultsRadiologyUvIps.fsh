@@ -19,7 +19,7 @@ It allows also providing details about the related study using the partOf elemen
 * obeys hasMemberOrComponent
 * partOf only Reference(ImagingStudyUvIps)
 * status from ResultsStatusUvIps (required)
-* status ^label = "Observation 'complete' status codes"
+* status ^comment = "Observation status codes except 'entered-in-error'"
 * status ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * status ^binding.extension[=].valueString = "ObservationStatus"
 * category only CodeableConceptIPS
