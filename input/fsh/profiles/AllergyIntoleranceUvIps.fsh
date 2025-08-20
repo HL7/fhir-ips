@@ -23,6 +23,7 @@ It documents the relevant allergies or intolerances for a patient, describing th
 * clinicalStatus ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * clinicalStatus ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * verificationStatus only CodeableConcept
+* verificationStatus from AllergyIntoleranceVerificationUvIps (required)
 * verificationStatus ^short = "unconfirmed | confirmed | refuted"
 * verificationStatus ^comment = "In the scope of the IPS the entered-in-error concept is not allowed."
 * type MS

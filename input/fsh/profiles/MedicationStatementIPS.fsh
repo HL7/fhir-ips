@@ -11,6 +11,7 @@ Description: "This profile represents the constraints applied to the MedicationS
 * ^contact.telecom.value = "http://www.hl7.org/Special/committees/patientcare"
 * ^jurisdiction = $m49.htm#001
 * ^purpose = "This profile constrains the representation of a medication statement related to the patient, in the context of the international patient summary as specified by the IPS project of HL7 International."
+* status from MedicationStatementStatusUvIps (required)
 * status ^short = "active | completed | intended | stopped | on-hold | unknown | not-taken"
 * status ^comment = "In the scope of the IPS the entered-in-error concept is not allowed."
 * medication[x] only CodeableConceptIPS or Reference(MedicationIPS)
