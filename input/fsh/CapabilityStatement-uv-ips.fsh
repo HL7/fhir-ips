@@ -13,7 +13,7 @@ Usage: #definition
 * publisher = "HL7 International / Patient Care"
 * contact.telecom.system = #url
 * contact.telecom.value = "http://www.hl7.org/Special/committees/patientcare"
-* description = "Capability Statement for IPS Server."
+* description = "This CapabilityStatement describes the expected capabilities of the [IPS Server actor](ActorDefinition-Server.html) which is responsible for providing responses to the queries submitted for IPS documents. The list of FHIR profiles and operations supported by IPS Servers are defined in this CapabilityStatement."
 * jurisdiction = $m49.htm#001
 * copyright = "Used by permission of HL7 International, all rights reserved Creative Commons License"
 * kind = #requirements
