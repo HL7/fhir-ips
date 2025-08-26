@@ -61,7 +61,7 @@ Additional perspective on the alignment of IPS to broader guidance around clinic
 
 Since the IPS Composition requires each section to have human-readable narrative text as XHTML, we encourage implementers to reference individual discrete entries in the XHTML using the id attribute and an accompanying ["textLink"](https://build.fhir.org/ig/HL7/fhir-extensions/StructureDefinition-textLink.html) extension that links this id to the resource. This practice provides value when text from IPS documents becomes translated from the originating system language and also in debugging the presented form of a clinical document from its structured content. Linking narrative content is well established in CDA documents and provides value in other FHIR clinical documents as well.  
 
-The following illustrative example shows how this could be accomplished within an IPS Composition.section. Note that id attributes within the XHTML example below share the same id of the structured resources for the following example but can be unique when needed. To see a full example with all required elements and structured data, refer to examples included in this guide:
+The following illustrative example shows how this could be accomplished within an IPS `Composition.section`. Note that id attributes within the XHTML example below share the same id of the structured resources for the following example but can be unique when needed. To see a full example with all required elements and structured data, refer to examples included in this guide:
 
 {% include img.html img="textLink.png" caption="Figure 4: Example of Using textLink extension" width="100%" %}
 
