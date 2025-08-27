@@ -72,11 +72,11 @@ The following illustrative example shows how this could be accomplished within a
 
 ### Representation of Person Names
 
-This specification requires that any Person Name is represented including at least one of the following components: given, family or text. Although it is recognized there is not the concept of "family name" in all cultures, when the name of a person is provided, it SHOULD be provided as a list of parts, such as given, family, prefix and suffix. 
+This specification requires that any Person Name is represented including at least one of the following components: given, family or text. Although it is recognized there is not the concept of "family name" in all cultures, when the name of a person is provided it SHOULD be provided as a list of parts, such as given, family, prefix and suffix. 
 
 ### Relationship to Gender Harmony
 
-This specification supports the extensions from the universal realm [Cross-Paradigm Implementation Guide of Gender Harmony](https://hl7.org/xprod/ig/uv/gender-harmony/). While not required, this guide encourages implementers to adopt patterns from Gender Harmony, which is intended to provide definitive guidance on how to exchange clinical sex and gender affirming information using HL7 models. This guide directly references a set of the [Gender Harmony FHIR extensions](https://hl7.org/xprod/ig/uv/gender-harmony/fhirgenderharmony.html) in the [IPS Patient profile](./StructureDefinition-Patient-uv-ips.html). The [Sex Parameter for Clinical Use](http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse) extension may be used in any IPS resource. While not directly referenced in IPS profiles, implementers are encouraged to review and consider this extension for use as appropriate. 
+This specification includes some extensions from the universal realm [Cross-Paradigm Implementation Guide of Gender Harmony](https://hl7.org/xprod/ig/uv/gender-harmony/). While not required, this guide encourages implementers to adopt patterns from Gender Harmony, which is intended to provide definitive guidance on how to exchange clinical sex and gender affirming information using HL7 models. This guide directly references a set of the [Gender Harmony FHIR extensions](https://hl7.org/xprod/ig/uv/gender-harmony/fhirgenderharmony.html) in the [IPS Patient profile](./StructureDefinition-Patient-uv-ips.html). The [Sex Parameter for Clinical Use](http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse) extension may be used in any IPS resource. While not directly referenced in IPS profiles, implementers are encouraged to review and consider this extension for use as appropriate. 
 
 ### Medication Lists in the IPS
 
