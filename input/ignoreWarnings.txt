@@ -61,7 +61,11 @@ INFORMATION: ImagingStudy/TII-ImagingStudy-5-1: ImagingStudy.status: Reference t
 # CDA OIDs are available from prior publications which use art-decor
 %No definition could be found for URL value 'http://art-decor.org/ns/oids/vs'%
 
-# Desire to show that other extensions and local identifiers may be used in Patient resource
+# Desire to show that other extensions and local identifiers may be used in Patient and Device resources
 INFORMATION: Patient/eumfh-39-07: Patient.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: Patient/eumfh-39-07: Patient.identifier[0].system: No definition could be found for URL value 'http://trilliumbridge.eu/fhir/demos/eumfh/inject'
 WARNING: Patient/eumfh-39-07: Patient.identifier[1].system: No definition could be found for URL value 'http://trilliumbridge.eu/fhir/demos/eumfh/patient_id'
+WARNING: Device/ips-example-imaging-1: Device.identifier[0].system: No definition could be found for URL value 'http://my.organization.example/devicesID'
+
+# These are several large terminologies in IPS. We understand only a subset may be displayed
+%The value set expansion is too large, and only a subset has been displayed%
