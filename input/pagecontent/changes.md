@@ -110,6 +110,14 @@ This change list provides an overview and detail of changes from the STU 2.0 Bal
   - Adjustments to examples (Allergy and Procedure) [FHIR-51797](https://jira.hl7.org/browse/FHIR-51797)
   - Remove details on CDA IPS specification [FHIR-51798](https://jira.hl7.org/browse/FHIR-51798)
   - Add/adjust author names [FHIR-51799](https://jira.hl7.org/browse/FHIR-51799)
+  - Backticks for path expressions [FHIR-51851](https://jira.hl7.org/browse/FHIR-51851)  
+  - Adjust results status label [FHIR-51966](https://jira.hl7.org/browse/FHIR-51966)
+  - Correct CapabilityStatement-uv-ips operation definition for IPA $docref [FHIR-51968](https://jira.hl7.org/browse/FHIR-51968) 
+  - Various general principles pages grammar and typos [FHIR-51971](https://jira.hl7.org/browse/FHIR-51971) 
+  - Mandatory Composition elements obligation SHALL:populate [FHIR-51972](https://jira.hl7.org/browse/FHIR-51972) 
+  - Mandatory BundleUvIps elements obligation SHALL:populate [FHIR-51973](https://jira.hl7.org/browse/FHIR-51973) 
+  - MS on SpecimenUvIps type, subject and subject.reference [FHIR-51974](https://jira.hl7.org/browse/FHIR-51974) 
+  - Consistent use of normative verbs [FHIR-52013](https://jira.hl7.org/browse/FHIR-52013)
   
 ### STU 2.0.0-ballot Update
 
