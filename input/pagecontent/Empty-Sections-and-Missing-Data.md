@@ -8,15 +8,15 @@ There are currently 16 sections defined in the IPS. All sections have 0..\* refe
 
 Resources may also be used to assert the known absence of data rather than using the [IPS Composition.section.emptyReason](./StructureDefinition-Composition-uv-ips.html). It is recommended to use patterns established within FHIR implementations to assert this known absence. For example, with AllergyIntolerance a SNOMED CT code may be used to represent [no known allergy](https://hl7.org/fhir/R4/allergyintolerance-nka.json.html). Prior versions of the IPS implementation guide had included a code system for no known data assertions, this code system has been removed from the guide and is no longer recommended for use. The recommended SNOMED CT concepts for representing known absence of data are included in the profile's primary code binding value set (typically the 'code' element).
 
-It is recommended that when a source system does not have information about a particular IPS section, that the emptyReason element for that section be populated with the appropriate [empty reason code](https://hl7.org/fhir/R4/valueset-list-empty-reason.html), generally 'unavailable' or 'notasked'. However, if it is preferred to use an explicit clinical statement to assert the absence of information, it is recommended that a resource be included in the relevant section using the SNOMED CT code ['1287211007'](https://browser.ihtsdotools.org/?perspective=full&conceptId1=1287211007) "No information available".
+It is recommended that when a source system does not have information about a particular IPS section, the emptyReason element for that section is populated with the appropriate [empty reason code](https://hl7.org/fhir/R4/valueset-list-empty-reason.html), generally 'unavailable' or 'notasked'. However, if it is preferred to use an explicit clinical statement to assert the absence of information, it is recommended that a resource be included in the relevant section using the SNOMED CT code ['1287211007'](https://browser.ihtsdotools.org/?perspective=full&conceptId1=1287211007) "No information available".
 
-A system creating an IPS that can never populate data in a section marked with SHALL:populate obligation (i.e. Allergies, Problems and Medications) can produce valid IPS Bundle instances although they cannot comply with the [Creator (IPS)](./ActorDefinition-Creator.html) actor obligations.
+A system creating an IPS that can never populate data in a section marked with the SHALL:populate obligation (i.e. Allergies, Problems and Medications) can produce valid IPS Bundle instances, although it cannot comply with the [Creator (IPS)](./ActorDefinition-Creator.html) actor obligations.
 
 #### Optional Data Elements with Must Support/Obligations (cardinality of 0..1 or 0..\*)
 
 If a [Creator (IPS)](./ActorDefinition-Creator.html) does not have data to be included in the IPS, the data element is omitted.
 
-Note: a [Creator (IPS)](./ActorDefinition-Creator.html) may have no data to be included in the IPS either because there are no data, data are not allowed to be shared or because data available are not pertinent with the scope of the IPS.
+Note: a [Creator (IPS)](./ActorDefinition-Creator.html) may have no data to be included in the IPS, either because there are no data, data are not allowed to be shared, or because data available are not pertinent within the scope of the IPS.
 
 #### Required Data Elements with Must Support/Obligations (cardinality of 1..1 or 1..\*)
 
