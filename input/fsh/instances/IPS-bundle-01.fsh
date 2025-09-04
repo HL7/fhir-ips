@@ -91,7 +91,7 @@ Usage: #inline
 * section[=].entry[0] = Reference(urn:uuid:72884cad-ebe6-4f43-a51a-2f978275f132)
 * section[=].entry[+] = Reference(urn:uuid:c7781f44-6df8-4a8b-9e06-0b34263a47c5)
 * section[+].title = "History of Past Problems"
-* section[=].code = $loinc#11348-0 "History of Past illness Narrative"
+* section[=].code = $loinc#11348-0 "History of Past illness note"
 * section[=].text.status = #generated
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Breast cancer Stage II with no evidence of recurrence following treatment</div>"
 * section[=].entry = Reference(urn:uuid:c4597aa2-688a-401b-a658-70acc6de28c6)
@@ -100,7 +100,7 @@ Usage: #inline
 * section[=].text.status = #generated
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Continue hormone medication with Anastrozole for total of 5 years and monitor for potential breast cancer recurrence</div>"
 * section[+].title = "Results"
-* section[=].code = $loinc#30954-2 "Relevant diagnostic tests/laboratory data Narrative"
+* section[=].code = $loinc#30954-2 "Relevant diagnostic tests/laboratory data note"
 * section[=].text.status = #generated
 * section[=].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t\t\t\t\t<table>\n\t\t\t\t\t\t\t\t<thead>\n\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t<th colspan=\"3\">Blood typing</th>\n\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t</thead>\n\t\t\t\t\t\t\t\t<tbody>\n\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t<td>Blood group</td>\n\t\t\t\t\t\t\t\t\t\t<td>A+</td>\n\t\t\t\t\t\t\t\t\t\t<td/>\n\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t<td>C Ab [Presence] in Serum or Plasma</td>\n\t\t\t\t\t\t\t\t\t\t<td>Positive</td>\n\t\t\t\t\t\t\t\t\t\t<td/>\n\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t<td>E Ab [Presence] in Serum or Plasma</td>\n\t\t\t\t\t\t\t\t\t\t<td>Positive</td>\n\t\t\t\t\t\t\t\t\t\t<td/>\n\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t<td>Little c Ab [Presence] in Serum or Plasma</td>\n\t\t\t\t\t\t\t\t\t\t<td>Negative</td>\n\t\t\t\t\t\t\t\t\t\t<td/>\n\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t</tbody>\n\t\t\t\t\t\t\t</table>\n\t\t\t\t\t\t\t<table>\n\t\t\t\t\t\t\t\t<thead>\n\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t<th colspan=\"3\">Hemoglobin A1c monitoring</th>\n\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t</thead>\n\t\t\t\t\t\t\t\t<tbody>\n\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t<td>Hemoglobin A1c/Hemoglobin.total in Blood by HPLC</td>\n\t\t\t\t\t\t\t\t\t\t<td>7.5 %</td>\n\t\t\t\t\t\t\t\t\t\t<td/>\n\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t</tbody>\n\t\t\t\t\t\t\t</table>\n\t\t\t\t\t\t\t<table>\n\t\t\t\t\t\t\t\t<thead>\n\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t<th colspan=\"3\">Bacteriology</th>\n\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t</thead>\n\t\t\t\t\t\t\t\t<tbody>\n\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t<td colspan=\"3\">Methicillin resistant Staphylococcus aureus</td>\n\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t<tr>\n\t\t\t\t\t\t\t\t\t\t<td colspan=\"3\">Healthy carrier of MRSA</td>\n\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t</tbody>\n\t\t\t\t\t\t\t</table>\n\t\t\t\t\t\t</div>"
 * section[=].entry[0] = Reference(urn:uuid:2639657a-c19a-48e2-82cc-471e13b8ad94)

@@ -164,9 +164,9 @@ Usage: #inline
 * section[sectionMedications].entry[+] = Reference(b8dac343-16d7-49bf-ac36-b15e6726c343)
 * section[sectionMedications].entry[+] = Reference(b8e4d4a8-2c18-4f03-88dc-06f5f44f8058)
 * section[sectionImmunizations].title = "Immunizations"
-* section[sectionImmunizations].code = $loinc#11369-6 "History of Immunization Narrative"
+* section[sectionImmunizations].code = $loinc#11369-6 "History of Immunization note"
 * section[sectionImmunizations].text.status = #generated
-* section[sectionImmunizations].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\"><tr><th>Vaccine</th><th>Date</th><th>Status</th><th>Lot Number</th></tr><tr id=\"17b5a6d7-307b-4726-8c8c-0031e61582ce\"><td>Influenza, seasonal, injectable</td><td>Apr 9 2024 20:00</td><td>Completed</td><td>H06</td></tr><tr id=\"14e8b0d8-b4e4-4f8e-b263-ef385787453b\"><td>COVID-19, mRNA, LNP-S, bivalent, PF, 30 mcg/0.3 mL dose</td><td>Feb 17 2024 19:00</td><td>Completed</td><td>GK3908-068</td></tr><tr id=\"47befa30-026c-421a-ad32-c0b134597a30\"><td>Influenza, seasonal, injectable</td><td>Apr 11 2023 20:00</td><td>Completed</td><td>358899</td></tr><tr id=\"2f05b590-ce75-4ac6-be97-c2a275e21cbc\"><td>COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose</td><td>Jul 31 2022 20:00</td><td>Completed</td><td>PCB0008-07</td></tr><tr id=\"c1d3ccb9-8b7d-4732-8e03-abe63be1984c\"><td>zoster live</td><td>Jul 12 2022 20:00</td><td>Completed</td><td>U021248</td></tr><tr id=\"79b66c21-fbd3-4c7f-ae82-ac958ae62e0a\"><td>COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose</td><td>Jan 12 2022 19:00</td><td>Completed</td><td>FL1072-025</td></tr><tr id=\"9910b96a-793b-4e96-91a9-291c27357f83\"><td>COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose</td><td>Aug 26 2021 20:00</td><td>Completed</td><td>FE8163-007</td></tr><tr id=\"5b028fb0-bd04-4e75-b2bc-6952771173ea\"><td>COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose</td><td>Aug 4 2021 20:00</td><td>Completed</td><td>FF8871-001</td></tr></table></div>"
+* section[sectionImmunizations].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\"><tr><th>Vaccine</th><th>Date</th><th>Status</th><th>Lot Number</th></tr><tr id=\"17b5a6d7-307b-4726-8c8c-0031e61582ce\"><td>Influenza, split virus, trivalent, preservative</td><td>Apr 9 2024 20:00</td><td>Completed</td><td>H06</td></tr><tr id=\"14e8b0d8-b4e4-4f8e-b263-ef385787453b\"><td>COVID-19, mRNA, LNP-S, bivalent, PF, 30 mcg/0.3 mL dose</td><td>Feb 17 2024 19:00</td><td>Completed</td><td>GK3908-068</td></tr><tr id=\"47befa30-026c-421a-ad32-c0b134597a30\"><td>Influenza, split virus, trivalent, preservative</td><td>Apr 11 2023 20:00</td><td>Completed</td><td>358899</td></tr><tr id=\"2f05b590-ce75-4ac6-be97-c2a275e21cbc\"><td>COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose</td><td>Jul 31 2022 20:00</td><td>Completed</td><td>PCB0008-07</td></tr><tr id=\"c1d3ccb9-8b7d-4732-8e03-abe63be1984c\"><td>zoster live</td><td>Jul 12 2022 20:00</td><td>Completed</td><td>U021248</td></tr><tr id=\"79b66c21-fbd3-4c7f-ae82-ac958ae62e0a\"><td>COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose</td><td>Jan 12 2022 19:00</td><td>Completed</td><td>FL1072-025</td></tr><tr id=\"9910b96a-793b-4e96-91a9-291c27357f83\"><td>COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose</td><td>Aug 26 2021 20:00</td><td>Completed</td><td>FE8163-007</td></tr><tr id=\"5b028fb0-bd04-4e75-b2bc-6952771173ea\"><td>COVID-19, mRNA, LNP-S, PF, 30 mcg/0.3 mL dose</td><td>Aug 4 2021 20:00</td><td>Completed</td><td>FF8871-001</td></tr></table></div>"
 * section[sectionImmunizations].text.extension[0].url = "http://hl7.org/fhir/StructureDefinition/textLink"
 * section[sectionImmunizations].text.extension[=].extension[0].url = "htmlid"
 * section[sectionImmunizations].text.extension[=].extension[=].valueString = "17b5a6d7-307b-4726-8c8c-0031e61582ce"
@@ -216,7 +216,7 @@ Usage: #inline
 * section[sectionImmunizations].entry[+] = Reference(9910b96a-793b-4e96-91a9-291c27357f83)
 * section[sectionImmunizations].entry[+] = Reference(5b028fb0-bd04-4e75-b2bc-6952771173ea)
 * section[sectionResults].title = "Results"
-* section[sectionResults].code = $loinc#30954-2 "Relevant diagnostic tests/laboratory data Narrative"
+* section[sectionResults].code = $loinc#30954-2 "Relevant diagnostic tests/laboratory data note"
 * section[sectionResults].text.status = #generated
 * section[sectionResults].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\"><tr><th>Result</th><th>Value</th><th>Date</th><th>Status</th></tr><tr id=\"b0187efd-5f9b-474d-87bc-efebf877449a\"><td>Cholesterol.total/Cholesterol in HDL [Molar ratio] in Serum or Plasma</td><td>4.1 mmol/L</td><td>Oct 31 2023 11:06</td><td>final</td></tr><tr id=\"f40b9e26-93b4-462b-8811-bdd6943873aa\"><td>Lipid risk factors [Finding]</td><td>A combined CVD risk of which lipids is one component should be estimated to guide CVD risk management decisions. If lipid modifying medication is considered suggest checking first for treatable secondary causes of dyslipidaemia.</td><td>Oct 31 2023 11:06</td><td>final</td></tr><tr id=\"612b7e6a-c902-45cb-b45c-d1894458a26b\"><td>Cholesterol in LDL [Moles/volume] in Serum or Plasma by calculation</td><td>3.6 mmol/L</td><td>Oct 31 2023 11:06</td><td>final</td></tr><tr id=\"15bd8c0c-fa53-4f5b-994b-487c7db3dc78\"><td>Triglyceride [Moles/volume] in Serum or Plasma</td><td>1.7 mmol/L</td><td>Oct 31 2023 11:06</td><td>final</td></tr><tr id=\"5019909f-097d-4a43-84d9-cc50143b8c82\"><td>Cholesterol [Moles/volume] in Serum or Plasma</td><td>5.7 mmol/L</td><td>Oct 31 2023 11:06</td><td>final</td></tr><tr id=\"5d269392-79c1-4129-a142-0cdee6b49ea4\"><td>Cholesterol in HDL [Moles/volume] in Serum or Plasma</td><td>1.39 mmol/L</td><td>Oct 31 2023 11:06</td><td>final</td></tr></table></div>"
 * section[sectionResults].text.extension[0].url = "http://hl7.org/fhir/StructureDefinition/textLink"
@@ -276,7 +276,7 @@ Usage: #inline
 * section[sectionMedicalDevices].text.extension.extension[=].valueUri = "https://sample.fhir.org/DeviceUseStatement/eumfh-70-275-1"
 * section[sectionMedicalDevices].entry = Reference(eumfh-70-275-1)
 * section[sectionVitalSigns].title = "Vital Signs"
-* section[sectionVitalSigns].code = $loinc#8716-3 "Vital signs"
+* section[sectionVitalSigns].code = $loinc#8716-3 "Vital signs note"
 * section[sectionVitalSigns].text.status = #generated
 * section[sectionVitalSigns].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\"><tr><th>Vital Sign</th><th>Value</th><th>Date</th><th>Status</th></tr><tr id=\"36ff59b8-d5a7-438e-b8c6-cd54af10a4af\"><td>Body weight</td><td>91.5 kg</td><td>Apr 10 2024 05:58</td><td>final</td></tr><tr id=\"96e33a60-dbd8-47ce-b613-be954243939e\"><td>Body mass index (BMI) [Ratio]</td><td>24.56 kg/m2</td><td>Apr 10 2024 05:58</td><td>final</td></tr><tr id=\"4ea539e1-fff9-4f56-964f-650d9e69ce58\"><td>Blood pressure panel with all children optional</td><td>140/80 mmHg</td><td>Aug 30 2024 04:32</td><td>final</td></tr></table></div>"
 * section[sectionVitalSigns].text.extension[0].url = "http://hl7.org/fhir/StructureDefinition/textLink"
@@ -298,7 +298,7 @@ Usage: #inline
 * section[sectionVitalSigns].entry[+] = Reference(96e33a60-dbd8-47ce-b613-be954243939e)
 * section[sectionVitalSigns].entry[+] = Reference(4ea539e1-fff9-4f56-964f-650d9e69ce58)
 * section[sectionSocialHistory].title = "Social History"
-* section[sectionSocialHistory].code = $loinc#29762-2 "Social history Narrative"
+* section[sectionSocialHistory].code = $loinc#29762-2 "Social history note"
 * section[sectionSocialHistory].text.status = #generated
 * section[sectionSocialHistory].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\"><tr><th>Social History Observation</th><th>Value</th><th>Date</th><th>Status</th></tr><tr id=\"9f906425-8c18-4580-ab30-61a56d7f4c05\"><td>Tobacco smoking status</td><td>Never smoker</td><td>Oct 19 2022 20:00</td><td>final</td></tr><tr id=\"e2e3f8aa-df2a-4357-b01f-a9fba6bb9b41\"><td>Alcoholic drinks per day</td><td>1 d</td><td>Jun 21 2016 20:00</td><td>final</td></tr></table></div>"
 * section[sectionSocialHistory].text.extension[0].url = "http://hl7.org/fhir/StructureDefinition/textLink"
@@ -349,7 +349,7 @@ Usage: #inline
 * section[sectionFunctionalStatus].text.extension.extension[=].valueUri = "https://sample.fhir.org/Condition/4f3d8f79-2f96-48c5-b346-d47f0c66c981"
 * section[sectionFunctionalStatus].entry = Reference(4f3d8f79-2f96-48c5-b346-d47f0c66c981)
 * section[sectionPastProblems].title = "History of Past Problems"
-* section[sectionPastProblems].code = $loinc#11348-0 "History of Past illness Narrative"
+* section[sectionPastProblems].code = $loinc#11348-0 "History of Past illness note"
 * section[sectionPastProblems].text.status = #generated
 * section[sectionPastProblems].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\"><tr><th>Past Problem</th><th>Onset</th><th>Clinical Status</th><th>Verification Status</th><th>Severity</th></tr><tr id=\"77efacd9-b5a6-4b35-9764-269017ea7567\"><td>Fever</td><td>May 24 2013 20:00</td><td></td><td></td><td></td></tr></table></div>"
 * section[sectionPastProblems].text.extension.url = "http://hl7.org/fhir/StructureDefinition/textLink"
@@ -585,7 +585,7 @@ Instance: 47befa30-026c-421a-ad32-c0b134597a30
 InstanceOf: Immunization
 Usage: #inline
 * status = #completed
-* vaccineCode = $cvx#141 "Influenza, seasonal, injectable"
+* vaccineCode = $cvx#141 "Influenza, split virus, trivalent, preservative"
 * patient = Reference(d174bd1a-b368-41e6-83a2-af77f2b3c60f)
 * occurrenceDateTime = "2023-04-12"
 * lotNumber = "358899"
@@ -599,7 +599,7 @@ Instance: 17b5a6d7-307b-4726-8c8c-0031e61582ce
 InstanceOf: Immunization
 Usage: #inline
 * status = #completed
-* vaccineCode = $cvx#141 "Influenza, seasonal, injectable"
+* vaccineCode = $cvx#141 "Influenza, split virus, trivalent, preservative"
 * patient = Reference(d174bd1a-b368-41e6-83a2-af77f2b3c60f)
 * occurrenceDateTime = "2024-04-10"
 * lotNumber = "H06"
