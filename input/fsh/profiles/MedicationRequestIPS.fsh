@@ -17,7 +17,7 @@ Description: "This profile represents the constraints applied to the MedicationR
 * doNotPerform 0..1
 * doNotPerform = false
 * doNotPerform ^comment = "In the scope of the IPS MedicationRequest, the doNotPerform concept is not allowed to be set to true. Other sections may be used to convey medications that a patient should or will not take."
-* medication[x] only CodeableConcept or Reference(MedicationIPS)
+* medication[x] only CodeableConceptIPS or Reference(MedicationIPS)
 * medication[x] MS
 * medication[x] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHALL:populate-if-known
 * medication[x] ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Creator"
