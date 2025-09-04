@@ -84,7 +84,7 @@ Medication lists may vary significantly depending on the context of use (e.g. su
 
 For the scope of the IPS, it is important to know what medications are being taken by, or have been given to a patient, without necessarily providing all the details about the medication order, supply, administration or monitoring. This information need can be met with either the [MedicationStatement](./StructureDefinition-MedicationStatement-uv-ips.html) or [MedicationRequest](./StructureDefinition-MedicationRequest-uv-ips.html) profiles, both of which are included in this Implementation Guide.
 
-The IPS medication summary is therefore a list of relevant medications, possibly built from either a prescription list or a dispensing list. In fact, in many practical cases data included in a Patient Summary are derived from the list of the medicines prescribed by a general practitioner and recorded in the electronic health record; or extracted from regional/national prescribing and/or dispensing systems.
+The IPS medication summary is therefore a list of relevant medications, possibly built from either a prescription list or a dispensing list. In fact, in many practical cases data included in a Patient Summary are derived from the list of the medicines prescribed by a general practitioner and recorded in the electronic health record, or extracted from regional/national prescribing and/or dispensing systems.
 
 ### Medicinal Product Identification
 
