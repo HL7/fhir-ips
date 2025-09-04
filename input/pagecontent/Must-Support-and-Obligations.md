@@ -1,4 +1,4 @@
-### MustSupport and Obligations
+### Must Support and Obligations
 
 In the context of IPS, Obligations defines how an Actor ([Creator (IPS)](./ActorDefinition-Creator.html) or [Consumer (IPS)](ActorDefinition-Consumer.html)) must “support” a given element. All mustSupport elements in this publication are accompanied by an explicit obligation, which identifies structured expectations for a given actor. Obligations can be found in the formal view section of a resource as shown below for the IPS Procedure profile: 
 
