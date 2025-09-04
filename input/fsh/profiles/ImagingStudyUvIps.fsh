@@ -19,7 +19,6 @@ Description: """This profile represents the constraints applied to the ImagingSt
 * identifier ^extension[http://hl7.org/fhir/StructureDefinition/obligation][+].extension[code].valueCode = #SHOULD:display
 * identifier ^extension[http://hl7.org/fhir/StructureDefinition/obligation][=].extension[actor].valueCanonical = "http://hl7.org/fhir/uv/ips/ActorDefinition/Consumer"
 * status from ImagingStudyStatusUvIps (required)
-* status ^label = "Imaging study status codes except 'entered-in-error'"
 * status ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * status ^binding.extension[=].valueString = "ImagingStudyStatus"
 * subject 1.. MS

@@ -18,7 +18,6 @@ This observation may represent the result of a simple laboratory test such as he
 * . ^comment = "Represents either a lab simple observation or the group of observations produced by a laboratory study."
 * obeys ips-2 and ips-3
 * status from ResultsStatusUvIps (required)
-* status ^label = "Observation status codes except 'entered-in-error'"
 * status ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * status ^binding.extension[=].valueString = "ObservationStatus"
 * category only CodeableConceptIPS

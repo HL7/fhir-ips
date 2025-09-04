@@ -67,7 +67,7 @@ Usage: #inline
 * section[=].emptyReason = $list-empty-reason#unavailable "Unavailable"
 * section[=].emptyReason.text = "No information available"
 * section[+].title = "Immunizations"
-* section[=].code = $loinc#11369-6 "History of Immunization Narrative"
+* section[=].code = $loinc#11369-6 "History of Immunization note"
 * section[=].text.status = #generated
 * section[=].text.div = "<div xmlns='http://www.w3.org/1999/xhtml' xml:lang='en-NZ'><table xmlns=\"http://www.w3.org/1999/xhtml\">\r\n        <thead>\r\n          <tr>\r\n            <th>Vaccine</th>\r\n            <th>Date</th>\r\n            <th>Seq</th>\r\n            <th>Route</th>\r\n            <th>Site</th>\r\n            <th>Indication</th>\r\n            <th>Status</th>\r\n            \r\n            \r\n          </tr>\r\n        </thead>\r\n        <tbody>\r\n          <tr>\r\n            <td>Influenza</td>\r\n            <td>03/07/2020</td>\r\n            <td>2</td>\r\n            <td>Injection, intramuscular</td>\r\n            <td>Entire left upper arm</td>\r\n            <td>Eligible condition (Influenza)</td>\r\n            <td>completed</td>\r\n            \r\n            \r\n          </tr>\r\n          <tr>\r\n            <td>Influenza</td>\r\n            <td>03/06/2019</td>\r\n            <td>1</td>\r\n            <td>Injection, intramuscular</td>\r\n            <td>Entire left upper arm</td>\r\n            <td>Eligible condition (Influenza)</td>\r\n            <td>completed</td>\r\n            \r\n            \r\n          </tr>\r\n        </tbody>\r\n      </table>\r\n    </div>"
 * section[=].entry[0] = Reference(4ab062b3-8843-4b98-af62-3d6d178a3772)
@@ -162,7 +162,7 @@ Instance: 4ab062b3-8843-4b98-af62-3d6d178a3772
 InstanceOf: Immunization
 Usage: #inline
 * status = #completed
-* vaccineCode = $cvx#141 "Influenza, seasonal, injectable"
+* vaccineCode = $cvx#141 "Influenza, split virus, trivalent, preservative"
 * patient = Reference(AAA1234)
 * occurrenceDateTime = "2020-07-03"
 * lotNumber = "B52b"
@@ -177,7 +177,7 @@ Instance: bd6c6537-6c5a-4fa8-8d26-2b49377425a2
 InstanceOf: Immunization
 Usage: #inline
 * status = #completed
-* vaccineCode = $cvx#141 "Influenza, seasonal, injectable"
+* vaccineCode = $cvx#141 "Influenza, split virus, trivalent, preservative"
 * patient = Reference(AAA1234)
 * occurrenceDateTime = "2019-06-03"
 * lotNumber = "B52"
