@@ -1,7 +1,7 @@
 == Suppressed Messages ==
 
 # A bundle may reference a resource like an external document (i.e. PDF of Advance Directive) without embedding
-INFORMATION: Bundle/bundle-ips-all-sections: Bundle: Can't find 'https://sample.fhir.org/DocumentReference/advance-directive-123/content' in the bundle (Bundle.entry[37].resource.content[0].attachment.url)
+INFORMATION: Bundle/bundle-ips-all-sections: Bundle: Can't find 'https://fhir.example.com/DocumentReference/advance-directive-123/content' in the bundle (Bundle.entry[37].resource.content[0].attachment.url)
 
 # The following code systems that are used only in example instances are localized (European) and are not supported by the build terminology service.
 %A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.4.4.1' could not be found, so the code cannot be validated%

@@ -7,89 +7,89 @@ Usage: #example
 * identifier.value = "ac7a747c-a2c9-493c-ba39-4ac6997eed1e"
 * type = #document
 * timestamp = "2024-09-21T18:53:00.8116604+00:00"
-* entry[0].fullUrl = "https://sample.fhir.org/Composition/9c98f78e-f324-4ad5-97a1-8eb9ef9a1172"
+* entry[0].fullUrl = "https://fhir.example.com/Composition/9c98f78e-f324-4ad5-97a1-8eb9ef9a1172"
 * entry[=].resource = 9c98f78e-f324-4ad5-97a1-8eb9ef9a1172
-* entry[+].fullUrl = "https://sample.fhir.org/Patient/d174bd1a-b368-41e6-83a2-af77f2b3c60f"
+* entry[+].fullUrl = "https://fhir.example.com/Patient/d174bd1a-b368-41e6-83a2-af77f2b3c60f"
 * entry[=].resource = d174bd1a-b368-41e6-83a2-af77f2b3c60f
-* entry[+].fullUrl = "https://sample.fhir.org/Organization/7a17027f-acc0-4d77-bf84-c0dad8f7c881"
+* entry[+].fullUrl = "https://fhir.example.com/Organization/7a17027f-acc0-4d77-bf84-c0dad8f7c881"
 * entry[=].resource = 7a17027f-acc0-4d77-bf84-c0dad8f7c881
-* entry[+].fullUrl = "https://sample.fhir.org/Organization/8f8635dc-694e-408f-8ffe-1610d50f9823"
+* entry[+].fullUrl = "https://fhir.example.com/Organization/8f8635dc-694e-408f-8ffe-1610d50f9823"
 * entry[=].resource = 8f8635dc-694e-408f-8ffe-1610d50f9823
-* entry[+].fullUrl = "https://sample.fhir.org/PractitionerRole/94d12c8d-a3df-47a7-a0bb-0f29d64bafe2"
+* entry[+].fullUrl = "https://fhir.example.com/PractitionerRole/94d12c8d-a3df-47a7-a0bb-0f29d64bafe2"
 * entry[=].resource = 94d12c8d-a3df-47a7-a0bb-0f29d64bafe2
-* entry[+].fullUrl = "https://sample.fhir.org/Practitioner/816cf057-b736-4e08-baed-cc21e081b784"
+* entry[+].fullUrl = "https://fhir.example.com/Practitioner/816cf057-b736-4e08-baed-cc21e081b784"
 * entry[=].resource = 816cf057-b736-4e08-baed-cc21e081b784
-* entry[+].fullUrl = "https://sample.fhir.org/AllergyIntolerance/9838cf73-c30d-4aa5-8ed8-36a079060b81"
+* entry[+].fullUrl = "https://fhir.example.com/AllergyIntolerance/9838cf73-c30d-4aa5-8ed8-36a079060b81"
 * entry[=].resource = 9838cf73-c30d-4aa5-8ed8-36a079060b81
-* entry[+].fullUrl = "https://sample.fhir.org/Condition/8039e4a7-d459-454c-92a5-6c17ca2a824b"
+* entry[+].fullUrl = "https://fhir.example.com/Condition/8039e4a7-d459-454c-92a5-6c17ca2a824b"
 * entry[=].resource = 8039e4a7-d459-454c-92a5-6c17ca2a824b
-* entry[+].fullUrl = "https://sample.fhir.org/Condition/f8ab8ac1-56d1-4239-8303-dc70c1a3d0e1"
+* entry[+].fullUrl = "https://fhir.example.com/Condition/f8ab8ac1-56d1-4239-8303-dc70c1a3d0e1"
 * entry[=].resource = f8ab8ac1-56d1-4239-8303-dc70c1a3d0e1
-* entry[+].fullUrl = "https://sample.fhir.org/MedicationStatement/c3d31980-2a88-45b6-a7af-3fe8d32cc6fa"
+* entry[+].fullUrl = "https://fhir.example.com/MedicationStatement/c3d31980-2a88-45b6-a7af-3fe8d32cc6fa"
 * entry[=].resource = c3d31980-2a88-45b6-a7af-3fe8d32cc6fa
-* entry[+].fullUrl = "https://sample.fhir.org/MedicationStatement/b8dac343-16d7-49bf-ac36-b15e6726c343"
+* entry[+].fullUrl = "https://fhir.example.com/MedicationStatement/b8dac343-16d7-49bf-ac36-b15e6726c343"
 * entry[=].resource = b8dac343-16d7-49bf-ac36-b15e6726c343
-* entry[+].fullUrl = "https://sample.fhir.org/MedicationStatement/b8e4d4a8-2c18-4f03-88dc-06f5f44f8058"
+* entry[+].fullUrl = "https://fhir.example.com/MedicationStatement/b8e4d4a8-2c18-4f03-88dc-06f5f44f8058"
 * entry[=].resource = b8e4d4a8-2c18-4f03-88dc-06f5f44f8058
-* entry[+].fullUrl = "https://sample.fhir.org/Immunization/17b5a6d7-307b-4726-8c8c-0031e61582ce"
+* entry[+].fullUrl = "https://fhir.example.com/Immunization/17b5a6d7-307b-4726-8c8c-0031e61582ce"
 * entry[=].resource = 17b5a6d7-307b-4726-8c8c-0031e61582ce
-* entry[+].fullUrl = "https://sample.fhir.org/Immunization/14e8b0d8-b4e4-4f8e-b263-ef385787453b"
+* entry[+].fullUrl = "https://fhir.example.com/Immunization/14e8b0d8-b4e4-4f8e-b263-ef385787453b"
 * entry[=].resource = 14e8b0d8-b4e4-4f8e-b263-ef385787453b
-* entry[+].fullUrl = "https://sample.fhir.org/Immunization/47befa30-026c-421a-ad32-c0b134597a30"
+* entry[+].fullUrl = "https://fhir.example.com/Immunization/47befa30-026c-421a-ad32-c0b134597a30"
 * entry[=].resource = 47befa30-026c-421a-ad32-c0b134597a30
-* entry[+].fullUrl = "https://sample.fhir.org/Immunization/2f05b590-ce75-4ac6-be97-c2a275e21cbc"
+* entry[+].fullUrl = "https://fhir.example.com/Immunization/2f05b590-ce75-4ac6-be97-c2a275e21cbc"
 * entry[=].resource = 2f05b590-ce75-4ac6-be97-c2a275e21cbc
-* entry[+].fullUrl = "https://sample.fhir.org/Immunization/c1d3ccb9-8b7d-4732-8e03-abe63be1984c"
+* entry[+].fullUrl = "https://fhir.example.com/Immunization/c1d3ccb9-8b7d-4732-8e03-abe63be1984c"
 * entry[=].resource = c1d3ccb9-8b7d-4732-8e03-abe63be1984c
-* entry[+].fullUrl = "https://sample.fhir.org/Immunization/79b66c21-fbd3-4c7f-ae82-ac958ae62e0a"
+* entry[+].fullUrl = "https://fhir.example.com/Immunization/79b66c21-fbd3-4c7f-ae82-ac958ae62e0a"
 * entry[=].resource = 79b66c21-fbd3-4c7f-ae82-ac958ae62e0a
-* entry[+].fullUrl = "https://sample.fhir.org/Immunization/9910b96a-793b-4e96-91a9-291c27357f83"
+* entry[+].fullUrl = "https://fhir.example.com/Immunization/9910b96a-793b-4e96-91a9-291c27357f83"
 * entry[=].resource = 9910b96a-793b-4e96-91a9-291c27357f83
-* entry[+].fullUrl = "https://sample.fhir.org/Immunization/5b028fb0-bd04-4e75-b2bc-6952771173ea"
+* entry[+].fullUrl = "https://fhir.example.com/Immunization/5b028fb0-bd04-4e75-b2bc-6952771173ea"
 * entry[=].resource = 5b028fb0-bd04-4e75-b2bc-6952771173ea
-* entry[+].fullUrl = "https://sample.fhir.org/Observation/b0187efd-5f9b-474d-87bc-efebf877449a"
+* entry[+].fullUrl = "https://fhir.example.com/Observation/b0187efd-5f9b-474d-87bc-efebf877449a"
 * entry[=].resource = b0187efd-5f9b-474d-87bc-efebf877449a
-* entry[+].fullUrl = "https://sample.fhir.org/Observation/f40b9e26-93b4-462b-8811-bdd6943873aa"
+* entry[+].fullUrl = "https://fhir.example.com/Observation/f40b9e26-93b4-462b-8811-bdd6943873aa"
 * entry[=].resource = f40b9e26-93b4-462b-8811-bdd6943873aa
-* entry[+].fullUrl = "https://sample.fhir.org/Observation/612b7e6a-c902-45cb-b45c-d1894458a26b"
+* entry[+].fullUrl = "https://fhir.example.com/Observation/612b7e6a-c902-45cb-b45c-d1894458a26b"
 * entry[=].resource = 612b7e6a-c902-45cb-b45c-d1894458a26b
-* entry[+].fullUrl = "https://sample.fhir.org/Observation/15bd8c0c-fa53-4f5b-994b-487c7db3dc78"
+* entry[+].fullUrl = "https://fhir.example.com/Observation/15bd8c0c-fa53-4f5b-994b-487c7db3dc78"
 * entry[=].resource = 15bd8c0c-fa53-4f5b-994b-487c7db3dc78
-* entry[+].fullUrl = "https://sample.fhir.org/Observation/5019909f-097d-4a43-84d9-cc50143b8c82"
+* entry[+].fullUrl = "https://fhir.example.com/Observation/5019909f-097d-4a43-84d9-cc50143b8c82"
 * entry[=].resource = 5019909f-097d-4a43-84d9-cc50143b8c82
-* entry[+].fullUrl = "https://sample.fhir.org/Observation/5d269392-79c1-4129-a142-0cdee6b49ea4"
+* entry[+].fullUrl = "https://fhir.example.com/Observation/5d269392-79c1-4129-a142-0cdee6b49ea4"
 * entry[=].resource = 5d269392-79c1-4129-a142-0cdee6b49ea4
-* entry[+].fullUrl = "https://sample.fhir.org/Observation/36ff59b8-d5a7-438e-b8c6-cd54af10a4af"
+* entry[+].fullUrl = "https://fhir.example.com/Observation/36ff59b8-d5a7-438e-b8c6-cd54af10a4af"
 * entry[=].resource = 36ff59b8-d5a7-438e-b8c6-cd54af10a4af
-* entry[+].fullUrl = "https://sample.fhir.org/Observation/96e33a60-dbd8-47ce-b613-be954243939e"
+* entry[+].fullUrl = "https://fhir.example.com/Observation/96e33a60-dbd8-47ce-b613-be954243939e"
 * entry[=].resource = 96e33a60-dbd8-47ce-b613-be954243939e
-* entry[+].fullUrl = "https://sample.fhir.org/Observation/4ea539e1-fff9-4f56-964f-650d9e69ce58"
+* entry[+].fullUrl = "https://fhir.example.com/Observation/4ea539e1-fff9-4f56-964f-650d9e69ce58"
 * entry[=].resource = 4ea539e1-fff9-4f56-964f-650d9e69ce58
-* entry[+].fullUrl = "https://sample.fhir.org/Observation/9f906425-8c18-4580-ab30-61a56d7f4c05"
+* entry[+].fullUrl = "https://fhir.example.com/Observation/9f906425-8c18-4580-ab30-61a56d7f4c05"
 * entry[=].resource = 9f906425-8c18-4580-ab30-61a56d7f4c05
-* entry[+].fullUrl = "https://sample.fhir.org/Observation/e2e3f8aa-df2a-4357-b01f-a9fba6bb9b41"
+* entry[+].fullUrl = "https://fhir.example.com/Observation/e2e3f8aa-df2a-4357-b01f-a9fba6bb9b41"
 * entry[=].resource = e2e3f8aa-df2a-4357-b01f-a9fba6bb9b41
-* entry[+].fullUrl = "https://sample.fhir.org/PractitionerRole/75ed6f24-9a7e-4568-9c05-91b6d4786743"
+* entry[+].fullUrl = "https://fhir.example.com/PractitionerRole/75ed6f24-9a7e-4568-9c05-91b6d4786743"
 * entry[=].resource = 75ed6f24-9a7e-4568-9c05-91b6d4786743
-* entry[+].fullUrl = "https://sample.fhir.org/Flag/e8ae9c4e-8f5a-4270-bfac-02368c567fcf"
+* entry[+].fullUrl = "https://fhir.example.com/Flag/e8ae9c4e-8f5a-4270-bfac-02368c567fcf"
 * entry[=].resource = e8ae9c4e-8f5a-4270-bfac-02368c567fcf
-* entry[+].fullUrl = "https://sample.fhir.org/Procedure/39252"
+* entry[+].fullUrl = "https://fhir.example.com/Procedure/39252"
 * entry[=].resource = 39252
-* entry[+].fullUrl = "https://sample.fhir.org/DeviceUseStatement/eumfh-70-275-1"
+* entry[+].fullUrl = "https://fhir.example.com/DeviceUseStatement/eumfh-70-275-1"
 * entry[=].resource = eumfh-70-275-1
-* entry[+].fullUrl = "https://sample.fhir.org/Device/eumfh-70-275-2"
+* entry[+].fullUrl = "https://fhir.example.com/Device/eumfh-70-275-2"
 * entry[=].resource = eumfh-70-275-2
-* entry[+].fullUrl = "https://sample.fhir.org/Consent/080d85fa-c807-42d1-a3af-b3ee70858a54"
+* entry[+].fullUrl = "https://fhir.example.com/Consent/080d85fa-c807-42d1-a3af-b3ee70858a54"
 * entry[=].resource = 080d85fa-c807-42d1-a3af-b3ee70858a54
-* entry[+].fullUrl = "https://sample.fhir.org/DocumentReference/advance-directive-123"
+* entry[+].fullUrl = "https://fhir.example.com/DocumentReference/advance-directive-123"
 * entry[=].resource = advance-directive-123
-* entry[+].fullUrl = "https://sample.fhir.org/Condition/4f3d8f79-2f96-48c5-b346-d47f0c66c981"
+* entry[+].fullUrl = "https://fhir.example.com/Condition/4f3d8f79-2f96-48c5-b346-d47f0c66c981"
 * entry[=].resource = 4f3d8f79-2f96-48c5-b346-d47f0c66c981
-* entry[+].fullUrl = "https://sample.fhir.org/Condition/77efacd9-b5a6-4b35-9764-269017ea7567"
+* entry[+].fullUrl = "https://fhir.example.com/Condition/77efacd9-b5a6-4b35-9764-269017ea7567"
 * entry[=].resource = 77efacd9-b5a6-4b35-9764-269017ea7567
-* entry[+].fullUrl = "https://sample.fhir.org/CarePlan/85d57ac7-ea2d-47cf-b019-b867f876ee7c"
+* entry[+].fullUrl = "https://fhir.example.com/CarePlan/85d57ac7-ea2d-47cf-b019-b867f876ee7c"
 * entry[=].resource = 85d57ac7-ea2d-47cf-b019-b867f876ee7c
-* entry[+].fullUrl = "https://sample.fhir.org/Observation/f241ac65-5eab-49a0-8b92-7fb263274110"
+* entry[+].fullUrl = "https://fhir.example.com/Observation/f241ac65-5eab-49a0-8b92-7fb263274110"
 * entry[=].resource = f241ac65-5eab-49a0-8b92-7fb263274110
 
 Instance: 9c98f78e-f324-4ad5-97a1-8eb9ef9a1172
@@ -123,7 +123,7 @@ Usage: #inline
 * section[sectionAllergies].text.extension.extension[0].url = "htmlid"
 * section[sectionAllergies].text.extension.extension[=].valueString = "9838cf73-c30d-4aa5-8ed8-36a079060b81"
 * section[sectionAllergies].text.extension.extension[+].url = "data"
-* section[sectionAllergies].text.extension.extension[=].valueUri = "https://sample.fhir.org/AllergyIntolerance/9838cf73-c30d-4aa5-8ed8-36a079060b81"
+* section[sectionAllergies].text.extension.extension[=].valueUri = "https://fhir.example.com/AllergyIntolerance/9838cf73-c30d-4aa5-8ed8-36a079060b81"
 * section[sectionAllergies].entry = Reference(9838cf73-c30d-4aa5-8ed8-36a079060b81)
 * section[sectionProblems].title = "Problem List"
 * section[sectionProblems].code = $loinc#11450-4 "Problem list - Reported"
@@ -133,12 +133,12 @@ Usage: #inline
 * section[sectionProblems].text.extension[=].extension[0].url = "htmlid"
 * section[sectionProblems].text.extension[=].extension[=].valueString = "8039e4a7-d459-454c-92a5-6c17ca2a824b"
 * section[sectionProblems].text.extension[=].extension[+].url = "data"
-* section[sectionProblems].text.extension[=].extension[=].valueUri = "https://sample.fhir.org/Condition/8039e4a7-d459-454c-92a5-6c17ca2a824b"
+* section[sectionProblems].text.extension[=].extension[=].valueUri = "https://fhir.example.com/Condition/8039e4a7-d459-454c-92a5-6c17ca2a824b"
 * section[sectionProblems].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/textLink"
 * section[sectionProblems].text.extension[=].extension[0].url = "htmlid"
 * section[sectionProblems].text.extension[=].extension[=].valueString = "f8ab8ac1-56d1-4239-8303-dc70c1a3d0e1"
 * section[sectionProblems].text.extension[=].extension[+].url = "data"
-* section[sectionProblems].text.extension[=].extension[=].valueUri = "https://sample.fhir.org/Condition/f8ab8ac1-56d1-4239-8303-dc70c1a3d0e1"
+* section[sectionProblems].text.extension[=].extension[=].valueUri = "https://fhir.example.com/Condition/f8ab8ac1-56d1-4239-8303-dc70c1a3d0e1"
 * section[sectionProblems].entry[0] = Reference(8039e4a7-d459-454c-92a5-6c17ca2a824b)
 * section[sectionProblems].entry[+] = Reference(f8ab8ac1-56d1-4239-8303-dc70c1a3d0e1)
 * section[sectionMedications].title = "Medication Summary"
@@ -149,17 +149,17 @@ Usage: #inline
 * section[sectionMedications].text.extension[=].extension[0].url = "htmlid"
 * section[sectionMedications].text.extension[=].extension[=].valueString = "c3d31980-2a88-45b6-a7af-3fe8d32cc6fa"
 * section[sectionMedications].text.extension[=].extension[+].url = "data"
-* section[sectionMedications].text.extension[=].extension[=].valueUri = "https://sample.fhir.org/MedicationStatement/c3d31980-2a88-45b6-a7af-3fe8d32cc6fa"
+* section[sectionMedications].text.extension[=].extension[=].valueUri = "https://fhir.example.com/MedicationStatement/c3d31980-2a88-45b6-a7af-3fe8d32cc6fa"
 * section[sectionMedications].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/textLink"
 * section[sectionMedications].text.extension[=].extension[0].url = "htmlid"
 * section[sectionMedications].text.extension[=].extension[=].valueString = "b8dac343-16d7-49bf-ac36-b15e6726c343"
 * section[sectionMedications].text.extension[=].extension[+].url = "data"
-* section[sectionMedications].text.extension[=].extension[=].valueUri = "https://sample.fhir.org/MedicationStatement/b8dac343-16d7-49bf-ac36-b15e6726c343"
+* section[sectionMedications].text.extension[=].extension[=].valueUri = "https://fhir.example.com/MedicationStatement/b8dac343-16d7-49bf-ac36-b15e6726c343"
 * section[sectionMedications].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/textLink"
 * section[sectionMedications].text.extension[=].extension[0].url = "htmlid"
 * section[sectionMedications].text.extension[=].extension[=].valueString = "b8e4d4a8-2c18-4f03-88dc-06f5f44f8058"
 * section[sectionMedications].text.extension[=].extension[+].url = "data"
-* section[sectionMedications].text.extension[=].extension[=].valueUri = "https://sample.fhir.org/MedicationStatement/b8e4d4a8-2c18-4f03-88dc-06f5f44f8058"
+* section[sectionMedications].text.extension[=].extension[=].valueUri = "https://fhir.example.com/MedicationStatement/b8e4d4a8-2c18-4f03-88dc-06f5f44f8058"
 * section[sectionMedications].entry[0] = Reference(c3d31980-2a88-45b6-a7af-3fe8d32cc6fa)
 * section[sectionMedications].entry[+] = Reference(b8dac343-16d7-49bf-ac36-b15e6726c343)
 * section[sectionMedications].entry[+] = Reference(b8e4d4a8-2c18-4f03-88dc-06f5f44f8058)
@@ -171,42 +171,42 @@ Usage: #inline
 * section[sectionImmunizations].text.extension[=].extension[0].url = "htmlid"
 * section[sectionImmunizations].text.extension[=].extension[=].valueString = "17b5a6d7-307b-4726-8c8c-0031e61582ce"
 * section[sectionImmunizations].text.extension[=].extension[+].url = "data"
-* section[sectionImmunizations].text.extension[=].extension[=].valueUri = "https://sample.fhir.org/Immunization/17b5a6d7-307b-4726-8c8c-0031e61582ce"
+* section[sectionImmunizations].text.extension[=].extension[=].valueUri = "https://fhir.example.com/Immunization/17b5a6d7-307b-4726-8c8c-0031e61582ce"
 * section[sectionImmunizations].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/textLink"
 * section[sectionImmunizations].text.extension[=].extension[0].url = "htmlid"
 * section[sectionImmunizations].text.extension[=].extension[=].valueString = "14e8b0d8-b4e4-4f8e-b263-ef385787453b"
 * section[sectionImmunizations].text.extension[=].extension[+].url = "data"
-* section[sectionImmunizations].text.extension[=].extension[=].valueUri = "https://sample.fhir.org/Immunization/14e8b0d8-b4e4-4f8e-b263-ef385787453b"
+* section[sectionImmunizations].text.extension[=].extension[=].valueUri = "https://fhir.example.com/Immunization/14e8b0d8-b4e4-4f8e-b263-ef385787453b"
 * section[sectionImmunizations].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/textLink"
 * section[sectionImmunizations].text.extension[=].extension[0].url = "htmlid"
 * section[sectionImmunizations].text.extension[=].extension[=].valueString = "47befa30-026c-421a-ad32-c0b134597a30"
 * section[sectionImmunizations].text.extension[=].extension[+].url = "data"
-* section[sectionImmunizations].text.extension[=].extension[=].valueUri = "https://sample.fhir.org/Immunization/47befa30-026c-421a-ad32-c0b134597a30"
+* section[sectionImmunizations].text.extension[=].extension[=].valueUri = "https://fhir.example.com/Immunization/47befa30-026c-421a-ad32-c0b134597a30"
 * section[sectionImmunizations].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/textLink"
 * section[sectionImmunizations].text.extension[=].extension[0].url = "htmlid"
 * section[sectionImmunizations].text.extension[=].extension[=].valueString = "2f05b590-ce75-4ac6-be97-c2a275e21cbc"
 * section[sectionImmunizations].text.extension[=].extension[+].url = "data"
-* section[sectionImmunizations].text.extension[=].extension[=].valueUri = "https://sample.fhir.org/Immunization/2f05b590-ce75-4ac6-be97-c2a275e21cbc"
+* section[sectionImmunizations].text.extension[=].extension[=].valueUri = "https://fhir.example.com/Immunization/2f05b590-ce75-4ac6-be97-c2a275e21cbc"
 * section[sectionImmunizations].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/textLink"
 * section[sectionImmunizations].text.extension[=].extension[0].url = "htmlid"
 * section[sectionImmunizations].text.extension[=].extension[=].valueString = "c1d3ccb9-8b7d-4732-8e03-abe63be1984c"
 * section[sectionImmunizations].text.extension[=].extension[+].url = "data"
-* section[sectionImmunizations].text.extension[=].extension[=].valueUri = "https://sample.fhir.org/Immunization/c1d3ccb9-8b7d-4732-8e03-abe63be1984c"
+* section[sectionImmunizations].text.extension[=].extension[=].valueUri = "https://fhir.example.com/Immunization/c1d3ccb9-8b7d-4732-8e03-abe63be1984c"
 * section[sectionImmunizations].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/textLink"
 * section[sectionImmunizations].text.extension[=].extension[0].url = "htmlid"
 * section[sectionImmunizations].text.extension[=].extension[=].valueString = "79b66c21-fbd3-4c7f-ae82-ac958ae62e0a"
 * section[sectionImmunizations].text.extension[=].extension[+].url = "data"
-* section[sectionImmunizations].text.extension[=].extension[=].valueUri = "https://sample.fhir.org/Immunization/79b66c21-fbd3-4c7f-ae82-ac958ae62e0a"
+* section[sectionImmunizations].text.extension[=].extension[=].valueUri = "https://fhir.example.com/Immunization/79b66c21-fbd3-4c7f-ae82-ac958ae62e0a"
 * section[sectionImmunizations].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/textLink"
 * section[sectionImmunizations].text.extension[=].extension[0].url = "htmlid"
 * section[sectionImmunizations].text.extension[=].extension[=].valueString = "9910b96a-793b-4e96-91a9-291c27357f83"
 * section[sectionImmunizations].text.extension[=].extension[+].url = "data"
-* section[sectionImmunizations].text.extension[=].extension[=].valueUri = "https://sample.fhir.org/Immunization/9910b96a-793b-4e96-91a9-291c27357f83"
+* section[sectionImmunizations].text.extension[=].extension[=].valueUri = "https://fhir.example.com/Immunization/9910b96a-793b-4e96-91a9-291c27357f83"
 * section[sectionImmunizations].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/textLink"
 * section[sectionImmunizations].text.extension[=].extension[0].url = "htmlid"
 * section[sectionImmunizations].text.extension[=].extension[=].valueString = "5b028fb0-bd04-4e75-b2bc-6952771173ea"
 * section[sectionImmunizations].text.extension[=].extension[+].url = "data"
-* section[sectionImmunizations].text.extension[=].extension[=].valueUri = "https://sample.fhir.org/Immunization/5b028fb0-bd04-4e75-b2bc-6952771173ea"
+* section[sectionImmunizations].text.extension[=].extension[=].valueUri = "https://fhir.example.com/Immunization/5b028fb0-bd04-4e75-b2bc-6952771173ea"
 * section[sectionImmunizations].entry[0] = Reference(17b5a6d7-307b-4726-8c8c-0031e61582ce)
 * section[sectionImmunizations].entry[+] = Reference(14e8b0d8-b4e4-4f8e-b263-ef385787453b)
 * section[sectionImmunizations].entry[+] = Reference(47befa30-026c-421a-ad32-c0b134597a30)
@@ -223,32 +223,32 @@ Usage: #inline
 * section[sectionResults].text.extension[=].extension[0].url = "htmlid"
 * section[sectionResults].text.extension[=].extension[=].valueString = "b0187efd-5f9b-474d-87bc-efebf877449a"
 * section[sectionResults].text.extension[=].extension[+].url = "data"
-* section[sectionResults].text.extension[=].extension[=].valueUri = "https://sample.fhir.org/Observation/b0187efd-5f9b-474d-87bc-efebf877449a"
+* section[sectionResults].text.extension[=].extension[=].valueUri = "https://fhir.example.com/Observation/b0187efd-5f9b-474d-87bc-efebf877449a"
 * section[sectionResults].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/textLink"
 * section[sectionResults].text.extension[=].extension[0].url = "htmlid"
 * section[sectionResults].text.extension[=].extension[=].valueString = "f40b9e26-93b4-462b-8811-bdd6943873aa"
 * section[sectionResults].text.extension[=].extension[+].url = "data"
-* section[sectionResults].text.extension[=].extension[=].valueUri = "https://sample.fhir.org/Observation/f40b9e26-93b4-462b-8811-bdd6943873aa"
+* section[sectionResults].text.extension[=].extension[=].valueUri = "https://fhir.example.com/Observation/f40b9e26-93b4-462b-8811-bdd6943873aa"
 * section[sectionResults].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/textLink"
 * section[sectionResults].text.extension[=].extension[0].url = "htmlid"
 * section[sectionResults].text.extension[=].extension[=].valueString = "612b7e6a-c902-45cb-b45c-d1894458a26b"
 * section[sectionResults].text.extension[=].extension[+].url = "data"
-* section[sectionResults].text.extension[=].extension[=].valueUri = "https://sample.fhir.org/Observation/612b7e6a-c902-45cb-b45c-d1894458a26b"
+* section[sectionResults].text.extension[=].extension[=].valueUri = "https://fhir.example.com/Observation/612b7e6a-c902-45cb-b45c-d1894458a26b"
 * section[sectionResults].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/textLink"
 * section[sectionResults].text.extension[=].extension[0].url = "htmlid"
 * section[sectionResults].text.extension[=].extension[=].valueString = "15bd8c0c-fa53-4f5b-994b-487c7db3dc78"
 * section[sectionResults].text.extension[=].extension[+].url = "data"
-* section[sectionResults].text.extension[=].extension[=].valueUri = "https://sample.fhir.org/Observation/15bd8c0c-fa53-4f5b-994b-487c7db3dc78"
+* section[sectionResults].text.extension[=].extension[=].valueUri = "https://fhir.example.com/Observation/15bd8c0c-fa53-4f5b-994b-487c7db3dc78"
 * section[sectionResults].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/textLink"
 * section[sectionResults].text.extension[=].extension[0].url = "htmlid"
 * section[sectionResults].text.extension[=].extension[=].valueString = "5019909f-097d-4a43-84d9-cc50143b8c82"
 * section[sectionResults].text.extension[=].extension[+].url = "data"
-* section[sectionResults].text.extension[=].extension[=].valueUri = "https://sample.fhir.org/Observation/5019909f-097d-4a43-84d9-cc50143b8c82"
+* section[sectionResults].text.extension[=].extension[=].valueUri = "https://fhir.example.com/Observation/5019909f-097d-4a43-84d9-cc50143b8c82"
 * section[sectionResults].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/textLink"
 * section[sectionResults].text.extension[=].extension[0].url = "htmlid"
 * section[sectionResults].text.extension[=].extension[=].valueString = "5d269392-79c1-4129-a142-0cdee6b49ea4"
 * section[sectionResults].text.extension[=].extension[+].url = "data"
-* section[sectionResults].text.extension[=].extension[=].valueUri = "https://sample.fhir.org/Observation/5d269392-79c1-4129-a142-0cdee6b49ea4"
+* section[sectionResults].text.extension[=].extension[=].valueUri = "https://fhir.example.com/Observation/5d269392-79c1-4129-a142-0cdee6b49ea4"
 * section[sectionResults].entry[0] = Reference(b0187efd-5f9b-474d-87bc-efebf877449a)
 * section[sectionResults].entry[+] = Reference(f40b9e26-93b4-462b-8811-bdd6943873aa)
 * section[sectionResults].entry[+] = Reference(612b7e6a-c902-45cb-b45c-d1894458a26b)
@@ -263,7 +263,7 @@ Usage: #inline
 * section[sectionProceduresHx].text.extension.extension[0].url = "htmlid"
 * section[sectionProceduresHx].text.extension.extension[=].valueString = "55f43bcb-9032-46c0-b44b-18330024f9aa"
 * section[sectionProceduresHx].text.extension.extension[+].url = "data"
-* section[sectionProceduresHx].text.extension.extension[=].valueUri = "https://sample.fhir.org/Procedure/39252"
+* section[sectionProceduresHx].text.extension.extension[=].valueUri = "https://fhir.example.com/Procedure/39252"
 * section[sectionProceduresHx].entry = Reference(39252)
 * section[sectionMedicalDevices].title = "Device Use"
 * section[sectionMedicalDevices].code = $loinc#46264-8 "History of medical device use"
@@ -273,7 +273,7 @@ Usage: #inline
 * section[sectionMedicalDevices].text.extension.extension[0].url = "htmlid"
 * section[sectionMedicalDevices].text.extension.extension[=].valueString = "e6ff83e1-4c35-43c6-a40b-d21642262844"
 * section[sectionMedicalDevices].text.extension.extension[+].url = "data"
-* section[sectionMedicalDevices].text.extension.extension[=].valueUri = "https://sample.fhir.org/DeviceUseStatement/eumfh-70-275-1"
+* section[sectionMedicalDevices].text.extension.extension[=].valueUri = "https://fhir.example.com/DeviceUseStatement/eumfh-70-275-1"
 * section[sectionMedicalDevices].entry = Reference(eumfh-70-275-1)
 * section[sectionVitalSigns].title = "Vital Signs"
 * section[sectionVitalSigns].code = $loinc#8716-3 "Vital signs note"
@@ -283,17 +283,17 @@ Usage: #inline
 * section[sectionVitalSigns].text.extension[0].extension[0].url = "htmlid"
 * section[sectionVitalSigns].text.extension[0].extension[0].valueString = "36ff59b8-d5a7-438e-b8c6-cd54af10a4af"
 * section[sectionVitalSigns].text.extension[0].extension[+].url = "data"
-* section[sectionVitalSigns].text.extension[0].extension[=].valueUri = "https://sample.fhir.org/Observation/36ff59b8-d5a7-438e-b8c6-cd54af10a4af"
+* section[sectionVitalSigns].text.extension[0].extension[=].valueUri = "https://fhir.example.com/Observation/36ff59b8-d5a7-438e-b8c6-cd54af10a4af"
 * section[sectionVitalSigns].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/textLink"
 * section[sectionVitalSigns].text.extension[=].extension[0].url = "htmlid"
 * section[sectionVitalSigns].text.extension[=].extension[=].valueString = "96e33a60-dbd8-47ce-b613-be954243939e"
 * section[sectionVitalSigns].text.extension[=].extension[+].url = "data"
-* section[sectionVitalSigns].text.extension[=].extension[=].valueUri = "https://sample.fhir.org/Observation/96e33a60-dbd8-47ce-b613-be954243939e"
+* section[sectionVitalSigns].text.extension[=].extension[=].valueUri = "https://fhir.example.com/Observation/96e33a60-dbd8-47ce-b613-be954243939e"
 * section[sectionVitalSigns].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/textLink"
 * section[sectionVitalSigns].text.extension[=].extension[0].url = "htmlid"
 * section[sectionVitalSigns].text.extension[=].extension[=].valueString = "4ea539e1-fff9-4f56-964f-650d9e69ce58"
 * section[sectionVitalSigns].text.extension[=].extension[+].url = "data"
-* section[sectionVitalSigns].text.extension[=].extension[=].valueUri = "https://sample.fhir.org/Observation/4ea539e1-fff9-4f56-964f-650d9e69ce58"
+* section[sectionVitalSigns].text.extension[=].extension[=].valueUri = "https://fhir.example.com/Observation/4ea539e1-fff9-4f56-964f-650d9e69ce58"
 * section[sectionVitalSigns].entry[0] = Reference(36ff59b8-d5a7-438e-b8c6-cd54af10a4af)
 * section[sectionVitalSigns].entry[+] = Reference(96e33a60-dbd8-47ce-b613-be954243939e)
 * section[sectionVitalSigns].entry[+] = Reference(4ea539e1-fff9-4f56-964f-650d9e69ce58)
@@ -305,12 +305,12 @@ Usage: #inline
 * section[sectionSocialHistory].text.extension[=].extension[0].url = "htmlid"
 * section[sectionSocialHistory].text.extension[=].extension[=].valueString = "9f906425-8c18-4580-ab30-61a56d7f4c05"
 * section[sectionSocialHistory].text.extension[=].extension[+].url = "data"
-* section[sectionSocialHistory].text.extension[=].extension[=].valueUri = "https://sample.fhir.org/Observation/9f906425-8c18-4580-ab30-61a56d7f4c05"
+* section[sectionSocialHistory].text.extension[=].extension[=].valueUri = "https://fhir.example.com/Observation/9f906425-8c18-4580-ab30-61a56d7f4c05"
 * section[sectionSocialHistory].text.extension[+].url = "http://hl7.org/fhir/StructureDefinition/textLink"
 * section[sectionSocialHistory].text.extension[=].extension[0].url = "htmlid"
 * section[sectionSocialHistory].text.extension[=].extension[=].valueString = "e2e3f8aa-df2a-4357-b01f-a9fba6bb9b41"
 * section[sectionSocialHistory].text.extension[=].extension[+].url = "data"
-* section[sectionSocialHistory].text.extension[=].extension[=].valueUri = "https://sample.fhir.org/Observation/e2e3f8aa-df2a-4357-b01f-a9fba6bb9b41"
+* section[sectionSocialHistory].text.extension[=].extension[=].valueUri = "https://fhir.example.com/Observation/e2e3f8aa-df2a-4357-b01f-a9fba6bb9b41"
 * section[sectionSocialHistory].entry[0] = Reference(9f906425-8c18-4580-ab30-61a56d7f4c05)
 * section[sectionSocialHistory].entry[+] = Reference(e2e3f8aa-df2a-4357-b01f-a9fba6bb9b41)
 * section[sectionAlerts].title = "Alerts"
@@ -321,7 +321,7 @@ Usage: #inline
 * section[sectionAlerts].text.extension.extension[0].url = "htmlid"
 * section[sectionAlerts].text.extension.extension[0].valueString = "e8ae9c4e-8f5a-4270-bfac-02368c567fcf"
 * section[sectionAlerts].text.extension.extension[1].url = "data"
-* section[sectionAlerts].text.extension.extension[1].valueUri = "https://sample.fhir.org/Flag/e8ae9c4e-8f5a-4270-bfac-02368c567fcf"
+* section[sectionAlerts].text.extension.extension[1].valueUri = "https://fhir.example.com/Flag/e8ae9c4e-8f5a-4270-bfac-02368c567fcf"
 * section[sectionAlerts].entry = Reference(e8ae9c4e-8f5a-4270-bfac-02368c567fcf)
 * section[sectionPatientStory].title = "Patient Story"
 * section[sectionPatientStory].code = $loinc#81338-6 "Patient Goals, preferences, and priorities for care experience"
@@ -336,7 +336,7 @@ Usage: #inline
 * section[sectionAdvanceDirectives].text.extension.extension[0].url = "htmlid"
 * section[sectionAdvanceDirectives].text.extension.extension[=].valueString = "080d85fa-c807-42d1-a3af-b3ee70858a54"
 * section[sectionAdvanceDirectives].text.extension.extension[+].url = "data"
-* section[sectionAdvanceDirectives].text.extension.extension[=].valueUri = "https://sample.fhir.org/Consent/080d85fa-c807-42d1-a3af-b3ee70858a54"
+* section[sectionAdvanceDirectives].text.extension.extension[=].valueUri = "https://fhir.example.com/Consent/080d85fa-c807-42d1-a3af-b3ee70858a54"
 * section[sectionAdvanceDirectives].entry = Reference(080d85fa-c807-42d1-a3af-b3ee70858a54)
 * section[sectionFunctionalStatus].title = "Functional Status"
 * section[sectionFunctionalStatus].code = $loinc#47420-5 "Functional status assessment note"
@@ -346,7 +346,7 @@ Usage: #inline
 * section[sectionFunctionalStatus].text.extension.extension[0].url = "htmlid"
 * section[sectionFunctionalStatus].text.extension.extension[=].valueString = "4f3d8f79-2f96-48c5-b346-d47f0c66c981"
 * section[sectionFunctionalStatus].text.extension.extension[+].url = "data"
-* section[sectionFunctionalStatus].text.extension.extension[=].valueUri = "https://sample.fhir.org/Condition/4f3d8f79-2f96-48c5-b346-d47f0c66c981"
+* section[sectionFunctionalStatus].text.extension.extension[=].valueUri = "https://fhir.example.com/Condition/4f3d8f79-2f96-48c5-b346-d47f0c66c981"
 * section[sectionFunctionalStatus].entry = Reference(4f3d8f79-2f96-48c5-b346-d47f0c66c981)
 * section[sectionPastProblems].title = "History of Past Problems"
 * section[sectionPastProblems].code = $loinc#11348-0 "History of Past illness note"
@@ -356,7 +356,7 @@ Usage: #inline
 * section[sectionPastProblems].text.extension.extension[0].url = "htmlid"
 * section[sectionPastProblems].text.extension.extension[=].valueString = "77efacd9-b5a6-4b35-9764-269017ea7567"
 * section[sectionPastProblems].text.extension.extension[+].url = "data"
-* section[sectionPastProblems].text.extension.extension[=].valueUri = "https://sample.fhir.org/Condition/77efacd9-b5a6-4b35-9764-269017ea7567"
+* section[sectionPastProblems].text.extension.extension[=].valueUri = "https://fhir.example.com/Condition/77efacd9-b5a6-4b35-9764-269017ea7567"
 * section[sectionPastProblems].entry = Reference(77efacd9-b5a6-4b35-9764-269017ea7567)
 * section[sectionPregnancyHx].title = "History of Pregnancy"
 * section[sectionPregnancyHx].code = $loinc#10162-6 "History of pregnancies Narrative"
@@ -366,7 +366,7 @@ Usage: #inline
 * section[sectionPregnancyHx].text.extension.extension[0].url = "htmlid"
 * section[sectionPregnancyHx].text.extension.extension[=].valueString = "f241ac65-5eab-49a0-8b92-7fb263274110"
 * section[sectionPregnancyHx].text.extension.extension[+].url = "data"
-* section[sectionPregnancyHx].text.extension.extension[=].valueUri = "https://sample.fhir.org/Observation/f241ac65-5eab-49a0-8b92-7fb263274110"
+* section[sectionPregnancyHx].text.extension.extension[=].valueUri = "https://fhir.example.com/Observation/f241ac65-5eab-49a0-8b92-7fb263274110"
 * section[sectionPregnancyHx].entry = Reference(f241ac65-5eab-49a0-8b92-7fb263274110)
 * section[sectionPlanOfCare].title = "Plan of Care"
 * section[sectionPlanOfCare].code = $loinc#18776-5 "Plan of care note"
@@ -376,7 +376,7 @@ Usage: #inline
 * section[sectionPlanOfCare].text.extension.extension[0].url = "htmlid"
 * section[sectionPlanOfCare].text.extension.extension[=].valueString = "85d57ac7-ea2d-47cf-b019-b867f876ee7c"
 * section[sectionPlanOfCare].text.extension.extension[+].url = "data"
-* section[sectionPlanOfCare].text.extension.extension[=].valueUri = "https://sample.fhir.org/CarePlan/85d57ac7-ea2d-47cf-b019-b867f876ee7c"
+* section[sectionPlanOfCare].text.extension.extension[=].valueUri = "https://fhir.example.com/CarePlan/85d57ac7-ea2d-47cf-b019-b867f876ee7c"
 * section[sectionPlanOfCare].entry = Reference(85d57ac7-ea2d-47cf-b019-b867f876ee7c)
 
 Instance: d174bd1a-b368-41e6-83a2-af77f2b3c60f
@@ -825,7 +825,7 @@ Usage: #inline
 * subject = Reference(d174bd1a-b368-41e6-83a2-af77f2b3c60f)
 * date = "2025-08-01T10:00:00Z"
 * content.attachment.contentType = #application/pdf
-* content.attachment.url = "https://sample.fhir.org/DocumentReference/advance-directive-123/content"
+* content.attachment.url = "https://fhir.example.com/DocumentReference/advance-directive-123/content"
 * content.attachment.title = "Advance Directive Document"
 
 Instance: 4f3d8f79-2f96-48c5-b346-d47f0c66c981
