@@ -1,9 +1,14 @@
 == Suppressed Messages ==
 
-# A bundle may reference a resource like an external document (i.e. PDF of Advance Directive) without embedding
+# EXAMPLES: Example bundles may reference external resources (e.g., a PDF of an Advance Directive) without embedding them directly. This reflects real-world practice and is intentional in these exampl
 INFORMATION: Bundle/bundle-ips-all-sections: Bundle: Can't find 'https://fhir.example.com/DocumentReference/advance-directive-123/content' in the bundle (Bundle.entry[37].resource.content[0].attachment.url)
 
-# The following code systems that are used only in example instances are localized (European) and are not supported by the build terminology service.
+# EXAMPLES: Identifiers such as HPI facility, NHI, and professional board IDs are valid in the New Zealand context. They are included as illustrative examples, even though the URIs are not registered in the HL7 build terminology service.
+%No definition could be found for URL value 'https://standards.digital.health.nz/ns/nhi-id'%
+%No definition could be found for URL value 'https://standards.digital.health.nz/ns/hpi-facility-id'%
+%No definition could be found for URL value 'https://standards.digital.health.nz/ns/psychotherapists-board-id'%
+
+# EXAMPLES: Several example resources use European-specific code systems identified by OIDs. These are included for realism in examples but are not supported by the HL7 build service.
 %A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.4.4.1' could not be found, so the code cannot be validated%
 %A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.4.4.7' could not be found, so the code cannot be validated%
 %No definition could be found for URL value 'urn:oid:2.16.724.4.8.10.200.10%
@@ -13,30 +18,13 @@ INFORMATION: Bundle/bundle-ips-all-sections: Bundle: Can't find 'https://fhir.ex
 %No definition could be found for URL value 'urn:oid:2.16.528.1.1007.3.3%
 %No definition could be found for URL value 'urn:oid:2.16.528.1.1007.3.1%
 
-# The following New Zealand identifiers are allowable as in examples (all sections Bundle and Bundle Minimal example)
-%No definition could be found for URL value 'https://standards.digital.health.nz/ns/nhi-id'%
-%No definition could be found for URL value 'https://standards.digital.health.nz/ns/hpi-facility-id'%
-%No definition could be found for URL value 'https://standards.digital.health.nz/ns/psychotherapists-board-id'%
+# EXAMPLES: Examples intentionally illustrate the use of local identifiers and custom extensions in Patient and Device resources. This demonstrates flexibility for implementers, even though these URIs are not defined in the build terminology service.
+INFORMATION: Patient/eumfh-39-07: Patient.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: Patient/eumfh-39-07: Patient.identifier[0].system: No definition could be found for URL value 'http://trilliumbridge.eu/fhir/demos/eumfh/inject'
+WARNING: Patient/eumfh-39-07: Patient.identifier[1].system: No definition could be found for URL value 'http://trilliumbridge.eu/fhir/demos/eumfh/patient_id'
+WARNING: Device/ips-example-imaging-1: Device.identifier[0].system: No definition could be found for URL value 'http://my.organization.example/devicesID'
 
-# The following shows up for all obligation extensions 
-%This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation%
-
-# This is inherited from the base ImagingStudy resource, so cannot address
-%A definition could not be found for Canonical URL 'http://www.rsna.org/RadLex_Playbook.aspx%
-%A definition could not be found for Canonical URL 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1%
-%ValueSet 'http://www.rsna.org/RadLex_Playbook.aspx' not found%
-WARNING: StructureDefinition/ImagingStudy-uv-ips: StructureDefinition.snapshot.element[52].binding: The definition for the element 'ImagingStudy.series.performer.function' binds to the value set 'http://hl7.org/fhir/ValueSet/series-performer-function' which is experimental, but this structure is not labeled as experimental
-
-
-# The ActorDefinition from R5 points to the deprecated valueset. The R6 one still has the code we use 
-INFORMATION: ActorDefinition/Consumer: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
-INFORMATION: ActorDefinition/Creator: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
-INFORMATION: ActorDefinition/Server: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
-
-# IPS guide directs support toward effectiveDateTime, so only profile that in MedicationStatement
-% This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips|2.0.0 % 
-
-# Previous guides have included multi-lingual examples. We would like to retain even though display checks may not work.
+# EXAMPLES: Previous IPS guides have included multilingual displays to demonstrate international applicability. These are retained for consistency, despite known limitations in the build service for validating language-specific display names.
 INFORMATION: Bundle/IPS-examples-Bundle-with-immunization: Bundle.entry[20].resource.vaccineCode.coding[0].display: 'Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens only vaccine product' is the default display; the code system http://snomed.info/sct has no Display Names for the language fr-LU
 INFORMATION: Bundle/IPS-examples-Bundle-with-immunization: Bundle.entry[20].resource.site.coding[0].display: 'Right thigh' is the default display; the code system http://snomed.info/sct has no Display Names for the language fr-LU
 INFORMATION: Bundle/IPS-examples-Bundle-with-immunization: Bundle.entry[20].resource.protocolApplied[0].targetDisease[0].coding[0].display: 'Pertussis' is the default display; the code system http://snomed.info/sct has no Display Names for the language fr-LU
@@ -53,19 +41,32 @@ INFORMATION: Immunization/75680: Immunization.vaccineCode.coding[0].display: 'Bo
 INFORMATION: Immunization/75680: Immunization.site.coding[0].display: 'Right thigh' is the default display; the code system http://snomed.info/sct has no Display Names for the language fr-LU
 WARNING: Immunization/75680: Immunization.vaccineCode.coding[2].system: A definition for CodeSystem 'https://cnk.apb.be/codings/cnk_product_codes' could not be found, so the code cannot be validated
 
+# EXAMPLES: The IPS specification directs implementers to use `effectiveDateTime` for MedicationStatement. Some examples use period to highlight some medications may not be for a specific date even though this generates profile slice messages.
+%This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips|2.0.0%
 
-# Resources that only had draft CodeSystems in R4
+# EXAMPLES: Duplicate anchor id caused by publisher. Documented in https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/.E2.9C.94.20Duplicate.20anchor.20IDs.3F.3F.3F
+WARNING: C:\Users\JohnDAmore\Source\fhir-ips\output\Bundle-bundle-ips-all-sections.html: The html source has duplicate anchor Ids: Patient_d174bd1a-b368-41e6-83a2-af77f2b3c60f
+
+# OBLIGATIONS: The obligation extension generates slice warnings, but these are expected. The extension is reused across many resources, leading to repeated validation messages that do not indicate an actual problem.
+%This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation%
+
+# TERMINOLOGY: Some ImagingStudy bindings (e.g., to RadLex and DICOM references) are inherited from base FHIR and cannot be overridden in IPS. Resulting warnings are acknowledged but not actionable within this guide. 
+%A definition could not be found for Canonical URL 'http://www.rsna.org/RadLex_Playbook.aspx%
+%A definition could not be found for Canonical URL 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1%
+%ValueSet 'http://www.rsna.org/RadLex_Playbook.aspx' not found%
+WARNING: StructureDefinition/ImagingStudy-uv-ips: StructureDefinition.snapshot.element[52].binding: The definition for the element 'ImagingStudy.series.performer.function' binds to the value set 'http://hl7.org/fhir/ValueSet/series-performer-function' which is experimental, but this structure is not labeled as experimental
+
+# TERMINOLOGY: R5 ActorDefinition points to a deprecated ValueSet, while the corresponding R6 ValueSet retains the required codes. This is a known transitional issue and is acceptable for IPS examples.
+INFORMATION: ActorDefinition/Consumer: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
+INFORMATION: ActorDefinition/Creator: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
+INFORMATION: ActorDefinition/Server: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
+
+# TERMINOLOGY: Some resources reference draft code systems from FHIR R4 (e.g., DiagnosticReport.status, ImagingStudy.status). These are inherited from base FHIR definitions and cannot be altered in the IPS guide.
 INFORMATION: DiagnosticReport/hemoglobin: DiagnosticReport.status: Reference to draft CodeSystem http://hl7.org/fhir/diagnostic-report-status|4.0.1
 INFORMATION: ImagingStudy/TII-ImagingStudy-5-1: ImagingStudy.status: Reference to draft CodeSystem http://hl7.org/fhir/imagingstudy-status|4.0.1
 
-# CDA OIDs are available from prior publications which use art-decor
+# TERMINOLOGY: Certain CDA OIDs are carried forward from prior IPS publications and are maintained in ART-DECOR. Their use here is consistent with historical precedent and does not require new definitions in this guide.
 %No definition could be found for URL value 'http://art-decor.org/ns/oids/vs'%
 
-# Desire to show that other extensions and local identifiers may be used in Patient and Device resources
-INFORMATION: Patient/eumfh-39-07: Patient.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
-WARNING: Patient/eumfh-39-07: Patient.identifier[0].system: No definition could be found for URL value 'http://trilliumbridge.eu/fhir/demos/eumfh/inject'
-WARNING: Patient/eumfh-39-07: Patient.identifier[1].system: No definition could be found for URL value 'http://trilliumbridge.eu/fhir/demos/eumfh/patient_id'
-WARNING: Device/ips-example-imaging-1: Device.identifier[0].system: No definition could be found for URL value 'http://my.organization.example/devicesID'
-
-# These are several large terminologies in IPS. We understand only a subset may be displayed
+# TERMINOLOGY: IPS leverages large international terminologies. The build service truncates expansions, so only subsets are displayed. This does not affect the correctness of the value sets.
 %The value set expansion is too large, and only a subset has been displayed%
