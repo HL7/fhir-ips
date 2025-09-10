@@ -800,4 +800,4 @@ The IPS dataset is minimal and non-exhaustive; specialty-agnostic and condition-
 * section[sectionVitalSigns].entry ^short = "Notable vital signs or physical findings."
 * section[sectionVitalSigns].entry ^definition = "Notable vital signs or physical findings as: blood pressure, body temperature, heart rate, and respiratory rate. It may also include other clinical findings, such as height, weight, body mass index, head circumference, and pulse oximetry. In particular, notable vital signs or physical findings such as the most recent, maximum and/or minimum, baseline, or relevant trends may be included"
 * section[sectionVitalSigns].entry contains vitalSign 0..*
-* section[sectionVitalSigns].entry[vitalSign] only Reference($vitalsigns)
+* section[sectionVitalSigns].entry[vitalSign] only Reference($vital-signs-profile)
