@@ -65,10 +65,12 @@ Depending on the conditions, exception is or is not raised if the data are missi
 
 Logical: Document
 Parent: Base
+Description: "Abstract model of an IPS document (\"Document\" mapping target)"
 Characteristics: #can-be-target
 
 Logical: DocumentSection
 Parent: Base
+Description: "Abstract model of an IPS section (\"DocumentSection\" mapping target)"
 Characteristics: #can-be-target
 
 Logical: IPSSectionsLM

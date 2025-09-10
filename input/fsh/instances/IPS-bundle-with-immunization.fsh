@@ -273,7 +273,6 @@ Instance: 45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7-with-immunization
 InstanceOf: Organization
 Usage: #inline
 * active = true
-* type = $organization-type#other
 * name = "Laboratoire de charme"
 
 Instance: aa11a2be-3e36-4be7-b58a-6fc3dace2741-with-immunization

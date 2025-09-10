@@ -22,7 +22,7 @@ It allows also providing details about the related study using the partOf elemen
 * status ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"
 * status ^binding.extension[=].valueString = "ObservationStatus"
 * category only CodeableConceptIPS
-* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.type = #value
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
 * category ^definition = "A code that classifies the general type of observation being made. In this profile, fixed to \"imaging\"."
