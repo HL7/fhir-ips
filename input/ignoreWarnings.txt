@@ -120,9 +120,6 @@ INFORMATION: Bundle/IPS-examples-Bundle-with-immunization: Bundle.entry[6].resou
 INFORMATION: Bundle/bundle-minimal: Bundle.entry[5].resource.effective.ofType(Period): This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: MedicationStatement/eumfh-39-07-1: MedicationStatement.effective.ofType(Period): This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 
-# 08. OBLIGATIONS: The obligation extension generates slice warnings, but these are expected. The extension is reused across many resources, leading to repeated validation messages that do not indicate an actual problem.
-%This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation%
-
 # 09. TERMINOLOGY: These ImagingStudy value set bindings (e.g., to RadLex and DICOM references) and element definitions are inherited from base FHIR and are not overridden in IPS. The resulting warnings are acknowledged but cannot be resolved within this IG.
 WARNING: ImagingStudy/TII-ImagingStudy-5-1: ImagingStudy.procedureCode[0]: ValueSet 'http://www.rsna.org/RadLex_Playbook.aspx' not found
 WARNING: StructureDefinition/ImagingStudy-uv-ips: StructureDefinition.snapshot.element[28].binding.valueSet: A definition could not be found for Canonical URL 'http://www.rsna.org/RadLex_Playbook.aspx'
