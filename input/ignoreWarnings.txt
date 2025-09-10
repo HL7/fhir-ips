@@ -44,9 +44,6 @@ WARNING: Immunization/75680: Immunization.vaccineCode.coding[2].system: A defini
 # EXAMPLES: The IPS specification directs implementers to use `effectiveDateTime` for MedicationStatement. Some examples use period to highlight some medications may not be for a specific date even though this generates profile slice messages.
 %This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ips/StructureDefinition/MedicationStatement-uv-ips|2.0.0%
 
-# EXAMPLES: Duplicate anchor id caused by publisher. Documented in https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/.E2.9C.94.20Duplicate.20anchor.20IDs.3F.3F.3F
-WARNING: C:\Users\JohnDAmore\Source\fhir-ips\output\Bundle-bundle-ips-all-sections.html: The html source has duplicate anchor Ids: Patient_d174bd1a-b368-41e6-83a2-af77f2b3c60f
-
 # OBLIGATIONS: The obligation extension generates slice warnings, but these are expected. The extension is reused across many resources, leading to repeated validation messages that do not indicate an actual problem.
 %This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/obligation%
 
@@ -54,7 +51,6 @@ WARNING: C:\Users\JohnDAmore\Source\fhir-ips\output\Bundle-bundle-ips-all-sectio
 %A definition could not be found for Canonical URL 'http://www.rsna.org/RadLex_Playbook.aspx%
 %A definition could not be found for Canonical URL 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1%
 %ValueSet 'http://www.rsna.org/RadLex_Playbook.aspx' not found%
-WARNING: StructureDefinition/ImagingStudy-uv-ips: StructureDefinition.snapshot.element[52].binding: The definition for the element 'ImagingStudy.series.performer.function' binds to the value set 'http://hl7.org/fhir/ValueSet/series-performer-function' which is experimental, but this structure is not labeled as experimental
 
 # TERMINOLOGY: R5 ActorDefinition points to a deprecated ValueSet, while the corresponding R6 ValueSet retains the required codes. This is a known transitional issue and is acceptable for IPS examples.
 INFORMATION: ActorDefinition/Consumer: ActorDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
