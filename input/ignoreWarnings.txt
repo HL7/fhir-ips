@@ -1,6 +1,6 @@
 == Suppressed Messages ==
 
-# 01. EXAMPLES: Example bundles may reference external resources (e.g., a PDF of an Advance Directive) without embedding them directly. This reflects real-world practice and is intentional in these examples.
+# 01. EXAMPLES: A DocumentReference in a Bundle may point to external resources using the content.attachment.url (e.g., a PDF of an Advance Directive) without directly including. This reflects real-world practice and is intentional in this example.
 INFORMATION: Bundle/bundle-ips-all-sections: Bundle: Can't find 'https://fhir.example.com/DocumentReference/advance-directive-123/content' in the bundle (Bundle.entry[37].resource.content[0].attachment.url)
 
 # 02. EXAMPLES: Identifiers such as HPI facility, NHI, and professional board IDs are valid in the New Zealand context. Examples instances containing these identifiers are included as illustrative examples in the IG, even though the URIs for these identifier systems are not known to the IG publication build tooling.
@@ -90,11 +90,10 @@ WARNING: Bundle/bundle-minimal: Bundle.entry[6].resource/*Medication/95db7c92-56
 WARNING: Bundle/bundle-minimal: Bundle.entry[6].resource/*Medication/95db7c92-566a-4ded-896b-2220ab244a9e*/.code.coding[2].system: A definition for CodeSystem 'urn:oid:2.16.840.1.113883.2.4.4.7' could not be found, so the code cannot be validated
 WARNING: Immunization/75680: Immunization.vaccineCode.coding[2].system: A definition for CodeSystem 'https://cnk.apb.be/codings/cnk_product_codes' could not be found, so the code cannot be validated
 
-# 05. EXAMPLES: Examples intentionally illustrate the use of European or other local identifiers and custom extensions in Patient and Device resources. This demonstrates flexibility for implementers, even though these URIs are not defined and known to the IG publication build tooling.
+# 05. EXAMPLES: Examples intentionally illustrate the use of European or other local identifiers and custom extensions in Patient resource. This demonstrates flexibility for implementers, even though these URIs are not defined and known to the IG publication build tooling.
 INFORMATION: Patient/eumfh-39-07: Patient.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: Patient/eumfh-39-07: Patient.identifier[0].system: No definition could be found for URL value 'http://trilliumbridge.eu/fhir/demos/eumfh/inject'
 WARNING: Patient/eumfh-39-07: Patient.identifier[1].system: No definition could be found for URL value 'http://trilliumbridge.eu/fhir/demos/eumfh/patient_id'
-WARNING: Device/ips-example-imaging-1: Device.identifier[0].system: No definition could be found for URL value 'http://my.organization.example/devicesID'
 
 # 06. EXAMPLES: Previous IPS guides have included multilingual displays to demonstrate international applicability. These are retained for consistency, despite known limitations in the build service for validating language-specific display names.
 INFORMATION: Bundle/IPS-examples-Bundle-with-immunization: Bundle.entry[20].resource.vaccineCode.coding[0].display: 'Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens only vaccine product' is the default display; the code system http://snomed.info/sct has no Display Names for the language fr-LU
