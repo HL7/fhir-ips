@@ -5,11 +5,11 @@ Description: """
 While SNOMED remains a preferred binding for medicine route, EDQM (European Directorate for the Quality of Medicines and Healthcare) route of administration codes are allowed as additional binding. 
 
 EDQM (European Directorate for the Quality of Medicines and Healthcare) Route of Administration codes.  This Value Set includes all the EDQM Standard Terms having:  
-[Concept Status] = ‘Current’ AND  
+[Concept Status] = ‘C’ AND  
 [Concept Class] = 'ROA' AND  
-[Domain] = 'Human and Veterinary'  
+[Domain] = 'H+V'  
 
-ROA = 'Route of administration'
+C = 'Current'; ROA = 'Route of administration'; H+V = 'Human and Veterinary'
 """
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^identifier.use = #official
@@ -24,6 +24,6 @@ ROA = 'Route of administration'
 * ^immutable = false
 * ^copyright = "This artifact includes content from EDQM Standard Terms. EDQM Standard Terms are copyright European Directorate for the Quality of Medicines. Terms & Conditions in https://www.edqm.eu/en/standard-terms-database"
 * include codes from system $standardterms
-    where status = "Current" and
-    class = "ROA" and
-    domain = "Human and Veterinary"
+    where status = "C" // Current
+    and class = "ROA"
+    and domain = "H+V" // Human and Veterinary

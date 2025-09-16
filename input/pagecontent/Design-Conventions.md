@@ -26,7 +26,7 @@ When an [IPS Composition](./StructureDefinition-Composition-uv-ips.html) is gene
 
 - The intent of IPS documents is to share a patient’s pertinent health information across borders where different languages may be used. Human-readable narrative renders the document with the provenance of the originating system's language (i.e. before language translation). This rendering provides a source of truth and comparison for any subsequent translation. While the IPS standard allows for language translations to be included, both in coded display and narrative, no expectation can be reliably made by downstream consumers (e.g. another system in cross-border exchange) that local language translations or local codes will be present.
 
-- Support for this requirement is found in international standards. As stated in [ISO 27269](https://www.iso.org/standard/79491.html), IPS documents have the ability for attestation. While IPS documents need not be signed in all cases, the inclusion of human-readable narrative is necessary for attestation and legal authentication since that represents a presented form of the document.
+- Support for this requirement is found in international standards. As stated in [ISO 27269](https://www.iso.org/standard/84639.html), IPS documents have the ability for attestation. While IPS documents need not be signed in all cases, the inclusion of human-readable narrative is necessary for attestation and legal authentication since that represents a presented form of the document.
 
 - While the [FHIR Narrative guidance](https://hl7.org/FHIR/narrative.html) specifies that in strictly managed trading systems narrative may be omitted, the IPS is primarily intended for cross-border use, which is not tightly coupled. Human-readable narrative provides a fallback for patient safety when two systems may not be able to process all machine readable content during exchange and when the source system might not be available to the receiver for consultation and clarification. Further, the patient and the receiving provider may be multilingual and able to read both the original language and any translation to the receiving jurisdiction language, supporting meaningful conversations at the point of care.
 
@@ -38,7 +38,7 @@ The rationale above provides context for why narrative is important in the conte
 
 #### Narrative Content Guidance
 
-Granular requirements regarding what is considered clinically relevant for inclusion in the narrative of each section are not currently defined in [ISO 27269](https://www.iso.org/standard/79491.html) and are subsequently not defined or enforced in this guide.
+Granular requirements regarding what is considered clinically relevant for inclusion in the narrative of each section are not currently defined in [ISO 27269](https://www.iso.org/standard/84639.html) and are subsequently not defined or enforced in this guide.
 
 <blockquote class="stu-note">
 	<p>While a globally consistent practice has not been identified, IPS encourages implementers to review emerging best practices and guidelines regarding narrative text that are being implemented in participating nations (e.g., <a href="https://informatiestandaarden.nictiz.nl/wiki/FHIR:V1.0_FHIR_IG_STU3#Resource.text_or_.22the_narrative.22">The Netherlands</a>) and discussed in the <a href="https://chat.fhir.org/#narrow/stream/207835-IPS/topic/generation.20of.20narrative">FHIR Community</a>. 

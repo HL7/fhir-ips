@@ -1,5 +1,5 @@
 An **International Patient Summary (IPS) document** is an electronic health record extract containing essential healthcare information about a subject of care.
-As specified in [ISO 27269](https://www.iso.org/standard/79491.html), it is designed for supporting the use case scenario for ‘unplanned, cross border care’, but it is not limited to it.
+As specified in [ISO 27269](https://www.iso.org/standard/84639.html), it is designed for supporting the use case scenario for ‘unplanned, cross border care’, but it is not limited to it.
 
 It is intended to be international, i.e., to provide generic solutions for global application beyond a particular region or country.
 

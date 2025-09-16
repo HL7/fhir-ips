@@ -10,7 +10,7 @@ extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
     valueCode: pc
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
-    valueInteger: 2
+    valueInteger: 3
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
     valueCode: trial-use
 license: CC0-1.0
@@ -22,12 +22,15 @@ publisher:
   url: http://www.hl7.org/Special/committees/patientcare
 jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 dependencies:
-  hl7.fhir.uv.extensions.r4:
-    version: 5.3.0-ballot-tc1
-    uri: http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions
   hl7.fhir.uv.ipa:
     version: 1.1.0
     uri: http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa
+definition: 
+  extension: 
+    - url: http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency
+      valueCode: hl7.fhir.uv.extensions.r4#5.3.0-ballot-tc1
+parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
+  pin-canonicals: pin-multiples
 menu:
   Home: index.html
   Table of Contents: toc.html

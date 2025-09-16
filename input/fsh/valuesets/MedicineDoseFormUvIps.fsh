@@ -5,11 +5,11 @@ Description: """
 While SNOMED remains a preferred binding for medicine doseform, EDQM (European Directorate for the Quality of Medicines and Healthcare) doseform codes are allowed as additional binding. 
 
 This Value Set includes all the EDQM Standard Terms having:  
-[Concept Status] = ‘Current’ AND  
+[Concept Status] = ‘C’ AND  
 [Concept Class] IN (‘PDF’, ‘CMT’, ‘CDF’, ‘PFT') AND  
-[Domain] = 'Human and Veterinary'  
+[Domain] = 'H+V'  
 
-PDF = 'Pharmaceutical dose form'; CMT = 'Combined terms'; CDF = 'Combined pharmaceutical dose form'; PFT = 'Patient Friendly'
+C = 'Current'; PDF = 'Pharmaceutical dose form'; CMT = 'Combined terms'; CDF = 'Combined pharmaceutical dose form'; PFT = 'Patient Friendly'; H+V = 'Human and Veterinary'
 """
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^identifier.use = #official
@@ -24,18 +24,18 @@ PDF = 'Pharmaceutical dose form'; CMT = 'Combined terms'; CDF = 'Combined pharma
 * ^immutable = false
 * ^copyright = "This artifact includes content from EDQM Standard Terms. EDQM Standard Terms are copyright European Directorate for the Quality of Medicines. Terms & Conditions in https://www.edqm.eu/en/standard-terms-database"
 * include codes from system $standardterms
-    where status = "Current" and
-    class = "PDF" and
-    domain = "Human and Veterinary"
+    where status = "C" // Current
+    and class = "PDF"
+    and domain = "H+V" // Human and Veterinary
 * include codes from system $standardterms
-    where status = "Current" and
-    class = "CMT" and
-    domain = "Human and Veterinary"
+    where status = "C" // Current 
+    and class = "CMT" 
+    and domain = "H+V" // Human and Veterinary
 * include codes from system $standardterms
-    where status = "Current" and
-    class = "CDF" and
-    domain = "Human and Veterinary"
+    where status = "C" // Current
+    and class = "CDF"
+    and domain = "H+V" // Human and Veterinary
 * include codes from system $standardterms
-    where status = "Current" and
-    class = "PFT" and
-    domain = "Human and Veterinary"
+    where status = "C" // Current
+    and class = "PFT"
+    and domain = "H+V" // Human and Veterinary
