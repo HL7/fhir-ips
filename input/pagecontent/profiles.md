@@ -11,4 +11,4 @@ A complete list of the sections and the profiles used is available in the <a hre
 
 The links and descriptions for the profiles that have been defined for this implementation guide are listed here:
 
-{% include table-profiles.xhtml %}
+{% lang-fragment table-profiles.xhtml %}

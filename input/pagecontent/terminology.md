@@ -1,12 +1,12 @@
 ### Code Systems
 
 These code systems have been defined for this implementation guide:
-<ul>{% include list-simple-name-codesystems.xhtml %}</ul>
+<ul>{% lang-fragment list-simple-name-codesystems.xhtml %}</ul>
 
 ### Value Sets
 
 These value sets have been defined for this implementation guide:
-<ul>{% include list-simple-name-valuesets.xhtml %}</ul>
+<ul>{% lang-fragment list-simple-name-valuesets.xhtml %}</ul>
 
 ### Note
 
@@ -14,4 +14,4 @@ Many of the same (or similar related) terminology artifacts specified by this gu
 
 ### IP Statements
 
-{% include ip-statements.xhtml %}
+{% lang-fragment ip-statements.xhtml %}

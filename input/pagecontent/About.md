@@ -4,7 +4,7 @@ This Implementation Guide has been balloted as STU with the intention to go norm
 
 ### Dependencies and Related Guides
 
-{% include dependency-table.xhtml %}
+{% lang-fragment dependency-table.xhtml %}
 
 #### Relationship to International Patient Access
 
@@ -28,8 +28,8 @@ This specification generally seeks to align with guidance from the [HL7 Cross Pa
 
 ### Cross Version Analysis
 
-{% include cross-version-analysis.xhtml %}
+{% lang-fragment cross-version-analysis.xhtml %}
 
 ### Global Profiles
 
-{% include globals-table.xhtml %}
+{% lang-fragment globals-table.xhtml %}
