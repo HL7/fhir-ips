@@ -1,6 +1,6 @@
 ### Full IG
 
-Download the entire implementation guide [here](full-ig.zip).
+Download the entire implementation guide [here](../full-ig.zip).
 
 ### NPM Package and Definitions
 
