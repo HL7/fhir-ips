@@ -14,6 +14,6 @@ Description: "IPS Expected Delivery Date Method"
 * ^jurisdiction = $m49.htm#001
 * ^immutable = false
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
-* LOINC#11778-8 "Delivery date Estimated"
-* LOINC#11779-6 "Delivery date Estimated from last menstrual period"
-* LOINC#11780-4 "Delivery date Estimated from ovulation date"
+* $loinc#11778-8 "Delivery date Estimated"
+* $loinc#11779-6 "Delivery date Estimated from last menstrual period"
+* $loinc#11780-4 "Delivery date Estimated from ovulation date"
