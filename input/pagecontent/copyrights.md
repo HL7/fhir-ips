@@ -15,7 +15,6 @@ Following is a non-exhaustive list of third-party terminologies used in this gui
 | Terminology | Owner/Contact | Links |
 | - | - | -- |
 | SNOMED CT® | SNOMED International |  http://www.snomed.org/snomed-ct/get-snomed-ct |
-| SNOMED CT® IPS Terminology | SNOMED International | https://www.snomed.org/international-patient-summary-terminology |
 | Logical Observation Identifiers Names & Codes (LOINC®) | Regenstrief Institute, Inc. and the LOINC Committee| https://loinc.org/license/ |
 | Unified Codes for Units of Measures (UCUM)  | Regenstrief Institute, Inc. and the UCUM Organization | http://unitsofmeasure.org/trac/wiki/TermsOfUse |
 | International Classification of Diseases (ICD) classification system  | World Health Organization (WHO)  | https://www.who.int/publishing/copyright/en/ |
