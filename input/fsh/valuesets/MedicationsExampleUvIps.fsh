@@ -25,5 +25,5 @@ Description: "This value set provides an example of possible medication coded co
 * $rxnorm#331055 "Amoxicillin 1000 MG"
 * $rxnorm#437158 "Acetaminophen 100 MG"
 * $rxnorm#332122 "lithium citrate 60 MG/ML"
-* $ndc#0781-1852 "Amoxicillin and Clavulanate Potassium  (product)"
+* $ndc#0781-1852 "Amoxicillin and Clavulanate Potassium (product)"
 * $ndc#0781-1852-20 "Amoxicillin and Clavulanate Potassium, 20 TABLET, FILM COATED in 1 BOTTLE (0781-1852-20) (package)"
