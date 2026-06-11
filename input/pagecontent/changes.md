@@ -1,3 +1,15 @@
+### STU 2.0.1 Errata Release Publication
+
+This is a list of the issues subsequent to the 2.0.0 IPS release that are addressed in the 2.0.1 errata release publication.
+
+- **Compatible, Substantive Changes**
+  - Update Dependency to FHIR Extensions 5.3.0 ([FHIR-57511](https://jira.hl7.org/browse/FHIR-57511) )
+
+- **Non-substantive Changes**
+  - Update incorrect FSH aliases for SNOMED CT, RxNorm and LOINC code systems and add alias for NDC ([FHIR-57528](https://jira.hl7.org/browse/FHIR-57528) )
+  - Fix incorrect LOINC and V3 display names, and replace inactive DICOM codes with LOINC ([FHIR-57617](https://jira.hl7.org/browse/FHIR-57617) )
+  - Update SNOMED CT "Structuring Terminology Choices" text ([FHIR-57618](https://jira.hl7.org/browse/FHIR-57618) )
+
 ### STU 2.0.0 Final Publication
 
 This change list provides an overview and detail of changes from the STU 2.0 Ballot to the final publication. For details on the 2.0 IPS publication changes from 1.1, refer to the ballot changes in the next section. 
@@ -6,7 +18,6 @@ This change list provides an overview and detail of changes from the STU 2.0 Bal
   - Require Composition.section.code cardinality and add MS and obligations ([FHIR-51231](https://jira.hl7.org/browse/FHIR-51231))
   - Restrict MedicationRequest.doNotPerform  ([FHIR-51483](https://jira.hl7.org/browse/FHIR-51483) & [FHIR-47263](https://jira.hl7.org/browse/FHIR-47263))
   
-
 - **Compatible, Substantive Changes**
   - Loosen Social History Smoking Status & Valueset Binding ([FHIR-40804](https://jira.hl7.org/browse/FHIR-40804) )
   - Add guidance on national adaptations to IPS ([FHIR-40839](https://jira.hl7.org/browse/FHIR-40839))
